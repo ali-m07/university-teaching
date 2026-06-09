@@ -52,78 +52,196 @@
         </p>
     </section>
 
-    <!-- Section: Comparison (Readiness vs Fitness) -->
-    <section id="comparison" class="comparison-section container" style="padding-top: 40px; padding-bottom: 60px;">
-        <div class="section-header" style="text-align: center; margin-bottom: 40px;">
-            <span class="section-tag">مفهوم‌شناسی بنیادین</span>
-            <h2>تفاوت استراتژیک آمادگی و تناسب با آینده</h2>
-            <p>مقایسه دو دیدگاه سنتی برنامه‌محور و مدرن انطباق‌پذیر در مواجهه با عدم‌قطعیت‌های بازار.</p>
+    <!-- Section 1: Future Readiness (آمادگی برای آینده) -->
+    <section id="future-readiness-section" class="container" style="padding-top: 40px; padding-bottom: 40px;">
+        <div class="section-header">
+            <span class="section-tag">پایه و اساس آینده‌پژوهی</span>
+            <h2>آمادگی برای آینده (Future Readiness) چیست؟</h2>
+            <p>پیش‌بینی روندها، درک سناریوها و برنامه‌ریزی استراتژیک برای مدیریت عدم‌قطعیت‌ها.</p>
         </div>
 
-        <!-- Interactive Switcher -->
-        <div class="switch-container">
-            <button class="switch-btn active" id="btn-readiness" onclick="switchView('readiness')">
-                <i data-lucide="eye"></i> Future Readiness (آمادگی)
-            </button>
-            <button class="switch-btn" id="btn-fitness" onclick="switchView('fitness')">
-                <i data-lucide="zap"></i> Future Fitness (تناسب)
-            </button>
+        <div class="workspace-grid" style="grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; margin-bottom: 50px;">
+            <!-- Left: Text content -->
+            <div>
+                <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 20px; text-align: justify;">
+                    <strong>Future Readiness</strong> یا آمادگی برای آینده، به معنای داشتن توانایی برای پیش‌بینی تغییرات، درک عمیق آن‌ها و برنامه‌ریزی هدفمند برای واکنش هوشمندانه به این تغییرات است. این مفهوم ریشه در مدیریت عدم‌قطعیت‌ها دارد؛ به این معنی که ما بتوانیم ریسک‌های گوناگون را رصد و شناسایی کرده و به فرصت‌های کلان موجود در دل این ریسک‌ها دست پیدا کنیم.
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 25px; text-align: justify;">
+                    دنیای امروز ما با تغییرات تکنولوژیکی بسیار سریع، از هوش مصنوعی مولد گرفته تا تحولات اقلیمی و فرونشست دشت‌ها مواجه است. سازمان‌ها و افرادی که برای آینده آماده باشند، این تغییرات شتابان را نه به عنوان یک تهدید فلج‌کننده، بلکه به عنوان فرصتی بزرگ برای پیشرفت و راهبری می‌بینند.
+                </p>
+                <div class="cla-meta-box" style="border-color: var(--color-f); background: rgba(0, 229, 255, 0.01); padding: 20px;">
+                    <strong><i data-lucide="help-circle"></i> یک سوال چالش‌برانگیز:</strong>
+                    <p style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6; margin-top: 5px;">
+                        آیا سازمان شما یا حتی خود شما برای تغییرات بنیادین آینده آماده هستید؟ اگر بخواهید همین امروز در زندگی یا کار خود تغییری ایجاد کنید که شما را برای آینده ورزیده کند، اولین قدم کلیدی شما چیست؟
+                    </p>
+                </div>
+            </div>
+            <!-- Right: Reference Infographic Image -->
+            <div class="glass-card" style="padding: 10px; overflow: hidden; display: flex; justify-content: center; align-items: center; border-color: rgba(0, 229, 255, 0.2);">
+                <img src="assets/upload_1.png" alt="Future Readiness Concept Slide" style="width: 100%; height: auto; border-radius: 8px; box-shadow: var(--glow-f);" />
+            </div>
         </div>
 
-        <!-- Comparison Cards Grid -->
-        <div class="comparison-grid" id="comparison-grid">
-            <!-- Focus Card -->
-            <div class="comp-card">
-                <div class="comp-icon"><i data-lucide="target"></i></div>
-                <h3>تمرکز اصلی (Focus)</h3>
-                <div class="comp-content-wrapper">
-                    <div class="comp-content readiness active">
-                        <h4>پیش‌بینی و برنامه‌ریزی ایستا</h4>
-                        <p>شناسایی روندهای فعلی بازار و نگاشت برنامه‌های عملیاتی صلب برای چند سناریوی محتمل کوتاه‌مدت و میان‌مدت.</p>
-                    </div>
-                    <div class="comp-content fitness">
-                        <h4>سازگاری مستمر و هم‌تکاملی</h4>
-                        <p>توسعه قابلیت‌های پویا (Dynamic Capabilities) جهت انطباق و هم‌تکاملی لحظه‌ای با تغییرات پرشتاب محیط پیرامون.</p>
-                    </div>
-                </div>
+        <!-- 5 Core Elements Grid -->
+        <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+            <h3 style="font-size: 1.5rem; color: #fff;">۵ عنصر کلیدی تشکیل‌دهنده آمادگی برای آینده</h3>
+        </div>
+        <div class="steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 60px;">
+            <div class="step-card glass-card" style="padding: 20px; border-top: 3px solid var(--color-f);">
+                <div style="font-size: 1.5rem; color: var(--color-f); margin-bottom: 10px;"><i data-lucide="trending-up"></i></div>
+                <h4 style="font-size: 1rem; color: #fff; margin-bottom: 8px;">پیش‌بینی و تحلیل روندها</h4>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">توانایی تحلیل روندهای کلیدی بیرونی مانند تغییرات جمعیتی یا فناوری‌های نوظهور و تاثیرات آن‌ها بر صنعت.</p>
             </div>
-
-            <!-- Goal Card -->
-            <div class="comp-card">
-                <div class="comp-icon"><i data-lucide="award"></i></div>
-                <h3>هدف نهایی (Goal)</h3>
-                <div class="comp-content-wrapper">
-                    <div class="comp-content readiness active">
-                        <h4>سپر دفاعی در برابر بحران</h4>
-                        <p>ایجاد برنامه‌های واکنش سریع و سپرهای حفاظتی برای مقاومت و بقا در مواجهه با تهدیدها و بحران‌های پیش‌بینی‌شده.</p>
-                    </div>
-                    <div class="comp-content fitness">
-                        <h4>شکل‌دهی فعالانه بازار فردا</h4>
-                        <p>تغییر فعالانه قواعد بازی به نفع خود، نوآوری در مدل‌های کسب‌وکار و هدایت بازار به جای دنباله‌روی و انفعال.</p>
-                    </div>
-                </div>
+            <div class="step-card glass-card" style="padding: 20px; border-top: 3px solid var(--color-i);">
+                <div style="font-size: 1.5rem; color: var(--color-i); margin-bottom: 10px;"><i data-lucide="zap"></i></div>
+                <h4 style="font-size: 1rem; color: #fff; margin-bottom: 8px;">انطباق سریع با تغییرات</h4>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">چابکی بالا به معنای توانایی تصمیم‌گیری فوق‌العاده سریع و تغییر مسیر استراتژیک در زمان مواجهه با بحران‌ها.</p>
             </div>
+            <div class="step-card glass-card" style="padding: 20px; border-top: 3px solid var(--color-t);">
+                <div style="font-size: 1.5rem; color: var(--color-t); margin-bottom: 10px;"><i data-lucide="lightbulb"></i></div>
+                <h4 style="font-size: 1rem; color: #fff; margin-bottom: 8px;">توسعه خلاقیت و نوآوری</h4>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">ایجاد راه‌حل‌های جدید برای چالش‌های حال و آینده از طریق تغییرات کوچک فرآیندی یا ارائه محصولات بدیع.</p>
+            </div>
+            <div class="step-card glass-card" style="padding: 20px; border-top: 3px solid var(--color-cla);">
+                <div style="font-size: 1.5rem; color: var(--color-cla); margin-bottom: 10px;"><i data-lucide="graduation-cap"></i></div>
+                <h4 style="font-size: 1rem; color: #fff; margin-bottom: 8px;">فرهنگ یادگیری مستمر</h4>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">ارتقای مداوم مهارت‌ها (Upskilling) و یادگیری مستمر تیم‌ها جهت همگامی با سرعت تحولات علمی جهان.</p>
+            </div>
+            <div class="step-card glass-card" style="padding: 20px; border-top: 3px solid var(--color-wheel-red);">
+                <div style="font-size: 1.5rem; color: var(--color-wheel-red); margin-bottom: 10px;"><i data-lucide="cpu"></i></div>
+                <h4 style="font-size: 1rem; color: #fff; margin-bottom: 8px;">استفاده هوشمند از فناوری</h4>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">به‌کارگیری ابزارهای قدرتمند نظیر هوش مصنوعی و بلاکچین برای پیش‌بینی دقیق‌تر، برنامه‌ریزی و اجرای فرآیندها.</p>
+            </div>
+        </div>
 
-            <!-- Approach Card -->
-            <div class="comp-card">
-                <div class="comp-icon"><i data-lucide="navigation"></i></div>
-                <h3>رویکرد استراتژیک (Approach)</h3>
-                <div class="comp-content-wrapper">
-                    <div class="comp-content readiness active">
-                        <h4>پیشگیرانه اما واکنشی</h4>
-                        <p>اتکا به فرمول‌ها و تحلیل‌های استراتژیک گذشته‌نگر و تلاش برای آماده‌سازی ساختارها قبل از وقوع رویدادها.</p>
+        <!-- Foresight & Agility panel (Zoom example) -->
+        <div class="workspace-grid" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 60px;">
+            <div class="glass-card" style="border-right: 4px solid var(--color-f);">
+                <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 12px;"><i data-lucide="eye" style="vertical-align: middle; margin-left: 8px;"></i> آینده‌نگری و پیش‌بینی سناریوها</h3>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; text-align: justify;">
+                    آینده‌نگری به معنای درک عمیق روندها و تحلیل سناریوهای مختلف ممکن است. این مهارت به سازمان‌ها کمک می‌کند تا قبل از وقوع طوفان تغییر، برای آن بستر مناسب بسازند. به عنوان مثال، شرکت‌هایی که پیش از پاندمی کرونا به صورت آزمایشی به فناوری‌های کار از راه دور روی آورده بودند، توانستند بسیار سریع‌تر خود را با شرایط قرنطینه وفق دهند.
+                </p>
+            </div>
+            <div class="glass-card" style="border-right: 4px solid var(--color-i);">
+                <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 12px;"><i data-lucide="zap" style="vertical-align: middle; margin-left: 8px;"></i> چابکی سازمانی (Agility)</h3>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; text-align: justify;">
+                    چابکی یعنی توانایی تصمیم‌گیری سریع و تغییر جهت فوری در واکنش به شرایط غیرمنتظره. یک مثال شاخص از چابکی عملیاتی، شرکت **Zoom** در دوران کرونا است. این شرکت توانست به سرعت زیرساخت‌های سروری خود را در چند هفته گسترش دهد تا به تقاضای نجومی و ناگهانی صدها میلیون کاربر جدید پاسخ دهد.
+                </p>
+            </div>
+        </div>
+
+        <!-- Sustainability & Competitiveness (IKEA/Tesla/Amazon) -->
+        <div class="workspace-grid" style="grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center; margin-bottom: 60px;">
+            <div>
+                <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 15px;">نقش حیاتی پایداری (Sustainability) در پورتفولیو</h3>
+                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 15px; text-align: justify;">
+                    پایداری فراتر از یک مسئولیت اجتماعی، یک استراتژی تجاری هوشمندانه برای آینده است. همسو کردن استراتژی‌های سازمانی با اهداف زیست‌محیطی، اجتماعی و حاکمیتی (**ESG**) ریسک‌های مرتبط با تغییرات اقلیمی را به حداقل می‌رساند و مزیت رقابتی پایداری را در بازارهای جهانی خلق می‌کند.
+                </p>
+                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); text-align: justify;">
+                    به عنوان نمونه، شرکت **IKEA** با متعهد شدن به استفاده صد درصدی از مواد بازیافتی و تجدیدپذیر تا سال ۲۰۳۰، نشان داده است که چگونه پایداری می‌تواند منجر به جلب وفاداری مشتریان و کاهش هزینه‌های بلندمدت مواد اولیه شود. همچنین شرکت‌هایی نظیر **تسلا** (خودروهای برقی) یا **آمازون** (لجستیک پیشرفته) با سرمایه‌گذاری روی روندهای بلندمدت، بقا و پیشتازی خود را تضمین کردند.
+                </p>
+            </div>
+            
+            <div class="glass-card" style="padding: 24px;">
+                <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 15px;"><i data-lucide="globe" style="vertical-align: middle; margin-left: 8px;"></i> کاربردهای چندگانه Future Readiness در جهان:</h4>
+                <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.85rem;">
+                    <div style="border-bottom: 1px dashed var(--card-border); padding-bottom: 8px;">
+                        <strong>آموزش (فنلاند):</strong> تمرکز سیستم آموزشی فنلاند بر یادگیری مبتنی بر پروژه و نوآوری، دانش‌آموزان را برای حل مسائل پیچیده دنیای واقعی فردا آماده می‌کند.
                     </div>
-                    <div class="comp-content fitness">
-                        <h4>پویا، انطباق‌پذیر و کالیبره‌شونده</h4>
-                        <p>یک فرآیند یادگیرنده مستمر با فرضیات انعطاف‌پذیر، ساخت نمونه‌های اولیه سریع و استقبال از کانیبالیسم درونی سبد محصولات.</p>
+                    <div style="border-bottom: 1px dashed var(--card-border); padding-bottom: 8px;">
+                        <strong>سیاست‌گذاری (سنگاپور):</strong> برنامه ملی "ملت هوشمند" (Smart Nation) سنگاپور با بهره‌گیری از فناوری، اقتصاد و کیفیت زندگی شهروندان را برای چالش سالمندی آماده می‌سازد.
+                    </div>
+                    <div style="border-bottom: 1px dashed var(--card-border); padding-bottom: 8px;">
+                        <strong>بهداشت و درمان (NHS بریتانیا):</strong> استفاده از تحلیل داده‌های کلان و هوش مصنوعی برای تشخیص زودهنگام بیماری‌ها و بهینه‌سازی منابع بیمارستان‌ها.
+                    </div>
+                    <div style="border-bottom: 1px dashed var(--card-border); padding-bottom: 8px;">
+                        <strong>حمل‌ونقل و بحران (هلند و ژاپن):</strong> هلند با حمل‌ونقل سبز و ژاپن با سیستم‌های پیشرفته هشدار زلزله و مدیریت بحران، نمونه‌های سرآمد تاب‌آوری ملی هستند.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NEW Section: 4 Maturity Archetypes -->
-    <section id="maturity-archetypes" class="container" style="padding-top: 40px; padding-bottom: 60px;">
+    <!-- Section 2: Future FITness (تناسب با آینده) -->
+    <section id="fitness-concept-section" class="container" style="padding-top: 20px; padding-bottom: 60px; border-top: 1px solid var(--card-border);">
+        <div class="section-header">
+            <span class="section-tag-cla">گامی فراتر از آمادگی</span>
+            <h2>تناسب با آینده (Future FITness) چیست؟</h2>
+            <p>مقایسه تئوریک رویکرد انطباق و بهینه‌سازی مداوم با آمادگی استراتژیک سنتی.</p>
+        </div>
+
+        <div class="workspace-grid" style="grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; margin-bottom: 50px;">
+            <div>
+                <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 20px; text-align: justify;">
+                    اگر **Future Readiness** بر پیش‌بینی و ایجاد آمادگی و برنامه‌ریزی تمرکز دارد، **Future FITness** گامی فراتر می‌گذارد. این مفهوم بر توانایی مداوم و پویای سازمان‌ها و افراد در حفظ عملکرد بهینه، انطباق مستمر، رشد و بازتعریف مداوم ساختارها در مواجهه با چالش‌های غیرمنتظره تأکید دارد.
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 20px; text-align: justify;">
+                    پروفسور رنه روهربک در تحقیقات گسترده و طولانی‌مدت خود بر روی شرکت‌های بزرگ اروپایی در دانشگاه آرهوس نشان داد که این فعالیت‌ها صرفاً تئوریک نیستند. شرکت‌های واجد ویژگی «هوشیاری و تناسب آینده» به طور میانگین **۳۳٪ سودآوری بیشتر** و **۲۰۰٪ رشد ارزش بازار بالاتری** نسبت به رقبای آسیب‌پذیر خود ثبت کردند. این یافته، توجیه اقتصادی بسیار محکمی برای سرمایه‌گذاری در آینده‌نگاری سازمانی ایجاد نمود.
+                </p>
+            </div>
+            
+            <div class="glass-card" style="padding: 24px; border-right: 4px solid var(--color-t);">
+                <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 12px;">۴ مؤلفه کلیدی برای توسعه Future FITness:</h3>
+                <ul style="list-style: none; font-size: 0.9rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px; padding-right: 0;">
+                    <li><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--color-t); margin-left: 8px; vertical-align: middle;"></i> <strong>قابلیت‌های پویا (Dynamic Capabilities):</strong> امکان پایش فرصت‌ها و تغییر مدل‌های کسب‌وکار به سرعت.</li>
+                    <li><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--color-t); margin-left: 8px; vertical-align: middle;"></i> <strong>تفکر آینده‌نگر (Anticipatory Thinking):</strong> پیش‌بینی سناریوهای مرجع آینده و اتخاذ استراتژی‌های منعطف.</li>
+                    <li><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--color-t); margin-left: 8px; vertical-align: middle;"></i> <strong>اجرای انطباقی (Adaptive Execution):</strong> پیاده‌سازی پروژه‌ها با ظرفیت بالای چرخش (Pivot) در زمان وقوع نوسان.</li>
+                    <li><i data-lucide="check-circle" style="width: 16px; height: 16px; color: var(--color-t); margin-left: 8px; vertical-align: middle;"></i> <strong>اکوسیستم‌های تعاملی (Collaborative Ecosystems):</strong> همکاری باز و اشتراک دانش با شرکا و حتی رقبا.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Maturity Concept Dashboard Image -->
+        <div class="glass-card workspace-grid" style="align-items: center; border-color: rgba(124, 77, 255, 0.2); margin-bottom: 50px;">
+            <div style="display: flex; justify-content: center; align-items: center; padding: 10px; overflow: hidden; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid var(--card-border); width: 100%;">
+                <img src="assets/foresight_concept.png" alt="Corporate Foresight Maturity Dashboard" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 30px rgba(124, 77, 255, 0.15);" />
+            </div>
+            <div>
+                <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 15px;">داشبورد مفهومی بلوغ آینده‌نگاری سازمانی</h3>
+                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); text-align: justify; margin-bottom: 15px;">
+                    این داشبورد ساختار تعاملی قابلیت‌های پویای سازمان را نشان می‌دهد. با استفاده از این مدل، سازمان‌ها می‌توانند میزان انطباق خود با روندهای تکنولوژیک را ارزیابی کرده و فرآیندهای سه‌گانه درک (Perceiving)، کاوش (Prospecting) و آزمایش (Probing) را به صورت متوازن در ساختارهای خود پیاده‌سازی نمایند.
+                </p>
+                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); text-align: justify;">
+                    تطابق بین تلاطم محیطی صنعت و بلوغ آینده‌نگاری سازمانی، تعیین‌کننده بقا و سودآوری سازمان است و از فروپاشی‌های ناشی از جمود ساختاری (مانند مورد نوکیا و کداک) ممانعت به عمل می‌آورد.
+                </p>
+            </div>
+        </div>
+
+        <!-- 5 Steps to achieve FITness -->
+        <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+            <h3 style="font-size: 1.4rem; color: #fff;">فرآیند سیستماتیک ۵ مرحله‌ای دستیابی به Future FITness</h3>
+        </div>
+        <div class="steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 50px;">
+            <div class="step-card glass-card" style="padding: 18px; text-align: center;">
+                <span style="font-size: 1.5rem; font-weight: 900; color: var(--color-f); opacity: 0.7;">۱</span>
+                <h4 style="font-size: 0.95rem; color: #fff; margin: 8px 0;">ارزیابی وضعیت فعلی</h4>
+                <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.5;">شناسایی نقاط قوت، ضعف، فرصت‌ها و تهدیدهای داخلی سازمان با ماتریس SWOT.</p>
+            </div>
+            <div class="step-card glass-card" style="padding: 18px; text-align: center;">
+                <span style="font-size: 1.5rem; font-weight: 900; color: var(--color-f); opacity: 0.7;">۲</span>
+                <h4 style="font-size: 0.95rem; color: #fff; margin: 8px 0;">تعریف چشم‌انداز آینده</h4>
+                <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.5;">تعریف آینده‌های مطلوب و تنظیم اهداف بر اساس روندهای جهانی به عنوان نقشه‌راه.</p>
+            </div>
+            <div class="step-card glass-card" style="padding: 18px; text-align: center;">
+                <span style="font-size: 1.5rem; font-weight: 900; color: var(--color-f); opacity: 0.7;">۳</span>
+                <h4 style="font-size: 0.95rem; color: #fff; margin: 8px 0;">توسعه قابلیت‌ها</h4>
+                <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.5;">سرمایه‌گذاری روی بخش تحقیق و توسعه (مانند شرکت اپل) برای تقویت توان نوآوری.</p>
+            </div>
+            <div class="step-card glass-card" style="padding: 18px; text-align: center;">
+                <span style="font-size: 1.5rem; font-weight: 900; color: var(--color-f); opacity: 0.7;">۴</span>
+                <h4 style="font-size: 0.95rem; color: #fff; margin: 8px 0;">پیاده‌سازی و آزمایش</h4>
+                <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.5;">آزمایش ایده‌ها با انعطاف بالا (مانند شرکت تسلا با آزمایش مدل‌های مختلف خودرو برقی).</p>
+            </div>
+            <div class="step-card glass-card" style="padding: 18px; text-align: center;">
+                <span style="font-size: 1.5rem; font-weight: 900; color: var(--color-f); opacity: 0.7;">۵</span>
+                <h4 style="font-size: 0.95rem; color: #fff; margin: 8px 0;">پایش و بهبود مداوم</h4>
+                <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.5;">پایش مستمر نتایج بر اساس بازخوردها و بهینه‌سازی مدل‌ها (مانند ایکه‌آ در اهداف پایداری).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: 4 Maturity Archetypes -->
+    <section id="maturity-archetypes" class="container" style="padding-top: 20px; padding-bottom: 60px;">
         <div class="section-header" style="text-align: center; margin-bottom: 40px;">
             <span class="section-tag" style="background: rgba(124, 77, 255, 0.08); color: var(--color-t); border-color: rgba(124, 77, 255, 0.2);">تیپولوژی پویای روهربک</span>
             <h2>۴ کهن‌الگو (Archetype) بلوغ آینده‌نگاری در صنایع</h2>
@@ -178,12 +296,12 @@
         </div>
     </section>
 
-    <!-- NEW Section: 3 Strategic Roles -->
-    <section id="foresight-roles" class="container" style="padding-top: 40px; padding-bottom: 60px;">
+    <!-- Section: 3 Strategic Roles -->
+    <section id="foresight-roles" class="container" style="padding-top: 20px; padding-bottom: 60px;">
         <div class="section-header" style="text-align: center; margin-bottom: 40px;">
             <span class="section-tag" style="background: rgba(0, 229, 255, 0.08); color: var(--color-f); border-color: rgba(0, 229, 255, 0.2);">کارکرد نوآوری سازمانی</span>
             <h2>۳ نقش حیاتی آینده‌نگاری در پویایی نوآوری</h2>
-            <p>رنه روهربک اثبات می‌کند که آینده‌نگاری باید سه نقش مجزا و مکمل را در زنجیره ارزش نوآوری ایفا کند.</p>
+            <p>رنه روهربک اثبات می‌کند که آینده‌نگاری باید سه نقش استراتژیک، آغازگر و مخالف را در زنجیره ارزش نوآوری ایفا کند.</p>
         </div>
 
         <div class="workspace-grid" style="grid-template-columns: 1fr 1.5fr; gap: 30px;">
@@ -208,7 +326,7 @@
     </section>
 
     <!-- Section: Real-World Case Studies -->
-    <section id="expanded-cases" class="examples-section container" style="padding-top: 40px; padding-bottom: 60px;">
+    <section id="expanded-cases" class="examples-section container" style="padding-top: 20px; padding-bottom: 60px;">
         <div class="section-header">
             <span class="section-tag">مطالعات عمیق: حس‌گری، کاوش، دگرگونی</span>
             <h2>پاسخ به تغییرات با DNA سه بعدیِ قابلیت‌های پویا</h2>
@@ -238,7 +356,7 @@
     </section>
 
     <!-- Section: FITness Formula -->
-    <section id="fitness-formula" class="formula-section container" style="padding-top: 40px; padding-bottom: 60px;">
+    <section id="fitness-formula" class="formula-section container" style="padding-top: 20px; padding-bottom: 60px;">
         <div class="section-header">
             <span class="section-tag">سرواژه استراتژیک</span>
             <h2>فرمول سه بخشی Future FITness</h2>
@@ -286,7 +404,7 @@
                     <span class="detail-badge f-bg">Foresight / آینده‌نگاری</span>
                     <h3>رصد و تفسیر مستمر سیگنال‌های تغییر</h3>
                 </div>
-                <p>آینده‌نگاری توانایی سیستماتیک سازمان در پایش محیط بیرونی، کشف سیگنال‌های ضعیف (Weak Signals) تغییر و درک روندهاست. این گام متناظر با فازهای <strong>Perceiving (درک)</strong> و <strong>Prospecting (کاوش)</strong> در نظریه روهربک است.</p>
+                <p>آینده‌نگاری توانایی سیستماتیک سازمان در پایش محیط بیرونی، کشف سیگنال‌های ضعیف (Weak Signals) تغییر و درک روندهاست. این همان فازهای **درک کردن (Perceiving)** و **کاوش کردن (Prospecting)** در نظریه روهربک است.</p>
                 <ul class="detail-list">
                     <li><i data-lucide="check-circle" class="f-text"></i> رصد دائمی محیط کلان اقتصادی، تکنولوژیک و سیاسی.</li>
                     <li><i data-lucide="check-circle" class="f-text"></i> تحلیل سناریوهای محتمل و تدوین نقشه‌راه.</li>
@@ -299,7 +417,7 @@
                     <span class="detail-badge i-bg">Innovation / نوآوری</span>
                     <h3>تبدیل بینش‌های حاصله به محصولات و ابزارهای نوین</h3>
                 </div>
-                <p>نوآوری موتور اجرایی کردن آینده‌نگاری است. در این فاز، ایده و تحلیل‌ها به نمونه‌های اولیه سریع و طرح‌های آزمایشی تبدیل می‌شوند که متناظر با فاز <strong>Probing (آزمودن)</strong> است و نیازمند نقش‌های آغازگر و مخالف است.</p>
+                <p>نوآوری موتور اجرایی کردن آینده‌نگاری است. در این فاز، ایده و تحلیل‌ها به نمونه‌های اولیه سریع و طرح‌های آزمایشی تبدیل می‌شوند که متناظر با فاز **آزمودن (Probing)** است و نیازمند نقش‌های آغازگر، استراتژیست و مخالف است.</p>
                 <ul class="detail-list">
                     <li><i data-lucide="check-circle" class="i-text"></i> ساخت نمونه‌های اولیه سریع (Rapid Prototyping) برای سنجش ایده.</li>
                     <li><i data-lucide="check-circle" class="i-text"></i> به چالش کشیدن مفروضات فعلی سازمان توسط نقش مخالف (Opponent).</li>
@@ -312,7 +430,7 @@
                     <span class="detail-badge t-bg">Transformation / تحول</span>
                     <h3>بازطراحی ساختاری و فرهنگی برای بقای بلندمدت</h3>
                 </div>
-                <p>تحول، غایت نهایی این فرآیند است. آینده‌نگاری و نوآوری نباید به عنوان پروژه‌های حاشیه‌ای دیده شوند، بلکه باید فرهنگ، ساختار و نحوه تخصیص منابع سازمان را تغییر داده و DNA جدیدی بسازند.</p>
+                <p>تحول، غایت نهایی این فرآیند است. آینده‌نگری و نوآوری نباید به عنوان پروژه‌های حاشیه‌ای دیده شوند، بلکه باید فرهنگ، ساختار و نحوه تخصیص منابع سازمان را تغییر داده و DNA جدیدی بسازند تا بقای بلندمدت تضمین شود.</p>
                 <ul class="detail-list">
                     <li><i data-lucide="check-circle" class="t-text"></i> اصلاح ساختار رسمی و کاهش بوروکراسی برای چالاکی بیشتر.</li>
                     <li><i data-lucide="check-circle" class="t-text"></i> پذیرش یادگیری مداوم و کاهش فرهنگ ترس از شکست در میان پرسنل.</li>
@@ -323,7 +441,7 @@
     </section>
 
     <!-- Section: Assessment Tool -->
-    <section id="assessment" class="assessment-section container" style="padding-top: 40px; padding-bottom: 60px;">
+    <section id="assessment" class="assessment-section container" style="padding-top: 20px; padding-bottom: 60px;">
         <div class="section-header">
             <span class="section-tag">ابزار ارزیابی تعاملی</span>
             <h2>سنجش شاخص بلوغ آینده‌نگاری سازمان</h2>
@@ -413,17 +531,44 @@
                 </div>
             </div>
         </div>
+
+        <!-- 5 Key Metrics details (Google/Tesla/Amazon/Japan) -->
+        <div style="margin-top: 40px;">
+            <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 20px; text-align: center;">۵ شاخص ارزیابی عملیاتی Future FITness:</h3>
+            <div class="steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <div class="glass-card" style="padding: 16px;">
+                    <strong style="color: var(--color-f); font-size: 0.9rem; display: block; margin-bottom: 4px;">شاخص تطبیق سریع</strong>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4;">Agility Index: سرعت و اثربخشی واکنش در تغییر سبد محصولات (مانند چرخ محصول سریع در شرکت‌های IT).</p>
+                </div>
+                <div class="glass-card" style="padding: 16px;">
+                    <strong style="color: var(--color-f); font-size: 0.9rem; display: block; margin-bottom: 4px;">میزان نوآوری مداوم</strong>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4;">Innovation Rate: تعداد و کیفیت راه‌حل‌های بدیل و جلو زدن از بازار رقابتی (نظیر عرضه سالانه نوآوری‌ها در تسلا).</p>
+                </div>
+                <div class="glass-card" style="padding: 16px;">
+                    <strong style="color: var(--color-f); font-size: 0.9rem; display: block; margin-bottom: 4px;">انعطاف‌پذیری سازمانی</strong>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4;">Resilience Score: توانایی بازیابی فوری پس از اختلالات و بحران‌های مالی و زیست‌محیطی (مانند ژاپن).</p>
+                </div>
+                <div class="glass-card" style="padding: 16px;">
+                    <strong style="color: var(--color-f); font-size: 0.9rem; display: block; margin-bottom: 4px;">تعامل در اکوسیستم</strong>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4;">Collaboration Score: میزان ارزش‌آفرینی مشترک با شرکا و ذینفعان زنجیره تامین (مانند آمازون).</p>
+                </div>
+                <div class="glass-card" style="padding: 16px;">
+                    <strong style="color: var(--color-f); font-size: 0.9rem; display: block; margin-bottom: 4px;">یادگیری سازمانی</strong>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4;">L&D Metrics: میزان ساعت آموزش تخصصی و ارتقای مهارت‌های نیروی کار در سال (مانند گوگل).</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section: Technology Radar -->
-    <section id="tech-radar" class="radar-section container" style="padding-top: 40px; padding-bottom: 60px;">
+    <section id="tech-radar" class="radar-section container" style="padding-top: 20px; padding-bottom: 60px;">
         <div class="section-header">
             <span class="section-tag">مطالعه موردی: دویچه تلکام</span>
             <h2>رادار فناوری‌های نوظهور و پایش استراتژیک</h2>
             <p>شبیه‌سازی رادار تعاملی فناوری جهت جلوگیری از غافلگیری استراتژیک. بر روی نقاط رادار کلیک کنید تا تحلیل تأثیر و توصیه‌ها بارگذاری شوند.</p>
         </div>
 
-        <div class="radar-interactive-container glass-card">
+        <div class="radar-interactive-container glass-card" style="margin-bottom: 40px;">
             <div class="radar-plot-wrapper">
                 <svg id="radar-svg" viewBox="0 0 500 500" width="100%" height="100%">
                     <circle cx="250" cy="250" r="230" class="radar-ring ring-scan" />
@@ -484,6 +629,25 @@
                         <p id="tech-impact">نقش استراتژیک فناوری...</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Why Deutsche Telekom Case Study Details -->
+        <div class="workspace-grid" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;">
+            <div class="glass-card" style="border-right: 4px solid var(--color-f);">
+                <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 10px;"><i data-lucide="award" style="vertical-align: middle; margin-left: 8px;"></i> چرا دویچه تلکام به عنوان مورد بنچ‌مارک انتخاب شد؟</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; text-align: justify;">
+                    انتخاب شرکت **دویچه تلکام (Deutsche Telekom)** به عنوان الگو کاملاً علمی است. بخش بزرگی از فرآیند دکتری و کتاب مرجع رنه روهربک در خصوص مدل بلوغ آینده‌نگاری، مستقیماً بر اساس مطالعه چندساله عملیاتی در این غول مخابراتی بنا شده است. این شرکت نمونه عینی و موفق از تزریق رادار فناوری و اتصال نتایج به فرآیندهای استراتژیک و کاهش ریسک است.
+                </p>
+            </div>
+            <div class="glass-card" style="border-right: 4px solid var(--color-cla);">
+                <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 10px;"><i data-lucide="alert-triangle" style="vertical-align: middle; margin-left: 8px;"></i> چالش‌های استقرار و راه‌حل‌های استراتژیک</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; text-align: justify;">
+                    <strong>مقاومت در برابر تغییر:</strong> تقویت فرهنگ باز و پذیرش تغییر. <br>
+                    <strong>شکاف مهارتی کارکنان:</strong> برگزاری مداوم دوره‌های بازآموزی (Reskilling). <br>
+                    <strong>پیچیدگی اکوسیستم باز:</strong> به کارگیری فناوری‌های باز و شفاف جهت تسهیل تعاملات. <br>
+                    <strong>تعارض اهداف کوتاه/بلندمدت:</strong> تخصیص بودجه مجزا و استفاده از مدل سه افق نوآوری.
+                </p>
             </div>
         </div>
 
