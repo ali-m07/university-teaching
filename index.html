@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategic Foresight Hub | مرجع آینده‌پژوهی استراتژیک (FITness, CLA &amp; Futures Wheel)</title>
+    <title>Strategic Foresight Hub | مرجع تعاملی آینده‌پژوهی استراتژیک</title>
     <!-- Google Fonts: Vazirmatn for Persian, Plus Jakarta Sans for English/Numbers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     
     <!-- Custom Style -->
     <link rel="stylesheet" href="style.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Canvas Confetti -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <!-- GSAP & ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -33,31 +29,25 @@
             <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
         </div>
         <nav class="nav-links">
-            <a href="#hero" class="active">آغاز</a>
-            <a href="#comparison">آمادگی vs تناسب</a>
-            <a href="#examples">مثال‌های عملی</a>
-            <a href="#fitness-formula">فرمول FIT</a>
-            <a href="#assessment">سنجش بلوغ</a>
-            <a href="#tech-radar">رادار فناوری</a>
-            <a href="#cla-section">تحلیل لایه‌ای CLA</a>
-            <a href="#cla-workspace">کارگاه تعاملی</a>
-            <a href="#futures-wheel">چرخ آینده</a>
-            <a href="#challenges">چالش‌ها</a>
+            <a href="index.html" class="active">صفحه نخست</a>
+            <a href="fitness.html">آمادگی و تناسب (FITness)</a>
+            <a href="cla.html">تحلیل لایه‌ای علت‌ها (CLA)</a>
+            <a href="futures-wheel.html">چرخ آینده (Futures Wheel)</a>
         </nav>
         <div class="header-action">
-            <a href="#assessment" class="btn-primary-sm">سنجش سازمان</a>
+            <a href="fitness.html#assessment" class="btn-primary-sm">ارزیابی بلوغ سازمان</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-section">
+    <section id="hero" class="hero-section" style="min-height: 85vh; padding-top: 120px;">
         <div class="hero-content">
             <div class="badge-container">
-                <span class="badge"><i data-lucide="sparkles"></i> مرجع تعاملی آینده‌پژوهی استراتژیک</span>
+                <span class="badge"><i data-lucide="sparkles"></i> مرجع آینده‌پژوهی استراتژیک</span>
             </div>
-            <h1 class="hero-title">STRATEGIC FORESIGHT<br>FITNESS &amp; CLA HUB</h1>
+            <h1 class="hero-title">STRATEGIC FORESIGHT<br>PORTAL</h1>
             <p class="hero-subtitle">
-                تلفیق مدل توانمندی‌های پویای **رنه روهربک** (Future FITness)، مدل معرفت‌شناختی عمیق **سهیل عنایت‌الله** (CLA)، و روش زنجیره‌ای **چرخ آینده** برای درک ریشه‌ای و خلق آینده‌های مطلوب.
+                پرتابل تعاملی آینده‌پژوهی استراتژیک برای تحلیل پویای تغییرات، رصد فناوری‌های نوظهور، ساختارشکنی علّی مسائل و نگاشت زنجیره‌ای پیامدها.
             </p>
             <div class="hero-meta">
                 <div class="meta-item">
@@ -71,10 +61,6 @@
                     <span class="meta-val">دانشگاه تهران</span>
                 </div>
             </div>
-            <div class="hero-buttons">
-                <a href="#comparison" class="btn-primary">شروع کاوش در آینده <i data-lucide="arrow-left"></i></a>
-                <a href="#futures-wheel" class="btn-secondary">شبیه‌ساز چرخ آینده <i data-lucide="radar"></i></a>
-            </div>
         </div>
         <div class="hero-visual">
             <div class="sphere-container">
@@ -85,697 +71,69 @@
                 <div class="orbit-3"></div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <span>اسکرول کنید</span>
-            <div class="mouse-icon">
-                <div class="wheel"></div>
-            </div>
-        </div>
     </section>
 
-    <!-- Section: Comparison (Readiness vs Fitness) -->
-    <section id="comparison" class="comparison-section container">
-        <div class="section-header">
-            <span class="section-tag">مفهوم‌شناسی</span>
-            <h2>تفاوت استراتژیک آمادگی و تناسب با آینده</h2>
-            <p>آمادگی برای آینده بیشتر بر پیش‌بینی و برنامه‌ریزی متمرکز است، در حالی که تناسب با آینده بر ظرفیت مداوم سازگاری و بهینه‌سازی تأکید دارد.</p>
+    <!-- Hub Cards Section -->
+    <section class="container" style="padding-top: 20px; padding-bottom: 100px;">
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+            <span class="section-tag">بخش‌های سه‌گانه اصلی</span>
+            <h2>ارکان آینده‌پژوهی استراتژیک</h2>
+            <p>یکی از ارکان سه‌گانه متدولوژی را جهت ورود به محیط تعاملی، شبیه‌سازی و مطالعه نمونه‌های عملی انتخاب کنید.</p>
         </div>
 
-        <!-- Interactive Switcher -->
-        <div class="switch-container">
-            <button class="switch-btn active" id="btn-readiness" onclick="switchView('readiness')">
-                <i data-lucide="eye"></i> Future Readiness (آمادگی)
-            </button>
-            <button class="switch-btn" id="btn-fitness" onclick="switchView('fitness')">
-                <i data-lucide="zap"></i> Future Fitness (تناسب)
-            </button>
-        </div>
-
-        <!-- Comparison Cards Grid -->
-        <div class="comparison-grid" id="comparison-grid">
-            <!-- Focus Card -->
-            <div class="comp-card">
-                <div class="comp-icon"><i data-lucide="target"></i></div>
-                <h3>تمرکز اصلی (Focus)</h3>
-                <div class="comp-content-wrapper">
-                    <div class="comp-content readiness active">
-                        <h4>پیش‌بینی و برنامه‌ریزی</h4>
-                        <p>شناسایی روندهای فعلی و طرح‌ریزی برنامه‌های مشخص برای سناریوهای محتمل کوتاه‌مدت و میان‌مدت.</p>
-                    </div>
-                    <div class="comp-content fitness">
-                        <h4>سازگاری، نوآوری و رشد مداوم</h4>
-                        <p>توسعه قابلیت‌های پویا برای هم تکاملی با محیط در حال تغییر و بهینه‌سازی مداوم عملکرد.</p>
-                    </div>
-                </div>
+        <div class="hub-cards-grid">
+            <!-- FITness Card -->
+            <div class="hub-card glass-card card-fitness" onclick="location.href='fitness.html'">
+                <div class="card-icon"><i data-lucide="zap"></i></div>
+                <h3>آمادگی و تناسب با آینده (FITness)</h3>
+                <p>
+                    بررسی مدل بلوغ رنه روهربک (Future FITness)، شبیه‌سازی فرآیندهای Perceiving (درک)، Prospecting (کاوش) و Probing (آزمایش) به همراه تست خودارزیابی بلوغ ۵ بعدی سازمان و رادار فناوری دویچه تلکام.
+                </p>
+                <span class="hub-card-link">ورود به بخش تناسب آینده <i data-lucide="arrow-left"></i></span>
             </div>
 
-            <!-- Goal Card -->
-            <div class="comp-card">
-                <div class="comp-icon"><i data-lucide="award"></i></div>
-                <h3>هدف نهایی (Goal)</h3>
-                <div class="comp-content-wrapper">
-                    <div class="comp-content readiness active">
-                        <h4>آمادگی برای تغییرات</h4>
-                        <p>ایجاد سپرهای حفاظتی و طرح‌های واکنش سریع در مواجهه با بحران‌ها یا تغییرات پیش‌بینی‌شده.</p>
-                    </div>
-                    <div class="comp-content fitness">
-                        <h4>شکل‌دهی و ایجاد آینده‌های مطلوب</h4>
-                        <p>تغییر فعالانه بازی به نفع خود، نوآوری در مدل کسب‌وکار و راهبری بازار به جای دنباله‌روی.</p>
-                    </div>
-                </div>
+            <!-- CLA Card -->
+            <div class="hub-card glass-card card-cla" onclick="location.href='cla.html'">
+                <div class="card-icon"><i data-lucide="layers"></i></div>
+                <h3>تحلیل لایه‌ای علت‌ها (CLA)</h3>
+                <p>
+                    مدل عمیق پساساختارگرای سهیل عنایت‌الله برای نفوذ به لایه‌های چهارگانه مسائل (لیتانی، ساختار، گفتمان، اسطوره) به همراه هرم سه‌بعدی تعاملی، آرشیو سناریوهای ملی/ژئوپلیتیک و کارگاه خلق استعاره‌های جدید.
+                </p>
+                <span class="hub-card-link">ورود به کارگاه CLA <i data-lucide="arrow-left"></i></span>
             </div>
 
-            <!-- Approach Card -->
-            <div class="comp-card">
-                <div class="comp-icon"><i data-lucide="navigation"></i></div>
-                <h3>رویکرد (Approach)</h3>
-                <div class="comp-content-wrapper">
-                    <div class="comp-content readiness active">
-                        <h4>پیشگیرانه و واکنشی</h4>
-                        <p>اتکا به پیش‌بینی‌ها، تحلیل‌های آماری و فرمول‌های استراتژیک سنتی برای آمادگی قبل از وقوع رویداد.</p>
-                    </div>
-                    <div class="comp-content fitness">
-                        <h4>پویا و انطباق‌پذیر</h4>
-                        <p>رویکرد یادگیرنده، منعطف و چابک با ظرفیت بالایی برای تجدیدنظر در مفروضات و آزمایش ایده‌های جدید.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Real-World Case Studies -->
-    <section id="examples" class="examples-section container">
-        <div class="section-header">
-            <span class="section-tag">شواهد تجربی</span>
-            <h2>مثال‌های واقعی از موفقیت و شکست استراتژیک</h2>
-            <p>چگونه داشتن یا نداشتن قابلیت‌های آمادگی و تناسب با آینده سرنوشت بزرگ‌ترین سازمان‌ها و تمدن‌ها را تغییر می‌دهد.</p>
-        </div>
-
-        <div class="examples-grid">
-            <!-- Netflix Card -->
-            <div class="example-card glass-card">
-                <div class="ex-badge success">موفقیت (FITness)</div>
-                <h3>نتفلیکس (Netflix)</h3>
-                <p><strong>تغییر مداوم مدل کسب‌وکار:</strong> نتفلیکس از مدل سنتی اجاره دی‌وی‌دی پستی شروع کرد. آنها با رصد روند پهنای باند به پخش اینترنتی (Streaming) مهاجرت کردند، سپس به ساخت محتوای اختصاصی پرداختند و اکنون در حال ادغام هوش مصنوعی و بازی در پلتفرم خود هستند. این یعنی ظرفیت تحول مداوم و همگامی با DNA عصر دیجیتال.</p>
-            </div>
-
-            <!-- Kodak Card -->
-            <div class="example-card glass-card">
-                <div class="ex-badge failure">شکست (Readiness)</div>
-                <h3>کداک (Kodak)</h3>
-                <p><strong>غفلت از جهان‌بینی نوظهور:</strong> جالب است که کداک خود مخترع دوربین دیجیتال در سال ۱۹۷۵ بود! آنها آمادگی فناورانه داشتند اما به دلیل سود سرشار چاپ فیلم، جهان‌بینی سنتی خود را تغییر ندادند. آنها نتوانستند پارادایم «ثبت خاطرات روی کاغذ» را به «اشتراک لحظه‌ای خاطرات به صورت دیجیتال» تبدیل کنند و ورشکست شدند.</p>
-            </div>
-
-            <!-- Nokia Card -->
-            <div class="example-card glass-card">
-                <div class="ex-badge failure">شکست (Agility)</div>
-                <h3>نوکیا (Nokia)</h3>
-                <p><strong>نداشتن قابلیت سازگاری پویا:</strong> نوکیا اولین گوشی‌های هوشمند بازار را ساخت و سهم چشمگیری داشت، اما سیستم‌عامل سیمبین آنها صلب بود. با معرفی آیفون، نوکیا سرعت واکنش بسیار پایینی داشت. بوروکراسی رسمی شدید، اجازه تغییر سریع سیستم‌عامل را نداد و آنها پلتفرم موبایل خود را به طور کامل باختند.</p>
-            </div>
-
-            <!-- Sassanid Empire Card -->
-            <div class="example-card glass-card">
-                <div class="ex-badge historical">نگاه تاریخی</div>
-                <h3>امپراتوری ساسانی در برابر روم</h3>
-                <p><strong>جمود ایدئولوژیک و فروپاشی سیستمی:</strong> هر دو امپراتوری قرن‌ها در جنگ بودند و در لایه نظامی (Readiness) کاملا مجهز بودند. اما ساسانیان با تکیه بر اسطوره‌ شاهنشاهی یزدگردی و جمود طبقاتی شدید نتوانستند ظهور یک جهان‌بینی تازه و چابک در شبه‌جزیره عربستان را درک کنند. این شکاف عمیق هویتی و فرسودگی سیستمی به فروپاشی کامل شاهنشاهی انجامید.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: FITness Formula -->
-    <section id="fitness-formula" class="formula-section container">
-        <div class="section-header">
-            <span class="section-tag">رمزگشایی استراتژیک</span>
-            <h2>فرمول موفقیت Future FITness</h2>
-            <p>این مفهوم هم به معنای چالاکی برای آینده است و هم یک فرمول استراتژیک است که آینده‌نگاری (F) را به نوآوری (I) و تحول (T) پیوند می‌دهد.</p>
-        </div>
-
-        <div class="formula-display">
-            <!-- Letter F -->
-            <div class="formula-letter-box" onclick="showFormulaDetail('foresight')">
-                <div class="letter-glow f-glow"></div>
-                <div class="letter">F</div>
-                <div class="letter-label">Foresight</div>
-                <div class="letter-desc">آینده‌نگاری</div>
-            </div>
-            
-            <div class="formula-operator"><i data-lucide="plus"></i></div>
-
-            <!-- Letter I -->
-            <div class="formula-letter-box" onclick="showFormulaDetail('innovation')">
-                <div class="letter-glow i-glow"></div>
-                <div class="letter">I</div>
-                <div class="letter-label">Innovation</div>
-                <div class="letter-desc">نوآوری</div>
-            </div>
-
-            <div class="formula-operator"><i data-lucide="arrow-left-right"></i></div>
-
-            <!-- Letter T -->
-            <div class="formula-letter-box" onclick="showFormulaDetail('transformation')">
-                <div class="letter-glow t-glow"></div>
-                <div class="letter">T</div>
-                <div class="letter-label">Transformation</div>
-                <div class="letter-desc">تحول</div>
+            <!-- Futures Wheel Card -->
+            <div class="hub-card glass-card card-wheel" onclick="location.href='futures-wheel.html'">
+                <div class="card-icon"><i data-lucide="orbit"></i></div>
+                <h3>چرخ آینده (Futures Wheel)</h3>
+                <p>
+                    مدل پیامدی جروم گلن جهت نگاشت زنجیره‌ای آثار مرتبه اول، دوم و سوم رویدادها. شامل درخت اتصالات شعاعی SVG تغییر اقلیم در ایران، بررسی مدل‌های STEEP، کمی‌سازی و عمل‌گرا، و فرآیند ۱۱ مرحله‌ای اجرا.
+                </p>
+                <span class="hub-card-link">ورود به شبیه‌ساز چرخ آینده <i data-lucide="arrow-left"></i></span>
             </div>
         </div>
 
-        <!-- Formula Detailed Panel -->
-        <div class="formula-detail-panel" id="formula-detail-panel">
-            <div class="formula-detail-content active" id="detail-default">
-                <p class="prompt-text"><i data-lucide="mouse-pointer-click"></i> برای مشاهده جزئیات بیشتر بر روی هر یک از حروف بالا کلیک کنید.</p>
-            </div>
-
-            <div class="formula-detail-content" id="detail-foresight">
-                <div class="detail-header">
-                    <span class="detail-badge f-bg">Foresight / آینده‌نگاری</span>
-                    <h3>توانایی دیدن و درک روندهای آینده</h3>
-                </div>
-                <p>آینده‌نگاری همان توانایی سازمان در رصد محیط بیرونی، فهم سیگنال‌های ضعیف تغییر و پیش‌بینی مسیر حرکت بازار است. این حوزه متناظر با فازهای <strong>Perceiving (درک کردن)</strong> و <strong>Prospecting (کاوش کردن)</strong> در مدل روهربک است.</p>
-                <ul class="detail-list">
-                    <li><i data-lucide="check-circle" class="f-text"></i> رصد دائمی محیطی برای کشف فرصت‌ها و تهدیدها</li>
-                    <li><i data-lucide="check-circle" class="f-text"></i> درک چگونگی برهم‌کنش روندهای تکنولوژیک و اجتماعی</li>
-                    <li><i data-lucide="check-circle" class="f-text"></i> توسعه تفکر سناریومحور در لایه‌های تصمیم‌گیری سازمان</li>
-                </ul>
-            </div>
-
-            <div class="formula-detail-content" id="detail-innovation">
-                <div class="detail-header">
-                    <span class="detail-badge i-bg">Innovation / نوآوری</span>
-                    <h3>توانایی ساختن چیزهای جدید بر اساس بینش</h3>
-                </div>
-                <p>نوآوری موتور محرک بقاست. در این گام، بینش‌های حاصل از آینده‌نگاری به پروژه‌ها، محصولات و مدل‌های کسب‌وکار نوین تبدیل می‌شوند. این بخش شامل فاز <strong>Probing (آزمودن)</strong> و نیازمند سه نقش کلیدی استراتژیست، آغازگر و مخالف است.</p>
-                <ul class="detail-list">
-                    <li><i data-lucide="check-circle" class="i-text"></i> تبدیل روندهای آینده به فرصت‌های محصولی</li>
-                    <li><i data-lucide="check-circle" class="i-text"></i> ایجاد بستری برای ساخت نمونه‌های اولیه سریع</li>
-                    <li><i data-lucide="check-circle" class="i-text"></i> همسوسازی سبد نوآوری با استراتژی‌های بلندمدت</li>
-                </ul>
-            </div>
-
-            <div class="formula-detail-content" id="detail-transformation">
-                <div class="detail-header">
-                    <span class="detail-badge t-bg">Transformation / تحول</span>
-                    <h3>توانایی تغییر بنیادین سازمان برای موفقیت پایدار</h3>
-                </div>
-                <p>تحول، هدف غایی فرمول است. آینده‌نگاری (F) و نوآوری (I) باید در نهایت DNA و فرهنگ سازمان را دگرگون سازند تا بقای بلندمدت تضمین شود. بدون تحول، نوآوری صرفاً یک پروژه موقت خواهد بود.</p>
-                <ul class="detail-list">
-                    <li><i data-lucide="check-circle" class="t-text"></i> بازطراحی ساختار رسمی سازمان برای افزایش انعطاف‌پذیری</li>
-                    <li><i data-lucide="check-circle" class="t-text"></i> پرورش فرهنگ پذیرش تغییر و یادگیری مستمر</li>
-                    <li><i data-lucide="check-circle" class="t-text"></i> همگام‌سازی قابلیت‌های پویای سازمان با الزامات عصر جدید</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Assessment Tool -->
-    <section id="assessment" class="assessment-section container">
-        <div class="section-header">
-            <span class="section-tag">ابزار تعاملی</span>
-            <h2>ارزیابی تناسب با آینده سازمان شما</h2>
-            <p>۵ بعد کلیدی مدل بلوغ روهربک را برای سازمان خود بسنجید و جایگاه و توصیه‌های استراتژیک اختصاصی خود را دریافت کنید.</p>
-        </div>
-
-        <div class="assessment-container glass-card">
-            <!-- Step 1: Sliders Form -->
-            <div class="assessment-form" id="assessment-form">
-                <h3>پرسشنامه خودارزیابی بلوغ آینده‌نگاری</h3>
-                
-                <div class="slider-group">
-                    <div class="slider-header">
-                        <label for="dim-info">۱. اطلاعات و رصد (Information):</label>
-                        <span class="slider-value" id="val-info">5</span>
-                    </div>
-                    <p class="slider-desc">میزان دسترسی، جمع‌آوری و تحلیل سیگنال‌های تغییر و روندهای تکنولوژیک/اجتماعی در سازمان.</p>
-                    <input type="range" id="dim-info" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('info')">
-                </div>
-
-                <div class="slider-group">
-                    <div class="slider-header">
-                        <label for="dim-methods">۲. روش‌ها و ابزارها (Methods):</label>
-                        <span class="slider-value" id="val-methods">5</span>
-                    </div>
-                    <p class="slider-desc">استفاده سیستماتیک از متدهای آینده‌پژوهی مانند سناریوسازی، رادار فناوری و تحلیل دلفی.</p>
-                    <input type="range" id="dim-methods" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('methods')">
-                </div>
-
-                <div class="slider-group">
-                    <div class="slider-header">
-                        <label for="dim-people">۳. افراد و تخصص‌ها (People):</label>
-                        <span class="slider-value" id="val-people">5</span>
-                    </div>
-                    <p class="slider-desc">آموزش کارکنان، وجود متخصصان آینده‌نگاری و مشارکت بدنه سازمان در تفکر آینده‌پژوهانه.</p>
-                    <input type="range" id="dim-people" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('people')">
-                </div>
-
-                <div class="slider-group">
-                    <div class="slider-header">
-                        <label for="dim-org">۴. سازماندهی رسمی (Formal Org):</label>
-                        <span class="slider-value" id="val-org">5</span>
-                    </div>
-                    <p class="slider-desc">وجود واحد اختصاصی، فرآیندهای گره خورده به تصمیم‌گیری استراتژیک و انعطاف‌پذیری ساختاری.</p>
-                    <input type="range" id="dim-org" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('org')">
-                </div>
-
-                <div class="slider-group">
-                    <div class="slider-header">
-                        <label for="dim-culture">۵. فرهنگ سازمانی (Culture):</label>
-                        <span class="slider-value" id="val-culture">5</span>
-                    </div>
-                    <p class="slider-desc">حمایت مدیریت ارشد از ایده‌های جدید، استقبال از تغییر، عدم ترس از شکست و کار تیمی.</p>
-                    <input type="range" id="dim-culture" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('culture')">
-                </div>
-
-                <div class="form-action">
-                    <button class="btn-primary w-full" onclick="calculateFitnessScore()">محاسبه شاخص تناسب با آینده <i data-lucide="bar-chart-2"></i></button>
-                </div>
-            </div>
-
-            <!-- Step 2: Results Panel -->
-            <div class="assessment-results" id="assessment-results" style="display: none;">
-                <div class="results-header">
-                    <h3>تحلیل بلوغ سازمانی</h3>
-                    <button class="btn-text" onclick="resetAssessment()"><i data-lucide="rotate-ccw"></i> ارزیابی مجدد</button>
-                </div>
-
-                <div class="results-layout">
-                    <div class="chart-wrapper">
-                        <canvas id="fitnessChart"></canvas>
-                    </div>
-
-                    <div class="insights-wrapper">
-                        <div class="score-badge-container">
-                            <span class="score-number" id="score-percentage">0%</span>
-                            <span class="score-title" id="score-status">در حال بارگذاری...</span>
-                        </div>
-
-                        <div class="insights-box">
-                            <h4>تفسیر و توصیه‌های استراتژیک:</h4>
-                            <p class="insight-text" id="insight-text">سیستم در حال ارزیابی پاسخ‌های شماست...</p>
-                            
-                            <div class="recommendations" id="recommendations-list"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Technology Radar -->
-    <section id="tech-radar" class="radar-section container">
-        <div class="section-header">
-            <span class="section-tag">مطالعه موردی: دویچه تلکام</span>
-            <h2>رادار تعاملی فناوری‌های نوظهور</h2>
-            <p>شبیه‌سازی رادار فناوری برای پایش مستمر روندها و فناوری‌ها. روی نقاط رادار کلیک کنید تا تحلیل و تاثیر استراتژیک آن‌ها را ببینید.</p>
-        </div>
-
-        <div class="radar-interactive-container glass-card">
-            <div class="radar-plot-wrapper">
-                <svg id="radar-svg" viewBox="0 0 500 500" width="100%" height="100%">
-                    <circle cx="250" cy="250" r="230" class="radar-ring ring-scan" />
-                    <circle cx="250" cy="250" r="170" class="radar-ring ring-assess" />
-                    <circle cx="250" cy="250" r="110" class="radar-ring ring-trial" />
-                    <circle cx="250" cy="250" r="50" class="radar-ring ring-adopt" />
-
-                    <line x1="25" y1="250" x2="475" y2="250" class="radar-axis" />
-                    <line x1="250" y1="25" x2="250" y2="475" class="radar-axis" />
-
-                    <text x="250" y="30" class="radar-ring-label">رصد (Scan)</text>
-                    <text x="250" y="90" class="radar-ring-label">ارزیابی (Assess)</text>
-                    <text x="250" y="150" class="radar-ring-label">آزمایش (Trial)</text>
-                    <text x="250" y="210" class="radar-ring-label">پذیرش (Adopt)</text>
-
-                    <text x="40" y="50" class="radar-quadrant-label">هوش مصنوعی و داده</text>
-                    <text x="360" y="50" class="radar-quadrant-label">شبکه‌های ارتباطی</text>
-                    <text x="40" y="460" class="radar-quadrant-label">رایانش و ابر نوظهور</text>
-                    <text x="360" y="460" class="radar-quadrant-label">بیوتک و فناوری همگرا</text>
-
-                    <circle cx="120" cy="110" r="8" class="radar-dot ai-dot" onclick="showTechDetail('genai')" />
-                    <circle cx="190" cy="180" r="8" class="radar-dot ai-dot" onclick="showTechDetail('agentic')" />
-                    <circle cx="90" cy="190" r="8" class="radar-dot ai-dot" onclick="showTechDetail('nlp')" />
-
-                    <circle cx="380" cy="100" r="8" class="radar-dot net-dot" onclick="showTechDetail('6g')" />
-                    <circle cx="320" cy="170" r="8" class="radar-dot net-dot" onclick="showTechDetail('iot')" />
-
-                    <circle cx="130" cy="370" r="8" class="radar-dot comp-dot" onclick="showTechDetail('quantum')" />
-                    <circle cx="180" cy="310" r="8" class="radar-dot comp-dot" onclick="showTechDetail('edge')" />
-
-                    <circle cx="340" cy="380" r="8" class="radar-dot bio-dot" onclick="showTechDetail('biocomputing')" />
-                    <circle cx="290" cy="320" r="8" class="radar-dot bio-dot" onclick="showTechDetail('metaverse')" />
-                </svg>
-            </div>
-
-            <div class="radar-info-sidebar">
-                <div class="radar-info-default active" id="radar-info-default">
-                    <div class="radar-pulse-icon"><i data-lucide="target"></i></div>
-                    <h3>رادار فناوری دویچه تلکام</h3>
-                    <p>یکی از ابزارهای استراتژیک برای جلوگیری از غافلگیری فناورانه. برای خواندن تحلیل هر روند, روی یکی از دایره‌های در حال نوسان رادار کلیک کنید.</p>
-                </div>
-
-                <div class="radar-info-detail" id="radar-info-detail" style="display: none;">
-                    <button class="btn-close" onclick="closeTechDetail()"><i data-lucide="x"></i></button>
-                    <span class="tech-tag" id="tech-quadrant">دسته فناوری</span>
-                    <h3 id="tech-title">نام فناوری</h3>
-                    <div class="tech-meta-row">
-                        <span class="meta-label">وضعیت رادار:</span>
-                        <span class="meta-val highlight" id="tech-status">Adopt</span>
-                    </div>
-                    <p class="tech-desc" id="tech-description">توضیحات فناوری...</p>
-                    <div class="tech-action-card">
-                        <h4>تاثیر استراتژیک بر سازمان:</h4>
-                        <p id="tech-impact">نقش استراتژیک فناوری...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: CLA Framework -->
-    <section id="cla-section" class="cla-section container">
-        <div class="section-header">
-            <span class="section-tag-cla">روش تحلیل لایه‌ای علت‌ها (CLA)</span>
-            <h2>فراتر از پیش‌بینی؛ ساختارشکنی و بازسازی آینده‌ها</h2>
-            <p>مبدع این نظریه، سهیل عنایت‌الله، آن را روشی عمیق برای تغییر در ناخودآگاه و اسطوره‌های جمعی در جهت خلق آینده‌های جایگزین معرفی می‌کند.</p>
-        </div>
-
-        <div class="cla-grid">
-            <div class="pyramid-container">
-                <div class="pyramid-wrapper">
-                    <div class="pyramid-layer layer-1 active" id="pyr-litany" onclick="showClaLayer('litany')">
-                        <span class="layer-num">L1</span>
-                        <span class="layer-name">لیتانی (Litany)</span>
-                    </div>
-                    <div class="pyramid-layer layer-2" id="pyr-systemic" onclick="showClaLayer('systemic')">
-                        <span class="layer-num">L2</span>
-                        <span class="layer-name">علل اجتماعی و ساختاری (Systemic)</span>
-                    </div>
-                    <div class="pyramid-layer layer-3" id="pyr-worldview" onclick="showClaLayer('worldview')">
-                        <span class="layer-num">L3</span>
-                        <span class="layer-name">گفتمان و جهان‌بینی (Worldview)</span>
-                    </div>
-                    <div class="pyramid-layer layer-4" id="pyr-myth" onclick="showClaLayer('myth')">
-                        <span class="layer-num">L4</span>
-                        <span class="layer-name">اسطوره و استعاره (Myth)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cla-info-card glass-card" id="cla-info-card">
-                <div class="cla-layer-detail active" id="cla-detail-litany">
-                    <span class="cla-detail-badge l1-badge">لایه اول: لیتانی (The Litany)</span>
-                    <h3>ظاهری‌ترین و آشکارترین سطح اخبار روزمره</h3>
-                    <p>مسائل، روندها و آمارهای کمی که روزانه در رسانه‌ها منتشر می‌شوند. اطلاعات در این سطح پراکنده، اغراق‌آمیز و بدون پیش‌زمینه تاریخی تحلیل می‌شوند. واکنش عمومی درماندگی یا سرزنش دیگران است.</p>
-                    <div class="cla-meta-grid">
-                        <div class="cla-meta-box">
-                            <strong><i data-lucide="help-circle"></i> سوال کلیدی:</strong>
-                            <p>رسانه‌ها و افکار عمومی درباره این مشکل چه می‌گویند؟</p>
-                        </div>
-                        <div class="cla-meta-box">
-                            <strong><i data-lucide="languages"></i> زبان غالب لایه:</strong>
-                            <p>روزنامه‌نگاری، آمار خام، احساسی و واکنش‌گرا</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cla-layer-detail" id="cla-detail-systemic">
-                    <span class="cla-detail-badge l2-badge">لایه دوم: علل نظام‌مند (Social/Systemic)</span>
-                    <h3>علت‌های فنی، اقتصادی، تاریخی و سیاسی</h3>
-                    <p>بررسی ریشه‌های ساختاری و سیستمی که لایه لیتانی را شکل می‌دهند. این سطح تحت تسلط سازمان‌های سیاست‌گذار، دانشگاه‌ها و کارشناسان فنی است. قوانین، ساختارهای اقتصادی و سیاست‌ها در اینجا بررسی می‌شوند.</p>
-                    <div class="cla-meta-grid">
-                        <div class="cla-meta-box">
-                            <strong><i data-lucide="help-circle"></i> سوال کلیدی:</strong>
-                            <p>کدام سیاست‌ها، نهادها و ساختارها این مسئله را پدید آورده‌اند؟</p>
-                        </div>
-                        <div class="cla-meta-box">
-                            <strong><i data-lucide="languages"></i> زبان غالب لایه:</strong>
-                            <p>علمی، سیاستی، بوروکراتیک و مدیریت سیستم‌ها</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cla-layer-detail" id="cla-detail-worldview">
-                    <span class="cla-detail-badge l3-badge">لایه سوم: جهان‌بینی (Discourse/Worldview)</span>
-                    <h3>چارچوب‌های فکری و ساختارهای ایدئولوژیک</h3>
-                    <p>گفتمان‌هایی که به ساختارها و سیاست‌های لایه دوم مشروعیت می‌بخشند. این لایه نحوه تعریف مسئله را بررسی می‌کند و نشان می‌دهد چگونه جهان‌بینی‌های مختلف (سنتی، لیبرال، انقلابی، سبز) مسئله را بازتعریف می‌کنند.</p>
-                    <div class="cla-meta-grid">
-                        <div class="cla-meta-box">
-                            <strong><i data-lucide="help-circle"></i> سوال کلیدی:</strong>
-                            <p>چه باورها، ایدئولوژی‌ها و گفتمان‌هایی از این ساختارها پشتیبانی می‌کنند؟</p>
-                        </div>
-                        <div class="cla-meta-box">
-                            <strong><i data-lucide="languages"></i> زبان غالب لایه:</strong>
-                            <p>فلسفی، فرهنگی، تحلیل گفتمان و تئوریک عمیق</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cla-layer-detail" id="cla-detail-myth">
-                    <span class="cla-detail-badge l4-badge">لایه چهارم: اسطوره‌ها (Myth/Metaphor)</span>
-                    <h3>ناخودآگاه جمعی، کهن‌الگوها و استعاره‌ها</h3>
-                    <p>عمیق‌ترین لایه که به روایات داستانی، احساسی، استعاره‌های کهن و الگوهای تمدنی پنهان می‌پردازد. این لایه داستان‌های ناخودآگاهی است که جهان‌بینی‌ها را زنده نگه می‌دارند. تحول پایدار با خلق استعاره‌های جدید در این لایه رخ می‌دهد.</p>
-                    <div class="cla-meta-grid">
-                        <div class="cla-meta-box">
-                            <strong><i data-lucide="help-circle"></i> سوال کلیدی:</strong>
-                            <p>کدام کهن‌الگو، داستان تاریخی یا استعاره در ناخودآگاه ما حاکم است؟</p>
-                        </div>
-                        <div class="cla-meta-box">
-                            <strong><i data-lucide="languages"></i> زبان غالب لایه:</strong>
-                            <p>هنری، اسطوره‌ای، استعاره، نمادین و تصویری احساسی</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: CLA Case Studies -->
-    <section id="cla-cases" class="cla-cases-section container">
-        <div class="section-header">
-            <span class="section-tag-cla">تحلیل‌های موردی عمیق</span>
-            <h2>کاوش لایه‌ای در مسائل ژئوپلیتیک و ملی</h2>
-            <p>تنش ایران-اسرائیل، روابط ایران-آمریکا در قیاس با تاریخ باستان، بحران آب و سرنوشت آینده ایران را از نگاه CLA بررسی کنید.</p>
-        </div>
-
-        <div class="cases-tabs-container">
-            <button class="case-tab active" onclick="switchCaseTab('israel')">ایران &amp; اسرائیل</button>
-            <button class="case-tab" onclick="switchCaseTab('usa')">ایران &amp; آمریکا (روم باستان)</button>
-            <button class="case-tab" onclick="switchCaseTab('water')">بحران آب در ایران</button>
-            <button class="case-tab" onclick="switchCaseTab('future-iran')">مسئله اصلی آینده ایران</button>
-        </div>
-
-        <div class="case-content-display glass-card" id="case-content-card"></div>
-    </section>
-
-    <!-- Section: Interactive CLA Workspace -->
-    <section id="cla-workspace" class="workspace-section container">
-        <div class="section-header">
-            <span class="section-tag-cla">کارگاه آینده‌پژوهی</span>
-            <h2>کارگاه تعاملی تفکر لایه‌ای (CLA)</h2>
-            <p>یک مسئله را انتخاب کنید یا مسئله اختصاصی خود را بنویسید تا آن را به چهار لایه هرم عنایت‌الله بشکنید و سناریوی جایگزین خلق کنید.</p>
-        </div>
-
-        <div class="workspace-grid">
-            <div class="workspace-controls glass-card">
-                <h3>پنل کارگاه</h3>
-                
-                <div class="input-group">
-                    <label for="template-select"><i data-lucide="copy"></i> انتخاب قالب مسئله پیش‌فرض:</label>
-                    <select id="template-select" onchange="loadWorkspaceTemplate()">
-                        <option value="custom">-- تحلیل شخصی و دلخواه --</option>
-                        <option value="brain-drain" selected>فرار مغزها و نخبگان (Brain Drain)</option>
-                        <option value="inflation">تورم و بحران معیشتی</option>
-                        <option value="generation-gap">بحران تفاوت و شکاف نسل‌ها</option>
-                    </select>
-                </div>
-
-                <div class="input-group">
-                    <label for="input-problem-title">عنوان مسئله تحلیل شما:</label>
-                    <input type="text" id="input-problem-title" placeholder="مثلاً: فرار مغزها..." value="فرار مغزها و نخبگان">
-                </div>
-
-                <div class="step-input-group">
-                    <label for="input-litany">۱. لیتانی (اخبار و آمارهای سطحی):</label>
-                    <textarea id="input-litany" rows="2" placeholder="چه آمارها یا سرخط‌های خبری هر روز تکرار می‌شوند؟"></textarea>
-                </div>
-
-                <div class="step-input-group">
-                    <label for="input-systemic">۲. علل ساختاری و نظام‌مند (سیاست‌ها، قوانین، اقتصاد):</label>
-                    <textarea id="input-systemic" rows="2" placeholder="کدام ساختارها، قوانین یا دلایل اقتصادی در پشت پرده هستند؟"></textarea>
-                </div>
-
-                <div class="step-input-group">
-                    <label for="input-worldview">۳. جهان‌بینی و گفتمان‌های رقیب:</label>
-                    <textarea id="input-worldview" rows="2" placeholder="کدام تفکرات و ایدئولوژی‌ها به این ساختارها مشروعیت می‌دهند؟"></textarea>
-                </div>
-
-                <div class="step-input-group">
-                    <label for="input-myth">۴. اسطوره و استعاره پنهان (و استعاره جایگزین جدید):</label>
-                    <textarea id="input-myth" rows="3" placeholder="کدام داستان ناخودآگاه حاکم است؟ استعاره جایگزین جدید چیست؟"></textarea>
-                </div>
-
-                <button class="btn-primary w-full" onclick="generateClaCard()"><i data-lucide="check"></i> به‌روزرسانی کارت تحلیل لایه‌ای</button>
-            </div>
-
-            <div class="workspace-preview">
-                <div class="rendered-cla-card" id="rendered-cla-card">
-                    <div class="card-render-header">
-                        <span class="preview-tag">خروجی کارگاه CLA</span>
-                        <h3 id="render-title">عنوان مسئله</h3>
-                        <span class="divider"></span>
-                    </div>
-                    
-                    <div class="render-layers">
-                        <div class="render-layer-box r-l1">
-                            <span class="lbl">لیتانی (Litany)</span>
-                            <p id="render-l1">محتوا...</p>
-                        </div>
-                        <div class="render-layer-box r-l2">
-                            <span class="lbl">علل ساختاری (Systemic)</span>
-                            <p id="render-l2">محتوا...</p>
-                        </div>
-                        <div class="render-layer-box r-l3">
-                            <span class="lbl">جهان‌بینی (Worldview)</span>
-                            <p id="render-l3">محتوا...</p>
-                        </div>
-                        <div class="render-layer-box r-l4">
-                            <span class="lbl">اسطوره و استعاره جدید (Myth)</span>
-                            <p id="render-l4">محتوا...</p>
-                        </div>
-                    </div>
-
-                    <div class="card-render-footer">
-                        <p>توسعه‌یافته در کارگاه تعاملی Foresight Hub</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW Section: Futures Wheel -->
-    <section id="futures-wheel" class="wheel-section container">
-        <div class="section-header">
-            <span class="section-tag-cla">روش چرخ آینده (Futures Wheel)</span>
-            <h2>پیامدهای زنجیره‌ای تغییر اقلیم و امنیت ملی ایران</h2>
-            <p>جروم سی. گلن این روش را برای عبور از تفکر خطی به تفکر شبکه‌ای طراحی کرد. روی پیامدهای مرتبه اول کلیک کنید تا تاثیرات پنهان رده‌های بعدی نمایان شود.</p>
-        </div>
-
-        <div class="wheel-interactive-container glass-card">
-            <!-- Radial Visualizer representation -->
-            <div class="wheel-visualizer-wrapper">
-                <div class="wheel-center-hub">
-                    <span class="hub-label">تغییر اقلیم در ایران</span>
-                    <span class="hub-sub">(کاهش بارش و افزایش دما)</span>
-                </div>
-                
-                <!-- 1st Order Outer Nodes -->
-                <div class="wheel-node w-node-drought" onclick="showWheelDetail('drought')">
-                    <span class="w-order">مرتبه ۱</span>
-                    <span class="w-title">خشکسالی و کم‌آبی شدید</span>
-                </div>
-                
-                <div class="wheel-node w-node-food" onclick="showWheelDetail('food')">
-                    <span class="w-order">مرتبه ۱</span>
-                    <span class="w-title">کاهش کشت و ناامنی غذایی</span>
-                </div>
-                
-                <div class="wheel-node w-node-dust" onclick="showWheelDetail('dust')">
-                    <span class="w-order">مرتبه ۱</span>
-                    <span class="w-title">طوفان‌های شن و ریزگردها</span>
-                </div>
-            </div>
-
-            <!-- Detail Sidebar -->
-            <div class="wheel-sidebar">
-                <div class="wheel-sidebar-default active" id="wheel-sidebar-default">
-                    <div class="wheel-pulse-icon"><i data-lucide="compass"></i></div>
-                    <h3>زنجیره پیامدهای اقلیمی</h3>
-                    <p>روی یکی از سه دکمه‌ی پیامد مرتبه اول در سمت راست کلیک کنید تا زنجیره کامل پیامدهای مرتبه دوم و سوم در حوزه‌ی نظامی و امنیت ملی کشور لود شود.</p>
-                </div>
-
-                <div class="wheel-sidebar-detail" id="wheel-sidebar-detail" style="display: none;">
-                    <button class="btn-close" onclick="closeWheelDetail()"><i data-lucide="x"></i></button>
-                    <span class="tech-tag" id="wheel-detail-tag">مرتبه اول</span>
-                    <h3 id="wheel-detail-title">عنوان پیامد</h3>
-                    <p class="tech-desc" id="wheel-detail-desc">توضیح مرتبه اول...</p>
-                    
-                    <div class="wheel-chain-wrapper">
-                        <!-- Order 2 -->
-                        <div class="wheel-chain-card w-c2">
-                            <span class="lbl-order">پیامدهای ثانویه (مرتبه ۲):</span>
-                            <p id="wheel-2nd-text">توضیح...</p>
-                        </div>
-                        <!-- Order 3 -->
-                        <div class="wheel-chain-card w-c3">
-                            <span class="lbl-order">پیامدهای نهایی و امنیتی (مرتبه ۳):</span>
-                            <p id="wheel-3rd-text">توضیح...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Challenges -->
-    <section id="challenges" class="challenges-section container">
-        <div class="section-header">
-            <span class="section-tag">موانع پیاده‌سازی</span>
-            <h2>چالش‌ها و راه‌حل‌های دستیابی به Future FITness</h2>
-            <p>عبور از وضعیت سنتی به وضعیت متناسب با آینده، با موانعی همراه است که باید به‌طور سیستماتیک برطرف شوند.</p>
-        </div>
-
-        <div class="accordion-container">
-            <div class="accordion-item" onclick="toggleAccordion(this)">
-                <div class="accordion-trigger">
-                    <span class="accordion-num">۰۱</span>
-                    <h3>مقاومت سازمانی در برابر تغییر</h3>
-                    <span class="accordion-icon"><i data-lucide="chevron-down"></i></span>
-                </div>
-                <div class="accordion-content">
-                    <p><strong>چالش:</strong> بسیاری از مدیران و کارمندان به دلیل ترس از دست دادن جایگاه، عدم آشنایی با فرآیندهای جدید و تمایل به حفظ وضع موجود، در مقابل روندهای جدید مقاومت می‌کنند.</p>
-                    <p class="solution"><strong>راه‌حل استراتژیک:</strong> ایجاد فرهنگ پذیرش مداوم تغییر، ترویج تفکر انطباق‌پذیر از بالا به پایین و مشارکت دادن فعال کارکنان در فرآیند رصد و نوآوری.</p>
-                </div>
-            </div>
-
-            <div class="accordion-item" onclick="toggleAccordion(this)">
-                <div class="accordion-trigger">
-                    <span class="accordion-num">۰۲</span>
-                    <h3>شکاف مهارتی در نیروی کار</h3>
-                    <span class="accordion-icon"><i data-lucide="chevron-down"></i></span>
-                </div>
-                <div class="accordion-content">
-                    <p><strong>چالش:</strong> تغییرات فناوری (مانند هوش مصنوعی) به قدری سریع است که مهارت‌های فعلی نیروی کار به سرعت منسوخ شده و سازمان با کمبود شدید شایستگی‌های نوین مواجه می‌شود.</p>
-                    <p class="solution"><strong>راه‌حل استراتژیک:</strong> سرمایه‌گذاری دائمی در برنامه‌های بازآموزی (Reskilling) و ارتقای مهارت (Upskilling) کارکنان و ایجاد اکوسیستم‌های یادگیری مداوم.</p>
-                </div>
-            </div>
-
-            <div class="accordion-item" onclick="toggleAccordion(this)">
-                <div class="accordion-trigger">
-                    <span class="accordion-num">۰۳</span>
-                    <h3>پیچیدگی در مدیریت اکوسیستم‌های تعاملی</h3>
-                    <span class="accordion-icon"><i data-lucide="chevron-down"></i></span>
-                </div>
-                <div class="accordion-content">
-                    <p><strong>چالش:</strong> تناسب با آینده نیازمند همکاری با استارتاپ‌ها، دانشگاه‌ها و رقبا است. هماهنگی، توافقات حقوقی و ادغام دانش‌های گوناگون در یک اکوسیستم مشترک بسیار پیچیده است.</p>
-                    <p class="solution"><strong>راه‌حل استراتژیک:</strong> استقرار ساختارهای همکاری باز (Open Innovation)، استفاده از پلتفرم‌های دیجیتال مشترک و تدوین استراتژی‌های برد-برد برای شرکا.</p>
-                </div>
-            </div>
-
-            <div class="accordion-item" onclick="toggleAccordion(this)">
-                <div class="accordion-trigger">
-                    <span class="accordion-num">۰۴</span>
-                    <h3>تعارض اهداف کوتاه‌مدت و بلندمدت</h3>
-                    <span class="accordion-icon"><i data-lucide="chevron-down"></i></span>
-                </div>
-                <div class="accordion-content">
-                    <p><strong>چالش:</strong> فشارهای بازار و سهامداران برای کسب سود کوتاه‌مدت، منابع مالی و زمانی لازم برای سرمایه‌گذاری بر روی آینده‌پژوهی و پروژه‌های نوآورانه بلندمدت را از بین می‌برد.</p>
-                    <p class="solution"><strong>راه‌حل استراتژیک:</strong> ایجاد تعادل پویا در سبد دارایی‌ها (استفاده از مدل نوآوری سه افق)، متعهد کردن بودجه مجزا برای آینده‌نگاری و ارزیابی عملکرد مدیران بر اساس شاخص‌های پایداری بلندمدت.</p>
-                </div>
-            </div>
+        <!-- Scholarly Footnote/Citations -->
+        <div class="citation-box glass-card" style="margin-top: 80px;">
+            <h4><i data-lucide="book-open" style="vertical-align: middle; margin-left: 8px;"></i> مرجع علمی پورتال:</h4>
+            <p style="margin-top: 8px; font-size: 0.9rem; line-height: 1.6;">
+                این پورتال آموزشی-کاربردی با ادغام چارچوب‌های اصلی آینده‌پژوهی توسعه یافته است:
+                <br>
+                ۱. مدل **Future FITness** رنه روهربک برگرفته از کتاب دانشگاهی 
+                <a href="https://rene-rohrbeck.com/about-foresight/" target="_blank">Corporate Foresight: Towards a Maturity Model</a> (2010).
+                <br>
+                ۲. روش **تحلیل لایه‌ای علت‌ها (CLA)** بر اساس تئوری سهیل عنایت‌الله منتشر شده در پلتفرم 
+                <a href="https://metafuture.org" target="_blank">Metafuture</a>.
+                <br>
+                ۳. متدولوژی **چرخ آینده** ابداع شده توسط جروم سی. گلن در راهنمای روش‌شناسی 
+                <a href="http://www.millennium-project.org" target="_blank">The Millennium Project</a>.
+            </p>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="main-footer">
-        <div class="footer-container container">
+        <div class="footer-container container" style="padding-top: 0; padding-bottom: 20px;">
             <div class="footer-info">
                 <div class="footer-logo">
                     <span class="logo-icon"><i data-lucide="compass"></i></span>
@@ -796,9 +154,6 @@
                     <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
                         <i data-lucide="file-text"></i> مشاهده رزومه و سوابق
                     </a>
-                    <a href="https://docs.google.com/presentation/d/1O3fsbT-B7aq1NNIH9qi7z5tQ8V8gJEko/edit?usp=sharing&ouid=112978107168753737030&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="profile-link-btn btn-outline">
-                        <i data-lucide="presentation"></i> فایل اصلی ارائه
-                    </a>
                 </div>
             </div>
         </div>
@@ -808,7 +163,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="app.js"></script>
+    <script src="main.js"></script>
     <script src="animation.js"></script>
 </body>
 </html>

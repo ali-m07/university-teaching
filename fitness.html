@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future FITness &amp; Readiness | تناسب و آمادگی با آینده</title>
+    <!-- Google Fonts: Vazirmatn for Persian, Plus Jakarta Sans for English/Numbers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">صفحه نخست</a>
+            <a href="fitness.html" class="active">آمادگی و تناسب (FITness)</a>
+            <a href="cla.html">تحلیل لایه‌ای علت‌ها (CLA)</a>
+            <a href="futures-wheel.html">چرخ آینده (Futures Wheel)</a>
+        </nav>
+        <div class="header-action">
+            <a href="#assessment" class="btn-primary-sm">ارزیابی بلوغ سازمان</a>
+        </div>
+    </header>
+
+    <!-- Hero / Header Section -->
+    <section class="container" style="padding-top: 130px; padding-bottom: 20px; text-align: center;">
+        <span class="section-tag" style="background: rgba(0, 229, 255, 0.08); color: var(--color-f); border-color: rgba(0, 229, 255, 0.2);">رنه روهربک</span>
+        <h1 style="font-size: 2.5rem; margin-top: 10px; margin-bottom: 15px; color: #fff;">Future FITness vs Future Readiness</h1>
+        <p style="max-width: 800px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+            بررسی قابلیت‌های پویای انطباق مستمر سازمان با تغییرات بجای انفعال و آمادگی محض برای سناریوهای تک‌بعدی.
+        </p>
+    </section>
+
+    <!-- Section: Comparison (Readiness vs Fitness) -->
+    <section id="comparison" class="comparison-section container" style="padding-top: 40px; padding-bottom: 60px;">
+        <!-- Interactive Switcher -->
+        <div class="switch-container">
+            <button class="switch-btn active" id="btn-readiness" onclick="switchView('readiness')">
+                <i data-lucide="eye"></i> Future Readiness (آمادگی)
+            </button>
+            <button class="switch-btn" id="btn-fitness" onclick="switchView('fitness')">
+                <i data-lucide="zap"></i> Future Fitness (تناسب)
+            </button>
+        </div>
+
+        <!-- Comparison Cards Grid -->
+        <div class="comparison-grid" id="comparison-grid">
+            <!-- Focus Card -->
+            <div class="comp-card">
+                <div class="comp-icon"><i data-lucide="target"></i></div>
+                <h3>تمرکز اصلی (Focus)</h3>
+                <div class="comp-content-wrapper">
+                    <div class="comp-content readiness active">
+                        <h4>پیش‌بینی و برنامه‌ریزی</h4>
+                        <p>شناسایی روندهای فعلی و طرح‌ریزی برنامه‌های مشخص برای سناریوهای محتمل کوتاه‌مدت و میان‌مدت.</p>
+                    </div>
+                    <div class="comp-content fitness">
+                        <h4>سازگاری، نوآوری و رشد مداوم</h4>
+                        <p>توسعه قابلیت‌های پویا برای هم تکاملی با محیط در حال تغییر و بهینه‌سازی مداوم عملکرد.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal Card -->
+            <div class="comp-card">
+                <div class="comp-icon"><i data-lucide="award"></i></div>
+                <h3>هدف نهایی (Goal)</h3>
+                <div class="comp-content-wrapper">
+                    <div class="comp-content readiness active">
+                        <h4>آمادگی برای تغییرات</h4>
+                        <p>ایجاد سپرهای حفاظتی و طرح‌های واکنش سریع در مواجهه با بحران‌ها یا تغییرات پیش‌بینی‌شده.</p>
+                    </div>
+                    <div class="comp-content fitness">
+                        <h4>شکل‌دهی و ایجاد آینده‌های مطلوب</h4>
+                        <p>تغییر فعالانه بازی به نفع خود، نوآوری در مدل کسب‌وکار و راهبری بازار به جای دنباله‌روی.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approach Card -->
+            <div class="comp-card">
+                <div class="comp-icon"><i data-lucide="navigation"></i></div>
+                <h3>رویکرد (Approach)</h3>
+                <div class="comp-content-wrapper">
+                    <div class="comp-content readiness active">
+                        <h4>پیشگیرانه و واکنشی</h4>
+                        <p>اتکا به پیش‌بینی‌ها، تحلیل‌های آماری و فرمول‌های استراتژیک سنتی برای آمادگی قبل از وقوع رویداد.</p>
+                    </div>
+                    <div class="comp-content fitness">
+                        <h4>پویا و انطباق‌پذیر</h4>
+                        <p>رویکرد یادگیرنده، منعطف و چابک با ظرفیت بالایی برای تجدیدنظر در مفروضات و آزمایش ایده‌های جدید.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Real-World Case Studies -->
+    <section id="examples" class="examples-section container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="section-header">
+            <span class="section-tag">مطالعات موردی عمیق</span>
+            <h2>تحلیل علمی پیروزی‌ها و شکست‌های راهبردی</h2>
+            <p>چگونه داشتن یا فقدان قابلیت‌های پویای تناسب با آینده سرنوشت بزرگ‌ترین سازمان‌ها و تمدن‌ها را رقم می‌زند.</p>
+        </div>
+
+        <div class="examples-grid">
+            <!-- Netflix Card -->
+            <div class="example-card glass-card">
+                <div class="ex-badge success">موفقیت (FITness)</div>
+                <h3>نتفلیکس (Netflix)</h3>
+                <p>
+                    <strong>تغییر مداوم مدل کسب‌وکار:</strong> نتفلیکس کار خود را با ارسال پستی دی‌وی‌دی آغاز کرد. با پایش مستمر روندهای پهنای باند و فناوری، آنها به سرعت به سیستم پخش اینترنتی (Streaming) مهاجرت کردند. در گام بعد، با شناسایی ریسک انحصار استودیوها، به ساخت محتوای اختصاصی (Originals) روی آوردند. امروزه آنها با بکارگیری هوش مصنوعی در پیشنهاد فیلم و ورود به صنعت بازی‌های موبایل، مدل خود را بازتعریف می‌کنند. این نمونه بارزی از توانایی تحول مستمر DNA سازمان است.
+                </p>
+            </div>
+
+            <!-- Kodak Card -->
+            <div class="example-card glass-card">
+                <div class="ex-badge failure">شکست جهان‌بینی</div>
+                <h3>کداک (Kodak)</h3>
+                <p>
+                    <strong>غفلت از جهان‌بینی نوظهور:</strong> جالب است بدانید که کداک خود مخترع اولین دوربین دیجیتال در سال ۱۹۷۵ بود! آنها آمادگی فناورانه (Readiness) را در آزمایشگاه‌های خود داشتند، اما به دلیل سود سرشار ناشی از فروش و چاپ فیلم‌های سنتی، از سرمایه‌گذاری روی آن سرباز زدند. مدیران کداک نتوانستند پارادایم ذهنی خود را از «ثبت خاطرات روی کاغذ» به «اشتراک لحظه‌ای تصاویر دیجیتال» تغییر دهند و سرانجام در سال ۲۰۱۲ اعلام ورشکستگی کردند.
+                </p>
+            </div>
+
+            <!-- Nokia Card -->
+            <div class="example-card glass-card">
+                <div class="ex-badge failure">شکست انطباق پویا</div>
+                <h3>نوکیا (Nokia)</h3>
+                <p>
+                    <strong>فقدان چابکی و انطباق‌پذیری:</strong> نوکیا سال‌ها سهم غالب بازار موبایل جهان را در دست داشت. آنها سیستم‌عامل سیمبین را توسعه داده بودند، اما با ورود آیفون و سیستم‌عامل اندروید، سیمبین صلب و ناکارآمد شد. ساختار بوروکراتیک و فرهنگ متصلب مدیریت عالی مانع از بازبینی سریع و مهاجرت پلتفرمی شد. ترس از تخریب سبد محصولات فعلی سبب واکنش دیرهنگام شد و نوکیا کل بازار تلفن همراه هوشمند را به رقبا واگذار کرد.
+                </p>
+            </div>
+
+            <!-- Sassanid Empire Card -->
+            <div class="example-card glass-card">
+                <div class="ex-badge historical">فروپاشی تاریخی</div>
+                <h3>امپراتوری ساسانی در برابر روم شرقی</h3>
+                <p>
+                    <strong>جمود ایدئولوژیک و صلبیت سیستمی:</strong> هر دو امپراتوری قرن‌ها در جنگ‌های فرساینده بودند و قابلیت‌های نظامی و دفاعی بالایی (Readiness) داشتند. با این وجود، ساسانیان با تکیه بر اسطوره طبقاتی شاهنشاهی یزدگردی و جمود کامل ساختار اجتماعی نتوانستند پیدایش و نفوذ یک جهان‌بینی تازه و چابک اجتماعی در شبه‌جزیره عربستان را درک و تحلیل کنند. این شکاف عمیق هویتی و فرسودگی سیستمی منجر به فروپاشی کامل تمدن آنها در برابر نیروی نوظهور اسلام شد.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: FITness Formula -->
+    <section id="fitness-formula" class="formula-section container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="section-header">
+            <span class="section-tag">سرواژه استراتژیک</span>
+            <h2>فرمول سه بخشی Future FITness</h2>
+            <p>این مدل آینده‌نگاری (F) را به موتور محرک نوآوری (I) پیوند داده و تحول بنیادین (T) را به ثمر می‌نشاند.</p>
+        </div>
+
+        <div class="formula-display">
+            <!-- Letter F -->
+            <div class="formula-letter-box" onclick="showFormulaDetail('foresight')">
+                <div class="letter-glow f-glow"></div>
+                <div class="letter">F</div>
+                <div class="letter-label">Foresight</div>
+                <div class="letter-desc">آینده‌نگاری</div>
+            </div>
+            
+            <div class="formula-operator"><i data-lucide="plus"></i></div>
+
+            <!-- Letter I -->
+            <div class="formula-letter-box" onclick="showFormulaDetail('innovation')">
+                <div class="letter-glow i-glow"></div>
+                <div class="letter">I</div>
+                <div class="letter-label">Innovation</div>
+                <div class="letter-desc">نوآوری</div>
+            </div>
+
+            <div class="formula-operator"><i data-lucide="arrow-left-right"></i></div>
+
+            <!-- Letter T -->
+            <div class="formula-letter-box" onclick="showFormulaDetail('transformation')">
+                <div class="letter-glow t-glow"></div>
+                <div class="letter">T</div>
+                <div class="letter-label">Transformation</div>
+                <div class="letter-desc">تحول</div>
+            </div>
+        </div>
+
+        <!-- Formula Detailed Panel -->
+        <div class="formula-detail-panel" id="formula-detail-panel">
+            <div class="formula-detail-content active" id="detail-default">
+                <p class="prompt-text"><i data-lucide="mouse-pointer-click"></i> برای مشاهده جزئیات بر روی هر یک از حروف بالا کلیک کنید.</p>
+            </div>
+
+            <div class="formula-detail-content" id="detail-foresight">
+                <div class="detail-header">
+                    <span class="detail-badge f-bg">Foresight / آینده‌نگاری</span>
+                    <h3>رصد و تفسیر مستمر سیگنال‌های تغییر</h3>
+                </div>
+                <p>آینده‌نگاری توانایی سیستماتیک سازمان در پایش محیط بیرونی، کشف سیگنال‌های ضعیف (Weak Signals) تغییر و درک روندهاست. این گام متناظر با فازهای <strong>Perceiving (درک)</strong> و <strong>Prospecting (کاوش)</strong> در نظریه روهربک است.</p>
+                <ul class="detail-list">
+                    <li><i data-lucide="check-circle" class="f-text"></i> رصد دائمی محیط کلان اقتصادی، تکنولوژیک و سیاسی.</li>
+                    <li><i data-lucide="check-circle" class="f-text"></i> تحلیل سناریوهای محتمل و تدوین نقشه‌راه.</li>
+                    <li><i data-lucide="check-circle" class="f-text"></i> جلوگیری از غافلگیری استراتژیک در اثر تحولات ناگهانی.</li>
+                </ul>
+            </div>
+
+            <div class="formula-detail-content" id="detail-innovation">
+                <div class="detail-header">
+                    <span class="detail-badge i-bg">Innovation / نوآوری</span>
+                    <h3>تبدیل بینش‌های حاصله به محصولات و ابزارهای نوین</h3>
+                </div>
+                <p>نوآوری موتور اجرایی کردن آینده‌نگاری است. در این فاز، ایده و تحلیل‌ها به نمونه‌های اولیه سریع و طرح‌های آزمایشی تبدیل می‌شوند که متناظر با فاز <strong>Probing (آزمودن)</strong> است و نیازمند نقش‌های آغازگر و مخالف است.</p>
+                <ul class="detail-list">
+                    <li><i data-lucide="check-circle" class="i-text"></i> ساخت نمونه‌های اولیه سریع (Rapid Prototyping) برای سنجش ایده.</li>
+                    <li><i data-lucide="check-circle" class="i-text"></i> به چالش کشیدن مفروضات فعلی سازمان توسط نقش مخالف (Opponent).</li>
+                    <li><i data-lucide="check-circle" class="i-text"></i> راه‌اندازی پروژه‌های آزمایشی جهت اعتبارسنجی بازار.</li>
+                </ul>
+            </div>
+
+            <div class="formula-detail-content" id="detail-transformation">
+                <div class="detail-header">
+                    <span class="detail-badge t-bg">Transformation / تحول</span>
+                    <h3>بازطراحی ساختاری و فرهنگی برای بقای بلندمدت</h3>
+                </div>
+                <p>تحول، غایت نهایی این فرآیند است. آینده‌نگری و نوآوری نباید به عنوان پروژه‌های حاشیه‌ای دیده شوند، بلکه باید فرهنگ، ساختار و نحوه تخصیص منابع سازمان را تغییر داده و DNA جدیدی بسازند.</p>
+                <ul class="detail-list">
+                    <li><i data-lucide="check-circle" class="t-text"></i> اصلاح ساختار رسمی و کاهش بوروکراسی برای چالاکی بیشتر.</li>
+                    <li><i data-lucide="check-circle" class="t-text"></i> پذیرش یادگیری مداوم و کاهش فرهنگ ترس از شکست در میان پرسنل.</li>
+                    <li><i data-lucide="check-circle" class="t-text"></i> انطباق مداوم قابلیت‌های پویا با روندهای تکنولوژیک نوظهور.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Assessment Tool -->
+    <section id="assessment" class="assessment-section container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="section-header">
+            <span class="section-tag">ابزار ارزیابی تعاملی</span>
+            <h2>سنجش شاخص بلوغ آینده‌نگاری سازمان</h2>
+            <p>بر اساس ابعاد پنج‌گانه مدل بلوغ رنه روهربک، سطح تناسب با آینده سازمان خود را ارزیابی کرده و تحلیل استراتژیک دریافت کنید.</p>
+        </div>
+
+        <div class="assessment-container glass-card">
+            <!-- Step 1: Sliders Form -->
+            <div class="assessment-form" id="assessment-form">
+                <h3>پرسشنامه خودارزیابی بلوغ آینده‌نگاری</h3>
+                
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <label for="dim-info">۱. اطلاعات و رصد (Information):</label>
+                        <span class="slider-value" id="val-info">5</span>
+                    </div>
+                    <p class="slider-desc">دسترسی، پایش و تحلیل سیگنال‌های تغییر و روندهای کلان بیرونی در سازمان.</p>
+                    <input type="range" id="dim-info" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('info')">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <label for="dim-methods">۲. روش‌ها و ابزارها (Methods):</label>
+                        <span class="slider-value" id="val-methods">5</span>
+                    </div>
+                    <p class="slider-desc">استفاده منظم از متدهای علمی آینده‌پژوهی نظیر سناریونویسی، دلفی و رادار فناوری.</p>
+                    <input type="range" id="dim-methods" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('methods')">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <label for="dim-people">۳. افراد و تخصص‌ها (People):</label>
+                        <span class="slider-value" id="val-people">5</span>
+                    </div>
+                    <p class="slider-desc">آموزش مهارتی کارکنان، تعامل با خبرگان خارجی و میزان مشارکت بدنه سازمان در تفکر آینده‌پژوهانه.</p>
+                    <input type="range" id="dim-people" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('people')">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <label for="dim-org">۴. سازماندهی رسمی (Formal Org):</label>
+                        <span class="slider-value" id="val-org">5</span>
+                    </div>
+                    <p class="slider-desc">وجود ساختارهای سازمانی مجزا برای آینده‌نگاری، گره خوردن خروجی‌ها به تصمیمات استراتژیک هیئت مدیره و بودجه مستقل.</p>
+                    <input type="range" id="dim-org" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('org')">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <label for="dim-culture">۵. فرهنگ سازمانی (Culture):</label>
+                        <span class="slider-value" id="val-culture">5</span>
+                    </div>
+                    <p class="slider-desc">پذیرش تغییر، نبود ترس از شکست و کارآفرینی درون‌سازمانی با حمایت کامل مدیریت ارشد.</p>
+                    <input type="range" id="dim-culture" min="1" max="10" value="5" class="range-slider" oninput="updateSliderVal('culture')">
+                </div>
+
+                <div class="form-action">
+                    <button class="btn-primary w-full" onclick="calculateFitnessScore()">محاسبه شاخص بلوغ <i data-lucide="bar-chart-2"></i></button>
+                </div>
+            </div>
+
+            <!-- Step 2: Results Panel -->
+            <div class="assessment-results" id="assessment-results" style="display: none;">
+                <div class="results-header">
+                    <h3>تحلیل بلوغ سازمانی</h3>
+                    <button class="btn-text" onclick="resetAssessment()"><i data-lucide="rotate-ccw"></i> ارزیابی مجدد</button>
+                </div>
+
+                <div class="results-layout">
+                    <div class="chart-wrapper">
+                        <canvas id="fitnessChart"></canvas>
+                    </div>
+
+                    <div class="insights-wrapper">
+                        <div class="score-badge-container">
+                            <span class="score-number" id="score-percentage">0%</span>
+                            <span class="score-title" id="score-status">در حال تحلیل...</span>
+                        </div>
+
+                        <div class="insights-box">
+                            <h4>تفسیر استراتژیک بلوغ:</h4>
+                            <p class="insight-text" id="insight-text">در حال محاسبه...</p>
+                            
+                            <div class="recommendations" id="recommendations-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Technology Radar -->
+    <section id="tech-radar" class="radar-section container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="section-header">
+            <span class="section-tag">مطالعه موردی: دویچه تلکام</span>
+            <h2>رادار فناوری‌های نوظهور و پایش استراتژیک</h2>
+            <p>شبیه‌سازی رادار تعاملی فناوری جهت جلوگیری از غافلگیری استراتژیک. بر روی نقاط رادار کلیک کنید تا تحلیل تأثیر و توصیه‌ها بارگذاری شوند.</p>
+        </div>
+
+        <div class="radar-interactive-container glass-card">
+            <div class="radar-plot-wrapper">
+                <svg id="radar-svg" viewBox="0 0 500 500" width="100%" height="100%">
+                    <circle cx="250" cy="250" r="230" class="radar-ring ring-scan" />
+                    <circle cx="250" cy="250" r="170" class="radar-ring ring-assess" />
+                    <circle cx="250" cy="250" r="110" class="radar-ring ring-trial" />
+                    <circle cx="250" cy="250" r="50" class="radar-ring ring-adopt" />
+
+                    <line x1="25" y1="250" x2="475" y2="250" class="radar-axis" />
+                    <line x1="250" y1="25" x2="250" y2="475" class="radar-axis" />
+
+                    <text x="250" y="30" class="radar-ring-label">رصد (Scan)</text>
+                    <text x="250" y="90" class="radar-ring-label">ارزیابی (Assess)</text>
+                    <text x="250" y="150" class="radar-ring-label">آزمایش (Trial)</text>
+                    <text x="250" y="210" class="radar-ring-label">پذیرش (Adopt)</text>
+
+                    <text x="40" y="50" class="radar-quadrant-label">هوش مصنوعی و داده</text>
+                    <text x="360" y="50" class="radar-quadrant-label">شبکه‌های ارتباطی</text>
+                    <text x="40" y="460" class="radar-quadrant-label">رایانش و ابر نوظهور</text>
+                    <text x="360" y="460" class="radar-quadrant-label">بیوتک و فناوری همگرا</text>
+
+                    <!-- AI Dots -->
+                    <circle cx="120" cy="110" r="8" class="radar-dot ai-dot" onclick="showTechDetail('genai')" />
+                    <circle cx="190" cy="180" r="8" class="radar-dot ai-dot" onclick="showTechDetail('agentic')" />
+                    <circle cx="90" cy="190" r="8" class="radar-dot ai-dot" onclick="showTechDetail('nlp')" />
+
+                    <!-- Net Dots -->
+                    <circle cx="380" cy="100" r="8" class="radar-dot net-dot" onclick="showTechDetail('6g')" />
+                    <circle cx="320" cy="170" r="8" class="radar-dot net-dot" onclick="showTechDetail('iot')" />
+
+                    <!-- Computing Dots -->
+                    <circle cx="130" cy="370" r="8" class="radar-dot comp-dot" onclick="showTechDetail('quantum')" />
+                    <circle cx="180" cy="310" r="8" class="radar-dot comp-dot" onclick="showTechDetail('edge')" />
+
+                    <!-- Biotech Dots -->
+                    <circle cx="340" cy="380" r="8" class="radar-dot bio-dot" onclick="showTechDetail('biocomputing')" />
+                    <circle cx="290" cy="320" r="8" class="radar-dot bio-dot" onclick="showTechDetail('metaverse')" />
+                </svg>
+            </div>
+
+            <div class="radar-info-sidebar">
+                <div class="radar-info-default active" id="radar-info-default">
+                    <div class="radar-pulse-icon"><i data-lucide="target"></i></div>
+                    <h3>رادار فناوری‌های نوظهور</h3>
+                    <p>یکی از ابزارهای استراتژیک برای جلوگیری از غافلگیری در صنعت مخابرات و فناوری اطلاعات. روی نقاط نوسان‌کننده کلیک کنید تا جزئیات نمایش داده شوند.</p>
+                </div>
+
+                <div class="radar-info-detail" id="radar-info-detail" style="display: none;">
+                    <button class="btn-close" onclick="closeTechDetail()"><i data-lucide="x"></i></button>
+                    <span class="tech-tag" id="tech-quadrant">دسته فناوری</span>
+                    <h3 id="tech-title">نام فناوری</h3>
+                    <div class="tech-meta-row">
+                        <span class="meta-label">وضعیت رادار:</span>
+                        <span class="meta-val highlight" id="tech-status">Adopt</span>
+                    </div>
+                    <p class="tech-desc" id="tech-description">توضیحات فناوری...</p>
+                    <div class="tech-action-card">
+                        <h4>تاثیر استراتژیک بر سازمان:</h4>
+                        <p id="tech-impact">نقش استراتژیک فناوری...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Citation details -->
+        <div class="citation-box glass-card">
+            <h4><i data-lucide="link"></i> ارجاع علمی و منابع مطالعه بلوغ سازمانی:</h4>
+            <p style="margin-top: 8px;">
+                این بخش ارزیابی و مفاهیم بر اساس پژوهش‌های مستند پروفسور رنه روهربک در EDHEC Business School توسعه داده شده است. مطالعات بنچ‌مارک و یافته‌های آماری سودآوری ۳۳ درصدی سازمان‌های آینده‌نگر را می‌توانید در 
+                <a href="https://rene-rohrbeck.com/about-foresight/" target="_blank">rene-rohrbeck.com</a> 
+                و مقالات نمایه شده او در 
+                <a href="https://www.researchgate.net/profile/Rene-Rohrbeck" target="_blank">ResearchGate</a> 
+                دنبال فرمایید.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-container container" style="padding-top: 0; padding-bottom: 20px;">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <span class="logo-icon"><i data-lucide="compass"></i></span>
+                    <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+                </div>
+                <p>پلتفرم تعاملی ارزیابی و آموزش آمادگی و تناسب با آینده بر اساس مدل‌های بلوغ رنه روهربک، روش تحلیل لایه‌ای علتها (CLA) سهیل عنایت‌الله، و روش چرخ آینده جروم سی گلن.</p>
+            </div>
+            
+            <div class="footer-profile glass-card">
+                <div class="profile-header">
+                    <div class="profile-avatar"><i data-lucide="user"></i></div>
+                    <div class="profile-title">
+                        <h4>علی منصوری</h4>
+                        <p>دانشجوی دکتری آینده‌پژوهی دانشگاه تهران</p>
+                    </div>
+                </div>
+                <div class="profile-links">
+                    <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
+                        <i data-lucide="file-text"></i> مشاهده رزومه و سوابق
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>توسعه‌یافته برای درس آینده‌پژوهی سازمانی. کلیه حقوق علمی متعلق به علی منصوری می‌باشد.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="fitness.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>
