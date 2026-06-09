@@ -91,7 +91,235 @@ function switchView(mode) {
     }
 }
 
-// 3. FITness Acronym Decoder
+// 3. Archetypes Dataset & Controller
+const archetypesData = {
+    vigilant: {
+        title: "کهن‌الگوی هوش و دیده‌بانی (Vigilant)",
+        alignment: "تلاطم بالای صنعت + بلوغ بالای آینده‌نگاری استراتژیک سازمانی (هم‌راستایی کامل با تحول)",
+        symptoms: "پایش مداوم و سیستماتیک محیط بیرونی برای کشف سیگنال‌های ضعیف تغییر، انعطاف‌پذیری فوق‌العاده ساختاری برای تخصیص مجدد و سریع منابع، ایجاد شبیه‌سازها و سناریوهای تهاجمی، و استقبال فعال از خودتخریبی خلاق (Cannibalization) پیش از رقیب.",
+        reps: "انویدیا (Nvidia) در توسعه بستر CUDA، نتفلیکس (Netflix) در عبور پیوسته از فیزیکی به استریم و تولید محتوای ارگانیک."
+    },
+    neurotic: {
+        title: "کهن‌الگوی عصبی و وسواسی (Neurotic)",
+        alignment: "تلاطم پایین صنعت + بلوغ بیش از حد آینده‌نگاری (عدم تعادل ناشی از حساسیت افراطی)",
+        symptoms: "سرمایه‌گذاری‌های بسیار سنگین روی پایش روندهایی که تاثیری بر صنعت ندارند، بروز حالت بیش‌تحلیلی و فلج تصمیم‌گیری (Analysis Paralysis)، ایجاد سناریوهای آخرالزمانی متعدد بدون اقدامات عملیاتی واقعی، و اتلاف سرمایه در جهت پیش‌بینی روندهای غیرمرتبط.",
+        reps: "شرکت‌های بزرگ نفت و گاز سنتی که به دلیل هراس افراطی و زودهنگام از پایان ناگهانی عصر فسیلی، میلیاردها دلار در انرژی‌های تجدیدپذیر نامرتبط سرمایه‌گذاری کردند در حالی که تقاضای بازار هنوز شکل نگرفته بود."
+    },
+    vulnerable: {
+        title: "کهن‌الگوی آسیب‌پذیر (Vulnerable)",
+        alignment: "تلاطم بالای صنعت + بلوغ پایین آینده‌نگاری (منطقه خطر استراتژیک)",
+        symptoms: "اتکای مطلق به برنامه‌های استراتژیک ۵ ساله کاغذی و صلب، غفلت عامدانه از تغییرات فناوری به بهانه محافظت از محصولات سودآور فعلی، نادیده گرفتن اقدامات استارت‌آپ‌های کوچک تا زمان تسخیر کامل بازار، و واکنش‌های بسیار دیر با هزینه‌های کمرشکن.",
+        reps: "کداک (Kodak) در نادیده‌انگاری فناوری دوربین دیجیتال به دلیل حفظ سود چاپ کاغذ، نوکیا (Nokia) در غفلت از تحول نرم‌افزاری صفحات لمسی هوشمند."
+    },
+    danger: {
+        title: "کهن‌الگوی در معرض خطر و نادیده‌انگار (In Danger)",
+        alignment: "تلاطم پایین صنعت + بلوغ پایین آینده‌نگاری (جمود و زوال پنهان)",
+        symptoms: "فقدان کامل هرگونه فرآیند رصد فناوری یا روندها، تکیه مطلق بر مدل‌های سنتی فروش با این فرض کاذب که بازار هرگز تغییر نخواهد کرد، و آسیب‌پذیری بحرانی و فوری در صورت وقوع کوچک‌ترین شوک خارجی غیرمنتظره (نظیر پاندمی یا تغییر ناگهانی قوانین).",
+        reps: "اتحادیه‌های تاکسیرانی سنتی قبل از ظهور ناگهانی اپلیکیشن‌های موبایلی رزرو خودرو (Uber/اسنپ)، آژانس‌های هواپیمایی فیزیکی پیش از آنلاین شدن رزرو بلیط."
+    }
+};
+
+function selectArchetype(key) {
+    const data = archetypesData[key];
+    if (!data) return;
+    
+    // Highlight clicked card (in CSS via parent list search or dynamic class styling)
+    const box = document.getElementById('archetype-detail-box');
+    box.style.display = 'block';
+    
+    // Set color accent based on archetype
+    let colorAccent = 'var(--color-f)';
+    if (key === 'neurotic') colorAccent = 'var(--color-t)';
+    if (key === 'vulnerable') colorAccent = 'var(--color-cla)';
+    if (key === 'danger') colorAccent = 'var(--color-wheel-red)';
+    
+    box.style.borderRight = `4px solid ${colorAccent}`;
+    
+    box.innerHTML = `
+        <h4 style="font-size: 1.25rem; margin-bottom: 10px; color: ${colorAccent};">${data.title}</h4>
+        <div style="font-size: 0.9rem; margin-bottom: 12px; color: var(--text-primary);">
+            <strong>محیط و بلوغ:</strong> <span style="font-family: var(--font-fa); color: var(--text-secondary);">${data.alignment}</span>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 15px;">
+            <strong>نشانه‌ها و رفتارهای سازمانی:</strong> ${data.symptoms}
+        </p>
+        <div style="font-size: 0.875rem; color: var(--text-primary);">
+            <strong>نمایندگان معروف در صنعت:</strong> <span style="color: var(--text-secondary); font-style: italic;">${data.reps}</span>
+        </div>
+    `;
+    
+    gsap.from(box, {
+        opacity: 0,
+        y: 10,
+        duration: 0.4,
+        ease: 'power2.out'
+    });
+}
+
+// 4. Foresight Roles Dataset & Controller
+const rolesData = {
+    initiator: {
+        title: "۱. نقش آغازگر (Initiator) - جرقه محرک نوآوری",
+        desc: "نقش آغازگر در فاز **درک کردن (Perceiving)** فعالیت می‌کند. وظیفه حیاتی این بخش، پایش دائمی محیط بیرونی، کشف روندهای تکنولوژیک، محیطی و اجتماعی نوظهور و تبدیل آن‌ها به مفاهیم اولیه نوآوری است.",
+        duties: [
+            "راه‌اندازی و پایش مستمر رادارهای فناوری و روندهای نوظهور.",
+            "شناسایی سیگنال‌های ضعیف تغییر (Weak Signals) پیش از همه‌گیر شدن.",
+            "برگزاری جلسات و کارگاه‌های طوفان فکری خلاقانه برای خلق ایده‌های مفهومی نوآورانه."
+        ],
+        example: "واحد آینده‌نگاری شرکت **دویچه تلکام** با پایش حسگرهای مینیاتوری در سال‌های اولیه، ایده اتصال زمین‌های کشاورزی به شبکه را به عنوان آغازگر پروژه‌های بزرگ اینترنت اشیاء (IoT) استارت زد."
+    },
+    strategist: {
+        title: "۲. نقش استراتژیست (Strategist) - هدایت سبد سرمایه‌گذاری",
+        desc: "نقش استراتژیست در فاز **کاوش کردن (Prospecting)** فعالیت می‌کند. وظیفه اصلی آن، هدایت و کالیبره‌کردن سبد سرمایه‌گذاری‌های نوآوری بر اساس سناریوهای آینده و هدایت استراتژی‌های کلان سازمان است.",
+        duties: [
+            "تدوین سناریوهای آینده‌نگارانه تهاجمی و تدافعی برای صنعت.",
+            "ترسیم نقشه‌های راه فناوری (Technology Roadmapping) برای همسوسازی دپارتمان‌ها.",
+            "تعریف تصاویر هدف یا چشم‌اندازهای مشترک آینده (Shared Visions) برای سازمان."
+        ],
+        example: "مدیریت ارشد **انویدیا** با تحلیل سناریوهای پردازش اطلاعات، نقش استراتژیست را ایفا کرد و تمام سبد تحقیق و توسعه را به سمت معماری پردازش هوش مصنوعی در دیتاسنترها سوق داد."
+    },
+    opponent: {
+        title: "۳. نقش مخالف (Opponent) - وکیل مدافع شیطان (Devil's Advocate)",
+        desc: "نقش مخالف در فاز **آزمودن (Probing)** فعالیت می‌کند. وظیفه این نقش، به چالش کشیدن مفروضات صلب سازمان، ارزیابی نقادانه پروژه‌ها و جلوگیری از سوگیری‌های تاییدی مدیریت است.",
+        duties: [
+            "اجرای سناریوهای سخت‌گیرانه برای تست بقا و تاب‌آوری پروژه‌های در حال اجرا.",
+            "اجرای بازی‌های جنگ شبیه‌سازی‌شده (War Gaming) برای کشف نقاط ضعف درونی.",
+            "تسهیل فرآیند خودتخریبی خلاق (Cannibalization) برای حذف محصولات قدیمی سودآور."
+        ],
+        example: "زمانی که **استیو جابز** در اپل پروژه توسعه آیفون را کلید زد؛ او به عنوان یک مخالف علیه آی‌پاد (محصول پرفروش شرکت) شورش کرد، زیرا می‌دانست اگر اپل خود این کار را نکند، رقیب دیگری پخش‌کننده موسیقی را درون گوشی موبایل ادغام خواهد کرد."
+    }
+};
+
+function switchForesightRole(key) {
+    const data = rolesData[key];
+    if (!data) return;
+    
+    // Manage active state of tabs
+    const roleButtons = ['initiator', 'strategist', 'opponent'];
+    roleButtons.forEach(btn => {
+        const el = document.getElementById(`btn-role-${btn}`);
+        if (el) {
+            if (btn === key) el.classList.add('active');
+            else el.classList.remove('active');
+        }
+    });
+    
+    const container = document.getElementById('role-display-card');
+    if (!container) return;
+    
+    let bulletList = '';
+    data.duties.forEach(duty => {
+        bulletList += `<li><i data-lucide="check" style="width: 16px; height: 16px; color: var(--color-f); margin-left: 8px; vertical-align: middle;"></i> ${duty}</li>`;
+    });
+    
+    container.innerHTML = `
+        <h4 style="font-size: 1.35rem; margin-bottom: 12px; color: #fff;">${data.title}</h4>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">
+            ${data.desc}
+        </p>
+        <div style="margin-bottom: 20px;">
+            <strong style="font-size: 0.9rem; color: #fff; display: block; margin-bottom: 8px;">وظایف و ابزارهای کلیدی:</strong>
+            <ul style="list-style: none; font-size: 0.9rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px; padding-right: 0;">
+                ${bulletList}
+            </ul>
+        </div>
+        <div style="font-size: 0.9rem; color: #fff; border-top: 1px dashed var(--card-border); padding-top: 15px;">
+            <strong>مثال واقعی در سازمان:</strong> <span style="color: var(--text-secondary);">${data.example}</span>
+        </div>
+    `;
+    
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
+    
+    gsap.from('#role-display-card h4, #role-display-card p, #role-display-card li, #role-display-card div', {
+        opacity: 0,
+        y: 10,
+        duration: 0.4,
+        stagger: 0.06,
+        ease: 'power2.out'
+    });
+}
+
+// 5. Detailed Case Studies Dataset & Controller
+const detailedCasesData = {
+    netflix: {
+        title: "نتفلیکس (Netflix) - ورزیدگی مستمر در تغییر ساختارها",
+        scanning: "در سال‌های اولیه، تیم نتفلیکس با رصد رشد پهنای باند خانگی در آمریکا و الگوریتم‌های فشرده‌سازی ویدئو، سیگنال ضعیف منسوخ شدن رسانه‌های فیزیکی (DVD) را دریافت نمود.",
+        seizing: "آنها در سال ۲۰۰۷ پلتفرم استریم آنلاین را کلید زدند. برای کسب سهم بازار سریع، ابتدا قراردادهای سنگین با استودیوها بستند، اما بلافاصله متوجه شدند که وابستگی به استودیوها یک تهدید بزرگ است.",
+        transforming: "نتفلیکس میلیاردها دلار روی تولید محتوای اختصاصی (House of Cards در سال ۲۰۱۳) سرمایه‌گذاری کرد تا ساختار خود را از توزیع‌کننده به تولیدکننده تغییر دهد. امروزه آنها با ورود به صنعت بازی و شخصی‌سازی عمیق با هوش مصنوعی مولد، DNA خود را مجدداً دگرگون کرده‌اند."
+    },
+    nvidia: {
+        title: "انویدیا (Nvidia) - شرط‌بندی استراتژیک روی آینده محاسبات موازی",
+        scanning: "جنسن هوانگ (مدیرعامل) در اوایل دهه ۲۰۰۰ سیگنال‌هایی را دریافت کرد که پردازش گرافیکی (GPU) فراتر از رندر بازی‌ها، پتانسیل عظیمی برای انجام موازی محاسبات علمی دارد.",
+        seizing: "در سال ۲۰۰۶، انویدیا پلتفرم **CUDA** را معرفی کرد. این کار هزینه تراشه‌ها را بالا برد و حاشیه سود شرکت را برای سال‌ها کاهش داد، چرا که بازاری برای آن وجود نداشت. اما هوانگ روی دیدگاه خود پافشاری نمود.",
+        transforming: "انویدیا با صبوری اکوسیستم نرم‌افزاری خود را ساخت. با وقوع انقلاب یادگیری عمیق در سال ۲۰۱۲، انویدیا به تنها تامین‌کننده آماده در جهان تبدیل شد و ساختار خود را به عنوان ستون هوش مصنوعی دنیا بازتعریف نمود."
+    },
+    nokia: {
+        title: "نوکیا (Nokia) - جمود نرم‌افزاری و شکست در انطباق سیستمی",
+        scanning: "نوکیا روندهای لمسی شدن گوشی‌ها و پیدایش مارکت برنامه‌های موبایل را رصد کرده بود و حتی تبلت لمسی را سال‌ها قبل از آی‌پد در آزمایشگاه‌های خود داشت.",
+        seizing: "به دلیل سودآوری عظیم و چسبندگی به گوشی‌های دکمه‌ای سنتی و سیستم‌عامل سیمبین، نوکیا نتوانست پلتفرم‌های جدید را جدی بگیرد و تعارضات شدید داخلی مانع تصمیم‌گیری چابک گردید.",
+        transforming: "ساختار سلسله‌مراتب صلب و بوروکراسی رسمی شدید، مانع واکنش چابک شد. ترس از شکست و فرهنگ گزارش‌دهی خوش‌بینانه مانع رسیدن حقایق به مدیران ارشد شد. نوکیا زمانی تصمیم به تغییر گرفت که دیگر سهم بازاری برای او باقی نمانده بود."
+    },
+    blockbuster: {
+        title: "بلاک‌باستر (Blockbuster) - قربانی کردن آینده برای سودهای حال",
+        scanning: "بلاک‌باستر رشد استریم نتفلیکس را پایش کرده بود و مدیرعامل وقت متوجه شد که مدل اجاره فیزیکی فروشگاه‌ها به زودی محکوم به نابودی است.",
+        seizing: "آنها پلتفرم دیجیتال خریدند و جریمه دیرکرد (Late Fees) را حذف کردند تا بتوانند به عنوان یک فرصت جدید با نتفلیکس رقابت کنند.",
+        transforming: "هیئت مدیره و سهامداران با حذف جریمه دیرکرد به شدت مخالفت کردند، چرا که جریمه‌ها ۱۶٪ از سود خالص شرکت را تشکیل می‌داد. آنها مدیرعامل را اخراج کردند، جریمه‌ها را برگرداندند و تمرکز را بر فروشگاه‌های فیزیکی گذاشتند، امری که به ورشکستگی کامل شرکت انجامید."
+    }
+};
+
+function switchDetailedCase(key) {
+    const data = detailedCasesData[key];
+    if (!data) return;
+    
+    // Manage active tab styling
+    const keys = ['netflix', 'nvidia', 'nokia', 'blockbuster'];
+    keys.forEach(k => {
+        const el = document.getElementById(`btn-case-${k}`);
+        if (el) {
+            if (k === key) el.classList.add('active');
+            else el.classList.remove('active');
+        }
+    });
+    
+    const container = document.getElementById('detailed-case-card');
+    if (!container) return;
+    
+    container.innerHTML = `
+        <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: #fff;">${data.title}</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            <div class="case-level-card c-l1" style="padding-top: 40px;">
+                <span class="case-level-num" style="background: rgba(0, 229, 255, 0.1); color: var(--color-f);">Sensing</span>
+                <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--color-f);">۱. حس‌گری و رصد (Sensing)</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">${data.scanning}</p>
+            </div>
+            
+            <div class="case-level-card c-l3" style="padding-top: 40px; border-color: var(--color-cla);">
+                <span class="case-level-num" style="background: rgba(255, 170, 0, 0.1); color: var(--color-cla);">Seizing</span>
+                <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--color-cla);">۲. کسب فرصت (Seizing)</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">${data.seizing}</p>
+            </div>
+            
+            <div class="case-level-card c-l4" style="padding-top: 40px; border-color: var(--color-i);">
+                <span class="case-level-num" style="background: rgba(255, 0, 127, 0.1); color: var(--color-i);">Transforming</span>
+                <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--color-i);">۳. تحول ساختار (Transforming)</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">${data.transforming}</p>
+            </div>
+        </div>
+    `;
+    
+    gsap.from('.case-level-card', {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: 'power2.out'
+    });
+}
+
+// 6. FITness Acronym Decoder
 function showFormulaDetail(type) {
     const letters = document.querySelectorAll('.formula-letter-box');
     const panels = document.querySelectorAll('.formula-detail-content');
@@ -119,7 +347,7 @@ function showFormulaDetail(type) {
     detailBox.style.borderColor = borderColor;
 }
 
-// 4. FITness Assessment Calculator
+// 7. FITness Assessment Calculator
 let fitnessChart = null;
 
 function updateSliderVal(dim) {
@@ -264,7 +492,7 @@ function drawRadarChart(dataValues) {
     });
 }
 
-// 5. Deutsche Telekom Tech Radar simulation
+// 8. Deutsche Telekom Tech Radar simulation
 const techData = {
     genai: {
         title: 'هوش مصنوعی مولد (Generative AI)',
@@ -372,7 +600,7 @@ function closeTechDetail() {
     document.getElementById('radar-info-default').style.display = 'block';
 }
 
-// 6. Header Scroll
+// 9. Header Scroll
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.main-header');
     if (header) {
@@ -390,4 +618,9 @@ window.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) {
         window.lucide.createIcons();
     }
+    
+    // Load defaults
+    selectArchetype('vigilant');
+    switchForesightRole('initiator');
+    switchDetailedCase('netflix');
 });
