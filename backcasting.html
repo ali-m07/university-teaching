@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backcasting | روش آینده‌پژوهی پس‌نگری هنجاری</title>
+    <!-- Google Fonts: Vazirmatn for Persian, Plus Jakarta Sans for English/Numbers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">صفحه نخست</a>
+            <a href="fitness.html">آمادگی و تناسب (FITness)</a>
+            <a href="cla.html">تحلیل لایه‌ای علت‌ها (CLA)</a>
+            <a href="futures-wheel.html">چرخ آینده (Futures Wheel)</a>
+            <a href="backcasting.html" class="active">پس‌نگری (Backcasting)</a>
+        </nav>
+        <div class="header-action">
+            <a href="fitness.html#assessment" class="btn-primary-sm">ارزیابی بلوغ سازمان</a>
+        </div>
+    </header>
+
+    <!-- Hero / Header Section -->
+    <section class="container" style="padding-top: 130px; padding-bottom: 20px; text-align: center;">
+        <span class="section-tag" style="background: rgba(0, 255, 136, 0.08); color: var(--color-backcast); border-color: rgba(0, 255, 136, 0.2);">جان رابینسون</span>
+        <h1 style="font-size: 2.5rem; margin-top: 10px; margin-bottom: 15px; color: #fff;">روش استراتژیک پس‌نگری (Backcasting)</h1>
+        <p style="max-width: 800px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+            کار از آخر به اول؛ ترسیم هنجاری و آرمان‌گرایانه آینده مطلوب و تحلیل معکوس سیاست‌ها، موانع و گام‌های عملیاتی مورد نیاز از امروز برای تحقق آن.
+        </p>
+    </section>
+
+    <!-- Section 1: Forecasting vs Backcasting -->
+    <section id="bc-vs-fc" class="container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="glass-card" style="padding: 40px; border-color: rgba(0, 255, 136, 0.15);">
+            <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+                <span class="section-tag-bc">تحلیل مقایسه‌ای فکری</span>
+                <h3>تفاوت‌های بنیادین پس‌نگری (Backcasting) و پیش‌بینی (Forecasting)</h3>
+                <p>درک تعارض پارادایم روند-محور در مقابل انتخاب-محور در برنامه‌ریزی‌های کلان تمدنی و انرژی.</p>
+            </div>
+
+            <div class="bc-comparison-table-wrapper">
+                <table class="bc-table">
+                    <thead>
+                        <tr>
+                            <th>وجه تمایز</th>
+                            <th>پیش‌بینی (Forecasting)</th>
+                            <th>پس‌نگری (Backcasting)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>جهت‌گیری زمانی (Direction)</strong></td>
+                            <td>از امروز به سمت آینده (برون‌یابی داده‌ها)</td>
+                            <td>از آینده مطلوب به سمت امروز (درون‌یابی مسیر)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ماهیت خروجی (Goal)</strong></td>
+                            <td>توصیفی و پیش‌گویانه (آینده‌های محتمل و پیش‌فرض)</td>
+                            <td>هنجاری و طراحی (آینده‌های مطلوب و شایسته)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>مبنای فلسفی (Philosophy)</strong></td>
+                            <td>جبرگرایی روندهای گذشته و تداوم وضع موجود</td>
+                            <td>عاملیت انسانی، انتخاب آزاد و امکان گسست ساختاری</td>
+                        </tr>
+                        <tr>
+                            <td><strong>مدیریت عدم قطعیت</strong></td>
+                            <td>کاهش عدم قطعیت با افزایش دقت آماری</td>
+                            <td>پذیرش عدم قطعیت و طراحی مسیرهای انطباق‌پذیر</td>
+                        </tr>
+                        <tr>
+                            <td><strong>بهترین کاربرد (Best Fit)</strong></td>
+                            <td>روندهای خطی و کوتاه‌مدت با داده‌های کافی گذشته</td>
+                            <td>بحران‌های ساختاری بلندمدت و ناترازی‌های سیستمی پیچیده</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Interactive Backcasting Pathway Simulator -->
+    <section id="bc-simulator" class="container" style="padding-top: 20px; padding-bottom: 60px;">
+        <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+            <span class="section-tag-bc">شبیه‌ساز مسیر معکوس</span>
+            <h2>مدل‌های هنجاری گذار کلان ایران و تهران</h2>
+            <p>یکی از سناریوهای گذار را انتخاب کرده و مراحل خط زمانی معکوس را بفشارید تا گام‌های راهبردی متناظر باز شوند.</p>
+        </div>
+
+        <!-- Scenario Switcher -->
+        <div class="category-tabs-container" style="margin-bottom: 30px;">
+            <button class="cat-tab active" id="btn-sc-tehran" onclick="switchBcScenario('tehran')">
+                <i data-lucide="map-pin"></i> سناریو تهران ۱۴۳۰: کلان‌شهر پایدار
+            </button>
+            <button class="cat-tab" id="btn-sc-energy" onclick="switchBcScenario('energy')">
+                <i data-lucide="zap"></i> سناریو امنیت انرژی ۱۴۳۰: ناترازی صفر
+            </button>
+        </div>
+
+        <div class="glass-card" style="padding: 30px; border-color: rgba(0, 255, 136, 0.15);">
+            <h3 id="bc-sc-title" style="color: #fff; font-size: 1.4rem; margin-bottom: 8px;">عنوان سناریو</h3>
+            <p id="bc-sc-desc" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 30px;">توضیحات کلی سناریو...</p>
+
+            <!-- Horizontal Timeline Controls -->
+            <div class="bc-timeline-wrapper">
+                <div class="bc-timeline-line"></div>
+                <div class="bc-timeline-progress" id="bc-progress-bar"></div>
+                
+                <div class="bc-timeline-nodes" id="bc-nodes-container">
+                    <!-- Nodes will be dynamically injected by JS -->
+                </div>
+            </div>
+
+            <!-- Details Panel for Active Step -->
+            <div class="bc-details-card glass-card" id="bc-step-details" style="background: rgba(0,0,0,0.15); border-color: rgba(255,255,255,0.03); padding: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px;">
+                    <h4 id="bc-step-title" style="color: var(--color-backcast); font-size: 1.15rem;">عنوان گام زمانی</h4>
+                    <span id="bc-step-year-badge" class="tech-tag" style="background: rgba(0, 255, 136, 0.1); color: var(--color-backcast); border-color: rgba(0, 255, 136, 0.2);">افق زمانی</span>
+                </div>
+                <p id="bc-step-desc" style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.7; text-align: justify; margin-bottom: 20px;">شرح اقدامات راهبردی در این بازه زمانی...</p>
+                
+                <div class="bc-details-grid">
+                    <div class="bc-detail-box" id="bc-box-policy">
+                        <strong><i data-lucide="file-text"></i> سیاست‌ها و الزامات حاکمیتی:</strong>
+                        <p id="bc-step-policy">جزئیات مصوبات، قوانین و استانداردهای لازم...</p>
+                    </div>
+                    <div class="bc-detail-box" id="bc-box-risk">
+                        <strong><i data-lucide="shield-alert"></i> چالش‌ها و موانع پیش‌رو:</strong>
+                        <p id="bc-step-risk">ریسک‌های لجستیکی، مالی یا تکنولوژیک در این فاز...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Interactive Backcasting Strategy Canvas (Workshop) -->
+    <section id="bc-workspace" class="workspace-section container" style="padding-top: 20px; padding-bottom: 60px;">
+        <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+            <span class="section-tag-bc">کارگاه استراتژی هنجاری</span>
+            <h2>کارگاه تعاملی طراحی استراتژی پس‌نگری</h2>
+            <p>هدف نهایی بلندمدت خود را تعریف کنید و زنجیره گام‌های معکوس را تا زمان حال ترسیم کنید.</p>
+        </div>
+
+        <div class="workspace-grid">
+            <div class="workspace-controls glass-card">
+                <h3>پنل کارگاه پس‌نگری</h3>
+                
+                <div class="input-group">
+                    <label for="bc-template-select"><i data-lucide="copy"></i> انتخاب قالب آماده:</label>
+                    <select id="bc-template-select" onchange="loadBcTemplate()">
+                        <option value="custom">-- طراحی فرضیه و استراتژی شخصی --</option>
+                        <option value="green-tech" selected>گذار سازمان به فناوری‌های تمام سبز (Green Enterprise)</option>
+                        <option value="smart-edu">هوشمندسازی سیستم آموزش عالی تا افق ۱۴20</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="bc-input-goal">هدف غایی بلندمدت (Future Endpoint):</label>
+                    <input type="text" id="bc-input-goal" placeholder="مثلاً: کربن صفر شدن کامل کارخانجات سازمان" value="گذار کامل به انرژی پاک و فناوری کربن‌صفر">
+                </div>
+
+                <div class="input-group">
+                    <label for="bc-input-year">سال هدف نهایی:</label>
+                    <input type="text" id="bc-input-year" placeholder="مثلاً: ۱۴۲۵" value="۱۴۲۰">
+                </div>
+
+                <div class="step-input-group">
+                    <label for="bc-input-h3">گام ۳: افق دور (گام‌های بلافاصله قبل از هدف نهایی):</label>
+                    <textarea id="bc-input-h3" rows="2" placeholder="آخرین پیش‌نیازها و گام‌های بزرگ نهایی چیست؟"></textarea>
+                </div>
+
+                <div class="step-input-group">
+                    <label for="bc-input-h2">گام ۲: افق میانی (مراحل توسعه، سرمایه‌گذاری و نوسازی):</label>
+                    <textarea id="bc-input-h2" rows="2" placeholder="چه تصمیمات، ساختارها و نوسازی‌های میان‌مدتی لازم است؟"></textarea>
+                </div>
+
+                <div class="step-input-group">
+                    <label for="bc-input-h1">گام ۱: افق نزدیک (اقدامات ضربتی نزدیک به زمان حال):</label>
+                    <textarea id="bc-input-h1" rows="2" placeholder="اولین گام‌های اجرایی، تامین بودجه و مجوزها در زمان حال چیست؟"></textarea>
+                </div>
+
+                <button class="btn-primary w-full" style="background: linear-gradient(135deg, var(--color-backcast) 0%, var(--color-f) 100%); border-color: rgba(0, 255, 136, 0.3); color: #070a13; font-weight: 700;" onclick="generateBcPathway()"><i data-lucide="check"></i> ترسیم نقشه راه پس‌نگری</button>
+            </div>
+
+            <div class="workspace-preview">
+                <div class="rendered-bc-card" id="rendered-bc-card">
+                    <div class="card-render-header">
+                        <span class="preview-tag" style="background: rgba(0, 255, 136, 0.1); color: var(--color-backcast); border: 1px solid rgba(0, 255, 136, 0.2);">خروجی کارگاه پس‌نگری</span>
+                        <h3>نقشه راه معکوس به سوی هدف نهایی</h3>
+                        <span class="divider"></span>
+                    </div>
+                    
+                    <div class="bc-render-timeline">
+                        <div class="bc-render-step">
+                            <h5 style="color: var(--color-backcast);" id="render-bc-goal-title">هدف نهایی (سال ۱۴۲۰)</h5>
+                            <p id="render-bc-goal-desc">محتوای هدف...</p>
+                        </div>
+                        <div class="bc-render-step">
+                            <h5>افق دور (گام ۳)</h5>
+                            <p id="render-bc-h3">محتوا...</p>
+                        </div>
+                        <div class="bc-render-step">
+                            <h5>افق میانی (گام ۲)</h5>
+                            <p id="render-bc-h2">محتوا...</p>
+                        </div>
+                        <div class="bc-render-step">
+                            <h5>افق نزدیک و زمان حال (گام ۱)</h5>
+                            <p id="render-bc-h1">محتوا...</p>
+                        </div>
+                    </div>
+
+                    <div class="card-render-footer">
+                        <p>تولید شده توسط شبیه‌ساز پس‌نگری استراتژیک</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Citation details -->
+        <div class="citation-box glass-card" style="margin-top: 60px; border-right-color: var(--color-backcast);">
+            <h4><i data-lucide="link" style="color: var(--color-backcast);"></i> منابع علمی روش پس‌نگری (Backcasting):</h4>
+            <p style="margin-top: 8px;">
+                روش پس‌نگری هنجاری به عنوان متدولوژی مقابله با روندهای تحمیلی گذشته، اولین بار به شکل منسجم توسط <strong>جان بی. رابینسون (John B. Robinson)</strong> در سال ۱۹۸۲ برای برنامه‌ریزی سیاست‌های انرژی معرفی شد. کتاب‌ها و مقالات برجسته او از جمله 
+                <a href="https://www.sciencedirect.com/science/article/pii/030142158290059X" target="_blank" style="color: var(--color-backcast);">Energy Backcasting: A Proposed Method of Policy Analysis</a> 
+                در نشریه معتبر 
+                <em>Energy Policy</em> 
+                و اصول تکاملی روش‌شناختی پس‌نگری مشارکتی در نشریات توسعه پایدار نمایه شده است. همچنین اصول تاب‌آوری شهری بر مبنای پس‌نگری در مطالعات دپارتمان آینده‌پژوهی دانشگاه کپنهاگ مورد استناد است.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-container container" style="padding-top: 0; padding-bottom: 20px;">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <span class="logo-icon"><i data-lucide="compass"></i></span>
+                    <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+                </div>
+                <p>پلتفرم تعاملی ارزیابی و آموزش آمادگی و تناسب با آینده بر اساس مدل‌های بلوغ رنه روهربک، روش تحلیل لایه‌ای علتها (CLA) سهیل عنایت‌الله، روش چرخ آینده جروم سی گلن، و روش پس‌نگری هنجاری جان رابینسون.</p>
+            </div>
+            
+            <div class="footer-profile glass-card">
+                <div class="profile-header">
+                    <div class="profile-avatar"><i data-lucide="user"></i></div>
+                    <div class="profile-title">
+                        <h4>علی منصوری</h4>
+                        <p>دانشجوی دکتری آینده‌پژوهی دانشگاه تهران</p>
+                    </div>
+                </div>
+                <div class="profile-links">
+                    <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
+                        <i data-lucide="file-text"></i> مشاهده رزومه و سوابق
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>توسعه‌یافته برای درس آینده‌پژوهی سازمانی. کلیه حقوق علمی متعلق به علی منصوری می‌باشد.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="backcasting.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>
