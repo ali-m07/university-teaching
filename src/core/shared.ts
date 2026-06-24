@@ -76,11 +76,7 @@ export function getNavItems(): [string, string][] {
     ['home', 'nav.home'],
     ['about/', 'nav.about'],
     ['articles/', 'nav.articles'],
-    ['methods/', 'nav.methods'],
-    ['methods/fitness.html', 'nav.fitness'],
-    ['methods/cla.html', 'nav.cla'],
-    ['methods/futures-wheel.html', 'nav.wheel'],
-    ['methods/backcasting.html', 'nav.backcast']
+    ['methods/', 'nav.methods']
   ];
 }
 

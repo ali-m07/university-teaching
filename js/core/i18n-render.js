@@ -104,6 +104,20 @@ function renderWheelStaticSections() {
     if (window.lucide) window.lucide.createIcons();
 }
 
+function renderOverviewFeatures() {
+    const grid = document.getElementById('overview-features-grid');
+    const features = typeof pg === 'function' ? pg('index.overviewFeatures') : null;
+    if (!grid || !features) return;
+    grid.innerHTML = features.map(f =>
+        `<div class="step-card glass-card" style="padding:20px;border-top:3px solid var(--color-f);">
+            <div style="color:var(--color-f);margin-bottom:10px;"><i data-lucide="${f.icon}"></i></div>
+            <h4 style="color:#fff;font-size:1rem;margin-bottom:8px;">${esc(f.title)}</h4>
+            <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">${esc(f.desc)}</p>
+        </div>`
+    ).join('');
+    if (window.lucide) window.lucide.createIcons();
+}
+
 function renderBrandFocusGrid() {
     const grid = document.getElementById('brand-focus-grid');
     const focuses = typeof pg === 'function' ? pg('brand.focuses') : null;
@@ -136,6 +150,7 @@ function renderArticlesList() {
 function renderAllPageSections() {
     try {
         renderBrandFocusGrid();
+        renderOverviewFeatures();
         renderArticlesList();
         renderManifestoSection();
         renderMethodsCatalog();

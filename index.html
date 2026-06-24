@@ -1,298 +1,141 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategic Foresight Hub | مرجع تعاملی آینده‌پژوهی استراتژیک</title>
-    <!-- Google Fonts: Vazirmatn for Persian, Plus Jakarta Sans for English/Numbers -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- GSAP & ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-</head>
-<body>
-    <!-- Background Canvas for Particles -->
-    <canvas id="particles-canvas"></canvas>
-
-    <!-- Navigation Header -->
-    <header class="main-header">
-        <div class="logo">
-            <span class="logo-icon"><i data-lucide="compass"></i></span>
-            <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
-        </div>
-        <nav class="nav-links"></nav>
-        <div class="header-actions">
-            <a href="methods/fitness.html#assessment" class="btn-primary-sm" data-i18n="nav.assess">ارزیابی بلوغ سازمان</a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section" style="min-height: 85vh; padding-top: 120px;">
-        <div class="hero-content">
-            <div class="badge-container">
-                <span class="badge"><i data-lucide="sparkles"></i> <span data-i18n="index.badge">مرجع آینده‌پژوهی استراتژیک</span></span>
-            </div>
-            <h1 class="hero-title" data-i18n="index.heroTitle" data-i18n-html>STRATEGIC FORESIGHT<br>PORTAL</h1>
-            <p class="hero-subtitle" data-i18n="index.heroSub">
-                پرتابل تعاملی آینده‌پژوهی استراتژیک برای تحلیل پویای تغییرات، رصد فناوری‌های نوظهور، ساختارشکنی علّی مسائل و نگاشت زنجیره‌ای پیامدها.
-            </p>
-            <div class="hero-meta">
-                <div class="meta-item">
-                    <span class="meta-icon"><i data-lucide="user"></i></span>
-                    <span class="meta-label" data-i18n="index.presenter">ارائه دهنده:</span>
-                    <span class="meta-val">علی منصوری</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-icon"><i data-lucide="graduation-cap"></i></span>
-                    <span class="meta-label" data-i18n="index.student">دانشجوی دکتری آینده‌پژوهی</span>
-                    <span class="meta-val">دانشگاه تهران</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="sphere-container">
-                <div class="sphere-glow"></div>
-                <div class="sphere-core"></div>
-                <div class="orbit-1"></div>
-                <div class="orbit-2"></div>
-                <div class="orbit-3"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Personal Brand -->
-    <section class="container brand-section" style="padding-bottom: 40px;">
-        <div class="glass-card brand-card" style="padding: 40px; border-inline-start: 4px solid var(--color-f);">
-            <div class="section-header" style="margin-bottom: 24px;">
-                <span class="section-tag" data-i18n="brand.tag">پرسونال برند</span>
-                <h2 data-i18n="brand.heroTitle">علی منصوری</h2>
-                <p data-i18n="brand.heroSub" style="max-width: 720px; margin: 12px auto 0; color: var(--text-secondary); line-height: 1.7;"></p>
-            </div>
-            <div class="workspace-grid" style="grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: start;">
-                <div>
-                    <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 12px;" data-i18n="brand.bioTitle">معرفی</h3>
-                    <p data-i18n="brand.bioP1" data-i18n-html style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 14px;"></p>
-                    <p data-i18n="brand.bioP2" data-i18n-html style="line-height: 1.8; color: var(--text-secondary);"></p>
-                    <div style="display: flex; flex-wrap: gap: 12px; margin-top: 24px;">
-                        <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="btn-primary-sm"><i data-lucide="file-text"></i> <span data-i18n="brand.ctaResume">رزومه کامل</span></a>
-                        <a href="about/" class="btn-ghost-sm"><i data-lucide="user"></i> <span data-i18n="nav.about">درباره من</span></a>
-                        <a href="articles/" class="btn-ghost-sm"><i data-lucide="newspaper"></i> <span data-i18n="nav.articles">مقالات</span></a>
-                    </div>
-                </div>
-                <div id="brand-focus-grid" class="hub-cards-grid" style="grid-template-columns: 1fr;"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hub Cards Section -->
-    <section class="container" style="padding-top: 20px; padding-bottom: 100px;">
-        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-            <span class="section-tag" data-i18n="index.coreTag">لایه ۱ — کارگاه تعاملی</span>
-            <h2 data-i18n="index.coreTitle">چهار ابزار اصلی</h2>
-            <p data-i18n="index.coreSub">محیط‌های شبیه‌سازی و کارگاه دیجیتال — هر کدام با طرح درس کامل و تمرین عملی.</p>
-        </div>
-
-        <div class="hub-cards-grid">
-            <!-- FITness Card -->
-            <div class="hub-card glass-card card-fitness" onclick="location.href='methods/fitness.html'">
-                <div class="card-icon"><i data-lucide="zap"></i></div>
-                <h3 data-i18n="hub.fitnessTitle">آمادگی و تناسب با آینده (FITness)</h3>
-                <p data-i18n="hub.fitnessDesc">
-                    بررسی مدل بلوغ رنه روهربک (Future FITness)، شبیه‌سازی فرآیندهای Perceiving (درک)، Prospecting (کاوش) و Probing (آزمایش) به همراه تست خودارزیابی بلوغ ۵ بعدی سازمان و رادار فناوری دویچه تلکام.
-                </p>
-                <span class="hub-card-link"><span data-i18n="hub.fitnessLink">ورود به بخش تناسب آینده</span> <i data-lucide="arrow-left"></i></span>
-            </div>
-
-            <!-- CLA Card -->
-            <div class="hub-card glass-card card-cla" onclick="location.href='methods/cla.html'">
-                <div class="card-icon"><i data-lucide="layers"></i></div>
-                <h3 data-i18n="hub.claTitle">تحلیل لایه‌ای علت‌ها (CLA)</h3>
-                <p data-i18n="hub.claDesc">
-                    مدل عمیق پساساختارگرای سهیل عنایت‌الله برای نفوذ به لایه‌های چهارگانه مسائل (لیتانی، ساختار، گفتمان، اسطوره) به همراه هرم سه‌بعدی تعاملی، آرشیو سناریوهای ملی/ژئوپلیتیک و کارگاه خلق استعاره‌های جدید.
-                </p>
-                <span class="hub-card-link"><span data-i18n="hub.claLink">ورود به کارگاه CLA</span> <i data-lucide="arrow-left"></i></span>
-            </div>
-
-            <!-- Futures Wheel Card -->
-            <div class="hub-card glass-card card-wheel" onclick="location.href='methods/futures-wheel.html'">
-                <div class="card-icon"><i data-lucide="orbit"></i></div>
-                <h3 data-i18n="hub.wheelTitle">چرخ آینده (Futures Wheel)</h3>
-                <p data-i18n="hub.wheelDesc">
-                    مدل پیامدی جروم گلن جهت نگاشت زنجیره‌ای آثار مرتبه اول, دوم و سوم رویدادها. شامل درخت اتصالات شعاعی SVG تغییر اقلیم در ایران، بررسی مدل‌های STEEP، کمی‌سازی و عمل‌گرا، و فرآیند ۱۱ مرحله‌ای اجرا.
-                </p>
-                <span class="hub-card-link"><span data-i18n="hub.wheelLink">ورود به شبیه‌ساز چرخ آینده</span> <i data-lucide="arrow-left"></i></span>
-            </div>
-
-            <!-- Backcasting Card -->
-            <div class="hub-card glass-card card-backcast" onclick="location.href='methods/backcasting.html'">
-                <div class="card-icon"><i data-lucide="history"></i></div>
-                <h3 data-i18n="hub.backcastTitle">پس‌نگری و نگاشت معکوس (Backcasting)</h3>
-                <p data-i18n="hub.backcastDesc">
-                    متدولوژی هنجاری طراحی آرمان‌شهر و بازگشت گام‌به‌گام به زمان حال بر مبنای مدل جان رابینسون. شامل مقایسه با پیش‌بینی (Forecasting)، شبیه‌ساز مسیر اکولوژیک تهران ۱۴۳۰ و کارگاه تدوین استراتژی گذار.
-                </p>
-                <span class="hub-card-link"><span data-i18n="hub.backcastLink">ورود به شبیه‌ساز پس‌نگری</span> <i data-lucide="arrow-left"></i></span>
-            </div>
-        </div>
-
-        <!-- Extended Methods -->
-        <div class="section-header" style="text-align: center; margin: 60px 0 30px;">
-            <span class="section-tag" style="color: var(--color-t);" data-i18n="index.extendedTag">لایه ۲ — گسترش کاتالوگ</span>
-            <h2 data-i18n="index.extendedTitle">متدهای تکمیلی</h2>
-            <p style="color: var(--text-secondary); max-width: 640px; margin: 10px auto 0; font-size: 0.95rem;" data-i18n="index.extendedSub"></p>
-            <p style="color: var(--text-secondary); max-width: 640px; margin: 8px auto 0; font-size: 0.88rem;" data-i18n="index.extendedNote" data-i18n-html></p>
-        </div>
-        <div class="hub-cards-grid">
-            <div class="hub-card glass-card" onclick="location.href='methods/popper-diamond.html'" style="border-top: 3px solid #e040fb;">
-                <div class="card-icon"><i data-lucide="gem"></i></div>
-                <h3 data-i18n="hubAdvanced.popperTitle">الماس پوپر</h3>
-                <p data-i18n="hubAdvanced.popperDesc"></p>
-                <span class="hub-card-link"><span data-i18n="hubAdvanced.popperLink">ورود</span> <i data-lucide="arrow-left"></i></span>
-            </div>
-            <div class="hub-card glass-card" onclick="location.href='methods/strategic-foresight.html'" style="border-top: 3px solid var(--color-f);">
-                <div class="card-icon"><i data-lucide="columns-3"></i></div>
-                <h3 data-i18n="hubAdvanced.hinesTitle">شش ستون هاینز و بی‌شاپ</h3>
-                <p data-i18n="hubAdvanced.hinesDesc"></p>
-                <span class="hub-card-link"><span data-i18n="hubAdvanced.hinesLink">ورود</span> <i data-lucide="arrow-left"></i></span>
-            </div>
-            <div class="hub-card glass-card" onclick="location.href='methods/scenarios.html'" style="border-top: 3px solid var(--color-cla);">
-                <div class="card-icon"><i data-lucide="git-branch"></i></div>
-                <h3 data-i18n="hubAdvanced.scenariosTitle">سناریوسازی</h3>
-                <p data-i18n="hubAdvanced.scenariosDesc"></p>
-                <span class="hub-card-link"><span data-i18n="hubAdvanced.scenariosLink">ورود</span> <i data-lucide="arrow-left"></i></span>
-            </div>
-            <div class="hub-card glass-card" onclick="location.href='methods/futurpreneurship.html'" style="border-top: 3px solid var(--color-i);">
-                <div class="card-icon"><i data-lucide="rocket"></i></div>
-                <h3 data-i18n="hubAdvanced.futurTitle">Futurpreneurship</h3>
-                <p data-i18n="hubAdvanced.futurDesc"></p>
-                <span class="hub-card-link"><span data-i18n="hubAdvanced.futurLink">ورود</span> <i data-lucide="arrow-left"></i></span>
-            </div>
-        </div>
-        <p style="text-align: center; margin-top: 24px;">
-            <a href="methods/" class="btn-primary-sm"><i data-lucide="library"></i> <span data-i18n="hubAdvanced.catalogLink">مشاهده کاتالوگ کامل</span></a>
-        </p>
-
-        <!-- Integration Model Section -->
-        <div class="integration-section glass-card" style="margin-top: 60px; padding: 40px;">
-            <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-                <span class="section-tag" style="background: rgba(0, 229, 255, 0.08); color: var(--color-f); border-color: rgba(0, 229, 255, 0.2);" data-i18n="index.integrationTag">هم‌افزایی متدولوژیک</span>
-                <h2 data-i18n="index.integrationTitle">چرخه تلفیق استراتژیک آینده‌پژوهی</h2>
-                <p data-i18n="index.integrationSub">چگونه این چهار ابزار برای ساخت یک استراتژی تاب‌آور سازمانی در هم تنیده می‌شوند؟</p>
-            </div>
-            
-            <div class="integration-flow">
-                <div class="integration-step">
-                    <div class="step-num">۱</div>
-                    <h4 data-i18n="integration.step1Title">رصد و حس‌گری (FITness)</h4>
-                    <p data-i18n="integration.step1Desc">شناسایی سیگنال‌های ضعیف تغییر و ارزیابی توان سازمانی برای درک و آزمون فرصت‌های نوظهور در محیط متلاطم.</p>
-                </div>
-                <div class="integration-arrow"><i data-lucide="chevron-left"></i></div>
-                
-                <div class="integration-step">
-                    <div class="step-num">۲</div>
-                    <h4 data-i18n="integration.step2Title">ریشه‌یابی و واسازی (CLA)</h4>
-                    <p data-i18n="integration.step2Desc">شکستن ساختار سیگنال‌ها به لایه‌های سیستمی، گفتمانی و اسطوره‌ای برای درک ریشه‌های عمیق تمدنی و ذهنی مسئله.</p>
-                </div>
-                <div class="integration-arrow"><i data-lucide="chevron-left"></i></div>
-                
-                <div class="integration-step">
-                    <div class="step-num">۳</div>
-                    <h4 data-i18n="integration.step3Title">تحلیل پیامدها (Futures Wheel)</h4>
-                    <p data-i18n="integration.step3Desc">نگاشت پیامدهای زنجیره‌ای مرتبه اول، دوم و سوم ناشی از تغییرات ساختاری برای شناسایی فرصت‌ها و تهدیدهای ثانویه.</p>
-                </div>
-                <div class="integration-arrow"><i data-lucide="chevron-left"></i></div>
-                
-                <div class="integration-step">
-                    <div class="step-num">۴</div>
-                    <h4 data-i18n="integration.step4Title">طراحی گذار معکوس (Backcasting)</h4>
-                    <p data-i18n="integration.step4Desc">تعریف آرمان‌شهر یا چشم‌انداز هنجاری مطلوب و بازگشت گام‌به‌گام به حال برای تدوین سیاست‌های اجرایی فوری.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Methodological Depth Section -->
-        <div class="method-depth-section glass-card" style="margin-top: 60px; padding: 40px;">
-            <div class="section-header" style="margin-bottom: 24px;">
-                <span class="section-tag" data-i18n="depth.tag">عمق متدولوژیک</span>
-                <h2 data-i18n="depth.title">چرا این چارچوب‌ها مکمل یکدیگرند؟</h2>
-            </div>
-            <div class="depth-grid">
-                <div class="depth-card">
-                    <div class="depth-num">01</div>
-                    <h4 data-i18n="depth.card1Title">از سیگنال تا ساختار</h4>
-                    <p data-i18n="depth.card1Desc">FITness سیگنال‌های ضعیف را رصد می‌کند؛ CLA آن‌ها را از سطح اخبار به ساختار و اسطوره می‌برد.</p>
-                </div>
-                <div class="depth-card">
-                    <div class="depth-num">02</div>
-                    <h4 data-i18n="depth.card2Title">از علت تا پیامد</h4>
-                    <p data-i18n="depth.card2Desc">Futures Wheel پیامدهای زنجیره‌ای تغییرات ساختاری را به صورت بصری و سیستمی نگاشت می‌کند.</p>
-                </div>
-                <div class="depth-card">
-                    <div class="depth-num">03</div>
-                    <h4 data-i18n="depth.card3Title">از آینده مطلوب تا اقدام</h4>
-                    <p data-i18n="depth.card3Desc">Backcasting از تصویر آینده مطلوب به عقب برمی‌گردد و گام‌های سیاستی و عملیاتی امروز را مشخص می‌کند.</p>
-                </div>
-                <div class="depth-card">
-                    <div class="depth-num">04</div>
-                    <h4 data-i18n="depth.card4Title">چرخه یادگیری سازمانی</h4>
-                    <p data-i18n="depth.card4Desc">ترکیب این ابزارها یک چرخه یادگیری استراتژیک می‌سازد: حس → فهم → پیش‌بینی پیامد → طراحی گذار.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scholarly Footnote/Citations -->
-        <div class="citation-box glass-card" style="margin-top: 80px;">
-            <h4><i data-lucide="book-open" style="vertical-align: middle; margin-left: 8px;"></i> <span data-i18n="index.citationTitle">مرجع علمی پورتال:</span></h4>
-            <p data-i18n="citations.portalBody" data-i18n-html style="margin-top: 8px; font-size: 0.9rem; line-height: 1.6;"></p>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="main-footer">
-        <div class="footer-container container" style="padding-top: 0; padding-bottom: 20px;">
-            <div class="footer-info">
-                <div class="footer-logo">
-                    <span class="logo-icon"><i data-lucide="compass"></i></span>
-                    <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
-                </div>
-                <p data-i18n="footer.desc">پلتفرم تعاملی ارزیابی و آموزش آمادگی و تناسب با آینده بر اساس مدل‌های بلوغ رنه روهربک، روش تحلیل لایه‌ای علتها (CLA) سهیل عنایت‌الله، و روش چرخ آینده جروم سی گلن.</p>
-            </div>
-            
-            <div class="footer-profile glass-card">
-                <div class="profile-header">
-                    <div class="profile-avatar"><i data-lucide="user"></i></div>
-                    <div class="profile-title">
-                        <h4 data-i18n="brand.heroTitle">علی منصوری</h4>
-                        <p data-i18n="footer.role">دانشجوی دکتری آینده‌پژوهی دانشگاه تهران</p>
-                    </div>
-                </div>
-                <div class="profile-links">
-                    <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
-                        <i data-lucide="file-text"></i> <span data-i18n="footer.resume">مشاهده رزومه و سوابق</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p data-i18n="footer.copyright">توسعه‌یافته برای درس آینده‌پژوهی سازمانی. کلیه حقوق علمی متعلق به علی منصوری می‌باشد.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/core/paths.js"></script>
-    <script src="js/core/i18n.js"></script>
-    <script src="js/core/load-locales.js"></script>
-    <script src="js/core/i18n-render.js"></script>
-    <script src="js/core/shared.js"></script>
-
-    <script src="js/core/animation.js"></script>
-    <script src="js/core/main.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Foresight Hub | مرجع تعاملی آینده‌پژوهی استراتژیک</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+        </div>
+        <nav class="nav-links"></nav>
+        <div class="header-actions">
+            <a href="methods/" class="btn-primary-sm" data-i18n="nav.methods">متدها</a>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section" style="min-height: 85vh; padding-top: 120px;">
+        <div class="hero-content">
+            <div class="badge-container">
+                <span class="badge"><i data-lucide="sparkles"></i> <span data-i18n="index.badge">مرجع آینده‌پژوهی استراتژیک</span></span>
+            </div>
+            <h1 class="hero-title" data-i18n="index.heroTitle" data-i18n-html>STRATEGIC FORESIGHT<br>PORTAL</h1>
+            <p class="hero-subtitle" data-i18n="index.heroSub"></p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <span class="meta-icon"><i data-lucide="user"></i></span>
+                    <span class="meta-label" data-i18n="index.presenter">ارائه‌دهنده:</span>
+                    <span class="meta-val">علی منصوری</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon"><i data-lucide="graduation-cap"></i></span>
+                    <span class="meta-label" data-i18n="index.student">دانشجوی دکتری آینده‌پژوهی</span>
+                    <span class="meta-val">دانشگاه تهران</span>
+                </div>
+            </div>
+            <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px;">
+                <a href="methods/" class="btn-primary-sm"><i data-lucide="library"></i> <span data-i18n="index.ctaMethods">ورود به کاتالوگ متدها</span></a>
+                <a href="about/" class="btn-ghost-sm"><i data-lucide="info"></i> <span data-i18n="nav.about">درباره من</span></a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="sphere-container">
+                <div class="sphere-glow"></div>
+                <div class="sphere-core"></div>
+                <div class="orbit-1"></div>
+                <div class="orbit-2"></div>
+                <div class="orbit-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container brand-section" style="padding-bottom: 40px;">
+        <div class="glass-card brand-card" style="padding: 40px; border-inline-start: 4px solid var(--color-f);">
+            <div class="section-header" style="margin-bottom: 24px;">
+                <span class="section-tag" data-i18n="brand.tag">پرسونال برند</span>
+                <h2 data-i18n="brand.heroTitle">علی منصوری</h2>
+                <p data-i18n="brand.heroSub" style="max-width: 720px; margin: 12px auto 0; color: var(--text-secondary); line-height: 1.7;"></p>
+            </div>
+            <div class="workspace-grid" style="grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: start;">
+                <div>
+                    <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 12px;" data-i18n="brand.bioTitle">معرفی</h3>
+                    <p data-i18n="brand.bioP1" data-i18n-html style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 14px;"></p>
+                    <p data-i18n="brand.bioP2" data-i18n-html style="line-height: 1.8; color: var(--text-secondary);"></p>
+                    <div style="display: flex; flex-wrap: gap: 12px; margin-top: 24px;">
+                        <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="btn-primary-sm"><i data-lucide="file-text"></i> <span data-i18n="brand.ctaResume">رزومه کامل</span></a>
+                        <a href="about/" class="btn-ghost-sm"><i data-lucide="user"></i> <span data-i18n="nav.about">درباره من</span></a>
+                        <a href="articles/" class="btn-ghost-sm"><i data-lucide="newspaper"></i> <span data-i18n="nav.articles">مقالات</span></a>
+                    </div>
+                </div>
+                <div id="brand-focus-grid" class="hub-cards-grid" style="grid-template-columns: 1fr;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container site-overview-section" style="padding-top: 20px; padding-bottom: 80px;">
+        <div class="glass-card" style="padding: 48px; border: 1px solid rgba(0, 229, 255, 0.12);">
+            <div class="section-header" style="text-align: center; margin-bottom: 32px;">
+                <span class="section-tag" data-i18n="index.overviewTag">درباره این پورتال</span>
+                <h2 data-i18n="index.overviewTitle">این سایت چیست و چه متدهایی دارد؟</h2>
+            </div>
+            <p data-i18n="index.overviewP1" data-i18n-html style="max-width: 820px; margin: 0 auto 16px; line-height: 1.85; color: var(--text-secondary);"></p>
+            <p data-i18n="index.overviewP2" data-i18n-html style="max-width: 820px; margin: 0 auto 36px; line-height: 1.85; color: var(--text-secondary);"></p>
+            <div id="overview-features-grid" class="hub-cards-grid" style="margin-bottom: 36px;"></div>
+            <p style="text-align: center; color: var(--text-secondary); font-size: 0.92rem; max-width: 640px; margin: 0 auto 28px; line-height: 1.7;" data-i18n="index.overviewP3" data-i18n-html></p>
+            <div style="text-align: center;">
+                <a href="methods/" class="btn-primary-sm"><i data-lucide="library"></i> <span data-i18n="index.ctaMethods">ورود به کاتالوگ متدها</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container container" style="padding-top: 0; padding-bottom: 20px;">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <span class="logo-icon"><i data-lucide="compass"></i></span>
+                    <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+                </div>
+                <p data-i18n="footer.desc"></p>
+            </div>
+            <div class="footer-profile glass-card">
+                <div class="profile-header">
+                    <div class="profile-avatar"><i data-lucide="user"></i></div>
+                    <div class="profile-title">
+                        <h4 data-i18n="brand.heroTitle">علی منصوری</h4>
+                        <p data-i18n="footer.role">دانشجوی دکتری آینده‌پژوهی دانشگاه تهران</p>
+                    </div>
+                </div>
+                <div class="profile-links">
+                    <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
+                        <i data-lucide="file-text"></i> <span data-i18n="footer.resume">مشاهده رزومه و سوابق</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright"></p>
+        </div>
+    </footer>
+
+    <script src="js/core/paths.js"></script>
+    <script src="js/core/i18n.js"></script>
+    <script src="js/core/load-locales.js"></script>
+    <script src="js/core/i18n-render.js"></script>
+    <script src="js/core/shared.js"></script>
+    <script src="js/core/animation.js"></script>
+    <script src="js/core/main.js"></script>
+</body>
+</html>
+

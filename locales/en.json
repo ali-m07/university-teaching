@@ -7,7 +7,7 @@
     "home": "Home",
     "about": "About",
     "articles": "Articles",
-    "methods": "Methods Catalog",
+    "methods": "Methods",
     "fitness": "Future FITness",
     "cla": "Causal Layered Analysis",
     "wheel": "Futures Wheel",
@@ -26,19 +26,37 @@
   "index": {
     "badge": "Strategic Foresight Teaching Lab",
     "heroTitle": "STRATEGIC FORESIGHT<br>PORTAL",
-    "heroSub": "Ali Mansouri's interactive teaching portal — digital foresight workshops with lesson plans, founder profiles, and practical cases.",
+    "heroSub": "Ali Mansouri's digital classroom — interactive teaching in foresight, futures studies, and strategic foresight for students, managers, and researchers.",
     "presenter": "Presenter:",
     "student": "PhD Candidate in Foresight",
-    "coreTag": "Layer 1 — Interactive workshops",
-    "coreTitle": "Four core tools",
-    "coreSub": "Digital simulators and workshop environments — each with a full lesson plan and hands-on exercises.",
-    "extendedTag": "Layer 2 — Expanding catalog",
-    "extendedTitle": "Extended methods",
-    "extendedSub": "Beyond the four core tools — each module includes history, founder photo, syllabus, and readings.",
-    "extendedNote": "Full catalog: 35+ foresight, futures studies & strategic foresight methods — <a href=\"methods/\">view all</a>.",
-    "integrationTag": "Methodological Synergy",
-    "integrationTitle": "Integration cycle of the four core tools",
-    "integrationSub": "How FITness, CLA, Futures Wheel, and Backcasting weave into one organizational strategy.",
+    "overviewTag": "About this portal",
+    "overviewTitle": "What is this site and what methods does it include?",
+    "overviewP1": "<strong>FORESIGHT HUB</strong> is my teaching and research portal: hands-on foresight learning with digital workshops, lesson plans, founder profiles, and policy/organizational cases. It is also my <strong>personal brand</strong> space for articles and professional profile.",
+    "overviewP2": "All methods live in one place — the <strong>Methods</strong> page. Interactive workshops (FITness, CLA, Futures Wheel, Backcasting), lesson modules (Popper Diamond, Six Pillars, Scenarios, Futurpreneurship), and a full catalog of Delphi, Morphological Analysis, Horizon Scanning, and dozens more.",
+    "overviewP3": "Click any method in the catalog — interactive ones open the simulator directly; others show description, references, and lesson plans (expanding over time).",
+    "ctaMethods": "Browse methods catalog",
+    "overviewFeatures": [
+      {
+        "icon": "play-circle",
+        "title": "Interactive workshops",
+        "desc": "4 simulators: FITness, CLA, Futures Wheel, Backcasting"
+      },
+      {
+        "icon": "book-open",
+        "title": "Lesson modules",
+        "desc": "8+ methods with syllabus, founder photo, readings & assignments"
+      },
+      {
+        "icon": "library",
+        "title": "Full catalog",
+        "desc": "38+ foresight methods in 7 categories — scanning to planning"
+      },
+      {
+        "icon": "newspaper",
+        "title": "Articles & brand",
+        "desc": "Research notes, resume, and Ali Mansouri profile"
+      }
+    ],
     "citationTitle": "Academic references:"
   },
   "common": {
@@ -226,9 +244,9 @@
     ]
   },
   "methodsIndex": {
-    "heroTag": "Methods catalog",
-    "heroTitle": "Foresight Classroom — Ali Mansouri",
-    "heroSub": "Comprehensive catalog of foresight, futures studies & strategic foresight — 38+ methods in 7 categories.",
+    "heroTag": "Foresight Methods",
+    "heroTitle": "Full Methods Catalog",
+    "heroSub": "All foresight, futures studies & strategic foresight methods — interactive workshops, lesson modules, and catalog entries in 7 categories.",
     "coreTitle": "Layer 1 — Interactive workshops",
     "advancedTitle": "Layer 2 — Extended methods",
     "note": "Each module includes <strong>founder intro</strong>, <strong>lesson plan</strong>, <strong>readings</strong>, and <strong>class assignment</strong>. New methods are added over time."

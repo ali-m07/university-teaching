@@ -96,11 +96,7 @@ function getNavItems() {
         ['home', 'nav.home'],
         ['about/', 'nav.about'],
         ['articles/', 'nav.articles'],
-        ['methods/', 'nav.methods'],
-        ['methods/fitness.html', 'nav.fitness'],
-        ['methods/cla.html', 'nav.cla'],
-        ['methods/futures-wheel.html', 'nav.wheel'],
-        ['methods/backcasting.html', 'nav.backcast']
+        ['methods/', 'nav.methods']
     ];
 }
 
@@ -150,8 +146,8 @@ function upgradeLegacyHeader() {
         actions.className = 'header-actions';
         const assessBtn = oldAction.querySelector('.btn-primary-sm');
         if (assessBtn) {
-            assessBtn.href = sfhUrl('methods/fitness.html') + '#assessment';
-            assessBtn.setAttribute('data-i18n', 'nav.assess');
+            assessBtn.href = sfhUrl('methods/');
+            assessBtn.setAttribute('data-i18n', 'nav.methods');
             actions.appendChild(assessBtn);
         }
         oldAction.replaceWith(actions);
@@ -160,17 +156,14 @@ function upgradeLegacyHeader() {
     const actions = header.querySelector('.header-actions');
     if (actions) {
         actions.querySelectorAll('a.btn-ghost-sm').forEach(a => a.remove());
-        if (!actions.querySelector('.btn-primary-sm')) {
-            const assess = document.createElement('a');
-            assess.href = sfhUrl('methods/fitness.html') + '#assessment';
-            assess.className = 'btn-primary-sm';
-            assess.setAttribute('data-i18n', 'nav.assess');
-            actions.appendChild(assess);
-        } else {
-            const assess = actions.querySelector('.btn-primary-sm');
-            assess.href = sfhUrl('methods/fitness.html') + '#assessment';
-            assess.setAttribute('data-i18n', 'nav.assess');
+        let cta = actions.querySelector('.btn-primary-sm');
+        if (!cta) {
+            cta = document.createElement('a');
+            cta.className = 'btn-primary-sm';
+            actions.appendChild(cta);
         }
+        cta.href = sfhUrl('methods/');
+        cta.setAttribute('data-i18n', 'nav.methods');
     }
 
     const footer = document.querySelector('.main-footer');

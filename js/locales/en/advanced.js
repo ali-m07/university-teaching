@@ -3,9 +3,9 @@
  */
 registerLocale('en', {
     methodsIndex: {
-        heroTag: 'Methods catalog',
-        heroTitle: 'Foresight Classroom — Ali Mansouri',
-        heroSub: 'Comprehensive catalog of foresight, futures studies & strategic foresight — 38+ methods in 7 categories.',
+        heroTag: 'Foresight Methods',
+        heroTitle: 'Full Methods Catalog',
+        heroSub: 'All foresight, futures studies & strategic foresight methods — interactive workshops, lesson modules, and catalog entries in 7 categories.',
         coreTitle: 'Layer 1 — Interactive workshops',
         advancedTitle: 'Layer 2 — Extended methods',
         note: 'Each module includes <strong>founder intro</strong>, <strong>lesson plan</strong>, <strong>readings</strong>, and <strong>class assignment</strong>. New methods are added over time.'
