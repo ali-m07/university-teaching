@@ -1,0 +1,2716 @@
+{
+  "lang": {
+    "label": "فارسی",
+    "switch": "FA"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "articles": "Articles",
+    "methods": "Methods Catalog",
+    "fitness": "Future FITness",
+    "cla": "Causal Layered Analysis",
+    "wheel": "Futures Wheel",
+    "backcast": "Backcasting",
+    "assess": "Maturity Assessment",
+    "menu": "Menu"
+  },
+  "footer": {
+    "desc": "Ali Mansouri's teaching portal — 8 foresight modules with interactive workshops, lesson plans, and articles.",
+    "descBackcast": "An interactive platform for future readiness and fitness assessment — Rohrbeck FITness, Inayatullah CLA, Glenn Futures Wheel, and Robinson normative Backcasting.",
+    "descWheel": "An interactive platform for future readiness and fitness assessment — Rohrbeck FITness, Inayatullah CLA, Glenn Futures Wheel, and Robinson normative Backcasting.",
+    "role": "PhD Candidate in Foresight, University of Tehran",
+    "resume": "View Resume & Profile",
+    "copyright": "Ali Mansouri Foresight Portal — methods, personal brand & articles. All rights reserved."
+  },
+  "index": {
+    "badge": "Strategic Foresight Teaching Lab",
+    "heroTitle": "STRATEGIC FORESIGHT<br>PORTAL",
+    "heroSub": "Ali Mansouri's interactive teaching portal — digital foresight workshops with lesson plans, founder profiles, and practical cases.",
+    "presenter": "Presenter:",
+    "student": "PhD Candidate in Foresight",
+    "coreTag": "Layer 1 — Interactive workshops",
+    "coreTitle": "Four core tools",
+    "coreSub": "Digital simulators and workshop environments — each with a full lesson plan and hands-on exercises.",
+    "extendedTag": "Layer 2 — Expanding catalog",
+    "extendedTitle": "Extended methods",
+    "extendedSub": "Beyond the four core tools — each module includes history, founder photo, syllabus, and readings.",
+    "extendedNote": "Full catalog: 35+ foresight, futures studies & strategic foresight methods — <a href=\"methods/\">view all</a>.",
+    "integrationTag": "Methodological Synergy",
+    "integrationTitle": "Integration cycle of the four core tools",
+    "integrationSub": "How FITness, CLA, Futures Wheel, and Backcasting weave into one organizational strategy.",
+    "citationTitle": "Academic references:"
+  },
+  "common": {
+    "close": "Close",
+    "readMore": "Learn more",
+    "order1": "1st Order",
+    "order2": "2nd Order",
+    "order3": "3rd Order",
+    "clickExplore": "Click to explore",
+    "scrollHint": "Scroll to view the full diagram"
+  },
+  "wheel": {
+    "hubLabel": "Climate Change in Iran",
+    "hubSub": "(Reduced rainfall & rising temperatures)",
+    "sidebarTitle": "Consequence Network & Hidden Impacts",
+    "sidebarSub": "Select a first-order consequence in the circular network to reveal secondary and tertiary cascading effects.",
+    "chain2": "Second-Order Consequences",
+    "chain3": "Third-Order Consequences"
+  },
+  "cla": {
+    "layers": {
+      "litany": "Litany",
+      "systemic": "Systemic Causes",
+      "worldview": "Worldview & Discourse",
+      "myth": "Myth & Metaphor"
+    }
+  },
+  "radar": {
+    "defaultTitle": "Emerging Technology Radar",
+    "defaultSub": "Click the glowing dots to view technology details, maturity status, and strategic recommendations.",
+    "status": "Radar Status:",
+    "impact": "Strategic Impact on Organization:"
+  },
+  "hub": {
+    "fitnessTitle": "Future FITness & Readiness",
+    "fitnessDesc": "Rohrbeck's maturity model, Perceiving / Prospecting / Probing simulation, 5-dimension self-assessment, and technology radar.",
+    "fitnessLink": "Enter FITness Module",
+    "claTitle": "Causal Layered Analysis (CLA)",
+    "claDesc": "Inayatullah's four-layer deconstruction, interactive pyramid, scenario archive, and metaphor workshop.",
+    "claLink": "Enter CLA Workshop",
+    "wheelTitle": "Futures Wheel",
+    "wheelDesc": "Cascading 1st–3rd order consequences; climate change radial tree, STEEP models, and 11-step process.",
+    "wheelLink": "Enter Futures Wheel Simulator",
+    "backcastTitle": "Backcasting & Reverse Mapping",
+    "backcastDesc": "Normative future design and step-by-step reverse path from Robinson; vs. Forecasting and Tehran 1430 scenario.",
+    "backcastLink": "Enter Backcasting Simulator"
+  },
+  "integration": {
+    "step1Title": "Scanning & Sensing (FITness)",
+    "step1Desc": "Detect weak signals of change and assess organizational capacity to perceive and probe emerging opportunities.",
+    "step2Title": "Root Cause & Deconstruction (CLA)",
+    "step2Desc": "Break signals into systemic, discursive, and mythic layers to understand deep civilizational roots.",
+    "step3Title": "Consequence Analysis (Futures Wheel)",
+    "step3Desc": "Map 1st–3rd order cascading effects to identify secondary opportunities and threats.",
+    "step4Title": "Reverse Transition Design (Backcasting)",
+    "step4Desc": "Define a normative desired future and walk backward to today for actionable policy steps."
+  },
+  "depth": {
+    "tag": "Methodological Depth",
+    "title": "Why These Frameworks Complement Each Other",
+    "card1Title": "From Signal to Structure",
+    "card1Desc": "FITness scans weak signals; CLA moves them from news surface to structure and myth.",
+    "card2Title": "From Cause to Consequence",
+    "card2Desc": "The Futures Wheel visually maps cascading effects of structural changes.",
+    "card3Title": "From Desired Future to Action",
+    "card3Desc": "Backcasting works backward from a normative vision to define today's policy and operational steps.",
+    "card4Title": "Organizational Learning Cycle",
+    "card4Desc": "Together they form a strategic learning cycle: Sense → Understand → Map consequences → Design transition."
+  },
+  "fitnessDepth": {
+    "tag": "Rohrbeck Theory Depth",
+    "title": "The Perceiving → Prospecting → Probing Cycle",
+    "s1": "Perceiving: Scan weak signals, analyze trends, and build environmental awareness.",
+    "s2": "Prospecting: Scenario building, technology roadmapping, and designing plausible futures.",
+    "s3": "Probing: Rapid prototyping, pilot projects, and validating assumptions.",
+    "s4": "Transformation: Converting insights into structural, cultural, and organizational DNA change."
+  },
+  "claDepth": {
+    "tag": "CLA Methodology Depth",
+    "title": "Causal Layered Analysis Workshop Steps",
+    "s1": "Select the issue and gather litany-layer data (news, statistics, events).",
+    "s2": "Analyze systemic causes: policies, institutions, economic and technical incentives.",
+    "s3": "Deconstruct discourses: worldviews, paradigms, and legitimizing narratives.",
+    "s4": "Explore myth and metaphor: collective unconscious and transformative alternative metaphors."
+  },
+  "wheelDepth": {
+    "tag": "Futures Wheel Execution Depth",
+    "title": "Glenn's 11-Step Futures Wheel Process",
+    "s1": "Define the central event/decision and assemble a multidisciplinary expert team.",
+    "s2": "Brainstorm first-order consequences without judgment or censorship.",
+    "s3": "Classify via STEEP and expand to second- and third-order effects.",
+    "s4": "Prioritize, policy-design, and formulate defensive/adaptive action responses."
+  },
+  "bcDepth": {
+    "tag": "Backcasting Depth",
+    "title": "Robinson's 4-Step Backcasting Framework",
+    "s1": "Vision the desired future: define normative indicators and target horizon.",
+    "s2": "Gap analysis: measure distance between current structure and desired vision.",
+    "s3": "Policy & regulation design: legal, financial, and technical transition tools.",
+    "s4": "Adaptive roadmap: short-, medium-, and long-term actionable steps."
+  },
+  "citations": {
+    "portalBody": "Eight teaching modules in this portal:<br>1. <strong>FITness</strong> — René Rohrbeck (<a href=\"https://rene-rohrbeck.com/about-foresight/\" target=\"_blank\" rel=\"noopener noreferrer\">Corporate Foresight</a>, 2010)<br>2. <strong>CLA</strong> — Sohail Inayatullah (<a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">Metafuture</a>)<br>3. <strong>Futures Wheel</strong> — Jerome C. Glenn (<a href=\"http://www.millennium-project.org\" target=\"_blank\" rel=\"noopener noreferrer\">Millennium Project</a>)<br>4. <strong>Backcasting</strong> — John B. Robinson (<a href=\"https://www.sciencedirect.com/journal/energy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Policy</a>)<br>5. <strong>Popper Diamond</strong> — Rafael Popper (EU FORLEARN)<br>6. <strong>Six Pillars</strong> — Andy Hines & Peter Bishop<br>7. <strong>Scenario Planning</strong> — Shell / Peter Schwartz<br>8. <strong>Futurpreneurship</strong> — foresight × venture",
+    "fitnessTitle": "Academic References & Organizational Maturity Sources:",
+    "fitnessBody": "This assessment module is based on documented research by Professor René Rohrbeck at EDHEC Business School. Benchmark studies and findings on the 33% profitability advantage of foresight-driven organizations are available at <a href=\"https://rene-rohrbeck.com/about-foresight/\" target=\"_blank\" rel=\"noopener noreferrer\">rene-rohrbeck.com</a> and his indexed publications on <a href=\"https://www.researchgate.net/profile/Rene-Rohrbeck\" target=\"_blank\" rel=\"noopener noreferrer\">ResearchGate</a>.",
+    "claTitle": "Academic Sources for Causal Layered Analysis:",
+    "claBody": "Causal Layered Analysis (CLA) was developed by distinguished futurist Sohail Inayatullah. His theoretical and workshop case studies—including the reference book <a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">The Causal Layered Analysis Reader</a> and articles on CLA 2.0 and 3.0—are indexed on <a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">metafuture.org</a> and the <a href=\"https://research.usc.edu.au/\" target=\"_blank\" rel=\"noopener noreferrer\">USC Research Bank</a>.",
+    "wheelTitle": "Futures Wheel Methodology References:",
+    "wheelBody": "The Futures Wheel methodology was first introduced by Jerome C. Glenn in 1971. Comprehensive guides on probability calculations and quantitative consequence mapping appear in <a href=\"http://www.millennium-project.org/publications-2/\" target=\"_blank\" rel=\"noopener noreferrer\">Futures Research Methodology 3.0</a> by The Millennium Project, with the full chapter also available on <a href=\"https://www.researchgate.net/publication/349474778_THE_FUTURES_WHEEL\" target=\"_blank\" rel=\"noopener noreferrer\">ResearchGate</a>.",
+    "backcastTitle": "Academic Sources for Backcasting:",
+    "backcastBody": "Normative backcasting was first formalized by <strong>John B. Robinson</strong> in 1982 for energy policy planning. Key works include <a href=\"https://www.sciencedirect.com/science/article/pii/030142158290059X\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Backcasting: A Proposed Method of Policy Analysis</a> in the journal <em>Energy Policy</em>, along with evolutionary participatory backcasting in sustainability literature. Urban resilience principles based on backcasting are also cited in foresight studies at the University of Copenhagen."
+  },
+  "brand": {
+    "tag": "Personal Brand",
+    "heroTitle": "Ali Mansouri",
+    "heroSub": "Strategic Foresight Researcher · PhD Candidate, University of Tehran · Builder of interactive foresight tools",
+    "aboutLink": "About Me",
+    "articlesLink": "Articles & Notes",
+    "methodsLink": "Teaching Tools",
+    "bioTitle": "Introduction",
+    "bioP1": "I am <strong>Ali Mansouri</strong>, a PhD candidate in Foresight at the University of Tehran. This portal is both my <strong>teaching lab</strong> for foresight methods and my <strong>personal brand</strong> — a place to introduce my work, publish articles, and share research insights.",
+    "bioP2": "This portal is my <strong>digital classroom</strong>: currently 8 modules (4 interactive workshops + 4 extended methods), growing over time — each with founder intro, lesson plan, readings, and assignments.",
+    "focusTitle": "Focus Areas",
+    "focuses": [
+      {
+        "icon": "compass",
+        "title": "Corporate Foresight",
+        "desc": "Maturity models, FITness, technology radar"
+      },
+      {
+        "icon": "layers",
+        "title": "CLA & Discourse",
+        "desc": "Layered analysis of macro and policy issues"
+      },
+      {
+        "icon": "pen-line",
+        "title": "Publishing",
+        "desc": "Research notes and foresight articles"
+      },
+      {
+        "icon": "code-2",
+        "title": "Interactive Tools",
+        "desc": "Turning methodology into digital workshops"
+      }
+    ],
+    "ctaResume": "Full Resume",
+    "ctaMethods": "Explore Tools"
+  },
+  "aboutPage": {
+    "tag": "About",
+    "title": "Ali Mansouri — Foresight Researcher & Tool Builder",
+    "sub": "Bridging academic research, teaching, and interactive foresight experiences",
+    "missionTitle": "Mission",
+    "mission": "Build a bridge between foresight theory and practice — for students, organizations, and decision-makers who want to <strong>design</strong> futures, not only predict them.",
+    "eduTitle": "Education",
+    "edu": "PhD in Foresight — University of Tehran",
+    "contactTitle": "Connect",
+    "contact": "Professional profile and resume at the link below"
+  },
+  "articlesPage": {
+    "tag": "Articles",
+    "title": "Notes & Articles",
+    "sub": "Research notes and articles — new posts coming soon.",
+    "emptyTitle": "Coming Soon",
+    "emptyDesc": "First articles are in preparation. Follow updates via resume and GitHub repository.",
+    "sampleArticles": [
+      {
+        "date": "2025",
+        "title": "Why Rohrbeck FITness Still Matters",
+        "tag": "Corporate",
+        "status": "draft"
+      },
+      {
+        "date": "2025",
+        "title": "CLA in National Policy: Lessons from Singapore",
+        "tag": "CLA",
+        "status": "draft"
+      },
+      {
+        "date": "2024",
+        "title": "From Litany to Myth — A Practical CLA Workshop Guide",
+        "tag": "Teaching",
+        "status": "draft"
+      }
+    ]
+  },
+  "methodsIndex": {
+    "heroTag": "Methods catalog",
+    "heroTitle": "Foresight Classroom — Ali Mansouri",
+    "heroSub": "Comprehensive catalog of foresight, futures studies & strategic foresight — 38+ methods in 7 categories.",
+    "coreTitle": "Layer 1 — Interactive workshops",
+    "advancedTitle": "Layer 2 — Extended methods",
+    "note": "Each module includes <strong>founder intro</strong>, <strong>lesson plan</strong>, <strong>readings</strong>, and <strong>class assignment</strong>. New methods are added over time."
+  },
+  "advancedPage": {
+    "popper": {
+      "slug": "popper-diamond",
+      "heroTag": "Rafael Popper · EU Foresight",
+      "heroTitle": "Popper Foresight Diamond",
+      "heroSub": "A framework to assess foresight <em>quality</em> — not prediction, but whether your exercise was truly creative, innovative, expert-driven, and interactive.",
+      "history": {
+        "accent": "#e040fb",
+        "founderLabel": "Developer",
+        "founder": "Rafael Popper",
+        "yearLabel": "Period",
+        "year": "2008–2012 (EU FORLEARN / JRC)",
+        "institution": "UNU-MERIT · European Commission JRC",
+        "title": "Foresight Diamond — quality assessment",
+        "origin": "Rafael Popper developed the Foresight Diamond in EU <strong>FORLEARN</strong> projects to answer: how do we know a foresight exercise was <em>good</em>, not merely completed?",
+        "problemLabel": "Problem",
+        "problem": "FRM 3.0 lists methods but lacks an integrated quality metric to compare workshops, policy processes, and consulting deliverables.",
+        "useLabel": "Applications",
+        "applications": "EU national foresight quality reviews, JRC workshop audits, and internal foresight team review before board presentations."
+      },
+      "introTitle": "Four corners of the diamond",
+      "intro": "Each corner is a quality dimension. Weak foresight is often hollow in one or two corners — e.g. high Expertise but no real stakeholder Interaction.",
+      "pillars": [
+        {
+          "title": "Creativity",
+          "desc": "Did unexpected ideas, fresh metaphors, and assumption-breaking occur? Without creativity, foresight is a trend report.",
+          "color": "#e040fb"
+        },
+        {
+          "title": "Innovation",
+          "desc": "Did outputs surface new paths, policy options, or business models?",
+          "color": "#7c4dff"
+        },
+        {
+          "title": "Expertise",
+          "desc": "Was there deep domain knowledge, evidence, and analytical competence?",
+          "color": "#00e5ff"
+        },
+        {
+          "title": "Interaction",
+          "desc": "Were stakeholders genuinely engaged? Token attendance is not interaction.",
+          "color": "#ffaa00"
+        }
+      ],
+      "gapTitle": "Why not in FRM 3.0?",
+      "gap": "Chapter 39 covers integration only; Popper's Diamond is a <strong>meta-tool</strong> applied across all other methods. Glenn & Gordon listed tools; Popper added a <strong>quality lens</strong>.",
+      "caseTitle": "Practical example",
+      "case": "A ministry ran Delphi — 200-page report. Popper audit: high Expertise, medium Interaction, low Creativity and Innovation. Result: redesign with CLA and scenarios — not a second Delphi."
+    },
+    "hines": {
+      "slug": "strategic-foresight",
+      "heroTag": "Andy Hines & Peter Bishop",
+      "heroTitle": "Strategic Foresight — Six Pillars",
+      "heroSub": "Operational framework from <em>Thinking About the Future</em>: the full path from framing the question to action — for managers, not only researchers.",
+      "history": {
+        "accent": "var(--color-f)",
+        "founderLabel": "Authors",
+        "founder": "Andy Hines & Peter Bishop",
+        "yearLabel": "Year",
+        "year": "2006 (updates 2013–2020)",
+        "institution": "University of Houston · Foresight Program",
+        "title": "Six Pillars of Strategic Foresight",
+        "origin": "At Houston's foresight program, Hines & Bishop treated FRM as a toolbox but managers needed a <strong>path</strong>. The Six Pillars answer \"what do I do now?\"",
+        "problemLabel": "Problem",
+        "problem": "FRM gives methods chapter by chapter; organizations don't know when to start scanning and when to finish planning.",
+        "useLabel": "Applications",
+        "applications": "MBA foresight programs, organizational consulting, APF training, and executive courses in energy and health."
+      },
+      "introTitle": "Six pillars — frame to act",
+      "intro": "Each pillar is a measurable phase. Weakness in one breaks the chain — e.g. excellent forecasting without visioning yields shelf reports.",
+      "pillars": [
+        {
+          "title": "1. Framing",
+          "desc": "Define the question, system boundary, stakeholders, and \"why foresight?\". Without framing, everything is analyzed and nothing decided.",
+          "color": "var(--color-f)"
+        },
+        {
+          "title": "2. Scanning",
+          "desc": "Environmental scanning, weak signals, STEEP/PESTLE. FRM Ch.2 exists; Hines places it in a pillar sequence.",
+          "color": "#4caf50"
+        },
+        {
+          "title": "3. Forecasting",
+          "desc": "Trends, cross-impact, cone of plausibility. Exploring possibility space — not single-line prediction.",
+          "color": "#ffaa00"
+        },
+        {
+          "title": "4. Visioning",
+          "desc": "Building preferred and normative futures. Bridge to backcasting and scenarios.",
+          "color": "var(--color-cla)"
+        },
+        {
+          "title": "5. Planning",
+          "desc": "Turn insight into roadmaps, OKRs, policy. Where foresight dies or creates value.",
+          "color": "var(--color-i)"
+        },
+        {
+          "title": "6. Acting",
+          "desc": "Pilots, structural change, learning. Without acting, foresight is management decoration.",
+          "color": "var(--color-wheel-red)"
+        }
+      ],
+      "gapTitle": "Difference from FRM",
+      "gap": "FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar — not the reverse.",
+      "caseTitle": "Example: Cone of Plausibility",
+      "case": "After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers — not every imaginable fantasy."
+    },
+    "scenarios": {
+      "slug": "scenarios",
+      "heroTag": "Shell · Schwartz · van der Heijden",
+      "heroTitle": "Strategic Scenario Planning",
+      "heroSub": "Beyond FRM Chapter 19: building 2–4 plausible futures for decisions under uncertainty — not single-line forecast.",
+      "history": {
+        "accent": "var(--color-cla)",
+        "founderLabel": "Pioneers",
+        "founder": "Pierre Wack (Shell) · Peter Schwartz (GBN)",
+        "yearLabel": "Era",
+        "year": "1970–1991 (Shell) · 1996 (The Art of the Long View)",
+        "institution": "Royal Dutch Shell · Global Business Network",
+        "title": "Scenario Planning as Strategic Decision Tool",
+        "origin": "Shell under Wack showed scenarios can move from stories to <strong>strategic survival tools</strong> (1973 oil crisis). Schwartz popularized them for Silicon Valley and NGOs.",
+        "problemLabel": "Problem",
+        "problem": "FRM has Scenario, Toolbox, and Interactive chapters but Shell depth (critical uncertainties, 2×2, early indicators) cannot fit one chapter.",
+        "useLabel": "Applications",
+        "applications": "Shell, South Africa post-apartheid scenarios, Singapore PMO, WEF, and energy/water planning in the Middle East."
+      },
+      "introTitle": "7-step process (Schwartz summary)",
+      "intro": "Scenarios are not \"correct prediction\" — mental preparation for multiple futures.",
+      "pillars": [
+        {
+          "title": "1. Identify focal decision",
+          "desc": "What decision is this for? Without a decision, scenarios are entertainment.",
+          "color": "var(--color-cla)"
+        },
+        {
+          "title": "2. Critical uncertainties",
+          "desc": "Which two variables matter most and are least certain?",
+          "color": "var(--color-f)"
+        },
+        {
+          "title": "3. 2×2 matrix",
+          "desc": "Four quadrants = four world logics. Narrative names (not A/B/C/D).",
+          "color": "#7c4dff"
+        },
+        {
+          "title": "4. Narrative & logic",
+          "desc": "Each scenario must be internally consistent — a path from today exists.",
+          "color": "#ffaa00"
+        },
+        {
+          "title": "5. Early indicators",
+          "desc": "What signals show which scenario is activating?",
+          "color": "#4caf50"
+        },
+        {
+          "title": "6. Implications & options",
+          "desc": "Under each scenario, what no-regret and what-if strategies?",
+          "color": "var(--color-i)"
+        },
+        {
+          "title": "7. Organizational link",
+          "desc": "Scenarios must connect to budgeting and risk — or they sit on shelves.",
+          "color": "var(--color-wheel-red)"
+        }
+      ],
+      "gapTitle": "FRM vs real scenario practice",
+      "gap": "FRM Ch.19–21: Scenario, Toolbox, Interactive. Shell/Schwartz: a <strong>decision system</strong> with 2×2 and indicators. FRM mentions interactive scenarios; not Shell-style strategic survival.",
+      "caseTitle": "Example: Iran energy axes",
+      "case": "Axis 1: energy transition speed (slow/fast). Axis 2: geopolitics (open/closed). Four scenarios: \"Regional green economy\", \"Fossil island\", \"Tech leap\", \"Chronic crisis\". Each implies different power investment policy."
+    },
+    "futurpreneurship": {
+      "slug": "futurpreneurship",
+      "heroTag": "Foresight × Entrepreneurship",
+      "heroTitle": "Futurpreneurship — Future-Driven Entrepreneurship",
+      "heroSub": "From weak signal and scenario to venture: someone who sees the future, accepts risk, and builds.",
+      "history": {
+        "accent": "var(--color-i)",
+        "founderLabel": "Conceptual roots",
+        "founder": "Slaughter · Candy · Mansouri synthesis",
+        "yearLabel": "Evolution",
+        "year": "2000–2025",
+        "institution": "Foresight × Innovation Studies",
+        "title": "Entrepreneurial Foresight / Futurpreneurship",
+        "origin": "FRM 3.0 has Personal Futures (Ch.36) and Genius Forecasting — but no <strong>systematic bridge to startup and venture building</strong>. Futurpreneurship fills that gap: foresight → hypothesis → MVP → scale.",
+        "problemLabel": "Problem",
+        "problem": "Startups without foresight are blind; futurists without ventures only report.",
+        "useLabel": "Applications",
+        "applications": "Accelerator design, corporate venture building, policy labs, and PhD foresight with practical outputs (this portal is an example)."
+      },
+      "introTitle": "Futurpreneurship cycle",
+      "intro": "Ali Mansouri Stack: Scan → Scenario → Venture hypothesis → Prototype → Strategic pivot.",
+      "pillars": [
+        {
+          "title": "Sense",
+          "desc": "Weak signals + CLA layers 1–2. What \"unsaid\" change is approaching?",
+          "color": "var(--color-f)"
+        },
+        {
+          "title": "Imagine",
+          "desc": "Scenarios and short horizon vision. Which future is worth a venture?",
+          "color": "var(--color-cla)"
+        },
+        {
+          "title": "Hypothesize",
+          "desc": "Falsifiable business hypothesis: \"If X by 2030, customer Y exists.\"",
+          "color": "#7c4dff"
+        },
+        {
+          "title": "Build",
+          "desc": "MVP, landing test, minimum-resource pilot — probing in Rohrbeck's terms.",
+          "color": "var(--color-i)"
+        },
+        {
+          "title": "Scale or Kill",
+          "desc": "If signal confirms, scale; if not, pivot or kill fast — foresight prevents long wrong bets.",
+          "color": "#4caf50"
+        }
+      ],
+      "gapTitle": "Why FRM lacks this",
+      "gap": "FRM was written for policy and research labs; <strong>venture creation</strong> is out of scope. Futurpreneurship is what Silicon Valley does informally — with foresight rigor.",
+      "caseTitle": "Example: weak signal → venture",
+      "case": "Signal: aging + AI tutor demand. Scenario: \"Physical school boundary\" fades. Venture: AI tutor platform with curriculum foresight — MVP in 90 days, not 5 years of research."
+    }
+  },
+  "hubAdvanced": {
+    "popperTitle": "Popper Foresight Diamond",
+    "popperDesc": "Assess foresight quality: Creativity, Innovation, Expertise, Interaction — a meta-tool over all methods.",
+    "popperLink": "Explore",
+    "hinesTitle": "Hines & Bishop Six Pillars",
+    "hinesDesc": "Framing → Scanning → Forecasting → Visioning → Planning → Acting — the manager's path.",
+    "hinesLink": "Explore",
+    "scenariosTitle": "Strategic Scenario Planning",
+    "scenariosDesc": "Shell/Schwartz: 2×2, critical uncertainties, early indicators — beyond FRM's Scenario chapter.",
+    "scenariosLink": "Explore",
+    "futurTitle": "Futurpreneurship",
+    "futurDesc": "Foresight + venture: from weak signal to MVP — what FRM 3.0 lacks.",
+    "futurLink": "Explore",
+    "catalogLink": "Full methods catalog"
+  },
+  "lessonLabels": {
+    "foundersTitle": "Model creators",
+    "module": "Module",
+    "objectives": "Learning objectives",
+    "outline": "Lesson plan (Syllabus)",
+    "readings": "Readings & references",
+    "assignment": "Assignment / workshop",
+    "readMore": "Link"
+  },
+  "lessons": {
+    "fitness": {
+      "meta": {
+        "module": "1",
+        "duration": "90 min",
+        "level": "Master / MBA / executive",
+        "diagram": "assets/foresight_concept.png",
+        "diagramAlt": "Future Readiness & FITness concept"
+      },
+      "founders": [
+        {
+          "id": "rohrbeck",
+          "name": "René Rohrbeck",
+          "role": "Founder of FITness · Professor, EDHEC",
+          "bio": "Corporate foresight scholar; built the maturity model from fieldwork at Siemens and Deutsche Telekom. His focus: turn foresight from <strong>reports</strong> into a <strong>dynamic capability</strong>."
+        }
+      ],
+      "objectives": [
+        "Distinguish <strong>Future Readiness</strong> (static) from <strong>FITness</strong> (dynamic fit).",
+        "Relate Perceiving, Prospecting, and Probing to real organizations.",
+        "Name Rohrbeck's five maturity dimensions and use the self-assessment on this page.",
+        "Connect FITness to technology radar and corporate venturing."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "15 min",
+          "title": "Intro: why org foresight fails",
+          "desc": "Discussion + Zoom/covid example. Key question: report or capability?"
+        },
+        {
+          "step": "2",
+          "time": "20 min",
+          "title": "Readiness vs FITness",
+          "desc": "Concepts, foresight_concept.png, five readiness elements."
+        },
+        {
+          "step": "3",
+          "time": "25 min",
+          "title": "Rohrbeck model & three Ps",
+          "desc": "Perceiving/Prospecting/Probing with Siemens & DT cases."
+        },
+        {
+          "step": "4",
+          "time": "20 min",
+          "title": "Workshop: 5-dimension self-assessment",
+          "desc": "Fill #assessment; group debrief on weakest dimension."
+        },
+        {
+          "step": "5",
+          "time": "10 min",
+          "title": "Wrap-up",
+          "desc": "Bridge to CLA and Wheel in next sessions."
+        }
+      ],
+      "readings": [
+        {
+          "type": "Book",
+          "text": "Rohrbeck, R. (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer."
+        },
+        {
+          "type": "Paper",
+          "text": "Rohrbeck et al. (2007). Strategic Foresight in multinationals."
+        },
+        {
+          "type": "Case",
+          "text": "Deutsche Telekom Technology Radar."
+        }
+      ],
+      "assignment": "Pick an organization. Score it on five dimensions, identify one weak area, and propose a 90-day <strong>Probing</strong> experiment that turns foresight into action."
+    },
+    "cla": {
+      "meta": {
+        "module": "2",
+        "duration": "120 min",
+        "level": "Master / PhD foresight",
+        "diagram": "assets/cla_concept.png",
+        "diagramAlt": "CLA four-layer pyramid"
+      },
+      "founders": [
+        {
+          "id": "inayatullah",
+          "name": "Sohail Inayatullah",
+          "role": "Founder of CLA · UNESCO Chair in Futures Studies",
+          "bio": "Pakistani-Australian academic; CLA moves from news to myth and structure. Author of <em>Questioning the Future</em> and CLA 2.0/3.0."
+        }
+      ],
+      "objectives": [
+        "Define and contrast Litany, Systemic, Worldview, Myth/Metaphor.",
+        "Unpack a current issue across four layers.",
+        "Metaphor workshop: new narrative for policy shift.",
+        "Combine CLA with Wheel and scenarios."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "20 min",
+          "title": "Why headlines are not enough",
+          "desc": "Water crisis at layer 1 vs layer 4 hydrological empire myth."
+        },
+        {
+          "step": "2",
+          "time": "30 min",
+          "title": "CLA pyramid",
+          "desc": "cla_concept.png + interactive pyramid on page."
+        },
+        {
+          "step": "3",
+          "time": "35 min",
+          "title": "National/geopolitical case",
+          "desc": "Group work on archive cases."
+        },
+        {
+          "step": "4",
+          "time": "25 min",
+          "title": "Metaphor lab",
+          "desc": "Rewrite layer 4 with new metaphor."
+        },
+        {
+          "step": "5",
+          "time": "10 min",
+          "title": "Reflect",
+          "desc": "Which layer is censored in your org?"
+        }
+      ],
+      "readings": [
+        {
+          "type": "Book",
+          "text": "Inayatullah, S. (2004). <em>The CLA Reader</em>."
+        },
+        {
+          "type": "Book",
+          "text": "Inayatullah (2015) <em>CLAs 2.0</em>; (2022) <em>CLAs 3.0</em>."
+        },
+        {
+          "type": "Paper",
+          "text": "Inayatullah (1998). Causal layered analysis — <em>Futures</em>."
+        }
+      ],
+      "assignment": "Pick this week's news. Fill a 4-layer CLA table + one new layer-4 metaphor proposing different policy."
+    },
+    "wheel": {
+      "meta": {
+        "module": "3",
+        "duration": "90 min",
+        "level": "Undergraduate / Master",
+        "diagram": "assets/upload_2.png",
+        "diagramAlt": "Futures Wheel cascade"
+      },
+      "founders": [
+        {
+          "id": "glenn",
+          "name": "Jerome C. Glenn",
+          "role": "Founder, Futures Wheel · Millennium Project",
+          "bio": "American futurist; created the Wheel (1972) for consequence chains. MP director and FRM 3.0 editor — this lesson focuses on <strong>workshop Wheel practice</strong>, not the 39-method catalog."
+        }
+      ],
+      "objectives": [
+        "Map 1st, 2nd, 3rd order consequences from a driver.",
+        "Contrast Wheel with mind maps and impact trees.",
+        "Apply STEEP to a climate case.",
+        "Link Wheel outputs to scenarios and backcasting."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "15 min",
+          "title": "History & logic",
+          "desc": "Glenn 1972, Boeing award."
+        },
+        {
+          "step": "2",
+          "time": "20 min",
+          "title": "11-step process",
+          "desc": "Page steps + climate example."
+        },
+        {
+          "step": "3",
+          "time": "35 min",
+          "title": "Cascade builder workshop",
+          "desc": "Students enter own driver in tool."
+        },
+        {
+          "step": "4",
+          "time": "15 min",
+          "title": "STEEP & leverage",
+          "desc": "Which branch has most leverage?"
+        },
+        {
+          "step": "5",
+          "time": "5 min",
+          "title": "Wrap",
+          "desc": "Link to Futurpreneurship opportunities."
+        }
+      ],
+      "readings": [
+        {
+          "type": "Book",
+          "text": "Glenn & Gordon (2009). FRM 3.0 — Futures Wheel chapter."
+        },
+        {
+          "type": "Report",
+          "text": "Millennium Project — State of the Future examples."
+        }
+      ],
+      "assignment": "Driver: \"40% EV adoption in Tehran by 2051\". List 3 third-order branches + one Futurpreneurship opportunity."
+    },
+    "backcast": {
+      "meta": {
+        "module": "4",
+        "duration": "90 min",
+        "level": "Master / urban & environmental planning",
+        "diagram": "assets/backcasting_concept.png",
+        "diagramAlt": "Backcasting vs forecasting"
+      },
+      "founders": [
+        {
+          "id": "robinson",
+          "name": "John B. Robinson",
+          "role": "Backcasting pioneer · UBC",
+          "bio": "Sustainability planning scholar; backcasting from desired futures to today — not prediction."
+        }
+      ],
+      "objectives": [
+        "Explain forecast vs backcast with comparison table.",
+        "Define a normative vision (e.g. Tehran 2051).",
+        "Build reverse milestones in page simulator.",
+        "Critique power/politics limits of backcasting."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "20 min",
+          "title": "Forecast vs backcast",
+          "desc": "Robinson & Dreborg comparison table."
+        },
+        {
+          "step": "2",
+          "time": "25 min",
+          "title": "Vision & criteria",
+          "desc": "Desired future + sustainability criteria."
+        },
+        {
+          "step": "3",
+          "time": "30 min",
+          "title": "Simulator workshop",
+          "desc": "Tehran ecological path tool."
+        },
+        {
+          "step": "4",
+          "time": "10 min",
+          "title": "Barriers",
+          "desc": "CLA layers 3–4 on blockers."
+        },
+        {
+          "step": "5",
+          "time": "5 min",
+          "title": "Assignment brief",
+          "desc": "3 immediate policies for first milestone."
+        }
+      ],
+      "readings": [
+        {
+          "type": "Paper",
+          "text": "Robinson (1990). Futures under glass — <em>Futures</em>."
+        },
+        {
+          "type": "Paper",
+          "text": "Dreborg (1996). Essence of backcasting — <em>Futures</em>."
+        },
+        {
+          "type": "Book",
+          "text": "Natural Step / Holmberg & Robèrt — Sweden backcasting."
+        }
+      ],
+      "assignment": "Write a 10-year vision (2 paragraphs). Five backcast steps + one CLA worldview barrier."
+    },
+    "popper": {
+      "meta": {
+        "module": "5",
+        "duration": "75 min",
+        "level": "Foresight consultants / evaluators"
+      },
+      "founders": [
+        {
+          "id": "popper",
+          "name": "Rafael Popper",
+          "role": "Foresight Diamond · UNU-MERIT / JRC",
+          "bio": "EU foresight researcher; FORLEARN Diamond scores Creativity, Innovation, Expertise, Interaction — a meta-tool over all methods."
+        }
+      ],
+      "objectives": [
+        "Define four Diamond vertices with workshop examples.",
+        "Audit \"done foresight\" vs quality foresight.",
+        "Critique a real Delphi/scenario report with the Diamond.",
+        "Redesign a workshop based on weak vertex."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "15 min",
+          "title": "Quality gap in FRM",
+          "desc": "Why 39 methods are not enough."
+        },
+        {
+          "step": "2",
+          "time": "20 min",
+          "title": "Four vertices",
+          "desc": "Definitions + weak/strong examples."
+        },
+        {
+          "step": "3",
+          "time": "25 min",
+          "title": "Group audit",
+          "desc": "Score a past org workshop 1–5."
+        },
+        {
+          "step": "4",
+          "time": "10 min",
+          "title": "Redesign",
+          "desc": "Boost Creativity & Interaction."
+        },
+        {
+          "step": "5",
+          "time": "5 min",
+          "title": "Wrap",
+          "desc": "Diamond before board presentation."
+        }
+      ],
+      "readings": [
+        {
+          "type": "Report",
+          "text": "Popper (2008). Foresight Diamond — EU FORLEARN."
+        },
+        {
+          "type": "Paper",
+          "text": "Popper (2008). How are foresight methods selected?"
+        }
+      ],
+      "assignment": "Evaluate a foresight workshop on 4×5 criteria. One-page memo to management."
+    },
+    "hines": {
+      "meta": {
+        "module": "6",
+        "duration": "120 min",
+        "level": "MBA / executive foresight"
+      },
+      "founders": [
+        {
+          "id": "hines",
+          "name": "Andy Hines",
+          "role": "Co-author Six Pillars · UH",
+          "bio": "Foresight professor & APF Fellow; HR and managerial foresight."
+        },
+        {
+          "id": "bishop",
+          "name": "Peter Bishop",
+          "role": "Co-author Six Pillars",
+          "bio": "Former Houston Foresight chair; Cone of Plausibility & executive training."
+        }
+      ],
+      "objectives": [
+        "Explain Framing → Acting in order.",
+        "Diagnose which pillar your org is stuck on.",
+        "Draw Cone of Plausibility linked to Visioning.",
+        "Contrast Hines-Bishop architecture with FRM list."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "20 min",
+          "title": "From toolbox to path",
+          "desc": "Why managers find FRM overwhelming."
+        },
+        {
+          "step": "2",
+          "time": "30 min",
+          "title": "Six pillars deep dive",
+          "desc": "Each pillar + failure mode."
+        },
+        {
+          "step": "3",
+          "time": "30 min",
+          "title": "Cone of Plausibility case",
+          "desc": "Energy or health group work."
+        },
+        {
+          "step": "4",
+          "time": "25 min",
+          "title": "Planning → Acting",
+          "desc": "OKRs and pilots."
+        },
+        {
+          "step": "5",
+          "time": "15 min",
+          "title": "Reflect",
+          "desc": "Map your org pillars."
+        }
+      ],
+      "readings": [
+        {
+          "type": "Book",
+          "text": "Hines & Bishop (2006). <em>Thinking About the Future</em>."
+        },
+        {
+          "type": "Paper",
+          "text": "Hines (2010). Primary futurist skill — APF."
+        }
+      ],
+      "assignment": "Frame your org foresight question (1 page). Weakest pillar + next deliverable."
+    },
+    "scenarios": {
+      "meta": {
+        "module": "7",
+        "duration": "150 min (2 sessions)",
+        "level": "Strategy / policy"
+      },
+      "founders": [
+        {
+          "id": "wack",
+          "name": "Pierre Wack",
+          "role": "Shell scenario pioneer",
+          "bio": "Shell planning head; scenarios as survival tool (1973 oil shock)."
+        },
+        {
+          "id": "schwartz",
+          "name": "Peter Schwartz",
+          "role": "The Art of the Long View · GBN",
+          "bio": "GBN co-founder; mainstreamed scenarios for Silicon Valley & NGOs."
+        }
+      ],
+      "objectives": [
+        "Differentiate scenarios from prediction.",
+        "Pick two critical uncertainties and build 2×2 matrix.",
+        "Write four narratives with early indicators.",
+        "Extract implications and no-regret options."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "25 min",
+          "title": "Shell history",
+          "desc": "Wack, 1973, mental preparedness."
+        },
+        {
+          "step": "2",
+          "time": "30 min",
+          "title": "Schwartz 7-step",
+          "desc": "Decision focus & 2×2."
+        },
+        {
+          "step": "3",
+          "time": "45 min",
+          "title": "2×2 workshop",
+          "desc": "Iran energy axes or class topic."
+        },
+        {
+          "step": "4",
+          "time": "30 min",
+          "title": "Indicators & strategy",
+          "desc": "One indicator + policy per quadrant."
+        },
+        {
+          "step": "5",
+          "time": "20 min",
+          "title": "Presentations",
+          "desc": "2-min scenario story per group."
+        }
+      ],
+      "readings": [
+        {
+          "type": "Book",
+          "text": "Schwartz (1996). <em>The Art of the Long View</em>."
+        },
+        {
+          "type": "Paper",
+          "text": "Wack (1985). Scenarios — <em>Harvard Business Review</em>."
+        },
+        {
+          "type": "Book",
+          "text": "van der Heijden (2005). <em>Scenarios: Strategic Conversation</em>."
+        }
+      ],
+      "assignment": "Two uncertainty axes for your thesis/work. Four scenario names + one indicator each + no-regret action."
+    },
+    "futurpreneurship": {
+      "meta": {
+        "module": "8",
+        "duration": "120 min",
+        "level": "Entrepreneurship / PhD foresight",
+        "diagram": "assets/foresight_concept.png",
+        "diagramAlt": "From signal to venture"
+      },
+      "founders": [
+        {
+          "id": "slaughter",
+          "name": "Richard Slaughter",
+          "role": "Futures literacy",
+          "bio": "Australian futurist; embedding foresight in society."
+        },
+        {
+          "id": "candy",
+          "name": "Stuart Candy",
+          "role": "Experiential futures · OCAD",
+          "bio": "Immersive scenarios — foresight to public action."
+        },
+        {
+          "id": "mansouri",
+          "name": "Ali Mansouri",
+          "role": "Curator · Futurpreneurship Stack",
+          "bio": "PhD foresight, University of Tehran; this portal is a <strong>Futurpreneurship</strong> prototype."
+        }
+      ],
+      "objectives": [
+        "Define Futurpreneurship vs FRM Personal Futures.",
+        "Run Sense → Scale/Kill on one weak signal.",
+        "Write falsifiable hypothesis + 90-day MVP.",
+        "Link to FITness Probing and Popper Innovation."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "20 min",
+          "title": "Why foresight without venture is incomplete",
+          "desc": "Silicon Valley informal vs rigor."
+        },
+        {
+          "step": "2",
+          "time": "25 min",
+          "title": "Five-stage cycle",
+          "desc": "Sense/Imagine/Hypothesize/Build/Scale."
+        },
+        {
+          "step": "3",
+          "time": "40 min",
+          "title": "Signal → MVP workshop",
+          "desc": "Groups take signal from Wheel or CLA."
+        },
+        {
+          "step": "4",
+          "time": "20 min",
+          "title": "3-min pitches",
+          "desc": "Hypothesis + MVP scope."
+        },
+        {
+          "step": "5",
+          "time": "15 min",
+          "title": "Diamond critique",
+          "desc": "Innovation & Creativity scores."
+        }
+      ],
+      "readings": [
+        {
+          "type": "Paper",
+          "text": "Slaughter — Futures literacy."
+        },
+        {
+          "type": "Web",
+          "text": "Candy — Experiential futures."
+        },
+        {
+          "type": "Portal",
+          "text": "Ali Mansouri Strategic Foresight Hub (this site)."
+        }
+      ],
+      "assignment": "This week's weak signal + one-page scenario + business hypothesis + 3 MVP actions for 90 days."
+    }
+  },
+  "fitnessPage": {
+    "history": {
+      "accent": "var(--color-f)",
+      "founderLabel": "Founder",
+      "founder": "Professor René Rohrbeck",
+      "yearLabel": "Year",
+      "year": "2010",
+      "institution": "Aarhus University / EDHEC Business School",
+      "title": "Corporate Foresight: Towards a Maturity Model",
+      "origin": "In 2010, René Rohrbeck introduced the first structured model for measuring organizational foresight maturity in the academic book <strong>Corporate Foresight: Towards a Maturity Model</strong>. The work was based on multi-year field studies at large European companies at Aarhus University and later at EDHEC.",
+      "problemLabel": "Core Problem",
+      "problem": "Organizations could not measure their foresight maturity level, could not justify foresight investment, and foresight outputs were not connected to strategic decisions.",
+      "useLabel": "Applications & Evidence",
+      "applications": "Deployed at <strong>Siemens</strong> and <strong>Deutsche Telekom</strong>; benchmark studies showed foresight-driven organizations achieved <strong>33% higher profitability</strong> and <strong>200% greater market value growth</strong> than vulnerable competitors."
+    },
+    "hero": {
+      "tag": "Dynamic Capabilities Theory — René Rohrbeck",
+      "title": "Organizational Foresight Maturity Model & Future FITness",
+      "subtitle": "How organizations move beyond static Future Readiness to dynamic Future FITness — continuous organizational fitness and adaptation to shape tomorrow's markets."
+    },
+    "readiness": {
+      "tag": "Foundations of Foresight",
+      "title": "What Is Future Readiness?",
+      "sub": "Forecasting trends, understanding scenarios, and strategic planning to manage uncertainty.",
+      "p1": "<strong>Future Readiness</strong> means the ability to anticipate change, understand it deeply, and plan purposeful responses. Rooted in uncertainty management: scanning risks and turning them into major opportunities.",
+      "p2": "Today's world faces rapid technological change — from generative AI to climate disruption. Organizations and individuals prepared for the future see these shifts as opportunities for leadership and progress, not paralyzing threats.",
+      "challengeTitle": "A Challenging Question",
+      "challengeText": "Is your organization — or you personally — ready for fundamental future changes? If you wanted to make a change today that builds future fitness, what would your first key step be?",
+      "fiveElementsTitle": "5 Core Elements of Future Readiness",
+      "foresightTitle": "Foresight & Scenario Planning",
+      "foresightText": "Foresight means deeply understanding trends and analyzing alternative scenarios. Companies that had piloted remote-work technology before the COVID pandemic adapted to lockdown conditions far faster.",
+      "agilityTitle": "Organizational Agility",
+      "agilityText": "Agility means fast decision-making and rapid pivoting in response to unexpected conditions. Zoom expanded server infrastructure within weeks during COVID to serve hundreds of millions of new users.",
+      "sustainabilityTitle": "The Critical Role of Sustainability in Portfolio Strategy",
+      "sustainabilityP1": "Sustainability is more than social responsibility — it is smart business strategy. Aligning with ESG goals reduces climate risk and creates lasting competitive advantage in global markets.",
+      "sustainabilityP2": "IKEA committed to 100% recycled and renewable materials by 2030, building customer loyalty and lowering long-term material costs. Tesla (electric vehicles) and Amazon (advanced logistics) secured survival and leadership by investing in long-term trends.",
+      "globalAppsTitle": "Global Applications of Future Readiness",
+      "apps": [
+        {
+          "label": "Education (Finland)",
+          "text": "Finland's project-based, innovation-focused education system prepares students to solve complex real-world problems of tomorrow."
+        },
+        {
+          "label": "Policy (Singapore)",
+          "text": "Singapore's Smart Nation program uses technology to prepare the economy and citizens' quality of life for the aging challenge."
+        },
+        {
+          "label": "Healthcare (NHS UK)",
+          "text": "Big data analytics and AI for early disease diagnosis and hospital resource optimization."
+        },
+        {
+          "label": "Transport & Crisis (Netherlands & Japan)",
+          "text": "The Netherlands with green transport and Japan with earthquake warning and crisis management systems are national resilience leaders."
+        }
+      ]
+    },
+    "readinessCards": [
+      {
+        "icon": "trending-up",
+        "title": "Trend Forecasting & Analysis",
+        "desc": "Analyzing key external trends such as demographic shifts or emerging technologies and their industry impact.",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "zap",
+        "title": "Rapid Adaptation to Change",
+        "desc": "High agility: extraordinarily fast decision-making and strategic pivoting when facing crises.",
+        "color": "var(--color-i)"
+      },
+      {
+        "icon": "lightbulb",
+        "title": "Creativity & Innovation Development",
+        "desc": "Creating new solutions for present and future challenges through process changes or novel products.",
+        "color": "var(--color-t)"
+      },
+      {
+        "icon": "graduation-cap",
+        "title": "Continuous Learning Culture",
+        "desc": "Ongoing upskilling and team learning to keep pace with global scientific and technological change.",
+        "color": "var(--color-cla)"
+      },
+      {
+        "icon": "cpu",
+        "title": "Smart Technology Use",
+        "desc": "Deploying powerful tools like AI and blockchain for better forecasting, planning, and process execution.",
+        "color": "var(--color-wheel-red)"
+      }
+    ],
+    "fitness": {
+      "tag": "Beyond Readiness",
+      "title": "What Is Future FITness?",
+      "sub": "A theoretical comparison of continuous adaptation and optimization versus traditional strategic readiness.",
+      "p1": "While <strong>Future Readiness</strong> focuses on forecasting and preparation, <strong>Future FITness</strong> goes further: the continuous, dynamic ability to maintain optimal performance, adapt constantly, grow, and redefine structures when facing unexpected challenges.",
+      "p2": "Professor René Rohrbeck's long-term studies at Aarhus University showed that \"vigilant and future-fit\" companies averaged <strong>33% higher profitability</strong> and <strong>200% greater market value growth</strong> than vulnerable competitors.",
+      "teeceTitle": "Alignment with David Teece's Dynamic Capabilities",
+      "teece": [
+        {
+          "title": "Sensing",
+          "text": "Continuous identification of change signals, trends, and threats in highly turbulent industry environments (aligned with Kathleen Eisenhardt's theory)."
+        },
+        {
+          "title": "Seizing",
+          "text": "Capturing new opportunities through agile business model design and investment channels aligned with plausible futures."
+        },
+        {
+          "title": "Transforming",
+          "text": "Continuous renewal of tangible and intangible organizational assets to maintain competitive advantage and environmental alignment."
+        }
+      ],
+      "dashboardTitle": "Conceptual Corporate Foresight Maturity Dashboard",
+      "dashboardP1": "This dashboard shows the interactive structure of organizational dynamic capabilities. Organizations can assess technological alignment and implement Perceiving, Prospecting, and Probing processes in balanced form.",
+      "dashboardP2": "The match between industry turbulence and foresight maturity determines survival and profitability — preventing structural rigidity collapses like Nokia and Kodak.",
+      "stepsTitle": "5-Step Systematic Process to Achieve Future FITness"
+    },
+    "fitnessSteps": [
+      {
+        "title": "Assess Current State",
+        "desc": "Identify internal strengths, weaknesses, opportunities, and threats using a SWOT matrix."
+      },
+      {
+        "title": "Define Future Vision",
+        "desc": "Define desirable futures and set goals based on global trends as a roadmap."
+      },
+      {
+        "title": "Develop Capabilities",
+        "desc": "Invest in R&D (like Apple) to strengthen innovation capacity."
+      },
+      {
+        "title": "Implement & Experiment",
+        "desc": "Test ideas with high flexibility (like Tesla experimenting with different electric vehicle models)."
+      },
+      {
+        "title": "Monitor & Continuously Improve",
+        "desc": "Continuously track results from feedback and optimize models (like IKEA on sustainability goals)."
+      }
+    ],
+    "archetypes": {
+      "tag": "Rohrbeck's Dynamic Typology",
+      "title": "4 Foresight Maturity Archetypes in Industry",
+      "sub": "Organizations are classified into four groups based on how well \"foresight thinking maturity\" matches \"industry change speed and turbulence.\"",
+      "vigilant": {
+        "level": "Maturity Level 4",
+        "title": "Vigilant",
+        "desc": "Organizational foresight matches or exceeds industry change speed. Continuous weak-signal monitoring and rapid response.",
+        "note": "33% higher profitability and 200% greater market value growth",
+        "detail": {
+          "title": "Vigilant Archetype",
+          "alignment": "High industry turbulence + high strategic foresight maturity (full alignment with transformation)",
+          "symptoms": "Leading organizations with high dynamic capabilities. Per David Teece, they combine continuous Sensing with fast Seizing and ongoing Transforming. Immune to analysis paralysis; they creatively destroy their own product portfolios before competitors do.",
+          "reps": "Nvidia (CUDA platform), Netflix (DVD to streaming and original content)."
+        }
+      },
+      "neurotic": {
+        "level": "Heterogeneous Maturity",
+        "title": "Neurotic",
+        "desc": "High foresight capacity but in a slow-changing industry. Leads to over-analysis and false alarm.",
+        "note": "Over-development of unused scenarios",
+        "detail": {
+          "title": "Neurotic Archetype",
+          "alignment": "Low industry turbulence + excessive foresight maturity (imbalance from hyper-sensitivity)",
+          "symptoms": "Over-analysis and decision paralysis. Despite massive investment in technology observatories, they cannot separate signal from noise. Fear-driven culture produces hundreds of parallel scenarios with no operational output, blocking strategic decisions.",
+          "reps": "Traditional oil & gas majors that invested billions in unrelated renewables before market demand materialized."
+        }
+      },
+      "vulnerable": {
+        "level": "Maturity Level 2",
+        "title": "Vulnerable",
+        "desc": "Formal strategic processes but disconnected from change signals. Repeated surprise by disruptive competitor innovations.",
+        "note": "Absolute reliance on paper 5-year plans",
+        "detail": {
+          "title": "Vulnerable Archetype",
+          "alignment": "High industry turbulence + low foresight maturity (strategic danger zone)",
+          "symptoms": "Organizations in turbulent industries without scanning capability. Reliant on linear 5-year planning, interpreting rapid tech change as temporary fluctuations. Cognitive rigidity; they react when market value is destroyed and recovery costs are crippling.",
+          "reps": "Kodak (ignoring digital cameras), Nokia (missing the software touchscreen revolution)."
+        }
+      },
+      "danger": {
+        "level": "Maturity Level 1",
+        "title": "In Danger",
+        "desc": "No scanning system in a highly turbulent industry. Facing dissolution or total market share loss.",
+        "note": "Severely diminished organizational survival hope",
+        "detail": {
+          "title": "In Danger Archetype",
+          "alignment": "Low industry turbulence + low foresight maturity (hidden stagnation and decline)",
+          "symptoms": "The silent death archetype — organizations in apparently stable industries with no environmental monitoring. Trapped in long-term stability illusion. The smallest environmental shock (regulatory change or sudden substitute technology) can destroy the business model in seconds.",
+          "reps": "Traditional taxi unions before Uber/Snapp; physical travel agencies before online booking."
+        }
+      }
+    },
+    "roles": {
+      "tag": "Organizational Innovation Function",
+      "title": "3 Critical Foresight Roles in Innovation Dynamics",
+      "sub": "René Rohrbeck proves foresight must play three roles — initiator, strategist, and opponent — in the innovation value chain.",
+      "initiator": {
+        "tab": "1. Initiator Role",
+        "title": "1. Initiator — Spark of Innovation",
+        "desc": "The Initiator operates in the <strong>Perceiving</strong> phase: continuously scanning the external environment, discovering emerging trends, and converting them into initial innovation concepts.",
+        "duties": [
+          "Launch and maintain technology radars and emerging trend monitoring.",
+          "Identify weak signals of change before they become mainstream.",
+          "Run creative brainstorming workshops to generate novel innovation concepts."
+        ],
+        "example": "<strong>Deutsche Telekom</strong>'s foresight unit, monitoring miniature sensors, sparked IoT projects by proposing connecting farmland to the network."
+      },
+      "strategist": {
+        "tab": "2. Strategist Role",
+        "title": "2. Strategist — Investment Portfolio Guide",
+        "desc": "The Strategist operates in the <strong>Prospecting</strong> phase: steering innovation investment portfolios based on future scenarios and organizational strategy.",
+        "duties": [
+          "Develop offensive and defensive foresight scenarios for the industry.",
+          "Draw technology roadmaps to align departments.",
+          "Define shared future visions for the organization."
+        ],
+        "example": "<strong>Nvidia</strong> leadership analyzed data-processing scenarios and redirected the entire R&D portfolio toward AI data-center architecture."
+      },
+      "opponent": {
+        "tab": "3. Opponent Role",
+        "title": "3. Opponent — Devil's Advocate",
+        "desc": "The Opponent operates in the <strong>Probing</strong> phase: challenging rigid assumptions, critically evaluating projects, and preventing management confirmation bias.",
+        "duties": [
+          "Run harsh scenarios to test project survival and resilience.",
+          "Conduct war-gaming to expose internal weaknesses.",
+          "Facilitate creative cannibalization to retire profitable legacy products."
+        ],
+        "example": "When <strong>Steve Jobs</strong> launched the iPhone, he opposed the iPod (a top seller) — knowing a competitor would integrate music players into phones if Apple didn't."
+      }
+    },
+    "cases": {
+      "tag": "Deep Cases: Sensing, Prospecting, Transforming",
+      "title": "Responding to Change with Three-Dimensional Dynamic Capability DNA",
+      "sub": "Systematic analysis of failures and successes through Sensing, Seizing, and Transforming.",
+      "netflix": {
+        "tab": "Netflix (Continuous Dynamic Evolution)",
+        "title": "Netflix — Leader in Dynamic Capability Reinvention",
+        "scanning": "In the late 1990s, leadership monitored home internet bandwidth and video compression, recognizing physical DVD obsolescence. This was precise weak-signal sensing.",
+        "seizing": "In 2007, launched online streaming. In 2012, allocated major resources to original content (House of Cards) to reduce studio dependency.",
+        "transforming": "Fully shifted from internal data centers to cloud (AWS) and continuously redefined around generative AI and deep personalization. Lesson: readiness to destroy current successful revenue models."
+      },
+      "nvidia": {
+        "tab": "Nvidia (Betting on an Invisible Future)",
+        "title": "Nvidia — Risky Bet on a Future Computing Paradigm",
+        "scanning": "In the early 2000s, Jensen Huang saw parallel GPU architecture had applications beyond game rendering — transformative for scientific computing and AI algorithms.",
+        "seizing": "In 2006, heavily invested in developing the CUDA platform. Wall Street repeatedly criticized the project with no market demand, but Nvidia persisted.",
+        "transforming": "With deep learning in 2012, Nvidia became the world's ready AI hardware-software hub. Huang transformed the company from a graphics card maker to an AI infrastructure giant. Lesson: persistence on long-term differentiating capabilities."
+      },
+      "nokia": {
+        "tab": "Nokia (Structural Rigidity & Systemic Failure)",
+        "title": "Nokia — Structural Rigidity & Success Trap",
+        "scanning": "Nokia received signals about touchscreens and software ecosystems; they even developed touchscreen tablet prototypes years before the iPhone.",
+        "seizing": "Due to the success trap and high button-phone margins, executives kept Symbian. Bureaucracy prevented danger signals from becoming bold decisions.",
+        "transforming": "Fear culture and optimistic reporting hid technical weaknesses. Rigid bureaucracy blocked reinvention; Symbian couldn't compete with iOS and Android. Nokia lost the mobile market entirely. Lesson: cognitive rigidity can neutralize the best scanning capacity."
+      },
+      "blockbuster": {
+        "tab": "Blockbuster (Fear of Revenue Cannibalization)",
+        "title": "Blockbuster — Foresight Sacrificed to Short-Term Shareholders",
+        "scanning": "Blockbuster managers tracked Netflix's growth and digital distribution, knowing the physical rental model was ending.",
+        "seizing": "CEO John Antioco launched an online platform and eliminated late fees — actions aimed at capturing streaming opportunities.",
+        "transforming": "Short-term-minded boards fired the CEO due to temporary revenue drops (late fees were 16% of profit), restored fees, and refocused on physical stores — leading to bankruptcy. Lesson: short-term shareholder interests vs. long-term survival investment is the biggest transformation barrier."
+      }
+    },
+    "formula": {
+      "tag": "Strategic Acronym",
+      "title": "The Three-Part Future FITness Formula",
+      "sub": "This model connects foresight (F) to the innovation engine (I) and guarantees transformation (T) as the final outcome.",
+      "clickPrompt": "Click any letter above to view details.",
+      "letterF": "Foresight",
+      "letterI": "Innovation",
+      "letterT": "Transformation",
+      "descF": "Foresight",
+      "descI": "Innovation",
+      "descT": "Transformation",
+      "foresight": {
+        "badge": "Foresight",
+        "title": "Continuous Scanning & Interpretation of Change Signals",
+        "body": "Foresight is the organization's systematic ability to monitor the external environment, discover weak signals, and understand trends. This corresponds to <strong>Perceiving</strong> and <strong>Prospecting</strong> in Rohrbeck's theory.",
+        "items": [
+          "Continuous monitoring of macro economic, technological, and political environments.",
+          "Analyzing plausible scenarios and developing roadmaps.",
+          "Preventing strategic surprise from sudden disruptions."
+        ]
+      },
+      "innovation": {
+        "badge": "Innovation",
+        "title": "Converting Insights into Novel Products & Tools",
+        "body": "Innovation is the execution engine of foresight. Ideas become rapid prototypes — corresponding to <strong>Probing</strong> and requiring Initiator, Strategist, and Opponent roles.",
+        "items": [
+          "Rapid prototyping to test ideas.",
+          "Challenging current assumptions through the Opponent role.",
+          "Launching pilot projects to validate market assumptions."
+        ]
+      },
+      "transformation": {
+        "badge": "Transformation",
+        "title": "Structural & Cultural Redesign for Long-Term Survival",
+        "body": "Transformation is the ultimate goal. Foresight and innovation must change culture, structure, and resource allocation — building new organizational DNA for long-term survival.",
+        "items": [
+          "Reforming formal structure and reducing bureaucracy for greater agility.",
+          "Embracing continuous learning and reducing fear of failure among staff.",
+          "Continuously aligning dynamic capabilities with emerging technological trends."
+        ]
+      }
+    },
+    "rohrbeckDims": {
+      "tag": "Rohrbeck Conceptual Framework",
+      "title": "Five Dimensions of Organizational Foresight Maturity",
+      "sub": "Based on Professor René Rohrbeck's longitudinal research, strategic foresight capability is measured and calibrated across five structural dimensions.",
+      "dims": [
+        {
+          "level": "1. Information",
+          "title": "Information Sources & Quality",
+          "desc": "Breadth, depth, and quality of environmental scanning; bandwidth of monitored information, scanning beyond current industry boundaries, and early weak-signal discovery."
+        },
+        {
+          "level": "2. Methods",
+          "title": "Foresight Methodologies",
+          "desc": "Diversity and effectiveness of tools; regular use of qualitative and quantitative methods (scenario planning, Delphi, technology roadmapping, cross-impact analysis)."
+        },
+        {
+          "level": "3. People",
+          "title": "Human Capital & Experts",
+          "desc": "Competence, futures literacy, and expert mix; manager training, intelligence networks, staff motivation to share insights, and recruiting foresight talent."
+        },
+        {
+          "level": "4. Organization",
+          "title": "Formal Structure & Decision-Making",
+          "desc": "Formal feedback mechanisms and bureaucracy; connecting foresight outputs to strategic planning, R&D budgeting, and administrative flexibility."
+        },
+        {
+          "level": "5. Culture",
+          "title": "Uncertainty Acceptance & Innovation",
+          "desc": "Foundational values; tolerance of failure, encouraging creative and non-linear thinking, willingness to creatively cannibalize before competitors, and no fear of voicing change warnings."
+        }
+      ]
+    },
+    "assessment": {
+      "tag": "Interactive Assessment Tool",
+      "title": "Organizational Foresight Maturity Index",
+      "sub": "Based on Rohrbeck's five maturity dimensions, assess your organization's future fitness and receive strategic analysis.",
+      "formTitle": "Foresight Maturity Self-Assessment Questionnaire",
+      "sliders": {
+        "info": {
+          "label": "1. Information & Scanning",
+          "desc": "Access, monitoring, and analysis of change signals and major external trends in the organization."
+        },
+        "methods": {
+          "label": "2. Methods & Tools",
+          "desc": "Regular use of scientific foresight methods such as scenario writing, Delphi, and technology radar."
+        },
+        "people": {
+          "label": "3. People & Expertise",
+          "desc": "Staff skills training, external expert engagement, and organizational participation in futures thinking."
+        },
+        "org": {
+          "label": "4. Formal Organization",
+          "desc": "Dedicated foresight structures, connecting outputs to board decisions, and independent budgeting."
+        },
+        "culture": {
+          "label": "5. Organizational Culture",
+          "desc": "Change acceptance, no fear of failure, and intrapreneurship with senior management support."
+        }
+      },
+      "calculateBtn": "Calculate Maturity Index",
+      "resultsTitle": "Organizational Maturity Analysis",
+      "resetBtn": "Re-assess",
+      "analyzing": "Analyzing...",
+      "calculating": "Calculating...",
+      "insightTitle": "Strategic Maturity Interpretation:",
+      "chartLabel": "Current Organizational Maturity Level",
+      "chartLabels": [
+        "Information & Scanning",
+        "Methods & Tools",
+        "People & Expertise",
+        "Formal Organization",
+        "Organizational Culture"
+      ],
+      "metricsTitle": "5 Operational Future FITness Assessment Metrics",
+      "scores": {
+        "fit": {
+          "status": "Future Fit Leader",
+          "description": "Congratulations! Your organization has exceptional dynamic capabilities. You don't just predict change — you design innovative business models that redefine your industry's future. Keep focusing on open innovation and ecosystem participation.",
+          "recs": [
+            "Lead the industry by sharing knowledge and participating in startup ecosystems.",
+            "Invest in high-risk disruptive technologies (quantum and bio-computing).",
+            "Balance optimizing current processes with developing entirely new markets."
+          ]
+        },
+        "prepared": {
+          "status": "Prepared & Alert",
+          "description": "Your organization performs well in trend scanning and readiness, but still needs stronger Probing processes and cultural transformation. Don't just wait for the future — actively create the desired future.",
+          "recs": [
+            "Increase rapid prototyping projects to test technology assumptions.",
+            "Delegate more authority to frontline staff for faster decision-making.",
+            "Build a shared foresight language across organizational departments."
+          ]
+        },
+        "vulnerable": {
+          "status": "Vulnerable to Change",
+          "description": "Warning! Your organization is in the danger zone. Over-reliance on traditional processes and cultural resistance to change threatens survival in market uncertainty. Urgent transformation in information infrastructure and management mindset is required.",
+          "recs": [
+            "Immediately launch monthly environmental scanning to identify emerging threats.",
+            "Run foresight thinking and crisis management workshops for leaders.",
+            "Reduce formal bureaucracy to enable rapid market response."
+          ]
+        }
+      }
+    },
+    "foresightCards": [
+      {
+        "icon": "gauge",
+        "title": "Rapid Adaptation Index",
+        "desc": "Agility Index: speed and effectiveness of product portfolio pivots (like fast product cycles in IT companies).",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "rocket",
+        "title": "Continuous Innovation Rate",
+        "desc": "Innovation Rate: number and quality of alternative solutions and market leadership (like Tesla's annual innovation releases).",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "shield",
+        "title": "Organizational Resilience",
+        "desc": "Resilience Score: ability to recover quickly after financial and environmental disruptions (like Japan).",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "users",
+        "title": "Ecosystem Collaboration",
+        "desc": "Collaboration Score: joint value creation with partners and supply chain stakeholders (like Amazon).",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "book-open",
+        "title": "Organizational Learning",
+        "desc": "L&D Metrics: hours of specialized training and workforce skill upgrades per year (like Google).",
+        "color": "var(--color-f)"
+      }
+    ],
+    "radar": {
+      "tag": "Case Study: Deutsche Telekom",
+      "title": "Emerging Technology Radar & Strategic Monitoring",
+      "sub": "Interactive technology radar simulation to prevent strategic surprise. Click radar dots to load impact analysis and recommendations.",
+      "defaultTitle": "Emerging Technology Radar",
+      "defaultText": "A strategic tool to prevent surprise in telecommunications and IT. Click the pulsing dots to view details.",
+      "dtCaseTitle": "Why Was Deutsche Telekom Selected as Benchmark?",
+      "dtCaseBody": "Selecting <strong>Deutsche Telekom</strong> is scientifically grounded. A major part of René Rohrbeck's doctoral work and reference book on the foresight maturity model was built directly on multi-year operational study at this telecom giant. It is a successful example of technology radar integration connected to strategic processes and risk reduction.",
+      "dtChallengesTitle": "Deployment Challenges & Strategic Solutions",
+      "dtChallengesBody": "<strong>Resistance to change:</strong> strengthen open culture and change acceptance.<br><strong>Skills gap:</strong> continuous reskilling programs.<br><strong>Open ecosystem complexity:</strong> deploy open, transparent technologies.<br><strong>Short/long-term goal conflict:</strong> separate budgeting and three-horizon innovation model.",
+      "rings": {
+        "scan": "Scan",
+        "assess": "Assess",
+        "trial": "Trial",
+        "adopt": "Adopt"
+      },
+      "quadrants": {
+        "ai": "AI & Data",
+        "net": "Communications Networks",
+        "comp": "Emerging Computing & Cloud",
+        "bio": "Biotech & Convergent Tech"
+      },
+      "statusLabel": "Radar Status:",
+      "impactLabel": "Strategic Impact on Organization:",
+      "tech": {
+        "genai": {
+          "title": "Generative AI",
+          "quadrant": "AI & Data",
+          "status": "Adopt",
+          "desc": "Large language models and image generation models for automated content, code, and workflow optimization.",
+          "impact": "Routine task automation, up to 40% production efficiency gains, and fully personalized user experiences."
+        },
+        "agentic": {
+          "title": "Agentic AI",
+          "quadrant": "AI & Data",
+          "status": "Trial",
+          "desc": "Advanced AI systems that receive high-level goals and autonomously design, test, and execute multi-step tasks.",
+          "impact": "Reduced direct human oversight, independent supply chain conflict resolution, and real-time decision processes."
+        },
+        "nlp": {
+          "title": "Advanced NLP",
+          "quadrant": "AI & Data",
+          "status": "Adopt",
+          "desc": "Natural language understanding for speech, text, sentiment analysis, and hidden knowledge extraction from documents.",
+          "impact": "True 24/7 support via smart voice assistants and early customer dissatisfaction detection on social media."
+        },
+        "6g": {
+          "title": "6G Mobile Communications",
+          "quadrant": "Communications Networks",
+          "status": "Scan",
+          "desc": "Terabit-per-second speeds, microsecond latency, and integration of terrestrial networks with satellites for full global coverage.",
+          "impact": "Foundation for internet of senses, remote collaborative robots, and 3D holographic communications."
+        },
+        "iot": {
+          "title": "IoT Ecosystems",
+          "quadrant": "Communications Networks",
+          "status": "Trial",
+          "desc": "Connecting hundreds of millions of smart sensors for data collection from operations, warehouses, and logistics.",
+          "impact": "Energy waste reduction, smart agricultural process monitoring, and improved factory equipment productivity."
+        },
+        "quantum": {
+          "title": "Quantum Computing",
+          "quadrant": "Emerging Computing & Cloud",
+          "status": "Assess",
+          "desc": "Using quantum qubits for physical simulations and complex mathematical optimizations beyond classical computers.",
+          "impact": "Faster drug discovery, advanced portfolio optimization, and serious risks to current cybersecurity and encryption."
+        },
+        "edge": {
+          "title": "Edge Computing",
+          "quadrant": "Emerging Computing & Cloud",
+          "status": "Adopt",
+          "desc": "Processing data at the source (sensor or camera) instead of sending to central cloud servers to reduce latency and bandwidth.",
+          "impact": "Instant autonomous vehicle navigation and fast security camera image analysis without network overhead."
+        },
+        "biocomputing": {
+          "title": "Bio-computing",
+          "quadrant": "Biotech & Convergent Tech",
+          "status": "Scan",
+          "desc": "Engineering DNA and biological cells for logical computation and data storage with high durability and near-zero energy consumption.",
+          "impact": "Replacing massive data centers with millimeter-scale, eco-friendly big data storage systems."
+        },
+        "metaverse": {
+          "title": "Metaverse & Spatial Computing",
+          "quadrant": "Biotech & Convergent Tech",
+          "status": "Assess",
+          "desc": "Integrating VR, AR, and interactive 3D spaces for digital collaboration and professional simulators.",
+          "impact": "Major shift in remote education, surgical simulation, and organizational digital twin creation."
+        }
+      }
+    },
+    "common": {
+      "envMaturity": "Environment & Maturity:",
+      "symptoms": "Organizational Signs & Behaviors:",
+      "examples": "Industry Representatives:",
+      "keyTasks": "Key Duties & Tools:",
+      "orgExample": "Real Organizational Example:",
+      "sensing": "Sensing",
+      "seizing": "Seizing",
+      "transforming": "Transforming"
+    }
+  },
+  "claPage": {
+    "history": {
+      "accent": "var(--color-cla)",
+      "founderLabel": "Founder",
+      "founder": "Sohail Inayatullah",
+      "yearLabel": "Developed",
+      "year": "Late 1990s — widely published 1998–2004",
+      "institution": "Tamkang University · Metafuture.org",
+      "title": "Causal Layered Analysis (CLA)",
+      "origin": "Sohail Inayatullah developed CLA in the late 1990s and published it widely through the 2000s via articles, books, and Metafuture workshops. The method moves foresight from surface events toward discourse deconstruction and new metaphor creation.",
+      "problemLabel": "Problem it addresses",
+      "problem": "Traditional foresight often stops at headlines, statistics, and surface trends (Litany) — missing structural, discursive, and mythic roots.",
+      "useLabel": "Notable applications",
+      "applications": "Singapore Prime Minister's Office (PMO), UNESCO, Taiwan government, and Metafuture workshops worldwide."
+    },
+    "heroTag": "Sohail Inayatullah",
+    "heroTitle": "Causal Layered Analysis (CLA)",
+    "heroSub": "A deep foresight method for breaking surface problems apart, exploring discursive and civilizational roots, and creating alternative metaphors for transformative scenarios.",
+    "theoryTitle": "CLA foundations and Foucault's genealogy",
+    "theoryP1": "CLA, created by Sohail Inayatullah, draws on post-structural thought — especially Michel Foucault's <strong>genealogy</strong>. Foucault showed that \"truth\" is shaped by discourse and power; CLA deconstructs issues layer by layer to reveal hidden assumptions.",
+    "theoryP2": "Moving from Litany (daily news) to systemic causes, then worldview, and finally myth helps stakeholders escape imposed scenarios and build <strong>transformative alternative metaphors</strong> to reimagine present and future.",
+    "layers": {
+      "litany": {
+        "badge": "Layer 1: The Litany",
+        "badgeClass": "l1-badge",
+        "title": "The most visible level — daily news and statistics",
+        "body": "Issues, trends, and numbers seen in media every day. Information is scattered, often emotional, and lacks historical context. Public reaction tends toward passivity or blame. Power discourses use this layer to steer attention.",
+        "qLabel": "Key question:",
+        "question": "What do media and public opinion say about this problem?",
+        "langLabel": "Dominant language:",
+        "language": "Journalism, raw statistics, emotional and reactive tone"
+      },
+      "systemic": {
+        "badge": "Layer 2: Social/Systemic Causes",
+        "badgeClass": "l2-badge",
+        "title": "Technical, economic, historical, and political causes",
+        "body": "Structures and policies that produce the Litany layer: laws, institutions, markets, bureaucracy, and feedback loops. Experts and policymakers work here, but deeper assumptions remain unchallenged.",
+        "qLabel": "Key question:",
+        "question": "Which policies, institutions, and structures created this issue?",
+        "langLabel": "Dominant language:",
+        "language": "Scientific, political, bureaucratic, systems management"
+      },
+      "worldview": {
+        "badge": "Layer 3: Discourse/Worldview",
+        "badgeClass": "l3-badge",
+        "title": "Mental frameworks and legitimizing discourses",
+        "body": "Beliefs and paradigms that legitimize Layer 2 structures — from neoliberalism and positivism to traditionalism and environmentalism. Here the boundaries of \"truth\" and \"natural order\" are exposed — Foucault's discursive power at work.",
+        "qLabel": "Key question:",
+        "question": "Which beliefs, ideologies, and discourses support these structures?",
+        "langLabel": "Dominant language:",
+        "language": "Philosophical, cultural, discourse analysis, deep theory"
+      },
+      "myth": {
+        "badge": "Layer 4: Myth/Metaphor",
+        "badgeClass": "l4-badge",
+        "title": "Collective unconscious, archetypes, and metaphors",
+        "body": "The deepest layer: stories, emotions, and metaphors that keep worldviews alive across centuries. Change here is hard, but lasting transformation requires new <strong>metaphors</strong>.",
+        "qLabel": "Key question:",
+        "question": "Which archetype, story, or metaphor dominates our collective unconscious?",
+        "langLabel": "Dominant language:",
+        "language": "Artistic, mythic, metaphorical, emotionally visual"
+      }
+    },
+    "singapore": {
+      "title": "Case study: Singapore waste management & smart transit",
+      "intro": "In the early 2010s, Singapore's PMO Futures Office used CLA to deconstruct the cultural roots of waste buildup and metro overcrowding:",
+      "l1Label": "L1: Litany (headlines)",
+      "l1Text": "Metro delays, garbage bags piling in apartments, citizen complaints in media.",
+      "l2Label": "L2: Systemic causes",
+      "l2Text": "Insufficient budget for more train cars, landfill nearing capacity, weak recycling rules.",
+      "l3Label": "L3: Worldview (discourse)",
+      "l3Text": "\"Singapore = luxury international hotel\" — citizens as demanding customers, government as pure service provider.",
+      "l4Label": "L4: Myth (unconscious)",
+      "l4Text": "Hidden metaphor of \"temporary hotel guests\" — no emotional ownership of shared cleanliness.",
+      "lesson": "<strong>Transformative metaphor:</strong> Reframing to <strong>\"Singapore = shared family garden home\"</strong> and a \"collaborative sustainability\" discourse revived ownership and resolved systemic deadlocks."
+    },
+    "cases": {
+      "tag": "Categorized scenario archive",
+      "title": "Causal Layered Analysis case examples",
+      "sub": "Explore major issues in themed bundles to reveal the discourses and myths behind each domain.",
+      "tabGeopolitics": "Geopolitics & international relations",
+      "tabNational": "National & environmental challenges",
+      "tabSocial": "Social & identity issues"
+    },
+    "workspace": {
+      "tag": "Foresight workshop",
+      "title": "Interactive CLA thinking workshop",
+      "sub": "Pick a preset issue or write your own, then break it into Inayatullah's four-layer pyramid.",
+      "panelTitle": "Workshop panel",
+      "templateLabel": "Choose a preset problem template:",
+      "templateCustom": "-- Custom analysis --",
+      "templateBrainDrain": "Brain drain & talent exodus",
+      "templateInflation": "Inflation & livelihood crisis",
+      "templateGenerationGap": "Generational values gap",
+      "problemLabel": "Your analysis title:",
+      "problemPlaceholder": "e.g. Brain drain...",
+      "litanyLabel": "1. Litany (surface news & statistics):",
+      "litanyPlaceholder": "What headlines or stats repeat every day?",
+      "systemicLabel": "2. Systemic causes (policies, laws, economy):",
+      "systemicPlaceholder": "Which structures, laws, or economic drivers sit behind the scenes?",
+      "worldviewLabel": "3. Worldview & competing discourses:",
+      "worldviewPlaceholder": "Which ideologies legitimize these structures?",
+      "mythLabel": "4. Hidden myth/metaphor (and new alternative):",
+      "mythPlaceholder": "Which unconscious story dominates? What new metaphor could replace it?",
+      "updateBtn": "Update layered analysis card",
+      "previewTag": "CLA workshop output",
+      "renderTitleDefault": "Problem title",
+      "renderL1": "Litany",
+      "renderL2": "Systemic causes",
+      "renderL3": "Worldview",
+      "renderL4": "Myth & new metaphor",
+      "renderPlaceholder": "Content...",
+      "footer": "Built in the Foresight Hub interactive workshop",
+      "defaultTitle": "Layered problem analysis",
+      "defaultLitany": "Litany layer notes...",
+      "defaultSystemic": "Systemic layer notes...",
+      "defaultWorldview": "Worldview layer notes...",
+      "defaultMyth": "Myth layer notes..."
+    }
+  },
+  "claCategories": {
+    "geopolitics": "Geopolitics & international relations",
+    "national": "National & environmental challenges",
+    "social": "Social & identity issues"
+  },
+  "caseStudyTitles": {
+    "israel": "Iran & Israel",
+    "usa": "Iran & USA",
+    "water": "Water crisis in Iran",
+    "future-iran": "Iran's core future challenge",
+    "brain-drain": "Brain drain & talent exodus",
+    "generation-gap": "Deep generational gap"
+  },
+  "caseStudies": {
+    "israel": {
+      "title": "Iran & Israel",
+      "l1": "<ul><li>Headlines: missile defense alerts, UN statements, travel warnings</li><li>Oil and currency swings, naval drills in Hormuz</li><li>Public reaction: war anxiety, panic buying</li></ul>",
+      "l2": "<ul><li>Arms imbalance and \"mutual deterrence\"</li><li>Abraham Accords/NATO vs. resistance axis</li><li>Cyber war, layered air defense, great-power interests</li></ul>",
+      "l3": "<ul><li>Discourse of anti-hegemony and liberation of Quds</li><li>vs. existential Zionist security discourse</li><li>Clash of Western liberal order and multipolar Eurasia</li></ul>",
+      "l4": "<ul><li>Iranian myth: Ashura, Fereydun vs. Zahhak</li><li>Israeli myth: Holocaust, Masada complex</li><li><strong>Alternative:</strong> from \"minefield\" to \"shared oasis ecosystem\"</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
+    },
+    "usa": {
+      "title": "Iran & USA",
+      "l1": "<ul><li>New OFAC sanctions, mutual diplomatic statements</li><li>Tanker seizures, blocked foreign assets</li><li>Rial drop, inflation, fear of trade isolation</li></ul>",
+      "l2": "<ul><li>Dollar hegemony and SWIFT control</li><li>No formal diplomacy since 1979</li><li>Congress secondary sanctions, Hormuz strategic role</li></ul>",
+      "l3": "<ul><li>American exceptionalism and liberal order</li><li>vs. independence and anti-hegemony discourse</li><li>Conflicting definitions of responsibility vs. sovereignty</li></ul>",
+      "l4": "<ul><li>US myth: lone sheriff against outlaws</li><li>Iranian myth: Kaveh the blacksmith vs. Zahhak</li><li><strong>Alternative:</strong> from \"Rome vs. Sassanid war\" to \"digital Silk Road bridge\"</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
+    },
+    "water": {
+      "title": "Water crisis in Iran",
+      "l1": "<ul><li>Drying lakes (Urmia, Hamun, Bakhtegan)</li><li>Land subsidence, water-rights conflicts, dust storms</li><li>Reaction: blame government, climate despair</li></ul>",
+      "l2": "<ul><li>Food self-sufficiency in dry plains</li><li>Dam building without EIA, illegal wells</li><li>Low water tariffs, irrigation efficiency under 35%</li></ul>",
+      "l3": "<ul><li>\"Engineer nature\" development worldview</li><li>vs. ecological sustainability and local wisdom</li><li>Conflicting definitions of progress</li></ul>",
+      "l4": "<ul><li>Modern myth: conquering engineer with concrete dams</li><li>Ancient myth: Anahita and Tishtar vs. Apush</li><li><strong>Alternative:</strong> from \"bleeding the land dry\" to \"harmony with desert & qanat\"</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
+    },
+    "future-iran": {
+      "title": "Iran's core future challenge",
+      "l1": "<ul><li>Currency and housing spikes, stock market falls, capital flight</li><li>40%+ inflation, power and gas cuts</li><li>Filtering, slow internet, mass emigration</li></ul>",
+      "l2": "<ul><li>Rentier oil economy and quasi-state monopolies</li><li>FATF non-compliance, heavy bureaucracy</li><li>Pension fund deficits, chronic budget gaps</li></ul>",
+      "l3": "<ul><li>\"Resistive economy & inward turn\" discourse</li><li>vs. \"developmentalist global integration\"</li><li>Conflict: sovereignty priority vs. growth</li></ul>",
+      "l4": "<ul><li>Phoenix myth: guaranteed survival after crisis</li><li>Nostalgia for \"great imperial civilization\"</li><li><strong>Alternative:</strong> \"Persian carpet\" — diverse threads in one coherent pattern</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
+    },
+    "brain-drain": {
+      "title": "Brain drain & talent exodus",
+      "l1": "<ul><li>Migration of thousands of doctors, IT engineers, top graduates</li><li>Embassy queues, hospital staff shortages</li><li>Reaction: regret, normalized emigration</li></ul>",
+      "l2": "<ul><li>Economic instability, falling purchasing power</li><li>Low pay vs. Gulf neighbors</li><li>Non-merit appointments, filtering, weak research infrastructure</li></ul>",
+      "l3": "<ul><li>\"Sacred national service & loyalty\" discourse</li><li>vs. \"right to grow and join global science\"</li><li>Conflict: duty vs. meritocracy</li></ul>",
+      "l4": "<ul><li>\"Unwanted child\" archetype</li><li><strong>Alternative:</strong> Brain Drain → Brain Circulation — transnational science networks</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
+    },
+    "generation-gap": {
+      "title": "Deep generational gap",
+      "l1": "<ul><li>Different dress, music, digital lifestyles</li><li>Declining marriage and birth rates, state media losing influence</li><li>Reaction: parental confusion, relational disconnect</li></ul>",
+      "l2": "<ul><li>Mobile internet and Gen Z global culture</li><li>Rigid formal education, broadcast media monopoly</li><li>Institutions out of sync with networked reality</li></ul>",
+      "l3": "<ul><li>Patriarchal, collectivist traditional worldview</li><li>vs. individual rights, digital global identity</li><li>Conflict: family authority vs. autonomy</li></ul>",
+      "l4": "<ul><li>\"Two strangers under one roof\" myth</li><li><strong>Alternative:</strong> \"Intergenerational bridge\" — warp of old wisdom, weft of new creativity</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
+    }
+  },
+  "workspaceTemplates": {
+    "brain-drain": {
+      "title": "Brain drain & talent exodus",
+      "litany": "Headlines on elite migration, doctor and pilot shortages, long embassy queues.",
+      "systemic": "Economic instability, low pay, non-merit hiring, lack of modern lab facilities.",
+      "worldview": "\"National/religious duty\" vs. \"individual growth & borderless global science market.\"",
+      "myth": "\"Unwanted child\" myth — alternative: \"brain circulation\" and transnational science networks."
+    },
+    "inflation": {
+      "title": "Inflation & severe livelihood decline",
+      "litany": "Instant dollar/gold swings, shrinking household budgets, rent spikes, record inflation.",
+      "systemic": "Money supply expansion, budget deficits, SWIFT isolation, blocked oil revenues.",
+      "worldview": "\"Centralized justice & command economy\" vs. \"free market & monetary reform.\"",
+      "myth": "Sisyphus myth — alternative: \"fiscal discipline & productive domestic economy.\""
+    },
+    "generation-gap": {
+      "title": "Deep intergenerational values gap",
+      "litany": "Youth dress clashes with norms, different music tastes, parents' digital loneliness complaints.",
+      "systemic": "Fast internet, social networks as reference, ineffective formal education.",
+      "worldview": "\"Preserve traditional ethics & family\" vs. \"freedom of choice & Gen Z digital identity.\"",
+      "myth": "\"Invisible wall at home\" — alternative: \"intergenerational synergy bridge.\""
+    }
+  },
+  "wheelPage": {
+    "history": {
+      "accent": "var(--color-wheel-red)",
+      "founderLabel": "Founder",
+      "founder": "Jerome C. Glenn",
+      "yearLabel": "Year",
+      "year": "1972",
+      "institution": "Millennium Project · AC/UNU",
+      "title": "Origins of the Futures Wheel",
+      "origin": "Jerome C. Glenn developed the Futures Wheel in 1971–1972 at the AC/UNU Millennium Project to map direct and indirect consequence chains from a central event. The phenomenon sits at the hub and experts draw 1st, 2nd, and 3rd order branches radially.",
+      "problemLabel": "Problem",
+      "problem": "Linear analysis examines a single event, but secondary, feedback, and long-range effects — often the decisive ones — stay hidden.",
+      "useLabel": "Landmark applications",
+      "applications": "Boeing's pilotless aircraft assessment, WHO and US DoD policy workshops, and Millennium Project hydropolitical crisis research."
+    },
+    "heroTag": "Jerome Glenn",
+    "heroTitle": "Interactive Futures Wheel Simulator",
+    "heroSub": "Sequential causal consequence mapping — tracing 1st, 2nd, and 3rd order effects of Iran's climate crisis.",
+    "boeing": {
+      "title": "Case Study: Boeing's Pilotless Passenger Aircraft Assessment",
+      "intro": "Boeing used a Structured Futures Wheel to assess fully autonomous commercial aircraft through 2045:",
+      "cards": [
+        {
+          "title": "1st Order (Direct Effects)",
+          "body": "Eliminating pilot human error, reducing crew costs, and optimizing fuel via real-time flight algorithms."
+        },
+        {
+          "title": "2nd Order (Secondary Effects)",
+          "body": "Lower ticket prices, pilot layoffs, union resistance, and new cyber-attack threats to aircraft."
+        },
+        {
+          "title": "3rd Order (Long-Term Effects)",
+          "body": "Complex liability law challenges and passengers' psychological resistance to trusting machines with their lives."
+        }
+      ],
+      "lesson": "<strong>Strategic lesson:</strong> the biggest challenge was not technology but societal psychology and legal liability (3rd order); investment shifted toward adaptive semi-autonomous systems."
+    },
+    "boeingTitle": "Case Study: Boeing's Pilotless Passenger Aircraft Assessment",
+    "boeingIntro": "Boeing used a Structured Futures Wheel to assess fully autonomous commercial aircraft through 2045:",
+    "boeingO1": "1st Order (Direct Effects)",
+    "boeingO1Text": "Eliminating pilot human error, reducing crew costs, and optimizing fuel via real-time flight algorithms.",
+    "boeingO2": "2nd Order (Secondary Effects)",
+    "boeingO2Text": "Lower ticket prices, pilot layoffs, union resistance, and new cyber-attack threats to aircraft.",
+    "boeingO3": "3rd Order (Long-Term Effects)",
+    "boeingO3Text": "Complex liability law challenges and passengers' psychological resistance to trusting machines with their lives.",
+    "boeingLesson": "<strong>Strategic lesson:</strong> the biggest challenge was not technology but societal psychology and legal liability (3rd order); investment shifted toward adaptive semi-autonomous systems.",
+    "diagramTitle": "Climate Security Consequences — Reference Diagram",
+    "diagramP1": "Stepwise structure of 1st order (drought, dust storms, heat waves), 2nd order (aquifer depletion, farmer livelihoods, migration), and 3rd order national-security effects.",
+    "diagramP2": "Systematic analysis reveals feedback loops, cross-effects, and border defense strain — enabling national resilience solutions.",
+    "modelsTag": "Extended Methodology",
+    "modelsTitle": "Futures Wheel Model Variants",
+    "modelsSub": "Beyond a simple diagram — four key modeling approaches in advanced projects.",
+    "tabClassic": "Classic Model",
+    "tabStructured": "Structured STEEP",
+    "tabQuantitative": "Quantitative Model",
+    "tabAction": "Policy-Oriented",
+    "processTag": "Execution Process",
+    "processTitle": "11 Steps to Draw & Run a Futures Wheel",
+    "detailFocus": "Primary Focus",
+    "detailTool": "Execution Method",
+    "detailOutput": "Real-World Example",
+    "steps": [
+      {
+        "title": "Define the Central Issue",
+        "desc": "Clearly state the origin event at the hub center and set temporal/spatial boundaries."
+      },
+      {
+        "title": "Assemble Expert Panel (Delphi)",
+        "desc": "Recruit interdisciplinary experts to reduce bias and groupthink."
+      },
+      {
+        "title": "Identify 1st-Order Consequences",
+        "desc": "Brainstorm: \"What immediate technical, environmental, or social effects occur?\""
+      },
+      {
+        "title": "Screen & Select Consequences",
+        "desc": "Filter by correlation and impact strength; remove redundancy."
+      },
+      {
+        "title": "Extract 2nd-Order Consequences",
+        "desc": "For each 1st-order node: \"What is the next secondary reaction?\""
+      },
+      {
+        "title": "Extract 3rd-Order Consequences",
+        "desc": "Trace chains to long-range security, identity, and systemic collapse effects."
+      },
+      {
+        "title": "Map Network & Cross-Links",
+        "desc": "Discover feedback loops and amplifying cross-branch relationships."
+      },
+      {
+        "title": "Quantify & Cross-Analyze",
+        "desc": "Estimate probability and impact to identify highest-risk paths."
+      },
+      {
+        "title": "Policy & Response Design",
+        "desc": "Attach Policy Response Nodes to negative outcomes for an action roadmap."
+      },
+      {
+        "title": "Delphi Validation Round",
+        "desc": "Independent expert review to reduce availability heuristic bias."
+      },
+      {
+        "title": "Continuous Monitoring",
+        "desc": "Define KPIs and periodically refresh the wheel with new weak signals."
+      }
+    ]
+  },
+  "wheelModels": {
+    "classic": {
+      "title": "Classic Futures Wheel (Jerome Glenn Model)",
+      "desc": "Introduced in 1971 by Jerome C. Glenn (Millennium Project), this model relies on creative brainstorming and free exploration without preset categories. The central phenomenon sits at the hub and experts draw radial consequence chains.",
+      "focus": "Creative brainstorming and open, multi-directional mapping of direct and indirect qualitative consequences.",
+      "tool": "Live workshops or digital platforms (Miro/Mural) with connected color-coded cards.",
+      "output": "US DoD / GE assessment of internet and IT impacts on US Army operations in the late 1970s."
+    },
+    "structured": {
+      "title": "Structured STEEP Futures Wheel",
+      "desc": "To prevent one-dimensional analysis, the wheel is segmented by STEEP variables (Social, Technological, Economic, Environmental, Political). Each consequence is placed in its sector and grows secondary and tertiary branches.",
+      "focus": "Systematic classification for cross-analysis of macro environmental and technological trends.",
+      "tool": "Divide the canvas into 5–6 STEEP sectors and run focused brainstorm panels per sector.",
+      "output": "WHO study mapping pandemic and lifestyle change consequences through 2040."
+    },
+    "quantitative": {
+      "title": "Quantitative Futures Wheel",
+      "desc": "In rigorous foresight projects, the wheel integrates probability and impact scoring. Experts rate each node for probability (0–1) and impact/desirability (−10 to +10) to identify critical risk paths.",
+      "focus": "Numerical estimation, mathematical prioritization of threats, and strategic path valuation.",
+      "tool": "Probabilistic Delphi surveys, statistical simulation, and risk matrix algorithms.",
+      "output": "Millennium Project research on MENA hydropolitical crises and water-scarcity security collapse paths."
+    },
+    "action": {
+      "title": "Policy-Oriented Futures Wheel",
+      "desc": "Rather than merely describing the future, this model drives action. At the end of negative chains, experts attach Policy Response Nodes, converting the wheel into an operational roadmap.",
+      "focus": "Concrete countermeasures, civil defense, adaptive strategies, and mitigation design.",
+      "tool": "Executive strategy workshops, defensive scenario planning, and war-gaming exercises.",
+      "output": "Finland MoD cyber-defense plan linking response protocols to Baltic port and supply-chain attack scenarios."
+    }
+  },
+  "wheelWorkshop": {
+    "modeDemo": "Tutorial Example",
+    "modeWorkshop": "Interactive Workshop",
+    "title": "Build Your Futures Wheel",
+    "sub": "Enter the central issue and consequences for each order — the wheel draws automatically.",
+    "hubLabel": "Central issue / event",
+    "hubPlaceholder": "e.g. AI in higher education",
+    "hubSubLabel": "Short note (optional)",
+    "hubSubPlaceholder": "e.g. LLM adoption in universities",
+    "branchesTitle": "1st-order consequences",
+    "addBranch": "Add branch",
+    "build": "Draw wheel",
+    "loadDemo": "Load climate example",
+    "cascadeHint": "Click any 1st-order consequence to see details in the sidebar.",
+    "sidebarSub": "Select a 1st-order consequence to highlight its 2nd and 3rd order chain.",
+    "hubTag": "Central issue",
+    "branchPlaceholder": "1st-order consequence",
+    "descPlaceholder": "Short description (optional)",
+    "addOrder2": "Add 2nd order",
+    "addOrder3": "Add 3rd order",
+    "order2Placeholder": "2nd-order consequence",
+    "order3Placeholder": "3rd-order consequence",
+    "remove": "Remove",
+    "noChain": "No 2nd/3rd order added",
+    "errHub": "Please enter a central issue.",
+    "errBranch": "Add at least one 1st-order consequence with a title."
+  },
+  "backcastPage": {
+    "history": {
+      "accent": "var(--color-backcast)",
+      "founderLabel": "Founders",
+      "founder": "John B. Robinson & Thomas L. Dreborg",
+      "yearLabel": "Year",
+      "year": "Late 1970s — 1982",
+      "institution": "Swedish Energy Commission · UBC",
+      "title": "Origins of Energy Backcasting",
+      "origin": "Thomas Dreborg applied backcasting at Sweden's Energy Commission in the 1970s for alternative energy policy. John B. Robinson formalized the method in <em>Energy Backcasting: A Proposed Method of Policy Analysis</em> (<em>Energy Policy</em>, 1982), reframing energy planning at UBC from trend prediction to designing desirable futures.",
+      "problemLabel": "Problem",
+      "problem": "Forecasting can extend past trends but cannot design <strong>desirable alternative energy futures</strong>.",
+      "useLabel": "Landmark applications",
+      "applications": "Sweden's 1970s energy planning, net-zero transition (2045), Vancouver's Livable Region Plan, and EU long-term energy scenarios."
+    },
+    "heroTag": "John B. Robinson",
+    "heroTitle": "Strategic Backcasting",
+    "heroSub": "Start from a normative future and work backward — mapping policies, barriers, and practical steps needed from today.",
+    "methodologyTag": "Transition Framework",
+    "methodologyTitle": "How Backcasting Works",
+    "methodologyP1": "Backcasting begins with a <strong>desired future goal</strong>, not today's trends. Analysts assume that goal is achieved, then ask what had to change to get there.",
+    "methodologyP2": "Four core steps: (1) envision the desired future, (2) gap analysis against the present, (3) design policies and regulations for transition, (4) build an adaptive roadmap of near-, mid-, and long-term actions. Human agency replaces statistical determinism.",
+    "comparisonTag": "Comparative Analysis",
+    "comparisonTitle": "Backcasting vs. Forecasting",
+    "comparisonSub": "Trend-driven planning versus choice-driven planning in large-scale strategy.",
+    "comparisonIntroP1": "Robinson introduced backcasting in the late 1970s for alternative energy policy. He argued forecasting — tied to past data — cannot design structural change or normatively desirable futures.",
+    "comparisonIntroP2": "Forecasting asks: \"What happens if trends continue?\" Backcasting asks: \"How do we reach a desirable future, and what stands in the way?\" It fits energy transition, environmental policy, and urban planning.",
+    "comparisonHeaders": {
+      "aspect": "Dimension",
+      "forecast": "Forecasting",
+      "backcast": "Backcasting"
+    },
+    "comparisonRows": [
+      {
+        "aspect": "Time direction",
+        "forecast": "Today → future (data extrapolation)",
+        "backcast": "Desired future → today (path discovery)"
+      },
+      {
+        "aspect": "Output type",
+        "forecast": "Descriptive — probable futures",
+        "backcast": "Normative — desirable futures"
+      },
+      {
+        "aspect": "Philosophy",
+        "forecast": "Continuity of past trends",
+        "backcast": "Human agency and structural change"
+      },
+      {
+        "aspect": "Uncertainty",
+        "forecast": "Reduce uncertainty via statistical precision",
+        "backcast": "Accept uncertainty; design adaptive paths"
+      },
+      {
+        "aspect": "Best fit",
+        "forecast": "Short-term linear trends with rich data",
+        "backcast": "Long-term structural crises and systemic gaps"
+      }
+    ],
+    "swedenTitle": "Case Study: Sweden's Path to Net Zero by 2045",
+    "swedenIntro": "In 2016 Sweden used backcasting — not trend forecasting — to set \"net zero by 2045 and fossil-free transport by 2030,\" then planned backward from that endpoint.",
+    "swedenSteps": [
+      {
+        "title": "Final reverse step (2040–2045)",
+        "body": "Ban sales of petrol and diesel cars, deploy heavy electric trucks, and replace coal coke with hydrogen in steelmaking."
+      },
+      {
+        "title": "Mid-range step (2030–2040)",
+        "body": "Decarbonize steel (HYBRIT hydrogen project), electrify freight rail, and launch advanced biofuel certificate markets."
+      },
+      {
+        "title": "Near-term step (2016–2030)",
+        "body": "High carbon tax, EV purchase incentives, and public–private investment in battery manufacturing (Northvolt)."
+      }
+    ],
+    "simulatorTag": "Reverse Pathway Simulator",
+    "simulatorTitle": "Normative Transition Scenarios for Iran & Tehran",
+    "simulatorSub": "Pick a scenario and explore reverse timeline steps.",
+    "tabTehran": "Tehran 2051: Sustainable Megacity",
+    "tabEnergy": "Energy Security 2051: Zero Imbalance",
+    "detailPolicy": "Policies & Regulatory Requirements",
+    "detailRisk": "Challenges & Barriers",
+    "stepTitlePlaceholder": "Step title",
+    "stepYearPlaceholder": "Time horizon",
+    "stepDescPlaceholder": "Strategic actions in this period...",
+    "stepPolicyPlaceholder": "Laws, standards, and mandates required...",
+    "stepRiskPlaceholder": "Logistical, financial, or technology risks...",
+    "scenarioTitlePlaceholder": "Scenario title",
+    "scenarioDescPlaceholder": "Scenario overview...",
+    "workspaceTag": "Normative Strategy Workshop",
+    "workspaceTitle": "Interactive Backcasting Workshop",
+    "workspaceSub": "Define your long-term goal and map reverse steps back to today.",
+    "workspacePanelTitle": "Backcasting Workshop Panel",
+    "templateLabel": "Choose a template",
+    "templateCustom": "Custom strategy design",
+    "templateGreen": "Green Enterprise Transition",
+    "templateEdu": "Smart Higher Education by 2041",
+    "goalLabel": "Long-term goal (Future Endpoint)",
+    "goalPlaceholder": "e.g. Net-zero factory operations",
+    "goalDefault": "Full transition to clean energy and carbon-zero technology",
+    "yearLabel": "Target year",
+    "yearPlaceholder": "e.g. 2046",
+    "yearDefault": "2041",
+    "step3Label": "Step 3: Far horizon (just before the endpoint)",
+    "step3Placeholder": "What are the final prerequisites and big moves?",
+    "step2Label": "Step 2: Mid horizon (development & modernization)",
+    "step2Placeholder": "What mid-term investments and structural changes are needed?",
+    "step1Label": "Step 1: Near horizon (immediate actions today)",
+    "step1Placeholder": "What are the first executable steps, budget, and permits?",
+    "generateBtn": "Draw Backcasting Roadmap",
+    "previewTag": "Workshop Output",
+    "previewTitle": "Reverse Roadmap to the Final Goal",
+    "renderGoalPrefix": "Final goal (year",
+    "renderHorizon3": "Far horizon (Step 3)",
+    "renderHorizon2": "Mid horizon (Step 2)",
+    "renderHorizon1": "Near horizon & present (Step 1)",
+    "renderFooter": "Generated by the Strategic Backcasting Simulator",
+    "renderGoalFallback": "Your strategic goal...",
+    "renderYearFallback": "2051",
+    "renderH3Fallback": "Far-horizon details...",
+    "renderH2Fallback": "Mid-horizon details...",
+    "renderH1Fallback": "Near-horizon details...",
+    "renderContentFallback": "Content..."
+  },
+  "bcScenarios": {
+    "tehran": {
+      "title": "Tehran 2051: Resilient, Sustainable Megacity",
+      "desc": "Normative ecological transition for the capital — halting land subsidence, electrifying urban transit, and full water/wastewater recycling.",
+      "steps": [
+        {
+          "year": "2051",
+          "label": "Final goal",
+          "title": "Smart, ecosystem-based, net-zero metropolis",
+          "desc": "Net-zero transport and suburban industry, 100% water recycling, subsidence halted across Tehran plains via IoT and smart management.",
+          "policy": "Carbon and water footprint standards, carbon penalties, and mandatory zero-nonrecyclable-waste certification for industry.",
+          "risk": "Conflict between city and national governance plus macroeconomic volatility threatening green development funds."
+        },
+        {
+          "year": "2041",
+          "label": "Step 3: Far horizon",
+          "title": "Full transit electrification & aquifer closure",
+          "desc": "Ban internal-combustion vehicles in Tehran, full metro/bus electrification, complete wastewater network, and seal illegal wells.",
+          "policy": "National ban on fossil-fuel vehicles, EV tax incentives, and strict groundwater extraction limits.",
+          "risk": "Battery and semiconductor supply disruption from geopolitical tension and currency limits."
+        },
+        {
+          "year": "2031",
+          "label": "Step 2: Mid horizon",
+          "title": "Suburban rail ring & smart water metering",
+          "desc": "Express suburban rail ring, smart meters on legal wells, and industrial shift from groundwater to treated wastewater.",
+          "policy": "Mandate peri-urban industries to use recycled water; preferential tariffs for high energy efficiency.",
+          "risk": "Farmer and orchard resistance to well closures and water reallocation."
+        },
+        {
+          "year": "2026",
+          "label": "Step 1: Present",
+          "title": "Ecological transition council & import incentives",
+          "desc": "Establish capital ecological transition council, subsidence defense charter, zero-duty electric infrastructure imports, and wastewater-to-agriculture pilots.",
+          "policy": "Plain protection legislation, BOT guidelines for electric transit, and private investment incentives.",
+          "risk": "Inter-agency bureaucracy and inflation limiting infrastructure budget allocation."
+        }
+      ]
+    },
+    "energy": {
+      "title": "Iran Energy Security 2051: Zero Imbalance",
+      "desc": "Eliminate gas and power gaps; power plant efficiency above 55%, heavy industry on green hydrogen, 40% renewable electricity.",
+      "steps": [
+        {
+          "year": "2051",
+          "label": "Final goal",
+          "title": "Stable energy security & green power exports",
+          "desc": "No load-shedding, 40% solar/wind power, national smart grid, and renewable electricity exports to neighbors.",
+          "policy": "EU CBAM compliance, pollution penalties, and open renewable energy exchange.",
+          "risk": "Technology sanctions and regional instability blocking cross-border grid links."
+        },
+        {
+          "year": "2041",
+          "label": "Step 3: Far horizon",
+          "title": "Desert solar megaprojects & hydrogen furnaces",
+          "desc": "Large central desert solar farms, retire low-efficiency gas plants, and shift steel/cement to green hydrogen electric arc furnaces.",
+          "policy": "Fossil fuel tax on inefficient industry, 10-year renewable tax holidays, and private power export rights.",
+          "risk": "Distribution grid unable to move dispersed southern solar to northern industrial demand centers."
+        },
+        {
+          "year": "2031",
+          "label": "Step 2: Mid horizon",
+          "title": "Green energy exchange & rooftop solar",
+          "desc": "Carbon certificate market, low-interest rooftop solar loans, ban permits without Energy Label A, and combined-cycle upgrades above 50%.",
+          "policy": "Renewable feed-in tariff law and 15% clean-power mandate for high-demand industry.",
+          "risk": "Fossil fuel subsidies making private renewable ROI unattractive."
+        },
+        {
+          "year": "2026",
+          "label": "Step 1: Present",
+          "title": "National energy transition charter & grid opening",
+          "desc": "Adopt clean energy transition roadmap, end state monopoly on power purchase, and zero-duty solar/wind component imports.",
+          "policy": "Liberalized renewable wheeling rates and foreign investment incentives for solar/wind.",
+          "risk": "Institutional resistance to real decentralization and privatization of distribution."
+        }
+      ]
+    }
+  },
+  "bcTemplates": {
+    "green-tech": {
+      "goal": "Organization-wide green tech transition with net-zero carbon and waste across the value chain",
+      "year": "2046",
+      "h3": "Far horizon (2044–2046): circular economy standards, 100% on-site solar, zero supply-chain carbon.",
+      "h2": "Mid horizon (2036–2043): low-carbon production lines, industrial water recycling, electric logistics.",
+      "h1": "Near horizon (2026–2035): energy audit, green bonds, and corporate sustainability task force."
+    },
+    "smart-edu": {
+      "goal": "Fully digital university powered by metaverse and generative AI, independent of traditional physical campuses",
+      "year": "2041",
+      "h3": "Far horizon (2039–2041): immersive simulators, end centralized exams, blockchain competency credentials.",
+      "h2": "Mid horizon (2031–2038): cloud learning platform, upskill 80% of faculty, convert buildings to innovation hubs.",
+      "h1": "Near horizon (2026–2030): AI-ready curricula, pilot VR courses, and phase out paper exams."
+    }
+  },
+  "catalog": {
+    "title": "Comprehensive Foresight Methods Catalog",
+    "subtitle": "Key methods in foresight, futures studies, and strategic foresight — FRM 3.0, APF, and teaching practice",
+    "categories": [
+      {
+        "id": "interactive",
+        "title": "Interactive Workshops",
+        "desc": "Digital tools with simulators and hands-on exercises",
+        "methods": [
+          {
+            "id": "fitness",
+            "slug": "fitness.html",
+            "icon": "zap",
+            "status": "interactive",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "cla",
+            "slug": "cla.html",
+            "icon": "layers",
+            "status": "interactive",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "futures-wheel",
+            "slug": "futures-wheel.html",
+            "icon": "orbit",
+            "status": "interactive",
+            "color": "var(--color-wheel-red)"
+          },
+          {
+            "id": "backcasting",
+            "slug": "backcasting.html",
+            "icon": "history",
+            "status": "interactive",
+            "color": "var(--color-i)"
+          }
+        ]
+      },
+      {
+        "id": "frameworks",
+        "title": "Strategic Frameworks",
+        "desc": "Managerial pathways and foresight quality",
+        "methods": [
+          {
+            "id": "popper-diamond",
+            "slug": "popper-diamond.html",
+            "icon": "gem",
+            "status": "lesson",
+            "color": "#e040fb"
+          },
+          {
+            "id": "six-pillars",
+            "slug": "strategic-foresight.html",
+            "icon": "columns-3",
+            "status": "lesson",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "scenario-planning",
+            "slug": "scenarios.html",
+            "icon": "git-branch",
+            "status": "lesson",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "futurpreneurship",
+            "slug": "futurpreneurship.html",
+            "icon": "rocket",
+            "status": "lesson",
+            "color": "var(--color-i)"
+          },
+          {
+            "id": "three-horizons",
+            "slug": null,
+            "icon": "layers-3",
+            "status": "catalog",
+            "color": "#7c4dff"
+          },
+          {
+            "id": "futures-literacy",
+            "slug": null,
+            "icon": "book-open",
+            "status": "catalog",
+            "color": "#4caf50"
+          }
+        ]
+      },
+      {
+        "id": "scanning",
+        "title": "Environmental Scanning & Sensing",
+        "desc": "Detecting signals, trends, and emerging issues",
+        "methods": [
+          {
+            "id": "environmental-scanning",
+            "slug": null,
+            "icon": "scan-search",
+            "status": "catalog",
+            "color": "#4caf50"
+          },
+          {
+            "id": "horizon-scanning",
+            "slug": null,
+            "icon": "telescope",
+            "status": "catalog",
+            "color": "#00e5ff"
+          },
+          {
+            "id": "weak-signals",
+            "slug": null,
+            "icon": "radio",
+            "status": "catalog",
+            "color": "#ffaa00"
+          },
+          {
+            "id": "steep-pestle",
+            "slug": null,
+            "icon": "grid-3x3",
+            "status": "catalog",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "trend-analysis",
+            "slug": null,
+            "icon": "trending-up",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "megatrends",
+            "slug": null,
+            "icon": "globe-2",
+            "status": "catalog",
+            "color": "#7c4dff"
+          },
+          {
+            "id": "emerging-issues",
+            "slug": null,
+            "icon": "sparkles",
+            "status": "catalog",
+            "color": "#e040fb"
+          }
+        ]
+      },
+      {
+        "id": "expert",
+        "title": "Expert-Based Methods",
+        "desc": "Collecting and synthesizing expert knowledge",
+        "methods": [
+          {
+            "id": "delphi",
+            "slug": null,
+            "icon": "users",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "real-time-delphi",
+            "slug": null,
+            "icon": "messages-square",
+            "status": "catalog",
+            "color": "#7c4dff"
+          },
+          {
+            "id": "expert-panels",
+            "slug": null,
+            "icon": "user-check",
+            "status": "catalog",
+            "color": "#4caf50"
+          },
+          {
+            "id": "brainstorming",
+            "slug": null,
+            "icon": "lightbulb",
+            "status": "catalog",
+            "color": "#ffaa00"
+          },
+          {
+            "id": "nominal-group",
+            "slug": null,
+            "icon": "list-ordered",
+            "status": "catalog",
+            "color": "var(--color-cla)"
+          }
+        ]
+      },
+      {
+        "id": "analysis",
+        "title": "Structural & Impact Analysis",
+        "desc": "Modeling relationships, impacts, and problem structure",
+        "methods": [
+          {
+            "id": "morphological-analysis",
+            "slug": null,
+            "icon": "table-2",
+            "status": "catalog",
+            "color": "#e040fb"
+          },
+          {
+            "id": "cross-impact",
+            "slug": null,
+            "icon": "network",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "relevance-tree",
+            "slug": null,
+            "icon": "git-fork",
+            "status": "catalog",
+            "color": "#4caf50"
+          },
+          {
+            "id": "systems-thinking",
+            "slug": null,
+            "icon": "workflow",
+            "status": "catalog",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "causal-layered",
+            "slug": "cla.html",
+            "icon": "layers",
+            "status": "interactive",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "futures-wheel-ref",
+            "slug": "futures-wheel.html",
+            "icon": "orbit",
+            "status": "interactive",
+            "color": "var(--color-wheel-red)"
+          }
+        ]
+      },
+      {
+        "id": "visioning",
+        "title": "Visioning & Scenarios",
+        "desc": "Building plausible and preferred futures",
+        "methods": [
+          {
+            "id": "scenario-2x2",
+            "slug": "scenarios.html",
+            "icon": "layout-grid",
+            "status": "lesson",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "visioning",
+            "slug": null,
+            "icon": "eye",
+            "status": "catalog",
+            "color": "#ffaa00"
+          },
+          {
+            "id": "wind-tunneling",
+            "slug": null,
+            "icon": "wind",
+            "status": "catalog",
+            "color": "#7c4dff"
+          },
+          {
+            "id": "cone-plausibility",
+            "slug": null,
+            "icon": "triangle",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "backcasting-ref",
+            "slug": "backcasting.html",
+            "icon": "history",
+            "status": "interactive",
+            "color": "var(--color-i)"
+          }
+        ]
+      },
+      {
+        "id": "planning",
+        "title": "Planning & Action",
+        "desc": "From insight to roadmap and execution",
+        "methods": [
+          {
+            "id": "roadmapping",
+            "slug": null,
+            "icon": "map",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "technology-roadmap",
+            "slug": null,
+            "icon": "cpu",
+            "status": "catalog",
+            "color": "#4caf50"
+          },
+          {
+            "id": "indicators",
+            "slug": null,
+            "icon": "gauge",
+            "status": "catalog",
+            "color": "#ffaa00"
+          },
+          {
+            "id": "decision-support",
+            "slug": null,
+            "icon": "scale",
+            "status": "catalog",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "simulation-gaming",
+            "slug": null,
+            "icon": "gamepad-2",
+            "status": "catalog",
+            "color": "#e040fb"
+          }
+        ]
+      }
+    ],
+    "statusLabels": {
+      "interactive": "Interactive Workshop",
+      "lesson": "Lesson Module",
+      "catalog": "Catalog Entry"
+    },
+    "entries": {
+      "fitness": {
+        "title": "Future FITness",
+        "founder": "René Rohrbeck",
+        "desc": "Organizational foresight maturity — Perceiving, Prospecting, Probing, 5-dimension self-assessment."
+      },
+      "cla": {
+        "title": "Causal Layered Analysis (CLA)",
+        "founder": "Sohail Inayatullah",
+        "desc": "Litany, Systemic, Worldview, Myth — interactive pyramid and metaphor workshop."
+      },
+      "futures-wheel": {
+        "title": "Futures Wheel",
+        "founder": "Jerome C. Glenn",
+        "desc": "1st–3rd order consequences, STEEP models, radial impact tree."
+      },
+      "backcasting": {
+        "title": "Backcasting",
+        "founder": "John B. Robinson",
+        "desc": "Normative future design and reverse path from vision to today."
+      },
+      "popper-diamond": {
+        "title": "Popper Foresight Diamond",
+        "founder": "Rafael Popper",
+        "desc": "Foresight quality: Creativity, Innovation, Expertise, Interaction."
+      },
+      "six-pillars": {
+        "title": "Hines & Bishop Six Pillars",
+        "founder": "Andy Hines & Peter Bishop",
+        "desc": "Framing → Scanning → Forecasting → Visioning → Planning → Acting."
+      },
+      "scenario-planning": {
+        "title": "Strategic Scenario Planning",
+        "founder": "Shell / Peter Schwartz",
+        "desc": "Critical uncertainties, 2×2 matrix, early indicators, decision tool."
+      },
+      "futurpreneurship": {
+        "title": "Futurpreneurship",
+        "founder": "Foresight × Venture",
+        "desc": "From weak signal to MVP — future-oriented entrepreneurship."
+      },
+      "three-horizons": {
+        "title": "Three Horizons",
+        "founder": "Curry & Hodgson",
+        "desc": "H1/H2/H3 — managing transition from present business to emerging futures."
+      },
+      "futures-literacy": {
+        "title": "Futures Literacy",
+        "founder": "Riel Miller (UNESCO)",
+        "desc": "Capacity to imagine and use futures in everyday decisions."
+      },
+      "environmental-scanning": {
+        "title": "Environmental Scanning",
+        "founder": "Aguilar / Choo",
+        "desc": "Systematic monitoring of the environment for opportunities and threats."
+      },
+      "horizon-scanning": {
+        "title": "Horizon Scanning",
+        "founder": "UK Government Office for Science",
+        "desc": "Detecting emerging issues and technologies on a 5–20 year horizon."
+      },
+      "weak-signals": {
+        "title": "Weak Signals",
+        "founder": "Ansoff / Hiltunen",
+        "desc": "Early hints of major change — wild cards and emerging disruptions."
+      },
+      "steep-pestle": {
+        "title": "STEEP / PESTLE",
+        "founder": "Millennium Project",
+        "desc": "Social, Technological, Economic, Environmental, Political analysis."
+      },
+      "trend-analysis": {
+        "title": "Trend Analysis",
+        "founder": "FRM / APF",
+        "desc": "Identify, extrapolate, and map trends with plausibility cones."
+      },
+      "megatrends": {
+        "title": "Megatrends Analysis",
+        "founder": "Naisbitt / Z_punkt",
+        "desc": "Large structural forces shaping the world over decades."
+      },
+      "emerging-issues": {
+        "title": "Emerging Issues Analysis",
+        "founder": "Glenn & Gordon",
+        "desc": "Issues before they become crises or major opportunities."
+      },
+      "delphi": {
+        "title": "Delphi Method",
+        "founder": "Dalkey & Helmer (RAND)",
+        "desc": "Iterative anonymous expert surveys for consensus under uncertainty."
+      },
+      "real-time-delphi": {
+        "title": "Real-Time Delphi",
+        "founder": "Gordon & Pease",
+        "desc": "Online Delphi with instant feedback — digital evolution of the classic."
+      },
+      "expert-panels": {
+        "title": "Expert Panels",
+        "founder": "FRM Ch. 8",
+        "desc": "Structured sessions with expert panels for exploration and validation."
+      },
+      "brainstorming": {
+        "title": "Brainstorming & Ideation",
+        "founder": "Osborn",
+        "desc": "Generate ideas without judgment — creativity foundation in foresight."
+      },
+      "nominal-group": {
+        "title": "Nominal Group Technique",
+        "founder": "Delbecq & Van de Ven",
+        "desc": "Individual writing plus group voting for prioritization."
+      },
+      "morphological-analysis": {
+        "title": "Morphological Analysis",
+        "founder": "Fritz Zwicky",
+        "desc": "Decompose problem into parameters and possible combinations."
+      },
+      "cross-impact": {
+        "title": "Cross-Impact Analysis",
+        "founder": "Gordon & Helmer",
+        "desc": "Mutual influence matrix — MICMAC and structural analysis."
+      },
+      "relevance-tree": {
+        "title": "Relevance Tree",
+        "founder": "FRM Ch. 14",
+        "desc": "Goal-means tree to break problems into analyzable sub-problems."
+      },
+      "systems-thinking": {
+        "title": "Systems Thinking",
+        "founder": "Senge / Meadows",
+        "desc": "Feedback loops, leverage points, complex adaptive systems."
+      },
+      "causal-layered": {
+        "title": "CLA (reference)",
+        "founder": "Inayatullah",
+        "desc": "→ Interactive CLA workshop"
+      },
+      "futures-wheel-ref": {
+        "title": "Futures Wheel (reference)",
+        "founder": "Glenn",
+        "desc": "→ Futures Wheel simulator"
+      },
+      "scenario-2x2": {
+        "title": "Scenario 2×2 Matrix",
+        "founder": "Schwartz / van der Heijden",
+        "desc": "→ Scenario planning module"
+      },
+      "visioning": {
+        "title": "Visioning",
+        "founder": "FRM Ch. 20",
+        "desc": "Build preferred future images for mobilization and alignment."
+      },
+      "wind-tunneling": {
+        "title": "Wind Tunneling",
+        "founder": "Schwartz / Ogilvy",
+        "desc": "Test current strategy against multiple scenarios."
+      },
+      "cone-plausibility": {
+        "title": "Cone of Plausibility",
+        "founder": "Hines & Bishop",
+        "desc": "Bound future space into likely, plausible, and possible."
+      },
+      "backcasting-ref": {
+        "title": "Backcasting (reference)",
+        "founder": "Robinson",
+        "desc": "→ Backcasting simulator"
+      },
+      "roadmapping": {
+        "title": "Roadmapping",
+        "founder": "Phaal / Battelle",
+        "desc": "Visual roadmap of capabilities, technology, and product over time."
+      },
+      "technology-roadmap": {
+        "title": "Technology Roadmapping",
+        "founder": "Phaal et al.",
+        "desc": "TRM — align technology with strategy and market."
+      },
+      "indicators": {
+        "title": "Indicators & Early Warning",
+        "founder": "FRM Ch. 38",
+        "desc": "Leading indicators to monitor scenario activation."
+      },
+      "decision-support": {
+        "title": "Decision Support",
+        "founder": "FRM Ch. 37",
+        "desc": "Turn foresight insight into decision options for managers."
+      },
+      "simulation-gaming": {
+        "title": "Simulation & Gaming",
+        "founder": "FRM Ch. 36",
+        "desc": "Scenario-based games for learning and strategy testing."
+      }
+    }
+  }
+}

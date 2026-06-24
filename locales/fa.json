@@ -1,0 +1,2719 @@
+{
+  "lang": {
+    "label": "English",
+    "switch": "EN"
+  },
+  "nav": {
+    "home": "صفحه نخست",
+    "about": "درباره من",
+    "articles": "مقالات",
+    "methods": "کاتالوگ متدها",
+    "fitness": "آمادگی و تناسب (FITness)",
+    "cla": "تحلیل لایه‌ای علت‌ها (CLA)",
+    "wheel": "چرخ آینده (Futures Wheel)",
+    "backcast": "پس‌نگری (Backcasting)",
+    "assess": "ارزیابی بلوغ سازمان",
+    "menu": "منو"
+  },
+  "footer": {
+    "desc": "پرتال آموزشی علی منصوری — ۸ ماژول آینده‌پژوهی با کارگاه تعاملی، طرح درس، و مقالات.",
+    "descBackcast": "پلتفرم تعاملی ارزیابی و آموزش آمادگی و تناسب با آینده بر اساس مدل‌های بلوغ رنه روهربک، روش تحلیل لایه‌ای علتها (CLA) سهیل عنایت‌الله، روش چرخ آینده جروم سی گلن، و روش پس‌نگری هنجاری جان رابینسون.",
+    "descWheel": "پلتفرم تعاملی ارزیابی و آموزش آمادگی و تناسب با آینده بر اساس مدل‌های بلوغ رنه روهربک، روش تحلیل لایه‌ای علتها (CLA) سهیل عنایت‌الله، روش چرخ آینده جروم سی گلن، و روش پس‌نگری هنجاری جان رابینسون.",
+    "role": "دانشجوی دکتری آینده‌پژوهی دانشگاه تهران",
+    "resume": "مشاهده رزومه و سوابق",
+    "copyright": "پرتال آینده‌پژوهی علی منصوری — آموزش متدها، پرسونال برند و انتشار مقالات. کلیه حقوق محفوظ است."
+  },
+  "index": {
+    "badge": "مرجع آینده‌پژوهی استراتژیک",
+    "heroTitle": "STRATEGIC FORESIGHT<br>PORTAL",
+    "heroSub": "پرتال آموزشی تعاملی علی منصوری — کارگاه دیجیتال متدهای آینده‌پژوهی با طرح درس، معرفی سازندگان، و مثال‌های عملی.",
+    "presenter": "ارائه‌دهنده:",
+    "student": "دانشجوی دکتری آینده‌پژوهی",
+    "coreTag": "لایه ۱ — کارگاه تعاملی",
+    "coreTitle": "چهار ابزار اصلی",
+    "coreSub": "محیط‌های شبیه‌سازی و کارگاه دیجیتال — هر کدام با طرح درس کامل و تمرین عملی.",
+    "extendedTag": "لایه ۲ — گسترش کاتالوگ",
+    "extendedTitle": "متدهای تکمیلی",
+    "extendedSub": "علاوه بر چهار ابزار بالا — هر متد با تاریخچه، عکس سازنده، syllabus و منابع.",
+    "extendedNote": "کاتالوگ کامل: بیش از ۳۵ متد آینده‌پژوهی، آینده‌نگاری و foresight راهبردی — <a href=\"methods/\">مشاهده همه</a>.",
+    "integrationTag": "هم‌افزایی متدولوژیک",
+    "integrationTitle": "چرخه تلفیق چهار ابزار اصلی",
+    "integrationSub": "چگونه FITness، CLA، Futures Wheel و Backcasting در یک استراتژی سازمانی در هم می‌آیند.",
+    "citationTitle": "منابع علمی:"
+  },
+  "common": {
+    "close": "بستن",
+    "readMore": "بیشتر بدانید",
+    "order1": "مرتبه ۱",
+    "order2": "مرتبه ۲",
+    "order3": "مرتبه ۳",
+    "clickExplore": "برای کاوش کلیک کنید",
+    "scrollHint": "برای مشاهده کامل، اسکرول کنید"
+  },
+  "wheel": {
+    "hubLabel": "تغییر اقلیم در ایران",
+    "hubSub": "(کاهش بارش و افزایش دما)",
+    "sidebarTitle": "شبکه پیامدها و تاثیرات پنهان",
+    "sidebarSub": "یکی از پیامدهای مرتبه اول را در شبکه دایره‌ای انتخاب کنید تا تاثیرات ثانویه و پیامدهای نهایی آن نمایش داده شود.",
+    "chain2": "پیامدهای مرتبه دوم",
+    "chain3": "پیامدهای مرتبه سوم"
+  },
+  "cla": {
+    "layers": {
+      "litany": "لیتانی (Litany)",
+      "systemic": "علل اجتماعی و ساختاری (Systemic)",
+      "worldview": "گفتمان و جهان‌بینی (Worldview)",
+      "myth": "اسطوره و استعاره (Myth)"
+    }
+  },
+  "radar": {
+    "defaultTitle": "رادار فناوری‌های نوظهور",
+    "defaultSub": "روی نقاط درخشان کلیک کنید تا جزئیات فناوری، وضعیت بلوغ و توصیه استراتژیک نمایش داده شود.",
+    "status": "وضعیت رادار:",
+    "impact": "تاثیر استراتژیک بر سازمان:"
+  },
+  "hub": {
+    "fitnessTitle": "آمادگی و تناسب با آینده (FITness)",
+    "fitnessDesc": "بررسی مدل بلوغ رنه روهربک، شبیه‌سازی Perceiving / Prospecting / Probing، تست خودارزیابی ۵ بعدی و رادار فناوری.",
+    "fitnessLink": "ورود به بخش تناسب آینده",
+    "claTitle": "تحلیل لایه‌ای علت‌ها (CLA)",
+    "claDesc": "مدل سهیل عنایت‌الله برای نفوذ به لایه‌های چهارگانه مسائل، هرم تعاملی، آرشیو سناریوها و کارگاه استعاره.",
+    "claLink": "ورود به کارگاه CLA",
+    "wheelTitle": "چرخ آینده (Futures Wheel)",
+    "wheelDesc": "نگاشت زنجیره‌ای پیامدهای مرتبه اول تا سوم؛ درخت شعاعی تغییر اقلیم، مدل‌های STEEP و فرآیند ۱۱ مرحله‌ای.",
+    "wheelLink": "ورود به شبیه‌ساز چرخ آینده",
+    "backcastTitle": "پس‌نگری و نگاشت معکوس (Backcasting)",
+    "backcastDesc": "طراحی آرمان‌شهر و بازگشت گام‌به‌گام به حال بر مبنای جان رابینسون؛ مقایسه با Forecasting و سناریوی تهران ۱۴۳۰.",
+    "backcastLink": "ورود به شبیه‌ساز پس‌نگری"
+  },
+  "integration": {
+    "step1Title": "رصد و حس‌گری (FITness)",
+    "step1Desc": "شناسایی سیگنال‌های ضعیف تغییر و ارزیابی توان سازمانی برای درک و آزمایش فرصت‌های نوظهور.",
+    "step2Title": "ریشه‌یابی و واسازی (CLA)",
+    "step2Desc": "شکستن سیگنال‌ها به لایه‌های سیستمی، گفتمانی و اسطوره‌ای برای درک ریشه‌های عمیق مسئله.",
+    "step3Title": "تحلیل پیامدها (Futures Wheel)",
+    "step3Desc": "نگاشت پیامدهای زنجیره‌ای مرتبه اول تا سوم برای شناسایی فرصت‌ها و تهدیدهای ثانویه.",
+    "step4Title": "طراحی گذار معکوس (Backcasting)",
+    "step4Desc": "تعریف چشم‌انداز هنجاری مطلوب و بازگشت گام‌به‌گام به حال برای تدوین سیاست‌های اجرایی."
+  },
+  "depth": {
+    "tag": "عمق متدولوژیک",
+    "title": "چرا این چارچوب‌ها مکمل یکدیگرند؟",
+    "card1Title": "از سیگنال تا ساختار",
+    "card1Desc": "FITness سیگنال‌های ضعیف را رصد می‌کند؛ CLA آن‌ها را از سطح اخبار به ساختار و اسطوره می‌برد.",
+    "card2Title": "از علت تا پیامد",
+    "card2Desc": "Futures Wheel پیامدهای زنجیره‌ای تغییرات ساختاری را به صورت بصری و سیستمی نگاشت می‌کند.",
+    "card3Title": "از آینده مطلوب تا اقدام",
+    "card3Desc": "Backcasting از تصویر آینده مطلوب به عقب برمی‌گردد و گام‌های سیاستی و عملیاتی امروز را مشخص می‌کند.",
+    "card4Title": "چرخه یادگیری سازمانی",
+    "card4Desc": "ترکیب این ابزارها یک چرخه یادگیری استراتژیک می‌سازد: حس → فهم → پیش‌بینی پیامد → طراحی گذار."
+  },
+  "fitnessDepth": {
+    "tag": "عمق نظریه روهربک",
+    "title": "چرخه سه‌گانه Perceiving → Prospecting → Probing",
+    "s1": "درک (Perceiving): رصد سیگنال‌های ضعیف، تحلیل روندها و ساخت آگاهی محیطی.",
+    "s2": "کاوش (Prospecting): سناریوسازی، نقشه‌راه فناوری و طراحی آینده‌های محتمل.",
+    "s3": "آزمایش (Probing): نمونه‌سازی سریع، پروژه‌های پایلوت و اعتبارسنجی فرضیات.",
+    "s4": "تحول (Transformation): تبدیل بینش‌ها به تغییر ساختاری، فرهنگی و DNA سازمانی."
+  },
+  "claDepth": {
+    "tag": "عمق متدولوژی CLA",
+    "title": "گام‌های کارگاه تحلیل لایه‌ای علت‌ها",
+    "s1": "انتخاب مسئله و جمع‌آوری داده‌های لایه لیتانی (اخبار، آمار، رویدادها).",
+    "s2": "تحلیل علل ساختاری: سیاست‌ها، نهادها، مشوق‌های اقتصادی و فنی.",
+    "s3": "واسازی گفتمان‌ها: جهان‌بینی‌ها، پارادایم‌ها و روایت‌های مشروعیت‌بخش.",
+    "s4": "کاوش اسطوره و استعاره: ناخودآگاه جمعی و خلق استعاره‌های تحول‌آفرین."
+  },
+  "wheelDepth": {
+    "tag": "عمق اجرای چرخ آینده",
+    "title": "فرآیند ۱۱ مرحله‌ای Glenn Futures Wheel",
+    "s1": "تعریف رویداد/تصمیم محوری و تشکیل تیم خبرگان چندتخصصی.",
+    "s2": "طوفان فکری پیامدهای مرتبه اول بدون قضاوت و سانسور.",
+    "s3": "طبقه‌بندی STEEP و گسترش به پیامدهای مرتبه دوم و سوم.",
+    "s4": "اولویت‌بندی، سیاست‌گذاری و تدوین اقدامات پدافندی/انطباقی."
+  },
+  "bcDepth": {
+    "tag": "عمق پس‌نگری",
+    "title": "چارچوب ۴ گانه Robinson Backcasting",
+    "s1": "تصویرسازی آینده مطلوب: تعریف شاخص‌های هنجاری و چشم‌انداز هدف.",
+    "s2": "تحلیل شکاف (Gap Analysis): فاصله ساختار فعلی با تصویر مطلوب.",
+    "s3": "طراحی سیاست و مقررات: ابزارهای قانونی، مالی و فنی گذار.",
+    "s4": "نقشه راه انطباقی: اقدامات کوتاه‌مدت، میان‌مدت و بلندمدت."
+  },
+  "citations": {
+    "portalBody": "هشت ماژول آموزشی این پورتال:<br>۱. <strong>FITness</strong> — رنه روهربک (<a href=\"https://rene-rohrbeck.com/about-foresight/\" target=\"_blank\" rel=\"noopener noreferrer\">Corporate Foresight</a>, 2010)<br>۲. <strong>CLA</strong> — سهیل عنایت‌الله (<a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">Metafuture</a>)<br>۳. <strong>Futures Wheel</strong> — جروم گلن (<a href=\"http://www.millennium-project.org\" target=\"_blank\" rel=\"noopener noreferrer\">Millennium Project</a>)<br>۴. <strong>Backcasting</strong> — جان رابینسون (<a href=\"https://www.sciencedirect.com/journal/energy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Policy</a>)<br>۵. <strong>Popper Diamond</strong> — رافائل پوپر (EU FORLEARN)<br>۶. <strong>Six Pillars</strong> — Andy Hines & Peter Bishop<br>۷. <strong>Scenario Planning</strong> — Shell / Peter Schwartz<br>۸. <strong>Futurpreneurship</strong> — foresight × venture",
+    "fitnessTitle": "ارجاع علمی و منابع مطالعه بلوغ سازمانی:",
+    "fitnessBody": "این بخش ارزیابی و مفاهیم بر اساس پژوهش‌های مستند پروفسور رنه روهربک در EDHEC Business School توسعه داده شده است. مطالعات بنچ‌مارک و یافته‌های آماری سودآوری ۳۳ درصدی سازمان‌های آینده‌نگر را می‌توانید در <a href=\"https://rene-rohrbeck.com/about-foresight/\" target=\"_blank\" rel=\"noopener noreferrer\">rene-rohrbeck.com</a> و مقالات نمایه شده او در <a href=\"https://www.researchgate.net/profile/Rene-Rohrbeck\" target=\"_blank\" rel=\"noopener noreferrer\">ResearchGate</a> دنبال کنید.",
+    "claTitle": "منابع علمی تحلیل لایه‌ای علت‌ها:",
+    "claBody": "روش تحلیل لایه‌ای علت‌ها (CLA) توسط آینده‌پژوه برجسته سهیل عنایت‌الله ابداع گردید. کتاب‌ها و مطالعات موردی تئوری و کارگاهی او از جمله کتاب مرجع <a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">The Causal Layered Analysis Reader</a> و مقالات نوین در حوزه CLA 2.0 و 3.0 در وبگاه رسمی او در <a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">metafuture.org</a> و مخزن پژوهشی <a href=\"https://research.usc.edu.au/\" target=\"_blank\" rel=\"noopener noreferrer\">USC Research Bank</a> نمایه شده است.",
+    "wheelTitle": "مرجع متدولوژی و مطالعه روش‌شناختی چرخ آینده:",
+    "wheelBody": "متدولوژی چرخ آینده ابتدا توسط جروم سی. گلن در سال ۱۹۷۱ معرفی گردید. راهنما و فصول جامع نحوه محاسبات احتمالات و کمی‌سازی پیامدها در نشریه مرجع <a href=\"http://www.millennium-project.org/publications-2/\" target=\"_blank\" rel=\"noopener noreferrer\">Futures Research Methodology 3.0</a> توسط پروژه هزاره (The Millennium Project) منتشر گردیده و فصل کامل آن در <a href=\"https://www.researchgate.net/publication/349474778_THE_FUTURES_WHEEL\" target=\"_blank\" rel=\"noopener noreferrer\">ResearchGate</a> در دسترس است.",
+    "backcastTitle": "منابع علمی روش پس‌نگری (Backcasting):",
+    "backcastBody": "روش پس‌نگری هنجاری به عنوان متدولوژی مقابله با روندهای تحمیلی گذشته، اولین بار به شکل منسجم توسط <strong>جان بی. رابینسون (John B. Robinson)</strong> در سال ۱۹۸۲ برای برنامه‌ریزی سیاست‌های انرژی معرفی شد. کتاب‌ها و مقالات برجسته او از جمله <a href=\"https://www.sciencedirect.com/science/article/pii/030142158290059X\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Backcasting: A Proposed Method of Policy Analysis</a> در نشریه معتبر <em>Energy Policy</em> و اصول تکاملی روش‌شناختی پس‌نگری مشارکتی در نشریات توسعه پایدار نمایه شده است. همچنین اصول تاب‌آوری شهری بر مبنای پس‌نگری در مطالعات دپارتمان آینده‌پژوهی دانشگاه کپنهاگ مورد استناد است."
+  },
+  "brand": {
+    "tag": "پرسونال برند",
+    "heroTitle": "علی منصوری",
+    "heroSub": "پژوهشگر آینده‌پژوهی استراتژیک · دانشجوی دکتری دانشگاه تهران · طراح ابزارهای تعاملی foresight",
+    "aboutLink": "درباره من",
+    "articlesLink": "مقالات و یادداشت‌ها",
+    "methodsLink": "ابزارهای آموزشی",
+    "bioTitle": "معرفی",
+    "bioP1": "من <strong>علی منصوری</strong> هستم؛ دانشجوی دکتری آینده‌پژوهی در دانشگاه تهران. این پورتال هم فضای تدریس و آموزش متدهای foresight است و هم <strong>پرسونال برند</strong> من — جایی برای معرفی کارها، انتشار مقالات و اشتراک تجربه‌های پژوهشی.",
+    "bioP2": "این پورتال <strong>کلاس درس دیجیتال من</strong> است: الان ۸ ماژول (۴ کارگاه تعاملی + ۴ متد تکمیلی) دارد و مدام گسترش می‌یابد — هر کدام با معرفی سازنده، طرح درس، منابع و تمرین.",
+    "focusTitle": "حوزه‌های تمرکز",
+    "focuses": [
+      {
+        "icon": "compass",
+        "title": "آینده‌پژوهی سازمانی",
+        "desc": "بلوغ foresight، FITness و رادار فناوری"
+      },
+      {
+        "icon": "layers",
+        "title": "تحلیل گفتمانی و CLA",
+        "desc": "واسازی لایه‌ای مسائل کلان و سیاستی"
+      },
+      {
+        "icon": "pen-line",
+        "title": "نشر علمی و مقاله",
+        "desc": "یادداشت‌های پژوهشی و مقالات آینده‌پژوهی"
+      },
+      {
+        "icon": "code-2",
+        "title": "طراحی ابزار تعاملی",
+        "desc": "تبدیل متدولوژی به محیط کارگاهی دیجیتال"
+      }
+    ],
+    "ctaResume": "رزومه کامل",
+    "ctaMethods": "ورود به ابزارها"
+  },
+  "aboutPage": {
+    "tag": "درباره من",
+    "title": "علی منصوری — آینده‌پژوه و سازنده ابزار",
+    "sub": "ترکیب پژوهش آکادمیک، تدریس و طراحی تجربه تعاملی برای foresight",
+    "missionTitle": "ماموریت",
+    "mission": "ساختن پلی میان نظریه آینده‌پژوهی و عمل — برای دانشجویان، سازمان‌ها و تصمیم‌سازانی که می‌خواهند آینده را نه فقط پیش‌بینی کنند، بلکه <strong>طراحی</strong> کنند.",
+    "eduTitle": "تحصیلات",
+    "edu": "دکتری آینده‌پژوهی — دانشگاه تهران",
+    "contactTitle": "ارتباط",
+    "contact": "رزومه و پروفایل حرفه‌ای در لینک زیر"
+  },
+  "articlesPage": {
+    "tag": "مقالات",
+    "title": "یادداشت‌ها و مقالات",
+    "sub": "فهرست مقالات و یادداشت‌های پژوهشی — به‌زودی مقالات جدید اضافه می‌شوند.",
+    "emptyTitle": "به‌زودی",
+    "emptyDesc": "اولین مقالات در حال آماده‌سازی هستند. برای دنبال کردن به‌روزرسانی‌ها رزومه و مخزن GitHub را ببینید.",
+    "sampleArticles": [
+      {
+        "date": "۱۴۰۴",
+        "title": "چرا FITness روهربک هنوز اهمیت دارد؟",
+        "tag": "سازمانی",
+        "status": "draft"
+      },
+      {
+        "date": "۱۴۰۴",
+        "title": "CLA در سیاست‌گذاری ملی: درس از سنگاپور",
+        "tag": "CLA",
+        "status": "draft"
+      },
+      {
+        "date": "۱۴۰۳",
+        "title": "از Litany تا Myth — راهنمای عملی کارگاه CLA",
+        "tag": "آموزشی",
+        "status": "draft"
+      }
+    ]
+  },
+  "methodsIndex": {
+    "heroTag": "کاتالوگ متدها",
+    "heroTitle": "کلاس درس آینده‌پژوهی — علی منصوری",
+    "heroSub": "کاتالوگ جامع متدهای آینده‌پژوهی، آینده‌نگاری و foresight راهبردی — ۳۸+ متد در ۷ دسته.",
+    "coreTitle": "لایه ۱ — کارگاه‌های تعاملی",
+    "advancedTitle": "لایه ۲ — متدهای تکمیلی",
+    "note": "هر ماژول شامل <strong>معرفی سازنده</strong>، <strong>طرح درس</strong>، <strong>منابع</strong> و <strong>تمرین کلاسی</strong> است. متدهای جدید به‌تدریج اضافه می‌شوند."
+  },
+  "advancedPage": {
+    "popper": {
+      "slug": "popper-diamond",
+      "heroTag": "Rafael Popper · EU Foresight",
+      "heroTitle": "الماس پوپر (Popper Foresight Diamond)",
+      "heroSub": "چارچوب سنجش کیفیت تمرین آینده‌پژوهی — نه پیش‌بینی، بلکه ارزیابی اینکه foresight شما واقعاً خلاق، نوآور، خبره‌محور و تعاملی بوده یا نه.",
+      "history": {
+        "accent": "#e040fb",
+        "founderLabel": "توسعه‌دهنده",
+        "founder": "رافائل پوپر (Rafael Popper)",
+        "yearLabel": "سال",
+        "year": "۲۰۰۸–۲۰۱۲ (EU FORLEARN / JRC)",
+        "institution": "UNU-MERIT · European Commission JRC",
+        "title": "Foresight Diamond — ارزیابی کیفیت foresight",
+        "origin": "رافائل پوپر در پروژه‌های <strong>FORLEARN</strong> و <strong>FOR-LEARN</strong> اتحادیه اروپا «الماس آینده‌پژوهی» را برای پاسخ به یک سوال طراحی کرد: چگونه بفهمیم یک تمرین foresight <em>خوب</em> بوده، نه فقط اینکه انجام شده؟",
+        "problemLabel": "مسئله",
+        "problem": "FRM 3.0 روش‌ها را فهرست می‌کند اما معیار کیفیت یکپارچه برای مقایسه کارگاه‌ها، سیاست‌گذاری و قراردادهای مشاوره ندارد.",
+        "useLabel": "کاربرد",
+        "applications": "ارزیابی کیفیت foresight ملی اتحادیه اروپا، بازبینی کارگاه‌های JRC، و audit داخلی تیم‌های foresight سازمانی قبل از ارائه به هیئت‌مدیره."
+      },
+      "introTitle": "چهار رأس الماس",
+      "intro": "هر رأس یک بعد کیفیت است. foresight ضعیف معمولاً در یک یا دو رأس «توخالی» است — مثلاً خبره زیاد (Expertise) اما بدون Interaction واقعی با ذی‌نفعان.",
+      "pillars": [
+        {
+          "title": "Creativity — خلاقیت",
+          "desc": "آیا ایده‌های غیرمنتظره، استعاره‌های تازه و شکستن مفروضات رخ داد؟ بدون خلاقیت، foresight فقط گزارش روند است.",
+          "color": "#e040fb"
+        },
+        {
+          "title": "Innovation — نوآوری",
+          "desc": "آیا خروجی‌ها مسیر جدید، گزینه سیاستی تازه یا مدل کسب‌وکار نو ظاهر کرد؟",
+          "color": "#7c4dff"
+        },
+        {
+          "title": "Expertise — تخصص",
+          "desc": "آیا دانش عمیق حوزه‌ای، sh evidence و شایستگی تحلیل وجود داشت؟",
+          "color": "#00e5ff"
+        },
+        {
+          "title": "Interaction — تعامل",
+          "desc": "آیا ذی‌نفعان واقعاً درگیر شدند؟ تعامل صوری (جلسه ثبت‌نام) با تعامل واقعی فرق دارد.",
+          "color": "#ffaa00"
+        }
+      ],
+      "gapTitle": "چرا در FRM 3.0 نیست؟",
+      "gap": "فصل ۳۹ FRM فقط «Integration» دارد؛ الماس پوپر <strong>meta-tool</strong> است — روی همه ۳۸ روش دیگر اعمال می‌شود. گلن و گوردون ابزار لیست کردند؛ پوپر <strong>کیفیت‌سنج</strong> داد.",
+      "caseTitle": "مثال عملی",
+      "case": "یک وزارتخانه کارگاه دلفی برگزار کرد — ۲۰۰ صفحه گزارش. audit با الماس پوپر: Expertise بالا، Interaction متوسط، Creativity و Innovation پایین. نتیجه: بازطراحی کارگاه با CLA و سناریو — نه دلفی دوم."
+    },
+    "hines": {
+      "slug": "strategic-foresight",
+      "heroTag": "Andy Hines & Peter Bishop",
+      "heroTitle": "آینده‌پژوهی راهبردی — شش ستون (Six Pillars)",
+      "heroSub": "چارچوب عملیاتی از کتاب Thinking About the Future: مسیر کامل از «قاب‌بندی مسئله» تا «اقدام» — برای مدیران، نه فقط محققان.",
+      "history": {
+        "accent": "var(--color-f)",
+        "founderLabel": "نویسندگان",
+        "founder": "Andy Hines & Peter Bishop",
+        "yearLabel": "سال",
+        "year": "۲۰۰۶ (ویرایش‌های بعدی ۲۰۱۳–۲۰۲۰)",
+        "institution": "University of Houston · Foresight Program",
+        "title": "Six Pillars of Strategic Foresight",
+        "origin": "هاینز و بی‌شاپ در برنامه آینده‌پژوهی هیuston، FRM را «جعبه ابزار» می‌دیدند اما مدیران به <strong>مسیر</strong> نیاز داشتند. شش ستون پاسخ «حالا چه کار کنم؟» است.",
+        "problemLabel": "مسئله",
+        "problem": "FRM فصل به فصل روش می‌دهد؛ سازمان‌ها نمی‌دانند Scanning را کی شروع کنند و Planning را کی تمام کنند.",
+        "useLabel": "کاربرد",
+        "applications": "برنامه‌های MBA foresight، مشاوره سازمانی، آموزش APF (Association of Professional Futurists)، و دوره‌های executive در صنایع انرژی و بهداشت."
+      },
+      "introTitle": "شش ستون — از قاب تا اقدام",
+      "intro": "هر ستون یک فاز قابل سنجش است. ضعف در یک ستون کل زنجیره را می‌شکند — مثلاً Forecasting عالی بدون Visioning منجر به «گزارش قفسه‌ای» می‌شود.",
+      "pillars": [
+        {
+          "title": "۱. Framing — قاب‌بندی",
+          "desc": "تعریف دقیق سوال، مرز سیستم، ذی‌نفعان و «چرا foresight؟». بدون framing، همه چیز حل می‌شود و هیچ‌چیز تصمیم نمی‌گیرد.",
+          "color": "var(--color-f)"
+        },
+        {
+          "title": "۲. Scanning — رصد",
+          "desc": "Environmental scanning، weak signals، STEEP/PESTLE. FRM فصل ۲ دارد؛ هاینز آن را در مسیر ستونی قرار می‌دهد.",
+          "color": "#4caf50"
+        },
+        {
+          "title": "۳. Forecasting — پیش‌بینی/کاوش",
+          "desc": "Trends، cross-impact، cone of plausibility. کاوش فضای ممکن — نه قطعیت.",
+          "color": "#ffaa00"
+        },
+        {
+          "title": "۴. Visioning — تصویرسازی",
+          "desc": "ساخت تصاویر مطلوب و هنجاری. پل به backcasting و سناریو.",
+          "color": "var(--color-cla)"
+        },
+        {
+          "title": "۵. Planning — برنامه‌ریزی",
+          "desc": "تبدیل بینش به roadmap، OKR، سیاست. جایی که foresight یا می‌میرد یا ارزش می‌سازد.",
+          "color": "var(--color-i)"
+        },
+        {
+          "title": "۶. Acting — اقدام",
+          "desc": "پایلوت، تغییر ساختار، یادگیری. بدون Acting، foresight تزئین مدیریتی است.",
+          "color": "var(--color-wheel-red)"
+        }
+      ],
+      "gapTitle": "تفاوت با FRM",
+      "gap": "FRM ۳۹ روش جدا دارد؛ شش ستون <strong>architecture</strong> است. هاینز و بی‌شاپ می‌گویند: ابزار را بر اساس ستون انتخاب کن — نه برعکس.",
+      "caseTitle": "مثال: Cone of Plausibility",
+      "case": "پس از Scanning، تیم یک «مخروط plausibility» می‌کشد: مرکز = روند غالب، لبه = wild cards. Visioning فقط روی لایه‌های plausibility متمرکز می‌شود — نه هر توهم ممکن."
+    },
+    "scenarios": {
+      "slug": "scenarios",
+      "heroTag": "Shell · Schwartz · van der Heijden",
+      "heroTitle": "سناریوسازی استراتژیک (Scenario Planning)",
+      "heroSub": "فراتر از «فصل ۱۹ FRM»: ساخت ۲–۴ آینده محتمل برای تصمیم‌گیری زیر عدم‌قطعیت — نه پیش‌بینی تک‌خطی.",
+      "history": {
+        "accent": "var(--color-cla)",
+        "founderLabel": "پیشگامان",
+        "founder": "Pierre Wack (Shell) · Peter Schwartz (GBN)",
+        "yearLabel": "سال",
+        "year": "۱۹۷۰–۱۹۹۱ (Shell) · ۱۹۹۶ (The Art of the Long View)",
+        "institution": "Royal Dutch Shell · Global Business Network",
+        "title": "Scenario Planning as Strategic Decision Tool",
+        "origin": "شِل با Wack نشان داد سناریو می‌تواند از «داستان» به <strong>ابزار بقای استراتژیک</strong> تبدیل شود (بحران نفت ۱۹۷۳). Schwartz آن را برای سیلیکون‌ولی و NGOها popularize کرد.",
+        "problemLabel": "مسئله",
+        "problem": "FRM فصل Scenario و Toolbox دارد اما عمق Shell (critical uncertainties، 2×2، early indicators) در یک فصل جا نمی‌شود.",
+        "useLabel": "کاربرد",
+        "applications": "Shell، South Africa post-apartheid scenarios، Singapore PMO، WEF، و برنامه‌ریزی انرژی/آب در خاورمیانه."
+      },
+      "introTitle": "فرآیند ۷ گام (خلاصه Schwartz)",
+      "intro": "سناریو «پیش‌بینی درست» نیست — «آمادگی ذهنی» برای چند آینده است.",
+      "pillars": [
+        {
+          "title": "۱. شناسایی تصمیم محوری",
+          "desc": "سناریو برای چه تصمیمی است؟ بدون تصمیم، سناریو entertainment است.",
+          "color": "var(--color-cla)"
+        },
+        {
+          "title": "۲. عدم‌قطعیت‌های حیاتی",
+          "desc": "کدام دو متغیر بیشترین اثر را دارند و کمترین قطعیت؟",
+          "color": "var(--color-f)"
+        },
+        {
+          "title": "۳. ماتریس ۲×۲",
+          "desc": "چهار quadrant = چهار منطق جهان. نام‌گذاری narrative (نه A/B/C/D).",
+          "color": "#7c4dff"
+        },
+        {
+          "title": "۴. روایت و logic",
+          "desc": "هر سناریو باید internally consistent باشد — از امروز به آن آینده مسیر داشته باشد.",
+          "color": "#ffaa00"
+        },
+        {
+          "title": "۵. Early indicators",
+          "desc": "چه signal نشان می‌دهد کدام سناریو فعال می‌شود؟",
+          "color": "#4caf50"
+        },
+        {
+          "title": "۶. Implications & options",
+          "desc": "تحت هر سناریو چه استراتژی no-regret و what-if لازم است؟",
+          "color": "var(--color-i)"
+        },
+        {
+          "title": "۷. ارتباط با سازمان",
+          "desc": "سناریو باید به budgeting و risk متصل شود — وگرنه قفسه می‌خورد.",
+          "color": "var(--color-wheel-red)"
+        }
+      ],
+      "gapTitle": "FRM vs سناریوی واقعی",
+      "gap": "فصل ۱۹–۲۱ FRM: Scenario، Toolbox، Interactive. Shell/Schwartz: <strong>یک سیستم تصمیم</strong> با ۲×۲ و indicators. FRM interactive scenarios را ذکر می‌کند؛ بقای استراتژیک Shell را نه.",
+      "caseTitle": "مثال: دو محور انرژی ایران",
+      "case": "محور ۱: سرعت گذر انرژی (کند/سریع). محور ۲: geopolitics (باز/بسته). چهار سناریو: «اقتصاد سبز منطقه‌ای»، «جزیره فسیلی»، «جهش فناورانه»، «بحران مزمن». هر کدام سیاست متفاوت برای سرمایه‌گذاری برق."
+    },
+    "futurpreneurship": {
+      "slug": "futurpreneurship",
+      "heroTag": "Foresight × Entrepreneurship",
+      "heroTitle": "Futurpreneurship — کارآفرینی آینده‌محور",
+      "heroSub": "تبدیل weak signal و سناریو به venture: کسی که هم آینده را می‌بیند هم risk را می‌پذیرد و می‌سازد.",
+      "history": {
+        "accent": "var(--color-i)",
+        "founderLabel": "ریشه مفهومی",
+        "founder": "Slaughter · Candy · Mansouri synthesis",
+        "yearLabel": "تکامل",
+        "year": "۲۰۰۰–۲۰۲۵",
+        "institution": "Foresight × Innovation Studies",
+        "title": "Entrepreneurial Foresight / Futurpreneurship",
+        "origin": "در FRM 3.0 «Personal Futures» (فصل ۳۶) و «Genius Forecasting» هست — اما <strong>پل سیستماتیک به startup و venture building</strong> نیست. Futurpreneurship این شکاف را پر می‌کند: foresight → hypothesis → MVP → scale.",
+        "problemLabel": "مسئله",
+        "problem": "استارتاپ‌ها بدون foresight blind هستند؛ آینده‌پژوهان بدون venture فقط گزارش می‌دهند.",
+        "useLabel": "کاربرد",
+        "applications": "accelerator design، corporate venture building، policy labs، و دوره‌های دکتری آینده‌پژوهی با خروجی عملی (این پورتال نمونه آن است)."
+      },
+      "introTitle": "چرخه Futurpreneurship",
+      "intro": "Ali Mansouri Stack: Scan → Scenario → Venture hypothesis → Prototype → Strategic pivot.",
+      "pillars": [
+        {
+          "title": "Sense — حس‌گری",
+          "desc": "Weak signals + CLA لایه ۱–۲. چه تغییری «ناگفته» دارد نزدیک می‌شود؟",
+          "color": "var(--color-f)"
+        },
+        {
+          "title": "Imagine — تصویر",
+          "desc": "سناریو و vision کوتاه‌مدت. کدام آینده برای venture ارزش دارد؟",
+          "color": "var(--color-cla)"
+        },
+        {
+          "title": "Hypothesize — فرضیه",
+          "desc": "Business hypothesis قابل falsify: «اگر X تا ۲۰۳۰ رخ دهد، Y مشتری هست.»",
+          "color": "#7c4dff"
+        },
+        {
+          "title": "Build — ساخت",
+          "desc": "MVP، landing test، pilot با حداقل منابع — probing در زبان روهربک.",
+          "color": "var(--color-i)"
+        },
+        {
+          "title": "Scale or Kill — مقیاس یا توقف",
+          "desc": "اگر signal تأیید شد scale؛ اگر نه pivot یا kill سریع — foresight از اشتباهات بلندمدت جلوگیری می‌کند.",
+          "color": "#4caf50"
+        }
+      ],
+      "gapTitle": "چرا FRM ندارد؟",
+      "gap": "FRM برای policy و research lab نوشته شده؛ <strong>venture creation</strong> خارج از scope است. Futurpreneurship همان چیزی است که Silicon Valley informal انجام می‌دهد — اما با rigor foresight.",
+      "caseTitle": "مثال: weak signal → venture",
+      "case": "Signal: aging + AI tutor demand. Scenario: «مدرسه فیزیکی مرز» محو می‌شود. Venture: پلتفرم tutor AI با curriculum foresight — MVP در ۹۰ روز، نه ۵ سال تحقیق."
+    }
+  },
+  "hubAdvanced": {
+    "popperTitle": "الماس پوپر (Popper Diamond)",
+    "popperDesc": "سنجش کیفیت foresight: Creativity، Innovation، Expertise، Interaction — meta-tool روی همه روش‌ها.",
+    "popperLink": "ورود",
+    "hinesTitle": "شش ستون هاینز و بی‌شاپ",
+    "hinesDesc": "Framing → Scanning → Forecasting → Visioning → Planning → Acting — مسیر مدیران.",
+    "hinesLink": "ورود",
+    "scenariosTitle": "سناریوسازی استراتژیک",
+    "scenariosDesc": "Shell/Schwartz: 2×2، critical uncertainties، early indicators — فراتر از فصل Scenario در FRM.",
+    "scenariosLink": "ورود",
+    "futurTitle": "Futurpreneurship",
+    "futurDesc": "Foresight + venture: از weak signal تا MVP — چیزی که FRM 3.0 ندارد.",
+    "futurLink": "ورود",
+    "catalogLink": "مشاهده کاتالوگ کامل متدها"
+  },
+  "lessonLabels": {
+    "foundersTitle": "سازندگان مدل",
+    "module": "ماژول",
+    "objectives": "اهداف یادگیری",
+    "outline": "طرح درس (Syllabus)",
+    "readings": "منابع و مطالعه",
+    "assignment": "تمرین / کارگاه",
+    "readMore": "لینک"
+  },
+  "lessons": {
+    "fitness": {
+      "meta": {
+        "module": "۱",
+        "duration": "۹۰ دقیقه",
+        "level": "کارشناسی ارشد / MBA / executive",
+        "diagram": "assets/foresight_concept.png",
+        "diagramAlt": "نمودار مفهومی Future Readiness و FITness"
+      },
+      "founders": [
+        {
+          "id": "rohrbeck",
+          "name": "René Rohrbeck",
+          "role": "بنیان‌گذار مدل FITness · پروفسور EDHEC",
+          "bio": "متخصص Corporate Foresight؛ مدل بلوغ آینده‌نگاری سازمانی را بر پایه مطالعات میدانی در زیمنس و دویچه تلکام توسعه داد. تمرکز او بر تبدیل foresight از «گزارش» به <strong>قابلیت پویا</strong> است."
+        }
+      ],
+      "objectives": [
+        "تمایز <strong>Future Readiness</strong> (آمادگی ایستا) از <strong>FITness</strong> (تناسب پویا) را توضیح دهید.",
+        "سه فرآیند Perceiving، Prospecting و Probing را با مثال سازمانی ربط دهید.",
+        "پنج بعد بلوغ Rohrbeck را بشناسید و با ابزار خودارزیابی این صفحه امتیاز بگیرید.",
+        "ارتباط FITness با رادار فناوری و corporate venturing را تحلیل کنید."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۱۵ دقیقه",
+          "title": "مقدمه: چرا foresight سازمانی شکست می‌خورد؟",
+          "desc": "بحث آزاد + مثال Zoom و کرونا. معرفی سوال: «آیا foresight شما گزارش است یا قابلیت؟»"
+        },
+        {
+          "step": "۲",
+          "time": "۲۰ دقیقه",
+          "title": "Readiness vs FITness",
+          "desc": "ارائه مفاهیم، نمودار assets/foresight_concept.png، ۵ عنصر readiness."
+        },
+        {
+          "step": "۳",
+          "time": "۲۵ دقیقه",
+          "title": "مدل Rohrbeck و سه P",
+          "desc": "Perceiving/Prospecting/Probing با case زیمنس و Deutsche Telekom."
+        },
+        {
+          "step": "۴",
+          "time": "۲۰ دقیقه",
+          "title": "کارگاه: خودارزیابی ۵ بعدی",
+          "desc": "دانشجویان بخش #assessment را پر می‌کنند؛ بحث گروهی درباره ضعیف‌ترین بعد."
+        },
+        {
+          "step": "۵",
+          "time": "۱۰ دقیقه",
+          "title": "جمع‌بندی و تکلیف",
+          "desc": "اتصال به CLA و Wheel در جلسات بعد."
+        }
+      ],
+      "readings": [
+        {
+          "type": "کتاب",
+          "text": "Rohrbeck, R. (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer."
+        },
+        {
+          "type": "مقاله",
+          "text": "Rohrbeck, R., Arnold, H. & Heuer, J. (2007). Strategic Foresight in multinational companies — Zeitschrift für Zukunftsforschung."
+        },
+        {
+          "type": "Case",
+          "text": "Deutsche Telekom Technology Radar — benchmark رادار فناوری سازمانی."
+        }
+      ],
+      "assignment": "یک سازمان (واقعی یا فرضی) انتخاب کنید. با مدل ۵ بعدی امتیاز دهید، یک بعد ضعیف را مشخص کنید، و یک اقدام <strong>Probing</strong> (آزمایش ۹۰ روزه) پیشنهاد دهید که foresight را از گزارش به عمل تبدیل کند."
+    },
+    "cla": {
+      "meta": {
+        "module": "۲",
+        "duration": "۱۲۰ دقیقه",
+        "level": "کارشناسی ارشد / دکتری آینده‌پژوهی",
+        "diagram": "assets/cla_concept.png",
+        "diagramAlt": "هرم چهار لایه CLA"
+      },
+      "founders": [
+        {
+          "id": "inayatullah",
+          "name": "Sohail Inayatullah",
+          "role": "مؤسس CLA · UNESCO Chair in Futures Studies",
+          "bio": "آکادمیک پاکستانی-استرالیایی؛ CLA را برای رفتن از «خبر» به «اسطوره و ساختار» طراحی کرد. نویشنده <em>Questioning the Future</em> و نسخه‌های CLA 2.0/3.0."
+        }
+      ],
+      "objectives": [
+        "چهار لایه Litany، Systemic، Worldview و Myth/Metaphor را تعریف و تمایز دهید.",
+        "یک مسئله روز (مثلاً آب، AI، مهاجرت) را از لایه ۱ تا ۴ باز کنید.",
+        "کارگاه استعاره: ساخت metaphor جدید برای تغییر گفتمان.",
+        "CLA را با Futures Wheel و سناریو برای عمق تحلیل ترکیب کنید."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۲۰ دقیقه",
+          "title": "چرا سطح خبر کافی نیست؟",
+          "desc": "مثال: «بحران آب» در لایه ۱ vs لایه ۴ (اسطوره «امپراتوری هیدraulیک»)."
+        },
+        {
+          "step": "۲",
+          "time": "۳۰ دقیقه",
+          "title": "هرم CLA — تعامل لایه‌ها",
+          "desc": "cla_concept.png + کلیک روی هرم تعاملی صفحه."
+        },
+        {
+          "step": "۳",
+          "time": "۳۵ دقیقه",
+          "title": "Case ملی/ژئوپلیتیک",
+          "desc": "کار گروهی روی یک case از آرشیو صفحه (ایران، ASEAN، …)."
+        },
+        {
+          "step": "۴",
+          "time": "۲۵ دقیقه",
+          "title": "کارگاه استعاره",
+          "desc": "هر گروه یک metaphor جدید برای مسئله می‌سازد و لایه ۴ را بازنویسی می‌کند."
+        },
+        {
+          "step": "۵",
+          "time": "۱۰ دقیقه",
+          "title": "Reflect",
+          "desc": "کدام لایه در سازمان شما censored است؟"
+        }
+      ],
+      "readings": [
+        {
+          "type": "کتاب",
+          "text": "Inayatullah, S. (2004). <em>The Causal Layered Analysis Reader</em>."
+        },
+        {
+          "type": "کتاب",
+          "text": "Inayatullah, S. (2015). <em>CLAs 2.0</em>; (2022) <em>CLAs 3.0</em>."
+        },
+        {
+          "type": "مقاله",
+          "text": "Inayatullah, S. (1998). Causal layered analysis — <em>Futures</em> 30(8)."
+        }
+      ],
+      "assignment": "یک خبر هفته جاری را انتخاب کنید. جدول ۴ لایه CLA پر کنید + یک استعاره جدید (لایه ۴) بنویسید که policy متفاوتی پیشنهاد دهد."
+    },
+    "wheel": {
+      "meta": {
+        "module": "۳",
+        "duration": "۹۰ دقیقه",
+        "level": "کارشناسی / کارشناسی ارشد",
+        "diagram": "assets/upload_2.png",
+        "diagramAlt": "چرخ آینده — پیامدهای مرتبه اول و دوم"
+      },
+      "founders": [
+        {
+          "id": "glenn",
+          "name": "Jerome C. Glenn",
+          "role": "مؤسس Futures Wheel · The Millennium Project",
+          "bio": "آینده‌پژوه آمریکایی؛ چرخ آینده (۱۹۷۲) را برای نگاشت زنجیره پیامدها ساخت. مدیر Millennium Project و ویراستار FRM 3.0 — اما این درس بر <strong>کاربرد کارگاهی Wheel</strong> تمرکز دارد، نه فهرست ۳۹ روش."
+        }
+      ],
+      "objectives": [
+        "یک رویداد محوری (driver) انتخاب و پیامدهای مرتبه ۱، ۲ و ۳ را ترسیم کنید.",
+        "تفاوت Wheel با mind map و impact tree را بدانید.",
+        "STEEP/کمی‌سازی پیامدها را در یک case (اقلیم ایران) تمرین کنید.",
+        "خروجی Wheel را به سناریو و backcasting وصل کنید."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۱۵ دقیقه",
+          "title": "تاریخچه و منطق Wheel",
+          "desc": "Glenn 1972، Boeing award، چرا زنجیره پیامد مهم است."
+        },
+        {
+          "step": "۲",
+          "time": "۲۰ دقیقه",
+          "title": "فرآیند ۱۱ مرحله",
+          "desc": "مرور steps صفحه + مثال تغییر اقلیم."
+        },
+        {
+          "step": "۳",
+          "time": "۳۵ دقیقه",
+          "title": "کارگاه cascade builder",
+          "desc": "دانشجویان driver خود را در ابزار تعاملی وارد می‌کنند."
+        },
+        {
+          "step": "۴",
+          "time": "۱۵ دقیقه",
+          "title": "STEEP و اولویت‌بندی",
+          "desc": "کدام شاخه بیشترین leverage را دارد؟"
+        },
+        {
+          "step": "۵",
+          "time": "۵ دقیقه",
+          "title": "جمع‌بندی",
+          "desc": "اتصال به Futurpreneurship برای opportunity شاخه‌ها."
+        }
+      ],
+      "readings": [
+        {
+          "type": "کتاب",
+          "text": "Glenn, J.C. & Gordon, T.J. (2009). <em>Futures Research Methodology 3.0</em> — فصل Futures Wheel."
+        },
+        {
+          "type": "گزارش",
+          "text": "Millennium Project — State of the Future (مثال‌های Wheel در policy)."
+        }
+      ],
+      "assignment": "Driver: «پذیرش ۴۰٪ خودرو برقی در تهران تا ۱۴۳۰». حداقل ۳ شاخه مرتبه ۳ و یک فرصت کسب‌وکار (Futurpreneurship) استخراج کنید."
+    },
+    "backcast": {
+      "meta": {
+        "module": "۴",
+        "duration": "۹۰ دقیقه",
+        "level": "کارشناسی ارشد / برنامه‌ریزی شهری و محیط‌زیست",
+        "diagram": "assets/backcasting_concept.png",
+        "diagramAlt": "Backcasting vs Forecasting"
+      },
+      "founders": [
+        {
+          "id": "robinson",
+          "name": "John B. Robinson",
+          "role": "پیشگام Backcasting · UBC",
+          "bio": "استاد برنامه‌ریزی پایدار؛ backcasting را برای sustainability (نه پیش‌بینی) popularize کرد — از vision مطلوب به گام‌های امروز."
+        }
+      ],
+      "objectives": [
+        "تفاوت forecasting و backcasting را با جدول مقایسه توضیح دهید.",
+        "یک vision هنجاری (مثلاً تهران ۱۴۳۰) تعریف کنید.",
+        "مسیر معکوس milestone به امروز را در شبیه‌ساز صفحه بکشید.",
+        "محدودیت‌های backcasting (سیاست، قدرت) را critique کنید."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۲۰ دقیقه",
+          "title": "Forecast vs Backcast",
+          "desc": "Robinson & Dreborg، جدول مقایسه، چرا sustainability نیازمند normative است."
+        },
+        {
+          "step": "۲",
+          "time": "۲۵ دقیقه",
+          "title": "Vision و criteria",
+          "desc": "تعریف desired future + sustainability criteria."
+        },
+        {
+          "step": "۳",
+          "time": "۳۰ دقیقه",
+          "title": "کارگاه شبیه‌ساز",
+          "desc": "مسیر اکولوژیک تهران در ابزار interactive."
+        },
+        {
+          "step": "۴",
+          "time": "۱۰ دقیقه",
+          "title": "Barriers",
+          "desc": "چه کسی vision را block می‌کند؟ (اتصال به CLA لایه ۳–۴)"
+        },
+        {
+          "step": "۵",
+          "time": "۵ دقیقه",
+          "title": "تکلیف",
+          "desc": "۳ policy فوری برای اولین milestone."
+        }
+      ],
+      "readings": [
+        {
+          "type": "مقاله",
+          "text": "Robinson, J.B. (1990). Futures under glass — <em>Futures</em> 22(8)."
+        },
+        {
+          "type": "مقاله",
+          "text": "Dreborg, K.H. (1996). Essence of backcasting — <em>Futures</em> 28(9)."
+        },
+        {
+          "type": "کتاب",
+          "text": "Holmberg, J. & Robèrt, K. — Natural Step و backcasting در Sweden."
+        }
+      ],
+      "assignment": "Vision شخصی یا سازمانی ۱۰ ساله بنویسید (۲ پاراگراف). ۵ گام backcast + یک barrier در لایه worldview (CLA) تحلیل کنید."
+    },
+    "popper": {
+      "meta": {
+        "module": "۵",
+        "duration": "۷۵ دقیقه",
+        "level": "مشاوران foresight / evaluators",
+        "diagram": null
+      },
+      "founders": [
+        {
+          "id": "popper",
+          "name": "Rafael Popper",
+          "role": "توسعه‌دهنده Foresight Diamond · UNU-MERIT / JRC",
+          "bio": "محقق foresight اروپایی؛ در پروژه FORLEARN اتحادیه اروپا «الماس» را برای سنجش کیفیت تمرین (Creativity، Innovation، Expertise، Interaction) ساخت — meta-tool روی همه روش‌ها."
+        }
+      ],
+      "objectives": [
+        "چهار رأس الماس پوپر را تعریف و با مثال کارگاه score دهید.",
+        "تفاوت «انجام foresight» و «foresight باکیفیت» را audit کنید.",
+        "یک گزارش دلفی/سناریوی واقعی را با الماس critique کنید.",
+        "پیشنهاد redesign کارگاه بر اساس ضعف یک رأس."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۱۵ دقیقه",
+          "title": "مسئله کیفیت در FRM",
+          "desc": "چرا فهرست ۳۹ روش کافی نیست."
+        },
+        {
+          "step": "۲",
+          "time": "۲۰ دقیقه",
+          "title": "چهار رأس Diamond",
+          "desc": "تعریف + مثال ضعیف/قوی هر رأس."
+        },
+        {
+          "step": "۳",
+          "time": "۲۵ دقیقه",
+          "title": "Audit گروهی",
+          "desc": "یک کارگاه گذشته سازمان را ۱–۵ score دهید."
+        },
+        {
+          "step": "۴",
+          "time": "۱۰ دقیقه",
+          "title": "Redesign",
+          "desc": "یک اقدام برای تقویت Creativity و Interaction."
+        },
+        {
+          "step": "۵",
+          "time": "۵ دقیقه",
+          "title": "جمع‌بندی",
+          "desc": "Diamond قبل از ارائه به هیئت‌مدیره."
+        }
+      ],
+      "readings": [
+        {
+          "type": "گزارش",
+          "text": "Popper, R. (2008). <em>Foresight Diamond</em> — EU FORLEARN / JRC."
+        },
+        {
+          "type": "کتاب",
+          "text": "Popper, R. (2008). How are foresight methods selected? — <em>Foresight</em> journal."
+        }
+      ],
+      "assignment": "آخرین کارگاه foresight که دیدید (یا فرضی) را در جدول ۴×۵ (۴ رأس × معیار کیفی) ارزیابی کنید. ۱ صفحه memo برای مدیر بنویسید."
+    },
+    "hines": {
+      "meta": {
+        "module": "۶",
+        "duration": "۱۲۰ دقیقه",
+        "level": "MBA / executive foresight",
+        "diagram": null
+      },
+      "founders": [
+        {
+          "id": "hines",
+          "name": "Andy Hines",
+          "role": "Co-author Six Pillars · University of Houston",
+          "bio": "استاد foresight و APF Fellow؛ تمرکز بر foresight برای مدیران و HR of the future."
+        },
+        {
+          "id": "bishop",
+          "name": "Peter Bishop",
+          "role": "Co-author Six Pillars · Strategic Foresight",
+          "bio": "پیش از بازنشستگی رئیس برنامه Foresight هیuston؛ Cone of Plausibility و آموزش executive را popularize کرد."
+        }
+      ],
+      "objectives": [
+        "شش ستون Framing → Acting را به ترتیب توضیح دهید.",
+        "برای یک مسئله سازمانی بگویید در کدام ستون گیر کرده‌اید.",
+        "Cone of Plausibility را بکشید و به Visioning وصل کنید.",
+        "تفاوت architecture هاینز-بی‌شاپ با فهرست FRM را articulate کنید."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۲۰ دقیقه",
+          "title": "از toolbox به مسیر",
+          "desc": "چرا مدیران FRM را overwhelming می‌بینند."
+        },
+        {
+          "step": "۲",
+          "time": "۳۰ دقیقه",
+          "title": "شش ستون — deep dive",
+          "desc": "هر ستون + failure mode."
+        },
+        {
+          "step": "۳",
+          "time": "۳۰ دقیقه",
+          "title": "Case Cone of Plausibility",
+          "desc": "کار گروهی روی انرژی یا بهداشت."
+        },
+        {
+          "step": "۴",
+          "time": "۲۵ دقیقه",
+          "title": "Planning → Acting",
+          "desc": "OKR و pilot؛ جایی foresight می‌میرد."
+        },
+        {
+          "step": "۵",
+          "time": "۱۵ دقیقه",
+          "title": "Reflect",
+          "desc": "نقشه ستون‌های سازمان خود را بکشید."
+        }
+      ],
+      "readings": [
+        {
+          "type": "کتاب",
+          "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future</em> — ویرایش‌های ۲۰۱۳–۲۰۲۰."
+        },
+        {
+          "type": "مقاله",
+          "text": "Hines, A. (2010). The primary futurist skill — APF."
+        }
+      ],
+      "assignment": "مسئله foresight سازمان خود را Framing کنید (۱ صفحه). بگویید کدام ستون weakest است و یک deliverable برای ستون بعدی تعریف کنید."
+    },
+    "scenarios": {
+      "meta": {
+        "module": "۷",
+        "duration": "۱۵۰ دقیقه (۲ جلسه)",
+        "level": "استراتژی / سیاست‌گذاری",
+        "diagram": null
+      },
+      "founders": [
+        {
+          "id": "wack",
+          "name": "Pierre Wack",
+          "role": "پیشگام Scenario · Royal Dutch Shell",
+          "bio": "فرانسوی، head of planning شِل؛ سناریو را از academic exercise به survival tool تبدیل کرد (بحران نفت ۱۹۷۳)."
+        },
+        {
+          "id": "schwartz",
+          "name": "Peter Schwartz",
+          "role": "The Art of the Long View · GBN",
+          "bio": "هم‌بنیان‌گذار Global Business Network؛ سناریو را برای Silicon Valley و NGOها mainstream کرد."
+        }
+      ],
+      "objectives": [
+        "سناریو را از پیش‌بینی تمایز دهید.",
+        "دو critical uncertainty انتخاب و ماتریس ۲×۲ بسازید.",
+        "۴ narrative scenario با early indicators بنویسید.",
+        "implications و no-regret options استخراج کنید."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۲۵ دقیقه",
+          "title": "Shell history",
+          "desc": "Wack، ۱۹۷۳، mental preparedness."
+        },
+        {
+          "step": "۲",
+          "time": "۳۰ دقیقه",
+          "title": "Schwartz 7-step",
+          "desc": "تمرکز روی decision و 2×2."
+        },
+        {
+          "step": "۳",
+          "time": "۴۵ دقیقه",
+          "title": "کارگاه 2×2",
+          "desc": "محورهای انرژی ایران یا حوزه انتخابی کلاس."
+        },
+        {
+          "step": "۴",
+          "time": "۳۰ دقیقه",
+          "title": "Indicators & strategy",
+          "desc": "زیر هر quadrant یک indicator + policy."
+        },
+        {
+          "step": "۵",
+          "time": "۲۰ دقیقه",
+          "title": "Presentation",
+          "desc": "هر گروه ۲ دقیقه scenario story."
+        }
+      ],
+      "readings": [
+        {
+          "type": "کتاب",
+          "text": "Schwartz, P. (1996). <em>The Art of the Long View</em>."
+        },
+        {
+          "type": "مقاله",
+          "text": "Wack, P. (1985). Scenarios: uncharted waters — <em>Harvard Business Review</em>."
+        },
+        {
+          "type": "کتاب",
+          "text": "van der Heijden, K. (2005). <em>Scenarios: The Art of Strategic Conversation</em>."
+        }
+      ],
+      "assignment": "۲ محور uncertainty برای حوزه thesis/کار خود بنویسید. ۴ نام scenario + ۱ indicator هر کدام + یک no-regret action."
+    },
+    "futurpreneurship": {
+      "meta": {
+        "module": "۸",
+        "duration": "۱۲۰ دقیقه",
+        "level": "کارآفرینی / دکتری آینده‌پژوهی",
+        "diagram": "assets/foresight_concept.png",
+        "diagramAlt": "از signal به venture"
+      },
+      "founders": [
+        {
+          "id": "slaughter",
+          "name": "Richard Slaughter",
+          "role": "Foresight culture · Knowledge Base of Futures Studies",
+          "bio": "آینده‌پژوه استرالیایی؛ بر literacy و embed کردن foresight در جامعه تأکید کرد."
+        },
+        {
+          "id": "candy",
+          "name": "Stuart Candy",
+          "role": "Experiential futures · OCAD",
+          "bio": "طراح futures؛ immersive scenario و public engagement — پل foresight به action."
+        },
+        {
+          "id": "mansouri",
+          "name": "Ali Mansouri",
+          "role": "Curator · Futurpreneurship Stack",
+          "bio": "دکتری آینده‌پژوهی دانشگاه تهران؛ این پورتال نمونه <strong>Futurpreneurship</strong> است — foresight + ابزار تعاملی + venture hypothesis."
+        }
+      ],
+      "objectives": [
+        "تعریف Futurpreneurship و شکاف آن با FRM Personal Futures.",
+        "چرخه Sense → Scale/Kill را روی یک weak signal اجرا کنید.",
+        "hypothesis قابل falsify و MVP ۹۰ روزه بنویسید.",
+        "ارتباط با FITness Probing و Popper Innovation را ببینید."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۲۰ دقیقه",
+          "title": "چرا foresight بدون venture ناقص است؟",
+          "desc": "Silicon Valley informal vs rigor."
+        },
+        {
+          "step": "۲",
+          "time": "۲۵ دقیقه",
+          "title": "چرخه ۵ مرحله",
+          "desc": "Sense/Imagine/Hypothesize/Build/Scale."
+        },
+        {
+          "step": "۳",
+          "time": "۴۰ دقیقه",
+          "title": "کارگاه signal → MVP",
+          "desc": "گروه‌ها یک signal از Wheel یا CLA می‌گیرند."
+        },
+        {
+          "step": "۴",
+          "time": "۲۰ دقیقه",
+          "title": "Pitch ۳ دقیقه",
+          "desc": "هر گروه hypothesis + MVP scope."
+        },
+        {
+          "step": "۵",
+          "time": "۱۵ دقیقه",
+          "title": "Critique با Diamond",
+          "desc": "Innovation و Creativity score."
+        }
+      ],
+      "readings": [
+        {
+          "type": "مقاله",
+          "text": "Slaughter, R. — Futures literacy and social foresight."
+        },
+        {
+          "type": "وب",
+          "text": "Candy, S. — The Futures of Everyday Life / experiential futures."
+        },
+        {
+          "type": "پورتال",
+          "text": "Ali Mansouri Strategic Foresight Hub — integrated stack (این سایت)."
+        }
+      ],
+      "assignment": "Weak signal هفته را بنویسید. Scenario یک‌صفحه‌ای + business hypothesis + ۳ اقدام MVP برای ۹۰ روز آینده."
+    }
+  },
+  "fitnessPage": {
+    "history": {
+      "accent": "var(--color-f)",
+      "founderLabel": "بنیان‌گذار",
+      "founder": "پروفسور رنه روهربک (René Rohrbeck)",
+      "yearLabel": "سال",
+      "year": "۲۰۱۰",
+      "institution": "دانشگاه آرهوس (Aarhus) / EDHEC Business School",
+      "title": "Corporate Foresight: Towards a Maturity Model",
+      "origin": "در سال ۲۰۱۰، رنه روهربک در کتاب دانشگاهی <strong>Corporate Foresight: Towards a Maturity Model</strong> اولین مدل ساختاریافته برای سنجش بلوغ آینده‌نگاری سازمانی را معرفی کرد. این کار بر پایه مطالعات میدانی چندساله در شرکت‌های بزرگ اروپایی در دانشگاه آرهوس و بعداً در EDHEC انجام شد.",
+      "problemLabel": "مسئله اصلی",
+      "problem": "سازمان‌ها نمی‌توانستند سطح بلوغ آینده‌نگاری خود را اندازه‌گیری کنند، نمی‌دانستند آیا سرمایه‌گذاری در foresight ارزش دارد، و نتایج آینده‌پژوهی به تصمیم‌های استراتژیک متصل نمی‌شد.",
+      "useLabel": "کاربردها و شواهد",
+      "applications": "پیاده‌سازی در <strong>زیمنس (Siemens)</strong> و <strong>دویچه تلکام (Deutsche Telekom)</strong>؛ مطالعات بنچ‌مارک نشان داد سازمان‌های آینده‌نگر <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر دارند."
+    },
+    "hero": {
+      "tag": "نظریه قابلیت‌های پویا — رنه روهربک",
+      "title": "مدل بلوغ آینده‌نگاری سازمانی و Future FITness",
+      "subtitle": "چگونه سازمان‌ها می‌توانند از «آمادگی ایستای آینده» (Future Readiness) عبور کرده و به «ورزیدگی و انطباق پویای سازمانی» (Future FITness) برای شکل‌دهی به بازارهای فردا دست یابند."
+    },
+    "readiness": {
+      "tag": "پایه و اساس آینده‌پژوهی",
+      "title": "آمادگی برای آینده (Future Readiness) چیست؟",
+      "sub": "پیش‌بینی روندها، درک سناریوها و برنامه‌ریزی استراتژیک برای مدیریت عدم‌قطعیت‌ها.",
+      "p1": "<strong>Future Readiness</strong> یعنی توانایی پیش‌بینی تغییرات، درک عمیق آن‌ها و برنامه‌ریزی هدفمند برای واکنش هوشمند. ریشه این مفهوم در مدیریت عدم‌قطعیت است: رصد ریسک‌ها و تبدیل آن‌ها به فرصت‌های کلان.",
+      "p2": "دنیای امروز با تغییرات تکنولوژیکی سریع — از هوش مصنوعی مولد تا تحولات اقلیمی — مواجه است. سازمان‌ها و افرادی که برای آینده آماده باشند، این تغییرات را فرصت برای پیشرفت و راهبری می‌بینند، نه تهدید فلج‌کننده.",
+      "challengeTitle": "یک سوال چالش‌برانگیز",
+      "challengeText": "آیا سازمان شما یا خود شما برای تغییرات بنیادین آینده آماده هستید؟ اگر بخواهید همین امروز تغییری ایجاد کنید که شما را برای آینده ورزیده کند، اولین قدم کلیدی شما چیست؟",
+      "fiveElementsTitle": "۵ عنصر کلیدی تشکیل‌دهنده آمادگی برای آینده",
+      "foresightTitle": "آینده‌نگاری و پیش‌بینی سناریوها",
+      "foresightText": "آینده‌نگاری یعنی درک عمیق روندها و تحلیل سناریوهای مختلف. سازمان‌هایی که پیش از پاندمی کرونا به فناوری کار از راه دور آزمایشی روی آورده بودند، در قرنطینه بسیار سریع‌تر خود را وفق دادند.",
+      "agilityTitle": "چابکی سازمانی (Agility)",
+      "agilityText": "چابکی یعنی تصمیم‌گیری سریع و تغییر جهت فوری در واکنش به شرایط غیرمنتظره. شرکت Zoom در دوران کرونا در چند هفته زیرساخت سروری خود را گسترش داد تا به تقاضای صدها میلیون کاربر جدید پاسخ دهد.",
+      "sustainabilityTitle": "نقش حیاتی پایداری (Sustainability) در پورتفولیو",
+      "sustainabilityP1": "پایداری فراتر از مسئولیت اجتماعی، یک استراتژی تجاری هوشمند است. همسوسازی با اهداف ESG ریسک اقلیمی را کاهش می‌دهد و مزیت رقابتی پایدار در بازارهای جهانی ایجاد می‌کند.",
+      "sustainabilityP2": "IKEA با تعهد به مواد بازیافتی و تجدیدپذیر تا ۲۰۳۰، وفاداری مشتری و کاهش هزینه مواد اولیه را نشان داد. تسلا (خودرو برقی) و آمازون (لجستیک پیشرفته) با سرمایه‌گذاری روی روندهای بلندمدت، بقا و پیشتازی خود را تضمین کردند.",
+      "globalAppsTitle": "کاربردهای چندگانه Future Readiness در جهان",
+      "apps": [
+        {
+          "label": "آموزش (فنلاند)",
+          "text": "سیستم آموزشی فنلاند با یادگیری مبتنی بر پروژه و نوآوری، دانش‌آموزان را برای حل مسائل پیچیده دنیای واقعی فردا آماده می‌کند."
+        },
+        {
+          "label": "سیاست‌گذاری (سنگاپور)",
+          "text": "برنامه ملی Smart Nation سنگاپور با فناوری، اقتصاد و کیفیت زندگی شهروندان را برای چالش سالمگی آماده می‌سازد."
+        },
+        {
+          "label": "بهداشت و درمان (NHS بریتانیا)",
+          "text": "استفاده از تحلیل داده‌های کلان و هوش مصنوعی برای تشخیص زودهنگام بیماری‌ها و بهینه‌سازی منابع بیمارستان‌ها."
+        },
+        {
+          "label": "حمل‌ونقل و بحران (هلند و ژاپن)",
+          "text": "هلند با حمل‌ونقل سبز و ژاپن با سیستم‌های هشدار زلزله و مدیریت بحران، نمونه‌های سرآمد تاب‌آوری ملی هستند."
+        }
+      ]
+    },
+    "readinessCards": [
+      {
+        "icon": "trending-up",
+        "title": "پیش‌بینی و تحلیل روندها",
+        "desc": "تحلیل روندهای کلیدی بیرونی مانند تغییرات جمعیتی یا فناوری‌های نوظهور و تأثیر آن‌ها بر صنعت.",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "zap",
+        "title": "انطباق سریع با تغییرات",
+        "desc": "چابکی بالا: تصمیم‌گیری فوق‌العاده سریع و تغییر مسیر استراتژیک در مواجهه با بحران‌ها.",
+        "color": "var(--color-i)"
+      },
+      {
+        "icon": "lightbulb",
+        "title": "توسعه خلاقیت و نوآوری",
+        "desc": "ایجاد راه‌حل‌های جدید برای چالش‌های حال و آینده از طریق تغییرات فرآیندی یا محصولات بدیع.",
+        "color": "var(--color-t)"
+      },
+      {
+        "icon": "graduation-cap",
+        "title": "فرهنگ یادگیری مستمر",
+        "desc": "ارتقای مداوم مهارت‌ها (Upskilling) و یادگیری مستمر تیم‌ها برای همگامی با تحولات علمی جهان.",
+        "color": "var(--color-cla)"
+      },
+      {
+        "icon": "cpu",
+        "title": "استفاده هوشمند از فناوری",
+        "desc": "به‌کارگیری ابزارهای قدرتمند نظیر هوش مصنوعی و بلاکچین برای پیش‌بینی، برنامه‌ریزی و اجرای فرآیندها.",
+        "color": "var(--color-wheel-red)"
+      }
+    ],
+    "fitness": {
+      "tag": "گامی فراتر از آمادگی",
+      "title": "تناسب با آینده (Future FITness) چیست؟",
+      "sub": "مقایسه تئوریک رویکرد انطباق و بهینه‌سازی مداوم با آمادگی استراتژیک سنتی.",
+      "p1": "اگر <strong>Future Readiness</strong> بر پیش‌بینی و آمادگی تمرکز دارد، <strong>Future FITness</strong> گامی فراتر می‌گذارد: توانایی مداوم و پویا در حفظ عملکرد بهینه، انطباق مستمر، رشد و بازتعریف ساختارها در مواجهه با چالش‌های غیرمنتظره.",
+      "p2": "پروفسور رنه روهربک در مطالعات طولانی‌مدت در دانشگاه آرهوس نشان داد شرکت‌های «هوشیار و متناسب با آینده» به طور میانگین <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر ثبت کردند.",
+      "teeceTitle": "انطباق با قابلیت‌های پویای دیوید تیس (Teece)",
+      "teece": [
+        {
+          "title": "رصد و حس‌گری (Sensing)",
+          "text": "شناسایی مستمر سیگنال‌های تغییر، روندها و تهدیدها در محیط‌های متلاطم صنعتی (منطبق با تئوری کاتلین آیزنهارت)."
+        },
+        {
+          "title": "اتخاذ و بهره‌برداری (Seizing)",
+          "text": "بهره‌برداری از فرصت‌های جدید از طریق طراحی مدل‌های کسب‌وکار چابک و تجهیز کانال‌های سرمایه‌گذاری برای آینده‌های باورکردنی."
+        },
+        {
+          "title": "تحول و بازآفرینی (Transforming)",
+          "text": "تجدید ساختار مداوم دارایی‌های ملموس و ناملموس سازمان جهت حفظ مزیت رقابتی و هم‌راستایی با تغییرات محیطی."
+        }
+      ],
+      "dashboardTitle": "داشبورد مفهومی بلوغ آینده‌نگاری سازمانی",
+      "dashboardP1": "این داشبورد ساختار تعاملی قابلیت‌های پویای سازمان را نشان می‌دهد. سازمان‌ها می‌توانند میزان انطباق با روندهای تکنولوژیک را ارزیابی کرده و فرآیندهای درک (Perceiving)، کاوش (Prospecting) و آزمایش (Probing) را متوازن پیاده‌سازی کنند.",
+      "dashboardP2": "تطابق بین تلاطم محیطی صنعت و بلوغ آینده‌نگاری سازمانی، تعیین‌کننده بقا و سودآوری است و از فروپاشی‌های ناشی از جمود ساختاری (مانند نوکیا و کداک) ممانعت به عمل می‌آورد.",
+      "stepsTitle": "فرآیند سیستماتیک ۵ مرحله‌ای دستیابی به Future FITness"
+    },
+    "fitnessSteps": [
+      {
+        "title": "ارزیابی وضعیت فعلی",
+        "desc": "شناسایی نقاط قوت، ضعف، فرصت‌ها و تهدیدهای داخلی سازمان با ماتریس SWOT."
+      },
+      {
+        "title": "تعریف چشم‌انداز آینده",
+        "desc": "تعریف آینده‌های مطلوب و تنظیم اهداف بر اساس روندهای جهانی به عنوان نقشه‌راه."
+      },
+      {
+        "title": "توسعه قابلیت‌ها",
+        "desc": "سرمایه‌گذاری روی تحقیق و توسعه (مانند اپل) برای تقویت توان نوآوری."
+      },
+      {
+        "title": "پیاده‌سازی و آزمایش",
+        "desc": "آزمایش ایده‌ها با انعطاف بالا (مانند تسلا با مدل‌های مختلف خودرو برقی)."
+      },
+      {
+        "title": "پایش و بهبود مداوم",
+        "desc": "پایش مستمر نتایج بر اساس بازخوردها و بهینه‌سازی مدل‌ها (مانند IKEA در اهداف پایداری)."
+      }
+    ],
+    "archetypes": {
+      "tag": "تیپولوژی پویای روهربک",
+      "title": "۴ کهن‌الگو (Archetype) بلوغ آینده‌نگاری در صنایع",
+      "sub": "سازمان‌ها بر اساس میزان تطابق «بلوغ تفکر آینده‌نگارانه» با «سرعت و تلاطم تغییرات در صنعت» به چهار دسته تقسیم می‌شوند.",
+      "vigilant": {
+        "level": "بلوغ سطح ۴",
+        "title": "هوشیار و دیده‌بان (Vigilant)",
+        "desc": "آینده‌نگاری سازمان فراتر یا منطبق با سرعت تغییرات صنعت است. پایش دائمی سیگنال‌های ضعیف و واکنش سریع.",
+        "note": "۳۳٪ سودآوری و ۲۰۰٪ رشد ارزش بازار بیشتر",
+        "detail": {
+          "title": "کهن‌الگوی هوش و دیده‌بانی (Vigilant)",
+          "alignment": "تلاطم بالای صنعت + بلوغ بالای آینده‌نگاری استراتژیک (هم‌راستایی کامل با تحول)",
+          "symptoms": "سازمان‌های پیشرو با قابلیت‌های پویای سطح بالا. مطابق تئوری دیوید تیس، رصد مستمر (Sensing) را با اتخاذ سریع (Seizing) و تحول مداوم (Transforming) ترکیب می‌کنند. از فلج تحلیل مصونند و پیش از رقبا دست به تخریب خلاقانه سبد محصولات می‌زنند.",
+          "reps": "انویدیا (CUDA)، نتفلیکس (عبور از DVD به استریم و تولید محتوا)."
+        }
+      },
+      "neurotic": {
+        "level": "بلوغ ناهمگن",
+        "title": "عصبی و واکنشی (Neurotic)",
+        "desc": "ظرفیت بالای آینده‌نگاری اما در صنعتی با تغییرات آرام. منجر به تحلیل بیش از حد و ترس کاذب می‌شود.",
+        "note": "توسعه بیش از حد سناریوهای بلااستفاده",
+        "detail": {
+          "title": "کهن‌الگوی عصبی و وسواسی (Neurotic)",
+          "alignment": "تلاطم پایین صنعت + بلوغ بیش از حد آینده‌نگاری (عدم تعادل ناشی از حساسیت افراطی)",
+          "symptoms": "بیش‌تحلیلی و فلج تصمیم‌گیری (Analysis Paralysis). علی‌رغم سرمایه‌گذاری نجومی در رصدخانه‌های فناوری، توانایی تفکیک سیگنال از نویز را ندارند. فرهنگ هراس‌محور منجر به صدها سناریوی موازی بدون خروجی عملیاتی می‌شود.",
+          "reps": "شرکت‌های نفت و گاز سنتی که میلیاردها دلار در انرژی‌های تجدیدپذیر نامرتبط سرمایه‌گذاری کردند پیش از شکل‌گیری تقاضای بازار."
+        }
+      },
+      "vulnerable": {
+        "level": "بلوغ سطح ۲",
+        "title": "آسیب‌پذیر (Vulnerable)",
+        "desc": "فرآیندهای استراتژیک رسمی اما جدا از سیگنال‌های تغییر. غافلگیری مکرر در برابر نوآوری‌های مخرب رقیب.",
+        "note": "اتکای مطلق به برنامه‌های ۵ ساله کاغذی",
+        "detail": {
+          "title": "کهن‌الگوی آسیب‌پذیر (Vulnerable)",
+          "alignment": "تلاطم بالای صنعت + بلوغ پایین آینده‌نگاری (منطقه خطر استراتژیک)",
+          "symptoms": "سازمان‌هایی در صنایع پرتلاطم بدون قابلیت رصد. متکی به برنامه‌ریزی خطی ۵ ساله و تفسیر تغییرات تکنولوژیک به عنوان نوسانات موقت. جمود شناختی؛ واکنش زمانی که ارزش بازار نابود شده و هزینه بازیابی کمرشکن است.",
+          "reps": "کداک (نادیده‌انگاری دوربین دیجیتال)، نوکیا (غفلت از تحول نرم‌افزاری صفحات لمسی)."
+        }
+      },
+      "danger": {
+        "level": "بلوغ سطح ۱",
+        "title": "در معرض خطر (In Danger)",
+        "desc": "فقدان سیستم رصد در صنعتی با تلاطم شدید. محکوم به انحلال یا واگذاری کل سهم بازار.",
+        "note": "کاهش شدید امید به بقای سازمان",
+        "detail": {
+          "title": "کهن‌الگوی در معرض خطر (In Danger)",
+          "alignment": "تلاطم پایین صنعت + بلوغ پایین آینده‌نگاری (جمود و زوال پنهان)",
+          "symptoms": "کهن‌الگوی مرگ خاموش؛ سازمان‌هایی در صنایع با تلاطم ظاهری پایین بدون سازوکار دیده‌بانی. درگیر توهم ثبات بلندمدت. کوچک‌ترین شوک‌های محیطی (مقررات یا فناوری جایگزین) می‌تواند مدل کسب‌وکار را در کسری از ثانیه نابود کند.",
+          "reps": "اتحادیه‌های تاکسیرانی سنتی پیش از Uber/اسنپ؛ آژانس‌های هواپیمایی فیزیکی پیش از رزرو آنلاین."
+        }
+      }
+    },
+    "roles": {
+      "tag": "کارکرد نوآوری سازمانی",
+      "title": "۳ نقش حیاتی آینده‌نگاری در پویایی نوآوری",
+      "sub": "رنه روهربک اثبات می‌کند آینده‌نگاری باید سه نقش استراتژیک، آغازگر و مخالف را در زنجیره ارزش نوآوری ایفا کند.",
+      "initiator": {
+        "tab": "۱. نقش آغازگر (Initiator)",
+        "title": "۱. نقش آغازگر (Initiator) — جرقه محرک نوآوری",
+        "desc": "نقش آغازگر در فاز <strong>درک کردن (Perceiving)</strong> فعالیت می‌کند. وظیفه آن پایش دائمی محیط بیرونی، کشف روندهای نوظهور و تبدیل آن‌ها به مفاهیم اولیه نوآوری است.",
+        "duties": [
+          "راه‌اندازی و پایش مستمر رادارهای فناوری و روندهای نوظهور.",
+          "شناسایی سیگنال‌های ضعیف تغییر (Weak Signals) پیش از همه‌گیر شدن.",
+          "برگزاری کارگاه‌های طوفان فکری برای خلق ایده‌های مفهومی نوآورانه."
+        ],
+        "example": "واحد آینده‌نگاری <strong>دویچه تلکام</strong> با پایش حسگرهای مینیاتوری، ایده اتصال زمین‌های کشاورزی به شبکه را به عنوان آغازگر پروژه‌های اینترنت اشیاء (IoT) استارت زد."
+      },
+      "strategist": {
+        "tab": "۲. نقش استراتژیست (Strategist)",
+        "title": "۲. نقش استراتژیست (Strategist) — هدایت سبد سرمایه‌گذاری",
+        "desc": "نقش استراتژیست در فاز <strong>کاوش کردن (Prospecting)</strong> فعالیت می‌کند. وظیفه آن هدایت سبد سرمایه‌گذاری‌های نوآوری بر اساس سناریوهای آینده است.",
+        "duties": [
+          "تدوین سناریوهای آینده‌نگارانه تهاجمی و تدافعی برای صنعت.",
+          "ترسیم نقشه‌های راه فناوری (Technology Roadmapping) برای همسوسازی دپارتمان‌ها.",
+          "تعریف چشم‌اندازهای مشترک آینده (Shared Visions) برای سازمان."
+        ],
+        "example": "مدیریت ارشد <strong>انویدیا</strong> با تحلیل سناریوهای پردازش اطلاعات، تمام سبد R&D را به سمت معماری پردازش هوش مصنوعی در دیتاسنترها سوق داد."
+      },
+      "opponent": {
+        "tab": "۳. نقش مخالف (Opponent)",
+        "title": "۳. نقش مخالف (Opponent) — وکیل مدافع شیطان",
+        "desc": "نقش مخالف در فاز <strong>آزمودن (Probing)</strong> فعالیت می‌کند. وظیفه آن به چالش کشیدن مفروضات صلب، ارزیابی نقادانه پروژه‌ها و جلوگیری از سوگیری‌های تاییدی مدیریت است.",
+        "duties": [
+          "اجرای سناریوهای سخت‌گیرانه برای تست بقا و تاب‌آوری پروژه‌ها.",
+          "اجرای بازی‌های جنگ شبیه‌سازی‌شده (War Gaming) برای کشف نقاط ضعف درونی.",
+          "تسهیل خودتخریبی خلاق (Cannibalization) برای حذف محصولات قدیمی سودآور."
+        ],
+        "example": "زمانی که <strong>استیو جابز</strong> پروژه آیفون را کلید زد، به عنوان مخالف علیه آی‌پاد (محصول پرفروش) شورش کرد — می‌دانست اگر اپل خود این کار را نکند، رقیب دیگری موسیقی را درون گوشی ادغام خواهد کرد."
+      }
+    },
+    "cases": {
+      "tag": "مطالعات عمیق: حس‌گری، کاوش، دگرگونی",
+      "title": "پاسخ به تغییرات با DNA سه‌بعدی قابلیت‌های پویا",
+      "sub": "تحلیل سیستماتیک شکست‌ها و موفقیت‌ها بر اساس سه توانمندی کلیدی: حس‌گری (Sensing)، کسب فرصت (Seizing) و تحول ساختار (Transforming).",
+      "netflix": {
+        "tab": "نتفلیکس (تکامل پویای مداوم)",
+        "title": "نتفلیکس (Netflix) — سرآمدی در بازآفرینی قابلیت‌های پویا",
+        "scanning": "در اواخر دهه ۱۹۹۰، تیم رهبری با رصد پهنای باند اینترنت و کدهای فشرده‌سازی ویدئو، متوجه منسوخ شدن دیسک‌های فیزیکی شد. این حس‌گری دقیق از سیگنال‌های ضعیف بود.",
+        "seizing": "در ۲۰۰۷ پلتفرم استریم آنلاین راه‌اندازی شد. در ۲۰۱۲ سهم عظیمی از منابع به تولید محتوای انحصاری (House of Cards) اختصاص یافت تا وابستگی به استودیوها کاهش یابد.",
+        "transforming": "تغییر کامل از دیتاسنترهای داخلی به معماری ابری (AWS) و بازتعریف مداوم بر اساس هوش مصنوعی مولد و شخصی‌سازی عمیق. درس: آمادگی برای نابودی مدل‌های درآمدی موفق فعلی."
+      },
+      "nvidia": {
+        "tab": "انویدیا (شرط‌بندی روی آینده نامرئی)",
+        "title": "انویدیا (Nvidia) — شرط‌بندی مخاطره‌آمیز روی پارادایم محاسباتی آینده",
+        "scanning": "جنسن هوانگ در اوایل دهه ۲۰۰۰ متوجه شد معماری موازی GPU کاربردی فراتر از رندر بازی دارد و می‌تواند تحولی در محاسبات علمی و هوش مصنوعی ایجاد کند.",
+        "seizing": "در ۲۰۰۶ با سرمایه‌گذاری سنگین بستر CUDA توسعه یافت. وال‌استریت بارها این پروژه بدون تقاضای بازار را نقد کرد، اما انویدیا اصرار ورزید.",
+        "transforming": "با ظهور یادگیری عمیق در ۲۰۱۲، انویدیا به هاب سخت‌افزاری و نرم‌افزاری هوش مصنوعی تبدیل شد. هوانگ شرکت را از تولیدکننده کارت گرافیک به غول زیرساختی محاسباتی تبدیل کرد. درس: پافشاری بر قابلیت‌های متمایزساز بلندمدت."
+      },
+      "nokia": {
+        "tab": "نوکیا (تصلب ساختاری و شکست سیستمی)",
+        "title": "نوکیا (Nokia) — جمود ساختاری و تله موفقیت گذشته",
+        "scanning": "نوکیا سیگنال‌های گذار به صفحات لمسی و اکوسیستم‌های نرم‌افزاری را دریافت کرده بود؛ حتی نمونه‌های اولیه تبلت لمسی را سال‌ها پیش از آیفون توسعه داده بود.",
+        "seizing": "به دلیل تله موفقیت و حاشیه سود بالای گوشی‌های دکمه‌ای، مدیران سیمبین را حفظ کردند. بوروکراسی مانع تبدیل سیگنال‌های خطر به تصمیمات جسورانه شد.",
+        "transforming": "فرهنگ ترس و گزارش‌دهی خوش‌بینانه ضعف‌های فنی را پنهان کرد. بوروکراسی صلب مانع بازآفرینی شد و نوکیا بازار موبایل را کاملاً از دست داد. درس: جمود شناختی می‌تواند بهترین ظرفیت‌های رصد را خنثی کند."
+      },
+      "blockbuster": {
+        "tab": "بلاک‌باستر (ترس از خودتخریبی درآمد)",
+        "title": "بلاک‌باستر (Blockbuster) — قربانی شدن آینده‌نگاری در مسلخ سهام‌داران کوتاه‌مدت",
+        "scanning": "مدیران بلاک‌باستر رشد نتفلیکس و مدل توزیع دیجیتال را رصد کرده بودند و می‌دانستند عمر مدل فیزیکی اجاره فیلم رو به پایان است.",
+        "seizing": "جان آنتیوکو پلتفرم آنلاین را راه‌اندازی کرد و جریمه دیرکرد اجاره را لغو کرد — اقدامات با هدف جذب فرصت‌های استریمینگ.",
+        "transforming": "هیئت مدیره کوتاه‌مدت‌نگر به دلیل افت مقطعی درآمد (جریمه دیرکرد ۱۶٪ سود را تشکیل می‌داد)، مدیرعامل را اخراج کرد، جریمه‌ها را بازگرداند و تمرکز را بر فروشگاه‌های فیزیکی گذاشت — ورشکستگی کامل. درس: تضاد منافع کوتاه‌مدت با سرمایه‌گذاری بقای بلندمدت، بزرگترین مانع تحول است."
+      }
+    },
+    "formula": {
+      "tag": "سرواژه استراتژیک",
+      "title": "فرمول سه بخشی Future FITness",
+      "sub": "این مدل آینده‌نگاری (F) را به موتور نوآوری (I) متصل کرده و تحول بنیادین (T) را به عنوان برون‌داد نهایی تضمین می‌کند.",
+      "clickPrompt": "برای مشاهده جزئیات بر روی هر یک از حروف بالا کلیک کنید.",
+      "letterF": "Foresight",
+      "letterI": "Innovation",
+      "letterT": "Transformation",
+      "descF": "آینده‌نگاری",
+      "descI": "نوآوری",
+      "descT": "تحول",
+      "foresight": {
+        "badge": "Foresight / آینده‌نگاری",
+        "title": "رصد و تفسیر مستمر سیگنال‌های تغییر",
+        "body": "آینده‌نگاری توانایی سیستماتیک سازمان در پایش محیط بیرونی، کشف سیگنال‌های ضعیف (Weak Signals) و درک روندهاست. این همان فازهای <strong>درک کردن (Perceiving)</strong> و <strong>کاوش کردن (Prospecting)</strong> در نظریه روهربک است.",
+        "items": [
+          "رصد دائمی محیط کلان اقتصادی، تکنولوژیک و سیاسی.",
+          "تحلیل سناریوهای محتمل و تدوین نقشه‌راه.",
+          "جلوگیری از غافلگیری استراتژیک در اثر تحولات ناگهانی."
+        ]
+      },
+      "innovation": {
+        "badge": "Innovation / نوآوری",
+        "title": "تبدیل بینش‌های حاصله به محصولات و ابزارهای نوین",
+        "body": "نوآوری موتور اجرایی آینده‌نگاری است. ایده‌ها به نمونه‌های اولیه سریع تبدیل می‌شوند — متناظر با فاز <strong>آزمودن (Probing)</strong> و نیازمند نقش‌های آغازگر، استراتژیست و مخالف.",
+        "items": [
+          "ساخت نمونه‌های اولیه سریع (Rapid Prototyping) برای سنجش ایده.",
+          "به چالش کشیدن مفروضات فعلی سازمان توسط نقش مخالف (Opponent).",
+          "راه‌اندازی پروژه‌های آزمایشی جهت اعتبارسنجی بازار."
+        ]
+      },
+      "transformation": {
+        "badge": "Transformation / تحول",
+        "title": "بازطراحی ساختاری و فرهنگی برای بقای بلندمدت",
+        "body": "تحول غایت نهایی این فرآیند است. آینده‌نگاری و نوآوری باید فرهنگ، ساختار و تخصیص منابع سازمان را تغییر دهند و DNA جدیدی بسازند تا بقای بلندمدت تضمین شود.",
+        "items": [
+          "اصلاح ساختار رسمی و کاهش بوروکراسی برای چالاکی بیشتر.",
+          "پذیرش یادگیری مداوم و کاهش فرهنگ ترس از شکست در میان پرسنل.",
+          "انطباق مداوم قابلیت‌های پویا با روندهای تکنولوژیک نوظهور."
+        ]
+      }
+    },
+    "rohrbeckDims": {
+      "tag": "چارچوب مفهومی روهربک",
+      "title": "ابعاد پنج‌گانه سنجش بلوغ آینده‌نگاری سازمانی",
+      "sub": "بر اساس تحقیقات طولی پروفسور رنه روهربک، قابلیت آینده‌نگاری استراتژیک شرکت‌ها در قالب ۵ بعد ساختاری اندازه‌گیری و کالیبره می‌شود.",
+      "dims": [
+        {
+          "level": "۱. اطلاعات",
+          "title": "منابع و کیفیت اطلاعات (Information)",
+          "desc": "وسعت، عمق و کیفیت دیده‌بانی محیطی؛ پهنای باند اطلاعات پایش‌شده، رصد روندهای خارج از حوزه صنعت فعلی و کشف زودهنگام سیگنال‌های ضعیف."
+        },
+        {
+          "level": "۲. روش‌ها",
+          "title": "متدولوژی‌های آینده‌نگاری (Methods)",
+          "desc": "تنوع و اثربخشی ابزارها؛ استفاده منظم از روش‌های کیفی و کمی (سناریوسازی، دلفی، نقشه‌راه فناوری، تحلیل اثرات متقاطع)."
+        },
+        {
+          "level": "۳. افراد",
+          "title": "سرمایه انسانی و خبرگان (People)",
+          "desc": "شایستگی، سواد آینده و ترکیب خبرگان؛ آموزش مدیران، شبکه‌های تحلیل اطلاعات، انگیزه پرسنل و جذب نخبگان آینده‌پژوه."
+        },
+        {
+          "level": "۴. سازمان",
+          "title": "ساختار رسمی و تصمیم‌گیری (Organization)",
+          "desc": "مکانیزم‌های رسمی بازخورد و بوروکراسی؛ اتصال خروجی‌های آینده‌نگاری به برنامه‌ریزی استراتژیک، بودجه R&D و انعطاف ساختار اداری."
+        },
+        {
+          "level": "۵. فرهنگ",
+          "title": "پذیرش عدم‌قطعیت و نوآوری (Culture)",
+          "desc": "ارزش‌های بنیادین؛ تحمل شکست، تشویق تفکر خلاق، تمایل به خودتخریبی خلاق پیش از رقیب، و نبود ترس از بیان هشدارهای تغییر."
+        }
+      ]
+    },
+    "assessment": {
+      "tag": "ابزار ارزیابی تعاملی",
+      "title": "سنجش شاخص بلوغ آینده‌نگاری سازمان",
+      "sub": "بر اساس ابعاد پنج‌گانه مدل بلوغ رنه روهربک، سطح تناسب با آینده سازمان خود را ارزیابی کرده و تحلیل استراتژیک دریافت کنید.",
+      "formTitle": "پرسشنامه خودارزیابی بلوغ آینده‌نگاری",
+      "sliders": {
+        "info": {
+          "label": "۱. اطلاعات و رصد (Information)",
+          "desc": "دسترسی، پایش و تحلیل سیگنال‌های تغییر و روندهای کلان بیرونی در سازمان."
+        },
+        "methods": {
+          "label": "۲. روش‌ها و ابزارها (Methods)",
+          "desc": "استفاده منظم از متدهای علمی آینده‌پژوهی نظیر سناریونویسی، دلفی و رادار فناوری."
+        },
+        "people": {
+          "label": "۳. افراد و تخصص‌ها (People)",
+          "desc": "آموزش مهارتی کارکنان، تعامل با خبرگان خارجی و مشارکت بدنه سازمان در تفکر آینده‌پژوهانه."
+        },
+        "org": {
+          "label": "۴. سازماندهی رسمی (Formal Org)",
+          "desc": "وجود ساختارهای مجزا برای آینده‌نگاری، اتصال خروجی‌ها به تصمیمات هیئت مدیره و بودجه مستقل."
+        },
+        "culture": {
+          "label": "۵. فرهنگ سازمانی (Culture)",
+          "desc": "پذیرش تغییر، نبود ترس از شکست و کارآفرینی درون‌سازمانی با حمایت مدیریت ارشد."
+        }
+      },
+      "calculateBtn": "محاسبه شاخص بلوغ",
+      "resultsTitle": "تحلیل بلوغ سازمانی",
+      "resetBtn": "ارزیابی مجدد",
+      "analyzing": "در حال تحلیل...",
+      "calculating": "در حال محاسبه...",
+      "insightTitle": "تفسیر استراتژیک بلوغ:",
+      "chartLabel": "سطح بلوغ فعلی سازمان",
+      "chartLabels": [
+        "اطلاعات و رصد (Information)",
+        "روش‌ها و ابزارها (Methods)",
+        "افراد و تخصص‌ها (People)",
+        "سازماندهی رسمی (Formal Org)",
+        "فرهنگ سازمانی (Culture)"
+      ],
+      "metricsTitle": "۵ شاخص ارزیابی عملیاتی Future FITness",
+      "scores": {
+        "fit": {
+          "status": "سرآمد و متناسب با آینده (Future Fit)",
+          "description": "تبریک! سازمان شما قابلیت‌های پویای استثنایی دارد. شما نه تنها تغییرات را پیش‌بینی می‌کنید، بلکه مدل‌های کسب‌وکار نوآورانه‌ای طراحی می‌کنید که آینده صنعت را بازتعریف می‌کند.",
+          "recs": [
+            "رهبری صنعت با اشتراک دانش و مشارکت در اکوسیستم‌های استارتاپی.",
+            "سرمایه‌گذاری روی فناوری‌های مخرب با ریسک بالا (رایانش کوانتومی و زیستی).",
+            "حفظ تعادل بین بهینه‌سازی فرآیندهای فعلی و توسعه بازارهای کاملاً جدید."
+          ]
+        },
+        "prepared": {
+          "status": "آماده و هوشیار (Prepared)",
+          "description": "سازمان شما در رصد روندها و ایجاد آمادگی خوب عمل می‌کند، اما هنوز نیازمند تقویت فرآیندهای آزمودن (Probing) و تحول فرهنگی است. نباید صرفاً منتظر وقوع آینده باشید؛ باید برای خلق آینده مطلوب تلاش کنید.",
+          "recs": [
+            "افزایش پروژه‌های آزمایشی سریع (Rapid Prototyping) برای سنجش فرضیات فناوری.",
+            "تفویض اختیارات بیشتر به کارکنان خط مقدم برای افزایش سرعت تصمیم‌گیری.",
+            "ایجاد زبان مشترک آینده‌نگاری میان دپارتمان‌های مختلف سازمان."
+          ]
+        },
+        "vulnerable": {
+          "status": "آسیب‌پذیر در برابر تغییر (Vulnerable)",
+          "description": "هشدار! سازمان شما در منطقه خطر قرار دارد. اتکای بیش از حد به فرآیندهای سنتی و مقاومت فرهنگی در برابر تغییر، بقای شما را در مواجهه با عدم‌قطعیت‌های بازار تهدید می‌کند. تحول فوری در زیرساخت اطلاعاتی و نگرش مدیریتی ضروری است.",
+          "recs": [
+            "راه‌اندازی فوری فرآیند رصد محیطی ماهانه برای شناسایی تهدیدهای نوظهور.",
+            "برگزاری کارگاه‌های آموزشی تفکر آینده‌نگر و مدیریت بحران برای رهبران.",
+            "کاهش بوروکراسی رسمی برای امکان واکنش سریع به تغییرات بازار."
+          ]
+        }
+      }
+    },
+    "foresightCards": [
+      {
+        "icon": "gauge",
+        "title": "شاخص تطبیق سریع",
+        "desc": "Agility Index: سرعت و اثربخشی واکنش در تغییر سبد محصولات (مانند چرخ محصول سریع در شرکت‌های IT).",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "rocket",
+        "title": "میزان نوآوری مداوم",
+        "desc": "Innovation Rate: تعداد و کیفیت راه‌حل‌های بدیل و جلو زدن از بازار رقابتی (نظیر عرضه سالانه نوآوری‌ها در تسلا).",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "shield",
+        "title": "انعطاف‌پذیری سازمانی",
+        "desc": "Resilience Score: توانایی بازیابی فوری پس از اختلالات و بحران‌های مالی و زیست‌محیطی (مانند ژاپن).",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "users",
+        "title": "تعامل در اکوسیستم",
+        "desc": "Collaboration Score: میزان ارزش‌آفرینی مشترک با شرکا و ذینفعان زنجیره تأمین (مانند آمازون).",
+        "color": "var(--color-f)"
+      },
+      {
+        "icon": "book-open",
+        "title": "یادگیری سازمانی",
+        "desc": "L&D Metrics: میزان ساعت آموزش تخصصی و ارتقای مهارت‌های نیروی کار در سال (مانند گوگل).",
+        "color": "var(--color-f)"
+      }
+    ],
+    "radar": {
+      "tag": "مطالعه موردی: دویچه تلکوم",
+      "title": "رادار فناوری‌های نوظهور و پایش استراتژیک",
+      "sub": "شبیه‌سازی رادار تعاملی فناوری جهت جلوگیری از غافلگیری استراتژیک. بر روی نقاط رادار کلیک کنید تا تحلیل تأثیر و توصیه‌ها بارگذاری شوند.",
+      "defaultTitle": "رادار فناوری‌های نوظهور",
+      "defaultText": "یکی از ابزارهای استراتژیک برای جلوگیری از غافلگیری در صنعت مخابرات و فناوری اطلاعات. روی نقاط نوسان‌کننده کلیک کنید تا جزئیات نمایش داده شوند.",
+      "dtCaseTitle": "چرا دویچه تلکام به عنوان مورد بنچ‌مارک انتخاب شد؟",
+      "dtCaseBody": "انتخاب <strong>دویچه تلکام (Deutsche Telekom)</strong> کاملاً علمی است. بخش بزرگی از فرآیند دکتری و کتاب مرجع رنه روهربک در خصوص مدل بلوغ آینده‌نگاری، مستقیماً بر اساس مطالعه چندساله عملیاتی در این غول مخابراتی بنا شده است. این شرکت نمونه عینی تزریق رادار فناوری و اتصال نتایج به فرآیندهای استراتژیک و کاهش ریسک است.",
+      "dtChallengesTitle": "چالش‌های استقرار و راه‌حل‌های استراتژیک",
+      "dtChallengesBody": "<strong>مقاومت در برابر تغییر:</strong> تقویت فرهنگ باز و پذیرش تغییر.<br><strong>شکاف مهارتی کارکنان:</strong> برگزاری مداوم دوره‌های بازآموزی (Reskilling).<br><strong>پیچیدگی اکوسیستم باز:</strong> به کارگیری فناوری‌های باز و شفاف.<br><strong>تعارض اهداف کوتاه/بلندمدت:</strong> تخصیص بودجه مجزا و مدل سه افق نوآوری.",
+      "rings": {
+        "scan": "رصد (Scan)",
+        "assess": "ارزیابی (Assess)",
+        "trial": "آزمایش (Trial)",
+        "adopt": "پذیرش (Adopt)"
+      },
+      "quadrants": {
+        "ai": "هوش مصنوعی و داده",
+        "net": "شبکه‌های ارتباطی",
+        "comp": "رایانش و ابر نوظهور",
+        "bio": "بیوتک و فناوری همگرا"
+      },
+      "statusLabel": "وضعیت رادار:",
+      "impactLabel": "تأثیر استراتژیک بر سازمان:",
+      "tech": {
+        "genai": {
+          "title": "هوش مصنوعی مولد (Generative AI)",
+          "quadrant": "هوش مصنوعی و داده",
+          "status": "Adopt (پذیرش)",
+          "desc": "استفاده از مدل‌های بزرگ زبانی و مدل‌های مولد تصویر برای تولید خودکار محتوا، کد و بهینه‌سازی فرآیندهای کاری.",
+          "impact": "اتوماسیون کارهای روتین، افزایش راندمان تولید تا ۴۰٪ و ایجاد تجربه‌های کاربری کاملاً شخصی‌سازی‌شده."
+        },
+        "agentic": {
+          "title": "هوش مصنوعی عامل‌محور (Agentic AI)",
+          "quadrant": "هوش مصنوعی و داده",
+          "status": "Trial (آزمایش)",
+          "desc": "سیستم‌های هوش مصنوعی که اهداف کلان را دریافت کرده و به صورت خودمختار وظایف چندمرحله‌ای را طراحی، تست و اجرا می‌کنند.",
+          "impact": "کاهش نیاز به نظارت مستقیم انسان، حل مستقل تعارضات زنجیره تأمین و تصمیم‌گیری بلادرنگ."
+        },
+        "nlp": {
+          "title": "پردازش پیشرفته زبان (NLP)",
+          "quadrant": "هوش مصنوعی و داده",
+          "status": "Adopt (پذیرش)",
+          "desc": "سیستم‌های درک زبان طبیعی برای تحلیل گفتار، متن، احساسات مشتریان و استخراج دانش پنهان از مستندات.",
+          "impact": "پشتیبانی ۲۴ ساعته با دستیارهای صوتی هوشمند و شناسایی زودهنگام نارضایتی مشتریان."
+        },
+        "6g": {
+          "title": "نسل ششم ارتباطات موبایل (6G)",
+          "quadrant": "شبکه‌های ارتباطی",
+          "status": "Scan (رصد)",
+          "desc": "سرعت‌های ترابیت بر ثانیه، تاخیرهای میکروثانیه‌ای و ادغام شبکه‌های زمینی با ماهواره‌ها برای پوشش صد درصدی.",
+          "impact": "بسترسازی اینترنت حواس، ربات‌های همکار دوردست و ارتباطات هولوگرافیک سه‌بعدی."
+        },
+        "iot": {
+          "title": "اکوسیستم‌های اینترنت اشیاء (IoT)",
+          "quadrant": "شبکه‌های ارتباطی",
+          "status": "Trial (آزمایش)",
+          "desc": "اتصال صدها میلیون حسگر هوشمند به شبکه برای جمع‌آوری داده از محیط‌های عملیاتی، انبارها و لجستیک.",
+          "impact": "کاهش اتلاف انرژی، پایش هوشمند فرآیندهای کشاورزی و بهبود بهره‌وری تجهیزات کارخانه‌ای."
+        },
+        "quantum": {
+          "title": "رایانش کوانتومی (Quantum Computing)",
+          "quadrant": "رایانش و ابر نوظهور",
+          "status": "Assess (ارزیابی)",
+          "desc": "بهره‌گیری از کیوبیت‌های کوانتومی برای شبیه‌سازی‌های فیزیکی و بهینه‌سازی‌های ریاضی پیچیده.",
+          "impact": "کشف سریع‌تر داروها، بهینه‌سازی سبد سرمایه‌گذاری مالی و خطرات جدی برای امنیت سایبری فعلی."
+        },
+        "edge": {
+          "title": "رایانش لبه‌ای (Edge Computing)",
+          "quadrant": "رایانش و ابر نوظهور",
+          "status": "Adopt (پذیرش)",
+          "desc": "پردازش داده‌ها در محل تولید (حسگر یا دوربین) به جای ارسال به سرورهای ابری مرکزی.",
+          "impact": "ناوبری فوری خودروهای خودران و تحلیل سریع تصاویر دوربین‌های امنیتی بدون سربار شبکه."
+        },
+        "biocomputing": {
+          "title": "رایانش زیستی (Bio-computing)",
+          "quadrant": "بیوتک و فناوری همگرا",
+          "status": "Scan (رصد)",
+          "desc": "مهندسی DNA و سلول‌های زیستی برای محاسبات منطقی و ذخیره‌سازی داده با ماندگاری بالا و مصرف انرژی نزدیک به صفر.",
+          "impact": "جایگزینی مراکز داده عظیم با ابعاد میلی‌متری و سیستم‌های زیست‌سازگار ذخیره کلان‌داده."
+        },
+        "metaverse": {
+          "title": "متاورس و رایانش فضایی (Metaverse)",
+          "quadrant": "بیوتک و فناوری همگرا",
+          "status": "Assess (ارزیابی)",
+          "desc": "ادغام VR، AR و فضاهای سه‌بعدی تعاملی برای همکاری دیجیتال و شبیه‌سازهای حرفه‌ای.",
+          "impact": "تغییر جدی در آموزش از راه دور، شبیه‌سازی جراحی‌ها و ایجاد دوقلوهای دیجیتال سازمانی."
+        }
+      }
+    },
+    "common": {
+      "envMaturity": "محیط و بلوغ:",
+      "symptoms": "نشانه‌ها و رفتارهای سازمانی:",
+      "examples": "نمایندگان معروف در صنعت:",
+      "keyTasks": "وظایف و ابزارهای کلیدی:",
+      "orgExample": "مثال واقعی در سازمان:",
+      "sensing": "حس‌گری و رصد (Sensing)",
+      "seizing": "کسب فرصت (Seizing)",
+      "transforming": "تحول ساختار (Transforming)"
+    }
+  },
+  "claPage": {
+    "history": {
+      "accent": "var(--color-cla)",
+      "founderLabel": "مؤسس",
+      "founder": "سهیل عنایت‌الله (Sohail Inayatullah)",
+      "yearLabel": "توسعه",
+      "year": "اواخر دهه ۱۹۹۰ — انتشار گسترده ۱۹۹۸ تا ۲۰۰۴",
+      "institution": "Tamkang University · Metafuture.org",
+      "title": "تحلیل لایه‌ای علت‌ها (Causal Layered Analysis)",
+      "origin": "سهیل عنایت‌الله CLA را در اواخر دهه ۱۹۹۰ توسعه داد و در دهه بعد در مقالات، کتاب‌ها و کارگاه‌های Metafuture منتشر کرد. این روش آینده‌پژوهی را از توصیف سطحی رویدادها به سمت واسازی گفتمان و بازآفرینی استعاره می‌برد.",
+      "problemLabel": "مسئله‌ای که حل می‌کند",
+      "problem": "آینده‌پژوهی سنتی اغلب در لایه اخبار، آمار و روندهای سطحی (Litany) متوقف می‌ماند و ریشه‌های ساختاری، گفتمانی و اسطوره‌ای را نادیده می‌گیرد.",
+      "useLabel": "کاربردهای شاخص",
+      "applications": "دفتر آینده‌پژوهی نخست‌وزیری سنگاپور (PMO)، یونسکو، دولت تایوان، و کارگاه‌های Metafuture در سراسر جهان."
+    },
+    "heroTag": "سهیل عنایت‌الله",
+    "heroTitle": "تحلیل لایه‌ای علت‌ها (Causal Layered Analysis)",
+    "heroSub": "روشی عمیق در آینده‌پژوهی برای شکستن مسائل سطحی، کاوش در ریشه‌های گفتمانی و تمدنی، و خلق استعاره‌های بدیل برای سناریوهای تحول‌آفرین.",
+    "theoryTitle": "بنیان CLA و ارتباط با تبارشناسی فوکو",
+    "theoryP1": "CLA که سهیل عنایت‌الله ابداع کرد، از تفکر پساساختارگرا — به‌ویژه <strong>تبارشناسی (Genealogy)</strong> میشل فوکو — الهام گرفته است. فوکو نشان داد «حقیقت» در گفتمان و قدرت شکل می‌گیرد؛ CLA هم مسائل را لایه‌به‌لایه واسازی می‌کند تا فرض‌های پنهان آشکار شوند.",
+    "theoryP2": "حرکت از لیتانی (اخبار روز) به علل ساختاری، سپس جهان‌بینی و در نهایت اسطوره، به ذی‌نفعان کمک می‌کند از سناریوهای تحمیلی خارج شوند و <strong>استعاره‌های بدیل تحول‌آفرین</strong> برای بازآفرینی حال و آینده بسازند.",
+    "layers": {
+      "litany": {
+        "badge": "لایه اول: لیتانی (The Litany)",
+        "badgeClass": "l1-badge",
+        "title": "ظاهری‌ترین سطح — اخبار و آمار روزمره",
+        "body": "مسائل، روندها و آمارهایی که هر روز در رسانه‌ها دیده می‌شوند. اطلاعات پراکنده، اغلب احساسی و بدون زمینه تاریخی. واکنش عمومی معمولاً انفعال یا سرزنش سطحی است. گفتمان قدرت از این لایه برای هدایت توجه استفاده می‌کند.",
+        "qLabel": "سوال کلیدی:",
+        "question": "رسانه‌ها و افکار عمومی درباره این مشکل چه می‌گویند؟",
+        "langLabel": "زبان غالب لایه:",
+        "language": "روزنامه‌نگاری، آمار خام، زبان احساسی و واکنش‌گرا"
+      },
+      "systemic": {
+        "badge": "لایه دوم: علل نظام‌مند (Social/Systemic)",
+        "badgeClass": "l2-badge",
+        "title": "علت‌های فنی، اقتصادی، تاریخی و سیاسی",
+        "body": "ساختارها و سیاست‌هایی که لایه لیتانی را تولید می‌کنند: قوانین، نهادها، بازارها، بوروکراسی و حلقه‌های بازخورد. کارشناسان و سیاست‌گذاران در این سطح کار می‌کنند، اما هنوز فرض‌های عمیق‌تر به چالش کشیده نمی‌شوند.",
+        "qLabel": "سوال کلیدی:",
+        "question": "کدام سیاست‌ها، نهادها و ساختارها این مسئله را پدید آورده‌اند؟",
+        "langLabel": "زبان غالب لایه:",
+        "language": "علمی، سیاستی، بوروکراتیک و مدیریت سیستم‌ها"
+      },
+      "worldview": {
+        "badge": "لایه سوم: جهان‌بینی (Discourse/Worldview)",
+        "badgeClass": "l3-badge",
+        "title": "چارچوب‌های فکری و گفتمان‌های مشروعیت‌بخش",
+        "body": "باورها و پارادایم‌هایی که به ساختارهای لایه دوم مشروعیت می‌دهند — از نئولیبرالیسم نو و پوزیتیویسم تا سنت‌گرایی و محیط‌زیست‌گرایی. در این لایه مرز «حقیقت» و «طبیعی بودن» مسئله کشف می‌شود؛ همان جایی که قدرت گفتمانی فوکو اهمیت می‌یابد.",
+        "qLabel": "سوال کلیدی:",
+        "question": "چه باورها، ایدئولوژی‌ها و گفتمان‌هایی از این ساختارها پشتیبانی می‌کنند؟",
+        "langLabel": "زبان غالب لایه:",
+        "language": "فلسفی، فرهنگی، تحلیل گفتمان و تئوری عمیق"
+      },
+      "myth": {
+        "badge": "لایه چهارم: اسطوره‌ها (Myth/Metaphor)",
+        "badgeClass": "l4-badge",
+        "title": "ناخودآگاه جمعی، کهن‌الگوها و استعاره‌ها",
+        "body": "عمیق‌ترین لایه: داستان‌ها، احساسات و استعاره‌هایی که جهان‌بینی‌ها را قرن‌ها زنده نگه می‌دارند. تغییر این لایه دشوار است، اما تحول پایدار فقط با خلق <strong>استعاره‌های جدید</strong> ممکن می‌شود.",
+        "qLabel": "سوال کلیدی:",
+        "question": "کدام کهن‌الگو، داستان یا استعاره در ناخودآگاه ما حاکم است؟",
+        "langLabel": "زبان غالب لایه:",
+        "language": "هنری، اسطوره‌ای، استعاره‌ای و تصویری احساسی"
+      }
+    },
+    "singapore": {
+      "title": "تجربه‌نگاری: مدیریت پسماند و ترانزیت هوشمند سنگاپور",
+      "intro": "در اوایل دهه ۲۰۱۰، دفتر آینده‌پژوهی نخست‌وزیری سنگاپور (PMO) با CLA ریشه‌های فرهنگی بحران زباله و ازدحام مترو را واسازی کرد:",
+      "l1Label": "L1: لیتانی (سرخط خبرها)",
+      "l1Text": "تأخیر قطارهای شهری، انباشت کیسه زباله در آپارتمان‌ها، شکایات شهروندان در رسانه.",
+      "l2Label": "L2: علل ساختاری (سیستم)",
+      "l2Text": "کمبود بودجه برای واگن‌های بیشتر، ظرفیت رو به اتمام لندفیل، خلأ قوانین تفکیک پسماند.",
+      "l3Label": "L3: جهان‌بینی (گفتمان)",
+      "l3Text": "نگاه «سنگاپور = هتل لوکس بین‌المللی» — شهروند مشتری طلبکار، دولت فقط خدمت‌گزار.",
+      "l4Label": "L4: اسطوره (ناخودآگاه)",
+      "l4Text": "استعاره پنهان «مهمان موقت در هتل» — بدون تعلق عاطفی به پاکیزگی مشترک.",
+      "lesson": "<strong>استعاره تحول‌آفرین:</strong> بازتعریف ملی به <strong>«سنگاپور = خانه باغ خانوادگی مشترک»</strong> و گفتمان «پایداری همکارانه» حس مالکیت را زنده کرد و بن‌بست‌های سیستمی را حل کرد."
+    },
+    "cases": {
+      "tag": "آرشیو طبقه‌بندی‌شده سناریوها",
+      "title": "نمونه‌های تحلیل لایه‌ای (CLA)",
+      "sub": "مسائل کلان را در بسته‌های موضوعی کاوش کنید تا ریشه گفتمان‌ها و اسطوره‌های هر حوزه شفاف شود.",
+      "tabGeopolitics": "ژئوپلیتیک و روابط بین‌الملل",
+      "tabNational": "چالش‌های ملی و زیست‌محیطی",
+      "tabSocial": "مسائل اجتماعی و هویتی"
+    },
+    "workspace": {
+      "tag": "کارگاه آینده‌پژوهی",
+      "title": "کارگاه تعاملی تفکر لایه‌ای (CLA)",
+      "sub": "یک مسئله را انتخاب کنید یا مسئله خود را بنویسید تا آن را به چهار لایه هرم عنایت‌الله بشکنید.",
+      "panelTitle": "پنل کارگاه",
+      "templateLabel": "انتخاب قالب مسئله پیش‌فرض:",
+      "templateCustom": "-- تحلیل شخصی و دلخواه --",
+      "templateBrainDrain": "فرار مغزها و نخبگان (Brain Drain)",
+      "templateInflation": "تورم و بحران معیشتی",
+      "templateGenerationGap": "بحران تفاوت و شکاف نسل‌ها",
+      "problemLabel": "عنوان مسئله تحلیل شما:",
+      "problemPlaceholder": "مثلاً: فرار مغزها...",
+      "litanyLabel": "۱. لیتانی (اخبار و آمارهای سطحی):",
+      "litanyPlaceholder": "چه آمارها یا سرخط‌های خبری هر روز تکرار می‌شوند؟",
+      "systemicLabel": "۲. علل ساختاری و نظام‌مند (سیاست‌ها، قوانین، اقتصاد):",
+      "systemicPlaceholder": "کدام ساختارها، قوانین یا دلایل اقتصادی در پشت پرده هستند؟",
+      "worldviewLabel": "۳. جهان‌بینی و گفتمان‌های رقیب:",
+      "worldviewPlaceholder": "کدام تفکرات و ایدئولوژی‌ها به این ساختارها مشروعیت می‌دهند؟",
+      "mythLabel": "۴. اسطوره و استعاره پنهان (و استعاره جایگزین جدید):",
+      "mythPlaceholder": "کدام داستان ناخودآگاه حاکم است؟ استعاره جایگزین جدید چیست؟",
+      "updateBtn": "به‌روزرسانی کارت تحلیل لایه‌ای",
+      "previewTag": "خروجی کارگاه CLA",
+      "renderTitleDefault": "عنوان مسئله",
+      "renderL1": "لیتانی (Litany)",
+      "renderL2": "علل ساختاری (Systemic)",
+      "renderL3": "جهان‌بینی (Worldview)",
+      "renderL4": "اسطوره و استعاره جدید (Myth)",
+      "renderPlaceholder": "محتوا...",
+      "footer": "توسعه‌یافته در کارگاه تعاملی Foresight Hub",
+      "defaultTitle": "تحلیل لایه‌ای مسئله",
+      "defaultLitany": "توضیحات لایه لیتانی...",
+      "defaultSystemic": "توضیحات لایه علل ساختاری...",
+      "defaultWorldview": "توضیحات لایه جهان‌بینی...",
+      "defaultMyth": "توضیحات لایه اسطوره‌ها..."
+    }
+  },
+  "claCategories": {
+    "geopolitics": "ژئوپلیتیک و روابط بین‌الملل",
+    "national": "چالش‌های ملی و زیست‌محیطی",
+    "social": "مسائل اجتماعی و هویتی"
+  },
+  "caseStudyTitles": {
+    "israel": "ایران و اسرائیل",
+    "usa": "ایران و آمریکا",
+    "water": "بحران آب در ایران",
+    "future-iran": "مسئله اصلی آینده ایران",
+    "brain-drain": "فرار مغزها و نخبگان",
+    "generation-gap": "شکاف عمیق بین‌نسلی"
+  },
+  "caseStudies": {
+    "israel": {
+      "title": "ایران و اسرائیل",
+      "l1": "<ul><li>سرخط خبر: فعال‌شدن پدافند، بیانیه شورای امنیت، هشدار سفر</li><li>نوسان نفت و ارز، رزمایش دریایی در هرمز</li><li>واکنش عمومی: اضطراب جنگ، خرید اضطراری</li></ul>",
+      "l2": "<ul><li>موازنه تسلیحاتی و «موازنه وحشت»</li><li>ائتلاف ابراهیم / ناتو در برابر محور مقاومت</li><li>جنگ سایبری، پدافند چندلایه، منافع قدرت‌های بزرگ</li></ul>",
+      "l3": "<ul><li>گفتمان استکبارستیزی و آزادی قدس</li><li>در برابر گفتمان امنیت اگزیستانسیال صهیونیسم</li><li>تقابل لیبرال دموکراسی غرب و جهان چندقطبی</li></ul>",
+      "l4": "<ul><li>اسطوره ایرانی: عاشورا، فریدون علیه ضحاک</li><li>اسطوره اسرائیلی: هولوکاست، مسادا</li><li><strong>استعاره بدیل:</strong> از «میدان مین» به «زیست‌بوم مشترک واحه»</li></ul>",
+      "l1_q": "لیتانی — اخبار و آمار سطحی",
+      "l2_q": "علل نظام‌مند — ساختارها و قوانین",
+      "l3_q": "جهان‌بینی — گفتمان‌های مشروعیت‌بخش",
+      "l4_q": "اسطوره — ناخودآگاه جمعی و تحول"
+    },
+    "usa": {
+      "title": "ایران و آمریکا",
+      "l1": "<ul><li>تحریم‌های جدید OFAC، بیانیه‌های متقابل</li><li>توقیف نفت‌کش، بلوکه شدن دارایی‌های ارزی</li><li>افت ریال، تورم، ترس از انزوای تجاری</li></ul>",
+      "l2": "<ul><li>هژمونی دلار و SWIFT</li><li>قطع دیپلماسی رسمی از ۱۹۷۹</li><li>تحریم‌های ثانویه کنگره، نقش تنگه هرمز</li></ul>",
+      "l3": "<ul><li>استثناگرایی آمریکایی و نظم لیبرال</li><li>در برابر گفتمان استقلال‌طلبی و نفی استکبار</li><li>تعریف متضاد «مسئولیت» و «استقلال»</li></ul>",
+      "l4": "<ul><li>اسطوره آمریکا: کلانتر شجاع علیه یاغیان</li><li>اسطوره ایران: کاوه آهنگر علیه ضحاک</li><li><strong>استعاره بدیل:</strong> از «نبرد روم و ساسانی» به «پل جاده ابریشم دیجیتال»</li></ul>",
+      "l1_q": "لیتانی — اخبار و آمار سطحی",
+      "l2_q": "علل نظام‌مند — ساختارها و قوانین",
+      "l3_q": "جهان‌بینی — گفتمان‌های مشروعیت‌بخش",
+      "l4_q": "اسطوره — ناخودآگاه جمعی و تحول"
+    },
+    "water": {
+      "title": "بحران آب در ایران",
+      "l1": "<ul><li>خشک شدن تالاب‌ها (ارومیه، هامون، بختگان)</li><li>فرونشست زمین، نزاع حق‌آبه، طوفان گردوغبار</li><li>واکنش: سرزنش دولت، ناامیدی اقلیمی</li></ul>",
+      "l2": "<ul><li>خودکفایی کشاورزی در دشت‌های خشک</li><li>سدسازی بدون EIA، چاه‌های غیرمجاز</li><li>تعرفه پایین آب، راندمان آبیاری زیر ۳۵٪</li></ul>",
+      "l3": "<ul><li>جهان‌بینی «مهندسی و تسخیر طبیعت»</li><li>در برابر «پایداری اکولوژیک و خرد بومی»</li><li>تعریف متفاوت «توسعه» و «پیشرفت»</li></ul>",
+      "l4": "<ul><li>اسطوره مدرن: مهندس فاتح با سد بتنی</li><li>اسطوره کهن: آناهیتا و تیشتر در برابر اپوش</li><li><strong>استعاره بدیل:</strong> از «دوشیدن خون زمین» به «هم‌آوایی با کویر و قنات»</li></ul>",
+      "l1_q": "لیتانی — اخبار و آمار سطحی",
+      "l2_q": "علل نظام‌مند — ساختارها و قوانین",
+      "l3_q": "جهان‌بینی — گفتمان‌های مشروعیت‌بخش",
+      "l4_q": "اسطوره — ناخودآگاه جمعی و تحول"
+    },
+    "future-iran": {
+      "title": "مسئله اصلی آینده ایران",
+      "l1": "<ul><li>جهش ارز و مسکن، ریزش بورس، فرار سرمایه</li><li>تورم بالای ۴۰٪، قطعی برق و گاز</li><li>فیلترینگ، کندی اینترنت، مهاجرت گسترده</li></ul>",
+      "l2": "<ul><li>اقتصاد رانتی-نفتی و انحصارات شبه‌دولتی</li><li>عدم پذیرش FATF، بوروکراسی سنگین</li><li>کسری صندوق بازنشستگی، بودجه دولت</li></ul>",
+      "l3": "<ul><li>گفتمان «اقتصاد مقاومتی و درون‌گرایی»</li><li>در برابر «توسعه‌گرایی و ادغام جهانی»</li><li>تعارض اولویت استقلال vs. رشد</li></ul>",
+      "l4": "<ul><li>اسطوره ققنوس: بقای تضمین‌شده پس از بحران</li><li>حسرت «تمدن بزرگ شاهنشاهی»</li><li><strong>استعاره بدیل:</strong> «فرش ایرانی» — تنوع تاروپود در طرح واحد</li></ul>",
+      "l1_q": "لیتانی — اخبار و آمار سطحی",
+      "l2_q": "علل نظام‌مند — ساختارها و قوانین",
+      "l3_q": "جهان‌بینی — گفتمان‌های مشروعیت‌بخش",
+      "l4_q": "اسطوره — ناخودآگاه جمعی و تحول"
+    },
+    "brain-drain": {
+      "title": "فرار مغزها و نخبگان",
+      "l1": "<ul><li>مهاجرت هزاران پزشک، مهندس IT، فارغ‌التحصیل برتر</li><li>صف سفارتخانه‌ها، کمبود کادر درمان</li><li>واکنش: افسوس، عادی‌شدن مهاجرت</li></ul>",
+      "l2": "<ul><li>بی‌ثباتی اقتصادی، افت قدرت خرید</li><li>حقوق پایین vs. کشورهای همسایه</li><li>انتصاب غیرتخصصی، فیلترینگ، کمبود امکانات پژوهش</li></ul>",
+      "l3": "<ul><li>گفتمان «خدمت جهادی و وفاداری به میهن»</li><li>در برابر «حق رشد فردی و مشارکت جهانی علم»</li><li>تعارض تعهد vs. شایسته‌سالاری</li></ul>",
+      "l4": "<ul><li>کهن‌الگوی «فرزند ناتنی و طردشده»</li><li><strong>استعاره بدیل:</strong> از Brain Drain به Brain Circulation — شبکه علمی فرامرزی</li></ul>",
+      "l1_q": "لیتانی — اخبار و آمار سطحی",
+      "l2_q": "علل نظام‌مند — ساختارها و قوانین",
+      "l3_q": "جهان‌بینی — گفتمان‌های مشروعیت‌بخش",
+      "l4_q": "اسطوره — ناخودآگاه جمعی و تحول"
+    },
+    "generation-gap": {
+      "title": "شکاف عمیق بین‌نسلی",
+      "l1": "<ul><li>تفاوت پوشش، موسیقی، سبک زندگی دیجیتال</li><li>کاهش ازدواج و فرزندآوری، افت نفوذ رسانه رسمی</li><li>واکنش: حیرت والدین، گسست ارتباطی</li></ul>",
+      "l2": "<ul><li>اینترنت موبایل و فرهنگ جهانی نسل Z</li><li>جمود آموزش رسمی، انحصار صداوسیما</li><li>عدم انطباق نهادها با واقعیت شبکه‌ای</li></ul>",
+      "l3": "<ul><li>جهان‌بینی پدرسالارانه و جمع‌گرا</li><li>در برابر فردیت، حقوق فردی، هویت دیجیتال</li><li>تعارض اقتدار خانواده vs. خودمختاری</li></ul>",
+      "l4": "<ul><li>اسطوره «دو غریبه زیر یک سقف»</li><li><strong>استعاره بدیل:</strong> «پل هم‌افزایی نسل‌ها» — تار خرد قدیم، پود خلاقیت جدید</li></ul>",
+      "l1_q": "لیتانی — اخبار و آمار سطحی",
+      "l2_q": "علل نظام‌مند — ساختارها و قوانین",
+      "l3_q": "جهان‌بینی — گفتمان‌های مشروعیت‌بخش",
+      "l4_q": "اسطوره — ناخودآگاه جمعی و تحول"
+    }
+  },
+  "workspaceTemplates": {
+    "brain-drain": {
+      "title": "فرار مغزها و خروج نخبگان (Brain Drain)",
+      "litany": "تیترها درباره مهاجرت نخبگان، کمبود پزشک و خلبان، صف‌های طولانی سفارتخانه‌ها.",
+      "systemic": "بی‌ثباتی اقتصادی، حقوق پایین، عدم شایسته‌سالاری، کمبود امکانات آزمایشگاهی.",
+      "worldview": "تقابل «خدمت ملی/مذهبی» با «حق رشد فردی و بازار جهانی علم بدون مرز».",
+      "myth": "اسطوره «فرزند ناتنی» — جایگزین: «چرخش مغزها» و شبکه علمی فرامرزی."
+    },
+    "inflation": {
+      "title": "تورم اقتصادی و افت شدید معیشت",
+      "litany": "نوسان لحظه‌ای دلار و طلا، کوچک شدن سفره خانوار، جهش اجاره، رکورد تورم.",
+      "systemic": "خلق نقدینگی، کسری بودجه، انزوای SWIFT، بلوکه شدن درآمد نفتی.",
+      "worldview": "«عدالت متمرکز و اقتصاد دستوری» در برابر «بازار آزاد و اصلاحات پولی».",
+      "myth": "اسطوره «سیزیف» — جایگزین: «انضباط مالی و اقتصاد مولد درون‌زا»."
+    },
+    "generation-gap": {
+      "title": "شکاف عمیق ارزش‌های بین‌نسلی",
+      "litany": "ناهماهنگی پوشش جوانان، تفاوت موسیقی، گلایه والدین از تنهایی دیجیتال فرزندان.",
+      "systemic": "اینترنت پرسرعت، شبکه‌های مجازی مرجع، آموزش رسمی ناکارآمد.",
+      "worldview": "«حفظ اخلاق و خانواده سنتی» در برابر «آزادی انتخاب و هویت دیجیتال نسل Z».",
+      "myth": "«دیوار نامرئی در خانه» — جایگزین: «پل هم‌افزایی نسل‌ها»."
+    }
+  },
+  "wheelPage": {
+    "history": {
+      "accent": "var(--color-wheel-red)",
+      "founderLabel": "مؤسس",
+      "founder": "جروم سی. گلن (Jerome C. Glenn)",
+      "yearLabel": "سال",
+      "year": "۱۹۷۲",
+      "institution": "Millennium Project · AC/UNU",
+      "title": "پیدایش چرخ آینده (Futures Wheel)",
+      "origin": "جروم سی. گلن در ۱۹۷۱–۱۹۷۲ در پروژه هزاره سازمان ملل (AC/UNU) روش چرخ آینده را برای نگاشت زنجیره‌ای پیامدهای مستقیم و غیرمستقیم یک رویداد محوری ابداع کرد. پدیده در مرکز بوم قرار می‌گیرد و خبرگان شاخه‌های مرتبه اول، دوم و سوم را به‌صورت شعاعی ترسیم می‌کنند.",
+      "problemLabel": "مسئله",
+      "problem": "تحلیل‌های خطی رویداد واحد را بررسی می‌کنند، اما پیامدهای ثانویه، بازخوردی و بلندمدت — که اغلب تعیین‌کننده‌ترند — پنهان می‌مانند.",
+      "useLabel": "کاربردهای شاخص",
+      "applications": "ارزیابی بوئینگ برای هواپیماهای بدون خلبان، کارگاه‌های سیاست‌گذاری WHO و وزارت دفاع آمریکا (DoD)، و پروژه‌های Millennium Project در بحران‌های هیدروپلیتیک."
+    },
+    "heroTag": "جروم گلن",
+    "heroTitle": "شبیه‌ساز تعاملی چرخ آینده (Futures Wheel)",
+    "heroSub": "متدولوژی شناسایی پیامدهای علّی متوالی؛ ردیابی و تحلیل زنجیره‌ای آثار مرتبه اول، دوم و سوم بحران زیست‌محیطی تغییر اقلیم در ایران.",
+    "boeing": {
+      "title": "تجربه‌نگاری کاربردی: ارزیابی پیامدهای هواپیماهای بدون خلبان — بوئینگ (Boeing)",
+      "intro": "بوئینگ برای ارزیابی توجیه فنی و تجاری هواپیماهای تمام‌خودران تا افق ۲۰۴۵ از مدل ساختاریافته چرخ آینده استفاده کرد:",
+      "cards": [
+        {
+          "title": "پیامدهای مرتبه اول (اثرات مستقیم)",
+          "body": "حذف خطاهای انسانی خلبانان، کاهش هزینه حقوق و بهینه‌سازی مصرف سوخت با الگوریتم‌های پروازی بلادرنگ."
+        },
+        {
+          "title": "پیامدهای مرتبه دوم (اثرات ثانویه)",
+          "body": "کاهش نرخ بلیط، تعدیل کادر پروازی، اعتراضات سندیکاها و تهدیدات سایبری هواپیما."
+        },
+        {
+          "title": "پیامدهای مرتبه سوم (اثرات بلندمدت)",
+          "body": "چالش‌های حقوقی مسئولیت سوانح و مقاومت روانی مسافران در سپردن بقا به ماشین."
+        }
+      ],
+      "lesson": "<strong>درس راهبردی بوئینگ:</strong> بزرگترین چالش فناوری نیست، بلکه نگرش روانی جامعه و ساختارهای مسئولیت حقوقی (مرتبه ۳) است؛ سرمایه‌گذاری به سمت سیستم‌های نیمه‌خودکار کمکی تغییر یافت."
+    },
+    "boeingTitle": "تجربه‌نگاری کاربردی: ارزیابی پیامدهای هواپیماهای بدون خلبان — بوئینگ (Boeing)",
+    "boeingIntro": "بوئینگ برای ارزیابی توجیه فنی و تجاری هواپیماهای تمام‌خودران تا افق ۲۰۴۵ از مدل ساختاریافته چرخ آینده استفاده کرد:",
+    "boeingO1": "پیامدهای مرتبه اول (اثرات مستقیم)",
+    "boeingO1Text": "حذف خطاهای انسانی خلبانان، کاهش هزینه حقوق و بهینه‌سازی مصرف سوخت با الگوریتم‌های پروازی بلادرنگ.",
+    "boeingO2": "پیامدهای مرتبه دوم (اثرات ثانویه)",
+    "boeingO2Text": "کاهش نرخ بلیط، تعدیل کادر پروازی، اعتراضات سندیکاها و تهدیدات سایبری هواپیما.",
+    "boeingO3": "پیامدهای مرتبه سوم (اثرات بلندمدت)",
+    "boeingO3Text": "چالش‌های حقوقی مسئولیت سوانح و مقاومت روانی مسافران در سپردن بقا به ماشین.",
+    "boeingLesson": "<strong>درس راهبردی بوئینگ:</strong> بزرگترین چالش فناوری نیست، بلکه نگرش روانی جامعه و ساختارهای مسئولیت حقوقی (مرتبه ۳) است؛ سرمایه‌گذاری به سمت سیستم‌های نیمه‌خودکار کمکی تغییر یافت.",
+    "diagramTitle": "نمودار مفهومی پیامدهای امنیتی تغییر اقلیم در ایران",
+    "diagramP1": "ساختار پله‌به‌پله اثرات مرتبه اول (خشکسالی، طوفان شن، موج گرما)، مرتبه دوم (کاهش آبخوان، معیشت زارعین، مهاجرت) و مرتبه سوم ملی-امنیتی.",
+    "diagramP2": "با تحلیل سیستماتیک، روابط متقابل، حلقه‌های بازخورد و فرسودگی پدافند مرزی قابل پیش‌بینی و راه‌حل‌های تاب‌آوری ملی یافت می‌شود.",
+    "modelsTag": "متدولوژی توسعه‌یافته",
+    "modelsTitle": "تنوع مدل‌ها و الگوهای توسعه چرخ آینده",
+    "modelsSub": "در پروژه‌های پیشرفته، چهار رویکرد مدلسازی کلیدی وجود دارد.",
+    "tabClassic": "مدل کلاسیک",
+    "tabStructured": "مدل ساختاریافته STEEP",
+    "tabQuantitative": "مدل کمی‌سازی‌شده",
+    "tabAction": "مدل عمل‌گرا (Policy)",
+    "processTag": "فرآیند اجرایی",
+    "processTitle": "۱۱ گام عملیاتی ترسیم و اجرای چرخ آینده",
+    "detailFocus": "تمرکز اصلی",
+    "detailTool": "روش اجرا",
+    "detailOutput": "نمونه موردی",
+    "steps": [
+      {
+        "title": "تبیین دقیق مسئله محوری",
+        "desc": "تعریف واضح رویداد مبدا در مرکز بوم و تعیین مرزهای زمانی و فضایی تحلیل."
+      },
+      {
+        "title": "تشکیل کارگروه خبرگان (Delphi)",
+        "desc": "جذب متخصصان بین‌رشته‌ای برای کاهش سوگیری و Groupthink."
+      },
+      {
+        "title": "شناسایی پیامدهای مرتبه اول",
+        "desc": "طوفان فکری: «بلافاصله چه پیامدهای فنی، زیست‌محیطی یا اجتماعی رخ می‌دهد؟»"
+      },
+      {
+        "title": "غربالگری و انتخاب پیامدها",
+        "desc": "فیلتر بر مبنای همبستگی و شدت اثر؛ حذف موارد زائد."
+      },
+      {
+        "title": "استخراج پیامدهای مرتبه دوم",
+        "desc": "برای هر گره مرتبه اول: «گام بعدی یا واکنش ثانویه چیست؟»"
+      },
+      {
+        "title": "استخراج پیامدهای مرتبه سوم",
+        "desc": "پیگیری زنجیره تا پیامدهای دوربرد، امنیتی و سیستمی."
+      },
+      {
+        "title": "ترسیم شبکه و اتصالات جانبی",
+        "desc": "کشف حلقه‌های بازخورد و روابط متقاطع هم‌افزا."
+      },
+      {
+        "title": "کمی‌سازی و تحلیل احتمالات",
+        "desc": "برآورد احتمال و شدت اثر برای شناسایی مسیرهای پرریسک."
+      },
+      {
+        "title": "سیاست‌گذاری و اقدامات واکنشی",
+        "desc": "اتصال Policy Nodes به پیامدهای منفی برای نقشه راه عملیاتی."
+      },
+      {
+        "title": "اعتبارسنجی چرخشی با دلفی",
+        "desc": "بازبینی مستقل برای افزایش روایی و کاهش سوگیری دسترسی."
+      },
+      {
+        "title": "پایش مستمر و به‌روزرسانی",
+        "desc": "تعریف سنجه‌ها و بازنگری دوره‌ای با سیگنال‌های ضعیف جدید."
+      }
+    ]
+  },
+  "wheelModels": {
+    "classic": {
+      "title": "مدل کلاسیک چرخ آینده (Classic Jerome Glenn Model)",
+      "desc": "این مدل که در سال ۱۹۷۱ توسط جروم سی. گلن (مدیر پروژه هزاره) ابداع شد، بر طوفان فکری خلاقانه و اکتشاف آزاد بدون طبقه‌بندی از پیش تعیین‌شده متکی است. پدیده محوری در مرکز بوم قرار می‌گیرد و خبرگان زنجیره‌های پیامدی را به صورت شعاعی ترسیم می‌کنند.",
+      "focus": "طوفان فکری خلاق، ترسیم زنجیره پیامدهای کیفی مستقیم و غیرمستقیم به شکل باز و چندجهتی.",
+      "tool": "کارگاه‌های همفکری حضوری یا پلتفرم‌های دیجیتال (Miro/Mural) با کارت‌های رنگی متصل.",
+      "output": "پروژه ارزیابی پیامدهای اینترنت بر ارتش آمریکا (US DoD / GE) در اواخر دهه ۱۹۷۰."
+    },
+    "structured": {
+      "title": "مدل ساختاریافته چرخ آینده (Structured STEEP Model)",
+      "desc": "برای ممانعت از تحلیل تک‌بعدی، چرخ آینده بر اساس متغیرهای STEEP (اجتماعی، فناوری، اقتصادی، زیست‌محیطی، سیاسی) بخش‌بندی می‌شود. هر پیامد در سکتور متناسب قرار گرفته و شاخه‌های ثانویه و ثالثه رشد می‌دهد.",
+      "focus": "طبقه‌بندی سیستمی پیامدها برای تحلیل متقابل روندهای کلان زیست‌محیطی و فناورانه.",
+      "tool": "تقسیم بوم به ۵–۶ سکتور STEEP و هدایت پنل‌های طوفان فکری در هر سکتور.",
+      "output": "مطالعه WHO از پیامدهای همه‌گیری‌ها و تغییرات سبک زندگی تا افق ۲۰۴۰."
+    },
+    "quantitative": {
+      "title": "مدل کمی‌سازی‌شده چرخ آینده (Quantitative Evaluation)",
+      "desc": "چرخ آینده با تکنیک‌های ریاضی و ارزیابی احتمالات به مدل سنجش ریسک ارتقا می‌یابد. خبرگان برای هر گره احتمال (۰–۱) و شدت اثر (۱۰- تا ۱۰+) برآورد می‌کنند تا مسیرهای بحرانی شناسایی شوند.",
+      "focus": "برآورد عددی، اولویت‌بندی ریاضی تهدیدها و محاسبه ارزش استراتژیک مسیرها.",
+      "tool": "نظرسنجی دلفی احتمالی، شبیه‌سازی آماری و ماتریس‌های ریسک.",
+      "output": "پژوهش‌های Millennium Project در بحران‌های هیدروپلیتیک خاورمیانه و شمال آفریقا."
+    },
+    "action": {
+      "title": "مدل عمل‌گرا و سیاست‌گذار (Action/Policy-Oriented Model)",
+      "desc": "این مدل بر هدایت اقدام متمرکز است. در انتهای زنجیره‌های منفی، گره‌های «سیاست‌گذاری واکنشی» (Policy Response Nodes) نصب می‌شوند و چرخ به نقشه راه عملیاتی تبدیل می‌گردد.",
+      "focus": "تدوین راهکارهای ملموس، پدافند غیرعامل و استراتژی‌های انطباقی.",
+      "tool": "کارگاه طراحی استراتژی با مدیران ارشد، سناریونویسی دفاعی و War Gaming.",
+      "output": "طرح پدافند سایبری فنلاند برای سناریوهای حمله به بنادر و زنجیره تأمین بالتیک."
+    }
+  },
+  "wheelWorkshop": {
+    "modeDemo": "مثال آموزشی",
+    "modeWorkshop": "کارگاه تعاملی",
+    "title": "کارگاه ترسیم چرخ آینده",
+    "sub": "مسئله محوری و پیامدهای هر مرتبه را وارد کنید؛ چرخ به‌صورت خودکار ترسیم می‌شود.",
+    "hubLabel": "مسئله / رویداد محوری",
+    "hubPlaceholder": "مثلاً: هوش مصنوعی در آموزش عالی",
+    "hubSubLabel": "توضیح کوتاه (اختیاری)",
+    "hubSubPlaceholder": "مثلاً: گسترش LLM در دانشگاه‌ها",
+    "branchesTitle": "پیامدهای مرتبه اول",
+    "addBranch": "افزودن شاخه",
+    "build": "ترسیم چرخ",
+    "loadDemo": "بارگذاری مثال اقلیم",
+    "cascadeHint": "روی هر پیامد مرتبه اول کلیک کنید تا جزئیات در کنار نمایش داده شود.",
+    "sidebarSub": "یکی از پیامدهای مرتبه اول را انتخاب کنید تا زنجیره مرتبه دوم و سوم آن برجسته شود.",
+    "hubTag": "مسئله محوری",
+    "branchPlaceholder": "پیامد مرتبه اول",
+    "descPlaceholder": "توضیح کوتاه (اختیاری)",
+    "addOrder2": "افزودن مرتبه دوم",
+    "addOrder3": "افزودن مرتبه سوم",
+    "order2Placeholder": "پیامد مرتبه دوم",
+    "order3Placeholder": "پیامد مرتبه سوم",
+    "remove": "حذف",
+    "noChain": "مرتبه دوم/سوم اضافه نشده",
+    "errHub": "لطفاً مسئله محوری را وارد کنید.",
+    "errBranch": "حداقل یک پیامد مرتبه اول با عنوان وارد کنید."
+  },
+  "backcastPage": {
+    "history": {
+      "accent": "var(--color-backcast)",
+      "founderLabel": "بنیان‌گذاران",
+      "founder": "جان بی. رابینسون و توماس ال. دربورگ (Robinson & Dreborg)",
+      "yearLabel": "سال",
+      "year": "اواخر دهه ۱۹۷۰ — ۱۹۸۲",
+      "institution": "کمیسیون انرژی سوئد · دانشگاه بریتیش کلمبیا (UBC)",
+      "title": "پیدایش پس‌نگری در سیاست انرژی",
+      "origin": "توماس دربورگ در کمیسیون انرژی سوئد در دهه ۱۹۷۰ پس‌نگری را برای سیاست‌های جایگزین انرژی به‌کار برد. جان بی. رابینسون در مقاله <em>Energy Backcasting: A Proposed Method of Policy Analysis</em> (<em>Energy Policy</em>, ۱۹۸۲) روش را به‌صورت منسجم نظری معرفی کرد و در UBC برنامه‌ریزی انرژی را از «پیش‌بینی روند» به «طراحی آینده مطلوب» منتقل کرد.",
+      "problemLabel": "مسئله",
+      "problem": "پیش‌بینی (Forecasting) می‌تواند روندهای گذشته را ادامه دهد، اما نمی‌تواند آینده‌های انرژی <strong>مطلوب و جایگزین</strong> را طراحی کند.",
+      "useLabel": "کاربردهای شاخص",
+      "applications": "برنامه‌ریزی انرژی سوئد (دهه ۱۹۷۰)، گذار کربن‌صفر سوئد (۲۰۴۵)، برنامه منطقه زیست‌پذیر ونکوور، و سناریوهای بلندمدت انرژی اتحادیه اروپا."
+    },
+    "heroTag": "جان رابینسون",
+    "heroTitle": "روش استراتژیک پس‌نگری (Backcasting)",
+    "heroSub": "کار از آخر به اول؛ تصویرسازی آینده مطلوب و بازگشت گام‌به‌گام به امروز برای تعیین سیاست‌ها، موانع و اقدامات عملی.",
+    "methodologyTag": "چارچوب مفهومی گذار",
+    "methodologyTitle": "فرایند و فلسفه پس‌نگری",
+    "methodologyP1": "پس‌نگری با یک <strong>هدف هنجاری در آینده</strong> آغاز می‌شود — نه با ادامه روندهای امروز. تحلیل‌گر فرض می‌کند آن هدف محقق شده و سپس به عقب برمی‌گردد تا بفهمد چه تغییراتی لازم بوده است.",
+    "methodologyP2": "چهار گام اصلی: (۱) تصویر آینده مطلوب، (۲) تحلیل شکاف با وضع موجود، (۳) طراحی سیاست و مقررات گذار، (۴) نقشه راه اقدامات کوتاه‌، میان‌ و بلندمدت. این روش عاملیت انسانی را جایگزین جبرگرایی آماری می‌کند.",
+    "comparisonTag": "تحلیل مقایسه‌ای",
+    "comparisonTitle": "پس‌نگری در برابر پیش‌بینی",
+    "comparisonSub": "تعارض پارادایم روند-محور و انتخاب-محور در برنامه‌ریزی کلان.",
+    "comparisonIntroP1": "رابینسون در اواخر دهه ۱۹۷۰ پس‌نگری را برای سیاست‌های جایگزین انرژی معرفی کرد. او معتقد بود پیش‌بینی، به دلیل وابستگی به داده‌های گذشته، نمی‌تواند تغییرات ساختاری یا آینده‌های مطلوب جدید را طراحی کند.",
+    "comparisonIntroP2": "پیش‌بینی می‌پرسد «با تداوم روندها چه می‌شود؟»؛ پس‌نگری می‌پرسد «چگونه به آینده مطلوب برسیم و چه موانعی داریم؟» این رویکرد در گذار انرژی، زیست‌محیط و شهرسازی کاربرد دارد.",
+    "comparisonHeaders": {
+      "aspect": "وجه تمایز",
+      "forecast": "پیش‌بینی (Forecasting)",
+      "backcast": "پس‌نگری (Backcasting)"
+    },
+    "comparisonRows": [
+      {
+        "aspect": "جهت زمانی",
+        "forecast": "از امروز به آینده (برون‌یابی داده)",
+        "backcast": "از آینده مطلوب به امروز (درون‌یابی مسیر)"
+      },
+      {
+        "aspect": "ماهیت خروجی",
+        "forecast": "توصیفی — آینده‌های محتمل",
+        "backcast": "هنجاری — آینده‌های مطلوب و شایسته"
+      },
+      {
+        "aspect": "مبنای فلسفی",
+        "forecast": "تداوم روند گذشته و وضع موجود",
+        "backcast": "عاملیت انسانی و امکان گسست ساختاری"
+      },
+      {
+        "aspect": "مدیریت عدم‌قطعیت",
+        "forecast": "کاهش عدم‌قطعیت با دقت آماری",
+        "backcast": "پذیرش عدم‌قطعیت و طراحی مسیر انطباق‌پذیر"
+      },
+      {
+        "aspect": "بهترین کاربرد",
+        "forecast": "روندهای کوتاه‌مدت با داده کافی",
+        "backcast": "بحران‌های ساختاری بلندمدت و ناترازی سیستمی"
+      }
+    ],
+    "swedenTitle": "مورد کاربردی: گذار سوئد به کربن‌صفر تا ۲۰۴۵",
+    "swedenIntro": "در ۲۰۱۶ سوئد به‌جای پیش‌بینی روندها، با پس‌نگری هدف «کربن‌صفر تا ۲۰۴۵ و حمل‌ونقل بدون فسیل تا ۲۰۳۰» را تعیین کرد و از آن نقطه به عقب برنامه‌ریزی کرد.",
+    "swedenSteps": [
+      {
+        "title": "گام آخر معکوس (۲۰۴۰–۲۰۴۵)",
+        "body": "ممنوعیت فروش خودروهای بنزینی و دیزلی، کامیون‌های برقی سنگین، و جایگزینی کک زغال‌سنگ با هیدروژن در فولادسازی."
+      },
+      {
+        "title": "گام میانی (۲۰۳۰–۲۰۴۰)",
+        "body": "کربن‌زدایی صنعت فولاد (پروژه HYBRIT)، برقی‌سازی شبکه ریلی باربری، و راه‌اندازی بورس گواهی‌های زیستی سوخت."
+      },
+      {
+        "title": "گام نزدیک (۲۰۱۶–۲۰۳۰)",
+        "body": "مالیات کربن سنگین، مشوق خرید خودرو برقی، و سرمایه‌گذاری مشترک دولت و خصوصی در تولید باتری (Northvolt)."
+      }
+    ],
+    "simulatorTag": "شبیه‌ساز مسیر معکوس",
+    "simulatorTitle": "سناریوهای هنجاری گذار ایران و تهران",
+    "simulatorSub": "یک سناریو را انتخاب کنید و گام‌های خط زمانی معکوس را ببینید.",
+    "tabTehran": "سناریو تهران ۱۴۳۰: کلان‌شهر پایدار",
+    "tabEnergy": "سناریو امنیت انرژی ۱۴۳۰: ناترازی صفر",
+    "detailPolicy": "سیاست‌ها و الزامات حاکمیتی",
+    "detailRisk": "چالش‌ها و موانع پیش‌رو",
+    "stepTitlePlaceholder": "عنوان گام زمانی",
+    "stepYearPlaceholder": "افق زمانی",
+    "stepDescPlaceholder": "شرح اقدامات راهبردی در این بازه...",
+    "stepPolicyPlaceholder": "مصوبات، قوانین و استانداردهای لازم...",
+    "stepRiskPlaceholder": "ریسک‌های لجستیکی، مالی یا فناورانه...",
+    "scenarioTitlePlaceholder": "عنوان سناریو",
+    "scenarioDescPlaceholder": "توضیحات کلی سناریو...",
+    "workspaceTag": "کارگاه استراتژی هنجاری",
+    "workspaceTitle": "کارگاه طراحی استراتژی پس‌نگری",
+    "workspaceSub": "هدف بلندمدت را تعریف کنید و گام‌های معکوس را تا امروز ترسیم کنید.",
+    "workspacePanelTitle": "پنل کارگاه پس‌نگری",
+    "templateLabel": "انتخاب قالب آماده",
+    "templateCustom": "طراحی استراتژی شخصی",
+    "templateGreen": "گذار سازمان به فناوری‌های سبز (Green Enterprise)",
+    "templateEdu": "هوشمندسازی آموزش عالی تا ۱۴۲۰",
+    "goalLabel": "هدف غایی بلندمدت (Future Endpoint)",
+    "goalPlaceholder": "مثلاً: کربن‌صفر شدن کامل کارخانه",
+    "goalDefault": "گذار کامل به انرژی پاک و فناوری کربن‌صفر",
+    "yearLabel": "سال هدف نهایی",
+    "yearPlaceholder": "مثلاً: ۱۴۲۵",
+    "yearDefault": "۱۴۲۰",
+    "step3Label": "گام ۳: افق دور (بلافاصله قبل از هدف نهایی)",
+    "step3Placeholder": "آخرین پیش‌نیازها و گام‌های بزرگ نهایی چیست؟",
+    "step2Label": "گام ۲: افق میانی (توسعه و نوسازی)",
+    "step2Placeholder": "چه تصمیمات و سرمایه‌گذاری‌های میان‌مدتی لازم است؟",
+    "step1Label": "گام ۱: افق نزدیک (اقدامات ضربتی امروز)",
+    "step1Placeholder": "اولین گام‌های اجرایی، بودجه و مجوزها چیست؟",
+    "generateBtn": "ترسیم نقشه راه پس‌نگری",
+    "previewTag": "خروجی کارگاه پس‌نگری",
+    "previewTitle": "نقشه راه معکوس به سوی هدف نهایی",
+    "renderGoalPrefix": "هدف نهایی (سال",
+    "renderHorizon3": "افق دور (گام ۳)",
+    "renderHorizon2": "افق میانی (گام ۲)",
+    "renderHorizon1": "افق نزدیک و زمان حال (گام ۱)",
+    "renderFooter": "تولید شده توسط شبیه‌ساز پس‌نگری استراتژیک",
+    "renderGoalFallback": "هدف استراتژیک شما...",
+    "renderYearFallback": "۱۴۳۰",
+    "renderH3Fallback": "توضیحات افق دور...",
+    "renderH2Fallback": "توضیحات افق میانی...",
+    "renderH1Fallback": "توضیحات افق نزدیک...",
+    "renderContentFallback": "محتوا..."
+  },
+  "bcScenarios": {
+    "tehran": {
+      "title": "تهران ۱۴۳۰: کلان‌شهر تاب‌آور و پایدار",
+      "desc": "سناریوی هنجاری گذار اکولوژیک پایتخت؛ مهار فرونشست، برقی‌سازی ترانزیت شهری، و بازچرخانی کامل آب و فاضلاب.",
+      "steps": [
+        {
+          "year": "۱۴۳۰",
+          "label": "هدف نهایی",
+          "title": "کلان‌شهر هوشمند، زیست‌بوم‌محور و کربن‌صفر",
+          "desc": "تراز کربن صفر در حمل‌ونقل و صنایع حومه‌ای، بازچرخانی ۱۰۰٪ آب و فاضلاب، توقف فرونشست دشت‌های تهران با IoT و مدیریت هوشمند.",
+          "policy": "استاندارد ردپای کربن و آب، جرایم کربن، و الزام گواهی عدم‌تولید پسماند غیرقابل بازیافت برای صنایع.",
+          "risk": "تعارض نهادهای مدیریت شهری و ملی و نوسان اقتصادی که بودجه صندوق‌های سبز را تهدید می‌کند."
+        },
+        {
+          "year": "۱۴۲۰",
+          "label": "گام ۳: افق دور",
+          "title": "برقی‌سازی ترانزیت و انسداد آبخوان‌ها",
+          "desc": "ممنوعیت خودروهای احتراق داخلی در تهران، برقی‌سازی کامل مترو و اتوبوس، تکمیل شبکه فاضلاب و پلمب چاه‌های غیرمجاز.",
+          "policy": "قانون ممنوعیت خودروهای فسیلی، مشوق مالیاتی ناوگان برقی، و استانداردهای سخت برداشت آب زیرزمینی.",
+          "risk": "اختلال در تأمین باتری و نیمه‌هادی به‌دلیل تنش‌های ژئوپلیتیک و محدودیت ارزی."
+        },
+        {
+          "year": "۱۴۱۰",
+          "label": "گام ۲: افق میانی",
+          "title": "رینگ ریلی حومه و هوشمندسازی آب",
+          "desc": "رینگ ریلی تندرو حومه‌ای، کنتور هوشمند روی چاه‌های مجاز، و جایگزینی آب زیرزمینی با پساب تصفیه‌شده در صنایع.",
+          "policy": "الزام صنایع حومه تهران به آب بازیافتی و تعرفه ترجیحی برای بهره‌وری انرژی بالا.",
+          "risk": "مقاومت کشاورزان و باغداران در برابر پلمب چاه‌ها و بازتخصیص سهم آب."
+        },
+        {
+          "year": "۱۴۰۵",
+          "label": "گام ۱: زمان حال",
+          "title": "نهاد گذار اکولوژیک و تسهیلات گمرکی",
+          "desc": "تأسیس شورای عالی گذار اکولوژیک پایتخت، سند پدافند فرونشست، تعرفه صفر تجهیزات برقی، و پایلوت انتقال پساب به کشاورزی جنوب.",
+          "policy": "لایحه صیانت از دشت‌ها، دستورالعمل BOT برای حمل‌ونقل برقی، و مشوق سرمایه‌گذاری خصوصی.",
+          "risk": "بوروکراسی بین‌وزاری و تورم که تخصیص بودجه زیرساخت را کند می‌کند."
+        }
+      ]
+    },
+    "energy": {
+      "title": "امنیت انرژی ایران ۱۴۳۰: ناترازی صفر",
+      "desc": "رفع ناترازی گاز و برق؛ راندمان بالای ۵۵٪ نیروگاه‌ها، گذار صنایع سنگین به هیدروژن سبز، و ۴۰٪ برق از منابع تجدیدپذیر.",
+      "steps": [
+        {
+          "year": "۱۴۳۰",
+          "label": "هدف نهایی",
+          "title": "امنیت انرژی پایدار و صادرات برق سبز",
+          "desc": "حذف قطعی برق، ۴۰٪ برق از خورشید و باد، شبکه هوشمند ملی، و صادرات برق تجدیدپذیر به همسایگان.",
+          "policy": "استانداردهای CBAM اروپا، جریمه آلایندگی، و آزادسازی بورس انرژی تجدیدپذیر.",
+          "risk": "تحریم فناوری و بی‌ثباتی منطقه‌ای که اتصال شبکه فرامرزی را مختل می‌کند."
+        },
+        {
+          "year": "۱۴۲۰",
+          "label": "گام ۳: افق دور",
+          "title": "مگاپروژه‌های خورشیدی و کوره‌های هیدروژنی",
+          "desc": "نیروگاه‌های خورشیدی بزرگ در کویر، بازنشستگی نیروگاه‌های کم‌راندمان، و گذار فولاد و سیمان به کوره‌های برقی هیدروژنی.",
+          "policy": "مالیات بر سوخت فسیلی صنایع ناکارآمد، معافیت ۱۰ ساله نیروگاه‌های تجدیدپذیر، و تسهیل صادرات برق.",
+          "risk": "شبکه توزیع ناکافی برای انتقال برق پراکنده جنوب به مراکز مصرف شمال."
+        },
+        {
+          "year": "۱۴۱۰",
+          "label": "گام ۲: افق میانی",
+          "title": "بورس انرژی سبز و فتوولتائیک سقفی",
+          "desc": "بورس گواهی کربن، وام کم‌بهره برای پنل سقفی خانگی، ممنوعیت پایان‌کار بدون برچسب انرژی A، و ارتقای نیروگاه‌های ترکیبی به ۵۰٪+.",
+          "policy": "قانون خرید تضمینی برق تجدیدپذیر و الزام صنایع پرمصرف به ۱۵٪ برق پاک.",
+          "risk": "یارانه سوخت فسیلی که بازگشت سرمایه پروژه‌های تجدیدپذیر را طولانی می‌کند."
+        },
+        {
+          "year": "۱۴۰۵",
+          "label": "گام ۱: زمان حال",
+          "title": "سند ملی گذار انرژی و آزادسازی توزیع",
+          "desc": "تصویب سند گذار به انرژی پاک، لغو انحصار خرید دولتی برق، و تعرفه صفر واردات پنل و توربین.",
+          "policy": "آزادسازی نرخ ترانزیت برق تجدیدپذیر و لایحه تشویق سرمایه‌گذاری خارجی.",
+          "risk": "مقاومت بدنه کارشناسی در برابر خصوصی‌سازی واقعی شبکه توزیع."
+        }
+      ]
+    }
+  },
+  "bcTemplates": {
+    "green-tech": {
+      "goal": "گذار سازمان به فناوری‌های سبز و تراز کربن و پسماند صفر در زنجیره ارزش",
+      "year": "۱۴۲۵",
+      "h3": "افق دور (۱۴۲۳–۱۴۲۵): اقتصاد چرخشی، برق ۱۰۰٪ خورشیدی، و حذف ردپای کربن زنجیره تأمین.",
+      "h2": "افق میانی (۱۴۱۵–۱۴۲۲): بازمهندسی خطوط تولید کم‌کربن، بازچرخانی آب صنعتی، و لجستیک برقی.",
+      "h1": "افق نزدیک (۱۴۰۵–۱۴۱۴): ممیزی انرژی، اوراق قرضه سبز، و کارگروه پایداری سازمانی."
+    },
+    "smart-edu": {
+      "goal": "دانشگاه تمام‌دیجیتال مبتنی بر متاورس و هوش مصنوعی، مستقل از فضاهای فیزیکی سنتی",
+      "year": "۱۴۲۰",
+      "h3": "افق دور (۱۴۱۸–۱۴۲۰): شبیه‌سازهای آموزشی، حذف آزمون متمرکز، و مدارک دیجیتال مبتنی بر بلاک‌چین.",
+      "h2": "افق میانی (۱۴۱۰–۱۴۱۷): پلتفرم ابری آموزشی، توانمندسازی ۸۰٪ هیئت علمی، و تبدیل فضاها به هاب نوآوری.",
+      "h1": "افق نزدیک (۱۴۰۵–۱۴۰۹): برنامه درسی AI، دوره‌های VR آزمایشی، و لغو تدریجی آزمون کاغذی."
+    }
+  },
+  "catalog": {
+    "title": "کاتالوگ جامع متدهای آینده‌پژوهی",
+    "subtitle": "متدهای مهم آینده‌پژوهی، آینده‌نگاری و آینده‌پژوهی راهبردی — بر اساس FRM 3.0، APF و تجربه تدریس",
+    "categories": [
+      {
+        "id": "interactive",
+        "title": "کارگاه‌های تعاملی",
+        "desc": "ابزار دیجیتال با شبیه‌ساز و تمرین عملی",
+        "methods": [
+          {
+            "id": "fitness",
+            "slug": "fitness.html",
+            "icon": "zap",
+            "status": "interactive",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "cla",
+            "slug": "cla.html",
+            "icon": "layers",
+            "status": "interactive",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "futures-wheel",
+            "slug": "futures-wheel.html",
+            "icon": "orbit",
+            "status": "interactive",
+            "color": "var(--color-wheel-red)"
+          },
+          {
+            "id": "backcasting",
+            "slug": "backcasting.html",
+            "icon": "history",
+            "status": "interactive",
+            "color": "var(--color-i)"
+          }
+        ]
+      },
+      {
+        "id": "frameworks",
+        "title": "چارچوب‌های راهبردی",
+        "desc": "مسیر عملیاتی مدیران و کیفیت foresight",
+        "methods": [
+          {
+            "id": "popper-diamond",
+            "slug": "popper-diamond.html",
+            "icon": "gem",
+            "status": "lesson",
+            "color": "#e040fb"
+          },
+          {
+            "id": "six-pillars",
+            "slug": "strategic-foresight.html",
+            "icon": "columns-3",
+            "status": "lesson",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "scenario-planning",
+            "slug": "scenarios.html",
+            "icon": "git-branch",
+            "status": "lesson",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "futurpreneurship",
+            "slug": "futurpreneurship.html",
+            "icon": "rocket",
+            "status": "lesson",
+            "color": "var(--color-i)"
+          },
+          {
+            "id": "three-horizons",
+            "slug": null,
+            "icon": "layers-3",
+            "status": "catalog",
+            "color": "#7c4dff"
+          },
+          {
+            "id": "futures-literacy",
+            "slug": null,
+            "icon": "book-open",
+            "status": "catalog",
+            "color": "#4caf50"
+          }
+        ]
+      },
+      {
+        "id": "scanning",
+        "title": "رصد و حس‌گری محیطی",
+        "desc": "شناسایی سیگنال، روند و مسائل نوظهور",
+        "methods": [
+          {
+            "id": "environmental-scanning",
+            "slug": null,
+            "icon": "scan-search",
+            "status": "catalog",
+            "color": "#4caf50"
+          },
+          {
+            "id": "horizon-scanning",
+            "slug": null,
+            "icon": "telescope",
+            "status": "catalog",
+            "color": "#00e5ff"
+          },
+          {
+            "id": "weak-signals",
+            "slug": null,
+            "icon": "radio",
+            "status": "catalog",
+            "color": "#ffaa00"
+          },
+          {
+            "id": "steep-pestle",
+            "slug": null,
+            "icon": "grid-3x3",
+            "status": "catalog",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "trend-analysis",
+            "slug": null,
+            "icon": "trending-up",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "megatrends",
+            "slug": null,
+            "icon": "globe-2",
+            "status": "catalog",
+            "color": "#7c4dff"
+          },
+          {
+            "id": "emerging-issues",
+            "slug": null,
+            "icon": "sparkles",
+            "status": "catalog",
+            "color": "#e040fb"
+          }
+        ]
+      },
+      {
+        "id": "expert",
+        "title": "روش‌های خبره‌محور",
+        "desc": "جمع‌آوری و ترکیب دانش متخصصان",
+        "methods": [
+          {
+            "id": "delphi",
+            "slug": null,
+            "icon": "users",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "real-time-delphi",
+            "slug": null,
+            "icon": "messages-square",
+            "status": "catalog",
+            "color": "#7c4dff"
+          },
+          {
+            "id": "expert-panels",
+            "slug": null,
+            "icon": "user-check",
+            "status": "catalog",
+            "color": "#4caf50"
+          },
+          {
+            "id": "brainstorming",
+            "slug": null,
+            "icon": "lightbulb",
+            "status": "catalog",
+            "color": "#ffaa00"
+          },
+          {
+            "id": "nominal-group",
+            "slug": null,
+            "icon": "list-ordered",
+            "status": "catalog",
+            "color": "var(--color-cla)"
+          }
+        ]
+      },
+      {
+        "id": "analysis",
+        "title": "تحلیل ساختاری و پیامدی",
+        "desc": "مدل‌سازی روابط، پیامدها و ساختار مسئله",
+        "methods": [
+          {
+            "id": "morphological-analysis",
+            "slug": null,
+            "icon": "table-2",
+            "status": "catalog",
+            "color": "#e040fb"
+          },
+          {
+            "id": "cross-impact",
+            "slug": null,
+            "icon": "network",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "relevance-tree",
+            "slug": null,
+            "icon": "git-fork",
+            "status": "catalog",
+            "color": "#4caf50"
+          },
+          {
+            "id": "systems-thinking",
+            "slug": null,
+            "icon": "workflow",
+            "status": "catalog",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "causal-layered",
+            "slug": "cla.html",
+            "icon": "layers",
+            "status": "interactive",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "futures-wheel-ref",
+            "slug": "futures-wheel.html",
+            "icon": "orbit",
+            "status": "interactive",
+            "color": "var(--color-wheel-red)"
+          }
+        ]
+      },
+      {
+        "id": "visioning",
+        "title": "تصویرسازی و سناریو",
+        "desc": "ساخت آینده‌های محتمل و مطلوب",
+        "methods": [
+          {
+            "id": "scenario-2x2",
+            "slug": "scenarios.html",
+            "icon": "layout-grid",
+            "status": "lesson",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "visioning",
+            "slug": null,
+            "icon": "eye",
+            "status": "catalog",
+            "color": "#ffaa00"
+          },
+          {
+            "id": "wind-tunneling",
+            "slug": null,
+            "icon": "wind",
+            "status": "catalog",
+            "color": "#7c4dff"
+          },
+          {
+            "id": "cone-plausibility",
+            "slug": null,
+            "icon": "triangle",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "backcasting-ref",
+            "slug": "backcasting.html",
+            "icon": "history",
+            "status": "interactive",
+            "color": "var(--color-i)"
+          }
+        ]
+      },
+      {
+        "id": "planning",
+        "title": "برنامه‌ریزی و اقدام",
+        "desc": "از بینش به roadmap و اجرا",
+        "methods": [
+          {
+            "id": "roadmapping",
+            "slug": null,
+            "icon": "map",
+            "status": "catalog",
+            "color": "var(--color-f)"
+          },
+          {
+            "id": "technology-roadmap",
+            "slug": null,
+            "icon": "cpu",
+            "status": "catalog",
+            "color": "#4caf50"
+          },
+          {
+            "id": "indicators",
+            "slug": null,
+            "icon": "gauge",
+            "status": "catalog",
+            "color": "#ffaa00"
+          },
+          {
+            "id": "decision-support",
+            "slug": null,
+            "icon": "scale",
+            "status": "catalog",
+            "color": "var(--color-cla)"
+          },
+          {
+            "id": "simulation-gaming",
+            "slug": null,
+            "icon": "gamepad-2",
+            "status": "catalog",
+            "color": "#e040fb"
+          }
+        ]
+      }
+    ],
+    "statusLabels": {
+      "interactive": "کارگاه تعاملی",
+      "lesson": "ماژول درس",
+      "catalog": "کاتالوگ"
+    },
+    "entries": {
+      "fitness": {
+        "title": "Future FITness",
+        "founder": "René Rohrbeck",
+        "desc": "مدل بلوغ foresight سازمانی — Perceiving، Prospecting، Probing و خودارزیابی ۵ بعدی."
+      },
+      "cla": {
+        "title": "تحلیل لایه‌ای علت‌ها (CLA)",
+        "founder": "Sohail Inayatullah",
+        "desc": "واسازی Litany، Systemic، Worldview و Myth — هرم تعاملی و کارگاه استعاره."
+      },
+      "futures-wheel": {
+        "title": "چرخ آینده",
+        "founder": "Jerome C. Glenn",
+        "desc": "نگاشت پیامدهای مرتبه ۱–۳، مدل STEEP و درخت شعاعی تغییر اقلیم."
+      },
+      "backcasting": {
+        "title": "پس‌نگری (Backcasting)",
+        "founder": "John B. Robinson",
+        "desc": "طراحی آینده هنجاری و مسیر معکوس از آرمان‌شهر به امروز."
+      },
+      "popper-diamond": {
+        "title": "الماس پوپر",
+        "founder": "Rafael Popper",
+        "desc": "ارزیابی کیفیت foresight: Creativity، Innovation، Expertise، Interaction."
+      },
+      "six-pillars": {
+        "title": "شش ستون هاینز و بی‌شاپ",
+        "founder": "Andy Hines & Peter Bishop",
+        "desc": "Framing → Scanning → Forecasting → Visioning → Planning → Acting."
+      },
+      "scenario-planning": {
+        "title": "سناریوسازی استراتژیک",
+        "founder": "Shell / Peter Schwartz",
+        "desc": "عدم‌قطعیت‌های حیاتی، ماتریس ۲×۲، early indicators و تصمیم‌سازی."
+      },
+      "futurpreneurship": {
+        "title": "Futurpreneurship",
+        "founder": "Foresight × Venture",
+        "desc": "از weak signal به MVP — کارآفرینی آینده‌محور."
+      },
+      "three-horizons": {
+        "title": "Three Horizons",
+        "founder": "Curry & Hodgson",
+        "desc": "H1/H2/H3 — مدیریت گذار از کسب‌وکار فعلی به آینده‌های نوظهور."
+      },
+      "futures-literacy": {
+        "title": "Futures Literacy",
+        "founder": "Riel Miller (UNESCO)",
+        "desc": "توانایی تصور و استفاده از آینده‌ها در تصمیم‌گیری روزمره."
+      },
+      "environmental-scanning": {
+        "title": "Environmental Scanning",
+        "founder": "Aguilar / Choo",
+        "desc": "رصد سیستماتیک محیط برای شناسایی فرصت‌ها و تهدیدها."
+      },
+      "horizon-scanning": {
+        "title": "Horizon Scanning",
+        "founder": "UK Government Office for Science",
+        "desc": "شناسایی مسائل و فناوری‌های نوظهور در افق ۵–۲۰ ساله."
+      },
+      "weak-signals": {
+        "title": "Weak Signals",
+        "founder": "Ansoff / Hiltunen",
+        "desc": "سیگنال‌های ضعیف و wild cards — پیش‌درآمد تغییرات بزرگ."
+      },
+      "steep-pestle": {
+        "title": "STEEP / PESTLE",
+        "founder": "Millennium Project",
+        "desc": "تحلیل محیطی در ابعاد اجتماعی، فناوری، اقتصادی، زیست‌محیطی، سیاسی."
+      },
+      "trend-analysis": {
+        "title": "Trend Analysis",
+        "founder": "FRM / APF",
+        "desc": "شناسایی، extrapolation و cone of plausibility برای روندها."
+      },
+      "megatrends": {
+        "title": "Megatrends Analysis",
+        "founder": "Naisbitt / Z_punkt",
+        "desc": "روندهای بزرگ ساختاری که جهان را در مقیاس دهه‌ای شکل می‌دهند."
+      },
+      "emerging-issues": {
+        "title": "Emerging Issues Analysis",
+        "founder": "Glenn & Gordon",
+        "desc": "مسائل نوظهور قبل از تبدیل شدن به بحران یا فرصت."
+      },
+      "delphi": {
+        "title": "Delphi Method",
+        "founder": "Dalkey & Helmer (RAND)",
+        "desc": "نظرسنجی چرخه‌ای ناشناس خبرگان برای consensus و uncertainty."
+      },
+      "real-time-delphi": {
+        "title": "Real-Time Delphi",
+        "founder": "Gordon & Pease",
+        "desc": "دلفی آنلاین با بازخورد لحظه‌ای — نسخه دیجیتال کلاسیک."
+      },
+      "expert-panels": {
+        "title": "Expert Panels",
+        "founder": "FRM Ch. 8",
+        "desc": "جلسات ساختاریافته با پنل خبرگان برای exploration و validation."
+      },
+      "brainstorming": {
+        "title": "Brainstorming & Ideation",
+        "founder": "Osborn",
+        "desc": "تولید ایده بدون قضاوت — پایه خلاقیت در foresight."
+      },
+      "nominal-group": {
+        "title": "Nominal Group Technique",
+        "founder": "Delbecq & Van de Ven",
+        "desc": "ترکیب نوشتن فردی و رأی‌گیری گروهی برای اولویت‌بندی."
+      },
+      "morphological-analysis": {
+        "title": "Morphological Analysis",
+        "founder": "Fritz Zwicky",
+        "desc": "تجزیه مسئله به پارامترها و ترکیب‌های ممکن — coverage فضای آینده."
+      },
+      "cross-impact": {
+        "title": "Cross-Impact Analysis",
+        "founder": "Gordon & Helmer",
+        "desc": "ماتریس تأثیر متقابل رویدادها — MICMAC و structural analysis."
+      },
+      "relevance-tree": {
+        "title": "Relevance Tree",
+        "founder": "FRM Ch. 14",
+        "desc": "درخت هدف-وسیله برای شکستن مسئله به زیرمسائل قابل تحلیل."
+      },
+      "systems-thinking": {
+        "title": "Systems Thinking",
+        "founder": "Senge / Meadows",
+        "desc": "درک feedback loops، leverage points و رفتار سیستم‌های پیچیده."
+      },
+      "causal-layered": {
+        "title": "CLA (مرجع)",
+        "founder": "Inayatullah",
+        "desc": "→ کارگاه تعاملی CLA"
+      },
+      "futures-wheel-ref": {
+        "title": "Futures Wheel (مرجع)",
+        "founder": "Glenn",
+        "desc": "→ شبیه‌ساز چرخ آینده"
+      },
+      "scenario-2x2": {
+        "title": "Scenario 2×2 Matrix",
+        "founder": "Schwartz / van der Heijden",
+        "desc": "→ ماژول سناریوسازی"
+      },
+      "visioning": {
+        "title": "Visioning",
+        "founder": "FRM Ch. 20",
+        "desc": "ساخت تصاویر آینده مطلوب برای mobilization و alignment."
+      },
+      "wind-tunneling": {
+        "title": "Wind Tunneling",
+        "founder": "Schwartz / Ogilvy",
+        "desc": "آزمون استراتژی فعلی در برابر سناریوهای مختلف."
+      },
+      "cone-plausibility": {
+        "title": "Cone of Plausibility",
+        "founder": "Hines & Bishop",
+        "desc": "محدود کردن فضای آینده به loوlikely، plausible و possible."
+      },
+      "backcasting-ref": {
+        "title": "Backcasting (مرجع)",
+        "founder": "Robinson",
+        "desc": "→ شبیه‌ساز پس‌نگری"
+      },
+      "roadmapping": {
+        "title": "Roadmapping",
+        "founder": "Phaal / Battelle",
+        "desc": "نقشه راه بصری از قابلیت‌ها، فناوری و محصول در زمان."
+      },
+      "technology-roadmap": {
+        "title": "Technology Roadmapping",
+        "founder": "Phaal et al.",
+        "desc": "TRM — هم‌راستایی فناوری با استراتژی و بازار."
+      },
+      "indicators": {
+        "title": "Indicators & Early Warning",
+        "founder": "FRM Ch. 38",
+        "desc": "شاخص‌های leading برای رصد فعال شدن سناریوها."
+      },
+      "decision-support": {
+        "title": "Decision Support",
+        "founder": "FRM Ch. 37",
+        "desc": "تبدیل بینش foresight به گزینه‌های تصمیم برای مدیران."
+      },
+      "simulation-gaming": {
+        "title": "Simulation & Gaming",
+        "founder": "FRM Ch. 36",
+        "desc": "بازی‌های سناریومحور برای یادگیری و آزمون استراتژی."
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     
     <!-- Custom Style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -28,15 +28,9 @@
             <span class="logo-icon"><i data-lucide="compass"></i></span>
             <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
         </div>
-        <nav class="nav-links">
-            <a href="index.html" class="active" data-i18n="nav.home">صفحه نخست</a>
-            <a href="fitness.html" data-i18n="nav.fitness">آمادگی و تناسب (FITness)</a>
-            <a href="cla.html" data-i18n="nav.cla">تحلیل لایه‌ای علت‌ها (CLA)</a>
-            <a href="futures-wheel.html" data-i18n="nav.wheel">چرخ آینده (Futures Wheel)</a>
-            <a href="backcasting.html" data-i18n="nav.backcast">پس‌نگری (Backcasting)</a>
-        </nav>
+        <nav class="nav-links"></nav>
         <div class="header-actions">
-            <a href="fitness.html#assessment" class="btn-primary-sm" data-i18n="nav.assess">ارزیابی بلوغ سازمان</a>
+            <a href="methods/fitness.html#assessment" class="btn-primary-sm" data-i18n="nav.assess">ارزیابی بلوغ سازمان</a>
         </div>
     </header>
 
@@ -74,17 +68,41 @@
         </div>
     </section>
 
+    <!-- Personal Brand -->
+    <section class="container brand-section" style="padding-bottom: 40px;">
+        <div class="glass-card brand-card" style="padding: 40px; border-inline-start: 4px solid var(--color-f);">
+            <div class="section-header" style="margin-bottom: 24px;">
+                <span class="section-tag" data-i18n="brand.tag">پرسونال برند</span>
+                <h2 data-i18n="brand.heroTitle">علی منصوری</h2>
+                <p data-i18n="brand.heroSub" style="max-width: 720px; margin: 12px auto 0; color: var(--text-secondary); line-height: 1.7;"></p>
+            </div>
+            <div class="workspace-grid" style="grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: start;">
+                <div>
+                    <h3 style="color: #fff; font-size: 1.15rem; margin-bottom: 12px;" data-i18n="brand.bioTitle">معرفی</h3>
+                    <p data-i18n="brand.bioP1" data-i18n-html style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 14px;"></p>
+                    <p data-i18n="brand.bioP2" data-i18n-html style="line-height: 1.8; color: var(--text-secondary);"></p>
+                    <div style="display: flex; flex-wrap: gap: 12px; margin-top: 24px;">
+                        <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="btn-primary-sm"><i data-lucide="file-text"></i> <span data-i18n="brand.ctaResume">رزومه کامل</span></a>
+                        <a href="about/" class="btn-ghost-sm"><i data-lucide="user"></i> <span data-i18n="nav.about">درباره من</span></a>
+                        <a href="articles/" class="btn-ghost-sm"><i data-lucide="newspaper"></i> <span data-i18n="nav.articles">مقالات</span></a>
+                    </div>
+                </div>
+                <div id="brand-focus-grid" class="hub-cards-grid" style="grid-template-columns: 1fr;"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Hub Cards Section -->
     <section class="container" style="padding-top: 20px; padding-bottom: 100px;">
         <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-            <span class="section-tag" data-i18n="index.pillarsTag">بخش‌های سه‌گانه اصلی</span>
-            <h2 data-i18n="index.pillarsTitle">ارکان آینده‌پژوهی استراتژیک</h2>
-            <p data-i18n="index.pillarsSub">یکی از ارکان سه‌گانه متدولوژی را جهت ورود به محیط تعاملی، شبیه‌سازی و مطالعه نمونه‌های عملی انتخاب کنید.</p>
+            <span class="section-tag" data-i18n="index.coreTag">لایه ۱ — کارگاه تعاملی</span>
+            <h2 data-i18n="index.coreTitle">چهار ابزار اصلی</h2>
+            <p data-i18n="index.coreSub">محیط‌های شبیه‌سازی و کارگاه دیجیتال — هر کدام با طرح درس کامل و تمرین عملی.</p>
         </div>
 
         <div class="hub-cards-grid">
             <!-- FITness Card -->
-            <div class="hub-card glass-card card-fitness" onclick="location.href='fitness.html'">
+            <div class="hub-card glass-card card-fitness" onclick="location.href='methods/fitness.html'">
                 <div class="card-icon"><i data-lucide="zap"></i></div>
                 <h3 data-i18n="hub.fitnessTitle">آمادگی و تناسب با آینده (FITness)</h3>
                 <p data-i18n="hub.fitnessDesc">
@@ -94,7 +112,7 @@
             </div>
 
             <!-- CLA Card -->
-            <div class="hub-card glass-card card-cla" onclick="location.href='cla.html'">
+            <div class="hub-card glass-card card-cla" onclick="location.href='methods/cla.html'">
                 <div class="card-icon"><i data-lucide="layers"></i></div>
                 <h3 data-i18n="hub.claTitle">تحلیل لایه‌ای علت‌ها (CLA)</h3>
                 <p data-i18n="hub.claDesc">
@@ -104,7 +122,7 @@
             </div>
 
             <!-- Futures Wheel Card -->
-            <div class="hub-card glass-card card-wheel" onclick="location.href='futures-wheel.html'">
+            <div class="hub-card glass-card card-wheel" onclick="location.href='methods/futures-wheel.html'">
                 <div class="card-icon"><i data-lucide="orbit"></i></div>
                 <h3 data-i18n="hub.wheelTitle">چرخ آینده (Futures Wheel)</h3>
                 <p data-i18n="hub.wheelDesc">
@@ -114,7 +132,7 @@
             </div>
 
             <!-- Backcasting Card -->
-            <div class="hub-card glass-card card-backcast" onclick="location.href='backcasting.html'">
+            <div class="hub-card glass-card card-backcast" onclick="location.href='methods/backcasting.html'">
                 <div class="card-icon"><i data-lucide="history"></i></div>
                 <h3 data-i18n="hub.backcastTitle">پس‌نگری و نگاشت معکوس (Backcasting)</h3>
                 <p data-i18n="hub.backcastDesc">
@@ -123,6 +141,43 @@
                 <span class="hub-card-link"><span data-i18n="hub.backcastLink">ورود به شبیه‌ساز پس‌نگری</span> <i data-lucide="arrow-left"></i></span>
             </div>
         </div>
+
+        <!-- Extended Methods -->
+        <div class="section-header" style="text-align: center; margin: 60px 0 30px;">
+            <span class="section-tag" style="color: var(--color-t);" data-i18n="index.extendedTag">لایه ۲ — گسترش کاتالوگ</span>
+            <h2 data-i18n="index.extendedTitle">متدهای تکمیلی</h2>
+            <p style="color: var(--text-secondary); max-width: 640px; margin: 10px auto 0; font-size: 0.95rem;" data-i18n="index.extendedSub"></p>
+            <p style="color: var(--text-secondary); max-width: 640px; margin: 8px auto 0; font-size: 0.88rem;" data-i18n="index.extendedNote" data-i18n-html></p>
+        </div>
+        <div class="hub-cards-grid">
+            <div class="hub-card glass-card" onclick="location.href='methods/popper-diamond.html'" style="border-top: 3px solid #e040fb;">
+                <div class="card-icon"><i data-lucide="gem"></i></div>
+                <h3 data-i18n="hubAdvanced.popperTitle">الماس پوپر</h3>
+                <p data-i18n="hubAdvanced.popperDesc"></p>
+                <span class="hub-card-link"><span data-i18n="hubAdvanced.popperLink">ورود</span> <i data-lucide="arrow-left"></i></span>
+            </div>
+            <div class="hub-card glass-card" onclick="location.href='methods/strategic-foresight.html'" style="border-top: 3px solid var(--color-f);">
+                <div class="card-icon"><i data-lucide="columns-3"></i></div>
+                <h3 data-i18n="hubAdvanced.hinesTitle">شش ستون هاینز و بی‌شاپ</h3>
+                <p data-i18n="hubAdvanced.hinesDesc"></p>
+                <span class="hub-card-link"><span data-i18n="hubAdvanced.hinesLink">ورود</span> <i data-lucide="arrow-left"></i></span>
+            </div>
+            <div class="hub-card glass-card" onclick="location.href='methods/scenarios.html'" style="border-top: 3px solid var(--color-cla);">
+                <div class="card-icon"><i data-lucide="git-branch"></i></div>
+                <h3 data-i18n="hubAdvanced.scenariosTitle">سناریوسازی</h3>
+                <p data-i18n="hubAdvanced.scenariosDesc"></p>
+                <span class="hub-card-link"><span data-i18n="hubAdvanced.scenariosLink">ورود</span> <i data-lucide="arrow-left"></i></span>
+            </div>
+            <div class="hub-card glass-card" onclick="location.href='methods/futurpreneurship.html'" style="border-top: 3px solid var(--color-i);">
+                <div class="card-icon"><i data-lucide="rocket"></i></div>
+                <h3 data-i18n="hubAdvanced.futurTitle">Futurpreneurship</h3>
+                <p data-i18n="hubAdvanced.futurDesc"></p>
+                <span class="hub-card-link"><span data-i18n="hubAdvanced.futurLink">ورود</span> <i data-lucide="arrow-left"></i></span>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 24px;">
+            <a href="methods/" class="btn-primary-sm"><i data-lucide="library"></i> <span data-i18n="hubAdvanced.catalogLink">مشاهده کاتالوگ کامل</span></a>
+        </p>
 
         <!-- Integration Model Section -->
         <div class="integration-section glass-card" style="margin-top: 60px; padding: 40px;">
@@ -214,7 +269,7 @@
                 <div class="profile-header">
                     <div class="profile-avatar"><i data-lucide="user"></i></div>
                     <div class="profile-title">
-                        <h4>علی منصوری</h4>
+                        <h4 data-i18n="brand.heroTitle">علی منصوری</h4>
                         <p data-i18n="footer.role">دانشجوی دکتری آینده‌پژوهی دانشگاه تهران</p>
                     </div>
                 </div>
@@ -231,10 +286,13 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="i18n.js"></script>
-    <script src="i18n-pages.js"></script>
-    <script src="shared.js"></script>
-    <script src="main.js"></script>
-    <script src="animation.js"></script>
+    <script src="js/core/paths.js"></script>
+    <script src="js/core/i18n.js"></script>
+    <script src="js/core/load-locales.js"></script>
+    <script src="js/core/i18n-render.js"></script>
+    <script src="js/core/shared.js"></script>
+
+    <script src="js/core/animation.js"></script>
+    <script src="js/core/main.js"></script>
 </body>
 </html>

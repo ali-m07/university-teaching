@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futures Wheel | چرخ آینده پیامدها</title>
+    <!-- Google Fonts: Vazirmatn for Persian, Plus Jakarta Sans for English/Numbers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+        </div>
+        <nav class="nav-links"></nav>
+        <div class="header-actions">
+            <a href="fitness.html#assessment" class="btn-primary-sm" data-i18n="nav.assess">ارزیابی بلوغ سازمان</a>
+        </div>
+    </header>
+
+    <!-- Hero / Header Section -->
+    <section class="container" style="padding-top: 130px; padding-bottom: 20px; text-align: center;">
+        <span class="section-tag" style="background: rgba(255, 51, 0, 0.08); color: var(--color-wheel-red); border-color: rgba(255, 51, 0, 0.2);" data-i18n="wheelPage.heroTag">جروم گلن</span>
+        <h1 style="font-size: 2.5rem; margin-top: 10px; margin-bottom: 15px; color: #fff;" data-i18n="wheelPage.heroTitle">شبیه‌ساز تعاملی چرخ آینده (Futures Wheel)</h1>
+        <p style="max-width: 800px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;" data-i18n="wheelPage.heroSub">
+            متدولوژی شناسایی پیامدهای علّی متوالی؛ ردیابی و تحلیل زنجیره‌ای آثار مرتبه اول، دوم و سوم بحران زیست‌محیطی تغییر اقلیم در ایران.
+        </p>
+    </section>
+
+    <div class="container">
+        <div id="wheel-history"></div>
+        <div id="lesson-section" data-lesson-key="wheel"></div>
+    </div>
+
+    <!-- Interactive Futures Wheel: Cascade View + Workshop -->
+    <section id="futures-wheel" class="wheel-section container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="wheel-mode-bar">
+            <button type="button" class="wheel-mode-btn active" data-wheel-mode="demo" onclick="setWheelMode('demo')">
+                <i data-lucide="book-open"></i>
+                <span data-i18n="wheelWorkshop.modeDemo">مثال آموزشی</span>
+            </button>
+            <button type="button" class="wheel-mode-btn" data-wheel-mode="workshop" onclick="setWheelMode('workshop')">
+                <i data-lucide="pencil-ruler"></i>
+                <span data-i18n="wheelWorkshop.modeWorkshop">کارگاه تعاملی</span>
+            </button>
+        </div>
+
+        <div class="wheel-interactive-container glass-card">
+            <!-- Workshop builder (hidden in demo mode) -->
+            <aside class="wheel-workshop-panel" id="wheel-workshop-panel" hidden>
+                <div class="wheel-workshop-header">
+                    <h3 data-i18n="wheelWorkshop.title">کارگاه ترسیم چرخ آینده</h3>
+                    <p data-i18n="wheelWorkshop.sub">مسئله محوری و پیامدهای هر مرتبه را وارد کنید؛ چرخ به‌صورت خودکار ترسیم می‌شود.</p>
+                </div>
+
+                <label class="ws-field">
+                    <span data-i18n="wheelWorkshop.hubLabel">مسئله / رویداد محوری</span>
+                    <input type="text" id="ws-hub-title" data-i18n-placeholder="wheelWorkshop.hubPlaceholder" placeholder="مثلاً: هوش مصنوعی در آموزش عالی">
+                </label>
+                <label class="ws-field">
+                    <span data-i18n="wheelWorkshop.hubSubLabel">توضیح کوتاه (اختیاری)</span>
+                    <input type="text" id="ws-hub-sub" data-i18n-placeholder="wheelWorkshop.hubSubPlaceholder" placeholder="مثلاً: گسترش LLM در دانشگاه‌ها">
+                </label>
+
+                <div class="ws-branches-head">
+                    <strong data-i18n="wheelWorkshop.branchesTitle">پیامدهای مرتبه اول</strong>
+                    <button type="button" class="btn-ghost-sm" id="ws-add-branch" onclick="addWorkshopBranch()">
+                        <i data-lucide="plus"></i>
+                        <span data-i18n="wheelWorkshop.addBranch">افزودن شاخه</span>
+                    </button>
+                </div>
+                <div id="ws-branches-list" class="ws-branches-list"></div>
+
+                <div class="ws-actions">
+                    <button type="button" class="btn-primary-sm" id="ws-build-btn" onclick="buildWorkshopWheel()">
+                        <i data-lucide="git-branch"></i>
+                        <span data-i18n="wheelWorkshop.build">ترسیم چرخ</span>
+                    </button>
+                    <button type="button" class="btn-ghost-sm" onclick="loadDemoIntoWorkshop()">
+                        <span data-i18n="wheelWorkshop.loadDemo">بارگذاری مثال اقلیم</span>
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Cascade visualization -->
+            <div class="wheel-viz-column">
+                <div class="wheel-cascade-scroll">
+                    <div class="wheel-cascade" id="wheel-cascade" aria-live="polite"></div>
+                </div>
+                <p class="wheel-cascade-hint" data-i18n="wheelWorkshop.cascadeHint">روی هر پیامد مرتبه اول کلیک کنید تا جزئیات در کنار نمایش داده شود.</p>
+            </div>
+
+            <!-- Detail Sidebar -->
+            <div class="wheel-sidebar">
+                <div class="wheel-sidebar-default active" id="wheel-sidebar-default">
+                    <div class="wheel-pulse-icon"><i data-lucide="compass"></i></div>
+                    <h3 data-i18n="wheel.sidebarTitle">شبکه پیامدها و تاثیرات پنهان</h3>
+                    <p data-i18n="wheelWorkshop.sidebarSub">یکی از پیامدهای مرتبه اول را انتخاب کنید تا زنجیره مرتبه دوم و سوم آن برجسته شود.</p>
+                </div>
+
+                <div class="wheel-sidebar-detail" id="wheel-sidebar-detail" style="display: none;">
+                    <button class="btn-close" onclick="closeWheelDetail()"><i data-lucide="x"></i></button>
+                    <span class="tech-tag" id="wheel-detail-tag">مرتبه اول</span>
+                    <h3 id="wheel-detail-title">عنوان پیامد</h3>
+                    <p class="tech-desc" id="wheel-detail-desc">توضیح مرتبه اول...</p>
+
+                    <div class="wheel-chain-wrapper">
+                        <div class="wheel-chain-card w-c2">
+                            <span class="lbl-order" id="wheel-chain-2-label" data-i18n="wheel.chain2">پیامدهای مرتبه دوم</span>
+                            <p id="wheel-2nd-text">توضیح...</p>
+                        </div>
+                        <div class="wheel-chain-card w-c3">
+                            <span class="lbl-order" id="wheel-chain-3-label" data-i18n="wheel.chain3">پیامدهای مرتبه سوم</span>
+                            <p id="wheel-3rd-text">توضیح...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Case Study (Boeing) — rendered from i18n -->
+    <section id="wheel-case-study" class="container" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="glass-card" style="padding: 30px; border-right: 4px solid var(--color-f); background: rgba(0, 229, 255, 0.02);" id="wheel-boeing-mount"></div>
+    </section>
+
+    <!-- Reference Diagram Section -->
+    <section class="container" style="padding-top: 20px; padding-bottom: 40px; border-top: 1px solid var(--card-border);">
+        <div class="glass-card workspace-grid" style="align-items: center; border-color: rgba(255, 51, 0, 0.2);">
+            <div>
+                <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 15px;" data-i18n="wheelPage.diagramTitle">نمودار مفهومی پیامدهای امنیتی تغییر اقلیم در ایران</h3>
+                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); text-align: justify; margin-bottom: 15px;" data-i18n="wheelPage.diagramP1"></p>
+                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); text-align: justify;" data-i18n="wheelPage.diagramP2"></p>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; padding: 10px; overflow: hidden; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid var(--card-border); width: 100%;">
+                <img src="../assets/upload_2.png" alt="Reference Futures Wheel Diagram" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 30px rgba(255, 51, 0, 0.15);" />
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW Section: Types of Futures Wheel Models -->
+    <section id="wheel-models" class="models-section container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="section-header">
+            <span class="section-tag-cla" data-i18n="wheelPage.modelsTag">متدولوژی توسعه‌یافته</span>
+            <h2 data-i18n="wheelPage.modelsTitle">تنوع مدل‌ها و الگوهای توسعه چرخ آینده</h2>
+            <p data-i18n="wheelPage.modelsSub">در پروژه‌های پیشرفته، چهار رویکرد مدلسازی کلیدی وجود دارد.</p>
+        </div>
+
+        <div class="models-tabs-container">
+            <button class="model-tab active" onclick="switchModelTab('classic')">
+                <i data-lucide="circle-dot"></i> <span data-i18n="wheelPage.tabClassic">مدل کلاسیک</span>
+            </button>
+            <button class="model-tab" onclick="switchModelTab('structured')">
+                <i data-lucide="grid"></i> <span data-i18n="wheelPage.tabStructured">مدل ساختاریافته STEEP</span>
+            </button>
+            <button class="model-tab" onclick="switchModelTab('quantitative')">
+                <i data-lucide="bar-chart-3"></i> <span data-i18n="wheelPage.tabQuantitative">مدل کمی‌سازی‌شده</span>
+            </button>
+            <button class="model-tab" onclick="switchModelTab('action')">
+                <i data-lucide="shield-check"></i> <span data-i18n="wheelPage.tabAction">مدل عمل‌گرا (Policy)</span>
+            </button>
+        </div>
+
+        <div class="model-content-card glass-card" id="model-content-card">
+            <!-- Will be dynamically filled by futures-wheel.js -->
+        </div>
+
+        <!-- 11-Step Process -->
+        <div class="wheel-steps-container" style="margin-top: 60px;">
+            <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                <span class="section-tag-cla" style="background: rgba(0, 229, 255, 0.08); color: var(--color-f); border-color: rgba(0, 229, 255, 0.2);" data-i18n="wheelPage.processTag">فرآیند اجرایی</span>
+                <h3 style="font-size: 1.5rem; margin-top: 10px; color: #fff;" data-i18n="wheelPage.processTitle">۱۱ گام عملیاتی ترسیم و اجرای چرخ آینده</h3>
+            </div>
+            
+            <div id="wheel-steps-grid" class="steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;"></div>
+        </div>
+
+        <!-- Citation details -->
+        <div class="citation-box glass-card">
+            <h4><i data-lucide="link"></i> <span data-i18n="citations.wheelTitle">مرجع متدولوژی و مطالعه روش‌شناختی چرخ آینده:</span></h4>
+            <p data-i18n="citations.wheelBody" data-i18n-html style="margin-top: 8px;"></p>
+        </div>
+    </section>
+
+    <!-- Methodological Depth -->
+    <section class="container method-depth-section" style="padding-bottom: 60px;">
+        <div class="glass-card" style="padding: 40px; border-color: rgba(255, 51, 0, 0.15);">
+            <div class="section-header" style="margin-bottom: 24px;">
+                <span class="section-tag" style="color: var(--color-wheel-red);" data-i18n="wheelDepth.tag">عمق اجرای چرخ آینده</span>
+                <h2 data-i18n="wheelDepth.title">فرآیند ۱۱ مرحله‌ای Glenn Futures Wheel</h2>
+            </div>
+            <div class="depth-grid">
+                <div class="depth-card"><div class="depth-num">01</div><p data-i18n="wheelDepth.s1">تعریف رویداد/تصمیم محوری و تشکیل تیم خبرگان چندتخصصی.</p></div>
+                <div class="depth-card"><div class="depth-num">02</div><p data-i18n="wheelDepth.s2">طوفان فکری پیامدهای مرتبه اول بدون قضاوت و سانسور.</p></div>
+                <div class="depth-card"><div class="depth-num">03</div><p data-i18n="wheelDepth.s3">طبقه‌بندی STEEP و گسترش به پیامدهای مرتبه دوم و سوم.</p></div>
+                <div class="depth-card"><div class="depth-num">04</div><p data-i18n="wheelDepth.s4">اولویت‌بندی، سیاست‌گذاری و تدوین اقدامات پدافندی/انطباقی.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-container container" style="padding-top: 0; padding-bottom: 20px;">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <span class="logo-icon"><i data-lucide="compass"></i></span>
+                    <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+                </div>
+                <p data-i18n="footer.descWheel">پلتفرم تعاملی ارزیابی و آموزش آمادگی و تناسب با آینده بر اساس مدل‌های بلوغ رنه روهربک، روش تحلیل لایه‌ای علتها (CLA) سهیل عنایت‌الله، روش چرخ آینده جروم سی گلن، و روش پس‌نگری هنجاری جان رابینسون.</p>
+            </div>
+            
+            <div class="footer-profile glass-card">
+                <div class="profile-header">
+                    <div class="profile-avatar"><i data-lucide="user"></i></div>
+                    <div class="profile-title">
+                        <h4>علی منصوری</h4>
+                        <p data-i18n="footer.role">دانشجوی دکتری آینده‌پژوهی دانشگاه تهران</p>
+                    </div>
+                </div>
+                <div class="profile-links">
+                    <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
+                        <i data-lucide="file-text"></i> <span data-i18n="footer.resume">مشاهده رزومه و سوابق</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">توسعه‌یافته برای درس آینده‌پژوهی سازمانی. کلیه حقوق علمی متعلق به علی منصوری می‌باشد.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/core/paths.js"></script>    <script src="../js/core/i18n.js"></script>
+    <script src="../js/core/load-locales.js"></script>
+    <script src="../js/core/i18n-render.js"></script>
+    <script src="../js/core/founders.js"></script>
+    <script src="../js/core/ui/lesson-ui.js"></script>
+
+    <script src="../js/core/shared.js"></script>
+    <script src="../js/pages/futures-wheel.js"></script>
+    <script src="../js/core/animation.js"></script>
+</body>
+</html>
