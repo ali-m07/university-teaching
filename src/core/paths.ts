@@ -8,15 +8,30 @@ declare global {
 }
 
 function detectBase(): string {
-  const path = window.location.pathname.replace(/\\/g, '/');
-  const segments = path.split('/').filter(Boolean);
-  const sections = new Set(['methods', 'about', 'articles']);
-  if (segments.some((segment) => sections.has(segment))) return '../';
-  return './';
+  const script = document.currentScript as HTMLScriptElement | null;
+  const src = script?.getAttribute('src') || 'js/core/paths.js';
+  const scriptUrl = new URL(src, window.location.href);
+  return scriptUrl.pathname.replace(/\/js\/core\/paths\.js$/, '/').replace(/\/+$/, '/') || '/';
 }
 
 function detectPage(): string {
-  return window.location.pathname.replace(/\\/g, '/');
+  const appRoot = detectBase();
+  const path = window.location.pathname.replace(/\\/g, '/');
+  const relative = path.startsWith(appRoot) ? path.slice(appRoot.length) : path.replace(/^\//, '');
+  const deduped = relative.replace(/^(methods|articles|about)\/\1\//, '$1/');
+  if (deduped !== relative) {
+    const target = `${appRoot}${deduped}${window.location.search}${window.location.hash}`.replace(/\/{2,}/g, '/');
+    window.location.replace(target);
+  }
+  return deduped || 'index.html';
+}
+
+function normalizeRoute(path: string): string {
+  return String(path || '')
+    .replace(/\\/g, '/')
+    .replace(/^\//, '')
+    .replace(/\/$/, '')
+    .toLowerCase();
 }
 
 export function initPaths(): void {
@@ -24,17 +39,20 @@ export function initPaths(): void {
   window.SFH_PAGE = detectPage();
 
   window.sfhUrl = (path: string): string => {
-    const base = window.SFH_BASE || './';
-    if (path === 'home') return base;
-    if (path.endsWith('/') && !path.includes('.html')) return `${base}${path}`;
-    return `${base}${path}`;
+    const base = window.SFH_BASE || '/';
+    if (!path || path === 'home') return base;
+    if (/^https?:\/\//i.test(path)) return path;
+    const url = new URL(path, window.location.origin + base);
+    return `${url.pathname}${url.search}${url.hash}`;
   };
 
   window.sfhIsActive = (path: string): boolean => {
-    const page = window.SFH_PAGE || '';
-    if (path === 'home') return !page.includes('/methods/') && !page.includes('/about/') && !page.includes('/articles/');
-    const normalized = path.replace(/^\.\.\//, '').replace(/^\.\//, '');
-    return page.includes(normalized.replace('.html', ''));
+    const current = normalizeRoute(window.SFH_PAGE || '');
+    if (!path || path === 'home') return current === '' || current === 'index.html';
+    const target = normalizeRoute(path);
+    if (!target) return false;
+    if (target.endsWith('.html')) return current === target;
+    return current === target || current === `${target}/index.html`;
   };
 }
 

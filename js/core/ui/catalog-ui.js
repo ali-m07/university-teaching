@@ -12,8 +12,6 @@ function renderFullCatalog(containerId) {
     const catalog = I18N[getLang()]?.catalog;
     if (!catalog) return;
 
-    const base = (window.SFH_BASE || './').includes('methods') ? '' : 'methods/';
-
     root.innerHTML = catalog.categories.map(function (cat) {
         return `
         <section class="catalog-category" style="margin-bottom:56px;">
@@ -28,7 +26,7 @@ function renderFullCatalog(containerId) {
                     const desc = entry.desc || '';
                     const founder = entry.founder || '';
                     const status = catalog.statusLabels[m.status] || m.status;
-                    const href = m.slug ? base + m.slug : '#';
+                    const href = m.slug ? sfhUrl(`methods/${m.slug}`) : '#';
                     const onclick = m.slug ? `onclick="location.href='${href}'"` : '';
                     const cursor = m.slug ? 'pointer' : 'default';
                     return `

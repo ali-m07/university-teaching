@@ -1,38 +1,57 @@
 /**
- * Resolves relative paths from root, methods/, about/, articles/
+ * Resolves site root reliably for local dev and GitHub Pages.
  */
 (function () {
-    const path = window.location.pathname.replace(/\\/g, '/');
-    const segments = path.split('/').filter(Boolean);
-    const sections = new Set(['methods', 'about', 'articles']);
-    const inSection = segments.some((segment) => sections.has(segment));
-    window.SFH_BASE = inSection ? '../' : './';
-    const last = segments[segments.length - 1] || '';
-    window.SFH_PAGE = last.includes('.html') ? last : 'index.html';
+    const script = document.currentScript;
+    const src = script?.getAttribute('src') || 'js/core/paths.js';
+    const scriptUrl = new URL(src, window.location.href);
+    const appRootPath = scriptUrl.pathname.replace(/\/js\/core\/paths\.js$/, '/').replace(/\/+$/, '/') || '/';
+    const pagePath = window.location.pathname.replace(/\\/g, '/');
+    const relativePath = pagePath.startsWith(appRootPath) ? pagePath.slice(appRootPath.length) : pagePath.replace(/^\//, '');
+    const dedupedPath = relativePath.replace(/^(methods|articles|about)\/\1\//, '$1/');
+
+    if (dedupedPath !== relativePath) {
+        const target = `${appRootPath}${dedupedPath}${window.location.search}${window.location.hash}`.replace(/\/{2,}/g, '/');
+        window.location.replace(target);
+        return;
+    }
+
+    window.SFH_BASE = appRootPath;
+    window.SFH_PAGE = relativePath || 'index.html';
 })();
 
-/** Clean URLs — no trailing index.html */
+function normalizeRoute(path) {
+    return String(path || '')
+        .replace(/\\/g, '/')
+        .replace(/^\//, '')
+        .replace(/\/$/, '')
+        .toLowerCase();
+}
+
 function sfhUrl(relativePath) {
-    const base = window.SFH_BASE || './';
+    const appRoot = window.SFH_BASE || '/';
     if (!relativePath || relativePath === 'home') {
-        return base === './' ? './' : '../';
+        return appRoot;
     }
-    return base + relativePath;
+    if (/^https?:\/\//i.test(relativePath)) {
+        return relativePath;
+    }
+    const url = new URL(relativePath, window.location.origin + appRoot);
+    return `${url.pathname}${url.search}${url.hash}`;
 }
 
 function sfhIsActive(relativePath) {
-    const p = window.location.pathname.replace(/\\/g, '/').toLowerCase();
+    const current = normalizeRoute(window.SFH_PAGE || '');
     if (!relativePath || relativePath === 'home') {
-        return !/\/(methods|about|articles)(\/|$)/.test(p);
+        return current === '' || current === 'index.html';
     }
-    if (relativePath === 'methods/') {
-        return /\/methods\/?(index\.html)?$/.test(p);
+
+    const target = normalizeRoute(relativePath);
+    if (!target) return false;
+    if (target.endsWith('.html')) {
+        return current === target;
     }
-    if (relativePath.endsWith('/')) {
-        const folder = relativePath.replace(/\/$/, '');
-        return p.includes('/' + folder + '/') || p.endsWith('/' + folder);
-    }
-    return p.endsWith('/' + relativePath.toLowerCase()) || p.endsWith(relativePath.toLowerCase());
+    return current === target || current === `${target}/index.html`;
 }
 
 window.sfhUrl = sfhUrl;

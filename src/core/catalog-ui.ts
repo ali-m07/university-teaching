@@ -7,14 +7,13 @@ function esc(s: string): string {
 function methodCard(
   m: CatalogCategory['methods'][0],
   entry: CatalogEntry | undefined,
-  statusLabels: Record<string, string>,
-  base: string
+  statusLabels: Record<string, string>
 ): string {
   const title = entry?.title ?? m.id;
   const desc = entry?.desc ?? '';
   const founder = entry?.founder ?? '';
   const status = statusLabels[m.status] ?? m.status;
-  const href = m.slug ? `${base}${m.slug}` : '#';
+  const href = m.slug ? window.sfhUrl(`methods/${m.slug}`) : '#';
   const onclick = m.slug ? `onclick="location.href='${href}'"` : '';
   const cursor = m.slug ? 'pointer' : 'default';
   const opacity = m.slug ? '1' : '0.92';
@@ -38,8 +37,6 @@ export function renderFullCatalog(containerId = 'catalog-root'): void {
   const catalog = window.I18N[lang]?.catalog;
   if (!catalog) return;
 
-  const base = window.SFH_BASE?.includes('methods') ? '' : 'methods/';
-
   root.innerHTML = catalog.categories
     .map(
       (cat) => `
@@ -49,7 +46,7 @@ export function renderFullCatalog(containerId = 'catalog-root'): void {
         <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:6px;">${esc(cat.desc)}</p>
       </div>
       <div class="hub-cards-grid">
-        ${cat.methods.map((m) => methodCard(m, catalog.entries[m.id], catalog.statusLabels, base)).join('')}
+        ${cat.methods.map((m) => methodCard(m, catalog.entries[m.id], catalog.statusLabels)).join('')}
       </div>
     </section>`
     )
