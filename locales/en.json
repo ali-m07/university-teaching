@@ -8,6 +8,7 @@
     "about": "About",
     "articles": "Articles",
     "methods": "Methods",
+    "cv": "CV",
     "fitness": "Future FITness",
     "cla": "Causal Layered Analysis",
     "wheel": "Futures Wheel",
@@ -16,17 +17,19 @@
     "menu": "Menu"
   },
   "footer": {
-    "desc": "Ali Mansouri, PhD Candidate in Foresight, University of Tehran.",
-    "descBackcast": "Ali Mansouri, PhD Candidate in Foresight, University of Tehran.",
-    "descWheel": "Ali Mansouri, PhD Candidate in Foresight, University of Tehran.",
-    "role": "PhD Candidate in Foresight, University of Tehran",
-    "resume": "Resume",
+    "desc": "Technology futures · blog and articles · methods",
+    "descBackcast": "Technology futures · blog and articles · methods",
+    "descWheel": "Technology futures · blog and articles · methods",
+    "role": "PhD candidate, Futures Studies",
+    "resume": "CV",
     "copyright": "© Ali Mansouri"
   },
   "index": {
-    "badge": "Ali Mansouri",
-    "heroTitle": "STRATEGIC FORESIGHT<br>HUB",
-    "heroSub": "PhD Candidate in Foresight, University of Tehran. I write about plausible futures, work with foresight methods, and design interactive tools.",
+    "badge": "Technology futures",
+    "heroTitle": "FORESIGHT<br>HUB",
+    "heroSub": "Strategic foresight for technology, systems, and uncertain futures.",
+    "heroIntroP1": "I work at the intersection of emerging technologies, cloud infrastructure, and futures thinking — where clarity is rare and signals matter more than certainty.",
+    "heroIntroP2": "My focus is not prediction, but navigation: weak signals, scenarios, and Type-2 fuzzy logic when uncertainty itself is uncertain.",
     "ctaMethods": "Methods"
   },
   "common": {
@@ -140,76 +143,90 @@
     "backcastBody": "Normative backcasting was first formalized by <strong>John B. Robinson</strong> in 1982 for energy policy planning. Key works include <a href=\"https://www.sciencedirect.com/science/article/pii/030142158290059X\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Backcasting: A Proposed Method of Policy Analysis</a> in the journal <em>Energy Policy</em>, along with evolutionary participatory backcasting in sustainability literature. Urban resilience principles based on backcasting are also cited in foresight studies at the University of Copenhagen."
   },
   "brand": {
-    "tag": "About",
+    "tag": "About this space",
     "heroTitle": "Ali Mansouri",
-    "heroSub": "Strategic foresight, discourse analysis, interactive tools",
+    "heroSub": "Technology futures, emerging trends, uncertainty",
     "aboutLink": "About",
     "articlesLink": "Articles",
     "methodsLink": "Methods",
-    "bioTitle": "Introduction",
-    "bioP1": "I am <strong>Ali Mansouri</strong>, a PhD candidate in Foresight at the University of Tehran. My work sits at the intersection of research, writing, and building foresight tools: from Causal Layered Analysis and scenario planning to organizational foresight maturity and strategic decision-making.",
-    "bioP2": "I publish writing in <strong><a href=\"articles/\">Articles</a></strong>. Methods and interactive workshops live under <strong><a href=\"methods/\">Methods</a></strong>: FITness, CLA, Futures Wheel, Backcasting, and a broader foresight catalog.",
-    "focusTitle": "Focus areas",
-    "focuses": [
+    "bioTitle": "",
+    "spaceTag": "About this space",
+    "spaceP1": "This is a personal hub for writing, methods, and thinking about technological futures.",
+    "spaceP2": "My deeper specialty is Type-2 fuzzy logic — for when uncertainty itself is fuzzy. It fits well with weak signals, emerging trends, scenarios, and decisions under deep uncertainty.",
+    "spaceP3": "Alongside this, I work in cloud and infrastructure — Docker, Kubernetes, DevOps — not as a separate path, but as part of the same system thinking. Technology, for me, is not just tools. It is structure, speed, and leverage.",
+    "findTitle": "What you'll find here",
+    "findItems": [
       {
         "icon": "pen-line",
-        "title": "Writing & research",
-        "desc": "Foresight articles and research notes"
+        "title": "Articles",
+        "desc": "Notes on emerging technologies, systems thinking, and foresight",
+        "href": "articles/"
       },
       {
-        "icon": "layers",
-        "title": "Discourse analysis",
-        "desc": "CLA, scenarios, policy and organizations"
+        "icon": "library",
+        "title": "Methods",
+        "desc": "Tools like CLA, scenario planning, FITness, and backcasting",
+        "href": "methods/"
       },
       {
-        "icon": "play-circle",
-        "title": "Interactive tools",
-        "desc": "Digital foresight workshops"
-      },
-      {
-        "icon": "compass",
-        "title": "Strategic foresight",
-        "desc": "Organizations, energy, tech transitions"
+        "icon": "file-text",
+        "title": "CV",
+        "desc": "Professional work in cloud, DevOps, and infrastructure",
+        "href": "https://ali-m07.github.io/resume/",
+        "external": true
       }
     ],
-    "ctaResume": "Resume",
+    "philosophyTag": "Philosophy",
+    "philP1": "Technology should amplify human capability, not replace it.",
+    "philP2": "Most of my thinking sits between what is emerging and what is not yet stable enough to name.",
+    "philP3": "When I'm not working, I'm usually exploring new places — physically or intellectually — trying to understand systems I haven't seen before. Some people say I'm very smart; I'm not fully convinced 😂",
+    "focusTitle": "Focus",
+    "focuses": [],
+    "ctaResume": "CV",
     "ctaMethods": "Methods"
   },
   "aboutPage": {
     "tag": "About",
-    "title": "Ali Mansouri",
-    "sub": "PhD Candidate in Foresight, University of Tehran",
-    "missionTitle": "What I do",
-    "mission": "I study strategic foresight at the University of Tehran. I write about methods, apply them in research, and build interactive tools for some of them.",
+    "title": "About me",
+    "sub": "Futures researcher · cloud & infrastructure practitioner",
+    "missionTitle": "Background",
+    "mission": "I hold a PhD in Futures Studies from the University of Tehran, with a focus on strategic foresight, emerging technologies, and uncertainty-driven decision systems.<br><br>My work is centered on understanding technological change before it becomes obvious — through weak signals, scenario planning, and system-level thinking. My deeper specialty is Type-2 fuzzy logic: modeling cases where uncertainty about uncertainty matters.<br><br>Professionally, I also work in cloud and infrastructure engineering. I build and operate systems using tools like Docker, Kubernetes, and modern DevOps practices.<br><br>I do not see these as separate domains. Foresight and infrastructure are both about systems — just at different time scales.",
+    "researchFocusTitle": "Research focus",
+    "researchFocus": [
+      "Strategic foresight & futures studies",
+      "Emerging technologies & innovation systems",
+      "Type-2 fuzzy logic & deep uncertainty",
+      "Weak signals & trend detection",
+      "Scenario planning & backcasting",
+      "Socio-technical systems"
+    ],
+    "technicalFocusTitle": "Technical focus",
+    "technicalFocus": [
+      "Cloud infrastructure",
+      "Docker & Kubernetes",
+      "DevOps & automation",
+      "Scalable system design"
+    ],
+    "closingNote": "I am not trying to predict the future. I am trying to understand how it becomes inevitable.",
     "eduTitle": "Education",
-    "edu": "PhD in Foresight, University of Tehran",
+    "edu": "PhD in Futures Studies (in progress), University of Tehran<br>MA in Human Resources Management, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology",
     "contactTitle": "Contact",
-    "contact": "Resume and professional profile"
+    "contact": "ali.mansouri1998@gmail.com — open to research, speaking, and collaboration"
   },
   "articlesPage": {
     "tag": "Articles",
-    "title": "Articles & notes",
-    "sub": "Foresight writing.",
+    "title": "Blog and Articles",
+    "sub": "Analytical notes on emerging technologies, systems thinking, and strategic foresight.",
     "emptyTitle": "Coming soon",
-    "emptyDesc": "First articles are in preparation.",
-    "sampleArticles": [
+    "emptyDesc": "More articles are in preparation.",
+    "articles": [
       {
-        "date": "2025",
-        "title": "Why Rohrbeck FITness Still Matters",
-        "tag": "Corporate",
-        "status": "draft"
-      },
-      {
-        "date": "2025",
-        "title": "CLA in National Policy: Lessons from Singapore",
-        "tag": "CLA",
-        "status": "draft"
-      },
-      {
-        "date": "2024",
-        "title": "From Litany to Myth, A Practical CLA Workshop Guide",
-        "tag": "Notes",
-        "status": "draft"
+        "date": "2026",
+        "title": "Navigating Uncertainty",
+        "summary": "Why strategic foresight is less about prediction and more about reading signals, building scenarios, and making decisions when clarity is incomplete.",
+        "tag": "Uncertainty",
+        "status": "published",
+        "href": "articles/navigating-uncertainty.html"
       }
     ]
   },
@@ -2700,5 +2717,14 @@
         "desc": "Scenario-based games for learning and strategy testing."
       }
     }
+  },
+  "articleUncertainty": {
+    "tag": "Article",
+    "title": "Navigating Uncertainty",
+    "subtitle": "Why strategic foresight is less about prediction and more about reading signals, building scenarios, and making decisions when clarity is incomplete.",
+    "date": "2026",
+    "readTime": "6 min read",
+    "body": "<p>The future rarely begins with an announcement. It first appears as small signals: a shift in user behavior, a technology moving from laboratory to product, instability in a supply chain, or a new term slowly entering the language of managers and policymakers.</p><p>The point is not that these signals are always correct. Many are raw, incomplete, or temporary. The point is that in complex environments, ignoring weak signals often looks cheaper than paying attention to them, until they are no longer weak.</p><h2>Foresight is not prophecy</h2><p>For me, Foresight Hub is built on this distinction. Strategic foresight is not the act of declaring the future with certainty. Its work is to improve navigation: to see a range of plausible futures, understand the forces shaping them, and prepare minds and systems for decisions whose data is not yet complete.</p><p>In this view, a scenario is not decorative storytelling. It is a tool for thinking under uncertainty. When several credible futures are placed side by side, today's hidden assumptions become visible: what we treat as fixed, which changes we avoid, and which opportunities our current habits prevent us from seeing.</p><h2>When uncertainty itself is uncertain</h2><p>My deeper interest in Type-2 fuzzy logic begins here. In many technology decisions, we are not only dealing with uncertainty in a value; we are dealing with uncertainty about uncertainty itself. Experts may disagree not only about the probability of an event, but also about the meaning of probability, the intensity of impact, and the boundaries of the problem.</p><p>Type-2 fuzzy logic offers a more precise language for these situations. Not because it simplifies the world, but because it allows uncertainty about memberships and evaluations to remain visible. That matters for foresight because emerging futures often need to be discussed and modeled before they can be fully measured.</p><h2>Technology as structure</h2><p>My work in cloud, DevOps, and infrastructure is not separate from this path. Infrastructure is not merely a tool for running software; it is a structure that shapes decision speed, experimentation capacity, and scalability. An organization with slow and fragile infrastructure may recognize the future correctly and still fail to respond in time.</p><p>That is why technology and foresight are, for me, two languages for one question: how do systems build the capacity to sense and respond to change? One works at the scale of code, platforms, and operations; the other at the scale of trends, scenarios, and strategic decisions.</p><h2>The real work: navigation</h2><p><strong>The focus of Foresight Hub is not predicting the future; it is navigating uncertainty.</strong> That means combining weak signals, scenario thinking, systems thinking, and models that do not erase ambiguity, but make it workable.</p><p>The future is not something we simply wait for. It is already being formed in small decisions, system architectures, policy language, and technologies that are not yet stable enough to name. Our work is to see it earlier, more clearly, and more responsibly.</p><p class=\"article-source\">Photo and biographical reference: <a href=\"https://engineering.berkeley.edu/news/2017/09/remembering-lotfi-zadeh/\" target=\"_blank\" rel=\"noopener noreferrer\">Berkeley Engineering</a>, which notes that Zadeh's 1965 paper “Fuzzy Sets” opened a new direction for fuzzy logic and decision systems.</p>",
+    "founderCaption": "Founder of fuzzy logic and fuzzy set theory"
   }
 }

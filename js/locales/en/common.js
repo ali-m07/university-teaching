@@ -9,6 +9,7 @@ registerLocale('en', {
             about: 'About',
             articles: 'Articles',
             methods: 'Methods',
+            cv: 'CV',
             fitness: 'Future FITness',
             cla: 'Causal Layered Analysis',
             wheel: 'Futures Wheel',
@@ -17,17 +18,19 @@ registerLocale('en', {
             menu: 'Menu'
         },
         footer: {
-            desc: 'Ali Mansouri, PhD Candidate in Foresight, University of Tehran.',
-            descBackcast: 'Ali Mansouri, PhD Candidate in Foresight, University of Tehran.',
-            descWheel: 'Ali Mansouri, PhD Candidate in Foresight, University of Tehran.',
-            role: 'PhD Candidate in Foresight, University of Tehran',
-            resume: 'Resume',
+            desc: 'Technology futures · writing · methods',
+            descBackcast: 'Technology futures · writing · methods',
+            descWheel: 'Technology futures · writing · methods',
+            role: 'PhD candidate, Futures Studies',
+            resume: 'CV',
             copyright: '© Ali Mansouri'
         },
         index: {
-            badge: 'Ali Mansouri',
-            heroTitle: 'STRATEGIC FORESIGHT<br>HUB',
-            heroSub: 'PhD Candidate in Foresight, University of Tehran. I write about plausible futures, work with foresight methods, and design interactive tools.',
+            badge: 'Technology futures',
+            heroTitle: 'FORESIGHT<br>HUB',
+            heroSub: 'Strategic foresight for technology, systems, and uncertain futures.',
+            heroIntroP1: 'I work at the intersection of emerging technologies, cloud infrastructure, and futures thinking — where clarity is rare and signals matter more than certainty.',
+            heroIntroP2: 'My focus is not prediction, but navigation: weak signals, scenarios, and Type-2 fuzzy logic when uncertainty itself is uncertain.',
             ctaMethods: 'Methods'
         },
         common: {

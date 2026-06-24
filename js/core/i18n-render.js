@@ -118,6 +118,31 @@ function renderOverviewFeatures() {
     if (window.lucide) window.lucide.createIcons();
 }
 
+function renderBrandFindGrid() {
+    const grid = document.getElementById('brand-find-grid');
+    const items = typeof pg === 'function' ? pg('brand.findItems') : null;
+    if (!grid || !items) return;
+    grid.innerHTML = items.map((f) => {
+        const href = f.external ? f.href : (typeof sfhUrl === 'function' ? sfhUrl(f.href) : f.href);
+        const ext = f.external ? ' target="_blank" rel="noopener noreferrer"' : '';
+        return `<a href="${href}"${ext} class="step-card glass-card" style="padding:20px;border-top:3px solid var(--color-f);text-decoration:none;display:block;">
+            <div style="color:var(--color-f);margin-bottom:10px;"><i data-lucide="${f.icon}"></i></div>
+            <h4 style="color:#fff;font-size:1rem;margin-bottom:8px;">${esc(f.title)}</h4>
+            <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">${esc(f.desc)}</p>
+        </a>`;
+    }).join('');
+    if (window.lucide) window.lucide.createIcons();
+}
+
+function renderAboutFocusLists() {
+    const research = document.getElementById('about-research-list');
+    const technical = document.getElementById('about-technical-list');
+    const rItems = typeof pg === 'function' ? pg('aboutPage.researchFocus') : null;
+    const tItems = typeof pg === 'function' ? pg('aboutPage.technicalFocus') : null;
+    if (research && rItems) research.innerHTML = rItems.map(i => `<li>${esc(i)}</li>`).join('');
+    if (technical && tItems) technical.innerHTML = tItems.map(i => `<li>${esc(i)}</li>`).join('');
+}
+
 function renderBrandFocusGrid() {
     const grid = document.getElementById('brand-focus-grid');
     const focuses = typeof pg === 'function' ? pg('brand.focuses') : null;
@@ -132,7 +157,7 @@ function renderBrandFocusGrid() {
     if (window.lucide) window.lucide.createIcons();
 }
 
-function renderArticlesList() {
+function renderArticlesListLegacy() {
     const list = document.getElementById('articles-list');
     const data = typeof pg === 'function' ? pg('articlesPage') : null;
     if (!list || !data?.sampleArticles) return;
@@ -147,9 +172,37 @@ function renderArticlesList() {
     ).join('');
 }
 
+function renderArticlesList() {
+    const list = document.getElementById('articles-list');
+    const data = typeof pg === 'function' ? pg('articlesPage') : null;
+    const articles = data?.articles || data?.sampleArticles;
+    if (!list || !articles) return;
+
+    list.innerHTML = articles.map(a => {
+        const href = a.href ? (typeof sfhUrl === 'function' ? sfhUrl(a.href) : a.href) : '';
+        const summary = a.summary ? `<p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;margin-top:8px;">${esc(a.summary)}</p>` : '';
+        const status = a.status === 'draft' ? (getLang() === 'fa' ? 'پیش نویس' : 'Draft') : '';
+        const inner = `
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:0.75rem;color:var(--text-secondary);">
+                <span>${esc(a.date)}</span><span class="section-tag" style="padding:2px 8px;font-size:0.7rem;">${esc(a.tag)}</span>
+            </div>
+            <h3 style="color:#fff;font-size:1.05rem;">${esc(a.title)}</h3>
+            ${summary}
+            ${status ? `<span style="font-size:0.75rem;color:var(--color-f);">${status}</span>` : ''}`;
+        return href
+            ? `<a href="${href}" class="article-list-card glass-card">${inner}</a>`
+            : `<article class="glass-card" style="padding:20px;margin-bottom:16px;border-inline-start:3px solid var(--color-cla);">${inner}</article>`;
+    }).join('');
+
+    const empty = document.getElementById('articles-empty');
+    if (empty) empty.style.display = data?.articles?.length ? 'none' : '';
+}
+
 function renderAllPageSections() {
     try {
+        renderBrandFindGrid();
         renderBrandFocusGrid();
+        renderAboutFocusLists();
         renderOverviewFeatures();
         renderArticlesList();
         renderManifestoSection();

@@ -94,9 +94,10 @@ function initVisualScrollHints() {
 function getNavItems() {
     return [
         ['home', 'nav.home'],
-        ['about/', 'nav.about'],
         ['articles/', 'nav.articles'],
-        ['methods/', 'nav.methods']
+        ['methods/', 'nav.methods'],
+        ['about/', 'nav.about'],
+        ['https://ali-m07.github.io/resume/', 'nav.cv', true]
     ];
 }
 
@@ -116,10 +117,11 @@ function buildStandardNav() {
         }
     }
 
-    nav.innerHTML = getNavItems().map(([path, key]) => {
-        const href = typeof sfhUrl === 'function' ? sfhUrl(path) : path;
-        const active = typeof sfhIsActive === 'function' && sfhIsActive(path) ? ' class="active"' : '';
-        return `<a href="${href}" data-i18n="${key}"${active}></a>`;
+    nav.innerHTML = getNavItems().map(([path, key, external]) => {
+        const href = external ? path : (typeof sfhUrl === 'function' ? sfhUrl(path) : path);
+        const active = !external && typeof sfhIsActive === 'function' && sfhIsActive(path) ? ' class="active"' : '';
+        const ext = external ? ' target="_blank" rel="noopener noreferrer"' : '';
+        return `<a href="${href}" data-i18n="${key}"${active}${ext}></a>`;
     }).join('');
 }
 
