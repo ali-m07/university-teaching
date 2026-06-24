@@ -17,30 +17,28 @@ registerLocale('en', {
             menu: 'Menu'
         },
         footer: {
-            desc: 'Digital foresight classroom — Ali Mansouri, University of Tehran.',
-            descBackcast: 'Digital foresight classroom — Ali Mansouri, University of Tehran.',
-            descWheel: 'Digital foresight classroom — Ali Mansouri, University of Tehran.',
-            role: 'PhD Candidate in Foresight · University of Tehran',
+            desc: 'Personal site of Ali Mansouri. Strategic foresight, articles, methods.',
+            descBackcast: 'Personal site of Ali Mansouri. Strategic foresight, articles, methods.',
+            descWheel: 'Personal site of Ali Mansouri. Strategic foresight, articles, methods.',
+            role: 'PhD Candidate in Foresight, University of Tehran',
             resume: 'Resume',
-            copyright: '© Ali Mansouri — FORESIGHT HUB'
+            copyright: '© Ali Mansouri, FORESIGHT HUB'
         },
         index: {
-            badge: 'Foresight Teaching Lab',
+            badge: 'Strategic Foresight',
             heroTitle: 'STRATEGIC FORESIGHT<br>HUB',
-            heroSub: 'Ali Mansouri\'s digital classroom — interactive foresight, futures studies, and strategic foresight methods.',
-            presenter: 'Instructor:',
-            student: 'PhD Candidate in Foresight · University of Tehran',
-            overviewTag: 'About this portal',
-            overviewTitle: 'What is this site?',
-            overviewP1: 'This portal is my <strong>digital classroom</strong> for teaching foresight methods — each with explanation, readings, lesson plans, and interactive workshops where available.',
-            overviewP2: 'All methods are on the <strong><a href="methods/">Methods</a></strong> page: from FITness and CLA workshops to Delphi, Morphological Analysis, Horizon Scanning, and dozens more.',
-            overviewP3: 'Click any card in the catalog — interactive methods open the simulator directly.',
-            ctaMethods: 'Browse all methods',
+            heroSub: 'Personal site of Ali Mansouri. Introduction, articles, and foresight methods.',
+            student: 'PhD Candidate in Foresight, University of Tehran',
+            overviewTag: 'Site content',
+            overviewTitle: 'What is here?',
+            overviewP1: 'On <strong><a href="about/">About</a></strong> I introduce myself. On <strong><a href="articles/">Articles</a></strong> I publish foresight notes and writing.',
+            overviewP2: 'Under <strong><a href="methods/">Methods</a></strong> I explain foresight approaches: from interactive FITness and CLA to Delphi, morphological analysis, horizon scanning, and more.',
+            ctaMethods: 'Methods',
             overviewFeatures: [
-                { icon: 'play-circle', title: 'Interactive workshops', desc: 'FITness · CLA · Futures Wheel · Backcasting' },
-                { icon: 'book-open', title: 'Lesson modules', desc: 'Popper Diamond · Six Pillars · Scenarios · Futurpreneurship' },
-                { icon: 'library', title: '38+ method catalog', desc: 'Scanning · Delphi · Morphological · Scenarios · Roadmap' },
-                { icon: 'graduation-cap', title: 'Ali Mansouri', desc: 'PhD Candidate in Foresight · University of Tehran' }
+                { icon: 'user', title: 'Profile', desc: 'About me, resume, research background' },
+                { icon: 'pen-line', title: 'Articles', desc: 'Foresight notes and writing' },
+                { icon: 'library', title: 'Methods', desc: 'Catalog of foresight methods' },
+                { icon: 'play-circle', title: 'Interactive tools', desc: 'FITness, CLA, Futures Wheel, Backcasting' }
             ]
         },
         common: {

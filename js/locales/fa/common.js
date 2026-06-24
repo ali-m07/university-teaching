@@ -17,30 +17,28 @@ registerLocale('fa', {
             menu: 'منو'
         },
         footer: {
-            desc: 'کلاس درس دیجیتال آینده‌پژوهی — علی منصوری، دانشگاه تهران.',
-            descBackcast: 'کلاس درس دیجیتال آینده‌پژوهی — علی منصوری، دانشگاه تهران.',
-            descWheel: 'کلاس درس دیجیتال آینده‌پژوهی — علی منصوری، دانشگاه تهران.',
-            role: 'دانشجوی دکتری آینده‌پژوهی · دانشگاه تهران',
+            desc: 'سایت شخصی علی منصوری. آینده‌پژوهی استراتژیک، مقالات، متدها.',
+            descBackcast: 'سایت شخصی علی منصوری. آینده‌پژوهی استراتژیک، مقالات، متدها.',
+            descWheel: 'سایت شخصی علی منصوری. آینده‌پژوهی استراتژیک، مقالات، متدها.',
+            role: 'دانشجوی دکتری آینده‌پژوهی، دانشگاه تهران',
             resume: 'رزومه',
-            copyright: '© علی منصوری — FORESIGHT HUB'
+            copyright: '© علی منصوری، FORESIGHT HUB'
         },
         index: {
-            badge: 'کلاس درس آینده‌پژوهی',
+            badge: 'آینده‌پژوهی استراتژیک',
             heroTitle: 'STRATEGIC FORESIGHT<br>HUB',
-            heroSub: 'کلاس درس دیجیتال علی منصوری — آموزش تعاملی آینده‌پژوهی، آینده‌نگاری و foresight راهبردی.',
-            presenter: 'مدرس:',
-            student: 'دانشجوی دکتری آینده‌پژوهی · دانشگاه تهران',
-            overviewTag: 'درباره پورتال',
-            overviewTitle: 'این سایت چیست؟',
-            overviewP1: 'این پورتال <strong>کلاس درس دیجیتال</strong> من است برای تدریس متدهای آینده‌پژوهی. هر متد با توضیح، منابع، طرح درس و — در صورت امکان — کارگاه تعاملی ارائه شده است.',
-            overviewP2: 'همه متدها در صفحه <strong><a href="methods/">متدها</a></strong> هستند: از کارگاه‌های FITness و CLA تا Delphi، Morphological Analysis، Horizon Scanning و ده‌ها روش دیگر.',
-            overviewP3: 'روی هر کارت در کاتالوگ کلیک کنید. متدهای تعاملی مستقیم وارد شبیه‌ساز می‌شوند.',
-            ctaMethods: 'مشاهده همه متدها',
+            heroSub: 'سایت شخصی علی منصوری. معرفی، مقالات، و متدهای آینده‌پژوهی.',
+            student: 'دانشجوی دکتری آینده‌پژوهی، دانشگاه تهران',
+            overviewTag: 'محتوای سایت',
+            overviewTitle: 'اینجا چه چیزهایی هست؟',
+            overviewP1: 'در بخش <strong><a href="about/">درباره من</a></strong> خودم را معرفی کرده‌ام. در <strong><a href="articles/">مقالات</a></strong> یادداشت‌ها و نوشته‌های آینده‌پژوهی‌ام را می‌گذارم.',
+            overviewP2: 'در <strong><a href="methods/">متدها</a></strong> روش‌های foresight را توضیح داده‌ام: از ابزارهای تعاملی مثل FITness و CLA تا دلفی، تحلیل مورفولوژیک، horizon scanning و بقیه.',
+            ctaMethods: 'متدها',
             overviewFeatures: [
-                { icon: 'play-circle', title: 'کارگاه تعاملی', desc: 'FITness · CLA · Futures Wheel · Backcasting' },
-                { icon: 'book-open', title: 'ماژول درس', desc: 'Popper Diamond · Six Pillars · Scenarios · Futurpreneurship' },
-                { icon: 'library', title: 'کاتالوگ ۳۸+ متد', desc: 'رصد · دلفی · مورفولوژیک · سناریو · roadmap' },
-                { icon: 'graduation-cap', title: 'علی منصوری', desc: 'دانشجوی دکتری آینده‌پژوهی · دانشگاه تهران' }
+                { icon: 'user', title: 'معرفی', desc: 'درباره من، رزومه، سوابق پژوهشی' },
+                { icon: 'pen-line', title: 'مقالات', desc: 'یادداشت‌ها و نوشته‌های آینده‌پژوهی' },
+                { icon: 'library', title: 'متدها', desc: 'کاتالوگ روش‌های foresight' },
+                { icon: 'play-circle', title: 'ابزار تعاملی', desc: 'FITness، CLA، Futures Wheel، Backcasting' }
             ]
         },
         common: {
