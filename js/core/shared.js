@@ -129,11 +129,13 @@ function upgradeLegacyHeader() {
         oldAction.replaceWith(actions);
     }
 
-    const actions = header.querySelector('.header-actions');
-    if (actions) {
-        actions.querySelectorAll('a.btn-ghost-sm').forEach(a => a.remove());
-        actions.querySelectorAll('.btn-primary-sm').forEach(a => a.remove());
+    let actions = header.querySelector('.header-actions');
+    if (!actions) {
+        actions = document.createElement('div');
+        actions.className = 'header-actions';
+        header.appendChild(actions);
     }
+    actions.querySelectorAll('a, .btn-primary-sm, .btn-ghost-sm, .lang-toggle-wrap').forEach(el => el.remove());
 
     const footer = document.querySelector('.main-footer');
     if (footer) {

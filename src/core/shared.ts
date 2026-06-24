@@ -74,9 +74,10 @@ function initVisualScrollHints(): void {
 export function getNavItems(): [string, string][] {
   return [
     ['home', 'nav.home'],
-    ['about/', 'nav.about'],
     ['articles/', 'nav.articles'],
-    ['methods/', 'nav.methods']
+    ['methods/', 'nav.methods'],
+    ['about/', 'nav.about'],
+    ['https://ali-m07.github.io/resume/', 'nav.cv']
   ];
 }
 
@@ -95,10 +96,15 @@ export function buildStandardNav(): void {
 
   nav.innerHTML = getNavItems()
     .map(([path, key]) => {
-      const href = window.sfhUrl(path);
-      const active = window.sfhIsActive(path) ? ' class="active"' : '';
-      return `<a href="${href}" data-i18n="${key}"${active}></a>`;
+      const external = /^https?:\/\//.test(path);
+      const href = external ? path : window.sfhUrl(path);
+      const active = !external && window.sfhIsActive(path) ? ' class="active"' : '';
+      const ext = external ? ' target="_blank" rel="noopener noreferrer"' : '';
+      return `<a href="${href}" data-i18n="${key}"${active}${ext}></a>`;
     })
+    .concat(
+      `<button type="button" class="nav-lang-toggle" onclick="toggleLang()" aria-label="Switch language">${window.getLang?.() === 'en' ? 'FA' : 'EN'}</button>`
+    )
     .join('');
 }
 
@@ -132,20 +138,13 @@ function upgradeLegacyHeader(): void {
     oldAction.replaceWith(actions);
   }
 
-  const actions = header.querySelector('.header-actions');
-  if (actions) {
-    actions.querySelectorAll('a.btn-ghost-sm').forEach((a) => a.remove());
-    let assess = actions.querySelector('a.btn-primary-sm');
-    if (!assess) {
-      assess = document.createElement('a');
-      assess.className = 'btn-primary-sm';
-      actions.appendChild(assess);
-    }
-    if (assess instanceof HTMLAnchorElement) {
-      assess.href = `${window.sfhUrl('methods/fitness.html')}#assessment`;
-      assess.setAttribute('data-i18n', 'nav.assess');
-    }
+  let actions = header.querySelector('.header-actions');
+  if (!actions) {
+    actions = document.createElement('div');
+    actions.className = 'header-actions';
+    header.appendChild(actions);
   }
+  actions.querySelectorAll('a, .btn-primary-sm, .btn-ghost-sm, .lang-toggle-wrap').forEach((a) => a.remove());
 }
 
 export async function bootApp(): Promise<void> {
