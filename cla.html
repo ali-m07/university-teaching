@@ -76,19 +76,19 @@
                 <div class="pyramid-wrapper">
                     <div class="pyramid-layer layer-1 active" id="pyr-litany" onclick="showClaLayer('litany')">
                         <span class="layer-num">L1</span>
-                        <span class="layer-name">لیتانی (Litany)</span>
+                        <span class="layer-name" data-i18n="cla.layers.litany">لیتانی (Litany)</span>
                     </div>
                     <div class="pyramid-layer layer-2" id="pyr-systemic" onclick="showClaLayer('systemic')">
                         <span class="layer-num">L2</span>
-                        <span class="layer-name">علل اجتماعی و ساختاری (Systemic)</span>
+                        <span class="layer-name" data-i18n="cla.layers.systemic">علل اجتماعی و ساختاری (Systemic)</span>
                     </div>
                     <div class="pyramid-layer layer-3" id="pyr-worldview" onclick="showClaLayer('worldview')">
                         <span class="layer-num">L3</span>
-                        <span class="layer-name">گفتمان و جهان‌بینی (Worldview)</span>
+                        <span class="layer-name" data-i18n="cla.layers.worldview">گفتمان و جهان‌بینی (Worldview)</span>
                     </div>
                     <div class="pyramid-layer layer-4" id="pyr-myth" onclick="showClaLayer('myth')">
                         <span class="layer-num">L4</span>
-                        <span class="layer-name">اسطوره و استعاره (Myth)</span>
+                        <span class="layer-name" data-i18n="cla.layers.myth">اسطوره و استعاره (Myth)</span>
                     </div>
                 </div>
             </div>
@@ -311,16 +311,24 @@
 
         <!-- Citation details -->
         <div class="citation-box glass-card">
-            <h4><i data-lucide="link"></i> منابع علمی تحلیل لایه‌ای علت‌ها:</h4>
-            <p style="margin-top: 8px;">
-                روش تحلیل لایه‌ای علت‌ها (CLA) توسط آینده‌پژوه برجسته سهیل عنایت‌الله ابداع گردید. کتاب‌ها و مطالعات موردی تئوری و کارگاهی او از جمله کتاب مرجع 
-                <a href="https://metafuture.org" target="_blank">The Causal Layered Analysis Reader</a> 
-                و مقالات نوین در حوزه CLA 2.0 و 3.0 در وبگاه رسمی او در 
-                <a href="https://metafuture.org" target="_blank">metafuture.org</a> 
-                و مخزن پژوهشی 
-                <a href="https://research.usc.edu.au/" target="_blank">USC Research Bank</a> 
-                نمایه شده است.
-            </p>
+            <h4><i data-lucide="link"></i> <span data-i18n="citations.claTitle">منابع علمی تحلیل لایه‌ای علت‌ها:</span></h4>
+            <p data-i18n="citations.claBody" data-i18n-html style="margin-top: 8px;"></p>
+        </div>
+    </section>
+
+    <!-- Methodological Depth -->
+    <section class="container method-depth-section" style="padding-bottom: 60px;">
+        <div class="glass-card" style="padding: 40px; border-color: rgba(255, 170, 0, 0.15);">
+            <div class="section-header" style="margin-bottom: 24px;">
+                <span class="section-tag-cla" data-i18n="claDepth.tag">عمق متدولوژی CLA</span>
+                <h2 data-i18n="claDepth.title">گام‌های کارگاه تحلیل لایه‌ای علت‌ها</h2>
+            </div>
+            <div class="depth-grid">
+                <div class="depth-card"><div class="depth-num">L1</div><p data-i18n="claDepth.s1">انتخاب مسئله و جمع‌آوری داده‌های لایه لیتانی (اخبار، آمار، رویدادها).</p></div>
+                <div class="depth-card"><div class="depth-num">L2</div><p data-i18n="claDepth.s2">تحلیل علل ساختاری: سیاست‌ها، نهادها، مشوق‌های اقتصادی و فنی.</p></div>
+                <div class="depth-card"><div class="depth-num">L3</div><p data-i18n="claDepth.s3">واسازی گفتمان‌ها: جهان‌بینی‌ها، پارادایم‌ها و روایت‌های مشروعیت‌بخش.</p></div>
+                <div class="depth-card"><div class="depth-num">L4</div><p data-i18n="claDepth.s4">کاوش اسطوره و استعاره: ناخودآگاه جمعی و خلق استعاره‌های تحول‌آفرین.</p></div>
+            </div>
         </div>
     </section>
 
@@ -356,6 +364,9 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="i18n.js"></script>
+    <script src="i18n-pages.js"></script>
+    <script src="shared.js"></script>
     <script src="cla.js"></script>
     <script src="animation.js"></script>
 </body>

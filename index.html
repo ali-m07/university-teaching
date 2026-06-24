@@ -29,14 +29,14 @@
             <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
         </div>
         <nav class="nav-links">
-            <a href="index.html" class="active">صفحه نخست</a>
-            <a href="fitness.html">آمادگی و تناسب (FITness)</a>
-            <a href="cla.html">تحلیل لایه‌ای علت‌ها (CLA)</a>
-            <a href="futures-wheel.html">چرخ آینده (Futures Wheel)</a>
-            <a href="backcasting.html">پس‌نگری (Backcasting)</a>
+            <a href="index.html" class="active" data-i18n="nav.home">صفحه نخست</a>
+            <a href="fitness.html" data-i18n="nav.fitness">آمادگی و تناسب (FITness)</a>
+            <a href="cla.html" data-i18n="nav.cla">تحلیل لایه‌ای علت‌ها (CLA)</a>
+            <a href="futures-wheel.html" data-i18n="nav.wheel">چرخ آینده (Futures Wheel)</a>
+            <a href="backcasting.html" data-i18n="nav.backcast">پس‌نگری (Backcasting)</a>
         </nav>
-        <div class="header-action">
-            <a href="fitness.html#assessment" class="btn-primary-sm">ارزیابی بلوغ سازمان</a>
+        <div class="header-actions">
+            <a href="fitness.html#assessment" class="btn-primary-sm" data-i18n="nav.assess">ارزیابی بلوغ سازمان</a>
         </div>
     </header>
 
@@ -44,21 +44,21 @@
     <section id="hero" class="hero-section" style="min-height: 85vh; padding-top: 120px;">
         <div class="hero-content">
             <div class="badge-container">
-                <span class="badge"><i data-lucide="sparkles"></i> مرجع آینده‌پژوهی استراتژیک</span>
+                <span class="badge"><i data-lucide="sparkles"></i> <span data-i18n="index.badge">مرجع آینده‌پژوهی استراتژیک</span></span>
             </div>
-            <h1 class="hero-title">STRATEGIC FORESIGHT<br>PORTAL</h1>
-            <p class="hero-subtitle">
+            <h1 class="hero-title" data-i18n="index.heroTitle" data-i18n-html>STRATEGIC FORESIGHT<br>PORTAL</h1>
+            <p class="hero-subtitle" data-i18n="index.heroSub">
                 پرتابل تعاملی آینده‌پژوهی استراتژیک برای تحلیل پویای تغییرات، رصد فناوری‌های نوظهور، ساختارشکنی علّی مسائل و نگاشت زنجیره‌ای پیامدها.
             </p>
             <div class="hero-meta">
                 <div class="meta-item">
                     <span class="meta-icon"><i data-lucide="user"></i></span>
-                    <span class="meta-label">ارائه دهنده:</span>
+                    <span class="meta-label" data-i18n="index.presenter">ارائه دهنده:</span>
                     <span class="meta-val">علی منصوری</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-icon"><i data-lucide="graduation-cap"></i></span>
-                    <span class="meta-label">دانشجوی دکتری آینده‌پژوهی</span>
+                    <span class="meta-label" data-i18n="index.student">دانشجوی دکتری آینده‌پژوهی</span>
                     <span class="meta-val">دانشگاه تهران</span>
                 </div>
             </div>
@@ -77,109 +77,125 @@
     <!-- Hub Cards Section -->
     <section class="container" style="padding-top: 20px; padding-bottom: 100px;">
         <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-            <span class="section-tag">بخش‌های سه‌گانه اصلی</span>
-            <h2>ارکان آینده‌پژوهی استراتژیک</h2>
-            <p>یکی از ارکان سه‌گانه متدولوژی را جهت ورود به محیط تعاملی، شبیه‌سازی و مطالعه نمونه‌های عملی انتخاب کنید.</p>
+            <span class="section-tag" data-i18n="index.pillarsTag">بخش‌های سه‌گانه اصلی</span>
+            <h2 data-i18n="index.pillarsTitle">ارکان آینده‌پژوهی استراتژیک</h2>
+            <p data-i18n="index.pillarsSub">یکی از ارکان سه‌گانه متدولوژی را جهت ورود به محیط تعاملی، شبیه‌سازی و مطالعه نمونه‌های عملی انتخاب کنید.</p>
         </div>
 
         <div class="hub-cards-grid">
             <!-- FITness Card -->
             <div class="hub-card glass-card card-fitness" onclick="location.href='fitness.html'">
                 <div class="card-icon"><i data-lucide="zap"></i></div>
-                <h3>آمادگی و تناسب با آینده (FITness)</h3>
-                <p>
+                <h3 data-i18n="hub.fitnessTitle">آمادگی و تناسب با آینده (FITness)</h3>
+                <p data-i18n="hub.fitnessDesc">
                     بررسی مدل بلوغ رنه روهربک (Future FITness)، شبیه‌سازی فرآیندهای Perceiving (درک)، Prospecting (کاوش) و Probing (آزمایش) به همراه تست خودارزیابی بلوغ ۵ بعدی سازمان و رادار فناوری دویچه تلکام.
                 </p>
-                <span class="hub-card-link">ورود به بخش تناسب آینده <i data-lucide="arrow-left"></i></span>
+                <span class="hub-card-link"><span data-i18n="hub.fitnessLink">ورود به بخش تناسب آینده</span> <i data-lucide="arrow-left"></i></span>
             </div>
 
             <!-- CLA Card -->
             <div class="hub-card glass-card card-cla" onclick="location.href='cla.html'">
                 <div class="card-icon"><i data-lucide="layers"></i></div>
-                <h3>تحلیل لایه‌ای علت‌ها (CLA)</h3>
-                <p>
+                <h3 data-i18n="hub.claTitle">تحلیل لایه‌ای علت‌ها (CLA)</h3>
+                <p data-i18n="hub.claDesc">
                     مدل عمیق پساساختارگرای سهیل عنایت‌الله برای نفوذ به لایه‌های چهارگانه مسائل (لیتانی، ساختار، گفتمان، اسطوره) به همراه هرم سه‌بعدی تعاملی، آرشیو سناریوهای ملی/ژئوپلیتیک و کارگاه خلق استعاره‌های جدید.
                 </p>
-                <span class="hub-card-link">ورود به کارگاه CLA <i data-lucide="arrow-left"></i></span>
+                <span class="hub-card-link"><span data-i18n="hub.claLink">ورود به کارگاه CLA</span> <i data-lucide="arrow-left"></i></span>
             </div>
 
             <!-- Futures Wheel Card -->
             <div class="hub-card glass-card card-wheel" onclick="location.href='futures-wheel.html'">
                 <div class="card-icon"><i data-lucide="orbit"></i></div>
-                <h3>چرخ آینده (Futures Wheel)</h3>
-                <p>
+                <h3 data-i18n="hub.wheelTitle">چرخ آینده (Futures Wheel)</h3>
+                <p data-i18n="hub.wheelDesc">
                     مدل پیامدی جروم گلن جهت نگاشت زنجیره‌ای آثار مرتبه اول, دوم و سوم رویدادها. شامل درخت اتصالات شعاعی SVG تغییر اقلیم در ایران، بررسی مدل‌های STEEP، کمی‌سازی و عمل‌گرا، و فرآیند ۱۱ مرحله‌ای اجرا.
                 </p>
-                <span class="hub-card-link">ورود به شبیه‌ساز چرخ آینده <i data-lucide="arrow-left"></i></span>
+                <span class="hub-card-link"><span data-i18n="hub.wheelLink">ورود به شبیه‌ساز چرخ آینده</span> <i data-lucide="arrow-left"></i></span>
             </div>
 
             <!-- Backcasting Card -->
             <div class="hub-card glass-card card-backcast" onclick="location.href='backcasting.html'">
                 <div class="card-icon"><i data-lucide="history"></i></div>
-                <h3>پس‌نگری و نگاشت معکوس (Backcasting)</h3>
-                <p>
+                <h3 data-i18n="hub.backcastTitle">پس‌نگری و نگاشت معکوس (Backcasting)</h3>
+                <p data-i18n="hub.backcastDesc">
                     متدولوژی هنجاری طراحی آرمان‌شهر و بازگشت گام‌به‌گام به زمان حال بر مبنای مدل جان رابینسون. شامل مقایسه با پیش‌بینی (Forecasting)، شبیه‌ساز مسیر اکولوژیک تهران ۱۴۳۰ و کارگاه تدوین استراتژی گذار.
                 </p>
-                <span class="hub-card-link">ورود به شبیه‌ساز پس‌نگری <i data-lucide="arrow-left"></i></span>
+                <span class="hub-card-link"><span data-i18n="hub.backcastLink">ورود به شبیه‌ساز پس‌نگری</span> <i data-lucide="arrow-left"></i></span>
             </div>
         </div>
 
         <!-- Integration Model Section -->
         <div class="integration-section glass-card" style="margin-top: 60px; padding: 40px;">
             <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-                <span class="section-tag" style="background: rgba(0, 229, 255, 0.08); color: var(--color-f); border-color: rgba(0, 229, 255, 0.2);">هم‌افزایی متدولوژیک</span>
-                <h2>چرخه تلفیق استراتژیک آینده‌پژوهی</h2>
-                <p>چگونه این چهار ابزار برای ساخت یک استراتژی تاب‌آور سازمانی در هم تنیده می‌شوند؟</p>
+                <span class="section-tag" style="background: rgba(0, 229, 255, 0.08); color: var(--color-f); border-color: rgba(0, 229, 255, 0.2);" data-i18n="index.integrationTag">هم‌افزایی متدولوژیک</span>
+                <h2 data-i18n="index.integrationTitle">چرخه تلفیق استراتژیک آینده‌پژوهی</h2>
+                <p data-i18n="index.integrationSub">چگونه این چهار ابزار برای ساخت یک استراتژی تاب‌آور سازمانی در هم تنیده می‌شوند؟</p>
             </div>
             
             <div class="integration-flow">
                 <div class="integration-step">
                     <div class="step-num">۱</div>
-                    <h4>رصد و حس‌گری (FITness)</h4>
-                    <p>شناسایی سیگنال‌های ضعیف تغییر و ارزیابی توان سازمانی برای درک و آزمون فرصت‌های نوظهور در محیط متلاطم.</p>
+                    <h4 data-i18n="integration.step1Title">رصد و حس‌گری (FITness)</h4>
+                    <p data-i18n="integration.step1Desc">شناسایی سیگنال‌های ضعیف تغییر و ارزیابی توان سازمانی برای درک و آزمون فرصت‌های نوظهور در محیط متلاطم.</p>
                 </div>
                 <div class="integration-arrow"><i data-lucide="chevron-left"></i></div>
                 
                 <div class="integration-step">
                     <div class="step-num">۲</div>
-                    <h4>ریشه‌یابی و واسازی (CLA)</h4>
-                    <p>شکستن ساختار سیگنال‌ها به لایه‌های سیستمی، گفتمانی و اسطوره‌ای برای درک ریشه‌های عمیق تمدنی و ذهنی مسئله.</p>
+                    <h4 data-i18n="integration.step2Title">ریشه‌یابی و واسازی (CLA)</h4>
+                    <p data-i18n="integration.step2Desc">شکستن ساختار سیگنال‌ها به لایه‌های سیستمی، گفتمانی و اسطوره‌ای برای درک ریشه‌های عمیق تمدنی و ذهنی مسئله.</p>
                 </div>
                 <div class="integration-arrow"><i data-lucide="chevron-left"></i></div>
                 
                 <div class="integration-step">
                     <div class="step-num">۳</div>
-                    <h4>تحلیل پیامدها (Futures Wheel)</h4>
-                    <p>نگاشت پیامدهای زنجیره‌ای مرتبه اول، دوم و سوم ناشی از تغییرات ساختاری برای شناسایی فرصت‌ها و تهدیدهای ثانویه.</p>
+                    <h4 data-i18n="integration.step3Title">تحلیل پیامدها (Futures Wheel)</h4>
+                    <p data-i18n="integration.step3Desc">نگاشت پیامدهای زنجیره‌ای مرتبه اول، دوم و سوم ناشی از تغییرات ساختاری برای شناسایی فرصت‌ها و تهدیدهای ثانویه.</p>
                 </div>
                 <div class="integration-arrow"><i data-lucide="chevron-left"></i></div>
                 
                 <div class="integration-step">
                     <div class="step-num">۴</div>
-                    <h4>طراحی گذار معکوس (Backcasting)</h4>
-                    <p>تعریف آرمان‌شهر یا چشم‌انداز هنجاری مطلوب و بازگشت گام‌به‌گام به حال برای تدوین سیاست‌های اجرایی فوری.</p>
+                    <h4 data-i18n="integration.step4Title">طراحی گذار معکوس (Backcasting)</h4>
+                    <p data-i18n="integration.step4Desc">تعریف آرمان‌شهر یا چشم‌انداز هنجاری مطلوب و بازگشت گام‌به‌گام به حال برای تدوین سیاست‌های اجرایی فوری.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Methodological Depth Section -->
+        <div class="method-depth-section glass-card" style="margin-top: 60px; padding: 40px;">
+            <div class="section-header" style="margin-bottom: 24px;">
+                <span class="section-tag" data-i18n="depth.tag">عمق متدولوژیک</span>
+                <h2 data-i18n="depth.title">چرا این چارچوب‌ها مکمل یکدیگرند؟</h2>
+            </div>
+            <div class="depth-grid">
+                <div class="depth-card">
+                    <div class="depth-num">01</div>
+                    <h4 data-i18n="depth.card1Title">از سیگنال تا ساختار</h4>
+                    <p data-i18n="depth.card1Desc">FITness سیگنال‌های ضعیف را رصد می‌کند؛ CLA آن‌ها را از سطح اخبار به ساختار و اسطوره می‌برد.</p>
+                </div>
+                <div class="depth-card">
+                    <div class="depth-num">02</div>
+                    <h4 data-i18n="depth.card2Title">از علت تا پیامد</h4>
+                    <p data-i18n="depth.card2Desc">Futures Wheel پیامدهای زنجیره‌ای تغییرات ساختاری را به صورت بصری و سیستمی نگاشت می‌کند.</p>
+                </div>
+                <div class="depth-card">
+                    <div class="depth-num">03</div>
+                    <h4 data-i18n="depth.card3Title">از آینده مطلوب تا اقدام</h4>
+                    <p data-i18n="depth.card3Desc">Backcasting از تصویر آینده مطلوب به عقب برمی‌گردد و گام‌های سیاستی و عملیاتی امروز را مشخص می‌کند.</p>
+                </div>
+                <div class="depth-card">
+                    <div class="depth-num">04</div>
+                    <h4 data-i18n="depth.card4Title">چرخه یادگیری سازمانی</h4>
+                    <p data-i18n="depth.card4Desc">ترکیب این ابزارها یک چرخه یادگیری استراتژیک می‌سازد: حس → فهم → پیش‌بینی پیامد → طراحی گذار.</p>
                 </div>
             </div>
         </div>
 
         <!-- Scholarly Footnote/Citations -->
         <div class="citation-box glass-card" style="margin-top: 80px;">
-            <h4><i data-lucide="book-open" style="vertical-align: middle; margin-left: 8px;"></i> مرجع علمی پورتال:</h4>
-            <p style="margin-top: 8px; font-size: 0.9rem; line-height: 1.6;">
-                این پورتال آموزشی-کاربردی با ادغام چارچوب‌های اصلی آینده‌پژوهی توسعه یافته است:
-                <br>
-                ۱. مدل **Future FITness** رنه روهربک برگرفته از کتاب دانشگاهی 
-                <a href="https://rene-rohrbeck.com/about-foresight/" target="_blank">Corporate Foresight: Towards a Maturity Model</a> (2010).
-                <br>
-                ۲. روش **تحلیل لایه‌ای علت‌ها (CLA)** بر اساس تئوری سهیل عنایت‌الله منتشر شده در پلتفرم 
-                <a href="https://metafuture.org" target="_blank">Metafuture</a>.
-                <br>
-                ۳. متدولوژی **چرخ آینده** ابداع شده توسط جروم سی. گلن در راهنمای روش‌شناسی 
-                <a href="http://www.millennium-project.org" target="_blank">The Millennium Project</a>.
-                <br>
-                ۴. روش **پس‌نگری (Backcasting)** بر اساس رویکرد تحلیل سیاست انرژی و سیستم‌های هنجاری جان بی. رابینسون (John B. Robinson) منتشر شده در ژورنال 
-                <a href="https://www.sciencedirect.com/journal/energy-policy" target="_blank">Energy Policy</a>.
-            </p>
+            <h4><i data-lucide="book-open" style="vertical-align: middle; margin-left: 8px;"></i> <span data-i18n="index.citationTitle">مرجع علمی پورتال:</span></h4>
+            <p data-i18n="citations.portalBody" data-i18n-html style="margin-top: 8px; font-size: 0.9rem; line-height: 1.6;"></p>
         </div>
     </section>
 
@@ -191,7 +207,7 @@
                     <span class="logo-icon"><i data-lucide="compass"></i></span>
                     <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
                 </div>
-                <p>پلتفرم تعاملی ارزیابی و آموزش آمادگی و تناسب با آینده بر اساس مدل‌های بلوغ رنه روهربک، روش تحلیل لایه‌ای علتها (CLA) سهیل عنایت‌الله، و روش چرخ آینده جروم سی گلن.</p>
+                <p data-i18n="footer.desc">پلتفرم تعاملی ارزیابی و آموزش آمادگی و تناسب با آینده بر اساس مدل‌های بلوغ رنه روهربک، روش تحلیل لایه‌ای علتها (CLA) سهیل عنایت‌الله، و روش چرخ آینده جروم سی گلن.</p>
             </div>
             
             <div class="footer-profile glass-card">
@@ -199,22 +215,25 @@
                     <div class="profile-avatar"><i data-lucide="user"></i></div>
                     <div class="profile-title">
                         <h4>علی منصوری</h4>
-                        <p>دانشجوی دکتری آینده‌پژوهی دانشگاه تهران</p>
+                        <p data-i18n="footer.role">دانشجوی دکتری آینده‌پژوهی دانشگاه تهران</p>
                     </div>
                 </div>
                 <div class="profile-links">
                     <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
-                        <i data-lucide="file-text"></i> مشاهده رزومه و سوابق
+                        <i data-lucide="file-text"></i> <span data-i18n="footer.resume">مشاهده رزومه و سوابق</span>
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>توسعه‌یافته برای درس آینده‌پژوهی سازمانی. کلیه حقوق علمی متعلق به علی منصوری می‌باشد.</p>
+            <p data-i18n="footer.copyright">توسعه‌یافته برای درس آینده‌پژوهی سازمانی. کلیه حقوق علمی متعلق به علی منصوری می‌باشد.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
+    <script src="i18n.js"></script>
+    <script src="i18n-pages.js"></script>
+    <script src="shared.js"></script>
     <script src="main.js"></script>
     <script src="animation.js"></script>
 </body>

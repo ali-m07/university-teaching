@@ -92,8 +92,8 @@
             <div class="wheel-sidebar">
                 <div class="wheel-sidebar-default active" id="wheel-sidebar-default">
                     <div class="wheel-pulse-icon"><i data-lucide="compass"></i></div>
-                    <h3>شبکه پیامدها و تاثیرات پنهان</h3>
-                    <p>یکی از پیامدهای مرتبه اول را در شبکه دایره‌ای سمت راست انتخاب کنید تا تاثیرات ثانویه و پیامدهای نهایی نظامی-امنیتی آن لود شوند.</p>
+                    <h3 data-i18n="wheel.sidebarTitle">شبکه پیامدها و تاثیرات پنهان</h3>
+                    <p data-i18n="wheel.sidebarSub">یکی از پیامدهای مرتبه اول را در شبکه دایره‌ای انتخاب کنید تا تاثیرات ثانویه و پیامدهای نهایی آن نمایش داده شود.</p>
                 </div>
 
                 <div class="wheel-sidebar-detail" id="wheel-sidebar-detail" style="display: none;">
@@ -105,12 +105,12 @@
                     <div class="wheel-chain-wrapper">
                         <!-- Order 2 -->
                         <div class="wheel-chain-card w-c2">
-                            <span class="lbl-order">پیامدهای ثانویه (مرتبه ۲):</span>
+                            <span class="lbl-order" id="wheel-chain-2-label" data-i18n="wheel.chain2">پیامدهای مرتبه دوم</span>
                             <p id="wheel-2nd-text">توضیح...</p>
                         </div>
                         <!-- Order 3 -->
                         <div class="wheel-chain-card w-c3">
-                            <span class="lbl-order">پیامدهای نهایی و امنیتی (مرتبه ۳):</span>
+                            <span class="lbl-order" id="wheel-chain-3-label" data-i18n="wheel.chain3">پیامدهای مرتبه سوم</span>
                             <p id="wheel-3rd-text">توضیح...</p>
                         </div>
                     </div>
@@ -262,14 +262,24 @@
 
         <!-- Citation details -->
         <div class="citation-box glass-card">
-            <h4><i data-lucide="link"></i> مرجع متدولوژی و مطالعه روش‌شناختی چرخ آینده:</h4>
-            <p style="margin-top: 8px;">
-                متدولوژی چرخ آینده ابتدا توسط جروم سی. گلن در سال ۱۹۷۱ معرفی گردید. راهنما و فصول جامع نحوه محاسبات احتمالات و کمی‌سازی پیامدها در نشریه مرجع 
-                <a href="http://www.millennium-project.org/publications-2/" target="_blank">Futures Research Methodology 3.0</a> 
-                توسط پروژه هزاره (The Millennium Project) منتشر گردیده و فصل کامل آن در 
-                <a href="https://www.researchgate.net/publication/349474778_THE_FUTURES_WHEEL" target="_blank">ResearchGate</a> 
-                در دسترس است.
-            </p>
+            <h4><i data-lucide="link"></i> <span data-i18n="citations.wheelTitle">مرجع متدولوژی و مطالعه روش‌شناختی چرخ آینده:</span></h4>
+            <p data-i18n="citations.wheelBody" data-i18n-html style="margin-top: 8px;"></p>
+        </div>
+    </section>
+
+    <!-- Methodological Depth -->
+    <section class="container method-depth-section" style="padding-bottom: 60px;">
+        <div class="glass-card" style="padding: 40px; border-color: rgba(255, 51, 0, 0.15);">
+            <div class="section-header" style="margin-bottom: 24px;">
+                <span class="section-tag" style="color: var(--color-wheel-red);" data-i18n="wheelDepth.tag">عمق اجرای چرخ آینده</span>
+                <h2 data-i18n="wheelDepth.title">فرآیند ۱۱ مرحله‌ای Glenn Futures Wheel</h2>
+            </div>
+            <div class="depth-grid">
+                <div class="depth-card"><div class="depth-num">01</div><p data-i18n="wheelDepth.s1">تعریف رویداد/تصمیم محوری و تشکیل تیم خبرگان چندتخصصی.</p></div>
+                <div class="depth-card"><div class="depth-num">02</div><p data-i18n="wheelDepth.s2">طوفان فکری پیامدهای مرتبه اول بدون قضاوت و سانسور.</p></div>
+                <div class="depth-card"><div class="depth-num">03</div><p data-i18n="wheelDepth.s3">طبقه‌بندی STEEP و گسترش به پیامدهای مرتبه دوم و سوم.</p></div>
+                <div class="depth-card"><div class="depth-num">04</div><p data-i18n="wheelDepth.s4">اولویت‌بندی، سیاست‌گذاری و تدوین اقدامات پدافندی/انطباقی.</p></div>
+            </div>
         </div>
     </section>
 
@@ -305,6 +315,9 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="i18n.js"></script>
+    <script src="i18n-pages.js"></script>
+    <script src="shared.js"></script>
     <script src="futures-wheel.js"></script>
     <script src="animation.js"></script>
 </body>

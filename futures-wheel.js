@@ -71,80 +71,109 @@ function initParticles() {
     });
 }
 
-// 2. Futures Wheel Detailed Dataset
+// 2. Futures Wheel Detailed Dataset (bilingual)
+function locWheel(obj) { return typeof loc === 'function' ? loc(obj) : (obj?.fa || obj); }
+
 const wheelData = {
     drought: {
-        title: 'خشکسالی و کم‌آبی شدید هیدروپولوژیک',
-        desc: 'کاهش متوسط ۲۵ درصدی نزولات جوی در حوضه‌های آبریز البرز و زاگرس و فلات مرکزی به همراه افزایش چشمگیر تبخیر سطحی ناشی از گرمای شدید هوا و تخلیه بحرانی بیلان سفره‌های زیرزمینی.',
+        title: { fa: 'خشکسالی و کم‌آبی شدید هیدروپولوژیک', en: 'Severe Hydrological Drought & Water Scarcity' },
+        desc: {
+            fa: 'کاهش متوسط ۲۵ درصدی نزولات جوی در حوضه‌های البرز و زاگرس و تخلیه بحرانی سفره‌های زیرزمینی.',
+            en: 'Average 25% rainfall decline in Alborz/Zagros basins and critical depletion of aquifers.'
+        },
         nodes2nd: [
-            { id: 'dr-2a', title: 'تنش هیدروپلیتیشن استان‌ها' },
-            { id: 'dr-2b', title: 'ورشکستگی معیشت زارعین' }
+            { id: 'dr-2a', title: { fa: 'تنش هیدروپلیتیک استان‌ها', en: 'Inter-provincial Hydropolitics' } },
+            { id: 'dr-2b', title: { fa: 'ورشکستگی معیشت زارعین', en: 'Farmer Livelihood Collapse' } }
         ],
         nodes3rd: {
-            'dr-2a': [
-                { id: 'dr-3a', title: 'امنیتی شدن بحران آب' }
-            ],
-            'dr-2b': [
-                { id: 'dr-3b', title: 'مهاجرت توده‌ای و زاغه‌نشینی' }
-            ]
+            'dr-2a': [{ id: 'dr-3a', title: { fa: 'امنیتی شدن بحران آب', en: 'Securitization of Water Crisis' } }],
+            'dr-2b': [{ id: 'dr-3b', title: { fa: 'مهاجرت توده‌ای و زاغه‌نشینی', en: 'Mass Migration & Informal Settlements' } }]
         },
-        '2nd': '<strong>۱. تنش‌های هیدروپلیتیشن و انتقال آب بین‌حوضه‌ای:</strong> تشدید تعارضات و منازعات حاد اجتماعی میان استان‌های مجاور (مانند حوضه زاینده‌رود بین اصفهان، چهارمحال و یزد) بر سر پروژه‌های انتقال آب، تخصیص حق‌آبه‌های تاریخی و مدیریت فاقد ارزیابی اکولوژیک منابع آب.<br><strong>۲. ورشکستگی معیشتی کشاورزی بومی:</strong> خشک‌شدن سفره‌های زیرزمینی و قنوات، بایر شدن اراضی زراعی حاصلخیز، نابودی دامداری‌ها، و از بین رفتن بنیان‌های معیشتی بیش از ۴ میلیون زارع در فلات مرکزی و شرق کشور.',
-        '3rd': '<strong>۱. امنیتی شدن و طغیان نارضایتی‌های زیستی:</strong> تبدیل کسری منابع آب به یک محرک فعال ناآرامی‌های مدنی، وقوع تجمعات و اعتراضات خشن در کانون‌های کشاورزی و شهری، و فرسودگی سرمایه اجتماعی و حاکمیت قانون.<br><strong>۲. مهاجرت‌های اجباری توده‌ای و تنش‌های فرهنگی:</strong> تخلیه سکونتگاه‌های روستایی فاقد آب، هجوم گسترده توده‌های مهاجر به حاشیه کلان‌شهرهای اصفهان، یزد، تهران و البرز، و شکل‌گیری کانون‌های بحران اجتماعی، بزهکاری و تنش‌های هویتی ناشی از ناهمگونی فرهنگی با جامعه میزبان.'
+        '2nd': {
+            fa: '<strong>۱. تنش‌های هیدروپلیتیک:</strong> تشدید تعارضات بین استان‌ها بر سر حق‌آبه و انتقال آب.<br><strong>۲. ورشکستگی معیشتی کشاورزی:</strong> خشک‌شدن سفره‌ها، بایر شدن اراضی و از بین رفتن معیشت میلیون‌ها زارع.',
+            en: '<strong>1. Hydropolitical tensions:</strong> Escalating inter-provincial conflicts over water rights and transfer projects.<br><strong>2. Agricultural livelihood collapse:</strong> Aquifer depletion, farmland abandonment, and loss of rural livelihoods.'
+        },
+        '3rd': {
+            fa: '<strong>۱. امنیتی شدن بحران آب:</strong> تبدیل کسری آب به محرک ناآرامی‌های مدنی.<br><strong>۲. مهاجرت اجباری:</strong> تخلیه روستاها و شکل‌گیری کانون‌های بحران در حاشیه شهرها.',
+            en: '<strong>1. Securitization:</strong> Water scarcity as a driver of civil unrest.<br><strong>2. Forced migration:</strong> Rural depopulation and urban periphery crisis zones.'
+        }
     },
     food: {
-        title: 'کاهش شدید امنیت غذایی',
-        desc: 'فرونشست‌های میلی‌متری گسترده دشت‌های حاصلخیز کشت و تخلیه آبخوان‌ها به همراه شوری فزاینده خاک که منجر به افت چشمگیر غلات پایه تمدنی می‌شود.',
+        title: { fa: 'کاهش شدید امنیت غذایی', en: 'Severe Food Security Decline' },
+        desc: {
+            fa: 'فرونشست دشت‌های حاصلخیز، شوری خاک و افت تولید غلات پایه.',
+            en: 'Farmland subsidence, soil salinization, and sharp decline in staple crop yields.'
+        },
         nodes2nd: [
-            { id: 'fo-2a', title: 'افت شدید تولید غلات پایه' },
-            { id: 'fo-2b', title: 'تخلیه جمعیتی مناطق مرزی' }
+            { id: 'fo-2a', title: { fa: 'افت شدید تولید غلات پایه', en: 'Staple Crop Production Drop' } },
+            { id: 'fo-2b', title: { fa: 'تخلیه جمعیتی مناطق مرزی', en: 'Border Region Depopulation' } }
         ],
         nodes3rd: {
-            'fo-2a': [
-                { id: 'fo-3a', title: 'وابستگی ژئوپلیتیک غذایی' }
-            ],
-            'fo-2b': [
-                { id: 'fo-3b', title: 'تهدید تمامیت ارضی نوار مرز' }
-            ]
+            'fo-2a': [{ id: 'fo-3a', title: { fa: 'وابستگی ژئوپلیتیک غذایی', en: 'Geopolitical Food Dependency' } }],
+            'fo-2b': [{ id: 'fo-3b', title: { fa: 'تهدید تمامیت ارضی نوار مرز', en: 'Border Integrity Threat' } }]
         },
-        '2nd': '<strong>۱. افت تولید غلات و نهاده‌های کشاورزی:</strong> سقوط ۴۰ تا ۵۰ درصدی برداشت محصولات استراتژیک مانند گندم، جو، ذرت و علوفه دامی در دشت‌های مهم کشاورزی کشور (نظیر خوزستان و گلستان) به دلیل فقر خاک و ناترازی منابع آب.<br><strong>۲. تخلیه جمعیتی روستاها و اراضی کشاورزی:</strong> فروپاشی زیست‌بوم‌های سنتی تولید محور در کویر مرکزی و شرق کشور، رها شدن مزارع و فرار ساکنان به سمت عرض‌های جغرافیایی شمالی‌تر و غربی‌تر کشور.',
-        '3rd': '<strong>۱. وابستگی ژئوپلیتیک غذایی و اهرم فشار تحریمی:</strong> نیاز مفرط به خروج میلیاردها دلار ارز سالانه جهت واردات مواد غذایی پایه، آسیب‌پذیری شدید در برابر تلاطم‌های قیمت جهانی کالا و قرار گرفتن امنیت ملی در معرض تحریم‌ها و باج‌خواهی‌های بین‌المللی.<br><strong>۲. تضعیف امنیت مرزها و افزایش نفوذپذیری تمامیت ارضی:</strong> خالی شدن روستاهای نوار مرزی شرق و جنوب‌شرق (سیستان و بلوچستان و خراسان جنوبی) که سبب تضعیف سپرهای دفاعی طبیعی کشور در برابر تهدیدهای فرامرزی، ترانزیت مواد مخدر، قاچاق انسان و نفوذ گروه‌های تروریستی گردیده و هزینه‌های لجستیک نظامی پدافند را چندبرابر می‌کند.'
+        '2nd': {
+            fa: '<strong>۱. افت تولید غلات:</strong> سقوط ۴۰–۵۰٪ برداشت گندم و ذرت در دشت‌های کلیدی.<br><strong>۲. تخلیه روستایی:</strong> فروپاشی تولید در شرق و مرکز کشور.',
+            en: '<strong>1. Crop yield collapse:</strong> 40–50% decline in wheat and corn in key basins.<br><strong>2. Rural exodus:</strong> Production collapse in central and eastern regions.'
+        },
+        '3rd': {
+            fa: '<strong>۱. وابستگی غذایی:</strong> واردات میلیارد دلاری و آسیب‌پذیری تحریمی.<br><strong>۲. امنیت مرزی:</strong> خالی شدن روستاهای مرزی و افزایش نفوذپذیری.',
+            en: '<strong>1. Food dependency:</strong> Billions in imports and sanctions vulnerability.<br><strong>2. Border security:</strong> Empty border villages and increased transnational threats.'
+        }
     },
     dust: {
-        title: 'طوفان‌های شن و ریزگردها',
-        desc: 'خشک شدن کامل تالاب‌های مرزی و فلات داخلی (هورالعظیم، هامون، گاوخونی) که کانون‌های فعال ریزگرد با بادهای ۱۲۰ روزه ایجاد می‌کند.',
+        title: { fa: 'طوفان‌های شن و ریزگردها', en: 'Dust Storms & Fine Particulates' },
+        desc: {
+            fa: 'خشک شدن تالاب‌های مرزی و کانون‌های ریزگرد با بادهای ۱۲۰ روزه.',
+            en: 'Drying of border wetlands creating active dust sources with seasonal winds.'
+        },
         nodes2nd: [
-            { id: 'du-2a', title: 'تنش‌های دیپلماسی مرزی آب' },
-            { id: 'du-2b', title: 'از کار افتادگی همه‌گیر شهرها' }
+            { id: 'du-2a', title: { fa: 'تنش‌های دیپلماسی مرزی آب', en: 'Transboundary Water Diplomacy' } },
+            { id: 'du-2b', title: { fa: 'از کار افتادگی همه‌گیر شهرها', en: 'Urban Shutdown Episodes' } }
         ],
         nodes3rd: {
-            'du-2a': [
-                { id: 'du-3a', title: 'درگیری مسلحانه هیدروپلیتیک' }
-            ],
-            'du-2b': [
-                { id: 'du-3b', title: 'استهلاک لجستیک پدافند مرز' }
-            ]
+            'du-2a': [{ id: 'du-3a', title: { fa: 'درگیری مسلحانه هیدروپلیتیک', en: 'Armed Hydropolitical Conflict' } }],
+            'du-2b': [{ id: 'du-3b', title: { fa: 'استهلاک لجستیک پدافند مرز', en: 'Border Defense Logistics Strain' } }]
         },
-        '2nd': '<strong>۱. تنش‌های شدید دیپلماسی مرزی آب:</strong> اصطکاک عمیق سیاسی با افغانستان بر سر احداث سدهای سلما و کمال‌خان و عدم پایبندی به معاهده هیرمند، و با ترکیه و عراق بر سر پیامدهای سدسازی‌های گسترده (پروژه گاپ و داپ).<br><strong>۲. بحران بهداشتی همه‌گیر و از کار افتادگی اقتصاد شهری:</strong> تعطیلی‌های مکرر ادارات، کارگاه‌ها و مدارس در جنوب، غرب و شرق کشور، مهاجرت فرستنده نخبگان و کادرهای درمانی به دلیل شیوع حاد بیماری‌های تنفسی، قلبی و چشمی.',
-        '3rd': '<strong>۱. درگیری‌های مسلحانه مرزی و بی‌ثباتی ژئوپلیتیک:</strong> بالا گرفتن منازعات مسلحانه مرزی و امنیتی با طالبان در مرزهای شرقی بر سر حق‌آبه‌ها، تبادل آتش مستقیم توپخانه‌ای، و تعلیق مقطعی مبادلات تجاری مرزی.<br><strong>۲. استهلاک پدافند غیرعامل و تجهیزات لجستیکی:</strong> کاهش کارایی سیستم‌های راداری، حسگرهای پدافند هوایی، و تجهیزات ناوبری به علت گرد و غبار شدید، نوسانات و اتصالات مداوم خطوط توزیع برق در استان‌های مرزی، و کاهش شدید ضریب آمادگی دفاعی پادگان‌های مرزبانی.'
+        '2nd': {
+            fa: '<strong>۱. دیپلماسی مرزی:</strong> اصطکاک با افغانستان، ترکیه و عراق بر سر آب.<br><strong>۲. بحران بهداشتی:</strong> تعطیلی مدارس و افزایش بیماری‌های تنفسی.',
+            en: '<strong>1. Border diplomacy:</strong> Tensions with Afghanistan, Turkey, and Iraq over water.<br><strong>2. Health crisis:</strong> School closures and respiratory disease spikes.'
+        },
+        '3rd': {
+            fa: '<strong>۱. درگیری مرزی:</strong> تشدید منازعات مسلحانه بر سر حق‌آبه.<br><strong>۲. استهلاک پدافند:</strong> کاهش کارایی رادار و تجهیزات در گردوغبار.',
+            en: '<strong>1. Border conflict:</strong> Escalating armed disputes over water rights.<br><strong>2. Defense strain:</strong> Radar and equipment degradation in dust conditions.'
+        }
     },
     heat: {
-        title: 'افزایش دما و موج‌های گرما',
-        desc: 'افزایش ۲ تا ۴ درجه‌ای دمای متوسط سالانه در ایران، وقوع موج‌های گرمای کشنده در تابستان و افزایش بی‌سابقه تبخیر سطحی آب.',
+        title: { fa: 'افزایش دما و موج‌های گرما', en: 'Rising Temperatures & Heat Waves' },
+        desc: {
+            fa: 'افزایش ۲–۴ درجه‌ای دمای متوسط و موج‌های گرمای کشنده.',
+            en: '2–4°C average temperature rise and lethal summer heat waves.'
+        },
         nodes2nd: [
-            { id: 'he-2a', title: 'ناترازی شدید شبکه برق و انرژی' },
-            { id: 'he-2b', title: 'ذوب سریع یخچالهای کوهستان' }
+            { id: 'he-2a', title: { fa: 'ناترازی شدید شبکه برق', en: 'Power Grid Imbalance' } },
+            { id: 'he-2b', title: { fa: 'ذوب سریع یخچال‌های کوهستان', en: 'Accelerated Snowpack Melt' } }
         ],
         nodes3rd: {
-            'he-2a': [
-                { id: 'he-3a', title: 'قطعی برق صنایع و رکود اقتصادی' }
-            ],
-            'he-2b': [
-                { id: 'he-3b', title: 'سیلاب‌های ویرانگر بهاری مونسون' }
-            ]
+            'he-2a': [{ id: 'he-3a', title: { fa: 'قطعی برق صنایع', en: 'Industrial Power Shutdowns' } }],
+            'he-2b': [{ id: 'he-3b', title: { fa: 'سیلاب‌های ویرانگر بهاری', en: 'Destructive Spring Floods' } }]
         },
-        '2nd': '<strong>۱. ناترازی شدید شبکه برق و انرژی سراسری:</strong> فرسودگی و خروج پیاپی نیروگاه‌های حرارتی به دلیل گرمای آب خنک‌کننده، ناتوانی در تامین تقاضای جهش‌یافته سرمایش خانگی، و قطعی‌های سیستماتیک صنعتی.<br><strong>۲. ذوب زودهنگام و نابودی ذخایر برف کوهستان‌ها:</strong> ذوب کامل یخچال‌های طبیعی البرز و زاگرس در اوایل بهار، خشک شدن زودهنگام رودخانه‌های تغذیه‌کننده سدها، و کاهش ورودی آب‌های سطحی سدهای برق‌آبی کشور.',
-        '3rd': '<strong>۱. فلج شدن صنایع مادر و افت تولید ناخالص داخلی:</strong> تعطیلی‌های پیاپی کارخانجات بزرگ فولاد، سیمان، پتروشیمی و صنایع معدنی به منظور تامین برق خانوارها که به رکود اقتصادی، کاهش صادرات غیرنفتی و تعدیل نیرو کارگران می‌انجامد.<br><strong>۲. سیلاب‌های طغیانی ناگهانی و آسیب‌های زیرساختی:</strong> جاری شدن سیل‌های ویرانگر و پیش‌بینی‌نشده بهاری به دلیل ذوب پرشتاب برف ارتفاعات همراه با بارش‌های سیل‌آسای مونسون، تخریب شبکه راه‌ها، پل‌ها، و لوله‌های انتقال گاز و آب، و تحمیل بار مالی عظیم بر بودجه عمرانی کشور.'
+        '2nd': {
+            fa: '<strong>۱. ناترازی برق:</strong> خروج نیروگاه‌ها و قطعی صنعتی.<br><strong>۲. ذوب زودهنگام برف:</strong> کاهش ورودی آب سدهای برق‌آبی.',
+            en: '<strong>1. Power imbalance:</strong> Plant outages and industrial blackouts.<br><strong>2. Early snowmelt:</strong> Reduced hydroelectric reservoir inflows.'
+        },
+        '3rd': {
+            fa: '<strong>۱. رکود صنعتی:</strong> تعطیلی فولاد و پتروشیمی.<br><strong>۲. سیلاب ناگهانی:</strong> تخریب زیرساخت‌ها از ذوب پرشتاب.',
+            en: '<strong>1. Industrial recession:</strong> Steel and petrochemical shutdowns.<br><strong>2. Flash floods:</strong> Infrastructure damage from rapid melt.'
+        }
     }
+};
+
+const wheelNodeLabels = {
+    drought: { fa: 'خشکسالی و کم‌آبی شدید', en: 'Severe Drought' },
+    food: { fa: 'کاهش امنیت غذایی', en: 'Food Security Decline' },
+    dust: { fa: 'طوفان شن و ریزگردها', en: 'Dust Storms' },
+    heat: { fa: 'افزایش دما و موج گرما', en: 'Heat Waves' }
 };
 
 
@@ -176,32 +205,35 @@ function renderFuturesWheel(activeKey) {
     const dynamicContainer = document.getElementById('wheel-dynamic-nodes');
     if (!wrapper || !svg || !dynamicContainer) return;
     
-    // Clear dynamic content
     svg.innerHTML = '';
     dynamicContainer.innerHTML = '';
     
-    // Get wrapper dimensions
     const width = wrapper.clientWidth || 500;
-    const height = wrapper.clientHeight || 400;
+    const height = wrapper.clientHeight || 520;
     const cx = width / 2;
     const cy = height / 2;
     
-    // Position center hub
+    svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+    svg.setAttribute('width', width);
+    svg.setAttribute('height', height);
+    
     const hub = document.getElementById('hub-node');
     if (hub) {
         hub.style.left = `${cx}px`;
         hub.style.top = `${cy}px`;
         hub.style.transform = 'translate(-50%, -50%)';
         hub.style.position = 'absolute';
+        const hubLabel = hub.querySelector('.hub-label');
+        const hubSub = hub.querySelector('.hub-sub');
+        if (hubLabel) hubLabel.textContent = t('wheel.hubLabel');
+        if (hubSub) hubSub.textContent = t('wheel.hubSub');
     }
     
-    // Scale radii responsively
-    const baseR = Math.min(width, height) * 0.35;
-    const R1 = baseR * 0.85;
-    const R2 = baseR * 1.55;
-    const R3 = baseR * 2.15;
+    const maxR = Math.min(width, height) / 2 - 70;
+    const R1 = maxR * 0.42;
+    const R2 = maxR * 0.68;
+    const R3 = maxR * 0.92;
     
-    // 1. Position all 1st order nodes and draw lines to hub
     Object.keys(angles1st).forEach(k => {
         const node = document.getElementById(`node-${k}`);
         if (!node) return;
@@ -215,12 +247,15 @@ function renderFuturesWheel(activeKey) {
         node.style.transform = 'translate(-50%, -50%)';
         node.style.position = 'absolute';
         
+        const titleEl = node.querySelector('.w-title');
+        if (titleEl && wheelNodeLabels[k]) titleEl.textContent = loc(wheelNodeLabels[k]);
+        const orderEl = node.querySelector('.w-order');
+        if (orderEl) orderEl.textContent = t('common.order1');
+        
         const isActive = (k === activeKey);
-        const lineClass = isActive ? 'line-1st active-line' : 'line-1st dimmed-line';
-        drawSvgLine(cx, cy, x1, y1, lineClass);
+        drawSvgLine(cx, cy, x1, y1, isActive ? 'line-1st active-line' : 'line-1st dimmed-line');
     });
     
-    // 2. Render 2nd and 3rd order nodes for active node
     const data = wheelData[activeKey];
     if (!data) return;
     
@@ -232,65 +267,44 @@ function renderFuturesWheel(activeKey) {
     const yActive = cy + R1 * Math.sin(degToRad(baseAngle));
     
     nodes2nd.forEach((n2, idx) => {
-        // Position 2nd order node: fan out -25° or +25° from active angle
-        const angle2nd = baseAngle + (idx === 0 ? -25 : 25);
+        const angle2nd = baseAngle + (idx === 0 ? -22 : 22);
         const x2 = cx + R2 * Math.cos(degToRad(angle2nd));
         const y2 = cy + R2 * Math.sin(degToRad(angle2nd));
         
-        // Spawn DOM Element
         const el2 = document.createElement('div');
         el2.className = 'wheel-node w-node-2nd';
         el2.id = n2.id;
-        el2.style.left = `${x2}px`;
-        el2.style.top = `${y2}px`;
-        el2.style.transform = 'translate(-50%, -50%)';
-        el2.style.position = 'absolute';
-        el2.style.pointerEvents = 'auto';
-        el2.innerHTML = `
-            <span class="w-order">مرتبه ۲</span>
-            <span class="w-title">${n2.title}</span>
-        `;
+        el2.style.cssText = `left:${x2}px;top:${y2}px;transform:translate(-50%,-50%);position:absolute;pointer-events:auto;`;
+        el2.innerHTML = `<span class="w-order">${t('common.order2')}</span><span class="w-title">${loc(n2.title)}</span>`;
         dynamicContainer.appendChild(el2);
         
-        // Draw 1st to 2nd line
         drawSvgLine(xActive, yActive, x2, y2, 'line-2nd');
         
-        // Render 3rd order nodes connected to this 2nd order node
-        const list3rd = nodes3rd[n2.id] || [];
-        list3rd.forEach((n3, idx3) => {
-            // Fan out 3rd order node slightly further: e.g. -15° or +15° from 2nd angle
-            const angle3rd = angle2nd + (idx === 0 ? -15 : 15);
+        (nodes3rd[n2.id] || []).forEach((n3) => {
+            const angle3rd = angle2nd + (idx === 0 ? -14 : 14);
             const x3 = cx + R3 * Math.cos(degToRad(angle3rd));
             const y3 = cy + R3 * Math.sin(degToRad(angle3rd));
             
-            // Spawn DOM Element
             const el3 = document.createElement('div');
             el3.className = 'wheel-node w-node-3rd';
             el3.id = n3.id;
-            el3.style.left = `${x3}px`;
-            el3.style.top = `${y3}px`;
-            el3.style.transform = 'translate(-50%, -50%)';
-            el3.style.position = 'absolute';
-            el3.style.pointerEvents = 'auto';
-            el3.innerHTML = `
-                <span class="w-order">مرتبه ۳</span>
-                <span class="w-title">${n3.title}</span>
-            `;
+            el3.style.cssText = `left:${x3}px;top:${y3}px;transform:translate(-50%,-50%);position:absolute;pointer-events:auto;`;
+            el3.innerHTML = `<span class="w-order">${t('common.order3')}</span><span class="w-title">${loc(n3.title)}</span>`;
             dynamicContainer.appendChild(el3);
             
-            // Draw 2nd to 3rd line
             drawSvgLine(x2, y2, x3, y3, 'line-3rd');
         });
     });
     
-    // Dynamic entrances stagger via GSAP
-    gsap.from('.w-node-2nd, .w-node-3rd', {
-        scale: 0,
-        opacity: 0,
-        duration: 0.5,
-        stagger: 0.08,
-        ease: 'back.out(1.5)'
-    });
+    if (window.gsap) {
+        gsap.from('.w-node-2nd, .w-node-3rd', {
+            scale: 0,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.08,
+            ease: 'back.out(1.5)'
+        });
+    }
 }
 
 function showWheelDetail(key) {
@@ -313,10 +327,15 @@ function showWheelDetail(key) {
     void detailPanel.offsetWidth; // Force reflow
     detailPanel.classList.add('active');
     
-    document.getElementById('wheel-detail-title').innerText = data.title;
-    document.getElementById('wheel-detail-desc').innerText = data.desc;
-    document.getElementById('wheel-2nd-text').innerHTML = data['2nd'];
-    document.getElementById('wheel-3rd-text').innerHTML = data['3rd'];
+    document.getElementById('wheel-detail-title').innerText = loc(data.title);
+    document.getElementById('wheel-detail-desc').innerText = loc(data.desc);
+    document.getElementById('wheel-2nd-text').innerHTML = loc(data['2nd']);
+    document.getElementById('wheel-3rd-text').innerHTML = loc(data['3rd']);
+    
+    const chain2Label = document.getElementById('wheel-chain-2-label');
+    const chain3Label = document.getElementById('wheel-chain-3-label');
+    if (chain2Label) chain2Label.textContent = t('wheel.chain2');
+    if (chain3Label) chain3Label.textContent = t('wheel.chain3');
     
     // Call concentric circular layout builder
     renderFuturesWheel(key);
@@ -327,25 +346,33 @@ function closeWheelDetail() {
     document.getElementById('wheel-sidebar-default').style.display = 'block';
     document.querySelectorAll('.w-node-1st').forEach(node => node.classList.remove('active-node'));
     
-    // Clear concentric dynamically drawn nodes/lines
     const wrapper = document.querySelector('.wheel-visualizer-wrapper');
+    if (!wrapper) return;
     const width = wrapper.clientWidth || 500;
-    const height = wrapper.clientHeight || 400;
+    const height = wrapper.clientHeight || 520;
     const cx = width / 2;
     const cy = height / 2;
     
     document.getElementById('wheel-lines-svg').innerHTML = '';
     document.getElementById('wheel-dynamic-nodes').innerHTML = '';
     
-    // Redraw only baseline dimmed lines to 1st order nodes
-    const baseR = Math.min(width, height) * 0.35;
-    const R1 = baseR * 0.85;
+    const maxR = Math.min(width, height) / 2 - 70;
+    const R1 = maxR * 0.42;
     Object.keys(angles1st).forEach(k => {
         const angle = angles1st[k];
         const x1 = cx + R1 * Math.cos(degToRad(angle));
         const y1 = cy + R1 * Math.sin(degToRad(angle));
         drawSvgLine(cx, cy, x1, y1, 'line-1st dimmed-line');
     });
+}
+
+let activeWheelKey = 'drought';
+
+function refreshWheelOnLangChange() {
+    const activeNode = document.querySelector('.w-node-1st.active-node');
+    activeWheelKey = activeNode ? activeNode.id.replace('node-', '') : activeWheelKey;
+    if (activeNode) showWheelDetail(activeWheelKey);
+    else closeWheelDetail();
 }
 
 // 3. Types of Models tab panels
@@ -466,9 +493,16 @@ window.addEventListener('resize', () => {
 // Initialization
 window.addEventListener('DOMContentLoaded', () => {
     initParticles();
-    if (window.lucide) {
-        window.lucide.createIcons();
-    }
+    if (window.lucide) window.lucide.createIcons();
     switchModelTab('classic');
     showWheelDetail('drought');
+});
+
+window.addEventListener('langchange', () => {
+    refreshWheelOnLangChange();
+    const modelTab = document.querySelector('.model-tab.active');
+    if (modelTab) {
+        const match = modelTab.getAttribute('onclick')?.match(/'(\w+)'/);
+        if (match) switchModelTab(match[1]);
+    }
 });
