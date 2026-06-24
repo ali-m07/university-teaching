@@ -9,8 +9,9 @@ declare global {
 
 function detectBase(): string {
   const path = window.location.pathname.replace(/\\/g, '/');
-  if (path.includes('/methods/')) return '../';
-  if (path.includes('/about/') || path.includes('/articles/')) return '../';
+  const segments = path.split('/').filter(Boolean);
+  const sections = new Set(['methods', 'about', 'articles']);
+  if (segments.some((segment) => sections.has(segment))) return '../';
   return './';
 }
 

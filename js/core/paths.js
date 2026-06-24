@@ -3,9 +3,10 @@
  */
 (function () {
     const path = window.location.pathname.replace(/\\/g, '/');
-    const depth = /\/(methods|about|articles)\//.test(path) ? 1 : 0;
-    window.SFH_BASE = depth ? '../' : './';
     const segments = path.split('/').filter(Boolean);
+    const sections = new Set(['methods', 'about', 'articles']);
+    const inSection = segments.some((segment) => sections.has(segment));
+    window.SFH_BASE = inSection ? '../' : './';
     const last = segments[segments.length - 1] || '';
     window.SFH_PAGE = last.includes('.html') ? last : 'index.html';
 })();
