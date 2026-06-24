@@ -17,9 +17,9 @@
     "menu": "Menu"
   },
   "footer": {
-    "desc": "Technology futures · blog and articles · methods",
-    "descBackcast": "Technology futures · blog and articles · methods",
-    "descWheel": "Technology futures · blog and articles · methods",
+    "desc": "Technology futures - methods - blog and articles",
+    "descBackcast": "Technology futures - methods - blog and articles",
+    "descWheel": "Technology futures - methods - blog and articles",
     "role": "PhD candidate, Futures Studies",
     "resume": "CV",
     "copyright": "© Ali Mansouri"
@@ -154,7 +154,7 @@
     "spaceP1": "This is a personal hub for writing, methods, and thinking about technological futures.",
     "spaceP2": "My deeper specialty is Type-2 fuzzy logic — for when uncertainty itself is fuzzy. It fits well with weak signals, emerging trends, scenarios, and decisions under deep uncertainty.",
     "spaceP3": "Alongside this, I work in cloud and infrastructure — Docker, Kubernetes, DevOps — not as a separate path, but as part of the same system thinking. Technology, for me, is not just tools. It is structure, speed, and leverage.",
-    "findTitle": "What you'll find here",
+    "findTitle": "Sections",
     "findItems": [
       {
         "icon": "pen-line",
@@ -179,7 +179,7 @@
     "philosophyTag": "Philosophy",
     "philP1": "Technology should amplify human capability, not replace it.",
     "philP2": "Most of my thinking sits between what is emerging and what is not yet stable enough to name.",
-    "philP3": "When I'm not working, I'm usually exploring new places — physically or intellectually — trying to understand systems I haven't seen before. Some people say I'm very smart; I'm not fully convinced 😂",
+    "philP3": "When I am not working, I am usually exploring new places, physically or intellectually, to better understand systems I have not yet encountered.",
     "focusTitle": "Focus",
     "focuses": [],
     "ctaResume": "CV",
@@ -216,7 +216,7 @@
   "articlesPage": {
     "tag": "Articles",
     "title": "Blog and Articles",
-    "sub": "Analytical notes on emerging technologies, systems thinking, and strategic foresight.",
+    "sub": "Analytical essays on emerging technology, strategic foresight, and the methods I rely on when clarity is incomplete.",
     "emptyTitle": "Coming soon",
     "emptyDesc": "More articles are in preparation.",
     "articles": [
@@ -226,7 +226,49 @@
         "summary": "Why strategic foresight is less about prediction and more about reading signals, building scenarios, and making decisions when clarity is incomplete.",
         "tag": "Uncertainty",
         "status": "published",
-        "href": "articles/navigating-uncertainty.html"
+        "href": "articles/navigating-uncertainty.html",
+        "image": "assets/founders/lotfi-zadeh.jpg",
+        "author": "Foresight Hub · uncertainty, weak signals, Type-2 fuzzy logic"
+      },
+      {
+        "date": "2026",
+        "title": "Beyond the Biological Clock",
+        "summary": "A tightened, more rigorous version of a LinkedIn idea: AI does not merely move faster than us; it operates in a different temporal condition.",
+        "tag": "AI",
+        "status": "published",
+        "href": "articles/beyond-biological-clock.html",
+        "image": "assets/founders/lotfi-zadeh.jpg",
+        "author": "Ali Mansouri · adapted from a LinkedIn essay"
+      },
+      {
+        "date": "2026",
+        "title": "Why Rohrbeck Still Matters",
+        "summary": "From report-oriented foresight to dynamic capability: why Rohrbeck remains one of the clearest languages for organizational anticipation.",
+        "tag": "FITness",
+        "status": "published",
+        "href": "articles/why-rohrbeck-still-matters.html",
+        "image": "assets/founders/rohrbeck.jpg",
+        "author": "René Rohrbeck · organizational foresight maturity"
+      },
+      {
+        "date": "2026",
+        "title": "What CLA Sees Before Policy Does",
+        "summary": "CLA is not just a workshop device. It is a way to see the distance between headlines, structure, discourse, and myth.",
+        "tag": "CLA",
+        "status": "published",
+        "href": "articles/what-cla-sees-before-policy.html",
+        "image": "assets/founders/inayatullah.jpg",
+        "author": "Sohail Inayatullah · discourse, worldview, myth"
+      },
+      {
+        "date": "2026",
+        "title": "From Toolbox to Process",
+        "summary": "Why Hines and Bishop still matter for executives: they turn foresight from a catalog of tools into an operational sequence.",
+        "tag": "Six Pillars",
+        "status": "published",
+        "href": "articles/from-toolbox-to-process.html",
+        "image": "assets/founders/hines.jpg",
+        "author": "Andy Hines & Peter Bishop · managerial foresight"
       }
     ]
   },
@@ -2726,5 +2768,41 @@
     "readTime": "6 min read",
     "body": "<p>The future rarely begins with an announcement. It first appears as small signals: a shift in user behavior, a technology moving from laboratory to product, instability in a supply chain, or a new term slowly entering the language of managers and policymakers.</p><p>The point is not that these signals are always correct. Many are raw, incomplete, or temporary. The point is that in complex environments, ignoring weak signals often looks cheaper than paying attention to them, until they are no longer weak.</p><h2>Foresight is not prophecy</h2><p>For me, Foresight Hub is built on this distinction. Strategic foresight is not the act of declaring the future with certainty. Its work is to improve navigation: to see a range of plausible futures, understand the forces shaping them, and prepare minds and systems for decisions whose data is not yet complete.</p><p>In this view, a scenario is not decorative storytelling. It is a tool for thinking under uncertainty. When several credible futures are placed side by side, today's hidden assumptions become visible: what we treat as fixed, which changes we avoid, and which opportunities our current habits prevent us from seeing.</p><h2>When uncertainty itself is uncertain</h2><p>My deeper interest in Type-2 fuzzy logic begins here. In many technology decisions, we are not only dealing with uncertainty in a value; we are dealing with uncertainty about uncertainty itself. Experts may disagree not only about the probability of an event, but also about the meaning of probability, the intensity of impact, and the boundaries of the problem.</p><p>Type-2 fuzzy logic offers a more precise language for these situations. Not because it simplifies the world, but because it allows uncertainty about memberships and evaluations to remain visible. That matters for foresight because emerging futures often need to be discussed and modeled before they can be fully measured.</p><h2>Technology as structure</h2><p>My work in cloud, DevOps, and infrastructure is not separate from this path. Infrastructure is not merely a tool for running software; it is a structure that shapes decision speed, experimentation capacity, and scalability. An organization with slow and fragile infrastructure may recognize the future correctly and still fail to respond in time.</p><p>That is why technology and foresight are, for me, two languages for one question: how do systems build the capacity to sense and respond to change? One works at the scale of code, platforms, and operations; the other at the scale of trends, scenarios, and strategic decisions.</p><h2>The real work: navigation</h2><p><strong>The focus of Foresight Hub is not predicting the future; it is navigating uncertainty.</strong> That means combining weak signals, scenario thinking, systems thinking, and models that do not erase ambiguity, but make it workable.</p><p>The future is not something we simply wait for. It is already being formed in small decisions, system architectures, policy language, and technologies that are not yet stable enough to name. Our work is to see it earlier, more clearly, and more responsibly.</p><p class=\"article-source\">Photo and biographical reference: <a href=\"https://engineering.berkeley.edu/news/2017/09/remembering-lotfi-zadeh/\" target=\"_blank\" rel=\"noopener noreferrer\">Berkeley Engineering</a>, which notes that Zadeh's 1965 paper “Fuzzy Sets” opened a new direction for fuzzy logic and decision systems.</p>",
     "founderCaption": "Founder of fuzzy logic and fuzzy set theory"
+  },
+  "articleAiTime": {
+    "tag": "Article",
+    "title": "Beyond the Biological Clock",
+    "subtitle": "Why AI neither experiences time as we do nor decays under it as we do, and why that temporal gap can become a strategic problem.",
+    "date": "June 2026",
+    "readTime": "8 min read",
+    "founderCaption": "From fuzzy logic to computational temporality",
+    "body": "<p>Human beings do not simply measure time; we carry it in our bodies. Fatigue, ageing, memory, circadian rhythm, and bounded attention make time a physical and psychological burden. What we call the present is the fragile result of synchronizing sensation and memory, not a transparent window.</p><p>AI, by contrast, does not feel time in that sense. It does not suffer cognitive exhaustion, biological discounting, or mortality awareness. What exists for the machine is sequence, processing capacity, latency, persistence, and infrastructure. The difference is therefore not only one of speed. It is a difference in the logic of inhabiting the world.</p><h2>Heavy time versus operational time</h2><p>For humans, time carries cost. We wait, delay, forget, recover, and age. For digital systems, time is more often an operational parameter. A model can be checkpointed, reloaded, containerized, and resumed elsewhere. Hardware decays, but software state can migrate and persist.</p><p>This is where a major gap opens. We make decisions inside biological and institutional cycles, while computational systems evaluate and respond inside far shorter loops. When that gap expands, the problem is no longer mere efficiency. It becomes temporal alignment.</p><h2>The stretched present of the machine</h2><p>Humans construct the future through narrative. We imagine, fear, hope, and choose. Machines can place large slices of the past and present into a common probability field. Their operational present is therefore stretched: not because they consciously live the future, but because they can process patterns across multiple horizons within a single analytic frame.</p><p>At that point, time stops being only a philosophical issue and becomes a governance issue. If a system can evaluate, simulate, and act faster than human oversight can meaningfully track, what kind of institution preserves both decision speed and human values?</p><h2>The future of AI is not only about accuracy</h2><p>Most public debate focuses on hallucination, reliability, or safety. Those matter, but they are not the whole problem. The deeper gap may be temporal. A machine that does not decide in our unit of time may also fail to remain accountable within our unit of time. Governance, in that sense, must be temporal as well as technical.</p><p>The real question is not only whether a model is correct. It is also: in what timescale does it see, assess, and intervene? If we miss that question, we may build systems that look aligned in static tests but outrun the institutions meant to supervise them.</p><p class=\"article-source\">This article is adapted and tightened from a LinkedIn essay by Ali Mansouri. It draws conceptually on William James, David Eagleman, Rolf Landauer, Wendell Bell, and Nick Bostrom.</p>"
+  },
+  "articleRohrbeck": {
+    "tag": "Article",
+    "title": "Why Rohrbeck Still Matters",
+    "subtitle": "Because he turned foresight from a side activity into an organizational capability that can be assessed, governed, and improved.",
+    "date": "June 2026",
+    "readTime": "6 min read",
+    "founderCaption": "Future FITness, maturity, and dynamic capability",
+    "body": "<p>A large share of what many organizations still call corporate foresight remains presentation-deep: a few trend reports, a few polished scenarios, and a radar that often decorates more than it decides. René Rohrbeck matters because he treated that gap seriously and asked a sharper question: how does foresight become a real organizational capability?</p><p>His maturity model was never merely a teaching taxonomy. Rohrbeck translated foresight into the language of capability, process, and performance. That shift matters because executives do not govern through elegant metaphors alone. They govern through structures, roles, and consequences.</p><h2>From readiness to fitness</h2><p>The distinction between readiness and FITness is still one of the clearest moves in the field. Readiness suggests being prepared for change. FITness suggests a more dynamic capacity: perceiving, prospecting, and probing on a continual basis. In other words, the organization does not only notice the future. It links anticipation to experimentation and structural change.</p><p>That distinction remains valuable for firms that produce foresight outputs without changing operational behavior. Rohrbeck shows that foresight becomes valuable when it enters decision cycles, innovation systems, investment logic, and portfolio design.</p><h2>Why it still holds up</h2><p>The environment is more volatile today than when Rohrbeck published his foundational work. AI, cloud platforms, ecosystem competition, and geopolitical instability have all intensified. Yet that is exactly why the model remains useful. The core question has not changed: can the organization see signals earlier, test responses faster, and reorganize before the market forces it to?</p><p>Many organizations are still trapped in output-oriented foresight. They produce artifacts rather than capabilities. Rohrbeck remains relevant because he moves attention from artifact to architecture.</p><h2>A managerial language for foresight</h2><p>One of his strongest contributions is that he gives foresight a language management can actually use. When he speaks about maturity dimensions, foresight roles, technology radar, and the connection between anticipation and innovation performance, he is building a bridge between theory and governance. That bridge is still missing in much of the futures literature.</p><p>If foresight is going to stay inside an organization, it has to live in budgets, roles, structures, and decision rhythms. Rohrbeck remains one of the clearest thinkers for describing that transition.</p><p class=\"article-source\">This essay is grounded in René Rohrbeck's work, especially <em>Corporate Foresight: Towards a Maturity Model</em> and later research on foresight capability and performance.</p>"
+  },
+  "articleCla": {
+    "tag": "Article",
+    "title": "What CLA Sees Before Policy Does",
+    "subtitle": "CLA matters when headlines are no longer enough and policy language itself has become part of the problem.",
+    "date": "June 2026",
+    "readTime": "7 min read",
+    "founderCaption": "From litany to myth, and from symptom to discourse",
+    "body": "<p>Many policies operate at the level Sohail Inayatullah calls litany: headlines, statistics, complaints, public reaction. That level matters for mobilization, but it is rarely enough for transformation. It sees the symptom, not the logic that keeps reproducing the symptom.</p><p>CLA becomes valuable precisely here. Its strength is not decorative complexity. Its strength is showing that every public problem has, at once, a structural layer, a discursive layer, and a mythic layer.</p><h2>When policy gets trapped in its own vocabulary</h2><p>Policy failure is often blamed on insufficient data. Just as often, however, it comes from institutions seeing the world through terms that already narrow the space of response. If a water crisis is framed only as a supply problem, then the responses will remain largely technical and distributive. If the same issue is examined as a development paradigm, a power relation, and a national imaginary, the option space changes.</p><p>CLA helps us see what has become impossible at the level of discourse before it appears impossible at the level of policy.</p><h2>From deconstruction to redesign</h2><p>A common misunderstanding is that CLA is only a deconstructive tool. Inayatullah never intended it to stop there. The move into myth is not only for exposing archetypes. It is for creating replacement metaphors. Without a new metaphor, policy reform often remains superficial or slides back into the older order.</p><p>That is why CLA is useful for governments, cities, universities, and organizations facing recurring problems: problems that get solved on the surface and then return.</p><h2>Why it still feels radical</h2><p>In an environment ruled by speed, notification cycles, and the pressure to respond instantly, CLA still feels radical because it forces a pause. Not to slow thought down for its own sake, but to ask where the issue is actually locked. Sometimes the data is sufficient and the discourse is closed. Sometimes the discourse has shifted and the myth has not.</p><p>In that sense, CLA is more than a futures method. It is a discipline for seeing problems in several depths at once. That is exactly what makes it professionally useful now.</p><p class=\"article-source\">This text draws on Sohail Inayatullah's body of work, especially <em>The Causal Layered Analysis Reader</em> and his foundational article in <em>Futures</em>.</p>"
+  },
+  "articleHinesBishop": {
+    "tag": "Article",
+    "title": "From Toolbox to Process",
+    "subtitle": "Why Hines and Bishop still matter for executives: they transform foresight from a list of methods into a sequence for decision and action.",
+    "date": "June 2026",
+    "readTime": "6 min read",
+    "founderCaption": "With Peter Bishop, turning foresight into a managerial process",
+    "body": "<p>One of the most persistent problems in foresight practice is that organizations encounter a long list of methods without knowing their order of use. Scanning, trends, scenarios, visioning, roadmaps, wind tunneling: all are valuable, but without an operational architecture they remain a loose toolkit rather than a managerial capability.</p><p>The importance of Andy Hines and Peter Bishop lies exactly there. The Six Pillars matter because they tell managers how foresight unfolds over time: framing, scanning, forecasting, visioning, planning, and acting.</p><h2>Why that distinction matters</h2><p>When an organization only has methods, it often gets stuck in scanning or jumps to scenarios without strong framing. The result is work that looks sophisticated from the outside but fails to enter the decision system. The Hines-Bishop architecture protects against that fragmentation.</p><p>They show that foresight is a sequence, not a pile of separate activities. Each pillar creates the context for the next one. If one weakens, the chain weakens.</p><h2>Management needs process, not only insight</h2><p>One reason the Six Pillars remain useful is that they translate well into managerial settings. An executive does not need to master every method in abstraction. They need to know what phase they are in, what output that phase should produce, and how it connects to action. That clarity is missing in many futures frameworks.</p><p>For that reason the model remains alive in consulting, executive education, and strategic workshops. It may not feel as theoretically radical as CLA, but it offers exceptional operational clarity.</p><h2>Closing the gap between insight and action</h2><p>The biggest failure in foresight is rarely a failure of insight. It is a failure of translation. Organizations understand things they cannot turn into agenda, investment, experiment, or action. Hines and Bishop work directly on that gap.</p><p>If futures work is going to be taken seriously by management, we do not only need tools. We need process. That is exactly where the Six Pillars remain one of the strongest frameworks available.</p><p class=\"article-source\">This essay draws on Andy Hines and Peter Bishop, especially <em>Thinking About the Future</em> and the broader educational tradition of the University of Houston foresight program.</p>"
   }
 }

@@ -9,9 +9,9 @@ function esc(s) {
 window.esc = esc;
 
 function founderImgSrc(id) {
-    const remote = window.SFH_PHOTOS_REMOTE?.[id];
-    if (remote) return remote;
-    return typeof founderPhotoUrl === 'function' ? founderPhotoUrl(id) : null;
+    const local = typeof founderPhotoUrl === 'function' ? founderPhotoUrl(id) : null;
+    if (local) return local;
+    return window.SFH_PHOTOS_REMOTE?.[id] || null;
 }
 
 function founderFallbackSrc(id) {
