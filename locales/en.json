@@ -16,45 +16,18 @@
     "menu": "Menu"
   },
   "footer": {
-    "desc": "Personal site of Ali Mansouri. Strategic foresight, articles, methods.",
-    "descBackcast": "Personal site of Ali Mansouri. Strategic foresight, articles, methods.",
-    "descWheel": "Personal site of Ali Mansouri. Strategic foresight, articles, methods.",
+    "desc": "Ali Mansouri, PhD Candidate in Foresight, University of Tehran.",
+    "descBackcast": "Ali Mansouri, PhD Candidate in Foresight, University of Tehran.",
+    "descWheel": "Ali Mansouri, PhD Candidate in Foresight, University of Tehran.",
     "role": "PhD Candidate in Foresight, University of Tehran",
     "resume": "Resume",
-    "copyright": "© Ali Mansouri, FORESIGHT HUB"
+    "copyright": "© Ali Mansouri"
   },
   "index": {
-    "badge": "Strategic Foresight",
+    "badge": "Ali Mansouri",
     "heroTitle": "STRATEGIC FORESIGHT<br>HUB",
-    "heroSub": "Personal site of Ali Mansouri. Introduction, articles, and foresight methods.",
-    "student": "PhD Candidate in Foresight, University of Tehran",
-    "overviewTag": "Site content",
-    "overviewTitle": "What is here?",
-    "overviewP1": "On <strong><a href=\"about/\">About</a></strong> I introduce myself. On <strong><a href=\"articles/\">Articles</a></strong> I publish foresight notes and writing.",
-    "overviewP2": "Under <strong><a href=\"methods/\">Methods</a></strong> I explain foresight approaches: from interactive FITness and CLA to Delphi, morphological analysis, horizon scanning, and more.",
-    "ctaMethods": "Methods",
-    "overviewFeatures": [
-      {
-        "icon": "user",
-        "title": "Profile",
-        "desc": "About me, resume, research background"
-      },
-      {
-        "icon": "pen-line",
-        "title": "Articles",
-        "desc": "Foresight notes and writing"
-      },
-      {
-        "icon": "library",
-        "title": "Methods",
-        "desc": "Catalog of foresight methods"
-      },
-      {
-        "icon": "play-circle",
-        "title": "Interactive tools",
-        "desc": "FITness, CLA, Futures Wheel, Backcasting"
-      }
-    ]
+    "heroSub": "PhD Candidate in Foresight, University of Tehran. I write about plausible futures, work with foresight methods, and design interactive tools.",
+    "ctaMethods": "Methods"
   },
   "common": {
     "close": "Close",
@@ -167,36 +140,36 @@
     "backcastBody": "Normative backcasting was first formalized by <strong>John B. Robinson</strong> in 1982 for energy policy planning. Key works include <a href=\"https://www.sciencedirect.com/science/article/pii/030142158290059X\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Backcasting: A Proposed Method of Policy Analysis</a> in the journal <em>Energy Policy</em>, along with evolutionary participatory backcasting in sustainability literature. Urban resilience principles based on backcasting are also cited in foresight studies at the University of Copenhagen."
   },
   "brand": {
-    "tag": "Ali Mansouri",
+    "tag": "About",
     "heroTitle": "Ali Mansouri",
-    "heroSub": "PhD Candidate in Foresight, University of Tehran",
+    "heroSub": "Strategic foresight, discourse analysis, interactive tools",
     "aboutLink": "About",
     "articlesLink": "Articles",
     "methodsLink": "Methods",
     "bioTitle": "Introduction",
-    "bioP1": "I am <strong>Ali Mansouri</strong>, a PhD candidate in Foresight at the University of Tehran. This is my personal site: where I introduce myself, publish articles and notes, and collect the foresight methods I work with.",
-    "bioP2": "This is not a public course platform. It is my profile, my writing, and the tools I have built for foresight. See <strong><a href=\"methods/\">Methods</a></strong> for FITness, CLA, Delphi, scenario planning, and more.",
+    "bioP1": "I am <strong>Ali Mansouri</strong>, a PhD candidate in Foresight at the University of Tehran. My work sits at the intersection of research, writing, and building foresight tools: from Causal Layered Analysis and scenario planning to organizational foresight maturity and strategic decision-making.",
+    "bioP2": "I publish writing in <strong><a href=\"articles/\">Articles</a></strong>. Methods and interactive workshops live under <strong><a href=\"methods/\">Methods</a></strong>: FITness, CLA, Futures Wheel, Backcasting, and a broader foresight catalog.",
     "focusTitle": "Focus areas",
     "focuses": [
       {
         "icon": "pen-line",
-        "title": "Articles & notes",
-        "desc": "Foresight writing and ongoing research"
+        "title": "Writing & research",
+        "desc": "Foresight articles and research notes"
       },
       {
-        "icon": "library",
-        "title": "Foresight methods",
-        "desc": "Catalog of methods I present and explain"
+        "icon": "layers",
+        "title": "Discourse analysis",
+        "desc": "CLA, scenarios, policy and organizations"
       },
       {
         "icon": "play-circle",
         "title": "Interactive tools",
-        "desc": "FITness, CLA, Futures Wheel, Backcasting"
+        "desc": "Digital foresight workshops"
       },
       {
         "icon": "compass",
         "title": "Strategic foresight",
-        "desc": "Policy, organizations, strategic decisions"
+        "desc": "Organizations, energy, tech transitions"
       }
     ],
     "ctaResume": "Resume",
@@ -205,9 +178,9 @@
   "aboutPage": {
     "tag": "About",
     "title": "Ali Mansouri",
-    "sub": "Foresight researcher, PhD candidate at University of Tehran",
-    "missionTitle": "About this site",
-    "mission": "This site is where I introduce myself, publish my articles, and gather the foresight methods I work with. It is my personal brand and work, not a public classroom.",
+    "sub": "PhD Candidate in Foresight, University of Tehran",
+    "missionTitle": "What I do",
+    "mission": "I study strategic foresight at the University of Tehran. I write about methods, apply them in research, and build interactive tools for some of them.",
     "eduTitle": "Education",
     "edu": "PhD in Foresight, University of Tehran",
     "contactTitle": "Contact",
@@ -216,7 +189,7 @@
   "articlesPage": {
     "tag": "Articles",
     "title": "Articles & notes",
-    "sub": "Foresight writing. New posts are added over time.",
+    "sub": "Foresight writing.",
     "emptyTitle": "Coming soon",
     "emptyDesc": "First articles are in preparation.",
     "sampleArticles": [

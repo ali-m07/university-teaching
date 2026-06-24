@@ -17,29 +17,18 @@ registerLocale('en', {
             menu: 'Menu'
         },
         footer: {
-            desc: 'Personal site of Ali Mansouri. Strategic foresight, articles, methods.',
-            descBackcast: 'Personal site of Ali Mansouri. Strategic foresight, articles, methods.',
-            descWheel: 'Personal site of Ali Mansouri. Strategic foresight, articles, methods.',
+            desc: 'Ali Mansouri, PhD Candidate in Foresight, University of Tehran.',
+            descBackcast: 'Ali Mansouri, PhD Candidate in Foresight, University of Tehran.',
+            descWheel: 'Ali Mansouri, PhD Candidate in Foresight, University of Tehran.',
             role: 'PhD Candidate in Foresight, University of Tehran',
             resume: 'Resume',
-            copyright: '© Ali Mansouri, FORESIGHT HUB'
+            copyright: '© Ali Mansouri'
         },
         index: {
-            badge: 'Strategic Foresight',
+            badge: 'Ali Mansouri',
             heroTitle: 'STRATEGIC FORESIGHT<br>HUB',
-            heroSub: 'Personal site of Ali Mansouri. Introduction, articles, and foresight methods.',
-            student: 'PhD Candidate in Foresight, University of Tehran',
-            overviewTag: 'Site content',
-            overviewTitle: 'What is here?',
-            overviewP1: 'On <strong><a href="about/">About</a></strong> I introduce myself. On <strong><a href="articles/">Articles</a></strong> I publish foresight notes and writing.',
-            overviewP2: 'Under <strong><a href="methods/">Methods</a></strong> I explain foresight approaches: from interactive FITness and CLA to Delphi, morphological analysis, horizon scanning, and more.',
-            ctaMethods: 'Methods',
-            overviewFeatures: [
-                { icon: 'user', title: 'Profile', desc: 'About me, resume, research background' },
-                { icon: 'pen-line', title: 'Articles', desc: 'Foresight notes and writing' },
-                { icon: 'library', title: 'Methods', desc: 'Catalog of foresight methods' },
-                { icon: 'play-circle', title: 'Interactive tools', desc: 'FITness, CLA, Futures Wheel, Backcasting' }
-            ]
+            heroSub: 'PhD Candidate in Foresight, University of Tehran. I write about plausible futures, work with foresight methods, and design interactive tools.',
+            ctaMethods: 'Methods'
         },
         common: {
             close: 'Close',

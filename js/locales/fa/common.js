@@ -17,29 +17,18 @@ registerLocale('fa', {
             menu: 'منو'
         },
         footer: {
-            desc: 'سایت شخصی علی منصوری. آینده‌پژوهی استراتژیک، مقالات، متدها.',
-            descBackcast: 'سایت شخصی علی منصوری. آینده‌پژوهی استراتژیک، مقالات، متدها.',
-            descWheel: 'سایت شخصی علی منصوری. آینده‌پژوهی استراتژیک، مقالات، متدها.',
+            desc: 'علی منصوری، دانشجوی دکتری آینده‌پژوهی، دانشگاه تهران.',
+            descBackcast: 'علی منصوری، دانشجوی دکتری آینده‌پژوهی، دانشگاه تهران.',
+            descWheel: 'علی منصوری، دانشجوی دکتری آینده‌پژوهی، دانشگاه تهران.',
             role: 'دانشجوی دکتری آینده‌پژوهی، دانشگاه تهران',
             resume: 'رزومه',
-            copyright: '© علی منصوری، FORESIGHT HUB'
+            copyright: '© علی منصوری'
         },
         index: {
-            badge: 'آینده‌پژوهی استراتژیک',
+            badge: 'علی منصوری',
             heroTitle: 'STRATEGIC FORESIGHT<br>HUB',
-            heroSub: 'سایت شخصی علی منصوری. معرفی، مقالات، و متدهای آینده‌پژوهی.',
-            student: 'دانشجوی دکتری آینده‌پژوهی، دانشگاه تهران',
-            overviewTag: 'محتوای سایت',
-            overviewTitle: 'اینجا چه چیزهایی هست؟',
-            overviewP1: 'در بخش <strong><a href="about/">درباره من</a></strong> خودم را معرفی کرده‌ام. در <strong><a href="articles/">مقالات</a></strong> یادداشت‌ها و نوشته‌های آینده‌پژوهی‌ام را می‌گذارم.',
-            overviewP2: 'در <strong><a href="methods/">متدها</a></strong> روش‌های foresight را توضیح داده‌ام: از ابزارهای تعاملی مثل FITness و CLA تا دلفی، تحلیل مورفولوژیک، horizon scanning و بقیه.',
-            ctaMethods: 'متدها',
-            overviewFeatures: [
-                { icon: 'user', title: 'معرفی', desc: 'درباره من، رزومه، سوابق پژوهشی' },
-                { icon: 'pen-line', title: 'مقالات', desc: 'یادداشت‌ها و نوشته‌های آینده‌پژوهی' },
-                { icon: 'library', title: 'متدها', desc: 'کاتالوگ روش‌های foresight' },
-                { icon: 'play-circle', title: 'ابزار تعاملی', desc: 'FITness، CLA، Futures Wheel، Backcasting' }
-            ]
+            heroSub: 'دانشجوی دکتری آینده‌پژوهی، دانشگاه تهران. درباره آینده‌های محتمل می‌نویسم، روی متدهای foresight کار می‌کنم، و ابزارهایش را طراحی می‌کنم.',
+            ctaMethods: 'متدها'
         },
         common: {
             close: 'بستن',
