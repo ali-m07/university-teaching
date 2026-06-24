@@ -211,8 +211,8 @@ function renderAllPageSections() {
         renderAboutFocusLists();
         renderOverviewFeatures();
         renderArticlesList();
-        renderManifestoSection();
-        renderMethodsCatalog();
+        if (typeof renderManifestoSection === 'function') renderManifestoSection();
+        if (typeof renderMethodsCatalog === 'function') renderMethodsCatalog();
         if (typeof renderAdvancedMethodPage === 'function') renderAdvancedMethodPage();
         if (typeof window.renderHistoryBox === 'function') {
             window.renderHistoryBox('fitness-history', pg('fitnessPage.history'), 'fitness');

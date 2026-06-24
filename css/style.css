@@ -1675,7 +1675,7 @@ html[dir="rtl"] .main-header .header-actions {
    ========================================================================== */
 .wheel-interactive-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.95fr);
     gap: 32px;
     align-items: start;
     padding: 28px;
@@ -1687,6 +1687,7 @@ html[dir="rtl"] .main-header .header-actions {
 
 .wheel-viz-column {
     min-width: 0;
+    overflow: hidden;
 }
 
 /* Mode tabs */
@@ -1893,9 +1894,10 @@ html[dir="rtl"] .main-header .header-actions {
 /* Cascade visualization */
 .wheel-cascade-scroll {
     overflow-x: auto;
-    overflow-y: visible;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 8px;
+    max-width: 100%;
+    padding-bottom: 12px;
 }
 
 .wheel-cascade-hint {
@@ -1906,21 +1908,23 @@ html[dir="rtl"] .main-header .header-actions {
 }
 
 .wheel-cascade {
-    min-width: min(100%, 560px);
+    width: max-content;
+    min-width: 100%;
 }
 
 .cascade-grid {
-    display: flex;
-    gap: 0;
+    display: grid;
+    grid-template-columns: minmax(112px, 128px) minmax(0, 1fr);
+    gap: 16px;
     align-items: stretch;
-    min-width: 520px;
+    min-width: 0;
 }
 
 .cascade-col-hub {
-    flex: 0 0 140px;
     display: flex;
     align-items: center;
-    padding-inline-end: 12px;
+    padding-inline-end: 0;
+    min-width: 0;
 }
 
 .cascade-hub-card {
@@ -1959,13 +1963,12 @@ html[dir="rtl"] .main-header .header-actions {
 }
 
 .cascade-col-body {
-    flex: 1;
     min-width: 0;
 }
 
 .cascade-header-row {
     display: grid;
-    grid-template-columns: minmax(120px, 1fr) 28px minmax(120px, 1fr) 28px minmax(120px, 1fr);
+    grid-template-columns: minmax(104px, 1fr) 20px minmax(104px, 1fr) 20px minmax(104px, 1fr);
     gap: 0;
     padding: 0 4px 10px;
     font-size: 0.65rem;
@@ -1987,7 +1990,7 @@ html[dir="rtl"] .main-header .header-actions {
 
 .cascade-lane {
     display: grid;
-    grid-template-columns: minmax(120px, 1fr) 28px minmax(120px, 1fr) 28px minmax(120px, 1fr);
+    grid-template-columns: minmax(104px, 1fr) 20px minmax(104px, 1fr) 20px minmax(104px, 1fr);
     gap: 0;
     align-items: stretch;
     padding: 10px;
@@ -2024,13 +2027,13 @@ html[dir="rtl"] .main-header .header-actions {
 
 .cascade-chain-row {
     display: grid;
-    grid-template-columns: minmax(120px, 1fr) 28px minmax(120px, 1fr);
+    grid-template-columns: minmax(104px, 1fr) 20px minmax(104px, 1fr);
     gap: 0;
     align-items: center;
 }
 
 .cascade-node {
-    padding: 10px 12px;
+    padding: 10px 10px;
     border-radius: 10px;
     text-align: center;
     line-height: 1.35;
@@ -2058,7 +2061,7 @@ html[dir="rtl"] .main-header .header-actions {
 }
 
 .cascade-label {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #fff;
     word-break: break-word;
@@ -3478,12 +3481,15 @@ html[dir="ltr"] .bc-table {
 .pyramid-container {
     min-height: 420px;
     overflow: visible;
-    padding: 20px 0;
+    padding: 20px 12px;
 }
 
 .pyramid-wrapper {
-    transform: rotateX(18deg) rotateY(-12deg);
+    transform: none;
     transition: transform var(--transition-normal);
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
 }
 
 .pyramid-layer {
@@ -3491,6 +3497,8 @@ html[dir="ltr"] .bc-table {
     font-size: 0.95rem;
     border-width: 2px;
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 0 18px;
 }
 
 .layer-1 { width: 160px; background: rgba(0, 229, 255, 0.22); }
