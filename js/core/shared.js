@@ -38,35 +38,6 @@ function initMobileNav() {
     }
 }
 
-function initLangToggle() {
-    const header = document.querySelector('.main-header');
-    if (!header || document.getElementById('lang-toggle')) return;
-
-    const wrap = document.createElement('div');
-    wrap.className = 'lang-toggle-wrap';
-    wrap.innerHTML = `
-        <button id="lang-toggle" class="lang-toggle-btn" onclick="toggleLang()" title="Switch language">
-            EN
-        </button>
-    `;
-
-    const actions = header.querySelector('.header-actions');
-    if (actions) {
-        actions.insertBefore(wrap, actions.firstChild);
-    } else {
-        const actionDiv = header.querySelector('.header-action');
-        if (actionDiv) {
-            const newActions = document.createElement('div');
-            newActions.className = 'header-actions';
-            newActions.appendChild(wrap);
-            newActions.appendChild(actionDiv.cloneNode(true));
-            actionDiv.replaceWith(newActions);
-        } else {
-            header.appendChild(wrap);
-        }
-    }
-}
-
 function initHeaderScroll() {
     window.addEventListener('scroll', () => {
         const header = document.querySelector('.main-header');
@@ -117,12 +88,15 @@ function buildStandardNav() {
         }
     }
 
-    nav.innerHTML = getNavItems().map(([path, key, external]) => {
+    const links = getNavItems().map(([path, key, external]) => {
         const href = external ? path : (typeof sfhUrl === 'function' ? sfhUrl(path) : path);
         const active = !external && typeof sfhIsActive === 'function' && sfhIsActive(path) ? ' class="active"' : '';
         const ext = external ? ' target="_blank" rel="noopener noreferrer"' : '';
         return `<a href="${href}" data-i18n="${key}"${active}${ext}></a>`;
-    }).join('');
+    });
+    const nextLang = typeof getLang === 'function' && getLang() === 'en' ? 'FA' : 'EN';
+    links.push(`<button type="button" class="nav-lang-toggle" onclick="toggleLang()" aria-label="Switch language">${nextLang}</button>`);
+    nav.innerHTML = links.join('');
 }
 
 function upgradeLegacyHeader() {
@@ -158,14 +132,7 @@ function upgradeLegacyHeader() {
     const actions = header.querySelector('.header-actions');
     if (actions) {
         actions.querySelectorAll('a.btn-ghost-sm').forEach(a => a.remove());
-        let cta = actions.querySelector('.btn-primary-sm');
-        if (!cta) {
-            cta = document.createElement('a');
-            cta.className = 'btn-primary-sm';
-            actions.appendChild(cta);
-        }
-        cta.href = sfhUrl('methods/');
-        cta.setAttribute('data-i18n', 'nav.methods');
+        actions.querySelectorAll('.btn-primary-sm').forEach(a => a.remove());
     }
 
     const footer = document.querySelector('.main-footer');
@@ -191,7 +158,6 @@ function upgradeLegacyHeader() {
 
 function bootApp() {
     upgradeLegacyHeader();
-    initLangToggle();
     initMobileNav();
     initHeaderScroll();
     initVisualScrollHints();

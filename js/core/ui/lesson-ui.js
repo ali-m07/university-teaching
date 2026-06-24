@@ -129,7 +129,7 @@ function renderLessonSection() {
                         ${(lesson.readings || []).map(r => `
                             <li>
                                 <span class="reading-type">${esc(r.type)}</span>
-                                <span class="reading-text">${r.text}${r.link ? ` — <a href="${r.link}" target="_blank" rel="noopener">${esc(labels.readMore || 'Link')}</a>` : ''}</span>
+                                <span class="reading-text">${r.text}${r.link ? `، <a href="${r.link}" target="_blank" rel="noopener">${esc(labels.readMore || 'Link')}</a>` : ''}</span>
                             </li>`).join('')}
                     </ul>
                 </div>
