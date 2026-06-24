@@ -17,32 +17,31 @@ registerLocale('en', {
             menu: 'Menu'
         },
         footer: {
-            desc: 'Ali Mansouri\'s teaching portal — 8 foresight modules with interactive workshops, lesson plans, and articles.',
-            descBackcast: 'An interactive platform for future readiness and fitness assessment — Rohrbeck FITness, Inayatullah CLA, Glenn Futures Wheel, and Robinson normative Backcasting.',
-            descWheel: 'An interactive platform for future readiness and fitness assessment — Rohrbeck FITness, Inayatullah CLA, Glenn Futures Wheel, and Robinson normative Backcasting.',
-            role: 'PhD Candidate in Foresight, University of Tehran',
-            resume: 'View Resume & Profile',
-            copyright: 'Ali Mansouri Foresight Portal — methods, personal brand & articles. All rights reserved.'
+            desc: 'Digital foresight classroom — Ali Mansouri, University of Tehran.',
+            descBackcast: 'Digital foresight classroom — Ali Mansouri, University of Tehran.',
+            descWheel: 'Digital foresight classroom — Ali Mansouri, University of Tehran.',
+            role: 'PhD Candidate in Foresight · University of Tehran',
+            resume: 'Resume',
+            copyright: '© Ali Mansouri — FORESIGHT HUB'
         },
         index: {
-            badge: 'Strategic Foresight Teaching Lab',
-            heroTitle: 'STRATEGIC FORESIGHT<br>PORTAL',
-            heroSub: 'Ali Mansouri\'s digital classroom — interactive teaching in foresight, futures studies, and strategic foresight for students, managers, and researchers.',
-            presenter: 'Presenter:',
-            student: 'PhD Candidate in Foresight',
+            badge: 'Foresight Teaching Lab',
+            heroTitle: 'STRATEGIC FORESIGHT<br>HUB',
+            heroSub: 'Ali Mansouri\'s digital classroom — interactive foresight, futures studies, and strategic foresight methods.',
+            presenter: 'Instructor:',
+            student: 'PhD Candidate in Foresight · University of Tehran',
             overviewTag: 'About this portal',
-            overviewTitle: 'What is this site and what methods does it include?',
-            overviewP1: '<strong>FORESIGHT HUB</strong> is my teaching and research portal: hands-on foresight learning with digital workshops, lesson plans, founder profiles, and policy/organizational cases. It is also my <strong>personal brand</strong> space for articles and professional profile.',
-            overviewP2: 'All methods live in one place — the <strong>Methods</strong> page. Interactive workshops (FITness, CLA, Futures Wheel, Backcasting), lesson modules (Popper Diamond, Six Pillars, Scenarios, Futurpreneurship), and a full catalog of Delphi, Morphological Analysis, Horizon Scanning, and dozens more.',
-            overviewP3: 'Click any method in the catalog — interactive ones open the simulator directly; others show description, references, and lesson plans (expanding over time).',
-            ctaMethods: 'Browse methods catalog',
+            overviewTitle: 'What is this site?',
+            overviewP1: 'This portal is my <strong>digital classroom</strong> for teaching foresight methods — each with explanation, readings, lesson plans, and interactive workshops where available.',
+            overviewP2: 'All methods are on the <strong><a href="methods/">Methods</a></strong> page: from FITness and CLA workshops to Delphi, Morphological Analysis, Horizon Scanning, and dozens more.',
+            overviewP3: 'Click any card in the catalog — interactive methods open the simulator directly.',
+            ctaMethods: 'Browse all methods',
             overviewFeatures: [
-                { icon: 'play-circle', title: 'Interactive workshops', desc: '4 simulators: FITness, CLA, Futures Wheel, Backcasting' },
-                { icon: 'book-open', title: 'Lesson modules', desc: '8+ methods with syllabus, founder photo, readings & assignments' },
-                { icon: 'library', title: 'Full catalog', desc: '38+ foresight methods in 7 categories — scanning to planning' },
-                { icon: 'newspaper', title: 'Articles & brand', desc: 'Research notes, resume, and Ali Mansouri profile' }
-            ],
-            citationTitle: 'Academic references:'
+                { icon: 'play-circle', title: 'Interactive workshops', desc: 'FITness · CLA · Futures Wheel · Backcasting' },
+                { icon: 'book-open', title: 'Lesson modules', desc: 'Popper Diamond · Six Pillars · Scenarios · Futurpreneurship' },
+                { icon: 'library', title: '38+ method catalog', desc: 'Scanning · Delphi · Morphological · Scenarios · Roadmap' },
+                { icon: 'graduation-cap', title: 'Ali Mansouri', desc: 'PhD Candidate in Foresight · University of Tehran' }
+            ]
         },
         common: {
             close: 'Close',
