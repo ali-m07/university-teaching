@@ -235,6 +235,7 @@ function showWheelDetail(key) {
     activeBranchId = key;
     renderCascadeWheel(model, key);
 
+    document.querySelector('.wheel-interactive-container')?.classList.add('wheel-has-selection');
     document.getElementById('wheel-sidebar-default').style.display = 'none';
     const detailPanel = document.getElementById('wheel-sidebar-detail');
     detailPanel.style.display = 'block';
@@ -257,6 +258,7 @@ function showWheelDetail(key) {
 
 function closeWheelDetail() {
     activeBranchId = null;
+    document.querySelector('.wheel-interactive-container')?.classList.remove('wheel-has-selection');
     document.getElementById('wheel-sidebar-detail').style.display = 'none';
     document.getElementById('wheel-sidebar-default').style.display = 'block';
     if (currentWheelModel) renderCascadeWheel(currentWheelModel, null);

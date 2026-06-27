@@ -61,13 +61,16 @@ function renderClaLayerDetails() {
         panel.innerHTML = `
             <span class="cla-detail-badge ${d.badgeClass}">${esc(d.badge)}</span>
             <h3>${esc(d.title)}</h3>
-            <p>${d.body}</p>
+            <p>${esc(d.body)}</p>
             <div class="cla-meta-grid">
                 <div class="cla-meta-box"><strong><i data-lucide="help-circle"></i> ${esc(d.qLabel)}</strong><p>${esc(d.question)}</p></div>
                 <div class="cla-meta-box"><strong><i data-lucide="languages"></i> ${esc(d.langLabel)}</strong><p>${esc(d.language)}</p></div>
             </div>`;
     });
     if (window.lucide) window.lucide.createIcons();
+    if (typeof window.showClaLayer === 'function') {
+        window.showClaLayer(window._activeClaLayer || 'litany');
+    }
 }
 
 function renderBcComparisonTable() {
@@ -185,10 +188,11 @@ function renderArticlesList() {
         const author = a.author ? `<div class="article-card-author">${esc(a.author)}</div>` : '';
         const status = a.status === 'draft' ? (getLang() === 'fa' ? 'پیش نویس' : 'Draft') : '';
         const inner = `
-            ${image ? `<div class="article-list-media"><img src="${image}" alt="${esc(a.title)}" loading="lazy"></div>` : ''}
+            ${image ? `<div class="article-list-media"><img src="${image}" alt="${esc(a.title)}" loading="lazy" referrerpolicy="no-referrer" decoding="async"></div>` : ''}
             <div class="article-list-content">
-                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:0.75rem;color:var(--text-secondary);gap:12px;">
-                    <span>${esc(a.date)}</span><span class="section-tag" style="padding:2px 8px;font-size:0.7rem;margin-bottom:0;">${esc(a.tag)}</span>
+                <div class="article-list-meta">
+                    <span class="article-list-date">${esc(a.date)}</span>
+                    <span class="section-tag" style="padding:2px 8px;font-size:0.7rem;margin-bottom:0;">${esc(a.tag)}</span>
                 </div>
                 <h3 style="color:#fff;font-size:1.05rem;">${esc(a.title)}</h3>
                 ${summary}

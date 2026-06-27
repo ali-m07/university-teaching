@@ -9,9 +9,8 @@ function esc(s) {
 window.esc = esc;
 
 function founderImgSrc(id) {
-    const local = typeof founderPhotoUrl === 'function' ? founderPhotoUrl(id) : null;
-    if (local) return local;
-    return window.SFH_PHOTOS_REMOTE?.[id] || null;
+    if (window.SFH_PHOTOS_REMOTE?.[id]) return window.SFH_PHOTOS_REMOTE[id];
+    return typeof founderPhotoUrl === 'function' ? founderPhotoUrl(id) : null;
 }
 
 function founderFallbackSrc(id) {
@@ -20,20 +19,22 @@ function founderFallbackSrc(id) {
 
 function renderFounderCards(founders, accent) {
     if (!founders?.length) return '';
+    const lang = typeof getLang === 'function' ? getLang() : 'en';
     const cards = founders.map(f => {
         const src = founderImgSrc(f.id);
         const fallback = founderFallbackSrc(f.id);
-        const initials = typeof founderInitials === 'function' ? founderInitials(f.name) : '?';
+        const displayName = (lang === 'fa' && f.nameFa) ? f.nameFa : f.name;
+        const initials = typeof founderInitials === 'function' ? founderInitials(displayName) : '?';
         return `
         <article class="founder-card glass-card">
             <div class="founder-photo-wrap" style="--founder-accent:${accent || 'var(--color-f)'};">
-                <img class="founder-photo" src="${src || fallback || ''}" alt="${esc(f.name)}"
+                <img class="founder-photo" src="${src || fallback || ''}" alt="${esc(displayName)}"
                      referrerpolicy="no-referrer"
                      onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.onerror=null;}"
                      data-fallback="${fallback || ''}">
             </div>
             <div class="founder-info">
-                <h4 class="founder-name">${esc(f.name)}</h4>
+                <h4 class="founder-name">${esc(displayName)}</h4>
                 <p class="founder-role">${esc(f.role)}</p>
                 <p class="founder-bio">${f.bio || ''}</p>
             </div>
@@ -57,16 +58,18 @@ function renderHistoryBox(mountId, data, lessonKey) {
             <h3 class="lesson-block-title"><i data-lucide="users"></i> ${esc(labels.foundersTitle || 'Founders')}</h3>
             ${renderFounderCards(founders, accent)}
         </div>` : ''}
-        <div class="method-history-box glass-card" style="padding:24px;border-inline-start:4px solid ${accent};margin-bottom:32px;">
+        <div class="method-history-box glass-card method-history-box--plain">
             <div class="history-meta">
                 <span class="history-pill"><strong>${esc(data.founderLabel)}:</strong> ${esc(data.founder)}</span>
                 <span class="history-pill"><strong>${esc(data.yearLabel)}:</strong> ${esc(data.year)}</span>
                 ${data.institution ? `<span class="history-pill">${esc(data.institution)}</span>` : ''}
             </div>
             <h3 class="history-title">${esc(data.title)}</h3>
-            <p class="history-body">${data.origin}</p>
-            <p class="history-body"><strong>${esc(data.problemLabel)}:</strong> ${data.problem}</p>
-            <p class="history-body"><strong>${esc(data.useLabel)}:</strong> ${data.applications}</p>
+            <div class="method-prose history-prose">
+                <p class="method-prose-p">${data.origin}</p>
+                <p class="method-prose-p"><strong>${esc(data.problemLabel)}:</strong> ${data.problem}</p>
+                <p class="method-prose-p"><strong>${esc(data.useLabel)}:</strong> ${data.applications}</p>
+            </div>
         </div>`;
 
     if (window.lucide) window.lucide.createIcons();
@@ -84,7 +87,9 @@ function renderLessonSection() {
     if (!lesson || !labels) return;
 
     const meta = lesson.meta || {};
-    const diagram = meta.diagram ? (window.SFH_BASE || './') + meta.diagram : null;
+    const diagramSrc = meta.diagram
+        ? (/^https?:\/\//i.test(meta.diagram) ? meta.diagram : (window.SFH_BASE || './') + meta.diagram)
+        : null;
 
     el.innerHTML = `
         <section class="lesson-section glass-card">
@@ -94,9 +99,21 @@ function renderLessonSection() {
                 <span class="lesson-meta-chip"><i data-lucide="graduation-cap"></i> ${esc(meta.level || '')}</span>
             </div>
 
-            ${diagram ? `
+            ${lesson.prerequisites ? `
+            <div class="lesson-prereq-block">
+                <h3 class="lesson-block-title"><i data-lucide="list-checks"></i> ${esc(labels.prerequisites || 'Prerequisites')}</h3>
+                <p class="lesson-prereq">${lesson.prerequisites}</p>
+            </div>` : ''}
+
+            ${lesson.assessment ? `
+            <div class="lesson-assessment-block">
+                <h3 class="lesson-block-title"><i data-lucide="clipboard-check"></i> ${esc(labels.assessment || 'Assessment')}</h3>
+                <p class="lesson-assessment-text">${lesson.assessment}</p>
+            </div>` : ''}
+
+            ${diagramSrc ? `
             <div class="lesson-diagram-wrap">
-                <img src="${diagram}" alt="${esc(meta.diagramAlt || '')}" class="lesson-diagram" loading="lazy">
+                <img src="${diagramSrc}" alt="${esc(meta.diagramAlt || '')}" class="lesson-diagram" loading="lazy" referrerpolicy="no-referrer" decoding="async">
             </div>` : ''}
 
             <div class="lesson-grid">

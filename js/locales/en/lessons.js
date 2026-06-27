@@ -9,6 +9,8 @@ registerLocale('en', {
         outline: 'Lesson plan (Syllabus)',
         readings: 'Readings & references',
         assignment: 'Assignment / workshop',
+        prerequisites: 'Prerequisites',
+        assessment: 'Assessment',
         readMore: 'Link'
     },
     lessons: {
@@ -257,6 +259,72 @@ registerLocale('en', {
                 { type: 'Portal', text: 'Ali Mansouri Strategic Foresight Hub (this site).' }
             ],
             assignment: 'This week\'s weak signal + one-page scenario + business hypothesis + 3 MVP actions for 90 days.'
+        },
+        type2fuzzy: {
+            meta: {
+                module: '9',
+                duration: '4 × 90 min (6 hours) · expandable to 12 sessions',
+                level: 'MA / PhD foresight · deep uncertainty',
+                diagram: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80',
+                diagramAlt: 'Three-expert FOU bands on a weak signal'
+            },
+            prerequisites: 'Foresight basics (scanning or weak signals), Delphi or expert panels, intro probability. Type-1 fuzzy helpful but covered in session 1.',
+            assessment: 'HW1 & HW2 (15% each) · midterm project (30%) · final memo + presentation (40%). Rubric in page syllabus section.',
+            founders: [
+                {
+                    id: 'lotfi-zadeh',
+                    name: 'Lotfi A. Zadeh',
+                    role: 'Founder of fuzzy logic · UC Berkeley',
+                    bio: 'Iranian-American engineer. Fuzzy sets (1965) and linguistic variables (1975). Foundation for Type-1 and the path to Type-2.'
+                },
+                {
+                    id: 'jerry-mendel',
+                    name: 'Jerry M. Mendel',
+                    role: 'IT2 pioneer · USC Viterbi',
+                    bio: 'USC emeritus professor. Formalized Interval Type-2 fuzzy logic, Karnik–Mendel type-reduction, and reference IT2 texts.'
+                },
+                {
+                    id: 'robert-john',
+                    name: 'Robert I. John',
+                    role: 'GT2 & decision support · De Montfort / Nottingham',
+                    bio: 'Pioneer of type-2 fuzzy sets in computational intelligence. Co-authored IT2 simplified with Mendel; extended GT2 and decision support.'
+                }
+            ],
+            objectives: [
+                'Distinguish Type-0, Type-1, IT2, and GT2 with a weak-signal example.',
+                'Draw triangular and trapezoidal MFs for an "emerging" linguistic label.',
+                'Build FOU and upper/lower MFs for 3+ experts in the page workshop.',
+                'Explain type-reduction and defuzzification conceptually (no code) to managers.',
+                'Contrast epistemic vs aleatory uncertainty and where IT2 fits.',
+                'Link IT2 to scanning, Delphi, scenarios, cone of plausibility, and Rohrbeck probing.',
+                'Write a simple Mamdani-style rule base for weak signal + consensus.',
+                'State IT2 limits: not a replacement for CLA, scenarios, or known probability.',
+                'Write a one-page memo with Type-1 mean, IT2 spread, verdict, and 90-day probing.',
+                'Analyze a case study (EU AI, water, CBDC) using FOU.'
+            ],
+            outline: [
+                { step: '1', time: '90 min', title: 'Type-1 & linguistic variables', desc: 'Zadeh 1965/1975 · fuzzy set · MF · live polling · limits of averaging.' },
+                { step: '2', time: '90 min', title: 'IT2 & FOU', desc: 'Mendel/Karnik · upper/lower · three experts · spread = disagreement · hand FOU exercise.' },
+                { step: '3', time: '90 min', title: 'Type-reduction & fuzzy systems', desc: 'KM centroid conceptual · Mamdani vs TS · rule base · AND/OR operators.' },
+                { step: '4', time: '90 min', title: 'Foresight workshop + memo', desc: 'Page workshop · Delphi+IT2 · cone · FITness · memo pitch · Popper critique.' },
+                { step: '5', time: 'Optional', title: 'GT2 & decision support', desc: 'John · when IT2 is not enough · Castillo & Melin survey.' },
+                { step: '6', time: 'Optional', title: 'Organizational case study', desc: 'Real project: weak signal + stakeholder map + FOU + probing plan.' }
+            ],
+            readings: [
+                { type: 'EN · Classic', text: 'Zadeh, L.A. (1965). Fuzzy sets. <em>Information and Control</em>.' },
+                { type: 'EN · Classic', text: 'Zadeh, L.A. (1975). The concept of a linguistic variable. <em>Information Sciences</em>.' },
+                { type: 'EN · IT2', text: 'Mendel, J.M. (2001). <em>Uncertain Rule-Based Fuzzy Logic Systems</em>. Prentice Hall. · ch. 2–5' },
+                { type: 'EN · Type-reduction', text: 'Karnik, N.N. & Mendel, J.M. (2001). Centroid of a type-2 fuzzy set. <em>Information Sciences</em>.' },
+                { type: 'EN · IT2 simplified', text: 'Mendel, J.M., John, R.I. & Liu, F. (2006). Interval type-2 fuzzy logic systems made simple. <em>IEEE Trans. Fuzzy Systems</em>.' },
+                { type: 'EN · Survey', text: 'Castillo, O. & Melin, P. (2012). Recent advances in interval type-2 fuzzy systems. <em>Information Sciences</em>.' },
+                { type: 'EN · GT2', text: 'John, R.I. & Mendel, J.M. (2002). Calculating sample statistics of type-2 fuzzy variable. <em>Fuzzy Sets and Systems</em>.' },
+                { type: 'EN · Foresight', text: 'Hines, A. & Bishop, P. · Cone of Plausibility · Six Pillars.' },
+                { type: 'EN · Foresight', text: 'Rohrbeck, R. · FITness / organizational probing.' },
+                { type: 'FA · Book', text: 'Bashirzadeh, M. (2019). <em>Fundamentals of Fuzzy Logic and Applications</em> (Persian). University of Tehran Press.' },
+                { type: 'FA · Book', text: 'Mirzaei, S.M. (2014). <em>Fuzzy Logic</em> (Persian). Imam Hossein University Press.' },
+                { type: 'FA · Theses', text: 'IRANDOC: search “منطق فازی نوع ۲” in EE and technology management.' }
+            ],
+            assignment: 'Final project: real weak signal (thesis topic preferred) · page FOU workshop · one-page memo · 3-rule base · 10-min presentation. Full HW details and rubric in syllabus section above workshop.'
         }
     }
 });

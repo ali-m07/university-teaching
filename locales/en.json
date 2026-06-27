@@ -7,7 +7,7 @@
     "home": "Home",
     "about": "About",
     "articles": "Articles",
-    "methods": "Methods",
+    "methods": "Foresight Methods",
     "cv": "CV",
     "fitness": "Future FITness",
     "cla": "Causal Layered Analysis",
@@ -17,9 +17,9 @@
     "menu": "Menu"
   },
   "footer": {
-    "desc": "Technology futures - methods - blog and articles",
-    "descBackcast": "Technology futures - methods - blog and articles",
-    "descWheel": "Technology futures - methods - blog and articles",
+    "desc": "Technology futures · foresight methods · blog & articles",
+    "descBackcast": "Technology futures · foresight methods · blog & articles",
+    "descWheel": "Technology futures · foresight methods · blog & articles",
     "role": "PhD candidate, Futures Studies",
     "resume": "CV",
     "copyright": "© Ali Mansouri"
@@ -28,9 +28,9 @@
     "badge": "Technology futures",
     "heroTitle": "FORESIGHT<br>HUB",
     "heroSub": "Strategic foresight for technology, systems, and uncertain futures.",
-    "heroIntroP1": "I work at the intersection of emerging technologies, cloud infrastructure, and futures thinking , where clarity is rare and signals matter more than certainty.",
+    "heroIntroP1": "I work at the intersection of emerging technologies, cloud infrastructure, and futures thinking — where clarity is rare and signals matter more than certainty.",
     "heroIntroP2": "My focus is not prediction, but navigation: weak signals, scenarios, and Type-2 fuzzy logic when uncertainty itself is uncertain.",
-    "ctaMethods": "Methods"
+    "ctaMethods": "Foresight Methods"
   },
   "common": {
     "close": "Close",
@@ -132,11 +132,11 @@
     "s4": "Adaptive roadmap: short-, medium-, and long-term actionable steps."
   },
   "citations": {
-    "portalBody": "Eight teaching modules in this portal:<br>1. <strong>FITness</strong> , René Rohrbeck (<a href=\"https://rene-rohrbeck.com/about-foresight/\" target=\"_blank\" rel=\"noopener noreferrer\">Corporate Foresight</a>, 2010)<br>2. <strong>CLA</strong> , Sohail Inayatullah (<a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">Metafuture</a>)<br>3. <strong>Futures Wheel</strong> , Jerome C. Glenn (<a href=\"http://www.millennium-project.org\" target=\"_blank\" rel=\"noopener noreferrer\">Millennium Project</a>)<br>4. <strong>Backcasting</strong> , John B. Robinson (<a href=\"https://www.sciencedirect.com/journal/energy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Policy</a>)<br>5. <strong>Popper Diamond</strong> , Rafael Popper (EU FORLEARN)<br>6. <strong>Six Pillars</strong> , Andy Hines & Peter Bishop<br>7. <strong>Scenario Planning</strong> , Shell / Peter Schwartz<br>8. <strong>Futurpreneurship</strong> , foresight × venture",
+    "portalBody": "Eight teaching modules in this portal:<br>1. <strong>FITness</strong> — René Rohrbeck (<a href=\"https://rene-rohrbeck.com/about-foresight/\" target=\"_blank\" rel=\"noopener noreferrer\">Corporate Foresight</a>, 2010)<br>2. <strong>CLA</strong> — Sohail Inayatullah (<a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">Metafuture</a>)<br>3. <strong>Futures Wheel</strong> — Jerome C. Glenn (<a href=\"http://www.millennium-project.org\" target=\"_blank\" rel=\"noopener noreferrer\">Millennium Project</a>)<br>4. <strong>Backcasting</strong> — John B. Robinson (<a href=\"https://www.sciencedirect.com/journal/energy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Policy</a>)<br>5. <strong>Popper Diamond</strong> — Rafael Popper (EU FORLEARN)<br>6. <strong>Six Pillars</strong> — Andy Hines & Peter Bishop<br>7. <strong>Scenario Planning</strong> — Shell / Peter Schwartz<br>8. <strong>Futurpreneurship</strong> — foresight × venture",
     "fitnessTitle": "Academic References & Organizational Maturity Sources:",
     "fitnessBody": "This assessment module is based on documented research by Professor René Rohrbeck at EDHEC Business School. Benchmark studies and findings on the 33% profitability advantage of foresight-driven organizations are available at <a href=\"https://rene-rohrbeck.com/about-foresight/\" target=\"_blank\" rel=\"noopener noreferrer\">rene-rohrbeck.com</a> and his indexed publications on <a href=\"https://www.researchgate.net/profile/Rene-Rohrbeck\" target=\"_blank\" rel=\"noopener noreferrer\">ResearchGate</a>.",
     "claTitle": "Academic Sources for Causal Layered Analysis:",
-    "claBody": "Causal Layered Analysis (CLA) was developed by distinguished futurist Sohail Inayatullah. His theoretical and workshop case studies,including the reference book <a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">The Causal Layered Analysis Reader</a> and articles on CLA 2.0 and 3.0,are indexed on <a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">metafuture.org</a> and the <a href=\"https://research.usc.edu.au/\" target=\"_blank\" rel=\"noopener noreferrer\">USC Research Bank</a>.",
+    "claBody": "Causal Layered Analysis (CLA) was developed by distinguished futurist Sohail Inayatullah. His theoretical and workshop case studies—including the reference book <a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">The Causal Layered Analysis Reader</a> and articles on CLA 2.0 and 3.0—are indexed on <a href=\"https://metafuture.org\" target=\"_blank\" rel=\"noopener noreferrer\">metafuture.org</a> and the <a href=\"https://research.usc.edu.au/\" target=\"_blank\" rel=\"noopener noreferrer\">USC Research Bank</a>.",
     "wheelTitle": "Futures Wheel Methodology References:",
     "wheelBody": "The Futures Wheel methodology was first introduced by Jerome C. Glenn in 1971. Comprehensive guides on probability calculations and quantitative consequence mapping appear in <a href=\"http://www.millennium-project.org/publications-2/\" target=\"_blank\" rel=\"noopener noreferrer\">Futures Research Methodology 3.0</a> by The Millennium Project, with the full chapter also available on <a href=\"https://www.researchgate.net/publication/349474778_THE_FUTURES_WHEEL\" target=\"_blank\" rel=\"noopener noreferrer\">ResearchGate</a>.",
     "backcastTitle": "Academic Sources for Backcasting:",
@@ -148,13 +148,13 @@
     "heroSub": "Technology futures, emerging trends, uncertainty",
     "aboutLink": "About",
     "articlesLink": "Articles",
-    "methodsLink": "Methods",
+    "methodsLink": "Foresight Methods",
     "bioTitle": "",
     "spaceTag": "About this space",
     "spaceP1": "This is a personal hub for writing, methods, and thinking about technological futures.",
-    "spaceP2": "My deeper specialty is Type-2 fuzzy logic , for when uncertainty itself is fuzzy. It fits well with weak signals, emerging trends, scenarios, and decisions under deep uncertainty.",
-    "spaceP3": "Alongside this, I work in cloud and infrastructure , Docker, Kubernetes, DevOps , not as a separate path, but as part of the same system thinking. Technology, for me, is not just tools. It is structure, speed, and leverage.",
-    "findTitle": "Sections",
+    "spaceP2": "My deeper specialty is Type-2 fuzzy logic — for when uncertainty itself is fuzzy. It fits well with weak signals, emerging trends, scenarios, and decisions under deep uncertainty.",
+    "spaceP3": "Alongside this, I work in cloud and infrastructure — Docker, Kubernetes, DevOps — not as a separate path, but as part of the same system thinking. Technology, for me, is not just tools. It is structure, speed, and leverage.",
+    "findTitle": "What you'll find here",
     "findItems": [
       {
         "icon": "pen-line",
@@ -164,7 +164,7 @@
       },
       {
         "icon": "library",
-        "title": "Methods",
+        "title": "Foresight Methods",
         "desc": "Tools like CLA, scenario planning, FITness, and backcasting",
         "href": "methods/"
       },
@@ -177,20 +177,20 @@
       }
     ],
     "philosophyTag": "Philosophy",
-    "philP1": "Technology should amplify human capability, not replace it.",
-    "philP2": "Most of my thinking sits between what is emerging and what is not yet stable enough to name.",
-    "philP3": "When I am not working, I am usually exploring new places, physically or intellectually, to better understand systems I have not yet encountered.",
+    "philP1": "Technology should expand what people can do — not take their place.",
+    "philP2": "A lot of my thinking sits between what's emerging and what isn't stable enough to name yet.",
+    "philP3": "When I'm not working, I'm usually off discovering new places — in the real world or in my head — trying to figure out systems I haven't seen yet. Some people say I'm very smart; I'm not entirely buying it 😂",
     "focusTitle": "Focus",
     "focuses": [],
     "ctaResume": "CV",
-    "ctaMethods": "Methods"
+    "ctaMethods": "Foresight Methods"
   },
   "aboutPage": {
     "tag": "About",
     "title": "About me",
     "sub": "Futures researcher · cloud & infrastructure practitioner",
     "missionTitle": "Background",
-    "mission": "I hold a PhD in Futures Studies from the University of Tehran, with a focus on strategic foresight, emerging technologies, and uncertainty-driven decision systems.<br><br>My work is centered on understanding technological change before it becomes obvious , through weak signals, scenario planning, and system-level thinking. My deeper specialty is Type-2 fuzzy logic: modeling cases where uncertainty about uncertainty matters.<br><br>Professionally, I also work in cloud and infrastructure engineering. I build and operate systems using tools like Docker, Kubernetes, and modern DevOps practices.<br><br>I do not see these as separate domains. Foresight and infrastructure are both about systems , just at different time scales.",
+    "mission": "I hold a PhD in Futures Studies from the University of Tehran, with a focus on strategic foresight, emerging technologies, and uncertainty-driven decision systems.<br><br>My work is centered on understanding technological change before it becomes obvious — through weak signals, scenario planning, and system-level thinking. My deeper specialty is Type-2 fuzzy logic: modeling cases where uncertainty about uncertainty matters.<br><br>Professionally, I also work in cloud and infrastructure engineering. I build and operate systems using tools like Docker, Kubernetes, and modern DevOps practices.<br><br>I do not see these as separate domains. Foresight and infrastructure are both about systems — just at different time scales.",
     "researchFocusTitle": "Research focus",
     "researchFocus": [
       "Strategic foresight & futures studies",
@@ -209,75 +209,120 @@
     ],
     "closingNote": "I am not trying to predict the future. I am trying to understand how it becomes inevitable.",
     "eduTitle": "Education",
-    "edu": "PhD in Futures Studies (in progress), University of Tehran<br>MA in Human Resources Management, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology",
+    "edu": "PhD in Futures Studies (in progress), University of Tehran<br>MBA, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology",
     "contactTitle": "Contact",
-    "contact": "ali.mansouri1998@gmail.com , open to research, speaking, and collaboration"
+    "contact": "ali.mansouri1998@gmail.com — open to research, speaking, and collaboration"
   },
   "articlesPage": {
     "tag": "Articles",
-    "title": "Blog and Articles",
-    "sub": "Analytical essays on emerging technology, strategic foresight, and the methods I rely on when clarity is incomplete.",
+    "title": "Articles",
+    "sub": "Notes on emerging technologies, systems thinking, and foresight.",
     "emptyTitle": "Coming soon",
-    "emptyDesc": "More articles are in preparation.",
+    "emptyDesc": "More pieces are on the way.",
     "articles": [
       {
         "date": "2026",
+        "title": "Why Rohrbeck FITness Still Matters",
+        "tag": "Corporate",
+        "href": "articles/why-rohrbeck-still-matters.html",
+        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+        "summary": "When foresight becomes shelf-ware, FITness asks whether the organization can actually see, explore, and probe the future.",
+        "author": "Ali Mansouri"
+      },
+      {
+        "date": "2026",
+        "title": "What CLA Sees Before Policy",
+        "tag": "CLA",
+        "href": "articles/what-cla-sees-before-policy.html",
+        "image": "https://jfsdigital.org/wp-content/uploads/2022/07/smart-isfahan-1-scaled-e1656742344477.jpg",
+        "summary": "Policy sits on headlines and metrics; CLA opens layers that exist before any clause is drafted.",
+        "author": "Ali Mansouri"
+      },
+      {
+        "date": "2026",
         "title": "Navigating Uncertainty",
-        "summary": "Why strategic foresight is less about prediction and more about reading signals, building scenarios, and making decisions when clarity is incomplete.",
         "tag": "Uncertainty",
-        "status": "published",
         "href": "articles/navigating-uncertainty.html",
-        "image": "assets/founders/lotfi-zadeh.jpg",
-        "author": "Foresight Hub · uncertainty, weak signals, Type-2 fuzzy logic"
+        "image": "https://images.unsplash.com/photo-1501386761578-4fd643a2879e?auto=format&fit=crop&w=1200&q=80",
+        "summary": "When even “how uncertain are we?” is disputed, Type-2 fuzzy logic earns its place.",
+        "author": "Ali Mansouri"
       },
       {
         "date": "2026",
         "title": "Beyond the Biological Clock",
-        "summary": "A tightened, more rigorous version of a LinkedIn idea: AI does not merely move faster than us; it operates in a different temporal condition.",
-        "tag": "AI",
-        "status": "published",
+        "tag": "AI · Time",
         "href": "articles/beyond-biological-clock.html",
-        "image": "assets/founders/lotfi-zadeh.jpg",
-        "author": "Ali Mansouri · adapted from a LinkedIn essay"
-      },
-      {
-        "date": "2026",
-        "title": "Why Rohrbeck Still Matters",
-        "summary": "From report-oriented foresight to dynamic capability: why Rohrbeck remains one of the clearest languages for organizational anticipation.",
-        "tag": "FITness",
-        "status": "published",
-        "href": "articles/why-rohrbeck-still-matters.html",
-        "image": "assets/founders/rohrbeck.jpg",
-        "author": "René Rohrbeck · organizational foresight maturity"
-      },
-      {
-        "date": "2026",
-        "title": "What CLA Sees Before Policy Does",
-        "summary": "CLA is not just a workshop device. It is a way to see the distance between headlines, structure, discourse, and myth.",
-        "tag": "CLA",
-        "status": "published",
-        "href": "articles/what-cla-sees-before-policy.html",
-        "image": "assets/founders/inayatullah.jpg",
-        "author": "Sohail Inayatullah · discourse, worldview, myth"
+        "image": "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=1200&q=80",
+        "summary": "Human rhythm, org tempo, and machine latency are not the same clock.",
+        "author": "Ali Mansouri"
       },
       {
         "date": "2026",
         "title": "From Toolbox to Process",
-        "summary": "Why Hines and Bishop still matter for executives: they turn foresight from a catalog of tools into an operational sequence.",
-        "tag": "Six Pillars",
-        "status": "published",
+        "tag": "Process",
         "href": "articles/from-toolbox-to-process.html",
-        "image": "assets/founders/hines.jpg",
-        "author": "Andy Hines & Peter Bishop · managerial foresight"
+        "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
+        "summary": "FRM lists methods; Hines and Bishop give managers a path.",
+        "author": "Ali Mansouri"
       }
     ]
+  },
+  "articleRohrbeck": {
+    "tag": "Article",
+    "title": "Why Rohrbeck FITness Still Matters",
+    "subtitle": "Future Readiness is not enough; organizations must perceive, prospect, and probe.",
+    "metaLine": "2026 · FORESIGHT HUB · 3 min read",
+    "date": "2026",
+    "readTime": "3 min read",
+    "heroAlt": "Organizational foresight maturity diagram",
+    "body": "<p class=\"article-lead\">In management meetings we often hear “we have a foresight unit” or “our Future Readiness score is high.” Then a crisis hits and the same monthly reports land on the table. The brutal question follows: why does your foresight fail at the moment of decision?</p><p>Many organizations discover this is not a lack of reports. Reports exist, workshops happened, slides were shown. The problem is that foresight has been documentation, not live capability. It resembles shallow country comparisons: they look scientific until a crisis exposes the missing context.</p><p>René Rohrbeck’s <em>Future FITness</em> model draws the line. Readiness means “we are prepared.” FITness means “we are actively adjusting to the future.” The gap sounds subtle; in practice it is enormous. One produces documents; the other tests new paths.</p><h3>when foresight is only performance</h3><p>In many firms, foresight becomes an annual event: a trend report, a few AI slides, applause, and a return to the same operating loop. Perceiving, Prospecting, and Probing are missing. There is “seeing” without exploring or probing.</p><p>Cases at Siemens and Deutsche Telekom show foresight lives when tied to technology radar, venturing, and investment decisions. When it only decorates board meetings, it becomes beautiful, convincing, and useless.</p><h3>three processes, five dimensions</h3><p>Perceiving means catching weak signals and structural shifts. Prospecting means exploring possible paths, not one linear forecast. Probing means pilots, ventures, and small experiments that test the future instead of only talking about it.</p><p>Five maturity dimensions (culture, structure, process, resources, output) separate reporting theater from real capability. Without foresight culture, the best report goes to the shelf. Without venturing structure, probing cannot happen. One weak dimension collapses the whole system into performance.</p><h3>alive or documented?</h3><p>FITness still matters because it answers the opening question. If your foresight only works in calm times and goes silent in crisis, you have Readiness, not FITness. If the team reports but nothing reaches the market as a probe, your foresight is documented, not alive.</p><p>Ask yourself: when did foresight last change a real decision? If the answer is hard to find, the problem is not tools; it is architecture. FITness is a navigation map, not a decorative label.</p>"
+  },
+  "articleCla": {
+    "tag": "Article",
+    "title": "What CLA Sees Before Policy",
+    "subtitle": "Before policy comes discourse and myth; CLA makes them visible.",
+    "metaLine": "2026 · FORESIGHT HUB · 3 min read",
+    "date": "2026",
+    "readTime": "3 min read",
+    "heroAlt": "Four-layer CLA pyramid",
+    "body": "<p class=\"article-lead\">A new policy is announced. A task force forms, data is collected, a document is drafted. Yet some options never reach the table. Even with “scientific” analysis, the debate returns to the same menu. Why?</p><p>That question is the heart of CLA. Sohail Inayatullah’s Causal Layered Analysis shows that policy takes shape in deeper layers before any clause is written. If you only see the surface, it is like reading a scoreboard and thinking you know the whole game.</p><h3>the Litany trap</h3><p>Policymakers and media usually work at the Litany layer: numbers, crises, headlines, KPIs. That layer matters, but if we stop there, deeper causes and hidden worldviews stay invisible. Litany tells you what happened, not why only certain options feel thinkable.</p><p>Think of claims that “sport must stay separate from politics” while the framing, naming, and staging of an event is itself precise social engineering. The surface looks neutral; deeper layers already defined the game.</p><h3>four layers, one picture</h3><p>Systemic opens structures: law, markets, infrastructure, incentives. Worldview opens assumptions: “growth is always good,” “the state must control,” “technology fixes itself.” Myth/Metaphor opens the stories that limit debate: hero, victim, golden return, absolute binaries.</p><p>CLA says that until metaphor shifts, the policy menu does not shift. You can tweak numbers, but if the myth remains “all or nothing,” middle paths never become serious.</p><p>In Singapore and ASEAN, CLA reshapes conversation before the policy paper. When stakeholders move from Litany to Worldview and Myth, options appear that once seemed impossible. Here foresight and policy truly connect.</p><h3>a pre-policy tool</h3><p>CLA is a pre-policy tool. It explains why some options never reach the table, not which option is “correct.” If you want genuinely new policy, first see which discourse and myth already constrain it.</p><p>Ask: when did a policy meeting last discuss the Myth layer? If you always stay in Litany and Systemic, do not expect breakthrough. CLA is a flashlight for the layers that define the game before the law is written.</p>"
+  },
+  "articleUncertainty": {
+    "tag": "Article",
+    "title": "Navigating Uncertainty",
+    "subtitle": "When we are unsure how sure we are, we need different tools.",
+    "metaLine": "2026 · FORESIGHT HUB · 3 min read",
+    "date": "2026",
+    "readTime": "3 min read",
+    "heroAlt": "Fuzzy membership curves under uncertainty",
+    "body": "<p class=\"article-lead\">Two experts treat a weak signal seriously; two others say it is too early. Management wants one number, one decision, one direction. What do you do? Vote and move on?</p><p>This happens in foresight more often than we admit. Scenarios and critical uncertainties are powerful, but they hide an assumption: boundaries can be fixed. When judgments themselves are fuzzy, forcing a single probability is a strategic error.</p><h3>manufacturing false certainty</h3><p>In foresight sessions, a number often lands on the table: “0.7 probability,” “high confidence trend,” “medium-priority weak signal.” It looks scientific. Behind it, real expert disagreement is hidden. The person who said 0.7 might accept 0.4 to 0.8; the dissenter might dispute the definition of “emerging.”</p><p>That disagreement is part of reality, not method failure. In deep uncertainty, the boundary between “important” and “noise,” “likely” and “unlikely,” is itself fuzzy. Ignore that and your foresight becomes shallow simulation: a model that misrepresents the world.</p><h3>Type-2 fuzzy logic</h3><p>Lotfi Zadeh introduced Type-1 fuzzy logic for degrees of membership: a trend can be “somewhat” emerging. Type-2 goes further: it models uncertainty about the fuzzy boundaries themselves. Instead of one crisp membership function, you get a Footprint of Uncertainty (FOU); the model admits “we do not know exactly where the boundary is.”</p><p>In foresight this means saying “this trend is likely emerging” with a band of doubt, not a single 0.7 everyone must accept. For weak signals, expert disagreement, and decisions under ambiguity, that is often more honest than naive probability.</p><p>Example: a new AI technology. Team A sees a strong signal; Team B sees noise. Type-2 lets you say membership is high, but uncertainty about membership is also high. Management understands it should probe, not commit all-in.</p><h3>do not hide ambiguity</h3><p>Navigating uncertainty means choosing tools that do not fake certainty. The opening question remains: when even “how sure are we?” is disputed, the answer is the right tool.</p><p>If your foresight always delivers one clean number, it probably killed ambiguity instead of resolving it. In a world where weak signals matter, honesty about uncertainty beats fake precision. Type-2 fuzzy logic is technical language for a honesty that management meetings often lose.</p>"
+  },
+  "articleAiTime": {
+    "tag": "Article",
+    "title": "Beyond the Biological Clock",
+    "subtitle": "Time in the body, the organization, and the machine; three rhythms, not one.",
+    "metaLine": "2026 · FORESIGHT HUB · 3 min read",
+    "date": "2026",
+    "readTime": "3 min read",
+    "heroAlt": "Biological clock vs computational scheduling",
+    "body": "<p class=\"article-lead\">A manager wants a large language model live next month. Engineering says weeks. Legal says years. HR says the workforce is not ready. Who is right?</p><p>If you accept only one timeline, someone must be “wrong.” But everyone may be right; they are talking about different clocks. That is where technology foresight often fails: forcing one biological clock on every team.</p><h3>one calendar for humans and machines</h3><p>Human circadian rhythm is slow and cyclical: focus, fatigue, weekly cadence. AI systems and cloud infrastructure count milliseconds. Organizations sit between: committees, approvals, budget cycles. Treat the three as one and you build lying roadmaps.</p><p>Many tech analyses compute “time to market” from technical latency alone. Social adoption, regulatory change, and organizational learning run on separate clocks. It is like saying that because the steam engine existed, whole societies should industrialize within a year.</p><h3>three kinds of time in one analysis</h3><p>In technology foresight, “time” is not just a timeline. Decision tempo (how fast you can commit), infrastructure latency (how fast you deploy), and social adoption rhythm (how long people and institutions accept change) are separate layers.</p><p>LLM deployment is a clear example: technically possible in weeks, pilot in months, compliance and trust in years. Fuzzy logic can model “slow,” “gradual,” and “sudden” without hard cutoffs; not a crisp 18 months, but a band from 6 to 36 with different confidence per layer.</p><p>If your foresight only sees the manager’s clock, engineering always looks slow and legal always looks heavy. Separate the three clocks and you see where the bottleneck is and where to place the probe.</p><h3>hold several rhythms at once</h3><p>Beyond the biological clock means seeing technical, organizational, and social time separately, then combining them. The opening question is answered: both sides can be right; they speak of different clocks.</p><p>For every emerging technology project, ask three questions: how long technically? how long for the organization to accept? how long for society and regulation? Answer only one and your foresight is incomplete. The future of technology is multi-temporal; foresight must be too.</p>"
+  },
+  "articleHinesBishop": {
+    "tag": "Article",
+    "title": "From Toolbox to Process",
+    "subtitle": "Hines and Bishop’s Six Pillars answer “what do I do now?”",
+    "metaLine": "2026 · FORESIGHT HUB · 3 min read",
+    "date": "2026",
+    "readTime": "3 min read",
+    "heroAlt": "Six-pillar foresight process",
+    "body": "<p class=\"article-lead\">FRM 3.0 offers 39 methods. A manager looks at the list and asks: where do I start? Run everything at once and foresight becomes a heavy, exhausting project; run nothing and it stays talk. That paradox is real for many organizations.</p><p>It resembles copying another country’s development model without asking which stage you are in and where the bottleneck sits. Plenty of tools, little architecture; the result is exhaustion or theater.</p><h3>the toolbox trap</h3><p>FRM 3.0 is a treasure chest: Delphi, scenarios, futures wheel, CLA, backcasting, and dozens more. A chest becomes a problem when you do not know which key opens which lock. Many organizations start with one big workshop, produce 200 pages, and never reach Acting.</p><p>Great Scanning without Visioning yields shelf reports. Strong Visioning without Acting yields management wallpaper. Forecasting without Framing answers a question nobody asked. Every FRM method has value, but without architecture it is random.</p><h3>six pillars, one path</h3><p>Andy Hines and Peter Bishop turned foresight into a process: Framing → Scanning → Forecasting → Visioning → Planning → Acting. Each pillar has a failure mode and a blunt question.</p><p>Framing: “Are we asking the right question?” Scanning: “Do we see the horizon or only read feeds?” Forecasting: “Do we have plausible futures or fantasy?” Visioning: “Do we share an image?” Planning: “Do we have a pathway?” Acting: “Has a probe reached the market?”</p><p>The Cone of Plausibility bridges Forecasting and Visioning; not every fantasy, only plausible futures. In Houston’s program and APF courses, once an organization knows which pillar is stuck, it picks FRM tools on purpose, not all at once.</p><h3>you need architecture</h3><p>A toolbox is not enough; you need architecture. “Where do I start?” gets an answer when you know which pillar you are in and which gap comes next.</p><p>If your foresight always starts with scanning but never reaches acting, the problem is not tools; it is pillars. Six Pillars is a navigation map: not 39 random methods, but a path from question to probe. FRM is the library; Six Pillars is the compass.</p>"
   },
   "methodsIndex": {
     "heroTag": "Foresight Methods",
     "heroTitle": "Full Methods Catalog",
-    "heroSub": "All foresight, futures studies & strategic foresight methods , interactive workshops, lesson modules, and catalog entries in 7 categories.",
-    "coreTitle": "Layer 1 , Interactive workshops",
-    "advancedTitle": "Layer 2 , Extended methods",
+    "heroSub": "All foresight, futures studies & strategic foresight methods — interactive workshops, lesson modules, and catalog entries in 7 categories.",
+    "coreTitle": "Layer 1 — Interactive workshops",
+    "advancedTitle": "Layer 2 — Extended methods",
     "note": "Each module includes <strong>founder intro</strong>, <strong>lesson plan</strong>, <strong>readings</strong>, and <strong>class assignment</strong>. New methods are added over time."
   },
   "advancedPage": {
@@ -285,7 +330,7 @@
       "slug": "popper-diamond",
       "heroTag": "Rafael Popper · EU Foresight",
       "heroTitle": "Popper Foresight Diamond",
-      "heroSub": "A framework to assess foresight <em>quality</em> , not prediction, but whether your exercise was truly creative, innovative, expert-driven, and interactive.",
+      "heroSub": "A framework to assess foresight <em>quality</em> — not prediction, but whether your exercise was truly creative, innovative, expert-driven, and interactive.",
       "history": {
         "accent": "#e040fb",
         "founderLabel": "Developer",
@@ -293,7 +338,7 @@
         "yearLabel": "Period",
         "year": "2008–2012 (EU FORLEARN / JRC)",
         "institution": "UNU-MERIT · European Commission JRC",
-        "title": "Foresight Diamond , quality assessment",
+        "title": "Foresight Diamond — quality assessment",
         "origin": "Rafael Popper developed the Foresight Diamond in EU <strong>FORLEARN</strong> projects to answer: how do we know a foresight exercise was <em>good</em>, not merely completed?",
         "problemLabel": "Problem",
         "problem": "FRM 3.0 lists methods but lacks an integrated quality metric to compare workshops, policy processes, and consulting deliverables.",
@@ -301,7 +346,7 @@
         "applications": "EU national foresight quality reviews, JRC workshop audits, and internal foresight team review before board presentations."
       },
       "introTitle": "Four corners of the diamond",
-      "intro": "Each corner is a quality dimension. Weak foresight is often hollow in one or two corners , e.g. high Expertise but no real stakeholder Interaction.",
+      "intro": "Each corner is a quality dimension. Weak foresight is often hollow in one or two corners — e.g. high Expertise but no real stakeholder Interaction.",
       "pillars": [
         {
           "title": "Creativity",
@@ -327,13 +372,13 @@
       "gapTitle": "Why not in FRM 3.0?",
       "gap": "Chapter 39 covers integration only; Popper's Diamond is a <strong>meta-tool</strong> applied across all other methods. Glenn & Gordon listed tools; Popper added a <strong>quality lens</strong>.",
       "caseTitle": "Practical example",
-      "case": "A ministry ran Delphi , 200-page report. Popper audit: high Expertise, medium Interaction, low Creativity and Innovation. Result: redesign with CLA and scenarios , not a second Delphi."
+      "case": "A ministry ran Delphi — 200-page report. Popper audit: high Expertise, medium Interaction, low Creativity and Innovation. Result: redesign with CLA and scenarios — not a second Delphi."
     },
     "hines": {
       "slug": "strategic-foresight",
       "heroTag": "Andy Hines & Peter Bishop",
-      "heroTitle": "Strategic Foresight , Six Pillars",
-      "heroSub": "Operational framework from <em>Thinking About the Future</em>: the full path from framing the question to action , for managers, not only researchers.",
+      "heroTitle": "Strategic Foresight — Six Pillars",
+      "heroSub": "Operational framework from <em>Thinking About the Future</em>: the full path from framing the question to action — for managers, not only researchers.",
       "history": {
         "accent": "var(--color-f)",
         "founderLabel": "Authors",
@@ -348,8 +393,8 @@
         "useLabel": "Applications",
         "applications": "MBA foresight programs, organizational consulting, APF training, and executive courses in energy and health."
       },
-      "introTitle": "Six pillars , frame to act",
-      "intro": "Each pillar is a measurable phase. Weakness in one breaks the chain , e.g. excellent forecasting without visioning yields shelf reports.",
+      "introTitle": "Six pillars — frame to act",
+      "intro": "Each pillar is a measurable phase. Weakness in one breaks the chain — e.g. excellent forecasting without visioning yields shelf reports.",
       "pillars": [
         {
           "title": "1. Framing",
@@ -363,7 +408,7 @@
         },
         {
           "title": "3. Forecasting",
-          "desc": "Trends, cross-impact, cone of plausibility. Exploring possibility space , not single-line prediction.",
+          "desc": "Trends, cross-impact, cone of plausibility. Exploring possibility space — not single-line prediction.",
           "color": "#ffaa00"
         },
         {
@@ -383,15 +428,15 @@
         }
       ],
       "gapTitle": "Difference from FRM",
-      "gap": "FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar , not the reverse.",
+      "gap": "FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar — not the reverse.",
       "caseTitle": "Example: Cone of Plausibility",
-      "case": "After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers , not every imaginable fantasy."
+      "case": "After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers — not every imaginable fantasy."
     },
     "scenarios": {
       "slug": "scenarios",
       "heroTag": "Shell · Schwartz · van der Heijden",
       "heroTitle": "Strategic Scenario Planning",
-      "heroSub": "Beyond FRM Chapter 19: building 2–4 plausible futures for decisions under uncertainty , not single-line forecast.",
+      "heroSub": "Beyond FRM Chapter 19: building 2–4 plausible futures for decisions under uncertainty — not single-line forecast.",
       "history": {
         "accent": "var(--color-cla)",
         "founderLabel": "Pioneers",
@@ -407,7 +452,7 @@
         "applications": "Shell, South Africa post-apartheid scenarios, Singapore PMO, WEF, and energy/water planning in the Middle East."
       },
       "introTitle": "7-step process (Schwartz summary)",
-      "intro": "Scenarios are not \"correct prediction\" , mental preparation for multiple futures.",
+      "intro": "Scenarios are not \"correct prediction\" — mental preparation for multiple futures.",
       "pillars": [
         {
           "title": "1. Identify focal decision",
@@ -426,7 +471,7 @@
         },
         {
           "title": "4. Narrative & logic",
-          "desc": "Each scenario must be internally consistent , a path from today exists.",
+          "desc": "Each scenario must be internally consistent — a path from today exists.",
           "color": "#ffaa00"
         },
         {
@@ -441,7 +486,7 @@
         },
         {
           "title": "7. Organizational link",
-          "desc": "Scenarios must connect to budgeting and risk , or they sit on shelves.",
+          "desc": "Scenarios must connect to budgeting and risk — or they sit on shelves.",
           "color": "var(--color-wheel-red)"
         }
       ],
@@ -453,7 +498,7 @@
     "futurpreneurship": {
       "slug": "futurpreneurship",
       "heroTag": "Foresight × Entrepreneurship",
-      "heroTitle": "Futurpreneurship , Future-Driven Entrepreneurship",
+      "heroTitle": "Futurpreneurship — Future-Driven Entrepreneurship",
       "heroSub": "From weak signal and scenario to venture: someone who sees the future, accepts risk, and builds.",
       "history": {
         "accent": "var(--color-i)",
@@ -463,7 +508,7 @@
         "year": "2000–2025",
         "institution": "Foresight × Innovation Studies",
         "title": "Entrepreneurial Foresight / Futurpreneurship",
-        "origin": "FRM 3.0 has Personal Futures (Ch.36) and Genius Forecasting , but no <strong>systematic bridge to startup and venture building</strong>. Futurpreneurship fills that gap: foresight → hypothesis → MVP → scale.",
+        "origin": "FRM 3.0 has Personal Futures (Ch.36) and Genius Forecasting — but no <strong>systematic bridge to startup and venture building</strong>. Futurpreneurship fills that gap: foresight → hypothesis → MVP → scale.",
         "problemLabel": "Problem",
         "problem": "Startups without foresight are blind; futurists without ventures only report.",
         "useLabel": "Applications",
@@ -489,34 +534,95 @@
         },
         {
           "title": "Build",
-          "desc": "MVP, landing test, minimum-resource pilot , probing in Rohrbeck's terms.",
+          "desc": "MVP, landing test, minimum-resource pilot — probing in Rohrbeck's terms.",
           "color": "var(--color-i)"
         },
         {
           "title": "Scale or Kill",
-          "desc": "If signal confirms, scale; if not, pivot or kill fast , foresight prevents long wrong bets.",
+          "desc": "If signal confirms, scale; if not, pivot or kill fast — foresight prevents long wrong bets.",
           "color": "#4caf50"
         }
       ],
       "gapTitle": "Why FRM lacks this",
-      "gap": "FRM was written for policy and research labs; <strong>venture creation</strong> is out of scope. Futurpreneurship is what Silicon Valley does informally , with foresight rigor.",
+      "gap": "FRM was written for policy and research labs; <strong>venture creation</strong> is out of scope. Futurpreneurship is what Silicon Valley does informally — with foresight rigor.",
       "caseTitle": "Example: weak signal → venture",
-      "case": "Signal: aging + AI tutor demand. Scenario: \"Physical school boundary\" fades. Venture: AI tutor platform with curriculum foresight , MVP in 90 days, not 5 years of research."
+      "case": "Signal: aging + AI tutor demand. Scenario: \"Physical school boundary\" fades. Venture: AI tutor platform with curriculum foresight — MVP in 90 days, not 5 years of research."
+    },
+    "type2Fuzzy": {
+      "slug": "type-2-fuzzy",
+      "heroTag": "Zadeh · Mendel · John · IT2",
+      "heroTitle": "Type-2 Fuzzy Logic",
+      "heroSub": "When even “how uncertain are we?” is disputed, a single 0.6 is not enough. IT2 spread tells you if consensus is real or just silent averaging.",
+      "history": {
+        "accent": "#00e5ff",
+        "founderLabel": "Pioneers",
+        "founder": "Lotfi A. Zadeh · Jerry M. Mendel · Robert I. John · Narendra Karnik",
+        "yearLabel": "Evolution",
+        "year": "1965 fuzzy sets · 1975 linguistic variables · 1999–2006 IT2/GT2",
+        "institution": "UC Berkeley · USC · De Montfort · Nottingham",
+        "title": "From fuzzy sets to FOU",
+        "origin": "Zadeh (1965) said membership in a set is not only 0 or 1. Linguistic variables followed in 1975 (“hot”, “emerging”, “strong”). Mendel and Karnik at USC formalized Interval Type-2: each membership grade is a band. John at De Montfort and Nottingham extended GT2 and decision support.",
+        "problemLabel": "The foresight problem",
+        "problem": "In scanning or Delphi workshops everyone gives a number and we average. Type-1 yields 0.6 and hides disagreement. IT2 can yield a similar center but FOU width tells you if consensus was real or silent averaging.",
+        "useLabel": "Applications",
+        "applications": "Weak signals, scenario weights, expert synthesis, decisions under deep uncertainty, and a bridge to organizational probing (Rohrbeck FITness)."
+      },
+      "introTitle": "Six key IT2 concepts",
+      "intro": "Not formulas — shared language for foresight, technical, and management teams.",
+      "pillars": [
+        {
+          "title": "Membership function (Type-1)",
+          "desc": "Curve μ(x): how much x belongs to “emerging”. Simple and manager-friendly.",
+          "color": "#4caf50"
+        },
+        {
+          "title": "Footprint of Uncertainty (FOU)",
+          "desc": "Region between upper and lower MFs. Wider = more expert or stakeholder spread.",
+          "color": "#00e5ff"
+        },
+        {
+          "title": "Type-reduction (Karnik–Mendel)",
+          "desc": "Collapse IT2 to Type-1 before defuzzification. Centroid is the common algorithm.",
+          "color": "#7c4dff"
+        },
+        {
+          "title": "Linguistic variables",
+          "desc": "“Weak”, “medium”, “strong” defined with fuzzy sets — same language as weak signals.",
+          "color": "#ffaa00"
+        },
+        {
+          "title": "Fuzzy rule base",
+          "desc": "IF signal strong AND consensus high THEN act fast. IT2 keeps uncertainty in rules.",
+          "color": "#e040fb"
+        },
+        {
+          "title": "General Type-2 (GT2)",
+          "desc": "When the FOU itself is fuzzy. Heavier compute; for severe policy or tech ambiguity.",
+          "color": "var(--color-wheel-red)"
+        }
+      ],
+      "gapTitle": "Why FRM 3.0 lacks this",
+      "gap": "FRM has Decision Support but fuzzy logic is not a named method. Type-2 fits linguistic judgment under deep uncertainty where probability lacks a known distribution.",
+      "caseTitle": "Example: EU AI regulation",
+      "case": "Three experts: FOUs [0.35,0.72], [0.48,0.85], [0.22,0.55]. Type-1 mean ≈ 0.53. IT2 spread ≈ 0.36 → moderate consensus. The team runs a Delphi round or short probing instead of a crisp board report."
     }
   },
   "hubAdvanced": {
     "popperTitle": "Popper Foresight Diamond",
-    "popperDesc": "Assess foresight quality: Creativity, Innovation, Expertise, Interaction , a meta-tool over all methods.",
+    "popperDesc": "Assess foresight quality: Creativity, Innovation, Expertise, Interaction — a meta-tool over all methods.",
     "popperLink": "Explore",
     "hinesTitle": "Hines & Bishop Six Pillars",
-    "hinesDesc": "Framing → Scanning → Forecasting → Visioning → Planning → Acting , the manager's path.",
+    "hinesDesc": "Framing → Scanning → Forecasting → Visioning → Planning → Acting — the manager's path.",
     "hinesLink": "Explore",
     "scenariosTitle": "Strategic Scenario Planning",
-    "scenariosDesc": "Shell/Schwartz: 2×2, critical uncertainties, early indicators , beyond FRM's Scenario chapter.",
+    "scenariosDesc": "Shell/Schwartz: 2×2, critical uncertainties, early indicators — beyond FRM's Scenario chapter.",
     "scenariosLink": "Explore",
     "futurTitle": "Futurpreneurship",
-    "futurDesc": "Foresight + venture: from weak signal to MVP , what FRM 3.0 lacks.",
+    "futurDesc": "Foresight + venture: from weak signal to MVP — what FRM 3.0 lacks.",
     "futurLink": "Explore",
+    "type2Title": "Type-2 Fuzzy Logic",
+    "type2Desc": "Uncertainty about uncertainty — IT2 for weak signals, expert disagreement, and deep uncertainty.",
+    "type2Link": "Explore",
     "catalogLink": "Full methods catalog"
   },
   "lessonLabels": {
@@ -526,6 +632,8 @@
     "outline": "Lesson plan (Syllabus)",
     "readings": "Readings & references",
     "assignment": "Assignment / workshop",
+    "prerequisites": "Prerequisites",
+    "assessment": "Assessment",
     "readMore": "Link"
   },
   "lessons": {
@@ -664,7 +772,7 @@
         },
         {
           "type": "Paper",
-          "text": "Inayatullah (1998). Causal layered analysis , <em>Futures</em>."
+          "text": "Inayatullah (1998). Causal layered analysis — <em>Futures</em>."
         }
       ],
       "assignment": "Pick this week's news. Fill a 4-layer CLA table + one new layer-4 metaphor proposing different policy."
@@ -682,7 +790,7 @@
           "id": "glenn",
           "name": "Jerome C. Glenn",
           "role": "Founder, Futures Wheel · Millennium Project",
-          "bio": "American futurist; created the Wheel (1972) for consequence chains. MP director and FRM 3.0 editor , this lesson focuses on <strong>workshop Wheel practice</strong>, not the 39-method catalog."
+          "bio": "American futurist; created the Wheel (1972) for consequence chains. MP director and FRM 3.0 editor — this lesson focuses on <strong>workshop Wheel practice</strong>, not the 39-method catalog."
         }
       ],
       "objectives": [
@@ -726,11 +834,11 @@
       "readings": [
         {
           "type": "Book",
-          "text": "Glenn & Gordon (2009). FRM 3.0 , Futures Wheel chapter."
+          "text": "Glenn & Gordon (2009). FRM 3.0 — Futures Wheel chapter."
         },
         {
           "type": "Report",
-          "text": "Millennium Project , State of the Future examples."
+          "text": "Millennium Project — State of the Future examples."
         }
       ],
       "assignment": "Driver: \"40% EV adoption in Tehran by 2051\". List 3 third-order branches + one Futurpreneurship opportunity."
@@ -748,7 +856,7 @@
           "id": "robinson",
           "name": "John B. Robinson",
           "role": "Backcasting pioneer · UBC",
-          "bio": "Sustainability planning scholar; backcasting from desired futures to today , not prediction."
+          "bio": "Sustainability planning scholar; backcasting from desired futures to today — not prediction."
         }
       ],
       "objectives": [
@@ -792,15 +900,15 @@
       "readings": [
         {
           "type": "Paper",
-          "text": "Robinson (1990). Futures under glass , <em>Futures</em>."
+          "text": "Robinson (1990). Futures under glass — <em>Futures</em>."
         },
         {
           "type": "Paper",
-          "text": "Dreborg (1996). Essence of backcasting , <em>Futures</em>."
+          "text": "Dreborg (1996). Essence of backcasting — <em>Futures</em>."
         },
         {
           "type": "Book",
-          "text": "Natural Step / Holmberg & Robèrt , Sweden backcasting."
+          "text": "Natural Step / Holmberg & Robèrt — Sweden backcasting."
         }
       ],
       "assignment": "Write a 10-year vision (2 paragraphs). Five backcast steps + one CLA worldview barrier."
@@ -816,7 +924,7 @@
           "id": "popper",
           "name": "Rafael Popper",
           "role": "Foresight Diamond · UNU-MERIT / JRC",
-          "bio": "EU foresight researcher; FORLEARN Diamond scores Creativity, Innovation, Expertise, Interaction , a meta-tool over all methods."
+          "bio": "EU foresight researcher; FORLEARN Diamond scores Creativity, Innovation, Expertise, Interaction — a meta-tool over all methods."
         }
       ],
       "objectives": [
@@ -860,7 +968,7 @@
       "readings": [
         {
           "type": "Report",
-          "text": "Popper (2008). Foresight Diamond , EU FORLEARN."
+          "text": "Popper (2008). Foresight Diamond — EU FORLEARN."
         },
         {
           "type": "Paper",
@@ -934,7 +1042,7 @@
         },
         {
           "type": "Paper",
-          "text": "Hines (2010). Primary futurist skill , APF."
+          "text": "Hines (2010). Primary futurist skill — APF."
         }
       ],
       "assignment": "Frame your org foresight question (1 page). Weakest pillar + next deliverable."
@@ -1004,7 +1112,7 @@
         },
         {
           "type": "Paper",
-          "text": "Wack (1985). Scenarios , <em>Harvard Business Review</em>."
+          "text": "Wack (1985). Scenarios — <em>Harvard Business Review</em>."
         },
         {
           "type": "Book",
@@ -1032,7 +1140,7 @@
           "id": "candy",
           "name": "Stuart Candy",
           "role": "Experiential futures · OCAD",
-          "bio": "Immersive scenarios , foresight to public action."
+          "bio": "Immersive scenarios — foresight to public action."
         },
         {
           "id": "mansouri",
@@ -1082,11 +1190,11 @@
       "readings": [
         {
           "type": "Paper",
-          "text": "Slaughter , Futures literacy."
+          "text": "Slaughter — Futures literacy."
         },
         {
           "type": "Web",
-          "text": "Candy , Experiential futures."
+          "text": "Candy — Experiential futures."
         },
         {
           "type": "Portal",
@@ -1094,7 +1202,949 @@
         }
       ],
       "assignment": "This week's weak signal + one-page scenario + business hypothesis + 3 MVP actions for 90 days."
+    },
+    "type2fuzzy": {
+      "meta": {
+        "module": "9",
+        "duration": "4 × 90 min (6 hours) · expandable to 12 sessions",
+        "level": "MA / PhD foresight · deep uncertainty",
+        "diagram": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80",
+        "diagramAlt": "Three-expert FOU bands on a weak signal"
+      },
+      "prerequisites": "Foresight basics (scanning or weak signals), Delphi or expert panels, intro probability. Type-1 fuzzy helpful but covered in session 1.",
+      "assessment": "HW1 & HW2 (15% each) · midterm project (30%) · final memo + presentation (40%). Rubric in page syllabus section.",
+      "founders": [
+        {
+          "id": "lotfi-zadeh",
+          "name": "Lotfi A. Zadeh",
+          "role": "Founder of fuzzy logic · UC Berkeley",
+          "bio": "Iranian-American engineer. Fuzzy sets (1965) and linguistic variables (1975). Foundation for Type-1 and the path to Type-2."
+        },
+        {
+          "id": "jerry-mendel",
+          "name": "Jerry M. Mendel",
+          "role": "IT2 pioneer · USC Viterbi",
+          "bio": "USC emeritus professor. Formalized Interval Type-2 fuzzy logic, Karnik–Mendel type-reduction, and reference IT2 texts."
+        },
+        {
+          "id": "robert-john",
+          "name": "Robert I. John",
+          "role": "GT2 & decision support · De Montfort / Nottingham",
+          "bio": "Pioneer of type-2 fuzzy sets in computational intelligence. Co-authored IT2 simplified with Mendel; extended GT2 and decision support."
+        }
+      ],
+      "objectives": [
+        "Distinguish Type-0, Type-1, IT2, and GT2 with a weak-signal example.",
+        "Draw triangular and trapezoidal MFs for an \"emerging\" linguistic label.",
+        "Build FOU and upper/lower MFs for 3+ experts in the page workshop.",
+        "Explain type-reduction and defuzzification conceptually (no code) to managers.",
+        "Contrast epistemic vs aleatory uncertainty and where IT2 fits.",
+        "Link IT2 to scanning, Delphi, scenarios, cone of plausibility, and Rohrbeck probing.",
+        "Write a simple Mamdani-style rule base for weak signal + consensus.",
+        "State IT2 limits: not a replacement for CLA, scenarios, or known probability.",
+        "Write a one-page memo with Type-1 mean, IT2 spread, verdict, and 90-day probing.",
+        "Analyze a case study (EU AI, water, CBDC) using FOU."
+      ],
+      "outline": [
+        {
+          "step": "1",
+          "time": "90 min",
+          "title": "Type-1 & linguistic variables",
+          "desc": "Zadeh 1965/1975 · fuzzy set · MF · live polling · limits of averaging."
+        },
+        {
+          "step": "2",
+          "time": "90 min",
+          "title": "IT2 & FOU",
+          "desc": "Mendel/Karnik · upper/lower · three experts · spread = disagreement · hand FOU exercise."
+        },
+        {
+          "step": "3",
+          "time": "90 min",
+          "title": "Type-reduction & fuzzy systems",
+          "desc": "KM centroid conceptual · Mamdani vs TS · rule base · AND/OR operators."
+        },
+        {
+          "step": "4",
+          "time": "90 min",
+          "title": "Foresight workshop + memo",
+          "desc": "Page workshop · Delphi+IT2 · cone · FITness · memo pitch · Popper critique."
+        },
+        {
+          "step": "5",
+          "time": "Optional",
+          "title": "GT2 & decision support",
+          "desc": "John · when IT2 is not enough · Castillo & Melin survey."
+        },
+        {
+          "step": "6",
+          "time": "Optional",
+          "title": "Organizational case study",
+          "desc": "Real project: weak signal + stakeholder map + FOU + probing plan."
+        }
+      ],
+      "readings": [
+        {
+          "type": "EN · Classic",
+          "text": "Zadeh, L.A. (1965). Fuzzy sets. <em>Information and Control</em>."
+        },
+        {
+          "type": "EN · Classic",
+          "text": "Zadeh, L.A. (1975). The concept of a linguistic variable. <em>Information Sciences</em>."
+        },
+        {
+          "type": "EN · IT2",
+          "text": "Mendel, J.M. (2001). <em>Uncertain Rule-Based Fuzzy Logic Systems</em>. Prentice Hall. · ch. 2–5"
+        },
+        {
+          "type": "EN · Type-reduction",
+          "text": "Karnik, N.N. & Mendel, J.M. (2001). Centroid of a type-2 fuzzy set. <em>Information Sciences</em>."
+        },
+        {
+          "type": "EN · IT2 simplified",
+          "text": "Mendel, J.M., John, R.I. & Liu, F. (2006). Interval type-2 fuzzy logic systems made simple. <em>IEEE Trans. Fuzzy Systems</em>."
+        },
+        {
+          "type": "EN · Survey",
+          "text": "Castillo, O. & Melin, P. (2012). Recent advances in interval type-2 fuzzy systems. <em>Information Sciences</em>."
+        },
+        {
+          "type": "EN · GT2",
+          "text": "John, R.I. & Mendel, J.M. (2002). Calculating sample statistics of type-2 fuzzy variable. <em>Fuzzy Sets and Systems</em>."
+        },
+        {
+          "type": "EN · Foresight",
+          "text": "Hines, A. & Bishop, P. · Cone of Plausibility · Six Pillars."
+        },
+        {
+          "type": "EN · Foresight",
+          "text": "Rohrbeck, R. · FITness / organizational probing."
+        },
+        {
+          "type": "FA · Book",
+          "text": "Bashirzadeh, M. (2019). <em>Fundamentals of Fuzzy Logic and Applications</em> (Persian). University of Tehran Press."
+        },
+        {
+          "type": "FA · Book",
+          "text": "Mirzaei, S.M. (2014). <em>Fuzzy Logic</em> (Persian). Imam Hossein University Press."
+        },
+        {
+          "type": "FA · Theses",
+          "text": "IRANDOC: search “منطق فازی نوع ۲” in EE and technology management."
+        }
+      ],
+      "assignment": "Final project: real weak signal (thesis topic preferred) · page FOU workshop · one-page memo · 3-rule base · 10-min presentation. Full HW details and rubric in syllabus section above workshop."
     }
+  },
+  "type2Page": {
+    "heroTag": "Zadeh · Mendel · John · IT2",
+    "heroTitle": "Type-2 Fuzzy Logic",
+    "heroSub": "For university teaching and corporate delivery: when even “how uncertain are we?” is disputed, a single 0.6 will not do. FOU shows real consensus vs silent averaging.",
+    "tracksLabel": "Delivery track",
+    "trackUniversity": "University",
+    "trackIndustry": "Industry & organization",
+    "universitySectionTitle": "University track · syllabus & assessment",
+    "industrySectionTitle": "Industry track · corporate workshop & deliverables",
+    "theoryTag": "From Type-0 to Type-2",
+    "theoryTitle": "Why one membership grade is not enough",
+    "theoryLead": "Imagine a Delphi workshop: five experts score how “emerging” a trend is. You average to 0.6 and call it consensus. But if one expert said 0.9 and another 0.3, that 0.6 hides conflict — it is silent averaging, not agreement.",
+    "theoryNarrative": [
+      "In 1965 Lotfi Zadeh argued the world is not only black and white. Membership in a set can be partial: tea can be “hot” without being like fire. Linguistic variables (“emerging”, “strong”) came next. Type-1 fuzzy logic assigns one number between 0 and 1 for each item.",
+      "In foresight everyone may use the same word but mean different numbers. One expert sees 0.7 from a technology angle; another 0.4 from the market. Type-1 averages to 0.55. The manager reads consensus; the disagreement stays hidden.",
+      "Mendel and Karnik at USC proposed treating the grade itself as uncertain — a band, not a point. Expert A: 0.4–0.7; Expert B: 0.2–0.5. The region across all bands is the Footprint of Uncertainty (FOU). Its width shows how far you are from real agreement.",
+      "Interval Type-2 (IT2) is the workhorse: lower and upper curves with FOU between them. IT2 is an honesty tool in foresight: center near 0.6 but spread 0.48 means you still lack consensus. IT2 does not replace probability; it fits linguistic judgment when you want disagreement visible."
+    ],
+    "theoryExampleTitle": "Short example",
+    "theoryExample": "Three experts on EU AI regulation: bands [0.35,0.72], [0.48,0.85], [0.22,0.55]. Type-1 mean ≈ 0.53; IT2 spread ≈ 0.36 → moderate agreement at best. A second Delphi round or small probe beats a crisp board report.",
+    "detailsLadderTitle": "Four levels (Type-0 to GT2)",
+    "detailsCompareTitle": "Comparison table · Type-0, 1, IT2",
+    "detailsTimelineTitle": "Historical timeline",
+    "detailsWorkflowTitle": "Six workshop steps · list",
+    "detailsStackTitle": "Works alongside which methods?",
+    "foresightProse": [
+      "IT2 helps when data are thin and opinions scatter — weak signals, Delphi panels. Keep each expert’s FOU and the aggregate FOU instead of silent averaging. Non-overlapping bands mean more probing, not a final verdict.",
+      "In scenarios and the cone of plausibility, “plausible” can be a band, not fake precision. Wide spread in Rohrbeck FITness means you have not probed yet; IT2 links to testing, not to claiming consensus."
+    ],
+    "workflowProse": "In a workshop: name one specific weak signal. Define a linguistic label (e.g. signal strength). Each expert gives lower and upper bounds. Read aggregate FOU — wide means disagreement, narrow means consensus. Decide light scanning, Delphi, or probing; write a one-page memo with mean, spread, and a 90-day recommendation.",
+    "limitsProse": "IT2 does not replace CLA, scenarios, or probability with a known distribution. Translate band width into decision language for non-technical managers. FOU is not a statistical confidence interval.",
+    "theoryP1": "In 1965 Lotfi Zadeh introduced fuzzy sets: membership is not only 0 or 1. In 1975 came linguistic variables such as “hot”, “emerging”, “strong”. Type-1 fuzzy logic formalized membership μ(x) in [0,1].",
+    "theoryP2": "In Type-1 each point x has one precise μ. That works when everyone shares roughly the same definition of “emerging”. In foresight the trouble usually starts here: experts still fight over the number itself.",
+    "theoryP3": "Jerry Mendel and Narendra Karnik at USC noticed real-world disagreement over μ itself. Expert A says 0.7, B says 0.4 — both can be right with different mental models. Type-2 treats membership as a band: the Footprint of Uncertainty (FOU).",
+    "theoryP4": "Interval Type-2 (IT2) is the workhorse: lower and upper membership functions. The region between them is the FOU. Karnik–Mendel type-reduction collapses the FOU to Type-1, but first you must see how wide disagreement is.",
+    "theoryP5": "In foresight IT2 is an honesty tool. Type-1 averaging 0.6 hides conflict. IT2 can yield a similar center but report spread = 0.48 — meaning you do not yet have real consensus.",
+    "theoryP6": "Robert John at De Montfort and Nottingham advanced General Type-2 (GT2) and decision support. GT2 when the FOU itself is fuzzy. For most foresight classes and workshops, IT2 is enough.",
+    "theoryP7": "A full fuzzy system (Mamdani or Takagi–Sugeno) has four stages: fuzzification, rule evaluation, aggregation, defuzzification. IT2 requires type-reduction before defuzzification. This module focuses on linguistic judgment and FOU, not industrial control.",
+    "theoryP8": "Key distinction: probability when you have (or assume) a distribution; IT2 when you have linguistic judgment and want disagreement explicit. IT2 does not replace probability; it complements it under deep uncertainty.",
+    "ladderTitle": "Four simple levels",
+    "ladder": [
+      {
+        "label": "Type-0",
+        "desc": "Yes or no. Is the trend emerging?"
+      },
+      {
+        "label": "Type-1",
+        "desc": "Somewhat emerging. One number, e.g. 0.6."
+      },
+      {
+        "label": "Type-2 / IT2",
+        "desc": "Emerging between 0.4 and 0.8. Band width = expert disagreement."
+      },
+      {
+        "label": "GT2",
+        "desc": "When uncertainty over the FOU itself is fuzzy. Heavier; for severe ambiguity."
+      }
+    ],
+    "compareTitle": "Type-0, Type-1, and IT2 at a glance",
+    "compareIntro": "Which to use in scanning or Delphi?",
+    "compareColWhen": "When",
+    "compareColStrength": "Strength",
+    "compareColLimit": "Limit",
+    "compareColType": "Type",
+    "labelActivity": "Activity",
+    "labelReading": "Reading",
+    "labelSetup": "Setup",
+    "labelData": "Data",
+    "labelAnalysis": "Analysis",
+    "labelTakeaway": "Takeaway",
+    "labelDeliverable": "Deliverable",
+    "labelHint": "Hint",
+    "labelRole": "Role",
+    "labelJob": "Job",
+    "compareRows": [
+      {
+        "type": "Type-0",
+        "when": "Fast binary decision (act / wait)",
+        "strength": "Simple, clear",
+        "limit": "Crushes weak signals"
+      },
+      {
+        "type": "Type-1",
+        "when": "Shared definition of the label",
+        "strength": "Manager-friendly",
+        "limit": "Hides disagreement in averages"
+      },
+      {
+        "type": "IT2",
+        "when": "High expert or stakeholder spread",
+        "strength": "FOU = real consensus check",
+        "limit": "Needs translation for non-technical audiences"
+      },
+      {
+        "type": "GT2",
+        "when": "Ambiguity over the FOU itself",
+        "strength": "Richer model",
+        "limit": "Computational cost; rarely needed in foresight"
+      }
+    ],
+    "timelineTitle": "Timeline (short)",
+    "timeline": [
+      {
+        "year": "1965",
+        "event": "Zadeh · fuzzy sets · <em>Information and Control</em>"
+      },
+      {
+        "year": "1973",
+        "event": "Mamdani · first practical fuzzy controller"
+      },
+      {
+        "year": "1975",
+        "event": "Zadeh · linguistic variables · “hot”, “emerging”"
+      },
+      {
+        "year": "1998",
+        "event": "Mendel · intro to IT2 fuzzy logic systems"
+      },
+      {
+        "year": "1999–2001",
+        "event": "Karnik & Mendel · type-reduction and IT2 centroid"
+      },
+      {
+        "year": "2006",
+        "event": "Mendel, John, Liu · IT2 simplified · IEEE Trans. Fuzzy Systems"
+      },
+      {
+        "year": "2012+",
+        "event": "Castillo & Melin · surveys · control, decision support, hybrids"
+      }
+    ],
+    "foresightTag": "Foresight link",
+    "foresightTitle": "Where does it help in foresight?",
+    "foresightItems": [
+      {
+        "title": "Weak signals",
+        "desc": "Few data points, scattered opinions. IT2 shows spread before the team assumes consensus."
+      },
+      {
+        "title": "Delphi & expert panels",
+        "desc": "Keep each expert’s FOU and the aggregate FOU instead of silent averaging. Non-overlapping bands mean more probing."
+      },
+      {
+        "title": "Scenarios & plausibility",
+        "desc": "Scenario plausibility as a fuzzy band when mental models are weak, not fake precision."
+      },
+      {
+        "title": "Deep uncertainty",
+        "desc": "Knightian uncertainty: no known probability distribution. IT2 fits linguistic judgment."
+      },
+      {
+        "title": "Cone of Plausibility",
+        "desc": "Bridge between forecasting and visioning in Hines’ Six Pillars. IT2 keeps “plausible” as a band."
+      },
+      {
+        "title": "Rohrbeck FITness & probing",
+        "desc": "Wide spread = you have not probed yet. IT2 links to organizational probing, not crisp reports."
+      }
+    ],
+    "workflowTitle": "Six steps in a foresight workshop",
+    "workflowSteps": [
+      {
+        "title": "1. Name the signal",
+        "desc": "One specific weak signal, not a broad topic."
+      },
+      {
+        "title": "2. Define a fuzzy label",
+        "desc": "e.g. “signal strength” from weak to strong."
+      },
+      {
+        "title": "3. Each expert gives a band",
+        "desc": "Lower and upper bound, not one number."
+      },
+      {
+        "title": "4. Read aggregate FOU",
+        "desc": "Wide = disagreement; narrow = consensus."
+      },
+      {
+        "title": "5. Foresight verdict",
+        "desc": "Light scanning, Delphi, or probing?"
+      },
+      {
+        "title": "6. One-page memo",
+        "desc": "Type-1 mean, IT2 spread, 90-day recommendation."
+      }
+    ],
+    "stackTitle": "Works alongside which methods?",
+    "stackItems": [
+      {
+        "method": "Scanning / weak signals",
+        "role": "IT2 on signal scores"
+      },
+      {
+        "method": "Delphi",
+        "role": "FOU instead of round averages"
+      },
+      {
+        "method": "CLA",
+        "role": "Litany layer; IT2 does not replace CLA"
+      },
+      {
+        "method": "Scenarios",
+        "role": "Plausibility weights as bands"
+      },
+      {
+        "method": "Rohrbeck FITness",
+        "role": "Wide spread → probing"
+      },
+      {
+        "method": "Cone of Plausibility",
+        "role": "Fuzzy band for “plausible”"
+      }
+    ],
+    "limitsTitle": "Limits (exam-relevant)",
+    "limitsText": "IT2 does not replace CLA, scenarios, or probability with a known distribution. You must translate band width into decision language for non-technical managers. GT2 is heavier. In foresight IT2 is usually enough. Overfitting expert bands without probing is dangerous.",
+    "memoTitle": "Memo template for management",
+    "memoFields": [
+      "Signal: …",
+      "Type-1 mean: …",
+      "IT2 spread (FOU width): …",
+      "Read: weak / moderate / strong consensus",
+      "90-day action: probing / Delphi / scanning",
+      "Risk if you wrongly assume consensus: …"
+    ],
+    "courseTag": "Syllabus",
+    "courseTitle": "Type-2 Fuzzy Logic in Foresight",
+    "courseIntro": "Designed for MA/PhD foresight, technology management, or “methods for deep uncertainty”. 4 sessions × 90 minutes (expandable to 8 or 12).",
+    "courseMeta": [
+      {
+        "label": "Suggested code",
+        "value": "FOR-T2 / APF-509"
+      },
+      {
+        "label": "Credits",
+        "value": "2 theory · 1 workshop (optional)"
+      },
+      {
+        "label": "Prerequisites",
+        "value": "Foresight basics, probability intro, Delphi or scanning"
+      },
+      {
+        "label": "Audience",
+        "value": "Foresight students, strategy MBA, policy analysts"
+      },
+      {
+        "label": "Output",
+        "value": "IT2 memo + FOU report on a real weak signal"
+      }
+    ],
+    "sessionsTitle": "4-session plan (90 min each)",
+    "sessions": [
+      {
+        "num": "1",
+        "title": "Type-1, linguistic variables, why Type-2?",
+        "duration": "90 min",
+        "topics": [
+          "Fuzzy set and μ(x)",
+          "Triangle and trapezoid MFs",
+          "Linguistic variables",
+          "“Emerging trend” example",
+          "Limits of averaging"
+        ],
+        "activity": "Each student defines a linguistic label for a weak signal.",
+        "reading": "Zadeh 1965, 1975 · Bashirzadeh ch. 1–3"
+      },
+      {
+        "num": "2",
+        "title": "IT2, FOU, upper/lower MF",
+        "duration": "90 min",
+        "topics": [
+          "FOU formal",
+          "Primary membership J(x,u)",
+          "Interval footprint",
+          "Three-expert example",
+          "Spread as disagreement"
+        ],
+        "activity": "Hand-draw FOU for 3 stakeholders on one signal.",
+        "reading": "Mendel 2001 ch. 2–3 · Karnik & Mendel 2001"
+      },
+      {
+        "num": "3",
+        "title": "Type-reduction, defuzzification, fuzzy systems",
+        "duration": "90 min",
+        "topics": [
+          "Centroid type-reduction (conceptual)",
+          "Mamdani vs Takagi–Sugeno",
+          "Rule base",
+          "Why simple rules suffice in foresight"
+        ],
+        "activity": "Write 3 IF-THEN rules for weak signal + consensus.",
+        "reading": "Mendel, John, Liu 2006 · Castillo & Melin 2012"
+      },
+      {
+        "num": "4",
+        "title": "Foresight workshop + memo + assessment",
+        "duration": "90 min",
+        "topics": [
+          "Delphi + IT2",
+          "Cone of plausibility",
+          "FITness probing",
+          "Memo presentation",
+          "Popper Diamond critique"
+        ],
+        "activity": "Page workshop + one-page memo + 5-min pitch.",
+        "reading": "Module review · Rohrbeck FITness · Hines cone"
+      }
+    ],
+    "pipelineTag": "System architecture",
+    "pipelineTitle": "Data path in a fuzzy system (Type-1 and IT2)",
+    "pipelineIntro": "Industrial control implements every stage. In foresight, fuzzification + FOU + conceptual type-reduction + memo is usually enough.",
+    "pipelineSteps": [
+      {
+        "step": "1",
+        "title": "Fuzzification",
+        "desc": "Crisp input (expert score) or linguistic label (“strong”) becomes a fuzzy set."
+      },
+      {
+        "step": "2",
+        "title": "Rule evaluation",
+        "desc": "IF signal strong AND consensus high THEN act fast. In IT2 antecedents and consequents are IT2."
+      },
+      {
+        "step": "3",
+        "title": "Aggregation",
+        "desc": "Rule outputs combine. In IT2 the result is a type-2 set."
+      },
+      {
+        "step": "4",
+        "title": "Type-reduction",
+        "desc": "IT2 → Type-1. Karnik–Mendel centroid is the common method."
+      },
+      {
+        "step": "5",
+        "title": "Defuzzification",
+        "desc": "Type-1 → crisp number y*. In foresight spread often matters more than y*."
+      }
+    ],
+    "deepDiveTag": "Deep concepts",
+    "deepDiveTitle": "What students should know (without formula overload)",
+    "deepDiveItems": [
+      {
+        "title": "Membership function",
+        "text": "μ(x)∈[0,1] says how much x belongs to fuzzy set A. Common shapes: triangle, trapezoid, Gaussian. Trapezoids fit “emerging” intuitively in foresight.",
+        "note": "Type-1: μ(x) is a number. IT2: μ(x) is a band [μ̲, μ̄]."
+      },
+      {
+        "title": "Primary membership J(x,u)",
+        "text": "In formal IT2, J(x,u) is secondary membership. For class: FOU = {(x,u) | u∈[μ̲(x), μ̄(x)]} is enough.",
+        "note": "Exam tip: answer “what is FOU?” with a three-expert drawing."
+      },
+      {
+        "title": "Type-reduction (Karnik–Mendel)",
+        "text": "Goal: collapse IT2 set to Type-1. Centroid integrates y·μ(y); in IT2 μ is an interval; KM iteratively finds y* and band [yL, yR].",
+        "note": "In foresight: width of [yL,yR] ≈ disagreement spread."
+      },
+      {
+        "title": "Mamdani vs Takagi–Sugeno",
+        "text": "Mamdani: fuzzy consequent. Takagi–Sugeno: crisp linear/constant consequent. TS dominates control; Mamdani is closer to human linguistic rules.",
+        "note": "For weak-signal judgment, Mamdani-style rules are enough."
+      },
+      {
+        "title": "Epistemic vs aleatory uncertainty",
+        "text": "Aleatory: inherent variability (coin toss). Epistemic: our ignorance (missing model). Expert disagreement is epistemic; IT2 targets that.",
+        "note": "Knightian = severe epistemic without a known distribution."
+      }
+    ],
+    "uncertaintyTag": "Uncertainty",
+    "uncertaintyTitle": "Uncertainty types and where IT2 fits",
+    "uncertaintyColType": "Type",
+    "uncertaintyColDesc": "Definition",
+    "uncertaintyColTool": "Foresight tool",
+    "uncertaintyRows": [
+      {
+        "type": "Aleatory",
+        "desc": "Inherent randomness; modelable distribution",
+        "tool": "Probability, Monte Carlo"
+      },
+      {
+        "type": "Epistemic",
+        "desc": "Model or judgment ignorance; disagreement",
+        "tool": "IT2, Delphi, scenarios"
+      },
+      {
+        "type": "Knightian",
+        "desc": "We do not know the probability",
+        "tool": "IT2 + probing + CLA"
+      },
+      {
+        "type": "Deep uncertainty",
+        "desc": "Rival worldviews; open systems",
+        "tool": "Scenarios + IT2 spread · not one number"
+      }
+    ],
+    "opsTag": "Operators",
+    "opsTitle": "Fuzzy operators (exam review)",
+    "opsColOp": "Operator",
+    "opsColT1": "Type-1",
+    "opsColIT2": "IT2",
+    "opsRows": [
+      {
+        "op": "AND (t-norm)",
+        "t1": "min(a,b) or a·b",
+        "it2": "min on lower and upper separately"
+      },
+      {
+        "op": "OR (t-conorm)",
+        "t1": "max(a,b) or a+b−ab",
+        "it2": "max on lower and upper"
+      },
+      {
+        "op": "NOT",
+        "t1": "1−μ(x)",
+        "it2": "1−μ̄ and 1−μ̲ (correct order)"
+      },
+      {
+        "op": "Implication",
+        "t1": "min or product",
+        "it2": "Same on FOU"
+      }
+    ],
+    "glossaryTag": "Glossary",
+    "glossaryTitle": "Key terms",
+    "glossaryItems": [
+      {
+        "term": "Fuzzy set",
+        "def": "Set with graded membership, not binary."
+      },
+      {
+        "term": "Membership function (MF)",
+        "def": "μ(x): degree of membership of point x."
+      },
+      {
+        "term": "Linguistic variable",
+        "def": "Variable whose values are fuzzy words, e.g. “hot”."
+      },
+      {
+        "term": "FOU · Footprint of Uncertainty",
+        "def": "Region between upper and lower MFs in IT2."
+      },
+      {
+        "term": "Type-reduction",
+        "def": "Collapse IT2 to Type-1 before defuzzification."
+      },
+      {
+        "term": "Defuzzification",
+        "def": "Convert output fuzzy set to crisp number."
+      },
+      {
+        "term": "Centroid",
+        "def": "Center of gravity of fuzzy set; common defuzzification."
+      },
+      {
+        "term": "GT2 · General Type-2",
+        "def": "Secondary membership is also fuzzy; generalizes IT2."
+      },
+      {
+        "term": "Weak signal",
+        "def": "Early sign of change; few data, scattered views."
+      },
+      {
+        "term": "Probing",
+        "def": "Small organizational experiment to reduce uncertainty (Rohrbeck)."
+      }
+    ],
+    "discussionTag": "Seminar",
+    "discussionTitle": "Class discussion prompts",
+    "discussionItems": [
+      "Why can Delphi averaging be more dangerous than “no consensus”?",
+      "If two experts’ FOUs do not overlap, what is the next foresight step?",
+      "Where do you not replace probability with IT2, and why?",
+      "Is wide spread always bad, or sometimes a important signal?",
+      "Give a weak signal that Type-1 would underrate.",
+      "How do you explain FOU to a non-technical manager without saying “fuzzy”?"
+    ],
+    "homeworkTag": "Assignments",
+    "homeworkTitle": "Homework and projects (syllabus-ready)",
+    "homeworkItems": [
+      {
+        "title": "HW1 · Hand FOU",
+        "task": "Pick a weak signal. 4 stakeholders with [lower, upper] bands. Draw aggregate FOU. Compute mean and spread.",
+        "deliverable": "1-page drawing + 2 paragraphs interpretation",
+        "weight": "15%"
+      },
+      {
+        "title": "HW2 · Rule base",
+        "task": "Write 3 Mamdani-style IF-THEN rules for “acting on a weak signal”. Antecedent: signal strength + consensus.",
+        "deliverable": "Rule table + one numeric example",
+        "weight": "15%"
+      },
+      {
+        "title": "Midterm project",
+        "task": "Policy or tech foresight topic (e.g. AI regulation, water crisis). Mini-Delphi (3–5 people) + IT2 aggregation.",
+        "deliverable": "5-page report + FOU diagram",
+        "weight": "30%"
+      },
+      {
+        "title": "Final project",
+        "task": "Full management memo: signal, FOU, verdict, 90-day probing, IT2 limits, link to CLA or scenario.",
+        "deliverable": "Memo + 10-min presentation",
+        "weight": "40%"
+      }
+    ],
+    "examTag": "Sample exam",
+    "examTitle": "Sample questions (short and essay)",
+    "examItems": [
+      {
+        "q": "What is FOU and why does it matter more than a single μ in foresight?",
+        "hint": "disagreement · consensus · weak signal"
+      },
+      {
+        "q": "Explain type-reduction in one sentence for a manager.",
+        "hint": "collapse · without hiding spread"
+      },
+      {
+        "q": "Difference between IT2 and GT2? When is GT2 needed?",
+        "hint": "secondary · ambiguity · cost"
+      },
+      {
+        "q": "Why is IT2 not a substitute for known probability?",
+        "hint": "Knightian · linguistic · epistemic"
+      },
+      {
+        "q": "Three experts: [0.2,0.5], [0.4,0.7], [0.6,0.9]. Approximate mean, spread, verdict?",
+        "hint": "Check page workshop"
+      },
+      {
+        "q": "Write one fuzzy rule: IF low consensus THEN probing.",
+        "hint": "linguistic · consequent"
+      }
+    ],
+    "instructorTag": "Instructor guide",
+    "instructorTitle": "Teaching notes",
+    "instructorItems": [
+      "Open session 1 with live polling: score one signal 0–100. Compare average vs min–max band.",
+      "Avoid heavy formulas; prioritize FOU drawing and spread. Explain KM verbally.",
+      "Live-demo EU AI regulation in the page workshop.",
+      "Ask technical students for rule bases; humanities students focus on memo and probing.",
+      "Use Popper Diamond to critique memos: Creativity, Expertise, Interaction.",
+      "Common mistake: treating spread as statistical confidence. FOU ≠ confidence interval."
+    ],
+    "rubricTag": "Rubric",
+    "rubricTitle": "IT2 memo grading rubric",
+    "rubricColCriterion": "Criterion",
+    "rubricColExcellent": "Excellent (A)",
+    "rubricColPass": "Pass (C)",
+    "rubricColFail": "Fail (F)",
+    "rubricRows": [
+      {
+        "criterion": "FOU diagram",
+        "excellent": "3+ experts, labels, clear scale",
+        "pass": "At least 3 experts",
+        "fail": "Single number only"
+      },
+      {
+        "criterion": "Spread interpretation",
+        "excellent": "Verdict + specific probing",
+        "pass": "General verdict",
+        "fail": "No read"
+      },
+      {
+        "criterion": "Foresight link",
+        "excellent": "Delphi/CLA/scenario link",
+        "pass": "One link",
+        "fail": "Fuzzy only"
+      },
+      {
+        "criterion": "IT2 limits",
+        "excellent": "Explicit and accurate",
+        "pass": "Mentioned",
+        "fail": "Claims to replace probability"
+      },
+      {
+        "criterion": "Manager language",
+        "excellent": "No jargon; actionable",
+        "pass": "Understandable",
+        "fail": "Formulas only"
+      }
+    ],
+    "casesTag": "Case studies",
+    "casesTitle": "Three class cases",
+    "caseStudies": [
+      {
+        "title": "EU AI regulation by 2027",
+        "setup": "Tech org foresight team; policy, tech, legal experts.",
+        "data": "FOU: [0.35,0.72], [0.48,0.85], [0.22,0.55] · mean ≈ 0.53 · spread ≈ 0.36",
+        "analysis": "Moderate consensus. Type-1 might report 0.53 as “fairly likely” and hide legal vs tech disagreement.",
+        "takeaway": "Second Delphi round on “enforceable” + compliance pilot probing."
+      },
+      {
+        "title": "Water crisis in central basins",
+        "setup": "Environmental think tank; farmer, academic, government stakeholders.",
+        "data": "High spread (>0.45); little overlap between farmer and academic",
+        "analysis": "Worldview conflict · CLA needed before a single number.",
+        "takeaway": "IT2 says “no consensus yet”; probe with local workshop."
+      },
+      {
+        "title": "CBDC social acceptance",
+        "setup": "Central bank; weak signal on public acceptance.",
+        "data": "Narrow FOU (<0.22) after 2 Delphi rounds",
+        "analysis": "Relative consensus; low spread = light scanning may suffice.",
+        "takeaway": "IT2 spread reduction signals “ready for policy draft”."
+      }
+    ],
+    "industryTag": "Corporate entry",
+    "industryTitle": "IT2 for strategy, innovation, and the board",
+    "industryIntro": "When you walk into a company (holding, bank, telco, manufacturer, scale-up), executives do not want formulas. They want: “Do we really have consensus?” and “What probing before we invest?” This track is deliverables and board language.",
+    "industryMeta": [
+      {
+        "label": "Suggested format",
+        "value": "Half-day (4h) · full day (7h) · 90-day retainer"
+      },
+      {
+        "label": "In-org audience",
+        "value": "Strategy, CDO/CINO, foresight, M&A, risk, board"
+      },
+      {
+        "label": "Before you arrive",
+        "value": "1 sponsor interview · 3 weak signals from scanning · stakeholder list"
+      },
+      {
+        "label": "Contract output",
+        "value": "FOU workshop · board memo · 90-day probing roadmap"
+      },
+      {
+        "label": "Language",
+        "value": "No fuzzy jargon on slide one; say “disagreement width” before FOU"
+      }
+    ],
+    "industryAgendaTitle": "One-day agenda on site",
+    "industryAgenda": [
+      {
+        "block": "Morning · 9–10:30",
+        "title": "Why Delphi averaging is not enough",
+        "desc": "Live polling on one signal · mean vs spread · EU AI or client signal."
+      },
+      {
+        "block": "Morning · 10:45–12:30",
+        "title": "FOU workshop with internal stakeholders",
+        "desc": "3–5 roles (tech, legal, market, ops) · page workshop · aggregate FOU."
+      },
+      {
+        "block": "Lunch · 12:30–13:30",
+        "title": "Lunch + networking",
+        "desc": "Sponsor chat on real quarter signal."
+      },
+      {
+        "block": "Afternoon · 13:30–15:00",
+        "title": "Verdict and probing",
+        "desc": "Spread → Delphi / pilot / stop · Rohrbeck FITness · cone of plausibility."
+      },
+      {
+        "block": "Afternoon · 15:15–16:30",
+        "title": "Board memo + commit",
+        "desc": "Each group 1 slide: signal, mean, spread, 90-day action · named owner."
+      }
+    ],
+    "industryStakeholdersTitle": "Roles in the org workshop",
+    "industryStakeholders": [
+      {
+        "role": "Sponsor (VP Strategy / C-level)",
+        "job": "Confirm signal and probing budget"
+      },
+      {
+        "role": "Domain expert",
+        "job": "FOU band from technical or market view"
+      },
+      {
+        "role": "Legal / Compliance",
+        "job": "Band from regulation and risk view"
+      },
+      {
+        "role": "Finance",
+        "job": "ROI of probing; reject fake precision"
+      },
+      {
+        "role": "Facilitator (you)",
+        "job": "Neutral · keep FOU visible · block silent averaging"
+      }
+    ],
+    "industryDeliverablesTitle": "Deliverables for the client",
+    "industryDeliverables": [
+      "One-page executive summary (no formulas)",
+      "FOU chart with 3–5 stakeholders and numeric spread",
+      "Verdict table: weak / moderate / strong consensus",
+      "90-day probing plan with owner, KPI, budget range",
+      "Optional technical appendix for data/strategy team"
+    ],
+    "industryWorkflowTitle": "Six-step org engagement",
+    "industryWorkflowSteps": [
+      {
+        "title": "1. Discovery (1–2 weeks before)",
+        "desc": "Sponsor interview · pick 1–2 signals · stakeholder map."
+      },
+      {
+        "title": "2. Pre-read",
+        "desc": "One-page memo for participants · define “signal strength” label."
+      },
+      {
+        "title": "3. Workshop day",
+        "desc": "Live FOU · page workshop · cross-functional groups."
+      },
+      {
+        "title": "4. Debrief within 48h",
+        "desc": "Final slide · risk if spread wide · align to decision calendar."
+      },
+      {
+        "title": "5. Probing 90 days",
+        "desc": "Small pilot · interviews · new data → FOU update."
+      },
+      {
+        "title": "6. Quarter review",
+        "desc": "Spread narrowed? · go / pivot / kill · link to scenarios."
+      }
+    ],
+    "industryCasesTitle": "Three client entry scenarios",
+    "industryCaseStudies": [
+      {
+        "title": "Industrial holding · signal: reshoring",
+        "setup": "Sponsor: VP Strategy · ops, trade, HR, finance.",
+        "data": "High spread between optimistic ops and skeptical finance",
+        "analysis": "Type-1 mean misleads · board thinks “half aligned” · IT2 says not yet.",
+        "takeaway": "Probe: small reshoring line · Delphi on “feasible” before CAPEX."
+      },
+      {
+        "title": "Fintech / super-app · signal: CBDC or stablecoin rules",
+        "setup": "Sponsor: Head of Policy · legal, product, government affairs.",
+        "data": "Little FOU overlap legal vs product",
+        "analysis": "Without IT2 product may lock an aggressive roadmap.",
+        "takeaway": "Board memo: “weak consensus” · 90-day interviews + sandbox pilot."
+      },
+      {
+        "title": "Telco · signal: AI agents replace call center",
+        "setup": "Sponsor: CDO · ops, CX, union liaison, tech.",
+        "data": "Moderate spread · mean ~0.55",
+        "analysis": "Verdict: one Delphi round · union and CX concerns must stay explicit.",
+        "takeaway": "Probe: 500-call pilot · FOU update after 60 days."
+      }
+    ],
+    "industryPitchTitle": "Intro / sales talking points",
+    "industryPitchItems": [
+      "“You average Delphi; we see disagreement width before the board assumes consensus.”",
+      "“This is not probability; it is linguistic judgment when mental models are weak.”",
+      "“Workshop output: one board slide + 90-day probing with owner.”",
+      "“If spread is wide, the cost of a wrong decision exceeds the workshop fee.”"
+    ],
+    "industryChecklistTitle": "Pre-visit checklist",
+    "industryChecklistItems": [
+      "Sponsor and decision date confirmed?",
+      "At least one weak signal agreed upfront?",
+      "3–5 cross-functional participants confirmed?",
+      "Page workshop tested · projector / WiFi?",
+      "Client slide template (logo, font) ready?",
+      "Sample memo (EU AI) for demo?",
+      "If spread wide: next step ready (Delphi / pilot)?",
+      "Boundaries clear: IT2 does not replace full scenario planning?"
+    ],
+    "industryBoardMemoTitle": "Board slide template (one page)",
+    "industryBoardMemoFields": [
+      "Signal under review: …",
+      "Type-1 mean (center of views): …",
+      "Spread (disagreement width): … → weak / moderate / strong consensus",
+      "Read: …",
+      "90-day proposal: probing / Delphi / monitoring",
+      "Owner and budget range: …",
+      "Risk if we ignore spread: …"
+    ],
+    "industryFacilitatorTag": "Facilitator guide",
+    "industryFacilitatorTitle": "On-site execution notes",
+    "industryFacilitatorItems": [
+      "Do not say “type-reduction” to C-level unless asked; say “collapse to one number without hiding disagreement”.",
+      "Include sponsor in polling for political buy-in.",
+      "If one stakeholder dominates, keep separate FOUs visible.",
+      "Finance often grasps spread fast; use them to explain to the board.",
+      "Summarize in one slide same day; “report later” kills trust.",
+      "Lock 48h follow-up in the calendar that day."
+    ],
+    "workshopTag": "Interactive workshop",
+    "workshopTitle": "Workshop: IT2 scoring of a weak signal",
+    "workshopSub": "Set lower and upper bounds for three or more experts. See FOU chart, mean, spread, and foresight recommendation. Then draft a one-page memo.",
+    "signalLabel": "Weak signal",
+    "signalOr": "or",
+    "signalCustom": "Your own signal",
+    "signalPlaceholder": "e.g. EU AI regulation by 2027",
+    "expertLabel": "Expert",
+    "expertsTitle": "Three expert scores",
+    "lowerLabel": "Lower bound",
+    "upperLabel": "Upper bound",
+    "chartTitle": "FOU view",
+    "chartAggLabel": "Aggregate FOU",
+    "chartAxisLow": "Weak",
+    "chartAxisHigh": "Strong",
+    "resultT1": "Type-1 equivalent (mean)",
+    "resultSpread": "Aggregate FOU width",
+    "resultVerdict": "Foresight read",
+    "verdictTight": "Low disagreement. Light scanning may suffice; a short probe still helps.",
+    "verdictMedium": "Moderate spread. Run a Delphi round or deep stakeholder interviews before deciding.",
+    "verdictWide": "Wide spread. No consensus yet; Rohrbeck-style probing beats a crisp report.",
+    "resetBtn": "Reset",
+    "addExpert": "Fourth expert",
+    "signals": [
+      "EU AI regulation enforceable by 2027",
+      "Commercial quantum computing in pharma",
+      "Water crisis in Iran central basins",
+      "EV price parity with gasoline cars in Iran",
+      "Social acceptance of central-bank CBDC",
+      "SaaS model disruption by AI agents",
+      "Digital rights and platform liability in Iran",
+      "Smart grid and regional blackouts"
+    ]
   },
   "fitnessPage": {
     "history": {
@@ -1112,25 +2162,25 @@
       "applications": "Deployed at <strong>Siemens</strong> and <strong>Deutsche Telekom</strong>; benchmark studies showed foresight-driven organizations achieved <strong>33% higher profitability</strong> and <strong>200% greater market value growth</strong> than vulnerable competitors."
     },
     "hero": {
-      "tag": "Dynamic Capabilities Theory , René Rohrbeck",
+      "tag": "Dynamic Capabilities Theory — René Rohrbeck",
       "title": "Organizational Foresight Maturity Model & Future FITness",
-      "subtitle": "How organizations move beyond static Future Readiness to dynamic Future FITness , continuous organizational fitness and adaptation to shape tomorrow's markets."
+      "subtitle": "How organizations move beyond static Future Readiness to dynamic Future FITness — continuous organizational fitness and adaptation to shape tomorrow's markets."
     },
     "readiness": {
       "tag": "Foundations of Foresight",
       "title": "What Is Future Readiness?",
       "sub": "Forecasting trends, understanding scenarios, and strategic planning to manage uncertainty.",
       "p1": "<strong>Future Readiness</strong> means the ability to anticipate change, understand it deeply, and plan purposeful responses. Rooted in uncertainty management: scanning risks and turning them into major opportunities.",
-      "p2": "Today's world faces rapid technological change , from generative AI to climate disruption. Organizations and individuals prepared for the future see these shifts as opportunities for leadership and progress, not paralyzing threats.",
+      "p2": "Today's world faces rapid technological change — from generative AI to climate disruption. Organizations and individuals prepared for the future see these shifts as opportunities for leadership and progress, not paralyzing threats.",
       "challengeTitle": "A Challenging Question",
-      "challengeText": "Is your organization , or you personally , ready for fundamental future changes? If you wanted to make a change today that builds future fitness, what would your first key step be?",
+      "challengeText": "Is your organization — or you personally — ready for fundamental future changes? If you wanted to make a change today that builds future fitness, what would your first key step be?",
       "fiveElementsTitle": "5 Core Elements of Future Readiness",
       "foresightTitle": "Foresight & Scenario Planning",
       "foresightText": "Foresight means deeply understanding trends and analyzing alternative scenarios. Companies that had piloted remote-work technology before the COVID pandemic adapted to lockdown conditions far faster.",
       "agilityTitle": "Organizational Agility",
       "agilityText": "Agility means fast decision-making and rapid pivoting in response to unexpected conditions. Zoom expanded server infrastructure within weeks during COVID to serve hundreds of millions of new users.",
       "sustainabilityTitle": "The Critical Role of Sustainability in Portfolio Strategy",
-      "sustainabilityP1": "Sustainability is more than social responsibility , it is smart business strategy. Aligning with ESG goals reduces climate risk and creates lasting competitive advantage in global markets.",
+      "sustainabilityP1": "Sustainability is more than social responsibility — it is smart business strategy. Aligning with ESG goals reduces climate risk and creates lasting competitive advantage in global markets.",
       "sustainabilityP2": "IKEA committed to 100% recycled and renewable materials by 2030, building customer loyalty and lowering long-term material costs. Tesla (electric vehicles) and Amazon (advanced logistics) secured survival and leadership by investing in long-term trends.",
       "globalAppsTitle": "Global Applications of Future Readiness",
       "apps": [
@@ -1207,7 +2257,7 @@
       ],
       "dashboardTitle": "Conceptual Corporate Foresight Maturity Dashboard",
       "dashboardP1": "This dashboard shows the interactive structure of organizational dynamic capabilities. Organizations can assess technological alignment and implement Perceiving, Prospecting, and Probing processes in balanced form.",
-      "dashboardP2": "The match between industry turbulence and foresight maturity determines survival and profitability , preventing structural rigidity collapses like Nokia and Kodak.",
+      "dashboardP2": "The match between industry turbulence and foresight maturity determines survival and profitability — preventing structural rigidity collapses like Nokia and Kodak.",
       "stepsTitle": "5-Step Systematic Process to Achieve Future FITness"
     },
     "fitnessSteps": [
@@ -1280,7 +2330,7 @@
         "detail": {
           "title": "In Danger Archetype",
           "alignment": "Low industry turbulence + low foresight maturity (hidden stagnation and decline)",
-          "symptoms": "The silent death archetype , organizations in apparently stable industries with no environmental monitoring. Trapped in long-term stability illusion. The smallest environmental shock (regulatory change or sudden substitute technology) can destroy the business model in seconds.",
+          "symptoms": "The silent death archetype — organizations in apparently stable industries with no environmental monitoring. Trapped in long-term stability illusion. The smallest environmental shock (regulatory change or sudden substitute technology) can destroy the business model in seconds.",
           "reps": "Traditional taxi unions before Uber/Snapp; physical travel agencies before online booking."
         }
       }
@@ -1288,10 +2338,10 @@
     "roles": {
       "tag": "Organizational Innovation Function",
       "title": "3 Critical Foresight Roles in Innovation Dynamics",
-      "sub": "René Rohrbeck proves foresight must play three roles , initiator, strategist, and opponent , in the innovation value chain.",
+      "sub": "René Rohrbeck proves foresight must play three roles — initiator, strategist, and opponent — in the innovation value chain.",
       "initiator": {
         "tab": "1. Initiator Role",
-        "title": "1. Initiator , Spark of Innovation",
+        "title": "1. Initiator — Spark of Innovation",
         "desc": "The Initiator operates in the <strong>Perceiving</strong> phase: continuously scanning the external environment, discovering emerging trends, and converting them into initial innovation concepts.",
         "duties": [
           "Launch and maintain technology radars and emerging trend monitoring.",
@@ -1302,7 +2352,7 @@
       },
       "strategist": {
         "tab": "2. Strategist Role",
-        "title": "2. Strategist , Investment Portfolio Guide",
+        "title": "2. Strategist — Investment Portfolio Guide",
         "desc": "The Strategist operates in the <strong>Prospecting</strong> phase: steering innovation investment portfolios based on future scenarios and organizational strategy.",
         "duties": [
           "Develop offensive and defensive foresight scenarios for the industry.",
@@ -1313,14 +2363,14 @@
       },
       "opponent": {
         "tab": "3. Opponent Role",
-        "title": "3. Opponent , Devil's Advocate",
+        "title": "3. Opponent — Devil's Advocate",
         "desc": "The Opponent operates in the <strong>Probing</strong> phase: challenging rigid assumptions, critically evaluating projects, and preventing management confirmation bias.",
         "duties": [
           "Run harsh scenarios to test project survival and resilience.",
           "Conduct war-gaming to expose internal weaknesses.",
           "Facilitate creative cannibalization to retire profitable legacy products."
         ],
-        "example": "When <strong>Steve Jobs</strong> launched the iPhone, he opposed the iPod (a top seller) , knowing a competitor would integrate music players into phones if Apple didn't."
+        "example": "When <strong>Steve Jobs</strong> launched the iPhone, he opposed the iPod (a top seller) — knowing a competitor would integrate music players into phones if Apple didn't."
       }
     },
     "cases": {
@@ -1329,31 +2379,31 @@
       "sub": "Systematic analysis of failures and successes through Sensing, Seizing, and Transforming.",
       "netflix": {
         "tab": "Netflix (Continuous Dynamic Evolution)",
-        "title": "Netflix , Leader in Dynamic Capability Reinvention",
+        "title": "Netflix — Leader in Dynamic Capability Reinvention",
         "scanning": "In the late 1990s, leadership monitored home internet bandwidth and video compression, recognizing physical DVD obsolescence. This was precise weak-signal sensing.",
         "seizing": "In 2007, launched online streaming. In 2012, allocated major resources to original content (House of Cards) to reduce studio dependency.",
         "transforming": "Fully shifted from internal data centers to cloud (AWS) and continuously redefined around generative AI and deep personalization. Lesson: readiness to destroy current successful revenue models."
       },
       "nvidia": {
         "tab": "Nvidia (Betting on an Invisible Future)",
-        "title": "Nvidia , Risky Bet on a Future Computing Paradigm",
-        "scanning": "In the early 2000s, Jensen Huang saw parallel GPU architecture had applications beyond game rendering , transformative for scientific computing and AI algorithms.",
+        "title": "Nvidia — Risky Bet on a Future Computing Paradigm",
+        "scanning": "In the early 2000s, Jensen Huang saw parallel GPU architecture had applications beyond game rendering — transformative for scientific computing and AI algorithms.",
         "seizing": "In 2006, heavily invested in developing the CUDA platform. Wall Street repeatedly criticized the project with no market demand, but Nvidia persisted.",
         "transforming": "With deep learning in 2012, Nvidia became the world's ready AI hardware-software hub. Huang transformed the company from a graphics card maker to an AI infrastructure giant. Lesson: persistence on long-term differentiating capabilities."
       },
       "nokia": {
         "tab": "Nokia (Structural Rigidity & Systemic Failure)",
-        "title": "Nokia , Structural Rigidity & Success Trap",
+        "title": "Nokia — Structural Rigidity & Success Trap",
         "scanning": "Nokia received signals about touchscreens and software ecosystems; they even developed touchscreen tablet prototypes years before the iPhone.",
         "seizing": "Due to the success trap and high button-phone margins, executives kept Symbian. Bureaucracy prevented danger signals from becoming bold decisions.",
         "transforming": "Fear culture and optimistic reporting hid technical weaknesses. Rigid bureaucracy blocked reinvention; Symbian couldn't compete with iOS and Android. Nokia lost the mobile market entirely. Lesson: cognitive rigidity can neutralize the best scanning capacity."
       },
       "blockbuster": {
         "tab": "Blockbuster (Fear of Revenue Cannibalization)",
-        "title": "Blockbuster , Foresight Sacrificed to Short-Term Shareholders",
+        "title": "Blockbuster — Foresight Sacrificed to Short-Term Shareholders",
         "scanning": "Blockbuster managers tracked Netflix's growth and digital distribution, knowing the physical rental model was ending.",
-        "seizing": "CEO John Antioco launched an online platform and eliminated late fees , actions aimed at capturing streaming opportunities.",
-        "transforming": "Short-term-minded boards fired the CEO due to temporary revenue drops (late fees were 16% of profit), restored fees, and refocused on physical stores , leading to bankruptcy. Lesson: short-term shareholder interests vs. long-term survival investment is the biggest transformation barrier."
+        "seizing": "CEO John Antioco launched an online platform and eliminated late fees — actions aimed at capturing streaming opportunities.",
+        "transforming": "Short-term-minded boards fired the CEO due to temporary revenue drops (late fees were 16% of profit), restored fees, and refocused on physical stores — leading to bankruptcy. Lesson: short-term shareholder interests vs. long-term survival investment is the biggest transformation barrier."
       }
     },
     "formula": {
@@ -1380,7 +2430,7 @@
       "innovation": {
         "badge": "Innovation",
         "title": "Converting Insights into Novel Products & Tools",
-        "body": "Innovation is the execution engine of foresight. Ideas become rapid prototypes , corresponding to <strong>Probing</strong> and requiring Initiator, Strategist, and Opponent roles.",
+        "body": "Innovation is the execution engine of foresight. Ideas become rapid prototypes — corresponding to <strong>Probing</strong> and requiring Initiator, Strategist, and Opponent roles.",
         "items": [
           "Rapid prototyping to test ideas.",
           "Challenging current assumptions through the Opponent role.",
@@ -1390,7 +2440,7 @@
       "transformation": {
         "badge": "Transformation",
         "title": "Structural & Cultural Redesign for Long-Term Survival",
-        "body": "Transformation is the ultimate goal. Foresight and innovation must change culture, structure, and resource allocation , building new organizational DNA for long-term survival.",
+        "body": "Transformation is the ultimate goal. Foresight and innovation must change culture, structure, and resource allocation — building new organizational DNA for long-term survival.",
         "items": [
           "Reforming formal structure and reducing bureaucracy for greater agility.",
           "Embracing continuous learning and reducing fear of failure among staff.",
@@ -1475,7 +2525,7 @@
       "scores": {
         "fit": {
           "status": "Future Fit Leader",
-          "description": "Congratulations! Your organization has exceptional dynamic capabilities. You don't just predict change , you design innovative business models that redefine your industry's future. Keep focusing on open innovation and ecosystem participation.",
+          "description": "Congratulations! Your organization has exceptional dynamic capabilities. You don't just predict change — you design innovative business models that redefine your industry's future. Keep focusing on open innovation and ecosystem participation.",
           "recs": [
             "Lead the industry by sharing knowledge and participating in startup ecosystems.",
             "Invest in high-risk disruptive technologies (quantum and bio-computing).",
@@ -1484,7 +2534,7 @@
         },
         "prepared": {
           "status": "Prepared & Alert",
-          "description": "Your organization performs well in trend scanning and readiness, but still needs stronger Probing processes and cultural transformation. Don't just wait for the future , actively create the desired future.",
+          "description": "Your organization performs well in trend scanning and readiness, but still needs stronger Probing processes and cultural transformation. Don't just wait for the future — actively create the desired future.",
           "recs": [
             "Increase rapid prototyping projects to test technology assumptions.",
             "Delegate more authority to frontline staff for faster decision-making.",
@@ -1641,12 +2691,12 @@
       "founderLabel": "Founder",
       "founder": "Sohail Inayatullah",
       "yearLabel": "Developed",
-      "year": "Late 1990s , widely published 1998–2004",
+      "year": "Late 1990s — widely published 1998–2004",
       "institution": "Tamkang University · Metafuture.org",
       "title": "Causal Layered Analysis (CLA)",
       "origin": "Sohail Inayatullah developed CLA in the late 1990s and published it widely through the 2000s via articles, books, and Metafuture workshops. The method moves foresight from surface events toward discourse deconstruction and new metaphor creation.",
       "problemLabel": "Problem it addresses",
-      "problem": "Traditional foresight often stops at headlines, statistics, and surface trends (Litany) , missing structural, discursive, and mythic roots.",
+      "problem": "Traditional foresight often stops at headlines, statistics, and surface trends (Litany) — missing structural, discursive, and mythic roots.",
       "useLabel": "Notable applications",
       "applications": "Singapore Prime Minister's Office (PMO), UNESCO, Taiwan government, and Metafuture workshops worldwide."
     },
@@ -1654,13 +2704,21 @@
     "heroTitle": "Causal Layered Analysis (CLA)",
     "heroSub": "A deep foresight method for breaking surface problems apart, exploring discursive and civilizational roots, and creating alternative metaphors for transformative scenarios.",
     "theoryTitle": "CLA foundations and Foucault's genealogy",
-    "theoryP1": "CLA, created by Sohail Inayatullah, draws on post-structural thought , especially Michel Foucault's <strong>genealogy</strong>. Foucault showed that \"truth\" is shaped by discourse and power; CLA deconstructs issues layer by layer to reveal hidden assumptions.",
+    "theoryLead": "CLA starts where surface news stops: when you ask “why is this an issue at all?” and the answer is more than headlines and stats.",
+    "theoryNarrative": [
+      "Sohail Inayatullah built CLA on post-structural thought — especially Michel Foucault's <strong>genealogy</strong>. Foucault showed that “truth” is shaped by discourse and power; CLA deconstructs issues layer by layer to reveal hidden assumptions.",
+      "Moving from Litany (daily news) to systemic causes, then worldview, and finally myth helps stakeholders escape imposed scenarios. The goal is <strong>transformative alternative metaphors</strong> — not only describing the present.",
+      "In practice: see what media say (layer 1), which policies and structures produce that story (layer 2), which beliefs legitimise it (layer 3), and which myth or metaphor holds collective imagination (layer 4). Each layer is deeper, harder to change — and more durable when it does change."
+    ],
+    "theoryP1": "CLA, created by Sohail Inayatullah, draws on post-structural thought — especially Michel Foucault's <strong>genealogy</strong>. Foucault showed that \"truth\" is shaped by discourse and power; CLA deconstructs issues layer by layer to reveal hidden assumptions.",
     "theoryP2": "Moving from Litany (daily news) to systemic causes, then worldview, and finally myth helps stakeholders escape imposed scenarios and build <strong>transformative alternative metaphors</strong> to reimagine present and future.",
+    "pyramidTag": "CLA pyramid",
+    "pyramidTitle": "Four layers — click each level",
     "layers": {
       "litany": {
         "badge": "Layer 1: The Litany",
         "badgeClass": "l1-badge",
-        "title": "The most visible level , daily news and statistics",
+        "title": "The most visible level — daily news and statistics",
         "body": "Issues, trends, and numbers seen in media every day. Information is scattered, often emotional, and lacks historical context. Public reaction tends toward passivity or blame. Power discourses use this layer to steer attention.",
         "qLabel": "Key question:",
         "question": "What do media and public opinion say about this problem?",
@@ -1681,7 +2739,7 @@
         "badge": "Layer 3: Discourse/Worldview",
         "badgeClass": "l3-badge",
         "title": "Mental frameworks and legitimizing discourses",
-        "body": "Beliefs and paradigms that legitimize Layer 2 structures , from neoliberalism and positivism to traditionalism and environmentalism. Here the boundaries of \"truth\" and \"natural order\" are exposed , Foucault's discursive power at work.",
+        "body": "Beliefs and paradigms that legitimize Layer 2 structures — from neoliberalism and positivism to traditionalism and environmentalism. Here the boundaries of \"truth\" and \"natural order\" are exposed — Foucault's discursive power at work.",
         "qLabel": "Key question:",
         "question": "Which beliefs, ideologies, and discourses support these structures?",
         "langLabel": "Dominant language:",
@@ -1706,9 +2764,9 @@
       "l2Label": "L2: Systemic causes",
       "l2Text": "Insufficient budget for more train cars, landfill nearing capacity, weak recycling rules.",
       "l3Label": "L3: Worldview (discourse)",
-      "l3Text": "\"Singapore = luxury international hotel\" , citizens as demanding customers, government as pure service provider.",
+      "l3Text": "\"Singapore = luxury international hotel\" — citizens as demanding customers, government as pure service provider.",
       "l4Label": "L4: Myth (unconscious)",
-      "l4Text": "Hidden metaphor of \"temporary hotel guests\" , no emotional ownership of shared cleanliness.",
+      "l4Text": "Hidden metaphor of \"temporary hotel guests\" — no emotional ownership of shared cleanliness.",
       "lesson": "<strong>Transformative metaphor:</strong> Reframing to <strong>\"Singapore = shared family garden home\"</strong> and a \"collaborative sustainability\" discourse revived ownership and resolved systemic deadlocks."
     },
     "cases": {
@@ -1775,10 +2833,10 @@
       "l2": "<ul><li>Arms imbalance and \"mutual deterrence\"</li><li>Abraham Accords/NATO vs. resistance axis</li><li>Cyber war, layered air defense, great-power interests</li></ul>",
       "l3": "<ul><li>Discourse of anti-hegemony and liberation of Quds</li><li>vs. existential Zionist security discourse</li><li>Clash of Western liberal order and multipolar Eurasia</li></ul>",
       "l4": "<ul><li>Iranian myth: Ashura, Fereydun vs. Zahhak</li><li>Israeli myth: Holocaust, Masada complex</li><li><strong>Alternative:</strong> from \"minefield\" to \"shared oasis ecosystem\"</li></ul>",
-      "l1_q": "Litany , surface news & data",
-      "l2_q": "Systemic , structures & rules",
-      "l3_q": "Worldview , legitimizing discourses",
-      "l4_q": "Myth , collective unconscious & transformation"
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
     },
     "usa": {
       "title": "Iran & USA",
@@ -1786,10 +2844,10 @@
       "l2": "<ul><li>Dollar hegemony and SWIFT control</li><li>No formal diplomacy since 1979</li><li>Congress secondary sanctions, Hormuz strategic role</li></ul>",
       "l3": "<ul><li>American exceptionalism and liberal order</li><li>vs. independence and anti-hegemony discourse</li><li>Conflicting definitions of responsibility vs. sovereignty</li></ul>",
       "l4": "<ul><li>US myth: lone sheriff against outlaws</li><li>Iranian myth: Kaveh the blacksmith vs. Zahhak</li><li><strong>Alternative:</strong> from \"Rome vs. Sassanid war\" to \"digital Silk Road bridge\"</li></ul>",
-      "l1_q": "Litany , surface news & data",
-      "l2_q": "Systemic , structures & rules",
-      "l3_q": "Worldview , legitimizing discourses",
-      "l4_q": "Myth , collective unconscious & transformation"
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
     },
     "water": {
       "title": "Water crisis in Iran",
@@ -1797,43 +2855,43 @@
       "l2": "<ul><li>Food self-sufficiency in dry plains</li><li>Dam building without EIA, illegal wells</li><li>Low water tariffs, irrigation efficiency under 35%</li></ul>",
       "l3": "<ul><li>\"Engineer nature\" development worldview</li><li>vs. ecological sustainability and local wisdom</li><li>Conflicting definitions of progress</li></ul>",
       "l4": "<ul><li>Modern myth: conquering engineer with concrete dams</li><li>Ancient myth: Anahita and Tishtar vs. Apush</li><li><strong>Alternative:</strong> from \"bleeding the land dry\" to \"harmony with desert & qanat\"</li></ul>",
-      "l1_q": "Litany , surface news & data",
-      "l2_q": "Systemic , structures & rules",
-      "l3_q": "Worldview , legitimizing discourses",
-      "l4_q": "Myth , collective unconscious & transformation"
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
     },
     "future-iran": {
       "title": "Iran's core future challenge",
       "l1": "<ul><li>Currency and housing spikes, stock market falls, capital flight</li><li>40%+ inflation, power and gas cuts</li><li>Filtering, slow internet, mass emigration</li></ul>",
       "l2": "<ul><li>Rentier oil economy and quasi-state monopolies</li><li>FATF non-compliance, heavy bureaucracy</li><li>Pension fund deficits, chronic budget gaps</li></ul>",
       "l3": "<ul><li>\"Resistive economy & inward turn\" discourse</li><li>vs. \"developmentalist global integration\"</li><li>Conflict: sovereignty priority vs. growth</li></ul>",
-      "l4": "<ul><li>Phoenix myth: guaranteed survival after crisis</li><li>Nostalgia for \"great imperial civilization\"</li><li><strong>Alternative:</strong> \"Persian carpet\" , diverse threads in one coherent pattern</li></ul>",
-      "l1_q": "Litany , surface news & data",
-      "l2_q": "Systemic , structures & rules",
-      "l3_q": "Worldview , legitimizing discourses",
-      "l4_q": "Myth , collective unconscious & transformation"
+      "l4": "<ul><li>Phoenix myth: guaranteed survival after crisis</li><li>Nostalgia for \"great imperial civilization\"</li><li><strong>Alternative:</strong> \"Persian carpet\" — diverse threads in one coherent pattern</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
     },
     "brain-drain": {
       "title": "Brain drain & talent exodus",
       "l1": "<ul><li>Migration of thousands of doctors, IT engineers, top graduates</li><li>Embassy queues, hospital staff shortages</li><li>Reaction: regret, normalized emigration</li></ul>",
       "l2": "<ul><li>Economic instability, falling purchasing power</li><li>Low pay vs. Gulf neighbors</li><li>Non-merit appointments, filtering, weak research infrastructure</li></ul>",
       "l3": "<ul><li>\"Sacred national service & loyalty\" discourse</li><li>vs. \"right to grow and join global science\"</li><li>Conflict: duty vs. meritocracy</li></ul>",
-      "l4": "<ul><li>\"Unwanted child\" archetype</li><li><strong>Alternative:</strong> Brain Drain → Brain Circulation , transnational science networks</li></ul>",
-      "l1_q": "Litany , surface news & data",
-      "l2_q": "Systemic , structures & rules",
-      "l3_q": "Worldview , legitimizing discourses",
-      "l4_q": "Myth , collective unconscious & transformation"
+      "l4": "<ul><li>\"Unwanted child\" archetype</li><li><strong>Alternative:</strong> Brain Drain → Brain Circulation — transnational science networks</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
     },
     "generation-gap": {
       "title": "Deep generational gap",
       "l1": "<ul><li>Different dress, music, digital lifestyles</li><li>Declining marriage and birth rates, state media losing influence</li><li>Reaction: parental confusion, relational disconnect</li></ul>",
       "l2": "<ul><li>Mobile internet and Gen Z global culture</li><li>Rigid formal education, broadcast media monopoly</li><li>Institutions out of sync with networked reality</li></ul>",
       "l3": "<ul><li>Patriarchal, collectivist traditional worldview</li><li>vs. individual rights, digital global identity</li><li>Conflict: family authority vs. autonomy</li></ul>",
-      "l4": "<ul><li>\"Two strangers under one roof\" myth</li><li><strong>Alternative:</strong> \"Intergenerational bridge\" , warp of old wisdom, weft of new creativity</li></ul>",
-      "l1_q": "Litany , surface news & data",
-      "l2_q": "Systemic , structures & rules",
-      "l3_q": "Worldview , legitimizing discourses",
-      "l4_q": "Myth , collective unconscious & transformation"
+      "l4": "<ul><li>\"Two strangers under one roof\" myth</li><li><strong>Alternative:</strong> \"Intergenerational bridge\" — warp of old wisdom, weft of new creativity</li></ul>",
+      "l1_q": "Litany — surface news & data",
+      "l2_q": "Systemic — structures & rules",
+      "l3_q": "Worldview — legitimizing discourses",
+      "l4_q": "Myth — collective unconscious & transformation"
     }
   },
   "workspaceTemplates": {
@@ -1842,21 +2900,21 @@
       "litany": "Headlines on elite migration, doctor and pilot shortages, long embassy queues.",
       "systemic": "Economic instability, low pay, non-merit hiring, lack of modern lab facilities.",
       "worldview": "\"National/religious duty\" vs. \"individual growth & borderless global science market.\"",
-      "myth": "\"Unwanted child\" myth , alternative: \"brain circulation\" and transnational science networks."
+      "myth": "\"Unwanted child\" myth — alternative: \"brain circulation\" and transnational science networks."
     },
     "inflation": {
       "title": "Inflation & severe livelihood decline",
       "litany": "Instant dollar/gold swings, shrinking household budgets, rent spikes, record inflation.",
       "systemic": "Money supply expansion, budget deficits, SWIFT isolation, blocked oil revenues.",
       "worldview": "\"Centralized justice & command economy\" vs. \"free market & monetary reform.\"",
-      "myth": "Sisyphus myth , alternative: \"fiscal discipline & productive domestic economy.\""
+      "myth": "Sisyphus myth — alternative: \"fiscal discipline & productive domestic economy.\""
     },
     "generation-gap": {
       "title": "Deep intergenerational values gap",
       "litany": "Youth dress clashes with norms, different music tastes, parents' digital loneliness complaints.",
       "systemic": "Fast internet, social networks as reference, ineffective formal education.",
       "worldview": "\"Preserve traditional ethics & family\" vs. \"freedom of choice & Gen Z digital identity.\"",
-      "myth": "\"Invisible wall at home\" , alternative: \"intergenerational synergy bridge.\""
+      "myth": "\"Invisible wall at home\" — alternative: \"intergenerational synergy bridge.\""
     }
   },
   "wheelPage": {
@@ -1870,13 +2928,13 @@
       "title": "Origins of the Futures Wheel",
       "origin": "Jerome C. Glenn developed the Futures Wheel in 1971–1972 at the AC/UNU Millennium Project to map direct and indirect consequence chains from a central event. The phenomenon sits at the hub and experts draw 1st, 2nd, and 3rd order branches radially.",
       "problemLabel": "Problem",
-      "problem": "Linear analysis examines a single event, but secondary, feedback, and long-range effects , often the decisive ones , stay hidden.",
+      "problem": "Linear analysis examines a single event, but secondary, feedback, and long-range effects — often the decisive ones — stay hidden.",
       "useLabel": "Landmark applications",
       "applications": "Boeing's pilotless aircraft assessment, WHO and US DoD policy workshops, and Millennium Project hydropolitical crisis research."
     },
     "heroTag": "Jerome Glenn",
     "heroTitle": "Interactive Futures Wheel Simulator",
-    "heroSub": "Sequential causal consequence mapping , tracing 1st, 2nd, and 3rd order effects of Iran's climate crisis.",
+    "heroSub": "Sequential causal consequence mapping — tracing 1st, 2nd, and 3rd order effects of Iran's climate crisis.",
     "boeing": {
       "title": "Case Study: Boeing's Pilotless Passenger Aircraft Assessment",
       "intro": "Boeing used a Structured Futures Wheel to assess fully autonomous commercial aircraft through 2045:",
@@ -1905,12 +2963,12 @@
     "boeingO3": "3rd Order (Long-Term Effects)",
     "boeingO3Text": "Complex liability law challenges and passengers' psychological resistance to trusting machines with their lives.",
     "boeingLesson": "<strong>Strategic lesson:</strong> the biggest challenge was not technology but societal psychology and legal liability (3rd order); investment shifted toward adaptive semi-autonomous systems.",
-    "diagramTitle": "Climate Security Consequences , Reference Diagram",
+    "diagramTitle": "Climate Security Consequences — Reference Diagram",
     "diagramP1": "Stepwise structure of 1st order (drought, dust storms, heat waves), 2nd order (aquifer depletion, farmer livelihoods, migration), and 3rd order national-security effects.",
-    "diagramP2": "Systematic analysis reveals feedback loops, cross-effects, and border defense strain , enabling national resilience solutions.",
+    "diagramP2": "Systematic analysis reveals feedback loops, cross-effects, and border defense strain — enabling national resilience solutions.",
     "modelsTag": "Extended Methodology",
     "modelsTitle": "Futures Wheel Model Variants",
-    "modelsSub": "Beyond a simple diagram , four key modeling approaches in advanced projects.",
+    "modelsSub": "Beyond a simple diagram — four key modeling approaches in advanced projects.",
     "tabClassic": "Classic Model",
     "tabStructured": "Structured STEEP",
     "tabQuantitative": "Quantitative Model",
@@ -2001,7 +3059,7 @@
     "modeDemo": "Tutorial Example",
     "modeWorkshop": "Interactive Workshop",
     "title": "Build Your Futures Wheel",
-    "sub": "Enter the central issue and consequences for each order , the wheel draws automatically.",
+    "sub": "Enter the central issue and consequences for each order — the wheel draws automatically.",
     "hubLabel": "Central issue / event",
     "hubPlaceholder": "e.g. AI in higher education",
     "hubSubLabel": "Short note (optional)",
@@ -2030,7 +3088,7 @@
       "founderLabel": "Founders",
       "founder": "John B. Robinson & Thomas L. Dreborg",
       "yearLabel": "Year",
-      "year": "Late 1970s , 1982",
+      "year": "Late 1970s — 1982",
       "institution": "Swedish Energy Commission · UBC",
       "title": "Origins of Energy Backcasting",
       "origin": "Thomas Dreborg applied backcasting at Sweden's Energy Commission in the 1970s for alternative energy policy. John B. Robinson formalized the method in <em>Energy Backcasting: A Proposed Method of Policy Analysis</em> (<em>Energy Policy</em>, 1982), reframing energy planning at UBC from trend prediction to designing desirable futures.",
@@ -2041,15 +3099,20 @@
     },
     "heroTag": "John B. Robinson",
     "heroTitle": "Strategic Backcasting",
-    "heroSub": "Start from a normative future and work backward , mapping policies, barriers, and practical steps needed from today.",
+    "heroSub": "Start from a normative future and work backward — mapping policies, barriers, and practical steps needed from today.",
     "methodologyTag": "Transition Framework",
     "methodologyTitle": "How Backcasting Works",
+    "methodologyLead": "Backcasting runs opposite to forecasting: first you name the desired future, then you walk backward and ask what path must have been taken.",
+    "methodologyNarrative": [
+      "Robinson formalised the method in 1982, but the idea came from 1970s Sweden: when you want net-zero or a liveable city, extending past trends is not enough. The analyst assumes the goal is achieved — e.g. “net-zero by 2045” — and steps backward.",
+      "Keep four moves in mind: envision the desired future, map the gap from today, design transition policies, and build near- and long-term roadmaps. Forecasting asks “what happens if trends continue?” Backcasting asks “how do we reach the future we want?”"
+    ],
     "methodologyP1": "Backcasting begins with a <strong>desired future goal</strong>, not today's trends. Analysts assume that goal is achieved, then ask what had to change to get there.",
     "methodologyP2": "Four core steps: (1) envision the desired future, (2) gap analysis against the present, (3) design policies and regulations for transition, (4) build an adaptive roadmap of near-, mid-, and long-term actions. Human agency replaces statistical determinism.",
     "comparisonTag": "Comparative Analysis",
     "comparisonTitle": "Backcasting vs. Forecasting",
     "comparisonSub": "Trend-driven planning versus choice-driven planning in large-scale strategy.",
-    "comparisonIntroP1": "Robinson introduced backcasting in the late 1970s for alternative energy policy. He argued forecasting , tied to past data , cannot design structural change or normatively desirable futures.",
+    "comparisonIntroP1": "Robinson introduced backcasting in the late 1970s for alternative energy policy. He argued forecasting — tied to past data — cannot design structural change or normatively desirable futures.",
     "comparisonIntroP2": "Forecasting asks: \"What happens if trends continue?\" Backcasting asks: \"How do we reach a desirable future, and what stands in the way?\" It fits energy transition, environmental policy, and urban planning.",
     "comparisonHeaders": {
       "aspect": "Dimension",
@@ -2064,8 +3127,8 @@
       },
       {
         "aspect": "Output type",
-        "forecast": "Descriptive , probable futures",
-        "backcast": "Normative , desirable futures"
+        "forecast": "Descriptive — probable futures",
+        "backcast": "Normative — desirable futures"
       },
       {
         "aspect": "Philosophy",
@@ -2084,7 +3147,7 @@
       }
     ],
     "swedenTitle": "Case Study: Sweden's Path to Net Zero by 2045",
-    "swedenIntro": "In 2016 Sweden used backcasting , not trend forecasting , to set \"net zero by 2045 and fossil-free transport by 2030,\" then planned backward from that endpoint.",
+    "swedenIntro": "In 2016 Sweden used backcasting — not trend forecasting — to set \"net zero by 2045 and fossil-free transport by 2030,\" then planned backward from that endpoint.",
     "swedenSteps": [
       {
         "title": "Final reverse step (2040–2045)",
@@ -2151,7 +3214,7 @@
   "bcScenarios": {
     "tehran": {
       "title": "Tehran 2051: Resilient, Sustainable Megacity",
-      "desc": "Normative ecological transition for the capital , halting land subsidence, electrifying urban transit, and full water/wastewater recycling.",
+      "desc": "Normative ecological transition for the capital — halting land subsidence, electrifying urban transit, and full water/wastewater recycling.",
       "steps": [
         {
           "year": "2051",
@@ -2244,7 +3307,7 @@
   },
   "catalog": {
     "title": "Comprehensive Foresight Methods Catalog",
-    "subtitle": "Key methods in foresight, futures studies, and strategic foresight , FRM 3.0, APF, and teaching practice",
+    "subtitle": "Key methods in foresight, futures studies, and strategic foresight · FRM 3.0, APF, and teaching practice",
     "categories": [
       {
         "id": "interactive",
@@ -2256,28 +3319,32 @@
             "slug": "fitness.html",
             "icon": "zap",
             "status": "interactive",
-            "color": "var(--color-f)"
+            "color": "var(--color-f)",
+            "image": "https://soif.org.uk/app/uploads/2019/04/Rene-Rohrbeck_2018_c-1024x1024.jpg"
           },
           {
             "id": "cla",
             "slug": "cla.html",
             "icon": "layers",
             "status": "interactive",
-            "color": "var(--color-cla)"
+            "color": "var(--color-cla)",
+            "image": "https://jfsdigital.org/wp-content/uploads/2022/07/smart-isfahan-1-scaled-e1656742344477.jpg"
           },
           {
             "id": "futures-wheel",
             "slug": "futures-wheel.html",
             "icon": "orbit",
             "status": "interactive",
-            "color": "var(--color-wheel-red)"
+            "color": "var(--color-wheel-red)",
+            "image": "https://images.unsplash.com/photo-1611273426858-4502c1296d58?auto=format&fit=crop&w=1200&q=80"
           },
           {
             "id": "backcasting",
             "slug": "backcasting.html",
             "icon": "history",
             "status": "interactive",
-            "color": "var(--color-i)"
+            "color": "var(--color-i)",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
           }
         ]
       },
@@ -2291,42 +3358,56 @@
             "slug": "popper-diamond.html",
             "icon": "gem",
             "status": "lesson",
-            "color": "#e040fb"
+            "color": "#e040fb",
+            "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80"
           },
           {
             "id": "six-pillars",
             "slug": "strategic-foresight.html",
             "icon": "columns-3",
             "status": "lesson",
-            "color": "var(--color-f)"
+            "color": "var(--color-f)",
+            "image": "https://images.unsplash.com/photo-1532619675605-1ede316c2aa8?auto=format&fit=crop&w=800&q=80"
           },
           {
             "id": "scenario-planning",
             "slug": "scenarios.html",
             "icon": "git-branch",
             "status": "lesson",
-            "color": "var(--color-cla)"
+            "color": "var(--color-cla)",
+            "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
           },
           {
             "id": "futurpreneurship",
             "slug": "futurpreneurship.html",
             "icon": "rocket",
             "status": "lesson",
-            "color": "var(--color-i)"
+            "color": "var(--color-i)",
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "type-2-fuzzy",
+            "slug": "type-2-fuzzy.html",
+            "icon": "blend",
+            "status": "interactive",
+            "color": "#00e5ff",
+            "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80"
           },
           {
             "id": "three-horizons",
             "slug": null,
             "icon": "layers-3",
             "status": "catalog",
-            "color": "#7c4dff"
+            "color": "#7c4dff",
+            "image": null
           },
           {
             "id": "futures-literacy",
             "slug": null,
             "icon": "book-open",
             "status": "catalog",
-            "color": "#4caf50"
+            "color": "#4caf50",
+            "image": null
           }
         ]
       },
@@ -2571,12 +3652,12 @@
       "fitness": {
         "title": "Future FITness",
         "founder": "René Rohrbeck",
-        "desc": "Organizational foresight maturity , Perceiving, Prospecting, Probing, 5-dimension self-assessment."
+        "desc": "Organizational foresight maturity · Perceiving, Prospecting, Probing, 5-dimension self-assessment."
       },
       "cla": {
         "title": "Causal Layered Analysis (CLA)",
         "founder": "Sohail Inayatullah",
-        "desc": "Litany, Systemic, Worldview, Myth , interactive pyramid and metaphor workshop."
+        "desc": "Litany, Systemic, Worldview, Myth · interactive pyramid and metaphor workshop."
       },
       "futures-wheel": {
         "title": "Futures Wheel",
@@ -2606,12 +3687,17 @@
       "futurpreneurship": {
         "title": "Futurpreneurship",
         "founder": "Foresight × Venture",
-        "desc": "From weak signal to MVP , future-oriented entrepreneurship."
+        "desc": "From weak signal to MVP · future-oriented entrepreneurship."
+      },
+      "type-2-fuzzy": {
+        "title": "Type-2 Fuzzy Logic",
+        "founder": "Zadeh · Mendel · John",
+        "desc": "IT2 workshop: FOU, weak signals, expert spread · probing instead of silent averaging."
       },
       "three-horizons": {
         "title": "Three Horizons",
         "founder": "Curry & Hodgson",
-        "desc": "H1/H2/H3 , managing transition from present business to emerging futures."
+        "desc": "H1/H2/H3 · managing transition from present business to emerging futures."
       },
       "futures-literacy": {
         "title": "Futures Literacy",
@@ -2631,7 +3717,7 @@
       "weak-signals": {
         "title": "Weak Signals",
         "founder": "Ansoff / Hiltunen",
-        "desc": "Early hints of major change , wild cards and emerging disruptions."
+        "desc": "Early hints of major change · wild cards and emerging disruptions."
       },
       "steep-pestle": {
         "title": "STEEP / PESTLE",
@@ -2661,7 +3747,7 @@
       "real-time-delphi": {
         "title": "Real-Time Delphi",
         "founder": "Gordon & Pease",
-        "desc": "Online Delphi with instant feedback , digital evolution of the classic."
+        "desc": "Online Delphi with instant feedback · digital evolution of the classic."
       },
       "expert-panels": {
         "title": "Expert Panels",
@@ -2671,7 +3757,7 @@
       "brainstorming": {
         "title": "Brainstorming & Ideation",
         "founder": "Osborn",
-        "desc": "Generate ideas without judgment , creativity foundation in foresight."
+        "desc": "Generate ideas without judgment · creativity foundation in foresight."
       },
       "nominal-group": {
         "title": "Nominal Group Technique",
@@ -2686,7 +3772,7 @@
       "cross-impact": {
         "title": "Cross-Impact Analysis",
         "founder": "Gordon & Helmer",
-        "desc": "Mutual influence matrix , MICMAC and structural analysis."
+        "desc": "Mutual influence matrix · MICMAC and structural analysis."
       },
       "relevance-tree": {
         "title": "Relevance Tree",
@@ -2741,7 +3827,7 @@
       "technology-roadmap": {
         "title": "Technology Roadmapping",
         "founder": "Phaal et al.",
-        "desc": "TRM , align technology with strategy and market."
+        "desc": "TRM · align technology with strategy and market."
       },
       "indicators": {
         "title": "Indicators & Early Warning",
@@ -2759,50 +3845,5 @@
         "desc": "Scenario-based games for learning and strategy testing."
       }
     }
-  },
-  "articleUncertainty": {
-    "tag": "Article",
-    "title": "Navigating Uncertainty",
-    "subtitle": "Why strategic foresight is less about prediction and more about reading signals, building scenarios, and making decisions when clarity is incomplete.",
-    "date": "2026",
-    "readTime": "6 min read",
-    "body": "<p>The future rarely begins with an announcement. It first appears as small signals: a shift in user behavior, a technology moving from laboratory to product, instability in a supply chain, or a new term slowly entering the language of managers and policymakers.</p><p>The point is not that these signals are always correct. Many are raw, incomplete, or temporary. The point is that in complex environments, ignoring weak signals often looks cheaper than paying attention to them, until they are no longer weak.</p><h2>Foresight is not prophecy</h2><p>For me, Foresight Hub is built on this distinction. Strategic foresight is not the act of declaring the future with certainty. Its work is to improve navigation: to see a range of plausible futures, understand the forces shaping them, and prepare minds and systems for decisions whose data is not yet complete.</p><p>In this view, a scenario is not decorative storytelling. It is a tool for thinking under uncertainty. When several credible futures are placed side by side, today's hidden assumptions become visible: what we treat as fixed, which changes we avoid, and which opportunities our current habits prevent us from seeing.</p><h2>When uncertainty itself is uncertain</h2><p>My deeper interest in Type-2 fuzzy logic begins here. In many technology decisions, we are not only dealing with uncertainty in a value; we are dealing with uncertainty about uncertainty itself. Experts may disagree not only about the probability of an event, but also about the meaning of probability, the intensity of impact, and the boundaries of the problem.</p><p>Type-2 fuzzy logic offers a more precise language for these situations. Not because it simplifies the world, but because it allows uncertainty about memberships and evaluations to remain visible. That matters for foresight because emerging futures often need to be discussed and modeled before they can be fully measured.</p><h2>Technology as structure</h2><p>My work in cloud, DevOps, and infrastructure is not separate from this path. Infrastructure is not merely a tool for running software; it is a structure that shapes decision speed, experimentation capacity, and scalability. An organization with slow and fragile infrastructure may recognize the future correctly and still fail to respond in time.</p><p>That is why technology and foresight are, for me, two languages for one question: how do systems build the capacity to sense and respond to change? One works at the scale of code, platforms, and operations; the other at the scale of trends, scenarios, and strategic decisions.</p><h2>The real work: navigation</h2><p><strong>The focus of Foresight Hub is not predicting the future; it is navigating uncertainty.</strong> That means combining weak signals, scenario thinking, systems thinking, and models that do not erase ambiguity, but make it workable.</p><p>The future is not something we simply wait for. It is already being formed in small decisions, system architectures, policy language, and technologies that are not yet stable enough to name. Our work is to see it earlier, more clearly, and more responsibly.</p><p class=\"article-source\">Photo and biographical reference: <a href=\"https://engineering.berkeley.edu/news/2017/09/remembering-lotfi-zadeh/\" target=\"_blank\" rel=\"noopener noreferrer\">Berkeley Engineering</a>, which notes that Zadeh's 1965 paper “Fuzzy Sets” opened a new direction for fuzzy logic and decision systems.</p>",
-    "founderCaption": "Founder of fuzzy logic and fuzzy set theory"
-  },
-  "articleAiTime": {
-    "tag": "Article",
-    "title": "Beyond the Biological Clock",
-    "subtitle": "Why AI neither experiences time as we do nor decays under it as we do, and why that temporal gap can become a strategic problem.",
-    "date": "June 2026",
-    "readTime": "8 min read",
-    "founderCaption": "From fuzzy logic to computational temporality",
-    "body": "<p>Human beings do not simply measure time; we carry it in our bodies. Fatigue, ageing, memory, circadian rhythm, and bounded attention make time a physical and psychological burden. What we call the present is the fragile result of synchronizing sensation and memory, not a transparent window.</p><p>AI, by contrast, does not feel time in that sense. It does not suffer cognitive exhaustion, biological discounting, or mortality awareness. What exists for the machine is sequence, processing capacity, latency, persistence, and infrastructure. The difference is therefore not only one of speed. It is a difference in the logic of inhabiting the world.</p><h2>Heavy time versus operational time</h2><p>For humans, time carries cost. We wait, delay, forget, recover, and age. For digital systems, time is more often an operational parameter. A model can be checkpointed, reloaded, containerized, and resumed elsewhere. Hardware decays, but software state can migrate and persist.</p><p>This is where a major gap opens. We make decisions inside biological and institutional cycles, while computational systems evaluate and respond inside far shorter loops. When that gap expands, the problem is no longer mere efficiency. It becomes temporal alignment.</p><h2>The stretched present of the machine</h2><p>Humans construct the future through narrative. We imagine, fear, hope, and choose. Machines can place large slices of the past and present into a common probability field. Their operational present is therefore stretched: not because they consciously live the future, but because they can process patterns across multiple horizons within a single analytic frame.</p><p>At that point, time stops being only a philosophical issue and becomes a governance issue. If a system can evaluate, simulate, and act faster than human oversight can meaningfully track, what kind of institution preserves both decision speed and human values?</p><h2>The future of AI is not only about accuracy</h2><p>Most public debate focuses on hallucination, reliability, or safety. Those matter, but they are not the whole problem. The deeper gap may be temporal. A machine that does not decide in our unit of time may also fail to remain accountable within our unit of time. Governance, in that sense, must be temporal as well as technical.</p><p>The real question is not only whether a model is correct. It is also: in what timescale does it see, assess, and intervene? If we miss that question, we may build systems that look aligned in static tests but outrun the institutions meant to supervise them.</p><p class=\"article-source\">This article is adapted and tightened from a LinkedIn essay by Ali Mansouri. It draws conceptually on William James, David Eagleman, Rolf Landauer, Wendell Bell, and Nick Bostrom.</p>"
-  },
-  "articleRohrbeck": {
-    "tag": "Article",
-    "title": "Why Rohrbeck Still Matters",
-    "subtitle": "Because he turned foresight from a side activity into an organizational capability that can be assessed, governed, and improved.",
-    "date": "June 2026",
-    "readTime": "6 min read",
-    "founderCaption": "Future FITness, maturity, and dynamic capability",
-    "body": "<p>A large share of what many organizations still call corporate foresight remains presentation-deep: a few trend reports, a few polished scenarios, and a radar that often decorates more than it decides. René Rohrbeck matters because he treated that gap seriously and asked a sharper question: how does foresight become a real organizational capability?</p><p>His maturity model was never merely a teaching taxonomy. Rohrbeck translated foresight into the language of capability, process, and performance. That shift matters because executives do not govern through elegant metaphors alone. They govern through structures, roles, and consequences.</p><h2>From readiness to fitness</h2><p>The distinction between readiness and FITness is still one of the clearest moves in the field. Readiness suggests being prepared for change. FITness suggests a more dynamic capacity: perceiving, prospecting, and probing on a continual basis. In other words, the organization does not only notice the future. It links anticipation to experimentation and structural change.</p><p>That distinction remains valuable for firms that produce foresight outputs without changing operational behavior. Rohrbeck shows that foresight becomes valuable when it enters decision cycles, innovation systems, investment logic, and portfolio design.</p><h2>Why it still holds up</h2><p>The environment is more volatile today than when Rohrbeck published his foundational work. AI, cloud platforms, ecosystem competition, and geopolitical instability have all intensified. Yet that is exactly why the model remains useful. The core question has not changed: can the organization see signals earlier, test responses faster, and reorganize before the market forces it to?</p><p>Many organizations are still trapped in output-oriented foresight. They produce artifacts rather than capabilities. Rohrbeck remains relevant because he moves attention from artifact to architecture.</p><h2>A managerial language for foresight</h2><p>One of his strongest contributions is that he gives foresight a language management can actually use. When he speaks about maturity dimensions, foresight roles, technology radar, and the connection between anticipation and innovation performance, he is building a bridge between theory and governance. That bridge is still missing in much of the futures literature.</p><p>If foresight is going to stay inside an organization, it has to live in budgets, roles, structures, and decision rhythms. Rohrbeck remains one of the clearest thinkers for describing that transition.</p><p class=\"article-source\">This essay is grounded in René Rohrbeck's work, especially <em>Corporate Foresight: Towards a Maturity Model</em> and later research on foresight capability and performance.</p>"
-  },
-  "articleCla": {
-    "tag": "Article",
-    "title": "What CLA Sees Before Policy Does",
-    "subtitle": "CLA matters when headlines are no longer enough and policy language itself has become part of the problem.",
-    "date": "June 2026",
-    "readTime": "7 min read",
-    "founderCaption": "From litany to myth, and from symptom to discourse",
-    "body": "<p>Many policies operate at the level Sohail Inayatullah calls litany: headlines, statistics, complaints, public reaction. That level matters for mobilization, but it is rarely enough for transformation. It sees the symptom, not the logic that keeps reproducing the symptom.</p><p>CLA becomes valuable precisely here. Its strength is not decorative complexity. Its strength is showing that every public problem has, at once, a structural layer, a discursive layer, and a mythic layer.</p><h2>When policy gets trapped in its own vocabulary</h2><p>Policy failure is often blamed on insufficient data. Just as often, however, it comes from institutions seeing the world through terms that already narrow the space of response. If a water crisis is framed only as a supply problem, then the responses will remain largely technical and distributive. If the same issue is examined as a development paradigm, a power relation, and a national imaginary, the option space changes.</p><p>CLA helps us see what has become impossible at the level of discourse before it appears impossible at the level of policy.</p><h2>From deconstruction to redesign</h2><p>A common misunderstanding is that CLA is only a deconstructive tool. Inayatullah never intended it to stop there. The move into myth is not only for exposing archetypes. It is for creating replacement metaphors. Without a new metaphor, policy reform often remains superficial or slides back into the older order.</p><p>That is why CLA is useful for governments, cities, universities, and organizations facing recurring problems: problems that get solved on the surface and then return.</p><h2>Why it still feels radical</h2><p>In an environment ruled by speed, notification cycles, and the pressure to respond instantly, CLA still feels radical because it forces a pause. Not to slow thought down for its own sake, but to ask where the issue is actually locked. Sometimes the data is sufficient and the discourse is closed. Sometimes the discourse has shifted and the myth has not.</p><p>In that sense, CLA is more than a futures method. It is a discipline for seeing problems in several depths at once. That is exactly what makes it professionally useful now.</p><p class=\"article-source\">This text draws on Sohail Inayatullah's body of work, especially <em>The Causal Layered Analysis Reader</em> and his foundational article in <em>Futures</em>.</p>"
-  },
-  "articleHinesBishop": {
-    "tag": "Article",
-    "title": "From Toolbox to Process",
-    "subtitle": "Why Hines and Bishop still matter for executives: they transform foresight from a list of methods into a sequence for decision and action.",
-    "date": "June 2026",
-    "readTime": "6 min read",
-    "founderCaption": "With Peter Bishop, turning foresight into a managerial process",
-    "body": "<p>One of the most persistent problems in foresight practice is that organizations encounter a long list of methods without knowing their order of use. Scanning, trends, scenarios, visioning, roadmaps, wind tunneling: all are valuable, but without an operational architecture they remain a loose toolkit rather than a managerial capability.</p><p>The importance of Andy Hines and Peter Bishop lies exactly there. The Six Pillars matter because they tell managers how foresight unfolds over time: framing, scanning, forecasting, visioning, planning, and acting.</p><h2>Why that distinction matters</h2><p>When an organization only has methods, it often gets stuck in scanning or jumps to scenarios without strong framing. The result is work that looks sophisticated from the outside but fails to enter the decision system. The Hines-Bishop architecture protects against that fragmentation.</p><p>They show that foresight is a sequence, not a pile of separate activities. Each pillar creates the context for the next one. If one weakens, the chain weakens.</p><h2>Management needs process, not only insight</h2><p>One reason the Six Pillars remain useful is that they translate well into managerial settings. An executive does not need to master every method in abstraction. They need to know what phase they are in, what output that phase should produce, and how it connects to action. That clarity is missing in many futures frameworks.</p><p>For that reason the model remains alive in consulting, executive education, and strategic workshops. It may not feel as theoretically radical as CLA, but it offers exceptional operational clarity.</p><h2>Closing the gap between insight and action</h2><p>The biggest failure in foresight is rarely a failure of insight. It is a failure of translation. Organizations understand things they cannot turn into agenda, investment, experiment, or action. Hines and Bishop work directly on that gap.</p><p>If futures work is going to be taken seriously by management, we do not only need tools. We need process. That is exactly where the Six Pillars remain one of the strongest frameworks available.</p><p class=\"article-source\">This essay draws on Andy Hines and Peter Bishop, especially <em>Thinking About the Future</em> and the broader educational tradition of the University of Houston foresight program.</p>"
   }
 }

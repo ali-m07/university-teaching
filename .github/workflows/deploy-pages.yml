@@ -23,6 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Merge locale JSON (catalog + articles)
+        run: node scripts/merge-locales-json.cjs
+
       - name: Prepare static site
         run: |
           mkdir -p _site

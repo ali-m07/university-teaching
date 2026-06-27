@@ -60,6 +60,15 @@ function refreshBackcastUI() {
     setText('bc-sweden-title', d.swedenTitle);
     const swedenIntro = document.getElementById('bc-sweden-intro');
     if (swedenIntro) swedenIntro.textContent = d.swedenIntro;
+
+    const methBody = document.getElementById('bc-methodology-body');
+    if (methBody && d.methodologyNarrative?.length && typeof window.buildMethodProse === 'function') {
+        methBody.innerHTML = window.buildMethodProse(d.methodologyNarrative, { lead: d.methodologyLead, allowHtml: true });
+    } else if (methBody) {
+        methBody.innerHTML = [d.methodologyP1, d.methodologyP2].filter(Boolean)
+            .map(t => `<p class="method-prose-p">${t}</p>`).join('');
+    }
+
     renderBcSwedenCards();
 
     if (typeof switchBcScenario === 'function' && typeof currentScenario !== 'undefined') {

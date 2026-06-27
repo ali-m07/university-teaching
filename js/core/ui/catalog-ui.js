@@ -5,6 +5,12 @@ function escCatalog(s) {
     return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+function methodImageUrl(m, entry) {
+    const rel = m.image || entry.image;
+    if (!rel) return '';
+    return typeof sfhUrl === 'function' ? sfhUrl(rel) : rel;
+}
+
 function renderFullCatalog(containerId) {
     const root = document.getElementById(containerId || 'catalog-root');
     if (!root) return;
@@ -29,14 +35,21 @@ function renderFullCatalog(containerId) {
                     const href = m.slug ? sfhUrl(`methods/${m.slug}`) : '#';
                     const onclick = m.slug ? `onclick="location.href='${href}'"` : '';
                     const cursor = m.slug ? 'pointer' : 'default';
+                    const imgSrc = methodImageUrl(m, entry);
+                    const media = imgSrc
+                        ? `<div class="catalog-method-media"><img src="${imgSrc}" alt="" loading="lazy" referrerpolicy="no-referrer" decoding="async"></div>`
+                        : `<div class="catalog-method-media catalog-method-media--icon" style="--method-color:${m.color}"><i data-lucide="${m.icon}"></i></div>`;
                     return `
                     <div class="hub-card glass-card catalog-method-card" ${onclick} style="border-top:3px solid ${m.color};cursor:${cursor};">
-                        <div class="card-icon"><i data-lucide="${m.icon}"></i></div>
-                        <span class="catalog-status-badge" style="font-size:0.7rem;color:var(--text-secondary);display:block;margin-bottom:6px;">${escCatalog(status)}</span>
-                        <h3>${escCatalog(title)}</h3>
-                        <p style="font-size:0.78rem;color:var(--color-f);margin-bottom:6px;">${escCatalog(founder)}</p>
-                        <p>${escCatalog(desc)}</p>
-                        ${m.slug ? `<span class="hub-card-link"><span>${t('common.readMore')}</span> <i data-lucide="arrow-left"></i></span>` : ''}
+                        ${media}
+                        <div class="catalog-method-body">
+                            <div class="card-icon"><i data-lucide="${m.icon}"></i></div>
+                            <span class="catalog-status-badge" style="font-size:0.7rem;color:var(--text-secondary);display:block;margin-bottom:6px;">${escCatalog(status)}</span>
+                            <h3>${escCatalog(title)}</h3>
+                            <p style="font-size:0.78rem;color:var(--color-f);margin-bottom:6px;">${escCatalog(founder)}</p>
+                            <p>${escCatalog(desc)}</p>
+                            ${m.slug ? `<span class="hub-card-link"><span>${t('common.readMore')}</span> <i data-lucide="arrow-left"></i></span>` : ''}
+                        </div>
                     </div>`;
                 }).join('')}
             </div>

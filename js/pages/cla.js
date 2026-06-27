@@ -73,12 +73,13 @@ function initParticles() {
 
 // 2. CLA Pyramid layer display
 function showClaLayer(layerKey) {
+    window._activeClaLayer = layerKey;
     const layers = ['litany', 'systemic', 'worldview', 'myth'];
     
     layers.forEach(l => {
         const pyrEl = document.getElementById(`pyr-${l}`);
         const detEl = document.getElementById(`cla-detail-${l}`);
-        
+        if (!pyrEl || !detEl) return;
         if (l === layerKey) {
             pyrEl.classList.add('active');
             detEl.classList.add('active');
@@ -280,11 +281,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Initialization
-window.addEventListener('DOMContentLoaded', () => {
+// Initialization — wait for locales (shared.js bootApp) before CLA UI
+function initClaPage() {
     initParticles();
-    if (window.lucide) {
-        window.lucide.createIcons();
+    document.querySelectorAll('.pyramid-layer').forEach((el) => {
+        el.style.opacity = '1';
+    });
+    if (window.lucide) window.lucide.createIcons();
+    if (typeof showClaLayer === 'function') {
+        showClaLayer(window._activeClaLayer || 'litany');
     }
     if (typeof refreshClaUI === 'function') {
         refreshClaUI();
@@ -292,4 +297,15 @@ window.addEventListener('DOMContentLoaded', () => {
         switchClaCategory('geopolitics');
         loadWorkspaceTemplate();
     }
+}
+
+window.showClaLayer = showClaLayer;
+
+window.addEventListener('langchange', () => {
+    if (typeof refreshClaUI === 'function') refreshClaUI();
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    if (window.__SFH_LOCALES_READY) initClaPage();
+    else window.addEventListener('localesready', initClaPage, { once: true });
 });

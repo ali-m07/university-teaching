@@ -25,6 +25,11 @@ registerLocale('en', {
 
         methodologyTag: 'Transition Framework',
         methodologyTitle: 'How Backcasting Works',
+        methodologyLead: 'Backcasting runs opposite to forecasting: first you name the desired future, then you walk backward and ask what path must have been taken.',
+        methodologyNarrative: [
+            'Robinson formalised the method in 1982, but the idea came from 1970s Sweden: when you want net-zero or a liveable city, extending past trends is not enough. The analyst assumes the goal is achieved — e.g. “net-zero by 2045” — and steps backward.',
+            'Keep four moves in mind: envision the desired future, map the gap from today, design transition policies, and build near- and long-term roadmaps. Forecasting asks “what happens if trends continue?” Backcasting asks “how do we reach the future we want?”'
+        ],
         methodologyP1: 'Backcasting begins with a <strong>desired future goal</strong>, not today\'s trends. Analysts assume that goal is achieved, then ask what had to change to get there.',
         methodologyP2: 'Four core steps: (1) envision the desired future, (2) gap analysis against the present, (3) design policies and regulations for transition, (4) build an adaptive roadmap of near-, mid-, and long-term actions. Human agency replaces statistical determinism.',
 

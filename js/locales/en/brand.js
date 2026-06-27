@@ -6,7 +6,7 @@ registerLocale('en', {
         heroSub: 'Technology futures, emerging trends, uncertainty',
         aboutLink: 'About',
         articlesLink: 'Articles',
-        methodsLink: 'Methods',
+        methodsLink: 'Foresight Methods',
         bioTitle: '',
         spaceTag: 'About this space',
         spaceP1: 'This is a personal hub for writing, methods, and thinking about technological futures.',
@@ -15,17 +15,17 @@ registerLocale('en', {
         findTitle: "What you'll find here",
         findItems: [
             { icon: 'pen-line', title: 'Articles', desc: 'Notes on emerging technologies, systems thinking, and foresight', href: 'articles/' },
-            { icon: 'library', title: 'Methods', desc: 'Tools like CLA, scenario planning, FITness, and backcasting', href: 'methods/' },
+            { icon: 'library', title: 'Foresight Methods', desc: 'Tools like CLA, scenario planning, FITness, and backcasting', href: 'methods/' },
             { icon: 'file-text', title: 'CV', desc: 'Professional work in cloud, DevOps, and infrastructure', href: 'https://ali-m07.github.io/resume/', external: true }
         ],
         philosophyTag: 'Philosophy',
-        philP1: 'Technology should amplify human capability, not replace it.',
-        philP2: 'Most of my thinking sits between what is emerging and what is not yet stable enough to name.',
-        philP3: "When I'm not working, I'm usually exploring new places — physically or intellectually — trying to understand systems I haven't seen before. Some people say I'm very smart; I'm not fully convinced 😂",
+        philP1: 'Technology should expand what people can do — not take their place.',
+        philP2: 'A lot of my thinking sits between what\'s emerging and what isn\'t stable enough to name yet.',
+        philP3: "When I'm not working, I'm usually off discovering new places — in the real world or in my head — trying to figure out systems I haven't seen yet. Some people say I'm very smart; I'm not entirely buying it 😂",
         focusTitle: 'Focus',
         focuses: [],
         ctaResume: 'CV',
-        ctaMethods: 'Methods'
+        ctaMethods: 'Foresight Methods'
     },
     aboutPage: {
         tag: 'About',
@@ -51,20 +51,8 @@ registerLocale('en', {
         ],
         closingNote: 'I am not trying to predict the future. I am trying to understand how it becomes inevitable.',
         eduTitle: 'Education',
-        edu: 'PhD in Futures Studies (in progress), University of Tehran<br>MA in Human Resources Management, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology',
+        edu: 'PhD in Futures Studies (in progress), University of Tehran<br>MBA, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology',
         contactTitle: 'Contact',
         contact: 'ali.mansouri1998@gmail.com — open to research, speaking, and collaboration'
-    },
-    articlesPage: {
-        tag: 'Articles',
-        title: 'Articles',
-        sub: 'Notes on emerging technologies, systems thinking, and foresight.',
-        emptyTitle: 'Coming soon',
-        emptyDesc: 'First pieces are on the way.',
-        sampleArticles: [
-            { date: '2025', title: 'Why Rohrbeck FITness Still Matters', tag: 'Corporate', status: 'draft' },
-            { date: '2025', title: 'CLA in National Policy: Lessons from Singapore', tag: 'CLA', status: 'draft' },
-            { date: '2024', title: 'From Litany to Myth, A Practical CLA Workshop Guide', tag: 'Notes', status: 'draft' }
-        ]
     }
 });

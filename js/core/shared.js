@@ -48,7 +48,7 @@ function initHeaderScroll() {
 }
 
 function initVisualScrollHints() {
-    document.querySelectorAll('.wheel-cascade-scroll, .pyramid-container, .radar-plot-wrapper').forEach(wrapper => {
+    document.querySelectorAll('.wheel-cascade-scroll, .radar-plot-wrapper').forEach(wrapper => {
         if (wrapper.closest('.visual-scroll-wrap')) return;
         const outer = document.createElement('div');
         outer.className = 'visual-scroll-wrap';
@@ -97,6 +97,7 @@ function buildStandardNav() {
     const nextLang = typeof getLang === 'function' && getLang() === 'en' ? 'FA' : 'EN';
     links.push(`<button type="button" class="nav-lang-toggle" onclick="toggleLang()" aria-label="Switch language">${nextLang}</button>`);
     nav.innerHTML = links.join('');
+    if (typeof window.syncHeaderOffset === 'function') window.syncHeaderOffset();
 }
 
 function upgradeLegacyHeader() {
@@ -158,11 +159,17 @@ function upgradeLegacyHeader() {
     }
 }
 
+function syncArticlePageLayout() {
+    if (typeof window.syncHeaderOffset === 'function') window.syncHeaderOffset();
+    if (typeof window.initArticleCoverImages === 'function') window.initArticleCoverImages();
+}
+
 function bootApp() {
     upgradeLegacyHeader();
     initMobileNav();
     initHeaderScroll();
     initVisualScrollHints();
+    syncArticlePageLayout();
     if (typeof initI18n === 'function') initI18n();
     else if (typeof applyTranslations === 'function') applyTranslations();
     if (window.lucide) window.lucide.createIcons();
@@ -170,6 +177,7 @@ function bootApp() {
     requestAnimationFrame(() => {
         if (typeof renderAllPageSections === 'function') renderAllPageSections();
         if (window.lucide) window.lucide.createIcons();
+        syncArticlePageLayout();
     });
 }
 
@@ -184,6 +192,7 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('langchange', () => {
     buildStandardNav();
     if (typeof applyTranslations === 'function') applyTranslations();
+    syncArticlePageLayout();
 });
 
 window.buildStandardNav = buildStandardNav;

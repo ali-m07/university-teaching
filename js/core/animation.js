@@ -201,30 +201,34 @@ if (window.gsap && window.ScrollTrigger) {
             });
         }
         
-        // CLA 3D Pyramid Layer-by-layer rise animation
+        // CLA pyramid — slide-in only (never hide layers; opacity:0 broke click targets)
         if (document.querySelector('.pyramid-container')) {
+            gsap.set('.pyramid-layer', { opacity: 1, y: 0 });
+
             gsap.from('.pyramid-layer', {
                 scrollTrigger: {
                     trigger: '.pyramid-container',
-                    start: 'top 75%'
+                    start: 'top 85%',
+                    once: true
                 },
-                opacity: 0,
-                y: 80,
-                rotationX: 0,
-                stagger: 0.15,
-                duration: 1,
-                ease: 'power3.out'
+                y: 36,
+                stagger: 0.12,
+                duration: 0.7,
+                ease: 'power2.out',
+                immediateRender: false
             });
-            
+
             gsap.from('.cla-info-card', {
                 scrollTrigger: {
                     trigger: '.cla-grid',
-                    start: 'top 75%'
+                    start: 'top 85%',
+                    once: true
                 },
                 opacity: 0,
                 x: 50,
                 duration: 0.9,
-                ease: 'power2.out'
+                ease: 'power2.out',
+                immediateRender: false
             });
         }
         

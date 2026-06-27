@@ -57,7 +57,7 @@ function shell({ file, method, i18n, accent, icon }) {
             <p id="adv-intro" style="color:var(--text-secondary);line-height:1.75;"></p>
         </div>
         <div id="method-pillars-grid" class="hub-cards-grid" style="margin-bottom:32px;"></div>
-        <div class="workspace-grid" style="grid-template-columns:1fr 1fr;gap:24px;">
+        <div class="workspace-grid">
             <div class="glass-card" style="padding:24px;border-inline-start:3px solid ${accent};">
                 <h3 id="adv-gap-title" style="color:#fff;font-size:1.1rem;margin-bottom:10px;"></h3>
                 <p id="adv-gap" style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;"></p>

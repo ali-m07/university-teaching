@@ -8,7 +8,7 @@ registerLocale('en', {
             home: 'Home',
             about: 'About',
             articles: 'Articles',
-            methods: 'Methods',
+            methods: 'Foresight Methods',
             cv: 'CV',
             fitness: 'Future FITness',
             cla: 'Causal Layered Analysis',
@@ -18,9 +18,9 @@ registerLocale('en', {
             menu: 'Menu'
         },
         footer: {
-            desc: 'Technology futures · writing · methods',
-            descBackcast: 'Technology futures · writing · methods',
-            descWheel: 'Technology futures · writing · methods',
+            desc: 'Technology futures · foresight methods · blog & articles',
+            descBackcast: 'Technology futures · foresight methods · blog & articles',
+            descWheel: 'Technology futures · foresight methods · blog & articles',
             role: 'PhD candidate, Futures Studies',
             resume: 'CV',
             copyright: '© Ali Mansouri'
@@ -31,7 +31,7 @@ registerLocale('en', {
             heroSub: 'Strategic foresight for technology, systems, and uncertain futures.',
             heroIntroP1: 'I work at the intersection of emerging technologies, cloud infrastructure, and futures thinking — where clarity is rare and signals matter more than certainty.',
             heroIntroP2: 'My focus is not prediction, but navigation: weak signals, scenarios, and Type-2 fuzzy logic when uncertainty itself is uncertain.',
-            ctaMethods: 'Methods'
+            ctaMethods: 'Foresight Methods'
         },
         common: {
             close: 'Close',

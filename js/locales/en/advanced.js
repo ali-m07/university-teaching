@@ -144,6 +144,40 @@ registerLocale('en', {
             gap: 'FRM was written for policy and research labs; <strong>venture creation</strong> is out of scope. Futurpreneurship is what Silicon Valley does informally — with foresight rigor.',
             caseTitle: 'Example: weak signal → venture',
             case: 'Signal: aging + AI tutor demand. Scenario: "Physical school boundary" fades. Venture: AI tutor platform with curriculum foresight — MVP in 90 days, not 5 years of research.'
+        },
+        type2Fuzzy: {
+            slug: 'type-2-fuzzy',
+            heroTag: 'Zadeh · Mendel · John · IT2',
+            heroTitle: 'Type-2 Fuzzy Logic',
+            heroSub: 'When even “how uncertain are we?” is disputed, a single 0.6 is not enough. IT2 spread tells you if consensus is real or just silent averaging.',
+            history: {
+                accent: '#00e5ff',
+                founderLabel: 'Pioneers',
+                founder: 'Lotfi A. Zadeh · Jerry M. Mendel · Robert I. John · Narendra Karnik',
+                yearLabel: 'Evolution',
+                year: '1965 fuzzy sets · 1975 linguistic variables · 1999–2006 IT2/GT2',
+                institution: 'UC Berkeley · USC · De Montfort · Nottingham',
+                title: 'From fuzzy sets to FOU',
+                origin: 'Zadeh (1965) said membership in a set is not only 0 or 1. Linguistic variables followed in 1975 (“hot”, “emerging”, “strong”). Mendel and Karnik at USC formalized Interval Type-2: each membership grade is a band. John at De Montfort and Nottingham extended GT2 and decision support.',
+                problemLabel: 'The foresight problem',
+                problem: 'In scanning or Delphi workshops everyone gives a number and we average. Type-1 yields 0.6 and hides disagreement. IT2 can yield a similar center but FOU width tells you if consensus was real or silent averaging.',
+                useLabel: 'Applications',
+                applications: 'Weak signals, scenario weights, expert synthesis, decisions under deep uncertainty, and a bridge to organizational probing (Rohrbeck FITness).'
+            },
+            introTitle: 'Six key IT2 concepts',
+            intro: 'Not formulas — shared language for foresight, technical, and management teams.',
+            pillars: [
+                { title: 'Membership function (Type-1)', desc: 'Curve μ(x): how much x belongs to “emerging”. Simple and manager-friendly.', color: '#4caf50' },
+                { title: 'Footprint of Uncertainty (FOU)', desc: 'Region between upper and lower MFs. Wider = more expert or stakeholder spread.', color: '#00e5ff' },
+                { title: 'Type-reduction (Karnik–Mendel)', desc: 'Collapse IT2 to Type-1 before defuzzification. Centroid is the common algorithm.', color: '#7c4dff' },
+                { title: 'Linguistic variables', desc: '“Weak”, “medium”, “strong” defined with fuzzy sets — same language as weak signals.', color: '#ffaa00' },
+                { title: 'Fuzzy rule base', desc: 'IF signal strong AND consensus high THEN act fast. IT2 keeps uncertainty in rules.', color: '#e040fb' },
+                { title: 'General Type-2 (GT2)', desc: 'When the FOU itself is fuzzy. Heavier compute; for severe policy or tech ambiguity.', color: 'var(--color-wheel-red)' }
+            ],
+            gapTitle: 'Why FRM 3.0 lacks this',
+            gap: 'FRM has Decision Support but fuzzy logic is not a named method. Type-2 fits linguistic judgment under deep uncertainty where probability lacks a known distribution.',
+            caseTitle: 'Example: EU AI regulation',
+            case: 'Three experts: FOUs [0.35,0.72], [0.48,0.85], [0.22,0.55]. Type-1 mean ≈ 0.53. IT2 spread ≈ 0.36 → moderate consensus. The team runs a Delphi round or short probing instead of a crisp board report.'
         }
     },
     hubAdvanced: {
@@ -159,6 +193,9 @@ registerLocale('en', {
         futurTitle: 'Futurpreneurship',
         futurDesc: 'Foresight + venture: from weak signal to MVP — what FRM 3.0 lacks.',
         futurLink: 'Explore',
+        type2Title: 'Type-2 Fuzzy Logic',
+        type2Desc: 'Uncertainty about uncertainty — IT2 for weak signals, expert disagreement, and deep uncertainty.',
+        type2Link: 'Explore',
         catalogLink: 'Full methods catalog'
     }
 });

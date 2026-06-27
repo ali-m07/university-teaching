@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     
     <!-- Custom Style -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v=20250627b">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -54,15 +54,10 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; align-items: center;">
                 <div>
                     <h3 id="cla-theory-title" style="font-size: 1.4rem; color: #fff; margin-bottom: 15px;"><i data-lucide="book-open" style="vertical-align: middle; margin-inline-end: 8px;"></i> بنیان CLA و ارتباط با تبارشناسی فوکو</h3>
-                    <p id="cla-theory-p1" style="font-size: 0.95rem; line-height: 1.8; color: var(--text-secondary); text-align: justify; margin-bottom: 15px;">
-                        CLA که سهیل عنایت‌الله ابداع کرد، از تفکر پساساختارگرا — به‌ویژه تبارشناسی (Genealogy) میشل فوکو — الهام گرفته است.
-                    </p>
-                    <p id="cla-theory-p2" style="font-size: 0.95rem; line-height: 1.8; color: var(--text-secondary); text-align: justify;">
-                        حرکت از لیتانی (اخبار روز) به علل ساختاری، سپس جهان‌بینی و در نهایت اسطوره، به ذی‌نفعان کمک می‌کند از سناریوهای تحمیلی خارج شوند.
-                    </p>
+                    <div id="cla-theory-body"></div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="../assets/cla_concept.png" alt="Causal Layered Analysis Iceberg Concept" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 30px rgba(0, 229, 255, 0.15); border: 1px solid rgba(0, 229, 255, 0.15);" />
+                    <img src="https://jfsdigital.org/wp-content/uploads/2022/07/word-image-15283-2.jpeg" alt="Causal Layered Analysis — four layers (Isfahan 2040 workshop)" referrerpolicy="no-referrer" loading="lazy" decoding="async" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 30px rgba(0, 229, 255, 0.15); border: 1px solid rgba(0, 229, 255, 0.15);" />
                 </div>
             </div>
         </div>
@@ -70,22 +65,26 @@
 
     <!-- Section: CLA Pyramid Layer Details -->
     <section id="cla-pyramid" class="cla-section container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="section-header" style="margin-bottom: 24px; text-align: center;">
+            <span class="section-tag-cla" data-i18n="claPage.pyramidTag">هرم CLA</span>
+            <h2 style="color: #fff; font-size: 1.35rem; margin-top: 10px;" data-i18n="claPage.pyramidTitle">چهار لایه · روی هر سطح کلیک کن</h2>
+        </div>
         <div class="cla-grid">
             <div class="pyramid-container">
                 <div class="pyramid-wrapper">
-                    <div class="pyramid-layer layer-1 active" id="pyr-litany" onclick="showClaLayer('litany')">
+                    <div class="pyramid-layer layer-1 active" id="pyr-litany" role="button" tabindex="0" onclick="showClaLayer('litany')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showClaLayer('litany');}">
                         <span class="layer-num">L1</span>
                         <span class="layer-name" data-i18n="cla.layers.litany">لیتانی (Litany)</span>
                     </div>
-                    <div class="pyramid-layer layer-2" id="pyr-systemic" onclick="showClaLayer('systemic')">
+                    <div class="pyramid-layer layer-2" id="pyr-systemic" role="button" tabindex="0" onclick="showClaLayer('systemic')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showClaLayer('systemic');}">
                         <span class="layer-num">L2</span>
                         <span class="layer-name" data-i18n="cla.layers.systemic">علل اجتماعی و ساختاری (Systemic)</span>
                     </div>
-                    <div class="pyramid-layer layer-3" id="pyr-worldview" onclick="showClaLayer('worldview')">
+                    <div class="pyramid-layer layer-3" id="pyr-worldview" role="button" tabindex="0" onclick="showClaLayer('worldview')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showClaLayer('worldview');}">
                         <span class="layer-num">L3</span>
                         <span class="layer-name" data-i18n="cla.layers.worldview">گفتمان و جهان‌بینی (Worldview)</span>
                     </div>
-                    <div class="pyramid-layer layer-4" id="pyr-myth" onclick="showClaLayer('myth')">
+                    <div class="pyramid-layer layer-4" id="pyr-myth" role="button" tabindex="0" onclick="showClaLayer('myth')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showClaLayer('myth');}">
                         <span class="layer-num">L4</span>
                         <span class="layer-name" data-i18n="cla.layers.myth">اسطوره و استعاره (Myth)</span>
                     </div>
@@ -181,11 +180,11 @@
                 </div>
                 <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
                     <strong id="cla-singapore-l3-label" style="color: var(--color-cla); display: block; margin-bottom: 6px;">L3: جهان‌بینی (گفتمان)</strong>
-                    <p id="cla-singapore-l3-text" style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); text-align: justify;">نگاه «سنگاپور = هتل لوکس بین‌المللی» — شهروند مشتری طلبکار، دولت فقط خدمت‌گزار.</p>
+                    <p id="cla-singapore-l3-text" style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); text-align: justify;">نگاه «سنگاپور = هتل لوکس بین‌المللی» · شهروند مشتری طلبکار، دولت فقط خدمت‌گزار.</p>
                 </div>
                 <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);">
                     <strong id="cla-singapore-l4-label" style="color: var(--color-cla); display: block; margin-bottom: 6px;">L4: اسطوره (ناخودآگاه)</strong>
-                    <p id="cla-singapore-l4-text" style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); text-align: justify;">استعاره پنهان «مهمان موقت در هتل» — بدون تعلق عاطفی به پاکیزگی مشترک.</p>
+                    <p id="cla-singapore-l4-text" style="font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); text-align: justify;">استعاره پنهان «مهمان موقت در هتل» · بدون تعلق عاطفی به پاکیزگی مشترک.</p>
                 </div>
             </div>
             <p id="cla-singapore-lesson" style="font-size: 0.9rem; line-height: 1.6; color: var(--text-primary); text-align: justify; margin-top: 15px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 10px;">
@@ -368,6 +367,7 @@
     <script src="../js/core/i18n-render.js"></script>
     <script src="../js/core/founders.js"></script>
     <script src="../js/core/ui/lesson-ui.js"></script>
+    <script src="../js/core/ui/method-prose.js"></script>
     <script src="../js/core/ui/cla-ui.js"></script>
     <script src="../js/core/shared.js"></script>
     <script src="../js/pages/cla.js"></script>

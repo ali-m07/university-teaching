@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-2 Fuzzy Logic | منطق فازی نوع ۲</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=20250627b">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-advanced-method="type-2-fuzzy" class="type2-page">
+    <canvas id="particles-canvas"></canvas>
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+        </div>
+        <nav class="nav-links"></nav>
+        <div class="header-actions">
+            <a href="index.html" class="btn-primary-sm" data-i18n="nav.methods">روش‌ها</a>
+        </div>
+    </header>
+
+    <section class="container type2-hero">
+        <span class="section-tag type2-hero-tag" data-i18n="type2Page.heroTag">IT2</span>
+        <h1 data-i18n="type2Page.heroTitle">منطق فازی نوع ۲</h1>
+        <p class="type2-hero-sub" data-i18n="type2Page.heroSub"></p>
+    </section>
+
+    <div class="container">
+        <div id="method-history"></div>
+    </div>
+
+    <section class="container type2-section">
+        <div id="type2-theory"></div>
+    </section>
+
+    <section class="container type2-section">
+        <div id="type2-tracks"></div>
+    </section>
+
+    <section id="type2-workshop" class="container type2-section">
+        <div class="type2-workshop-shell glass-card">
+            <div class="type2-workshop-header">
+                <span class="section-tag" style="color:#00e5ff;" data-i18n="type2Page.workshopTag">کارگاه</span>
+                <h2 data-i18n="type2Page.workshopTitle">کارگاه IT2</h2>
+                <p data-i18n="type2Page.workshopSub"></p>
+            </div>
+
+            <div class="type2-workshop-grid">
+                <div class="type2-workshop-panel type2-panel-input">
+                    <div class="type2-signal-panel glass-card">
+                        <label class="type2-field">
+                            <span data-i18n="type2Page.signalLabel">سیگنال ضعیف</span>
+                            <select id="type2-signal-select" class="type2-select"></select>
+                        </label>
+                        <div class="type2-signal-or" data-i18n="type2Page.signalOr">یا</div>
+                        <label class="type2-field type2-field-custom">
+                            <span data-i18n="type2Page.signalCustom">سیگنال خودت</span>
+                            <input type="text" id="type2-signal-custom" class="type2-input" autocomplete="off">
+                        </label>
+                        <div class="type2-signal-active">
+                            <i data-lucide="radio"></i>
+                            <span id="type2-signal-title"></span>
+                        </div>
+                    </div>
+
+                    <div class="type2-experts-block">
+                        <h3 class="type2-experts-title" data-i18n="type2Page.expertsTitle">امتیاز خبرگان</h3>
+                        <div id="type2-experts" class="type2-experts-list"></div>
+                    </div>
+
+                    <button type="button" id="type2-reset" class="btn-ghost-sm type2-reset-btn">
+                        <i data-lucide="rotate-ccw"></i>
+                        <span data-i18n="type2Page.resetBtn">شروع دوباره</span>
+                    </button>
+                </div>
+
+                <div class="type2-workshop-panel type2-panel-viz">
+                    <div class="type2-viz-card glass-card">
+                        <div class="type2-viz-header">
+                            <h3 class="type2-chart-title" data-i18n="type2Page.chartTitle">نمای FOU</h3>
+                            <div class="type2-chart-legend">
+                                <span><i class="type2-legend-dot" style="background:#00e5ff"></i> <span data-i18n="type2Page.expertLabel">خبره</span></span>
+                                <span><i class="type2-legend-dot type2-legend-agg"></i> <span data-i18n="type2Page.chartAggLabel">FOU تجمعی</span></span>
+                            </div>
+                        </div>
+                        <div class="type2-chart-wrap">
+                            <svg id="type2-fou-svg" class="type2-fou-svg" role="img" aria-hidden="true"></svg>
+                        </div>
+                        <div class="type2-stats">
+                            <div class="type2-stat">
+                                <span data-i18n="type2Page.resultT1">معادل Type-1</span>
+                                <strong id="type2-result-t1">—</strong>
+                            </div>
+                            <div class="type2-stat">
+                                <span data-i18n="type2Page.resultSpread">پهنای FOU</span>
+                                <strong id="type2-result-spread">—</strong>
+                            </div>
+                        </div>
+                        <div class="type2-verdict">
+                            <span class="type2-verdict-label" data-i18n="type2Page.resultVerdict">برداشت foresight</span>
+                            <p id="type2-result-verdict"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="lesson-section" data-lesson-key="type2fuzzy"></div>
+    </div>
+
+    <section class="container type2-section type2-pillars-section">
+        <div class="glass-card type2-intro-card">
+            <h2 id="adv-intro-title"></h2>
+            <p id="adv-intro"></p>
+        </div>
+        <div id="method-pillars-grid" class="hub-cards-grid"></div>
+        <div class="type2-case-grid">
+            <div class="glass-card type2-case-card">
+                <h3 id="adv-gap-title"></h3>
+                <p id="adv-gap"></p>
+            </div>
+            <div class="glass-card type2-case-card">
+                <h3 id="adv-case-title"></h3>
+                <p id="adv-case"></p>
+            </div>
+        </div>
+        <p class="type2-back-link">
+            <a href="./" class="btn-ghost-sm"><i data-lucide="arrow-right"></i> <span data-i18n="hubAdvanced.catalogLink">کاتالوگ</span></a>
+        </p>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container container" style="padding-bottom:20px;">
+            <div class="footer-info">
+                <div class="footer-logo"><span class="logo-icon"><i data-lucide="compass"></i></span><span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span></div>
+                <p data-i18n="footer.desc"></p>
+            </div>
+        </div>
+        <div class="footer-bottom"><p data-i18n="footer.copyright"></p></div>
+    </footer>
+
+    <script src="../js/core/paths.js"></script>
+    <script src="../js/core/i18n.js"></script>
+    <script src="../js/core/load-locales.js"></script>
+    <script src="../js/core/i18n-render.js"></script>
+    <script src="../js/core/founders.js"></script>
+    <script src="../js/core/ui/lesson-ui.js"></script>
+    <script src="../js/core/ui/method-prose.js"></script>
+    <script src="../js/core/ui/advanced-ui.js"></script>
+    <script src="../js/pages/type2-tracks-render.js"></script>
+    <script src="../js/pages/type2-fuzzy.js"></script>
+    <script src="../js/core/shared.js"></script>
+    <script src="../js/core/main.js"></script>
+    <script src="../js/core/animation.js"></script>
+</body>
+</html>

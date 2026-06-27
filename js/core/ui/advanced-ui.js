@@ -5,7 +5,16 @@ const ADVANCED_METHOD_KEYS = {
     'popper-diamond': 'popper',
     'strategic-foresight': 'hines',
     'scenarios': 'scenarios',
-    'futurpreneurship': 'futurpreneurship'
+    'futurpreneurship': 'futurpreneurship',
+    'type-2-fuzzy': 'type2Fuzzy'
+};
+
+const ADVANCED_LESSON_KEYS = {
+    popper: 'popper',
+    hines: 'hines',
+    scenarios: 'scenarios',
+    futurpreneurship: 'futurpreneurship',
+    type2Fuzzy: 'type2fuzzy'
 };
 
 function renderAdvancedMethodPage() {
@@ -25,21 +34,28 @@ function renderAdvancedMethodPage() {
         if (el && text != null) el.textContent = text;
     };
 
-    renderHistoryBox('method-history', p.history, key);
+    renderHistoryBox('method-history', p.history, ADVANCED_LESSON_KEYS[key] || key);
 
+    const buildProse = window.buildMethodProse;
+    const introParas = p.introParagraphs || (p.intro ? [p.intro] : []);
     setText('adv-intro-title', p.introTitle);
-    setHtml('adv-intro', p.intro);
+    if (buildProse && introParas.length) {
+        setHtml('adv-intro', buildProse(introParas, { lead: p.introLead, allowHtml: true }));
+    } else {
+        setHtml('adv-intro', p.intro ? `<div class="method-prose"><p class="method-prose-p">${p.intro}</p></div>` : '');
+    }
     setText('adv-gap-title', p.gapTitle);
-    setHtml('adv-gap', p.gap);
+    setHtml('adv-gap', p.gap ? `<div class="method-prose"><p class="method-prose-p">${p.gap}</p></div>` : '');
     setText('adv-case-title', p.caseTitle);
-    setHtml('adv-case', p.case);
+    setHtml('adv-case', p.case ? `<div class="method-prose"><p class="method-prose-p">${p.case}</p></div>` : '');
 
     const grid = document.getElementById('method-pillars-grid');
     if (grid && p.pillars) {
+        grid.className = 'method-prose-pillars';
         grid.innerHTML = p.pillars.map(item => `
-            <div class="step-card glass-card" style="padding:20px;border-top:3px solid ${item.color};">
-                <h4 style="font-size:1rem;color:#fff;margin-bottom:8px;">${item.title}</h4>
-                <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">${item.desc}</p>
+            <div class="method-prose-pillar">
+                <h4>${item.title}</h4>
+                <p>${item.desc}</p>
             </div>`).join('');
     }
 }

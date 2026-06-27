@@ -22,8 +22,16 @@ registerLocale('en', {
         heroTitle: 'Causal Layered Analysis (CLA)',
         heroSub: 'A deep foresight method for breaking surface problems apart, exploring discursive and civilizational roots, and creating alternative metaphors for transformative scenarios.',
         theoryTitle: 'CLA foundations and Foucault\'s genealogy',
+        theoryLead: 'CLA starts where surface news stops: when you ask “why is this an issue at all?” and the answer is more than headlines and stats.',
+        theoryNarrative: [
+            'Sohail Inayatullah built CLA on post-structural thought — especially Michel Foucault\'s <strong>genealogy</strong>. Foucault showed that “truth” is shaped by discourse and power; CLA deconstructs issues layer by layer to reveal hidden assumptions.',
+            'Moving from Litany (daily news) to systemic causes, then worldview, and finally myth helps stakeholders escape imposed scenarios. The goal is <strong>transformative alternative metaphors</strong> — not only describing the present.',
+            'In practice: see what media say (layer 1), which policies and structures produce that story (layer 2), which beliefs legitimise it (layer 3), and which myth or metaphor holds collective imagination (layer 4). Each layer is deeper, harder to change — and more durable when it does change.'
+        ],
         theoryP1: 'CLA, created by Sohail Inayatullah, draws on post-structural thought — especially Michel Foucault\'s <strong>genealogy</strong>. Foucault showed that "truth" is shaped by discourse and power; CLA deconstructs issues layer by layer to reveal hidden assumptions.',
         theoryP2: 'Moving from Litany (daily news) to systemic causes, then worldview, and finally myth helps stakeholders escape imposed scenarios and build <strong>transformative alternative metaphors</strong> to reimagine present and future.',
+        pyramidTag: 'CLA pyramid',
+        pyramidTitle: 'Four layers — click each level',
         layers: {
             litany: {
                 badge: 'Layer 1: The Litany',

@@ -26,6 +26,7 @@ function refreshClaUI() {
     const p = typeof pg === 'function' ? pg('claPage') : null;
     if (!p) return;
 
+    if (typeof renderClaLayerDetails === 'function') renderClaLayerDetails();
     const setHtml = (id, html) => {
         const el = document.getElementById(id);
         if (el && html != null) el.innerHTML = html;
@@ -44,8 +45,15 @@ function refreshClaUI() {
     setText('cla-hero-sub', p.heroSub);
 
     setHtml('cla-theory-title', `<i data-lucide="book-open" style="vertical-align: middle; margin-inline-end: 8px;"></i> ${p.theoryTitle}`);
-    setHtml('cla-theory-p1', p.theoryP1);
-    setHtml('cla-theory-p2', p.theoryP2);
+    const theoryBody = document.getElementById('cla-theory-body');
+    if (theoryBody && p.theoryNarrative?.length && typeof window.buildMethodProse === 'function') {
+        theoryBody.innerHTML = window.buildMethodProse(p.theoryNarrative, { lead: p.theoryLead, allowHtml: true });
+    } else if (theoryBody) {
+        theoryBody.innerHTML = [p.theoryP1, p.theoryP2].filter(Boolean).map(t => `<p class="method-prose-p">${t}</p>`).join('');
+    } else {
+        setHtml('cla-theory-p1', p.theoryP1);
+        setHtml('cla-theory-p2', p.theoryP2);
+    }
 
     const sg = p.singapore;
     if (sg) {
@@ -143,6 +151,9 @@ function refreshClaUI() {
     }
     if (typeof loadWorkspaceTemplate === 'function') {
         loadWorkspaceTemplate();
+    }
+    if (typeof showClaLayer === 'function') {
+        showClaLayer(window._activeClaLayer || 'litany');
     }
 
     if (window.lucide) window.lucide.createIcons();
