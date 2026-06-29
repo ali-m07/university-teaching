@@ -211,7 +211,7 @@ registerLocale('en', {
                             slideTitles: ['Scan · Assess · Trial · Adopt', 'Digital health quadrant · DT'],
                             paragraphs: [
                                 '<strong>Scan:</strong> initial watch · <strong>Assess:</strong> relevance evaluation · <strong>Trial:</strong> bounded pilot · <strong>Adopt:</strong> scale in production. GenAI at DT in Adopt/Trial; 6G in Scan.',
-                                'The “digital health” quadrant is adjacent market for DT (telemedicine, health IoT) — not lab biotech. Full note under radar in Workshop tab.'
+                                'The “digital health” quadrant is adjacent market for DT: telemedicine, health IoT, remote monitoring — not lab biotech. DT used this quadrant to spot adjacent opportunities; the same radar is interactive in the Workshop tab (#tech-radar).'
                             ]
                         }
                     ],

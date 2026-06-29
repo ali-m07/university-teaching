@@ -235,15 +235,55 @@
             </figure>`;
     }
 
-    function buildSectionSlideBody(sec, paragraphIndex) {
+    function parseSectionTitle(title) {
+        const raw = String(title || '').trim();
+        const m = raw.match(/^([۰-۹0-9]+)\.\s*(.+)$/);
+        if (m) return { index: m[1], heading: m[2].trim() };
+        return { index: '', heading: raw };
+    }
+
+    function sectionEyebrow(m, sec) {
+        const { index, heading } = parseSectionTitle(sec.title);
+        const parts = [];
+        if (m.num) parts.push(m.num);
+        if (index && heading) parts.push(`${index}. ${heading}`);
+        else if (sec.title) parts.push(sec.title);
+        return parts.join(' · ');
+    }
+
+    function slideHeadingFromParagraph(p) {
+        const m = String(p || '').match(/<strong>([^<:]+):?<\/strong>/);
+        return m ? m[1].trim() : '';
+    }
+
+    function resolveSlideHeading(sec, pi) {
+        const custom = sec.slideTitles?.[pi] ?? sec.paragraphTitles?.[pi];
+        if (custom) return custom;
+        return slideHeadingFromParagraph(sec.paragraphs?.[pi]);
+    }
+
+    function stripLeadingLabel(html, label) {
+        if (!html || !label) return html;
+        const escLabel = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const re = new RegExp(`^\\s*<strong>\\s*${escLabel}\\s*:?\\s*</strong>\\s*`, 'i');
+        return html.replace(re, '');
+    }
+
+    function buildSectionSlideBody(sec, paragraphIndex, stripLabel) {
         const paras = sec.paragraphs || [];
         const isLast = paragraphIndex === undefined || paragraphIndex >= paras.length - 1;
         const slice = paragraphIndex !== undefined && paras.length
             ? [paras[paragraphIndex]]
             : paras;
 
+        const prose = slice.filter(Boolean).map(p => {
+            let html = prepPresHtml(p);
+            if (stripLabel) html = stripLeadingLabel(html, stripLabel);
+            return html;
+        });
+
         return `
-            ${buildProse(slice.filter(Boolean).map(p => prepPresHtml(p)), { allowHtml: true })}
+            ${buildProse(prose, { allowHtml: true })}
             ${isLast && sec.table ? `<div class="fitness-pres-table-wrap">${buildModuleTable(sec.table)}</div>` : ''}
             ${isLast && sec.callout ? `
                 <aside class="fitness-pres-callout">
@@ -252,42 +292,41 @@
                 </aside>` : ''}`;
     }
 
-    function sectionSlideSubtitle(sec, pi) {
-        const custom = sec.slideTitles?.[pi] ?? sec.paragraphTitles?.[pi];
-        if (custom) return custom;
-        const p = sec.paragraphs?.[pi] || '';
-        const m = p.match(/<strong>([^<:]+):?<\/strong>/);
-        if (m) return m[1].trim();
-        return '';
-    }
-
     function expandSectionToSlides(m, sec) {
         const paras = sec.paragraphs || [];
         const image = slideImageUrl(m, sec);
         const caption = sec.imageCaption || m.visualCaption || '';
-        const sectionTitle = sec.title || '';
+        const eyebrow = sectionEyebrow(m, sec);
 
         if (!paras.length) {
             const body = buildSectionSlideBody(sec);
             if (!body.trim()) return [];
+            const { heading } = parseSectionTitle(sec.title);
             return [{
                 kind: 'content',
-                title: sectionTitle,
-                subtitle: sec.subtitle || '',
+                eyebrow,
+                title: heading || sec.title || '',
                 image,
                 imageCaption: caption,
                 body
             }];
         }
 
-        return paras.map((_, pi) => ({
-            kind: 'content',
-            title: sectionTitle,
-            subtitle: sectionSlideSubtitle(sec, pi),
-            image,
-            imageCaption: pi === 0 ? caption : '',
-            body: buildSectionSlideBody(sec, pi)
-        }));
+        return paras.map((_, pi) => {
+            const slideTitle = resolveSlideHeading(sec, pi);
+            const { heading } = parseSectionTitle(sec.title);
+            const title = slideTitle || heading || sec.title || '';
+            const stripLabel = slideTitle || slideHeadingFromParagraph(paras[pi]);
+
+            return {
+                kind: 'content',
+                eyebrow,
+                title,
+                image: pi === 0 ? image : '',
+                imageCaption: pi === 0 ? caption : '',
+                body: buildSectionSlideBody(sec, pi, stripLabel)
+            };
+        });
     }
 
     function buildModuleDeckHtml(m) {
@@ -312,7 +351,7 @@
         if (readingsList.length) {
             slides.push({
                 kind: 'content',
-                concept: tF('moduleReadingsTitle'),
+                eyebrow: moduleTag,
                 title: tF('moduleReadingsTitle'),
                 image: slideImageUrl(m, 'readings'),
                 body: `<ul class="lesson-readings-list">${readingsList.map(r =>
@@ -323,7 +362,7 @@
         if (m.assignment) {
             slides.push({
                 kind: 'content',
-                concept: tF('moduleAssignmentTitle'),
+                eyebrow: moduleTag,
                 title: `${tF('moduleAssignmentTitle')}: ${m.assignment.title || ''}`,
                 image: slideImageUrl(m, 'assignment'),
                 body: buildAssignmentSlideHtml(m.assignment)
@@ -333,7 +372,7 @@
         if (m.sessions?.length) {
             slides.push({
                 kind: 'content',
-                concept: tF('moduleSessionsTitle'),
+                eyebrow: moduleTag,
                 title: tF('moduleSessionsTitle'),
                 image: slideImageUrl(m, 'sessions'),
                 body: buildModuleSessionsHtml(m.sessions)
@@ -363,15 +402,16 @@
                         ${buildSlideFigure(coverImg, m.visualCaption || '', s.title || '')}
                     </div>`;
             } else {
+                const hasFigure = Boolean(s.image);
                 inner = `
-                    <div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--split">
-                        <h2 class="fitness-pres-title">${s.title || ''}</h2>
-                        ${s.subtitle ? `<p class="fitness-pres-slide-subtitle">${esc(s.subtitle)}</p>` : ''}
-                        <div class="fitness-pres-split">
+                    <div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--split${hasFigure ? '' : ' fitness-pres-content-wrapper--text-only'}">
+                        ${s.eyebrow ? `<p class="fitness-pres-eyebrow">${esc(s.eyebrow)}</p>` : ''}
+                        <h2 class="fitness-pres-title">${esc(s.title || '')}</h2>
+                        <div class="fitness-pres-split${hasFigure ? '' : ' fitness-pres-split--text-only'}">
                             <div class="fitness-pres-glass">
                                 <div class="fitness-pres-body">${s.body || ''}</div>
                             </div>
-                            ${buildSlideFigure(s.image, s.imageCaption || '', s.title || '')}
+                            ${hasFigure ? buildSlideFigure(s.image, s.imageCaption || '', s.title || '') : ''}
                         </div>
                     </div>`;
             }

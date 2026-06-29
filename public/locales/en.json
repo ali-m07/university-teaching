@@ -2590,7 +2590,7 @@
               ],
               "paragraphs": [
                 "<strong>Scan:</strong> initial watch · <strong>Assess:</strong> relevance evaluation · <strong>Trial:</strong> bounded pilot · <strong>Adopt:</strong> scale in production. GenAI at DT in Adopt/Trial; 6G in Scan.",
-                "The “digital health” quadrant is adjacent market for DT (telemedicine, health IoT) — not lab biotech. Full note under radar in Workshop tab."
+                "The “digital health” quadrant is adjacent market for DT: telemedicine, health IoT, remote monitoring — not lab biotech. DT used this quadrant to spot adjacent opportunities; the same radar is interactive in the Workshop tab (#tech-radar)."
               ]
             }
           ],
@@ -2778,6 +2778,10 @@
             {
               "id": "archetypes",
               "title": "1. Four archetypes",
+              "slideTitles": [
+                "Vigilant · Neurotic · Vulnerable · In Danger",
+                "Clinic · Nokia · Blockbuster · IKEA"
+              ],
               "paragraphs": [
                 "<strong>Vigilant:</strong> high maturity + high turbulence · 33%/200% benchmark.<br><strong>Neurotic:</strong> high maturity + low turbulence · analysis overload.<br><strong>Vulnerable:</strong> low maturity + low turbulence.<br><strong>In Danger:</strong> low maturity + high turbulence · Nokia path.",
                 "Clinic: Nokia · Blockbuster · IKEA — map archetype + maturity bottleneck."
@@ -2829,6 +2833,10 @@
             {
               "id": "integration",
               "title": "1. Tool integration",
+              "slideTitles": [
+                "CLA · Wheel · IT2",
+                "GenAI call center · Trial vs Adopt"
+              ],
               "paragraphs": [
                 "CLA for depth (worldview/myth) · Wheel for cascade impacts · IT2 when FOU spread > 0.38 at probing gate.",
                 "GenAI call center: ops 0.7–0.9 · legal 0.3–0.5 → Trial not Adopt."
@@ -2837,6 +2845,10 @@
             {
               "id": "final",
               "title": "2. Final project · 4000–5000 words · 15-min presentation",
+              "slideTitles": [
+                "Final report structure",
+                "Presentation & peer review"
+              ],
               "paragraphs": [
                 "Executive summary · five dimensions · archetype · weak signal · 90-day probe · gate · management recommendation.",
                 "15 min/group presentation · peer review · revision plan."

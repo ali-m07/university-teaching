@@ -5,8 +5,8 @@ registerLocale('fa', {
     fitnessPage: {
         moduleContentTag: 'جزوه و ارائه جلسه',
         moduleDeckNavLabel: 'ناوبری اسلاید',
-        moduleDeckPrev: 'قبلی →',
-        moduleDeckNext: '← بعدی',
+        moduleDeckPrev: 'قبلی',
+        moduleDeckNext: 'بعدی',
         moduleDeckSlide: 'اسلاید',
         moduleDeckFullscreen: 'تمام‌صفحه · F',
         moduleReadingsTitle: 'مطالعه تکمیلی',
@@ -211,7 +211,7 @@ registerLocale('fa', {
                             slideTitles: ['Scan · Assess · Trial · Adopt', 'ربع سلامت دیجیتال · DT'],
                             paragraphs: [
                                 '<strong>Scan:</strong> رصد اولیه · <strong>Assess:</strong> ارزیابی relevance · <strong>Trial:</strong> pilot محدود · <strong>Adopt:</strong> scale در خط تولید. GenAI در DT در Adopt/Trial؛ 6G در Scan.',
-                                'ربع «سلامت دیجیتال» بازار مجاور DT است (telemedicine، health IoT) — نه بیوتک آزمایشگاهی. توضیح کامل زیر رادار در تب کارگاه.'
+                                'ربع «سلامت دیجیتال» بازار مجاور DT است: telemedicine، health IoT، remote monitoring — نه بیوتک آزمایشگاهی. DT از این ربع برای کشف فرصت‌های adjacent market استفاده کرد؛ در کارگاه (#tech-radar) همان رادار را تعاملی می‌بینید.'
                             ]
                         }
                     ],
