@@ -15,7 +15,7 @@
     margin-bottom: 1.5rem;
     box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    container-type: size;
+    container-type: inline-size;
     container-name: fitness-pres;
 }
 
@@ -540,7 +540,7 @@
     }
 }
 
-@container fitness-pres (min-height: 700px) {
+@container fitness-pres (min-width: 900px) {
     .fitness-pres:fullscreen .fitness-pres-split,
     .fitness-pres.is-fs-active .fitness-pres-split {
         grid-template-columns: minmax(0, 1.15fr) minmax(240px, 36%);
