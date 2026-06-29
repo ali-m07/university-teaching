@@ -348,35 +348,92 @@
             expandSectionToSlides(m, sec).forEach(slide => slides.push(slide));
         });
 
+        const paraCount = (m.lectureSections || []).reduce(
+            (n, sec) => n + Math.max(1, sec.paragraphs?.length || (sec.table || sec.callout ? 1 : 0)),
+            0
+        );
+        const splitAncillary = paraCount < 14;
+
         if (readingsList.length) {
-            slides.push({
-                kind: 'content',
-                eyebrow: moduleTag,
-                title: tF('moduleReadingsTitle'),
-                image: slideImageUrl(m, 'readings'),
-                body: `<ul class="lesson-readings-list">${readingsList.map(r =>
-                    `<li><span class="lesson-reading-type">${esc(r.type || '')}</span> ${r.text || ''}</li>`).join('')}</ul>`
-            });
+            if (splitAncillary) {
+                readingsList.forEach((r, ri) => {
+                    slides.push({
+                        kind: 'content',
+                        eyebrow: `${moduleTag} · ${tF('moduleReadingsTitle')}`,
+                        title: r.type || tF('moduleReadingsTitle'),
+                        image: ri === 0 ? slideImageUrl(m, 'readings') : '',
+                        body: `<p class="fitness-reading-slide">${r.text || ''}</p>`
+                    });
+                });
+            } else {
+                slides.push({
+                    kind: 'content',
+                    eyebrow: moduleTag,
+                    title: tF('moduleReadingsTitle'),
+                    image: slideImageUrl(m, 'readings'),
+                    body: `<ul class="lesson-readings-list">${readingsList.map(r =>
+                        `<li><span class="lesson-reading-type">${esc(r.type || '')}</span> ${r.text || ''}</li>`).join('')}</ul>`
+                });
+            }
         }
 
         if (m.assignment) {
-            slides.push({
-                kind: 'content',
-                eyebrow: moduleTag,
-                title: `${tF('moduleAssignmentTitle')}: ${m.assignment.title || ''}`,
-                image: slideImageUrl(m, 'assignment'),
-                body: buildAssignmentSlideHtml(m.assignment)
-            });
+            const a = m.assignment;
+            if (splitAncillary && (a.body?.length || 0) > 1) {
+                slides.push({
+                    kind: 'content',
+                    eyebrow: moduleTag,
+                    title: `${tF('moduleAssignmentTitle')}: ${a.title || ''}`,
+                    image: slideImageUrl(m, 'assignment'),
+                    body: a.description ? buildProse([prepPresHtml(a.description)], { allowHtml: true }) : ''
+                });
+                (a.body || []).forEach((item, bi) => {
+                    slides.push({
+                        kind: 'content',
+                        eyebrow: `${moduleTag} · ${tF('moduleAssignmentTitle')}`,
+                        title: `${a.title || tF('moduleAssignmentTitle')} · ${bi + 1}`,
+                        body: buildProse([prepPresHtml(item)], { allowHtml: true })
+                    });
+                });
+                if (a.format) {
+                    slides.push({
+                        kind: 'content',
+                        eyebrow: moduleTag,
+                        title: tF('labelFormat'),
+                        body: `<p>${esc(a.format)}</p>${a.criteria?.length ? `<p><strong>${esc(tF('labelCriteria'))}:</strong></p><ul class="type2-checklist">${a.criteria.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}`
+                    });
+                }
+            } else {
+                slides.push({
+                    kind: 'content',
+                    eyebrow: moduleTag,
+                    title: `${tF('moduleAssignmentTitle')}: ${a.title || ''}`,
+                    image: slideImageUrl(m, 'assignment'),
+                    body: buildAssignmentSlideHtml(a)
+                });
+            }
         }
 
         if (m.sessions?.length) {
-            slides.push({
-                kind: 'content',
-                eyebrow: moduleTag,
-                title: tF('moduleSessionsTitle'),
-                image: slideImageUrl(m, 'sessions'),
-                body: buildModuleSessionsHtml(m.sessions)
-            });
+            if (splitAncillary) {
+                m.sessions.forEach((s, si) => {
+                    slides.push({
+                        kind: 'content',
+                        eyebrow: `${moduleTag} · ${tF('moduleSessionsTitle')}`,
+                        title: s.title || tF('moduleSessionsTitle'),
+                        image: si === 0 ? slideImageUrl(m, 'sessions') : '',
+                        body: `<p><strong>${esc(s.time || '')}</strong>${s.desc ? ` · ${esc(s.desc)}` : ''}</p>`
+                    });
+                });
+            } else {
+                slides.push({
+                    kind: 'content',
+                    eyebrow: moduleTag,
+                    title: tF('moduleSessionsTitle'),
+                    image: slideImageUrl(m, 'sessions'),
+                    body: buildModuleSessionsHtml(m.sessions)
+                });
+            }
         }
 
         const total = slides.length;
