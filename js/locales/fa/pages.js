@@ -41,11 +41,15 @@ registerLocale('fa', {
     },
     fitnessDepth: {
         tag: 'عمق نظریه روهربک',
-        title: 'چرخه سه‌گانه Perceiving → Prospecting → Probing',
-        s1: 'درک (Perceiving): رصد سیگنال‌های ضعیف، تحلیل روندها و ساخت آگاهی محیطی.',
-        s2: 'کاوش (Prospecting): سناریوسازی، نقشه‌راه فناوری و طراحی آینده‌های محتمل.',
-        s3: 'آزمایش (Probing): نمونه‌سازی سریع، پروژه‌های پایلوت و اعتبارسنجی فرضیات.',
-        s4: 'تحول (Transformation): تبدیل بینش‌ها به تغییر ساختاری، فرهنگی و DNA سازمانی.'
+        title: 'Perceiving → Prospecting → Probing → Transformation',
+        prose: [
+            'روهربک foresight سازمانی را قابلیت maturity می‌داند، نه سند. چرخه سه P مسیر صنعتی است برای تبدیل weak signal به حرکت portfolio · Perceiving به Prospecting، Prospecting به Probing، و Probing موفق به Transformation.',
+            'در کار میدانی زیمنس و دویچه تلکام، gap معمولاً «نبود سناریو» نبود · probing ضعیف و نبود Opponent role برای kill کردن sacred cow. FITness این gap را می‌بندد؛ IT2 وقتی خود Perceiving uncertain است کمک می‌کند.'
+        ],
+        s1: 'درک (Perceiving): رصد weak signal، تحلیل روند، آگاهی محیطی.',
+        s2: 'کاوش (Prospecting): سناریو، technology roadmap، آینده‌های محتمل.',
+        s3: 'آزمایش (Probing): نمونه سریع، pilot، اعتبارسنجی فرضیه.',
+        s4: 'تحول (Transformation): تغییر ساختاری، فرهنگی و DNA از بینش‌ها.'
     },
     claDepth: {
         tag: 'عمق متدولوژی CLA',

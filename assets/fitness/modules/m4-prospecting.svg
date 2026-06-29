@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="960" y2="540"><stop stop-color="#070a13"/><stop offset="1" stop-color="#12182a"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="16"/>
+  <text x="480" y="48" text-anchor="middle" fill="#c8d4e8" font-size="26" font-weight="700">Prospecting � Three Horizons &amp; Roles</text>
+  <rect x="80" y="320" width="240" height="120" rx="10" fill="#4caf50" fill-opacity="0.15" stroke="#4caf50"/>
+  <text x="200" y="360" text-anchor="middle" fill="#4caf50" font-size="18" font-weight="700">H1</text>
+  <text x="200" y="388" text-anchor="middle" fill="#8899aa" font-size="13">Core business</text>
+  <rect x="360" y="260" width="240" height="180" rx="10" fill="#ffaa00" fill-opacity="0.12" stroke="#ffaa00"/>
+  <text x="480" y="310" text-anchor="middle" fill="#ffaa00" font-size="18" font-weight="700">H2</text>
+  <text x="480" y="338" text-anchor="middle" fill="#8899aa" font-size="13">Emerging bets</text>
+  <rect x="640" y="200" width="240" height="240" rx="10" fill="#7c4dff" fill-opacity="0.15" stroke="#7c4dff"/>
+  <text x="760" y="260" text-anchor="middle" fill="#7c4dff" font-size="18" font-weight="700">H3</text>
+  <text x="760" y="288" text-anchor="middle" fill="#8899aa" font-size="13">Transform options</text>
+  <circle cx="180" cy="160" r="44" fill="#102030" stroke="#00e5ff"/><text x="180" y="156" text-anchor="middle" fill="#00e5ff" font-size="12" font-weight="700">Initiator</text>
+  <circle cx="480" cy="130" r="44" fill="#102030" stroke="#7c4dff"/><text x="480" y="126" text-anchor="middle" fill="#7c4dff" font-size="12" font-weight="700">Strategist</text>
+  <circle cx="780" cy="160" r="44" fill="#102030" stroke="#e040fb"/><text x="780" y="156" text-anchor="middle" fill="#e040fb" font-size="12" font-weight="700">Opponent</text>
+  <text x="480" y="500" text-anchor="middle" fill="#667788" font-size="14">M4 � Scenario &amp; portfolio gate � Nvidia � Netflix</text>
+</svg>

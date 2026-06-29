@@ -92,6 +92,7 @@ window.initArticleCoverImages = initArticleCoverImages;
 window.syncHeaderOffset = syncHeaderOffset;
 
 function bootArticleLayout() {
+    document.body.classList.add('sfh-platform');
     syncHeaderOffset();
     observeHeaderResize();
     initArticleCoverImages();

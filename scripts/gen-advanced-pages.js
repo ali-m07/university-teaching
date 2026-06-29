@@ -40,7 +40,7 @@ function shell({ file, method, i18n, accent, icon }) {
         </div>
     </header>
 
-    <section class="container" style="padding-top:130px;padding-bottom:20px;text-align:center;">
+    <section class="container page-hero">
         <span class="section-tag" style="background:rgba(255,255,255,0.05);color:${accent};" data-i18n="advancedPage.${i18n}.heroTag"></span>
         <h1 style="font-size:2.3rem;color:#fff;margin:12px 0;" data-i18n="advancedPage.${i18n}.heroTitle"></h1>
         <p style="max-width:760px;margin:0 auto;color:var(--text-secondary);line-height:1.7;" data-i18n="advancedPage.${i18n}.heroSub" data-i18n-html></p>

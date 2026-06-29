@@ -152,6 +152,15 @@
         setText('radar-sub', radar.sub);
         setText('radar-default-title', radar.defaultTitle);
         setText('radar-default-text', radar.defaultText);
+        const bioNote = document.getElementById('radar-bio-note');
+        if (bioNote) {
+            if (radar.bioQuadrantNote) {
+                bioNote.innerHTML = radar.bioQuadrantNote;
+                bioNote.style.display = '';
+            } else {
+                bioNote.style.display = 'none';
+            }
+        }
         setHtml('radar-dt-case-title', radar.dtCaseTitle);
         setHtml('radar-dt-case-body', radar.dtCaseBody);
         setHtml('radar-dt-challenges-title', radar.dtChallengesTitle);

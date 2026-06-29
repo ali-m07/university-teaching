@@ -16,37 +16,45 @@ registerLocale('en', {
     lessons: {
         fitness: {
             meta: {
-                module: '1',
-                duration: '90 min',
-                level: 'Master / MBA / executive',
-                diagram: 'assets/foresight_concept.png',
-                diagramAlt: 'Future Readiness & FITness concept'
+                module: 'M1 of 7 · FS-501',
+                duration: '14 weeks · 42 h (21 contact)',
+                level: 'Master / MBA / PhD foresight',
+                diagram: 'assets/fitness/modules/m1-foundations.svg',
+                diagramAlt: 'Readiness vs Future FITness · F-I-T cycle'
             },
+            prerequisites: 'Intro foresight & scenarios · CLA or Wheel co-term · Rohrbeck ch.1–2 before M1.',
+            assessment: 'Midterm 25% · probing 20% · project 35% · seminar 15% · #assessment bonus 5% — see university tab.',
             founders: [{
                 id: 'rohrbeck',
                 name: 'René Rohrbeck',
-                role: 'Founder of FITness · Professor, EDHEC',
-                bio: 'Corporate foresight scholar; built the maturity model from fieldwork at Siemens and Deutsche Telekom. His focus: turn foresight from <strong>reports</strong> into a <strong>dynamic capability</strong>.'
+                nameFa: 'رنه روهربک',
+                role: 'Founder of FITness · Professor at EDHEC · formerly Aarhus University',
+                bio: '15+ years fieldwork at Siemens, DT, Bosch. Springer book (~300 pp.), Aarhus thesis, TFSC/EJFR corpus.'
             }],
             objectives: [
-                'Distinguish <strong>Future Readiness</strong> (static) from <strong>FITness</strong> (dynamic fit).',
-                'Relate Perceiving, Prospecting, and Probing to real organizations.',
-                'Name Rohrbeck\'s five maturity dimensions and use the self-assessment on this page.',
-                'Connect FITness to technology radar and corporate venturing.'
+                'Explain Readiness vs FITness with Netflix/Nokia/Zoom.',
+                'Map Rohrbeck (2010) chapters to 7 modules.',
+                'Map five dimensions and four archetypes on cases.',
+                'Illustrate Perceiving→Probing→Transformation with weak signals.',
+                'Complete #assessment and pick weakest dimension for project.',
+                'Cite book + six key papers for midterm.'
             ],
             outline: [
-                { step: '1', time: '15 min', title: 'Intro: why org foresight fails', desc: 'Discussion + Zoom/covid example. Key question: report or capability?' },
-                { step: '2', time: '20 min', title: 'Readiness vs FITness', desc: 'Concepts, foresight_concept.png, five readiness elements.' },
-                { step: '3', time: '25 min', title: 'Rohrbeck model & three Ps', desc: 'Perceiving/Prospecting/Probing with Siemens & DT cases.' },
-                { step: '4', time: '20 min', title: 'Workshop: 5-dimension self-assessment', desc: 'Fill #assessment; group debrief on weakest dimension.' },
-                { step: '5', time: '10 min', title: 'Wrap-up', desc: 'Bridge to CLA and Wheel in next sessions.' }
+                { step: 'M1-1', time: '45 min', title: 'Why org foresight fails', desc: 'Report vs capability · 33%/200% benchmark' },
+                { step: 'M1-2', time: '45 min', title: 'Readiness vs FITness', desc: 'foresight_concept.png · Zoom/Netflix/Nokia' },
+                { step: 'M1-3', time: '45 min', title: '14-week syllabus intro', desc: 'Chapter map M1–M7 · midterm & project' },
+                { step: 'M1-4', time: '45 min', title: '#assessment workshop', desc: 'Five dimensions · pick project org' }
             ],
             readings: [
-                { type: 'Book', text: 'Rohrbeck, R. (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer.' },
-                { type: 'Paper', text: 'Rohrbeck et al. (2007). Strategic Foresight in multinationals.' },
-                { type: 'Case', text: 'Deutsche Telekom Technology Radar.' }
+                { type: 'Book', text: 'Rohrbeck (2010). <em>Corporate Foresight</em>. Springer ch.1–2 (~50 pp.)' },
+                { type: 'Thesis', text: 'Rohrbeck (2008). PhD thesis, Aarhus.' },
+                { type: 'Paper', text: 'Rohrbeck, Arnold & Heuer (2007) TFSC.' },
+                { type: 'Paper', text: 'Rohrbeck & Schwarz (2013) TFSC.' },
+                { type: 'Paper', text: 'Rohrbeck (2014) EJFR.' },
+                { type: 'Paper', text: 'Rohrbeck & Gemünden (2010) IJIM.' },
+                { type: 'Case', text: 'Deutsche Telekom Radar · Siemens foresight.' }
             ],
-            assignment: 'Pick an organization. Score it on five dimensions, identify one weak area, and propose a 90-day <strong>Probing</strong> experiment that turns foresight into action.'
+            assignment: 'M7 project: real org · five dimensions · archetype · weak signal · 90-day probing · IT2 if FOU needed · 4000–5000 words. M4 midterm: 2000 words maturity+archetype.'
         },
         cla: {
             meta: {
@@ -87,7 +95,7 @@ registerLocale('en', {
                 module: '3',
                 duration: '90 min',
                 level: 'Undergraduate / Master',
-                diagram: 'assets/upload_2.png',
+                diagram: 'assets/methods/futures-wheel.svg',
                 diagramAlt: 'Futures Wheel cascade'
             },
             founders: [{

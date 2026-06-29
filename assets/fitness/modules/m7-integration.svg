@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="960" y2="540"><stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1828"/></linearGradient><linearGradient id="hub" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00e5ff"/><stop offset="1" stop-color="#e040fb"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="16"/>
+  <text x="480" y="48" text-anchor="middle" fill="#c8d4e8" font-size="26" font-weight="700">M7 Integration � Final Project Hub</text>
+  <circle cx="480" cy="280" r="72" fill="#102030" stroke="url(#hub)" stroke-width="3"/>
+  <text x="480" y="274" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">FITness</text>
+  <text x="480" y="296" text-anchor="middle" fill="#8899aa" font-size="12">Project</text>
+  <circle cx="240" cy="180" r="52" fill="#1a2438" stroke="#00e5ff"/><text x="240" y="176" text-anchor="middle" fill="#00e5ff" font-size="14" font-weight="700">CLA</text><text x="240" y="194" text-anchor="middle" fill="#8899aa" font-size="11">Deep layers</text>
+  <circle cx="720" cy="180" r="52" fill="#1a2438" stroke="#7c4dff"/><text x="720" y="176" text-anchor="middle" fill="#7c4dff" font-size="14" font-weight="700">Wheel</text><text x="720" y="194" text-anchor="middle" fill="#8899aa" font-size="11">Cascade</text>
+  <circle cx="240" cy="380" r="52" fill="#1a2438" stroke="#4caf50"/><text x="240" y="376" text-anchor="middle" fill="#4caf50" font-size="14" font-weight="700">#assessment</text><text x="240" y="394" text-anchor="middle" fill="#8899aa" font-size="11">5 dimensions</text>
+  <circle cx="720" cy="380" r="52" fill="#1a2438" stroke="#e040fb"/><text x="720" y="376" text-anchor="middle" fill="#e040fb" font-size="14" font-weight="700">IT2</text><text x="720" y="394" text-anchor="middle" fill="#8899aa" font-size="11">FOU at gate</text>
+  <line x1="292" y1="210" x2="418" y2="250" stroke="#8899aa" stroke-opacity="0.5"/>
+  <line x1="668" y1="210" x2="542" y2="250" stroke="#8899aa" stroke-opacity="0.5"/>
+  <line x1="292" y1="350" x2="418" y2="310" stroke="#8899aa" stroke-opacity="0.5"/>
+  <line x1="668" y1="350" x2="542" y2="310" stroke="#8899aa" stroke-opacity="0.5"/>
+  <text x="480" y="480" text-anchor="middle" fill="#8899aa" font-size="15">40005000 words � 15-min presentation � 35% grade</text>
+  <text x="480" y="510" text-anchor="middle" fill="#667788" font-size="14">M7 � ch.12 � Rohrbeck corpus synthesis</text>
+</svg>

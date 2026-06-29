@@ -24,6 +24,7 @@ function renderFounderCards(founders, accent) {
         const src = founderImgSrc(f.id);
         const fallback = founderFallbackSrc(f.id);
         const displayName = (lang === 'fa' && f.nameFa) ? f.nameFa : f.name;
+        const displayRole = lang === 'fa' ? (f.roleFa || f.role) : (f.roleEn || f.role);
         const initials = typeof founderInitials === 'function' ? founderInitials(displayName) : '?';
         return `
         <article class="founder-card glass-card">
@@ -35,7 +36,7 @@ function renderFounderCards(founders, accent) {
             </div>
             <div class="founder-info">
                 <h4 class="founder-name">${esc(displayName)}</h4>
-                <p class="founder-role">${esc(f.role)}</p>
+                <p class="founder-role">${esc(displayRole)}</p>
                 <p class="founder-bio">${f.bio || ''}</p>
             </div>
         </article>`;
@@ -53,17 +54,16 @@ function renderHistoryBox(mountId, data, lessonKey) {
     const labels = typeof pg === 'function' ? pg('lessonLabels') : {};
 
     el.innerHTML = `
-        ${founders?.length ? `
-        <div class="lesson-founders-block" style="margin-bottom:24px;">
-            <h3 class="lesson-block-title"><i data-lucide="users"></i> ${esc(labels.foundersTitle || 'Founders')}</h3>
-            ${renderFounderCards(founders, accent)}
-        </div>` : ''}
-        <div class="method-history-box glass-card method-history-box--plain">
-            <div class="history-meta">
+        <div class="method-history-box glass-card method-history-box--plain method-history-compact">
+            <div class="history-meta history-meta--top">
                 <span class="history-pill"><strong>${esc(data.founderLabel)}:</strong> ${esc(data.founder)}</span>
                 <span class="history-pill"><strong>${esc(data.yearLabel)}:</strong> ${esc(data.year)}</span>
                 ${data.institution ? `<span class="history-pill">${esc(data.institution)}</span>` : ''}
             </div>
+            ${founders?.length ? `
+            <div class="lesson-founders-block lesson-founders-inline">
+                ${renderFounderCards(founders, accent)}
+            </div>` : ''}
             <h3 class="history-title">${esc(data.title)}</h3>
             <div class="method-prose history-prose">
                 <p class="method-prose-p">${data.origin}</p>

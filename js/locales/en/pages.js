@@ -41,11 +41,15 @@ registerLocale('en', {
     },
     fitnessDepth: {
         tag: 'Rohrbeck Theory Depth',
-        title: 'The Perceiving → Prospecting → Probing Cycle',
-        s1: 'Perceiving: Scan weak signals, analyze trends, and build environmental awareness.',
-        s2: 'Prospecting: Scenario building, technology roadmapping, and designing plausible futures.',
-        s3: 'Probing: Rapid prototyping, pilot projects, and validating assumptions.',
-        s4: 'Transformation: Converting insights into structural, cultural, and organizational DNA change.'
+        title: 'Perceiving → Prospecting → Probing → Transformation',
+        prose: [
+            'Rohrbeck treats corporate foresight as a maturity capability, not a document. The three-P cycle is how industry turns weak signals into portfolio moves · Perceiving feeds Prospecting, Prospecting feeds Probing, and successful Probing forces Transformation.',
+            'In Siemens and Deutsche Telekom field work, the gap was rarely missing scenarios — it was weak probing gates and no Opponent role to kill sacred cows. FITness closes that gap; IT2 fuzzy logic helps when Perceiving itself is uncertain.'
+        ],
+        s1: 'Perceiving: weak-signal scanning, trend analysis, environmental awareness.',
+        s2: 'Prospecting: scenarios, technology roadmaps, plausible futures.',
+        s3: 'Probing: rapid prototypes, pilots, hypothesis validation.',
+        s4: 'Transformation: structural, cultural, and DNA-level change from insights.'
     },
     claDepth: {
         tag: 'CLA Methodology Depth',

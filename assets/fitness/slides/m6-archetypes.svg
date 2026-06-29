@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="400"><stop stop-color="#070a13"/><stop offset="1" stop-color="#121a2e"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00e5ff"/><stop offset="1" stop-color="#7c4dff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)" rx="14"/>
+  
+  <line x1="120" y1="210" x2="520" y2="210" stroke="#8899aa" stroke-width="1.5"/>
+  <line x1="320" y1="70" x2="320" y2="350" stroke="#8899aa" stroke-width="1.5"/>
+  <text x="420" y="95" fill="#8899aa" font-size="11">High turbulence</text>
+  <text x="420" y="340" fill="#8899aa" font-size="11">Low turbulence</text>
+  <text x="130" y="205" fill="#8899aa" font-size="11">Low mat.</text>
+  <text x="480" y="205" fill="#8899aa" font-size="11">High mat.</text>
+  <rect x="340" y="90" width="150" height="100" rx="8" fill="#00e5ff" fill-opacity="0.2" stroke="#00e5ff"/>
+  <text x="415" y="145" text-anchor="middle" fill="#00e5ff" font-size="12" font-weight="700">Vigilant</text>
+  <rect x="340" y="230" width="150" height="100" rx="8" fill="#7c4dff" fill-opacity="0.15" stroke="#7c4dff"/>
+  <text x="415" y="285" text-anchor="middle" fill="#7c4dff" font-size="12" font-weight="700">Neurotic</text>
+  <rect x="150" y="230" width="150" height="100" rx="8" fill="#1a2438" stroke="#8899aa"/>
+  <text x="225" y="285" text-anchor="middle" fill="#8899aa" font-size="12">Vulnerable</text>
+  <rect x="150" y="90" width="150" height="100" rx="8" fill="#ff5a5f" fill-opacity="0.15" stroke="#ff5a5f"/>
+  <text x="225" y="145" text-anchor="middle" fill="#ff5a5f" font-size="12" font-weight="700">In Danger</text>
+
+  <text x="320" y="32" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Four Archetypes</text>
+  <text x="320" y="382" text-anchor="middle" fill="#8899aa" font-size="11">Maturity × Turbulence matrix</text>
+</svg>

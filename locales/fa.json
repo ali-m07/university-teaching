@@ -17,20 +17,22 @@
     "menu": "منو"
   },
   "footer": {
-    "desc": "آینده‌نگاری فناوری · روش‌های آینده‌پژوهی · بلاگ و مقاله‌ها",
-    "descBackcast": "آینده‌نگاری فناوری · روش‌های آینده‌پژوهی · بلاگ و مقاله‌ها",
-    "descWheel": "آینده‌نگاری فناوری · روش‌های آینده‌پژوهی · بلاگ و مقاله‌ها",
-    "role": "دانشجوی دکتری آینده‌پژوهی",
+    "desc": "پلتفرم آموزشی آینده‌پژوهی · طرح درس، متد، کارگاه · علی منصوری · دکتری دانشگاه تهران",
+    "descBackcast": "پلتفرم آموزشی آینده‌پژوهی · طرح درس، متد، کارگاه · علی منصوری · دکتری دانشگاه تهران",
+    "descWheel": "پلتفرم آموزشی آینده‌پژوهی · طرح درس، متد، کارگاه · علی منصوری · دکتری دانشگاه تهران",
+    "role": "دانشجوی دکتری آینده‌پژوهی · دانشگاه تهران",
     "resume": "رزومه",
-    "copyright": "© علی منصوری"
+    "copyright": "© علی منصوری · پلتفرم آموزشی آینده‌پژوهی"
   },
   "index": {
-    "badge": "آینده‌نگاری فناوری",
-    "heroTitle": "FORESIGHT<br>HUB",
-    "heroSub": "آینده‌پژوهی راهبردی برای فناوری، سامانه‌ها و آینده‌های نامطمئن",
-    "heroIntroP1": "در تقاطع فناوری نوظهور، کلاد و تفکر آینده‌محور کار می‌کنم؛ جایی که وضوح کم است و سیگنال‌ها مهم‌تر از قطعیت هستند.",
-    "heroIntroP2": "تمرکز من پیش‌بینی آینده نیست، بلکه جهت‌یابی در عدم‌قطعیت است: سیگنال‌های ضعیف، سناریو و منطق فازی نوع ۲، زمانی که خودِ عدم‌قطعیت هم مبهم است.",
-    "ctaMethods": "روش‌های آینده‌پژوهی"
+    "badge": "آینده‌پژوهی راهبردی",
+    "credentialPhd": "دکتری آینده‌پژوهی · دانشگاه تهران",
+    "credentialFocus": "آینده‌پژوهی راهبردی · فناوری نوظهور",
+    "heroTitle": "پلتفرم آموزشی<br>آینده‌پژوهی",
+    "heroSub": "طرح درس، متد، کارگاه و خودارزیابی · برای تدریس دانشگاهی و استقرار در صنعت",
+    "heroIntroP1": "این زیرساخت برای درس‌های آینده‌پژوهی، کارگاه‌های دانشگاهی و engagement سازمانی طراحی شده · هر متد شامل مسیر دانشگاه و صنعت، منابع علمی و ابزار تعاملی است.",
+    "heroIntroP2": "تمرکز پژوهشی: سیگنال‌های ضعیف، سناریو، مدل بلوغ foresight (Rohrbeck)، CLA، و منطق فازی نوع ۲ برای تصمیم تحت عدم‌قطعیت.",
+    "ctaMethods": "مشاهده متدها"
   },
   "common": {
     "close": "بستن",
@@ -101,11 +103,15 @@
   },
   "fitnessDepth": {
     "tag": "عمق نظریه روهربک",
-    "title": "چرخه سه‌گانه Perceiving → Prospecting → Probing",
-    "s1": "درک (Perceiving): رصد سیگنال‌های ضعیف، تحلیل روندها و ساخت آگاهی محیطی.",
-    "s2": "کاوش (Prospecting): سناریوسازی، نقشه‌راه فناوری و طراحی آینده‌های محتمل.",
-    "s3": "آزمایش (Probing): نمونه‌سازی سریع، پروژه‌های پایلوت و اعتبارسنجی فرضیات.",
-    "s4": "تحول (Transformation): تبدیل بینش‌ها به تغییر ساختاری، فرهنگی و DNA سازمانی."
+    "title": "Perceiving → Prospecting → Probing → Transformation",
+    "prose": [
+      "روهربک foresight سازمانی را قابلیت maturity می‌داند، نه سند. چرخه سه P مسیر صنعتی است برای تبدیل weak signal به حرکت portfolio · Perceiving به Prospecting، Prospecting به Probing، و Probing موفق به Transformation.",
+      "در کار میدانی زیمنس و دویچه تلکام، gap معمولاً «نبود سناریو» نبود · probing ضعیف و نبود Opponent role برای kill کردن sacred cow. FITness این gap را می‌بندد؛ IT2 وقتی خود Perceiving uncertain است کمک می‌کند."
+    ],
+    "s1": "درک (Perceiving): رصد weak signal، تحلیل روند، آگاهی محیطی.",
+    "s2": "کاوش (Prospecting): سناریو، technology roadmap، آینده‌های محتمل.",
+    "s3": "آزمایش (Probing): نمونه سریع، pilot، اعتبارسنجی فرضیه.",
+    "s4": "تحول (Transformation): تغییر ساختاری، فرهنگی و DNA از بینش‌ها."
   },
   "claDepth": {
     "tag": "عمق متدولوژی CLA",
@@ -151,9 +157,10 @@
     "methodsLink": "روش‌های آینده‌پژوهی",
     "bioTitle": "",
     "spaceTag": "این فضا",
-    "spaceP1": "این یک فضای شخصی برای نوشتن، توسعه روش‌های آینده‌پژوهی و فکر کردن درباره آینده فناوری است.",
-    "spaceP2": "تخصص عمیق‌تر من منطق فازی نوع ۲ است؛ برای موقعیت‌هایی که حتی «مبهم بودن» هم مبهم است. این نگاه در کنار سیگنال‌های ضعیف، روندهای نوظهور، سناریونویسی و تصمیم‌گیری تحت عدم‌قطعیت استفاده می‌شود.",
-    "spaceP3": "در کنار آن در حوزه کلاد و زیرساخت کار می‌کنم؛ نه به عنوان مسیر جدا، بلکه بخشی از همان تفکر سیستمی. برای من فناوری فقط ابزار نیست، بلکه ساختار، سرعت و اهرم است.",
+    "spaceTitle": "زیرساخت تدریس و پژوهش",
+    "spaceP1": "این پلتفرم زیرساخت آموزشی برای درس‌های آینده‌پژوهی است · نه یک دمو تبلیغاتی. هر متد شامل theory، syllabus دانشگاهی، مسیر صنعت و ابزار کارگاهی است.",
+    "spaceP2": "محتوا بر پایه پژوهش دکتری و منابع peer-reviewed (Rohrbeck، Inayatullah، Glenn و غیره) نوشته شده · با تمرکز ویژه بر منطق فازی نوع ۲ برای judgment تحت uncertainty.",
+    "spaceP3": "هدف: یک مرجع یکپارچه برای استاد، دانشجو و تیم foresight سازمانی · قابل استفاده در کلاس، سمینار و پروژه میدانی.",
     "findTitle": "بخش‌ها",
     "findItems": [
       {
@@ -177,9 +184,9 @@
       }
     ],
     "philosophyTag": "فلسفه کار",
-    "philP1": "فناوری باید توان آدم رو بیشتر کنه، نه جایش رو بگیره.",
-    "philP2": "بیشتر فکر من بین چیزهاییه که دارن ظاهر میشن و چیزهایی که هنوز آنقدر پایدار نشدن که اسم بگیرن.",
-    "philP3": "وقتی کار نمی‌کنم، معمولاً دارم مکان‌های تازه رو می‌گردم؛ تو دنیای واقعی یا تو ذهن، برای فهمیدن سامانه‌هایی که هنوز ندیدم. بعضیا فکر می‌کنن خیلی باهوشم؛ خودم اینطور نمی‌بینم 😂",
+    "philP1": "آینده‌پژوهی باید قابل تدریس، قابل سنجش و قابل استقرار در سازمان باشد · نه فقط گزارش.",
+    "philP2": "هر متد دو مسیر دارد: دانشگاه (syllabus، exam، rubric) و صنعت (workshop، deliverable، gate).",
+    "philP3": "طراحی UI عمداً academic و minimal است · خوانایی و hierarchy مهم‌تر از جلوه بصری.",
     "focusTitle": "تمرکز",
     "focuses": [],
     "ctaResume": "رزومه",
@@ -318,12 +325,12 @@
     "body": "<p class=\"article-lead\">چارچوب روش‌های آینده‌پژوهی ۳.۰ (FRM 3.0) جعبه ابزاری با ۳۹ روش است. مدیر نگاه می‌کند و می‌پرسد: از کدام شروع کنم؟ اگر همه را یک‌جا اجرا کنی، آینده‌پژوهی تبدیل به پروژه سنگین می‌شود؛ اگر هیچ‌کدام را نزنی، فقط حرف است. این تناقض برای خیلی از سازمان‌ها واقعی است.</p><p>مثل وقتی میگن «مدل توسعه فلان کشور را کپی کنیم»، بدون اینکه بپرسند الان در کدام مرحله‌ایم و گلوگاه کجاست. ابزار زیاد، معماری کم؛ نتیجه: خستگی یا نمایش.</p><p>هاینز و بی‌شاپ میگن مشکل «نداشتن روش» نیست؛ مشکل «نداشتن مسیر» است. FRM کتابخانه است؛ شش ستون (Six Pillars) قطب‌نما.</p><h3>تله جعبه ابزار</h3><p>دلفی، سناریو، چرخ آینده، تحلیل لایه‌ای علت‌ها (CLA)، پس‌نگری (Backcasting) و ده‌ها روش دیگر. گنجینه وقتی مشکل‌ساز می‌شود که ندانی کدام کلید کدام قفل را باز می‌کند. خیلی از سازمان‌ها با یک کارگاه بزرگ شروع می‌کنند، ۲۰۰ صفحه گزارش می‌گیرند و هرگز به «اقدام» (Acting) نمی‌رسند.</p><p>«رصد» (Scanning) قوی بدون «تصویرسازی» (Visioning) یعنی گزارش قفسه‌ای. «تصویرسازی» قوی بدون «اقدام» یعنی تزئین مدیریتی. «پیش‌بینی» (Forecasting) بدون «قاب‌بندی» (Framing) یعنی جواب دادن به سوالی که کسی نپرسیده. هر روش FRM ارزش دارد؛ اما بدون معماری، تصادفی به نظر می‌رسد.</p><p>تله رایج دیگر: هر سال یک روش مد روز. سال قبل سناریو، امسال چرخ آینده، سال بعد CLA؛ بدون اینکه بفهمند در کدام ستون گیر کرده‌اند. نتیجه: تیم آینده‌پژوهی خسته می‌شود و مدیر فکر می‌کند «این روش‌ها جواب نمی‌دهند».</p><h3>شش ستون، یک مسیر</h3><p>اندی هاینز و پیتر بی‌شاپ آینده‌پژوهی را به فرایند تبدیل کردند: قاب‌بندی (Framing) → رصد (Scanning) → پیش‌بینی/کاوش (Forecasting) → تصویرسازی (Visioning) → برنامه‌ریزی (Planning) → اقدام (Acting). هر ستون یک حالت شکست مشخص دارد.</p><p>قاب‌بندی: «آیا سوال درست را می‌پرسیم؟» رصد: «افق را می‌بینیم یا فقط فید خبر می‌خوانیم؟» پیش‌بینی: «آینده‌های محتمل داریم یا فانتزی؟» تصویرسازی: «تصویر مشترک داریم؟» برنامه‌ریزی: «مسیر داریم؟» اقدام: «آیا پایلوت به بازار رفته؟»</p><p>«مخروط محتمل بودن» (Cone of Plausibility) پل بین پیش‌بینی و تصویرسازی است؛ نه هر فانتزی، فقط آینده‌هایی که از امروز قابل رسیدن‌اند. وقتی سازمان می‌فهمد در کدام ستون گیر کرده، عمداً یکی دو روش از FRM را انتخاب می‌کند؛ نه هر ۳۹ تا یک‌جا.</p><h3>معماری لازم است</h3><p>جعبه ابزار کافی نیست؛ به معماری نیاز داری. سوال «از کجا شروع کنم؟» وقتی جواب می‌گیرد که بدانی الان در کدام ستون هستی و کدام شکاف بعدی است.</p><p>اگر همیشه با رصد شروع می‌کنی اما هرگز به اقدام نمی‌رسی، مشکل ابزار نیست؛ مشکل ستون است. شش ستون نقشه ناوبری است: از سوال تا پایلوت. FRM کتابخانه است؛ شش ستون قطب‌نما. فردا یک قدم: بپرس «الان در کدام ستون هستیم؟» و فقط همان را تقویت کن.</p>"
   },
   "methodsIndex": {
-    "heroTag": "متدهای آینده‌پژوهی",
-    "heroTitle": "کاتالوگ جامع متدها",
-    "heroSub": "روش‌های آینده‌پژوهی، آینده‌نگاری و foresight راهبردی. کارگاه تعاملی، توضیح متد، و کاتالوگ در ۷ دسته.",
+    "heroTag": "طرح درس و متد",
+    "heroTitle": "کاتالوگ متدهای آینده‌پژوهی",
+    "heroSub": "هر متد شامل theory، syllabus دانشگاهی، مسیر صنعت و ابزار کارگاهی · برای تدریس، سمینار و پروژه سازمانی.",
     "coreTitle": "لایه ۱ · کارگاه‌های تعاملی",
     "advancedTitle": "لایه ۲ · متدهای تکمیلی",
-    "note": "هر متد با معرفی سازنده، منابع، و در صورت امکان کارگاه تعاملی. متدهای جدید به‌تدریج اضافه می‌شوند."
+    "note": "هر متد با معرفی سازنده، منابع علمی، و در صورت امکان کارگاه تعاملی. این کاتالوگ زیرساخت تدریس است — نه فهرست تبلیغاتی."
   },
   "advancedPage": {
     "popper": {
@@ -645,73 +652,88 @@
   "lessons": {
     "fitness": {
       "meta": {
-        "module": "۱",
-        "duration": "۹۰ دقیقه",
-        "level": "کارشناسی ارشد / MBA / executive",
-        "diagram": "assets/foresight_concept.png",
-        "diagramAlt": "نمودار مفهومی Future Readiness و FITness"
+        "module": "M1 از ۷ · FS-501",
+        "duration": "۱۴ هفته · ۴۲ ساعت (۲۱ حضوری)",
+        "level": "کارشناسی ارشد / MBA / دکتری آینده‌پژوهی",
+        "diagram": "assets/fitness/modules/m1-foundations.svg",
+        "diagramAlt": "Readiness در برابر Future FITness · چرخه F-I-T"
       },
+      "prerequisites": "آشنایی با foresight و scenario · ترجیحاً CLA یا Wheel هم‌ترم · Rohrbeck (2010) ch.1–2 قبل از M1.",
+      "assessment": "میان‌ترم ۲۵٪ · probing ۲۰٪ · پروژه ۳۵٪ · سمینار ۱۵٪ · bonus #assessment ۵٪ — جزئیات تب دانشگاه.",
       "founders": [
         {
           "id": "rohrbeck",
           "name": "René Rohrbeck",
-          "role": "بنیان‌گذار مدل FITness · پروفسور EDHEC",
-          "bio": "متخصص Corporate Foresight؛ مدل بلوغ آینده‌نگاری سازمانی را بر پایه مطالعات میدانی در زیمنس و دویچه تلکام توسعه داد. تمرکز او بر تبدیل foresight از «گزارش» به <strong>قابلیت پویا</strong> است."
+          "nameFa": "رنه روهربک",
+          "role": "بنیان‌گذار FITness · پروفسور EDHEC · formerly Aarhus",
+          "bio": "۱۵+ سال مطالعه میدانی در Siemens، Deutsche Telekom، Bosch. کتاب Springer (~۳۰۰ ص.)، thesis Aarhus، corpus TFSC/EJFR."
         }
       ],
       "objectives": [
-        "تمایز <strong>Future Readiness</strong> (آمادگی ایستا) از <strong>FITness</strong> (تناسب پویا) را توضیح دهید.",
-        "سه فرآیند Perceiving، Prospecting و Probing را با مثال سازمانی ربط دهید.",
-        "پنج بعد بلوغ Rohrbeck را بشناسید و با ابزار خودارزیابی این صفحه امتیاز بگیرید.",
-        "ارتباط FITness با رادار فناوری و corporate venturing را تحلیل کنید."
+        "تمایز Readiness از FITness را با Netflix/Nokia/Zoom توضیح دهید.",
+        "map فصل‌های Rohrbeck (2010) به ۷ ماژول را بشناسید.",
+        "پنج بعد maturity و چهار archetype را روی case map کنید.",
+        "Perceiving→Probing→Transformation را با weak signal مثال بزنید.",
+        "#assessment را انجام دهید و بعد ضعیف برای پروژه انتخاب کنید.",
+        "کتاب + ۶ مقاله کلیدی را برای میان‌ترم cite کنید."
       ],
       "outline": [
         {
-          "step": "۱",
-          "time": "۱۵ دقیقه",
-          "title": "مقدمه: چرا foresight سازمانی شکست می‌خورد؟",
-          "desc": "بحث آزاد + مثال Zoom و کرونا. معرفی سوال: «آیا foresight شما گزارش است یا قابلیت؟»"
+          "step": "M1-1",
+          "time": "۴۵ دقیقه",
+          "title": "چرا foresight سازمانی شکست می‌خورد؟",
+          "desc": "گزارش vs قابلیت · benchmark ۳۳٪/۲۰۰٪"
         },
         {
-          "step": "۲",
-          "time": "۲۰ دقیقه",
+          "step": "M1-2",
+          "time": "۴۵ دقیقه",
           "title": "Readiness vs FITness",
-          "desc": "ارائه مفاهیم، نمودار assets/foresight_concept.png، ۵ عنصر readiness."
+          "desc": "foresight_concept.png · Zoom/Netflix/Nokia"
         },
         {
-          "step": "۳",
-          "time": "۲۵ دقیقه",
-          "title": "مدل Rohrbeck و سه P",
-          "desc": "Perceiving/Prospecting/Probing با case زیمنس و Deutsche Telekom."
+          "step": "M1-3",
+          "time": "۴۵ دقیقه",
+          "title": "معرفی syllabus ۱۴ هفته",
+          "desc": "map فصل‌ها M1–M7 · میان‌ترم و پروژه"
         },
         {
-          "step": "۴",
-          "time": "۲۰ دقیقه",
-          "title": "کارگاه: خودارزیابی ۵ بعدی",
-          "desc": "دانشجویان بخش #assessment را پر می‌کنند؛ بحث گروهی درباره ضعیف‌ترین بعد."
-        },
-        {
-          "step": "۵",
-          "time": "۱۰ دقیقه",
-          "title": "جمع‌بندی و تکلیف",
-          "desc": "اتصال به CLA و Wheel در جلسات بعد."
+          "step": "M1-4",
+          "time": "۴۵ دقیقه",
+          "title": "کارگاه #assessment",
+          "desc": "امتیاز ۵ بعد · انتخاب سازمان پروژه"
         }
       ],
       "readings": [
         {
           "type": "کتاب",
-          "text": "Rohrbeck, R. (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer."
+          "text": "Rohrbeck (2010). <em>Corporate Foresight</em>. Springer ch.1–2 (~۵۰ ص.)"
+        },
+        {
+          "type": "رساله",
+          "text": "Rohrbeck (2008). PhD thesis, Aarhus."
         },
         {
           "type": "مقاله",
-          "text": "Rohrbeck, R., Arnold, H. & Heuer, J. (2007). Strategic Foresight in multinational companies · Zeitschrift für Zukunftsforschung."
+          "text": "Rohrbeck, Arnold & Heuer (2007) TFSC."
+        },
+        {
+          "type": "مقاله",
+          "text": "Rohrbeck & Schwarz (2013) TFSC."
+        },
+        {
+          "type": "مقاله",
+          "text": "Rohrbeck (2014) EJFR."
+        },
+        {
+          "type": "مقاله",
+          "text": "Rohrbeck & Gemünden (2010) IJIM."
         },
         {
           "type": "Case",
-          "text": "Deutsche Telekom Technology Radar · benchmark رادار فناوری سازمانی."
+          "text": "Deutsche Telekom Radar · Siemens foresight."
         }
       ],
-      "assignment": "یک سازمان (واقعی یا فرضی) انتخاب کنید. با مدل ۵ بعدی امتیاز دهید، یک بعد ضعیف را مشخص کنید، و یک اقدام <strong>Probing</strong> (آزمایش ۹۰ روزه) پیشنهاد دهید که foresight را از گزارش به عمل تبدیل کند."
+      "assignment": "پروژه M7: سازمان واقعی · ۵ بعد · archetype · weak signal · probing ۹۰ روز · IT2 اگر FOU لازم · ۴۰۰۰–۵۰۰۰ کلمه. میان‌ترم M4: ۲۰۰۰ کلمه maturity+archetype."
     },
     "cla": {
       "meta": {
@@ -788,7 +810,7 @@
         "module": "۳",
         "duration": "۹۰ دقیقه",
         "level": "کارشناسی / کارشناسی ارشد",
-        "diagram": "assets/upload_2.png",
+        "diagram": "assets/methods/futures-wheel.svg",
         "diagramAlt": "چرخ آینده · پیامدهای مرتبه اول و دوم"
       },
       "founders": [
@@ -2176,16 +2198,1068 @@
     "hero": {
       "tag": "نظریه قابلیت‌های پویا · رنه روهربک",
       "title": "مدل بلوغ آینده‌نگاری سازمانی و Future FITness",
-      "subtitle": "چگونه سازمان‌ها می‌توانند از «آمادگی ایستای آینده» (Future Readiness) عبور کرده و به «ورزیدگی و انطباق پویای سازمانی» (Future FITness) برای شکل‌دهی به بازارهای فردا دست یابند."
+      "subtitle": "چگونه سازمان‌ها از «آمادگی ایستای آینده» (Future Readiness) عبور کرده و به «تناسب پویای سازمانی» (Future FITness) برای شکل‌دهی بازارهای فردا برسند · بر پایه مطالعات میدانی زیمنس، دویچه تلکام و بنچ‌مارک صنایع پرتلاطم."
     },
+    "theoryTag": "چارچوب روهربک",
+    "theoryTitle": "از گزارش foresight تا قابلیت پویای سازمانی",
+    "theoryLead": "روهربک در کتاب <strong>Corporate Foresight: Towards a Maturity Model</strong> (۲۰۱۰) میگه مشکل اصلی صنعت این نیست که foresight نداریم؛ مشکل اینه که foresight به گزارش تبدیل می‌شود و به probing و تحول وصل نمی‌شود.",
+    "theoryNarrative": [
+      "مدل FITness (Foresight · Innovation · Transformation) سه حرف را به یک چرخه عملیاتی وصل می‌کند: رصد و کاوش، آزمایش سریع، و بازآفرینی ساختار. سازمان‌هایی که این چرخه را در DNA خود دارند، در بنچ‌مارک روهربک به طور میانگین <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر ثبت کردند.",
+      "تفاوت کلیدی با Future Readiness در «ایستایی» است. Readiness یعنی آماده بودن برای آینده‌ای که تصور کرده‌ای؛ FITness یعنی هر فصل دوباره تناسب پیدا کردن وقتی صنعت جهت عوض می‌کند · مثل گذار نتفلیکس از DVD به استریم، یا شرط‌بندی انویدیا روی CUDA قبل از boom یادگیری عمیق.",
+      "در صنایع مخابرات، خودرو، دارو و انرژی، تلاطم محیطی با بلوغ foresight تعیین می‌کند سازمان در کدام quadrant قرار می‌گیرد: Vigilant، Neurotic، Vulnerable یا In Danger. این صفحه ابزار خودارزیابی، رادار فناوری و مسیر استقرار صنعتی را کنار هم می‌گذارد."
+    ],
+    "readinessVsTitle": "Readiness در برابر FITness · نگاه صنعتی",
+    "readinessVsFitness": [
+      "Future Readiness تمرکزش روی پیش‌بینی، سناریو و آمادگی است · مفید برای بحران‌های قابل تصور (مثل Zoom در کرونا یا remote-work pilot قبل از پاندمی).",
+      "Future FITness یک گام جلوتر می‌رود: probing مداوم، خودتخریبی خلاق قبل از رقیب، و اتصال foresight به بودجه R&D و venturing · نه فقط slide deck.",
+      "در عمل صنعتی، Readiness بدون FITness منجر به Neurotic می‌شود: سناریوهای زیاد، pilot کم، و گزارش‌هایی که به خط تولید یا roadmap وصل نمی‌شوند."
+    ],
+    "threePTitle": "چرخه Perceiving → Prospecting → Probing",
+    "threePProse": [
+      "<strong>Perceiving (درک):</strong> رصد سیگنال‌های ضعیف، رادار فناوری، weak signal · واحد foresight دویچه تلکام IoT کشاورزی را از همین فاز استارت زد.",
+      "<strong>Prospecting (کاوش):</strong> سناریو، technology roadmapping، portfolio افق سه‌گانه · زیمنس و DT هر دو خروجی foresight را به gate سرمایه‌گذاری وصل کردند.",
+      "<strong>Probing (آزمایش):</strong> pilot ۹۰ روزه، corporate venturing، kill criteria · بدون probing، FITness روی کاغذ می‌ماند.",
+      "<strong>Transformation (تحول):</strong> وقتی probing موفق شد، ساختار، فرهنگ و DNA سازمان باید عوض شود · در غیر این صورت همان مسیر نوکیا یا بلاک‌باستر تکرار می‌شود."
+    ],
+    "compareDetailsTitle": "جدول مقایسه · Readiness و FITness",
+    "compareColAspect": "بُعد",
+    "compareColReadiness": "Future Readiness",
+    "compareColFitness": "Future FITness",
+    "readinessCompareRows": [
+      {
+        "aspect": "هدف",
+        "readiness": "آماده بودن برای آینده‌های محتمل",
+        "fitness": "تناسب مداوم با تلاطم صنعت"
+      },
+      {
+        "aspect": "خروجی",
+        "readiness": "سناریو، plan، risk register",
+        "fitness": "pilot، venturing، تغییر portfolio"
+      },
+      {
+        "aspect": "ریسک",
+        "readiness": "Neurotic · تحلیل زیاد، اقدام کم",
+        "fitness": "Vulnerable اگر probing ضعیف باشد"
+      },
+      {
+        "aspect": "نمونه صنعتی",
+        "readiness": "Zoom scale-up در کرونا",
+        "fitness": "نتفلیکس cannibalize DVD · انویدیا CUDA"
+      }
+    ],
+    "industrySectionTitle": "مسیر صنعت · استقرار FITness در سازمان",
+    "tracksLabel": "مسیر اجرا",
+    "trackUniversity": "دانشگاه",
+    "trackIndustry": "صنعت و سازمان",
+    "trackWorkshop": "کارگاه تعاملی",
+    "workshopSectionTitle": "کارگاه · ابزارها و شبیه‌سازی",
+    "universitySectionTitle": "مسیر دانشگاه · طرح درس و تدریس",
+    "universityCourseTitle": "درس Corporate Foresight & Future FITness · طرح ۱۴ هفته",
+    "universityCourseIntro": "طرح درس کامل برای کارشناسی ارشد، MBA و دکتری · ۷ ماژول، ۲۱ ساعت حضوری + ۲۱ مطالعه · بر پایه کتاب ۳۰۰+ صفحه Rohrbeck (۲۰۱۰) و corpus مقالات.",
+    "university": {
+      "tag": "طرح درس دانشگاهی",
+      "title": "Corporate Foresight & Future FITness",
+      "intro": "این مسیر یک <strong>درس کامل ۱۴ هفته‌ای</strong> است — نه یک جلسه ۹۰ دقیقه‌ای. روهربک بیش از یک دهه در زیمنس، دویچه تلکوم، Bosch و ده‌ها MNC مطالعه میدانی کرده؛ کتاب Springer (~۳۰۰ صفحه) و رساله Aarhus پایه syllabus است.",
+      "courseMeta": [
+        {
+          "label": "کد درس",
+          "value": "FS-501 · Corporate Foresight"
+        },
+        {
+          "label": "سطح",
+          "value": "کارشناسی ارشد / MBA / دکتری"
+        },
+        {
+          "label": "حجم",
+          "value": "۳ ECTS · ۴۲ ساعت (۲۱ حضوری + ۲۱ خودخوان)"
+        },
+        {
+          "label": "مدت",
+          "value": "۱۴ هفته · ۷ ماژول × ۳ ساعت"
+        },
+        {
+          "label": "پیش‌نیاز",
+          "value": "مقدمات آینده‌پژوهی · CLA یا Wheel"
+        },
+        {
+          "label": "ابزار",
+          "value": "#assessment · رادار · تب صنعت · IT2"
+        }
+      ],
+      "courseObjectivesTitle": "اهداف کل دوره",
+      "courseObjectives": [
+        "corpus نظری Rohrbeck را با شواهد میدانی MNC توضیح دهید.",
+        "پنج بعد بلوغ را اندازه‌گیری، benchmark و نقد کنید.",
+        "چهار کهن‌الگو را روی مورد واقعی map کنید.",
+        "مسیر Perceiving → Prospecting → Probing → Transformation را طراحی کنید.",
+        "foresight را به gate سرمایه‌گذاری و venturing وصل کنید.",
+        "FOU خبرگان را در gate probing با IT2 بحث کنید."
+      ],
+      "modulesTitle": "۷ ماژول · ۳ ساعت هر جلسه",
+      "modules": [
+        {
+          "num": "M1",
+          "id": "m1",
+          "pickerLabel": "مبانی",
+          "title": "مبانی · آمادگی در برابر FITness",
+          "hours": "۳ ساعت",
+          "readingsShort": "Rohrbeck (2010) ch.1–2",
+          "visual": "assets/fitness/modules/m1-foundations.svg",
+          "visualCaption": "مسیر گذار از آمادگی ایستا (Readiness) به چرخه پویای FITness · F→I→T",
+          "lectureIntro": "این جلسه اول درس <strong>Corporate Foresight & Future FITness</strong> (FS-501) است. تمام مطالب زیر همان محتوایی است که در کلاس ارائه می‌شود — نیازی به ساخت پرزنتیشن جداگانه نیست. دانشجو می‌تواند همین صفحه را به‌عنوان جزوه بخواند؛ استاد می‌تواند همین بخش‌ها را در کلاس scroll کند.",
+          "lectureSections": [
+            {
+              "id": "problem",
+              "title": "۱. چرا foresight سازمانی شکست می‌خورد؟",
+              "slideTitles": [
+                "گزارش مشاوره در برابر قابلیت embedded",
+                "چرخه یک‌بار مصرف گزارش",
+                "benchmark · quadrant Vigilant",
+                "ریشه غافلگیری استراتژیک"
+              ],
+              "paragraphs": [
+                "سازمان‌های بزرگ اغلب foresight را به‌صورت یک «واحد آینده‌پژوهی»، قرارداد با مشاور، یا گزارش سالانه سناریو اجرا می‌کنند. روهربک در فصل‌های ۱ و ۲ کتاب <em>Corporate Foresight: Towards a Maturity Model</em> (۲۰۱۰) نشان می‌دهد که این رویکرد به‌تنهایی کافی نیست: خروجی foresight باید به <strong>قابلیت سازمانی embedded</strong> تبدیل شود — یعنی رصد، کاوش، آزمایش و تحول در خط مقدم تصمیم‌گیری جاری شود، نه در یک گزارش آرشیوی.",
+                "تفاوت «گزارش مشاوره» و «قابلیت embedded» در این است که گزارش مشاوره معمولاً یک‌بار مصرف است: پاورپوینت به کمیته استراتژی می‌رود، applause می‌گیرد، و در کشوی planning می‌خوابد. قابلیت embedded یعنی مدیر خط، R&D و HR هر فصل با زبان مشترک آینده حرف می‌زنند، weak signal به gate بودجه وصل می‌شود، و pilot با kill criteria اجرا می‌شود.",
+                "مطالعات بنچ‌مارک روهربک و Schwarz (۲۰۱۳) روی صدها شرکت اروپایی نشان داد سازمان‌هایی که در quadrant <strong>Vigilant</strong> (بلوغ foresight بالا + تلاطم محیط بالا) قرار دارند، به‌طور میانگین <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر (Vulnerable / In Danger) دارند. این عددها ادعای تبلیغاتی نیستند؛ از regression روی داده میدانی چندساله در Siemens، Deutsche Telekom، Bosch و ده‌ها MNC دیگر آمده‌اند.",
+                "پس مسئله اصلی صنعت این نیست که «foresight نداریم»؛ مسئله این است که foresight به probing و gate و تحول وصل نمی‌شود و در نتیجه سازمان غافلگیر می‌شود — حتی وقتی گزارش درست بوده است."
+              ]
+            },
+            {
+              "id": "readiness-vs-fitness",
+              "title": "۲. Future Readiness در برابر Future FITness",
+              "slideTitles": [
+                "تعریف Future Readiness",
+                "سرواژه FIT · F ↔ I ↔ T",
+                "typology Neurotic",
+                "مثال‌های Zoom · Netflix · Blockbuster"
+              ],
+              "paragraphs": [
+                "<strong>Future Readiness</strong> یعنی سازمان برای آینده‌ای که تصور کرده آماده باشد: سناریو نوشته، ریسک ثبت، plan B دارد. در بحران COVID-19، Zoom نمونه Readiness بود — زیرساخت remote از قبل وجود داشت و تقاضا انفجاری را تحمل کرد. Readiness ارزشمند است، اما <strong>ایستا</strong> است: فرض می‌کند آینده‌ای که plan کرده‌ای همان آینده‌ای است که رخ می‌دهد.",
+                "<strong>Future FITness</strong> (روهربک) یک گام جلوتر می‌رود. سرواژه <strong>FIT</strong> از سه مؤلفه ساخته شده: <strong>Foresight</strong> (آینده‌نگاری) + <strong>Innovation</strong> (نوآوری) ↔ <strong>Transformation</strong> (تحول). علامت ↔ یعنی Innovation و Transformation باید مداوم در تعادل باشند: نوآوری بدون تحول ساختاری در pilot می‌ماند؛ تحول بدون نوآوری reorg بی‌اثر است.",
+                "چرخه عملیاتی FITness سه فاز Perceiving → Prospecting → Probing دارد (در M3–M5 جزئی می‌شود) و در نهایت به Transformation می‌رسد. سازمانی که فقط Perceiving و Prospecting قوی دارد (سناریو و گزارش) اما Probing ضعیف است، در typology روهربک <strong>Neurotic</strong> قرار می‌گیرد: تحلیل زیاد، pilot کم، گزارش به roadmap عملیاتی وصل نمی‌شود.",
+                "در عمل صنعتی، Readiness بدون FITness یعنی Zoom در ۲۰۲۰ scale-up کرد اما بعداً باید probing مداوم برای رقابت با Teams انجام دهد؛ Netflix از DVD به streaming رفت چون FITness داشت (cannibalize عمدی)؛ Blockbuster probing استریم را دیر و بدون kill criteria برای DVD اجرا کرد."
+              ],
+              "table": {
+                "headers": [
+                  "<strong>بُعد</strong>",
+                  "<strong>Future Readiness</strong>",
+                  "<strong>Future FITness</strong>"
+                ],
+                "rows": [
+                  [
+                    "<strong>هدف</strong>",
+                    "آماده بودن برای آینده‌های محتمل",
+                    "تناسب مداوم با تلاطم صنعت"
+                  ],
+                  [
+                    "<strong>خروجی</strong>",
+                    "سناریو، plan، risk register",
+                    "pilot، venturing، تغییر portfolio"
+                  ],
+                  [
+                    "<strong>ریسک typology</strong>",
+                    "Neurotic · تحلیل زیاد، اقدام کم",
+                    "Vulnerable اگر probing ضعیف باشد"
+                  ],
+                  [
+                    "<strong>نمونه</strong>",
+                    "Zoom در scale-up کرونا",
+                    "Netflix cannibalize DVD · Nvidia CUDA"
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "cases",
+              "title": "۳. مطالعات موردی: Zoom، Nokia، Netflix، Blockbuster",
+              "slideTitles": [
+                "Zoom",
+                "Nokia",
+                "Netflix",
+                "Blockbuster"
+              ],
+              "paragraphs": [
+                "<strong>Zoom:</strong> قبل از پاندمی، Zoom زیرساخت ویدئوکنفرانس مقیاس‌پذیر داشت — این Readiness بود. اما حفظ سهم بازار در برابر Microsoft Teams نیازمند FITness است: probing مداوم روی امنیت، UX enterprise، و integration — نه فقط «آماده بودیم».",
+                "<strong>Nokia:</strong> Nokia در اواخر دهه ۲۰۰۰ واحد foresight و گزارش‌های آینده موبایل داشت (Readiness/Prospecting). اما probing ضعیف، silo بین hardware و software، و فرهنگی که cannibalization را نمی‌پذیرفت، منجر به Vulnerable → In Danger شد. foresight «داشت» اما به gate و تحول وصل نبود.",
+                "<strong>Netflix:</strong> Hastings در ۲۰۰۷–۲۰۱۱ استریم را با KPI cannibalization آزمایش کرد — probing واقعی با kill criteria (اگر retention استریم پایین بود، برگرد). DVD را عمداً cannibalize کرد. این FITness است: F (رصد streaming) + I (pilot استریم) ↔ T (تغییر DNA از اجاره DVD به subscription).",
+                "<strong>Blockbuster:</strong> Blockbuster foresight محدود داشت (می‌دانست streaming می‌آید) اما probing دیر، بدون kill criteria برای DVD، و Opponent role نداشت — کسی در board «نه» نگفت به مدل درآمد legacy. درس M1: داشتن «آگاهی» ≠ داشتن «قابلیت probing و transform»."
+              ],
+              "callout": {
+                "title": "Deutsche Telekom — چرا در این درس تکرار می‌شود؟",
+                "body": "بخش عمده‌ای از رساله دکتری و کتاب روهربک روی مطالعه میدانی <strong>Deutsche Telekom</strong> بنا شده است: Technology Radar، اتصال foresight به planning، و کاهش غافلگیری استراتژیک در telecom. DT نمونه علمی است — نه فقط anecdote. رادار فناوری را در تب «کارگاه» ببینید (#tech-radar)."
+              }
+            },
+            {
+              "id": "syllabus",
+              "title": "۴. نقشه ۱۴ هفته · ۷ ماژول · corpus Rohrbeck",
+              "slideTitles": [
+                "ساختار درس · ECTS و ساعات",
+                "map فصل‌ها M1–M7",
+                "ابزارهای تب کارگاه و صنعت"
+              ],
+              "paragraphs": [
+                "این درس <strong>۱۴ هفته</strong>، <strong>۳ ECTS</strong>، <strong>۴۲ ساعت</strong> (۲۱ حضوری + ۲۱ خودخوان) است. هر ماژول <strong>۳ ساعت</strong> حضوری دارد. map فصل‌های کتاب Rohrbeck (۲۰۱۰) به ماژول‌ها:",
+                "<strong>M1</strong> (همین جلسه): ch.1–2 · Readiness vs FITness · شروع پروژه.<br><strong>M2</strong>: ch.3–5 · پنج بعد maturity · radar chart.<br><strong>M3</strong>: ch.6 · Perceiving · weak signal · Technology Radar.<br><strong>M4</strong>: ch.7–8 · Prospecting · سناریو · gate · <em>میان‌ترم ۲۵٪</em>.<br><strong>M5</strong>: ch.9 · Probing · memo gate · <em>۲۰٪ نمره</em>.<br><strong>M6</strong>: ch.10–11 · archetypes · Transformation.<br><strong>M7</strong>: ch.12 · تلفیق CLA/Wheel/IT2 · <em>ارائه + گزارش ۳۵٪</em>.",
+                "ابزارهای همین صفحه: تب <strong>کارگاه</strong> → #assessment (خودارزیابی ۵ بعد)، #tech-radar، کهن‌الگوها. تب <strong>صنعت</strong> → playbook استقرار. ارزیابی کامل در بخش «منابع و ارزیابی» پایین تب دانشگاه است."
+              ]
+            },
+            {
+              "id": "workshop",
+              "title": "۵. کارگاه #assessment · شروع پروژه",
+              "slideTitles": [
+                "باز کردن #assessment",
+                "امتیازدهی و debrief",
+                "انتخاب سازمان واقعی پروژه"
+              ],
+              "paragraphs": [
+                "در ۴۵ دقیقه پایانی جلسه، به تب <strong>کارگاه تعاملی</strong> بروید و بخش <a href=\"#assessment\">#assessment</a> را باز کنید. پرسشنامه خودارزیابی پنج بعد maturity (Information، Methods، People، Organization، Culture) را برای سازمانی که به‌عنوان موضوع <strong>پروژه نهایی</strong> انتخاب می‌کنید تکمیل کنید.",
+                "هر بعد را ۱ تا ۱۰ امتیاز دهید. نمودار رادار خروجی را screenshot بگیرید. در debrief کلاسی بپرسید: «ضعیف‌ترین بعد کدام است؟» — این بعد معمولاً محور probing و gate در پروژه نهایی خواهد بود.",
+                "سازمان پروژه باید <strong>واقعی</strong> باشد: محل کار، کارآموزی، استارتاپ خانوادگی، یا سازمانی که به آن دسترسی میدانی دارید. سازمان خیالی برای پروژه نهایی پذیرفته نمی‌شود مگر با تأیید استاد."
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "کتاب (اجباری)",
+              "text": "Rohrbeck, R. (2010). <em>Corporate Foresight: Towards a Maturity Model for Corporate Foresight</em>. Springer. فصل‌های ۱ و ۲ (~۵۰ صفحه)."
+            },
+            {
+              "type": "رساله",
+              "text": "Rohrbeck, R. (2008). PhD thesis, Aarhus University — بنیان نظری مدل بلوغ."
+            },
+            {
+              "type": "مقاله",
+              "text": "Rohrbeck, Arnold & Heuer (2007). TFSC — مطالعه multinationals و Technology Radar در DT."
+            },
+            {
+              "type": "مقاله",
+              "text": "Rohrbeck & Schwarz (2013). TFSC — اعتبارسنجی مدل بلوغ."
+            }
+          ],
+          "assignment": {
+            "title": "تشخیص Readiness یا FITness",
+            "description": "اولین تکلیف رسمی درس. هدف: قبل از M2، سازمان پروژه را با زبان روهربک تحلیل کنید.",
+            "body": [
+              "سازمان منتخب را معرفی کنید (نام، صنعت، اندازه، یک جمله چرا انتخاب شد).",
+              "خروجی #assessment را ضمیمه کنید (screenshot نمودار ۵ بعد).",
+              "یک <strong>تحلیل ۴۰۰–۶۰۰ کلمه</strong> بنویسید: آیا این سازمان بیشتر Readiness دارد یا FITness؟ از مثال‌های جلسه (Zoom/Nokia/Netflix) برای argument استفاده کنید.",
+              "حداقل <strong>دو شاهد میدانی</strong> بیاورید: مصاحبه کوتاه با یک مدیر/کارمند، سند داخلی، گزارش سالانه، یا خبر صنعتی معتبر — با citation.",
+              "یک سؤال بحث برای جلسه M2 آماده کنید (مثلاً: «کدام بعد maturity در سازمان ما گلوگاه است؟»)."
+            ],
+            "format": "PDF یا Word · فونت ۱۲ · نام و شماره دانشجویی · deadline: پایان هفته ۲",
+            "criteria": [
+              "تمایز Readiness/FITness با استدلال روشن، نه فقط تعریف",
+              "شواهد به probing، gate، یا embedded foresight اشاره کند",
+              "ارجاع درست به Rohrbeck (2010) ch.1–2"
+            ]
+          },
+          "sessions": [
+            {
+              "step": "۱",
+              "time": "۴۵ د",
+              "title": "چرا foresight شکست می‌خورد؟",
+              "desc": "§۱ همین جزوه"
+            },
+            {
+              "step": "۲",
+              "time": "۴۵ د",
+              "title": "Readiness vs FITness",
+              "desc": "§۲ + جدول + §۳"
+            },
+            {
+              "step": "۳",
+              "time": "۴۵ د",
+              "title": "طرح درس",
+              "desc": "§۴"
+            },
+            {
+              "step": "۴",
+              "time": "۴۵ د",
+              "title": "کارگاه #assessment",
+              "desc": "§۵ + تکلیف"
+            }
+          ]
+        },
+        {
+          "num": "M2",
+          "id": "m2",
+          "pickerLabel": "مدل بلوغ",
+          "title": "مدل بلوغ · پنج بعد",
+          "hours": "۳ ساعت",
+          "readingsShort": "Rohrbeck (2010) ch.3–5 · Schwarz (2013)",
+          "visual": "assets/fitness/modules/m2-maturity.svg",
+          "visualCaption": "پنج بعد maturity · سطوح ۱ تا ۵",
+          "lectureIntro": "مدل بلوغ روهربک ابزار اصلی سنجش «foresight سازمانی» است — نه foresight به‌معنای گزارش، بلکه قابلیت ساختاری. این جلسه پنج بعد و سطوح ۱–۵ را با مثال Siemens و DT توضیح می‌دهد.",
+          "lectureSections": [
+            {
+              "id": "five-dims",
+              "title": "۱. پنج بعد maturity",
+              "slideTitles": [
+                "Information",
+                "Methods",
+                "People",
+                "Organization",
+                "Culture"
+              ],
+              "paragraphs": [
+                "<strong>Information:</strong> وسعت و عمق رصد محیط — آیا فقط رقبای مستقیم دیده می‌شوند یا روندهای خارج از صنعت (STEEP) هم؟ پهنای باند signal پایین یعنی غافلگیری.",
+                "<strong>Methods:</strong> تنوع و اثربخشی ابزار — سناریو، دلفی، Technology Radar، roadmapping. داشتن یک ابزار (مثلاً فقط trend report) سطح ۲ است؛ استفاده منظم چند ابزار سطح ۴.",
+                "<strong>People:</strong> سواد آینده در خط مقدم — نه فقط ۳ نفر در unit foresight. HR و L&D باید foresight literacy را scale کنند.",
+                "<strong>Organization:</strong> اتصال foresight به planning، gate بودجه R&D، corporate venturing. بدون gate، foresight «توصیه» می‌ماند.",
+                "<strong>Culture:</strong> تحمل kill کردن pilot، پذیرش cannibalization، مجاز بودن Opponent. فرهنگ «شکست ممنوع» maturity را روی کاغذ بالا نگه می‌دارد اما probing را می‌کشد."
+              ]
+            },
+            {
+              "id": "levels",
+              "title": "۲. سطوح ۱–۵ و اعتبارسنجی Schwarz",
+              "slideTitles": [
+                "سطوح ۱ تا ۵",
+                "کارگاه radar کلاس"
+              ],
+              "paragraphs": [
+                "هر بعد از سطح ۱ (ad hoc / وجود ندارد) تا ۵ (best-in-class / embedded) امتیاز می‌گیرد. Schwarz (2013) با نمونه بزرگ‌تر regression روهربک را تأیید کرد: gap بین سطح maturity و عملکرد مالی معنادار است.",
+                "در کارگاه کلاس: هر گروه یک سازمان را score می‌دهد، radar chart می‌کشد، و ضعیف‌ترین بعد را برای پروژه نهایی ثبت می‌کند. این radar در میان‌ترم M4 دوباره استفاده می‌شود."
+              ],
+              "callout": {
+                "title": "Siemens — foresight-to-innovation pipeline",
+                "body": "زیمنس یکی از caseهای اصلی روهربک است: foresight خروجی pipeline نوآوری دارد. gap معمول در Organization (gate) است — نه «نداشتن گزارش»."
+              }
+            }
+          ],
+          "readings": [
+            {
+              "type": "کتاب",
+              "text": "Rohrbeck (2010) ch.3–5."
+            },
+            {
+              "type": "مقاله",
+              "text": "Rohrbeck & Schwarz (2013) TFSC."
+            }
+          ],
+          "assignment": {
+            "title": "نمودار رادار ۵ بعدی",
+            "body": [
+              "امتیاز ۱–۵ هر بعد با consensus تیمی.",
+              "نمودار radar + نیم صفحه توضیح: شواهد میدانی برای ضعیف‌ترین بعد.",
+              "deadline هفته ۴"
+            ],
+            "format": "یک صفحه نمودار + توضیح",
+            "criteria": [
+              "پنج بعد پوشش داده شود",
+              "شواهد مشخص"
+            ]
+          },
+          "sessions": [
+            {
+              "step": "۱",
+              "time": "۵۰ د",
+              "title": "پنج بعد",
+              "desc": "§۱–§۲"
+            },
+            {
+              "step": "۲",
+              "time": "۵۰ د",
+              "title": "کارگاه radar",
+              "desc": "امتیازدهی گروهی"
+            },
+            {
+              "step": "۳",
+              "time": "۶۰ د",
+              "title": "debrief",
+              "desc": "ضعیف‌ترین بعد"
+            }
+          ]
+        },
+        {
+          "num": "M3",
+          "id": "m3",
+          "pickerLabel": "درک",
+          "title": "درک · Perceiving و weak signal",
+          "hours": "۳ ساعت",
+          "readingsShort": "Rohrbeck (2010) ch.6",
+          "visual": "assets/fitness/modules/m3-perceiving.svg",
+          "visualCaption": "Technology Radar · Scan → Assess → Trial → Adopt",
+          "lectureIntro": "Perceiving یعنی رصد سیستماتیک محیط قبل از commit بودجه. Technology Radar DT — ابزار اصلی این فاز — در تب کارگاه قابل کلیک است.",
+          "lectureSections": [
+            {
+              "id": "scanning",
+              "title": "۱. Environmental scanning و STEEP",
+              "slideTitles": [
+                "weak signal و STEEP",
+                "تله Neurotic · overload"
+              ],
+              "paragraphs": [
+                "فصل ۶ روهربک environmental scanning را با STEEP/PESTEL frame می‌کند. weak signal سیگنالی است که هنوز mainstream نشده اما relevance استراتژیک دارد — مثلاً IoT کشاورزی برای DT قبل از AgTech boom.",
+                "Neurotic trap: هر signal «مهم» تلقی شود → overload. فیلتر: relevance به استراتژی ۳–۵ ساله + قابلیت act."
+              ]
+            },
+            {
+              "id": "radar",
+              "title": "۲. Technology Radar · چهار حلقه",
+              "slideTitles": [
+                "Scan · Assess · Trial · Adopt",
+                "ربع سلامت دیجیتال · DT"
+              ],
+              "paragraphs": [
+                "<strong>Scan:</strong> رصد اولیه · <strong>Assess:</strong> ارزیابی relevance · <strong>Trial:</strong> pilot محدود · <strong>Adopt:</strong> scale در خط تولید. GenAI در DT در Adopt/Trial؛ 6G در Scan.",
+                "ربع «سلامت دیجیتال» بازار مجاور DT است (telemedicine، health IoT) — نه بیوتک آزمایشگاهی. توضیح کامل زیر رادار در تب کارگاه."
+              ]
+            }
+          ],
+          "assignment": {
+            "title": "۱۰ weak signal + رادار",
+            "body": [
+              "لیست ۱۰ signal برای صنعت سازمان پروژه.",
+              "۳ مورد برتر را روی #tech-radar صفحه mark کنید (screenshot).",
+              "یک پارagraph: چرا DT Ag-IoT از Perceiving شروع کرد."
+            ],
+            "format": "جدول + screenshot · deadline هفته ۶",
+            "criteria": [
+              "تنوع STEEP",
+              "اولویت منطقی"
+            ]
+          },
+          "sessions": [
+            {
+              "step": "۱",
+              "time": "۴۵ د",
+              "title": "Scanning",
+              "desc": "§۱"
+            },
+            {
+              "step": "۲",
+              "time": "۴۵ د",
+              "title": "Radar demo",
+              "desc": "§۲ · #tech-radar"
+            },
+            {
+              "step": "۳",
+              "time": "۵۰ د",
+              "title": "کارگاه signal",
+              "desc": "تکلیف"
+            }
+          ]
+        },
+        {
+          "num": "M4",
+          "id": "m4",
+          "pickerLabel": "کاوش",
+          "title": "Prospecting · سناریو و gate",
+          "hours": "۳ ساعت",
+          "readingsShort": "Rohrbeck (2010) ch.7–8",
+          "visual": "assets/fitness/modules/m4-prospecting.svg",
+          "visualCaption": "H1/H2/H3 · Initiator · Strategist · Opponent",
+          "lectureIntro": "Prospecting جایی است که foresight به تصمیم سرمایه‌گذاری می‌رسد. سه نقش Initiator، Strategist، Opponent باید قبل از capex فعال شوند.",
+          "lectureSections": [
+            {
+              "id": "roles",
+              "title": "۱. سه نقش foresight",
+              "slideTitles": [
+                "Initiator · Strategist · Opponent",
+                "Nvidia CUDA · Netflix streaming"
+              ],
+              "paragraphs": [
+                "<strong>Initiator:</strong> signal را نام‌گذاری و به agenda می‌آورد.<br><strong>Strategist:</strong> portfolio H1/H2/H3 و gate بودجه.<br><strong>Opponent:</strong> kill sacred cow — debat اجباری قبل از capex.",
+                "Nvidia CUDA (H3 bet) و Netflix streaming (H2 cannibalize DVD) هر دو Prospecting با gate واقعی بودند."
+              ]
+            },
+            {
+              "id": "midterm",
+              "title": "۲. میان‌ترم · ۲۰۰۰ کلمه · ۲۵٪",
+              "slideTitles": [
+                "محتوای میان‌ترم",
+                "deadline و فرمت"
+              ],
+              "paragraphs": [
+                "تحلیل سازمان پروژه: radar ۵ بعد (M2) · map archetype (preview M6) · دو سناریو تهاجمی/تدافعی · یک gate بودجه یک‌صفحه‌ای.",
+                "deadline: پایان هفته ۸ · APA · PDF."
+              ]
+            }
+          ],
+          "assignment": {
+            "title": "میان‌ترم",
+            "body": [
+              "۲۰۰۰ کلمه ±۱۰٪ · ۲۵٪ نمره · rubric در syllabus"
+            ],
+            "format": "PDF · APA",
+            "criteria": [
+              "Opponent documented",
+              "gate با KPI"
+            ]
+          },
+          "sessions": [
+            {
+              "step": "۱",
+              "time": "۵۰ د",
+              "title": "نقش‌ها",
+              "desc": "§۱ · تب کارگاه"
+            },
+            {
+              "step": "۲",
+              "time": "۵۰ د",
+              "title": "سناریو",
+              "desc": "کارگاه"
+            },
+            {
+              "step": "۳",
+              "time": "۶۰ د",
+              "title": "میان‌ترم Q&A",
+              "desc": "§۲"
+            }
+          ]
+        },
+        {
+          "num": "M5",
+          "id": "m5",
+          "pickerLabel": "آزمایش",
+          "title": "Probing · pilot ۹۰ روزه",
+          "hours": "۳ ساعت",
+          "readingsShort": "Rohrbeck (2010) ch.9",
+          "visual": "assets/fitness/modules/m5-probing.svg",
+          "visualCaption": "probe · KPI · kill · scale",
+          "lectureIntro": "Probing قلب FITness است. pilot باید کوچک، سریع، با KPI و kill criteria قبل از scale باشد.",
+          "lectureSections": [
+            {
+              "id": "probing",
+              "title": "۱. Probing و corporate venturing",
+              "slideTitles": [
+                "probe ۹۰ روزه · KPI · kill",
+                "Blockbuster · Netflix · Opponent"
+              ],
+              "paragraphs": [
+                "فصل ۹: probe ۹۰ روزه · budget cap · KPI روشن · kill criteria از روز اول. pilot بی‌پایان = waste.",
+                "Blockbuster probing دیر · Netflix KPI cannibalization · Opponent role: چه کسی «نه» گفت؟"
+              ]
+            },
+            {
+              "id": "memo",
+              "title": "۲. memo gate · ۲۰٪ نمره",
+              "slideTitles": [
+                "template memo gate",
+                "تحویل و deadline"
+              ],
+              "paragraphs": [
+                "template: Hypothesis · KPI · Budget · Kill criteria · Scale path · Opponent objection.",
+                "تحویل PDF · deadline هفته ۱۰ · لینk #assessment برای self-score bonus."
+              ]
+            }
+          ],
+          "assignment": {
+            "title": "memo gate یک‌صفحه",
+            "body": [
+              "برای signal/senario پروژه · ۲۰٪ نمره"
+            ],
+            "format": "یک صفحه A4",
+            "criteria": [
+              "KPI quantifiable",
+              "kill before start"
+            ]
+          },
+          "sessions": [
+            {
+              "step": "۱",
+              "time": "۴۵ د",
+              "title": "Probing",
+              "desc": "§۱"
+            },
+            {
+              "step": "۲",
+              "time": "۴۵ د",
+              "title": "Blockbuster case",
+              "desc": ""
+            },
+            {
+              "step": "۳",
+              "time": "۷۰ د",
+              "title": "memo workshop",
+              "desc": "§۲"
+            }
+          ]
+        },
+        {
+          "num": "M6",
+          "id": "m6",
+          "pickerLabel": "کهن‌الگو",
+          "title": "Archetypes · تحول",
+          "hours": "۳ ساعت",
+          "readingsShort": "Rohrbeck (2010) ch.10–11",
+          "visual": "assets/fitness/modules/m6-archetypes.svg",
+          "visualCaption": "Vigilant · Neurotic · Vulnerable · In Danger",
+          "lectureIntro": "چهار archetype ترکیب maturity × turbulence را نشان می‌دهد. Transformation = DNA + culture + incentive.",
+          "lectureSections": [
+            {
+              "id": "archetypes",
+              "title": "۱. چهار کهن‌الگو",
+              "slideTitles": [
+                "Vigilant · Neurotic · Vulnerable · In Danger",
+                "کلینیک Nokia · Blockbuster · IKEA"
+              ],
+              "paragraphs": [
+                "<strong>Vigilant:</strong> maturity بالا + turbulence بالا · benchmark ۳۳٪/۲۰۰٪.<br><strong>Neurotic:</strong> maturity بالا + turbulence پایین · تحلیل زیاد.<br><strong>Vulnerable:</strong> maturity پایین + turbulence پایین.<br><strong>In Danger:</strong> maturity پایین + turbulence بالا · Nokia path.",
+                "کلینیک: Nokia · Blockbuster · IKEA — map archetype + گلوگاه maturity."
+              ]
+            }
+          ],
+          "assignment": {
+            "title": "map archetype + برنامه ۳ مرحله",
+            "body": [
+              "diagram + ۲ صفحه prose"
+            ],
+            "format": "PDF",
+            "criteria": [
+              "evidence-based position"
+            ]
+          },
+          "sessions": [
+            {
+              "step": "۱",
+              "time": "۵۰ د",
+              "title": "Archetypes",
+              "desc": "§۱ · کارگاه"
+            },
+            {
+              "step": "۲",
+              "time": "۵۰ د",
+              "title": "Transformation",
+              "desc": "ch.10–11"
+            },
+            {
+              "step": "۳",
+              "time": "۶۰ د",
+              "title": "کلینیک",
+              "desc": "cases"
+            }
+          ]
+        },
+        {
+          "num": "M7",
+          "id": "m7",
+          "pickerLabel": "تلفیق",
+          "title": "تلفیق · CLA · Wheel · IT2",
+          "hours": "۳ ساعت",
+          "readingsShort": "Rohrbeck (2010) ch.12",
+          "visual": "assets/fitness/modules/m7-integration.svg",
+          "visualCaption": "synthesis · ارائه نهایی",
+          "lectureIntro": "جلسه پایانی corpus Rohrbeck را با CLA، Wheel و IT2 fuzzy تلفیق می‌کند. پروژه نهایی ۳۵٪ نمره.",
+          "lectureSections": [
+            {
+              "id": "integration",
+              "title": "۱. تلفیق ابزارها",
+              "slideTitles": [
+                "CLA · Wheel · IT2",
+                "GenAI call center · Trial vs Adopt"
+              ],
+              "paragraphs": [
+                "CLA برای عمق (worldview/myth) · Wheel برای cascade impacts · IT2 وقتی FOU spread > 0.38 در gate probing.",
+                "GenAI call center: ops 0.7–0.9 · legal 0.3–0.5 → Trial نه Adopt."
+              ]
+            },
+            {
+              "id": "final",
+              "title": "۲. پروژه نهایی · ۴۰۰۰–۵۰۰۰ کلمه · ارائه ۱۵ د",
+              "slideTitles": [
+                "ساختار گزارش نهایی",
+                "ارائه و peer review"
+              ],
+              "paragraphs": [
+                "Executive summary · ۵ بعد · archetype · weak signal · probe ۹۰ روز · gate · توصیه مدیریتی.",
+                "ارائه ۱۵ دقیقه/گروه · peer review · revision plan."
+              ]
+            }
+          ],
+          "assignment": {
+            "title": "پروژه پایانی",
+            "body": [
+              "گزارش ۴۰۰۰–۵۰۰۰ کلمه + PPT · ۳۵٪"
+            ],
+            "format": "PDF + ارائه حضوری",
+            "criteria": [
+              "actionable recommendation",
+              "Rohrbeck integrated"
+            ]
+          },
+          "sessions": [
+            {
+              "step": "۱",
+              "time": "۴۰ د",
+              "title": "CLA/Wheel/IT2",
+              "desc": "§۱"
+            },
+            {
+              "step": "۲",
+              "time": "۴۰ د",
+              "title": "Q&A پروژه",
+              "desc": "§۲"
+            },
+            {
+              "step": "۳",
+              "time": "۱۰۰ د",
+              "title": "ارائه",
+              "desc": "peer review"
+            }
+          ]
+        }
+      ],
+      "bibliographyTitle": "کتاب و مقالات Rohrbeck",
+      "bibliography": [
+        {
+          "category": "کتاب اصلی (اجباری)",
+          "items": [
+            "Rohrbeck (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer ~300 pp.",
+            "Rohrbeck (2008). PhD thesis, Aarhus University"
+          ]
+        },
+        {
+          "category": "مقالات کلیدی",
+          "items": [
+            "Rohrbeck, Arnold & Heuer (2007) TFSC",
+            "Rohrbeck & Schwarz (2013) TFSC",
+            "Rohrbeck (2014) EJFR",
+            "Rohrbeck & Gemünden (2010) IJIM",
+            "Rohrbeck (2011) World Future Review",
+            "Rohrbeck, Thom & Arnold (2015) TFSC"
+          ]
+        },
+        {
+          "category": "Case studies",
+          "items": [
+            "Deutsche Telekom Technology Radar",
+            "Siemens foresight pipeline",
+            "Bosch · BMW · E.ON vignettes"
+          ]
+        },
+        {
+          "category": "مکمل",
+          "items": [
+            "Teece (2007) dynamic capabilities",
+            "Inayatullah CLA",
+            "Glenn FRM 3.0 Wheel"
+          ]
+        }
+      ],
+      "seminarCasesTitle": "مطالعات موردی سمینار",
+      "seminarCases": [
+        {
+          "title": "Netflix",
+          "context": "cannibalization DVD→streaming",
+          "questions": "کدام P ضعیف؟ kill criteria؟",
+          "reading": "ch.4"
+        },
+        {
+          "title": "Nokia",
+          "context": "Vulnerable · silo · probing ضعیف",
+          "questions": "archetype و گلوگاه Culture؟",
+          "reading": "ch.10"
+        },
+        {
+          "title": "Deutsche Telekom",
+          "context": "Technology Radar · IoT · GenAI",
+          "questions": "Neurotic بدون Trial؟",
+          "reading": "2007 paper"
+        },
+        {
+          "title": "Siemens",
+          "context": "foresight-to-innovation",
+          "questions": "gate R&D کجا؟",
+          "reading": "2014 paper"
+        },
+        {
+          "title": "Zoom",
+          "context": "Readiness در COVID",
+          "questions": "Readiness vs FITness؟",
+          "reading": "M1 table"
+        },
+        {
+          "title": "Blockbuster",
+          "context": "In Danger · probing دیر",
+          "questions": "Opponent role ۲۰۰۵؟",
+          "reading": "ch.9"
+        }
+      ],
+      "examTitle": "ارزیابی",
+      "examRubric": [
+        {
+          "component": "سمینار",
+          "weight": "۱۵٪",
+          "desc": "حضور و بحث case"
+        },
+        {
+          "component": "میان‌ترم",
+          "weight": "۲۵٪",
+          "desc": "۵ بعد + archetype · ۲۰۰۰ کلمه"
+        },
+        {
+          "component": "probing M5",
+          "weight": "۲۰٪",
+          "desc": "memo gate + kill criteria"
+        },
+        {
+          "component": "پروژه نهایی",
+          "weight": "۳۵٪",
+          "desc": "۴۰۰۰–۵۰۰۰ کلمه · ارائه ۱۵ دقیقه"
+        },
+        {
+          "component": "#assessment",
+          "weight": "۵٪ bonus",
+          "desc": "self-score + reflection"
+        }
+      ],
+      "discussionTitle": "سؤالات بحث",
+      "discussionPrompts": [
+        "foresight واحد جدا یا embedded؟",
+        "ضعیف‌ترین بعد maturity؟",
+        "weak signal ignored؟",
+        "Opponent role مجاز؟",
+        "Neurotic در صنعت منطقه؟",
+        "IT2 لازم یا overkill؟"
+      ],
+      "teachingNotesTitle": "یادداشت استاد",
+      "teachingNotes": [
+        "M1 با #assessment · M7 revision",
+        "MBA: M2+M3 فشرده · M5 homework",
+        "~۲۵ صفحه کتاب/هفته",
+        "تب صنعت parallel reading",
+        "CLA/Wheel crossover M7"
+      ]
+    },
+    "labelRole": "نقش",
+    "labelFunction": "کارکرد در engagement",
+    "labelSetup": "زمینه",
+    "labelSignal": "سیگنال / داده",
+    "labelAction": "اقدام probing",
+    "labelTakeaway": "درس",
+    "labelFocus": "تمرکز",
+    "labelReadingsShort": "مطالعه",
+    "labelActivityShort": "فعالیت",
+    "labelExampleShort": "مثال",
+    "moduleSessionsTitle": "برنامه جلسه (۳ ساعت)",
+    "modulePickerHint": "روی هر ماژول کلیک کنید · فقط همان ماژول نمایش داده می‌شود",
+    "moduleM5AssessmentNote": "تحویل: memo gate یک‌صفحه‌ای (۲۰٪ نمره) · لینک #assessment",
+    "moduleM7ProjectNote": "ارائه پروژه پایانی · ۳۵٪ نمره · ۴۰۰۰–۵۰۰۰ کلمه",
+    "moduleKeyPointsTitle": "نکات کلیدی جلسه",
+    "moduleCaseTitle": "مورد عملی",
+    "moduleDeliverableTitle": "خروجی دانشجو",
+    "courseResourcesTitle": "منابع، ارزیابی و یادداشت استاد",
+    "labelSeminarContext": "زمینه",
+    "labelSeminarQuestions": "سؤالات",
+    "labelSeminarReading": "مطالعه",
+    "examColComponent": "جزء",
+    "examColWeight": "وزن",
+    "examColDesc": "شرح",
+    "workshopTag": "کارگاه تعاملی",
+    "workshopTitle": "ابزارها و شبیه‌سازی FITness",
+    "workshopSub": "کهن‌الگوها، نقش‌ها، خودارزیابی و رادار — جدا از طرح درس دانشگاهی در تب بالا.",
+    "industry": {
+      "tag": "صنعت و سازمان",
+      "title": "کارگاه استقرار FITness · از diagnosis تا probing ۹۰ روزه",
+      "intro": "این مسیر برای تیم استراتژی، نوآوری، corporate development و واحد foresight در شرکت طراحی شده · نه syllabus دانشگاهی. خروجی: امتیاز ۵ بعدی، یک weak signal اولویت‌دار، و طرح probing با gate سرمایه‌گذاری.",
+      "meta": [
+        {
+          "label": "مدت",
+          "value": "۱ روز onsite + ۶ هفته follow-up"
+        },
+        {
+          "label": "صنایع",
+          "value": "ICT · خودرو · دارو · انرژی · هلدینگ"
+        },
+        {
+          "label": "مرجع میدانی",
+          "value": "Siemens · Deutsche Telekom · Rohrbeck (2010)"
+        },
+        {
+          "label": "ابزار این صفحه",
+          "value": "#assessment · رادار فناوری · IT2 fuzzy bridge"
+        }
+      ],
+      "agendaTitle": "برنامه یک‌روزه در شرکت",
+      "agenda": [
+        {
+          "block": "۰۹:۰۰",
+          "title": "Diagnosis · کهن‌الگوی فعلی",
+          "desc": "خودارزیابی ۵ بعدی، radar chart، قرار دادن سازمان در ماتریس تلاطم/بلوغ · بحث: Vigilant یا Vulnerable؟"
+        },
+        {
+          "block": "۱۰:۳۰",
+          "title": "Perceiving · weak signals",
+          "desc": "رادار فناوری تعاملی، جمع‌آوری ۵ سیگنال از خط مقدم و اکوسیستم · معرفی FOU اگر خبرگان اختلاف دارند."
+        },
+        {
+          "block": "۱۳:۰۰",
+          "title": "Prospecting · portfolio افق",
+          "desc": "سناریوی تهاجمی/تدافعی، gate بودجه سه افق (H1/H2/H3)، نقش Initiator/Strategist/Opponent."
+        },
+        {
+          "block": "۱۵:۰۰",
+          "title": "Probing design · ۹۰ روز",
+          "desc": "یک pilot با kill criteria، owner مشخص، KPI · الگوی DT tech radar trial ring."
+        },
+        {
+          "block": "۱۶:۳۰",
+          "title": "Board memo · یک slide",
+          "desc": "خلاصه F-I-T، ریسک، درخواست بودجه probing، لینک به IT2 اگر عدم‌قطعیت خبرگان بالاست."
+        }
+      ],
+      "stakeholdersTitle": "نقش‌ها در کارگاه سازمانی",
+      "stakeholders": [
+        {
+          "role": "Corporate foresight / strategy",
+          "job": "رصد، سناریو، اتصال به planning cycle"
+        },
+        {
+          "role": "Innovation / venturing",
+          "job": "طراحی pilot، corporate VC، kill criteria"
+        },
+        {
+          "role": "Technology / R&D",
+          "job": "رادار فناوری، feasibility، roadmapping"
+        },
+        {
+          "role": "Business unit owner",
+          "job": "تأمین داده میدانی، اجرای probing در خط"
+        },
+        {
+          "role": "Finance / portfolio",
+          "job": "gate سرمایه‌گذاری، افق بودجه، ROI probing"
+        }
+      ],
+      "workflowTitle": "۶ گام engagement در سازمان",
+      "workflowSteps": [
+        {
+          "title": "۱. Scan",
+          "desc": "جمع weak signals از رادار، بازار، patent، startup landscape"
+        },
+        {
+          "title": "۲. Score",
+          "desc": "خودارزیابی ۵ بعد Rohrbeck + benchmark صنعت"
+        },
+        {
+          "title": "۳. Map",
+          "desc": "قرار دادن در archetype · تعیین gap Perceiving/Prospecting/Probing"
+        },
+        {
+          "title": "۴. Design probe",
+          "desc": "pilot ۹۰ روزه با owner و KPI"
+        },
+        {
+          "title": "۵. Gate",
+          "desc": "تصمیم scale/kill/pivot · اتصال به بودجه H2/H3"
+        },
+        {
+          "title": "۶. Transform",
+          "desc": "اگر probe موفق · تغییر ساختار، فرهنگ، portfolio"
+        }
+      ],
+      "deliverablesTitle": "خروجی برای سازمان",
+      "deliverables": [
+        "نمودار radar بلوغ ۵ بعدی + archetype label",
+        "لیست ۵ weak signal با اولویت FOU (در صورت نیاز IT2)",
+        "طرح probing ۹۰ روزه با kill criteria",
+        "یک slide memo برای gate سرمایه‌گذاری",
+        "پیشنهاد اتصال به رادار فناوری و corporate venturing"
+      ],
+      "casesTitle": "سه سناریوی صنعتی",
+      "caseStudies": [
+        {
+          "title": "Deutsche Telekom · Technology Radar",
+          "setup": "اپراتور ICT با تلاطم بالا · foresight میدانی روهربک",
+          "signal": "IoT کشاورزی از حسگر مینیاتوری · GenAI در call center",
+          "action": "ring Trial برای agentic AI · Adopt برای edge · Scan برای 6G",
+          "takeaway": "رادار بدون probing ring فقط Neurotic می‌سازد · DT هر فناوری را در Scan→Adopt نگه می‌دارد."
+        },
+        {
+          "title": "Siemens · corporate foresight maturity",
+          "setup": "صنعت سنگین + digital twin + energy transition",
+          "signal": "برق سبز، automation، software-defined factory",
+          "action": "venturing و probing در افق H2 قبل از scale در H1",
+          "takeaway": "FITness یعنی portfolio سه‌افقی · foresight به gate R&D وصل است نه به PDF سالانه."
+        },
+        {
+          "title": "خودرو / mobility · گذار EV و software-defined",
+          "setup": "تلاطم بالا · رقبای جدید از tech",
+          "signal": "battery chemistry، OTA، autonomy stack",
+          "action": "probe با platform مشترک · Opponent role برای cannibalize ICE revenue",
+          "takeaway": "بدون Opponent، سازمان در Vulnerable می‌ماند حتی با رادار قوی · مثل تاخیر OEMها در OTA."
+        }
+      ],
+      "probingTitle": "playbook probing ۹۰ روزه",
+      "probingPlaybook": [
+        "هفته ۱–۲: تعریف فرضیه · «اگر X رخ دهد، Y٪ هزینه/درآمد تحت تأثیر است» · owner از business unit.",
+        "هفته ۳–۶: pilot محدود · یک خط، یک geography، یک customer segment · داده واقعی نه slide.",
+        "هفته ۷–۱۰: ارزیابی با Opponent role · سناریوی شکست · آیا kill criteria برقرار شد؟",
+        "هفته ۱۱–۱۲: gate · scale، pivot، یا kill · ثبت در roadmap و بودجه افق بعدی."
+      ],
+      "checklistTitle": "چک‌لیست قبل از ورود به engagement",
+      "checklistItems": [
+        "آیا ۵ بعد maturity حداقل یک‌بار در ۱۲ ماه گذشته score شده؟",
+        "آیا weak signal از خط مقدم جمع می‌شود یا فقط از گزارش مشاور؟",
+        "آیا بودجه H2/H3 جدا از H1 تعریف شده؟",
+        "آیا kill criteria برای pilot نوشته شده؟",
+        "اگر خبرگان روی strength سیگنال اختلاف دارند · آیا IT2 FOU آماده است؟"
+      ],
+      "boardMemoTitle": "الگوی slide gate (یک صفحه)",
+      "boardMemoFields": [
+        "Archetype فعلی + gap اصلی (مثلاً Methods قوی، Probing ضعیف)",
+        "Weak signal اولویت‌دار + FOU width (IT2 اگر spread بالا)",
+        "طرح probing ۹۰ روز · budget · KPI · kill criteria",
+        "اثر بر portfolio F-I-T · ریسک عدم اقدام",
+        "درخواست تصمیم: approve probe / defer / kill"
+      ]
+    },
+    "fuzzyBridge": {
+      "tag": "اتصال به منطق فازی نوع ۲ (IT2)",
+      "title": "وقتی foresight و FITness با عدم‌قطعیت خبرگان روبرو می‌شوند",
+      "lead": "در Perceiving، چند واحد یا خبره روی «قدرت» یک weak signal نظر متفاوت دارند · نه ۷ از ۱۰، بلکه «بین ۰.۴ و ۰.۷». IT2 همان FOU را مدل می‌کند.",
+      "narrative": [
+        "خودارزیابی ۵ بعدی این صفحه یک عدد می‌دهد؛ در کارگاه صنعتی واقعی، panel expert interval می‌دهد. اگر spread FOU بزرگ باشد، probing قبل از سرمایه‌گذاری سنگین ضروری است · همان منطق verdictWide در کارگاه Type-2.",
+        "FITness بدون IT2 در Perceiving گاهی Neurotic می‌سازد: همه سیگنال «مهم» به نظر می‌رسد. IT2 کمک می‌کند consensus واقعی از noise جدا شود و gate بودجه بر پایه uncertainty انجام شود.",
+        "پیشنهاد عملی: برای ۳–۵ weak signal برتر، FOU خبرگان را بکش · اگر aggregate spread &lt; ۰.۲۲ → probing سبک؛ اگر &gt; ۰.۳۸ → workshop IT2 + Opponent role قبل از portfolio commit."
+      ],
+      "mappingRows": [
+        {
+          "fitness": "Perceiving · weak signal",
+          "it2": "FOU خبرگان روی strength/relevance سیگنال"
+        },
+        {
+          "fitness": "Prospecting · سناریو",
+          "it2": "interval probability برای branchهای محتمل"
+        },
+        {
+          "fitness": "Probing · gate",
+          "it2": "verdict spread → سطح pilot و kill criteria"
+        },
+        {
+          "fitness": "۵ بعد maturity",
+          "it2": "panel score به جای یک slider · میانگین lower/upper"
+        },
+        {
+          "fitness": "Technology radar ring",
+          "it2": "Scan/Assess/Trial/Adopt با fuzzy label (نه binary)"
+        }
+      ],
+      "examples": [
+        {
+          "title": "GenAI در call center (DT-style)",
+          "text": "واحد ops: relevance 0.7–0.9 · legal: 0.3–0.5 · FOU پهن → Trial ring نه Adopt · probing محدود با kill criteria compliance."
+        },
+        {
+          "title": "reshoring در هلدینگ صنعتی",
+          "text": "strategy: 0.5–0.8 · supply chain: 0.2–0.4 · spread متوسط → probing ۹۰ روزه روی یک SKU قبل of capex."
+        }
+      ],
+      "detailProse": "IT2 جایگزین Rohrbeck نیست؛ لایه uncertainty روی Perceiving و gate probing است. برای workshop کامل به صفحه <strong>منطق فازی نوع ۲</strong> · تب صنعت و سازمان برو.",
+      "linkLabel": "کارگاه IT2 · مسیر صنعت"
+    },
+    "fuzzyColFitness": "بُعد FITness",
+    "fuzzyColIT2": "نقش IT2",
+    "fuzzyDetailsTitle": "جزئیات اتصال FITness و IT2",
     "readiness": {
       "tag": "پایه و اساس آینده‌پژوهی",
       "title": "آمادگی برای آینده (Future Readiness) چیست؟",
       "sub": "پیش‌بینی روندها، درک سناریوها و برنامه‌ریزی استراتژیک برای مدیریت عدم‌قطعیت‌ها.",
-      "p1": "<strong>Future Readiness</strong> یعنی توانایی پیش‌بینی تغییرات، درک عمیق آن‌ها و برنامه‌ریزی هدفمند برای واکنش هوشمند. ریشه این مفهوم در مدیریت عدم‌قطعیت است: رصد ریسک‌ها و تبدیل آن‌ها به فرصت‌های کلان.",
-      "p2": "دنیای امروز با تغییرات تکنولوژیکی سریع · از هوش مصنوعی مولد تا تحولات اقلیمی · مواجه است. سازمان‌ها و افرادی که برای آینده آماده باشند، این تغییرات را فرصت برای پیشرفت و راهبری می‌بینند، نه تهدید فلج‌کننده.",
-      "challengeTitle": "یک سوال چالش‌برانگیز",
-      "challengeText": "آیا سازمان شما یا خود شما برای تغییرات بنیادین آینده آماده هستید؟ اگر بخواهید همین امروز تغییری ایجاد کنید که شما را برای آینده ورزیده کند، اولین قدم کلیدی شما چیست؟",
+      "p1": "<strong>Future Readiness</strong> یعنی توانایی پیش‌بینی تغییرات، درک عمیق آن‌ها و برنامه‌ریزی هدفمند برای واکنش هوشمند. در صنعت، این لایه اول است: رصد ریسک‌ها و تبدیل آن‌ها به فرصت · قبل از probing و transform.",
+      "p2": "صنایع با چرخش تکنولوژیک سریع · از هوش مصنوعی مولد تا گذار انرژی · سازمان‌هایی که Readiness را جدی گرفته‌اند (مثل pilot remote-work قبل از کرونا یا edge در telco) سریع‌تر scale-up کردند؛ اما Readiness بدون FITness به گزارش‌های انباشته تبدیل می‌شود.",
+      "challengeTitle": "سؤال برای تیم استراتژی",
+      "challengeText": "آیا foresight شما در این صنعت «گزارش سالانه» است یا «قابلیت probing»؟ اگر فردا یک weak signal بحرانی برسد · اولین gate واقعی شما کدام است: بودجه H2، pilot ۹۰ روزه، یا هیچ‌کدام؟",
       "fiveElementsTitle": "۵ عنصر کلیدی تشکیل‌دهنده آمادگی برای آینده",
       "foresightTitle": "آینده‌نگاری و پیش‌بینی سناریوها",
       "foresightText": "آینده‌نگاری یعنی درک عمیق روندها و تحلیل سناریوهای مختلف. سازمان‌هایی که پیش از پاندمی کرونا به فناوری کار از راه دور آزمایشی روی آورده بودند، در قرنطینه بسیار سریع‌تر خود را وفق دادند.",
@@ -2194,23 +3268,23 @@
       "sustainabilityTitle": "نقش حیاتی پایداری (Sustainability) در پورتفولیو",
       "sustainabilityP1": "پایداری فراتر از مسئولیت اجتماعی، یک استراتژی تجاری هوشمند است. همسوسازی با اهداف ESG ریسک اقلیمی را کاهش می‌دهد و مزیت رقابتی پایدار در بازارهای جهانی ایجاد می‌کند.",
       "sustainabilityP2": "IKEA با تعهد به مواد بازیافتی و تجدیدپذیر تا ۲۰۳۰، وفاداری مشتری و کاهش هزینه مواد اولیه را نشان داد. تسلا (خودرو برقی) و آمازون (لجستیک پیشرفته) با سرمایه‌گذاری روی روندهای بلندمدت، بقا و پیشتازی خود را تضمین کردند.",
-      "globalAppsTitle": "کاربردهای چندگانه Future Readiness در جهان",
+      "globalAppsTitle": "کاربرد Future Readiness در صنایع",
       "apps": [
         {
-          "label": "آموزش (فنلاند)",
-          "text": "سیستم آموزشی فنلاند با یادگیری مبتنی بر پروژه و نوآوری، دانش‌آموزان را برای حل مسائل پیچیده دنیای واقعی فردا آماده می‌کند."
+          "label": "مخابرات و ICT",
+          "text": "دویچه تلکام و اپراتورهای مشابه با technology radar و IoT کشاورزی · foresight به ring Trial/Adopt وصل می‌شود نه فقط به گزارش روند."
         },
         {
-          "label": "سیاست‌گذاری (سنگاپور)",
-          "text": "برنامه ملی Smart Nation سنگاپور با فناوری، اقتصاد و کیفیت زندگی شهروندان را برای چالش سالمگی آماده می‌سازد."
+          "label": "خودرو و mobility",
+          "text": "OEMها با probing OTA و EV قبل از scale · سازمان‌هایی که فقط Readiness داشتند در گذار software-defined عقب ماندند."
         },
         {
-          "label": "بهداشت و درمان (NHS بریتانیا)",
-          "text": "استفاده از تحلیل داده‌های کلان و هوش مصنوعی برای تشخیص زودهنگام بیماری‌ها و بهینه‌سازی منابع بیمارستان‌ها."
+          "label": "دارو و biotech",
+          "text": "رصد AI drug discovery و رگولاتوری · pilot محدود قبل از capex خط تولید."
         },
         {
-          "label": "حمل‌ونقل و بحران (هلند و ژاپن)",
-          "text": "هلند با حمل‌ونقل سبز و ژاپن با سیستم‌های هشدار زلزله و مدیریت بحران، نمونه‌های سرآمد تاب‌آوری ملی هستند."
+          "label": "انرژی و صنعت سنگین",
+          "text": "زیمنس و peers با digital twin و برق سبز · portfolio سه‌افقی H1/H2/H3."
         }
       ]
     },
@@ -2354,35 +3428,38 @@
       "initiator": {
         "tab": "۱. نقش آغازگر (Initiator)",
         "title": "۱. نقش آغازگر (Initiator) · جرقه محرک نوآوری",
-        "desc": "نقش آغازگر در فاز <strong>درک کردن (Perceiving)</strong> فعالیت می‌کند. وظیفه آن پایش دائمی محیط بیرونی، کشف روندهای نوظهور و تبدیل آن‌ها به مفاهیم اولیه نوآوری است.",
+        "desc": "نقش آغازگر در فاز <strong>درک کردن (Perceiving)</strong> فعال است · پایش محیط بیرونی، کشف روند نوظهور، تبدیل weak signal به concept اولیه.",
+        "narrative": "در صنعت، Initiator معمولاً واحد foresight، tech radar یا venturing است · نه یک عنوان سازمانی ثابت. کارش این است که قبل از budget commit، سیگنال را نام‌گذاری و اولویت‌بندی کند. اگر IT2 استفاده شود، همین فاز جایی است که FOU خبرگان رسم می‌شود.",
         "duties": [
-          "راه‌اندازی و پایش مستمر رادارهای فناوری و روندهای نوظهور.",
-          "شناسایی سیگنال‌های ضعیف تغییر (Weak Signals) پیش از همه‌گیر شدن.",
-          "برگزاری کارگاه‌های طوفان فکری برای خلق ایده‌های مفهومی نوآورانه."
+          "راه‌اندازی و پایش رادار فناوری و روندهای نوظهور.",
+          "شناسایی weak signal قبل از mainstream شدن.",
+          "کارگاه cross-functional برای concept اولیه · نه slide ۱۰۰ صفحه‌ای."
         ],
-        "example": "واحد آینده‌نگاری <strong>دویچه تلکام</strong> با پایش حسگرهای مینیاتوری، ایده اتصال زمین‌های کشاورزی به شبکه را به عنوان آغازگر پروژه‌های اینترنت اشیاء (IoT) استارت زد."
+        "example": "واحد foresight <strong>دویچه تلکام</strong> با پایش حسگر IoT، اتصال زمین کشاورزی به شبکه را به عنوان آغازگر پروژه‌های اینترنت اشیاء (IoT) استارت زد."
       },
       "strategist": {
         "tab": "۲. نقش استراتژیست (Strategist)",
         "title": "۲. نقش استراتژیست (Strategist) · هدایت سبد سرمایه‌گذاری",
-        "desc": "نقش استراتژیست در فاز <strong>کاوش کردن (Prospecting)</strong> فعالیت می‌کند. وظیفه آن هدایت سبد سرمایه‌گذاری‌های نوآوری بر اساس سناریوهای آینده است.",
+        "desc": "نقش استراتژیست در فاز <strong>کاوش (Prospecting)</strong> فعال است · هدایت portfolio نوآوری بر اساس سناریو و roadmapping.",
+        "narrative": "Strategist خروجی Perceiving را به gate بودجه وصل می‌کند: H1 بهینه‌سازی، H2 probing، H3 option value. در انویدیا، همین نقش سبد R&D را به سمت CUDA و دیتاسنتر AI سوق داد · نه با یک meeting، بلکه با سال‌ها portfolio commit.",
         "duties": [
-          "تدوین سناریوهای آینده‌نگارانه تهاجمی و تدافعی برای صنعت.",
-          "ترسیم نقشه‌های راه فناوری (Technology Roadmapping) برای همسوسازی دپارتمان‌ها.",
-          "تعریف چشم‌اندازهای مشترک آینده (Shared Visions) برای سازمان."
+          "سناریوی تهاجمی/تدافعی برای صنعت.",
+          "Technology roadmapping و همسوسازی واحدها.",
+          "Shared vision برای افق ۳–۵ سال · قابل audit."
         ],
-        "example": "مدیریت ارشد <strong>انویدیا</strong> با تحلیل سناریوهای پردازش اطلاعات، تمام سبد R&D را به سمت معماری پردازش هوش مصنوعی در دیتاسنترها سوق داد."
+        "example": "<strong>انویدیا</strong> با تحلیل سناریوی پردازش، سبد R&D را به معماری AI در دیتاسنتر سوق داد · قبل از boom یادگیری عمیق."
       },
       "opponent": {
         "tab": "۳. نقش مخالف (Opponent)",
         "title": "۳. نقش مخالف (Opponent) · وکیل مدافع شیطان",
-        "desc": "نقش مخالف در فاز <strong>آزمودن (Probing)</strong> فعالیت می‌کند. وظیفه آن به چالش کشیدن مفروضات صلب، ارزیابی نقادانه پروژه‌ها و جلوگیری از سوگیری‌های تاییدی مدیریت است.",
+        "desc": "نقش مخالف در فاز <strong>آزمودن (Probing)</strong> فعال است · به چالش کشیدن مفروضات، kill criteria، جلوگیری از confirmation bias.",
+        "narrative": "Opponent در صنعت حیاتی است وقتی درآمد فعلی سالم است · بلاک‌باستر و نوکیا هر دو opponent داخلی نداشتند. اپل با آیفون عمداً آی‌پاد پرفروش را cannibalize کرد · این همان Opponent role است که قبل از رقیب اجرا می‌شود.",
         "duties": [
-          "اجرای سناریوهای سخت‌گیرانه برای تست بقا و تاب‌آوری پروژه‌ها.",
-          "اجرای بازی‌های جنگ شبیه‌سازی‌شده (War Gaming) برای کشف نقاط ضعف درونی.",
-          "تسهیل خودتخریبی خلاق (Cannibalization) برای حذف محصولات قدیمی سودآور."
+          "سناریوی سخت‌گیرانه برای تست بقای pilot.",
+          "War gaming برای نقاط ضعف portfolio.",
+          "تسهیل cannibalization محصول سودآور فعلی."
         ],
-        "example": "زمانی که <strong>استیو جابز</strong> پروژه آیفون را کلید زد، به عنوان مخالف علیه آی‌پاد (محصول پرفروش) شورش کرد · می‌دانست اگر اپل خود این کار را نکند، رقیب دیگری موسیقی را درون گوشی ادغام خواهد کرد."
+        "example": "در <strong>اپل</strong>، launch آیفون علیه آی‌پاد یک Opponent role سازمانی بود · می‌دانستند اگر خودشان ادغام موسیقی در گوشی را انجام ندهند، رقیب می‌کند."
       }
     },
     "cases": {
@@ -2392,9 +3469,9 @@
       "netflix": {
         "tab": "نتفلیکس (تکامل پویای مداوم)",
         "title": "نتفلیکس (Netflix) · سرآمدی در بازآفرینی قابلیت‌های پویا",
-        "scanning": "در اواخر دهه ۱۹۹۰، تیم رهبری با رصد پهنای باند اینترنت و کدهای فشرده‌سازی ویدئو، متوجه منسوخ شدن دیسک‌های فیزیکی شد. این حس‌گری دقیق از سیگنال‌های ضعیف بود.",
-        "seizing": "در ۲۰۰۷ پلتفرم استریم آنلاین راه‌اندازی شد. در ۲۰۱۲ سهم عظیمی از منابع به تولید محتوای انحصاری (House of Cards) اختصاص یافت تا وابستگی به استودیوها کاهش یابد.",
-        "transforming": "تغییر کامل از دیتاسنترهای داخلی به معماری ابری (AWS) و بازتعریف مداوم بر اساس هوش مصنوعی مولد و شخصی‌سازی عمیق. درس: آمادگی برای نابودی مدل‌های درآمدی موفق فعلی."
+        "scanning": "در اواخر دهه ۱۹۹۰، تیم رهبری با رصد پهنای باند و codec ویدئو، منسوخ شدن دیسک فیزیکی را دید · حس‌گری از weak signal.",
+        "seizing": "۲۰۰۷ استریم آنلاین · ۲۰۱۲ تولید انحصاری (House of Cards) · تخصیص resource قبل از قطع وابستگی به استودیو.",
+        "transforming": "مهاجرت به AWS، AI personalization · درس صنعتی: cannibalize مدل درآمد موفق فعلی قبل از رقیب."
       },
       "nvidia": {
         "tab": "انویدیا (شرط‌بندی روی آینده نامرئی)",
@@ -2407,15 +3484,15 @@
         "tab": "نوکیا (تصلب ساختاری و شکست سیستمی)",
         "title": "نوکیا (Nokia) · جمود ساختاری و تله موفقیت گذشته",
         "scanning": "نوکیا سیگنال‌های گذار به صفحات لمسی و اکوسیستم‌های نرم‌افزاری را دریافت کرده بود؛ حتی نمونه‌های اولیه تبلت لمسی را سال‌ها پیش از آیفون توسعه داده بود.",
-        "seizing": "به دلیل تله موفقیت و حاشیه سود بالای گوشی‌های دکمه‌ای، مدیران سیمبین را حفظ کردند. بوروکراسی مانع تبدیل سیگنال‌های خطر به تصمیمات جسورانه شد.",
-        "transforming": "فرهنگ ترس و گزارش‌دهی خوش‌بینانه ضعف‌های فنی را پنهان کرد. بوروکراسی صلب مانع بازآفرینی شد و نوکیا بازار موبایل را کاملاً از دست داد. درس: جمود شناختی می‌تواند بهترین ظرفیت‌های رصد را خنثی کند."
+        "seizing": "به دلیل تله موفقیت گوشی دکمه‌ای، Symbian حفظ شد · gate probing ضعیف · سیگنال به portfolio commit تبدیل نشد.",
+        "transforming": "فرهنگ گزارش خوش‌بینانه و ساختار صلب · بازار موبایل از دست رفت. درس: Sensing بدون Opponent و probing کافی نیست."
       },
       "blockbuster": {
         "tab": "بلاک‌باستر (ترس از خودتخریبی درآمد)",
         "title": "بلاک‌باستر (Blockbuster) · قربانی شدن آینده‌نگاری در مسلخ سهام‌داران کوتاه‌مدت",
-        "scanning": "مدیران بلاک‌باستر رشد نتفلیکس و مدل توزیع دیجیتال را رصد کرده بودند و می‌دانستند عمر مدل فیزیکی اجاره فیلم رو به پایان است.",
-        "seizing": "جان آنتیوکو پلتفرم آنلاین را راه‌اندازی کرد و جریمه دیرکرد اجاره را لغو کرد · اقدامات با هدف جذب فرصت‌های استریمینگ.",
-        "transforming": "هیئت مدیره کوتاه‌مدت‌نگر به دلیل افت مقطعی درآمد (جریمه دیرکرد ۱۶٪ سود را تشکیل می‌داد)، مدیرعامل را اخراج کرد، جریمه‌ها را بازگرداند و تمرکز را بر فروشگاه‌های فیزیکی گذاشت · ورشکستگی کامل. درس: تضاد منافع کوتاه‌مدت با سرمایه‌گذاری بقای بلندمدت، بزرگترین مانع تحول است."
+        "scanning": "رشد نتفلیکس و توزیع دیجیتال رصد شده بود · عمر مدل فیزیکی رو به پایان.",
+        "seizing": "پلتفرم آنلاین و حذف جریمه دیرکرد · اقدام درست probing اما...",
+        "transforming": "ساختار تصمیم‌گیری کوتاه‌مدت درآمد را بر probing ترجیح داد · جریمه دیرکرد برگشت · ورشکستگی. درس: gate مالی باید FITness را بکشد نه quarterly EPS."
       }
     },
     "formula": {
@@ -2478,17 +3555,17 @@
         {
           "level": "۳. افراد",
           "title": "سرمایه انسانی و خبرگان (People)",
-          "desc": "شایستگی، سواد آینده و ترکیب خبرگان؛ آموزش مدیران، شبکه‌های تحلیل اطلاعات، انگیزه پرسنل و جذب نخبگان آینده‌پژوه."
+          "desc": "شایستگی، سواد آینده، شبکه expert · upskilling خط مقدم و foresight، نه فقط یک unit کوچک."
         },
         {
           "level": "۴. سازمان",
           "title": "ساختار رسمی و تصمیم‌گیری (Organization)",
-          "desc": "مکانیزم‌های رسمی بازخورد و بوروکراسی؛ اتصال خروجی‌های آینده‌نگاری به برنامه‌ریزی استراتژیک، بودجه R&D و انعطاف ساختار اداری."
+          "desc": "اتصال foresight به planning، بودجه R&D، gate venturing · انعطاف ساختار برای probing."
         },
         {
           "level": "۵. فرهنگ",
           "title": "پذیرش عدم‌قطعیت و نوآوری (Culture)",
-          "desc": "ارزش‌های بنیادین؛ تحمل شکست، تشویق تفکر خلاق، تمایل به خودتخریبی خلاق پیش از رقیب، و نبود ترس از بیان هشدارهای تغییر."
+          "desc": "تحمل شکست pilot، cannibalization، بیان هشدار · بدون ترس از kill کردن پروژه."
         }
       ]
     },
@@ -2512,11 +3589,11 @@
         },
         "org": {
           "label": "۴. سازماندهی رسمی (Formal Org)",
-          "desc": "وجود ساختارهای مجزا برای آینده‌نگاری، اتصال خروجی‌ها به تصمیمات هیئت مدیره و بودجه مستقل."
+          "desc": "ساختار foresight، اتصال به gate سرمایه‌گذاری و بودجه probing مستقل."
         },
         "culture": {
           "label": "۵. فرهنگ سازمانی (Culture)",
-          "desc": "پذیرش تغییر، نبود ترس از شکست و کارآفرینی درون‌سازمانی با حمایت مدیریت ارشد."
+          "desc": "پذیرش تغییر، kill کردن pilot، cannibalization · حمایت ساختار gate نه فقط slogan."
         }
       },
       "calculateBtn": "محاسبه شاخص بلوغ",
@@ -2555,11 +3632,11 @@
         },
         "vulnerable": {
           "status": "آسیب‌پذیر در برابر تغییر (Vulnerable)",
-          "description": "هشدار! سازمان شما در منطقه خطر قرار دارد. اتکای بیش از حد به فرآیندهای سنتی و مقاومت فرهنگی در برابر تغییر، بقای شما را در مواجهه با عدم‌قطعیت‌های بازار تهدید می‌کند. تحول فوری در زیرساخت اطلاعاتی و نگرش مدیریتی ضروری است.",
+          "description": "هشدار! سازمان شما در منطقه خطر قرار دارد. اتکای بیش از حد به فرآیندهای سنتی و مقاومت فرهنگی در برابر تغییر، بقای شما را در مواجهه با عدم‌قطعیت‌های بازار تهدید می‌کند. تحول فوری در زیرساخت اطلاعاتی و gate probing ضروری است.",
           "recs": [
-            "راه‌اندازی فوری فرآیند رصد محیطی ماهانه برای شناسایی تهدیدهای نوظهور.",
-            "برگزاری کارگاه‌های آموزشی تفکر آینده‌نگر و مدیریت بحران برای رهبران.",
-            "کاهش بوروکراسی رسمی برای امکان واکنش سریع به تغییرات بازار."
+            "راه‌اندازی فوری رصد محیطی ماهانه برای weak signal.",
+            "کارگاه foresight + Opponent role برای pilotهای جاری.",
+            "کاهش بوروکراسی gate · probing ۹۰ روزه با kill criteria."
           ]
         }
       }
@@ -2616,8 +3693,9 @@
         "ai": "هوش مصنوعی و داده",
         "net": "شبکه‌های ارتباطی",
         "comp": "رایانش و ابر نوظهور",
-        "bio": "بیوتک و فناوری همگرا"
+        "bio": "سلامت دیجیتال و مراقبت از راه دور"
       },
+      "bioQuadrantNote": "دویچه تلکام در بیوتک آزمایشگاهی (داروسازی/مهندسی ژنتیک) فعالیت نمی‌کند. ربع پایین‑راست نشان‌دهنده بازار مجاور Digital Health است: telemedicine، IoT سلامت و پلتفرم‌های مراقبت از راه دور روی شبکه DT و T-Systems — همان منطق «رصد افق‌های مجاور» در مطالعه Rohrbeck et al. (2007).",
       "statusLabel": "وضعیت رادار:",
       "impactLabel": "تأثیر استراتژیک بر سازمان:",
       "tech": {
@@ -2670,19 +3748,19 @@
           "desc": "پردازش داده‌ها در محل تولید (حسگر یا دوربین) به جای ارسال به سرورهای ابری مرکزی.",
           "impact": "ناوبری فوری خودروهای خودران و تحلیل سریع تصاویر دوربین‌های امنیتی بدون سربار شبکه."
         },
-        "biocomputing": {
-          "title": "رایانش زیستی (Bio-computing)",
-          "quadrant": "بیوتک و فناوری همگرا",
-          "status": "Scan (رصد)",
-          "desc": "مهندسی DNA و سلول‌های زیستی برای محاسبات منطقی و ذخیره‌سازی داده با ماندگاری بالا و مصرف انرژی نزدیک به صفر.",
-          "impact": "جایگزینی مراکز داده عظیم با ابعاد میلی‌متری و سیستم‌های زیست‌سازگار ذخیره کلان‌داده."
+        "telehealth": {
+          "title": "Telemedicine و مراقبت از راه دور",
+          "quadrant": "سلامت دیجیتال و مراقبت از راه دور",
+          "status": "Trial (آزمایش)",
+          "desc": "پلتفرم‌های ویزیت آنلاین، پرونده الکترونیک و اتصال بیمار–پزشک روی زیرساخت مخابراتی DT و T-Systems Healthcare — بازار مجاور، نه بیوتک آزمایشگاهی.",
+          "impact": "درآمد B2B2C در سگمنت Health · کاهش فشار بر شبکه با edge و QoS اختصاصی."
         },
-        "metaverse": {
-          "title": "متاورس و رایانش فضایی (Metaverse)",
-          "quadrant": "بیوتک و فناوری همگرا",
+        "healthIoT": {
+          "title": "IoT سلامت و پایش از راه دور",
+          "quadrant": "سلامت دیجیتال و مراقبت از راه دور",
           "status": "Assess (ارزیابی)",
-          "desc": "ادغام VR، AR و فضاهای سه‌بعدی تعاملی برای همکاری دیجیتال و شبیه‌سازهای حرفه‌ای.",
-          "impact": "تغییر جدی در آموزش از راه دور، شبیه‌سازی جراحی‌ها و ایجاد دوقلوهای دیجیتال سازمانی."
+          "desc": "حسگرهای پوشیدنی و دستگاه‌های پایش بیمار در منزل که از طریق شبکه NB-IoT/LTE-M به مرکز تماس متصل می‌شوند.",
+          "impact": "مدل subscription برای اپراتور · هم‌افزایی با Ag-IoT (M3) روی همان stack شبکه."
         }
       }
     },
@@ -2695,7 +3773,17 @@
       "sensing": "حس‌گری و رصد (Sensing)",
       "seizing": "کسب فرصت (Seizing)",
       "transforming": "تحول ساختار (Transforming)"
-    }
+    },
+    "moduleContentTag": "جزوه و ارائه جلسه",
+    "moduleDeckNavLabel": "ناوبری اسلاید",
+    "moduleDeckPrev": "قبلی →",
+    "moduleDeckNext": "← بعدی",
+    "moduleDeckSlide": "اسلاید",
+    "moduleDeckFullscreen": "تمام‌صفحه · F",
+    "moduleReadingsTitle": "مطالعه تکمیلی",
+    "moduleAssignmentTitle": "تکلیف",
+    "labelFormat": "فرمت تحویل",
+    "labelCriteria": "معیار نمره‌دهی"
   },
   "claPage": {
     "history": {

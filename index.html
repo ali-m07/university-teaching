@@ -1,191 +1,95 @@
 ﻿<!DOCTYPE html>
-
 <html lang="fa" dir="rtl">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-
-    <title>FORESIGHT HUB | Ali Mansouri</title>
-
+    <title>پلتفرم آموزشی آینده‌پژوهی | علی منصوری</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css?v=20250627b">
-
+    <link rel="stylesheet" href="css/style.css?v=20250629d">
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
 </head>
-
-<body>
-
+<body class="sfh-platform">
     <canvas id="particles-canvas"></canvas>
 
-
-
     <header class="main-header">
-
         <div class="logo">
-
             <span class="logo-icon"><i data-lucide="compass"></i></span>
-
             <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
-
         </div>
-
         <nav class="nav-links"></nav>
-
         <div class="header-actions"></div>
-
     </header>
 
-
-
-    <section id="hero" class="hero-section" style="min-height: 78vh; padding-top: 120px;">
-
+    <section id="main-content" class="hero-section">
         <div class="hero-content">
-
-            <h1 class="hero-title" data-i18n="index.heroTitle" data-i18n-html>FORESIGHT<br>HUB</h1>
-
-            <p class="hero-subtitle" data-i18n="index.heroSub" style="font-size: 1.15rem; max-width: 640px;"></p>
-
-            <p data-i18n="index.heroIntroP1" style="max-width: 640px; margin-top: 20px; line-height: 1.85; color: var(--text-secondary);"></p>
-
-            <p data-i18n="index.heroIntroP2" style="max-width: 640px; margin-top: 12px; line-height: 1.85; color: var(--text-secondary);"></p>
-
-            <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px;">
-
-                <a href="articles/" class="btn-primary-sm"><i data-lucide="pen-line"></i> <span data-i18n="nav.articles">مقالات</span></a>
-
-                <a href="methods/" class="btn-ghost-sm"><i data-lucide="library"></i> <span data-i18n="nav.methods">روش‌های آینده‌پژوهی</span></a>
-
+            <ul class="hero-credential">
+                <li data-i18n="index.credentialPhd">دکتری آینده‌پژوهی · دانشگاه تهران</li>
+                <li data-i18n="index.credentialFocus">آینده‌پژوهی راهبردی · فناوری نوظهور</li>
+            </ul>
+            <h1 class="hero-title" data-i18n="index.heroTitle" data-i18n-html>پلتفرم آموزشی آینده‌پژوهی</h1>
+            <p class="hero-subtitle" data-i18n="index.heroSub"></p>
+            <p class="hero-intro" data-i18n="index.heroIntroP1"></p>
+            <p class="hero-intro" data-i18n="index.heroIntroP2"></p>
+            <div class="hero-actions">
+                <a href="methods/" class="btn-primary-sm"><i data-lucide="library"></i> <span data-i18n="nav.methods">روش‌های آینده‌پژوهی</span></a>
+                <a href="articles/" class="btn-ghost-sm"><i data-lucide="pen-line"></i> <span data-i18n="nav.articles">مقالات</span></a>
                 <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="btn-ghost-sm"><i data-lucide="file-text"></i> <span data-i18n="nav.cv">رزومه</span></a>
-
             </div>
-
         </div>
-
-        <div class="hero-visual">
-
-            <div class="sphere-container">
-
-                <div class="sphere-glow"></div>
-
-                <div class="sphere-core"></div>
-
-                <div class="orbit-1"></div>
-
-                <div class="orbit-2"></div>
-
-                <div class="orbit-3"></div>
-
-            </div>
-
-        </div>
-
     </section>
 
-
-
-    <section class="container brand-section" style="padding-bottom: 80px;">
-
-        <div class="glass-card brand-card" style="padding: 40px; border-inline-start: 4px solid var(--color-f);">
-
-            <div class="section-header" style="margin-bottom: 20px;">
-
+    <section class="container brand-section compact">
+        <div class="glass-card brand-card brand-card--accent">
+            <div class="section-header section-header--left">
                 <span class="section-tag" data-i18n="brand.spaceTag">این فضا</span>
-
+                <h2 data-i18n="brand.spaceTitle">زیرساخت تدریس و پژوهش</h2>
+            </div>
+            <div class="prose-block">
+                <p data-i18n="brand.spaceP1"></p>
+                <p data-i18n="brand.spaceP2"></p>
+                <p data-i18n="brand.spaceP3"></p>
             </div>
 
-            <p data-i18n="brand.spaceP1" style="max-width: 820px; margin: 0 auto 16px; line-height: 1.9; color: var(--text-secondary); font-size: 1.05rem;"></p>
+            <h3 class="brand-subhead" data-i18n="brand.findTitle">بخش‌ها</h3>
+            <div id="brand-find-grid" class="hub-cards-grid"></div>
 
-            <p data-i18n="brand.spaceP2" style="max-width: 820px; margin: 0 auto 16px; line-height: 1.9; color: var(--text-secondary);"></p>
-
-            <p data-i18n="brand.spaceP3" style="max-width: 820px; margin: 0 auto 32px; line-height: 1.9; color: var(--text-secondary);"></p>
-
-
-
-            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 16px; text-align: center;" data-i18n="brand.findTitle">بخش‌ها</h3>
-
-            <div id="brand-find-grid" class="hub-cards-grid" style="margin-bottom: 36px;"></div>
-
-
-
-            <div class="section-header" style="margin-bottom: 16px;">
-
-                <span class="section-tag" data-i18n="brand.philosophyTag">فلسفه کار</span>
-
+            <div class="section-header section-header--left">
+                <span class="section-tag" data-i18n="brand.philosophyTag">رویکرد پژوهشی</span>
             </div>
-
-            <p data-i18n="brand.philP1" style="max-width: 820px; margin: 0 auto 16px; line-height: 1.9; color: var(--text-secondary);"></p>
-
-            <p data-i18n="brand.philP2" style="max-width: 820px; margin: 0 auto 16px; line-height: 1.9; color: var(--text-secondary);"></p>
-
-            <p data-i18n="brand.philP3" style="max-width: 820px; margin: 0 auto 0; line-height: 1.9; color: var(--text-secondary);"></p>
-
+            <div class="prose-block">
+                <p data-i18n="brand.philP1"></p>
+                <p data-i18n="brand.philP2"></p>
+                <p data-i18n="brand.philP3"></p>
+            </div>
         </div>
-
     </section>
-
-
 
     <footer class="main-footer">
-
-        <div class="footer-container container" style="padding-bottom: 20px;">
-
+        <div class="footer-container container compact">
             <div class="footer-info">
-
                 <div class="footer-logo">
-
                     <span class="logo-icon"><i data-lucide="compass"></i></span>
-
                     <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
-
                 </div>
-
                 <p data-i18n="footer.desc"></p>
-
             </div>
-
         </div>
-
         <div class="footer-bottom">
-
             <p data-i18n="footer.copyright"></p>
-
         </div>
-
     </footer>
 
-
-
-    <script src="js/core/paths.js?v=13"></script>
-
-    <script src="js/core/i18n.js?v=13"></script>
-
-    <script src="js/core/load-locales.js?v=13"></script>
-
-    <script src="js/core/i18n-render.js?v=13"></script>
-
-    <script src="js/core/shared.js?v=13"></script>
-
-    <script src="js/core/animation.js?v=13"></script>
-
-    <script src="js/core/main.js?v=13"></script>
-
+    <script src="js/core/paths.js?v=14"></script>
+    <script src="js/core/i18n.js?v=14"></script>
+    <script src="js/core/load-locales.js?v=14"></script>
+    <script src="js/core/i18n-render.js?v=14"></script>
+    <script src="js/core/shared.js?v=14"></script>
+    <script src="js/core/animation.js?v=14"></script>
+    <script src="js/core/main.js?v=14"></script>
 </body>
-
 </html>
-
-

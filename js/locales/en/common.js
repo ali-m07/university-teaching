@@ -18,20 +18,22 @@ registerLocale('en', {
             menu: 'Menu'
         },
         footer: {
-            desc: 'Technology futures · foresight methods · blog & articles',
-            descBackcast: 'Technology futures · foresight methods · blog & articles',
-            descWheel: 'Technology futures · foresight methods · blog & articles',
-            role: 'PhD candidate, Futures Studies',
+            desc: 'Foresight teaching platform · syllabus, methods, workshops · Ali Mansouri · PhD, University of Tehran',
+            descBackcast: 'Foresight teaching platform · syllabus, methods, workshops · Ali Mansouri · PhD, University of Tehran',
+            descWheel: 'Foresight teaching platform · syllabus, methods, workshops · Ali Mansouri · PhD, University of Tehran',
+            role: 'PhD candidate, Futures Studies · University of Tehran',
             resume: 'CV',
-            copyright: '© Ali Mansouri'
+            copyright: '© Ali Mansouri · Foresight Teaching Platform'
         },
         index: {
-            badge: 'Technology futures',
-            heroTitle: 'FORESIGHT<br>HUB',
-            heroSub: 'Strategic foresight for technology, systems, and uncertain futures.',
-            heroIntroP1: 'I work at the intersection of emerging technologies, cloud infrastructure, and futures thinking — where clarity is rare and signals matter more than certainty.',
-            heroIntroP2: 'My focus is not prediction, but navigation: weak signals, scenarios, and Type-2 fuzzy logic when uncertainty itself is uncertain.',
-            ctaMethods: 'Foresight Methods'
+            badge: 'Strategic foresight',
+            credentialPhd: 'PhD, Futures Studies · University of Tehran',
+            credentialFocus: 'Strategic foresight · emerging technology',
+            heroTitle: 'Foresight<br>Teaching Platform',
+            heroSub: 'Syllabus, methods, workshops, and self-assessment · for university teaching and industry deployment',
+            heroIntroP1: 'This infrastructure supports foresight courses, university workshops, and organizational engagement. Each method includes university and industry tracks, scholarly references, and interactive tools.',
+            heroIntroP2: 'Research focus: weak signals, scenarios, foresight maturity (Rohrbeck), CLA, and Type-2 fuzzy logic for decisions under deep uncertainty.',
+            ctaMethods: 'Browse methods'
         },
         common: {
             close: 'Close',

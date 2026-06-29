@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="960" y2="540"><stop stop-color="#070a13"/><stop offset="1" stop-color="#101828"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="16"/>
+  <text x="480" y="48" text-anchor="middle" fill="#c8d4e8" font-size="26" font-weight="700">Probing � 90-Day Pilot Cycle</text>
+  <rect x="120" y="180" width="720" height="80" rx="40" fill="#1a2438" stroke="#00e5ff" stroke-opacity="0.4"/>
+  <circle cx="200" cy="220" r="28" fill="#00e5ff" fill-opacity="0.2" stroke="#00e5ff"/><text x="200" y="225" text-anchor="middle" fill="#00e5ff" font-size="13">Hypothesis</text>
+  <circle cx="400" cy="220" r="28" fill="#7c4dff" fill-opacity="0.2" stroke="#7c4dff"/><text x="400" y="225" text-anchor="middle" fill="#7c4dff" font-size="13">Pilot</text>
+  <circle cx="600" cy="220" r="28" fill="#ffaa00" fill-opacity="0.2" stroke="#ffaa00"/><text x="600" y="225" text-anchor="middle" fill="#ffaa00" font-size="13">KPI</text>
+  <circle cx="760" cy="220" r="28" fill="#4caf50" fill-opacity="0.2" stroke="#4caf50"/><text x="760" y="225" text-anchor="middle" fill="#4caf50" font-size="13">Gate</text>
+  <path d="M228 220 H372 M428 220 H572 M628 220 H732" stroke="#8899aa" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="280" y="320" width="400" height="100" rx="12" fill="#e040fb" fill-opacity="0.1" stroke="#e040fb"/>
+  <text x="480" y="358" text-anchor="middle" fill="#e040fb" font-size="16" font-weight="700">Kill criteria � Opponent role</text>
+  <text x="480" y="388" text-anchor="middle" fill="#8899aa" font-size="14">Pivot � Kill � Scale  Blockbuster vs Netflix</text>
+  <text x="480" y="500" text-anchor="middle" fill="#667788" font-size="14">M5 � ch.9 � one-page gate memo (20%)</text>
+</svg>

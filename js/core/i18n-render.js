@@ -38,7 +38,7 @@ function renderStepsGrid(gridId, steps) {
         </div>`).join('');
 }
 
-function renderRohrbeckDims(gridId, dims) {
+window.renderRohrbeckDims = function renderRohrbeckDims(gridId, dims) {
     const grid = document.getElementById(gridId);
     if (!grid || !dims) return;
     const borderColors = ['var(--color-f)', '#4caf50', 'var(--color-cla)', 'var(--color-i)', 'var(--color-f)'];

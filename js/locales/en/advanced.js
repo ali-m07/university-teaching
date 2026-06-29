@@ -3,12 +3,12 @@
  */
 registerLocale('en', {
     methodsIndex: {
-        heroTag: 'Foresight Methods',
-        heroTitle: 'Full Methods Catalog',
-        heroSub: 'All foresight, futures studies & strategic foresight methods — interactive workshops, lesson modules, and catalog entries in 7 categories.',
+        heroTag: 'Syllabus & methods',
+        heroTitle: 'Foresight Methods Catalog',
+        heroSub: 'Each method includes theory, university syllabus, industry track, and workshop tools — for teaching, seminars, and organizational projects.',
         coreTitle: 'Layer 1 — Interactive workshops',
         advancedTitle: 'Layer 2 — Extended methods',
-        note: 'Each module includes <strong>founder intro</strong>, <strong>lesson plan</strong>, <strong>readings</strong>, and <strong>class assignment</strong>. New methods are added over time.'
+        note: 'Each module includes <strong>founder intro</strong>, <strong>scholarly references</strong>, and an <strong>interactive workshop</strong> where available. This catalog is teaching infrastructure — not a promotional list.'
     },
     advancedPage: {
         popper: {

@@ -152,22 +152,18 @@ function switchForesightRole(key) {
     const container = document.getElementById('role-display-card');
     if (!container) return;
     
-    let bulletList = '';
-    data.duties.forEach(duty => {
-        bulletList += `<li><i data-lucide="check" style="width: 16px; height: 16px; color: var(--color-f); margin-left: 8px; vertical-align: middle;"></i> ${duty}</li>`;
-    });
-    
     container.innerHTML = `
         <h4 style="font-size: 1.35rem; margin-bottom: 12px; color: #fff;">${data.title}</h4>
-        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">
-            ${data.desc}
-        </p>
-        <div style="margin-bottom: 20px;">
-            <strong style="font-size: 0.9rem; color: #fff; display: block; margin-bottom: 8px;">${c.keyTasks || 'Key Duties & Tools:'}</strong>
-            <ul style="list-style: none; font-size: 0.9rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px; padding-right: 0;">
-                ${bulletList}
-            </ul>
-        </div>
+        ${data.narrative ? `<div class="method-prose" style="margin-bottom: 18px;"><p class="method-prose-p">${data.narrative}</p></div>` : `<p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">${data.desc}</p>`}
+        ${data.duties?.length ? `
+        <details class="method-deep-dive" style="margin-bottom: 16px;">
+            <summary class="method-deep-dive-summary">${c.keyTasks || 'Key Duties & Tools'}</summary>
+            <div class="method-deep-dive-body">
+                <ul style="list-style: none; font-size: 0.9rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px; padding-right: 0; margin: 0;">
+                    ${data.duties.map(duty => `<li><i data-lucide="check" style="width: 16px; height: 16px; color: var(--color-f); margin-left: 8px; vertical-align: middle;"></i> ${duty}</li>`).join('')}
+                </ul>
+            </div>
+        </details>` : ''}
         <div style="font-size: 0.9rem; color: #fff; border-top: 1px dashed var(--card-border); padding-top: 15px;">
             <strong>${c.orgExample || 'Real Organizational Example:'}</strong> <span style="color: var(--text-secondary);">${data.example}</span>
         </div>
@@ -308,8 +304,8 @@ function applyScoreResult(percentage, tier, withConfetti) {
 
     if (window.lucide) window.lucide.createIcons();
 
-    if (withConfetti && tier === 'fit' && window.confetti) {
-        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+    if (withConfetti && tier === 'fit' && window.confetti && !document.body.classList.contains('sfh-platform')) {
+        confetti({ particleCount: 40, spread: 50, origin: { y: 0.6 }, disableForReducedMotion: true });
     }
 }
 

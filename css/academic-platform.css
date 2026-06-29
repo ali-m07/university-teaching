@@ -1,0 +1,477 @@
+/**
+ * Academic platform layer · scholarly UX for PhD teaching infrastructure
+ * Loaded after style.css on all pages via paths.js
+ */
+:root {
+    --sfh-bg: #0c1018;
+    --sfh-surface: #121824;
+    --sfh-surface-raised: #171e2c;
+    --sfh-border: rgba(255, 255, 255, 0.08);
+    --sfh-border-strong: rgba(255, 255, 255, 0.14);
+    --sfh-accent: #3d8bfd;
+    --sfh-accent-muted: rgba(61, 139, 253, 0.12);
+    --sfh-text: #e8eaed;
+    --sfh-text-muted: #9aa3b2;
+    --sfh-measure: 68ch;
+    --sfh-radius: 10px;
+    --sfh-radius-lg: 14px;
+    --sfh-space-section: 3rem;
+    --sfh-space-block: 1.5rem;
+}
+
+body {
+    background-color: var(--sfh-bg);
+    color: var(--sfh-text);
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+body #particles-canvas {
+    opacity: 0.22;
+}
+
+/* —— Layout rhythm —— */
+body .container {
+    padding: var(--sfh-space-section) 1.5rem;
+}
+
+body .container.compact,
+body > .container.fitness-history-wrap,
+body .type2-page > .container:has(#method-history),
+body .fitness-page > .container.fitness-history-wrap {
+    padding-top: 0;
+}
+
+body section.container.fitness-section,
+body .type2-section {
+    padding-top: 1.25rem;
+    padding-bottom: 2rem;
+}
+
+/* —— Header: calm, readable —— */
+body .main-header {
+    background: rgba(12, 16, 24, 0.92);
+    border-bottom: 1px solid var(--sfh-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+body .logo-icon {
+    filter: none;
+    color: var(--sfh-accent);
+}
+
+body .logo-text {
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+}
+
+body .logo-text .highlight {
+    background: none;
+    -webkit-text-fill-color: var(--sfh-text-muted);
+    font-weight: 500;
+}
+
+body .nav-links a,
+body .nav-links .nav-lang-toggle {
+    font-size: 0.875rem;
+    color: var(--sfh-text-muted);
+}
+
+body .nav-links a:hover,
+body .nav-links a.active {
+    color: var(--sfh-text);
+}
+
+body .nav-links a::after,
+body .nav-links .nav-lang-toggle::after {
+    background: var(--sfh-accent);
+    height: 1px;
+}
+
+body .btn-primary-sm {
+    background: var(--sfh-accent);
+    border-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+body .btn-primary-sm:hover {
+    background: #2f7ae5;
+    box-shadow: 0 2px 8px rgba(61, 139, 253, 0.25);
+}
+
+body .btn-ghost-sm {
+    border-color: var(--sfh-border-strong);
+    color: var(--sfh-text-muted);
+}
+
+body .btn-ghost-sm:hover {
+    border-color: var(--sfh-accent);
+    color: var(--sfh-text);
+    background: var(--sfh-accent-muted);
+}
+
+/* —— Cards: paper-like, not neon glass —— */
+body .glass-card {
+    background: var(--sfh-surface);
+    border: 1px solid var(--sfh-border);
+    border-radius: var(--sfh-radius-lg);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 1.75rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+body .glass-card:hover {
+    border-color: var(--sfh-border-strong);
+    transform: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+body .method-history-box .method-prose,
+body .method-history-box .method-prose-p,
+body .method-history-box .history-prose,
+body .method-history-box .history-title {
+    max-width: 100%;
+    width: 100%;
+    margin-inline: 0;
+}
+
+body .method-history-box {
+    width: 100%;
+}
+
+body .lesson-founders-inline .founder-card {
+    width: 100%;
+}
+
+/* —— Typography & sections —— */
+body .section-tag,
+body .section-tag-cla {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    color: var(--sfh-accent);
+    background: var(--sfh-accent-muted);
+    border: 1px solid rgba(61, 139, 253, 0.2);
+    border-radius: 999px;
+    padding: 0.35rem 0.85rem;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+body .section-header {
+    margin-bottom: 2.5rem;
+}
+
+body .section-header h2 {
+    background: none;
+    -webkit-text-fill-color: var(--sfh-text);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+body .section-header p {
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: var(--sfh-measure);
+    margin-inline: auto;
+}
+
+body .method-prose,
+body .method-prose-p,
+body .history-prose {
+    max-width: var(--sfh-measure);
+    line-height: 1.85;
+    font-size: 1rem;
+    color: var(--sfh-text-muted);
+}
+
+body .method-prose-lead {
+    font-size: 1.0625rem;
+    color: var(--sfh-text);
+}
+
+/* —— Homepage hero: academic, not startup —— */
+body .hero-section {
+    min-height: auto;
+    padding: calc(var(--sfh-header-offset, 88px) + 2.5rem) 1.5rem 3rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body .hero-visual {
+    display: none;
+}
+
+body .hero-content {
+    max-width: 720px;
+}
+
+body .hero-title {
+    background: none;
+    -webkit-text-fill-color: var(--sfh-text);
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+body .hero-subtitle {
+    font-size: 1.125rem;
+    color: var(--sfh-text);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+body .hero-intro {
+    max-width: var(--sfh-measure);
+    line-height: 1.85;
+    color: var(--sfh-text-muted);
+    font-size: 1rem;
+}
+
+body .hero-intro + .hero-intro {
+    margin-top: 0.75rem;
+}
+
+body .hero-actions {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+body .hero-credential {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1.25rem;
+    padding: 0;
+    list-style: none;
+}
+
+body .hero-credential li {
+    font-size: 0.8125rem;
+    color: var(--sfh-text-muted);
+    padding: 0.25rem 0;
+}
+
+body .hero-credential li::before {
+    content: '·';
+    margin-inline-end: 0.5rem;
+    color: var(--sfh-accent);
+}
+
+body .hero-credential li:first-child::before {
+    content: none;
+    margin: 0;
+}
+
+/* —— Method / catalog page heroes —— */
+body .page-hero,
+body .fitness-page .fitness-hero,
+body .type2-page .type2-hero {
+    text-align: center;
+    padding: calc(var(--sfh-header-offset, 88px) + 1.5rem) 1.5rem 1.25rem;
+}
+
+body .page-hero h1,
+body .fitness-page .fitness-hero h1,
+body .type2-page .type2-hero h1 {
+    font-size: clamp(1.65rem, 3.5vw, 2.15rem);
+    font-weight: 700;
+    color: var(--sfh-text);
+    margin: 0.5rem 0;
+    letter-spacing: -0.02em;
+}
+
+body .page-hero-sub,
+body .fitness-hero-sub,
+body .type2-hero-sub {
+    max-width: 42rem;
+    margin: 0 auto;
+    color: var(--sfh-text-muted);
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+/* —— History / founder block —— */
+body .method-history-box {
+    background: var(--sfh-surface);
+    border: 1px solid var(--sfh-border);
+    padding: 1.5rem;
+}
+
+body .history-pill {
+    background: var(--sfh-surface-raised);
+    border: 1px solid var(--sfh-border);
+    font-size: 0.8125rem;
+}
+
+body .founder-photo-wrap {
+    box-shadow: none;
+    border-color: var(--sfh-border-strong);
+}
+
+body .founder-role {
+    color: var(--sfh-accent);
+}
+
+/* —— Tracks tabs —— */
+body .type2-track-tab {
+    border-radius: var(--sfh-radius);
+    font-size: 0.875rem;
+}
+
+body .type2-track-tab.is-active {
+    background: var(--sfh-accent-muted);
+    border-color: rgba(61, 139, 253, 0.35);
+    color: var(--sfh-text);
+}
+
+/* —— Hub / catalog cards —— */
+body .hub-card {
+    background: var(--sfh-surface);
+    border: 1px solid var(--sfh-border);
+    border-radius: var(--sfh-radius-lg);
+}
+
+body .hub-card:hover {
+    border-color: var(--sfh-accent);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+body .hub-card h3 {
+    font-size: 1.05rem;
+}
+
+/* —— Footer —— */
+body .main-footer {
+    border-top: 1px solid var(--sfh-border);
+    background: var(--sfh-surface);
+    margin-top: 2rem;
+}
+
+body .footer-bottom {
+    border-top: 1px solid var(--sfh-border);
+    color: var(--sfh-text-muted);
+    font-size: 0.8125rem;
+}
+
+body .footer-info p {
+    color: var(--sfh-text-muted);
+    line-height: 1.7;
+    max-width: var(--sfh-measure);
+}
+
+/* —— Homepage brand section —— */
+body .brand-section.compact {
+    padding-top: 0;
+}
+
+body .section-header--left {
+    text-align: start;
+    margin-bottom: 1.25rem;
+}
+
+body .section-header--left h2 {
+    font-size: 1.35rem;
+    margin: 0;
+}
+
+body .brand-card--accent {
+    border-color: var(--sfh-border-strong);
+}
+
+body .prose-block p {
+    max-width: var(--sfh-measure);
+    line-height: 1.85;
+    color: var(--sfh-text-muted);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+body .prose-block p:last-child {
+    margin-bottom: 0;
+}
+
+body .brand-subhead {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+    margin: 2rem 0 1rem;
+}
+
+body .catalog-note {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+body .catalog-note p {
+    color: var(--sfh-text-muted);
+    line-height: 1.75;
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+body .page-content {
+    padding-top: 0;
+    padding-bottom: 3rem;
+}
+
+/* —— Forms & assessment —— */
+body .assessment-container {
+    border: 1px solid var(--sfh-border);
+}
+
+body .range-slider {
+    accent-color: var(--sfh-accent);
+}
+
+body .fitness-page .container.fitness-history-wrap,
+body .fitness-page .container.fitness-section {
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+
+body .fitness-page .fitness-hero {
+    padding: calc(var(--sfh-header-offset, 88px) + 0.5rem) 1.5rem 0.5rem;
+}
+
+body .fitness-page .fitness-section .section-header {
+    margin-bottom: 1.5rem;
+}
+
+/* —— Skip link removed from UI —— */
+@media (prefers-reduced-motion: reduce) {
+    body #particles-canvas {
+        display: none;
+    }
+
+    body * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body .container {
+        padding: 2rem 1rem;
+    }
+
+    body .hero-section {
+        padding-top: calc(var(--sfh-header-offset, 88px) + 1.25rem);
+    }
+}

@@ -193,6 +193,10 @@ window.addEventListener('langchange', () => {
     buildStandardNav();
     if (typeof applyTranslations === 'function') applyTranslations();
     syncArticlePageLayout();
+    requestAnimationFrame(() => {
+        syncArticlePageLayout();
+        requestAnimationFrame(syncArticlePageLayout);
+    });
 });
 
 window.buildStandardNav = buildStandardNav;

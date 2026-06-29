@@ -16,37 +16,45 @@ registerLocale('fa', {
     lessons: {
         fitness: {
             meta: {
-                module: '۱',
-                duration: '۹۰ دقیقه',
-                level: 'کارشناسی ارشد / MBA / executive',
-                diagram: 'assets/foresight_concept.png',
-                diagramAlt: 'نمودار مفهومی Future Readiness و FITness'
+                module: 'M1 از ۷ · FS-501',
+                duration: '۱۴ هفته · ۴۲ ساعت (۲۱ حضوری)',
+                level: 'کارشناسی ارشد / MBA / دکتری آینده‌پژوهی',
+                diagram: 'assets/fitness/modules/m1-foundations.svg',
+                diagramAlt: 'Readiness در برابر Future FITness · چرخه F-I-T'
             },
+            prerequisites: 'آشنایی با foresight و scenario · ترجیحاً CLA یا Wheel هم‌ترم · Rohrbeck (2010) ch.1–2 قبل از M1.',
+            assessment: 'میان‌ترم ۲۵٪ · probing ۲۰٪ · پروژه ۳۵٪ · سمینار ۱۵٪ · bonus #assessment ۵٪ — جزئیات تب دانشگاه.',
             founders: [{
                 id: 'rohrbeck',
                 name: 'René Rohrbeck',
-                role: 'بنیان‌گذار مدل FITness · پروفسور EDHEC',
-                bio: 'متخصص Corporate Foresight؛ مدل بلوغ آینده‌نگاری سازمانی را بر پایه مطالعات میدانی در زیمنس و دویچه تلکام توسعه داد. تمرکز او بر تبدیل foresight از «گزارش» به <strong>قابلیت پویا</strong> است.'
+                nameFa: 'رنه روهربک',
+                role: 'بنیان‌گذار FITness · پروفسور EDHEC · formerly Aarhus',
+                bio: '۱۵+ سال مطالعه میدانی در Siemens، Deutsche Telekom، Bosch. کتاب Springer (~۳۰۰ ص.)، thesis Aarhus، corpus TFSC/EJFR.'
             }],
             objectives: [
-                'تمایز <strong>Future Readiness</strong> (آمادگی ایستا) از <strong>FITness</strong> (تناسب پویا) را توضیح دهید.',
-                'سه فرآیند Perceiving، Prospecting و Probing را با مثال سازمانی ربط دهید.',
-                'پنج بعد بلوغ Rohrbeck را بشناسید و با ابزار خودارزیابی این صفحه امتیاز بگیرید.',
-                'ارتباط FITness با رادار فناوری و corporate venturing را تحلیل کنید.'
+                'تمایز Readiness از FITness را با Netflix/Nokia/Zoom توضیح دهید.',
+                'map فصل‌های Rohrbeck (2010) به ۷ ماژول را بشناسید.',
+                'پنج بعد maturity و چهار archetype را روی case map کنید.',
+                'Perceiving→Probing→Transformation را با weak signal مثال بزنید.',
+                '#assessment را انجام دهید و بعد ضعیف برای پروژه انتخاب کنید.',
+                'کتاب + ۶ مقاله کلیدی را برای میان‌ترم cite کنید.'
             ],
             outline: [
-                { step: '۱', time: '۱۵ دقیقه', title: 'مقدمه: چرا foresight سازمانی شکست می‌خورد؟', desc: 'بحث آزاد + مثال Zoom و کرونا. معرفی سوال: «آیا foresight شما گزارش است یا قابلیت؟»' },
-                { step: '۲', time: '۲۰ دقیقه', title: 'Readiness vs FITness', desc: 'ارائه مفاهیم، نمودار assets/foresight_concept.png، ۵ عنصر readiness.' },
-                { step: '۳', time: '۲۵ دقیقه', title: 'مدل Rohrbeck و سه P', desc: 'Perceiving/Prospecting/Probing با case زیمنس و Deutsche Telekom.' },
-                { step: '۴', time: '۲۰ دقیقه', title: 'کارگاه: خودارزیابی ۵ بعدی', desc: 'دانشجویان بخش #assessment را پر می‌کنند؛ بحث گروهی درباره ضعیف‌ترین بعد.' },
-                { step: '۵', time: '۱۰ دقیقه', title: 'جمع‌بندی و تکلیف', desc: 'اتصال به CLA و Wheel در جلسات بعد.' }
+                { step: 'M1-1', time: '۴۵ دقیقه', title: 'چرا foresight سازمانی شکست می‌خورد؟', desc: 'گزارش vs قابلیت · benchmark ۳۳٪/۲۰۰٪' },
+                { step: 'M1-2', time: '۴۵ دقیقه', title: 'Readiness vs FITness', desc: 'foresight_concept.png · Zoom/Netflix/Nokia' },
+                { step: 'M1-3', time: '۴۵ دقیقه', title: 'معرفی syllabus ۱۴ هفته', desc: 'map فصل‌ها M1–M7 · میان‌ترم و پروژه' },
+                { step: 'M1-4', time: '۴۵ دقیقه', title: 'کارگاه #assessment', desc: 'امتیاز ۵ بعد · انتخاب سازمان پروژه' }
             ],
             readings: [
-                { type: 'کتاب', text: 'Rohrbeck, R. (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer.' },
-                { type: 'مقاله', text: 'Rohrbeck, R., Arnold, H. & Heuer, J. (2007). Strategic Foresight in multinational companies · Zeitschrift für Zukunftsforschung.' },
-                { type: 'Case', text: 'Deutsche Telekom Technology Radar · benchmark رادار فناوری سازمانی.' }
+                { type: 'کتاب', text: 'Rohrbeck (2010). <em>Corporate Foresight</em>. Springer ch.1–2 (~۵۰ ص.)' },
+                { type: 'رساله', text: 'Rohrbeck (2008). PhD thesis, Aarhus.' },
+                { type: 'مقاله', text: 'Rohrbeck, Arnold & Heuer (2007) TFSC.' },
+                { type: 'مقاله', text: 'Rohrbeck & Schwarz (2013) TFSC.' },
+                { type: 'مقاله', text: 'Rohrbeck (2014) EJFR.' },
+                { type: 'مقاله', text: 'Rohrbeck & Gemünden (2010) IJIM.' },
+                { type: 'Case', text: 'Deutsche Telekom Radar · Siemens foresight.' }
             ],
-            assignment: 'یک سازمان (واقعی یا فرضی) انتخاب کنید. با مدل ۵ بعدی امتیاز دهید، یک بعد ضعیف را مشخص کنید، و یک اقدام <strong>Probing</strong> (آزمایش ۹۰ روزه) پیشنهاد دهید که foresight را از گزارش به عمل تبدیل کند.'
+            assignment: 'پروژه M7: سازمان واقعی · ۵ بعد · archetype · weak signal · probing ۹۰ روز · IT2 اگر FOU لازم · ۴۰۰۰–۵۰۰۰ کلمه. میان‌ترم M4: ۲۰۰۰ کلمه maturity+archetype.'
         },
         cla: {
             meta: {
@@ -87,7 +95,7 @@ registerLocale('fa', {
                 module: '۳',
                 duration: '۹۰ دقیقه',
                 level: 'کارشناسی / کارشناسی ارشد',
-                diagram: 'assets/upload_2.png',
+                diagram: 'assets/methods/futures-wheel.svg',
                 diagramAlt: 'چرخ آینده · پیامدهای مرتبه اول و دوم'
             },
             founders: [{

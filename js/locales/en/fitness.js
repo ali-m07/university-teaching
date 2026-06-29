@@ -19,18 +19,311 @@ registerLocale('en', {
             applications: 'Deployed at <strong>Siemens</strong> and <strong>Deutsche Telekom</strong>; benchmark studies showed foresight-driven organizations achieved <strong>33% higher profitability</strong> and <strong>200% greater market value growth</strong> than vulnerable competitors.'
         },
         hero: {
-            tag: 'Dynamic Capabilities Theory — René Rohrbeck',
+            tag: 'Dynamic Capabilities Theory · René Rohrbeck',
             title: 'Organizational Foresight Maturity Model & Future FITness',
-            subtitle: 'How organizations move beyond static Future Readiness to dynamic Future FITness — continuous organizational fitness and adaptation to shape tomorrow\'s markets.'
+            subtitle: 'How organizations move from static Future Readiness to dynamic Future FITness to shape tomorrow\'s markets · grounded in Siemens, Deutsche Telekom field studies, and turbulent-industry benchmarks.'
         },
+        theoryTag: 'Rohrbeck framework',
+        theoryTitle: 'From foresight reports to dynamic organizational capability',
+        theoryLead: 'In <strong>Corporate Foresight: Towards a Maturity Model</strong> (2010), Rohrbeck argues the industry problem is not missing foresight — it is foresight trapped in reports, disconnected from probing and transformation.',
+        theoryNarrative: [
+            'The FITness acronym (Foresight · Innovation · Transformation) links three letters to an operating cycle: scan and explore, experiment fast, and reinvent structure. Organizations with this cycle in their DNA averaged <strong>33% higher profitability</strong> and <strong>200% greater market value growth</strong> than vulnerable peers in Rohrbeck\'s benchmarks.',
+            'The key difference from Future Readiness is dynamism. Readiness means preparing for futures you can imagine; FITness means re-fitting every season when the industry pivots — like Netflix\'s DVD-to-streaming shift or Nvidia\'s CUDA bet before the deep-learning boom.',
+            'In telecom, automotive, pharma, and energy, environmental turbulence × foresight maturity places the firm in a quadrant: Vigilant, Neurotic, Vulnerable, or In Danger. This page combines self-assessment, technology radar, and an industry deployment track.'
+        ],
+        readinessVsTitle: 'Readiness vs FITness · industry lens',
+        readinessVsFitness: [
+            'Future Readiness focuses on forecasting, scenarios, and preparedness — useful for imaginable shocks (Zoom during COVID, remote-work pilots before the pandemic).',
+            'Future FITness goes further: continuous probing, creative cannibalization before competitors, and wiring foresight to R&D and venturing budgets — not slide decks alone.',
+            'In practice, Readiness without FITness drifts toward Neurotic: many scenarios, few pilots, reports never reaching the product line or roadmap.'
+        ],
+        threePTitle: 'Perceiving → Prospecting → Probing cycle',
+        threePProse: [
+            '<strong>Perceiving:</strong> weak-signal scanning, technology radar · Deutsche Telekom\'s ag-IoT work started here.',
+            '<strong>Prospecting:</strong> scenarios, roadmaps, three-horizon portfolio · Siemens and DT wired foresight outputs to investment gates.',
+            '<strong>Probing:</strong> 90-day pilots, corporate venturing, kill criteria · without probing, FITness stays on paper.',
+            '<strong>Transformation:</strong> when probing succeeds, structure, culture, and DNA must change — otherwise Nokia or Blockbuster paths repeat.'
+        ],
+        compareDetailsTitle: 'Readiness vs FITness comparison',
+        compareColAspect: 'Dimension',
+        compareColReadiness: 'Future Readiness',
+        compareColFitness: 'Future FITness',
+        readinessCompareRows: [
+            { aspect: 'Goal', readiness: 'Prepare for plausible futures', fitness: 'Continuous fit to industry turbulence' },
+            { aspect: 'Output', readiness: 'Scenarios, plans, risk registers', fitness: 'Pilots, venturing, portfolio shifts' },
+            { aspect: 'Risk', readiness: 'Neurotic · analysis without action', fitness: 'Vulnerable if probing is weak' },
+            { aspect: 'Industry example', readiness: 'Zoom scale-up in COVID', fitness: 'Netflix cannibalizing DVD · Nvidia CUDA' }
+        ],
+        industrySectionTitle: 'Industry track · deploying FITness in the organization',
+        tracksLabel: 'Execution track',
+        trackUniversity: 'University',
+        trackIndustry: 'Industry & organization',
+        trackWorkshop: 'Interactive workshop',
+        workshopSectionTitle: 'Workshop · tools & simulations',
+        universitySectionTitle: 'University track · syllabus and teaching',
+        universityCourseTitle: 'Corporate Foresight & Future FITness · 14-week course',
+        universityCourseIntro: 'Full syllabus for master, MBA, and PhD · 7 modules, 21 contact hours + 21 reading · based on Rohrbeck (2010) ~300 pp. and field-study corpus.',
+        university: {
+            tag: 'University syllabus',
+            title: 'Corporate Foresight & Future FITness',
+            intro: 'This track is a <strong>full 14-week course</strong> — not a 90-minute session. Rohrbeck decade+ fieldwork at Siemens, Deutsche Telekom, Bosch and dozens of MNCs; Springer book (~300 pp.) and Aarhus thesis underpin the syllabus.',
+            courseMeta: [
+                { label: 'Course code', value: 'FS-501 · Corporate Foresight' },
+                { label: 'Level', value: 'Master / MBA / PhD' },
+                { label: 'Credits', value: '3 ECTS · 42 hours (21 contact + 21 self-study)' },
+                { label: 'Duration', value: '14 weeks · 7 modules × 3 hours' },
+                { label: 'Prerequisites', value: 'Intro to foresight · CLA or Wheel' },
+                { label: 'Tools', value: '#assessment · radar · industry tab · IT2' }
+            ],
+            courseObjectivesTitle: 'Course objectives',
+            courseObjectives: [
+                'Explain Rohrbeck\'s theoretical corpus with MNC field evidence.',
+                'Measure, benchmark, and critique the five maturity dimensions.',
+                'Map four archetypes onto real cases.',
+                'Design Perceiving → Prospecting → Probing → Transformation cycles.',
+                'Connect foresight to investment gates and venturing.',
+                'Discuss expert FOU at probing gates with IT2.'
+            ],
+            modulesTitle: '7 modules · 3 hours each',
+            modules: [
+                { num: 'M1', id: 'm1', pickerLabel: 'Foundations', title: 'Foundations · Readiness vs FITness', hours: '3 hours', focus: 'Why org foresight fails · Zoom vs Nokia', readings: 'Rohrbeck (2010) ch.1–2', activity: 'debate + #assessment', example: 'Deutsche Telekom Technology Radar', visual: 'assets/fitness/modules/m1-foundations.svg', visualCaption: 'From static Readiness to dynamic FITness · F→I→T cycle', keyPoints: ['Org foresight ≠ consultant report · must connect to probing and gates', 'Rohrbeck benchmark: +33% profitability · +200% market value for Vigilant orgs', 'Embedded foresight vs standalone unit — structural debate', 'Map book chapters 1–12 to seven course modules'], caseSpotlight: { title: 'Zoom vs Nokia', body: 'Zoom had Readiness (remote infra) but FITness means continuous probing · Nokia had foresight but weak probing and transformation.' }, deliverable: 'Start #assessment · pick project org · one paragraph: Readiness or FITness?', sessions: [
+                    { step: '1', time: '45 min', title: 'Why org foresight fails', desc: 'Report vs capability · 33%/200% benchmark' },
+                    { step: '2', time: '45 min', title: 'Readiness vs FITness', desc: 'Module diagram · Zoom/Netflix/Nokia' },
+                    { step: '3', time: '45 min', title: '14-week syllabus map', desc: 'M1–M7 · midterm · final project' },
+                    { step: '4', time: '45 min', title: '#assessment workshop', desc: 'Five dimensions · pick project org' }
+                ] },
+                { num: 'M2', id: 'm2', pickerLabel: 'Maturity', title: 'Maturity Model · five dimensions', hours: '3 hours', focus: 'Information to Culture · levels 1–5', readings: 'Rohrbeck (2010) ch.3–5 · Schwarz (2013)', activity: 'score org · radar chart', example: 'Siemens corporate foresight', visual: 'assets/fitness/modules/m2-maturity.svg', visualCaption: 'Five maturity dimensions · levels 1–5 · Schwarz (2013) validation', keyPoints: ['Information bandwidth · Methods toolkit · People fluency · Organization gates · Culture tolerance', 'Group radar chart → debrief weakest dimension for project', 'Field evidence from Siemens and Schwarz profitability gap'], caseSpotlight: { title: 'Siemens foresight pipeline', body: 'Siemens wired foresight into innovation pipeline — gap is usually Organization/Methods, not missing reports.' }, deliverable: 'Five-dimension radar for chosen org · three field-evidence bullets', sessions: [
+                    { step: '1', time: '50 min', title: 'Five maturity dimensions', desc: 'Information, Methods, People, Organization, Culture' },
+                    { step: '2', time: '50 min', title: 'Validation & benchmark', desc: 'Schwarz (2013) · profitability gap' },
+                    { step: '3', time: '60 min', title: 'Scoring workshop', desc: 'Group scores real org · radar chart debrief' }
+                ] },
+                { num: 'M3', id: 'm3', pickerLabel: 'Perceiving', title: 'Perceiving · weak signals', hours: '3 hours', focus: 'scanning · STEEP · radar rings', readings: 'Rohrbeck (2010) ch.6 · et al. (2007)', activity: '10 weak signals · page radar', example: 'DT IoT · GenAI call center', visual: 'assets/fitness/modules/m3-perceiving.svg', visualCaption: 'Technology Radar · Scan → Assess → Trial → Adopt', keyPoints: ['STEEP/PESTEL scanning · multinationals paper (2007)', 'Weak signal prioritization · Trial before Adopt', 'Page radar (#tech-radar) workshop', 'Neurotic trap: every signal feels urgent'], caseSpotlight: { title: 'Deutsche Telekom Ag-IoT', body: 'DT foresight spotted ag-IoT from Perceiving before heavy capex — classic Perceiving win.' }, deliverable: 'List 10 weak signals · prioritize top 3 · place on page radar', sessions: [
+                    { step: '1', time: '45 min', title: 'Environmental scanning', desc: 'STEEP/PESTEL · ch.6' },
+                    { step: '2', time: '45 min', title: 'Technology Radar', desc: 'Scan/Assess/Trial/Adopt · interactive radar' },
+                    { step: '3', time: '50 min', title: 'Weak signal workshop', desc: 'Prioritize 10 signals · DT vignettes' },
+                    { step: '4', time: '20 min', title: 'Reflect', desc: 'Which signal does your org ignore?' }
+                ] },
+                { num: 'M4', id: 'm4', pickerLabel: 'Prospecting', title: 'Prospecting · scenario & portfolio', hours: '3 hours', focus: 'Initiator/Strategist/Opponent · H1/H2/H3', readings: 'Rohrbeck (2010) ch.7–8 · (2014)', activity: 'scenario + budget gate', example: 'Nvidia CUDA · Netflix streaming', visual: 'assets/fitness/modules/m4-prospecting.svg', visualCaption: 'Three horizons H1/H2/H3 · Initiator · Strategist · Opponent', keyPoints: ['Portfolio gates · offensive/defensive scenarios', 'Opponent role before capex · midterm prep (2000 words)', 'Teece dynamic capabilities link'], caseSpotlight: { title: 'Nvidia CUDA · Netflix streaming', body: 'Nvidia bet on CUDA (H3) · Netflix moved streaming to H2 and cannibalized DVD — both with real gates.' }, deliverable: 'Two scenarios · one budget gate · Opponent debrief', sessions: [
+                    { step: '1', time: '50 min', title: 'Three foresight roles', desc: 'Initiator · Strategist · Opponent' },
+                    { step: '2', time: '50 min', title: 'Three-horizon portfolio', desc: 'H1/H2/H3 · Teece · investment gate' },
+                    { step: '3', time: '60 min', title: 'Scenario workshop', desc: 'Offensive/defensive · midterm prep' }
+                ] },
+                { num: 'M5', id: 'm5', pickerLabel: 'Probing', title: 'Probing · pilot & venturing', hours: '3 hours', focus: '90-day probe · kill criteria', readings: 'Rohrbeck (2010) ch.9', activity: 'one-page gate memo', example: 'Blockbuster vs Netflix', visual: 'assets/fitness/modules/m5-probing.svg', visualCaption: '90-day probe cycle · KPI · gate · kill criteria', keyPoints: ['Small fast probe with clear KPIs', 'Kill criteria before start · Opponent mandatory', 'Gate memo = 20% grade · #assessment link'], caseSpotlight: { title: 'Blockbuster vs Netflix', body: 'Blockbuster probed too late without kill criteria for DVD · Netflix probed streaming with cannibalization KPIs.' }, deliverable: 'One-page gate memo: hypothesis · KPI · kill · scale path', sessions: [
+                    { step: '1', time: '45 min', title: 'Probing & venturing', desc: 'ch.9 · 90-day probe · corporate VC' },
+                    { step: '2', time: '45 min', title: 'Kill criteria', desc: 'Blockbuster case · pivot/kill/scale' },
+                    { step: '3', time: '70 min', title: 'Gate memo workshop', desc: 'One-page memo · 20% assignment' }
+                ] },
+                { num: 'M6', id: 'm6', pickerLabel: 'Archetypes', title: 'Archetypes & Transformation', hours: '3 hours', focus: 'Vigilant/Neurotic/Vulnerable/In Danger', readings: 'Rohrbeck (2010) ch.10–11', activity: 'case clinic Nokia/Blockbuster', example: '33% profitability benchmark', visual: 'assets/fitness/modules/m6-archetypes.svg', visualCaption: 'Turbulence × maturity matrix · four Rohrbeck archetypes', keyPoints: ['Map org to quadrant · transformation = DNA + culture + incentives', 'Case clinic Nokia · Blockbuster · IKEA'], caseSpotlight: { title: 'Nokia · Blockbuster', body: 'Which maturity dimension was the bottleneck? Archetype shift path.' }, deliverable: 'Archetype map · three-step transformation plan', sessions: [
+                    { step: '1', time: '50 min', title: 'Four archetypes', desc: 'Turbulence/maturity matrix' },
+                    { step: '2', time: '50 min', title: 'Transformation', desc: 'Organizational DNA · culture · incentives' },
+                    { step: '3', time: '60 min', title: 'Case clinic', desc: 'Nokia · Blockbuster · IKEA mapping' }
+                ] },
+                { num: 'M7', id: 'm7', pickerLabel: 'Integration', title: 'Integration · CLA, Wheel, IT2', hours: '3 hours', focus: 'Final project · FOU at gate', readings: 'Rohrbeck (2010) ch.12', activity: '15-min presentation', example: 'IT2 when FOU spread is wide', visual: 'assets/fitness/modules/m7-integration.svg', visualCaption: 'FITness · CLA · Wheel · #assessment · IT2 fuzzy hub', keyPoints: ['Final project synthesis · FOU spread triggers IT2 workshop', '15-min presentation · 4000–5000 words · 35% grade'], caseSpotlight: { title: 'GenAI call center (DT-style)', body: 'Wide FOU across experts → Trial ring not Adopt · IT2 at probing gate.' }, deliverable: '15-min presentation · 4000–5000 word report', sessions: [
+                    { step: '1', time: '40 min', title: 'CLA & Wheel crossover', desc: 'Deep analysis · cascade links' },
+                    { step: '2', time: '40 min', title: 'IT2 fuzzy bridge', desc: 'FOU at gate · type-2-fuzzy#industry' },
+                    { step: '3', time: '100 min', title: 'Final presentations', desc: '15 min/group · peer review' }
+                ] }
+            ],
+            bibliographyTitle: 'Rohrbeck book & papers',
+            bibliography: [
+                { category: 'Core book (required)', items: ['Rohrbeck (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer ~300 pp.', 'Rohrbeck (2008). PhD thesis, Aarhus University'] },
+                { category: 'Key papers', items: ['Rohrbeck, Arnold & Heuer (2007) TFSC', 'Rohrbeck & Schwarz (2013) TFSC', 'Rohrbeck (2014) EJFR', 'Rohrbeck & Gemünden (2010) IJIM', 'Rohrbeck (2011) World Future Review', 'Rohrbeck, Thom & Arnold (2015) TFSC'] },
+                { category: 'Case studies', items: ['Deutsche Telekom Technology Radar', 'Siemens foresight pipeline', 'Bosch · BMW · E.ON vignettes'] },
+                { category: 'Supplementary', items: ['Teece (2007) dynamic capabilities', 'Inayatullah CLA', 'Glenn FRM 3.0 Wheel'] }
+            ],
+            seminarCasesTitle: 'Seminar case studies',
+            seminarCases: [
+                { title: 'Netflix', context: 'cannibalization DVD→streaming', questions: 'Which P was weak? Kill criteria?', reading: 'ch.4' },
+                { title: 'Nokia', context: 'Vulnerable · silo · weak probing', questions: 'Archetype and Culture bottleneck?', reading: 'ch.10' },
+                { title: 'Deutsche Telekom', context: 'Technology Radar · IoT · GenAI', questions: 'Neurotic without Trial?', reading: '2007 paper' },
+                { title: 'Siemens', context: 'foresight-to-innovation', questions: 'Where is the R&D gate?', reading: '2014 paper' },
+                { title: 'Zoom', context: 'Readiness in COVID', questions: 'Readiness vs FITness?', reading: 'M1 table' },
+                { title: 'Blockbuster', context: 'In Danger · late probing', questions: 'Opponent role in 2005?', reading: 'ch.9' }
+            ],
+            examTitle: 'Assessment',
+            examRubric: [
+                { component: 'Seminar', weight: '15%', desc: 'Participation and case discussion' },
+                { component: 'Midterm', weight: '25%', desc: 'Five dimensions + archetype · 2000 words' },
+                { component: 'Probing M5', weight: '20%', desc: 'Gate memo + kill criteria' },
+                { component: 'Final project', weight: '35%', desc: '4000–5000 words · 15-min presentation' },
+                { component: '#assessment', weight: '5% bonus', desc: 'Self-score + reflection' }
+            ],
+            discussionTitle: 'Discussion prompts',
+            discussionPrompts: [
+                'Standalone foresight unit or embedded capability?',
+                'Weakest maturity dimension?',
+                'Which weak signal is ignored?',
+                'Is the Opponent role allowed?',
+                'Neurotic in your industry?',
+                'IT2 needed or overkill?'
+            ],
+            teachingNotesTitle: 'Instructor notes',
+            teachingNotes: [
+                'M1 opens with #assessment · M7 revision session',
+                'MBA track: compress M2+M3 · M5 as homework',
+                '~25 book pages per week',
+                'Industry tab as parallel reading',
+                'CLA/Wheel crossover in M7'
+            ],
+        },
+        labelRole: 'Role',
+        labelFunction: 'Function in engagement',
+        labelSetup: 'Context',
+        labelSignal: 'Signal / data',
+        labelAction: 'Probing action',
+        labelTakeaway: 'Lesson',
+        labelFocus: 'Focus',
+        labelReadingsShort: 'Readings',
+        labelActivityShort: 'Activity',
+        labelExampleShort: 'Example',
+        moduleSessionsTitle: 'Session plan (3 hours)',
+        modulePickerHint: 'Click a module · only that module is shown',
+        moduleM5AssessmentNote: 'Deliverable: one-page gate memo (20%) · #assessment',
+        moduleM7ProjectNote: 'Final project presentation · 35% · 4000–5000 words',
+        moduleKeyPointsTitle: 'Session key points',
+        moduleCaseTitle: 'Field case',
+        moduleDeliverableTitle: 'Student deliverable',
+        courseResourcesTitle: 'Course resources, assessment & instructor notes',
+        labelSeminarContext: 'Context',
+        labelSeminarQuestions: 'Questions',
+        labelSeminarReading: 'Reading',
+        examColComponent: 'Component',
+        examColWeight: 'Weight',
+        examColDesc: 'Description',
+        workshopTag: 'Interactive workshop',
+        workshopTitle: 'FITness tools & simulations',
+        workshopSub: 'Archetypes, roles, self-assessment, and radar — separate from the university syllabus tab above.',
+        industry: {
+            tag: 'Industry & organization',
+            title: 'FITness deployment workshop · diagnosis to 90-day probing',
+            intro: 'Designed for corporate strategy, innovation, corporate development, and foresight units — not a university syllabus. Deliverables: 5-dimension score, prioritized weak signal, probing plan with investment gate.',
+            meta: [
+                { label: 'Duration', value: '1 day onsite + 6-week follow-up' },
+                { label: 'Industries', value: 'ICT · automotive · pharma · energy · holdings' },
+                { label: 'Field reference', value: 'Siemens · Deutsche Telekom · Rohrbeck (2010)' },
+                { label: 'On-page tools', value: '#assessment · tech radar · IT2 fuzzy bridge' }
+            ],
+            agendaTitle: 'One-day on-site agenda',
+            agenda: [
+                { block: '09:00', title: 'Diagnosis · current archetype', desc: '5-dimension self-assessment, radar chart, turbulence/maturity matrix · Vigilant or Vulnerable?' },
+                { block: '10:30', title: 'Perceiving · weak signals', desc: 'Interactive tech radar, five signals from frontline and ecosystem · FOU when experts disagree.' },
+                { block: '13:00', title: 'Prospecting · horizon portfolio', desc: 'Offensive/defensive scenarios, H1/H2/H3 budget gates, Initiator/Strategist/Opponent roles.' },
+                { block: '15:00', title: 'Probing design · 90 days', desc: 'One pilot with kill criteria, owner, KPIs · DT radar Trial ring pattern.' },
+                { block: '16:30', title: 'Board memo · one slide', desc: 'F-I-T summary, risk, probing budget ask, IT2 link if expert uncertainty is high.' }
+            ],
+            stakeholdersTitle: 'Roles in the org workshop',
+            stakeholders: [
+                { role: 'Corporate foresight / strategy', job: 'Scanning, scenarios, planning cycle link' },
+                { role: 'Innovation / venturing', job: 'Pilot design, corporate VC, kill criteria' },
+                { role: 'Technology / R&D', job: 'Tech radar, feasibility, roadmapping' },
+                { role: 'Business unit owner', job: 'Field data, probing execution in the line' },
+                { role: 'Finance / portfolio', job: 'Investment gates, horizon budgets, probing ROI' }
+            ],
+            workflowTitle: 'Six-step org engagement',
+            workflowSteps: [
+                { title: '1. Scan', desc: 'Collect weak signals from radar, market, patents, startups' },
+                { title: '2. Score', desc: 'Rohrbeck 5-dimension self-assessment + industry benchmark' },
+                { title: '3. Map', desc: 'Place in archetype · gap in Perceiving/Prospecting/Probing' },
+                { title: '4. Design probe', desc: '90-day pilot with owner and KPIs' },
+                { title: '5. Gate', desc: 'Scale/kill/pivot · link to H2/H3 budget' },
+                { title: '6. Transform', desc: 'If probe succeeds · structure, culture, portfolio change' }
+            ],
+            deliverablesTitle: 'Client deliverables',
+            deliverables: [
+                '5-dimension maturity radar + archetype label',
+                'Top 5 weak signals with FOU priority (IT2 if needed)',
+                '90-day probing plan with kill criteria',
+                'One-slide investment gate memo',
+                'Tech radar and corporate venturing integration proposal'
+            ],
+            casesTitle: 'Three industry scenarios',
+            caseStudies: [
+                {
+                    title: 'Deutsche Telekom · Technology Radar',
+                    setup: 'High-turbulence ICT operator · Rohrbeck field foresight',
+                    signal: 'Ag-IoT from mini sensors · GenAI in call centers',
+                    action: 'Trial ring for agentic AI · Adopt for edge · Scan for 6G',
+                    takeaway: 'Radar without Trial ring creates Neurotic behavior · DT keeps each tech in Scan→Adopt.'
+                },
+                {
+                    title: 'Siemens · corporate foresight maturity',
+                    setup: 'Heavy industry + digital twin + energy transition',
+                    signal: 'Green power, automation, software-defined factory',
+                    action: 'Venturing and H2 probing before H1 scale',
+                    takeaway: 'FITness means three-horizon portfolio · foresight wired to R&D gates, not annual PDFs.'
+                },
+                {
+                    title: 'Automotive / mobility · EV and software-defined shift',
+                    setup: 'High turbulence · new tech entrants',
+                    signal: 'Battery chemistry, OTA, autonomy stack',
+                    action: 'Shared platform probe · Opponent role to cannibalize ICE revenue',
+                    takeaway: 'Without Opponent, firms stay Vulnerable despite strong radar · OEM OTA delays.'
+                }
+            ],
+            probingTitle: '90-day probing playbook',
+            probingPlaybook: [
+                'Weeks 1–2: hypothesis · "If X, Y% cost/revenue impact" · business-unit owner.',
+                'Weeks 3–6: bounded pilot · one line, geography, segment · real data not slides.',
+                'Weeks 7–10: Opponent review · failure scenario · kill criteria met?',
+                'Weeks 11–12: gate · scale, pivot, or kill · record in roadmap and next-horizon budget.'
+            ],
+            checklistTitle: 'Pre-engagement checklist',
+            checklistItems: [
+                'Were 5 dimensions scored at least once in the last 12 months?',
+                'Do weak signals come from the frontline, not consultant reports only?',
+                'Is H2/H3 budget separate from H1?',
+                'Are kill criteria written for the pilot?',
+                'If experts disagree on signal strength · is IT2 FOU ready?'
+            ],
+            boardMemoTitle: 'Gate slide template (one page)',
+            boardMemoFields: [
+                'Current archetype + main gap (e.g. strong Methods, weak Probing)',
+                'Priority weak signal + FOU width (IT2 if spread is high)',
+                '90-day probe · budget · KPI · kill criteria',
+                'F-I-T portfolio impact · cost of inaction',
+                'Decision ask: approve probe / defer / kill'
+            ]
+        },
+        fuzzyBridge: {
+            tag: 'Link to Type-2 Fuzzy Logic (IT2)',
+            title: 'When foresight and FITness meet expert uncertainty',
+            lead: 'In Perceiving, units or experts disagree on weak-signal "strength" — not 7/10 but "between 0.4 and 0.7." IT2 models that FOU.',
+            narrative: [
+                'This page\'s 5-dimension self-assessment returns a point score; in real industry workshops, expert panels give intervals. Large FOU spread means probing before heavy investment — same logic as verdictWide in the Type-2 workshop.',
+                'FITness without IT2 in Perceiving can become Neurotic: every signal looks critical. IT2 separates real consensus from noise and supports uncertainty-aware budget gates.',
+                'Practical rule: for top 3–5 weak signals, plot expert FOU · aggregate spread &lt; 0.22 → light probing; &gt; 0.38 → IT2 workshop + Opponent role before portfolio commit.'
+            ],
+            mappingRows: [
+                { fitness: 'Perceiving · weak signal', it2: 'Expert FOU on signal strength/relevance' },
+                { fitness: 'Prospecting · scenarios', it2: 'Interval probabilities for branches' },
+                { fitness: 'Probing · gate', it2: 'Spread verdict → pilot depth and kill criteria' },
+                { fitness: '5 maturity dimensions', it2: 'Panel intervals instead of one slider · avg lower/upper' },
+                { fitness: 'Technology radar ring', it2: 'Scan/Assess/Trial/Adopt as fuzzy labels, not binary' }
+            ],
+            examples: [
+                {
+                    title: 'GenAI in call center (DT-style)',
+                    text: 'Ops: relevance 0.7–0.9 · legal: 0.3–0.5 · wide FOU → Trial ring not Adopt · bounded probe with compliance kill criteria.'
+                },
+                {
+                    title: 'Reshoring in industrial holding',
+                    text: 'Strategy: 0.5–0.8 · supply chain: 0.2–0.4 · medium spread → 90-day SKU probe before capex.'
+                }
+            ],
+            detailProse: 'IT2 does not replace Rohrbeck; it is an uncertainty layer on Perceiving and probing gates. For the full workshop see <strong>Type-2 Fuzzy Logic</strong> · Industry track.',
+            linkLabel: 'IT2 workshop · industry track'
+        },
+        fuzzyColFitness: 'FITness dimension',
+        fuzzyColIT2: 'IT2 role',
+        fuzzyDetailsTitle: 'FITness–IT2 integration details',
         readiness: {
             tag: 'Foundations of Foresight',
             title: 'What Is Future Readiness?',
             sub: 'Forecasting trends, understanding scenarios, and strategic planning to manage uncertainty.',
             p1: '<strong>Future Readiness</strong> means the ability to anticipate change, understand it deeply, and plan purposeful responses. Rooted in uncertainty management: scanning risks and turning them into major opportunities.',
-            p2: 'Today\'s world faces rapid technological change — from generative AI to climate disruption. Organizations and individuals prepared for the future see these shifts as opportunities for leadership and progress, not paralyzing threats.',
-            challengeTitle: 'A Challenging Question',
-            challengeText: 'Is your organization — or you personally — ready for fundamental future changes? If you wanted to make a change today that builds future fitness, what would your first key step be?',
+            p2: 'Industries facing rapid tech churn — from generative AI to energy transition — scale faster when Readiness was real (remote-work pilots pre-COVID, telco edge adoption). Readiness without FITness becomes stacked reports.',
+            challengeTitle: 'Question for the strategy team',
+            challengeText: 'Is your foresight in this industry an "annual report" or a "probing capability"? If a critical weak signal landed tomorrow · what is the first real gate: H2 budget, 90-day pilot, or neither?',
             fiveElementsTitle: '5 Core Elements of Future Readiness',
             foresightTitle: 'Foresight & Scenario Planning',
             foresightText: 'Foresight means deeply understanding trends and analyzing alternative scenarios. Companies that had piloted remote-work technology before the COVID pandemic adapted to lockdown conditions far faster.',
@@ -39,12 +332,12 @@ registerLocale('en', {
             sustainabilityTitle: 'The Critical Role of Sustainability in Portfolio Strategy',
             sustainabilityP1: 'Sustainability is more than social responsibility — it is smart business strategy. Aligning with ESG goals reduces climate risk and creates lasting competitive advantage in global markets.',
             sustainabilityP2: 'IKEA committed to 100% recycled and renewable materials by 2030, building customer loyalty and lowering long-term material costs. Tesla (electric vehicles) and Amazon (advanced logistics) secured survival and leadership by investing in long-term trends.',
-            globalAppsTitle: 'Global Applications of Future Readiness',
+            globalAppsTitle: 'Future Readiness across industries',
             apps: [
-                { label: 'Education (Finland)', text: 'Finland\'s project-based, innovation-focused education system prepares students to solve complex real-world problems of tomorrow.' },
-                { label: 'Policy (Singapore)', text: 'Singapore\'s Smart Nation program uses technology to prepare the economy and citizens\' quality of life for the aging challenge.' },
-                { label: 'Healthcare (NHS UK)', text: 'Big data analytics and AI for early disease diagnosis and hospital resource optimization.' },
-                { label: 'Transport & Crisis (Netherlands & Japan)', text: 'The Netherlands with green transport and Japan with earthquake warning and crisis management systems are national resilience leaders.' }
+                { label: 'Telecom & ICT', text: 'Deutsche Telekom and peers use technology radar and ag-IoT · foresight links to Trial/Adopt rings, not trend PDFs alone.' },
+                { label: 'Automotive & mobility', text: 'OEMs probe OTA and EV before scale · Readiness-only players lagged the software-defined shift.' },
+                { label: 'Pharma & biotech', text: 'Scan AI drug discovery and regulation · bounded pilots before production capex.' },
+                { label: 'Energy & heavy industry', text: 'Siemens and peers with digital twin and green power · three-horizon H1/H2/H3 portfolio.' }
             ]
         },
         readinessCards: [
@@ -335,8 +628,9 @@ registerLocale('en', {
                 ai: 'AI & Data',
                 net: 'Communications Networks',
                 comp: 'Emerging Computing & Cloud',
-                bio: 'Biotech & Convergent Tech'
+                bio: 'Digital Health & Remote Care'
             },
+            bioQuadrantNote: 'Deutsche Telekom is not a biotech lab company. The lower-right quadrant shows the adjacent Digital Health market: telemedicine, health IoT, and remote-care platforms on DT/T-Systems networks — horizon scanning beyond core telecom, per Rohrbeck et al. (2007).',
             statusLabel: 'Radar Status:',
             impactLabel: 'Strategic Impact on Organization:',
             tech: {
@@ -347,8 +641,8 @@ registerLocale('en', {
                 iot: { title: 'IoT Ecosystems', quadrant: 'Communications Networks', status: 'Trial', desc: 'Connecting hundreds of millions of smart sensors for data collection from operations, warehouses, and logistics.', impact: 'Energy waste reduction, smart agricultural process monitoring, and improved factory equipment productivity.' },
                 quantum: { title: 'Quantum Computing', quadrant: 'Emerging Computing & Cloud', status: 'Assess', desc: 'Using quantum qubits for physical simulations and complex mathematical optimizations beyond classical computers.', impact: 'Faster drug discovery, advanced portfolio optimization, and serious risks to current cybersecurity and encryption.' },
                 edge: { title: 'Edge Computing', quadrant: 'Emerging Computing & Cloud', status: 'Adopt', desc: 'Processing data at the source (sensor or camera) instead of sending to central cloud servers to reduce latency and bandwidth.', impact: 'Instant autonomous vehicle navigation and fast security camera image analysis without network overhead.' },
-                biocomputing: { title: 'Bio-computing', quadrant: 'Biotech & Convergent Tech', status: 'Scan', desc: 'Engineering DNA and biological cells for logical computation and data storage with high durability and near-zero energy consumption.', impact: 'Replacing massive data centers with millimeter-scale, eco-friendly big data storage systems.' },
-                metaverse: { title: 'Metaverse & Spatial Computing', quadrant: 'Biotech & Convergent Tech', status: 'Assess', desc: 'Integrating VR, AR, and interactive 3D spaces for digital collaboration and professional simulators.', impact: 'Major shift in remote education, surgical simulation, and organizational digital twin creation.' }
+                telehealth: { title: 'Telemedicine & Remote Care', quadrant: 'Digital Health & Remote Care', status: 'Trial', desc: 'Online visit platforms, EHR integration, and patient–provider connectivity on DT/T-Systems Healthcare infrastructure — adjacent market, not lab biotech.', impact: 'B2B2C health segment revenue · QoS and edge for clinical workloads.' },
+                healthIoT: { title: 'Health IoT & Remote Monitoring', quadrant: 'Digital Health & Remote Care', status: 'Assess', desc: 'Wearables and home monitoring devices connected via NB-IoT/LTE-M to care hubs.', impact: 'Subscription models for operators · synergy with Ag-IoT on the same network stack.' }
             }
         },
         common: {

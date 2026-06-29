@@ -4,6 +4,7 @@ if (window.gsap && window.ScrollTrigger) {
     
     // Page load animations (Hero section)
     window.addEventListener('load', () => {
+        if (document.body.classList.contains('sfh-platform')) return;
         // Safe check for Hero Section elements
         if (document.querySelector('.hero-section')) {
             const tl = gsap.timeline();

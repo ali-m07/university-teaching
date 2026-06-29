@@ -7,7 +7,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.join(__dirname, '..');
-const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'fitness', 'cla', 'wheel', 'backcast'];
+const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'fitness', 'fitness-university-modules', 'cla', 'wheel', 'backcast'];
 const LANGS = ['fa', 'en'];
 
 function deepMerge(target, source) {
