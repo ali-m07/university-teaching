@@ -14,45 +14,45 @@ registerLocale('fa', {
             title: 'Corporate Foresight: Towards a Maturity Model',
             origin: 'در سال ۲۰۱۰، رنه روهربک در کتاب دانشگاهی <strong>Corporate Foresight: Towards a Maturity Model</strong> اولین مدل ساختاریافته برای سنجش بلوغ آینده‌نگاری سازمانی را معرفی کرد. این کار بر پایه مطالعات میدانی چندساله در شرکت‌های بزرگ اروپایی در دانشگاه آرهوس و بعداً در EDHEC انجام شد.',
             problemLabel: 'مسئله اصلی',
-            problem: 'سازمان‌ها نمی‌توانستند سطح بلوغ آینده‌نگاری خود را اندازه‌گیری کنند، نمی‌دانستند آیا سرمایه‌گذاری در آینده‌نگاری ارزش دارد، و نتایج آینده‌پژوهی به تصمیم‌های استراتژیک متصل نمی‌شد.',
+            problem: 'سازمان‌ها نمی‌توانستند سطح بلوغ آینده‌نگاری خود را اندازه‌گیری کنند، نمی‌دانستند آیا سرمایه‌گذاری در آینده‌نگاری ارزش دارد، و نتایج آینده‌پژوهی به تصمیم‌های راهبردی متصل نمی‌شد.',
             useLabel: 'کاربردها و شواهد',
-            applications: 'پیاده‌سازی در <strong>زیمنس (Siemens)</strong> و <strong>دویچه تلکام (Deutsche Telekom)</strong>؛ مطالعات بنچ‌مارک نشان داد سازمان‌های آینده‌نگر <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر دارند.'
+            applications: 'پیاده‌سازی در <strong>زیمنس (Siemens)</strong> و <strong>دویچه تلکام (Deutsche Telekom)</strong>؛ مطالعات معیار مرجع نشان داد سازمان‌های آینده‌نگر <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر دارند.'
         },
         hero: {
             tag: 'نظریه قابلیت‌های پویا · رنه روهربک',
-            title: 'مدل بلوغ آینده‌نگاری سازمانی و Future FITness',
-            subtitle: 'چگونه سازمان‌ها از «آمادگی ایستای آینده» (Future Readiness) عبور کرده و به «تناسب پویای سازمانی» (Future FITness) برای شکل‌دهی بازارهای فردا برسند · بر پایه مطالعات میدانی زیمنس، دویچه تلکام و بنچ‌مارک صنایع پرتلاطم.'
+            title: 'مدل بلوغ آینده‌نگاری سازمانی و تناسب آینده (FITness)',
+            subtitle: 'چگونه سازمان‌ها از «آمادگی ایستای آینده» (آمادگی آینده) عبور کرده و به «تناسب پویای سازمانی» (تناسب آینده (FITness)) برای شکل‌دهی بازارهای فردا برسند · بر پایه مطالعات میدانی زیمنس، دویچه تلکام و معیار مرجع صنایع پرتلاطم.'
         },
         theoryTag: 'چارچوب روهربک',
         theoryTitle: 'از گزارش آینده‌نگاری تا قابلیت پویای سازمانی',
-        theoryLead: 'روهربک در کتاب <strong>Corporate Foresight: Towards a Maturity Model</strong> (۲۰۱۰) میگه مشکل اصلی صنعت این نیست که آینده‌نگاری نداریم؛ مشکل اینه که آینده‌نگاری به گزارش تبدیل می‌شود و به probing و تحول وصل نمی‌شود.',
+        theoryLead: 'روهربک در کتاب <strong>Corporate Foresight: Towards a Maturity Model</strong> (۲۰۱۰) میگه مشکل اصلی صنعت این نیست که آینده‌نگاری نداریم؛ مشکل اینه که آینده‌نگاری به گزارش تبدیل می‌شود و به آزمون و تحول وصل نمی‌شود.',
         theoryNarrative: [
-            'مدل FITness (Foresight · Innovation · Transformation) سه حرف را به یک چرخه عملیاتی وصل می‌کند: رصد و کاوش، آزمایش سریع، و بازآفرینی ساختار. سازمان‌هایی که این چرخه را در DNA خود دارند، در بنچ‌مارک روهربک به طور میانگین <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر ثبت کردند.',
-            'تفاوت کلیدی با Future Readiness در «ایستایی» است. Readiness یعنی آماده بودن برای آینده‌ای که تصور کرده‌ای؛ FITness یعنی هر فصل دوباره تناسب پیدا کردن وقتی صنعت جهت عوض می‌کند · مثل گذار نتفلیکس از DVD به استریم، یا شرط‌بندی انویدیا روی CUDA قبل از boom یادگیری عمیق.',
-            'در صنایع مخابرات، خودرو، دارو و انرژی، تلاطم محیطی با بلوغ آینده‌نگاری تعیین می‌کند سازمان در کدام quadrant قرار می‌گیرد: Vigilant، Neurotic، Vulnerable یا In Danger. این صفحه ابزار خودارزیابی، رادار فناوری و مسیر استقرار صنعتی را کنار هم می‌گذارد.'
+            'مدل FITness (Foresight · Innovation · تحول) سه حرف را به یک چرخه عملیاتی وصل می‌کند: رصد و کاوش، آزمایش سریع، و بازآفرینی ساختار. سازمان‌هایی که این چرخه را در هویت سازمانی خود دارند، در معیار مرجع روهربک به طور میانگین <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر ثبت کردند.',
+            'تفاوت کلیدی با آمادگی آینده در «ایستایی» است. آمادگی یعنی آماده بودن برای آینده‌ای که تصور کرده‌ای؛ FITness یعنی هر فصل دوباره تناسب پیدا کردن وقتی صنعت جهت عوض می‌کند · مثل گذار نتفلیکس از DVD به پخش آنلاین، یا شرط‌بندی انویدیا روی CUDA قبل از رونق یادگیری عمیق.',
+            'در صنایع مخابرات، خودرو، دارو و انرژی، تلاطم محیطی با بلوغ آینده‌نگاری تعیین می‌کند سازمان در کدام ربع قرار می‌گیرد: هوشیار، عصبی، آسیب‌پذیر یا در خطر. این صفحه ابزار خودارزیابی، رادار فناوری و مسیر استقرار صنعتی را کنار هم می‌گذارد.'
         ],
-        readinessVsTitle: 'Readiness در برابر FITness · نگاه صنعتی',
+        readinessVsTitle: 'آمادگی در برابر FITness · نگاه صنعتی',
         readinessVsFitness: [
-            'Future Readiness تمرکزش روی پیش‌بینی، سناریو و آمادگی است · مفید برای بحران‌های قابل تصور (مثل Zoom در کرونا یا remote-work pilot قبل از پاندمی).',
-            'Future FITness یک گام جلوتر می‌رود: probing مداوم، خودتخریبی خلاق قبل از رقیب، و اتصال آینده‌نگاری به بودجه R&D و venturing · نه فقط slide deck.',
-            'در عمل صنعتی، Readiness بدون FITness منجر به Neurotic می‌شود: سناریوهای زیاد، pilot کم، و گزارش‌هایی که به خط تولید یا roadmap وصل نمی‌شوند.'
+            'آمادگی آینده تمرکزش روی پیش‌بینی، سناریو و آمادگی است · مفید برای بحران‌های قابل تصور (مثل Zoom در کرونا یا پیلوت دورکاری قبل از پاندمی).',
+            'تناسب آینده (FITness) یک گام جلوتر می‌رود: آزمون مداوم، خودتخریبی خلاق قبل از رقیب، و اتصال آینده‌نگاری به بودجه پژوهش و توسعه و سرمایه‌گذاری · نه فقط مجموعه اسلاید.',
+            'در عمل صنعتی، آمادگی بدون FITness منجر به عصبی می‌شود: سناریوهای زیاد، پیلوت کم، و گزارش‌هایی که به خط تولید یا نقشه راه وصل نمی‌شوند.'
         ],
-        threePTitle: 'چرخه Perceiving → Prospecting → Probing',
+        threePTitle: 'چرخه درک → کاوش → آزمایش',
         threePProse: [
-            '<strong>Perceiving (درک):</strong> رصد سیگنال‌های ضعیف، رادار فناوری، weak signal · واحد آینده‌نگاری دویچه تلکام IoT کشاورزی را از همین فاز استارت زد.',
-            '<strong>Prospecting (کاوش):</strong> سناریو، technology roadmapping، portfolio افق سه‌گانه · زیمنس و DT هر دو خروجی آینده‌نگاری را به gate سرمایه‌گذاری وصل کردند.',
-            '<strong>Probing (آزمایش):</strong> pilot ۹۰ روزه، corporate venturing، kill criteria · بدون probing، FITness روی کاغذ می‌ماند.',
-            '<strong>Transformation (تحول):</strong> وقتی probing موفق شد، ساختار، فرهنگ و DNA سازمان باید عوض شود · در غیر این صورت همان مسیر نوکیا یا بلاک‌باستر تکرار می‌شود.'
+            '<strong>درک:</strong> رصد سیگنال‌های ضعیف، رادار فناوری، نشانه ضعیف · واحد آینده‌نگاری دویچه تلکام اینترنت اشیا کشاورزی را از همین فاز استارت زد.',
+            '<strong>کاوش:</strong> سناریو، نقشه‌راه فناوری، سبد افق سه‌گانه · زیمنس و DT هر دو خروجی آینده‌نگاری را به دروازه سرمایه‌گذاری وصل کردند.',
+            '<strong>آزمایش:</strong> پیلوت ۹۰ روزه، سرمایه‌گذاری شرکتی، معیار توقف · بدون آزمون، FITness روی کاغذ می‌ماند.',
+            '<strong>تحول:</strong> وقتی آزمون موفق شد، ساختار، فرهنگ و هویت سازمانی سازمان باید عوض شود · در غیر این صورت همان مسیر نوکیا یا بلاک‌باستر تکرار می‌شود.'
         ],
-        compareDetailsTitle: 'جدول مقایسه · Readiness و FITness',
+        compareDetailsTitle: 'جدول مقایسه · آمادگی و FITness',
         compareColAspect: 'بُعد',
-        compareColReadiness: 'Future Readiness',
-        compareColFitness: 'Future FITness',
+        compareColReadiness: 'آمادگی آینده',
+        compareColFitness: 'تناسب آینده (FITness)',
         readinessCompareRows: [
             { aspect: 'هدف', readiness: 'آماده بودن برای آینده‌های محتمل', fitness: 'تناسب مداوم با تلاطم صنعت' },
-            { aspect: 'خروجی', readiness: 'سناریو، plan، risk register', fitness: 'pilot، venturing، تغییر portfolio' },
-            { aspect: 'ریسک', readiness: 'Neurotic · تحلیل زیاد، اقدام کم', fitness: 'Vulnerable اگر probing ضعیف باشد' },
-            { aspect: 'نمونه صنعتی', readiness: 'Zoom scale-up در کرونا', fitness: 'نتفلیکس cannibalize DVD · انویدیا CUDA' }
+            { aspect: 'خروجی', readiness: 'سناریو، برنامه، ثبت ریسک', fitness: 'پیلوت، سرمایه‌گذاری، تغییر سبد' },
+            { aspect: 'ریسک', readiness: 'عصبی · تحلیل زیاد، اقدام کم', fitness: 'آسیب‌پذیر اگر آزمون ضعیف باشد' },
+            { aspect: 'نمونه صنعتی', readiness: 'Zoom گسترش در کرونا', fitness: 'نتفلیکس جایگزینی عمدی DVD · انویدیا CUDA' }
         ],
         industrySectionTitle: 'مسیر صنعت · استقرار FITness در سازمان',
         tracksLabel: 'مسیر اجرا',
@@ -61,103 +61,103 @@ registerLocale('fa', {
         trackWorkshop: 'کارگاه تعاملی',
         workshopSectionTitle: 'کارگاه · ابزارها و شبیه‌سازی',
         universitySectionTitle: 'مسیر دانشگاه · طرح درس و تدریس',
-        universityCourseTitle: 'درس Corporate Foresight & Future FITness · طرح ۱۴ هفته',
-        universityCourseIntro: 'طرح درس کامل برای کارشناسی ارشد، MBA و دکتری · ۷ ماژول، ۲۱ ساعت حضوری + ۲۱ مطالعه · بر پایه کتاب ۳۰۰+ صفحه Rohrbeck (۲۰۱۰) و corpus مقالات.',
+        universityCourseTitle: 'درس آینده‌نگاری سازمانی و تناسب آینده (FITness) · طرح ۱۴ هفته',
+        universityCourseIntro: 'طرح درس کامل برای کارشناسی ارشد، MBA و دکتری · ۷ ماژول، ۲۱ ساعت حضوری + ۲۱ مطالعه · بر پایه کتاب ۳۰۰+ صفحه Rohrbeck (۲۰۱۰) و مجموعه مقالات.',
         university: {
             tag: 'طرح درس دانشگاهی',
-            title: 'Corporate Foresight & Future FITness',
-            intro: 'این مسیر یک <strong>درس کامل ۱۴ هفته‌ای</strong> است — نه یک جلسه ۹۰ دقیقه‌ای. روهربک بیش از یک دهه در زیمنس، دویچه تلکوم، Bosch و ده‌ها MNC مطالعه میدانی کرده؛ کتاب Springer (~۳۰۰ صفحه) و رساله Aarhus پایه syllabus است.',
+            title: 'آینده‌نگاری سازمانی و تناسب آینده (FITness)',
+            intro: 'این مسیر یک <strong>درس کامل ۱۴ هفته‌ای</strong> است — نه یک جلسه ۹۰ دقیقه‌ای. روهربک بیش از یک دهه در زیمنس، دویچه تلکوم، Bosch و ده‌ها شرکت چندملیتی مطالعه میدانی کرده؛ کتاب Springer (~۳۰۰ صفحه) و رساله Aarhus پایه برنامه درسی است.',
             courseMeta: [
                 { label: 'کد درس', value: 'FS-501 · Corporate Foresight' },
                 { label: 'سطح', value: 'کارشناسی ارشد / MBA / دکتری' },
                 { label: 'حجم', value: '۳ ECTS · ۴۲ ساعت (۲۱ حضوری + ۲۱ خودخوان)' },
                 { label: 'مدت', value: '۱۴ هفته · ۷ ماژول × ۳ ساعت' },
-                { label: 'پیش‌نیاز', value: 'مقدمات آینده‌پژوهی · CLA یا Wheel' },
+                { label: 'پیش‌نیاز', value: 'مقدمات آینده‌پژوهی · CLA یا چرخ آینده' },
                 { label: 'ابزار', value: '#assessment · رادار · تب صنعت · IT2' }
             ],
             courseObjectivesTitle: 'اهداف کل دوره',
             courseObjectives: [
-                'corpus نظری Rohrbeck را با شواهد میدانی MNC توضیح دهید.',
-                'پنج بعد بلوغ را اندازه‌گیری، benchmark و نقد کنید.',
-                'چهار کهن‌الگو را روی مورد واقعی map کنید.',
-                'مسیر Perceiving → Prospecting → Probing → Transformation را طراحی کنید.',
-                'آینده‌نگاری را به gate سرمایه‌گذاری و venturing وصل کنید.',
-                'FOU خبرگان را در gate probing با IT2 بحث کنید.'
+                'مجموعه نظری Rohrbeck را با شواهد میدانی شرکت چندملیتی توضیح دهید.',
+                'پنج بعد بلوغ را اندازه‌گیری، معیار مرجع و نقد کنید.',
+                'چهار کهن‌الگو را روی مورد واقعی نقشه کنید.',
+                'مسیر درک → کاوش → آزمایش → تحول را طراحی کنید.',
+                'آینده‌نگاری را به دروازه سرمایه‌گذاری و سرمایه‌گذاری وصل کنید.',
+                'FOU خبرگان را در دروازه آزمون با IT2 بحث کنید.'
             ],
             modulesTitle: '۷ ماژول · ۳ ساعت هر جلسه',
             modules: [
-                { num: 'M1', id: 'm1', pickerLabel: 'مبانی', title: 'مبانی · آمادگی در برابر FITness', hours: '۳ ساعت', focus: 'چرا آینده‌نگاری سازمانی شکست می‌خورد · Zoom در برابر Nokia', readings: 'Rohrbeck (2010) ch.1–2', activity: 'بحث گروهی + کارگاه #assessment', example: 'رادار فناوری Deutsche Telekom', visual: 'assets/fitness/modules/m1-foundations.svg', visualCaption: 'مسیر گذار از آمادگی ایستا (Readiness) به چرخه پویای FITness · F→I→T', keyPoints: ['آینده‌نگاری سازمانی ≠ گزارش مشاور · باید به probing و gate وصل شود', 'benchmark روهربک: ۳۳٪ سودآوری و ۲۰۰٪ رشد ارزش بازار برای سازمان‌های Vigilant', 'آینده‌نگاری تعبیه‌شده در خط مقدم vs واحد جدا — debate ساختاری', 'map فصل‌های ۱–۱۲ کتاب به ۷ ماژول این درس'], caseSpotlight: { title: 'Zoom در برابر Nokia', body: 'Zoom Readiness داشت (زیرساخت remote) اما FITness یعنی probing مداوم · Nokia آینده‌نگاری داشت اما probing و Transformation ضعیف — همین تمایز M1 است.' }, deliverable: 'شروع #assessment · انتخاب سازمان پروژه · debrief یک پارagraph: Readiness یا FITness؟', sessions: [
-                    { step: '۱', time: '۴۵ دقیقه', title: 'چرا آینده‌نگاری سازمانی شکست می‌خورد؟', desc: 'گزارش در برابر قابلیت · benchmark ۳۳٪/۲۰۰٪ · embedded در برابر unit مستقل' },
+                { num: 'M1', id: 'm1', pickerLabel: 'مبانی', title: 'مبانی · آمادگی در برابر FITness', hours: '۳ ساعت', focus: 'چرا آینده‌نگاری سازمانی شکست می‌خورد · Zoom در برابر Nokia', readings: 'Rohrbeck (2010) فصل 1–2', activity: 'بحث گروهی + کارگاه #assessment', example: 'رادار فناوری Deutsche Telekom', visual: 'assets/fitness/modules/m1-foundations.svg', visualCaption: 'مسیر گذار از آمادگی ایستا (آمادگی) به چرخه پویای FITness · F→I→T', keyPoints: ['آینده‌نگاری سازمانی ≠ گزارش مشاور · باید به آزمون و دروازه وصل شود', 'معیار مرجع روهربک: ۳۳٪ سودآوری و ۲۰۰٪ رشد ارزش بازار برای سازمان‌های هوشیار', 'آینده‌نگاری تعبیه‌شده در خط مقدم در برابر واحد جدا — بحث ساختاری', 'نقشه فصل‌های ۱–۱۲ کتاب به ۷ ماژول این درس'], caseSpotlight: { title: 'Zoom در برابر Nokia', body: 'Zoom آمادگی داشت (زیرساخت دورکاری) اما FITness یعنی آزمون مداوم · Nokia آینده‌نگاری داشت اما آزمون و تحول ضعیف — همین تمایز M1 است.' }, deliverable: 'شروع #assessment · انتخاب سازمان پروژه · بازبینی یک پاراگراف: آمادگی یا FITness؟', sessions: [
+                    { step: '۱', time: '۴۵ دقیقه', title: 'چرا آینده‌نگاری سازمانی شکست می‌خورد؟', desc: 'گزارش در برابر قابلیت · معیار مرجع ۳۳٪/۲۰۰٪ · تعبیه‌شده در برابر unit مستقل' },
                     { step: '۲', time: '۴۵ دقیقه', title: 'آمادگی در برابر FITness', desc: 'foresight_concept.png · جدول مقایسه · Zoom/Netflix/Nokia' },
                     { step: '۳', time: '۴۵ دقیقه', title: 'معرفی طرح درس و نقشه فصل‌ها', desc: 'M1–M7 · میان‌ترم · پروژه نهایی' },
                     { step: '۴', time: '۴۵ دقیقه', title: 'کارگاه #assessment', desc: 'امتیاز ۵ بعد · انتخاب سازمان برای پروژه' }
                 ] },
-                { num: 'M2', id: 'm2', pickerLabel: 'مدل بلوغ', title: 'مدل بلوغ · پنج بعد', hours: '۳ ساعت', focus: 'پنج بعد بلوغ · از Information تا Culture · سطوح ۱–۵', readings: 'Rohrbeck (2010) ch.3–5 · Schwarz (2013)', activity: 'امتیازدهی سازمان · نمودار رادار', example: 'خط آینده‌نگاری-to-innovation زیمنس', visual: 'assets/fitness/modules/m2-maturity.svg', visualCaption: 'پنج بعد maturity · سطوح ۱ تا ۵ · اعتبارسنجی Schwarz (2013)', keyPoints: ['Information: پهنای باند رصد · Methods: سناریو، دلفی، رادار', 'People: سواد آینده در خط مقدم · Organization: gate بودجه و venturing', 'Culture: kill pilot · cannibalization · Opponent مجاز', 'radar chart گروهی → debrief ضعیف‌ترین بعد برای پروژه'], caseSpotlight: { title: 'زیمنس آینده‌نگاری سازمانی', body: 'زیمنس آینده‌نگاری را به pipeline نوآوری وصل کرد — gap معمول در Methods و Organization است نه «نداشتن گزارش».' }, deliverable: 'نمودار رادار ۵ بعدی برای سازمان منتخب · ۳ bullet شواهد میدانی', sessions: [
-                    { step: '۱', time: '۵۰ دقیقه', title: 'پنج بعد maturity', desc: 'Information، Methods، People، Organization، Culture · سطوح ۱–۵' },
-                    { step: '۲', time: '۵۰ دقیقه', title: 'اعتبارسنجی و benchmark', desc: 'Schwarz (2013) · شکاف سودآوری · شواهد میدانی' },
-                    { step: '۳', time: '۶۰ دقیقه', title: 'کارگاه امتیازدهی', desc: 'هر گروه یک سازمان · نمودار رادار · debrief ضعیف‌ترین بعد' }
+                { num: 'M2', id: 'm2', pickerLabel: 'مدل بلوغ', title: 'مدل بلوغ · پنج بعد', hours: '۳ ساعت', focus: 'پنج بعد بلوغ · از اطلاعات تا فرهنگ · سطوح ۱–۵', readings: 'Rohrbeck (2010) فصل 3–5 · Schwarz (2013)', activity: 'امتیازدهی سازمان · نمودار رادار', example: 'خط آینده‌نگاری-به‌نوآوری زیمنس', visual: 'assets/fitness/modules/m2-maturity.svg', visualCaption: 'پنج بعد بلوغ · سطوح ۱ تا ۵ · اعتبارسنجی Schwarz (2013)', keyPoints: ['اطلاعات: پهنای باند رصد · روش‌ها: سناریو، دلفی، رادار', 'افراد: سواد آینده در خط مقدم · سازمان: دروازه بودجه و سرمایه‌گذاری', 'فرهنگ: توقف پیلوت · جایگزینی عمدی · مخالف مجاز', 'نمودار رادار گروهی → بازبینی ضعیف‌ترین بعد برای پروژه'], caseSpotlight: { title: 'زیمنس آینده‌نگاری سازمانی', body: 'زیمنس آینده‌نگاری را به خط لوله نوآوری وصل کرد — شکاف معمول در روش‌ها و سازمان است نه «نداشتن گزارش».' }, deliverable: 'نمودار رادار ۵ بعدی برای سازمان منتخب · ۳ bullet شواهد میدانی', sessions: [
+                    { step: '۱', time: '۵۰ دقیقه', title: 'پنج بعد بلوغ', desc: 'اطلاعات، روش‌ها، افراد، سازمان، فرهنگ · سطوح ۱–۵' },
+                    { step: '۲', time: '۵۰ دقیقه', title: 'اعتبارسنجی و معیار مرجع', desc: 'Schwarz (2013) · شکاف سودآوری · شواهد میدانی' },
+                    { step: '۳', time: '۶۰ دقیقه', title: 'کارگاه امتیازدهی', desc: 'هر گروه یک سازمان · نمودار رادار · بازبینی ضعیف‌ترین بعد' }
                 ] },
-                { num: 'M3', id: 'm3', pickerLabel: 'درک', title: 'درک · سیگنال‌های ضعیف (Perceiving)', hours: '۳ ساعت', focus: 'رصد محیط · STEEP · حلقه‌های رادار', readings: 'Rohrbeck (2010) ch.6 · et al. (2007)', activity: '۱۰ سیگنال ضعیف · رادار تعاملی صفحه', example: 'IoT کشاورزی DT · مرکز تماس GenAI', visual: 'assets/fitness/modules/m3-perceiving.svg', visualCaption: 'Technology Radar · Scan → Assess → Trial → Adopt · weak signals', keyPoints: ['environmental scanning: STEEP/PESTEL · multinationals paper (2007)', 'weak signal ≠ noise · اولویت با FOU و relevance به استراتژی', 'رادار صفحه (#tech-radar) · حلقه Trial قبل از Adopt', 'Neurotic trap: همه signal مهم — نیاز به فیلتر و Opponent'], caseSpotlight: { title: 'Deutsche Telekom · Ag-IoT', body: 'واحد آینده‌نگاری DT با رصد حسگر IoT، اتصال کشاورزی به شبکه را از Perceiving استارت زد — قبل از commit بودجه سنگین.' }, deliverable: 'لیست ۱۰ weak signal · اولویت ۳ تای برتر · قرار دادن روی رادار صفحه', sessions: [
-                    { step: '۱', time: '۴۵ دقیقه', title: 'رصد محیط (Environmental scanning)', desc: 'STEEP/PESTEL · فصل ۶ · مقاله multinationals' },
-                    { step: '۲', time: '۴۵ دقیقه', title: 'رادار فناوری', desc: 'Scan/Assess/Trial/Adopt · demo رادار صفحه' },
-                    { step: '۳', time: '۵۰ دقیقه', title: 'کارگاه سیگنال‌های ضعیف', desc: '۱۰ signal · اولویت‌بندی · vignetteهای DT IoT و GenAI' },
-                    { step: '۴', time: '۲۰ دقیقه', title: 'بازتاب', desc: 'کدام signal در سازمان شما نادیده گرفته شده؟' }
+                { num: 'M3', id: 'm3', pickerLabel: 'درک', title: 'درک · سیگنال‌های ضعیف ((درک)', hours: '۳ ساعت', focus: 'رصد محیط · STEEP · حلقه‌های رادار', readings: 'Rohrbeck (2010) فصل 6 · et al. (2007)', activity: '۱۰ سیگنال ضعیف · رادار تعاملی صفحه', example: 'اینترنت اشیا کشاورزی DT · مرکز تماس هوش مصنوعی مولد', visual: 'assets/fitness/modules/m3-perceiving.svg', visualCaption: 'رادار فناوری · رصد → ارزیابی → آزمایش → پذیرش · نشانه‌های ضعیف', keyPoints: ['رصد محیط: STEEP/PESTEL · شرکت‌های چندملیتی مقاله (2007)', 'نشانه ضعیف ≠ اطلاعات پراکنده · اولویت با FOU و ارتباط به راهبرد', 'رادار صفحه (#tech-radar) · حلقه آزمایش قبل از پذیرش', 'تله عصبی: همه نشانه مهم — نیاز به فیلتر و مخالف'], caseSpotlight: { title: 'Deutsche Telekom · اینترنت اشیا کشاورزی', body: 'واحد آینده‌نگاری DT با رصد حسگر اینترنت اشیا، اتصال کشاورزی به شبکه را از درک استارت زد — قبل از تخصیص بودجه سنگین.' }, deliverable: 'لیست ۱۰ نشانه ضعیف · اولویت ۳ تای برتر · قرار دادن روی رادار صفحه', sessions: [
+                    { step: '۱', time: '۴۵ دقیقه', title: 'رصد محیط (رصد محیط)', desc: 'STEEP/PESTEL · فصل ۶ · مقاله شرکت‌های چندملیتی' },
+                    { step: '۲', time: '۴۵ دقیقه', title: 'رادار فناوری', desc: 'رصد/ارزیابی/آزمایش/پذیرش · demo رادار صفحه' },
+                    { step: '۳', time: '۵۰ دقیقه', title: 'کارگاه سیگنال‌های ضعیف', desc: '۱۰ نشانه · اولویت‌بندی · vignetteهای DT اینترنت اشیا و هوش مصنوعی مولد' },
+                    { step: '۴', time: '۲۰ دقیقه', title: 'بازتاب', desc: 'کدام نشانه در سازمان شما نادیده گرفته شده؟' }
                 ] },
-                { num: 'M4', id: 'm4', pickerLabel: 'کاوش', title: 'کاوش · سناریو و سبد سرمایه (Prospecting)', hours: '۳ ساعت', focus: 'سه نقش Initiator/Strategist/Opponent · افق H1/H2/H3', readings: 'Rohrbeck (2010) ch.7–8 · (2014)', activity: 'کارگاه سناریو + gate بودجه', example: 'Nvidia CUDA · استریم Netflix', visual: 'assets/fitness/modules/m4-prospecting.svg', visualCaption: 'سه افق H1/H2/H3 · سه نقش Initiator · Strategist · Opponent', keyPoints: ['Initiator: نام‌گذاری signal · Strategist: portfolio و gate', 'Opponent: kill sacred cow · اجبار debat قبل از capex', 'سناریو تهاجمی/تدافعی · Teece dynamic capabilities', 'آماده‌سازی میان‌ترم: maturity + archetype · ۲۰۰۰ کلمه'], caseSpotlight: { title: 'Nvidia CUDA · Netflix streaming', body: 'Nvidia روی CUDA شرط بست (H3) · Netflix استریم را H2 کرد و DVD را cannibalize — هر دو Prospecting با gate واقعی.' }, deliverable: 'دو سناریو · یک gate بودجه · نقش Opponent در debrief', sessions: [
-                    { step: '۱', time: '۵۰ دقیقه', title: 'سه نقش آینده‌نگاری', desc: 'Initiator · Strategist · Opponent · نقش‌ها در صفحه' },
-                    { step: '۲', time: '۵۰ دقیقه', title: 'سبد سه‌افقی', desc: 'H1/H2/H3 · Teece · gate سرمایه‌گذاری' },
+                { num: 'M4', id: 'm4', pickerLabel: 'کاوش', title: 'کاوش · سناریو و سبد سرمایه ((کاوش)', hours: '۳ ساعت', focus: 'سه نقش آغازگر/راهبردساز/مخالف · افق افق ۱/۲/۳', readings: 'Rohrbeck (2010) فصل 7–8 · (2014)', activity: 'کارگاه سناریو + دروازه بودجه', example: 'Nvidia CUDA · پخش آنلاین Netflix', visual: 'assets/fitness/modules/m4-prospecting.svg', visualCaption: 'سه افق افق ۱/۲/۳ · سه نقش آغازگر · راهبردساز · مخالف', keyPoints: ['آغازگر: نام‌گذاری نشانه · راهبردساز: سبد و دروازه', 'مخالف: به چالش کشیدن گاو مقدس · اجبار بحث قبل از سرمایه‌گذاری', 'سناریو تهاجمی/تدافعی · Teece قابلیت‌های پویا', 'آماده‌سازی میان‌ترم: بلوغ + کهن‌الگو · ۲۰۰۰ کلمه'], caseSpotlight: { title: 'Nvidia CUDA · Netflix پخش آنلاین', body: 'Nvidia روی CUDA شرط بست (افق ۳) · Netflix پخش آنلاین را افق ۲ کرد و DVD را جایگزینی عمدی — هر دو کاوش با دروازه واقعی.' }, deliverable: 'دو سناریو · یک دروازه بودجه · نقش مخالف در بازبینی', sessions: [
+                    { step: '۱', time: '۵۰ دقیقه', title: 'سه نقش آینده‌نگاری', desc: 'آغازگر · راهبردساز · مخالف · نقش‌ها در صفحه' },
+                    { step: '۲', time: '۵۰ دقیقه', title: 'سبد سه‌افقی', desc: 'افق ۱/۲/۳ · Teece · دروازه سرمایه‌گذاری' },
                     { step: '۳', time: '۶۰ دقیقه', title: 'کارگاه سناریو', desc: 'تهاجمی/تدافعی · موارد Nvidia/Netflix · آماده‌سازی میان‌ترم' }
                 ] },
-                { num: 'M5', id: 'm5', pickerLabel: 'آزمایش', title: 'آزمایش · pilot و سرمایه‌گذاری (Probing)', hours: '۳ ساعت', focus: 'probe ۹۰ روزه · معیارهای kill', readings: 'Rohrbeck (2010) ch.9', activity: 'memo gate یک‌صفحه‌ای', example: 'Blockbuster در برابر Netflix', visual: 'assets/fitness/modules/m5-probing.svg', visualCaption: 'چرخه probe ۹۰ روزه · KPI · gate · kill criteria', keyPoints: ['probe کوچک · سریع · با KPI روشن — نه pilot بی‌پایان', 'corporate venturing · CVC · kill criteria قبل از start', 'Opponent role: چه کسی «نه» می‌گوید؟', 'memo gate = ۲۰٪ نمره · لینک #assessment'], caseSpotlight: { title: 'Blockbuster vs Netflix', body: 'Blockbuster probing دیر و بدون kill criteria برای DVD · Netflix probe استریم با KPI cannibalization — درس M5.' }, deliverable: 'memo gate یک‌صفحه: hypothesis · KPI · kill · scale path', sessions: [
-                    { step: '۱', time: '۴۵ دقیقه', title: 'Probing و venturing', desc: 'فصل ۹ · probe ۹۰ روزه · corporate VC' },
-                    { step: '۲', time: '۴۵ دقیقه', title: 'معیار kill و نقش Opponent', desc: 'مورد Blockbuster · pivot/kill/scale' },
-                    { step: '۳', time: '۷۰ دقیقه', title: 'کارگاه memo gate', desc: 'یک‌صفحه · KPI · تحویل ۲۰٪ نمره' }
+                { num: 'M5', id: 'm5', pickerLabel: 'آزمایش', title: 'آزمایش · پیلوت و سرمایه‌گذاری (آزمایش)', hours: '۳ ساعت', focus: 'آزمون ۹۰ روزه · معیارهای توقف', readings: 'Rohrbeck (2010) فصل 9', activity: 'یادداشت دروازه یک‌صفحه‌ای', example: 'Blockbuster در برابر Netflix', visual: 'assets/fitness/modules/m5-probing.svg', visualCaption: 'چرخه آزمون ۹۰ روزه · شاخص عملکرد · دروازه · معیار توقف', keyPoints: ['آزمون کوچک · سریع · با شاخص عملکرد روشن — نه پیلوت بی‌پایان', 'سرمایه‌گذاری شرکتی · سرمایه‌گذاری خطرپذیر · معیار توقف قبل از start', 'نقش مخالف: چه کسی «نه» می‌گوید؟', 'یادداشت دروازه = ۲۰٪ نمره · لینک #assessment'], caseSpotlight: { title: 'Blockbuster در برابر Netflix', body: 'Blockbuster آزمون دیر و بدون معیار توقف برای DVD · Netflix آزمون پخش آنلاین با شاخص عملکرد جایگزینی عمدی — درس M5.' }, deliverable: 'یادداشت دروازه یک‌صفحه: فرضیه · شاخص عملکرد · توقف · مسیر گسترش', sessions: [
+                    { step: '۱', time: '۴۵ دقیقه', title: 'آزمایش و سرمایه‌گذاری', desc: 'فصل ۹ · آزمون ۹۰ روزه · سرمایه‌گذاری خطرپذیر شرکتی' },
+                    { step: '۲', time: '۴۵ دقیقه', title: 'معیار توقف و نقش مخالف', desc: 'مورد Blockbuster · pivot/توقف/گسترش' },
+                    { step: '۳', time: '۷۰ دقیقه', title: 'کارگاه یادداشت دروازه', desc: 'یک‌صفحه · شاخص عملکرد · تحویل ۲۰٪ نمره' }
                 ] },
-                { num: 'M6', id: 'm6', pickerLabel: 'کهن‌الگو', title: 'کهن‌الگوها · تحول سازمانی', hours: '۳ ساعت', focus: 'چهار archetype: Vigilant، Neurotic، Vulnerable، In Danger', readings: 'Rohrbeck (2010) ch.10–11', activity: 'کلینیک موردی Nokia و Blockbuster', example: 'benchmark سودآوری ۳۳٪', visual: 'assets/fitness/modules/m6-archetypes.svg', visualCaption: 'ماتریس تلاطم × بلوغ · چهار کهن‌الگوی Rohrbeck', keyPoints: ['Vigilant: بلوغ + تلاطم بالا · Neurotic: بلوغ بالا + تلاطم پایین', 'Vulnerable: بلوغ پایین + تلاطم پایین · In Danger: بلوغ پایین + تلاطم بالا', 'Transformation = DNA + culture + incentive · نه فقط reorg', 'case clinic: map Nokia · Blockbuster · IKEA'], caseSpotlight: { title: 'Nokia · Blockbuster', body: 'Nokia Vulnerable→In Danger · Blockbuster In Danger با probing دیر · کلینیک: کدام بعد maturity گلوگاه بود؟' }, deliverable: 'map archetype سازمان پروژه · برنامه transformation ۳ مرحله‌ای', sessions: [
+                { num: 'M6', id: 'm6', pickerLabel: 'کهن‌الگو', title: 'کهن‌الگوها · تحول سازمانی', hours: '۳ ساعت', focus: 'چهار کهن‌الگو: هوشیار، عصبی، آسیب‌پذیر، در خطر', readings: 'Rohrbeck (2010) فصل 10–11', activity: 'کلینیک موردی Nokia و Blockbuster', example: 'معیار مرجع سودآوری ۳۳٪', visual: 'assets/fitness/modules/m6-archetypes.svg', visualCaption: 'ماتریس تلاطم × بلوغ · چهار کهن‌الگوی Rohrbeck', keyPoints: ['هوشیار: بلوغ + تلاطم بالا · عصبی: بلوغ بالا + تلاطم پایین', 'آسیب‌پذیر: بلوغ پایین + تلاطم پایین · در خطر: بلوغ پایین + تلاطم بالا', 'تحول = هویت سازمانی + فرهنگ + پاداش · نه فقط بازآرایی', 'کلینیک موردی: نقشه Nokia · Blockbuster · IKEA'], caseSpotlight: { title: 'Nokia · Blockbuster', body: 'Nokia آسیب‌پذیر و در خطر · Blockbuster در خطر با آزمون دیر · کلینیک: کدام بعد بلوغ گلوگاه بود؟' }, deliverable: 'نقشه کهن‌الگو سازمان پروژه · برنامه تحولation ۳ مرحله‌ای', sessions: [
                     { step: '۱', time: '۵۰ دقیقه', title: 'چهار کهن‌الگو', desc: 'ماتریس تلاطم/بلوغ · کهن‌الگوهای صفحه' },
-                    { step: '۲', time: '۵۰ دقیقه', title: 'تحول سازمانی', desc: 'DNA سازمانی · فرهنگ · incentive' },
-                    { step: '۳', time: '۶۰ دقیقه', title: 'کلینیک موردی', desc: 'Nokia · Blockbuster · IKEA · map archetype' }
+                    { step: '۲', time: '۵۰ دقیقه', title: 'تحول سازمانی', desc: 'هویت سازمانی سازمانی · فرهنگ · پاداش' },
+                    { step: '۳', time: '۶۰ دقیقه', title: 'کلینیک موردی', desc: 'Nokia · Blockbuster · IKEA · نقشه کهن‌الگو' }
                 ] },
-                { num: 'M7', id: 'm7', pickerLabel: 'تلفیق', title: 'تلفیق · CLA، Wheel، IT2', hours: '۳ ساعت', focus: 'پروژه پایانی · FOU در gate', readings: 'Rohrbeck (2010) ch.12', activity: 'ارائه ۱۵ دقیقه', example: 'IT2 وقتی spread FOU بالاست', visual: 'assets/fitness/modules/m7-integration.svg', visualCaption: 'تقاطع FITness · CLA · Wheel · #assessment · IT2 fuzzy', keyPoints: ['پروژه: ۵ بعد · archetype · weak signal · probe ۹۰ روز · gate', 'CLA برای عمق · Wheel برای cascade · IT2 وقتی FOU spread > 0.38', 'ch.12 synthesis · corpus Rohrbeck → توصیه مدیریتی', 'ارائه ۱۵ دقیقه + peer review + revision plan'], caseSpotlight: { title: 'GenAI call center (DT-style)', body: 'ops relevance 0.7–0.9 · legal 0.3–0.5 · FOU پهن → Trial نه Adopt · IT2 در gate probing.' }, deliverable: 'ارائه ۱۵ دقیقه · گزارش ۴۰۰۰–۵۰۰۰ کلمه · ۳۵٪ نمره', sessions: [
-                    { step: '۱', time: '۴۰ دقیقه', title: 'تقاطع CLA و Wheel', desc: 'عمق تحلیل · cascade · لینک به درس‌های دیگر' },
-                    { step: '۲', time: '۴۰ دقیقه', title: 'پل IT2 fuzzy', desc: 'FOU در gate · لینک type-2-fuzzy#industry' },
-                    { step: '۳', time: '۱۰۰ دقیقه', title: 'ارائه پروژه پایانی', desc: '۱۵ دقیقه/گروه · peer review · برنامه revision' }
+                { num: 'M7', id: 'm7', pickerLabel: 'تلفیق', title: 'تلفیق · CLA، چرخ آینده، IT2', hours: '۳ ساعت', focus: 'پروژه پایانی · FOU در دروازه', readings: 'Rohrbeck (2010) فصل ۱۲', activity: 'ارائه ۱۵ دقیقه', example: 'IT2 وقتی گستره FOU بالاست', visual: 'assets/fitness/modules/m7-integration.svg', visualCaption: 'تقاطع FITness · CLA · چرخ آینده · #assessment · IT2 فازی', keyPoints: ['پروژه: ۵ بعد · کهن‌الگو · نشانه ضعیف · آزمون ۹۰ روز · دروازه', 'CLA برای عمق · چرخ آینده برای زنجیره پیامد · IT2 وقتی FOU گستره > 0.38', 'فصل ۱۲ تلفیق · مجموعه Rohrbeck → توصیه مدیریتی', 'ارائه ۱۵ دقیقه + بازبینی همتا + برنامه بازنگری'], caseSpotlight: { title: 'هوش مصنوعی مولد مرکز تماس (DT-style)', body: 'عملیات ارتباط 0.7–0.9 · حقوقی 0.3–0.5 · FOU پهن → آزمایش نه پذیرش · IT2 در دروازه آزمون.' }, deliverable: 'ارائه ۱۵ دقیقه · گزارش ۴۰۰۰–۵۰۰۰ کلمه · ۳۵٪ نمره', sessions: [
+                    { step: '۱', time: '۴۰ دقیقه', title: 'تقاطع CLA و چرخ آینده', desc: 'عمق تحلیل · زنجیره پیامد · لینک به درس‌های دیگر' },
+                    { step: '۲', time: '۴۰ دقیقه', title: 'پل IT2 فازی', desc: 'FOU در دروازه · لینک type-2-fuzzy#industry' },
+                    { step: '۳', time: '۱۰۰ دقیقه', title: 'ارائه پروژه پایانی', desc: '۱۵ دقیقه/گروه · بازبینی همتا · برنامه revision' }
                 ] }
             ],
             bibliographyTitle: 'کتاب و مقالات Rohrbeck',
             bibliography: [
-                { category: 'کتاب اصلی (اجباری)', items: ['Rohrbeck (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer ~300 pp.', 'Rohrbeck (2008). PhD thesis, Aarhus University'] },
+                { category: 'کتاب اصلی (اجباری)', items: ['Rohrbeck (2010). <em>Corporate Foresight: Towards a Maturity Model</em>. Springer ~300 pp.', 'Rohrbeck (2008). رساله دکتری, Aarhus University'] },
                 { category: 'مقالات کلیدی', items: ['Rohrbeck, Arnold & Heuer (2007) TFSC', 'Rohrbeck & Schwarz (2013) TFSC', 'Rohrbeck (2014) EJFR', 'Rohrbeck & Gemünden (2010) IJIM', 'Rohrbeck (2011) World Future Review', 'Rohrbeck, Thom & Arnold (2015) TFSC'] },
-                { category: 'Case studies', items: ['Deutsche Telekom Technology Radar', 'Siemens خط آینده‌نگاری', 'Bosch · BMW · E.ON vignettes'] },
-                { category: 'مکمل', items: ['Teece (2007) dynamic capabilities', 'Inayatullah CLA', 'Glenn FRM 3.0 Wheel'] }
+                { category: 'Case studies', items: ['Deutsche Telekom رادار فناوری', 'Siemens خط آینده‌نگاری', 'Bosch · BMW · E.ON vignettes'] },
+                { category: 'مکمل', items: ['Teece (2007) قابلیت‌های پویا', 'Inayatullah CLA', 'Glenn FRM 3.0 چرخ آینده'] }
             ],
             seminarCasesTitle: 'مطالعات موردی سمینار',
             seminarCases: [
-                { title: 'Netflix', context: 'cannibalization DVD→streaming', questions: 'کدام P ضعیف؟ kill criteria؟', reading: 'ch.4' },
-                { title: 'Nokia', context: 'Vulnerable · silo · probing ضعیف', questions: 'archetype و گلوگاه Culture؟', reading: 'ch.10' },
-                { title: 'Deutsche Telekom', context: 'Technology Radar · IoT · GenAI', questions: 'Neurotic بدون Trial؟', reading: '2007 paper' },
-                { title: 'Siemens', context: 'آینده‌نگاری-to-innovation', questions: 'gate R&D کجا؟', reading: '2014 paper' },
-                { title: 'Zoom', context: 'Readiness در COVID', questions: 'Readiness vs FITness؟', reading: 'M1 table' },
-                { title: 'Blockbuster', context: 'In Danger · probing دیر', questions: 'Opponent role ۲۰۰۵؟', reading: 'ch.9' }
+                { title: 'Netflix', context: 'جایگزینی عمدی DVD→پخش آنلاین', questions: 'کدام P ضعیف؟ معیار توقف؟', reading: 'فصل 4' },
+                { title: 'Nokia', context: 'آسیب‌پذیر · جزیره‌ای بودن · آزمون ضعیف', questions: 'کهن‌الگو و گلوگاه فرهنگ؟', reading: 'فصل 10' },
+                { title: 'Deutsche Telekom', context: 'رادار فناوری · اینترنت اشیا · هوش مصنوعی مولد', questions: 'عصبی بدون آزمایش؟', reading: '2007 مقاله' },
+                { title: 'Siemens', context: 'آینده‌نگاری-به‌نوآوری', questions: 'دروازه پژوهش و توسعه کجا؟', reading: '2014 مقاله' },
+                { title: 'Zoom', context: 'آمادگی در COVID', questions: 'آمادگی در برابر FITness؟', reading: 'M1 table' },
+                { title: 'Blockbuster', context: 'در خطر · آزمون دیر', questions: 'نقش مخالف ۲۰۰۵؟', reading: 'فصل 9' }
             ],
             examTitle: 'ارزیابی',
             examRubric: [
                 { component: 'سمینار', weight: '۱۵٪', desc: 'حضور و بحث case' },
-                { component: 'میان‌ترم', weight: '۲۵٪', desc: '۵ بعد + archetype · ۲۰۰۰ کلمه' },
-                { component: 'probing M5', weight: '۲۰٪', desc: 'memo gate + kill criteria' },
+                { component: 'میان‌ترم', weight: '۲۵٪', desc: '۵ بعد + کهن‌الگو · ۲۰۰۰ کلمه' },
+                { component: 'آزمون M5', weight: '۲۰٪', desc: 'یادداشت دروازه + معیار توقف' },
                 { component: 'پروژه نهایی', weight: '۳۵٪', desc: '۴۰۰۰–۵۰۰۰ کلمه · ارائه ۱۵ دقیقه' },
-                { component: '#assessment', weight: '۵٪ bonus', desc: 'self-score + reflection' }
+                { component: '#assessment', weight: '۵٪ bonus', desc: 'خودارزیابی + reflection' }
             ],
             discussionTitle: 'سؤالات بحث',
-            discussionPrompts: ['آینده‌نگاری واحد جدا یا embedded؟', 'ضعیف‌ترین بعد maturity؟', 'weak signal ignored؟', 'Opponent role مجاز؟', 'Neurotic در صنعت منطقه؟', 'IT2 لازم یا overkill؟'],
+            discussionPrompts: ['آینده‌نگاری واحد جدا یا تعبیه‌شده؟', 'ضعیف‌ترین بعد بلوغ؟', 'نشانه ضعیف ignored؟', 'نقش مخالف مجاز؟', 'عصبی در صنعت منطقه؟', 'IT2 لازم یا افراط؟'],
             teachingNotesTitle: 'یادداشت استاد',
-            teachingNotes: ['M1 با #assessment · M7 revision', 'MBA: M2+M3 فشرده · M5 homework', '~۲۵ صفحه کتاب/هفته', 'تب صنعت parallel reading', 'CLA/Wheel crossover M7']
+            teachingNotes: ['M1 با #assessment · M7 revision', 'MBA: M2+M3 فشرده · M5 homework', '~۲۵ صفحه کتاب/هفته', 'تب صنعت parallel reading', 'CLA/چرخ آینده crossover M7']
         },
         labelRole: 'نقش',
         labelFunction: 'کارکرد در engagement',
         labelSetup: 'زمینه',
         labelSignal: 'سیگنال / داده',
-        labelAction: 'اقدام probing',
+        labelAction: 'اقدام آزمون',
         labelTakeaway: 'درس',
         labelFocus: 'تمرکز',
         labelReadingsShort: 'مطالعه',
@@ -165,7 +165,7 @@ registerLocale('fa', {
         labelExampleShort: 'مثال',
         moduleSessionsTitle: 'برنامه جلسه (۳ ساعت)',
         modulePickerHint: 'روی هر ماژول کلیک کنید · فقط همان ماژول نمایش داده می‌شود',
-        moduleM5AssessmentNote: 'تحویل: memo gate یک‌صفحه‌ای (۲۰٪ نمره) · لینک #assessment',
+        moduleM5AssessmentNote: 'تحویل: یادداشت دروازه یک‌صفحه‌ای (۲۰٪ نمره) · لینک #assessment',
         moduleM7ProjectNote: 'ارائه پروژه پایانی · ۳۵٪ نمره · ۴۰۰۰–۵۰۰۰ کلمه',
         moduleKeyPointsTitle: 'نکات کلیدی جلسه',
         moduleCaseTitle: 'مورد عملی',
@@ -182,122 +182,122 @@ registerLocale('fa', {
         workshopSub: 'کهن‌الگوها، نقش‌ها، خودارزیابی و رادار — جدا از طرح درس دانشگاهی در تب بالا.',
         industry: {
             tag: 'صنعت و سازمان',
-            title: 'کارگاه استقرار FITness · از diagnosis تا probing ۹۰ روزه',
-            intro: 'این مسیر برای تیم استراتژی، نوآوری، corporate development و واحد آینده‌نگاری در شرکت طراحی شده · نه syllabus دانشگاهی. خروجی: امتیاز ۵ بعدی، یک weak signal اولویت‌دار، و طرح probing با gate سرمایه‌گذاری.',
+            title: 'کارگاه استقرار FITness · از diagnosis تا آزمون ۹۰ روزه',
+            intro: 'این مسیر برای تیم راهبرد، نوآوری، توسعه شرکتی و واحد آینده‌نگاری در شرکت طراحی شده · نه برنامه درسی دانشگاهی. خروجی: امتیاز ۵ بعدی، یک نشانه ضعیف اولویت‌دار، و طرح آزمون با دروازه سرمایه‌گذاری.',
             meta: [
                 { label: 'مدت', value: '۱ روز onsite + ۶ هفته follow-up' },
                 { label: 'صنایع', value: 'ICT · خودرو · دارو · انرژی · هلدینگ' },
                 { label: 'مرجع میدانی', value: 'Siemens · Deutsche Telekom · Rohrbeck (2010)' },
-                { label: 'ابزار این صفحه', value: '#assessment · رادار فناوری · IT2 fuzzy bridge' }
+                { label: 'ابزار این صفحه', value: '#assessment · رادار فناوری · IT2 فازی bridge' }
             ],
             agendaTitle: 'برنامه یک‌روزه در شرکت',
             agenda: [
-                { block: '۰۹:۰۰', title: 'Diagnosis · کهن‌الگوی فعلی', desc: 'خودارزیابی ۵ بعدی، radar chart، قرار دادن سازمان در ماتریس تلاطم/بلوغ · بحث: Vigilant یا Vulnerable؟' },
-                { block: '۱۰:۳۰', title: 'Perceiving · weak signals', desc: 'رادار فناوری تعاملی، جمع‌آوری ۵ سیگنال از خط مقدم و اکوسیستم · معرفی FOU اگر خبرگان اختلاف دارند.' },
-                { block: '۱۳:۰۰', title: 'Prospecting · portfolio افق', desc: 'سناریوی تهاجمی/تدافعی، gate بودجه سه افق (H1/H2/H3)، نقش Initiator/Strategist/Opponent.' },
-                { block: '۱۵:۰۰', title: 'Probing design · ۹۰ روز', desc: 'یک pilot با kill criteria، owner مشخص، KPI · الگوی DT tech radar trial ring.' },
-                { block: '۱۶:۳۰', title: 'Board memo · یک slide', desc: 'خلاصه F-I-T، ریسک، درخواست بودجه probing، لینک به IT2 اگر عدم‌قطعیت خبرگان بالاست.' }
+                { block: '۰۹:۰۰', title: 'Diagnosis · کهن‌الگوی فعلی', desc: 'خودارزیابی ۵ بعدی، نمودار رادار، قرار دادن سازمان در ماتریس تلاطم/بلوغ · بحث: هوشیار یا آسیب‌پذیر؟' },
+                { block: '۱۰:۳۰', title: 'درک · نشانه‌های ضعیف', desc: 'رادار فناوری تعاملی، جمع‌آوری ۵ سیگنال از خط مقدم و اکوسیستم · معرفی FOU اگر خبرگان اختلاف دارند.' },
+                { block: '۱۳:۰۰', title: 'کاوش · سبد افق', desc: 'سناریوی تهاجمی/تدافعی، دروازه بودجه سه افق (افق ۱/۲/۳)، نقش آغازگر/راهبردساز/مخالف.' },
+                { block: '۱۵:۰۰', title: 'آزمایش design · ۹۰ روز', desc: 'یک پیلوت با معیار توقف، مسئول مشخص، شاخص عملکرد · الگوی DT tech radar trial ring.' },
+                { block: '۱۶:۳۰', title: 'یادداشت هیئت‌مدیره · یک اسلاید', desc: 'خلاصه F-I-T، ریسک، درخواست بودجه آزمون، لینک به IT2 اگر عدم‌قطعیت خبرگان بالاست.' }
             ],
             stakeholdersTitle: 'نقش‌ها در کارگاه سازمانی',
             stakeholders: [
-                { role: 'Corporate Foresight / strategy', job: 'رصد، سناریو، اتصال به planning cycle' },
-                { role: 'Innovation / venturing', job: 'طراحی pilot، corporate VC، kill criteria' },
-                { role: 'Technology / R&D', job: 'رادار فناوری، feasibility، roadmapping' },
-                { role: 'Business unit owner', job: 'تأمین داده میدانی، اجرای probing در خط' },
-                { role: 'Finance / portfolio', job: 'gate سرمایه‌گذاری، افق بودجه، ROI probing' }
+                { role: 'Corporate Foresight / strategy', job: 'رصد، سناریو، اتصال به چرخه برنامه‌ریزی' },
+                { role: 'Innovation / سرمایه‌گذاری', job: 'طراحی پیلوت، سرمایه‌گذاری خطرپذیر شرکتی، معیار توقف' },
+                { role: 'Technology / پژوهش و توسعه', job: 'رادار فناوری، امکان‌پذیری، نقشه راهping' },
+                { role: 'Business unit مسئول', job: 'تأمین داده میدانی، اجرای آزمون در خط' },
+                { role: 'Finance / سبد', job: 'دروازه سرمایه‌گذاری، افق بودجه، ROI آزمون' }
             ],
             workflowTitle: '۶ گام engagement در سازمان',
             workflowSteps: [
-                { title: '۱. Scan', desc: 'جمع weak signals از رادار، بازار، patent، startup landscape' },
-                { title: '۲. Score', desc: 'خودارزیابی ۵ بعد Rohrbeck + benchmark صنعت' },
-                { title: '۳. Map', desc: 'قرار دادن در archetype · تعیین gap Perceiving/Prospecting/Probing' },
-                { title: '۴. Design probe', desc: 'pilot ۹۰ روزه با owner و KPI' },
-                { title: '۵. Gate', desc: 'تصمیم scale/kill/pivot · اتصال به بودجه H2/H3' },
-                { title: '۶. Transform', desc: 'اگر probe موفق · تغییر ساختار، فرهنگ، portfolio' }
+                { title: '۱. Scan', desc: 'جمع نشانه‌های ضعیف از رادار، بازار، patent، startup landscape' },
+                { title: '۲. Score', desc: 'خودارزیابی ۵ بعد Rohrbeck + معیار مرجع صنعت' },
+                { title: '۳. Map', desc: 'قرار دادن در کهن‌الگو · تعیین شکاف درک/کاوش/آزمایش' },
+                { title: '۴. Design آزمون', desc: 'پیلوت ۹۰ روزه با مسئول و شاخص عملکرد' },
+                { title: '۵. Gate', desc: 'تصمیم گسترش/توقف/pivot · اتصال به بودجه افق ۲/افق ۳' },
+                { title: '۶. Transform', desc: 'اگر آزمون موفق · تغییر ساختار، فرهنگ، سبد' }
             ],
             deliverablesTitle: 'خروجی برای سازمان',
             deliverables: [
-                'نمودار radar بلوغ ۵ بعدی + archetype label',
-                'لیست ۵ weak signal با اولویت FOU (در صورت نیاز IT2)',
-                'طرح probing ۹۰ روزه با kill criteria',
-                'یک slide memo برای gate سرمایه‌گذاری',
-                'پیشنهاد اتصال به رادار فناوری و corporate venturing'
+                'نمودار رادار بلوغ ۵ بعدی + کهن‌الگو label',
+                'لیست ۵ نشانه ضعیف با اولویت FOU (در صورت نیاز IT2)',
+                'طرح آزمون ۹۰ روزه با معیار توقف',
+                'یک اسلاید یادداشت برای دروازه سرمایه‌گذاری',
+                'پیشنهاد اتصال به رادار فناوری و سرمایه‌گذاری شرکتی'
             ],
             casesTitle: 'سه سناریوی صنعتی',
             caseStudies: [
                 {
-                    title: 'Deutsche Telekom · Technology Radar',
+                    title: 'Deutsche Telekom · رادار فناوری',
                     setup: 'اپراتور ICT با تلاطم بالا · آینده‌نگاری میدانی روهربک',
-                    signal: 'IoT کشاورزی از حسگر مینیاتوری · GenAI در call center',
-                    action: 'ring Trial برای agentic AI · Adopt برای edge · Scan برای 6G',
-                    takeaway: 'رادار بدون probing ring فقط Neurotic می‌سازد · DT هر فناوری را در Scan→Adopt نگه می‌دارد.'
+                    signal: 'اینترنت اشیا کشاورزی از حسگر مینیاتوری · هوش مصنوعی مولد در مرکز تماس',
+                    action: 'ring آزمایش برای agentic AI · پذیرش برای edge · Scan برای 6G',
+                    takeaway: 'رادار بدون آزمون ring فقط عصبی می‌سازد · DT هر فناوری را در رصد→پذیرش نگه می‌دارد.'
                 },
                 {
-                    title: 'Siemens · آینده‌نگاری سازمانی maturity',
+                    title: 'Siemens · آینده‌نگاری سازمانی بلوغ',
                     setup: 'صنعت سنگین + digital twin + energy transition',
-                    signal: 'برق سبز، automation، software-defined factory',
-                    action: 'venturing و probing در افق H2 قبل از scale در H1',
-                    takeaway: 'FITness یعنی portfolio سه‌افقی · آینده‌نگاری به gate R&D وصل است نه به PDF سالانه.'
+                    signal: 'برق سبز، اتوماسیون، نرم‌افزار-defined factory',
+                    action: 'سرمایه‌گذاری و آزمون در افق افق ۲ قبل از گسترش در افق ۱',
+                    takeaway: 'FITness یعنی سبد سه‌افقی · آینده‌نگاری به دروازه پژوهش و توسعه وصل است نه به PDF سالانه.'
                 },
                 {
-                    title: 'خودرو / mobility · گذار EV و software-defined',
+                    title: 'خودرو / mobility · گذار EV و نرم‌افزار-defined',
                     setup: 'تلاطم بالا · رقبای جدید از tech',
-                    signal: 'battery chemistry، OTA، autonomy stack',
-                    action: 'probe با platform مشترک · Opponent role برای cannibalize ICE revenue',
-                    takeaway: 'بدون Opponent، سازمان در Vulnerable می‌ماند حتی با رادار قوی · مثل تاخیر OEMها در OTA.'
+                    signal: 'شیمی باتری، OTA، پشته خودران',
+                    action: 'آزمون با platform مشترک · نقش مخالف برای جایگزینی عمدی ICE revenue',
+                    takeaway: 'بدون مخالف، سازمان در آسیب‌پذیر می‌ماند حتی با رادار قوی · مثل تاخیر OEMها در OTA.'
                 }
             ],
-            probingTitle: 'playbook probing ۹۰ روزه',
+            probingTitle: 'راهنمای استقرار آزمون ۹۰ روزه',
             probingPlaybook: [
-                'هفته ۱–۲: تعریف فرضیه · «اگر X رخ دهد، Y٪ هزینه/درآمد تحت تأثیر است» · owner از business unit.',
-                'هفته ۳–۶: pilot محدود · یک خط، یک geography، یک customer segment · داده واقعی نه slide.',
-                'هفته ۷–۱۰: ارزیابی با Opponent role · سناریوی شکست · آیا kill criteria برقرار شد؟',
-                'هفته ۱۱–۱۲: gate · scale، pivot، یا kill · ثبت در roadmap و بودجه افق بعدی.'
+                'هفته ۱–۲: تعریف فرضیه · «اگر X رخ دهد، Y٪ هزینه/درآمد تحت تأثیر است» · مسئول از business unit.',
+                'هفته ۳–۶: پیلوت محدود · یک خط، یک منطقه، یک بخش مشتری · داده واقعی نه اسلاید.',
+                'هفته ۷–۱۰: ارزیابی با نقش مخالف · سناریوی شکست · آیا معیار توقف برقرار شد؟',
+                'هفته ۱۱–۱۲: دروازه · گسترش، pivot، یا توقف · ثبت در نقشه راه و بودجه افق بعدی.'
             ],
             checklistTitle: 'چک‌لیست قبل از ورود به engagement',
             checklistItems: [
-                'آیا ۵ بعد maturity حداقل یک‌بار در ۱۲ ماه گذشته score شده؟',
-                'آیا weak signal از خط مقدم جمع می‌شود یا فقط از گزارش مشاور؟',
-                'آیا بودجه H2/H3 جدا از H1 تعریف شده؟',
-                'آیا kill criteria برای pilot نوشته شده؟',
+                'آیا ۵ بعد بلوغ حداقل یک‌بار در ۱۲ ماه گذشته score شده؟',
+                'آیا نشانه ضعیف از خط مقدم جمع می‌شود یا فقط از گزارش مشاور؟',
+                'آیا بودجه افق ۲/افق ۳ جدا از افق ۱ تعریف شده؟',
+                'آیا معیار توقف برای پیلوت نوشته شده؟',
                 'اگر خبرگان روی strength سیگنال اختلاف دارند · آیا IT2 FOU آماده است؟'
             ],
-            boardMemoTitle: 'الگوی slide gate (یک صفحه)',
+            boardMemoTitle: 'الگوی اسلاید دروازه (یک صفحه)',
             boardMemoFields: [
-                'Archetype فعلی + gap اصلی (مثلاً Methods قوی، Probing ضعیف)',
-                'Weak signal اولویت‌دار + FOU width (IT2 اگر spread بالا)',
-                'طرح probing ۹۰ روز · budget · KPI · kill criteria',
-                'اثر بر portfolio F-I-T · ریسک عدم اقدام',
-                'درخواست تصمیم: approve probe / defer / kill'
+                'Archetype فعلی + شکاف اصلی (مثلاً روش‌ها قوی، آزمایش ضعیف)',
+                'Weak نشانه اولویت‌دار + FOU width (IT2 اگر گستره بالا)',
+                'طرح آزمون ۹۰ روز · بودجه · شاخص عملکرد · معیار توقف',
+                'اثر بر سبد F-I-T · ریسک عدم اقدام',
+                'درخواست تصمیم: approve آزمون / defer / توقف'
             ]
         },
         fuzzyBridge: {
             tag: 'اتصال به منطق فازی نوع ۲ (IT2)',
             title: 'وقتی آینده‌نگاری و FITness با عدم‌قطعیت خبرگان روبرو می‌شوند',
-            lead: 'در Perceiving، چند واحد یا خبره روی «قدرت» یک weak signal نظر متفاوت دارند · نه ۷ از ۱۰، بلکه «بین ۰.۴ و ۰.۷». IT2 همان FOU را مدل می‌کند.',
+            lead: 'در درک، چند واحد یا خبره روی «قدرت» یک نشانه ضعیف نظر متفاوت دارند · نه ۷ از ۱۰، بلکه «بین ۰.۴ و ۰.۷». IT2 همان FOU را مدل می‌کند.',
             narrative: [
-                'خودارزیابی ۵ بعدی این صفحه یک عدد می‌دهد؛ در کارگاه صنعتی واقعی، panel expert interval می‌دهد. اگر spread FOU بزرگ باشد، probing قبل از سرمایه‌گذاری سنگین ضروری است · همان منطق verdictWide در کارگاه Type-2.',
-                'FITness بدون IT2 در Perceiving گاهی Neurotic می‌سازد: همه سیگنال «مهم» به نظر می‌رسد. IT2 کمک می‌کند consensus واقعی از noise جدا شود و gate بودجه بر پایه uncertainty انجام شود.',
-                'پیشنهاد عملی: برای ۳–۵ weak signal برتر، FOU خبرگان را بکش · اگر aggregate spread &lt; ۰.۲۲ → probing سبک؛ اگر &gt; ۰.۳۸ → workshop IT2 + Opponent role قبل از portfolio commit.'
+                'خودارزیابی ۵ بعدی این صفحه یک عدد می‌دهد؛ در کارگاه صنعتی واقعی، panel خبره interval می‌دهد. اگر گستره FOU بزرگ باشد، آزمون قبل از سرمایه‌گذاری سنگین ضروری است · همان منطق verdictWide در کارگاه Type-2.',
+                'FITness بدون IT2 در درک گاهی عصبی می‌سازد: همه سیگنال «مهم» به نظر می‌رسد. IT2 کمک می‌کند اجماع واقعی از اطلاعات پراکنده جدا شود و دروازه بودجه بر پایه uncertainty انجام شود.',
+                'پیشنهاد عملی: برای ۳–۵ نشانه ضعیف برتر، FOU خبرگان را بکش · اگر aggreدروازه گستره &lt; ۰.۲۲ → آزمون سبک؛ اگر &gt; ۰.۳۸ → کارگاه IT2 + نقش مخالف قبل از سبد commit.'
             ],
             mappingRows: [
-                { fitness: 'Perceiving · weak signal', it2: 'FOU خبرگان روی strength/relevance سیگنال' },
-                { fitness: 'Prospecting · سناریو', it2: 'interval probability برای branchهای محتمل' },
-                { fitness: 'Probing · gate', it2: 'verdict spread → سطح pilot و kill criteria' },
-                { fitness: '۵ بعد maturity', it2: 'panel score به جای یک slider · میانگین lower/upper' },
-                { fitness: 'Technology radar ring', it2: 'Scan/Assess/Trial/Adopt با fuzzy label (نه binary)' }
+                { fitness: 'درک · نشانه ضعیف', it2: 'FOU خبرگان روی strength/ارتباط سیگنال' },
+                { fitness: 'کاوش · سناریو', it2: 'interval probability برای branchهای محتمل' },
+                { fitness: 'آزمایش · دروازه', it2: 'verdict گستره → سطح پیلوت و معیار توقف' },
+                { fitness: '۵ بعد بلوغ', it2: 'امتیاز پانل به جای یک لغزنده · میانگین lower/upper' },
+                { fitness: 'Technology radar ring', it2: 'رصد/ارزیابی/آزمایش/پذیرش با fuzzy label (نه binary)' }
             ],
             examples: [
                 {
-                    title: 'GenAI در call center (DT-style)',
-                    text: 'واحد ops: relevance 0.7–0.9 · legal: 0.3–0.5 · FOU پهن → Trial ring نه Adopt · probing محدود با kill criteria compliance.'
+                    title: 'هوش مصنوعی مولد در مرکز تماس (DT-style)',
+                    text: 'واحد ops: ارتباط 0.7–0.9 · legal: 0.3–0.5 · FOU پهن → حلقه آزمایش نه پذیرش · آزمون محدود با معیار توقف compliance.'
                 },
                 {
                     title: 'reshoring در هلدینگ صنعتی',
-                    text: 'strategy: 0.5–0.8 · supply chain: 0.2–0.4 · spread متوسط → probing ۹۰ روزه روی یک SKU قبل of capex.'
+                    text: 'strategy: 0.5–0.8 · supply chain: 0.2–0.4 · گستره متوسط → آزمون ۹۰ روزه روی یک SKU قبل of سرمایه‌گذاری.'
                 }
             ],
-            detailProse: 'IT2 جایگزین Rohrbeck نیست؛ لایه uncertainty روی Perceiving و gate probing است. برای workshop کامل به صفحه <strong>منطق فازی نوع ۲</strong> · تب صنعت و سازمان برو.',
+            detailProse: 'IT2 جایگزین Rohrbeck نیست؛ لایه uncertainty روی درک و دروازه آزمون است. برای کارگاه کامل به صفحه <strong>منطق فازی نوع ۲</strong> · تب صنعت و سازمان برو.',
             linkLabel: 'کارگاه IT2 · مسیر صنعت'
         },
         fuzzyColFitness: 'بُعد FITness',
@@ -305,40 +305,40 @@ registerLocale('fa', {
         fuzzyDetailsTitle: 'جزئیات اتصال FITness و IT2',
         readiness: {
             tag: 'پایه و اساس آینده‌پژوهی',
-            title: 'آمادگی برای آینده (Future Readiness) چیست؟',
-            sub: 'پیش‌بینی روندها، درک سناریوها و برنامه‌ریزی استراتژیک برای مدیریت عدم‌قطعیت‌ها.',
-            p1: '<strong>Future Readiness</strong> یعنی توانایی پیش‌بینی تغییرات، درک عمیق آن‌ها و برنامه‌ریزی هدفمند برای واکنش هوشمند. در صنعت، این لایه اول است: رصد ریسک‌ها و تبدیل آن‌ها به فرصت · قبل از probing و transform.',
-            p2: 'صنایع با چرخش تکنولوژیک سریع · از هوش مصنوعی مولد تا گذار انرژی · سازمان‌هایی که Readiness را جدی گرفته‌اند (مثل pilot remote-work قبل از کرونا یا edge در telco) سریع‌تر scale-up کردند؛ اما Readiness بدون FITness به گزارش‌های انباشته تبدیل می‌شود.',
-            challengeTitle: 'سؤال برای تیم استراتژی',
-            challengeText: 'آیا آینده‌نگاری شما در این صنعت «گزارش سالانه» است یا «قابلیت probing»؟ اگر فردا یک weak signal بحرانی برسد · اولین gate واقعی شما کدام است: بودجه H2، pilot ۹۰ روزه، یا هیچ‌کدام؟',
+            title: 'آمادگی برای آینده (آمادگی آینده) چیست؟',
+            sub: 'پیش‌بینی روندها، درک سناریوها و برنامه‌ریزی راهبردی برای مدیریت عدم‌قطعیت‌ها.',
+            p1: '<strong>آمادگی آینده</strong> یعنی توانایی پیش‌بینی تغییرات، درک عمیق آن‌ها و برنامه‌ریزی هدفمند برای واکنش هوشمند. در صنعت، این لایه اول است: رصد ریسک‌ها و تبدیل آن‌ها به فرصت · قبل از آزمون و تحول.',
+            p2: 'صنایع با چرخش تکنولوژیک سریع · از هوش مصنوعی مولد تا گذار انرژی · سازمان‌هایی که آمادگی را جدی گرفته‌اند (مثل پیلوت دورکاری قبل از کرونا یا edge در telco) سریع‌تر گسترش کردند؛ اما آمادگی بدون FITness به گزارش‌های انباشته تبدیل می‌شود.',
+            challengeTitle: 'سؤال برای تیم راهبرد',
+            challengeText: 'آیا آینده‌نگاری شما در این صنعت «گزارش سالانه» است یا «قابلیت آزمون»؟ اگر فردا یک نشانه ضعیف بحرانی برسد · اولین دروازه واقعی شما کدام است: بودجه افق ۲، پیلوت ۹۰ روزه، یا هیچ‌کدام؟',
             fiveElementsTitle: '۵ عنصر کلیدی تشکیل‌دهنده آمادگی برای آینده',
             foresightTitle: 'آینده‌نگاری و پیش‌بینی سناریوها',
             foresightText: 'آینده‌نگاری یعنی درک عمیق روندها و تحلیل سناریوهای مختلف. سازمان‌هایی که پیش از پاندمی کرونا به فناوری کار از راه دور آزمایشی روی آورده بودند، در قرنطینه بسیار سریع‌تر خود را وفق دادند.',
             agilityTitle: 'چابکی سازمانی (Agility)',
             agilityText: 'چابکی یعنی تصمیم‌گیری سریع و تغییر جهت فوری در واکنش به شرایط غیرمنتظره. شرکت Zoom در دوران کرونا در چند هفته زیرساخت سروری خود را گسترش داد تا به تقاضای صدها میلیون کاربر جدید پاسخ دهد.',
             sustainabilityTitle: 'نقش حیاتی پایداری (Sustainability) در پورتفولیو',
-            sustainabilityP1: 'پایداری فراتر از مسئولیت اجتماعی، یک استراتژی تجاری هوشمند است. همسوسازی با اهداف ESG ریسک اقلیمی را کاهش می‌دهد و مزیت رقابتی پایدار در بازارهای جهانی ایجاد می‌کند.',
+            sustainabilityP1: 'پایداری فراتر از مسئولیت اجتماعی، یک راهبرد تجاری هوشمند است. همسوسازی با اهداف ESG ریسک اقلیمی را کاهش می‌دهد و مزیت رقابتی پایدار در بازارهای جهانی ایجاد می‌کند.',
             sustainabilityP2: 'IKEA با تعهد به مواد بازیافتی و تجدیدپذیر تا ۲۰۳۰، وفاداری مشتری و کاهش هزینه مواد اولیه را نشان داد. تسلا (خودرو برقی) و آمازون (لجستیک پیشرفته) با سرمایه‌گذاری روی روندهای بلندمدت، بقا و پیشتازی خود را تضمین کردند.',
-            globalAppsTitle: 'کاربرد Future Readiness در صنایع',
+            globalAppsTitle: 'کاربرد آمادگی آینده در صنایع',
             apps: [
-                { label: 'مخابرات و ICT', text: 'دویچه تلکام و اپراتورهای مشابه با technology radar و IoT کشاورزی · آینده‌نگاری به ring Trial/Adopt وصل می‌شود نه فقط به گزارش روند.' },
-                { label: 'خودرو و mobility', text: 'OEMها با probing OTA و EV قبل از scale · سازمان‌هایی که فقط Readiness داشتند در گذار software-defined عقب ماندند.' },
-                { label: 'دارو و biotech', text: 'رصد AI drug discovery و رگولاتوری · pilot محدود قبل از capex خط تولید.' },
-                { label: 'انرژی و صنعت سنگین', text: 'زیمنس و peers با digital twin و برق سبز · portfolio سه‌افقی H1/H2/H3.' }
+                { label: 'مخابرات و ICT', text: 'دویچه تلکام و اپراتورهای مشابه با technology radar و اینترنت اشیا کشاورزی · آینده‌نگاری به ring آزمایش/پذیرش وصل می‌شود نه فقط به گزارش روند.' },
+                { label: 'خودرو و mobility', text: 'OEMها با آزمون OTA و EV قبل از گسترش · سازمان‌هایی که فقط آمادگی داشتند در گذار نرم‌افزار-defined عقب ماندند.' },
+                { label: 'دارو و biotech', text: 'رصد AI drug discovery و رگولاتوری · پیلوت محدود قبل از سرمایه‌گذاری خط تولید.' },
+                { label: 'انرژی و صنعت سنگین', text: 'زیمنس و peers با digital twin و برق سبز · سبد سه‌افقی افق ۱/۲/۳.' }
             ]
         },
         readinessCards: [
             { icon: 'trending-up', title: 'پیش‌بینی و تحلیل روندها', desc: 'تحلیل روندهای کلیدی بیرونی مانند تغییرات جمعیتی یا فناوری‌های نوظهور و تأثیر آن‌ها بر صنعت.', color: 'var(--color-f)' },
-            { icon: 'zap', title: 'انطباق سریع با تغییرات', desc: 'چابکی بالا: تصمیم‌گیری فوق‌العاده سریع و تغییر مسیر استراتژیک در مواجهه با بحران‌ها.', color: 'var(--color-i)' },
+            { icon: 'zap', title: 'انطباق سریع با تغییرات', desc: 'چابکی بالا: تصمیم‌گیری فوق‌العاده سریع و تغییر مسیر راهبردی در مواجهه با بحران‌ها.', color: 'var(--color-i)' },
             { icon: 'lightbulb', title: 'توسعه خلاقیت و نوآوری', desc: 'ایجاد راه‌حل‌های جدید برای چالش‌های حال و آینده از طریق تغییرات فرآیندی یا محصولات بدیع.', color: 'var(--color-t)' },
-            { icon: 'graduation-cap', title: 'فرهنگ یادگیری مستمر', desc: 'ارتقای مداوم مهارت‌ها (Upskilling) و یادگیری مستمر تیم‌ها برای همگامی با تحولات علمی جهان.', color: 'var(--color-cla)' },
+            { icon: 'graduation-cap', title: 'فرهنگ یادگیری مستمر', desc: 'ارتقای مداوم مهارت‌ها (Upsتوقفing) و یادگیری مستمر تیم‌ها برای همگامی با تحولات علمی جهان.', color: 'var(--color-cla)' },
             { icon: 'cpu', title: 'استفاده هوشمند از فناوری', desc: 'به‌کارگیری ابزارهای قدرتمند نظیر هوش مصنوعی و بلاکچین برای پیش‌بینی، برنامه‌ریزی و اجرای فرآیندها.', color: 'var(--color-wheel-red)' }
         ],
         fitness: {
             tag: 'گامی فراتر از آمادگی',
-            title: 'تناسب با آینده (Future FITness) چیست؟',
-            sub: 'مقایسه تئوریک رویکرد انطباق و بهینه‌سازی مداوم با آمادگی استراتژیک سنتی.',
-            p1: 'اگر <strong>Future Readiness</strong> بر پیش‌بینی و آمادگی تمرکز دارد، <strong>Future FITness</strong> گامی فراتر می‌گذارد: توانایی مداوم و پویا در حفظ عملکرد بهینه، انطباق مستمر، رشد و بازتعریف ساختارها در مواجهه با چالش‌های غیرمنتظره.',
+            title: 'تناسب با آینده (تناسب آینده (FITness)) چیست؟',
+            sub: 'مقایسه تئوریک رویکرد انطباق و بهینه‌سازی مداوم با آمادگی راهبردی سنتی.',
+            p1: 'اگر <strong>آمادگی آینده</strong> بر پیش‌بینی و آمادگی تمرکز دارد، <strong>تناسب آینده (FITness)</strong> گامی فراتر می‌گذارد: توانایی مداوم و پویا در حفظ عملکرد بهینه، انطباق مستمر، رشد و بازتعریف ساختارها در مواجهه با چالش‌های غیرمنتظره.',
             p2: 'پروفسور رنه روهربک در مطالعات طولانی‌مدت در دانشگاه آرهوس نشان داد شرکت‌های «هوشیار و متناسب با آینده» به طور میانگین <strong>۳۳٪ سودآوری بیشتر</strong> و <strong>۲۰۰٪ رشد ارزش بازار بالاتر</strong> نسبت به رقبای آسیب‌پذیر ثبت کردند.',
             teeceTitle: 'انطباق با قابلیت‌های پویای دیوید تیس (Teece)',
             teece: [
@@ -347,9 +347,9 @@ registerLocale('fa', {
                 { title: 'تحول و بازآفرینی (Transforming)', text: 'تجدید ساختار مداوم دارایی‌های ملموس و ناملموس سازمان جهت حفظ مزیت رقابتی و هم‌راستایی با تغییرات محیطی.' }
             ],
             dashboardTitle: 'داشبورد مفهومی بلوغ آینده‌نگاری سازمانی',
-            dashboardP1: 'این داشبورد ساختار تعاملی قابلیت‌های پویای سازمان را نشان می‌دهد. سازمان‌ها می‌توانند میزان انطباق با روندهای تکنولوژیک را ارزیابی کرده و فرآیندهای درک (Perceiving)، کاوش (Prospecting) و آزمایش (Probing) را متوازن پیاده‌سازی کنند.',
+            dashboardP1: 'این داشبورد ساختار تعاملی قابلیت‌های پویای سازمان را نشان می‌دهد. سازمان‌ها می‌توانند میزان انطباق با روندهای تکنولوژیک را ارزیابی کرده و فرآیندهای درک ((درک)، کاوش ((کاوش) و آزمایش (آزمایش) را متوازن پیاده‌سازی کنند.',
             dashboardP2: 'تطابق بین تلاطم محیطی صنعت و بلوغ آینده‌نگاری سازمانی، تعیین‌کننده بقا و سودآوری است و از فروپاشی‌های ناشی از جمود ساختاری (مانند نوکیا و کداک) ممانعت به عمل می‌آورد.',
-            stepsTitle: 'فرآیند سیستماتیک ۵ مرحله‌ای دستیابی به Future FITness'
+            stepsTitle: 'فرآیند سیستماتیک ۵ مرحله‌ای دستیابی به تناسب آینده (FITness)'
         },
         fitnessSteps: [
             { title: 'ارزیابی وضعیت فعلی', desc: 'شناسایی نقاط قوت، ضعف، فرصت‌ها و تهدیدهای داخلی سازمان با ماتریس SWOT.' },
@@ -364,23 +364,23 @@ registerLocale('fa', {
             sub: 'سازمان‌ها بر اساس میزان تطابق «بلوغ تفکر آینده‌نگارانه» با «سرعت و تلاطم تغییرات در صنعت» به چهار دسته تقسیم می‌شوند.',
             vigilant: {
                 level: 'بلوغ سطح ۴',
-                title: 'هوشیار و دیده‌بان (Vigilant)',
+                title: 'هوشیار و دیده‌بان (هوشیار)',
                 desc: 'آینده‌نگاری سازمان فراتر یا منطبق با سرعت تغییرات صنعت است. پایش دائمی سیگنال‌های ضعیف و واکنش سریع.',
                 note: '۳۳٪ سودآوری و ۲۰۰٪ رشد ارزش بازار بیشتر',
                 detail: {
-                    title: 'کهن‌الگوی هوش و دیده‌بانی (Vigilant)',
-                    alignment: 'تلاطم بالای صنعت + بلوغ بالای آینده‌نگاری استراتژیک (هم‌راستایی کامل با تحول)',
+                    title: 'کهن‌الگوی هوش و دیده‌بانی (هوشیار)',
+                    alignment: 'تلاطم بالای صنعت + بلوغ بالای آینده‌نگاری راهبردی (هم‌راستایی کامل با تحول)',
                     symptoms: 'سازمان‌های پیشرو با قابلیت‌های پویای سطح بالا. مطابق تئوری دیوید تیس، رصد مستمر (Sensing) را با اتخاذ سریع (Seizing) و تحول مداوم (Transforming) ترکیب می‌کنند. از فلج تحلیل مصونند و پیش از رقبا دست به تخریب خلاقانه سبد محصولات می‌زنند.',
-                    reps: 'انویدیا (CUDA)، نتفلیکس (عبور از DVD به استریم و تولید محتوا).'
+                    reps: 'انویدیا (CUDA)، نتفلیکس (عبور از DVD به پخش آنلاین و تولید محتوا).'
                 }
             },
             neurotic: {
                 level: 'بلوغ ناهمگن',
-                title: 'عصبی و واکنشی (Neurotic)',
+                title: 'عصبی و واکنشی (عصبی)',
                 desc: 'ظرفیت بالای آینده‌نگاری اما در صنعتی با تغییرات آرام. منجر به تحلیل بیش از حد و ترس کاذب می‌شود.',
                 note: 'توسعه بیش از حد سناریوهای بلااستفاده',
                 detail: {
-                    title: 'کهن‌الگوی عصبی و وسواسی (Neurotic)',
+                    title: 'کهن‌الگوی عصبی و وسواسی (عصبی)',
                     alignment: 'تلاطم پایین صنعت + بلوغ بیش از حد آینده‌نگاری (عدم تعادل ناشی از حساسیت افراطی)',
                     symptoms: 'بیش‌تحلیلی و فلج تصمیم‌گیری (Analysis Paralysis). علی‌رغم سرمایه‌گذاری نجومی در رصدخانه‌های فناوری، توانایی تفکیک سیگنال از نویز را ندارند. فرهنگ هراس‌محور منجر به صدها سناریوی موازی بدون خروجی عملیاتی می‌شود.',
                     reps: 'شرکت‌های نفت و گاز سنتی که میلیاردها دلار در انرژی‌های تجدیدپذیر نامرتبط سرمایه‌گذاری کردند پیش از شکل‌گیری تقاضای بازار.'
@@ -388,23 +388,23 @@ registerLocale('fa', {
             },
             vulnerable: {
                 level: 'بلوغ سطح ۲',
-                title: 'آسیب‌پذیر (Vulnerable)',
-                desc: 'فرآیندهای استراتژیک رسمی اما جدا از سیگنال‌های تغییر. غافلگیری مکرر در برابر نوآوری‌های مخرب رقیب.',
+                title: 'آسیب‌پذیر (آسیب‌پذیر)',
+                desc: 'فرآیندهای راهبردی رسمی اما جدا از سیگنال‌های تغییر. غافلگیری مکرر در برابر نوآوری‌های مخرب رقیب.',
                 note: 'اتکای مطلق به برنامه‌های ۵ ساله کاغذی',
                 detail: {
-                    title: 'کهن‌الگوی آسیب‌پذیر (Vulnerable)',
-                    alignment: 'تلاطم بالای صنعت + بلوغ پایین آینده‌نگاری (منطقه خطر استراتژیک)',
+                    title: 'کهن‌الگوی آسیب‌پذیر (آسیب‌پذیر)',
+                    alignment: 'تلاطم بالای صنعت + بلوغ پایین آینده‌نگاری (منطقه خطر راهبردی)',
                     symptoms: 'سازمان‌هایی در صنایع پرتلاطم بدون قابلیت رصد. متکی به برنامه‌ریزی خطی ۵ ساله و تفسیر تغییرات تکنولوژیک به عنوان نوسانات موقت. جمود شناختی؛ واکنش زمانی که ارزش بازار نابود شده و هزینه بازیابی کمرشکن است.',
                     reps: 'کداک (نادیده‌انگاری دوربین دیجیتال)، نوکیا (غفلت از تحول نرم‌افزاری صفحات لمسی).'
                 }
             },
             danger: {
                 level: 'بلوغ سطح ۱',
-                title: 'در معرض خطر (In Danger)',
+                title: 'در معرض خطر (در خطر)',
                 desc: 'فقدان سیستم رصد در صنعتی با تلاطم شدید. محکوم به انحلال یا واگذاری کل سهم بازار.',
                 note: 'کاهش شدید امید به بقای سازمان',
                 detail: {
-                    title: 'کهن‌الگوی در معرض خطر (In Danger)',
+                    title: 'کهن‌الگوی در معرض خطر (در خطر)',
                     alignment: 'تلاطم پایین صنعت + بلوغ پایین آینده‌نگاری (جمود و زوال پنهان)',
                     symptoms: 'کهن‌الگوی مرگ خاموش؛ سازمان‌هایی در صنایع با تلاطم ظاهری پایین بدون سازوکار دیده‌بانی. درگیر توهم ثبات بلندمدت. کوچک‌ترین شوک‌های محیطی (مقررات یا فناوری جایگزین) می‌تواند مدل کسب‌وکار را در کسری از ثانیه نابود کند.',
                     reps: 'اتحادیه‌های تاکسیرانی سنتی پیش از Uber/اسنپ؛ آژانس‌های هواپیمایی فیزیکی پیش از رزرو آنلاین.'
@@ -414,59 +414,59 @@ registerLocale('fa', {
         roles: {
             tag: 'کارکرد نوآوری سازمانی',
             title: '۳ نقش حیاتی آینده‌نگاری در پویایی نوآوری',
-            sub: 'رنه روهربک اثبات می‌کند آینده‌نگاری باید سه نقش استراتژیک، آغازگر و مخالف را در زنجیره ارزش نوآوری ایفا کند.',
+            sub: 'رنه روهربک اثبات می‌کند آینده‌نگاری باید سه نقش راهبردی، آغازگر و مخالف را در زنجیره ارزش نوآوری ایفا کند.',
             initiator: {
-                tab: '۱. نقش آغازگر (Initiator)',
-                title: '۱. نقش آغازگر (Initiator) · جرقه محرک نوآوری',
-                desc: 'نقش آغازگر در فاز <strong>درک کردن (Perceiving)</strong> فعال است · پایش محیط بیرونی، کشف روند نوظهور، تبدیل weak signal به concept اولیه.',
-                narrative: 'در صنعت، Initiator معمولاً واحد آینده‌نگاری، tech radar یا venturing است · نه یک عنوان سازمانی ثابت. کارش این است که قبل از budget commit، سیگنال را نام‌گذاری و اولویت‌بندی کند. اگر IT2 استفاده شود، همین فاز جایی است که FOU خبرگان رسم می‌شود.',
+                tab: '۱. نقش آغازگر (آغازگر)',
+                title: '۱. نقش آغازگر (آغازگر) · جرقه محرک نوآوری',
+                desc: 'نقش آغازگر در فاز <strong>درک کردن ((درک)</strong> فعال است · پایش محیط بیرونی، کشف روند نوظهور، تبدیل نشانه ضعیف به concept اولیه.',
+                narrative: 'در صنعت، آغازگر معمولاً واحد آینده‌نگاری، tech radar یا سرمایه‌گذاری است · نه یک عنوان سازمانی ثابت. کارش این است که قبل از بودجه commit، سیگنال را نام‌گذاری و اولویت‌بندی کند. اگر IT2 استفاده شود، همین فاز جایی است که FOU خبرگان رسم می‌شود.',
                 duties: [
                     'راه‌اندازی و پایش رادار فناوری و روندهای نوظهور.',
-                    'شناسایی weak signal قبل از mainstream شدن.',
-                    'کارگاه cross-functional برای concept اولیه · نه slide ۱۰۰ صفحه‌ای.'
+                    'شناسایی نشانه ضعیف قبل از جریان اصلی شدن.',
+                    'کارگاه cross-functional برای concept اولیه · نه اسلاید ۱۰۰ صفحه‌ای.'
                 ],
-                example: 'واحد آینده‌نگاری <strong>دویچه تلکام</strong> با پایش حسگر IoT، اتصال زمین کشاورزی به شبکه را به عنوان آغازگر پروژه‌های اینترنت اشیاء (IoT) استارت زد.'
+                example: 'واحد آینده‌نگاری <strong>دویچه تلکام</strong> با پایش حسگر اینترنت اشیا، اتصال زمین کشاورزی به شبکه را به عنوان آغازگر پروژه‌های اینترنت اشیاء (اینترنت اشیا) استارت زد.'
             },
             strategist: {
-                tab: '۲. نقش استراتژیست (Strategist)',
-                title: '۲. نقش استراتژیست (Strategist) · هدایت سبد سرمایه‌گذاری',
-                desc: 'نقش استراتژیست در فاز <strong>کاوش (Prospecting)</strong> فعال است · هدایت portfolio نوآوری بر اساس سناریو و roadmapping.',
-                narrative: 'Strategist خروجی Perceiving را به gate بودجه وصل می‌کند: H1 بهینه‌سازی، H2 probing، H3 option value. در انویدیا، همین نقش سبد R&D را به سمت CUDA و دیتاسنتر AI سوق داد · نه با یک meeting، بلکه با سال‌ها portfolio commit.',
+                tab: '۲. نقش راهبردست (راهبردساز)',
+                title: '۲. نقش راهبردست (راهبردساز) · هدایت سبد سرمایه‌گذاری',
+                desc: 'نقش راهبردست در فاز <strong>کاوش ((کاوش)</strong> فعال است · هدایت سبد نوآوری بر اساس سناریو و نقشه راهping.',
+                narrative: 'راهبردساز خروجی درک را به دروازه بودجه وصل می‌کند: افق ۱ بهینه‌سازی، افق ۲ آزمون، افق ۳ option value. در انویدیا، همین نقش سبد پژوهش و توسعه را به سمت CUDA و دیتاسنتر AI سوق داد · نه با یک meeting، بلکه با سال‌ها سبد commit.',
                 duties: [
                     'سناریوی تهاجمی/تدافعی برای صنعت.',
-                    'Technology roadmapping و همسوسازی واحدها.',
+                    'Technology نقشه راهping و همسوسازی واحدها.',
                     'Shared vision برای افق ۳–۵ سال · قابل audit.'
                 ],
-                example: '<strong>انویدیا</strong> با تحلیل سناریوی پردازش، سبد R&D را به معماری AI در دیتاسنتر سوق داد · قبل از boom یادگیری عمیق.'
+                example: '<strong>انویدیا</strong> با تحلیل سناریوی پردازش، سبد پژوهش و توسعه را به معماری AI در دیتاسنتر سوق داد · قبل از رونق یادگیری عمیق.'
             },
             opponent: {
-                tab: '۳. نقش مخالف (Opponent)',
-                title: '۳. نقش مخالف (Opponent) · وکیل مدافع شیطان',
-                desc: 'نقش مخالف در فاز <strong>آزمودن (Probing)</strong> فعال است · به چالش کشیدن مفروضات، kill criteria، جلوگیری از confirmation bias.',
-                narrative: 'Opponent در صنعت حیاتی است وقتی درآمد فعلی سالم است · بلاک‌باستر و نوکیا هر دو opponent داخلی نداشتند. اپل با آیفون عمداً آی‌پاد پرفروش را cannibalize کرد · این همان Opponent role است که قبل از رقیب اجرا می‌شود.',
+                tab: '۳. نقش مخالف (مخالف)',
+                title: '۳. نقش مخالف (مخالف) · وکیل مدافع شیطان',
+                desc: 'نقش مخالف در فاز <strong>آزمودن (آزمایش)</strong> فعال است · به چالش کشیدن مفروضات، معیار توقف، جلوگیری از سوگیری تأیید.',
+                narrative: 'مخالف در صنعت حیاتی است وقتی درآمد فعلی سالم است · بلاک‌باستر و نوکیا هر دو opponent داخلی نداشتند. اپل با آیفون عمداً آی‌پاد پرفروش را جایگزینی عمدی کرد · این همان نقش مخالف است که قبل از رقیب اجرا می‌شود.',
                 duties: [
-                    'سناریوی سخت‌گیرانه برای تست بقای pilot.',
-                    'War gaming برای نقاط ضعف portfolio.',
-                    'تسهیل cannibalization محصول سودآور فعلی.'
+                    'سناریوی سخت‌گیرانه برای تست بقای پیلوت.',
+                    'War gaming برای نقاط ضعف سبد.',
+                    'تسهیل جایگزینی عمدی محصول سودآور فعلی.'
                 ],
-                example: 'در <strong>اپل</strong>، launch آیفون علیه آی‌پاد یک Opponent role سازمانی بود · می‌دانستند اگر خودشان ادغام موسیقی در گوشی را انجام ندهند، رقیب می‌کند.'
+                example: 'در <strong>اپل</strong>، launch آیفون علیه آی‌پاد یک نقش مخالف سازمانی بود · می‌دانستند اگر خودشان ادغام موسیقی در گوشی را انجام ندهند، رقیب می‌کند.'
             }
         },
         cases: {
             tag: 'مطالعات عمیق: حس‌گری، کاوش، دگرگونی',
-            title: 'پاسخ به تغییرات با DNA سه‌بعدی قابلیت‌های پویا',
+            title: 'پاسخ به تغییرات با هویت سازمانی سه‌بعدی قابلیت‌های پویا',
             sub: 'تحلیل سیستماتیک شکست‌ها و موفقیت‌ها بر اساس سه توانمندی کلیدی: حس‌گری (Sensing)، کسب فرصت (Seizing) و تحول ساختار (Transforming).',
             netflix: {
                 tab: 'نتفلیکس (تکامل پویای مداوم)',
                 title: 'نتفلیکس (Netflix) · سرآمدی در بازآفرینی قابلیت‌های پویا',
-                scanning: 'در اواخر دهه ۱۹۹۰، تیم رهبری با رصد پهنای باند و codec ویدئو، منسوخ شدن دیسک فیزیکی را دید · حس‌گری از weak signal.',
-                seizing: '۲۰۰۷ استریم آنلاین · ۲۰۱۲ تولید انحصاری (House of Cards) · تخصیص resource قبل از قطع وابستگی به استودیو.',
-                transforming: 'مهاجرت به AWS، AI personalization · درس صنعتی: cannibalize مدل درآمد موفق فعلی قبل از رقیب.'
+                scanning: 'در اواخر دهه ۱۹۹۰، تیم رهبری با رصد پهنای باند و codec ویدئو، منسوخ شدن دیسک فیزیکی را دید · حس‌گری از نشانه ضعیف.',
+                seizing: '۲۰۰۷ پخش آنلاین آنلاین · ۲۰۱۲ تولید انحصاری (House of Cards) · تخصیص resource قبل از قطع وابستگی به استودیو.',
+                transforming: 'مهاجرت به AWS، AI personalization · درس صنعتی: جایگزینی عمدی مدل درآمد موفق فعلی قبل از رقیب.'
             },
             nvidia: {
                 tab: 'انویدیا (شرط‌بندی روی آینده نامرئی)',
                 title: 'انویدیا (Nvidia) · شرط‌بندی مخاطره‌آمیز روی پارادایم محاسباتی آینده',
-                scanning: 'جنسن هوانگ در اوایل دهه ۲۰۰۰ متوجه شد معماری موازی GPU کاربردی فراتر از رندر بازی دارد و می‌تواند تحولی در محاسبات علمی و هوش مصنوعی ایجاد کند.',
+                scanning: 'جنسن هوانگ در اوایل دهه ۲۰۰۰ متوجه شد معماری موازی پردازنده گرافیکی کاربردی فراتر از رندر بازی دارد و می‌تواند تحولی در محاسبات علمی و هوش مصنوعی ایجاد کند.',
                 seizing: 'در ۲۰۰۶ با سرمایه‌گذاری سنگین بستر CUDA توسعه یافت. وال‌استریت بارها این پروژه بدون تقاضای بازار را نقد کرد، اما انویدیا اصرار ورزید.',
                 transforming: 'با ظهور یادگیری عمیق در ۲۰۱۲، انویدیا به هاب سخت‌افزاری و نرم‌افزاری هوش مصنوعی تبدیل شد. هوانگ شرکت را از تولیدکننده کارت گرافیک به غول زیرساختی محاسباتی تبدیل کرد. درس: پافشاری بر قابلیت‌های متمایزساز بلندمدت.'
             },
@@ -474,52 +474,52 @@ registerLocale('fa', {
                 tab: 'نوکیا (تصلب ساختاری و شکست سیستمی)',
                 title: 'نوکیا (Nokia) · جمود ساختاری و تله موفقیت گذشته',
                 scanning: 'نوکیا سیگنال‌های گذار به صفحات لمسی و اکوسیستم‌های نرم‌افزاری را دریافت کرده بود؛ حتی نمونه‌های اولیه تبلت لمسی را سال‌ها پیش از آیفون توسعه داده بود.',
-                seizing: 'به دلیل تله موفقیت گوشی دکمه‌ای، Symbian حفظ شد · gate probing ضعیف · سیگنال به portfolio commit تبدیل نشد.',
-                transforming: 'فرهنگ گزارش خوش‌بینانه و ساختار صلب · بازار موبایل از دست رفت. درس: Sensing بدون Opponent و probing کافی نیست.'
+                seizing: 'به دلیل تله موفقیت گوشی دکمه‌ای، Symbian حفظ شد · دروازه آزمون ضعیف · سیگنال به سبد تخصیص تبدیل نشد.',
+                transforming: 'فرهنگ گزارش خوش‌بینانه و ساختار صلب · بازار موبایل از دست رفت. درس: Sensing بدون مخالف و آزمون کافی نیست.'
             },
             blockbuster: {
                 tab: 'بلاک‌باستر (ترس از خودتخریبی درآمد)',
                 title: 'بلاک‌باستر (Blockbuster) · قربانی شدن آینده‌نگاری در مسلخ سهام‌داران کوتاه‌مدت',
                 scanning: 'رشد نتفلیکس و توزیع دیجیتال رصد شده بود · عمر مدل فیزیکی رو به پایان.',
-                seizing: 'پلتفرم آنلاین و حذف جریمه دیرکرد · اقدام درست probing اما...',
-                transforming: 'ساختار تصمیم‌گیری کوتاه‌مدت درآمد را بر probing ترجیح داد · جریمه دیرکرد برگشت · ورشکستگی. درس: gate مالی باید FITness را بکشد نه quarterly EPS.'
+                seizing: 'پلتفرم آنلاین و حذف جریمه دیرکرد · اقدام درست آزمون اما...',
+                transforming: 'ساختار تصمیم‌گیری کوتاه‌مدت درآمد را بر آزمون ترجیح داد · جریمه دیرکرد برگشت · ورشکستگی. درس: دروازه مالی باید FITness را بکشد نه quarterly EPS.'
             }
         },
         formula: {
-            tag: 'سرواژه استراتژیک',
-            title: 'فرمول سه بخشی Future FITness',
+            tag: 'سرواژه راهبردی',
+            title: 'فرمول سه بخشی تناسب آینده (FITness)',
             sub: 'این مدل آینده‌نگاری (F) را به موتور نوآوری (I) متصل کرده و تحول بنیادین (T) را به عنوان برون‌داد نهایی تضمین می‌کند.',
             clickPrompt: 'برای مشاهده جزئیات بر روی هر یک از حروف بالا کلیک کنید.',
             letterF: 'Foresight',
             letterI: 'Innovation',
-            letterT: 'Transformation',
+            letterT: 'تحول',
             descF: 'آینده‌نگاری',
             descI: 'نوآوری',
             descT: 'تحول',
             foresight: {
                 badge: 'Foresight / آینده‌نگاری',
                 title: 'رصد و تفسیر مستمر سیگنال‌های تغییر',
-                body: 'آینده‌نگاری توانایی سیستماتیک سازمان در پایش محیط بیرونی، کشف سیگنال‌های ضعیف (Weak Signals) و درک روندهاست. این همان فازهای <strong>درک کردن (Perceiving)</strong> و <strong>کاوش کردن (Prospecting)</strong> در نظریه روهربک است.',
+                body: 'آینده‌نگاری توانایی سیستماتیک سازمان در پایش محیط بیرونی، کشف سیگنال‌های ضعیف (Weak Signals) و درک روندهاست. این همان فازهای <strong>درک کردن ((درک)</strong> و <strong>کاوش کردن ((کاوش)</strong> در نظریه روهربک است.',
                 items: [
                     'رصد دائمی محیط کلان اقتصادی، تکنولوژیک و سیاسی.',
                     'تحلیل سناریوهای محتمل و تدوین نقشه‌راه.',
-                    'جلوگیری از غافلگیری استراتژیک در اثر تحولات ناگهانی.'
+                    'جلوگیری از غافلگیری راهبردی در اثر تحولات ناگهانی.'
                 ]
             },
             innovation: {
                 badge: 'Innovation / نوآوری',
                 title: 'تبدیل بینش‌های حاصله به محصولات و ابزارهای نوین',
-                body: 'نوآوری موتور اجرایی آینده‌نگاری است. ایده‌ها به نمونه‌های اولیه سریع تبدیل می‌شوند · متناظر با فاز <strong>آزمودن (Probing)</strong> و نیازمند نقش‌های آغازگر، استراتژیست و مخالف.',
+                body: 'نوآوری موتور اجرایی آینده‌نگاری است. ایده‌ها به نمونه‌های اولیه سریع تبدیل می‌شوند · متناظر با فاز <strong>آزمودن (آزمایش)</strong> و نیازمند نقش‌های آغازگر، راهبردست و مخالف.',
                 items: [
                     'ساخت نمونه‌های اولیه سریع (Rapid Prototyping) برای سنجش ایده.',
-                    'به چالش کشیدن مفروضات فعلی سازمان توسط نقش مخالف (Opponent).',
+                    'به چالش کشیدن مفروضات فعلی سازمان توسط نقش مخالف (مخالف).',
                     'راه‌اندازی پروژه‌های آزمایشی جهت اعتبارسنجی بازار.'
                 ]
             },
             transformation: {
-                badge: 'Transformation / تحول',
+                badge: 'تحول / تحول',
                 title: 'بازطراحی ساختاری و فرهنگی برای بقای بلندمدت',
-                body: 'تحول غایت نهایی این فرآیند است. آینده‌نگاری و نوآوری باید فرهنگ، ساختار و تخصیص منابع سازمان را تغییر دهند و DNA جدیدی بسازند تا بقای بلندمدت تضمین شود.',
+                body: 'تحول غایت نهایی این فرآیند است. آینده‌نگاری و نوآوری باید فرهنگ، ساختار و تخصیص منابع سازمان را تغییر دهند و هویت سازمانی جدیدی بسازند تا بقای بلندمدت تضمین شود.',
                 items: [
                     'اصلاح ساختار رسمی و کاهش بوروکراسی برای چالاکی بیشتر.',
                     'پذیرش یادگیری مداوم و کاهش فرهنگ ترس از شکست در میان پرسنل.',
@@ -530,42 +530,42 @@ registerLocale('fa', {
         rohrbeckDims: {
             tag: 'چارچوب مفهومی روهربک',
             title: 'ابعاد پنج‌گانه سنجش بلوغ آینده‌نگاری سازمانی',
-            sub: 'بر اساس تحقیقات طولی پروفسور رنه روهربک، قابلیت آینده‌نگاری استراتژیک شرکت‌ها در قالب ۵ بعد ساختاری اندازه‌گیری و کالیبره می‌شود.',
+            sub: 'بر اساس تحقیقات طولی پروفسور رنه روهربک، قابلیت آینده‌نگاری راهبردی شرکت‌ها در قالب ۵ بعد ساختاری اندازه‌گیری و کالیبره می‌شود.',
             dims: [
-                { level: '۱. اطلاعات', title: 'منابع و کیفیت اطلاعات (Information)', desc: 'وسعت، عمق و کیفیت دیده‌بانی محیطی؛ پهنای باند اطلاعات پایش‌شده، رصد روندهای خارج از حوزه صنعت فعلی و کشف زودهنگام سیگنال‌های ضعیف.' },
-                { level: '۲. روش‌ها', title: 'متدولوژی‌های آینده‌نگاری (Methods)', desc: 'تنوع و اثربخشی ابزارها؛ استفاده منظم از روش‌های کیفی و کمی (سناریوسازی، دلفی، نقشه‌راه فناوری، تحلیل اثرات متقاطع).' },
-                { level: '۳. افراد', title: 'سرمایه انسانی و خبرگان (People)', desc: 'شایستگی، سواد آینده، شبکه expert · upskilling خط مقدم و آینده‌نگاری، نه فقط یک unit کوچک.' },
-                { level: '۴. سازمان', title: 'ساختار رسمی و تصمیم‌گیری (Organization)', desc: 'اتصال آینده‌نگاری به planning، بودجه R&D، gate venturing · انعطاف ساختار برای probing.' },
-                { level: '۵. فرهنگ', title: 'پذیرش عدم‌قطعیت و نوآوری (Culture)', desc: 'تحمل شکست pilot، cannibalization، بیان هشدار · بدون ترس از kill کردن پروژه.' }
+                { level: '۱. اطلاعات', title: 'منابع و کیفیت اطلاعات (اطلاعات)', desc: 'وسعت، عمق و کیفیت دیده‌بانی محیطی؛ پهنای باند اطلاعات پایش‌شده، رصد روندهای خارج از حوزه صنعت فعلی و کشف زودهنگام سیگنال‌های ضعیف.' },
+                { level: '۲. روش‌ها', title: 'متدولوژی‌های آینده‌نگاری (روش‌ها)', desc: 'تنوع و اثربخشی ابزارها؛ استفاده منظم از روش‌های کیفی و کمی (سناریوسازی، دلفی، نقشه‌راه فناوری، تحلیل اثرات متقاطع).' },
+                { level: '۳. افراد', title: 'سرمایه انسانی و خبرگان (افراد)', desc: 'شایستگی، سواد آینده، شبکه خبره · ارتقای مهارت خط مقدم و آینده‌نگاری، نه فقط یک unit کوچک.' },
+                { level: '۴. سازمان', title: 'ساختار رسمی و تصمیم‌گیری (سازمان)', desc: 'اتصال آینده‌نگاری به برنامه‌ریزی، بودجه پژوهش و توسعه، دروازه سرمایه‌گذاری · انعطاف ساختار برای آزمون.' },
+                { level: '۵. فرهنگ', title: 'پذیرش عدم‌قطعیت و نوآوری (فرهنگ)', desc: 'تحمل شکست پیلوت، جایگزینی عمدی، بیان هشدار · بدون ترس از توقف کردن پروژه.' }
             ]
         },
         assessment: {
             tag: 'ابزار ارزیابی تعاملی',
             title: 'سنجش شاخص بلوغ آینده‌نگاری سازمان',
-            sub: 'بر اساس ابعاد پنج‌گانه مدل بلوغ رنه روهربک، سطح تناسب با آینده سازمان خود را ارزیابی کرده و تحلیل استراتژیک دریافت کنید.',
+            sub: 'بر اساس ابعاد پنج‌گانه مدل بلوغ رنه روهربک، سطح تناسب با آینده سازمان خود را ارزیابی کرده و تحلیل راهبردی دریافت کنید.',
             formTitle: 'پرسشنامه خودارزیابی بلوغ آینده‌نگاری',
             sliders: {
-                info: { label: '۱. اطلاعات و رصد (Information)', desc: 'دسترسی، پایش و تحلیل سیگنال‌های تغییر و روندهای کلان بیرونی در سازمان.' },
-                methods: { label: '۲. روش‌ها و ابزارها (Methods)', desc: 'استفاده منظم از متدهای علمی آینده‌پژوهی نظیر سناریونویسی، دلفی و رادار فناوری.' },
-                people: { label: '۳. افراد و تخصص‌ها (People)', desc: 'آموزش مهارتی کارکنان، تعامل با خبرگان خارجی و مشارکت بدنه سازمان در تفکر آینده‌پژوهانه.' },
-                org: { label: '۴. سازماندهی رسمی (Formal Org)', desc: 'ساختار آینده‌نگاری، اتصال به gate سرمایه‌گذاری و بودجه probing مستقل.' },
-                culture: { label: '۵. فرهنگ سازمانی (Culture)', desc: 'پذیرش تغییر، kill کردن pilot، cannibalization · حمایت ساختار gate نه فقط slogan.' }
+                info: { label: '۱. اطلاعات و رصد (اطلاعات)', desc: 'دسترسی، پایش و تحلیل سیگنال‌های تغییر و روندهای کلان بیرونی در سازمان.' },
+                methods: { label: '۲. روش‌ها و ابزارها (روش‌ها)', desc: 'استفاده منظم از متدهای علمی آینده‌پژوهی نظیر سناریونویسی، دلفی و رادار فناوری.' },
+                people: { label: '۳. افراد و تخصص‌ها (افراد)', desc: 'آموزش مهارتی کارکنان، تعامل با خبرگان خارجی و مشارکت بدنه سازمان در تفکر آینده‌پژوهانه.' },
+                org: { label: '۴. سازماندهی رسمی (سازمان رسمی)', desc: 'ساختار آینده‌نگاری، اتصال به دروازه سرمایه‌گذاری و بودجه آزمون مستقل.' },
+                culture: { label: '۵. فرهنگ سازمانی (فرهنگ)', desc: 'پذیرش تغییر، توقف کردن پیلوت، جایگزینی عمدی · حمایت ساختار دروازه نه فقط slogan.' }
             },
             calculateBtn: 'محاسبه شاخص بلوغ',
             resultsTitle: 'تحلیل بلوغ سازمانی',
             resetBtn: 'ارزیابی مجدد',
             analyzing: 'در حال تحلیل...',
             calculating: 'در حال محاسبه...',
-            insightTitle: 'تفسیر استراتژیک بلوغ:',
+            insightTitle: 'تفسیر راهبردی بلوغ:',
             chartLabel: 'سطح بلوغ فعلی سازمان',
             chartLabels: [
-                'اطلاعات و رصد (Information)',
-                'روش‌ها و ابزارها (Methods)',
-                'افراد و تخصص‌ها (People)',
-                'سازماندهی رسمی (Formal Org)',
-                'فرهنگ سازمانی (Culture)'
+                'اطلاعات و رصد (اطلاعات)',
+                'روش‌ها و ابزارها (روش‌ها)',
+                'افراد و تخصص‌ها (افراد)',
+                'سازماندهی رسمی (سازمان رسمی)',
+                'فرهنگ سازمانی (فرهنگ)'
             ],
-            metricsTitle: '۵ شاخص ارزیابی عملیاتی Future FITness',
+            metricsTitle: '۵ شاخص ارزیابی عملیاتی تناسب آینده (FITness)',
             scores: {
                 fit: {
                     status: 'سرآمد و متناسب با آینده (Future Fit)',
@@ -578,7 +578,7 @@ registerLocale('fa', {
                 },
                 prepared: {
                     status: 'آماده و هوشیار (Prepared)',
-                    description: 'سازمان شما در رصد روندها و ایجاد آمادگی خوب عمل می‌کند، اما هنوز نیازمند تقویت فرآیندهای آزمودن (Probing) و تحول فرهنگی است. نباید صرفاً منتظر وقوع آینده باشید؛ باید برای خلق آینده مطلوب تلاش کنید.',
+                    description: 'سازمان شما در رصد روندها و ایجاد آمادگی خوب عمل می‌کند، اما هنوز نیازمند تقویت فرآیندهای آزمودن (آزمایش) و تحول فرهنگی است. نباید صرفاً منتظر وقوع آینده باشید؛ باید برای خلق آینده مطلوب تلاش کنید.',
                     recs: [
                         'افزایش پروژه‌های آزمایشی سریع (Rapid Prototyping) برای سنجش فرضیات فناوری.',
                         'تفویض اختیارات بیشتر به کارکنان خط مقدم برای افزایش سرعت تصمیم‌گیری.',
@@ -586,12 +586,12 @@ registerLocale('fa', {
                     ]
                 },
                 vulnerable: {
-                    status: 'آسیب‌پذیر در برابر تغییر (Vulnerable)',
-                    description: 'هشدار! سازمان شما در منطقه خطر قرار دارد. اتکای بیش از حد به فرآیندهای سنتی و مقاومت فرهنگی در برابر تغییر، بقای شما را در مواجهه با عدم‌قطعیت‌های بازار تهدید می‌کند. تحول فوری در زیرساخت اطلاعاتی و gate probing ضروری است.',
+                    status: 'آسیب‌پذیر در برابر تغییر (آسیب‌پذیر)',
+                    description: 'هشدار! سازمان شما در منطقه خطر قرار دارد. اتکای بیش از حد به فرآیندهای سنتی و مقاومت فرهنگی در برابر تغییر، بقای شما را در مواجهه با عدم‌قطعیت‌های بازار تهدید می‌کند. تحول فوری در زیرساخت اطلاعاتی و دروازه آزمون ضروری است.',
                     recs: [
-                        'راه‌اندازی فوری رصد محیطی ماهانه برای weak signal.',
-                        'کارگاه آینده‌نگاری + Opponent role برای pilotهای جاری.',
-                        'کاهش بوروکراسی gate · probing ۹۰ روزه با kill criteria.'
+                        'راه‌اندازی فوری رصد محیطی ماهانه برای نشانه ضعیف.',
+                        'کارگاه آینده‌نگاری + نقش مخالف برای پیلوتهای جاری.',
+                        'کاهش بوروکراسی دروازه · آزمون ۹۰ روزه با معیار توقف.'
                     ]
                 }
             }
@@ -605,34 +605,34 @@ registerLocale('fa', {
         ],
         radar: {
             tag: 'مطالعه موردی: دویچه تلکوم',
-            title: 'رادار فناوری‌های نوظهور و پایش استراتژیک',
-            sub: 'شبیه‌سازی رادار تعاملی فناوری جهت جلوگیری از غافلگیری استراتژیک. بر روی نقاط رادار کلیک کنید تا تحلیل تأثیر و توصیه‌ها بارگذاری شوند.',
+            title: 'رادار فناوری‌های نوظهور و پایش راهبردی',
+            sub: 'شبیه‌سازی رادار تعاملی فناوری جهت جلوگیری از غافلگیری راهبردی. بر روی نقاط رادار کلیک کنید تا تحلیل تأثیر و توصیه‌ها بارگذاری شوند.',
             defaultTitle: 'رادار فناوری‌های نوظهور',
-            defaultText: 'یکی از ابزارهای استراتژیک برای جلوگیری از غافلگیری در صنعت مخابرات و فناوری اطلاعات. روی نقاط نوسان‌کننده کلیک کنید تا جزئیات نمایش داده شوند.',
-            dtCaseTitle: 'چرا دویچه تلکام به عنوان مورد بنچ‌مارک انتخاب شد؟',
-            dtCaseBody: 'انتخاب <strong>دویچه تلکام (Deutsche Telekom)</strong> کاملاً علمی است. بخش بزرگی از فرآیند دکتری و کتاب مرجع رنه روهربک در خصوص مدل بلوغ آینده‌نگاری، مستقیماً بر اساس مطالعه چندساله عملیاتی در این غول مخابراتی بنا شده است. این شرکت نمونه عینی تزریق رادار فناوری و اتصال نتایج به فرآیندهای استراتژیک و کاهش ریسک است.',
-            dtChallengesTitle: 'چالش‌های استقرار و راه‌حل‌های استراتژیک',
-            dtChallengesBody: '<strong>مقاومت در برابر تغییر:</strong> تقویت فرهنگ باز و پذیرش تغییر.<br><strong>شکاف مهارتی کارکنان:</strong> برگزاری مداوم دوره‌های بازآموزی (Reskilling).<br><strong>پیچیدگی اکوسیستم باز:</strong> به کارگیری فناوری‌های باز و شفاف.<br><strong>تعارض اهداف کوتاه/بلندمدت:</strong> تخصیص بودجه مجزا و مدل سه افق نوآوری.',
-            rings: { scan: 'رصد (Scan)', assess: 'ارزیابی (Assess)', trial: 'آزمایش (Trial)', adopt: 'پذیرش (Adopt)' },
+            defaultText: 'یکی از ابزارهای راهبردی برای جلوگیری از غافلگیری در صنعت مخابرات و فناوری اطلاعات. روی نقاط نوسان‌کننده کلیک کنید تا جزئیات نمایش داده شوند.',
+            dtCaseTitle: 'چرا دویچه تلکام به عنوان مورد معیار مرجع انتخاب شد؟',
+            dtCaseBody: 'انتخاب <strong>دویچه تلکام (Deutsche Telekom)</strong> کاملاً علمی است. بخش بزرگی از فرآیند دکتری و کتاب مرجع رنه روهربک در خصوص مدل بلوغ آینده‌نگاری، مستقیماً بر اساس مطالعه چندساله عملیاتی در این غول مخابراتی بنا شده است. این شرکت نمونه عینی تزریق رادار فناوری و اتصال نتایج به فرآیندهای راهبردی و کاهش ریسک است.',
+            dtChallengesTitle: 'چالش‌های استقرار و راه‌حل‌های راهبردی',
+            dtChallengesBody: '<strong>مقاومت در برابر تغییر:</strong> تقویت فرهنگ باز و پذیرش تغییر.<br><strong>شکاف مهارتی کارکنان:</strong> برگزاری مداوم دوره‌های بازآموزی (Resتوقفing).<br><strong>پیچیدگی اکوسیستم باز:</strong> به کارگیری فناوری‌های باز و شفاف.<br><strong>تعارض اهداف کوتاه/بلندمدت:</strong> تخصیص بودجه مجزا و مدل سه افق نوآوری.',
+            rings: { scan: 'رصد (Scan)', assess: 'ارزیابی (ارزیابی)', trial: 'آزمایش (آزمایش)', adopt: 'پذیرش (پذیرش)' },
             quadrants: {
                 ai: 'هوش مصنوعی و داده',
                 net: 'شبکه‌های ارتباطی',
                 comp: 'رایانش و ابر نوظهور',
                 bio: 'سلامت دیجیتال و مراقبت از راه دور'
             },
-            bioQuadrantNote: 'دویچه تلکام در بیوتک آزمایشگاهی (داروسازی/مهندسی ژنتیک) فعالیت نمی‌کند. ربع پایین‑راست نشان‌دهنده بازار مجاور Digital Health است: telemedicine، IoT سلامت و پلتفرم‌های مراقبت از راه دور روی شبکه DT و T-Systems — همان منطق «رصد افق‌های مجاور» در مطالعه Rohrbeck et al. (2007).',
+            bioQuadrantNote: 'دویچه تلکام در بیوتک آزمایشگاهی (داروسازی/مهندسی ژنتیک) فعالیت نمی‌کند. ربع پایین‑راست نشان‌دهنده بازار مجاور Digital Health است: پزشکی از راه دور، اینترنت اشیا سلامت و پلتفرم‌های مراقبت از راه دور روی شبکه DT و T-Systems — همان منطق «رصد افق‌های مجاور» در مطالعه Rohrbeck et al. (2007).',
             statusLabel: 'وضعیت رادار:',
-            impactLabel: 'تأثیر استراتژیک بر سازمان:',
+            impactLabel: 'تأثیر راهبردی بر سازمان:',
             tech: {
-                genai: { title: 'هوش مصنوعی مولد (Generative AI)', quadrant: 'هوش مصنوعی و داده', status: 'Adopt (پذیرش)', desc: 'استفاده از مدل‌های بزرگ زبانی و مدل‌های مولد تصویر برای تولید خودکار محتوا، کد و بهینه‌سازی فرآیندهای کاری.', impact: 'اتوماسیون کارهای روتین، افزایش راندمان تولید تا ۴۰٪ و ایجاد تجربه‌های کاربری کاملاً شخصی‌سازی‌شده.' },
-                agentic: { title: 'هوش مصنوعی عامل‌محور (Agentic AI)', quadrant: 'هوش مصنوعی و داده', status: 'Trial (آزمایش)', desc: 'سیستم‌های هوش مصنوعی که اهداف کلان را دریافت کرده و به صورت خودمختار وظایف چندمرحله‌ای را طراحی، تست و اجرا می‌کنند.', impact: 'کاهش نیاز به نظارت مستقیم انسان، حل مستقل تعارضات زنجیره تأمین و تصمیم‌گیری بلادرنگ.' },
-                nlp: { title: 'پردازش پیشرفته زبان (NLP)', quadrant: 'هوش مصنوعی و داده', status: 'Adopt (پذیرش)', desc: 'سیستم‌های درک زبان طبیعی برای تحلیل گفتار، متن، احساسات مشتریان و استخراج دانش پنهان از مستندات.', impact: 'پشتیبانی ۲۴ ساعته با دستیارهای صوتی هوشمند و شناسایی زودهنگام نارضایتی مشتریان.' },
+                genai: { title: 'هوش مصنوعی مولد (Generative AI)', quadrant: 'هوش مصنوعی و داده', status: 'پذیرش (پذیرش)', desc: 'استفاده از مدل‌های بزرگ زبانی و مدل‌های مولد تصویر برای تولید خودکار محتوا، کد و بهینه‌سازی فرآیندهای کاری.', impact: 'اتوماسیون کارهای روتین، افزایش راندمان تولید تا ۴۰٪ و ایجاد تجربه‌های کاربری کاملاً شخصی‌سازی‌شده.' },
+                agentic: { title: 'هوش مصنوعی عامل‌محور (Agentic AI)', quadrant: 'هوش مصنوعی و داده', status: 'آزمایش (آزمایش)', desc: 'سیستم‌های هوش مصنوعی که اهداف کلان را دریافت کرده و به صورت خودمختار وظایف چندمرحله‌ای را طراحی، تست و اجرا می‌کنند.', impact: 'کاهش نیاز به نظارت مستقیم انسان، حل مستقل تعارضات زنجیره تأمین و تصمیم‌گیری بلادرنگ.' },
+                nlp: { title: 'پردازش پیشرفته زبان (NLP)', quadrant: 'هوش مصنوعی و داده', status: 'پذیرش (پذیرش)', desc: 'سیستم‌های درک زبان طبیعی برای تحلیل گفتار، متن، احساسات مشتریان و استخراج دانش پنهان از مستندات.', impact: 'پشتیبانی ۲۴ ساعته با دستیارهای صوتی هوشمند و شناسایی زودهنگام نارضایتی مشتریان.' },
                 '6g': { title: 'نسل ششم ارتباطات موبایل (6G)', quadrant: 'شبکه‌های ارتباطی', status: 'Scan (رصد)', desc: 'سرعت‌های ترابیت بر ثانیه، تاخیرهای میکروثانیه‌ای و ادغام شبکه‌های زمینی با ماهواره‌ها برای پوشش صد درصدی.', impact: 'بسترسازی اینترنت حواس، ربات‌های همکار دوردست و ارتباطات هولوگرافیک سه‌بعدی.' },
-                iot: { title: 'اکوسیستم‌های اینترنت اشیاء (IoT)', quadrant: 'شبکه‌های ارتباطی', status: 'Trial (آزمایش)', desc: 'اتصال صدها میلیون حسگر هوشمند به شبکه برای جمع‌آوری داده از محیط‌های عملیاتی، انبارها و لجستیک.', impact: 'کاهش اتلاف انرژی، پایش هوشمند فرآیندهای کشاورزی و بهبود بهره‌وری تجهیزات کارخانه‌ای.' },
-                quantum: { title: 'رایانش کوانتومی (Quantum Computing)', quadrant: 'رایانش و ابر نوظهور', status: 'Assess (ارزیابی)', desc: 'بهره‌گیری از کیوبیت‌های کوانتومی برای شبیه‌سازی‌های فیزیکی و بهینه‌سازی‌های ریاضی پیچیده.', impact: 'کشف سریع‌تر داروها، بهینه‌سازی سبد سرمایه‌گذاری مالی و خطرات جدی برای امنیت سایبری فعلی.' },
-                edge: { title: 'رایانش لبه‌ای (Edge Computing)', quadrant: 'رایانش و ابر نوظهور', status: 'Adopt (پذیرش)', desc: 'پردازش داده‌ها در محل تولید (حسگر یا دوربین) به جای ارسال به سرورهای ابری مرکزی.', impact: 'ناوبری فوری خودروهای خودران و تحلیل سریع تصاویر دوربین‌های امنیتی بدون سربار شبکه.' },
-                telehealth: { title: 'Telemedicine و مراقبت از راه دور', quadrant: 'سلامت دیجیتال و مراقبت از راه دور', status: 'Trial (آزمایش)', desc: 'پلتفرم‌های ویزیت آنلاین، پرونده الکترونیک و اتصال بیمار–پزشک روی زیرساخت مخابراتی DT و T-Systems Healthcare — بازار مجاور، نه بیوتک آزمایشگاهی.', impact: 'درآمد B2B2C در سگمنت Health · کاهش فشار بر شبکه با edge و QoS اختصاصی.' },
-                healthIoT: { title: 'IoT سلامت و پایش از راه دور', quadrant: 'سلامت دیجیتال و مراقبت از راه دور', status: 'Assess (ارزیابی)', desc: 'حسگرهای پوشیدنی و دستگاه‌های پایش بیمار در منزل که از طریق شبکه NB-IoT/LTE-M به مرکز تماس متصل می‌شوند.', impact: 'مدل subscription برای اپراتور · هم‌افزایی با Ag-IoT (M3) روی همان stack شبکه.' }
+                iot: { title: 'اکوسیستم‌های اینترنت اشیاء (اینترنت اشیا)', quadrant: 'شبکه‌های ارتباطی', status: 'آزمایش (آزمایش)', desc: 'اتصال صدها میلیون حسگر هوشمند به شبکه برای جمع‌آوری داده از محیط‌های عملیاتی، انبارها و لجستیک.', impact: 'کاهش اتلاف انرژی، پایش هوشمند فرآیندهای کشاورزی و بهبود بهره‌وری تجهیزات کارخانه‌ای.' },
+                quantum: { title: 'رایانش کوانتومی (Quantum Computing)', quadrant: 'رایانش و ابر نوظهور', status: 'ارزیابی (ارزیابی)', desc: 'بهره‌گیری از کیوبیت‌های کوانتومی برای شبیه‌سازی‌های فیزیکی و بهینه‌سازی‌های ریاضی پیچیده.', impact: 'کشف سریع‌تر داروها، بهینه‌سازی سبد سرمایه‌گذاری مالی و خطرات جدی برای امنیت سایبری فعلی.' },
+                edge: { title: 'رایانش لبه‌ای (Edge Computing)', quadrant: 'رایانش و ابر نوظهور', status: 'پذیرش (پذیرش)', desc: 'پردازش داده‌ها در محل تولید (حسگر یا دوربین) به جای ارسال به سرورهای ابری مرکزی.', impact: 'ناوبری فوری خودروهای خودران و تحلیل سریع تصاویر دوربین‌های امنیتی بدون سربار شبکه.' },
+                telehealth: { title: 'Telemedicine و مراقبت از راه دور', quadrant: 'سلامت دیجیتال و مراقبت از راه دور', status: 'آزمایش (آزمایش)', desc: 'پلتفرم‌های ویزیت آنلاین، پرونده الکترونیک و اتصال بیمار–پزشک روی زیرساخت مخابراتی DT و T-Systems Healthcare — بازار مجاور، نه بیوتک آزمایشگاهی.', impact: 'درآمد B2B2C در سگمنت Health · کاهش فشار بر شبکه با edge و QoS اختصاصی.' },
+                healthIoT: { title: 'اینترنت اشیا سلامت و پایش از راه دور', quadrant: 'سلامت دیجیتال و مراقبت از راه دور', status: 'ارزیابی (ارزیابی)', desc: 'حسگرهای پوشیدنی و دستگاه‌های پایش بیمار در منزل که از طریق شبکه NB-اینترنت اشیا/LTE-M به مرکز تماس متصل می‌شوند.', impact: 'مدل اشتراک برای اپراتور · هم‌افزایی با اینترنت اشیا کشاورزی (M3) روی همان stack شبکه.' }
             }
         },
         common: {

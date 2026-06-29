@@ -223,22 +223,38 @@
                 scanning: 'assets/fitness/slides/m3-scanning.svg',
                 'weak-signals': 'assets/fitness/slides/m3-scanning.svg',
                 'radar-rings': 'assets/fitness/slides/m3-radar-photo.png',
-                'dt-health': 'assets/fitness/slides/m3-radar.svg'
+                'dt-cases': 'assets/fitness/slides/m3-radar.svg',
+                'workshop-link': 'assets/fitness/slides/m3-radar-photo.png'
             },
             m4: {
                 roles: 'assets/fitness/slides/m4-roles.svg',
+                horizons: 'assets/fitness/slides/m4-roles.svg',
+                'scenario-gate': 'assets/fitness/slides/m4-midterm.svg',
+                cases: 'assets/fitness/slides/m4-roles.svg',
                 midterm: 'assets/fitness/slides/m4-midterm.svg'
             },
             m5: {
-                probing: 'assets/fitness/slides/m5-probing.svg',
-                memo: 'assets/fitness/slides/m5-memo.svg'
+                'probing-concept': 'assets/fitness/slides/m5-probing.svg',
+                'ninety-day': 'assets/fitness/slides/m5-probing.svg',
+                venturing: 'assets/fitness/slides/m5-probing.svg',
+                'blockbuster-netflix': 'assets/fitness/slides/m5-probing.svg',
+                'memo-gate': 'assets/fitness/slides/m5-memo.svg',
+                template: 'assets/fitness/slides/m5-memo.svg'
             },
             m6: {
-                archetypes: 'assets/fitness/slides/m6-archetypes-photo.png'
+                archetypes: 'assets/fitness/slides/m6-archetypes-photo.png',
+                'turbulence-matrix': 'assets/fitness/slides/m6-archetypes.svg',
+                transformation: 'assets/fitness/slides/m6-archetypes.svg',
+                'case-clinic': 'assets/fitness/slides/m6-archetypes-photo.png',
+                'workshop-archetype': 'assets/fitness/slides/m6-archetypes.svg'
             },
             m7: {
-                integration: 'assets/fitness/slides/m7-integration.svg',
-                final: 'assets/fitness/slides/m7-final.svg'
+                cla: 'assets/fitness/slides/m7-integration.svg',
+                wheel: 'assets/fitness/slides/m7-integration.svg',
+                it2: 'assets/fitness/slides/m7-integration.svg',
+                synthesis: 'assets/fitness/slides/m7-integration.svg',
+                'final-project': 'assets/fitness/slides/m7-final.svg',
+                presentation: 'assets/fitness/slides/m7-final.svg'
             }
         };
 
