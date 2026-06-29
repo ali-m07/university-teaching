@@ -2492,134 +2492,131 @@
           "hours": "۳ ساعت",
           "readingsShort": "Rohrbeck (2010) ch.3–5 · Schwarz (2013)",
           "visual": "assets/fitness/modules/m2-maturity.svg",
-          "visualCaption": "پنج بعد maturity · سطوح ۱ تا ۵",
-          "lectureIntro": "مدل بلوغ روهربک ابزار اصلی سنجش <strong>آینده‌نگاری سازمانی</strong> است — نه حجم گزارش، بلکه قابلیت ساختاری. این جلسه پنج بعد و سطوح ۱–۵ را با مثال Siemens و Deutsche Telekom توضیح می‌دهد. آینده‌پژوهی به‌تنهایی maturity را بالا نمی‌برد؛ اتصال به gate و pilot لازم است.",
+          "visualCaption": "پنج بعد بلوغ آینده‌نگاری · سطوح ۱ تا ۵",
+          "lectureIntro": "امروز می‌خواهیم بفهمیم سازمان شما <strong>کجای مسیر</strong> است — نه با حدس، با پنج سوال روشن. مدل بلوغ روهربک مثل معاینه دوره‌ای است: قبل از خرید ابزار جدید یا استخدام مشاور، ببینید گلوگاه واقعی کجاست.",
           "lectureSections": [
             {
               "id": "intro",
-              "title": "۱. معرفی مدل بلوغ آینده‌نگاری",
+              "title": "۱. گیر داستان: قفسهٔ گزارش‌ها",
+              "imageCaption": "گزارش زیاد ≠ آمادگی واقعی",
               "slideTitles": [
-                "چرا مدل بلوغ لازم است",
-                "پنج بعد در یک نگاه"
+                "صحنهٔ آشنا: کمیتهٔ استراتژی",
+                "سؤال اصلی جلسه"
               ],
               "paragraphs": [
-                "فصل‌های ۳ تا ۵ کتاب <em>Corporate Foresight</em> مدل بلوغ را formalize می‌کنند: سازمان را در پنج بعد Information، Methods، People، Organization، Culture می‌سنجیم و هر بعد را از سطح ۱ (ad hoc) تا ۵ (best-in-class / embedded) امتیاز می‌دهیم. هدف: تشخیص گلوگاه قبل از سرمایه‌گذاری روی ابزار جدید.",
-                "مدل بلوغ «کیفیت گزارش» را نمی‌سنجد؛ می‌سنجد آیا آینده‌نگاری به planning، R&D gate و فرهنگ pilot وصل است. سازمانی که در همه ابعاد سطح ۳ است اما Organization سطح ۱ دارد، معمولاً Neurotic می‌شود: تحلیل زیاد، اثر کم."
+                "تصور کنید مدیرعامل در پایان سال وارد اتاق می‌شود. روی میز، پنج جلد گزارش ضخیم است: سناریو، روند فناوری، ریسک‌های ژئوپolitik، پیشنهاد مشاور، و یک PowerPoint ۱۲۰ اسلایدی. همه applaud می‌کنند. سه ماه بعد، رقیب با یک pilot کوچک بازار را عوض می‌کند. هیچ‌کس نمی‌گوید «ما foresight نداشتیم» — همه می‌گوینند «گزارش داشتیم».",
+                "سؤال این جلسه ساده است: <strong>چرا گزارش خوب به تصمیم خوب تبدیل نمی‌شود؟</strong> روهربک در فصل‌های ۳ تا ۵ کتابش می‌گوید: مشکل ابزار نیست؛ مشکل این است که نمی‌دانیم سازمان در کدام بعد ضعیف است. مدل بلوغ برای همین ساخته شده — نه برای نمره‌دادن، برای دیدن."
               ]
             },
             {
               "id": "information",
-              "title": "۲. بعد Information",
+              "title": "۲. بعد اول: Information — چشم سازمان",
+              "imageCaption": "Information · وسعت و عمق رصد",
               "slideTitles": [
-                "وسعت و عمق رصد",
-                "STEEP و پهنای باند signal"
+                "فرود: تونل رقبای مستقیم",
+                "صعود: دیدن افق‌های دورتر"
               ],
               "paragraphs": [
-                "<strong>Information</strong> یعنی وسعت و عمق رصد محیط — آیا فقط رقبای مستقیم دیده می‌شوند یا روندهای خارج از صنعت (STEEP/PESTEL) هم؟ سطح پایین: newsletter داخلی؛ سطح بالا: داشبورد signal با owner و cadence هفتگی.",
-                "پهنای باند signal پایین یعنی غافلگیری. در DT، Ag-IoT قبل از boom به‌عنوان weak signal در Scan ثبت شد چون Information بعد از اصلاح به STEEP گسترش یافت — نه فقط رقبای telecom."
+                "بعد <strong>Information</strong> یعنی سازمان چقدر می‌بیند. فرود: تیم فقط newsletter رقبای مستقیم را می‌خواند؛ هیچ‌کس signal عجیب از صنعت مجاور را ثبت نمی‌کند. وقتی فناوری از جانبی وارد می‌شود، همه «غافلگیر» می‌شوند — در حالی که signal ماه‌ها قبل بود.",
+                "صعود: همان سازمان یک دفترچهٔ ساده راه می‌اندازد — هر هفته یک signal از STEEP (اجتماعی، فناوری، اقتصاد، محیط زیست، سیاست) با نام صاحب و تاریخ. نمرهٔ این بعد بالا نمی‌رود با «خواندن بیشتر»؛ بالا می‌رود با <strong>ثبت و پیگیری</strong> signalهایی که قبلاً از دست می‌رفت."
               ]
             },
             {
               "id": "methods",
-              "title": "۳. بعد Methods",
+              "title": "۳. بعد دوم: Methods — جعبهٔ ابزار",
+              "imageCaption": "Methods · تنوع و اثربخشی ابزار",
               "slideTitles": [
-                "تنوع ابزار آینده‌نگاری",
-                "از trend report تا Technology Radar"
+                "فرود: یک ابزار، یک بار مصرف",
+                "صعود: ابزار در خدمت تصمیم"
               ],
               "paragraphs": [
-                "<strong>Methods:</strong> تنوع و اثربخشی ابزار — سناریو، دلفی، Technology Radar، roadmapping. داشتن یک ابزار (مثلاً فقط trend report) سطح ۲ است؛ استفاده منظم چند ابزار با خروجی مشخص برای gate سطح ۴–۵ است.",
-                "ابزار بدون workflow = shelfware. معیار بلوغ: آیا خروجی Methods مستقیماً به agenda کمیته استراتژی یا gate R&D می‌رود؟ اگر خیر، Methods روی کاغذ بالا است."
+                "بعد <strong>Methods</strong> یعنی سازمان چطور فکر می‌کند. فرود: یک بار workshop سناریو برگزار شده، PDF در shared drive مانده، و سال بعد دوباره همان مشاور دعوت شده. این سطح ۲ است — ابزار هست، اثر نیست.",
+                "صعود: Methods زمانی معنا دارد که خروجی مشخص دارد — مثلاً «سه سناریو → یک gate بودجه». سازمانی که Methods قوی دارد نمی‌گوید «ما سناریو داریم»؛ می‌گوید «سناریو B هفتهٔ آینده به کمیته می‌رود». ابزار بدون قرار ملاقات با تصمیم، وسطهٔ گم‌شده است."
               ]
             },
             {
               "id": "people",
-              "title": "۴. بعد People",
+              "title": "۴. بعد سوم: People — زبان مشترک",
+              "imageCaption": "People · سواد آینده‌نگاری در خط مقدم",
               "slideTitles": [
-                "سواد آینده‌نگاری در خط مقدم",
-                "HR و L&D"
+                "فرود: سه نفر متخصص، بقیه تماشا",
+                "صعود: همه signal را نام‌گذاری می‌کنند"
               ],
               "paragraphs": [
-                "<strong>People:</strong> سواد آینده‌نگاری در خط مقدم — نه فقط ۳ نفر در واحد آینده‌نگاری. مدیر محصول، procurement و sales باید weak signal را نام‌گذاری کنند.",
-                "HR و L&D باید <strong>سواد آینده‌نگاری</strong> را scale کنند: workshop نقش‌ها (Initiator/Strategist/Opponent در M4)، نه فقط دوره یک‌روزه آینده‌پژوهی نظری."
+                "بعد <strong>People</strong> یعنی چه کسانی در آینده‌نگاری سهیم‌اند. فرود: واحد آینده‌نگاری سه نفره گزارش می‌نویسد؛ مدیر خط، خرید، و فروش فقط در جلسهٔ پایان سال حاضر می‌شوند. وقتی signal از داخل سازمان بالا می‌آید، کسی آن را نمی‌شناسد.",
+                "صعود: HR و L&D یک دورهٔ کوتاه «نام‌گذاری signal» برای مدیران میانی طراحی می‌کنند — نه آینده‌پژوهی نظری، بلکه یک جمله: «این چه تهدید یا فرصتی برای ما در ۳ سال است؟» وقتی People قوی است، signal از پایین به بالا جریان دارد."
               ]
             },
             {
               "id": "organization",
-              "title": "۵. بعد Organization",
+              "title": "۵. بعد چهارم: Organization — پل به بودجه",
+              "imageCaption": "Organization · gate و planning",
               "slideTitles": [
-                "اتصال به planning و gate",
-                "corporate venturing"
+                "فرود: جزیرهٔ توصیه",
+                "صعود: gate واقعی"
               ],
               "paragraphs": [
-                "<strong>Organization:</strong> اتصال آینده‌نگاری به planning، gate بودجه R&D، corporate venturing. بدون gate، آینده‌نگاری «توصیه» می‌ماند و در typology Neurotic گیر می‌کند.",
-                "ساختار سازمانی: واحد آینده‌نگاری نباید island باشد. بهترین practice: dotted line به strategy و innovation board؛ KPI مشترک با portfolio H1/H2/H3."
+                "بعد <strong>Organization</strong> یعنی آینده‌نگاری کجا به ساختار وصل می‌شود. فرود: واحد آینده‌نگاری «مشاور داخلی» است — توصیه می‌دهد، بودجه نمی‌گیرد، veto ندارد. گزارش عالی تولید می‌شود و در planning هیچ اثری ندارد.",
+                "صعود: dotted line به کمیتهٔ استراتژی و innovation board. قبل از هر capex بزرگ، یک slide: «signal چیست؟ probe پیشنهادی چیست؟ kill criteria چیست؟» Organization قوی یعنی آینده‌نگاری <strong>حق رأی</strong> در gate دارد — نه حق نطق."
               ]
             },
             {
               "id": "culture",
-              "title": "۶. بعد Culture",
+              "title": "۶. بعد پنجم: Culture — اجازهٔ «نه»",
+              "imageCaption": "Culture · kill pilot · cannibalization",
               "slideTitles": [
-                "تحمل kill و cannibalization",
-                "Opponent و «شکست ممنوع»"
+                "فرود: شکست ممنوع",
+                "صعود: یادگیری علنی"
               ],
               "paragraphs": [
-                "<strong>Culture:</strong> تحمل kill کردن pilot، پذیرش cannibalization، مجاز بودن Opponent. فرهنگ «شکست ممنوع» maturity را روی کاغذ بالا نگه می‌دارد اما probing را می‌کشد.",
-                "Culture سخت‌ترین بعد برای تغییر سریع است. شاخص عملی: آیا آخرین pilot کشته‌شده در all-hands به‌عنوان «یادگیری» گزارش شد یا «شکست خجالت‌آور»؟"
+                "بعد <strong>Culture</strong> سخت‌ترین بعد است — چون با habit کار می‌کند. فرود: آخرین pilot که fail شد در all-hands ذکر نشد؛ کسی جرأت نکرد محصول legacy را cannibalize کند؛ Opponent در جلسه حاضر بود اما سکوت کرد.",
+                "صعود: CEO در town hall می‌گوید: «ماه گذشته pilot X را kill کردیم — و این خوب است، چون ۹۰ روز زود فهمیدیم اشتباه است.» Culture قوی kill را shame نمی‌کند؛ آن را data می‌داند. بدون این، چهار بعد دیگر روی کاغذ بالا می‌ماند."
               ]
             },
             {
               "id": "levels",
-              "title": "۷. سطوح ۱ تا ۵",
+              "title": "۷. نردبان سطوح ۱ تا ۵",
+              "imageCaption": "سطوح ۱–۵ · از ad hoc تا embedded",
               "slideTitles": [
-                "سطح ۱–۲: ad hoc و reactive",
-                "سطح ۳: systematic",
-                "سطح ۴–۵: embedded و best-in-class"
+                "سطح ۱–۲: تکه‌تکه و واکنشی",
+                "سطح ۳: منظم اما جدا",
+                "سطح ۴–۵: تعبیه‌شده در DNA"
               ],
               "paragraphs": [
-                "سطح ۱: وجود ندارد یا کاملاً ad hoc. سطح ۲: ابزار یا واحد وجود دارد اما بدون cadence و gate. بسیاری از سازمان‌های ایرانی پس از یک پروژه مشاوره در ۲ گیر می‌کنند.",
-                "سطح ۳: فرایند systematic — رصد منظم، گزارش دوره‌ای، اما اتصال ضعیف به بودجه. سطح ۴: embedded در planning cycle. سطح ۵: benchmark صنعتی — Siemens/DT در بعد Methods و Organization.",
-                "امتیازدهی باید evidence-based باشد: مصاحبه، سند، مشاهده جلسه. عدد بدون شاهد در میان‌ترم M4 نمره نمی‌گیرد."
+                "هر بعد از ۱ تا ۵ نمره می‌گیرد. <strong>سطح ۱:</strong> اصلاً نیست. <strong>سطح ۲:</strong> یک بار یا یک واحد — مثل پروژهٔ مشاوره که تمام شد. خیلی از سازمان‌ها سال‌ها در ۲ می‌مانند.",
+                "<strong>سطح ۳:</strong> فرایند منظم — گزارش فصلی، رصد دوره‌ای — اما هنوز از بودجه و فرهنگ جدا است. سازمان «منظم» است اما «اثرگذار» نیست.",
+                "<strong>سطح ۴–۵:</strong> embedded — آینده‌نگاری بخشی از planning cycle است. سطح ۵ benchmark صنعتی است (Siemens، DT در بعد Organization). هدف این درس: صادقانه ببینید کجای نردبان هستید — نه کجا دوست دارید باشید."
               ]
             },
             {
               "id": "schwarz",
-              "title": "۸. اعتبارسنجی Schwarz (۲۰۱۳)",
+              "title": "۸. Schwarz (۲۰۱۳): اعداد وقتی واقعی باشند",
+              "imageCaption": "اعتبارسنجی میدانی · Schwarz 2013",
               "slideTitles": [
-                "regression و نمونه بزرگ‌تر",
-                "پیام برای مدیران"
+                "چرا regression مهم است",
+                "پیام برای مدیرعامل"
               ],
               "paragraphs": [
-                "Schwarz (۲۰۱۳) با نمونه بزرگ‌تر regression روهربک را تأیید کرد: gap بین سطح maturity و عملکرد مالی (سودآوری، رشد ارزش بازار) معنادار است — به‌ویژه در quadrant Vigilant.",
-                "پیام مدیریتی: سرمایه‌گذاری روی آینده‌نگاری تعبیه‌شده ROI دارد؛ اما فقط «خرید ابزار سناریو» maturity را جعل نمی‌کند. پنج بعد باید با هم بالا بروند."
+                "روهربک benchmark اولیه را با Siemens و DT نشان داد. Schwarz (۲۰۱۳) با نمونهٔ بزرگ‌تر تأیید کرد: فاصلهٔ maturity با عملکرد مالی معنادار است — به‌ویژه وقتی سازمان در quadrant Vigilant است (بلوغ بالا + تلاطم بالا).",
+                "اما پیام مدیریتی دقیق است: <strong>خرید نرم‌افزار سناریو maturity نمی‌سازد.</strong> اگر Organization و Culture پایین باشد، Methods روی کاغذ بالا می‌رود و سودآوری حرکت نمی‌کند. پنج بعد باید با هم بالا بروند — مثل پنج ستون یک پل."
               ]
             },
             {
               "id": "cases",
-              "title": "۹. Siemens و Deutsche Telekom",
+              "title": "۹. دو داستان: Siemens و Deutsche Telekom",
+              "imageCaption": "case میدانی · pipeline و planning",
               "slideTitles": [
-                "Siemens · pipeline نوآوری",
-                "DT · Technology Radar و planning"
+                "Siemens: از signal به pipeline",
+                "DT: آینده‌نگاری که به planning وصل است"
               ],
               "paragraphs": [
-                "زیمنس یکی از caseهای اصلی روهربک است: آینده‌نگاری خروجی pipeline نوآوری دارد. gap معمول در Organization (gate) است — نه «نداشتن گزارش». فصل ۵ case interviewها را detail می‌دهد.",
-                "Deutsche Telekom: Technology Radar، اتصال Perceiving به Prospecting، کاهش غافلگیری در portfolio. DT نشان می‌دهد آینده‌نگاری تعبیه‌شده در telecom مقیاس‌پذیر است — الگو برای پروژه نهایی شما."
+                "<strong>Siemens:</strong> روهربک Siemens را به‌عنوان سازمانی نشان می‌دهد که آینده‌نگاری خروجی pipeline نوآوری دارد — نه قفسهٔ PDF. gap معمول Siemens در گزارش‌ها نیست؛ در gate است. درس: Methods و Information می‌تواند ۴ باشد، Organization هنوز ۲ — و همین ترکیب Neurotic می‌سازد.",
+                "<strong>Deutsche Telekom:</strong> بخش عمدهٔ کار میدانی روهربک روی DT بود. آنجا آینده‌نگاری به چرخهٔ planning وصل شد — signal ثبت شد، اولویت‌بندی شد، و به gate R&D رسید. DT نشان می‌دهد مدل بلوغ در telecom مقیاس‌پذیر است؛ الگویی که در پروژهٔ نهایی شما هم می‌توانید trace کنید."
               ],
               "callout": {
-                "title": "Siemens — pipeline آینده‌نگاری به نوآوری",
-                "body": "زیمنس یکی از caseهای اصلی روهربک است: آینده‌نگاری خروجی pipeline نوآوری دارد. gap معمول در Organization (gate) است — نه «نداشتن گزارش»."
+                "title": "جمع‌بندی جلسه",
+                "body": "مدل بلوغ map شماست — نه لیست خرید ابزار. تکلیف این هفته: radar پنج بعدی برای سازمان پروژه، با <strong>یک شاهد میدانی</strong> برای ضعیف‌ترین بعد. کارگاه امتیازدهی در کلاس انجام می‌شود؛ محتوای تئوری همین اسلایدهاست."
               }
-            },
-            {
-              "id": "workshop",
-              "title": "۱۰. کارگاه radar کلاس",
-              "slideTitles": [
-                "امتیازدهی گروهی",
-                "debrief و ثبت گلوگاه"
-              ],
-              "paragraphs": [
-                "در کارگاه کلاس: هر گروه سازمان پروژه را score می‌دهد (۱–۵ هر بعد)، radar chart می‌کشد، و ضعیف‌ترین بعد را با یک شاهد میدانی justify می‌کند.",
-                "خروجی کارگاه: screenshot radar + یک جمله «اگر یک بعد را تا پایان ترم بالا ببریم، کدام است؟» — این radar در میان‌ترم M4 دوباره استفاده می‌شود."
-              ]
             }
           ],
           "readings": [
@@ -2649,20 +2646,20 @@
             {
               "step": "۱",
               "time": "۵۰ د",
-              "title": "پنج بعد",
-              "desc": "§۱–§۶"
+              "title": "گیر داستان + پنج بعد",
+              "desc": "§۱–§۶ · فرود و صعود هر بعد"
             },
             {
               "step": "۲",
               "time": "۵۰ د",
-              "title": "سطوح و Schwarz",
+              "title": "نردبان ۱–۵ + Schwarz",
               "desc": "§۷–§۸"
             },
             {
               "step": "۳",
               "time": "۶۰ د",
-              "title": "کارگاه radar",
-              "desc": "§۹–§۱۰ + debrief"
+              "title": "Siemens · DT + کارگاه radar",
+              "desc": "§۹ + امتیازدهی گروهی"
             }
           ]
         },

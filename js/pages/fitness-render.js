@@ -198,17 +198,63 @@
         const kind = typeof secOrKind === 'string' ? secOrKind : null;
         const sec = typeof secOrKind === 'object' ? secOrKind : null;
 
-        if (sec?.image) return base + sec.image;
+        if (sec?.image) return base + String(sec.image).replace(/^\//, '');
+
+        const sectionImages = {
+            m1: {
+                problem: 'assets/fitness/slides/m1-problem.svg',
+                'readiness-vs-fitness': 'assets/fitness/slides/m1-readiness-vs-fitness.svg',
+                cases: 'assets/fitness/slides/m1-cases-photo.png',
+                syllabus: 'assets/fitness/slides/m1-syllabus.svg',
+                workshop: 'assets/fitness/slides/m1-workshop.svg'
+            },
+            m2: {
+                intro: 'assets/fitness/slides/m2-five-dims.svg',
+                information: 'assets/fitness/slides/m2-five-dims.svg',
+                methods: 'assets/fitness/slides/m2-five-dims.svg',
+                people: 'assets/fitness/slides/m2-five-dims.svg',
+                organization: 'assets/fitness/slides/m2-five-dims.svg',
+                culture: 'assets/fitness/slides/m2-five-dims.svg',
+                levels: 'assets/fitness/slides/m2-levels.svg',
+                schwarz: 'assets/fitness/slides/m2-radar-photo.png',
+                cases: 'assets/fitness/slides/m2-radar-photo.png'
+            },
+            m3: {
+                scanning: 'assets/fitness/slides/m3-scanning.svg',
+                'weak-signals': 'assets/fitness/slides/m3-scanning.svg',
+                'radar-rings': 'assets/fitness/slides/m3-radar-photo.png',
+                'dt-health': 'assets/fitness/slides/m3-radar.svg'
+            },
+            m4: {
+                roles: 'assets/fitness/slides/m4-roles.svg',
+                midterm: 'assets/fitness/slides/m4-midterm.svg'
+            },
+            m5: {
+                probing: 'assets/fitness/slides/m5-probing.svg',
+                memo: 'assets/fitness/slides/m5-memo.svg'
+            },
+            m6: {
+                archetypes: 'assets/fitness/slides/m6-archetypes-photo.png'
+            },
+            m7: {
+                integration: 'assets/fitness/slides/m7-integration.svg',
+                final: 'assets/fitness/slides/m7-final.svg'
+            }
+        };
+
         if (sec?.id) {
-            const pngMap = {
+            const mid = fitnessModuleId(m);
+            const mapped = sectionImages[mid]?.[sec.id];
+            if (mapped) return base + mapped;
+            const legacyPng = {
                 'm1-cases': 'assets/fitness/slides/m1-cases-photo.png',
                 'm2-five-dims': 'assets/fitness/slides/m2-radar-photo.png',
                 'm3-radar': 'assets/fitness/slides/m3-radar-photo.png',
                 'm6-archetypes': 'assets/fitness/slides/m6-archetypes-photo.png'
             };
-            const pngKey = `${m.id}-${sec.id}`;
-            if (pngMap[pngKey]) return base + pngMap[pngKey];
-            return `${base}assets/fitness/slides/${m.id}-${sec.id}.svg`;
+            const pngKey = `${mid}-${sec.id}`;
+            if (legacyPng[pngKey]) return base + legacyPng[pngKey];
+            return base + `assets/fitness/slides/${mid}-${sec.id}.svg`;
         }
         if (kind === 'cover') {
             return m.visual ? base + m.visual : `${base}assets/fitness/slides/hero-cover.png`;
@@ -216,10 +262,21 @@
         if (kind === 'readings' || kind === 'assignment' || kind === 'sessions') {
             return `${base}assets/fitness/slides/${kind}.svg`;
         }
-        return m.visual ? base + m.visual : '';
+        return m.visual ? base + m.visual : `${base}assets/fitness/modules/${fitnessModuleId(m)}-maturity.svg`.replace('m1-maturity', 'm1-foundations');
     }
 
-    function buildSlideFigure(imgUrl, caption, alt) {
+    function moduleVisualUrl(m) {
+        const base = window.SFH_BASE || './';
+        if (m.visual) return base + m.visual;
+        const id = fitnessModuleId(m);
+        const names = {
+            m1: 'm1-foundations', m2: 'm2-maturity', m3: 'm3-perceiving', m4: 'm4-prospecting',
+            m5: 'm5-probing', m6: 'm6-archetypes', m7: 'm7-integration'
+        };
+        return `${base}assets/fitness/modules/${names[id] || id}.svg`;
+    }
+
+    function buildSlideFigure(imgUrl, caption, alt, fallbackUrl) {
         if (!imgUrl) return '';
         let capHtml = '';
         if (caption) {
@@ -228,9 +285,10 @@
                 '<span dir="ltr" class="fitness-pres-ltr">$1</span>'
             );
         }
+        const fb = fallbackUrl ? esc(fallbackUrl) : '';
         return `
             <figure class="fitness-pres-figure">
-                <img class="fitness-pres-img" src="${esc(imgUrl)}" alt="${esc(alt || caption || '')}" loading="lazy" decoding="async" />
+                <img class="fitness-pres-img" src="${esc(imgUrl)}" alt="${esc(alt || caption || '')}" loading="lazy" decoding="async"${fb ? ` data-fallback="${fb}" onerror="if(this.dataset.fallback&&this.src!==this.dataset.fallback){this.src=this.dataset.fallback;this.onerror=null;}"` : ''} />
                 ${capHtml ? `<figcaption class="fitness-pres-caption">${capHtml}</figcaption>` : ''}
             </figure>`;
     }
@@ -317,13 +375,14 @@
             const { heading } = parseSectionTitle(sec.title);
             const title = slideTitle || heading || sec.title || '';
             const stripLabel = slideTitle || slideHeadingFromParagraph(paras[pi]);
+            const cap = sec.imageCaption || (pi === 0 ? (m.visualCaption || '') : '');
 
             return {
                 kind: 'content',
                 eyebrow,
                 title,
                 image: pi === 0 ? image : '',
-                imageCaption: pi === 0 ? caption : '',
+                imageCaption: cap,
                 body: buildSectionSlideBody(sec, pi, stripLabel)
             };
         });
@@ -334,6 +393,7 @@
         const readingsList = moduleReadingsList(m);
         const moduleTag = m.num || '';
         const visualUrl = m.visual ? base + m.visual : '';
+        const visualFallback = moduleVisualUrl(m);
         const slides = [];
 
         slides.push({
@@ -456,7 +516,7 @@
                             <p class="fitness-pres-subtitle">${esc(s.subtitle || '')}</p>
                             ${s.intro ? `<div class="fitness-pres-cover-box">${prepPresHtml(s.intro)}</div>` : ''}
                         </div>
-                        ${buildSlideFigure(coverImg, m.visualCaption || '', s.title || '')}
+                        ${buildSlideFigure(coverImg, m.visualCaption || '', s.title || '', visualFallback)}
                     </div>`;
             } else {
                 const hasFigure = Boolean(s.image);
@@ -468,7 +528,7 @@
                             <div class="fitness-pres-glass">
                                 <div class="fitness-pres-body">${s.body || ''}</div>
                             </div>
-                            ${hasFigure ? buildSlideFigure(s.image, s.imageCaption || '', s.title || '') : ''}
+                            ${hasFigure ? buildSlideFigure(s.image, s.imageCaption || '', s.title || '', visualFallback) : ''}
                         </div>
                     </div>`;
             }
