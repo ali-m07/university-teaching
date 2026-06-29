@@ -7,10 +7,11 @@
 
     async function load() {
         const langs = ['fa', 'en'];
+        const localeVersion = '39';
         try {
             await Promise.all(
                 langs.map(async (lang) => {
-                    const url = `${base}locales/${lang}.json`;
+                    const url = `${base}locales/${lang}.json?v=${localeVersion}`;
                     const res = await fetch(url);
                     if (!res.ok) throw new Error(`${url} → ${res.status}`);
                     window.I18N[lang] = await res.json();
