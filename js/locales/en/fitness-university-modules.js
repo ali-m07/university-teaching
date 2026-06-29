@@ -177,10 +177,16 @@ registerLocale('en', {
                         { type: 'Paper', text: 'Rohrbeck & Schwarz (2013) TFSC.' }
                     ],
                     assignment: {
-                        title: 'Five-dimension radar chart',
-                        body: ['Score 1–5 per dimension with team consensus.', 'Radar chart + half-page explanation of field evidence for weakest dimension.', 'Deadline week 4'],
-                        format: 'One-page chart + explanation',
-                        criteria: ['All five dimensions covered', 'Specific evidence cited']
+                        title: 'Maturity audit for a real organization',
+                        description: 'Turn the five dimensions into a defensible diagnosis, not a decorative chart.',
+                        body: [
+                            'Score all five dimensions at levels 1–5 through explicit team consensus.',
+                            'Submit one radar chart plus a short analytical note explaining why the weakest dimension is the real bottleneck.',
+                            'Ground the note in at least two concrete field signals: interview evidence, internal process detail, operating practice, or documentary evidence.',
+                            'Close with one sentence on what this weakest dimension will later imply for Prospecting or Probing.'
+                        ],
+                        format: 'One-page radar + 250–350 word note · deadline: week 4',
+                        criteria: ['All five dimensions scored with clear logic', 'Weakest dimension justified with concrete evidence', 'Link to later gate/probing logic is credible']
                     },
                     sessions: [
                         { step: '1', time: '50 min', title: 'Five dimensions', desc: '§1–§2' },
