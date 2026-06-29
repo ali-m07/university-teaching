@@ -1,6 +1,6 @@
 {
   "lang": {
-    "label": "فارسی",
+    "label": "Persian",
     "switch": "FA"
   },
   "nav": {
@@ -3417,6 +3417,7 @@
         "tab": "1. Initiator Role",
         "title": "1. Initiator — Spark of Innovation",
         "desc": "The Initiator operates in the <strong>Perceiving</strong> phase: continuously scanning the external environment, discovering emerging trends, and converting them into initial innovation concepts.",
+        "narrative": "In practice, the initiator is usually the foresight unit, technology radar, venture arm, or a small strategy cell, not a fixed job title. Its job is to name and prioritize a signal before budget approval. If IT2 is used, this is the phase where expert FOU bands are first mapped.",
         "duties": [
           "Launch and maintain technology radars and emerging trend monitoring.",
           "Identify weak signals of change before they become mainstream.",
@@ -3428,6 +3429,7 @@
         "tab": "2. Strategist Role",
         "title": "2. Strategist — Investment Portfolio Guide",
         "desc": "The Strategist operates in the <strong>Prospecting</strong> phase: steering innovation investment portfolios based on future scenarios and organizational strategy.",
+        "narrative": "The strategist connects perceiving outputs to budget gates: horizon 1 optimization, horizon 2 experiments, horizon 3 option value. At Nvidia, this role gradually moved the R&D portfolio toward CUDA and AI data centers through repeated portfolio choices, not a single workshop.",
         "duties": [
           "Develop offensive and defensive foresight scenarios for the industry.",
           "Draw technology roadmaps to align departments.",
@@ -3439,6 +3441,7 @@
         "tab": "3. Opponent Role",
         "title": "3. Opponent — Devil's Advocate",
         "desc": "The Opponent operates in the <strong>Probing</strong> phase: challenging rigid assumptions, critically evaluating projects, and preventing management confirmation bias.",
+        "narrative": "The opponent matters most when the current revenue model still looks healthy. Blockbuster and Nokia both lacked a strong internal opponent. Apple effectively played that role when the iPhone cannibalized the iPod before a rival could do it first.",
         "duties": [
           "Run harsh scenarios to test project survival and resilience.",
           "Conduct war-gaming to expose internal weaknesses.",

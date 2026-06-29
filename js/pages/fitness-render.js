@@ -19,21 +19,23 @@
         return presLang() === 'fa' ? 'rtl' : 'ltr';
     }
 
-    /** Wrap Latin runs so Persian+English paragraphs don't break bidi layout */
+    /** Keep source prose intact; broad LTR wrapping was breaking RTL punctuation and anchors. */
     function isolateLatinRuns(html) {
+        return html;
+    }
+
+    function normalizePresentationFaText(html) {
         if (!html || presLang() !== 'fa') return html;
-        if (/<span[^>]*fitness-pres-ltr/i.test(html)) return html;
-        return html.split(/(<[^>]+>)/g).map(part => {
-            if (!part || part.startsWith('<')) return part;
-            return part.replace(
-                /([A-Za-z0-9][A-Za-z0-9\s\-→↔·.,'"/&()%+:;–—]*[A-Za-z0-9)"']|[A-Za-z]+)/g,
-                m => `<span lang="en" dir="ltr" class="fitness-pres-ltr">${m}</span>`
-            );
-        }).join('');
+        return String(html)
+            .replace(/—/g, '،')
+            .replace(/#/g, '')
+            .replace(/\btech-radar\b/gi, 'رادار تعاملی')
+            .replace(/\bassessment\b/gi, 'ارزیابی')
+            .replace(/\bpilot\b/gi, 'آزمون آزمایشی');
     }
 
     function prepPresHtml(html) {
-        return isolateLatinRuns(html);
+        return normalizePresentationFaText(isolateLatinRuns(html));
     }
 
     function esc(s) {
@@ -152,12 +154,13 @@
     }
 
     function moduleReadingsList(m) {
+        const readingType = tF('moduleReadingsTitle');
         if (Array.isArray(m.readings)) return m.readings;
         if (typeof m.readings === 'string' && m.readings.trim()) {
-            return [{ type: 'مطالعه', text: m.readings }];
+            return [{ type: readingType, text: m.readings }];
         }
         if (typeof m.readingsShort === 'string' && m.readingsShort.trim()) {
-            return [{ type: 'مطالعه', text: m.readingsShort }];
+            return [{ type: readingType, text: m.readingsShort }];
         }
         return [];
     }
@@ -397,8 +400,8 @@
                 kind: 'content',
                 eyebrow,
                 title,
-                image: pi === 0 ? image : '',
-                imageCaption: cap,
+                image,
+                imageCaption: cap || caption,
                 body: buildSectionSlideBody(sec, pi, stripLabel)
             };
         });
