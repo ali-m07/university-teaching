@@ -1,6 +1,9 @@
 /**
- * Merge js/locales/{fa,en}/*.js → public/locales/{fa,en}.json
- * Run: node scripts/merge-locales-json.js
+ * Merge locale source modules into both runtime targets:
+ * - public/locales/{lang}.json   for the Vite/dev-server path
+ * - locales/{lang}.json          for static root serving / GitHub Pages fallbacks
+ *
+ * Run: node scripts/merge-locales-json.cjs
  */
 const fs = require('fs');
 const path = require('path');
@@ -9,6 +12,10 @@ const vm = require('vm');
 const ROOT = path.join(__dirname, '..');
 const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'fitness', 'fitness-university-modules', 'cla', 'wheel', 'backcast'];
 const LANGS = ['fa', 'en'];
+const OUTPUT_DIRS = [
+    path.join(ROOT, 'public', 'locales'),
+    path.join(ROOT, 'locales')
+];
 
 function deepMerge(target, source) {
     if (!source || typeof source !== 'object') return target;
@@ -251,8 +258,12 @@ function buildCatalog(lang) {
     };
 }
 
-const outDir = path.join(ROOT, 'public', 'locales');
-fs.mkdirSync(outDir, { recursive: true });
+function writeLocaleOutputs(lang, payload) {
+    OUTPUT_DIRS.forEach((dir) => {
+        fs.mkdirSync(dir, { recursive: true });
+        fs.writeFileSync(path.join(dir, `${lang}.json`), payload, 'utf8');
+    });
+}
 
 for (const lang of LANGS) {
     const merged = {};
@@ -260,12 +271,8 @@ for (const lang of LANGS) {
         deepMerge(merged, loadLocaleFile(lang, mod));
     }
     merged.catalog = buildCatalog(lang);
-    const out = path.join(outDir, `${lang}.json`);
-    fs.writeFileSync(out, JSON.stringify(merged, null, 2), 'utf8');
-    // Also write to /locales for static servers serving repo root (no Vite)
-    const rootOut = path.join(ROOT, 'locales', `${lang}.json`);
-    fs.mkdirSync(path.dirname(rootOut), { recursive: true });
-    fs.writeFileSync(rootOut, JSON.stringify(merged, null, 2), 'utf8');
+    const payload = JSON.stringify(merged, null, 2);
+    writeLocaleOutputs(lang, payload);
     const count = merged.catalog.categories.reduce((n, c) => n + c.methods.length, 0);
-    console.log(`Wrote ${out} (${count} catalog methods)`);
+    console.log(`Wrote ${lang}.json to ${OUTPUT_DIRS.length} targets (${count} catalog methods)`);
 }

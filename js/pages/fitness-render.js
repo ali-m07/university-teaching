@@ -2,6 +2,89 @@
  * Fitness page · theory, university/industry tracks, module nav, IT2 bridge
  */
 (function () {
+    const FITNESS_BASE_FALLBACK = './';
+    const FA_PRESENTATION_REPLACEMENTS = [
+        [/—/g, '،'],
+        [/#/g, ''],
+        [/\btech-radar\b/gi, 'رادار تعاملی'],
+        [/\bassessment\b/gi, 'ارزیابی'],
+        [/\bpilot\b/gi, 'آزمون آزمایشی']
+    ];
+    const FITNESS_SECTION_IMAGES = {
+        m1: {
+            problem: 'assets/fitness/slides/m1-problem.svg',
+            'readiness-vs-fitness': 'assets/fitness/slides/m1-readiness-vs-fitness.svg',
+            cases: 'assets/fitness/slides/m1-cases-photo.png',
+            syllabus: 'assets/fitness/slides/m1-syllabus.svg',
+            workshop: 'assets/fitness/slides/m1-workshop.svg'
+        },
+        m2: {
+            intro: 'assets/fitness/slides/m2-five-dims.svg',
+            information: 'assets/fitness/slides/m2-five-dims.svg',
+            methods: 'assets/fitness/slides/m2-five-dims.svg',
+            people: 'assets/fitness/slides/m2-five-dims.svg',
+            organization: 'assets/fitness/slides/m2-five-dims.svg',
+            culture: 'assets/fitness/slides/m2-five-dims.svg',
+            levels: 'assets/fitness/slides/m2-levels.svg',
+            schwarz: 'assets/fitness/slides/m2-radar-photo.png',
+            cases: 'assets/fitness/slides/m2-radar-photo.png'
+        },
+        m3: {
+            scanning: 'assets/fitness/slides/m3-scanning.svg',
+            'weak-signals': 'assets/fitness/slides/m3-scanning.svg',
+            'radar-rings': 'assets/fitness/slides/m3-radar-photo.png',
+            'dt-cases': 'assets/fitness/slides/m3-radar.svg',
+            'workshop-link': 'assets/fitness/slides/m3-radar-photo.png'
+        },
+        m4: {
+            roles: 'assets/fitness/slides/m4-roles.svg',
+            horizons: 'assets/fitness/slides/m4-roles.svg',
+            'scenario-gate': 'assets/fitness/slides/m4-midterm.svg',
+            cases: 'assets/fitness/slides/m4-roles.svg',
+            midterm: 'assets/fitness/slides/m4-midterm.svg'
+        },
+        m5: {
+            'probing-concept': 'assets/fitness/slides/m5-probing.svg',
+            'ninety-day': 'assets/fitness/slides/m5-probing.svg',
+            venturing: 'assets/fitness/slides/m5-probing.svg',
+            'blockbuster-netflix': 'assets/fitness/slides/m5-probing.svg',
+            'memo-gate': 'assets/fitness/slides/m5-memo.svg',
+            template: 'assets/fitness/slides/m5-memo.svg'
+        },
+        m6: {
+            archetypes: 'assets/fitness/slides/m6-archetypes-photo.png',
+            'turbulence-matrix': 'assets/fitness/slides/m6-archetypes.svg',
+            transformation: 'assets/fitness/slides/m6-archetypes.svg',
+            'case-clinic': 'assets/fitness/slides/m6-archetypes-photo.png',
+            'workshop-archetype': 'assets/fitness/slides/m6-archetypes.svg'
+        },
+        m7: {
+            cla: 'assets/fitness/slides/m7-integration.svg',
+            wheel: 'assets/fitness/slides/m7-integration.svg',
+            it2: 'assets/fitness/slides/m7-integration.svg',
+            synthesis: 'assets/fitness/slides/m7-integration.svg',
+            'final-project': 'assets/fitness/slides/m7-final.svg',
+            presentation: 'assets/fitness/slides/m7-final.svg'
+        }
+    };
+    const FITNESS_LEGACY_SLIDE_IMAGES = {
+        'm1-cases': 'assets/fitness/slides/m1-cases-photo.png',
+        'm2-five-dims': 'assets/fitness/slides/m2-radar-photo.png',
+        'm3-radar': 'assets/fitness/slides/m3-radar-photo.png',
+        'm6-archetypes': 'assets/fitness/slides/m6-archetypes-photo.png'
+    };
+    const FITNESS_MODULE_VISUAL_NAMES = {
+        m1: 'm1-foundations',
+        m2: 'm2-maturity',
+        m3: 'm3-perceiving',
+        m4: 'm4-prospecting',
+        m5: 'm5-probing',
+        m6: 'm6-archetypes',
+        m7: 'm7-integration'
+    };
+    const FITNESS_WORKSHOP_HASHES = ['#assessment', '#tech-radar', '#maturity-archetypes', '#foresight-roles', '#fitness-formula', '#workshop'];
+    const FITNESS_WORKSHOP_HASH_KEYS = ['assessment', 'tech-radar', 'maturity-archetypes', 'foresight-roles', 'fitness-formula'];
+
     function pgF(key) {
         return typeof pg === 'function' ? pg(key) : null;
     }
@@ -19,23 +102,20 @@
         return presLang() === 'fa' ? 'rtl' : 'ltr';
     }
 
-    /** Keep source prose intact; broad LTR wrapping was breaking RTL punctuation and anchors. */
-    function isolateLatinRuns(html) {
-        return html;
+    function fitnessBase() {
+        return window.SFH_BASE || FITNESS_BASE_FALLBACK;
     }
 
     function normalizePresentationFaText(html) {
         if (!html || presLang() !== 'fa') return html;
-        return String(html)
-            .replace(/—/g, '،')
-            .replace(/#/g, '')
-            .replace(/\btech-radar\b/gi, 'رادار تعاملی')
-            .replace(/\bassessment\b/gi, 'ارزیابی')
-            .replace(/\bpilot\b/gi, 'آزمون آزمایشی');
+        return FA_PRESENTATION_REPLACEMENTS.reduce(
+            (text, [pattern, replacement]) => text.replace(pattern, replacement),
+            String(html)
+        );
     }
 
     function prepPresHtml(html) {
-        return normalizePresentationFaText(isolateLatinRuns(html));
+        return normalizePresentationFaText(html);
     }
 
     function esc(s) {
@@ -187,6 +267,41 @@
             ${a.criteria?.length ? `<p><strong>${esc(tF('labelCriteria'))}:</strong></p><ul class="type2-checklist">${a.criteria.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}`;
     }
 
+    function chunkArray(arr, size) {
+        const out = [];
+        for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+        return out;
+    }
+
+    function buildReadingsChunkBody(chunk, total) {
+        const intro = total > 1
+            ? (presLang() === 'fa'
+                ? 'این منابع برای عمیق‌تر کردن بحث همان ماژول انتخاب شده‌اند و قرار نیست جدا از محتوای درس خوانده شوند.'
+                : 'These readings deepen the same module discussion and are meant to be read as part of the session, not apart from it.')
+            : (presLang() === 'fa'
+                ? 'این منبع اصلی همان ماژول است و بهتر است همراه با اسلایدهای جلسه خوانده شود.'
+                : 'This is the core reading for the module and works best alongside the session slides.');
+
+        return `
+            ${buildProse([intro], { allowHtml: true })}
+            <ul class="lesson-readings-list">
+                ${chunk.map(r => `<li><span class="lesson-reading-type">${esc(r.type || '')}</span> ${r.text || ''}</li>`).join('')}
+            </ul>`;
+    }
+
+    function buildSessionsChunkBody(chunk) {
+        return `<div class="type2-sessions-grid fitness-module-sessions">
+            ${chunk.map(s => `
+                <article class="type2-session-card">
+                    <div class="type2-session-head">
+                        <span class="type2-session-num">${esc(s.step)}</span>
+                        <div><h4>${esc(s.title)}</h4><span class="type2-session-time">${esc(s.time)}</span></div>
+                    </div>
+                    <p class="type2-session-activity">${esc(s.desc || '')}</p>
+                </article>`).join('')}
+        </div>`;
+    }
+
     function buildAssignmentBlock(a) {
         if (!a) return '';
         return `
@@ -197,82 +312,18 @@
     }
 
     function slideImageUrl(m, secOrKind) {
-        const base = window.SFH_BASE || './';
+        const base = fitnessBase();
         const kind = typeof secOrKind === 'string' ? secOrKind : null;
         const sec = typeof secOrKind === 'object' ? secOrKind : null;
 
         if (sec?.image) return base + String(sec.image).replace(/^\//, '');
 
-        const sectionImages = {
-            m1: {
-                problem: 'assets/fitness/slides/m1-problem.svg',
-                'readiness-vs-fitness': 'assets/fitness/slides/m1-readiness-vs-fitness.svg',
-                cases: 'assets/fitness/slides/m1-cases-photo.png',
-                syllabus: 'assets/fitness/slides/m1-syllabus.svg',
-                workshop: 'assets/fitness/slides/m1-workshop.svg'
-            },
-            m2: {
-                intro: 'assets/fitness/slides/m2-five-dims.svg',
-                information: 'assets/fitness/slides/m2-five-dims.svg',
-                methods: 'assets/fitness/slides/m2-five-dims.svg',
-                people: 'assets/fitness/slides/m2-five-dims.svg',
-                organization: 'assets/fitness/slides/m2-five-dims.svg',
-                culture: 'assets/fitness/slides/m2-five-dims.svg',
-                levels: 'assets/fitness/slides/m2-levels.svg',
-                schwarz: 'assets/fitness/slides/m2-radar-photo.png',
-                cases: 'assets/fitness/slides/m2-radar-photo.png'
-            },
-            m3: {
-                scanning: 'assets/fitness/slides/m3-scanning.svg',
-                'weak-signals': 'assets/fitness/slides/m3-scanning.svg',
-                'radar-rings': 'assets/fitness/slides/m3-radar-photo.png',
-                'dt-cases': 'assets/fitness/slides/m3-radar.svg',
-                'workshop-link': 'assets/fitness/slides/m3-radar-photo.png'
-            },
-            m4: {
-                roles: 'assets/fitness/slides/m4-roles.svg',
-                horizons: 'assets/fitness/slides/m4-roles.svg',
-                'scenario-gate': 'assets/fitness/slides/m4-midterm.svg',
-                cases: 'assets/fitness/slides/m4-roles.svg',
-                midterm: 'assets/fitness/slides/m4-midterm.svg'
-            },
-            m5: {
-                'probing-concept': 'assets/fitness/slides/m5-probing.svg',
-                'ninety-day': 'assets/fitness/slides/m5-probing.svg',
-                venturing: 'assets/fitness/slides/m5-probing.svg',
-                'blockbuster-netflix': 'assets/fitness/slides/m5-probing.svg',
-                'memo-gate': 'assets/fitness/slides/m5-memo.svg',
-                template: 'assets/fitness/slides/m5-memo.svg'
-            },
-            m6: {
-                archetypes: 'assets/fitness/slides/m6-archetypes-photo.png',
-                'turbulence-matrix': 'assets/fitness/slides/m6-archetypes.svg',
-                transformation: 'assets/fitness/slides/m6-archetypes.svg',
-                'case-clinic': 'assets/fitness/slides/m6-archetypes-photo.png',
-                'workshop-archetype': 'assets/fitness/slides/m6-archetypes.svg'
-            },
-            m7: {
-                cla: 'assets/fitness/slides/m7-integration.svg',
-                wheel: 'assets/fitness/slides/m7-integration.svg',
-                it2: 'assets/fitness/slides/m7-integration.svg',
-                synthesis: 'assets/fitness/slides/m7-integration.svg',
-                'final-project': 'assets/fitness/slides/m7-final.svg',
-                presentation: 'assets/fitness/slides/m7-final.svg'
-            }
-        };
-
         if (sec?.id) {
             const mid = fitnessModuleId(m);
-            const mapped = sectionImages[mid]?.[sec.id];
+            const mapped = FITNESS_SECTION_IMAGES[mid]?.[sec.id];
             if (mapped) return base + mapped;
-            const legacyPng = {
-                'm1-cases': 'assets/fitness/slides/m1-cases-photo.png',
-                'm2-five-dims': 'assets/fitness/slides/m2-radar-photo.png',
-                'm3-radar': 'assets/fitness/slides/m3-radar-photo.png',
-                'm6-archetypes': 'assets/fitness/slides/m6-archetypes-photo.png'
-            };
             const pngKey = `${mid}-${sec.id}`;
-            if (legacyPng[pngKey]) return base + legacyPng[pngKey];
+            if (FITNESS_LEGACY_SLIDE_IMAGES[pngKey]) return base + FITNESS_LEGACY_SLIDE_IMAGES[pngKey];
             return base + `assets/fitness/slides/${mid}-${sec.id}.svg`;
         }
         if (kind === 'cover') {
@@ -285,14 +336,10 @@
     }
 
     function moduleVisualUrl(m) {
-        const base = window.SFH_BASE || './';
+        const base = fitnessBase();
         if (m.visual) return base + m.visual;
         const id = fitnessModuleId(m);
-        const names = {
-            m1: 'm1-foundations', m2: 'm2-maturity', m3: 'm3-perceiving', m4: 'm4-prospecting',
-            m5: 'm5-probing', m6: 'm6-archetypes', m7: 'm7-integration'
-        };
-        return `${base}assets/fitness/modules/${names[id] || id}.svg`;
+        return `${base}assets/fitness/modules/${FITNESS_MODULE_VISUAL_NAMES[id] || id}.svg`;
     }
 
     function buildSlideFigure(imgUrl, caption, alt, fallbackUrl) {
@@ -443,7 +490,7 @@
     }
 
     function buildModuleDeckHtml(m) {
-        const base = window.SFH_BASE || './';
+        const base = fitnessBase();
         const readingsList = moduleReadingsList(m);
         const moduleTag = m.num || '';
         const visualUrl = m.visual ? base + m.visual : '';
@@ -469,14 +516,14 @@
         const splitAncillary = paraCount < 14;
 
         if (readingsList.length) {
-            if (splitAncillary) {
-                readingsList.forEach((r, ri) => {
+            if (splitAncillary && readingsList.length > 2) {
+                chunkArray(readingsList, 2).forEach((chunk, ri) => {
                     slides.push({
                         kind: 'content',
                         eyebrow: `${moduleTag} · ${tF('moduleReadingsTitle')}`,
-                        title: r.type || tF('moduleReadingsTitle'),
-                        image: ri === 0 ? slideImageUrl(m, 'readings') : '',
-                        body: `<p class="fitness-reading-slide">${r.text || ''}</p>`
+                        title: ri === 0 ? tF('moduleReadingsTitle') : `${tF('moduleReadingsTitle')} · ${ri + 1}`,
+                        image: slideImageUrl(m, 'readings'),
+                        body: buildReadingsChunkBody(chunk, readingsList.length)
                     });
                 });
             } else {
@@ -485,8 +532,7 @@
                     eyebrow: moduleTag,
                     title: tF('moduleReadingsTitle'),
                     image: slideImageUrl(m, 'readings'),
-                    body: `<ul class="lesson-readings-list">${readingsList.map(r =>
-                        `<li><span class="lesson-reading-type">${esc(r.type || '')}</span> ${r.text || ''}</li>`).join('')}</ul>`
+                    body: buildReadingsChunkBody(readingsList, readingsList.length)
                 });
             }
         }
@@ -529,14 +575,14 @@
         }
 
         if (m.sessions?.length) {
-            if (splitAncillary) {
-                m.sessions.forEach((s, si) => {
+            if (splitAncillary && m.sessions.length > 2) {
+                chunkArray(m.sessions, 2).forEach((chunk, si) => {
                     slides.push({
                         kind: 'content',
                         eyebrow: `${moduleTag} · ${tF('moduleSessionsTitle')}`,
-                        title: s.title || tF('moduleSessionsTitle'),
-                        image: si === 0 ? slideImageUrl(m, 'sessions') : '',
-                        body: `<p><strong>${esc(s.time || '')}</strong>${s.desc ? ` · ${esc(s.desc)}` : ''}</p>`
+                        title: si === 0 ? tF('moduleSessionsTitle') : `${tF('moduleSessionsTitle')} · ${si + 1}`,
+                        image: slideImageUrl(m, 'sessions'),
+                        body: buildSessionsChunkBody(chunk)
                     });
                 });
             } else {
@@ -882,7 +928,7 @@
         if (!target) return;
         const tracksRoot = document.getElementById('fitness-tracks');
         const inWorkshop = target.closest('#fitness-workshop-mount') ||
-            ['#assessment', '#tech-radar', '#maturity-archetypes', '#foresight-roles', '#fitness-formula', '#workshop'].includes(href);
+            FITNESS_WORKSHOP_HASHES.includes(href);
         if (inWorkshop && tracksRoot) {
             activateFitnessTab(tracksRoot, 'workshop');
         } else if (tracksRoot && /^#m[1-7]$/.test(href)) {
@@ -919,7 +965,7 @@
         const raw = (location.hash || '').replace('#', '').toLowerCase();
         if (raw === 'industry') return { track: 'industry', module: null, anchor: null };
         if (raw === 'workshop') return { track: 'workshop', module: null, anchor: null };
-        if (['assessment', 'tech-radar', 'maturity-archetypes', 'foresight-roles', 'fitness-formula'].includes(raw)) {
+        if (FITNESS_WORKSHOP_HASH_KEYS.includes(raw)) {
             return { track: 'workshop', module: null, anchor: `#${raw}` };
         }
         if (/^m[1-7]$/.test(raw)) return { track: 'university', module: raw, anchor: null };
