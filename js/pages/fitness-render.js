@@ -348,14 +348,15 @@
 
     function buildSectionSlideBody(sec, paragraphIndex, stripLabel) {
         const paras = sec.paragraphs || [];
-        const isLast = paragraphIndex === undefined || paragraphIndex >= paras.length - 1;
-        const slice = paragraphIndex !== undefined && paras.length
-            ? [paras[paragraphIndex]]
-            : paras;
+        const indices = Array.isArray(paragraphIndex)
+            ? paragraphIndex
+            : (paragraphIndex !== undefined && paras.length ? [paragraphIndex] : paras.map((_, i) => i));
+        const isLast = !indices.length || indices[indices.length - 1] >= paras.length - 1;
+        const slice = indices.length ? indices.map(i => paras[i]).filter(Boolean) : paras;
 
         const prose = slice.filter(Boolean).map(p => {
             let html = prepPresHtml(p);
-            if (stripLabel) html = stripLeadingLabel(html, stripLabel);
+            if (stripLabel && p === slice[0]) html = stripLeadingLabel(html, stripLabel);
             return html;
         });
 
@@ -367,6 +368,39 @@
                     <h4>${sec.callout.title || ''}</h4>
                     ${buildProse([prepPresHtml(sec.callout.body)], { allowHtml: true })}
                 </aside>` : ''}`;
+    }
+
+    function plainTextLength(html) {
+        return String(html || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().length;
+    }
+
+    function paragraphGroups(sec) {
+        const paras = sec.paragraphs || [];
+        if (paras.length <= 1) return paras.map((_, i) => [i]);
+
+        const groups = [];
+        let i = 0;
+        while (i < paras.length) {
+            const currentLen = plainTextLength(paras[i]);
+            const nextLen = plainTextLength(paras[i + 1]);
+            const currentTitle = resolveSlideHeading(sec, i);
+            const nextTitle = resolveSlideHeading(sec, i + 1);
+            const canPair =
+                i + 1 < paras.length &&
+                currentLen <= 260 &&
+                nextLen <= 260 &&
+                (currentLen + nextLen) <= 420 &&
+                (!!currentTitle || !!nextTitle || paras.length >= 4);
+
+            if (canPair) {
+                groups.push([i, i + 1]);
+                i += 2;
+            } else {
+                groups.push([i]);
+                i += 1;
+            }
+        }
+        return groups;
     }
 
     function expandSectionToSlides(m, sec) {
@@ -389,12 +423,13 @@
             }];
         }
 
-        return paras.map((_, pi) => {
-            const slideTitle = resolveSlideHeading(sec, pi);
+        return paragraphGroups(sec).map((group, gi) => {
+            const firstIndex = group[0];
+            const slideTitle = resolveSlideHeading(sec, firstIndex);
             const { heading } = parseSectionTitle(sec.title);
             const title = slideTitle || heading || sec.title || '';
-            const stripLabel = slideTitle || slideHeadingFromParagraph(paras[pi]);
-            const cap = sec.imageCaption || (pi === 0 ? (m.visualCaption || '') : '');
+            const stripLabel = slideTitle || slideHeadingFromParagraph(paras[firstIndex]);
+            const cap = sec.imageCaption || (gi === 0 ? (m.visualCaption || '') : '');
 
             return {
                 kind: 'content',
@@ -402,7 +437,7 @@
                 title,
                 image,
                 imageCaption: cap || caption,
-                body: buildSectionSlideBody(sec, pi, stripLabel)
+                body: buildSectionSlideBody(sec, group, stripLabel)
             };
         });
     }
