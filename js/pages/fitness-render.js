@@ -399,6 +399,7 @@
         const raw = String(html || '').trim();
         if (!raw) return '';
         if (/<\s*ul[\s>]/i.test(raw) || /<\s*ol[\s>]/i.test(raw)) return raw;
+
         const text = raw
             .replace(/<br\s*\/?>/gi, '\n')
             .replace(/<\/p>/gi, '\n')
@@ -406,15 +407,25 @@
             .replace(/\s+/g, ' ')
             .trim();
         if (!text) return raw;
-        const chunks = text
-            .split(/(?<=[.!?؟۔])\s+/)
+
+        let chunks = text
+            .split(/(?<=[.؟۔؛])\s+/)
             .map(s => s.trim())
             .filter(Boolean);
-        if (chunks.length <= 1 && text.length < 240) {
-            return `<p class="fitness-pres-lead">${raw.includes('<strong>') ? raw : text}</p>`;
+
+        // Long unpunctuated prose: soft-split on commas for scanability
+        if (chunks.length <= 1 && text.length > 220) {
+            const soft = text.split(/،\s+/).map(s => s.trim()).filter(Boolean);
+            if (soft.length >= 3) {
+                chunks = soft.slice(0, 5).map((s, i, arr) => (i < arr.length - 1 && !/[.؟۔؛]$/.test(s) ? `${s}.` : s));
+            }
         }
-        const items = (chunks.length > 1 ? chunks : [text]).slice(0, 5);
-        return `<ul class="fitness-pres-bullets">${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+
+        if (chunks.length <= 1) {
+            return `<p class="fitness-pres-lead">${raw.includes('<strong>') || raw.includes('<em>') ? raw : text}</p>`;
+        }
+
+        return `<ul class="fitness-pres-bullets">${chunks.slice(0, 5).map(item => `<li>${item}</li>`).join('')}</ul>`;
     }
 
     function buildSectionSlideBody(sec, paragraphIndex, stripLabel) {
