@@ -69,7 +69,7 @@
     if (window.__SFH_LOCALES_READY) boot();
     else window.addEventListener('localesready', boot, { once: true });
 
-    window.addEventListener('languagechange', () => {
+    window.addEventListener('langchange', () => {
         window.renderMethodDecks();
     });
 })();

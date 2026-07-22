@@ -81,7 +81,8 @@ registerLocale('en', {
                     ],
                     readings: [
                         { type: 'Article', text: 'Zadeh, L.A. (1965). Fuzzy sets. <em>Information and Control</em>.' },
-                        { type: 'Article', text: 'Zadeh, L.A. (1975). The concept of a linguistic variable. <em>Information Sciences</em>.' }
+                        { type: 'Article', text: 'Zadeh, L.A. (1975). The concept of a linguistic variable. <em>Information Sciences</em>.' },
+                        { type: 'Book (FA)', text: 'Bashirzadeh · Foundations of fuzzy logic · chapters 1 to 3.' }
                     ],
                     assignment: {
                         title: 'Linguistic label',

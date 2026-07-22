@@ -124,10 +124,8 @@ registerLocale('en', {
                             id: 'platform',
                             title: '2. Platform power',
                             slideTitles: [
-                                'Network litany',
-                                'Lock-in structures',
-                                'Ecosystem discourse',
-                                'Public-square metaphor'
+                                'Network litany and lock-in structure',
+                                'Ecosystem discourse and public-square metaphor'
                             ],
                             paragraphs: [
                                 'Litany: outages, addiction, algorithmic news. Structure: network effects, data lock-in, app-store fees.',
