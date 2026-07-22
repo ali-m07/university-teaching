@@ -10,7 +10,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.join(__dirname, '..');
-const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'fitness', 'fitness-university-modules', 'cla', 'cla-university-modules', 'wheel', 'wheel-university-modules', 'backcast', 'backcast-university-modules', 'scenarios-university-modules'];
+const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'type2-university-modules', 'fitness', 'fitness-university-modules', 'cla', 'cla-university-modules', 'wheel', 'wheel-university-modules', 'backcast', 'backcast-university-modules', 'scenarios-university-modules'];
 const LANGS = ['fa', 'en'];
 const OUTPUT_DIRS = [
     path.join(ROOT, 'public', 'locales'),
