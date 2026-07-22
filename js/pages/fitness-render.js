@@ -432,7 +432,7 @@
         });
 
         return `
-            ${buildProse(prose, { allowHtml: true })}
+            <div class="fitness-pres-prose">${prose.join('')}</div>
             ${isLast && sec.table ? `<div class="fitness-pres-table-wrap">${buildModuleTable(sec.table)}</div>` : ''}
             ${isLast && sec.callout ? `
                 <aside class="fitness-pres-callout">
