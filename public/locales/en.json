@@ -500,7 +500,251 @@
       "gapTitle": "FRM vs real scenario practice",
       "gap": "FRM Ch.19–21: Scenario, Toolbox, Interactive. Shell/Schwartz: a <strong>decision system</strong> with 2×2 and indicators. FRM mentions interactive scenarios; not Shell-style strategic survival.",
       "caseTitle": "Example: Iran energy axes",
-      "case": "Axis 1: energy transition speed (slow/fast). Axis 2: geopolitics (open/closed). Four scenarios: \"Regional green economy\", \"Fossil island\", \"Tech leap\", \"Chronic crisis\". Each implies different power investment policy."
+      "case": "Axis 1: energy transition speed (slow/fast). Axis 2: geopolitics (open/closed). Four scenarios: \"Regional green economy\", \"Fossil island\", \"Tech leap\", \"Chronic crisis\". Each implies different power investment policy.",
+      "moduleContentTag": "Lecture & slides",
+      "moduleDeckNavLabel": "Slide navigation",
+      "moduleDeckPrev": "Previous",
+      "moduleDeckNext": "Next",
+      "moduleDeckSlide": "Slide",
+      "moduleDeckFullscreen": "Fullscreen · F",
+      "moduleReadingsTitle": "Further reading",
+      "moduleAssignmentTitle": "Assignment",
+      "labelFormat": "Format",
+      "labelCriteria": "Grading criteria",
+      "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+      "university": {
+        "title": "Scenario Planning · three lecture decks",
+        "intro": "Based on Pierre Wack (Shell), Peter Schwartz, and van der Heijden. Scenarios as a decision tool under uncertainty, not single-line prediction.",
+        "modules": [
+          {
+            "num": "M1",
+            "id": "m1",
+            "pickerLabel": "Shell & mental prep",
+            "title": "Scenarios as strategic survival",
+            "hours": "75 min",
+            "readingsShort": "Wack 1985 HBR",
+            "visual": "assets/foresight_concept.png",
+            "visualCaption": "From story to decision system",
+            "lectureIntro": "Session 1 of <strong>strategic scenario planning</strong>: Shell and Wack. Scenarios are for mental preparedness, not for “correct prediction.”",
+            "lectureSections": [
+              {
+                "id": "shell",
+                "title": "1. Shell and 1973",
+                "slideTitles": [
+                  "Before the oil shock",
+                  "Managers’ mental readiness",
+                  "Difference from trend reports"
+                ],
+                "paragraphs": [
+                  "Shell had built scenarios before the 1973 oil shock that treated a price shock as plausible. Value was not numeric accuracy; it was decision readiness.",
+                  "Wack insisted scenarios must change managers’ mental models. If assumptions stay fixed, scenarios sit on a shelf.",
+                  "A trend report locks one future; a good scenario set builds several world logics and hardens decisions against surprise."
+                ]
+              },
+              {
+                "id": "not-forecast",
+                "title": "2. Scenario versus forecast",
+                "slideTitles": [
+                  "Operational definition",
+                  "Role of uncertainty",
+                  "Quality criteria"
+                ],
+                "paragraphs": [
+                  "A scenario is a coherent narrative of a possible future written for a specific decision.",
+                  "Without critical uncertainty, scenarios collapse into forecasts. Find two axes with highest impact and lowest certainty.",
+                  "Quality criteria: internal coherence, link to a decision, and monitorable early indicators."
+                ]
+              },
+              {
+                "id": "decision",
+                "title": "3. Focal decision first",
+                "slideTitles": [
+                  "No decision, entertainment",
+                  "Technology example",
+                  "Class drill"
+                ],
+                "paragraphs": [
+                  "Schwartz: without a clear focal decision, scenarios are entertainment.",
+                  "Example: “Should the organization build a proprietary LLM by 2029 or stay on external APIs?”",
+                  "Each group writes one focal decision for the term project and critiques it in class."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Article",
+                "text": "Wack, P. (1985). Scenarios: uncharted waters ahead. <em>Harvard Business Review</em>."
+              },
+              {
+                "type": "Book",
+                "text": "Schwartz, P. (1996). <em>The Art of the Long View</em>."
+              }
+            ],
+            "assignment": {
+              "title": "Focal decision",
+              "description": "Write one real strategic decision.",
+              "body": [
+                "One decision sentence + stakeholders + time horizon.",
+                "Two assumptions that, if wrong, break the decision."
+              ],
+              "format": "Half page",
+              "criteria": [
+                "Decision clarity",
+                "Room for a 2×2"
+              ]
+            }
+          },
+          {
+            "num": "M2",
+            "id": "m2",
+            "pickerLabel": "2×2 matrix",
+            "title": "Critical uncertainties and four logics",
+            "hours": "90 min",
+            "readingsShort": "Schwartz 7-step",
+            "visual": "assets/foresight_concept.png",
+            "visualCaption": "Four quadrants · four narratives",
+            "lectureIntro": "Session 2: pick two critical uncertainties, build a 2×2 matrix, and name a narrative for each quadrant.",
+            "lectureSections": [
+              {
+                "id": "axes",
+                "title": "1. Choosing axes",
+                "slideTitles": [
+                  "Impact versus certainty",
+                  "Trend-axis mistake",
+                  "Energy and AI examples"
+                ],
+                "paragraphs": [
+                  "Axes need high impact and low certainty. A certain trend is a weak axis.",
+                  "Common mistake: “low/high economic growth” with no link to the decision. An axis must change world logic.",
+                  "Energy example: energy transition speed × open/closed geopolitics. AI example: regulation speed × model-market concentration."
+                ]
+              },
+              {
+                "id": "matrix",
+                "title": "2. Building the 2×2",
+                "slideTitles": [
+                  "Four world logics",
+                  "Narrative naming",
+                  "Internal coherence"
+                ],
+                "paragraphs": [
+                  "Each quadrant is a world logic, not label A/B/C/D.",
+                  "Names should be memorable: “fossil island,” “tech leap,” not “scenario 1.”",
+                  "Coherence: there must be a path from today to that future. Internal contradiction = weak scenario."
+                ]
+              },
+              {
+                "id": "workshop",
+                "title": "3. Class workshop",
+                "slideTitles": [
+                  "Group axes",
+                  "Four names",
+                  "Peer critique"
+                ],
+                "paragraphs": [
+                  "Groups build two axes for the M1 decision and write four names.",
+                  "Each group narrates one quadrant in three minutes.",
+                  "Critique: are axes truly independent? Do names carry logic or only color?"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "van der Heijden, K. (2005). <em>Scenarios: The Art of Strategic Conversation</em>."
+              }
+            ],
+            "assignment": {
+              "title": "Full matrix",
+              "description": "2×2 for the term decision.",
+              "body": [
+                "Two axes with impact/certainty rationale.",
+                "Four names plus one logic paragraph per quadrant."
+              ],
+              "format": "2 pages + matrix figure",
+              "criteria": [
+                "Axis independence",
+                "Narrative coherence"
+              ]
+            }
+          },
+          {
+            "num": "M3",
+            "id": "m3",
+            "pickerLabel": "Indicators & strategy",
+            "title": "Early indicators and no-regret options",
+            "hours": "90 min",
+            "readingsShort": "Shell · link to FITness",
+            "visual": "assets/foresight_concept.png",
+            "visualCaption": "From narrative to monitoring and budget",
+            "lectureIntro": "Session 3: early indicators, implications, and linking scenarios to budgeting and organizational probing (FITness language).",
+            "lectureSections": [
+              {
+                "id": "indicators",
+                "title": "1. Early indicators",
+                "slideTitles": [
+                  "Why signals?",
+                  "Rules for good indicators",
+                  "Technology example"
+                ],
+                "paragraphs": [
+                  "Without indicators, scenarios stay stories. Indicators show which world logic is activating.",
+                  "A good indicator is seasonally monitorable, linked to an axis, and hard to game in the short term.",
+                  "Example: share of domestic GPUs in government procurement, or GenAI copyright cases in key courts."
+                ]
+              },
+              {
+                "id": "options",
+                "title": "2. Implications and no-regret",
+                "slideTitles": [
+                  "Options under each scenario",
+                  "Shared no-regret",
+                  "What-if"
+                ],
+                "paragraphs": [
+                  "Under each quadrant ask: if this world is true, what strategy is required?",
+                  "No-regret: actions valuable across most scenarios (for example board data literacy).",
+                  "What-if: options that only make sense in one extreme scenario and should be prepared, not necessarily executed."
+                ]
+              },
+              {
+                "id": "org",
+                "title": "3. Link to the organization",
+                "slideTitles": [
+                  "Budget and gates",
+                  "Bridge to FITness probing",
+                  "Final assignment"
+                ],
+                "paragraphs": [
+                  "Scenarios without a budgeting and risk link sit on a shelf. Define at least one quarterly decision gate.",
+                  "In Rohrbeck language: scenarios feed prospecting; 90-day probing tests scenario hypotheses in the field.",
+                  "Assignment: four scenarios + one indicator each + one no-regret action + one pilot proposal."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Page",
+                "text": "FITness M4–M5 · prospecting and probing on this portal."
+              }
+            ],
+            "assignment": {
+              "title": "Decision scenario pack",
+              "description": "Board-ready output.",
+              "body": [
+                "Full 2×2 with four short narratives.",
+                "One early indicator per quadrant.",
+                "One no-regret action and one 90-day pilot."
+              ],
+              "format": "3000 words or 12 slides",
+              "criteria": [
+                "Decision linkage",
+                "Monitorable indicators"
+              ]
+            }
+          }
+        ]
+      }
     },
     "futurpreneurship": {
       "slug": "futurpreneurship",
@@ -3902,6 +4146,290 @@
       "defaultSystemic": "Systemic layer notes...",
       "defaultWorldview": "Worldview layer notes...",
       "defaultMyth": "Myth layer notes..."
+    },
+    "moduleContentTag": "Lecture & slides",
+    "moduleDeckNavLabel": "Slide navigation",
+    "moduleDeckPrev": "Previous",
+    "moduleDeckNext": "Next",
+    "moduleDeckSlide": "Slide",
+    "moduleDeckFullscreen": "Fullscreen · F",
+    "moduleReadingsTitle": "Further reading",
+    "moduleAssignmentTitle": "Assignment",
+    "labelFormat": "Format",
+    "labelCriteria": "Grading criteria",
+    "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+    "university": {
+      "title": "CLA · three lecture decks",
+      "intro": "Based on Inayatullah (1998, 2004, CLA 2.0/3.0). Each module is the in-class lecture; advance slide by slide.",
+      "modules": [
+        {
+          "num": "M1",
+          "id": "m1",
+          "pickerLabel": "Foundations",
+          "title": "CLA foundations · from news to myth",
+          "hours": "90 min",
+          "readingsShort": "Inayatullah (1998) Futures",
+          "visual": "assets/cla_concept.png",
+          "visualCaption": "Four-layer pyramid · Litany to Myth/Metaphor",
+          "lectureIntro": "Session 1 of <strong>Causal Layered Analysis</strong>. Goal: move past headlines into discourse and metaphor, with technology examples (GenAI, platforms, data).",
+          "lectureSections": [
+            {
+              "id": "why",
+              "title": "1. Why the news layer is not enough",
+              "slideTitles": [
+                "Stuck in litany",
+                "CLA vs trend report",
+                "Metaphor as transformation"
+              ],
+              "paragraphs": [
+                "Shallow foresight often stops at the <strong>litany</strong>: headlines, statistics, emotional media reaction. Inayatullah shows that without deeper layers, scenarios reproduce the dominant discourse.",
+                "A trend report says “AI will grow.” CLA asks which structures, worldviews, and metaphors make that growth seem natural. Depth of analysis, not volume of data.",
+                "Desired outcome: readiness for an <strong>alternative metaphor</strong> that implies different policy and scenarios."
+              ]
+            },
+            {
+              "id": "layers",
+              "title": "2. Four layers of the pyramid",
+              "slideTitles": [
+                "Layer 1 · Litany",
+                "Layer 2 · Systemic",
+                "Layer 3 · Worldview",
+                "Layer 4 · Myth/Metaphor"
+              ],
+              "paragraphs": [
+                "<strong>Litany:</strong> daily news and stats. GenAI example: job displacement headlines, safety warnings, market charts. Emotional, reactive language.",
+                "<strong>Systemic:</strong> rules, markets, cloud infrastructure, model ownership, data regulation. Experts work here while deeper assumptions stay untouched.",
+                "<strong>Worldview:</strong> discourses such as neoliberal productivity, “technology is neutral,” or “national AI race.” The boundary of what counts as truth appears here.",
+                "<strong>Myth:</strong> collective metaphor. Example: “omniscient machine” versus “bounded collaborator.” Lasting change usually starts with a new metaphor."
+              ],
+              "table": {
+                "headers": [
+                  "<strong>Layer</strong>",
+                  "<strong>Question</strong>",
+                  "<strong>Language</strong>"
+                ],
+                "rows": [
+                  [
+                    "Litany",
+                    "What do media say?",
+                    "Stats and headlines"
+                  ],
+                  [
+                    "Systemic",
+                    "Which structures produce it?",
+                    "Policy and institutions"
+                  ],
+                  [
+                    "Worldview",
+                    "Which beliefs legitimize it?",
+                    "Discourse"
+                  ],
+                  [
+                    "Myth",
+                    "Which story holds it?",
+                    "Metaphor"
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "foucault",
+              "title": "3. Genealogy and discursive power",
+              "slideTitles": [
+                "Foucault inspiration",
+                "Power in layers 3–4",
+                "Classroom practice"
+              ],
+              "paragraphs": [
+                "CLA draws on Foucauldian <strong>genealogy</strong>: truth is shaped in discourse and power, not only in objective data.",
+                "Layers 3 and 4 hide power: who defines “responsible innovation”? Which metaphor justifies investment?",
+                "In class: pick one technology news item and move only with the four-layer questions. Deconstruct first; do not invent a new metaphor yet."
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Article",
+              "text": "Inayatullah, S. (1998). Causal layered analysis. <em>Futures</em> 30(8)."
+            },
+            {
+              "type": "Book",
+              "text": "Inayatullah, S. (2004). <em>The Causal Layered Analysis Reader</em>."
+            },
+            {
+              "type": "Book",
+              "text": "Inayatullah, S. (2015/2022). <em>CLAs 2.0</em> and <em>CLAs 3.0</em>."
+            }
+          ],
+          "assignment": {
+            "title": "Four-layer table",
+            "description": "Choose one technology news story from this week.",
+            "body": [
+              "Complete a four-layer table (at least two sentences per layer).",
+              "Do not write an alternative metaphor yet; deconstruct only."
+            ],
+            "format": "1 page · FA or EN",
+            "criteria": [
+              "Depth in layers 3–4",
+              "Avoid repeating litany in deeper layers"
+            ]
+          }
+        },
+        {
+          "num": "M2",
+          "id": "m2",
+          "pickerLabel": "Tech cases",
+          "title": "CLA on technology · GenAI and platforms",
+          "hours": "90 min",
+          "readingsShort": "Page case archive",
+          "visual": "assets/cla_concept.png",
+          "visualCaption": "From GenAI headlines to data-power metaphors",
+          "lectureIntro": "Session 2 applies CLA to technology issues: generative AI, platform power, and data surveillance. Goal: a full four-layer pass on one shared class case.",
+          "lectureSections": [
+            {
+              "id": "genai",
+              "title": "1. Generative AI",
+              "slideTitles": [
+                "GenAI litany",
+                "Market and model structure",
+                "Productivity worldview",
+                "Omniscient-machine myth"
+              ],
+              "paragraphs": [
+                "<strong>Litany:</strong> job-loss headlines, model benchmarks, safety warnings. Public attention sits here.",
+                "<strong>Systemic:</strong> training costs, cloud/GPU concentration, copyright rules, organizational API lock-in.",
+                "<strong>Worldview:</strong> “productivity is always good,” “national foundation-model race,” or “innovation must be unbound.”",
+                "<strong>Myth:</strong> omniscient machine versus bounded collaborator. The second metaphor implies different education and governance policy."
+              ]
+            },
+            {
+              "id": "platform",
+              "title": "2. Platform power",
+              "slideTitles": [
+                "Network litany",
+                "Lock-in structures",
+                "Ecosystem discourse",
+                "Public-square metaphor"
+              ],
+              "paragraphs": [
+                "Litany: outages, addiction, algorithmic news. Structure: network effects, data lock-in, app-store fees.",
+                "Ecosystem worldview often naturalizes competition. Alternative metaphor: digital public square with transparent rules versus a walled garden."
+              ]
+            },
+            {
+              "id": "workshop-case",
+              "title": "3. Group work on one case",
+              "slideTitles": [
+                "Shared case choice",
+                "Four-layer brief",
+                "Peer critique"
+              ],
+              "paragraphs": [
+                "Groups pick one technology archive case: GenAI, platform, or data privacy.",
+                "Each group writes the four-layer table and presents in five minutes.",
+                "Critique: is layer 3 only slogan? Is layer 4 truly a metaphor, or still statistics?"
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Page",
+              "text": "CLA case archive on this portal · technology tab."
+            },
+            {
+              "type": "Article",
+              "text": "Inayatullah (1998) · re-read method on your chosen case."
+            }
+          ],
+          "assignment": {
+            "title": "Full technology case",
+            "description": "Run CLA on one organizational or national technology issue.",
+            "body": [
+              "Full four layers plus one paragraph of policy or strategy implications.",
+              "Cite at least one academic source."
+            ],
+            "format": "1500–2000 words",
+            "criteria": [
+              "Layer coherence",
+              "Link to a real decision"
+            ]
+          }
+        },
+        {
+          "num": "M3",
+          "id": "m3",
+          "pickerLabel": "Metaphor lab",
+          "title": "Alternative metaphor and scenario bridge",
+          "hours": "75 min",
+          "readingsShort": "CLA Reader · page workshop",
+          "visual": "assets/cla_concept.png",
+          "visualCaption": "From deconstruction to metaphor redesign",
+          "lectureIntro": "Session 3: craft a new layer-4 metaphor and connect CLA output to scenarios and policy. Without an alternative metaphor, CLA stays critique only.",
+          "lectureSections": [
+            {
+              "id": "metaphor",
+              "title": "1. Rules of a good metaphor",
+              "slideTitles": [
+                "Metaphor vs slogan",
+                "Policy test",
+                "Singapore example"
+              ],
+              "paragraphs": [
+                "A good metaphor builds collective emotional imagery, not a slogan. It must carry a new worldview.",
+                "Test: if you change the metaphor, does proposed policy actually change? If not, you are still in litany.",
+                "Singapore waste/transit case: from “luxury hotel” to “shared family garden”; ownership feelings and behavior shifted."
+              ]
+            },
+            {
+              "id": "bridge",
+              "title": "2. Bridge to scenarios and Wheel",
+              "slideTitles": [
+                "CLA before 2×2",
+                "CLA before Futures Wheel",
+                "Suggested term order"
+              ],
+              "paragraphs": [
+                "Before a scenario matrix, CLA opens hidden assumptions so uncertainty axes are not shallow.",
+                "Before Futures Wheel, systemic and worldview layers enrich consequence branches.",
+                "Suggested term order: CLA (depth) → Wheel (consequences) → Scenario (future space) → Backcasting (normative path)."
+              ]
+            },
+            {
+              "id": "lab",
+              "title": "3. Interactive page workshop",
+              "slideTitles": [
+                "Open the workshop",
+                "Four-layer card",
+                "Closing reflection"
+              ],
+              "paragraphs": [
+                "Open the interactive workshop on this page and build a four-layer card for your own issue.",
+                "State the alternative metaphor explicitly and propose one matching policy action.",
+                "Reflect: which layer is usually censored in your organization, and why?"
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Book",
+              "text": "Inayatullah · metaphor and transformation chapters in the CLA Reader."
+            }
+          ],
+          "assignment": {
+            "title": "Transformative metaphor",
+            "description": "For your M2 case, write one alternative metaphor.",
+            "body": [
+              "One metaphor paragraph plus three policy implications that only make sense under that metaphor.",
+              "Two-minute oral brief in class."
+            ],
+            "format": "Half page + short talk",
+            "criteria": [
+              "Metaphor quality",
+              "Policy linkage"
+            ]
+          }
+        }
+      ]
     }
   },
   "claCategories": {
@@ -4126,7 +4654,250 @@
         "title": "Continuous Monitoring",
         "desc": "Define KPIs and periodically refresh the wheel with new weak signals."
       }
-    ]
+    ],
+    "moduleContentTag": "Lecture & slides",
+    "moduleDeckNavLabel": "Slide navigation",
+    "moduleDeckPrev": "Previous",
+    "moduleDeckNext": "Next",
+    "moduleDeckSlide": "Slide",
+    "moduleDeckFullscreen": "Fullscreen · F",
+    "moduleReadingsTitle": "Further reading",
+    "moduleAssignmentTitle": "Assignment",
+    "labelFormat": "Format",
+    "labelCriteria": "Grading criteria",
+    "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+    "university": {
+      "title": "Futures Wheel · three lecture decks",
+      "intro": "Based on Jerome C. Glenn (1972) and FRM 3.0. Focus on workshop use of consequence chains, not the full FRM method list.",
+      "modules": [
+        {
+          "num": "M1",
+          "id": "m1",
+          "pickerLabel": "Logic & history",
+          "title": "Futures Wheel · chain-of-consequence logic",
+          "hours": "75 min",
+          "readingsShort": "Glenn · FRM 3.0 Wheel",
+          "visual": "assets/methods/futures-wheel.svg",
+          "visualCaption": "Focal event at center · 1st to 3rd order effects",
+          "lectureIntro": "Session 1 of <strong>Futures Wheel</strong>: why linear analysis is not enough and how 2nd and 3rd order effects move decisions. Technology and climate examples.",
+          "lectureSections": [
+            {
+              "id": "why",
+              "title": "1. Why consequence chains?",
+              "slideTitles": [
+                "Limits of linear analysis",
+                "Orders 1 to 3",
+                "Difference from mind maps"
+              ],
+              "paragraphs": [
+                "Linear analysis often sees only direct effects. Glenn showed secondary and feedback effects are often decisive.",
+                "<strong>1st order:</strong> immediate effect. <strong>2nd:</strong> reaction to the first. <strong>3rd:</strong> longer-range legal, security, or cultural effects.",
+                "Mind maps scatter ideas; the Wheel keeps causal order with time and intensity. Goal: prioritize high-risk branches."
+              ]
+            },
+            {
+              "id": "history",
+              "title": "2. History and applications",
+              "slideTitles": [
+                "Glenn 1972",
+                "Boeing and autonomy",
+                "Policy and defense"
+              ],
+              "paragraphs": [
+                "Jerome C. Glenn built the Futures Wheel in the early 1970s for multi-layer consequence mapping and later expanded it in the Millennium Project.",
+                "Boeing used Wheel thinking for pilotless aircraft toward 2045: 3rd order issues were more legal and psychological than technical.",
+                "Other uses: WHO workshops, U.S. DoD, and Millennium Project hydropolitics cases."
+              ]
+            },
+            {
+              "id": "driver",
+              "title": "3. Choosing the focal event",
+              "slideTitles": [
+                "Rules for a good driver",
+                "Technology example",
+                "Class drill"
+              ],
+              "paragraphs": [
+                "A driver must be specific, time-bound, and discussable. “The future of AI” is weak; “40% EV adoption in Tehran by 2051” is strong.",
+                "Technology example: “Mandatory domestic LLM use in government agencies by 2028.” Time and institutional boundary are clear.",
+                "Each student writes one driver. Next session we expand that driver in the page interactive tool."
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Book",
+              "text": "Glenn, J.C. & Gordon, T.J. (2009). <em>Futures Research Methodology 3.0</em> · Futures Wheel chapter."
+            },
+            {
+              "type": "Report",
+              "text": "Millennium Project · State of the Future (policy examples)."
+            }
+          ],
+          "assignment": {
+            "title": "Define a driver",
+            "description": "Write one focal event for your term project.",
+            "body": [
+              "One driver sentence plus time/place boundary.",
+              "Three hypothetical 1st-order effects (do not complete the full wheel yet)."
+            ],
+            "format": "Half page",
+            "criteria": [
+              "Driver clarity",
+              "Room to reach 3rd order"
+            ]
+          }
+        },
+        {
+          "num": "M2",
+          "id": "m2",
+          "pickerLabel": "Process & STEEP",
+          "title": "11 steps and STEEP structuring",
+          "hours": "90 min",
+          "readingsShort": "Page process · Wheel models",
+          "visual": "assets/methods/futures-wheel.svg",
+          "visualCaption": "From brainstorming to quantification and policy",
+          "lectureIntro": "Session 2: operational wheel process and differences among classic, STEEP, quantitative, and action-oriented models.",
+          "lectureSections": [
+            {
+              "id": "process",
+              "title": "1. Process core",
+              "slideTitles": [
+                "Definition and experts",
+                "Orders 1 to 3",
+                "Links and feedback"
+              ],
+              "paragraphs": [
+                "First clarify the focal issue and build an interdisciplinary group to reduce groupthink.",
+                "Screen 1st-order effects, then build 2nd and 3rd orders on strong nodes. Branch count matters less than quality and intensity.",
+                "Cross-links reveal feedback loops: where two branches amplify or cancel each other."
+              ]
+            },
+            {
+              "id": "steep",
+              "title": "2. Structured STEEP model",
+              "slideTitles": [
+                "Why STEEP?",
+                "Tagging branches",
+                "Leverage priority"
+              ],
+              "paragraphs": [
+                "Glenn’s classic model is open. STEEP organizes branches into Social, Technological, Economic, Environmental, Political for fuller coverage.",
+                "In workshop each consequence card gets a STEEP tag. Gaps (for example missing political branches) appear quickly.",
+                "After tagging ask: which branch has the highest intervention leverage? That feeds scenarios and backcasting."
+              ]
+            },
+            {
+              "id": "quant",
+              "title": "3. Light quantification",
+              "slideTitles": [
+                "Likelihood and severity",
+                "High-risk paths",
+                "Policy nodes"
+              ],
+              "paragraphs": [
+                "Score key branches 1–5 for likelihood and severity. Statistical precision is not the goal; group agreement and prioritization are.",
+                "High-severity, medium-likelihood paths often matter more than certain but low-impact ones.",
+                "Attach policy nodes to negative consequences: reactive or preventive action on that branch."
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Page",
+              "text": "Models and 11-step process on this portal."
+            }
+          ],
+          "assignment": {
+            "title": "Half wheel",
+            "description": "Take last session’s driver to 2nd order.",
+            "body": [
+              "At least 6 first-order and 12 second-order effects.",
+              "STEEP tags on all cards."
+            ],
+            "format": "Canvas image or table",
+            "criteria": [
+              "STEEP coverage",
+              "Clear causal chain"
+            ]
+          }
+        },
+        {
+          "num": "M3",
+          "id": "m3",
+          "pickerLabel": "Cascade lab",
+          "title": "Interactive workshop and scenario bridge",
+          "hours": "90 min",
+          "readingsShort": "Page tool · Futurpreneurship",
+          "visual": "assets/methods/futures-wheel.svg",
+          "visualCaption": "From consequence branch to opportunity and scenario",
+          "lectureIntro": "Session 3: complete 3rd order in the page simulator, extract a venture opportunity, and bridge to scenarios and backcasting.",
+          "lectureSections": [
+            {
+              "id": "lab",
+              "title": "1. Cascade builder workshop",
+              "slideTitles": [
+                "Enter the driver",
+                "Build 3rd order",
+                "Group review"
+              ],
+              "paragraphs": [
+                "Enter your driver in the interactive tool and build branches.",
+                "Reach 3rd order on at least three branches. One should be non-obvious (not mere trend continuation).",
+                "Groups explain one high-risk branch to the class and take feedback."
+              ]
+            },
+            {
+              "id": "bridge",
+              "title": "2. Bridge to scenarios and ventures",
+              "slideTitles": [
+                "Branch to uncertainty",
+                "Futurpreneurship opportunity",
+                "Backcasting input"
+              ],
+              "paragraphs": [
+                "High-uncertainty branches can become scenario-matrix axes.",
+                "From one positive or dual branch extract a venture opportunity (testable hypothesis).",
+                "Severe negative branches feed vision and barriers in backcasting."
+              ]
+            },
+            {
+              "id": "close",
+              "title": "3. Term wrap checklist",
+              "slideTitles": [
+                "Wheel quality checklist",
+                "Common mistakes",
+                "Final assignment"
+              ],
+              "paragraphs": [
+                "Checklist: clear driver, separated orders, STEEP coverage, at least one feedback loop, one policy node.",
+                "Common mistakes: repeating the same idea across orders, ignoring politics, and turning the Wheel into decorative mind-mapping.",
+                "Assignment: full Wheel + one venture opportunity + one link proposal to a 2×2 scenario."
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Page",
+              "text": "Futures Wheel tool and Futurpreneurship section in the catalog."
+            }
+          ],
+          "assignment": {
+            "title": "Full term Wheel",
+            "description": "Driver to 3rd order with practical outputs.",
+            "body": [
+              "At least three 3rd-order branches.",
+              "One Futurpreneurship opportunity and one proposed scenario axis."
+            ],
+            "format": "Canvas + 1 page note",
+            "criteria": [
+              "3rd-order depth",
+              "Link to decision or venture"
+            ]
+          }
+        }
+      ]
+    }
   },
   "wheelModels": {
     "classic": {
@@ -4312,7 +5083,286 @@
     "renderH3Fallback": "Far-horizon details...",
     "renderH2Fallback": "Mid-horizon details...",
     "renderH1Fallback": "Near-horizon details...",
-    "renderContentFallback": "Content..."
+    "renderContentFallback": "Content...",
+    "moduleContentTag": "Lecture & slides",
+    "moduleDeckNavLabel": "Slide navigation",
+    "moduleDeckPrev": "Previous",
+    "moduleDeckNext": "Next",
+    "moduleDeckSlide": "Slide",
+    "moduleDeckFullscreen": "Fullscreen · F",
+    "moduleReadingsTitle": "Further reading",
+    "moduleAssignmentTitle": "Assignment",
+    "labelFormat": "Format",
+    "labelCriteria": "Grading criteria",
+    "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+    "university": {
+      "title": "Backcasting · three lecture decks",
+      "intro": "Based on Robinson (1982, 1990) and Dreborg (1996). Work from a desired future back to today for sustainability, energy, and tech-governance change.",
+      "modules": [
+        {
+          "num": "M1",
+          "id": "m1",
+          "pickerLabel": "Forecast vs Backcast",
+          "title": "Backcasting versus forecasting",
+          "hours": "75 min",
+          "readingsShort": "Robinson 1982 · Dreborg 1996",
+          "visual": "assets/backcasting_concept.png",
+          "visualCaption": "From desired future to today’s steps",
+          "lectureIntro": "Session 1 of <strong>Backcasting</strong>: why trend continuation fails for structural problems and how a normative goal changes the path.",
+          "lectureSections": [
+            {
+              "id": "contrast",
+              "title": "1. Two planning paradigms",
+              "slideTitles": [
+                "Forecasting question",
+                "Backcasting question",
+                "Comparison table"
+              ],
+              "paragraphs": [
+                "Forecasting asks: what happens if trends continue? Its tools are extrapolation and statistical uncertainty reduction.",
+                "Backcasting asks: how do we reach a desired future and what blocks us? Its tools are path design and human agency.",
+                "Robinson and Dreborg showed that in energy and sustainability, trend determinism deletes alternative futures."
+              ],
+              "table": {
+                "headers": [
+                  "<strong>Aspect</strong>",
+                  "<strong>Forecasting</strong>",
+                  "<strong>Backcasting</strong>"
+                ],
+                "rows": [
+                  [
+                    "Time direction",
+                    "Today → future",
+                    "Desired future → today"
+                  ],
+                  [
+                    "Output",
+                    "Plausible",
+                    "Desirable and worthy"
+                  ],
+                  [
+                    "Philosophy",
+                    "Trend continuity",
+                    "Structural break possible"
+                  ],
+                  [
+                    "Best use",
+                    "Short term with data",
+                    "Long structural crises"
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "when",
+              "title": "2. When is backcasting needed?",
+              "slideTitles": [
+                "System imbalance",
+                "Explicit normative goal",
+                "Net-zero example"
+              ],
+              "paragraphs": [
+                "When the current system cannot reach the desired goal (energy imbalance, data privacy, platform lock-in), backcasting makes sense.",
+                "Without an explicit normative goal, backcasting collapses into forecasting. The goal must be describable, not a slogan.",
+                "Sweden 2045: instead of extrapolating emissions, it locked a net-zero goal and built the reverse path."
+              ]
+            },
+            {
+              "id": "tech",
+              "title": "3. Organizational technology example",
+              "slideTitles": [
+                "AI governance vision",
+                "Gap to today",
+                "First 90-day step"
+              ],
+              "paragraphs": [
+                "Sample vision: “By 2031 every algorithmic decision in the organization is explainable and human-stoppable.”",
+                "Today’s gap: black-box models, no stop criteria for pilots, single-cloud vendor lock-in.",
+                "First step: inventory algorithmic systems plus stop criteria for two high-risk pilots in 90 days."
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Article",
+              "text": "Robinson, J.B. (1982). Energy backcasting. <em>Energy Policy</em>."
+            },
+            {
+              "type": "Article",
+              "text": "Robinson, J.B. (1990). Futures under glass. <em>Futures</em> 22(8)."
+            },
+            {
+              "type": "Article",
+              "text": "Dreborg, K.H. (1996). Essence of backcasting. <em>Futures</em> 28(9)."
+            }
+          ],
+          "assignment": {
+            "title": "Comparison table on your case",
+            "description": "Pick one organizational or urban issue.",
+            "body": [
+              "Two columns: what if you only forecast? what normative vision if you backcast?",
+              "One paragraph justifying why backcasting is needed."
+            ],
+            "format": "1 page",
+            "criteria": [
+              "Clear paradigm contrast",
+              "Specific normative goal"
+            ]
+          }
+        },
+        {
+          "num": "M2",
+          "id": "m2",
+          "pickerLabel": "Vision & reverse path",
+          "title": "Building vision and reverse milestones",
+          "hours": "90 min",
+          "readingsShort": "Natural Step · page simulator",
+          "visual": "assets/backcasting_concept.png",
+          "visualCaption": "Vision → gap → policy → roadmap",
+          "lectureIntro": "Session 2: four practical backcasting moves and practice in the page simulator.",
+          "lectureSections": [
+            {
+              "id": "four",
+              "title": "1. Four main moves",
+              "slideTitles": [
+                "Desired future image",
+                "Gap analysis",
+                "Transition policy",
+                "Timed roadmap"
+              ],
+              "paragraphs": [
+                "Future image: write success criteria (what is “right” in that future?).",
+                "Gap: quantitative and qualitative distance from today. Without an honest gap, the path is fake.",
+                "Policy and rules: what must change for the path to become possible?",
+                "Roadmap: reverse milestones from far horizon to near term with owner and metric."
+              ]
+            },
+            {
+              "id": "milestones",
+              "title": "2. Rules for good milestones",
+              "slideTitles": [
+                "Observable",
+                "Reverse dependency",
+                "Opponent role"
+              ],
+              "paragraphs": [
+                "Each milestone must be observable: a law, infrastructure, or measurable behavior.",
+                "Reverse dependency: if the far milestone is true, nearer milestones must already have happened.",
+                "Opponent role: who blocks the vision? Connect to CLA layers 3–4 for discursive barriers."
+              ]
+            },
+            {
+              "id": "sim",
+              "title": "3. Simulator workshop",
+              "slideTitles": [
+                "Open the page tool",
+                "Define vision",
+                "Five reverse steps"
+              ],
+              "paragraphs": [
+                "In the page backcasting simulator write a vision (urban, energy, or tech governance).",
+                "Build five reverse steps from far horizon to a 90-day action.",
+                "Add one explicit barrier and state which CLA layer it sits in."
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Book",
+              "text": "Holmberg & Robèrt · Natural Step and backcasting in Sweden."
+            }
+          ],
+          "assignment": {
+            "title": "Five-step path",
+            "description": "10-year vision plus five reverse steps.",
+            "body": [
+              "Two-paragraph vision.",
+              "Table of five milestones with approximate year and metric.",
+              "One worldview-layer barrier."
+            ],
+            "format": "2 pages",
+            "criteria": [
+              "Reverse coherence",
+              "Observable metrics"
+            ]
+          }
+        },
+        {
+          "num": "M3",
+          "id": "m3",
+          "pickerLabel": "Case & policy",
+          "title": "Sweden case and immediate policy",
+          "hours": "75 min",
+          "readingsShort": "Sweden 2045 · term assignment",
+          "visual": "assets/backcasting_concept.png",
+          "visualCaption": "From net-zero goal to today’s action",
+          "lectureIntro": "Session 3: read the Swedish transition case, critique power limits, and extract three immediate policies for the first milestone.",
+          "lectureSections": [
+            {
+              "id": "sweden",
+              "title": "1. Sweden 2045 case",
+              "slideTitles": [
+                "Normative goal",
+                "Industrial reverse steps",
+                "Lesson for technology"
+              ],
+              "paragraphs": [
+                "Sweden set net-zero 2045 and fossil-free transport 2030 as normative anchors, not trend forecasts.",
+                "Reverse steps included banning petrol sales, heavy electrification, and hydrogen substitution in steel.",
+                "Tech lesson: without a normative anchor, AI pilots stay scattered and never become structural change."
+              ]
+            },
+            {
+              "id": "power",
+              "title": "2. Power limits and politics",
+              "slideTitles": [
+                "Who writes the vision?",
+                "Institutional barriers",
+                "Bridge to CLA"
+              ],
+              "paragraphs": [
+                "Backcasting is not neutral: powerful actors write the vision unless the process is participatory.",
+                "Institutional barriers (annual budgets, procurement rules, stop-the-pilot culture) break the path.",
+                "CLA layers 3–4 show which myth blocks progress; without that you only have a milestone table."
+              ]
+            },
+            {
+              "id": "actions",
+              "title": "3. Three immediate policies",
+              "slideTitles": [
+                "Selection criteria",
+                "Group drill",
+                "Two-minute brief"
+              ],
+              "paragraphs": [
+                "An immediate policy must link to the first milestone, be startable in 90 days, and have an owner.",
+                "Groups write three immediate policies for their vision and defend one in class.",
+                "Brief: 30s vision, 60s first milestone, 30s immediate policy."
+              ]
+            }
+          ],
+          "readings": [
+            {
+              "type": "Page",
+              "text": "Sweden case and simulator on this portal."
+            }
+          ],
+          "assignment": {
+            "title": "Final backcasting pack",
+            "description": "Merge M1–M3 into one decision memo.",
+            "body": [
+              "Vision + reverse path + three immediate policies + one CLA barrier.",
+              "One paragraph linking to your term scenario or Wheel."
+            ],
+            "format": "2500–3000 words",
+            "criteria": [
+              "Path coherence",
+              "90-day executability"
+            ]
+          }
+        }
+      ]
+    }
   },
   "bcScenarios": {
     "tehran": {
