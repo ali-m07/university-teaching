@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارائه‌های درسی | FORESIGHT HUB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=20250722a">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .pres-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 28px 0 48px;
+        }
+        .pres-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 22px;
+            text-decoration: none;
+            color: inherit;
+            border-top: 3px solid var(--color-f);
+            transition: border-color .2s ease, transform .2s ease;
+        }
+        .pres-card:hover { transform: translateY(-2px); border-color: var(--color-cla); }
+        .pres-card .num {
+            font-family: var(--font-en);
+            font-weight: 800;
+            color: var(--color-f);
+            letter-spacing: .04em;
+        }
+        .pres-card h3 { font-size: 1.05rem; color: #fff; margin: 0; }
+        .pres-card p { font-size: .85rem; color: var(--text-secondary); line-height: 1.55; margin: 0; }
+        .pres-card .go { font-size: .8rem; color: var(--color-f); margin-top: auto; }
+        .pres-group-title { margin: 40px 0 12px; color: #fff; font-size: 1.35rem; }
+        .pres-group-sub { color: var(--text-secondary); margin-bottom: 8px; }
+    </style>
+</head>
+<body class="sfh-platform">
+    <canvas id="particles-canvas"></canvas>
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+        </div>
+        <nav class="nav-links"></nav>
+        <div class="header-actions">
+            <a href="../methods/fitness.html" class="btn-primary-sm">صفحه FITness</a>
+        </div>
+    </header>
+
+    <section class="container page-hero" style="padding-top:120px;">
+        <span class="section-tag">جزوه و ارائه · چند جلسه جدا</span>
+        <h1>ارائه‌های درسی</h1>
+        <p class="page-hero-sub">هر جلسه یک ارائه مستقل است. روی کارت کلیک کنید تا همان ماژول باز شود (تمام‌صفحه با کلید F).</p>
+    </section>
+
+    <section class="container page-content">
+        <h2 class="pres-group-title">Future FITness · هفت ارائه جدا</h2>
+        <p class="pres-group-sub">بر پایه Rohrbeck (2010) و مطالعات طولی Corporate Foresight</p>
+        <div class="pres-grid">
+            <a class="pres-card glass-card" href="../methods/fitness.html#m1">
+                <span class="num">M1</span>
+                <h3>مبانی · آمادگی در برابر FITness</h3>
+                <p>شکست آینده‌نگاری گزارش‌محور، Zoom/Nokia/Netflix، نقشه ۱۴ هفته</p>
+                <span class="go">باز کردن ارائه ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/fitness.html#m2">
+                <span class="num">M2</span>
+                <h3>پنج بعد بلوغ و رادار</h3>
+                <p>Information تا Culture، سطوح بلوغ، معیار Schwarz</p>
+                <span class="go">باز کردن ارائه ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/fitness.html#m3">
+                <span class="num">M3</span>
+                <h3>درک · نشانه ضعیف و رادار فناوری</h3>
+                <p>Scanning، حلقه‌های Scan/Assess/Trial/Adopt، Deutsche Telekom</p>
+                <span class="go">باز کردن ارائه ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/fitness.html#m4">
+                <span class="num">M4</span>
+                <h3>کاوش · نقش‌ها و دروازه سناریو</h3>
+                <p>Initiator / Strategist / Opponent، افق‌های نوآوری، میان‌ترم</p>
+                <span class="go">باز کردن ارائه ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/fitness.html#m5">
+                <span class="num">M5</span>
+                <h3>آزمایش · پیلوت ۹۰ روزه</h3>
+                <p>Probing، یادداشت دروازه، Blockbuster در برابر Netflix</p>
+                <span class="go">باز کردن ارائه ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/fitness.html#m6">
+                <span class="num">M6</span>
+                <h3>کهن‌الگوها و تحول</h3>
+                <p>Vigilant / Neurotic / Vulnerable / In Danger</p>
+                <span class="go">باز کردن ارائه ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/fitness.html#m7">
+                <span class="num">M7</span>
+                <h3>تلفیق و پروژه نهایی</h3>
+                <p>CLA، چرخ آینده، IT2، ارائه پایانی</p>
+                <span class="go">باز کردن ارائه ←</span>
+            </a>
+        </div>
+
+        <h2 class="pres-group-title">CLA · چهار ارائه لایه‌ای</h2>
+        <p class="pres-group-sub">بر پایه Inayatullah (1998, 2004) با نمونه‌های فناوری</p>
+        <div class="pres-grid">
+            <a class="pres-card glass-card" href="../methods/cla.html#cla-pyramid" style="border-top-color: var(--color-cla);">
+                <span class="num" style="color: var(--color-cla);">L1</span>
+                <h3>لیتانی · سطح خبر و آمار</h3>
+                <p>تیترها، GenAI در کار دانشی، واکنش احساسی رسانه‌ها</p>
+                <span class="go" style="color: var(--color-cla);">باز کردن هرم CLA ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/cla.html#cla-case-study" style="border-top-color: var(--color-cla);">
+                <span class="num" style="color: var(--color-cla);">Case</span>
+                <h3>مطالعه موردی فناوری</h3>
+                <p>هوش مصنوعی مولد، پلتفرم، داده و حریم خصوصی</p>
+                <span class="go" style="color: var(--color-cla);">باز کردن کیس ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/cla.html#cla-cases" style="border-top-color: var(--color-cla);">
+                <span class="num" style="color: var(--color-cla);">Archive</span>
+                <h3>آرشیو سناریوها</h3>
+                <p>فناوری، ملی، اجتماعی؛ چند مسئله جدا</p>
+                <span class="go" style="color: var(--color-cla);">باز کردن آرشیو ←</span>
+            </a>
+            <a class="pres-card glass-card" href="../methods/cla.html#cla-workspace" style="border-top-color: var(--color-cla);">
+                <span class="num" style="color: var(--color-cla);">Lab</span>
+                <h3>کارگاه تعاملی</h3>
+                <p>ساخت کارت چهارلایه برای مسئله خودتان</p>
+                <span class="go" style="color: var(--color-cla);">باز کردن کارگاه ←</span>
+            </a>
+        </div>
+
+        <p style="text-align:center;margin:24px 0 60px;">
+            <a href="../methods/" class="btn-ghost-sm"><i data-lucide="library"></i> بازگشت به کاتالوگ متدها</a>
+        </p>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-bottom"><p>FORESIGHT HUB · علی منصوری</p></div>
+    </footer>
+
+    <script src="../js/core/paths.js"></script>
+    <script src="../js/core/i18n.js"></script>
+    <script src="../js/core/load-locales.js"></script>
+    <script src="../js/core/i18n-render.js"></script>
+    <script src="../js/core/shared.js"></script>
+    <script src="../js/core/main.js"></script>
+    <script src="../js/core/animation.js"></script>
+</body>
+</html>

@@ -33,7 +33,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site
-          cp -r index.html css js methods about articles assets locales _site/
+          cp -r index.html css js methods about articles assets locales presentations _site/
           cp .nojekyll _site/
           # exclude large docs from deploy
           find _site -name "*.map" -delete 2>/dev/null || true

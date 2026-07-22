@@ -14,7 +14,7 @@
         m1: {
             problem: 'assets/fitness/slides/m1-problem.svg',
             'readiness-vs-fitness': 'assets/fitness/slides/m1-readiness-vs-fitness.svg',
-            cases: 'assets/fitness/slides/m1-cases-photo.png',
+            cases: 'assets/fitness/slides/m1-cases.svg',
             syllabus: 'assets/fitness/slides/m1-syllabus.svg',
             workshop: 'assets/fitness/slides/m1-workshop.svg'
         },
@@ -26,15 +26,15 @@
             organization: 'assets/fitness/slides/m2-five-dims.svg',
             culture: 'assets/fitness/slides/m2-five-dims.svg',
             levels: 'assets/fitness/slides/m2-levels.svg',
-            schwarz: 'assets/fitness/slides/m2-radar-photo.png',
-            cases: 'assets/fitness/slides/m2-radar-photo.png'
+            schwarz: 'assets/fitness/slides/m2-levels.svg',
+            cases: 'assets/fitness/slides/m2-five-dims.svg'
         },
         m3: {
             scanning: 'assets/fitness/slides/m3-scanning.svg',
             'weak-signals': 'assets/fitness/slides/m3-scanning.svg',
-            'radar-rings': 'assets/fitness/slides/m3-radar-photo.png',
+            'radar-rings': 'assets/fitness/slides/m3-radar.svg',
             'dt-cases': 'assets/fitness/slides/m3-radar.svg',
-            'workshop-link': 'assets/fitness/slides/m3-radar-photo.png'
+            'workshop-link': 'assets/fitness/slides/m3-radar.svg'
         },
         m4: {
             roles: 'assets/fitness/slides/m4-roles.svg',
@@ -52,10 +52,10 @@
             template: 'assets/fitness/slides/m5-memo.svg'
         },
         m6: {
-            archetypes: 'assets/fitness/slides/m6-archetypes-photo.png',
+            archetypes: 'assets/fitness/slides/m6-archetypes.svg',
             'turbulence-matrix': 'assets/fitness/slides/m6-archetypes.svg',
             transformation: 'assets/fitness/slides/m6-archetypes.svg',
-            'case-clinic': 'assets/fitness/slides/m6-archetypes-photo.png',
+            'case-clinic': 'assets/fitness/slides/m6-archetypes.svg',
             'workshop-archetype': 'assets/fitness/slides/m6-archetypes.svg'
         },
         m7: {

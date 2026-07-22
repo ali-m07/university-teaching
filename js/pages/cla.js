@@ -92,7 +92,7 @@ function showClaLayer(layerKey) {
 
 // 3. CLA Case Studies Dataset & Categories
 const claCategories = {
-    geopolitics: ['israel', 'usa'],
+    technology: ['generative-ai', 'platform-power', 'data-surveillance'],
     national: ['water', 'future-iran'],
     social: ['brain-drain', 'generation-gap']
 };
@@ -146,7 +146,9 @@ function switchClaCategory(catKey) {
         btn.setAttribute('onclick', `loadCaseStudy('${caseKey}')`);
         
         let iconName = 'file-text';
-        if (caseKey === 'israel' || caseKey === 'usa') iconName = 'globe';
+        if (caseKey === 'generative-ai') iconName = 'bot';
+        if (caseKey === 'platform-power') iconName = 'app-window';
+        if (caseKey === 'data-surveillance') iconName = 'shield';
         if (caseKey === 'water') iconName = 'droplet';
         if (caseKey === 'future-iran') iconName = 'trending-up';
         if (caseKey === 'brain-drain') iconName = 'graduation-cap';
@@ -294,7 +296,7 @@ function initClaPage() {
     if (typeof refreshClaUI === 'function') {
         refreshClaUI();
     } else {
-        switchClaCategory('geopolitics');
+        switchClaCategory('technology');
         loadWorkspaceTemplate();
     }
 }

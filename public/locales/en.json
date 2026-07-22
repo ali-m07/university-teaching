@@ -3905,40 +3905,52 @@
     }
   },
   "claCategories": {
-    "geopolitics": "Geopolitics & international relations",
+    "technology": "Technology & Platforms",
     "national": "National & environmental challenges",
     "social": "Social & identity issues"
   },
   "caseStudyTitles": {
-    "israel": "Iran & Israel",
-    "usa": "Iran & USA",
+    "generative-ai": "Generative AI & knowledge work",
+    "platform-power": "Digital platform power",
+    "data-surveillance": "Data, privacy & surveillance",
     "water": "Water crisis in Iran",
     "future-iran": "Iran's core future challenge",
     "brain-drain": "Brain drain & talent exodus",
-    "generation-gap": "Deep generational gap"
+    "generation-gap": "Generational gap & digital identity"
   },
   "caseStudies": {
-    "israel": {
-      "title": "Iran & Israel",
-      "l1": "<ul><li>Headlines: missile defense alerts, UN statements, travel warnings</li><li>Oil and currency swings, naval drills in Hormuz</li><li>Public reaction: war anxiety, panic buying</li></ul>",
-      "l2": "<ul><li>Arms imbalance and \"mutual deterrence\"</li><li>Abraham Accords/NATO vs. resistance axis</li><li>Cyber war, layered air defense, great-power interests</li></ul>",
-      "l3": "<ul><li>Discourse of anti-hegemony and liberation of Quds</li><li>vs. existential Zionist security discourse</li><li>Clash of Western liberal order and multipolar Eurasia</li></ul>",
-      "l4": "<ul><li>Iranian myth: Ashura, Fereydun vs. Zahhak</li><li>Israeli myth: Holocaust, Masada complex</li><li><strong>Alternative:</strong> from \"minefield\" to \"shared oasis ecosystem\"</li></ul>",
-      "l1_q": "Litany — surface news & data",
-      "l2_q": "Systemic — structures & rules",
-      "l3_q": "Worldview — legitimizing discourses",
-      "l4_q": "Myth — collective unconscious & transformation"
+    "generative-ai": {
+      "title": "Generative AI & knowledge work",
+      "l1": "<ul><li>Headlines about replacing writers and coders</li><li>ChatGPT/Copilot adoption stats</li><li>Cheating fears in universities</li></ul>",
+      "l2": "<ul><li>GPU/cloud concentration</li><li>Inference cost and skills gap</li><li>Regulation pressure (e.g. AI Act)</li></ul>",
+      "l3": "<ul><li>Market productivity discourse</li><li>vs. democratic tech governance</li><li>Speed vs. fairness framing</li></ul>",
+      "l4": "<ul><li>Old metaphor: machine replaces human</li><li><strong>Alternative:</strong> human-model workshop</li><li>Method: Inayatullah 1998, 2004</li></ul>",
+      "l1_q": "Litany: surface news & data",
+      "l2_q": "Systemic: structures & rules",
+      "l3_q": "Worldview: legitimizing discourses",
+      "l4_q": "Myth: collective unconscious & change"
     },
-    "usa": {
-      "title": "Iran & USA",
-      "l1": "<ul><li>New OFAC sanctions, mutual diplomatic statements</li><li>Tanker seizures, blocked foreign assets</li><li>Rial drop, inflation, fear of trade isolation</li></ul>",
-      "l2": "<ul><li>Dollar hegemony and SWIFT control</li><li>No formal diplomacy since 1979</li><li>Congress secondary sanctions, Hormuz strategic role</li></ul>",
-      "l3": "<ul><li>American exceptionalism and liberal order</li><li>vs. independence and anti-hegemony discourse</li><li>Conflicting definitions of responsibility vs. sovereignty</li></ul>",
-      "l4": "<ul><li>US myth: lone sheriff against outlaws</li><li>Iranian myth: Kaveh the blacksmith vs. Zahhak</li><li><strong>Alternative:</strong> from \"Rome vs. Sassanid war\" to \"digital Silk Road bridge\"</li></ul>",
-      "l1_q": "Litany — surface news & data",
-      "l2_q": "Systemic — structures & rules",
-      "l3_q": "Worldview — legitimizing discourses",
-      "l4_q": "Myth — collective unconscious & transformation"
+    "platform-power": {
+      "title": "Digital platform power",
+      "l1": "<ul><li>Antitrust cases against Google/Meta</li><li>Sudden API cutoffs</li><li>Creator complaints about algorithms</li></ul>",
+      "l2": "<ul><li>Network effects and data control</li><li>App store rules</li><li>Dependency on one distribution channel</li></ul>",
+      "l3": "<ul><li>Platform innovation vs. public digital infrastructure</li><li>Market or gatekeeper?</li></ul>",
+      "l4": "<ul><li>Old metaphor: open town square</li><li><strong>Alternative:</strong> accountable infrastructure with portable data</li></ul>",
+      "l1_q": "Litany: surface news & data",
+      "l2_q": "Systemic: structures & rules",
+      "l3_q": "Worldview: legitimizing discourses",
+      "l4_q": "Myth: collective unconscious & change"
+    },
+    "data-surveillance": {
+      "title": "Data, privacy & surveillance",
+      "l1": "<ul><li>Data breaches and GDPR fines</li><li>Smart city cameras</li><li>Parental concern about tracking apps</li></ul>",
+      "l2": "<ul><li>Attention economy and opaque consent</li><li>Cross-border cloud and weak oversight</li></ul>",
+      "l3": "<ul><li>Security/convenience for data</li><li>vs. digital civil rights</li></ul>",
+      "l4": "<ul><li>Old metaphor: unavoidable glass house</li><li><strong>Alternative:</strong> window with controllable curtains</li></ul>",
+      "l1_q": "Litany: surface news & data",
+      "l2_q": "Systemic: structures & rules",
+      "l3_q": "Worldview: legitimizing discourses",
+      "l4_q": "Myth: collective unconscious & change"
     },
     "water": {
       "title": "Water crisis in Iran",
@@ -3946,10 +3958,10 @@
       "l2": "<ul><li>Food self-sufficiency in dry plains</li><li>Dam building without EIA, illegal wells</li><li>Low water tariffs, irrigation efficiency under 35%</li></ul>",
       "l3": "<ul><li>\"Engineer nature\" development worldview</li><li>vs. ecological sustainability and local wisdom</li><li>Conflicting definitions of progress</li></ul>",
       "l4": "<ul><li>Modern myth: conquering engineer with concrete dams</li><li>Ancient myth: Anahita and Tishtar vs. Apush</li><li><strong>Alternative:</strong> from \"bleeding the land dry\" to \"harmony with desert & qanat\"</li></ul>",
-      "l1_q": "Litany — surface news & data",
-      "l2_q": "Systemic — structures & rules",
-      "l3_q": "Worldview — legitimizing discourses",
-      "l4_q": "Myth — collective unconscious & transformation"
+      "l1_q": "Litany: surface news & data",
+      "l2_q": "Systemic: structures & rules",
+      "l3_q": "Worldview: legitimizing discourses",
+      "l4_q": "Myth: collective unconscious & transformation"
     },
     "future-iran": {
       "title": "Iran's core future challenge",
@@ -3957,10 +3969,10 @@
       "l2": "<ul><li>Rentier oil economy and quasi-state monopolies</li><li>FATF non-compliance, heavy bureaucracy</li><li>Pension fund deficits, chronic budget gaps</li></ul>",
       "l3": "<ul><li>\"Resistive economy & inward turn\" discourse</li><li>vs. \"developmentalist global integration\"</li><li>Conflict: sovereignty priority vs. growth</li></ul>",
       "l4": "<ul><li>Phoenix myth: guaranteed survival after crisis</li><li>Nostalgia for \"great imperial civilization\"</li><li><strong>Alternative:</strong> \"Persian carpet\" — diverse threads in one coherent pattern</li></ul>",
-      "l1_q": "Litany — surface news & data",
-      "l2_q": "Systemic — structures & rules",
-      "l3_q": "Worldview — legitimizing discourses",
-      "l4_q": "Myth — collective unconscious & transformation"
+      "l1_q": "Litany: surface news & data",
+      "l2_q": "Systemic: structures & rules",
+      "l3_q": "Worldview: legitimizing discourses",
+      "l4_q": "Myth: collective unconscious & transformation"
     },
     "brain-drain": {
       "title": "Brain drain & talent exodus",
@@ -3968,10 +3980,10 @@
       "l2": "<ul><li>Economic instability, falling purchasing power</li><li>Low pay vs. Gulf neighbors</li><li>Non-merit appointments, filtering, weak research infrastructure</li></ul>",
       "l3": "<ul><li>\"Sacred national service & loyalty\" discourse</li><li>vs. \"right to grow and join global science\"</li><li>Conflict: duty vs. meritocracy</li></ul>",
       "l4": "<ul><li>\"Unwanted child\" archetype</li><li><strong>Alternative:</strong> Brain Drain → Brain Circulation — transnational science networks</li></ul>",
-      "l1_q": "Litany — surface news & data",
-      "l2_q": "Systemic — structures & rules",
-      "l3_q": "Worldview — legitimizing discourses",
-      "l4_q": "Myth — collective unconscious & transformation"
+      "l1_q": "Litany: surface news & data",
+      "l2_q": "Systemic: structures & rules",
+      "l3_q": "Worldview: legitimizing discourses",
+      "l4_q": "Myth: collective unconscious & transformation"
     },
     "generation-gap": {
       "title": "Deep generational gap",
@@ -3979,10 +3991,10 @@
       "l2": "<ul><li>Mobile internet and Gen Z global culture</li><li>Rigid formal education, broadcast media monopoly</li><li>Institutions out of sync with networked reality</li></ul>",
       "l3": "<ul><li>Patriarchal, collectivist traditional worldview</li><li>vs. individual rights, digital global identity</li><li>Conflict: family authority vs. autonomy</li></ul>",
       "l4": "<ul><li>\"Two strangers under one roof\" myth</li><li><strong>Alternative:</strong> \"Intergenerational bridge\" — warp of old wisdom, weft of new creativity</li></ul>",
-      "l1_q": "Litany — surface news & data",
-      "l2_q": "Systemic — structures & rules",
-      "l3_q": "Worldview — legitimizing discourses",
-      "l4_q": "Myth — collective unconscious & transformation"
+      "l1_q": "Litany: surface news & data",
+      "l2_q": "Systemic: structures & rules",
+      "l3_q": "Worldview: legitimizing discourses",
+      "l4_q": "Myth: collective unconscious & transformation"
     }
   },
   "workspaceTemplates": {
