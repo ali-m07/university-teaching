@@ -1,18 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="960" y2="540"><stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1828"/></linearGradient><linearGradient id="hub" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00e5ff"/><stop offset="1" stop-color="#e040fb"/></linearGradient></defs>
-  <rect width="960" height="540" fill="url(#bg)" rx="16"/>
-  <text x="480" y="48" text-anchor="middle" fill="#c8d4e8" font-size="26" font-weight="700">M7 Integration � Final Project Hub</text>
-  <circle cx="480" cy="280" r="72" fill="#102030" stroke="url(#hub)" stroke-width="3"/>
-  <text x="480" y="274" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">FITness</text>
-  <text x="480" y="296" text-anchor="middle" fill="#8899aa" font-size="12">Project</text>
-  <circle cx="240" cy="180" r="52" fill="#1a2438" stroke="#00e5ff"/><text x="240" y="176" text-anchor="middle" fill="#00e5ff" font-size="14" font-weight="700">CLA</text><text x="240" y="194" text-anchor="middle" fill="#8899aa" font-size="11">Deep layers</text>
-  <circle cx="720" cy="180" r="52" fill="#1a2438" stroke="#7c4dff"/><text x="720" y="176" text-anchor="middle" fill="#7c4dff" font-size="14" font-weight="700">Wheel</text><text x="720" y="194" text-anchor="middle" fill="#8899aa" font-size="11">Cascade</text>
-  <circle cx="240" cy="380" r="52" fill="#1a2438" stroke="#4caf50"/><text x="240" y="376" text-anchor="middle" fill="#4caf50" font-size="14" font-weight="700">#assessment</text><text x="240" y="394" text-anchor="middle" fill="#8899aa" font-size="11">5 dimensions</text>
-  <circle cx="720" cy="380" r="52" fill="#1a2438" stroke="#e040fb"/><text x="720" y="376" text-anchor="middle" fill="#e040fb" font-size="14" font-weight="700">IT2</text><text x="720" y="394" text-anchor="middle" fill="#8899aa" font-size="11">FOU at gate</text>
-  <line x1="292" y1="210" x2="418" y2="250" stroke="#8899aa" stroke-opacity="0.5"/>
-  <line x1="668" y1="210" x2="542" y2="250" stroke="#8899aa" stroke-opacity="0.5"/>
-  <line x1="292" y1="350" x2="418" y2="310" stroke="#8899aa" stroke-opacity="0.5"/>
-  <line x1="668" y1="350" x2="542" y2="310" stroke="#8899aa" stroke-opacity="0.5"/>
-  <text x="480" y="480" text-anchor="middle" fill="#8899aa" font-size="15">40005000 words � 15-min presentation � 35% grade</text>
-  <text x="480" y="510" text-anchor="middle" fill="#667788" font-size="14">M7 � ch.12 � Rohrbeck corpus synthesis</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00e5ff"/><stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="52" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">Integration · Final Hub</text>
+  
+  <rect x="90" y="140" width="180" height="220" rx="14" fill="#152035" stroke="#ffaa00" stroke-width="2"/>
+  <text x="180" y="250" text-anchor="middle" fill="#ffaa00" font-size="18" font-weight="700">CLA</text>
+  <text x="180" y="280" text-anchor="middle" fill="#8b9bb0" font-size="12">4 layers</text>
+  <rect x="300" y="140" width="180" height="220" rx="14" fill="#152035" stroke="#ff5a7a" stroke-width="2"/>
+  <text x="390" y="250" text-anchor="middle" fill="#ff5a7a" font-size="18" font-weight="700">Wheel</text>
+  <text x="390" y="280" text-anchor="middle" fill="#8b9bb0" font-size="12">impacts</text>
+  <rect x="510" y="140" width="180" height="220" rx="14" fill="#152035" stroke="#00e5ff" stroke-width="2"/>
+  <text x="600" y="250" text-anchor="middle" fill="#00e5ff" font-size="18" font-weight="700">FITness</text>
+  <text x="600" y="280" text-anchor="middle" fill="#8b9bb0" font-size="12">maturity</text>
+  <rect x="720" y="140" width="150" height="220" rx="14" fill="#152035" stroke="#7c4dff" stroke-width="2"/>
+  <text x="795" y="250" text-anchor="middle" fill="#7c4dff" font-size="18" font-weight="700">IT2</text>
+  <text x="795" y="280" text-anchor="middle" fill="#8b9bb0" font-size="12">uncertainty</text>
+  <text x="480" y="420" text-anchor="middle" fill="#f3f4f6" font-size="15">Final project · presentation + report</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Module M7 · synthesis</text>
 </svg>

@@ -5,6 +5,8 @@
     const FITNESS_BASE_FALLBACK = './';
     const FA_PRESENTATION_REPLACEMENTS = [
         [/—/g, '،'],
+        [/–/g, '،'],
+        [/--/g, '،'],
         [/#/g, ''],
         [/\btech-radar\b/gi, 'رادار تعاملی'],
         [/\bassessment\b/gi, 'ارزیابی'],
@@ -393,6 +395,28 @@
         return html.replace(re, '');
     }
 
+    function htmlToSlideBullets(html) {
+        const raw = String(html || '').trim();
+        if (!raw) return '';
+        if (/<\s*ul[\s>]/i.test(raw) || /<\s*ol[\s>]/i.test(raw)) return raw;
+        const text = raw
+            .replace(/<br\s*\/?>/gi, '\n')
+            .replace(/<\/p>/gi, '\n')
+            .replace(/<[^>]+>/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+        if (!text) return raw;
+        const chunks = text
+            .split(/(?<=[.!?؟۔])\s+/)
+            .map(s => s.trim())
+            .filter(Boolean);
+        if (chunks.length <= 1 && text.length < 240) {
+            return `<p class="fitness-pres-lead">${raw.includes('<strong>') ? raw : text}</p>`;
+        }
+        const items = (chunks.length > 1 ? chunks : [text]).slice(0, 5);
+        return `<ul class="fitness-pres-bullets">${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+    }
+
     function buildSectionSlideBody(sec, paragraphIndex, stripLabel) {
         const paras = sec.paragraphs || [];
         const indices = Array.isArray(paragraphIndex)
@@ -404,7 +428,7 @@
         const prose = slice.filter(Boolean).map(p => {
             let html = prepPresHtml(p);
             if (stripLabel && p === slice[0]) html = stripLeadingLabel(html, stripLabel);
-            return html;
+            return htmlToSlideBullets(html);
         });
 
         return `
@@ -417,37 +441,9 @@
                 </aside>` : ''}`;
     }
 
-    function plainTextLength(html) {
-        return String(html || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().length;
-    }
-
     function paragraphGroups(sec) {
         const paras = sec.paragraphs || [];
-        if (paras.length <= 1) return paras.map((_, i) => [i]);
-
-        const groups = [];
-        let i = 0;
-        while (i < paras.length) {
-            const currentLen = plainTextLength(paras[i]);
-            const nextLen = plainTextLength(paras[i + 1]);
-            const currentTitle = resolveSlideHeading(sec, i);
-            const nextTitle = resolveSlideHeading(sec, i + 1);
-            const canPair =
-                i + 1 < paras.length &&
-                currentLen <= 260 &&
-                nextLen <= 260 &&
-                (currentLen + nextLen) <= 420 &&
-                (!!currentTitle || !!nextTitle || paras.length >= 4);
-
-            if (canPair) {
-                groups.push([i, i + 1]);
-                i += 2;
-            } else {
-                groups.push([i]);
-                i += 1;
-            }
-        }
-        return groups;
+        return paras.map((_, i) => [i]);
     }
 
     function expandSectionToSlides(m, sec) {
@@ -476,14 +472,14 @@
             const { heading } = parseSectionTitle(sec.title);
             const title = slideTitle || heading || sec.title || '';
             const stripLabel = slideTitle || slideHeadingFromParagraph(paras[firstIndex]);
-            const cap = sec.imageCaption || (gi === 0 ? (m.visualCaption || '') : '');
+            const showImage = gi === 0;
 
             return {
                 kind: 'content',
                 eyebrow,
                 title,
-                image,
-                imageCaption: cap || caption,
+                image: showImage ? image : '',
+                imageCaption: showImage ? (sec.imageCaption || caption) : '',
                 body: buildSectionSlideBody(sec, group, stripLabel)
             };
         });
@@ -608,15 +604,12 @@
 
             let inner = '';
             if (isCover) {
-                const coverImg = s.bg || slideImageUrl(m, 'cover');
                 inner = `
-                    <div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--cover">
-                        <div class="fitness-pres-cover-main">
-                            <h1 class="fitness-pres-title">${esc(s.title)}</h1>
-                            <p class="fitness-pres-subtitle">${esc(s.subtitle || '')}</p>
-                            ${s.intro ? `<div class="fitness-pres-cover-box">${prepPresHtml(s.intro)}</div>` : ''}
-                        </div>
-                        ${buildSlideFigure(coverImg, m.visualCaption || '', s.title || '', visualFallback)}
+                    <div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--cover fitness-pres-content-wrapper--cover-clean">
+                        <p class="fitness-pres-eyebrow">${esc(moduleTag || 'FITness')}</p>
+                        <h1 class="fitness-pres-title">${esc(s.title)}</h1>
+                        <p class="fitness-pres-subtitle">${esc(s.subtitle || '')}</p>
+                        ${s.intro ? `<div class="fitness-pres-cover-box">${prepPresHtml(s.intro)}</div>` : ''}
                     </div>`;
             } else {
                 const hasFigure = Boolean(s.image);

@@ -268,6 +268,29 @@
     direction: rtl;
 }
 
+.fitness-pres-content-wrapper--cover-clean {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    max-width: 920px;
+    margin: 0 auto;
+    direction: inherit;
+    text-align: inherit;
+}
+
+.fitness-pres-content-wrapper--cover-clean .fitness-pres-title {
+    font-size: clamp(1.55rem, 3.4cqi, 2.75rem);
+    margin-bottom: 4px;
+}
+
+.fitness-pres-content-wrapper--cover-clean .fitness-pres-cover-box {
+    max-height: none;
+    font-size: clamp(0.9rem, 1.45cqi, 1.08rem);
+    line-height: 1.7;
+}
+
 .fitness-pres[dir="ltr"] .fitness-pres-content-wrapper--cover {
     direction: ltr;
 }
@@ -296,8 +319,8 @@
 
 .fitness-pres-split {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(180px, 32%);
-    gap: 16px;
+    grid-template-columns: minmax(0, 1.4fr) minmax(200px, 34%);
+    gap: 18px;
     align-items: stretch;
     flex: 1;
     min-height: 0;
@@ -307,7 +330,7 @@
 
 .fitness-pres[dir="ltr"] .fitness-pres-split {
     direction: ltr;
-    grid-template-columns: minmax(0, 1fr) minmax(180px, 32%);
+    grid-template-columns: minmax(0, 1.4fr) minmax(200px, 34%);
 }
 
 .fitness-pres-glass {
@@ -315,21 +338,56 @@
     backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
-    padding: 16px 20px;
+    padding: 18px 22px;
     min-width: 0;
     min-height: 0;
     overflow: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .fitness-pres-body {
-    font-size: clamp(0.78rem, 1.25cqi, 0.98rem);
-    font-weight: 300;
-    line-height: 1.55;
+    font-size: clamp(0.92rem, 1.55cqi, 1.15rem);
+    font-weight: 400;
+    line-height: 1.7;
     overflow: auto;
     min-height: 0;
+}
+
+.fitness-pres-lead {
+    margin: 0;
+    font-size: 1.05em;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.fitness-pres-bullets {
+    margin: 0;
+    padding-right: 1.2rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fitness-pres[dir="ltr"] .fitness-pres-bullets {
+    padding-left: 1.2rem;
+    padding-right: 0;
+}
+
+.fitness-pres-bullets li {
+    color: rgba(243, 244, 246, 0.92);
+    line-height: 1.65;
+}
+
+.fitness-pres-title {
+    font-size: clamp(1.2rem, 2.5cqi, 2.1rem);
+    font-weight: 800;
+    margin: 0 0 12px;
+    line-height: 1.25;
+    flex-shrink: 0;
+    color: #fff;
 }
 
 .fitness-pres-body ul,
