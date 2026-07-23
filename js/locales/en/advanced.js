@@ -63,17 +63,17 @@ registerLocale('en', {
                 applications: 'MBA foresight programs, organizational consulting, APF training, and executive courses in energy and health.'
             },
             introTitle: 'Six pillars · from Framing to Acting',
-            intro: 'Each pillar is a measurable phase with separate parts. Weakness in one breaks the chain; for example, excellent forecasting without visioning yields shelf reports. Columns 1 to 3 are taught part by part in the decks below.',
+            intro: 'Each pillar is a measurable phase with internal parts taught as slides inside one column deck. Weakness in one breaks the chain; for example, excellent forecasting without visioning yields shelf reports. Framework Foresight (2013) is the Houston Way project flow across the six activities.',
             pillars: [
-                { title: '1. Framing', desc: 'Six separate parts: reframing mindsets, stakeholders, intent and purpose, goal setting, team selection, strategic environment.', color: 'var(--color-f)' },
-                { title: '2. Scanning', desc: 'Four separate parts: mapping, history, environmental scanning, engaging everyone.', color: '#4caf50' },
-                { title: '3. Forecasting', desc: 'Five separate parts: drivers and uncertainties, method choice, divergence, convergence, alternative futures.', color: '#ffaa00' },
-                { title: '4. Visioning', desc: 'Building preferred and normative futures. Bridge to backcasting and scenarios.', color: 'var(--color-cla)' },
-                { title: '5. Planning', desc: 'Turn insight into roadmaps, indicators, and policy. Where foresight dies or creates value.', color: 'var(--color-i)' },
-                { title: '6. Acting', desc: 'Pilots, structural change, learning. Without acting, foresight is management decoration.', color: 'var(--color-wheel-red)' }
+                { title: '1. Framing', desc: 'One deck: reframing mindsets, stakeholders, intent and purpose, goal setting, team selection, strategic environment.', color: 'var(--color-f)' },
+                { title: '2. Scanning', desc: 'One deck: mapping, history, environmental scanning, engaging everyone.', color: '#4caf50' },
+                { title: '3. Forecasting', desc: 'One deck: drivers and uncertainties, method choice, divergence, convergence, alternative futures.', color: '#ffaa00' },
+                { title: '4. Visioning', desc: 'One deck: identifying implications, challenging assumptions, visionary thinking.', color: 'var(--color-cla)' },
+                { title: '5. Planning', desc: 'One deck: thinking strategically, developing strategic options.', color: 'var(--color-i)' },
+                { title: '6. Acting', desc: 'One deck: communicating results, action agenda, strategic information system, institutionalizing strategic thinking.', color: 'var(--color-wheel-red)' }
             ],
             gapTitle: 'Difference from FRM',
-            gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines and Bishop say: choose tools by pillar, not the reverse. Book doctrine is in the part-by-part decks; university or industry examples belong only on labeled application slides. The Godet module below connects French prospective and MICMAC/MACTOR to this architecture.',
+            gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines and Bishop say: choose tools by pillar, not the reverse. Book doctrine is in the column decks; Framework Foresight maps pillars to project steps 7.1 to 7.6. University or industry examples belong only on labeled application slides. The Godet module connects French prospective and MICMAC/MACTOR to this architecture.',
             caseTitle: 'Companion: cone of plausibility',
             case: 'After scanning and inside Forecasting, the team draws a plausibility cone: center = baseline, edges = wild cards. Visioning focuses on plausible layers. Workshop depth is in the cone module on this page.'
         },

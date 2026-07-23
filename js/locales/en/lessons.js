@@ -192,22 +192,22 @@ registerLocale('en', {
             ],
             objectives: [
                 'Explain Framing through Acting in order.',
-                'Name the six Framing parts, four Scanning parts, and five Forecasting parts separately.',
-                'Diagnose which pillar and which part your organization is stuck on.',
+                'Open each column as one deck and name the slide sections inside Framing, Scanning, Forecasting, Visioning, Planning, and Acting.',
+                'Map a pillar to its Framework Foresight step (7.1 to 7.6).',
                 'Draw a cone of plausibility linked to Visioning.'
             ],
             outline: [
                 { step: '1', time: '15 min', title: 'From toolbox to path', desc: 'Why managers find FRM overwhelming.' },
-                { step: '2', time: '35 min', title: 'Framing and Scanning', desc: 'Column 1 and 2 parts, one by one.' },
-                { step: '3', time: '35 min', title: 'Forecasting and alternatives', desc: 'Drivers, divergence, convergence, alternatives, cone.' },
-                { step: '4', time: '20 min', title: 'Planning to Acting', desc: 'Roadmap and pilots; where foresight dies.' },
-                { step: '5', time: '15 min', title: 'Reflect', desc: 'Map your organization\'s pillars and parts.' }
+                { step: '2', time: '30 min', title: 'Framing and Scanning decks', desc: 'One card per column; flip slides for parts.' },
+                { step: '3', time: '30 min', title: 'Forecasting and Visioning', desc: 'Alternatives, cone, preferred future.' },
+                { step: '4', time: '25 min', title: 'Planning, Acting, Framework Foresight', desc: 'Options, acting agenda, Houston Way flow.' },
+                { step: '5', time: '20 min', title: 'Reflect', desc: 'Map your organization\'s pillars and weak link.' }
             ],
             readings: [
                 { type: 'Book', text: 'Hines & Bishop (2006). <em>Thinking About the Future</em>.' },
-                { type: 'Paper', text: 'Hines (2010). Primary futurist skill, APF.' }
+                { type: 'Paper', text: 'Hines & Bishop (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49.' }
             ],
-            assignment: 'Write your organization\'s foresight issue across Framing parts (1 page). Name the weakest part and one deliverable for Scanning or Forecasting.'
+            assignment: 'Write your organization\'s foresight issue across the six pillars (1 page). Name the weakest pillar and one Framework Foresight next step.'
         },
         scenarios: {
             meta: { module: '7', duration: '150 min (2 sessions)', level: 'Strategy / policy' },

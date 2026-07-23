@@ -713,41 +713,41 @@
         "applications": "MBA foresight programs, organizational consulting, APF training, and executive courses in energy and health."
       },
       "introTitle": "Six pillars · from Framing to Acting",
-      "intro": "Each pillar is a measurable phase with separate parts. Weakness in one breaks the chain; for example, excellent forecasting without visioning yields shelf reports. Columns 1 to 3 are taught part by part in the decks below.",
+      "intro": "Each pillar is a measurable phase with internal parts taught as slides inside one column deck. Weakness in one breaks the chain; for example, excellent forecasting without visioning yields shelf reports. Framework Foresight (2013) is the Houston Way project flow across the six activities.",
       "pillars": [
         {
           "title": "1. Framing",
-          "desc": "Six separate parts: reframing mindsets, stakeholders, intent and purpose, goal setting, team selection, strategic environment.",
+          "desc": "One deck: reframing mindsets, stakeholders, intent and purpose, goal setting, team selection, strategic environment.",
           "color": "var(--color-f)"
         },
         {
           "title": "2. Scanning",
-          "desc": "Four separate parts: mapping, history, environmental scanning, engaging everyone.",
+          "desc": "One deck: mapping, history, environmental scanning, engaging everyone.",
           "color": "#4caf50"
         },
         {
           "title": "3. Forecasting",
-          "desc": "Five separate parts: drivers and uncertainties, method choice, divergence, convergence, alternative futures.",
+          "desc": "One deck: drivers and uncertainties, method choice, divergence, convergence, alternative futures.",
           "color": "#ffaa00"
         },
         {
           "title": "4. Visioning",
-          "desc": "Building preferred and normative futures. Bridge to backcasting and scenarios.",
+          "desc": "One deck: identifying implications, challenging assumptions, visionary thinking.",
           "color": "var(--color-cla)"
         },
         {
           "title": "5. Planning",
-          "desc": "Turn insight into roadmaps, indicators, and policy. Where foresight dies or creates value.",
+          "desc": "One deck: thinking strategically, developing strategic options.",
           "color": "var(--color-i)"
         },
         {
           "title": "6. Acting",
-          "desc": "Pilots, structural change, learning. Without acting, foresight is management decoration.",
+          "desc": "One deck: communicating results, action agenda, strategic information system, institutionalizing strategic thinking.",
           "color": "var(--color-wheel-red)"
         }
       ],
       "gapTitle": "Difference from FRM",
-      "gap": "FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines and Bishop say: choose tools by pillar, not the reverse. Book doctrine is in the part-by-part decks; university or industry examples belong only on labeled application slides. The Godet module below connects French prospective and MICMAC/MACTOR to this architecture.",
+      "gap": "FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines and Bishop say: choose tools by pillar, not the reverse. Book doctrine is in the column decks; Framework Foresight maps pillars to project steps 7.1 to 7.6. University or industry examples belong only on labeled application slides. The Godet module connects French prospective and MICMAC/MACTOR to this architecture.",
       "caseTitle": "Companion: cone of plausibility",
       "case": "After scanning and inside Forecasting, the team draws a plausibility cone: center = baseline, edges = wild cards. Visioning focuses on plausible layers. Workshop depth is in the cone module on this page.",
       "moduleContentTag": "Lecture & slides",
@@ -760,15 +760,15 @@
       "moduleAssignmentTitle": "Assignment",
       "labelFormat": "Format",
       "labelCriteria": "Grading criteria",
-      "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen. Hines columns 1 to 3 (Framing, Scanning, Forecasting) are split into separate parts.",
+      "modulePickerHint": "Each card is one independent column deck. Press F for fullscreen. Flip slides inside a deck for that column's parts. Framework Foresight is column 7.",
       "tracksLabel": "Delivery track",
       "trackUniversity": "University",
       "trackIndustry": "Industry & organization",
       "universitySectionTitle": "University track · lecture decks",
       "industrySectionTitle": "Industry track · organizational workshop",
       "university": {
-        "title": "Six Pillars (Hines & Bishop) · Framing, Scanning, Forecasting",
-        "intro": "Based on Thinking About the Future by Andy Hines and Peter Bishop. Columns 1 to 3 are presented part by part. Book doctrine stays separate from university or industry application examples.",
+        "title": "Six Pillars (Hines & Bishop) · one deck per column",
+        "intro": "Based on Thinking About the Future by Andy Hines and Peter Bishop. Each column is one independent presentation with slides for its parts. Framework Foresight (2013) is the Houston Way project flow. Book doctrine stays separate from university or industry application examples.",
         "modules": [
           {
             "num": "M0",
@@ -779,7 +779,7 @@
             "readingsShort": "Hines & Bishop 2006",
             "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
             "visualCaption": "From framing to acting, one chain",
-            "lectureIntro": "Map of the six pillars in Thinking About the Future: column 1 Framing, column 2 Scanning, column 3 Forecasting, then Visioning, Planning, and Acting. Each column has separate parts; this catalog presents columns 1 to 3 part by part.",
+            "lectureIntro": "Map of the six pillars plus Framework Foresight. Each column below is one deck; flip slides inside the deck for its parts.",
             "lectureSections": [
               {
                 "id": "why",
@@ -795,15 +795,17 @@
               },
               {
                 "id": "depth",
-                "title": "2. Depth of columns 1 to 3",
+                "title": "2. Depth of all six columns",
                 "slideTitles": [
-                  "Framing parts",
-                  "Scanning parts",
-                  "Forecasting parts"
+                  "Columns 1 to 3",
+                  "Columns 4 to 6",
+                  "Framework Foresight map"
                 ],
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Framing: reframing mindsets, stakeholders, intent and purpose, goal setting, team selection, strategic environment</li><li>Scanning: mapping, history, environmental scanning, engaging everyone</li><li>Forecasting: drivers and uncertainties, method choice, divergence, convergence, alternative futures</li></ul>",
-                  "Each part has its own card on this page. Do not mix book doctrine with university or industry examples; examples belong only on application slides and must be labeled as application.",
+                  "<ul class=\"fitness-pres-bullets\"><li>Visioning: identifying implications, challenging assumptions, visionary thinking</li><li>Planning: thinking strategically, developing strategic options</li><li>Acting: communicating results, action agenda, strategic information system, institutionalizing strategic thinking</li></ul>",
+                  "<ul class=\"fitness-pres-bullets\"><li>Framing → 7.1 Domain description</li><li>Scanning → 7.2 Current assessment and scanning</li><li>Forecasting → 7.3a Baseline future, 7.3b Alternative futures</li><li>Visioning → 7.4a Preferred future, 7.4b Implications analysis</li><li>Planning → 7.5 Options: issue or proposal</li><li>Acting → 7.6 Leading indicators</li></ul>",
+                  "Each column is one card on this page. Do not mix book doctrine with university or industry examples; examples belong only on application slides and must be labeled as application.",
                   "Weakness in one pillar breaks the chain. Strong forecasting without visioning and acting produces a shelf report."
                 ]
               }
@@ -814,8 +816,8 @@
                 "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
               },
               {
-                "type": "Teaching note",
-                "text": "Classroom notes based on Bishop and Hines. The primary source remains Thinking About the Future."
+                "type": "Journal article",
+                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49. Figures: andyhinesight.com/tatf/figures (Elsevier permission noted in the book)."
               }
             ],
             "assignment": {
@@ -833,18 +835,18 @@
             }
           },
           {
-            "num": "F1",
-            "id": "framing-mindsets",
-            "pickerLabel": "Framing · mindsets",
-            "title": "Framing 1 · Reframing Mindsets",
-            "hours": "30 min",
-            "readingsShort": "Framing · Mindsets",
+            "num": "C1",
+            "id": "col1-framing",
+            "pickerLabel": "Framing (column 1)",
+            "title": "Column 1 · Framing",
+            "hours": "90 min",
+            "readingsShort": "Framing",
             "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 1 · part 1",
-            "lectureIntro": "First Framing part in Thinking About the Future: reframing mindsets before methods.",
+            "visualCaption": "Column 1 · one deck, six parts",
+            "lectureIntro": "Framing in Thinking About the Future: one presentation covering all six parts as successive slides.",
             "lectureSections": [
               {
-                "id": "book",
+                "id": "mindsets",
                 "title": "1. Reframing Mindsets",
                 "slideTitles": [
                   "Key book points"
@@ -852,40 +854,9 @@
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Optimism toward the future</li><li>Identifying biases</li><li>Detecting self-deceptions and external factors</li><li>Using the whole brain</li><li>Welcoming complexity</li><li>The influence of time and various factors on progress</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Personal bias",
-              "description": "Name three common team biases.",
-              "body": [
-                "For each bias, write one sentence on its effect on the foresight question."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Clear bias",
-                "Link to the issue"
-              ]
-            }
-          },
-          {
-            "num": "F2",
-            "id": "framing-stakeholders",
-            "pickerLabel": "Framing · stakeholders",
-            "title": "Framing 2 · Stakeholders",
-            "hours": "30 min",
-            "readingsShort": "Framing · Stakeholders",
-            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 1 · part 2",
-            "lectureIntro": "Second Framing part: knowing the organization and stakeholder concerns without turning the client into a futurist.",
-            "lectureSections": [
-              {
-                "id": "book",
+                "id": "stakeholders",
                 "title": "2. Stakeholders",
                 "slideTitles": [
                   "Key book points"
@@ -893,40 +864,9 @@
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Knowing the organization more deeply</li><li>Understanding the concerns of managers, employees, and the organization itself</li><li>Not trying to turn the client into a futurist</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Stakeholder map",
-              "description": "Name three primary stakeholders for the issue.",
-              "body": [
-                "State each stakeholder concern in one sentence."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Role coverage",
-                "No method preaching to the client"
-              ]
-            }
-          },
-          {
-            "num": "F3",
-            "id": "framing-intent",
-            "pickerLabel": "Framing · intent",
-            "title": "Framing 3 · Intent & Purpose",
-            "hours": "30 min",
-            "readingsShort": "Framing · Intent",
-            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 1 · part 3",
-            "lectureIntro": "Third Framing part: the purpose of exploring the future and testing whether the stated problem is the real one.",
-            "lectureSections": [
-              {
-                "id": "book",
+                "id": "intent",
                 "title": "3. Intent & Purpose",
                 "slideTitles": [
                   "Key book points"
@@ -934,39 +874,9 @@
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Exploring the future</li><li>Improving mental models</li><li>Balancing exploration and exploitation</li><li>Evaluating the problem presented by the organization: is it the real problem or not</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Real problem?",
-              "description": "Rewrite the organization's stated problem.",
-              "body": [
-                "One sentence: is this the core problem or a symptom of a deeper one?"
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Surface versus core distinction"
-              ]
-            }
-          },
-          {
-            "num": "F4",
-            "id": "framing-goals",
-            "pickerLabel": "Framing · goals",
-            "title": "Framing 4 · Goal Setting",
-            "hours": "30 min",
-            "readingsShort": "Framing · Goals",
-            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 1 · part 4",
-            "lectureIntro": "Fourth Framing part: measurable goals, outcome focus, and an outward future horizon.",
-            "lectureSections": [
-              {
-                "id": "book",
+                "id": "goals",
                 "title": "4. Goal Setting",
                 "slideTitles": [
                   "Key book points"
@@ -974,40 +884,9 @@
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Defining goals in measurable form</li><li>Focusing on outcomes rather than outputs</li><li>Working across different time horizons</li><li>Emphasizing the external environment and the future rather than the present and the inside</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Outcome goal",
-              "description": "Convert one output goal into an outcome goal.",
-              "body": [
-                "State the time horizon of the goal."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Measurable",
-                "Outcome focus"
-              ]
-            }
-          },
-          {
-            "num": "F5",
-            "id": "framing-team",
-            "pickerLabel": "Framing · team",
-            "title": "Framing 5 · Team Selection",
-            "hours": "25 min",
-            "readingsShort": "Framing · Team",
-            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 1 · part 5",
-            "lectureIntro": "Fifth Framing part: foresight is a team sport and an interactive process.",
-            "lectureSections": [
-              {
-                "id": "book",
+                "id": "team",
                 "title": "5. Team Selection",
                 "slideTitles": [
                   "Key book points"
@@ -1015,39 +894,9 @@
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>A team sport</li><li>Turning it into an interactive and comprehensive process</li><li>Involving diverse people</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Team mix",
-              "description": "Name four essential roles for a foresight workshop on your issue.",
-              "body": [
-                "Give one sentence reason per role."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Role diversity"
-              ]
-            }
-          },
-          {
-            "num": "F6",
-            "id": "framing-environment",
-            "pickerLabel": "Framing · strategic environment",
-            "title": "Framing 6 · Strategic Environment",
-            "hours": "25 min",
-            "readingsShort": "Framing · Environment",
-            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 1 · part 6",
-            "lectureIntro": "Sixth Framing part: an environment for open thinking, experiments, and prototypes.",
-            "lectureSections": [
-              {
-                "id": "book",
+                "id": "environment",
                 "title": "6. Strategic Environment",
                 "slideTitles": [
                   "Key book points"
@@ -1064,30 +913,32 @@
               }
             ],
             "assignment": {
-              "title": "Safe-space rules",
-              "description": "Write three rules for open thinking in your organization.",
+              "title": "Frame the issue",
+              "description": "Write the foresight issue across the six Framing parts.",
               "body": [
-                "Propose one small prototype runnable in two weeks."
+                "Name the weakest Framing part.",
+                "Propose one fix for that part."
               ],
-              "format": "Half page",
+              "format": "One page",
               "criteria": [
-                "Practical rules"
+                "All six parts addressed",
+                "Clear weak-part diagnosis"
               ]
             }
           },
           {
-            "num": "S1",
-            "id": "scanning-mapping",
-            "pickerLabel": "Scanning · mapping",
-            "title": "Scanning 1 · Mapping",
-            "hours": "30 min",
-            "readingsShort": "Scanning · Mapping",
+            "num": "C2",
+            "id": "col2-scanning",
+            "pickerLabel": "Scanning (column 2)",
+            "title": "Column 2 · Scanning",
+            "hours": "75 min",
+            "readingsShort": "Scanning",
             "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 2 · part 1",
-            "lectureIntro": "First Scanning part: system mapping, integrative view, and stakeholder analysis with a global perspective.",
+            "visualCaption": "Column 2 · one deck, four parts",
+            "lectureIntro": "Scanning in Thinking About the Future: one presentation covering mapping, history, environmental scanning, and engaging everyone.",
             "lectureSections": [
               {
-                "id": "book",
+                "id": "mapping",
                 "title": "1. Mapping",
                 "slideTitles": [
                   "Key book points"
@@ -1095,40 +946,9 @@
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>A global perspective</li><li>Mapping the system under study</li><li>An integrative view</li><li>Stakeholder analysis</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "System map",
-              "description": "Draw a simple boundary for the issue system.",
-              "body": [
-                "Mark three boundary stakeholders."
-              ],
-              "format": "One figure with three sentences",
-              "criteria": [
-                "Clear boundary",
-                "Integrative view"
-              ]
-            }
-          },
-          {
-            "num": "S2",
-            "id": "scanning-history",
-            "pickerLabel": "Scanning · history",
-            "title": "Scanning 2 · History",
-            "hours": "25 min",
-            "readingsShort": "Scanning · History",
-            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 2 · part 2",
-            "lectureIntro": "Second Scanning part: looking to the past, not reinventing the wheel, and watching for innovations that create false comfort.",
-            "lectureSections": [
-              {
-                "id": "book",
+                "id": "history",
                 "title": "2. History",
                 "slideTitles": [
                   "Key book points"
@@ -1136,39 +956,9 @@
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Beginning by looking at the past</li><li>Not reinventing the wheel</li><li>Awareness of innovations that create false comfort</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Issue history",
-              "description": "Summarize two prior organizational attempts on this issue.",
-              "body": [
-                "Name one innovation that created false comfort."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Real historical grounding"
-              ]
-            }
-          },
-          {
-            "num": "S3",
-            "id": "scanning-environmental",
-            "pickerLabel": "Scanning · environment",
-            "title": "Scanning 3 · Environmental Scanning",
-            "hours": "35 min",
-            "readingsShort": "Scanning · Environment",
-            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 2 · part 3",
-            "lectureIntro": "Third Scanning part: scanning for changing contexts, integrating inside and outside, and examining unattractive unknowns.",
-            "lectureSections": [
-              {
-                "id": "book",
+                "id": "env",
                 "title": "3. Environmental Scanning",
                 "slideTitles": [
                   "Key book points"
@@ -1176,40 +966,9 @@
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Scanning the environment for awareness of changing contexts, including: exploration, analysis, framing, application</li><li>Integrating internal and external environments</li><li>Examining unknown and unattractive domains</li><li>Not all information is in the research literature</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Four-step scan",
-              "description": "Write one explore, analyze, frame, apply cycle for your issue.",
-              "body": [
-                "Propose one source outside formal research literature."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Four steps covered",
-                "Credible informal source"
-              ]
-            }
-          },
-          {
-            "num": "S4",
-            "id": "scanning-engaging",
-            "pickerLabel": "Scanning · engaging",
-            "title": "Scanning 4 · Engaging Everyone",
-            "hours": "30 min",
-            "readingsShort": "Scanning · Engaging",
-            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-            "visualCaption": "Column 2 · part 4",
-            "lectureIntro": "Fourth Scanning part: engaging inside and outside, consulting prominents and outcasts, and collective workshop learning.",
-            "lectureSections": [
-              {
-                "id": "book",
+                "id": "engaging",
                 "title": "4. Engaging Everyone",
                 "slideTitles": [
                   "Key book points"
@@ -1226,195 +985,73 @@
               }
             ],
             "assignment": {
-              "title": "Missing voices",
-              "description": "Name one prominent and one marginalized voice for your issue.",
+              "title": "Scan design",
+              "description": "Design a short scan for your issue.",
               "body": [
-                "Propose one workshop activity for collective learning."
+                "Draw a system boundary.",
+                "Name one history lesson and one outcast voice to consult."
               ],
-              "format": "Half page",
+              "format": "One page",
               "criteria": [
-                "Voice diversity",
-                "Specific collective activity"
+                "Clear boundary",
+                "Inside and outside engagement"
               ]
             }
           },
           {
-            "num": "P1",
-            "id": "forecast-drivers",
-            "pickerLabel": "Forecasting · drivers",
-            "title": "Forecasting 1 · Drivers and Uncertainties",
-            "hours": "40 min",
-            "readingsShort": "Forecasting · Drivers",
+            "num": "C3",
+            "id": "col3-forecasting",
+            "pickerLabel": "Forecasting (column 3)",
+            "title": "Column 3 · Forecasting",
+            "hours": "90 min",
+            "readingsShort": "Forecasting",
             "visual": "assets/methods/covers/hines-m2-cone.svg",
-            "visualCaption": "Column 3 · part 1",
-            "lectureIntro": "First Forecasting part: drivers, layered depth of change, intersections and era shifts, and predetermined anchors versus key uncertainties.",
+            "visualCaption": "Column 3 · one deck, five parts",
+            "lectureIntro": "Forecasting maps the spectrum of futures. One presentation covers drivers, tools, divergence, convergence, and alternative futures.",
             "lectureSections": [
               {
-                "id": "book",
-                "title": "1. Identifying drivers and uncertainties",
+                "id": "drivers",
+                "title": "1. Drivers and Uncertainties",
                 "slideTitles": [
                   "Key book points"
                 ],
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Identifying main drivers (obvious and less visible; STEEP strategic context; challenging present assumptions)</li><li>Using a layered approach (CLA) for depth of change: litany, social/systemic, discourse/worldview, metaphor/myth</li><li>Assessing fundamental changes that reshape the usual space</li><li>Seeking intersections of change (Kauffman principle; trends are not isolated)</li><li>Seeking turning points (Era)</li><li>Improving decisions by reducing uncertainty (predetermined anchors versus key uncertainties)</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Drivers and uncertainties",
-              "description": "Write three drivers and two key uncertainties for the issue.",
-              "body": [
-                "Separate one predetermined anchor from the uncertainties."
-              ],
-              "format": "One page",
-              "criteria": [
-                "Certain versus uncertain",
-                "STEEP or CLA layer reference"
-              ]
-            }
-          },
-          {
-            "num": "P2",
-            "id": "forecast-methods",
-            "pickerLabel": "Forecasting · method choice",
-            "title": "Forecasting 2 · Choosing Forecasting Tools",
-            "hours": "30 min",
-            "readingsShort": "Forecasting · Methods",
-            "visual": "assets/methods/covers/hines-m2-cone.svg",
-            "visualCaption": "Column 3 · part 2",
-            "lectureIntro": "Second Forecasting part: fitting tools to ambiguity (Courtney framework), using at least one formal method, and combining techniques.",
-            "lectureSections": [
-              {
-                "id": "book",
-                "title": "2. Choosing forecasting tools",
+                "id": "methods",
+                "title": "2. Choosing Forecasting Tools",
                 "slideTitles": [
                   "Key book points"
                 ],
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Correct approaches and tools (Courtney framework; fit tools to the level of ambiguity)</li><li>Using at least one formal method</li><li>Matching methods to the situation</li><li>Combining techniques for a wider picture of possible futures</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Fitted toolkit",
-              "description": "State the issue's ambiguity level in one sentence.",
-              "body": [
-                "Choose one formal method and one complementary method and justify the fit."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Tool fit to ambiguity"
-              ]
-            }
-          },
-          {
-            "num": "P3",
-            "id": "forecast-diverge",
-            "pickerLabel": "Forecasting · divergence",
-            "title": "Forecasting 3 · Divergence: Generating Ideas",
-            "hours": "35 min",
-            "readingsShort": "Forecasting · Divergence",
-            "visual": "assets/methods/covers/hines-m2-cone.svg",
-            "visualCaption": "Column 3 · part 3",
-            "lectureIntro": "Third Forecasting part: creative divergence beyond brainstorming alone, with analytic rigor and no early convergence.",
-            "lectureSections": [
-              {
-                "id": "book",
-                "title": "3. Divergence: generating ideas",
+                "id": "diverge",
+                "title": "3. Divergence: Generating Ideas",
                 "slideTitles": [
                   "Key book points"
                 ],
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Stimulating new thoughts with creative tools and approaches (strategic relatives, value analysis, and similar)</li><li>Going beyond mere brainstorming</li><li>Inverting problems (assume what seems certain is wrong)</li><li>Seeking disruptive ideas and anti-groupthink prompts</li><li>Combining rigor and creativity</li><li>Using both analytic and affective components</li><li>Experiencing the future first-hand (sensory or simulation)</li><li>Avoiding premature convergence of ideas</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Inversion",
-              "description": "Assume one taken-for-granted claim about the issue is wrong and write three alternative ideas.",
-              "body": [
-                "At least one idea must push against groupthink."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Real divergence",
-                "No early convergence"
-              ]
-            }
-          },
-          {
-            "num": "P4",
-            "id": "forecast-converge",
-            "pickerLabel": "Forecasting · convergence",
-            "title": "Forecasting 4 · Convergence: Prioritizing Ideas",
-            "hours": "25 min",
-            "readingsShort": "Forecasting · Convergence",
-            "visual": "assets/methods/covers/hines-m2-cone.svg",
-            "visualCaption": "Column 3 · part 4",
-            "lectureIntro": "Fourth Forecasting part: after divergence, prioritize shared grounds with critical realism and skepticism toward trends.",
-            "lectureSections": [
-              {
-                "id": "book",
-                "title": "4. Convergence: prioritizing ideas",
+                "id": "converge",
+                "title": "4. Convergence: Prioritizing Ideas",
                 "slideTitles": [
                   "Key book points"
                 ],
                 "paragraphs": [
                   "<ul class=\"fitness-pres-bullets\"><li>Identifying and prioritizing shared grounds</li><li>Balancing realism with a critical stance</li><li>Treating trends with skepticism</li></ul>"
                 ]
-              }
-            ],
-            "readings": [
+              },
               {
-                "type": "Book",
-                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-              }
-            ],
-            "assignment": {
-              "title": "Top three",
-              "description": "From divergent ideas, prioritize three shared grounds.",
-              "body": [
-                "Add one skeptical sentence about trends for each."
-              ],
-              "format": "Half page",
-              "criteria": [
-                "Clear priority",
-                "Skeptical trend reading"
-              ]
-            }
-          },
-          {
-            "num": "P5",
-            "id": "forecast-alternatives",
-            "pickerLabel": "Forecasting · alternatives",
-            "title": "Forecasting 5 · Alternative Futures",
-            "hours": "40 min",
-            "readingsShort": "Forecasting · Alternatives",
-            "visual": "assets/methods/covers/hines-m2-cone.svg",
-            "visualCaption": "Column 3 · part 5",
-            "lectureIntro": "Fifth Forecasting part: challenging the baseline, building alternative futures, probable surprises, and quality control of alternatives.",
-            "lectureSections": [
-              {
-                "id": "book",
-                "title": "5. Forming alternative futures",
+                "id": "alternatives",
+                "title": "5. Alternative Futures",
                 "slideTitles": [
                   "Key book points"
                 ],
@@ -1430,7 +1067,7 @@
               },
               {
                 "type": "Journal article",
-                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49."
+                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49. Figures: andyhinesight.com/tatf/figures (Elsevier permission noted in the book)."
               }
             ],
             "assignment": {
@@ -1444,6 +1081,311 @@
               "criteria": [
                 "Future world not trend list",
                 "Internal consistency"
+              ]
+            }
+          },
+          {
+            "num": "C4",
+            "id": "col4-visioning",
+            "pickerLabel": "Visioning (column 4)",
+            "title": "Column 4 · Visioning",
+            "hours": "75 min",
+            "readingsShort": "Visioning",
+            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+            "visualCaption": "Column 4 · one deck, three clusters",
+            "lectureIntro": "Forecasting maps the spectrum of futures; Visioning asks so what? Given those possibles, what will the organization do? Without that question, foresight stays an intellectual exercise; the path to mission, goals, effectiveness, performance, and the bottom line must be mapped.",
+            "lectureSections": [
+              {
+                "id": "intro",
+                "title": "0. From forecasting to visioning",
+                "slideTitles": [
+                  "So what?"
+                ],
+                "paragraphs": [
+                  "Forecasting shows what may happen. Visioning chooses and shapes a preferred direction so foresight reaches mission, goals, effectiveness, performance, and the bottom line."
+                ]
+              },
+              {
+                "id": "implications",
+                "title": "1. Identifying Implications",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Using alternatives to frame important questions, not as final answers</li><li>Considering second and third order consequences (futures wheel)</li><li>Attending to long term and unintended consequences</li></ul>"
+                ]
+              },
+              {
+                "id": "assumptions",
+                "title": "2. Challenging Assumptions",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Stating assumptions explicitly</li><li>Challenging conventional wisdom</li><li>Assume nothing; question everything</li><li>Identifying governing taboos and breaking them</li><li>Cross checking assumptions and validating with experts</li></ul>"
+                ]
+              },
+              {
+                "id": "visionary",
+                "title": "3. Visionary Thinking",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Creating a shared strategic vision</li><li>Placing the vision on a time continuum</li><li>Strategic goal setting as stretch goals (BHAG / stretch)</li><li>Positive leverage and Appreciative Inquiry (what you focus on, you get)</li><li>Dator's law: every useful statement about the future first looks ridiculous</li><li>Asking what if questions</li><li>Sensing and activating the emerging future (presencing)</li></ul>"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
+              }
+            ],
+            "assignment": {
+              "title": "Preferred future sketch",
+              "description": "Write a one paragraph preferred future for your issue.",
+              "body": [
+                "List three assumptions you challenged.",
+                "Name one second order implication."
+              ],
+              "format": "One page",
+              "criteria": [
+                "Normative choice clear",
+                "Assumptions challenged"
+              ]
+            }
+          },
+          {
+            "num": "C5",
+            "id": "col5-planning",
+            "pickerLabel": "Planning (column 5)",
+            "title": "Column 5 · Planning",
+            "hours": "60 min",
+            "readingsShort": "Planning",
+            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+            "visualCaption": "Column 5 · one deck, two clusters",
+            "lectureIntro": "Planning bridges vision to strategy and tactics that lead to action. It maps from where we are to where we want to be.",
+            "lectureSections": [
+              {
+                "id": "strategic",
+                "title": "1. Thinking Strategically",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Strengthening emergence at the organizational level</li><li>Treating cultural and social environment as the primary component</li><li>Creating strategy depends on stimulating strategic conversations across the organization</li><li>Identifying what must change and what must not change</li><li>Discovering main strategic choice areas through critical branching points</li></ul>"
+                ]
+              },
+              {
+                "id": "options",
+                "title": "2. Developing Strategic Options",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Building fundamental strategic recommendations on the organization's distinctive advantages</li><li>Multidimensional evaluation of the proposed strategy</li><li>Considering do nothing, plausible, and preferred options when presenting choices</li><li>Having contingency plans for the unexpected (a spectrum of options, not lock on one best)</li></ul>"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
+              }
+            ],
+            "assignment": {
+              "title": "Option spectrum",
+              "description": "Propose three strategic options for your preferred future.",
+              "body": [
+                "Include a do nothing option.",
+                "State what must change and what must not."
+              ],
+              "format": "One page",
+              "criteria": [
+                "Spectrum of options",
+                "Change / no change clarity"
+              ]
+            }
+          },
+          {
+            "num": "C6",
+            "id": "col6-acting",
+            "pickerLabel": "Acting (column 6)",
+            "title": "Column 6 · Acting",
+            "hours": "90 min",
+            "readingsShort": "Acting",
+            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+            "visualCaption": "Column 6 · one deck, four parts",
+            "lectureIntro": "Forewarned is forearmed. Acting is the final stage: communicate (abstract to concrete), translate plan to action, and institutionalize so foresight is not a one off.",
+            "lectureSections": [
+              {
+                "id": "communicate",
+                "title": "1. Communicating / Transferring Results",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Designing results for transferability</li><li>Arranging the message in the audience's thinking style</li><li>Immersing stakeholders and decision makers in alternatives for acceptance and alignment</li><li>Being provocative (with care; fit organizational culture)</li><li>Modularizing outputs: keep the good, address the bad</li><li>Awareness of change through experience, insight, and reframing</li></ul>"
+                ]
+              },
+              {
+                "id": "agenda",
+                "title": "2. Action Agenda",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Creating a sense of urgency</li><li>Strengthening what the organization already does well and building from there</li><li>Purpose of activity: help better decisions</li><li>Decide without all desired data (avoid analysis paralysis)</li><li>Milestones toward the preferred future and celebrating small wins</li><li>Recommend investing at least in one improbable idea</li></ul>"
+                ]
+              },
+              {
+                "id": "sis",
+                "title": "3. Strategic Information System",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>An information system aligned with foresight and linked to planning</li><li>An early warning system for weak signals</li><li>Searching for sources of turbulence in the system</li><li>Indicators that signal a potential crisis</li><li>Indicators that are easy to understand and collect</li></ul>"
+                ]
+              },
+              {
+                "id": "institutionalize",
+                "title": "4. Institutionalizing Strategic Thinking",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Selecting, designing, and making the conceptual framework explicit</li><li>Developing a futures rhythm (regular cadence of study and attention)</li><li>Regular repetition of strategic foresight activities</li><li>Training programs for institutionalization</li><li>In a complex environment, learning is the best approach (learning organization)</li><li>Shifting attitudes toward accepting change</li></ul>"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
+              }
+            ],
+            "assignment": {
+              "title": "90 day acting plan",
+              "description": "Write a 90 day acting agenda for your foresight issue.",
+              "body": [
+                "Name three milestones and one early warning indicator.",
+                "State one ritual that institutionalizes the work."
+              ],
+              "format": "One page",
+              "criteria": [
+                "Urgency and milestones",
+                "Institutional hook"
+              ]
+            }
+          },
+          {
+            "num": "C7",
+            "id": "col7-framework-foresight",
+            "pickerLabel": "Framework Foresight (column 7)",
+            "title": "Column 7 · Framework Foresight (Houston Way)",
+            "hours": "90 min",
+            "readingsShort": "Framework Foresight 2013",
+            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+            "visualCaption": "Meta method · project flow 7.1 to 7.6",
+            "lectureIntro": "Book guides for activities 1 to 6 are practitioner tips, not one single method. Framework Foresight is the Houston Way meta method for applying the six activities as a project flow. Two meanings of framework: frame the project without a rigid blueprint; and use the six activities as a standard project frame. It is modular: not the only right way; baseline plus alternatives are key outputs; you can stop early or start mid flow. Be selective: quality over quantity (about 5 to 10 items per category); flow past → present → future → back to present.",
+            "lectureSections": [
+              {
+                "id": "role",
+                "title": "0. Role of Framework Foresight",
+                "slideTitles": [
+                  "Meta method",
+                  "Mapping to six pillars"
+                ],
+                "paragraphs": [
+                  "Framework Foresight turns the six pillars into a selectable project sequence. Quality over quantity; keep about 5 to 10 items per category.",
+                  "<ul class=\"fitness-pres-bullets\"><li>Framing → 7.1 Domain description</li><li>Scanning → 7.2 Current assessment and scanning</li><li>Forecasting → 7.3a Baseline future, 7.3b Alternative futures</li><li>Visioning → 7.4a Preferred future, 7.4b Implications analysis</li><li>Planning → 7.5 Options: issue or proposal</li><li>Acting → 7.6 Leading indicators</li></ul>"
+                ]
+              },
+              {
+                "id": "domain",
+                "title": "1. Domain description (7.1)",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Domain definition</li><li>Geographic scope</li><li>Time horizon</li><li>Domain map</li><li>Key issue or question (optional)</li></ul>"
+                ]
+              },
+              {
+                "id": "current",
+                "title": "2. Current assessment and scanning (7.2)",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Current conditions</li><li>Stakeholders</li><li>History (recent past that defines the present period)</li><li>Scanning findings: FIND → COLLECT → ANALYZE</li></ul>"
+                ]
+              },
+              {
+                "id": "baseline",
+                "title": "3. Baseline and alternative futures (7.3)",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Baseline future: trends, cycles, plans, others' forecasts</li><li>Alternative futures: events (including wildcards), issues, ideas, prioritizing key uncertainties; balance with the baseline</li></ul>"
+                ]
+              },
+              {
+                "id": "preferred",
+                "title": "4. Preferred future and implications (7.4)",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Preferred future: vision and mission</li><li>Implications analysis: choose a future, categories, brainstorming, implications wheel, most important and provocative, redefine as issue or opportunity</li></ul>"
+                ]
+              },
+              {
+                "id": "options",
+                "title": "5. Options: issue or proposal (7.5)",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Prioritize issues / opportunities</li><li>Select (usually 3 to 6)</li><li>One minute message (why / what / how and owner)</li></ul>"
+                ]
+              },
+              {
+                "id": "indicators",
+                "title": "6. Leading indicators (7.6)",
+                "slideTitles": [
+                  "Key book points"
+                ],
+                "paragraphs": [
+                  "<ul class=\"fitness-pres-bullets\"><li>Indicators for each alternative (for example 3)</li><li>Monitor how uncertainties resolve; signal toward one alternative</li></ul>"
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Journal article",
+                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49. Figures: andyhinesight.com/tatf/figures (Elsevier permission noted in the book)."
+              },
+              {
+                "type": "Book",
+                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
+              }
+            ],
+            "assignment": {
+              "title": "Mini Framework Foresight",
+              "description": "Run a compressed FF on your issue.",
+              "body": [
+                "Fill 7.1 domain fields.",
+                "Write one baseline sentence, one alternative, one preferred implication, and one leading indicator."
+              ],
+              "format": "Two pages",
+              "criteria": [
+                "Domain clear",
+                "Baseline plus alternative",
+                "At least one leading indicator"
               ]
             }
           },
@@ -1492,7 +1434,7 @@
               },
               {
                 "type": "Journal article",
-                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49."
+                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49. Figures: andyhinesight.com/tatf/figures (Elsevier permission noted in the book)."
               }
             ],
             "assignment": {
@@ -4079,8 +4021,8 @@
       ],
       "objectives": [
         "Explain Framing through Acting in order.",
-        "Name the six Framing parts, four Scanning parts, and five Forecasting parts separately.",
-        "Diagnose which pillar and which part your organization is stuck on.",
+        "Open each column as one deck and name the slide sections inside Framing, Scanning, Forecasting, Visioning, Planning, and Acting.",
+        "Map a pillar to its Framework Foresight step (7.1 to 7.6).",
         "Draw a cone of plausibility linked to Visioning."
       ],
       "outline": [
@@ -4092,27 +4034,27 @@
         },
         {
           "step": "2",
-          "time": "35 min",
-          "title": "Framing and Scanning",
-          "desc": "Column 1 and 2 parts, one by one."
+          "time": "30 min",
+          "title": "Framing and Scanning decks",
+          "desc": "One card per column; flip slides for parts."
         },
         {
           "step": "3",
-          "time": "35 min",
-          "title": "Forecasting and alternatives",
-          "desc": "Drivers, divergence, convergence, alternatives, cone."
+          "time": "30 min",
+          "title": "Forecasting and Visioning",
+          "desc": "Alternatives, cone, preferred future."
         },
         {
           "step": "4",
-          "time": "20 min",
-          "title": "Planning to Acting",
-          "desc": "Roadmap and pilots; where foresight dies."
+          "time": "25 min",
+          "title": "Planning, Acting, Framework Foresight",
+          "desc": "Options, acting agenda, Houston Way flow."
         },
         {
           "step": "5",
-          "time": "15 min",
+          "time": "20 min",
           "title": "Reflect",
-          "desc": "Map your organization's pillars and parts."
+          "desc": "Map your organization's pillars and weak link."
         }
       ],
       "readings": [
@@ -4122,10 +4064,10 @@
         },
         {
           "type": "Paper",
-          "text": "Hines (2010). Primary futurist skill, APF."
+          "text": "Hines & Bishop (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49."
         }
       ],
-      "assignment": "Write your organization's foresight issue across Framing parts (1 page). Name the weakest part and one deliverable for Scanning or Forecasting."
+      "assignment": "Write your organization's foresight issue across the six pillars (1 page). Name the weakest pillar and one Framework Foresight next step."
     },
     "scenarios": {
       "meta": {

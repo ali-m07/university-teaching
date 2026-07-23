@@ -1,5 +1,5 @@
 /**
- * FA · Six Pillars (Hines & Bishop) · Framing, Scanning, Forecasting part decks
+ * FA · Six Pillars (Hines & Bishop) · یک ارائه برای هر ستون + Framework Foresight
  */
 registerLocale('fa', {
     "advancedPage": {
@@ -14,15 +14,15 @@ registerLocale('fa', {
             "moduleAssignmentTitle": "تکلیف",
             "labelFormat": "فرمت تحویل",
             "labelCriteria": "معیار نمره‌دهی",
-            "modulePickerHint": "هر کارت یک ارائه مستقل است. کلید F تمام‌صفحه. ستون‌های ۱ تا ۳ هاینز (چارچوب‌بندی، پویش، پیش‌بینی) هر جزء جداست.",
+            "modulePickerHint": "هر کارت یک ارائه مستقل برای یک ستون است. کلید F تمام‌صفحه. اجزای هر ستون را با ورق زدن اسلاید داخل همان ارائه ببینید. Framework Foresight ستون ۷ است.",
             "tracksLabel": "مسیر اجرا",
             "trackUniversity": "دانشگاه",
             "trackIndustry": "صنعت و سازمان",
             "universitySectionTitle": "مسیر دانشگاه · ارائه‌های درسی",
             "industrySectionTitle": "مسیر صنعت · کارگاه سازمانی",
             "university": {
-                "title": "شش ستون هاینز و بی‌شاپ · چارچوب‌بندی، پویش، پیش‌بینی",
-                "intro": "بر پایه Thinking About the Future نوشته Andy Hines و Peter Bishop. ستون‌های ۱ تا ۳ جزءبه‌جزء ارائه می‌شوند. متن کتاب از مصداق دانشگاه یا صنعت جداست.",
+                "title": "شش ستون هاینز و بی‌شاپ · یک ارائه برای هر ستون",
+                "intro": "بر پایه Thinking About the Future نوشته Andy Hines و Peter Bishop. هر ستون یک ارائه مستقل است و اجزایش اسلایدبه‌اسلاید داخل همان ارائه می‌آید. Framework Foresight (۲۰۱۳) جریان پروژهٔ روش هیوستون است. متن کتاب از مصداق دانشگاه یا صنعت جداست.",
                 "modules": [
                     {
                         "num": "M0",
@@ -33,7 +33,7 @@ registerLocale('fa', {
                         "readingsShort": "Hines & Bishop 2006",
                         "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
                         "visualCaption": "از چارچوب‌بندی تا اقدام، یک زنجیره",
-                        "lectureIntro": "نقشه شش ستون Thinking About the Future: ستون ۱ چارچوب‌بندی، ستون ۲ پویش، ستون ۳ پیش‌بینی، سپس تصویرسازی، برنامه‌ریزی و اقدام. هر ستون اجزای جدا دارد؛ در این کاتالوگ ستون‌های ۱ تا ۳ جزءبه‌جزء ارائه می‌شوند.",
+                        "lectureIntro": "نقشه شش ستون به‌علاوه Framework Foresight. هر ستون پایین صفحه یک ارائه است؛ اجزا را با ورق زدن اسلاید داخل همان ارائه ببینید.",
                         "lectureSections": [
                             {
                                 "id": "why",
@@ -44,21 +44,23 @@ registerLocale('fa', {
                                 ],
                                 "paragraphs": [
                                     "برنامه آینده‌نگاری هیوستون فهرست روش را کافی نمی‌دانست. مدیران می‌پرسیدند از کجا شروع کنم. پاسخ هاینز و بی‌شاپ: شش ستون یک مسیر ترتیبی است، نه سبد ابزار جدا.",
-                                    "<ul class=\"fitness-pres-bullets\"><li>چارچوب‌بندی: چه مسئله‌ای و برای چه کسی</li><li>پویش: چه چیزی در حال تغییر است</li><li>پیش‌بینی: چه آینده‌هایی ممکن است</li><li>تصویرسازی: کدام آینده مطلوب است</li><li>برنامه‌ریزی: چه باید کرد</li><li>اقدام: چه کسی امروز شروع می‌کند</li></ul>"
+                                    "<ul class=\"fitness-pres-bullets\"><li>چارچوب‌بندی: چه مسئله‌ای و برای چه کسی</li><li>پویش: چه چیزی در حال تغییر است</li><li>پیش‌بینی: چه آینده‌هایی ممکن است</li><li>چشم‌اندازسازی: کدام آینده مطلوب است</li><li>برنامه‌ریزی: چه باید کرد</li><li>اقدام: چه کسی امروز شروع می‌کند</li></ul>"
                                 ]
                             },
                             {
                                 "id": "depth",
-                                "title": "۲. عمق ستون‌های ۱ تا ۳",
+                                "title": "۲. عمق هر شش ستون",
                                 "slideTitles": [
-                                    "اجزای چارچوب‌بندی",
-                                    "اجزای پویش",
-                                    "اجزای پیش‌بینی"
+                                    "ستون‌های ۱ تا ۳",
+                                    "ستون‌های ۴ تا ۶",
+                                    "نقشه Framework Foresight"
                                 ],
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>چارچوب‌بندی: تعدیل نگرش‌ها، شناخت ذی‌نفعان، حرکت و مقصود، هدف‌گذاری، انتخاب تیم، خلق محیط راهبردی</li><li>پویش: ترسیم نقشه، مطالعه پیشینه، پویش محیطی، درگیر کردن همه افراد</li><li>پیش‌بینی: نیروهای پیشران و عدم‌قطعیت‌ها، انتخاب ابزار، واگرایی، همگرایی، تشکیل بدیل‌ها</li></ul>",
-                                    "هر جزء در کارت جداگانه همین صفحه ارائه می‌شود. متن کتاب را با مصداق دانشگاه یا صنعت قاطی نکنید؛ مصداق فقط در اسلاید کاربرد و با برچسب مصداق می‌آید.",
-                                    "ضعف یک ستون کل زنجیره را می‌شکند. پیش‌بینی قوی بدون تصویرسازی و اقدام، گزارش قفسه‌ای می‌سازد."
+                                    "<ul class=\"fitness-pres-bullets\"><li>چشم‌اندازسازی: شناسایی دلالت‌ها، به چالش کشیدن پیش‌فرض‌ها، تفکر چشم‌اندازگرا</li><li>برنامه‌ریزی: اندیشیدن به صورت راهبردی، توسعه گزینه‌های راهبردی</li><li>اقدام: ارتباط و انتقال نتایج، دستورکار اقدام، سامانه اطلاعات راهبردی، نهادینه‌سازی تفکر راهبردی</li></ul>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>چارچوب‌بندی → ۷.۱ توصیف حوزه</li><li>پویش → ۷.۲ وضع فعلی و پویش</li><li>پیش‌بینی → ۷.۳الف خط پایه، ۷.۳ب آینده‌های جایگزین</li><li>چشم‌اندازسازی → ۷.۴الف آینده مطلوب، ۷.۴ب تحلیل پیامدها</li><li>برنامه‌ریزی → ۷.۵ گزینه‌ها: مسئله یا پیشنهاد</li><li>اقدام → ۷.۶ شاخص‌های پیشرو</li></ul>",
+                                    "هر ستون در کارت جداگانه همین صفحه یک ارائه است. متن کتاب را با مصداق دانشگاه یا صنعت قاطی نکنید؛ مصداق فقط در اسلاید کاربرد و با برچسب مصداق می‌آید.",
+                                    "ضعف یک ستون کل زنجیره را می‌شکند. پیش‌بینی قوی بدون چشم‌اندازسازی و اقدام، گزارش قفسه‌ای می‌سازد."
                                 ]
                             }
                         ],
@@ -68,8 +70,8 @@ registerLocale('fa', {
                                 "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
                             },
                             {
-                                "type": "یادداشت درسی",
-                                "text": "خلاصه فارسی آموزش درباره آینده، بر پایه Bishop & Hines، به‌عنوان جزوه تدریس. منبع اصلی همچنان Thinking About the Future است."
+                                "type": "مقاله علمی",
+                                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49. شکل‌ها: andyhinesight.com/tatf/figures (اجازه Elsevier در کتاب آمده است)."
                             }
                         ],
                         "assignment": {
@@ -87,18 +89,18 @@ registerLocale('fa', {
                         }
                     },
                     {
-                        "num": "F1",
-                        "id": "framing-mindsets",
-                        "pickerLabel": "چارچوب‌بندی · تعدیل نگرش‌ها",
-                        "title": "چارچوب‌بندی ۱ · تعدیل نگرش‌ها (Reframing Mindsets)",
-                        "hours": "۳۰ دقیقه",
-                        "readingsShort": "Framing · Mindsets",
+                        "num": "C1",
+                        "id": "col1-framing",
+                        "pickerLabel": "چارچوب‌بندی (ستون ۱)",
+                        "title": "ستون ۱ · چارچوب‌بندی (Framing)",
+                        "hours": "۹۰ دقیقه",
+                        "readingsShort": "Framing",
                         "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۱ · جزء ۱",
-                        "lectureIntro": "جزء اول ستون چارچوب‌بندی در Thinking About the Future: تعدیل نگرش‌ها پیش از ورود به روش‌ها.",
+                        "visualCaption": "ستون ۱ · یک ارائه، شش جزء",
+                        "lectureIntro": "چارچوب‌بندی در Thinking About the Future: یک ارائه با اسلایدهای پیاپی برای هر شش جزء.",
                         "lectureSections": [
                             {
-                                "id": "book",
+                                "id": "mindsets",
                                 "title": "۱. تعدیل نگرش‌ها (Reframing Mindsets)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -106,40 +108,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>خوش‌بینی نسبت به آینده</li><li>شناسایی سوگیری‌ها</li><li>تشخیص خودفریبی‌ها و عوامل بیرونی</li><li>استفاده از کل مغز</li><li>استقبال از پیچیدگی</li><li>تأثیر زمان و عوامل مختلف در پیشرفت</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "سوگیری شخصی",
-                            "description": "سه سوگیری رایج تیم خود را نام ببرید.",
-                            "body": [
-                                "برای هر سوگیری یک جمله اثر بر مسئله آینده‌نگاری بنویسید."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "وضوح سوگیری",
-                                "ربط به مسئله"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "F2",
-                        "id": "framing-stakeholders",
-                        "pickerLabel": "چارچوب‌بندی · ذی‌نفعان",
-                        "title": "چارچوب‌بندی ۲ · شناخت ذی‌نفعان (Stakeholders)",
-                        "hours": "۳۰ دقیقه",
-                        "readingsShort": "Framing · Stakeholders",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۱ · جزء ۲",
-                        "lectureIntro": "جزء دوم چارچوب‌بندی: شناخت سازمان و دغدغه‌های ذی‌نفعان، بدون تبدیل کارفرما به آینده‌نگار.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "stakeholders",
                                 "title": "۲. شناخت ذی‌نفعان (Stakeholders)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -147,40 +118,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>شناخت بیشتر نسبت به سازمان</li><li>شناخت دغدغه مدیران، کارمندان و خود سازمان</li><li>سعی نکردن در تبدیل کارفرما به آینده‌نگار</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "نقشه ذی‌نفع",
-                            "description": "سه ذی‌نفع اصلی مسئله را بنویسید.",
-                            "body": [
-                                "دغدغه هر ذی‌نفع را در یک جمله بنویسید."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "پوشش نقش‌ها",
-                                "اجتناب از تجویز روش به کارفرما"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "F3",
-                        "id": "framing-intent",
-                        "pickerLabel": "چارچوب‌بندی · حرکت و مقصود",
-                        "title": "چارچوب‌بندی ۳ · حرکت و مقصود (Intent & Purpose)",
-                        "hours": "۳۰ دقیقه",
-                        "readingsShort": "Framing · Intent",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۱ · جزء ۳",
-                        "lectureIntro": "جزء سوم چارچوب‌بندی: مقصود کاوش آینده و سنجش اینکه مسئله ارائه‌شده همان مسئله اصلی است یا نه.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "intent",
                                 "title": "۳. حرکت و مقصود (Intent & Purpose)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -188,39 +128,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>کاوش آینده</li><li>بهبود الگوی ذهنی</li><li>ایجاد توازن بین اکتشاف و بهره‌برداری</li><li>ارزیابی مسئله ارائه‌شده توسط سازمان: آیا همان مسئله اصلی است یا نه</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "مسئله واقعی؟",
-                            "description": "مسئله ارائه‌شده سازمان را بازنویسی کنید.",
-                            "body": [
-                                "یک جمله: آیا این مسئله اصلی است یا نشانه مسئله عمیق‌تر؟"
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "تمایز مسئله سطحی و اصلی"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "F4",
-                        "id": "framing-goals",
-                        "pickerLabel": "چارچوب‌بندی · هدف‌گذاری",
-                        "title": "چارچوب‌بندی ۴ · هدف‌گذاری (Goal Setting)",
-                        "hours": "۳۰ دقیقه",
-                        "readingsShort": "Framing · Goals",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۱ · جزء ۴",
-                        "lectureIntro": "جزء چهارم چارچوب‌بندی: اهداف قابل سنجش، تمرکز بر پیامد و افق بیرونی آینده.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "goals",
                                 "title": "۴. هدف‌گذاری (Goal Setting)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -228,40 +138,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>تعریف اهداف به صورت قابل سنجش</li><li>تمرکز روی پیامدها به جای خروجی‌ها</li><li>فعالیت در افق‌های زمانی متفاوت</li><li>تمرکز و تأکید روی محیط بیرونی و آینده به جای حال و درون</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "هدف پیامدمحور",
-                            "description": "یک هدف خروجی را به یک هدف پیامد تبدیل کنید.",
-                            "body": [
-                                "افق زمانی هدف را مشخص کنید."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "قابل سنجش بودن",
-                                "تمرکز بر پیامد"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "F5",
-                        "id": "framing-team",
-                        "pickerLabel": "چارچوب‌بندی · انتخاب تیم",
-                        "title": "چارچوب‌بندی ۵ · انتخاب تیم (Team Selection)",
-                        "hours": "۲۵ دقیقه",
-                        "readingsShort": "Framing · Team",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۱ · جزء ۵",
-                        "lectureIntro": "جزء پنجم چارچوب‌بندی: آینده‌نگاری یک بازی تیمی و فرآیند تعاملی است.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "team",
                                 "title": "۵. انتخاب تیم (Team Selection)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -269,39 +148,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>یک بازی تیمی</li><li>تبدیل به یک فرآیند تعاملی و همه‌جانبه</li><li>درگیر کردن افراد مختلف</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "ترکیب تیم",
-                            "description": "چهار نقش ضروری برای کارگاه آینده‌نگاری مسئله خود را نام ببرید.",
-                            "body": [
-                                "برای هر نقش یک جمله دلیل بنویسید."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "تنوع نقش‌ها"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "F6",
-                        "id": "framing-environment",
-                        "pickerLabel": "چارچوب‌بندی · محیط راهبردی",
-                        "title": "چارچوب‌بندی ۶ · خلق محیط راهبردی (Strategic Environment)",
-                        "hours": "۲۵ دقیقه",
-                        "readingsShort": "Framing · Environment",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۱ · جزء ۶",
-                        "lectureIntro": "جزء ششم چارچوب‌بندی: محیطی برای تفکر باز، آزمون و پیش‌الگو.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "environment",
                                 "title": "۶. خلق محیط راهبردی (Strategic Environment)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -318,30 +167,32 @@ registerLocale('fa', {
                             }
                         ],
                         "assignment": {
-                            "title": "قواعد فضای امن",
-                            "description": "سه قاعده برای فضای تفکر باز در سازمان خود بنویسید.",
+                            "title": "چارچوب مسئله",
+                            "description": "مسئله آینده‌نگاری را در شش جزء چارچوب‌بندی بنویسید.",
                             "body": [
-                                "یک پیش‌الگوی کوچک قابل اجرا در دو هفته پیشنهاد دهید."
+                                "ضعیف‌ترین جزء را نام ببرید.",
+                                "یک اصلاح برای همان جزء پیشنهاد دهید."
                             ],
-                            "format": "نیم صفحه",
+                            "format": "یک صفحه",
                             "criteria": [
-                                "عملی بودن قواعد"
+                                "پوشش هر شش جزء",
+                                "تشخیص دقیق جزء ضعیف"
                             ]
                         }
                     },
                     {
-                        "num": "S1",
-                        "id": "scanning-mapping",
-                        "pickerLabel": "پویش · ترسیم نقشه",
-                        "title": "پویش ۱ · ترسیم نقشه (Mapping)",
-                        "hours": "۳۰ دقیقه",
-                        "readingsShort": "Scanning · Mapping",
+                        "num": "C2",
+                        "id": "col2-scanning",
+                        "pickerLabel": "پویش (ستون ۲)",
+                        "title": "ستون ۲ · پویش (Scanning)",
+                        "hours": "۷۵ دقیقه",
+                        "readingsShort": "Scanning",
                         "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۲ · جزء ۱",
-                        "lectureIntro": "جزء اول ستون پویش: نقشه سیستم، نگاه یکپارچه و تحلیل ذی‌نفعان با دیدگاه جهانی.",
+                        "visualCaption": "ستون ۲ · یک ارائه، چهار جزء",
+                        "lectureIntro": "پویش در Thinking About the Future: یک ارائه برای ترسیم نقشه، پیشینه، پویش محیطی و درگیر کردن همه افراد.",
                         "lectureSections": [
                             {
-                                "id": "book",
+                                "id": "mapping",
                                 "title": "۱. ترسیم نقشه (Mapping)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -349,40 +200,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>دیدگاه جهانی</li><li>ترسیم نقشه سیستم مورد مطالعه</li><li>نگرش به صورت نگاه یکپارچه</li><li>تجزیه و تحلیل ذی‌نفعان</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "نقشه سیستم",
-                            "description": "مرز سیستم مسئله را در یک شکل ساده بکشید.",
-                            "body": [
-                                "سه ذی‌نفع مرزی را علامت بزنید."
-                            ],
-                            "format": "یک شکل با سه جمله",
-                            "criteria": [
-                                "وضوح مرز",
-                                "نگاه یکپارچه"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "S2",
-                        "id": "scanning-history",
-                        "pickerLabel": "پویش · مطالعه پیشینه",
-                        "title": "پویش ۲ · مطالعه پیشینه (History)",
-                        "hours": "۲۵ دقیقه",
-                        "readingsShort": "Scanning · History",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۲ · جزء ۲",
-                        "lectureIntro": "جزء دوم پویش: نگاه به گذشته، پرهیز از اختراع دوباره چرخ، و هوشیاری نسبت به آسودگی ناشی از ابداعات.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "history",
                                 "title": "۲. مطالعه پیشینه (History)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -390,39 +210,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>آغاز به نگاه به گذشته</li><li>عدم اختراع چرخ</li><li>هوشیاری نسبت به ابداعاتی که موجب آسودگی خاطر شده</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "پیشینه مسئله",
-                            "description": "دو تلاش قبلی سازمان درباره همین مسئله را خلاصه کنید.",
-                            "body": [
-                                "یک ابداع که آسودگی کاذب ساخته را نام ببرید."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "استناد به پیشینه واقعی"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "S3",
-                        "id": "scanning-environmental",
-                        "pickerLabel": "پویش · پویش محیطی",
-                        "title": "پویش ۳ · پویش محیطی (Environmental Scanning)",
-                        "hours": "۳۵ دقیقه",
-                        "readingsShort": "Scanning · Environment",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۲ · جزء ۳",
-                        "lectureIntro": "جزء سوم پویش: پویش محیط برای آگاهی از تغییر زمینه‌ها، ادغام داخل و خارج، و حوزه ناشناخته.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "env",
                                 "title": "۳. پویش محیطی (Environmental Scanning)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -430,40 +220,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>پویش محیط برای آگاهی از تغییر زمینه‌ها که شامل: اکتشاف، تجزیه و تحلیل، چارچوب‌بندی، کاربرد</li><li>ادغام محیط داخل و خارج</li><li>بررسی حوزه ناشناخته و غیرجذاب</li><li>همه اطلاعات در پژوهش نیست</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "چهار گام پویش",
-                            "description": "برای مسئله خود یک چرخه اکتشاف، تحلیل، چارچوب‌بندی، کاربرد بنویسید.",
-                            "body": [
-                                "یک منبع خارج از ادبیات پژوهشی رسمی پیشنهاد دهید."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "پوشش چهار گام",
-                                "منبع غیررسمی معتبر"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "S4",
-                        "id": "scanning-engaging",
-                        "pickerLabel": "پویش · درگیر کردن افراد",
-                        "title": "پویش ۴ · درگیر کردن همه افراد (Engaging)",
-                        "hours": "۳۰ دقیقه",
-                        "readingsShort": "Scanning · Engaging",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "ستون ۲ · جزء ۴",
-                        "lectureIntro": "جزء چهارم پویش: درگیر کردن داخل و خارج، مشورت با برجسته‌ها و مطرودها، و کارگاه دسته‌جمعی.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "engaging",
                                 "title": "۴. درگیر کردن همه افراد (Engaging)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -480,72 +239,42 @@ registerLocale('fa', {
                             }
                         ],
                         "assignment": {
-                            "title": "صداهای غایب",
-                            "description": "یک صدای برجسته و یک صدای مطرود برای مسئله خود نام ببرید.",
+                            "title": "طراحی پویش",
+                            "description": "برای مسئله خود یک پویش کوتاه طراحی کنید.",
                             "body": [
-                                "یک فعالیت کارگاهی برای یادگیری دسته‌جمعی پیشنهاد دهید."
+                                "مرز سیستم را بکشید.",
+                                "یک درس پیشینه و یک صدای مطرود برای مشورت نام ببرید."
                             ],
-                            "format": "نیم صفحه",
+                            "format": "یک صفحه",
                             "criteria": [
-                                "تنوع صدا",
-                                "فعالیت جمعی مشخص"
+                                "وضوح مرز",
+                                "درگیری داخل و خارج"
                             ]
                         }
                     },
                     {
-                        "num": "P1",
-                        "id": "forecast-drivers",
-                        "pickerLabel": "پیش‌بینی · پیشران و عدم‌قطعیت",
-                        "title": "پیش‌بینی ۱ · نیروهای پیشران و عدم‌قطعیت‌ها",
-                        "hours": "۴۰ دقیقه",
-                        "readingsShort": "Forecasting · Drivers",
+                        "num": "C3",
+                        "id": "col3-forecasting",
+                        "pickerLabel": "پیش‌بینی (ستون ۳)",
+                        "title": "ستون ۳ · پیش‌بینی (Forecasting)",
+                        "hours": "۹۰ دقیقه",
+                        "readingsShort": "Forecasting",
                         "visual": "assets/methods/covers/hines-m2-cone.svg",
-                        "visualCaption": "ستون ۳ · جزء ۱",
-                        "lectureIntro": "جزء اول ستون پیش‌بینی: پیشران‌ها، عمق لایه‌ای تغییر، نقاط تلاقی و عطف، و لنگرهای قطعی در برابر عدم‌قطعیت‌های کلیدی.",
+                        "visualCaption": "ستون ۳ · یک ارائه، پنج جزء",
+                        "lectureIntro": "پیش‌بینی طیف آینده‌ها را ترسیم می‌کند. یک ارائه: پیشران‌ها، ابزارها، واگرایی، همگرایی و تشکیل بدیل‌ها.",
                         "lectureSections": [
                             {
-                                "id": "book",
-                                "title": "۱. شناسایی نیروهای پیشران و عدم‌قطعیت‌ها",
+                                "id": "drivers",
+                                "title": "۱. نیروهای پیشران و عدم‌قطعیت‌ها",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
                                 ],
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>مشخص کردن پیشران‌های اصلی (بدیهی و کم‌رؤیت؛ زمینه راهبردی STEEP؛ چالش فرض‌های حال)</li><li>استفاده از رویکرد لایه‌ای (CLA) برای عمق تغییر: لیتانی، اجتماعی/سامانه‌ای، گفتمان/جهان‌بینی، استعاره/اسطوره</li><li>ارزیابی تغییرات بنیادین مؤثر بر فضای معمول</li><li>جستجوی محل تلاقی تغییر (اصل کافمن؛ روندها ایزوله نیستند)</li><li>جستجوی نقاط عطف (Era)</li><li>بهبود تصمیم‌گیری از طریق کاهش عدم‌قطعیت (لنگرهای قطعی در برابر عدم‌قطعیت‌های کلیدی)</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "پیشران و عدم‌قطعیت",
-                            "description": "سه پیشران و دو عدم‌قطعیت کلیدی مسئله را بنویسید.",
-                            "body": [
-                                "یک لنگر قطعی را از عدم‌قطعیت‌ها جدا کنید."
-                            ],
-                            "format": "یک صفحه",
-                            "criteria": [
-                                "تمایز قطعی و نامطمئن",
-                                "اشاره به STEEP یا لایه CLA"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "P2",
-                        "id": "forecast-methods",
-                        "pickerLabel": "پیش‌بینی · انتخاب ابزار",
-                        "title": "پیش‌بینی ۲ · انتخاب ابزار پیش‌بینی",
-                        "hours": "۳۰ دقیقه",
-                        "readingsShort": "Forecasting · Methods",
-                        "visual": "assets/methods/covers/hines-m2-cone.svg",
-                        "visualCaption": "ستون ۳ · جزء ۲",
-                        "lectureIntro": "جزء دوم پیش‌بینی: تناسب ابزار با سطح ابهام (چارچوب کورتنی)، حداقل یک روش رسمی، و ترکیب تکنیک‌ها.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "methods",
                                 "title": "۲. انتخاب ابزار پیش‌بینی",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -553,39 +282,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>رویکرد و ابزارهای صحیح (چارچوب کورتنی؛ تناسب ابزار با سطح ابهام)</li><li>استفاده از حداقل یک روش رسمی</li><li>تطبیق روش‌ها با موقعیت</li><li>ترکیب تکنیک‌ها برای تصویرپردازی وسیع‌تر از آینده‌های ممکن</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "جعبه ابزار متناسب",
-                            "description": "سطح ابهام مسئله را با یک جمله بگویید.",
-                            "body": [
-                                "یک روش رسمی و یک روش مکمل انتخاب کنید و دلیل تناسب را بنویسید."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "تناسب ابزار با ابهام"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "P3",
-                        "id": "forecast-diverge",
-                        "pickerLabel": "پیش‌بینی · واگرایی",
-                        "title": "پیش‌بینی ۳ · واگرایی: خلق ایده‌ها",
-                        "hours": "۳۵ دقیقه",
-                        "readingsShort": "Forecasting · Divergence",
-                        "visual": "assets/methods/covers/hines-m2-cone.svg",
-                        "visualCaption": "ستون ۳ · جزء ۳",
-                        "lectureIntro": "جزء سوم پیش‌بینی: واگرایی خلاق فراتر از طوفان فکری صرف، با دقت تحلیلی و اجتناب از همگرایی زودهنگام.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "diverge",
                                 "title": "۳. واگرایی: خلق ایده‌ها",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -593,40 +292,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>انگیزش اندیشه‌های جدید با ابزارها و رویکردهای خلاقانه (بستگان راهبردی، تحلیل ارزش، و مانند آن)</li><li>فراتر رفتن از ذهن‌انگیزی و طوفان فکری صرف</li><li>وارونه‌سازی مشکلات (دانسته‌های مسلم را غلط فرض کنید)</li><li>جستجوی ایده‌های آشفتگی‌آور و ضد تفکر گروهی</li><li>ترکیب دقت و خلاقیت</li><li>بهره‌گیری از مؤلفه‌های تحلیلی و احساسی</li><li>تجربه آینده دست‌اول (حسی یا شبیه‌سازی)</li><li>اجتناب از همگرایی زودهنگام ایده‌ها</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "وارونه‌سازی",
-                            "description": "یک فرض مسلم مسئله را غلط فرض کنید و سه ایده جایگزین بنویسید.",
-                            "body": [
-                                "یکی از ایده‌ها باید ضد تفکر گروهی باشد."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "واگرایی واقعی",
-                                "اجتناب از همگرایی زودهنگام"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "P4",
-                        "id": "forecast-converge",
-                        "pickerLabel": "پیش‌بینی · همگرایی",
-                        "title": "پیش‌بینی ۴ · همگرایی: اولویت‌بندی ایده‌ها",
-                        "hours": "۲۵ دقیقه",
-                        "readingsShort": "Forecasting · Convergence",
-                        "visual": "assets/methods/covers/hines-m2-cone.svg",
-                        "visualCaption": "ستون ۳ · جزء ۴",
-                        "lectureIntro": "جزء چهارم پیش‌بینی: پس از واگرایی، اولویت‌بندی زمینه‌های مشترک با واقع‌گرایی انتقادی و شک نسبت به روندها.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "converge",
                                 "title": "۴. همگرایی: اولویت‌بندی ایده‌ها",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -634,40 +302,9 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "<ul class=\"fitness-pres-bullets\"><li>شناسایی و اولویت‌بندی زمینه‌های مشترک</li><li>تعادل واقع‌گرایی با رویکرد انتقادی</li><li>برخورد شکاکانه با روندها</li></ul>"
                                 ]
-                            }
-                        ],
-                        "readings": [
+                            },
                             {
-                                "type": "کتاب",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "اولویت سه‌تایی",
-                            "description": "از فهرست ایده‌های واگرا، سه زمینه مشترک را اولویت‌بندی کنید.",
-                            "body": [
-                                "برای هر مورد یک جمله نقد روند بنویسید."
-                            ],
-                            "format": "نیم صفحه",
-                            "criteria": [
-                                "اولویت روشن",
-                                "نگاه شکاکانه به روند"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "P5",
-                        "id": "forecast-alternatives",
-                        "pickerLabel": "پیش‌بینی · بدیل‌ها",
-                        "title": "پیش‌بینی ۵ · تشکیل بدیل‌ها (Alternative Futures)",
-                        "hours": "۴۰ دقیقه",
-                        "readingsShort": "Forecasting · Alternatives",
-                        "visual": "assets/methods/covers/hines-m2-cone.svg",
-                        "visualCaption": "ستون ۳ · جزء ۵",
-                        "lectureIntro": "جزء پنجم پیش‌بینی: غلط فرض کردن خط پایه، ساخت آینده‌های جایگزین، غافلگیری محتمل، و کنترل کیفیت بدیل‌ها.",
-                        "lectureSections": [
-                            {
-                                "id": "book",
+                                "id": "alternatives",
                                 "title": "۵. تشکیل بدیل‌ها (Alternative Futures)",
                                 "slideTitles": [
                                     "مفاهیم کلیدی کتاب"
@@ -684,7 +321,7 @@ registerLocale('fa', {
                             },
                             {
                                 "type": "مقاله علمی",
-                                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49."
+                                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49. شکل‌ها: andyhinesight.com/tatf/figures (اجازه Elsevier در کتاب آمده است)."
                             }
                         ],
                         "assignment": {
@@ -702,15 +339,320 @@ registerLocale('fa', {
                         }
                     },
                     {
+                        "num": "C4",
+                        "id": "col4-visioning",
+                        "pickerLabel": "چشم‌اندازسازی (ستون ۴)",
+                        "title": "ستون ۴ · چشم‌اندازسازی (Visioning)",
+                        "hours": "۷۵ دقیقه",
+                        "readingsShort": "Visioning",
+                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+                        "visualCaption": "ستون ۴ · یک ارائه، سه خوشه",
+                        "lectureIntro": "پیش‌بینی طیف آینده‌ها را ترسیم می‌کند؛ چشم‌اندازسازی می‌پرسد پس چه؟ با این ممکن‌ها، سازمان چه خواهد کرد؟ بدون این پرسش، آینده‌نگاری تمرین فکری می‌ماند؛ مسیر به مأموریت، اهداف، اثربخشی، عملکرد و نتیجه باید ترسیم شود.",
+                        "lectureSections": [
+                            {
+                                "id": "intro",
+                                "title": "۰. از پیش‌بینی به چشم‌اندازسازی",
+                                "slideTitles": [
+                                    "پس چه؟"
+                                ],
+                                "paragraphs": [
+                                    "پیش‌بینی نشان می‌دهد چه ممکن است رخ دهد. چشم‌اندازسازی جهت مطلوب را برمی‌گزیند و شکل می‌دهد تا آینده‌نگاری به مأموریت، اهداف، اثربخشی، عملکرد و نتیجه برسد."
+                                ]
+                            },
+                            {
+                                "id": "implications",
+                                "title": "۱. شناسایی دلالت‌ها",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>استفاده از بدیل‌ها برای چارچوب‌بندی پرسش‌های مهم، نه به منزلۀ پاسخ نهایی</li><li>مدنظر قراردادن پیامدهای دست‌دوم و سوم (چرخ آینده)</li><li>توجه به پیامدهای بلندمدت و ناخواسته</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "assumptions",
+                                "title": "۲. به چالش کشیدن پیش‌فرض‌ها",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>مشخص کردن پیش‌فرض‌ها به‌طور شفاف</li><li>به چالش کشیدن خرد متعارف</li><li>هیچ چیز را پیش‌فرض نیندازید؛ همه چیز را مورد سؤال قرار دهید</li><li>شناسایی تابوهای حاکم و متلاشی کردن آن‌ها</li><li>بررسی متقابل پیش‌فرض‌ها و اعتباربخشی با خبرگان</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "visionary",
+                                "title": "۳. تفکر چشم‌اندازگرا",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>خلق چشم‌انداز مشترک و راهبردی</li><li>قرار دادن چشم‌انداز در پیوستار زمانی</li><li>هدف‌گذاری راهبردی به‌عنوان اهداف کششی (BHAG / stretch)</li><li>اهرم مثبت و Appreciative Inquiry (آنچه بر آن تمرکز می‌کنی همان را می‌گیری)</li><li>قانون داتور: هر گزارهٔ مفید دربارهٔ آینده ابتدا مضحک به نظر می‌رسد</li><li>پرسیدن سؤال‌های «چه می‌شود اگر…؟»</li><li>حس کردن و فعال‌سازی آیندهٔ در حال ظهور (presencing)</li></ul>"
+                                ]
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "type": "کتاب",
+                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
+                            }
+                        ],
+                        "assignment": {
+                            "title": "طرح آینده مطلوب",
+                            "description": "یک پاراگراف آینده مطلوب برای مسئله خود بنویسید.",
+                            "body": [
+                                "سه پیش‌فرض چالش‌شده را فهرست کنید.",
+                                "یک دلالت دست‌دوم را نام ببرید."
+                            ],
+                            "format": "یک صفحه",
+                            "criteria": [
+                                "انتخاب هنجاری روشن",
+                                "چالش پیش‌فرض‌ها"
+                            ]
+                        }
+                    },
+                    {
+                        "num": "C5",
+                        "id": "col5-planning",
+                        "pickerLabel": "برنامه‌ریزی (ستون ۵)",
+                        "title": "ستون ۵ · برنامه‌ریزی (Planning)",
+                        "hours": "۶۰ دقیقه",
+                        "readingsShort": "Planning",
+                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+                        "visualCaption": "ستون ۵ · یک ارائه، دو خوشه",
+                        "lectureIntro": "برنامه‌ریزی پل چشم‌انداز به راهبرد و تاکتیک‌هایی است که به اقدام می‌رسند. از «کجا هستیم» به «کجا می‌خواهیم باشیم» نقشه می‌کشد.",
+                        "lectureSections": [
+                            {
+                                "id": "strategic",
+                                "title": "۱. اندیشیدن به صورت راهبردی",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>تقویت ویژگی ناگاه‌ظهوری / برآیش (emergence) در سطح سازمان</li><li>در نظر گرفتن محیط فرهنگی و اجتماعی به‌عنوان اصلی‌ترین جزء</li><li>خلق راهبرد منوط به تحریک گفت‌وگوهای راهبردی در سطح سازمان</li><li>شناسایی آنچه باید تغییر کند و آنچه نباید تغییر کند</li><li>کشف نواحی اصلی انتخاب راهبردی از طریق نقاط انشعاب حیاتی</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "options",
+                                "title": "۲. توسعۀ گزینه‌های راهبردی",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>بنای توصیه‌های بنیادین راهبردی بر وجوه تمایز سازمان</li><li>ارزشیابی چندبُعدی راهبرد ارائه‌شده</li><li>در نظر گرفتن گزینه‌های بدون اقدام، باورپذیر و مرجح هنگام ارائه گزینه‌ها</li><li>داشتن برنامه‌های اقتضایی برای موارد غیرمنتظره (طیف گزینه‌ها، نه قفل روی یک «بهترین»)</li></ul>"
+                                ]
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "type": "کتاب",
+                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
+                            }
+                        ],
+                        "assignment": {
+                            "title": "طیف گزینه‌ها",
+                            "description": "سه گزینه راهبردی برای آینده مطلوب پیشنهاد دهید.",
+                            "body": [
+                                "یک گزینه بدون اقدام بگنجانید.",
+                                "بگویید چه باید تغییر کند و چه نباید."
+                            ],
+                            "format": "یک صفحه",
+                            "criteria": [
+                                "طیف گزینه‌ها",
+                                "تمایز تغییر / عدم تغییر"
+                            ]
+                        }
+                    },
+                    {
+                        "num": "C6",
+                        "id": "col6-acting",
+                        "pickerLabel": "اقدام (ستون ۶)",
+                        "title": "ستون ۶ · اقدام (Acting)",
+                        "hours": "۹۰ دقیقه",
+                        "readingsShort": "Acting",
+                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+                        "visualCaption": "ستون ۶ · یک ارائه، چهار جزء",
+                        "lectureIntro": "پیش‌آگاهی، پیش‌دستی است. اقدام مرحله نهایی است: انتقال نتایج (از انتزاع به انضمام)، ترجمه برنامه به عمل، و نهادینه‌سازی تا آینده‌نگاری یک‌بارمصرف نماند.",
+                        "lectureSections": [
+                            {
+                                "id": "communicate",
+                                "title": "۱. ارتباط / انتقال نتایج",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>طراحی نتایج برای قابلیت انتقال</li><li>چیدن پیام به سبک تفکر مخاطب</li><li>غوطه‌ور کردن ذی‌نفعان و تصمیم‌گیران در بدیل‌ها برای پذیرش و همرایی</li><li>تهییج‌آفرین بودن (با احتیاط؛ فرهنگ سازمان)</li><li>ماژولار کردن خروجی‌ها: نگه داشتن خوب، رسیدگی به بد</li><li>آگاهی از تغییر از طریق تجربه، بینش و بازقالب‌بندی</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "agenda",
+                                "title": "۲. دستورکار اقدام",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>ایجاد حس فوریت</li><li>تقویت آنچه سازمان اکنون خوب می‌کند و از آنجا ساختن</li><li>هدف فعالیت: کمک به تصمیم بهتر</li><li>تصمیم بدون همۀ داده‌های مطلوب (پرهیز از فلج تحلیلی)</li><li>نقاط عطف به‌سوی آیندهٔ ترجیحی و جشن موفقیت‌های کوچک</li><li>توصیه به سرمایه‌گذاری حداقل در یک ایدۀ غیرمحتمل</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "sis",
+                                "title": "۳. سامانۀ اطلاعات راهبردی",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>سامانۀ اطلاعات هم‌راستا با آینده‌نگاری و پیوند به برنامه‌ریزی</li><li>سامانۀ هشدار زودهنگام برای سیگنال‌های ضعیف</li><li>جستجوی منابع آشفتگی در سامانه</li><li>شاخص‌هایی که بحران بالقوه را نوید می‌دهند</li><li>شاخص‌هایی که فهم و جمع‌آوری‌شان آسان است</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "institutionalize",
+                                "title": "۴. نهادینه‌سازی تفکر راهبردی",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>انتخاب، طراحی و صریح‌سازی چارچوب مفهومی</li><li>توسعۀ آهنگ آینده (ریتم منظم مطالعه/توجه)</li><li>تکرار منظم فعالیت‌های آینده‌نگاری راهبردی</li><li>برنامه‌های آموزشی برای نهادینه‌سازی</li><li>تأکید: در محیط پیچیده، یادگیری بهترین رویکرد است (سازمان یادگیرنده)</li><li>تغییر نگرش به‌سوی پذیرش تغییر</li></ul>"
+                                ]
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "type": "کتاب",
+                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
+                            }
+                        ],
+                        "assignment": {
+                            "title": "دستورکار ۹۰ روزه",
+                            "description": "یک دستورکار اقدام ۹۰ روزه برای مسئله آینده‌نگاری بنویسید.",
+                            "body": [
+                                "سه نقطه عطف و یک شاخص هشدار زودهنگام نام ببرید.",
+                                "یک آیین که کار را نهادینه می‌کند مشخص کنید."
+                            ],
+                            "format": "یک صفحه",
+                            "criteria": [
+                                "فوریت و نقاط عطف",
+                                "قلاب نهادینه‌سازی"
+                            ]
+                        }
+                    },
+                    {
+                        "num": "C7",
+                        "id": "col7-framework-foresight",
+                        "pickerLabel": "چارچوب آینده‌نگاری (ستون ۷)",
+                        "title": "ستون ۷ · به‌کارگیری چارچوب آینده‌نگاری (Framework Foresight)",
+                        "hours": "۹۰ دقیقه",
+                        "readingsShort": "Framework Foresight 2013",
+                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+                        "visualCaption": "فراروش · جریان پروژه ۷.۱ تا ۷.۶",
+                        "lectureIntro": "راهنماهای کتاب برای فعالیت‌های ۱ تا ۶ نکته‌های کاربردی هستند، نه یک روش واحد. Framework Foresight فراروش روش هیوستون برای به‌کارگیری شش فعالیت به‌صورت جریان پروژه است. دو معنای «چارچوب»: (۱) چارچوب‌بندی پروژه بدون نقشه صلب؛ (۲) شش فعالیت به‌عنوان قاب استاندارد پروژه. مدولار است: تنها راه درست نیست؛ خط پایه به‌علاوه بدیل‌ها خروجی کلیدی‌اند؛ می‌توان زود ایستاد یا از میانه شروع کرد. گزینشی باشید: کیفیت بر کمیت (حدود ۵ تا ۱۰ مورد در هر مقوله)؛ جریان گذشته → حال → آینده → بازگشت به حال.",
+                        "lectureSections": [
+                            {
+                                "id": "role",
+                                "title": "۰. نقش Framework Foresight",
+                                "slideTitles": [
+                                    "فراروش",
+                                    "نگاشت به شش ستون"
+                                ],
+                                "paragraphs": [
+                                    "Framework Foresight شش ستون را به توالی پروژهٔ قابل انتخاب تبدیل می‌کند. کیفیت بر کمیت؛ حدود ۵ تا ۱۰ مورد در هر مقوله نگه دارید.",
+                                    "<ul class=\"fitness-pres-bullets\"><li>چارچوب‌بندی → ۷.۱ توصیف حوزه</li><li>پویش → ۷.۲ وضع فعلی و پویش</li><li>پیش‌بینی → ۷.۳الف خط پایه، ۷.۳ب آینده‌های جایگزین</li><li>چشم‌اندازسازی → ۷.۴الف آینده مطلوب، ۷.۴ب تحلیل پیامدها</li><li>برنامه‌ریزی → ۷.۵ گزینه‌ها: مسئله یا پیشنهاد</li><li>اقدام → ۷.۶ شاخص‌های پیشرو</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "domain",
+                                "title": "۱. توصیف حوزه (۷.۱)",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>تعریف حوزه</li><li>قلمرو جغرافیایی</li><li>افق زمانی</li><li>نقشۀ حوزه</li><li>مسئله یا سؤال کلیدی (اختیاری)</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "current",
+                                "title": "۲. وضع فعلی و پویش (۷.۲)",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>شرایط کنونی</li><li>ذی‌نفعان</li><li>تاریخ (گذشتهٔ نزدیک که دورهٔ کنونی را تعریف می‌کند)</li><li>یافته‌های پویش: FIND → COLLECT → ANALYZE</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "baseline",
+                                "title": "۳. خط پایه و آینده‌های جایگزین (۷.۳)",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>آیندۀ خط پایه: روندها، چرخه‌ها، برنامه‌ها، پیش‌نگاری‌های دیگران</li><li>آینده‌های جایگزین: رویدادها (از جمله wildcard)، مسائل، ایده‌ها، اولویت‌بندی عدم‌قطعیت‌های کلیدی؛ تعادل با خط پایه</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "preferred",
+                                "title": "۴. آیندۀ مطلوب و تحلیل پیامدها (۷.۴)",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>آیندۀ ترجیحی: چشم‌انداز و مأموریت</li><li>تحلیل پیامدها: انتخاب آینده، دسته‌ها، طوفان فکری، چرخ پیامدها، مهم‌ترین و تحریک‌آمیزترین، بازتعریف به مسئله/فرصت</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "options",
+                                "title": "۵. گزینه‌ها: مسئله یا پیشنهاد (۷.۵)",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>اولویت‌بندی مسائل/فرصت‌ها</li><li>انتخاب (معمولاً ۳ تا ۶)</li><li>پیام یک‌دقیقه‌ای (چرا / چه / چگونه و مالک)</li></ul>"
+                                ]
+                            },
+                            {
+                                "id": "indicators",
+                                "title": "۶. شاخص‌های پیشرو (۷.۶)",
+                                "slideTitles": [
+                                    "مفاهیم کلیدی کتاب"
+                                ],
+                                "paragraphs": [
+                                    "<ul class=\"fitness-pres-bullets\"><li>شاخص برای هر بدیل (مثلاً ۳)</li><li>پایش مسیر حل عدم‌قطعیت‌ها؛ سیگنال به‌سوی یک جایگزین</li></ul>"
+                                ]
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "type": "مقاله علمی",
+                                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49. شکل‌ها: andyhinesight.com/tatf/figures (اجازه Elsevier در کتاب آمده است)."
+                            },
+                            {
+                                "type": "کتاب",
+                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. ویرایش‌های بعدی ۲۰۱۳ تا ۲۰۲۰."
+                            }
+                        ],
+                        "assignment": {
+                            "title": "Framework Foresight فشرده",
+                            "description": "یک FF فشرده روی مسئله خود اجرا کنید.",
+                            "body": [
+                                "فیلدهای حوزه ۷.۱ را پر کنید.",
+                                "یک جمله خط پایه، یک بدیل، یک پیامد مطلوب و یک شاخص پیشرو بنویسید."
+                            ],
+                            "format": "دو صفحه",
+                            "criteria": [
+                                "حوزه روشن",
+                                "خط پایه به‌علاوه بدیل",
+                                "حداقل یک شاخص پیشرو"
+                            ]
+                        }
+                    },
+                    {
                         "num": "M2",
                         "id": "m2-cone",
                         "pickerLabel": "مخروط محتمل‌بودن",
-                        "title": "مخروط محتمل‌بودن: پل پیش‌بینی به تصویرسازی",
+                        "title": "مخروط محتمل‌بودن: پل پیش‌بینی به چشم‌اندازسازی",
                         "hours": "۶۰ دقیقه",
                         "readingsShort": "Cone of Plausibility",
                         "visual": "assets/methods/covers/hines-m2-cone.svg",
                         "visualCaption": "از خط پایه به مخروط لایه‌بندی‌شده",
-                        "lectureIntro": "مکمل جزء تشکیل بدیل‌ها: مخروط محتمل‌بودن فضای آینده‌های محتمل، معقول و ممکن را پیش از انتخاب آینده مطلوب ترسیم می‌کند.",
+                        "lectureIntro": "مکمل تشکیل بدیل‌ها: مخروط محتمل‌بودن فضای آینده‌های محتمل، معقول و ممکن را پیش از انتخاب آینده مطلوب ترسیم می‌کند.",
                         "lectureSections": [
                             {
                                 "id": "layers",
@@ -723,19 +665,19 @@ registerLocale('fa', {
                                 "paragraphs": [
                                     "ساخت مخروط با خط پایه وضعیت فعلی شروع می‌شود؛ مسیر بدون غافلگیری اگر روندها ادامه یابند. خط پایه نقطه شروع است، نه شرط‌بندی قطعی سازمان.",
                                     "<ul class=\"fitness-pres-bullets\"><li>محتمل (probable)</li><li>معقول (plausible)</li><li>ممکن (possible)</li><li>باورنکردنی (preposterous)</li></ul>",
-                                    "آینده‌های مطلوب (preferable) باند احتمالی تازه نیستند؛ انتخاب هنجاری مبتنی بر ارزش‌ها هستند که تصویرسازی داخل مخروط برمی‌گزیند."
+                                    "آینده‌های مطلوب (preferable) باند احتمالی تازه نیستند؛ انتخاب هنجاری مبتنی بر ارزش‌ها هستند که چشم‌اندازسازی داخل مخروط برمی‌گزیند."
                                 ]
                             },
                             {
                                 "id": "baseline",
-                                "title": "۲. شکستن فرض خط پایه",
+                                "title": "۲. شکستن فرض‌های خط پایه",
                                 "slideTitles": [
                                     "تحلیل خط پایه",
                                     "شاخه جایگزین"
                                 ],
                                 "paragraphs": [
-                                    "شواهد خط پایه را بنویسید، فرض پنهان را پیدا کنید و با نقیض معقول بشکنید. هر فرض شکسته‌شده یک شاخه تازه به مخروط می‌افزاید.",
-                                    "Wild Cardها در لبه مخروط‌اند: احتمال کم، اثر بالا؛ باید رصد شوند نه نادیده گرفته شوند."
+                                    "شواهد خط پایه را بنویسید، فرض پنهان را بیابید و با مخالف معقول بشکنید. هر فرض شکسته‌شده یک شاخه به مخروط اضافه می‌کند.",
+                                    "Wild cards در لبه می‌نشینند: احتمال کم، اثر زیاد؛ پایش کنید، نادیده نگیرید."
                                 ]
                             }
                         ],
@@ -746,19 +688,19 @@ registerLocale('fa', {
                             },
                             {
                                 "type": "مقاله علمی",
-                                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49."
+                                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49. شکل‌ها: andyhinesight.com/tatf/figures (اجازه Elsevier در کتاب آمده است)."
                             }
                         ],
                         "assignment": {
-                            "title": "رسم مخروط",
-                            "description": "برای یک موضوع واقعی مخروط بکشید.",
+                            "title": "کشیدن مخروط",
+                            "description": "برای یک مسئله واقعی مخروط بکشید.",
                             "body": [
                                 "خط پایه و دو لایه را مشخص کنید.",
-                                "یک فرض را بشکنید و یک Wild Card بنویسید."
+                                "یک فرض را بشکنید و یک wild card بنویسید."
                             ],
                             "format": "یک شکل با توضیح",
                             "criteria": [
-                                "وضوح لایه‌ها",
+                                "لایه‌های روشن",
                                 "شکستن فرض واقعی"
                             ]
                         }
@@ -767,12 +709,12 @@ registerLocale('fa', {
                         "num": "M3",
                         "id": "m3-godet",
                         "pickerLabel": "گوده و مکتب فرانسوی",
-                        "title": "دو مکتب آینده‌نگاری: گوده و معماری آنگلوساکسون",
+                        "title": "دو مکتب آینده‌نگاری: گوده و معماری آنگلوآمریکایی",
                         "hours": "۶۰ دقیقه",
                         "readingsShort": "Godet · MICMAC · MACTOR",
                         "visual": "assets/methods/covers/hines-m3-schools.svg",
-                        "visualCaption": "Prospective فرانسوی در برابر سنت آنگلوساکسون",
-                        "lectureIntro": "پل تکمیلی به مکتب فرانسوی prospective میشل گوده در کنار شش ستون هاینز و بی‌شاپ.",
+                        "visualCaption": "prospective فرانسوی در برابر سنت آنگلوآمریکایی",
+                        "lectureIntro": "پل به مکتب prospective فرانسوی میشل گوده در کنار شش ستون هاینز و بی‌شاپ.",
                         "lectureSections": [
                             {
                                 "id": "roots",
@@ -782,8 +724,8 @@ registerLocale('fa', {
                                     "شش ستون"
                                 ],
                                 "paragraphs": [
-                                    "گاستون برژه prospective را برای نگاه فعال به آینده ساخت. میشل گوده آن را با MICMAC و MACTOR ساختاری کرد.",
-                                    "شش ستون هاینز و بی‌شاپ ادامه سنت آنگلوساکسون است. آشنایی با هر دو سنت جعبه ابزار مدیر آینده‌نگار را کامل‌تر می‌کند."
+                                    "گاستون برژه واژه prospective را برای موضع فعال نسبت به آینده ساخت. میشل گوده آن را با ابزارهای ساختاری مانند MICMAC و MACTOR گسترش داد.",
+                                    "شش ستون هاینز و بی‌شاپ سنت آنگلوآمریکایی را ادامه می‌دهد. دانستن هر دو مکتب جعبه ابزار مدیر آینده‌نگاری را کامل می‌کند."
                                 ]
                             },
                             {
@@ -794,8 +736,8 @@ registerLocale('fa', {
                                     "MACTOR"
                                 ],
                                 "paragraphs": [
-                                    "MICMAC در ستون پیش‌بینی برای شناسایی متغیرهای محرک مناسب است.",
-                                    "MACTOR در ستون برنامه‌ریزی برای نگاشت قدرت و منافع بازیگران جای می‌گیرد."
+                                    "MICMAC در ستون پیش‌بینی برای شناسایی متغیرهای پیشران می‌نشیند.",
+                                    "MACTOR در ستون برنامه‌ریزی برای نگاشت قدرت و منافع بازیگران می‌نشیند."
                                 ]
                             }
                         ],
@@ -807,14 +749,14 @@ registerLocale('fa', {
                         ],
                         "assignment": {
                             "title": "MICMAC ساده",
-                            "description": "شش متغیر کلیدی انتخاب کنید و اثر خالص را تخمین بزنید.",
+                            "description": "شش متغیر کلیدی انتخاب کنید و نفوذ خالص را تخمین بزنید.",
                             "body": [
-                                "متغیر محرک اصلی را مشخص کنید."
+                                "متغیر پیشران اصلی را مشخص کنید."
                             ],
                             "format": "جدول شش در شش",
                             "criteria": [
-                                "وضوح متغیرها",
-                                "استدلال محرک"
+                                "متغیرهای روشن",
+                                "استدلال پیشران درست"
                             ]
                         }
                     }
