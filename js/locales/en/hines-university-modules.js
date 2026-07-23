@@ -101,7 +101,7 @@ registerLocale('en', {
                         "readingsShort": "Framing",
                         "visual": "assets/methods/covers/hines-c1-mindsets.svg",
                         "visualCaption": "Column 1 · Framing · six parts",
-                        "lectureIntro": "Framing deck: short opening slides on what Framing is, then each of six parts as definition, Hines bullets, and why it matters.",
+                        "lectureIntro": "Framing deck: short opening slides on what Framing is, then each of six parts as definition, Hines bullets, and why it matters with one applied example.",
                         "lectureSections": [
                             {
                                 "id": "opening",
@@ -117,7 +117,7 @@ registerLocale('en', {
                                 "paragraphs": [
                                     "<p>Column 1 is Framing in Hines and Bishop's six-pillar model of strategic foresight. It is the first pillar: set the problem, the people, and the working conditions before any scan or forecast.</p>",
                                     "<p>In Thinking About the Future, Framing is the opening operational stage of strategic foresight. It sits before Scanning and Forecasting so the team does not collect signals or build futures for a vague or false brief.</p>",
-                                    "<p>We frame to prepare boundaries, mindsets, stakeholders, purpose, goals, team, and climate before data and scenarios. Without Framing, later pillars misread the issue and produce tidy answers to the wrong question.</p>",
+                                    "<p>We frame to prepare boundaries, mindsets, stakeholders, purpose, goals, team, and climate before data and scenarios. Without Framing, later pillars misread the issue and produce tidy answers to the wrong question. Picture a university asking only to \"stop ChatGPT cheating\": Framing tests whether the real issue is assessment design, integrity culture, or workforce skills before anyone builds AI police scenarios.</p>",
                                     "<p>Framing means specifying the foresight issue, its boundaries, and the readiness of the system and team for foresight work. It is method, not a warm-up chat before the real tools start.</p>"
                                 ]
                             },
@@ -132,9 +132,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Reframing mindsets changes how people stand toward the future before scan or forecast begins. Hines and Bishop treat attitude work as part of the method.</p>",
+                                    "<p>In a live foresight project, reframing mindsets is the readiness step: change how people stand toward the future before scan or forecast begins, so attitude does not silently veto the method. Hines and Bishop treat attitude work as part of the method, not soft extras.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Optimism toward the future</li><li>Identifying biases</li><li>Detecting self-deceptions and external factors</li><li>Using the whole brain</li><li>Welcoming complexity</li><li>The influence of time and various factors on progress</li></ul>",
-                                    "<p>A cynical or overconfident room misreads every later pillar. Optimism here is disciplined openness. Bias and self-deception checks keep external drivers visible. Complexity and multi-factor time stop premature simplification.</p>"
+                                    "<p>A cynical or overconfident room misreads every later pillar. Optimism here is disciplined openness, not cheerleading. Bias and self-deception checks keep external drivers visible. Complexity and multi-factor time stop premature simplification.<br><br><strong>Applied example:</strong> A mid-size manufacturer labels every scenario workshop \"negative thinking.\" Until that mindset is reframed, Scanning only collects good news and Forecasting collapses to one baseline.</p>"
                                 ]
                             },
                             {
@@ -148,9 +148,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Stakeholder work means knowing whose future is at stake and what each group fears or hopes, so the foresight question is owned inside a real organization.</p>",
+                                    "<p>Stakeholder work in Framing means mapping whose future is at stake and what each group fears or hopes, so the foresight question is owned inside a real organization rather than invented by the facilitation team.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Knowing the organization more deeply</li><li>Understanding the concerns of managers, employees, and the organization itself</li><li>Not trying to turn the client into a futurist</li></ul>",
-                                    "<p>The client stays the decision maker; the foresight team supplies process and challenge. Separate concern maps prevent a generic exercise that answers a question nobody asked.</p>"
+                                    "<p>The client stays the decision maker; the foresight team supplies process and challenge. Separate concern maps prevent a generic exercise that answers a question nobody asked.<br><br><strong>Applied example:</strong> A hospital foresight kickoff invites only administrators. Nurses and patients never surface, so the framed issue becomes \"bed capacity\" while the lived crisis is staffing trust and discharge pathways.</p>"
                                 ]
                             },
                             {
@@ -164,9 +164,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Intent and purpose fix why the project exists: explore futures and improve mental models, not only defend today's operating plan.</p>",
+                                    "<p>Intent and purpose fix why the project exists in the client system: explore futures and improve mental models, and test whether the stated problem is the real one before Scanning locks onto it.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Exploring the future</li><li>Improving mental models</li><li>Balancing exploration and exploitation</li><li>Evaluating the problem presented by the organization: is it the real problem or not</li></ul>",
-                                    "<p>Exploitation protects current performance; exploration opens alternatives. If the stated brief is wrong, Scanning and Forecasting only refine a false target.</p>"
+                                    "<p>Exploitation protects current performance; exploration opens alternatives. If the stated brief is wrong, Scanning and Forecasting only refine a false target.<br><br><strong>Applied example:</strong> A university says \"stop ChatGPT cheating.\" Intent work asks whether the real problem is detection tech, assessment redesign, or graduate skills the labor market will demand. That reframing changes every later pillar.</p>"
                                 ]
                             },
                             {
@@ -180,9 +180,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Goal setting turns Framing into a checkable contract: what success looks like, on which horizon, with what outward focus.</p>",
+                                    "<p>Goal setting turns Framing into a checkable project contract: what success looks like for this foresight cycle, on which horizon, with what outward focus, so later Acting can be judged.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Defining goals in measurable form</li><li>Focusing on outcomes rather than outputs</li><li>Working across different time horizons</li><li>Emphasizing the external environment and the future rather than the present and the inside</li></ul>",
-                                    "<p>Outputs are reports and workshops; outcomes are decisions or capability shifts. Multiple horizons stop a short KPI from posing as a foresight goal. External focus keeps Framing from becoming internal status reporting.</p>"
+                                    "<p>Outputs are reports and workshops; outcomes are decisions or capability shifts. Multiple horizons stop a short KPI from posing as a foresight goal. External focus keeps Framing from becoming internal status reporting.<br><br><strong>Applied example:</strong> A city transport unit sets the goal as \"run four foresight workshops.\" Reframed, the outcome is a decision rule for modal shift by 2035, with near-term milestones that Acting can track.</p>"
                                 ]
                             },
                             {
@@ -196,9 +196,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Team selection treats strategic foresight as collective work: who is in the room shapes which futures become thinkable.</p>",
+                                    "<p>Team selection designs who will carry Framing and later pillars: strategic foresight is collective work, and the mix of roles shapes which futures become thinkable inside the project.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>A team sport</li><li>Turning it into an interactive and comprehensive process</li><li>Involving diverse people</li></ul>",
-                                    "<p>A solo analyst can write a memo; Framing needs interaction across functions so blind spots surface early. Diversity means role, expertise, and stake, not a decorative guest list.</p>"
+                                    "<p>A solo analyst can write a memo; Framing needs interaction across functions so blind spots surface early. Diversity means role, expertise, and stake, not a decorative guest list.<br><br><strong>Applied example:</strong> An energy company's foresight team is only engineers. Without regulators, communities, and finance in the room, \"transition futures\" stay technology roadmaps and miss social license.</p>"
                                 ]
                             },
                             {
@@ -212,9 +212,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Creating a strategic environment designs the working climate so Framing stays open: unconstrained thinking and room for small tests.</p>",
+                                    "<p>Creating a strategic environment designs the working climate of the foresight project so Framing stays open: unconstrained thinking and room for small tests before Politics and habit close the frame.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>An environment conducive to open, unconstrained thinking</li><li>Encouraging experiments and prototypes</li></ul>",
-                                    "<p>If the room rewards only safe answers, later pillars inherit a closed frame. Prototypes link Framing to Acting early: rough probes, not only slide debates.</p>"
+                                    "<p>If the room rewards only safe answers, later pillars inherit a closed frame. Prototypes link Framing to Acting early: rough probes, not only slide debates.<br><br><strong>Applied example:</strong> A bank kickoff punishes \"weird\" ideas in the first hour. The team later produces polished baseline forecasts and never tests a micro-prototype of an alternative branch service model.</p>"
                                 ]
                             }
                         ],
@@ -247,7 +247,7 @@ registerLocale('en', {
                         "readingsShort": "Scanning",
                         "visual": "assets/methods/covers/hines-c2-mapping.svg",
                         "visualCaption": "Column 2 · Scanning · four parts",
-                        "lectureIntro": "Scanning deck: short opening on what Scanning is, then each of four parts as definition, Hines bullets, and why it matters.",
+                        "lectureIntro": "Scanning deck: short opening on what Scanning is, then each of four parts as definition, Hines bullets, and why it matters with one applied example.",
                         "lectureSections": [
                             {
                                 "id": "opening",
@@ -263,7 +263,7 @@ registerLocale('en', {
                                 "paragraphs": [
                                     "<p>Column 2 is Scanning in the six-pillar model. It gathers and organizes what is changing inside and outside the framed system.</p>",
                                     "<p>Scanning follows Framing and feeds Forecasting. A clear frame tells the scan what to watch; scan findings keep the frame honest as the world moves.</p>",
-                                    "<p>We scan so foresight is not invented from opinion alone. Mapping, history, environmental watch, and wide engagement surface change before scenarios harden.</p>",
+                                    "<p>We scan so foresight is not invented from opinion alone. Mapping, history, environmental watch, and wide engagement surface change before scenarios harden. A ministry that only reads ISI papers will miss Discord student channels, startup demos, and street-level practice where weak signals often appear first.</p>",
                                     "<p>Scanning means drawing the system, learning from the past path, watching changing contexts, and bringing many voices into what counts as evidence of change.</p>"
                                 ]
                             },
@@ -278,9 +278,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Mapping draws the system under study so the team knows what is inside the frame, what sits outside, and how parts connect.</p>",
+                                    "<p>Mapping is the first Scanning move in a live project: draw the system under study so the team knows what is inside the frame, what sits outside, and how parts connect before the signal feed floods the room.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>A global perspective</li><li>Mapping the system under study</li><li>An integrative view</li><li>Stakeholder analysis</li></ul>",
-                                    "<p>Without a map, scanning becomes a pile of clippings. Global means refusing a narrow local blinker. Integrative view plus stakeholders keep the map from being only a tech diagram or only an org chart.</p>"
+                                    "<p>Without a map, scanning becomes a pile of clippings. Global means refusing a narrow local blinker. Integrative view plus stakeholders keep the map from being only a tech diagram or only an org chart.<br><br><strong>Applied example:</strong> A food retailer maps only warehouses and SKUs. Diet culture, delivery apps, and municipal waste rules stay \"outside,\" so Scanning never sees the drivers that will reshape demand.</p>"
                                 ]
                             },
                             {
@@ -294,9 +294,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>History work grounds Scanning in how the present period was made, so the team does not invent novelty where continuity already explains the pattern.</p>",
+                                    "<p>History work in Scanning grounds the project in how the present period was made, so the team does not invent novelty where continuity already explains the pattern, and does not treat past fixes as permanent safety.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Beginning by looking at the past</li><li>Not reinventing the wheel</li><li>Awareness of innovations that create false comfort</li></ul>",
-                                    "<p>Some past innovations feel like safety and hide new risk. History is not nostalgia; it is a check on what the baseline already assumes.</p>"
+                                    "<p>Some past innovations feel like safety and hide new risk. History is not nostalgia; it is a check on what the baseline already assumes before Forecasting builds on it.<br><br><strong>Applied example:</strong> A telecom celebrates an old prepaid \"innovation\" as proof of agility. History shows the same model already failed twice under different brands; reinventing it wastes the scan cycle.</p>"
                                 ]
                             },
                             {
@@ -310,9 +310,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Environmental scanning watches changing contexts so Framing stays honest: the outside world moves while the brief is being written.</p>",
+                                    "<p>Environmental scanning is the ongoing watch of changing contexts so Framing stays honest: the outside world moves while the brief is being written, and scan findings must loop back into analysis, reframing, and use.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Scanning the environment for awareness of changing contexts, including: exploration, analysis, framing, application</li><li>Integrating internal and external environments</li><li>Examining unknown and unattractive domains</li><li>Not all information is in the research literature</li></ul>",
-                                    "<p>The loop exploration, analysis, framing, application stops scan work at collection. Unattractive domains and non-academic sources are where weak signals often hide.</p>"
+                                    "<p>The loop exploration, analysis, framing, application stops scan work at collection. Unattractive domains and non-academic sources are where weak signals often hide.<br><br><strong>Applied example:</strong> A university horizon scan uses only journal databases. Student Discord servers, edtech demos, and employer hiring chats carry early AI-use norms that ISI papers lag by years.</p>"
                                 ]
                             },
                             {
@@ -326,9 +326,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Engaging everyone widens who can see and name change. Scanning is social, not only documentary.</p>",
+                                    "<p>Engaging everyone widens who can see and name change in the Scanning phase. Scanning is social evidence work, not only documentary search.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Engaging everyone outside and inside</li><li>Consulting prominent people</li><li>Consulting the marginalized / outcasts</li><li>Designing workshops that turn learning into collective activity</li></ul>",
-                                    "<p>Prominent voices give access and legitimacy; outcast voices often see what the center cannot. Workshops should make learning collective, not one expert monologue.</p>"
+                                    "<p>Prominent voices give access and legitimacy; outcast voices often see what the center cannot. Workshops should make learning collective, not one expert monologue.<br><br><strong>Applied example:</strong> A municipal climate scan consults only mayors and engineers. Informal settlement leaders never speak, so flood-risk maps miss the places where adaptation already fails quietly.</p>"
                                 ]
                             }
                         ],
@@ -361,7 +361,7 @@ registerLocale('en', {
                         "readingsShort": "Forecasting",
                         "visual": "assets/methods/covers/hines-c3-drivers.svg",
                         "visualCaption": "Column 3 · Forecasting · five parts",
-                        "lectureIntro": "Forecasting deck: short opening on what Forecasting is, then each of five parts as definition, Hines bullets, and why it matters.",
+                        "lectureIntro": "Forecasting deck: short opening on what Forecasting is, then each of five parts as definition, Hines bullets, and why it matters with one applied example.",
                         "lectureSections": [
                             {
                                 "id": "opening",
@@ -377,7 +377,7 @@ registerLocale('en', {
                                 "paragraphs": [
                                     "<p>Column 3 is Forecasting in the six-pillar model. It maps a spectrum of futures from drivers and tools through divergence, convergence, and alternative worlds.</p>",
                                     "<p>Forecasting follows Scanning and precedes Visioning. Scan evidence feeds drivers and uncertainties; alternative futures become the field Visioning will interpret and prefer.</p>",
-                                    "<p>We forecast to escape a single baseline story. Without structured alternatives, planning locks onto today's extrapolation and calls it the future.</p>",
+                                    "<p>We forecast to escape a single baseline story. Without structured alternatives, planning locks onto today's extrapolation and calls it the future. An auto OEM that treats one EV timeline as destiny will mis-size plants, suppliers, and skills if residual uncertainty is still high.</p>",
                                     "<p>Forecasting means naming drivers and uncertainties, choosing fit methods, opening then focusing ideas, and building consistent future worlds, not trend lists alone.</p>"
                                 ]
                             },
@@ -392,9 +392,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Drivers and uncertainties open Forecasting by naming what moves the system and what remains undecided.</p>",
+                                    "<p>Drivers and uncertainties open Forecasting in a real project by naming what moves the system and what remains undecided, so later tool choice and alternatives rest on an explicit field, not a trend mood.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Identifying main drivers (obvious and less visible; STEEP strategic context; challenging present assumptions)</li><li>Using a layered approach (CLA) for depth of change: litany, social/systemic, discourse/worldview, metaphor/myth</li><li>Assessing fundamental changes that reshape the usual space</li><li>Seeking intersections of change (Kauffman principle; trends are not isolated)</li><li>Seeking turning points (Era)</li><li>Improving decisions by reducing uncertainty (predetermined anchors versus key uncertainties)</li></ul>",
-                                    "<p>STEEP widens the driver set; CLA stops litany headlines from posing as causes. Intersections and era turns break one-by-one trend reading. Anchors versus key uncertainties focus effort where choice still matters.</p>"
+                                    "<p>STEEP widens the driver set; CLA stops litany headlines from posing as causes. Intersections and era turns break one-by-one trend reading. Anchors versus key uncertainties focus effort where choice still matters.<br><br><strong>Applied example:</strong> A tourism board treats \"more visitors every year\" as the only driver. CLA shows litany growth sitting on a fragile worldview of endless mobility; intersections with climate and visas become the real uncertainties.</p>"
                                 ]
                             },
                             {
@@ -408,9 +408,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Choosing tools matches method to the ambiguity of the situation. Tool choice is a design decision inside Forecasting, not a technique collection.</p>",
+                                    "<p>Choosing tools matches method to the ambiguity of the situation. In project practice, tool choice is a design decision inside Forecasting, not a technique collection to impress the client.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Correct approaches and tools (Courtney framework; fit tools to the level of ambiguity)</li><li>Using at least one formal method</li><li>Matching methods to the situation</li><li>Combining techniques for a wider picture of possible futures</li></ul>",
-                                    "<p>Courtney levels stop a single-number forecast when residual uncertainty is high. One formal method aids transparency; combining techniques widens the futures set.</p>"
+                                    "<p>Courtney levels stop a single-number forecast when residual uncertainty is high. One formal method aids transparency; combining techniques widens the futures set.<br><br><strong>Applied example:</strong> A pharma R&D unit faces Courtney-level residual uncertainty on regulation and science, yet demands a single revenue number. Fit tools shift to scenarios plus options, not a false point forecast.</p>"
                                 ]
                             },
                             {
@@ -424,9 +424,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Divergence generates the idea field Forecasting will later compress. Creative stretch comes before prioritization.</p>",
+                                    "<p>Divergence generates the idea field Forecasting will later compress. In workshop practice, creative stretch must come before prioritization or the room only dresses up today's plan.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Stimulating new thoughts with creative tools and approaches (strategic relatives, value analysis, and similar)</li><li>Going beyond mere brainstorming</li><li>Inverting problems (assume what seems certain is wrong)</li><li>Seeking disruptive ideas and anti-groupthink prompts</li><li>Combining rigor and creativity</li><li>Using both analytic and affective components</li><li>Experiencing the future first-hand (sensory or simulation)</li><li>Avoiding premature convergence of ideas</li></ul>",
-                                    "<p>Brainstorming alone is too thin. Invert and disturb to break groupthink. First-hand future experience makes alternatives stick. Early convergence is the main failure mode here.</p>"
+                                    "<p>Brainstorming alone is too thin. Invert and disturb to break groupthink. First-hand future experience makes alternatives stick. Early convergence is the main failure mode here.<br><br><strong>Applied example:</strong> An insurer's \"ideation\" hour only yields \"a better app.\" Inversion asks what if claims contact collapses; the field suddenly includes mutual aid, embedded cover, and exit from retail brands.</p>"
                                 ]
                             },
                             {
@@ -440,9 +440,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Convergence prioritizes after divergence has opened the field. Forecasting needs shared grounds without treating every trend as destiny.</p>",
+                                    "<p>Convergence prioritizes after divergence has opened the field. Forecasting needs shared grounds for the next design step without treating every popular trend as destiny.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Identifying and prioritizing shared grounds</li><li>Balancing realism with a critical stance</li><li>Treating trends with skepticism</li></ul>",
-                                    "<p>Common ground is a working agreement for the next design step, not consensus theater. Realism without critique becomes status quo; critique without realism becomes fantasy.</p>"
+                                    "<p>Common ground is a working agreement for the next design step, not consensus theater. Realism without critique becomes status quo; critique without realism becomes fantasy.<br><br><strong>Applied example:</strong> A retail team ranks \"same-day delivery everywhere\" as inevitable. Skeptical convergence keeps it as one plausible path, not a mandate, and preserves capacity for neighborhood dark-store backlash.</p>"
                                 ]
                             },
                             {
@@ -456,9 +456,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Alternative futures are the core product of Forecasting: several coherent future worlds, including the chance that today's baseline is wrong.</p>",
+                                    "<p>Alternative futures are the core product Forecasting hands to Visioning: several coherent future worlds, including the chance that today's baseline is wrong, described as worlds not trend lists.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Assuming the baseline is wrong</li><li>Exploring and building alternative futures</li><li>Possible, plausible, probable, preferable</li><li>Emphasizing plausible surprises (Wild Cards)</li><li>Describing how the future differs from the present (a future world, not only a trend list)</li><li>Working backward / backcasting from a target scenario</li><li>Quality control and internal consistency</li><li>Supporting alternatives with empirical evidence</li></ul>",
-                                    "<p>Layers organize judgment; wild cards keep surprise in the set. Describe a world, not a bullet list of trends. Backcasting, QA, and evidence make alternatives usable for Visioning.</p>"
+                                    "<p>Layers organize judgment; wild cards keep surprise in the set. Describe a world, not a bullet list of trends. Backcasting, QA, and evidence make alternatives usable for Visioning.<br><br><strong>Applied example:</strong> An oil major builds only \"baseline\" and \"green transition.\" Without a wild-card world (abrupt trade bloc, tech leap, or social license collapse), Planning inherits a thin menu.</p>"
                                 ]
                             }
                         ],
@@ -495,7 +495,7 @@ registerLocale('en', {
                         "readingsShort": "Visioning",
                         "visual": "assets/methods/covers/hines-c4-implications.svg",
                         "visualCaption": "Column 4 · Visioning · three clusters",
-                        "lectureIntro": "Visioning deck: short opening on what Visioning is, then each cluster as definition, Hines bullets, and why it matters.",
+                        "lectureIntro": "Visioning deck: short opening on what Visioning is, then each cluster as definition, Hines bullets, and why it matters with one applied example.",
                         "lectureSections": [
                             {
                                 "id": "opening",
@@ -511,7 +511,7 @@ registerLocale('en', {
                                 "paragraphs": [
                                     "<p>Column 4 is Visioning in the six-pillar model. After Forecasting maps possibles, Visioning asks so what and shapes a preferred direction.</p>",
                                     "<p>Visioning follows Forecasting and precedes Planning. Alternatives become questions and implications; a shared preferred future then guides strategic options.</p>",
-                                    "<p>Without Visioning, foresight stays an intellectual map. Mission, goals, effectiveness, performance, and the bottom line need a preferred path, not only a spectrum.</p>",
+                                    "<p>Without Visioning, foresight stays an intellectual map. Mission, goals, effectiveness, performance, and the bottom line need a preferred path, not only a spectrum. After scenarios, if a ministry asks \"which one is true?\", Visioning redirects: which future will we aim for, and what second-order effects does that choice create?</p>",
                                     "<p>Visioning means reading implications of alternatives, challenging hidden assumptions, and building shared stretch vision on a real time continuum.</p>"
                                 ]
                             },
@@ -526,9 +526,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Identifying implications turns alternative futures into questions the organization must answer, not into final answers.</p>",
+                                    "<p>Identifying implications turns alternative futures into questions the organization must answer in Visioning, not into final answers. Futures-wheel thinking tracks second and third order effects before a preferred path is locked.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Using alternatives to frame important questions, not as final answers</li><li>Considering second and third order consequences (futures wheel)</li><li>Attending to long term and unintended consequences</li></ul>",
-                                    "<p>First-order hits are easy to list. Second and third order reveal chains that change strategy. Long-term and unintended effects keep a preferred path honest about side effects.</p>"
+                                    "<p>First-order hits are easy to list. Second and third order reveal chains that change strategy. Long-term and unintended effects keep a preferred path honest about side effects.<br><br><strong>Applied example:</strong> A university prefers \"fully remote degrees.\" First order: lower estate cost. Second order: campus services hollow out. Third order: local cafes and student housing markets shrink; Visioning must own those chains.</p>"
                                 ]
                             },
                             {
@@ -542,9 +542,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Challenging assumptions makes the hidden rules of the preferred future visible so today's conventional wisdom is not smuggled into tomorrow's goal.</p>",
+                                    "<p>Challenging assumptions makes the hidden rules of the preferred future visible so today's conventional wisdom is not smuggled into tomorrow's goal inside the Visioning brief.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Stating assumptions explicitly</li><li>Challenging conventional wisdom</li><li>Assume nothing; question everything</li><li>Identifying governing taboos and breaking them</li><li>Cross checking assumptions and validating with experts</li></ul>",
-                                    "<p>Unspoken assumptions run strategy by default. Taboos are often the real constraints. Expert cross-check validates; questioning everything is disciplined doubt, not cynicism.</p>"
+                                    "<p>Unspoken assumptions run strategy by default. Taboos are often the real constraints. Expert cross-check validates; questioning everything is disciplined doubt, not cynicism.<br><br><strong>Applied example:</strong> Leadership assumes \"students will always come to campus for prestige.\" Stress-testing that assumption changes the preferred vision from bigger buildings to hybrid learning ecosystems.</p>"
                                 ]
                             },
                             {
@@ -558,9 +558,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Visionary thinking builds a shared preferred future that stretches the organization while staying on a real time continuum.</p>",
+                                    "<p>Visionary thinking builds a shared preferred future that stretches the organization while staying on a real time continuum, so Planning inherits a direction people can own, not a slogan.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Creating a shared strategic vision</li><li>Placing the vision on a time continuum</li><li>Strategic goal setting as stretch goals (BHAG / stretch)</li><li>Positive leverage and Appreciative Inquiry (what you focus on, you get)</li><li>Dator's law: every useful statement about the future first looks ridiculous</li><li>Asking what if questions</li><li>Sensing and activating the emerging future (presencing)</li></ul>",
-                                    "<p>Shared vision is collective ownership, not a wall slogan. Stretch pulls beyond incremental plans. Dator's law protects useful-but-odd statements; what-if and presencing keep Visioning alive to emergence.</p>"
+                                    "<p>Shared vision is collective ownership, not a wall slogan. Stretch pulls beyond incremental plans. Dator's law protects useful-but-odd statements; what-if and presencing keep Visioning alive to emergence.<br><br><strong>Applied example:</strong> A university stretch goal: every graduate leaves with futures literacy, not only a degree. It first sounds ridiculous; then it reshapes curriculum, assessment, and employer partnerships.</p>"
                                 ]
                             }
                         ],
@@ -593,7 +593,7 @@ registerLocale('en', {
                         "readingsShort": "Planning",
                         "visual": "assets/methods/covers/hines-c5-strategic.svg",
                         "visualCaption": "Column 5 · Planning · two clusters",
-                        "lectureIntro": "Planning deck: short opening on what Planning is, then each cluster as definition, Hines bullets, and why it matters.",
+                        "lectureIntro": "Planning deck: short opening on what Planning is, then each cluster as definition, Hines bullets, and why it matters with one applied example.",
                         "lectureSections": [
                             {
                                 "id": "opening",
@@ -609,7 +609,7 @@ registerLocale('en', {
                                 "paragraphs": [
                                     "<p>Column 5 is Planning in the six-pillar model. It bridges preferred vision to strategy and tactics that can lead to action.</p>",
                                     "<p>Planning follows Visioning and precedes Acting. Shared preferred direction becomes strategic conversation, change-or-keep choices, and a spectrum of options.</p>",
-                                    "<p>Vision without Planning stays inspirational. Planning maps from where we are to where we want to be with options the organization can actually choose.</p>",
+                                    "<p>Vision without Planning stays inspirational. Planning maps from where we are to where we want to be with options the organization can actually choose. A \"net zero campus\" vision without a menu of options and contingencies becomes a poster, not a path.</p>",
                                     "<p>Planning means thinking strategically in cultural and social context, then developing distinctive options with contingencies, not one locked best plan.</p>"
                                 ]
                             },
@@ -624,9 +624,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Thinking strategically bridges preferred vision to choices the organization can make. Strategy emerges through dialogue in a cultural and social field.</p>",
+                                    "<p>Thinking strategically bridges preferred vision to choices the organization can make. In project practice, strategy emerges through dialogue in a cultural and social field, not only in a slide pack from the foresight team.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Strengthening emergence at the organizational level</li><li>Treating cultural and social environment as the primary component</li><li>Creating strategy depends on stimulating strategic conversations across the organization</li><li>Identifying what must change and what must not change</li><li>Discovering main strategic choice areas through critical branching points</li></ul>",
-                                    "<p>Emergence means strategy is co-produced in talk and practice. Change versus preserve stops total redesign fantasy. Critical branch points mark where the path actually forks.</p>"
+                                    "<p>Emergence means strategy is co-produced in talk and practice. Change versus preserve stops total redesign fantasy. Critical branch points mark where the path actually forks.<br><br><strong>Applied example:</strong> A public university prefers digital transformation but must preserve public trust and degree legitimacy. The branch point is what to digitize versus what must stay face-to-face credentialing.</p>"
                                 ]
                             },
                             {
@@ -640,9 +640,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Developing strategic options turns Visioning into a menu of moves built on distinctive advantage and evaluated on many dimensions.</p>",
+                                    "<p>Developing strategic options turns Visioning into a menu of moves built on distinctive advantage and evaluated on many dimensions, including do nothing and contingencies for surprise.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Building fundamental strategic recommendations on the organization's distinctive advantages</li><li>Multidimensional evaluation of the proposed strategy</li><li>Considering do nothing, plausible, and preferred options when presenting choices</li><li>Having contingency plans for the unexpected (a spectrum of options, not lock on one best)</li></ul>",
-                                    "<p>Distinctiveness keeps options from becoming generic best practice. Do nothing is a real option. Contingencies protect Acting when the preferred path meets surprise.</p>"
+                                    "<p>Distinctiveness keeps options from becoming generic best practice. Do nothing is a real option. Contingencies protect Acting when the preferred path meets surprise.<br><br><strong>Applied example:</strong> Preferred path: full digital overhaul. Contingency: if the budget freezes mid-year, a modular pilot on micro-credentials still advances the vision without locking the whole enterprise.</p>"
                                 ]
                             }
                         ],
@@ -675,7 +675,7 @@ registerLocale('en', {
                         "readingsShort": "Acting",
                         "visual": "assets/methods/covers/hines-c6-communicate.svg",
                         "visualCaption": "Column 6 · Acting · four parts",
-                        "lectureIntro": "Acting deck: short opening on what Acting is, then each of four parts as definition, Hines bullets, and why it matters.",
+                        "lectureIntro": "Acting deck: short opening on what Acting is, then each of four parts as definition, Hines bullets, and why it matters with one applied example.",
                         "lectureSections": [
                             {
                                 "id": "opening",
@@ -691,7 +691,7 @@ registerLocale('en', {
                                 "paragraphs": [
                                     "<p>Column 6 is Acting in the six-pillar model. Forewarned is forearmed: communicate results, set an action agenda, run a strategic information system, and institutionalize foresight.</p>",
                                     "<p>Acting is the final pillar after Planning. Options become transferable messages, near-term moves, early-warning indicators, and recurring organizational capability.</p>",
-                                    "<p>Without Acting, foresight is a one-off report. Transfer, urgency, sensing, and institutional rhythm keep strategic foresight alive after the workshop.</p>",
+                                    "<p>Without Acting, foresight is a one-off report. Transfer, urgency, sensing, and institutional rhythm keep strategic foresight alive after the workshop. A beautiful scenario deck that sits on a shelf is a failed Acting pillar, not a successful Forecasting one.</p>",
                                     "<p>Acting means designing results for transfer, deciding with imperfect data, watching weak signals, and making foresight a repeated learning practice, not a single event.</p>"
                                 ]
                             },
@@ -706,9 +706,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Communicating results designs foresight for transfer: move abstract futures into forms decision makers can use in their thinking style.</p>",
+                                    "<p>Communicating results designs foresight for transfer into the organization's decision routines: move abstract futures into forms decision makers can use in their thinking style.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Designing results for transferability</li><li>Arranging the message in the audience's thinking style</li><li>Immersing stakeholders and decision makers in alternatives for acceptance and alignment</li><li>Being provocative (with care; fit organizational culture)</li><li>Modularizing outputs: keep the good, address the bad</li><li>Awareness of change through experience, insight, and reframing</li></ul>",
-                                    "<p>Transferability beats archive beauty. Immersion raises uptake; provocation is calibrated to culture. Modular outputs and lived reframe are how change awareness sticks.</p>"
+                                    "<p>Transferability beats archive beauty. Immersion raises uptake; provocation is calibrated to culture. Modular outputs and lived reframe are how change awareness sticks.<br><br><strong>Applied example:</strong> A CFO will not read a 40-page scenario narrative. A modular one-page options brief with cost gates and decision dates transfers the same foresight into budget language.</p>"
                                 ]
                             },
                             {
@@ -722,9 +722,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>An action agenda turns Planning into near-term moves: urgency, better decisions, milestones, and at least one improbable idea.</p>",
+                                    "<p>An action agenda turns Planning into near-term moves the organization will actually schedule: urgency, better decisions, milestones, and at least one improbable idea worth a controlled bet.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Creating a sense of urgency</li><li>Strengthening what the organization already does well and building from there</li><li>Purpose of activity: help better decisions</li><li>Decide without all desired data (avoid analysis paralysis)</li><li>Milestones toward the preferred future and celebrating small wins</li><li>Recommend investing at least in one improbable idea</li></ul>",
-                                    "<p>Urgency without capability collapses; build on strengths. The point is better decisions, not perfect foresight. One improbable investment keeps the portfolio from only safe incrementalism.</p>"
+                                    "<p>Urgency without capability collapses; build on strengths. The point is better decisions, not perfect foresight. One improbable investment keeps the portfolio from only safe incrementalism.<br><br><strong>Applied example:</strong> Besides process upgrades, the agenda funds one improbable pilot: stackable micro-credentials co-designed with employers, with a 90-day milestone and a kill or scale gate.</p>"
                                 ]
                             },
                             {
@@ -738,9 +738,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>A strategic information system keeps Acting alive after the workshop: foresight-aligned indicators linked to planning, with early warning for weak signals.</p>",
+                                    "<p>A strategic information system keeps Acting alive after the workshop: foresight-aligned indicators linked to planning gates, with early warning for weak signals that would reopen Framing or Forecasting.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>An information system aligned with foresight and linked to planning</li><li>An early warning system for weak signals</li><li>Searching for sources of turbulence in the system</li><li>Indicators that signal a potential crisis</li><li>Indicators that are easy to understand and collect</li></ul>",
-                                    "<p>SIS must feed planning gates, not fill a data lake. Weak signals and turbulence extend Scanning into operations. Crisis indicators must be few and easy or nobody watches them.</p>"
+                                    "<p>SIS must feed planning gates, not fill a data lake. Weak signals and turbulence extend Scanning into operations. Crisis indicators must be few and easy or nobody watches them.<br><br><strong>Applied example:</strong> A university watches three early-warning indicators monthly: application yield by program, employer skill requests shifting toward AI fluency, and policy drafts on generative tools. Each triggers a planning review, not a dashboard vanity metric.</p>"
                                 ]
                             },
                             {
@@ -754,9 +754,9 @@ registerLocale('en', {
                                     "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<p>Institutionalizing strategic thinking makes foresight a recurring capability: clear frame, futures rhythm, training, and a learning organization that can accept change.</p>",
+                                    "<p>Institutionalizing strategic thinking makes foresight a recurring capability after the first project: clear frame, futures rhythm, training, and a learning organization that can accept change.</p>",
                                     "<ul class=\"fitness-pres-bullets\"><li>Selecting, designing, and making the conceptual framework explicit</li><li>Developing a futures rhythm (regular cadence of study and attention)</li><li>Regular repetition of strategic foresight activities</li><li>Training programs for institutionalization</li><li>In a complex environment, learning is the best approach (learning organization)</li><li>Shifting attitudes toward accepting change</li></ul>",
-                                    "<p>An explicit frame stops every project reinventing method language. Rhythm and repetition beat one-off reports. Training and change acceptance keep Acting from freezing after first success.</p>"
+                                    "<p>An explicit frame stops every project reinventing method language. Rhythm and repetition beat one-off reports. Training and change acceptance keep Acting from freezing after first success.<br><br><strong>Applied example:</strong> Instead of one annual workshop, the organization runs a quarterly foresight hour tied to budget cycles, with a short internal training so new managers inherit the six-pillar language.</p>"
                                 ]
                             }
                         ],

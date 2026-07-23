@@ -2,6 +2,7 @@
  * Rebuild Hines C1–C6 lectureSections: opening block + 2–3 short slides per part.
  * Patches js/locales/{en,fa}/hines-university-modules.js in place.
  * Ban: em/en dash and ASCII --
+ * Applied examples live here so rebuilds keep teaching vignettes.
  */
 'use strict';
 
@@ -25,14 +26,20 @@ function opening(title, image, caption, slides) {
   };
 }
 
-function part(id, title, image, caption, defTitle, defBody, bulletTitle, bullets, whyTitle, whyBody) {
+/** Keep example inside the same paragraph so module-deck does not split a fourth slide. */
+function whyWithExample(whyBody, example) {
+  if (!example) return whyBody;
+  return `${whyBody}<br><br><strong>${example.label}</strong> ${example.text}`;
+}
+
+function part(id, title, image, caption, defTitle, defBody, bulletTitle, bullets, whyTitle, whyBody, example) {
   return {
     id,
     title,
     image,
     imageCaption: caption,
     slideTitles: [defTitle, bulletTitle, whyTitle],
-    paragraphs: [`<p>${defBody}</p>`, ul(bullets), `<p>${whyBody}</p>`]
+    paragraphs: [`<p>${defBody}</p>`, ul(bullets), `<p>${whyWithExample(whyBody, example)}</p>`]
   };
 }
 
@@ -44,12 +51,14 @@ function assertNoBanned(str, label) {
 
 const EN = {};
 const FA = {};
+const EX_EN = 'Applied example:';
+const EX_FA = 'مثال کاربردی:';
 
 /* ───────────── C1 Framing ───────────── */
 EN.c1Intro =
-  'Framing deck: short opening slides on what Framing is, then each of six parts as definition, Hines bullets, and why it matters.';
+  'Framing deck: short opening slides on what Framing is, then each of six parts as definition, Hines bullets, and why it matters with one applied example.';
 FA.c1Intro =
-  'ارائه چارچوب‌بندی: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر یک از شش جزء به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است.';
+  'ارائه چارچوب‌بندی: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر یک از شش جزء به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است با یک مثال کاربردی.';
 
 EN.c1Sections = [
   opening('0. Opening Framing', 'assets/methods/covers/hines-m0-map.svg', 'Column 1 in the six-pillar path', [
@@ -63,7 +72,7 @@ EN.c1Sections = [
     },
     {
       title: 'Why do we frame?',
-      body: 'We frame to prepare boundaries, mindsets, stakeholders, purpose, goals, team, and climate before data and scenarios. Without Framing, later pillars misread the issue and produce tidy answers to the wrong question.'
+      body: 'We frame to prepare boundaries, mindsets, stakeholders, purpose, goals, team, and climate before data and scenarios. Without Framing, later pillars misread the issue and produce tidy answers to the wrong question. Picture a university asking only to "stop ChatGPT cheating": Framing tests whether the real issue is assessment design, integrity culture, or workforce skills before anyone builds AI police scenarios.'
     },
     {
       title: 'What Framing means',
@@ -76,7 +85,7 @@ EN.c1Sections = [
     'assets/methods/covers/hines-c1-mindsets.svg',
     'Reset how the room stands toward the future',
     'Definition',
-    'Reframing mindsets changes how people stand toward the future before scan or forecast begins. Hines and Bishop treat attitude work as part of the method.',
+    'In a live foresight project, reframing mindsets is the readiness step: change how people stand toward the future before scan or forecast begins, so attitude does not silently veto the method. Hines and Bishop treat attitude work as part of the method, not soft extras.',
     'Hines guidelines',
     [
       'Optimism toward the future',
@@ -87,7 +96,11 @@ EN.c1Sections = [
       'The influence of time and various factors on progress'
     ],
     'Why it matters',
-    'A cynical or overconfident room misreads every later pillar. Optimism here is disciplined openness. Bias and self-deception checks keep external drivers visible. Complexity and multi-factor time stop premature simplification.'
+    'A cynical or overconfident room misreads every later pillar. Optimism here is disciplined openness, not cheerleading. Bias and self-deception checks keep external drivers visible. Complexity and multi-factor time stop premature simplification.',
+    {
+      label: EX_EN,
+      text: 'A mid-size manufacturer labels every scenario workshop "negative thinking." Until that mindset is reframed, Scanning only collects good news and Forecasting collapses to one baseline.'
+    }
   ),
   part(
     'stakeholders',
@@ -95,7 +108,7 @@ EN.c1Sections = [
     'assets/methods/covers/hines-c1-stakeholders.svg',
     'Managers, staff, and the organization as distinct concerns',
     'Definition',
-    'Stakeholder work means knowing whose future is at stake and what each group fears or hopes, so the foresight question is owned inside a real organization.',
+    'Stakeholder work in Framing means mapping whose future is at stake and what each group fears or hopes, so the foresight question is owned inside a real organization rather than invented by the facilitation team.',
     'Hines guidelines',
     [
       'Knowing the organization more deeply',
@@ -103,7 +116,11 @@ EN.c1Sections = [
       'Not trying to turn the client into a futurist'
     ],
     'Why it matters',
-    'The client stays the decision maker; the foresight team supplies process and challenge. Separate concern maps prevent a generic exercise that answers a question nobody asked.'
+    'The client stays the decision maker; the foresight team supplies process and challenge. Separate concern maps prevent a generic exercise that answers a question nobody asked.',
+    {
+      label: EX_EN,
+      text: 'A hospital foresight kickoff invites only administrators. Nurses and patients never surface, so the framed issue becomes "bed capacity" while the lived crisis is staffing trust and discharge pathways.'
+    }
   ),
   part(
     'intent',
@@ -111,7 +128,7 @@ EN.c1Sections = [
     'assets/methods/covers/hines-c1-intent.svg',
     'Explore futures and test the stated problem',
     'Definition',
-    'Intent and purpose fix why the project exists: explore futures and improve mental models, not only defend today\'s operating plan.',
+    'Intent and purpose fix why the project exists in the client system: explore futures and improve mental models, and test whether the stated problem is the real one before Scanning locks onto it.',
     'Hines guidelines',
     [
       'Exploring the future',
@@ -120,7 +137,11 @@ EN.c1Sections = [
       'Evaluating the problem presented by the organization: is it the real problem or not'
     ],
     'Why it matters',
-    'Exploitation protects current performance; exploration opens alternatives. If the stated brief is wrong, Scanning and Forecasting only refine a false target.'
+    'Exploitation protects current performance; exploration opens alternatives. If the stated brief is wrong, Scanning and Forecasting only refine a false target.',
+    {
+      label: EX_EN,
+      text: 'A university says "stop ChatGPT cheating." Intent work asks whether the real problem is detection tech, assessment redesign, or graduate skills the labor market will demand. That reframing changes every later pillar.'
+    }
   ),
   part(
     'goals',
@@ -128,7 +149,7 @@ EN.c1Sections = [
     'assets/methods/covers/hines-c1-goals.svg',
     'Measurable outcomes across horizons',
     'Definition',
-    'Goal setting turns Framing into a checkable contract: what success looks like, on which horizon, with what outward focus.',
+    'Goal setting turns Framing into a checkable project contract: what success looks like for this foresight cycle, on which horizon, with what outward focus, so later Acting can be judged.',
     'Hines guidelines',
     [
       'Defining goals in measurable form',
@@ -137,7 +158,11 @@ EN.c1Sections = [
       'Emphasizing the external environment and the future rather than the present and the inside'
     ],
     'Why it matters',
-    'Outputs are reports and workshops; outcomes are decisions or capability shifts. Multiple horizons stop a short KPI from posing as a foresight goal. External focus keeps Framing from becoming internal status reporting.'
+    'Outputs are reports and workshops; outcomes are decisions or capability shifts. Multiple horizons stop a short KPI from posing as a foresight goal. External focus keeps Framing from becoming internal status reporting.',
+    {
+      label: EX_EN,
+      text: 'A city transport unit sets the goal as "run four foresight workshops." Reframed, the outcome is a decision rule for modal shift by 2035, with near-term milestones that Acting can track.'
+    }
   ),
   part(
     'team',
@@ -145,11 +170,15 @@ EN.c1Sections = [
     'assets/methods/covers/hines-c1-team.svg',
     'Foresight as collective work',
     'Definition',
-    'Team selection treats strategic foresight as collective work: who is in the room shapes which futures become thinkable.',
+    'Team selection designs who will carry Framing and later pillars: strategic foresight is collective work, and the mix of roles shapes which futures become thinkable inside the project.',
     'Hines guidelines',
     ['A team sport', 'Turning it into an interactive and comprehensive process', 'Involving diverse people'],
     'Why it matters',
-    'A solo analyst can write a memo; Framing needs interaction across functions so blind spots surface early. Diversity means role, expertise, and stake, not a decorative guest list.'
+    'A solo analyst can write a memo; Framing needs interaction across functions so blind spots surface early. Diversity means role, expertise, and stake, not a decorative guest list.',
+    {
+      label: EX_EN,
+      text: 'An energy company\'s foresight team is only engineers. Without regulators, communities, and finance in the room, "transition futures" stay technology roadmaps and miss social license.'
+    }
   ),
   part(
     'environment',
@@ -157,14 +186,18 @@ EN.c1Sections = [
     'assets/methods/covers/hines-c1-environment.svg',
     'Open climate for thinking and trials',
     'Definition',
-    'Creating a strategic environment designs the working climate so Framing stays open: unconstrained thinking and room for small tests.',
+    'Creating a strategic environment designs the working climate of the foresight project so Framing stays open: unconstrained thinking and room for small tests before Politics and habit close the frame.',
     'Hines guidelines',
     [
       'An environment conducive to open, unconstrained thinking',
       'Encouraging experiments and prototypes'
     ],
     'Why it matters',
-    'If the room rewards only safe answers, later pillars inherit a closed frame. Prototypes link Framing to Acting early: rough probes, not only slide debates.'
+    'If the room rewards only safe answers, later pillars inherit a closed frame. Prototypes link Framing to Acting early: rough probes, not only slide debates.',
+    {
+      label: EX_EN,
+      text: 'A bank kickoff punishes "weird" ideas in the first hour. The team later produces polished baseline forecasts and never tests a micro-prototype of an alternative branch service model.'
+    }
   )
 ];
 
@@ -180,7 +213,7 @@ FA.c1Sections = [
     },
     {
       title: 'چرا چارچوب می‌کنیم؟',
-      body: 'برای آماده‌سازی مرز، نگرش، ذی‌نفعان، مقصود، هدف، تیم و محیط پیش از ورود به داده و سناریو. بدون این کار، بقیه ستون‌ها مسئله را بد می‌خوانند و به پرسش غلط پاسخ مرتب می‌دهند.'
+      body: 'برای آماده‌سازی مرز، نگرش، ذی‌نفعان، مقصود، هدف، تیم و محیط پیش از ورود به داده و سناریو. بدون این کار، بقیه ستون‌ها مسئله را بد می‌خوانند و به پرسش غلط پاسخ مرتب می‌دهند. تصور کنید دانشگاه فقط می‌گوید «تقلب با ChatGPT را متوقف کنید»: چارچوب‌بندی می‌آزماید آیا مسئله واقعی طراحی ارزیابی است، فرهنگ صداقت، یا مهارت‌های بازار کار؛ پیش از آنکه کسی سناریوی پلیس هوش مصنوعی بسازد.'
     },
     {
       title: 'معنا به زبان ساده',
@@ -193,7 +226,7 @@ FA.c1Sections = [
     'assets/methods/covers/hines-c1-mindsets.svg',
     'بازنشانی نحوه ایستادن اتاق نسبت به آینده',
     'تعریف',
-    'تعدیل نگرش‌ها شیوه ایستادن افراد نسبت به آینده را پیش از پویش یا پیش‌بینی تغییر می‌دهد. هاینز و بیشاپ کار روی نگرش را بخشی از روش می‌دانند.',
+    'در پروژه واقعی آینده‌نگاری، تعدیل نگرش‌ها گام آمادگی است: شیوه ایستادن افراد نسبت به آینده را پیش از پویش یا پیش‌بینی عوض می‌کند تا نگرش خاموش روش را وتو نکند. هاینز و بیشاپ کار روی نگرش را بخشی از روش می‌دانند، نه ضمیمه نرم.',
     'راهنماهای هاینز',
     [
       'خوش‌بینی نسبت به آینده',
@@ -204,7 +237,11 @@ FA.c1Sections = [
       'تأثیر زمان و عوامل مختلف در پیشرفت'
     ],
     'چرا مهم است',
-    'اتاق بدبین یا بیش‌ازحد مطمئن هر ستون بعدی را بد می‌خواند. خوش‌بینی اینجا گشودگی منضبط است. بررسی سوگیری عوامل بیرونی را دیده نگه می‌دارد. پیچیدگی و زمان چندعاملی جلوی ساده‌سازی زودهنگام را می‌گیرد.'
+    'اتاق بدبین یا بیش‌ازحد مطمئن هر ستون بعدی را بد می‌خواند. خوش‌بینی اینجا گشودگی منضبط است، نه تشویق‌گری. بررسی سوگیری عوامل بیرونی را دیده نگه می‌دارد. پیچیدگی و زمان چندعاملی جلوی ساده‌سازی زودهنگام را می‌گیرد.',
+    {
+      label: EX_FA,
+      text: 'کارخانه متوسط هر کارگاه سناریو را «منفی‌بافی» می‌نامد. تا نگرش بازقالب نشود، پویش فقط خبر خوب جمع می‌کند و پیش‌بینی به یک خط پایه فرو می‌ریزد.'
+    }
   ),
   part(
     'stakeholders',
@@ -212,7 +249,7 @@ FA.c1Sections = [
     'assets/methods/covers/hines-c1-stakeholders.svg',
     'مدیران، کارکنان و خود سازمان به‌عنوان دغدغه‌های متمایز',
     'تعریف',
-    'شناخت ذی‌نفعان یعنی دانستن آینده چه کسانی در میان است و هر گروه از چه می‌ترسد یا چه امید دارد تا پرسش آینده‌نگاری داخل سازمانی واقعی باشد.',
+    'شناخت ذی‌نفعان در چارچوب‌بندی یعنی نقشه آینده چه کسانی در میان است و هر گروه از چه می‌ترسد یا چه امید دارد تا پرسش آینده‌نگاری داخل سازمانی واقعی باشد، نه ساخته تیم تسهیلگر.',
     'راهنماهای هاینز',
     [
       'شناخت بیشتر نسبت به سازمان',
@@ -220,7 +257,11 @@ FA.c1Sections = [
       'سعی نکردن در تبدیل کارفرما به آینده‌نگار'
     ],
     'چرا مهم است',
-    'کارفرما تصمیم‌گیر می‌ماند؛ تیم آینده‌نگاری فرایند و چالش می‌آورد. نقشه جداگانه دغدغه‌ها از تمرینی که به پرسشی که کسی نپرسیده پاسخ می‌دهد جلوگیری می‌کند.'
+    'کارفرما تصمیم‌گیر می‌ماند؛ تیم آینده‌نگاری فرایند و چالش می‌آورد. نقشه جداگانه دغدغه‌ها از تمرینی که به پرسشی که کسی نپرسیده پاسخ می‌دهد جلوگیری می‌کند.',
+    {
+      label: EX_FA,
+      text: 'آغاز آینده‌نگاری بیمارستان فقط مدیران را دعوت می‌کند. پرستاران و بیماران دیده نمی‌شوند؛ مسئله قاب‌شده «ظرفیت تخت» می‌شود در حالی که بحران زیسته اعتماد نیرو و مسیر ترخیص است.'
+    }
   ),
   part(
     'intent',
@@ -228,7 +269,7 @@ FA.c1Sections = [
     'assets/methods/covers/hines-c1-intent.svg',
     'کاوش آینده و آزمون مسئله بیان‌شده',
     'تعریف',
-    'حرکت و مقصود روشن می‌کند پروژه برای چه هست: کاوش آینده‌ها و بهبود الگوهای ذهنی، نه فقط دفاع از برنامه عملیاتی امروز.',
+    'حرکت و مقصود روشن می‌کند پروژه در سیستم کارفرما برای چه هست: کاوش آینده‌ها و بهبود الگوهای ذهنی، و آزمون اینکه آیا مسئله بیان‌شده همان مسئله واقعی است پیش از آنکه پویش روی آن قفل شود.',
     'راهنماهای هاینز',
     [
       'کاوش آینده',
@@ -237,7 +278,11 @@ FA.c1Sections = [
       'ارزیابی مسئله ارائه‌شده توسط سازمان: آیا همان مسئله اصلی است یا نه'
     ],
     'چرا مهم است',
-    'بهره‌برداری عملکرد جاری را حفظ می‌کند؛ اکتشاف بدیل‌ها را باز می‌کند. اگر شرح مسئله غلط باشد، پویش و پیش‌بینی فقط هدف نادرست را دقیق‌تر می‌کنند.'
+    'بهره‌برداری عملکرد جاری را حفظ می‌کند؛ اکتشاف بدیل‌ها را باز می‌کند. اگر شرح مسئله غلط باشد، پویش و پیش‌بینی فقط هدف نادرست را دقیق‌تر می‌کنند.',
+    {
+      label: EX_FA,
+      text: 'دانشگاه می‌گوید «تقلب با ChatGPT را متوقف کنید». کار مقصود می‌پرسد آیا مسئله واقعی فناوری کشف است، بازطراحی ارزیابی، یا مهارت‌هایی که بازار کار خواهد خواست. همان بازقالب همه ستون‌های بعدی را عوض می‌کند.'
+    }
   ),
   part(
     'goals',
@@ -245,7 +290,7 @@ FA.c1Sections = [
     'assets/methods/covers/hines-c1-goals.svg',
     'پیامدهای قابل سنجش در چند افق',
     'تعریف',
-    'هدف‌گذاری چارچوب‌بندی را به قراردادی قابل بررسی تبدیل می‌کند: موفقیت چیست، در کدام افق، با چه تمرکز بیرونی.',
+    'هدف‌گذاری چارچوب‌بندی را به قرارداد پروژه‌ای قابل بررسی تبدیل می‌کند: موفقیت این چرخه آینده‌نگاری چیست، در کدام افق، با چه تمرکز بیرونی، تا اقدام بعدی قابل داوری باشد.',
     'راهنماهای هاینز',
     [
       'تعریف اهداف به‌صورت قابل اندازه‌گیری',
@@ -254,7 +299,11 @@ FA.c1Sections = [
       'تأکید بر محیط بیرونی و آینده به‌جای حال و درون'
     ],
     'چرا مهم است',
-    'خروجی گزارش و کارگاه است؛ پیامد تصمیم یا جابه‌جایی قابلیت است. چند افق مانع می‌شود KPI کوتاه جای هدف آینده‌نگاری بنشیند. تمرکز بیرونی جلوی گزارش وضعیت داخلی را می‌گیرد.'
+    'خروجی گزارش و کارگاه است؛ پیامد تصمیم یا جابه‌جایی قابلیت است. چند افق مانع می‌شود KPI کوتاه جای هدف آینده‌نگاری بنشیند. تمرکز بیرونی جلوی گزارش وضعیت داخلی را می‌گیرد.',
+    {
+      label: EX_FA,
+      text: 'واحد حمل‌ونقل شهری هدف را «چهار کارگاه آینده‌نگاری» می‌گذارد. بازقالب‌شده، پیامد یک قاعده تصمیم برای جابه‌جایی مودال تا ۲۰۳۵ است، با نقاط عطف نزدیک‌مدتی که اقدام بتواند بپاید.'
+    }
   ),
   part(
     'team',
@@ -262,11 +311,15 @@ FA.c1Sections = [
     'assets/methods/covers/hines-c1-team.svg',
     'آینده‌نگاری به‌عنوان کار جمعی',
     'تعریف',
-    'انتخاب تیم آینده‌نگاری راهبردی را کار جمعی می‌داند: ترکیب اتاق تعیین می‌کند کدام آینده‌ها اندیشیدنی شوند.',
+    'انتخاب تیم طراحی می‌کند چه کسانی چارچوب‌بندی و ستون‌های بعدی را پیش می‌برند: آینده‌نگاری راهبردی کار جمعی است و ترکیب نقش‌ها تعیین می‌کند کدام آینده‌ها در پروژه اندیشیدنی شوند.',
     'راهنماهای هاینز',
     ['ورزش تیمی', 'تبدیل به فرایندی تعاملی و جامع', 'درگیر کردن افراد متنوع'],
     'چرا مهم است',
-    'تحلیلگر تنها می‌تواند یادداشت بنویسد؛ چارچوب‌بندی به تعامل میان کارکردها نیاز دارد تا نقاط کور زود دیده شوند. تنوع یعنی نقش، تخصص و سهم، نه فهرست تزئینی مهمان.'
+    'تحلیلگر تنها می‌تواند یادداشت بنویسد؛ چارچوب‌بندی به تعامل میان کارکردها نیاز دارد تا نقاط کور زود دیده شوند. تنوع یعنی نقش، تخصص و سهم، نه فهرست تزئینی مهمان.',
+    {
+      label: EX_FA,
+      text: 'تیم آینده‌نگاری شرکت انرژی فقط مهندس است. بدون رگولاتور، جامعه محلی و مالی در اتاق، «آینده‌های گذار» نقشه فناوری می‌ماند و مجوز اجتماعی را از دست می‌دهد.'
+    }
   ),
   part(
     'environment',
@@ -274,19 +327,23 @@ FA.c1Sections = [
     'assets/methods/covers/hines-c1-environment.svg',
     'اقلیم باز برای فکر و آزمایش',
     'تعریف',
-    'خلق محیط راهبردی اقلیم کار را طوری طراحی می‌کند که چارچوب‌بندی باز بماند: فکر بدون قفل زودهنگام و جا برای آزمون‌های کوچک.',
+    'خلق محیط راهبردی اقلیم کار پروژه آینده‌نگاری را طوری طراحی می‌کند که چارچوب‌بندی باز بماند: فکر بدون قفل زودهنگام و جا برای آزمون‌های کوچک پیش از آنکه سیاست و عادت قاب را ببندند.',
     'راهنماهای هاینز',
     ['محیطی مساعد برای تفکر باز و بدون قید', 'تشویق آزمایش‌ها و نمونه‌های اولیه'],
     'چرا مهم است',
-    'اگر اتاق فقط پاسخ امن را پاداش دهد، ستون‌های بعدی قاب بسته را به ارث می‌برند. نمونه‌های اولیه چارچوب‌بندی را زود به اقدام وصل می‌کنند: کاوش‌های خشن، نه فقط بحث اسلاید.'
+    'اگر اتاق فقط پاسخ امن را پاداش دهد، ستون‌های بعدی قاب بسته را به ارث می‌برند. نمونه‌های اولیه چارچوب‌بندی را زود به اقدام وصل می‌کنند: کاوش‌های خشن، نه فقط بحث اسلاید.',
+    {
+      label: EX_FA,
+      text: 'آغاز کار بانک در ساعت اول ایده «عجیب» را تنبیه می‌کند. تیم بعداً پیش‌بینی خط پایه براق می‌سازد و هرگز ریزنمونه‌ای از مدل بدیل شعب را نمی‌آزماید.'
+    }
   )
 ];
 
 /* ───────────── C2 Scanning ───────────── */
 EN.c2Intro =
-  'Scanning deck: short opening on what Scanning is, then each of four parts as definition, Hines bullets, and why it matters.';
+  'Scanning deck: short opening on what Scanning is, then each of four parts as definition, Hines bullets, and why it matters with one applied example.';
 FA.c2Intro =
-  'ارائه پویش: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر یک از چهار جزء به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است.';
+  'ارائه پویش: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر یک از چهار جزء به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است با یک مثال کاربردی.';
 
 EN.c2Sections = [
   opening('0. Opening Scanning', 'assets/methods/covers/hines-c2-mapping.svg', 'Column 2 after Framing', [
@@ -300,7 +357,7 @@ EN.c2Sections = [
     },
     {
       title: 'Why do we scan?',
-      body: 'We scan so foresight is not invented from opinion alone. Mapping, history, environmental watch, and wide engagement surface change before scenarios harden.'
+      body: 'We scan so foresight is not invented from opinion alone. Mapping, history, environmental watch, and wide engagement surface change before scenarios harden. A ministry that only reads ISI papers will miss Discord student channels, startup demos, and street-level practice where weak signals often appear first.'
     },
     {
       title: 'What Scanning means',
@@ -313,11 +370,15 @@ EN.c2Sections = [
     'assets/methods/covers/hines-c2-mapping.svg',
     'System boundary before the feed',
     'Definition',
-    'Mapping draws the system under study so the team knows what is inside the frame, what sits outside, and how parts connect.',
+    'Mapping is the first Scanning move in a live project: draw the system under study so the team knows what is inside the frame, what sits outside, and how parts connect before the signal feed floods the room.',
     'Hines guidelines',
     ['A global perspective', 'Mapping the system under study', 'An integrative view', 'Stakeholder analysis'],
     'Why it matters',
-    'Without a map, scanning becomes a pile of clippings. Global means refusing a narrow local blinker. Integrative view plus stakeholders keep the map from being only a tech diagram or only an org chart.'
+    'Without a map, scanning becomes a pile of clippings. Global means refusing a narrow local blinker. Integrative view plus stakeholders keep the map from being only a tech diagram or only an org chart.',
+    {
+      label: EX_EN,
+      text: 'A food retailer maps only warehouses and SKUs. Diet culture, delivery apps, and municipal waste rules stay "outside," so Scanning never sees the drivers that will reshape demand.'
+    }
   ),
   part(
     'history',
@@ -325,7 +386,7 @@ EN.c2Sections = [
     'assets/methods/covers/hines-c2-history.svg',
     'Look backward carefully before novelty claims',
     'Definition',
-    'History work grounds Scanning in how the present period was made, so the team does not invent novelty where continuity already explains the pattern.',
+    'History work in Scanning grounds the project in how the present period was made, so the team does not invent novelty where continuity already explains the pattern, and does not treat past fixes as permanent safety.',
     'Hines guidelines',
     [
       'Beginning by looking at the past',
@@ -333,7 +394,11 @@ EN.c2Sections = [
       'Awareness of innovations that create false comfort'
     ],
     'Why it matters',
-    'Some past innovations feel like safety and hide new risk. History is not nostalgia; it is a check on what the baseline already assumes.'
+    'Some past innovations feel like safety and hide new risk. History is not nostalgia; it is a check on what the baseline already assumes before Forecasting builds on it.',
+    {
+      label: EX_EN,
+      text: 'A telecom celebrates an old prepaid "innovation" as proof of agility. History shows the same model already failed twice under different brands; reinventing it wastes the scan cycle.'
+    }
   ),
   part(
     'env',
@@ -341,7 +406,7 @@ EN.c2Sections = [
     'assets/methods/covers/hines-c2-envscan.svg',
     'Explore, analyze, frame, apply',
     'Definition',
-    'Environmental scanning watches changing contexts so Framing stays honest: the outside world moves while the brief is being written.',
+    'Environmental scanning is the ongoing watch of changing contexts so Framing stays honest: the outside world moves while the brief is being written, and scan findings must loop back into analysis, reframing, and use.',
     'Hines guidelines',
     [
       'Scanning the environment for awareness of changing contexts, including: exploration, analysis, framing, application',
@@ -350,7 +415,11 @@ EN.c2Sections = [
       'Not all information is in the research literature'
     ],
     'Why it matters',
-    'The loop exploration, analysis, framing, application stops scan work at collection. Unattractive domains and non-academic sources are where weak signals often hide.'
+    'The loop exploration, analysis, framing, application stops scan work at collection. Unattractive domains and non-academic sources are where weak signals often hide.',
+    {
+      label: EX_EN,
+      text: 'A university horizon scan uses only journal databases. Student Discord servers, edtech demos, and employer hiring chats carry early AI-use norms that ISI papers lag by years.'
+    }
   ),
   part(
     'engaging',
@@ -358,7 +427,7 @@ EN.c2Sections = [
     'assets/methods/covers/hines-c2-engaging.svg',
     'Prominent and marginalized voices together',
     'Definition',
-    'Engaging everyone widens who can see and name change. Scanning is social, not only documentary.',
+    'Engaging everyone widens who can see and name change in the Scanning phase. Scanning is social evidence work, not only documentary search.',
     'Hines guidelines',
     [
       'Engaging everyone outside and inside',
@@ -367,7 +436,11 @@ EN.c2Sections = [
       'Designing workshops that turn learning into collective activity'
     ],
     'Why it matters',
-    'Prominent voices give access and legitimacy; outcast voices often see what the center cannot. Workshops should make learning collective, not one expert monologue.'
+    'Prominent voices give access and legitimacy; outcast voices often see what the center cannot. Workshops should make learning collective, not one expert monologue.',
+    {
+      label: EX_EN,
+      text: 'A municipal climate scan consults only mayors and engineers. Informal settlement leaders never speak, so flood-risk maps miss the places where adaptation already fails quietly.'
+    }
   )
 ];
 
@@ -383,7 +456,7 @@ FA.c2Sections = [
     },
     {
       title: 'چرا پویش می‌کنیم؟',
-      body: 'تا آینده‌نگاری فقط از رأی ساخته نشود. نقشه‌برداری، تاریخ، پایش محیطی و درگیری گسترده تغییر را پیش از سخت شدن سناریوها آشکار می‌کند.'
+      body: 'تا آینده‌نگاری فقط از رأی ساخته نشود. نقشه‌برداری، تاریخ، پایش محیطی و درگیری گسترده تغییر را پیش از سخت شدن سناریوها آشکار می‌کند. وزارتخانه‌ای که فقط مقالات ISI می‌خواند کانال‌های دانشجویی، دموی استارتاپ و عمل خیابانی را از دست می‌دهد؛ جایی که نشانه‌های ضعیف اغلب زودتر دیده می‌شوند.'
     },
     {
       title: 'معنا به زبان ساده',
@@ -396,11 +469,15 @@ FA.c2Sections = [
     'assets/methods/covers/hines-c2-mapping.svg',
     'مرز سیستم پیش از فید',
     'تعریف',
-    'نقشه‌برداری سیستم مورد مطالعه را می‌کشد تا تیم بداند چه چیزی داخل قاب است، چه چیزی بیرون است و اجزا چگونه وصل‌اند.',
+    'نقشه‌برداری نخستین حرکت پویش در پروژه زنده است: سیستم مورد مطالعه را بکشید تا تیم بداند چه چیزی داخل قاب است، چه چیزی بیرون است و اجزا چگونه وصل‌اند؛ پیش از آنکه فید سیگنال اتاق را غرق کند.',
     'راهنماهای هاینز',
     ['نگاه جهانی', 'نقشه‌برداری از سیستم مورد مطالعه', 'نگاه یکپارچه', 'تحلیل ذی‌نفعان'],
     'چرا مهم است',
-    'بدون نقشه، پویش توده بریده‌های خبر می‌شود. جهانی یعنی پرهیز از چشمک محلی تنگ. نگاه یکپارچه و ذی‌نفعان مانع می‌شود نقشه فقط دیاگرام فنی یا فقط چارت سازمانی شود.'
+    'بدون نقشه، پویش توده بریده‌های خبر می‌شود. جهانی یعنی پرهیز از چشمک محلی تنگ. نگاه یکپارچه و ذی‌نفعان مانع می‌شود نقشه فقط دیاگرام فنی یا فقط چارت سازمانی شود.',
+    {
+      label: EX_FA,
+      text: 'خرده‌فروش مواد غذایی فقط انبار و SKU را نقشه می‌کند. فرهنگ رژیم، اپ‌های ارسال و قواعد پسماند شهرداری «بیرون» می‌مانند؛ پویش پیشران‌هایی را که تقاضا را بازشکل می‌دهند نمی‌بیند.'
+    }
   ),
   part(
     'history',
@@ -408,11 +485,15 @@ FA.c2Sections = [
     'assets/methods/covers/hines-c2-history.svg',
     'نگاه محتاط به گذشته پیش از ادعای تازگی',
     'تعریف',
-    'کار تاریخی پویش را در چگونگی ساخته‌شدن دوره حاضر ریشه می‌دهد تا جایی که تداوم الگو را توضیح می‌دهد تازگی جعلی اختراع نشود.',
+    'کار تاریخی در پویش پروژه را در چگونگی ساخته‌شدن دوره حاضر ریشه می‌دهد تا جایی که تداوم الگو را توضیح می‌دهد تازگی جعلی اختراع نشود و اصلاحات گذشته ایمنی دائمی فرض نشوند.',
     'راهنماهای هاینز',
     ['آغاز با نگاه به گذشته', 'اختراع دوباره چرخ نکردن', 'آگاهی از نوآوری‌هایی که آسودگی کاذب می‌سازند'],
     'چرا مهم است',
-    'بعضی نوآوری‌های گذشته حس ایمنی می‌دهند و ریسک تازه را پنهان می‌کنند. تاریخ نوستالژی نیست؛ آزمونی است برای مفروضات خط پایه.'
+    'بعضی نوآوری‌های گذشته حس ایمنی می‌دهند و ریسک تازه را پنهان می‌کنند. تاریخ نوستالژی نیست؛ آزمونی است برای مفروضات خط پایه پیش از آنکه پیش‌بینی روی آن بنا شود.',
+    {
+      label: EX_FA,
+      text: 'اپراتور مخابرات یک «نوآوری» قدیمی پیش‌پرداخت را اثبات چابکی می‌داند. تاریخ نشان می‌دهد همان مدل زیر برندهای دیگر دو بار شکست خورده؛ بازسازی‌اش چرخه پویش را هدر می‌دهد.'
+    }
   ),
   part(
     'env',
@@ -420,7 +501,7 @@ FA.c2Sections = [
     'assets/methods/covers/hines-c2-envscan.svg',
     'کاوش، تحلیل، چارچوب، کاربرد',
     'تعریف',
-    'پویش محیطی بافت‌های در حال تغییر را می‌پاید تا چارچوب‌بندی صادق بماند: جهان بیرون همزمان با نوشتن شرح مسئله حرکت می‌کند.',
+    'پویش محیطی پایش جاری بافت‌های در حال تغییر است تا چارچوب‌بندی صادق بماند: جهان بیرون همزمان با نوشتن شرح مسئله حرکت می‌کند و یافته‌ها باید به تحلیل، بازقالب و کاربرد برگردند.',
     'راهنماهای هاینز',
     [
       'پویش محیط برای آگاهی از بافت‌های در حال تغییر، شامل: کاوش، تحلیل، چارچوب‌بندی، کاربرد',
@@ -429,7 +510,11 @@ FA.c2Sections = [
       'همه اطلاعات در ادبیات پژوهشی نیست'
     ],
     'چرا مهم است',
-    'حلقه کاوش، تحلیل، چارچوب‌بندی، کاربرد کار پویش را از توقف در گردآوری نگه می‌دارد. حوزه‌های ناخوشایند و منابع غیرآکادمیک جایی‌اند که نشانه‌های ضعیف اغلب پنهان می‌شوند.'
+    'حلقه کاوش، تحلیل، چارچوب‌بندی، کاربرد کار پویش را از توقف در گردآوری نگه می‌دارد. حوزه‌های ناخوشایند و منابع غیرآکادمیک جایی‌اند که نشانه‌های ضعیف اغلب پنهان می‌شوند.',
+    {
+      label: EX_FA,
+      text: 'پویش افق دانشگاه فقط پایگاه مقالات را می‌پاید. سرورهای Discord دانشجویی، دموی ادتک و گفت‌وگوی استخدام کارفرما هنجارهای زودهنگام استفاده از هوش مصنوعی را حمل می‌کنند که مقالات ISI سال‌ها عقب‌اند.'
+    }
   ),
   part(
     'engaging',
@@ -437,7 +522,7 @@ FA.c2Sections = [
     'assets/methods/covers/hines-c2-engaging.svg',
     'صداهای برجسته و حاشیه در کنار هم',
     'تعریف',
-    'درگیر کردن همه دایره کسانی را که می‌توانند تغییر را ببینند و نام ببرند وسیع می‌کند. پویش امری اجتماعی است، نه فقط اسنادی.',
+    'درگیر کردن همه دایره کسانی را که در فاز پویش می‌توانند تغییر را ببینند و نام ببرند وسیع می‌کند. پویش کار شاهد اجتماعی است، نه فقط جستجوی اسنادی.',
     'راهنماهای هاینز',
     [
       'درگیر کردن همه در بیرون و درون',
@@ -446,15 +531,19 @@ FA.c2Sections = [
       'طراحی کارگاه‌هایی که یادگیری را فعالیت جمعی می‌کند'
     ],
     'چرا مهم است',
-    'صداهای برجسته دسترسی و مشروعیت می‌آورند؛ صداهای حاشیه اغلب چیزی را می‌بینند که مرکز نمی‌بیند. کارگاه باید یادگیری را جمعی کند، نه مونولوگ یک خبره.'
+    'صداهای برجسته دسترسی و مشروعیت می‌آورند؛ صداهای حاشیه اغلب چیزی را می‌بینند که مرکز نمی‌بیند. کارگاه باید یادگیری را جمعی کند، نه مونولوگ یک خبره.',
+    {
+      label: EX_FA,
+      text: 'پویش اقلیمی شهرداری فقط شهرداران و مهندسان را می‌شنود. رهبران سکونتگاه‌های غیررسمی حرف نمی‌زنند؛ نقشه ریسک سیل جاهایی را از دست می‌دهد که سازگاری همین حالا آرام شکست می‌خورد.'
+    }
   )
 ];
 
 /* ───────────── C3 Forecasting ───────────── */
 EN.c3Intro =
-  'Forecasting deck: short opening on what Forecasting is, then each of five parts as definition, Hines bullets, and why it matters.';
+  'Forecasting deck: short opening on what Forecasting is, then each of five parts as definition, Hines bullets, and why it matters with one applied example.';
 FA.c3Intro =
-  'ارائه پیش‌بینی: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر یک از پنج جزء به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است.';
+  'ارائه پیش‌بینی: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر یک از پنج جزء به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است با یک مثال کاربردی.';
 
 EN.c3Sections = [
   opening('0. Opening Forecasting', 'assets/methods/covers/hines-c3-drivers.svg', 'Column 3 after Scanning', [
@@ -468,7 +557,7 @@ EN.c3Sections = [
     },
     {
       title: 'Why do we forecast?',
-      body: 'We forecast to escape a single baseline story. Without structured alternatives, planning locks onto today\'s extrapolation and calls it the future.'
+      body: 'We forecast to escape a single baseline story. Without structured alternatives, planning locks onto today\'s extrapolation and calls it the future. An auto OEM that treats one EV timeline as destiny will mis-size plants, suppliers, and skills if residual uncertainty is still high.'
     },
     {
       title: 'What Forecasting means',
@@ -481,7 +570,7 @@ EN.c3Sections = [
     'assets/methods/covers/hines-c3-drivers.svg',
     'STEEP, CLA depth, intersections, era turns',
     'Definition',
-    'Drivers and uncertainties open Forecasting by naming what moves the system and what remains undecided.',
+    'Drivers and uncertainties open Forecasting in a real project by naming what moves the system and what remains undecided, so later tool choice and alternatives rest on an explicit field, not a trend mood.',
     'Hines guidelines',
     [
       'Identifying main drivers (obvious and less visible; STEEP strategic context; challenging present assumptions)',
@@ -492,7 +581,11 @@ EN.c3Sections = [
       'Improving decisions by reducing uncertainty (predetermined anchors versus key uncertainties)'
     ],
     'Why it matters',
-    'STEEP widens the driver set; CLA stops litany headlines from posing as causes. Intersections and era turns break one-by-one trend reading. Anchors versus key uncertainties focus effort where choice still matters.'
+    'STEEP widens the driver set; CLA stops litany headlines from posing as causes. Intersections and era turns break one-by-one trend reading. Anchors versus key uncertainties focus effort where choice still matters.',
+    {
+      label: EX_EN,
+      text: 'A tourism board treats "more visitors every year" as the only driver. CLA shows litany growth sitting on a fragile worldview of endless mobility; intersections with climate and visas become the real uncertainties.'
+    }
   ),
   part(
     'methods',
@@ -500,7 +593,7 @@ EN.c3Sections = [
     'assets/methods/covers/hines-c3-tools.svg',
     'Courtney fit, formal method, combine',
     'Definition',
-    'Choosing tools matches method to the ambiguity of the situation. Tool choice is a design decision inside Forecasting, not a technique collection.',
+    'Choosing tools matches method to the ambiguity of the situation. In project practice, tool choice is a design decision inside Forecasting, not a technique collection to impress the client.',
     'Hines guidelines',
     [
       'Correct approaches and tools (Courtney framework; fit tools to the level of ambiguity)',
@@ -509,7 +602,11 @@ EN.c3Sections = [
       'Combining techniques for a wider picture of possible futures'
     ],
     'Why it matters',
-    'Courtney levels stop a single-number forecast when residual uncertainty is high. One formal method aids transparency; combining techniques widens the futures set.'
+    'Courtney levels stop a single-number forecast when residual uncertainty is high. One formal method aids transparency; combining techniques widens the futures set.',
+    {
+      label: EX_EN,
+      text: 'A pharma R&D unit faces Courtney-level residual uncertainty on regulation and science, yet demands a single revenue number. Fit tools shift to scenarios plus options, not a false point forecast.'
+    }
   ),
   part(
     'diverge',
@@ -517,7 +614,7 @@ EN.c3Sections = [
     'assets/methods/covers/hines-c3-diverge.svg',
     'Open the field before you rank',
     'Definition',
-    'Divergence generates the idea field Forecasting will later compress. Creative stretch comes before prioritization.',
+    'Divergence generates the idea field Forecasting will later compress. In workshop practice, creative stretch must come before prioritization or the room only dresses up today\'s plan.',
     'Hines guidelines',
     [
       'Stimulating new thoughts with creative tools and approaches (strategic relatives, value analysis, and similar)',
@@ -530,7 +627,11 @@ EN.c3Sections = [
       'Avoiding premature convergence of ideas'
     ],
     'Why it matters',
-    'Brainstorming alone is too thin. Invert and disturb to break groupthink. First-hand future experience makes alternatives stick. Early convergence is the main failure mode here.'
+    'Brainstorming alone is too thin. Invert and disturb to break groupthink. First-hand future experience makes alternatives stick. Early convergence is the main failure mode here.',
+    {
+      label: EX_EN,
+      text: 'An insurer\'s "ideation" hour only yields "a better app." Inversion asks what if claims contact collapses; the field suddenly includes mutual aid, embedded cover, and exit from retail brands.'
+    }
   ),
   part(
     'converge',
@@ -538,7 +639,7 @@ EN.c3Sections = [
     'assets/methods/covers/hines-c3-converge.svg',
     'Shared ground without killing dissent',
     'Definition',
-    'Convergence prioritizes after divergence has opened the field. Forecasting needs shared grounds without treating every trend as destiny.',
+    'Convergence prioritizes after divergence has opened the field. Forecasting needs shared grounds for the next design step without treating every popular trend as destiny.',
     'Hines guidelines',
     [
       'Identifying and prioritizing shared grounds',
@@ -546,7 +647,11 @@ EN.c3Sections = [
       'Treating trends with skepticism'
     ],
     'Why it matters',
-    'Common ground is a working agreement for the next design step, not consensus theater. Realism without critique becomes status quo; critique without realism becomes fantasy.'
+    'Common ground is a working agreement for the next design step, not consensus theater. Realism without critique becomes status quo; critique without realism becomes fantasy.',
+    {
+      label: EX_EN,
+      text: 'A retail team ranks "same-day delivery everywhere" as inevitable. Skeptical convergence keeps it as one plausible path, not a mandate, and preserves capacity for neighborhood dark-store backlash.'
+    }
   ),
   part(
     'alternatives',
@@ -554,7 +659,7 @@ EN.c3Sections = [
     'assets/methods/covers/hines-c3-alternatives.svg',
     'Future worlds, not trend lists',
     'Definition',
-    'Alternative futures are the core product of Forecasting: several coherent future worlds, including the chance that today\'s baseline is wrong.',
+    'Alternative futures are the core product Forecasting hands to Visioning: several coherent future worlds, including the chance that today\'s baseline is wrong, described as worlds not trend lists.',
     'Hines guidelines',
     [
       'Assuming the baseline is wrong',
@@ -567,7 +672,11 @@ EN.c3Sections = [
       'Supporting alternatives with empirical evidence'
     ],
     'Why it matters',
-    'Layers organize judgment; wild cards keep surprise in the set. Describe a world, not a bullet list of trends. Backcasting, QA, and evidence make alternatives usable for Visioning.'
+    'Layers organize judgment; wild cards keep surprise in the set. Describe a world, not a bullet list of trends. Backcasting, QA, and evidence make alternatives usable for Visioning.',
+    {
+      label: EX_EN,
+      text: 'An oil major builds only "baseline" and "green transition." Without a wild-card world (abrupt trade bloc, tech leap, or social license collapse), Planning inherits a thin menu.'
+    }
   )
 ];
 
@@ -583,7 +692,7 @@ FA.c3Sections = [
     },
     {
       title: 'چرا پیش‌بینی می‌کنیم؟',
-      body: 'برای رهایی از یک داستان خط پایه. بدون بدیل‌های ساخت‌یافته، برنامه‌ریزی به برون‌یابی امروز قفل می‌شود و آن را آینده می‌نامد.'
+      body: 'برای رهایی از یک داستان خط پایه. بدون بدیل‌های ساخت‌یافته، برنامه‌ریزی به برون‌یابی امروز قفل می‌شود و آن را آینده می‌نامد. خودروسازی که یک خط زمانی خودروی برقی را تقدیر فرض کند، اگر عدم‌قطعیت باقی‌مانده هنوز بالاست، کارخانه، تأمین و مهارت را اشتباه اندازه می‌گیرد.'
     },
     {
       title: 'معنا به زبان ساده',
@@ -596,7 +705,7 @@ FA.c3Sections = [
     'assets/methods/covers/hines-c3-drivers.svg',
     'STEEP، عمق CLA، تلاقی‌ها، نقاط عطف عصر',
     'تعریف',
-    'پیشران‌ها و عدم‌قطعیت‌ها درگاه پیش‌بینی‌اند: آنچه سیستم را حرکت می‌دهد و آنچه هنوز باز است نام‌گذاری می‌شود.',
+    'پیشران‌ها و عدم‌قطعیت‌ها درگاه پیش‌بینی در پروژه واقعی‌اند: آنچه سیستم را حرکت می‌دهد و آنچه هنوز باز است نام‌گذاری می‌شود تا انتخاب ابزار و بدیل‌ها روی میدان صریح بنشیند، نه روی حال‌وهوای روند.',
     'راهنماهای هاینز',
     [
       'مشخص کردن پیشران‌های اصلی (بدیهی و کم‌رؤیت؛ زمینه راهبردی STEEP؛ چالش فرض‌های حال)',
@@ -607,7 +716,11 @@ FA.c3Sections = [
       'بهبود تصمیم‌گیری از طریق کاهش عدم‌قطعیت (لنگرهای قطعی در برابر عدم‌قطعیت‌های کلیدی)'
     ],
     'چرا مهم است',
-    'STEEP مجموعه پیشران را وسیع می‌کند؛ CLA مانع می‌شود تیتر لیتانی جای علت بنشیند. تلاقی و نقاط عطف عصر خواندن روند یکی‌یکی را می‌شکند. لنگر در برابر عدم‌قطعیت کلیدی تلاش را جایی می‌برد که هنوز انتخاب معنا دارد.'
+    'STEEP مجموعه پیشران را وسیع می‌کند؛ CLA مانع می‌شود تیتر لیتانی جای علت بنشیند. تلاقی و نقاط عطف عصر خواندن روند یکی‌یکی را می‌شکند. لنگر در برابر عدم‌قطعیت کلیدی تلاش را جایی می‌برد که هنوز انتخاب معنا دارد.',
+    {
+      label: EX_FA,
+      text: 'سازمان گردشگری «رشد سالانه گردشگر» را تنها پیشران می‌داند. CLA نشان می‌دهد رشد لیتانی روی جهان‌بینی شکننده جابه‌جایی بی‌پایان نشسته؛ تلاقی اقلیم و ویزا عدم‌قطعیت واقعی می‌شود.'
+    }
   ),
   part(
     'methods',
@@ -615,7 +728,7 @@ FA.c3Sections = [
     'assets/methods/covers/hines-c3-tools.svg',
     'تناسب کورتنی، روش رسمی، ترکیب',
     'تعریف',
-    'انتخاب ابزار یعنی جور کردن روش با سطح ابهام موقعیت. انتخاب ابزار تصمیم طراحی داخل پیش‌بینی است، نه جمع تکنیک.',
+    'انتخاب ابزار یعنی جور کردن روش با سطح ابهام موقعیت. در عمل پروژه، انتخاب ابزار تصمیم طراحی داخل پیش‌بینی است، نه جمع تکنیک برای جلب کارفرما.',
     'راهنماهای هاینز',
     [
       'رویکرد و ابزارهای صحیح (چارچوب کورتنی؛ تناسب ابزار با سطح ابهام)',
@@ -624,7 +737,11 @@ FA.c3Sections = [
       'ترکیب تکنیک‌ها برای تصویرپردازی وسیع‌تر از آینده‌های ممکن'
     ],
     'چرا مهم است',
-    'سطوح کورتنی وقتی عدم‌قطعیت باقی‌مانده بالاست جلوی پیش‌بینی تک‌عددی را می‌گیرند. یک روش رسمی شفافیت می‌آورد؛ ترکیب تکنیک دامنه آینده‌ها را وسیع می‌کند.'
+    'سطوح کورتنی وقتی عدم‌قطعیت باقی‌مانده بالاست جلوی پیش‌بینی تک‌عددی را می‌گیرند. یک روش رسمی شفافیت می‌آورد؛ ترکیب تکنیک دامنه آینده‌ها را وسیع می‌کند.',
+    {
+      label: EX_FA,
+      text: 'واحد تحقیق‌وتوسعه دارو با عدم‌قطعیت باقی‌مانده سطح کورتنی در رگولاتوری و علم روبه‌روست، اما یک عدد درآمد می‌خواهد. ابزار متناسب به سناریو به‌علاوه گزینه‌ها می‌رود، نه پیش‌بینی نقطه‌ای کاذب.'
+    }
   ),
   part(
     'diverge',
@@ -632,7 +749,7 @@ FA.c3Sections = [
     'assets/methods/covers/hines-c3-diverge.svg',
     'پیش از رتبه‌بندی میدان را باز کنید',
     'تعریف',
-    'واگرایی میدان ایده‌ای را می‌سازد که پیش‌بینی بعداً فشرده می‌کند. کشش خلاقانه پیش از اولویت‌بندی می‌آید.',
+    'واگرایی میدان ایده‌ای را می‌سازد که پیش‌بینی بعداً فشرده می‌کند. در کارگاه، کشش خلاقانه باید پیش از اولویت‌بندی بیاید وگرنه اتاق فقط برنامه امروز را لباس نو می‌پوشاند.',
     'راهنماهای هاینز',
     [
       'انگیزش اندیشه‌های جدید با ابزارها و رویکردهای خلاقانه (بستگان راهبردی، تحلیل ارزش، و مانند آن)',
@@ -645,7 +762,11 @@ FA.c3Sections = [
       'اجتناب از همگرایی زودهنگام ایده‌ها'
     ],
     'چرا مهم است',
-    'طوفان فکری به‌تنهایی کم‌عمق است. وارونه و مختل کنید تا گروه اندیشی بشکند. تجربه دست‌اول آینده بدیل‌ها را می‌چسباند. همگرایی زودهنگام شکست اصلی این جزء است.'
+    'طوفان فکری به‌تنهایی کم‌عمق است. وارونه و مختل کنید تا گروه اندیشی بشکند. تجربه دست‌اول آینده بدیل‌ها را می‌چسباند. همگرایی زودهنگام شکست اصلی این جزء است.',
+    {
+      label: EX_FA,
+      text: 'ساعت «ایده‌پردازی» بیمه فقط به «اپ بهتر» می‌رسد. وارونه‌سازی می‌پرسد اگر تماس خسارت فرو بپاشد؛ میدان ناگهان همیاری، پوشش نهفته و خروج از برند خرده‌فروشی را شامل می‌شود.'
+    }
   ),
   part(
     'converge',
@@ -653,7 +774,7 @@ FA.c3Sections = [
     'assets/methods/covers/hines-c3-converge.svg',
     'زمین مشترک بدون کشتن اختلاف',
     'تعریف',
-    'همگرایی پس از باز شدن میدان اولویت می‌دهد. پیش‌بینی به زمین مشترک نیاز دارد بی‌آنکه هر روند را تقدیر فرض کند.',
+    'همگرایی پس از باز شدن میدان اولویت می‌دهد. پیش‌بینی به زمین مشترک برای گام طراحی بعدی نیاز دارد بی‌آنکه هر روند محبوب را تقدیر فرض کند.',
     'راهنماهای هاینز',
     [
       'شناسایی و اولویت‌بندی زمینه‌های مشترک',
@@ -661,7 +782,11 @@ FA.c3Sections = [
       'برخورد شکاکانه با روندها'
     ],
     'چرا مهم است',
-    'زمین مشترک توافق کاری برای گام بعدی است، نه تئاتر اجماع. واقع‌گرایی بی‌نقد وضع موجود می‌شود؛ نقد بی‌واقع‌گرایی خیال.'
+    'زمین مشترک توافق کاری برای گام بعدی است، نه تئاتر اجماع. واقع‌گرایی بی‌نقد وضع موجود می‌شود؛ نقد بی‌واقع‌گرایی خیال.',
+    {
+      label: EX_FA,
+      text: 'تیم خرده‌فروشی «تحویل همان‌روز همه‌جا» را اجتناب‌ناپذیر رتبه‌بندی می‌کند. همگرایی شکاک آن را یک مسیر باورپذیر نگه می‌دارد، نه حکم، و ظرفیت واکنش به مخالفت محله‌ای انبارهای تاریک را حفظ می‌کند.'
+    }
   ),
   part(
     'alternatives',
@@ -669,7 +794,7 @@ FA.c3Sections = [
     'assets/methods/covers/hines-c3-alternatives.svg',
     'جهان آینده، نه فهرست روند',
     'تعریف',
-    'آینده‌های بدیل محصول مرکزی پیش‌بینی‌اند: چند جهان آینده منسجم، از جمله این احتمال که خط پایه امروز غلط است.',
+    'آینده‌های بدیل محصول مرکزی پیش‌بینی برای چشم‌اندازسازی‌اند: چند جهان آینده منسجم، از جمله این احتمال که خط پایه امروز غلط است؛ توصیف جهان، نه فهرست روند.',
     'راهنماهای هاینز',
     [
       'غلط فرض کردن خط پایه',
@@ -682,15 +807,19 @@ FA.c3Sections = [
       'پشتیبانی جایگزین‌ها با داده تجربی'
     ],
     'چرا مهم است',
-    'لایه‌ها قضاوت را منظم می‌کنند؛ کارت‌های وحشی غافلگیری را نگه می‌دارند. جهان توصیف کنید نه فهرست روند. پس‌نگری، کنترل کیفیت و شواهد بدیل را برای چشم‌اندازسازی قابل‌استفاده می‌کند.'
+    'لایه‌ها قضاوت را منظم می‌کنند؛ کارت‌های وحشی غافلگیری را نگه می‌دارند. جهان توصیف کنید نه فهرست روند. پس‌نگری، کنترل کیفیت و شواهد بدیل را برای چشم‌اندازسازی قابل‌استفاده می‌کند.',
+    {
+      label: EX_FA,
+      text: 'شرکت نفتی بزرگ فقط «خط پایه» و «گذار سبز» می‌سازد. بدون جهان کارت وحشی (بلوک تجاری ناگهانی، جهش فناوری، یا فروپاشی مجوز اجتماعی)، برنامه‌ریزی منوی نازک به ارث می‌برد.'
+    }
   )
 ];
 
 /* ───────────── C4 Visioning ───────────── */
 EN.c4Intro =
-  'Visioning deck: short opening on what Visioning is, then each cluster as definition, Hines bullets, and why it matters.';
+  'Visioning deck: short opening on what Visioning is, then each cluster as definition, Hines bullets, and why it matters with one applied example.';
 FA.c4Intro =
-  'ارائه چشم‌اندازسازی: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر خوشه به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است.';
+  'ارائه چشم‌اندازسازی: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر خوشه به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است با یک مثال کاربردی.';
 
 EN.c4Sections = [
   opening('0. Opening Visioning', 'assets/methods/covers/hines-c4-bridge.svg', 'Column 4 after Forecasting', [
@@ -704,7 +833,7 @@ EN.c4Sections = [
     },
     {
       title: 'Why do we vision?',
-      body: 'Without Visioning, foresight stays an intellectual map. Mission, goals, effectiveness, performance, and the bottom line need a preferred path, not only a spectrum.'
+      body: 'Without Visioning, foresight stays an intellectual map. Mission, goals, effectiveness, performance, and the bottom line need a preferred path, not only a spectrum. After scenarios, if a ministry asks "which one is true?", Visioning redirects: which future will we aim for, and what second-order effects does that choice create?'
     },
     {
       title: 'What Visioning means',
@@ -717,7 +846,7 @@ EN.c4Sections = [
     'assets/methods/covers/hines-c4-implications.svg',
     'Futures wheel: orders and unintended effects',
     'Definition',
-    'Identifying implications turns alternative futures into questions the organization must answer, not into final answers.',
+    'Identifying implications turns alternative futures into questions the organization must answer in Visioning, not into final answers. Futures-wheel thinking tracks second and third order effects before a preferred path is locked.',
     'Hines guidelines',
     [
       'Using alternatives to frame important questions, not as final answers',
@@ -725,7 +854,11 @@ EN.c4Sections = [
       'Attending to long term and unintended consequences'
     ],
     'Why it matters',
-    'First-order hits are easy to list. Second and third order reveal chains that change strategy. Long-term and unintended effects keep a preferred path honest about side effects.'
+    'First-order hits are easy to list. Second and third order reveal chains that change strategy. Long-term and unintended effects keep a preferred path honest about side effects.',
+    {
+      label: EX_EN,
+      text: 'A university prefers "fully remote degrees." First order: lower estate cost. Second order: campus services hollow out. Third order: local cafes and student housing markets shrink; Visioning must own those chains.'
+    }
   ),
   part(
     'assumptions',
@@ -733,7 +866,7 @@ EN.c4Sections = [
     'assets/methods/covers/hines-c4-assumptions.svg',
     'Make explicit, then stress-test',
     'Definition',
-    'Challenging assumptions makes the hidden rules of the preferred future visible so today\'s conventional wisdom is not smuggled into tomorrow\'s goal.',
+    'Challenging assumptions makes the hidden rules of the preferred future visible so today\'s conventional wisdom is not smuggled into tomorrow\'s goal inside the Visioning brief.',
     'Hines guidelines',
     [
       'Stating assumptions explicitly',
@@ -743,7 +876,11 @@ EN.c4Sections = [
       'Cross checking assumptions and validating with experts'
     ],
     'Why it matters',
-    'Unspoken assumptions run strategy by default. Taboos are often the real constraints. Expert cross-check validates; questioning everything is disciplined doubt, not cynicism.'
+    'Unspoken assumptions run strategy by default. Taboos are often the real constraints. Expert cross-check validates; questioning everything is disciplined doubt, not cynicism.',
+    {
+      label: EX_EN,
+      text: 'Leadership assumes "students will always come to campus for prestige." Stress-testing that assumption changes the preferred vision from bigger buildings to hybrid learning ecosystems.'
+    }
   ),
   part(
     'visionary',
@@ -751,7 +888,7 @@ EN.c4Sections = [
     'assets/methods/covers/hines-c4-visionary.svg',
     'Shared vision, stretch, what-if, presence',
     'Definition',
-    'Visionary thinking builds a shared preferred future that stretches the organization while staying on a real time continuum.',
+    'Visionary thinking builds a shared preferred future that stretches the organization while staying on a real time continuum, so Planning inherits a direction people can own, not a slogan.',
     'Hines guidelines',
     [
       'Creating a shared strategic vision',
@@ -763,7 +900,11 @@ EN.c4Sections = [
       'Sensing and activating the emerging future (presencing)'
     ],
     'Why it matters',
-    'Shared vision is collective ownership, not a wall slogan. Stretch pulls beyond incremental plans. Dator\'s law protects useful-but-odd statements; what-if and presencing keep Visioning alive to emergence.'
+    'Shared vision is collective ownership, not a wall slogan. Stretch pulls beyond incremental plans. Dator\'s law protects useful-but-odd statements; what-if and presencing keep Visioning alive to emergence.',
+    {
+      label: EX_EN,
+      text: 'A university stretch goal: every graduate leaves with futures literacy, not only a degree. It first sounds ridiculous; then it reshapes curriculum, assessment, and employer partnerships.'
+    }
   )
 ];
 
@@ -779,7 +920,7 @@ FA.c4Sections = [
     },
     {
       title: 'چرا چشم‌انداز می‌سازیم؟',
-      body: 'بدون چشم‌اندازسازی، آینده‌نگاری نقشه فکری می‌ماند. مأموریت، اهداف، اثربخشی، عملکرد و نتیجه به مسیر مطلوب نیاز دارند، نه فقط طیف.'
+      body: 'بدون چشم‌اندازسازی، آینده‌نگاری نقشه فکری می‌ماند. مأموریت، اهداف، اثربخشی، عملکرد و نتیجه به مسیر مطلوب نیاز دارند، نه فقط طیف. پس از سناریوها اگر وزارتخانه بپرسد «کدام‌یک درست است؟»، چشم‌اندازسازی مسیر را عوض می‌کند: به کدام آینده نشانه می‌رویم و آن انتخاب چه پیامد دست‌دومی می‌سازد؟'
     },
     {
       title: 'معنا به زبان ساده',
@@ -792,7 +933,7 @@ FA.c4Sections = [
     'assets/methods/covers/hines-c4-implications.svg',
     'چرخ آینده: مراتب و پیامدهای ناخواسته',
     'تعریف',
-    'شناسایی دلالت‌ها آینده‌های بدیل را به پرسش‌هایی تبدیل می‌کند که سازمان باید پاسخ دهد، نه به پاسخ نهایی.',
+    'شناسایی دلالت‌ها آینده‌های بدیل را در چشم‌اندازسازی به پرسش‌هایی تبدیل می‌کند که سازمان باید پاسخ دهد، نه به پاسخ نهایی. تفکر چرخ آینده پیامد دست‌دوم و سوم را پیش از قفل مسیر مطلوب دنبال می‌کند.',
     'راهنماهای هاینز',
     [
       'استفاده از بدیل‌ها برای چارچوب‌بندی پرسش‌های مهم، نه به‌منزله پاسخ نهایی',
@@ -800,7 +941,11 @@ FA.c4Sections = [
       'توجه به پیامدهای بلندمدت و ناخواسته'
     ],
     'چرا مهم است',
-    'ضربه‌های دست‌اول آسان فهرست می‌شوند. دست‌دوم و سوم زنجیره‌هایی را نشان می‌دهند که راهبرد را عوض می‌کنند. پیامد بلندمدت و ناخواسته مسیر مطلوب را نسبت به عوارض جانبی صادق نگه می‌دارد.'
+    'ضربه‌های دست‌اول آسان فهرست می‌شوند. دست‌دوم و سوم زنجیره‌هایی را نشان می‌دهند که راهبرد را عوض می‌کنند. پیامد بلندمدت و ناخواسته مسیر مطلوب را نسبت به عوارض جانبی صادق نگه می‌دارد.',
+    {
+      label: EX_FA,
+      text: 'دانشگاه «مدرک کاملاً از راه دور» را ترجیح می‌دهد. دست‌اول: هزینه املاک کمتر. دست‌دوم: خدمات پردیس تهی می‌شود. دست‌سوم: کافه محلی و بازار خوابگاه دانشجویی جمع می‌شود؛ چشم‌انداز باید مالک این زنجیره باشد.'
+    }
   ),
   part(
     'assumptions',
@@ -808,7 +953,7 @@ FA.c4Sections = [
     'assets/methods/covers/hines-c4-assumptions.svg',
     'صریح کنید، سپس تنش‌آزمایی کنید',
     'تعریف',
-    'چالش پیش‌فرض‌ها قواعد پنهان آینده مطلوب را آشکار می‌کند تا خرد متعارف امروز به هدف فردا قاچاق نشود.',
+    'چالش پیش‌فرض‌ها قواعد پنهان آینده مطلوب را آشکار می‌کند تا خرد متعارف امروز در شرح چشم‌انداز به هدف فردا قاچاق نشود.',
     'راهنماهای هاینز',
     [
       'مشخص کردن پیش‌فرض‌ها به‌طور شفاف',
@@ -818,7 +963,11 @@ FA.c4Sections = [
       'بررسی متقابل پیش‌فرض‌ها و اعتباربخشی با خبرگان'
     ],
     'چرا مهم است',
-    'پیش‌فرض ناگفته راهبرد را پیش‌فرض اداره می‌کند. تابوها اغلب محدودیت واقعی‌اند. بررسی خبره اعتبار می‌بخشد؛ سؤال از همه چیز شک منضبط است، نه بدبینی.'
+    'پیش‌فرض ناگفته راهبرد را پیش‌فرض اداره می‌کند. تابوها اغلب محدودیت واقعی‌اند. بررسی خبره اعتبار می‌بخشد؛ سؤال از همه چیز شک منضبط است، نه بدبینی.',
+    {
+      label: EX_FA,
+      text: 'رهبری فرض می‌کند «دانشجو همیشه برای پرستیژ به پردیس می‌آید». تنش‌آزمایی آن فرض چشم‌انداز مطلوب را از ساختمان‌های بزرگ‌تر به اکوسیستم یادگیری ترکیبی جابه‌جا می‌کند.'
+    }
   ),
   part(
     'visionary',
@@ -826,7 +975,7 @@ FA.c4Sections = [
     'assets/methods/covers/hines-c4-visionary.svg',
     'چشم‌انداز مشترک، کشش، چه می‌شود اگر، حضور',
     'تعریف',
-    'تفکر چشم‌اندازگرا آینده مطلوب مشترکی می‌سازد که سازمان را می‌کشد و روی پیوستار زمانی واقعی می‌ماند.',
+    'تفکر چشم‌اندازگرا آینده مطلوب مشترکی می‌سازد که سازمان را می‌کشد و روی پیوستار زمانی واقعی می‌ماند تا برنامه‌ریزی جهت قابل مالکیت بگیرد، نه شعار.',
     'راهنماهای هاینز',
     [
       'خلق چشم‌انداز مشترک و راهبردی',
@@ -838,15 +987,19 @@ FA.c4Sections = [
       'حس کردن و فعال‌سازی آینده در حال ظهور (presencing)'
     ],
     'چرا مهم است',
-    'چشم‌انداز مشترک مالکیت جمعی است، نه شعار دیوار. کشش از برنامه تدریجی فراتر می‌رود. قانون داتور گزاره‌های مفید ولی عجیب را حفظ می‌کند؛ چه می‌شود اگر و حضور، چشم‌انداز را به ظهور زنده نگه می‌دارد.'
+    'چشم‌انداز مشترک مالکیت جمعی است، نه شعار دیوار. کشش از برنامه تدریجی فراتر می‌رود. قانون داتور گزاره‌های مفید ولی عجیب را حفظ می‌کند؛ چه می‌شود اگر و حضور، چشم‌انداز را به ظهور زنده نگه می‌دارد.',
+    {
+      label: EX_FA,
+      text: 'هدف کششی دانشگاه: هر فارغ‌التحصیل با سواد آینده‌ها بیرون برود، نه فقط مدرک. اول مضحک به نظر می‌رسد؛ بعد برنامه درسی، ارزیابی و شراکت کارفرما را بازشکل می‌دهد.'
+    }
   )
 ];
 
 /* ───────────── C5 Planning ───────────── */
 EN.c5Intro =
-  'Planning deck: short opening on what Planning is, then each cluster as definition, Hines bullets, and why it matters.';
+  'Planning deck: short opening on what Planning is, then each cluster as definition, Hines bullets, and why it matters with one applied example.';
 FA.c5Intro =
-  'ارائه برنامه‌ریزی: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر خوشه به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است.';
+  'ارائه برنامه‌ریزی: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر خوشه به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است با یک مثال کاربردی.';
 
 EN.c5Sections = [
   opening('0. Opening Planning', 'assets/methods/covers/hines-c5-strategic.svg', 'Column 5 after Visioning', [
@@ -860,7 +1013,7 @@ EN.c5Sections = [
     },
     {
       title: 'Why do we plan?',
-      body: 'Vision without Planning stays inspirational. Planning maps from where we are to where we want to be with options the organization can actually choose.'
+      body: 'Vision without Planning stays inspirational. Planning maps from where we are to where we want to be with options the organization can actually choose. A "net zero campus" vision without a menu of options and contingencies becomes a poster, not a path.'
     },
     {
       title: 'What Planning means',
@@ -873,7 +1026,7 @@ EN.c5Sections = [
     'assets/methods/covers/hines-c5-strategic.svg',
     'Emergence, dialogue, branch points',
     'Definition',
-    'Thinking strategically bridges preferred vision to choices the organization can make. Strategy emerges through dialogue in a cultural and social field.',
+    'Thinking strategically bridges preferred vision to choices the organization can make. In project practice, strategy emerges through dialogue in a cultural and social field, not only in a slide pack from the foresight team.',
     'Hines guidelines',
     [
       'Strengthening emergence at the organizational level',
@@ -883,7 +1036,11 @@ EN.c5Sections = [
       'Discovering main strategic choice areas through critical branching points'
     ],
     'Why it matters',
-    'Emergence means strategy is co-produced in talk and practice. Change versus preserve stops total redesign fantasy. Critical branch points mark where the path actually forks.'
+    'Emergence means strategy is co-produced in talk and practice. Change versus preserve stops total redesign fantasy. Critical branch points mark where the path actually forks.',
+    {
+      label: EX_EN,
+      text: 'A public university prefers digital transformation but must preserve public trust and degree legitimacy. The branch point is what to digitize versus what must stay face-to-face credentialing.'
+    }
   ),
   part(
     'options',
@@ -891,7 +1048,7 @@ EN.c5Sections = [
     'assets/methods/covers/hines-c5-options.svg',
     'Do nothing, plausible, preferred, contingencies',
     'Definition',
-    'Developing strategic options turns Visioning into a menu of moves built on distinctive advantage and evaluated on many dimensions.',
+    'Developing strategic options turns Visioning into a menu of moves built on distinctive advantage and evaluated on many dimensions, including do nothing and contingencies for surprise.',
     'Hines guidelines',
     [
       'Building fundamental strategic recommendations on the organization\'s distinctive advantages',
@@ -900,7 +1057,11 @@ EN.c5Sections = [
       'Having contingency plans for the unexpected (a spectrum of options, not lock on one best)'
     ],
     'Why it matters',
-    'Distinctiveness keeps options from becoming generic best practice. Do nothing is a real option. Contingencies protect Acting when the preferred path meets surprise.'
+    'Distinctiveness keeps options from becoming generic best practice. Do nothing is a real option. Contingencies protect Acting when the preferred path meets surprise.',
+    {
+      label: EX_EN,
+      text: 'Preferred path: full digital overhaul. Contingency: if the budget freezes mid-year, a modular pilot on micro-credentials still advances the vision without locking the whole enterprise.'
+    }
   )
 ];
 
@@ -916,7 +1077,7 @@ FA.c5Sections = [
     },
     {
       title: 'چرا برنامه‌ریزی می‌کنیم؟',
-      body: 'چشم‌انداز بدون برنامه‌ریزی الهام می‌ماند. برنامه‌ریزی از کجا هستیم به کجا می‌خواهیم باشیم را با گزینه‌هایی که سازمان واقعاً می‌تواند برگزیند نقشه می‌کشد.'
+      body: 'چشم‌انداز بدون برنامه‌ریزی الهام می‌ماند. برنامه‌ریزی از کجا هستیم به کجا می‌خواهیم باشیم را با گزینه‌هایی که سازمان واقعاً می‌تواند برگزیند نقشه می‌کشد. چشم‌انداز «پردیس کربن‌صفر» بدون منوی گزینه و اقتضا پوستر می‌شود، نه مسیر.'
     },
     {
       title: 'معنا به زبان ساده',
@@ -929,7 +1090,7 @@ FA.c5Sections = [
     'assets/methods/covers/hines-c5-strategic.svg',
     'برآیش، گفت‌وگو، نقاط انشعاب',
     'تعریف',
-    'اندیشیدن راهبردی چشم‌انداز مطلوب را به انتخاب‌هایی وصل می‌کند که سازمان می‌تواند بسازد. راهبرد در میدان فرهنگی و اجتماعی از گفت‌وگو برمی‌آید.',
+    'اندیشیدن راهبردی چشم‌انداز مطلوب را به انتخاب‌هایی وصل می‌کند که سازمان می‌تواند بسازد. در عمل پروژه، راهبرد در میدان فرهنگی و اجتماعی از گفت‌وگو برمی‌آید، نه فقط از بسته اسلاید تیم آینده‌نگاری.',
     'راهنماهای هاینز',
     [
       'تقویت ویژگی ناگاه‌ظهوری / برآیش (emergence) در سطح سازمان',
@@ -939,7 +1100,11 @@ FA.c5Sections = [
       'کشف نواحی اصلی انتخاب راهبردی از طریق نقاط انشعاب حیاتی'
     ],
     'چرا مهم است',
-    'برآیش یعنی راهبرد در گفت و عمل هم‌ساخته می‌شود. تغییر در برابر حفظ خیال بازطراحی کامل را متوقف می‌کند. نقاط انشعاب حیاتی جایی را نشان می‌دهند که مسیر واقعاً دو شاخه می‌شود.'
+    'برآیش یعنی راهبرد در گفت و عمل هم‌ساخته می‌شود. تغییر در برابر حفظ خیال بازطراحی کامل را متوقف می‌کند. نقاط انشعاب حیاتی جایی را نشان می‌دهند که مسیر واقعاً دو شاخه می‌شود.',
+    {
+      label: EX_FA,
+      text: 'دانشگاه دولتی تحول دیجیتال را مطلوب می‌داند اما باید اعتماد عمومی و مشروعیت مدرک را حفظ کند. نقطه انشعاب این است چه چیز دیجیتالی شود و چه چیز باید اعتبار حضوری بماند.'
+    }
   ),
   part(
     'options',
@@ -947,7 +1112,7 @@ FA.c5Sections = [
     'assets/methods/covers/hines-c5-options.svg',
     'بدون اقدام، باورپذیر، مرجح، اقتضا',
     'تعریف',
-    'توسعه گزینه‌های راهبردی چشم‌انداز را به منوی حرکت‌هایی بر پایه وجه تمایز سازمان تبدیل می‌کند که چندبُعدی ارزیابی می‌شوند.',
+    'توسعه گزینه‌های راهبردی چشم‌انداز را به منوی حرکت‌هایی بر پایه وجه تمایز سازمان تبدیل می‌کند که چندبُعدی ارزیابی می‌شوند، از جمله بدون اقدام و اقتضا برای غافلگیری.',
     'راهنماهای هاینز',
     [
       'بنای توصیه‌های بنیادین راهبردی بر وجوه تمایز سازمان',
@@ -956,15 +1121,19 @@ FA.c5Sections = [
       'داشتن برنامه‌های اقتضایی برای موارد غیرمنتظره (طیف گزینه‌ها، نه قفل روی یک بهترین)'
     ],
     'چرا مهم است',
-    'تمایز مانع بهترین‌عملکرد کلیشه‌ای می‌شود. بدون اقدام یک گزینه واقعی است. اقتضا اقدام را وقتی مسیر مرجح با غافلگیری روبه‌رو می‌شود محافظت می‌کند.'
+    'تمایز مانع بهترین‌عملکرد کلیشه‌ای می‌شود. بدون اقدام یک گزینه واقعی است. اقتضا اقدام را وقتی مسیر مرجح با غافلگیری روبه‌رو می‌شود محافظت می‌کند.',
+    {
+      label: EX_FA,
+      text: 'مسیر مرجح: بازسازی کامل دیجیتال. اقتضا: اگر بودجه وسط سال یخ بزند، پایلوت ماژولار ریزمدرک هنوز چشم‌انداز را جلو می‌برد بی‌آنکه کل بنگاه قفل شود.'
+    }
   )
 ];
 
 /* ───────────── C6 Acting ───────────── */
 EN.c6Intro =
-  'Acting deck: short opening on what Acting is, then each of four parts as definition, Hines bullets, and why it matters.';
+  'Acting deck: short opening on what Acting is, then each of four parts as definition, Hines bullets, and why it matters with one applied example.';
 FA.c6Intro =
-  'ارائه اقدام: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر یک از چهار جزء به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است.';
+  'ارائه اقدام: اسلایدهای کوتاه آغازین درباره چیستی ستون، سپس هر یک از چهار جزء به‌صورت تعریف، گلوله‌های هاینز، و چرا مهم است با یک مثال کاربردی.';
 
 EN.c6Sections = [
   opening('0. Opening Acting', 'assets/methods/covers/hines-c6-communicate.svg', 'Column 6 after Planning', [
@@ -978,7 +1147,7 @@ EN.c6Sections = [
     },
     {
       title: 'Why do we act?',
-      body: 'Without Acting, foresight is a one-off report. Transfer, urgency, sensing, and institutional rhythm keep strategic foresight alive after the workshop.'
+      body: 'Without Acting, foresight is a one-off report. Transfer, urgency, sensing, and institutional rhythm keep strategic foresight alive after the workshop. A beautiful scenario deck that sits on a shelf is a failed Acting pillar, not a successful Forecasting one.'
     },
     {
       title: 'What Acting means',
@@ -991,7 +1160,7 @@ EN.c6Sections = [
     'assets/methods/covers/hines-c6-communicate.svg',
     'Audience style, immersion, modular outputs',
     'Definition',
-    'Communicating results designs foresight for transfer: move abstract futures into forms decision makers can use in their thinking style.',
+    'Communicating results designs foresight for transfer into the organization\'s decision routines: move abstract futures into forms decision makers can use in their thinking style.',
     'Hines guidelines',
     [
       'Designing results for transferability',
@@ -1002,7 +1171,11 @@ EN.c6Sections = [
       'Awareness of change through experience, insight, and reframing'
     ],
     'Why it matters',
-    'Transferability beats archive beauty. Immersion raises uptake; provocation is calibrated to culture. Modular outputs and lived reframe are how change awareness sticks.'
+    'Transferability beats archive beauty. Immersion raises uptake; provocation is calibrated to culture. Modular outputs and lived reframe are how change awareness sticks.',
+    {
+      label: EX_EN,
+      text: 'A CFO will not read a 40-page scenario narrative. A modular one-page options brief with cost gates and decision dates transfers the same foresight into budget language.'
+    }
   ),
   part(
     'agenda',
@@ -1010,7 +1183,7 @@ EN.c6Sections = [
     'assets/methods/covers/hines-c6-agenda.svg',
     'Urgency, milestones, one improbable bet',
     'Definition',
-    'An action agenda turns Planning into near-term moves: urgency, better decisions, milestones, and at least one improbable idea.',
+    'An action agenda turns Planning into near-term moves the organization will actually schedule: urgency, better decisions, milestones, and at least one improbable idea worth a controlled bet.',
     'Hines guidelines',
     [
       'Creating a sense of urgency',
@@ -1021,7 +1194,11 @@ EN.c6Sections = [
       'Recommend investing at least in one improbable idea'
     ],
     'Why it matters',
-    'Urgency without capability collapses; build on strengths. The point is better decisions, not perfect foresight. One improbable investment keeps the portfolio from only safe incrementalism.'
+    'Urgency without capability collapses; build on strengths. The point is better decisions, not perfect foresight. One improbable investment keeps the portfolio from only safe incrementalism.',
+    {
+      label: EX_EN,
+      text: 'Besides process upgrades, the agenda funds one improbable pilot: stackable micro-credentials co-designed with employers, with a 90-day milestone and a kill or scale gate.'
+    }
   ),
   part(
     'sis',
@@ -1029,7 +1206,7 @@ EN.c6Sections = [
     'assets/methods/covers/hines-c6-sis.svg',
     'Early warning linked to planning',
     'Definition',
-    'A strategic information system keeps Acting alive after the workshop: foresight-aligned indicators linked to planning, with early warning for weak signals.',
+    'A strategic information system keeps Acting alive after the workshop: foresight-aligned indicators linked to planning gates, with early warning for weak signals that would reopen Framing or Forecasting.',
     'Hines guidelines',
     [
       'An information system aligned with foresight and linked to planning',
@@ -1039,7 +1216,11 @@ EN.c6Sections = [
       'Indicators that are easy to understand and collect'
     ],
     'Why it matters',
-    'SIS must feed planning gates, not fill a data lake. Weak signals and turbulence extend Scanning into operations. Crisis indicators must be few and easy or nobody watches them.'
+    'SIS must feed planning gates, not fill a data lake. Weak signals and turbulence extend Scanning into operations. Crisis indicators must be few and easy or nobody watches them.',
+    {
+      label: EX_EN,
+      text: 'A university watches three early-warning indicators monthly: application yield by program, employer skill requests shifting toward AI fluency, and policy drafts on generative tools. Each triggers a planning review, not a dashboard vanity metric.'
+    }
   ),
   part(
     'institutionalize',
@@ -1047,7 +1228,7 @@ EN.c6Sections = [
     'assets/methods/covers/hines-c6-institutionalize.svg',
     'Framework, rhythm, learning organization',
     'Definition',
-    'Institutionalizing strategic thinking makes foresight a recurring capability: clear frame, futures rhythm, training, and a learning organization that can accept change.',
+    'Institutionalizing strategic thinking makes foresight a recurring capability after the first project: clear frame, futures rhythm, training, and a learning organization that can accept change.',
     'Hines guidelines',
     [
       'Selecting, designing, and making the conceptual framework explicit',
@@ -1058,7 +1239,11 @@ EN.c6Sections = [
       'Shifting attitudes toward accepting change'
     ],
     'Why it matters',
-    'An explicit frame stops every project reinventing method language. Rhythm and repetition beat one-off reports. Training and change acceptance keep Acting from freezing after first success.'
+    'An explicit frame stops every project reinventing method language. Rhythm and repetition beat one-off reports. Training and change acceptance keep Acting from freezing after first success.',
+    {
+      label: EX_EN,
+      text: 'Instead of one annual workshop, the organization runs a quarterly foresight hour tied to budget cycles, with a short internal training so new managers inherit the six-pillar language.'
+    }
   )
 ];
 
@@ -1074,7 +1259,7 @@ FA.c6Sections = [
     },
     {
       title: 'چرا اقدام می‌کنیم؟',
-      body: 'بدون اقدام، آینده‌نگاری گزارش یک‌بارمصرف می‌ماند. انتقال، فوریت، پایش، و ریتم نهادی آینده‌نگاری راهبردی را پس از کارگاه زنده نگه می‌دارد.'
+      body: 'بدون اقدام، آینده‌نگاری گزارش یک‌بارمصرف می‌ماند. انتقال، فوریت، پایش، و ریتم نهادی آینده‌نگاری راهبردی را پس از کارگاه زنده نگه می‌دارد. بسته سناریوی زیبا که روی قفسه می‌ماند شکست ستون اقدام است، نه موفقیت پیش‌بینی.'
     },
     {
       title: 'معنا به زبان ساده',
@@ -1087,7 +1272,7 @@ FA.c6Sections = [
     'assets/methods/covers/hines-c6-communicate.svg',
     'سبک مخاطب، غوطه‌وری، خروجی ماژولار',
     'تعریف',
-    'ارتباط نتایج آینده‌نگاری را برای انتقال طراحی می‌کند: آینده‌های انتزاعی را به شکل‌هایی ببرد که تصمیم‌گیران به سبک تفکر خود بتوانند به کار گیرند.',
+    'ارتباط نتایج آینده‌نگاری را برای انتقال به روال تصمیم سازمان طراحی می‌کند: آینده‌های انتزاعی را به شکل‌هایی ببرد که تصمیم‌گیران به سبک تفکر خود بتوانند به کار گیرند.',
     'راهنماهای هاینز',
     [
       'طراحی نتایج برای قابلیت انتقال',
@@ -1098,7 +1283,11 @@ FA.c6Sections = [
       'آگاهی از تغییر از طریق تجربه، بینش و بازقالب‌بندی'
     ],
     'چرا مهم است',
-    'قابلیت انتقال بر زیبایی آرشیو می‌چربد. غوطه‌وری پذیرش را بالا می‌برد؛ تهییج با فرهنگ جور می‌شود. خروجی ماژولار و بازقالب زیسته همان جایی است که آگاهی از تغییر می‌چسبد.'
+    'قابلیت انتقال بر زیبایی آرشیو می‌چربد. غوطه‌وری پذیرش را بالا می‌برد؛ تهییج با فرهنگ جور می‌شود. خروجی ماژولار و بازقالب زیسته همان جایی است که آگاهی از تغییر می‌چسبد.',
+    {
+      label: EX_FA,
+      text: 'مدیر مالی روایت ۴۰ صفحه‌ای سناریو را نمی‌خواند. خلاصه یک‌صفحه‌ای ماژولار گزینه‌ها با دروازه هزینه و تاریخ تصمیم همان آینده‌نگاری را به زبان بودجه منتقل می‌کند.'
+    }
   ),
   part(
     'agenda',
@@ -1106,7 +1295,7 @@ FA.c6Sections = [
     'assets/methods/covers/hines-c6-agenda.svg',
     'فوریت، نقاط عطف، یک شرط‌بندی غیرمحتمل',
     'تعریف',
-    'دستورکار اقدام برنامه‌ریزی را به حرکت نزدیک‌مدت تبدیل می‌کند: فوریت، تصمیم بهتر، نقاط عطف، و حداقل یک ایده غیرمحتمل.',
+    'دستورکار اقدام برنامه‌ریزی را به حرکت نزدیک‌مدتی تبدیل می‌کند که سازمان واقعاً زمان‌بندی می‌کند: فوریت، تصمیم بهتر، نقاط عطف، و حداقل یک ایده غیرمحتمل شایسته شرط کنترل‌شده.',
     'راهنماهای هاینز',
     [
       'ایجاد حس فوریت',
@@ -1117,7 +1306,11 @@ FA.c6Sections = [
       'توصیه به سرمایه‌گذاری حداقل در یک ایده غیرمحتمل'
     ],
     'چرا مهم است',
-    'فوریت بدون قابلیت فرو می‌ریزد؛ از قوت‌ها بسازید. هدف تصمیم بهتر است نه آینده‌نگاری کامل. یک سرمایه‌گذاری غیرمحتمل سبد را از فقط تدریجی امن دور نگه می‌دارد.'
+    'فوریت بدون قابلیت فرو می‌ریزد؛ از قوت‌ها بسازید. هدف تصمیم بهتر است نه آینده‌نگاری کامل. یک سرمایه‌گذاری غیرمحتمل سبد را از فقط تدریجی امن دور نگه می‌دارد.',
+    {
+      label: EX_FA,
+      text: 'علاوه بر ارتقای فرایند، دستورکار یک پایلوت غیرمحتمل را تأمین می‌کند: ریزمدرک‌های قابل انباشت با کارفرما، با نقطه عطف ۹۰ روزه و دروازه توقف یا مقیاس.'
+    }
   ),
   part(
     'sis',
@@ -1125,7 +1318,7 @@ FA.c6Sections = [
     'assets/methods/covers/hines-c6-sis.svg',
     'هشدار زودهنگام پیوندخورده به برنامه‌ریزی',
     'تعریف',
-    'سامانه اطلاعات راهبردی اقدام را پس از کارگاه زنده نگه می‌دارد: شاخص‌های هم‌راستا با آینده‌نگاری و پیوند به برنامه‌ریزی، با هشدار زودهنگام برای نشانه‌های ضعیف.',
+    'سامانه اطلاعات راهبردی اقدام را پس از کارگاه زنده نگه می‌دارد: شاخص‌های هم‌راستا با آینده‌نگاری و پیوند به دروازه‌های برنامه‌ریزی، با هشدار زودهنگام برای نشانه‌های ضعیفی که چارچوب‌بندی یا پیش‌بینی را دوباره باز می‌کنند.',
     'راهنماهای هاینز',
     [
       'سامانه اطلاعات هم‌راستا با آینده‌نگاری و پیوند به برنامه‌ریزی',
@@ -1135,7 +1328,11 @@ FA.c6Sections = [
       'شاخص‌هایی که فهم و جمع‌آوری‌شان آسان است'
     ],
     'چرا مهم است',
-    'سامانه باید به دروازه‌های برنامه‌ریزی خوراک دهد، نه دریاچه داده بسازد. نشانه ضعیف و آشفتگی پویش را به عملیات می‌کشاند. شاخص بحران باید کم و آسان باشد وگرنه کسی نمی‌پاید.'
+    'سامانه باید به دروازه‌های برنامه‌ریزی خوراک دهد، نه دریاچه داده بسازد. نشانه ضعیف و آشفتگی پویش را به عملیات می‌کشاند. شاخص بحران باید کم و آسان باشد وگرنه کسی نمی‌پاید.',
+    {
+      label: EX_FA,
+      text: 'دانشگاه ماهانه سه شاخص هشدار زودهنگام را می‌پاید: بازده پذیرش به تفکیک رشته، جابه‌جایی درخواست مهارت کارفرما به‌سوی تسلط هوش مصنوعی، و پیش‌نویس سیاست ابزارهای مولد. هر کدام بازبینی برنامه‌ریزی را تریگر می‌کند، نه متریک نمایش داشبورد.'
+    }
   ),
   part(
     'institutionalize',
@@ -1143,7 +1340,7 @@ FA.c6Sections = [
     'assets/methods/covers/hines-c6-institutionalize.svg',
     'چارچوب، ریتم، سازمان یادگیرنده',
     'تعریف',
-    'نهادینه‌سازی تفکر راهبردی آینده‌نگاری را قابلیت تکرارشونده می‌کند: قاب روشن، ریتم آینده، آموزش، و سازمان یادگیرنده‌ای که تغییر را بپذیرد.',
+    'نهادینه‌سازی تفکر راهبردی آینده‌نگاری را پس از اولین پروژه به قابلیت تکرارشونده تبدیل می‌کند: قاب روشن، ریتم آینده، آموزش، و سازمان یادگیرنده‌ای که تغییر را بپذیرد.',
     'راهنماهای هاینز',
     [
       'انتخاب، طراحی و صریح‌سازی چارچوب مفهومی',
@@ -1154,7 +1351,11 @@ FA.c6Sections = [
       'تغییر نگرش به‌سوی پذیرش تغییر'
     ],
     'چرا مهم است',
-    'قاب صریح مانع اختراع دوباره زبان روش در هر پروژه می‌شود. ریتم و تکرار بر گزارش یک‌باره می‌چربد. آموزش و پذیرش تغییر جلوی یخ زدن اقدام پس از اولین موفقیت را می‌گیرد.'
+    'قاب صریح مانع اختراع دوباره زبان روش در هر پروژه می‌شود. ریتم و تکرار بر گزارش یک‌باره می‌چربد. آموزش و پذیرش تغییر جلوی یخ زدن اقدام پس از اولین موفقیت را می‌گیرد.',
+    {
+      label: EX_FA,
+      text: 'به‌جای یک کارگاه سالانه، سازمان ساعت فصلی آینده‌نگاری هم‌زمان با چرخه بودجه برگزار می‌کند، با آموزش کوتاه داخلی تا مدیران جدید زبان شش‌ستونه را به ارث ببرند.'
+    }
   )
 ];
 
@@ -1204,6 +1405,14 @@ function countSlides(sections) {
   return sections.reduce((n, s) => n + (s.paragraphs || []).length, 0);
 }
 
+function countExamples(sections) {
+  return sections.reduce((n, s) => {
+    if (s.id === 'opening') return n;
+    const why = (s.paragraphs && s.paragraphs[2]) || '';
+    return n + (/Applied example:|مثال کاربردی:/.test(why) ? 1 : 0);
+  }, 0);
+}
+
 function main() {
   // regenerate covers if script present
   const coverScript = path.join(__dirname, 'gen-hines-covers.cjs');
@@ -1214,14 +1423,24 @@ function main() {
   const enFile = patchLocale('en', EN);
   const faFile = patchLocale('fa', FA);
 
+  // parity check: example counts
   const report = {
-    C1: { opening: 4, parts: 6, slidesPerPart: 3, contentSlides: countSlides(EN.c1Sections) },
-    C2: { opening: 4, parts: 4, slidesPerPart: 3, contentSlides: countSlides(EN.c2Sections) },
-    C3: { opening: 4, parts: 5, slidesPerPart: 3, contentSlides: countSlides(EN.c3Sections) },
-    C4: { opening: 4, parts: 3, slidesPerPart: 3, contentSlides: countSlides(EN.c4Sections) },
-    C5: { opening: 4, parts: 2, slidesPerPart: 3, contentSlides: countSlides(EN.c5Sections) },
-    C6: { opening: 4, parts: 4, slidesPerPart: 3, contentSlides: countSlides(EN.c6Sections) }
+    C1: { opening: 4, parts: 6, slidesPerPart: 3, contentSlides: countSlides(EN.c1Sections), examples: countExamples(EN.c1Sections), faExamples: countExamples(FA.c1Sections) },
+    C2: { opening: 4, parts: 4, slidesPerPart: 3, contentSlides: countSlides(EN.c2Sections), examples: countExamples(EN.c2Sections), faExamples: countExamples(FA.c2Sections) },
+    C3: { opening: 4, parts: 5, slidesPerPart: 3, contentSlides: countSlides(EN.c3Sections), examples: countExamples(EN.c3Sections), faExamples: countExamples(FA.c3Sections) },
+    C4: { opening: 4, parts: 3, slidesPerPart: 3, contentSlides: countSlides(EN.c4Sections), examples: countExamples(EN.c4Sections), faExamples: countExamples(FA.c4Sections) },
+    C5: { opening: 4, parts: 2, slidesPerPart: 3, contentSlides: countSlides(EN.c5Sections), examples: countExamples(EN.c5Sections), faExamples: countExamples(FA.c5Sections) },
+    C6: { opening: 4, parts: 4, slidesPerPart: 3, contentSlides: countSlides(EN.c6Sections), examples: countExamples(EN.c6Sections), faExamples: countExamples(FA.c6Sections) }
   };
+
+  for (const [k, v] of Object.entries(report)) {
+    if (v.examples !== v.parts || v.faExamples !== v.parts) {
+      throw new Error(`Example parity fail in ${k}: en=${v.examples} fa=${v.faExamples} parts=${v.parts}`);
+    }
+  }
+
+  assertNoBanned(JSON.stringify(EN), 'EN');
+  assertNoBanned(JSON.stringify(FA), 'FA');
 
   console.log(JSON.stringify({ enFile, faFile, report }, null, 2));
 }
