@@ -42,7 +42,25 @@
     "order2": "2nd Order",
     "order3": "3rd Order",
     "clickExplore": "Click to explore",
-    "scrollHint": "Scroll to view the full diagram"
+    "scrollHint": "Scroll to view the full diagram",
+    "tracks": {
+      "label": "Delivery track",
+      "university": "University",
+      "industry": "Industry & organization",
+      "workshop": "Interactive workshop",
+      "universitySection": "University track · syllabus and teaching",
+      "industrySection": "Industry track · organizational delivery",
+      "workshopSection": "Interactive workshop",
+      "labelRole": "Role",
+      "labelJob": "Job",
+      "agendaTitle": "Workshop agenda",
+      "stakeholdersTitle": "Stakeholders",
+      "deliverablesTitle": "Deliverables",
+      "workflowTitle": "Workflow",
+      "checklistTitle": "Checklist",
+      "boardMemoTitle": "Board memo fields",
+      "facilitatorTitle": "Facilitator notes"
+    }
   },
   "wheel": {
     "hubLabel": "Climate Change in Iran",
