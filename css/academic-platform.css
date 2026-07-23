@@ -258,16 +258,17 @@ body .home-hero-content {
 body .home-hero-brand {
     margin: 0 0 0.85rem;
     font-family: var(--font-en), var(--font-fa);
-    font-size: clamp(2.35rem, 6.5vw, 3.75rem);
+    font-size: clamp(1.85rem, 5.2vw, 3.1rem);
     font-weight: 800;
     letter-spacing: -0.04em;
-    line-height: 1.05;
+    line-height: 1.15;
     color: #fff;
 }
 
 html[dir="rtl"] body .home-hero-brand {
     font-family: var(--font-fa);
     letter-spacing: -0.02em;
+    font-size: clamp(1.75rem, 5vw, 2.85rem);
 }
 
 body .home-hero-headline {
@@ -301,8 +302,51 @@ body .home-why {
     padding-bottom: 1.5rem;
 }
 
-body .home-why-inner {
+body .home-why-inner,
+body .home-story-inner {
     max-width: 42rem;
+}
+
+body .home-story {
+    padding-top: 2.25rem;
+    padding-bottom: 0.75rem;
+}
+
+body .home-story .section-header--left h2,
+body .home-contact .section-header--left h2 {
+    font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+    max-width: 36rem;
+}
+
+body .home-story .prose-block p,
+body .home-contact .prose-block p {
+    font-size: 1.02rem;
+    line-height: 1.9;
+}
+
+body .home-contact {
+    padding-top: 2.25rem;
+    padding-bottom: 1rem;
+}
+
+body .home-contact-email {
+    display: inline-block;
+    margin-top: 0.85rem;
+    font-family: var(--font-en), var(--font-fa);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--sfh-accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(61, 139, 253, 0.35);
+    padding-bottom: 0.15rem;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+body .home-contact-email:hover {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.45);
 }
 
 body .home-find {

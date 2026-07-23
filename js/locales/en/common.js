@@ -27,9 +27,9 @@ registerLocale('en', {
         },
         index: {
             badge: 'FORESIGHT HUB',
-            heroName: 'Ali Mansouri',
-            heroTitle: 'I bridge future scenarios and the infrastructure that must survive them',
-            heroSub: 'PhD candidate in Futures Studies at the University of Tehran, and Solutions Architect at Snapp building cloud-native, Kubernetes, and enterprise LLM systems.',
+            heroName: 'Hi, I am Ali Mansouri.',
+            heroTitle: 'My core work sounds simple, and it is not easy: connecting future scenarios to infrastructure that must come out of the hardest pressure still alive and well.',
+            heroSub: 'PhD researcher in Futures Studies at the University of Tehran, and Solutions Architect at Snapp for cloud, Kubernetes, and enterprise AI systems.',
             credentialPhd: 'PhD, Futures Studies · University of Tehran',
             credentialFocus: 'Strategic foresight · emerging technology',
             heroIntroP1: '',
