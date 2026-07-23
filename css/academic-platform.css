@@ -198,7 +198,15 @@ body .method-prose-lead {
     color: var(--sfh-text);
 }
 
-/* —— Personal homepage: one composition —— */
+/* —— Personal homepage: dark atmosphere + white sticky card —— */
+body.home-page {
+    --home-card-bg: #f3f3f3;
+    --home-ink: #171717;
+    --home-muted: #6b6b6b;
+    --home-line: rgba(23, 23, 23, 0.1);
+    --font-hand: 'Caveat', 'Vazirmatn', cursive;
+}
+
 body.home-page #particles-canvas {
     opacity: 0.08;
 }
@@ -208,9 +216,9 @@ body .home-hero {
     min-height: 100vh;
     min-height: 100dvh;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--sfh-header-offset, 88px) + 1.5rem) 1.25rem 3rem;
     margin: 0;
     max-width: none;
     overflow: hidden;
@@ -236,65 +244,205 @@ body .home-hero-scrim {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(180deg, rgba(12, 16, 24, 0.35) 0%, rgba(12, 16, 24, 0.55) 42%, rgba(12, 16, 24, 0.92) 100%),
-        linear-gradient(90deg, rgba(12, 16, 24, 0.78) 0%, rgba(12, 16, 24, 0.35) 55%, rgba(12, 16, 24, 0.2) 100%);
+        linear-gradient(180deg, rgba(12, 16, 24, 0.45) 0%, rgba(12, 16, 24, 0.62) 42%, rgba(12, 16, 24, 0.9) 100%),
+        linear-gradient(90deg, rgba(12, 16, 24, 0.55) 0%, rgba(12, 16, 24, 0.35) 55%, rgba(12, 16, 24, 0.45) 100%);
     pointer-events: none;
 }
 
 html[dir="ltr"] body .home-hero-scrim {
     background:
-        linear-gradient(180deg, rgba(12, 16, 24, 0.35) 0%, rgba(12, 16, 24, 0.55) 42%, rgba(12, 16, 24, 0.92) 100%),
-        linear-gradient(270deg, rgba(12, 16, 24, 0.78) 0%, rgba(12, 16, 24, 0.35) 55%, rgba(12, 16, 24, 0.2) 100%);
+        linear-gradient(180deg, rgba(12, 16, 24, 0.45) 0%, rgba(12, 16, 24, 0.62) 42%, rgba(12, 16, 24, 0.9) 100%),
+        linear-gradient(270deg, rgba(12, 16, 24, 0.55) 0%, rgba(12, 16, 24, 0.35) 55%, rgba(12, 16, 24, 0.45) 100%);
 }
 
-body .home-hero-content {
+body .home-hero-stage {
     position: relative;
     z-index: 1;
-    width: min(40rem, 100%);
-    padding: calc(var(--sfh-header-offset, 88px) + 3.5rem) 1.75rem 3.25rem;
+    width: min(52rem, 100%);
+}
+
+body .home-hero-board {
+    position: relative;
+    padding: 2.75rem 2.5rem;
+}
+
+body .home-sticky-field {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+body .home-sticky {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(6.75rem, 11vw, 8.75rem);
+    height: clamp(6.75rem, 11vw, 8.75rem);
+    padding: 0.75rem;
+    text-align: center;
+    font-family: var(--font-hand);
+    font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+    font-weight: 600;
+    line-height: 1.25;
+    color: #2a2a2a;
+    border-radius: 2px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22), 0 2px 8px rgba(0, 0, 0, 0.12);
+    transform-origin: center center;
+}
+
+html[dir="rtl"] body .home-sticky {
+    font-family: var(--font-fa), var(--font-hand);
+    font-size: clamp(0.88rem, 1.5vw, 1.05rem);
+    font-weight: 500;
+}
+
+body .home-sticky--1 {
+    top: 0.35rem;
+    inset-inline-start: -0.35rem;
+    background: #ffd8a8;
+    transform: rotate(-8deg);
+}
+
+body .home-sticky--2 {
+    bottom: 0.8rem;
+    inset-inline-start: 0.15rem;
+    background: #ffc9c9;
+    transform: rotate(-5deg);
+}
+
+body .home-sticky--3 {
+    bottom: 0.35rem;
+    inset-inline-end: 0.85rem;
+    background: #fff3bf;
+    transform: rotate(7deg);
+}
+
+body .home-sticky--4 {
+    top: 0.15rem;
+    inset-inline-end: -0.15rem;
+    background: #d3f9d8;
+    transform: rotate(6deg);
+}
+
+body .home-sticky--5 {
+    top: 42%;
+    inset-inline-start: -1.35rem;
+    background: #e7d5ff;
+    transform: rotate(-12deg);
+    width: clamp(5.75rem, 9vw, 7.25rem);
+    height: clamp(5.75rem, 9vw, 7.25rem);
+}
+
+body .home-sticky--6 {
+    top: 40%;
+    inset-inline-end: -1.15rem;
+    background: #c5f6fa;
+    transform: rotate(10deg);
+    width: clamp(5.75rem, 9vw, 7.25rem);
+    height: clamp(5.75rem, 9vw, 7.25rem);
+}
+
+body .home-hero-card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
     max-width: 40rem;
+    margin: 0 auto;
+    padding: clamp(1.75rem, 4vw, 2.65rem) clamp(1.35rem, 3.5vw, 2.35rem);
+    background: var(--home-card-bg);
+    color: var(--home-ink);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:
+        0 28px 64px rgba(0, 0, 0, 0.38),
+        0 8px 20px rgba(0, 0, 0, 0.22);
+    text-align: center;
+}
+
+body .home-hero-eyebrow {
+    margin: 0 0 0.65rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #4a4a4a;
+    line-height: 1.5;
 }
 
 body .home-hero-brand {
     margin: 0 0 0.85rem;
     font-family: var(--font-en), var(--font-fa);
-    font-size: clamp(1.85rem, 5.2vw, 3.1rem);
+    font-size: clamp(1.85rem, 5vw, 2.85rem);
     font-weight: 800;
     letter-spacing: -0.04em;
     line-height: 1.15;
-    color: #fff;
+    color: var(--home-ink);
+    background: none;
+    -webkit-text-fill-color: var(--home-ink);
 }
 
 html[dir="rtl"] body .home-hero-brand {
     font-family: var(--font-fa);
     letter-spacing: -0.02em;
-    font-size: clamp(1.75rem, 5vw, 2.85rem);
+    font-size: clamp(1.7rem, 4.8vw, 2.55rem);
 }
 
 body .home-hero-headline {
-    margin: 0 0 1rem;
-    font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+    margin: 0 auto 1rem;
+    max-width: 34rem;
+    font-size: clamp(1.05rem, 2.3vw, 1.28rem);
     font-weight: 600;
-    line-height: 1.55;
+    line-height: 1.65;
     letter-spacing: -0.015em;
-    color: var(--sfh-text);
+    color: var(--home-ink);
     background: none;
-    -webkit-text-fill-color: var(--sfh-text);
+    -webkit-text-fill-color: var(--home-ink);
+}
+
+html[dir="rtl"] body .home-hero-headline {
+    font-family: var(--font-fa);
+    letter-spacing: -0.01em;
+}
+
+html[dir="ltr"] body .home-hero-headline {
+    font-family: var(--font-en);
 }
 
 body .home-hero-support {
-    margin: 0;
-    max-width: 36rem;
-    font-size: 1.02rem;
+    margin: 0 auto 1.45rem;
+    max-width: 34rem;
+    font-size: 0.98rem;
     line-height: 1.8;
-    color: var(--sfh-text-muted);
+    color: var(--home-muted);
 }
 
-body .home-hero-actions {
-    margin-top: 1.75rem;
+body .home-hero-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem 0.35rem;
+    font-size: 0.95rem;
+}
+
+body .home-hero-links a {
+    color: var(--home-ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.28em;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+body .home-hero-links a:hover {
+    color: #555;
+}
+
+body .home-link-sep {
+    color: #b0b0b0;
+    font-size: 0.75rem;
+    user-select: none;
+    padding: 0 0.2rem;
 }
 
 body .home-why {
@@ -1071,26 +1219,66 @@ body .fitness-page .fitness-section .section-header {
         height: 6.5rem;
     }
 
-    body .home-hero-content {
-        padding: calc(var(--sfh-header-offset, 88px) + 2rem) 1.15rem 2.35rem;
+    body .home-hero {
+        align-items: flex-start;
+        min-height: auto;
+        padding: calc(var(--sfh-header-offset, 88px) + 1rem) 0.85rem 2.75rem;
+    }
+
+    body .home-hero-board {
+        padding: 2rem 0.85rem;
+    }
+
+    body .home-hero-card {
+        padding: 1.45rem 1.15rem 1.65rem;
     }
 
     body .home-hero-brand {
-        font-size: clamp(2rem, 10vw, 2.6rem);
+        font-size: clamp(1.75rem, 9vw, 2.25rem);
     }
 
     body .home-hero-headline {
-        font-size: 1.12rem;
+        font-size: 1.05rem;
     }
 
-    body .home-hero-actions {
-        width: 100%;
+    body .home-hero-links {
+        gap: 0.45rem 0.25rem;
+        font-size: 0.88rem;
     }
 
-    body .home-hero-actions .btn-primary-sm,
-    body .home-hero-actions .btn-ghost-sm {
-        flex: 1 1 auto;
-        justify-content: center;
-        text-align: center;
+    body .home-sticky {
+        width: 5.35rem;
+        height: 5.35rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    html[dir="rtl"] body .home-sticky {
+        font-size: 0.74rem;
+    }
+
+    body .home-sticky--1 {
+        top: -0.15rem;
+        inset-inline-start: 0.15rem;
+    }
+
+    body .home-sticky--2 {
+        bottom: -0.15rem;
+        inset-inline-start: 0.35rem;
+    }
+
+    body .home-sticky--3 {
+        bottom: -0.25rem;
+        inset-inline-end: 0.45rem;
+    }
+
+    body .home-sticky--4 {
+        top: -0.25rem;
+        inset-inline-end: 0.2rem;
+    }
+
+    body .home-sticky--5,
+    body .home-sticky--6 {
+        display: none;
     }
 }

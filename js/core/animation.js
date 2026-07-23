@@ -11,10 +11,20 @@ if (window.gsap && window.ScrollTrigger) {
                 const homeTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
                 homeTl
                     .from('.home-hero-img', { scale: 1.08, opacity: 0.55, duration: 1.35 }, 0)
-                    .from('.home-hero-brand', { y: 28, opacity: 0, duration: 0.75 }, 0.2)
-                    .from('.home-hero-headline', { y: 36, opacity: 0, duration: 0.9 }, 0.35)
-                    .from('.home-hero-support', { y: 22, opacity: 0, duration: 0.7 }, 0.5)
-                    .from('.home-hero-actions', { y: 18, opacity: 0, duration: 0.65 }, 0.62);
+                    .from('.home-hero-card', { y: 28, opacity: 0, duration: 0.8 }, 0.18)
+                    .from('.home-hero-eyebrow', { y: 14, opacity: 0, duration: 0.5 }, 0.28)
+                    .from('.home-hero-brand', { y: 20, opacity: 0, duration: 0.65 }, 0.34)
+                    .from('.home-hero-headline', { y: 22, opacity: 0, duration: 0.7 }, 0.42)
+                    .from('.home-hero-support', { y: 16, opacity: 0, duration: 0.55 }, 0.52)
+                    .from('.home-hero-links', { y: 14, opacity: 0, duration: 0.5 }, 0.6)
+                    .from('.home-sticky', {
+                        y: 18,
+                        opacity: 0,
+                        scale: 0.88,
+                        duration: 0.55,
+                        stagger: 0.06,
+                        ease: 'back.out(1.4)'
+                    }, 0.28);
 
                 if (document.querySelector('.home-hub-inner')) {
                     gsap.from('.home-hub-inner > *', {
