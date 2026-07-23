@@ -158,7 +158,8 @@ registerLocale('en', {
                             { type: 'Journal article', text: 'Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49. Baseline analysis method and Fig. 5, the cone of plausibility.' },
                             { type: 'Report', text: 'Taylor, C. W. (1990). Creating Strategic Visions. Carlisle Barracks, PA: Strategic Studies Institute, U.S. Army War College. Early published cone of plausibility for long-range planning.' },
                             { type: 'Article', text: 'Hancock, T. & Bezold, C. (1994). Possible futures, preferable futures. <em>Healthcare Forum Journal</em>, 37(2), pp. 23 to 29. Probable, plausible, possible, and preferable layers on the futures cone.' },
-                            { type: 'Related reference', text: 'Voros, J. (2003, updated essays). The futures cone and the foresight process. Builds on Henchey\'s taxonomy and on Hancock and Bezold; useful companion to the Houston Framework Foresight reading of the cone.' }
+                            { type: 'Related reference', text: 'Voros, J. (2003, updated essays). The futures cone and the foresight process. Builds on Henchey\'s taxonomy and on Hancock and Bezold; useful companion to the Houston Framework Foresight reading of the cone.' },
+                            { type: 'FRM note', text: 'Glenn, J. C., & Gordon, T. J. (Eds.). Futures Research Methodology 3.0. Related chapters: 2 Environmental Scanning, 10 Wild Cards, 19 to 21 Scenarios. FRM does not name the cone of plausibility; Hines and Bishop place it in the Forecasting to Visioning bridge.' }
                         ],
                         assignment: {
                             title: 'Drawing a cone',

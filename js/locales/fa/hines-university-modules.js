@@ -158,7 +158,8 @@ registerLocale('fa', {
                             { type: 'مقاله علمی', text: 'Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49. روش baseline analysis و شکل ۵، مخروط محتمل‌بودن.' },
                             { type: 'گزارش', text: 'Taylor, C. W. (1990). Creating Strategic Visions. Carlisle Barracks, PA: Strategic Studies Institute, U.S. Army War College. از نخستین انتشارهای مخروط محتمل‌بودن در برنامه‌ریزی بلندمدت.' },
                             { type: 'مقاله', text: 'Hancock, T. & Bezold, C. (1994). Possible futures, preferable futures. <em>Healthcare Forum Journal</em>, 37(2), صفحات 23 تا 29. لایه‌های محتمل، معقول، ممکن و مطلوب روی مخروط آینده‌ها.' },
-                            { type: 'مرجع تکمیلی', text: 'Voros, J. (2003، جستارهای به‌روزشده). The futures cone and the foresight process. بر پایه آرایه‌شناسی Henchey و سنت Hancock و Bezold؛ همراه مفید برای خوانش Framework Foresight هیوستون از مخروط.' }
+                            { type: 'مرجع تکمیلی', text: 'Voros, J. (2003، جستارهای به‌روزشده). The futures cone and the foresight process. بر پایه آرایه‌شناسی Henchey و سنت Hancock و Bezold؛ همراه مفید برای خوانش Framework Foresight هیوستون از مخروط.' },
+                            { type: 'یادداشت FRM', text: 'Glenn, J. C., & Gordon, T. J. (Eds.). Futures Research Methodology 3.0. فصل‌های مرتبط: ۲ Environmental Scanning، ۱۰ Wild Cards، ۱۹ تا ۲۱ Scenarios. FRM مخروط محتمل‌بودن را به‌نام فهرست نمی‌کند؛ هاینز و بی‌شاپ آن را در پل Forecasting به Visioning جای می‌دهند.' }
                         ],
                         assignment: {
                             title: 'رسم مخروط',
