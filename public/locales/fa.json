@@ -803,6 +803,10 @@
               {
                 "type": "مرجع تکمیلی",
                 "text": "Voros, J. (2003، جستارهای به‌روزشده). The futures cone and the foresight process. بر پایه آرایه‌شناسی Henchey و سنت Hancock و Bezold؛ همراه مفید برای خوانش Framework Foresight هیوستون از مخروط."
+              },
+              {
+                "type": "یادداشت FRM",
+                "text": "Glenn, J. C., & Gordon, T. J. (Eds.). Futures Research Methodology 3.0. فصل‌های مرتبط: ۲ Environmental Scanning، ۱۰ Wild Cards، ۱۹ تا ۲۱ Scenarios. FRM مخروط محتمل‌بودن را به‌نام فهرست نمی‌کند؛ هاینز و بی‌شاپ آن را در پل Forecasting به Visioning جای می‌دهند."
               }
             ],
             "assignment": {
@@ -2412,9 +2416,177 @@
         {
           "type": "مقاله",
           "text": "Choo, C. W., & Auster, E. (1993). Environmental scanning: Acquisition and use of information by managers. <em>Annual Review of Information Science and Technology</em>, 28, pp. 279 to 314."
+        },
+        {
+          "type": "FRM",
+          "text": "Gordon, T. J., & Glenn, J. C. Environmental Scanning. در Glenn, J. C., & Gordon, T. J. (Eds.), <em>Futures Research Methodology</em>, Version 3.0. The Millennium Project. فصل ۲."
         }
       ],
       "assignment": "یک سازمان واقعی انتخاب کن (محل کار، مورد thesis یا یک نهاد عمومی). در یک صفحه: رفتار رصد فعلی آن را روی چهار الگوی آگویلار نگاشت کن، ضعیف‌ترین یا گمشده‌ترین الگو را با چارچوب چو نام‌گذاری کن، و یک روتین مشخص conditioned viewing یا informal search پیشنهاد بده که پیش از چرخهٔ برنامه‌ریزی بعدی این شکاف را پر کند."
+    },
+    "weakSignals": {
+      "meta": {
+        "module": "۱۱",
+        "duration": "۹۰ دقیقه",
+        "level": "کارشناسی / کارشناسی ارشد آینده‌پژوهی",
+        "diagram": null,
+        "diagramAlt": ""
+      },
+      "prerequisites": "آشنایی مقدماتی با آینده‌پژوهی یا استراتژی. رصد محیطی (آگویلار/چو) یا STEEP/PESTLE مفید است.",
+      "assessment": "تمرین کلاسی سه فیلتر ۴۰٪ · memo آینده‌نشانه ۶۰٪.",
+      "founders": [
+        {
+          "id": "ansoff",
+          "name": "H. Igor Ansoff",
+          "role": "بنیان‌گذار مفهوم weak signals · مدیریت راهبردی",
+          "bio": "نویسندهٔ «Managing Strategic Surprise by Response to Weak Signals» (California Management Review, ۱۹۷۵) و بعدها Implanting Strategic Management، جایی که سیگنال قوی و ضعیف و سه فیلتر سازمانی روشن‌تر بیان می‌شود."
+        },
+        {
+          "id": "hiltunen",
+          "name": "Elina Hiltunen",
+          "role": "future sign · Aalto / Finland Futures Research Centre",
+          "bio": "آینده‌پژوه فنلاندی که در پژوهش دکتری کاربرد ناسازگار «weak signal» را تیز کرد و با تکیه بر مدل سه‌وجهی نشانهٔ پیرس، future sign (signal، issue، interpretation) را پیشنهاد داد."
+        }
+      ],
+      "objectives": [
+        "سیگنال ضعیف، سیگنال قوی، روند و wild card را با تعاریف آنسوف و هیلتونن متمایز کنی.",
+        "سه فیلتر آنسوف (نظارت، ذهنیت، قدرت) را روی یک شکست واقعی سازمانی اعمال کنی.",
+        "یک سرنخ نامزد را به سه‌گانهٔ future sign هیلتونن بشکنی: signal، issue، interpretation.",
+        "کار سیگنال ضعیف را درون فصل ۲ رصد و فصل ۱۰ wild cards در FRM، و درون Perceiving روهربک جای بدهی.",
+        "یک پاسخ تدریجی طراحی کنی که با بهبود دانش دربارهٔ سیگنال رشد کند."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۱۵ دقیقه",
+          "title": "غافلگیری راهبردی و ادعای ۱۹۷۵",
+          "desc": "آنسوف، بحران نفت، چرا برنامه‌ریزی مبتنی بر سیگنال قوی دیر می‌رسد."
+        },
+        {
+          "step": "۲",
+          "time": "۲۰ دقیقه",
+          "title": "سطوح دانش و سه فیلتر",
+          "desc": "از آگاهی مبهم تا اثر قابل‌محاسبه · نظارت، ذهنیت، قدرت."
+        },
+        {
+          "step": "۳",
+          "time": "۲۵ دقیقه",
+          "title": "کارگاه future sign",
+          "desc": "گروه‌ها یک سرنخ را به signal / issue / interpretation می‌شکنند؛ نویز رسانه‌ای را از اهمیت آینده جدا می‌کنند."
+        },
+        {
+          "step": "۴",
+          "time": "۲۰ دقیقه",
+          "title": "مرز wild card",
+          "desc": "Hiltunen ۲۰۰۶: کی سیگنال ضعیف پیش‌درآمد تغییر تدریجی است و کی پیش‌درآمد wild card ناگهانی."
+        },
+        {
+          "step": "۵",
+          "time": "۱۰ دقیقه",
+          "title": "پیوند FRM و FITness",
+          "desc": "فصل ۲ رصد، فصل ۱۰ wild cards، تحویل Perceiving به Prospecting."
+        }
+      ],
+      "readings": [
+        {
+          "type": "مقاله",
+          "text": "Ansoff, H. I. (1975). Managing strategic surprise by response to weak signals. <em>California Management Review</em>, 18(2), pp. 21 to 33."
+        },
+        {
+          "type": "کتاب",
+          "text": "Ansoff, H. I. (1984). <em>Implanting Strategic Management</em>. Prentice Hall. Weak vs strong signals؛ سه فیلتر."
+        },
+        {
+          "type": "مقاله",
+          "text": "Hiltunen, E. (2008). The future sign and its three dimensions. <em>Futures</em>, 40(3), pp. 247 to 259."
+        },
+        {
+          "type": "مقاله",
+          "text": "Hiltunen, E. (2006). Was it a wild card or just our blindness to gradual change? <em>Journal of Futures Studies</em>, 11(2), pp. 79 to 90."
+        },
+        {
+          "type": "FRM",
+          "text": "Glenn, J. C., & Gordon, T. J. (Eds.). <em>Futures Research Methodology</em> 3.0. فصل‌های ۲ (Environmental Scanning) و ۱۰ (Wild Cards)."
+        }
+      ],
+      "assignment": "یک سرنخ معاصر انتخاب کن (عرضهٔ محصول، پیش‌نویس سیاست، آمار پرت). در یک صفحه: (۱) آن را به‌عنوان سیگنال ضعیف، روند، یا نامزد wild card طبقه‌بندی کن؛ (۲) سه فیلتر آنسوف را برای یک سازمان نام‌برده اجرا کن؛ (۳) سه‌گانهٔ هیلتونن را بنویس؛ (۴) یک گام بعدی تدریجی پیشنهاد بده اگر سیگنال قوی‌تر شد."
+    },
+    "futuresLiteracy": {
+      "meta": {
+        "module": "۱۲",
+        "duration": "۹۰ دقیقه",
+        "level": "کارشناسی / کارشناسی ارشد آینده‌پژوهی",
+        "diagram": null,
+        "diagramAlt": ""
+      },
+      "prerequisites": "آشنایی مقدماتی با آینده‌پژوهی. آشنایی با سناریو یا شش ستون مفید است اما لازم نیست.",
+      "assessment": "آشکارسازی مفروضات پیش‌نگرانه در کلاس ۴۰٪ · memo طراحی FLL کوتاه ۶۰٪.",
+      "founders": [
+        {
+          "id": "miller",
+          "name": "Riel Miller",
+          "role": "Futures Literacy · آینده‌نگری یونسکو",
+          "bio": "رئیس پیشین آینده‌نگری یونسکو. سواد آینده را در Futures (۲۰۰۷) تعریف کرد و Transforming the Future (۲۰۱۸) را ویرایش نمود که چارچوب سواد آینده و عمل آزمایشگاهی را گرد می‌آورد."
+        }
+      ],
+      "objectives": [
+        "سواد آینده را به‌عنوان قابلیت use-the-future تعریف کنی، متمایز از تولید یک پیش‌بینی تک‌خطی.",
+        "مفروضات پیش‌نگرانه را توضیح بدهی و بگویی چرا باید پیش از انتخاب روش آشکار شوند.",
+        "حرکت‌های محتمل، مطلوب و بازقاب‌شدهٔ یک Futures Literacy Laboratory را طی کنی.",
+        "FL را با فصول جعبه ابزار FRM و معماری شش ستون هاینز و بی‌شاپ مقایسه کنی.",
+        "یک mini-FLL شصت تا نود دقیقه‌ای برای موضوع واقعی یک اجتماع طراحی کنی."
+      ],
+      "outline": [
+        {
+          "step": "۱",
+          "time": "۱۵ دقیقه",
+          "title": "قابلیت، نه پیش‌بینی",
+          "desc": "تعریف یونسکو؛ ریشه‌های سناریوی ترکیبی میلر ۲۰۰۷."
+        },
+        {
+          "step": "۲",
+          "time": "۲۰ دقیقه",
+          "title": "مفروضات پیش‌نگرانه",
+          "desc": "AA را صریح کن: چه نوع آینده‌ای تصور می‌شود و چرا."
+        },
+        {
+          "step": "۳",
+          "time": "۳۰ دقیقه",
+          "title": "mini-lab: محتمل، مطلوب، بازقاب",
+          "desc": "گروه‌ها آیندهٔ مورد انتظار و آرزو‌شده را می‌نویسند، سپس آیندهٔ بازقاب‌شده‌ای می‌سازند که هر دو را می‌شکند."
+        },
+        {
+          "step": "۴",
+          "time": "۱۵ دقیقه",
+          "title": "بازگشت به حال",
+          "desc": "چه چیزی تازه دربارهٔ سیاست‌ها یا برنامه‌های امروز دیدنی شد؟"
+        },
+        {
+          "step": "۵",
+          "time": "۱۰ دقیقه",
+          "title": "پیوند FRM و کاتالوگ",
+          "desc": "کی باید پیش از رصد، مخروط یا سناریو یک FLL اجرا کرد."
+        }
+      ],
+      "readings": [
+        {
+          "type": "مقاله",
+          "text": "Miller, R. (2007). Futures literacy: A hybrid strategic scenario method. <em>Futures</em>, 39(4), pp. 341 to 362."
+        },
+        {
+          "type": "کتاب",
+          "text": "Miller, R. (Ed.). (2018). <em>Transforming the Future: Anticipation in the 21st Century</em>. Routledge / UNESCO. دسترسی آزاد."
+        },
+        {
+          "type": "وب",
+          "text": "UNESCO. Futures Literacy & Foresight. https://www.unesco.org/en/futures-literacy"
+        },
+        {
+          "type": "یادداشت FRM",
+          "text": "Glenn, J. C., & Gordon, T. J. (Eds.). <em>Futures Research Methodology</em> 3.0 روش‌ها را فهرست می‌کند؛ Futures Literacy لایهٔ قابلیتی بیرون از آن فهرست فصلی است، مکمل سناریو، تصویرسازی و روش‌های مشارکتی."
+        }
+      ],
+      "assignment": "یک mini-FLL یک‌صفحه‌ای طراحی کن: موضوع، گروه مشارکت‌کننده، پرسش‌های Reveal / Reframe / Rethink، و یک جمله دربارهٔ اینکه آزمایشگاه کدام روش foresight بعدی (رصد، مخروط، یا سناریو) را تغییر می‌دهد."
     }
   },
   "type2Page": {

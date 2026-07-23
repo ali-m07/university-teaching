@@ -377,9 +377,97 @@ registerLocale('en', {
                 { type: 'Article', text: 'Daft, R. L., & Weick, K. E. (1984). Toward a model of organizations as interpretation systems. <em>Academy of Management Review</em>, 9(2), pp. 284 to 295.' },
                 { type: 'Monograph', text: 'Choo, C. W. (1998). <em>Information Management for the Intelligent Organization: The Art of Scanning the Environment</em> (2nd ed.). Medford, NJ: Information Today, for ASIS&T.' },
                 { type: 'Article', text: 'Choo, C. W. (2001). Environmental scanning as information seeking and organizational learning. <em>Information Research</em>, 7(1), paper 112.' },
-                { type: 'Article', text: 'Choo, C. W., & Auster, E. (1993). Environmental scanning: Acquisition and use of information by managers. <em>Annual Review of Information Science and Technology</em>, 28, pp. 279 to 314.' }
+                { type: 'Article', text: 'Choo, C. W., & Auster, E. (1993). Environmental scanning: Acquisition and use of information by managers. <em>Annual Review of Information Science and Technology</em>, 28, pp. 279 to 314.' },
+                { type: 'FRM', text: 'Gordon, T. J., & Glenn, J. C. Environmental Scanning. In Glenn, J. C., & Gordon, T. J. (Eds.), <em>Futures Research Methodology</em>, Version 3.0. The Millennium Project. Chapter 2.' }
             ],
             assignment: 'Choose a real organization (workplace, thesis case, or public body). In one page: map its current scanning behavior onto Aguilar\'s four modes, name the weakest or missing mode in Choo\'s terms, and propose one concrete conditioned-viewing or informal-search routine that closes the gap before the next planning cycle.'
+        },
+        weakSignals: {
+            meta: {
+                module: '11',
+                duration: '90 min',
+                level: 'Undergraduate / MA foresight',
+                diagram: null,
+                diagramAlt: ''
+            },
+            prerequisites: 'Intro foresight or strategy. Environmental scanning (Aguilar/Choo) or STEEP/PESTLE helps.',
+            assessment: 'In-class three-filters diagnosis 40% · future-sign memo 60%.',
+            founders: [
+                {
+                    id: 'ansoff',
+                    name: 'H. Igor Ansoff',
+                    role: 'Originator of weak signals · strategic management',
+                    bio: 'Author of "Managing Strategic Surprise by Response to Weak Signals" (California Management Review, 1975) and later of Implanting Strategic Management, where strong and weak signals and the three organizational filters are stated most clearly.'
+                },
+                {
+                    id: 'hiltunen',
+                    name: 'Elina Hiltunen',
+                    role: 'Future sign · Aalto / Finland Futures Research Centre',
+                    bio: 'Finnish futurist whose doctoral work sharpened inconsistent uses of "weak signal" and proposed the future sign (signal, issue, interpretation), drawing on Peirce\'s triadic model of the sign.'
+                }
+            ],
+            objectives: [
+                'Distinguish weak signal, strong signal, trend, and wild card with Ansoff and Hiltunen definitions.',
+                'Apply Ansoff\'s three filters (surveillance, mentality, power) to a real organizational failure to act.',
+                'Split a candidate clue into Hiltunen\'s future-sign triad: signal, issue, interpretation.',
+                'Place weak-signal work inside FRM Ch.2 scanning and Ch.10 wild cards, and inside Rohrbeck Perceiving.',
+                'Design a graduated response that grows as knowledge about a signal improves.'
+            ],
+            outline: [
+                { step: '1', time: '15 min', title: 'Strategic surprise and the 1975 claim', desc: 'Ansoff, oil crisis, why strong-signal planning arrives too late.' },
+                { step: '2', time: '20 min', title: 'Levels of knowledge and three filters', desc: 'From vague awareness to calculable impact · surveillance, mentality, power.' },
+                { step: '3', time: '25 min', title: 'Future sign workshop', desc: 'Groups take one clue and fill signal / issue / interpretation; separate media noise from future significance.' },
+                { step: '4', time: '20 min', title: 'Wild card boundary', desc: 'Hiltunen 2006: when a weak signal precedes gradual change vs a sudden wild card.' },
+                { step: '5', time: '10 min', title: 'FRM and FITness links', desc: 'Ch.2 scanning, Ch.10 wild cards, Perceiving to Prospecting handoff.' }
+            ],
+            readings: [
+                { type: 'Article', text: 'Ansoff, H. I. (1975). Managing strategic surprise by response to weak signals. <em>California Management Review</em>, 18(2), pp. 21 to 33.' },
+                { type: 'Book', text: 'Ansoff, H. I. (1984). <em>Implanting Strategic Management</em>. Prentice Hall. Weak vs strong signals; three filters.' },
+                { type: 'Article', text: 'Hiltunen, E. (2008). The future sign and its three dimensions. <em>Futures</em>, 40(3), pp. 247 to 259.' },
+                { type: 'Article', text: 'Hiltunen, E. (2006). Was it a wild card or just our blindness to gradual change? <em>Journal of Futures Studies</em>, 11(2), pp. 79 to 90.' },
+                { type: 'FRM', text: 'Glenn, J. C., & Gordon, T. J. (Eds.). <em>Futures Research Methodology</em> 3.0. Chapters 2 (Environmental Scanning) and 10 (Wild Cards).' }
+            ],
+            assignment: 'Pick one contemporary clue (product launch, policy draft, odd statistic). In one page: (1) classify it as weak signal, trend, or wild card candidate; (2) run Ansoff\'s three filters for a named organization; (3) write Hiltunen\'s triad; (4) propose one graduated next step if the signal strengthens.'
+        },
+        futuresLiteracy: {
+            meta: {
+                module: '12',
+                duration: '90 min',
+                level: 'Undergraduate / MA foresight',
+                diagram: null,
+                diagramAlt: ''
+            },
+            prerequisites: 'Intro foresight. Familiarity with scenarios or Six Pillars helps but is not required.',
+            assessment: 'In-class anticipatory-assumption reveal 40% · short FLL design memo 60%.',
+            founders: [
+                {
+                    id: 'miller',
+                    name: 'Riel Miller',
+                    role: 'Futures Literacy · UNESCO foresight',
+                    bio: 'Former Head of Foresight at UNESCO. Defined futures literacy in Futures (2007) and edited Transforming the Future (2018), gathering the Futures Literacy Framework and laboratory practice.'
+                }
+            ],
+            objectives: [
+                'Define Futures Literacy as a capability to use-the-future, distinct from producing a single forecast.',
+                'Explain anticipatory assumptions and why they must become visible before method choice.',
+                'Walk the probable, preferable, and reframed moves of a Futures Literacy Laboratory.',
+                'Contrast FL with FRM toolbox chapters and with Hines and Bishop Six Pillars architecture.',
+                'Design a 60 to 90 minute mini-FLL for a real community topic.'
+            ],
+            outline: [
+                { step: '1', time: '15 min', title: 'Capability, not prediction', desc: 'UNESCO definition; Miller 2007 hybrid strategic scenario roots.' },
+                { step: '2', time: '20 min', title: 'Anticipatory assumptions', desc: 'Make AA explicit: what kind of future is being imagined and why.' },
+                { step: '3', time: '30 min', title: 'Mini-lab: probable, preferable, reframed', desc: 'Groups write expected and hoped-for futures, then invent a reframed future that breaks both.' },
+                { step: '4', time: '15 min', title: 'Return to the present', desc: 'What became newly visible about today\'s policies or plans?' },
+                { step: '5', time: '10 min', title: 'FRM and catalog links', desc: 'When to run an FLL before scanning, cone, or scenarios.' }
+            ],
+            readings: [
+                { type: 'Article', text: 'Miller, R. (2007). Futures literacy: A hybrid strategic scenario method. <em>Futures</em>, 39(4), pp. 341 to 362.' },
+                { type: 'Book', text: 'Miller, R. (Ed.). (2018). <em>Transforming the Future: Anticipation in the 21st Century</em>. Routledge / UNESCO. Open access.' },
+                { type: 'Web', text: 'UNESCO. Futures Literacy & Foresight. https://www.unesco.org/en/futures-literacy' },
+                { type: 'FRM note', text: 'Glenn, J. C., & Gordon, T. J. (Eds.). <em>Futures Research Methodology</em> 3.0 catalogs methods; Futures Literacy is a capability layer outside that chapter list, complementary to scenarios, visioning, and participatory methods.' }
+            ],
+            assignment: 'Design a one-page mini-FLL: topic, participant group, Reveal / Reframe / Rethink prompts, and one sentence on how the lab would change which foresight method you choose next (scanning, cone, or scenarios).'
         }
     }
 });
