@@ -77,7 +77,7 @@ registerLocale('fa', {
                         ],
                         readings: [
                             { type: 'گزارش', text: 'Popper, R. (2008). <em>Foresight Diamond</em>. EU FORLEARN / European Commission JRC.' },
-                            { type: 'مقاله', text: 'Popper, R. (2008). How are آینده‌نگاری methods selected? <em>آینده‌نگاری</em> journal.' }
+                            { type: 'مقاله', text: 'Popper, R. (2008). How are foresight methods selected? <em>Foresight</em> journal.' }
                         ],
                         assignment: {
                             title: 'چهار رأس یک کارگاه واقعی',
