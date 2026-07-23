@@ -6,49 +6,9 @@
     <title>ارائه‌های درسی | FORESIGHT HUB</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css?v=20250723a">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=20260723i">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        .pres-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 16px;
-            margin: 28px 0 48px;
-        }
-        .pres-card {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 22px;
-            text-decoration: none;
-            color: inherit;
-            border-top: 3px solid var(--color-f);
-            transition: border-color .2s ease, transform .2s ease;
-        }
-        .pres-card:hover { transform: translateY(-2px); border-color: var(--color-cla); }
-        .pres-card .num {
-            font-family: var(--font-en);
-            font-weight: 800;
-            color: var(--color-f);
-            letter-spacing: .04em;
-        }
-        .pres-card h3 { font-size: 1.05rem; color: #fff; margin: 0; }
-        .pres-card p { font-size: .85rem; color: var(--text-secondary); line-height: 1.55; margin: 0; }
-        .pres-card .go {
-            font-size: .78rem;
-            font-weight: 600;
-            color: var(--color-f);
-            margin-top: auto;
-            text-decoration: underline;
-            text-decoration-color: transparent;
-            text-underline-offset: 4px;
-            transition: text-decoration-color .2s ease;
-        }
-        .pres-card:hover .go { text-decoration-color: currentColor; }
-        .pres-group-title { margin: 40px 0 12px; color: #fff; font-size: 1.35rem; }
-        .pres-group-sub { color: var(--text-secondary); margin-bottom: 8px; }
-    </style>
 </head>
 <body class="sfh-platform">
     <canvas id="particles-canvas"></canvas>
@@ -59,238 +19,289 @@
         </div>
         <nav class="nav-links"></nav>
         <div class="header-actions">
-            <a href="../methods/fitness.html" class="btn-primary-sm">صفحه FITness</a>
+            <a href="../methods/" class="btn-ghost-sm" data-i18n="nav.methods">متدها</a>
         </div>
     </header>
 
-    <section class="container page-hero" style="padding-top:120px;">
-        <span class="section-tag">جزوه و ارائه · چند جلسه جدا</span>
+    <section class="container page-hero">
+        <span class="section-tag">جزوه و ارائه</span>
         <h1>ارائه‌های درسی</h1>
-        <p class="page-hero-sub">هر جلسه یک ارائه مستقل است. روی کارت کلیک کنید تا همان ماژول باز شود (تمام‌صفحه با کلید F).</p>
+        <p class="page-hero-sub">هر جلسه یک ارائه مستقل است. روی ردیف کلیک کنید تا همان ماژول باز شود؛ تمام‌صفحه با کلید F.</p>
     </section>
 
     <section class="container page-content">
-        <h2 class="pres-group-title">Future FITness · هفت ارائه جدا</h2>
-        <p class="pres-group-sub">بر پایه Rohrbeck (2010) و مطالعات طولی Corporate Foresight</p>
-        <div class="pres-grid">
-            <a class="pres-card glass-card" href="../methods/fitness.html#m1">
-                <span class="num">M1</span>
-                <h3>مبانی · آمادگی در برابر FITness</h3>
-                <p>شکست آینده‌نگاری گزارش‌محور، Zoom/Nokia/Netflix، نقشه ۱۴ هفته</p>
-                <span class="go">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/fitness.html#m2">
-                <span class="num">M2</span>
-                <h3>پنج بعد بلوغ و رادار</h3>
-                <p>Information تا Culture، سطوح بلوغ، معیار Schwarz</p>
-                <span class="go">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/fitness.html#m3">
-                <span class="num">M3</span>
-                <h3>درک · نشانه ضعیف و رادار فناوری</h3>
-                <p>Scanning، حلقه‌های Scan/Assess/Trial/Adopt، Deutsche Telekom</p>
-                <span class="go">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/fitness.html#m4">
-                <span class="num">M4</span>
-                <h3>کاوش · نقش‌ها و دروازه سناریو</h3>
-                <p>Initiator / Strategist / Opponent، افق‌های نوآوری، میان‌ترم</p>
-                <span class="go">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/fitness.html#m5">
-                <span class="num">M5</span>
-                <h3>آزمایش · پیلوت ۹۰ روزه</h3>
-                <p>Probing، یادداشت دروازه، Blockbuster در برابر Netflix</p>
-                <span class="go">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/fitness.html#m6">
-                <span class="num">M6</span>
-                <h3>کهن‌الگوها و تحول</h3>
-                <p>Vigilant / Neurotic / Vulnerable / In Danger</p>
-                <span class="go">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/fitness.html#m7">
-                <span class="num">M7</span>
-                <h3>تلفیق و پروژه نهایی</h3>
-                <p>CLA، چرخ آینده، IT2، ارائه پایانی</p>
-                <span class="go">باز کردن ارائه</span>
-            </a>
+        <div class="pres-group">
+            <h2 class="pres-group-title">Future FITness · هفت ارائه</h2>
+            <p class="pres-group-sub">بر پایه Rohrbeck (2010) و مطالعات طولی Corporate Foresight</p>
+            <div class="pres-list">
+                <a class="pres-row" href="../methods/fitness.html#m1">
+                    <span class="pres-row-num">M1</span>
+                    <div class="pres-row-copy">
+                        <strong>مبانی · آمادگی در برابر FITness</strong>
+                        <span>شکست آینده‌نگاری گزارش‌محور، Zoom/Nokia/Netflix، نقشه ۱۴ هفته</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/fitness.html#m2">
+                    <span class="pres-row-num">M2</span>
+                    <div class="pres-row-copy">
+                        <strong>پنج بعد بلوغ و رادار</strong>
+                        <span>Information تا Culture، سطوح بلوغ، معیار Schwarz</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/fitness.html#m3">
+                    <span class="pres-row-num">M3</span>
+                    <div class="pres-row-copy">
+                        <strong>درک · نشانه ضعیف و رادار فناوری</strong>
+                        <span>Scanning، حلقه‌های Scan/Assess/Trial/Adopt، Deutsche Telekom</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/fitness.html#m4">
+                    <span class="pres-row-num">M4</span>
+                    <div class="pres-row-copy">
+                        <strong>کاوش · نقش‌ها و دروازه سناریو</strong>
+                        <span>Initiator / Strategist / Opponent، افق‌های نوآوری، میان‌ترم</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/fitness.html#m5">
+                    <span class="pres-row-num">M5</span>
+                    <div class="pres-row-copy">
+                        <strong>آزمایش · پیلوت ۹۰ روزه</strong>
+                        <span>Probing، یادداشت دروازه، Blockbuster در برابر Netflix</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/fitness.html#m6">
+                    <span class="pres-row-num">M6</span>
+                    <div class="pres-row-copy">
+                        <strong>کهن‌الگوها و تحول</strong>
+                        <span>Vigilant / Neurotic / Vulnerable / In Danger</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/fitness.html#m7">
+                    <span class="pres-row-num">M7</span>
+                    <div class="pres-row-copy">
+                        <strong>تلفیق و پروژه نهایی</strong>
+                        <span>CLA، چرخ آینده، IT2، ارائه پایانی</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2 class="pres-group-title">CLA · سه ارائه لایه‌ای</h2>
-        <p class="pres-group-sub">بر پایه Inayatullah (1998, 2004) با نمونه‌های فناوری · اسلاید به اسلاید</p>
-        <div class="pres-grid">
-            <a class="pres-card glass-card" href="../methods/cla.html#m1" style="border-top-color: var(--color-cla);">
-                <span class="num" style="color: var(--color-cla);">M1</span>
-                <h3>مبانی · از خبر تا اسطوره</h3>
-                <p>چهار لایه، فوکو، توقف نکردن در لیتانی</p>
-                <span class="go" style="color: var(--color-cla);">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/cla.html#m2" style="border-top-color: var(--color-cla);">
-                <span class="num" style="color: var(--color-cla);">M2</span>
-                <h3>کیس فناوری · GenAI و پلتفرم</h3>
-                <p>تمرین چهار لایه روی مسائل فناوری</p>
-                <span class="go" style="color: var(--color-cla);">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/cla.html#m3" style="border-top-color: var(--color-cla);">
-                <span class="num" style="color: var(--color-cla);">M3</span>
-                <h3>کارگاه استعاره</h3>
-                <p>استعاره بدیل و پل به سناریو و Wheel</p>
-                <span class="go" style="color: var(--color-cla);">باز کردن ارائه</span>
-            </a>
+        <div class="pres-group">
+            <h2 class="pres-group-title">CLA · سه ارائه لایه‌ای</h2>
+            <p class="pres-group-sub">بر پایه Inayatullah (1998, 2004) با نمونه‌های فناوری</p>
+            <div class="pres-list">
+                <a class="pres-row" href="../methods/cla.html#m1">
+                    <span class="pres-row-num">M1</span>
+                    <div class="pres-row-copy">
+                        <strong>مبانی · از خبر تا اسطوره</strong>
+                        <span>چهار لایه، فوکو، توقف نکردن در لیتانی</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/cla.html#m2">
+                    <span class="pres-row-num">M2</span>
+                    <div class="pres-row-copy">
+                        <strong>کیس فناوری · GenAI و پلتفرم</strong>
+                        <span>تمرین چهار لایه روی مسائل فناوری</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/cla.html#m3">
+                    <span class="pres-row-num">M3</span>
+                    <div class="pres-row-copy">
+                        <strong>کارگاه استعاره</strong>
+                        <span>استعاره بدیل و پل به سناریو و Wheel</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2 class="pres-group-title">Futures Wheel · سه ارائه</h2>
-        <p class="pres-group-sub">بر پایه Jerome C. Glenn (1972) و FRM 3.0</p>
-        <div class="pres-grid">
-            <a class="pres-card glass-card" href="../methods/futures-wheel.html#m1" style="border-top-color: var(--color-wheel-red);">
-                <span class="num" style="color: var(--color-wheel-red);">M1</span>
-                <h3>منطق پیامدهای زنجیره‌ای</h3>
-                <p>مراتب ۱ تا ۳، تفاوت با mind map، انتخاب driver</p>
-                <span class="go" style="color: var(--color-wheel-red);">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/futures-wheel.html#m2" style="border-top-color: var(--color-wheel-red);">
-                <span class="num" style="color: var(--color-wheel-red);">M2</span>
-                <h3>۱۱ گام و STEEP</h3>
-                <p>فرآیند، برچسب‌گذاری، کمی‌سازی سبک</p>
-                <span class="go" style="color: var(--color-wheel-red);">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/futures-wheel.html#m3" style="border-top-color: var(--color-wheel-red);">
-                <span class="num" style="color: var(--color-wheel-red);">M3</span>
-                <h3>کارگاه cascade</h3>
-                <p>ابزار تعاملی، فرصت venture، پل به سناریو</p>
-                <span class="go" style="color: var(--color-wheel-red);">باز کردن ارائه</span>
-            </a>
+        <div class="pres-group">
+            <h2 class="pres-group-title">Futures Wheel · سه ارائه</h2>
+            <p class="pres-group-sub">بر پایه Jerome C. Glenn (1972) و FRM 3.0</p>
+            <div class="pres-list">
+                <a class="pres-row" href="../methods/futures-wheel.html#m1">
+                    <span class="pres-row-num">M1</span>
+                    <div class="pres-row-copy">
+                        <strong>منطق پیامدهای زنجیره‌ای</strong>
+                        <span>مراتب ۱ تا ۳، تفاوت با mind map، انتخاب driver</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/futures-wheel.html#m2">
+                    <span class="pres-row-num">M2</span>
+                    <div class="pres-row-copy">
+                        <strong>۱۱ گام و STEEP</strong>
+                        <span>فرآیند، برچسب‌گذاری، کمی‌سازی سبک</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/futures-wheel.html#m3">
+                    <span class="pres-row-num">M3</span>
+                    <div class="pres-row-copy">
+                        <strong>کارگاه cascade</strong>
+                        <span>ابزار تعاملی، فرصت venture، پل به سناریو</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2 class="pres-group-title">Scenario Planning · چهار ارائه</h2>
-        <p class="pres-group-sub">Shell / Schwartz / van der Heijden · تصمیم زیر عدم‌قطعیت · گونه‌شناسی گوده و بل</p>
-        <div class="pres-grid">
-            <a class="pres-card glass-card" href="../methods/scenarios.html#m1" style="border-top-color: #7c4dff;">
-                <span class="num" style="color: #7c4dff;">M1</span>
-                <h3>Shell و آمادگی ذهنی</h3>
-                <p>Wack، سناریو در برابر پیش‌بینی، تصمیم محوری</p>
-                <span class="go" style="color: #7c4dff;">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/scenarios.html#m2" style="border-top-color: #7c4dff;">
-                <span class="num" style="color: #7c4dff;">M2</span>
-                <h3>ماتریس ۲×۲</h3>
-                <p>عدم‌قطعیت حیاتی، چهار منطق، نام‌گذاری narrative</p>
-                <span class="go" style="color: #7c4dff;">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/scenarios.html#m3" style="border-top-color: #7c4dff;">
-                <span class="num" style="color: #7c4dff;">M3</span>
-                <h3>Indicators و استراتژی</h3>
-                <p>نشانه‌های زودهنگام، no-regret، پیوند به probing</p>
-                <span class="go" style="color: #7c4dff;">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/scenarios.html#m4" style="border-top-color: #7c4dff;">
-                <span class="num" style="color: #7c4dff;">M4</span>
-                <h3>گونه‌شناسی سناریو</h3>
-                <p>گوده اکتشافی/هنجاری، مشارکت بزولد، سه‌گانه وندل بل</p>
-                <span class="go" style="color: #7c4dff;">باز کردن ارائه</span>
-            </a>
+        <div class="pres-group">
+            <h2 class="pres-group-title">Scenario Planning · چهار ارائه</h2>
+            <p class="pres-group-sub">Shell / Schwartz / van der Heijden · گونه‌شناسی گوده و بل</p>
+            <div class="pres-list">
+                <a class="pres-row" href="../methods/scenarios.html#m1">
+                    <span class="pres-row-num">M1</span>
+                    <div class="pres-row-copy">
+                        <strong>Shell و آمادگی ذهنی</strong>
+                        <span>Wack، سناریو در برابر پیش‌بینی، تصمیم محوری</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/scenarios.html#m2">
+                    <span class="pres-row-num">M2</span>
+                    <div class="pres-row-copy">
+                        <strong>ماتریس ۲×۲</strong>
+                        <span>عدم‌قطعیت حیاتی، چهار منطق، نام‌گذاری narrative</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/scenarios.html#m3">
+                    <span class="pres-row-num">M3</span>
+                    <div class="pres-row-copy">
+                        <strong>Indicators و استراتژی</strong>
+                        <span>نشانه‌های زودهنگام، no-regret، پیوند به probing</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/scenarios.html#m4">
+                    <span class="pres-row-num">M4</span>
+                    <div class="pres-row-copy">
+                        <strong>گونه‌شناسی سناریو</strong>
+                        <span>گوده اکتشافی/هنجاری، مشارکت بزولد، سه‌گانه وندل بل</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2 class="pres-group-title">شش ستون هاینز و بی‌شاپ · سه ارائه</h2>
-        <p class="pres-group-sub">Thinking About the Future · با پل به مکتب فرانسوی prospective میشل گوده</p>
-        <div class="pres-grid">
-            <a class="pres-card glass-card" href="../methods/strategic-foresight.html#m1" style="border-top-color: var(--color-f);">
-                <span class="num" style="color: var(--color-f);">M1</span>
-                <h3>شش ستون به‌عنوان معماری</h3>
-                <p>از فهرست روش به مسیر، شش سوال مدیریتی، زنجیره شکننده</p>
-                <span class="go" style="color: var(--color-f);">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/strategic-foresight.html#m2" style="border-top-color: var(--color-f);">
-                <span class="num" style="color: var(--color-f);">M2</span>
-                <h3>مخروط محتمل‌بودن</h3>
-                <p>از خط پیش‌بینی به مخروط، wild card، پل به تصویرسازی</p>
-                <span class="go" style="color: var(--color-f);">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/strategic-foresight.html#m3" style="border-top-color: var(--color-f);">
-                <span class="num" style="color: var(--color-f);">M3</span>
-                <h3>گوده و مکتب فرانسوی</h3>
-                <p>MICMAC، MACTOR، تحلیل مورفولوژیک، دو مکتب آینده‌نگاری</p>
-                <span class="go" style="color: var(--color-f);">باز کردن ارائه</span>
-            </a>
+        <div class="pres-group">
+            <h2 class="pres-group-title">شش ستون هاینز و بی‌شاپ · سه ارائه</h2>
+            <p class="pres-group-sub">Thinking About the Future · با پل به مکتب فرانسوی prospective میشل گوده</p>
+            <div class="pres-list">
+                <a class="pres-row" href="../methods/strategic-foresight.html#m1">
+                    <span class="pres-row-num">M1</span>
+                    <div class="pres-row-copy">
+                        <strong>شش ستون به‌عنوان معماری</strong>
+                        <span>از فهرست روش به مسیر، شش سوال مدیریتی، زنجیره شکننده</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/strategic-foresight.html#m2">
+                    <span class="pres-row-num">M2</span>
+                    <div class="pres-row-copy">
+                        <strong>مخروط محتمل‌بودن</strong>
+                        <span>از خط پیش‌بینی به مخروط، wild card، پل به تصویرسازی</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/strategic-foresight.html#m3">
+                    <span class="pres-row-num">M3</span>
+                    <div class="pres-row-copy">
+                        <strong>گوده و مکتب فرانسوی</strong>
+                        <span>MICMAC، MACTOR، تحلیل مورفولوژیک، دو مکتب آینده‌نگاری</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2 class="pres-group-title">الماس پوپر · دو ارائه</h2>
-        <p class="pres-group-sub">Rafael Popper · EU FORLEARN · با پل به معیار پنج‌گانه کیفیت گوده</p>
-        <div class="pres-grid">
-            <a class="pres-card glass-card" href="../methods/popper-diamond.html#m1" style="border-top-color: #e040fb;">
-                <span class="num" style="color: #e040fb;">M1</span>
-                <h3>چهار رأس در عمل</h3>
-                <p>خلاقیت، نوآوری، تخصص، تعامل با مثال کارگاهی</p>
-                <span class="go" style="color: #e040fb;">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/popper-diamond.html#m2" style="border-top-color: #e040fb;">
-                <span class="num" style="color: #e040fb;">M2</span>
-                <h3>Audit و معیار گوده</h3>
-                <p>فرآیند audit، معیار پنج‌گانه گوده، memo مدیریتی</p>
-                <span class="go" style="color: #e040fb;">باز کردن ارائه</span>
-            </a>
+        <div class="pres-group">
+            <h2 class="pres-group-title">الماس پوپر · دو ارائه</h2>
+            <p class="pres-group-sub">Rafael Popper · EU FORLEARN · با پل به معیار پنج‌گانه کیفیت گوده</p>
+            <div class="pres-list">
+                <a class="pres-row" href="../methods/popper-diamond.html#m1">
+                    <span class="pres-row-num">M1</span>
+                    <div class="pres-row-copy">
+                        <strong>چهار رأس در عمل</strong>
+                        <span>خلاقیت، نوآوری، تخصص، تعامل با مثال کارگاهی</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/popper-diamond.html#m2">
+                    <span class="pres-row-num">M2</span>
+                    <div class="pres-row-copy">
+                        <strong>Audit و معیار گوده</strong>
+                        <span>فرآیند audit، معیار پنج‌گانه گوده، memo مدیریتی</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2 class="pres-group-title">Backcasting · سه ارائه</h2>
-        <p class="pres-group-sub">Robinson و Dreborg · از آینده مطلوب به امروز</p>
-        <div class="pres-grid">
-            <a class="pres-card glass-card" href="../methods/backcasting.html#m1" style="border-top-color: var(--color-backcast);">
-                <span class="num" style="color: var(--color-backcast);">M1</span>
-                <h3>Forecast در برابر Backcast</h3>
-                <p>دو پارادایم، هدف هنجاری، نمونه حاکمیت AI</p>
-                <span class="go" style="color: var(--color-backcast);">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/backcasting.html#m2" style="border-top-color: var(--color-backcast);">
-                <span class="num" style="color: var(--color-backcast);">M2</span>
-                <h3>Vision و مسیر معکوس</h3>
-                <p>چهار حرکت، milestone، شبیه‌ساز صفحه</p>
-                <span class="go" style="color: var(--color-backcast);">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/backcasting.html#m3" style="border-top-color: var(--color-backcast);">
-                <span class="num" style="color: var(--color-backcast);">M3</span>
-                <h3>کیس سوئد و سیاست فوری</h3>
-                <p>کربن‌صفر ۲۰۴۵، موانع قدرت، سه اقدام ۹۰ روزه</p>
-                <span class="go" style="color: var(--color-backcast);">باز کردن ارائه</span>
-            </a>
+        <div class="pres-group">
+            <h2 class="pres-group-title">Backcasting · سه ارائه</h2>
+            <p class="pres-group-sub">Robinson و Dreborg · از آینده مطلوب به امروز</p>
+            <div class="pres-list">
+                <a class="pres-row" href="../methods/backcasting.html#m1">
+                    <span class="pres-row-num">M1</span>
+                    <div class="pres-row-copy">
+                        <strong>Forecast در برابر Backcast</strong>
+                        <span>دو پارادایم، هدف هنجاری، نمونه حاکمیت AI</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/backcasting.html#m2">
+                    <span class="pres-row-num">M2</span>
+                    <div class="pres-row-copy">
+                        <strong>Vision و مسیر معکوس</strong>
+                        <span>چهار حرکت، milestone، شبیه‌ساز صفحه</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/backcasting.html#m3">
+                    <span class="pres-row-num">M3</span>
+                    <div class="pres-row-copy">
+                        <strong>کیس سوئد و سیاست فوری</strong>
+                        <span>کربن‌صفر ۲۰۴۵، موانع قدرت، سه اقدام ۹۰ روزه</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2 class="pres-group-title">Type-2 Fuzzy · چهار ارائه</h2>
-        <p class="pres-group-sub">Zadeh · Mendel/Karnik · John · صداقت در گزارش عدم‌قطعیت</p>
-        <div class="pres-grid">
-            <a class="pres-card glass-card" href="../methods/type-2-fuzzy.html#m1" style="border-top-color: #7c4dff;">
-                <span class="num" style="color: #7c4dff;">M1</span>
-                <h3>Type-1 و متغیر زبانی</h3>
-                <p>میانگین جعلی دلفی، μ(x)، چرا Type-2 لازم است</p>
-                <span class="go" style="color: #7c4dff;">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/type-2-fuzzy.html#m2" style="border-top-color: #7c4dff;">
-                <span class="num" style="color: #7c4dff;">M2</span>
-                <h3>IT2 و FOU</h3>
-                <p>upper/lower MF، سه خبره، تفسیر spread</p>
-                <span class="go" style="color: #7c4dff;">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/type-2-fuzzy.html#m3" style="border-top-color: #7c4dff;">
-                <span class="num" style="color: #7c4dff;">M3</span>
-                <h3>Type-reduction و rule base</h3>
-                <p>KM مفهومی، Mamdani، epistemic در برابر aleatory</p>
-                <span class="go" style="color: #7c4dff;">باز کردن ارائه</span>
-            </a>
-            <a class="pres-card glass-card" href="../methods/type-2-fuzzy.html#m4" style="border-top-color: #7c4dff;">
-                <span class="num" style="color: #7c4dff;">M4</span>
-                <h3>کارگاه، memo و probing</h3>
-                <p>کارگاه صفحه، FITness، memo هیئت‌مدیره</p>
-                <span class="go" style="color: #7c4dff;">باز کردن ارائه</span>
-            </a>
+        <div class="pres-group">
+            <h2 class="pres-group-title">Type-2 Fuzzy · چهار ارائه</h2>
+            <p class="pres-group-sub">Zadeh · Mendel/Karnik · John · صداقت در گزارش عدم‌قطعیت</p>
+            <div class="pres-list">
+                <a class="pres-row" href="../methods/type-2-fuzzy.html#m1">
+                    <span class="pres-row-num">M1</span>
+                    <div class="pres-row-copy">
+                        <strong>Type-1 و متغیر زبانی</strong>
+                        <span>میانگین جعلی دلفی، μ(x)، چرا Type-2 لازم است</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/type-2-fuzzy.html#m2">
+                    <span class="pres-row-num">M2</span>
+                    <div class="pres-row-copy">
+                        <strong>IT2 و FOU</strong>
+                        <span>upper/lower MF، سه خبره، تفسیر spread</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/type-2-fuzzy.html#m3">
+                    <span class="pres-row-num">M3</span>
+                    <div class="pres-row-copy">
+                        <strong>Type-reduction و rule base</strong>
+                        <span>KM مفهومی، Mamdani، epistemic در برابر aleatory</span>
+                    </div>
+                </a>
+                <a class="pres-row" href="../methods/type-2-fuzzy.html#m4">
+                    <span class="pres-row-num">M4</span>
+                    <div class="pres-row-copy">
+                        <strong>کارگاه، memo و probing</strong>
+                        <span>کارگاه صفحه، FITness، memo هیئت‌مدیره</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <p style="text-align:center;margin:24px 0 60px;">
+        <p style="margin: 2rem 0 1rem;">
             <a href="../methods/" class="btn-ghost-sm"><i data-lucide="library"></i> بازگشت به کاتالوگ متدها</a>
         </p>
     </section>
 
     <footer class="main-footer">
-        <div class="footer-bottom"><p>FORESIGHT HUB · علی منصوری</p></div>
+        <div class="footer-container container" style="padding-bottom:20px;">
+            <div class="footer-info">
+                <div class="footer-logo"><span class="logo-icon"><i data-lucide="compass"></i></span><span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span></div>
+                <p data-i18n="footer.desc"></p>
+            </div>
+        </div>
+        <div class="footer-bottom"><p data-i18n="footer.copyright"></p></div>
     </footer>
 
     <script src="../js/core/paths.js"></script>

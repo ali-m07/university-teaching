@@ -194,28 +194,27 @@ function renderArticlesList() {
     list.innerHTML = articles.map(a => {
         const href = a.href ? (typeof sfhUrl === 'function' ? sfhUrl(a.href) : a.href) : '';
         const image = a.image ? (typeof sfhUrl === 'function' ? sfhUrl(a.image) : a.image) : '';
-        const summary = a.summary ? `<p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;margin-top:8px;">${esc(a.summary)}</p>` : '';
-        const author = a.author ? `<div class="article-card-author">${esc(a.author)}</div>` : '';
+        const summary = a.summary ? `<span>${esc(a.summary)}</span>` : '';
+        const meta = [a.date, a.tag, a.author].filter(Boolean).map(esc).join(' · ');
         const status = a.status === 'draft' ? (getLang() === 'fa' ? 'پیش نویس' : 'Draft') : '';
+        const thumb = image
+            ? `<div class="catalog-method-thumb"><img src="${image}" alt="" loading="lazy" referrerpolicy="no-referrer" decoding="async"></div>`
+            : `<div class="catalog-method-thumb catalog-method-thumb--icon"><i data-lucide="file-text"></i></div>`;
         const inner = `
-            ${image ? `<div class="article-list-media"><img src="${image}" alt="${esc(a.title)}" loading="lazy" referrerpolicy="no-referrer" decoding="async"></div>` : ''}
-            <div class="article-list-content">
-                <div class="article-list-meta">
-                    <span class="article-list-date">${esc(a.date)}</span>
-                    <span class="section-tag" style="padding:2px 8px;font-size:0.7rem;margin-bottom:0;">${esc(a.tag)}</span>
-                </div>
-                <h3 style="color:#fff;font-size:1.05rem;">${esc(a.title)}</h3>
+            ${thumb}
+            <div class="catalog-method-copy">
+                ${meta ? `<p class="catalog-method-founder">${meta}${status ? ' · ' + status : ''}</p>` : ''}
+                <h3>${esc(a.title)}</h3>
                 ${summary}
-                ${author}
-                ${status ? `<span style="font-size:0.75rem;color:var(--color-f);">${status}</span>` : ''}
             </div>`;
         return href
-            ? `<a href="${href}" class="article-list-card glass-card">${inner}</a>`
-            : `<article class="article-list-card glass-card">${inner}</article>`;
+            ? `<a href="${href}" class="catalog-method-row article-list-row">${inner}</a>`
+            : `<article class="catalog-method-row article-list-row catalog-method-row--static">${inner}</article>`;
     }).join('');
 
     const empty = document.getElementById('articles-empty');
     if (empty) empty.style.display = data?.articles?.length ? 'none' : '';
+    if (window.lucide) window.lucide.createIcons();
 }
 
 function renderAllPageSections() {

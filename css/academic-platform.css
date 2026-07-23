@@ -27,7 +27,7 @@ body {
 }
 
 body #particles-canvas {
-    opacity: 0.22;
+    opacity: 0.08;
 }
 
 /* —— Layout rhythm —— */
@@ -456,32 +456,107 @@ body .hero-credential li:first-child::before {
     margin: 0;
 }
 
-/* —— Method / catalog page heroes —— */
+/* —— Inner-page atmospheric heroes (same language as home) —— */
 body .page-hero,
+body .container.page-hero,
 body .fitness-page .fitness-hero,
 body .type2-page .type2-hero {
-    text-align: center;
-    padding: calc(var(--sfh-header-offset, 88px) + 1.5rem) 1.5rem 1.25rem;
+    position: relative;
+    isolation: isolate;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    min-height: clamp(16rem, 42vh, 22rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-align: start;
+    direction: inherit;
+    padding: calc(var(--sfh-header-offset, 88px) + 2.5rem) 1.75rem 2.75rem;
+    overflow: hidden;
+    z-index: 1;
+    background: transparent;
+}
+
+body .page-hero::before,
+body .fitness-page .fitness-hero::before,
+body .type2-page .type2-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+        url('../assets/home-hero-atmosphere.jpg') center 40% / cover no-repeat;
+    transform: scale(1.02);
+    pointer-events: none;
+}
+
+body .page-hero::after,
+body .fitness-page .fitness-hero::after,
+body .type2-page .type2-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(180deg, rgba(12, 16, 24, 0.4) 0%, rgba(12, 16, 24, 0.62) 45%, rgba(12, 16, 24, 0.94) 100%),
+        linear-gradient(90deg, rgba(12, 16, 24, 0.82) 0%, rgba(12, 16, 24, 0.4) 55%, rgba(12, 16, 24, 0.22) 100%);
+}
+
+html[dir="ltr"] body .page-hero::after,
+html[dir="ltr"] body .fitness-page .fitness-hero::after,
+html[dir="ltr"] body .type2-page .type2-hero::after {
+    background:
+        linear-gradient(180deg, rgba(12, 16, 24, 0.4) 0%, rgba(12, 16, 24, 0.62) 45%, rgba(12, 16, 24, 0.94) 100%),
+        linear-gradient(270deg, rgba(12, 16, 24, 0.82) 0%, rgba(12, 16, 24, 0.4) 55%, rgba(12, 16, 24, 0.22) 100%);
+}
+
+body .page-hero > *,
+body .fitness-page .fitness-hero > *,
+body .type2-page .type2-hero > * {
+    position: relative;
+    z-index: 1;
+    max-width: 40rem;
+}
+
+body .page-hero .section-tag,
+body .fitness-page .fitness-hero .section-tag,
+body .type2-page .type2-hero .section-tag {
+    margin-bottom: 0.85rem;
 }
 
 body .page-hero h1,
 body .fitness-page .fitness-hero h1,
 body .type2-page .type2-hero h1 {
-    font-size: clamp(1.65rem, 3.5vw, 2.15rem);
-    font-weight: 700;
-    color: var(--sfh-text);
-    margin: 0.5rem 0;
-    letter-spacing: -0.02em;
+    font-size: clamp(1.85rem, 4.5vw, 2.85rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 0.85rem;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    background: none;
+    -webkit-text-fill-color: #fff;
 }
 
 body .page-hero-sub,
+body .page-hero > p,
 body .fitness-hero-sub,
 body .type2-hero-sub {
-    max-width: 42rem;
-    margin: 0 auto;
+    max-width: 36rem;
+    margin: 0;
     color: var(--sfh-text-muted);
-    line-height: 1.75;
-    font-size: 1rem;
+    line-height: 1.8;
+    font-size: 1.02rem;
+}
+
+body .section-header {
+    text-align: start;
+}
+
+body .section-header p {
+    margin-inline: 0;
 }
 
 /* —— History / founder block —— */
@@ -592,21 +667,278 @@ body .brand-subhead {
 }
 
 body .catalog-note {
-    padding: 1.5rem;
+    padding: 1.35rem 0;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: start;
+    background: transparent;
+    border: none;
+    border-top: 1px solid var(--sfh-border);
+    border-bottom: 1px solid var(--sfh-border);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+body .catalog-note:hover {
+    border-color: var(--sfh-border);
+    box-shadow: none;
 }
 
 body .catalog-note p {
     color: var(--sfh-text-muted);
     line-height: 1.75;
-    font-size: 0.9375rem;
+    font-size: 0.95rem;
     margin: 0;
+    max-width: 42rem;
 }
 
 body .page-content {
-    padding-top: 0;
-    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+}
+
+/* —— Catalog: home-find rhythm —— */
+body .catalog-category {
+    margin-bottom: 3rem;
+}
+
+body .catalog-category-header {
+    text-align: start;
+    margin-bottom: 0.75rem;
+}
+
+body .catalog-category-header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+    margin: 0;
+}
+
+body .catalog-category-header p {
+    margin: 0.4rem 0 0;
+    color: var(--sfh-text-muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    max-width: 42rem;
+}
+
+body .catalog-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 48rem;
+    border-top: 1px solid var(--sfh-border);
+}
+
+body .catalog-method-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    padding: 1.15rem 0;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid var(--sfh-border);
+    background: transparent;
+    border-top: none !important;
+    border-radius: 0;
+    box-shadow: none;
+    transition: background-color var(--transition-fast);
+}
+
+body a.catalog-method-row:hover {
+    background: transparent;
+    border-color: var(--sfh-border);
+    box-shadow: none;
+    transform: none;
+}
+
+body a.catalog-method-row:hover .catalog-method-copy strong,
+body a.catalog-method-row:hover h3 {
+    color: #fff;
+}
+
+body .catalog-method-row--static {
+    cursor: default;
+    opacity: 0.88;
+}
+
+body .catalog-method-thumb {
+    flex: 0 0 auto;
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--sfh-surface-raised);
+    border: 1px solid var(--sfh-border);
+}
+
+body .catalog-method-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+body .catalog-method-thumb--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sfh-accent);
+}
+
+body .catalog-method-thumb--icon i,
+body .catalog-method-thumb--icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+body .catalog-method-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+    min-width: 0;
+    flex: 1;
+}
+
+body .catalog-method-copy h3 {
+    margin: 0;
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+    line-height: 1.35;
+}
+
+body .catalog-method-copy .catalog-method-founder {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--sfh-accent);
+}
+
+body .catalog-method-copy > p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--sfh-text-muted);
+}
+
+body .catalog-status-badge {
+    border-radius: 999px;
+    font-size: 0.68rem;
+    margin-bottom: 0.15rem;
+}
+
+body .catalog-status-badge--interactive {
+    color: var(--sfh-accent);
+    border-color: rgba(61, 139, 253, 0.35);
+    background: var(--sfh-accent-muted);
+}
+
+body .catalog-status-badge--lesson {
+    color: #c9a227;
+    border-color: rgba(201, 162, 39, 0.35);
+    background: rgba(201, 162, 39, 0.1);
+}
+
+body .catalog-status-badge--catalog {
+    color: var(--sfh-text-muted);
+}
+
+body .catalog-method-go {
+    margin-top: 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--sfh-accent);
+}
+
+/* —— Presentations hub —— */
+body .pres-group {
+    margin: 0 0 2.75rem;
+    max-width: 48rem;
+}
+
+body .pres-group-title {
+    margin: 0 0 0.35rem;
+    color: var(--sfh-text);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+body .pres-group-sub {
+    margin: 0 0 0.85rem;
+    color: var(--sfh-text-muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+body .pres-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--sfh-border);
+}
+
+body .pres-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.1rem 0;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid var(--sfh-border);
+    transition: color var(--transition-fast);
+}
+
+body .pres-row:hover .pres-row-copy strong {
+    color: #fff;
+}
+
+body .pres-row-num {
+    flex: 0 0 auto;
+    min-width: 2.4rem;
+    font-family: var(--font-en), var(--font-fa);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--sfh-accent);
+    margin-top: 0.15rem;
+}
+
+body .pres-row-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+    min-width: 0;
+}
+
+body .pres-row-copy strong {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+}
+
+body .pres-row-copy span {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--sfh-text-muted);
+}
+
+/* —— Articles list —— */
+body #articles-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 42rem;
+    border-top: 1px solid var(--sfh-border);
+}
+
+body #articles-list a,
+body .article-list-row {
+    display: block;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid var(--sfh-border);
+    text-decoration: none;
+    color: inherit;
+}
+
+body .fitness-page .fitness-hero {
+    padding-bottom: 2.25rem;
 }
 
 /* —— Forms & assessment —— */
@@ -651,6 +983,25 @@ body .fitness-page .fitness-section .section-header {
 
     body .hero-section {
         padding-top: calc(var(--sfh-header-offset, 88px) + 1.25rem);
+    }
+
+    body .page-hero,
+    body .container.page-hero,
+    body .fitness-page .fitness-hero,
+    body .type2-page .type2-hero {
+        min-height: clamp(14rem, 38vh, 18rem);
+        padding: calc(var(--sfh-header-offset, 88px) + 1.75rem) 1.15rem 2rem;
+    }
+
+    body .page-hero h1,
+    body .fitness-page .fitness-hero h1,
+    body .type2-page .type2-hero h1 {
+        font-size: clamp(1.55rem, 7vw, 2rem);
+    }
+
+    body .catalog-method-thumb {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
     body .home-hero-content {

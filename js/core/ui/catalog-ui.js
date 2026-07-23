@@ -25,7 +25,7 @@ function renderFullCatalog(containerId) {
                 <h2>${escCatalog(cat.title)}</h2>
                 <p>${escCatalog(cat.desc)}</p>
             </div>
-            <div class="hub-cards-grid">
+            <div class="catalog-list">
                 ${cat.methods.map(function (m) {
                     const entry = catalog.entries[m.id] || {};
                     const title = entry.title || m.id;
@@ -35,20 +35,20 @@ function renderFullCatalog(containerId) {
                     const href = m.slug ? sfhUrl(`methods/${m.slug}`) : '';
                     const tag = m.slug ? 'a' : 'div';
                     const hrefAttr = m.slug ? ` href="${href}"` : '';
-                    const staticClass = m.slug ? '' : ' catalog-method-card--static';
+                    const staticClass = m.slug ? '' : ' catalog-method-row--static';
                     const imgSrc = methodImageUrl(m, entry);
                     const media = imgSrc
-                        ? `<div class="catalog-method-media"><img src="${imgSrc}" alt="" loading="lazy" referrerpolicy="no-referrer" decoding="async"></div>`
-                        : `<div class="catalog-method-media catalog-method-media--icon" style="--method-color:${m.color}"><i data-lucide="${m.icon}"></i></div>`;
+                        ? `<div class="catalog-method-thumb"><img src="${imgSrc}" alt="" loading="lazy" referrerpolicy="no-referrer" decoding="async"></div>`
+                        : `<div class="catalog-method-thumb catalog-method-thumb--icon" style="color:${m.color}"><i data-lucide="${m.icon}"></i></div>`;
                     return `
-                    <${tag} class="hub-card glass-card catalog-method-card${staticClass}"${hrefAttr} style="border-top:3px solid ${m.color};">
+                    <${tag} class="catalog-method-row${staticClass}"${hrefAttr}>
                         ${media}
-                        <div class="catalog-method-body">
+                        <div class="catalog-method-copy">
                             <span class="catalog-status-badge catalog-status-badge--${m.status}">${escCatalog(status)}</span>
                             <h3>${escCatalog(title)}</h3>
                             <p class="catalog-method-founder">${escCatalog(founder)}</p>
                             <p>${escCatalog(desc)}</p>
-                            ${m.slug ? `<span class="hub-card-link">${t('common.readMore')}</span>` : ''}
+                            ${m.slug ? `<span class="catalog-method-go">${t('common.readMore')}</span>` : ''}
                         </div>
                     </${tag}>`;
                 }).join('')}
