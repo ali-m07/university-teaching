@@ -1,4 +1,4 @@
-/** EN — Type-2 fuzzy page + workshop + university syllabus */
+/** EN, Type-2 fuzzy page + workshop + university syllabus */
 registerLocale('en', {
     type2Page: {
         heroTag: 'Zadeh · Mendel · John · IT2',
@@ -13,11 +13,11 @@ registerLocale('en', {
 
         theoryTag: 'From Type-0 to Type-2',
         theoryTitle: 'Why one membership grade is not enough',
-        theoryLead: 'Imagine a Delphi workshop: five experts score how “emerging” a trend is. You average to 0.6 and call it consensus. But if one expert said 0.9 and another 0.3, that 0.6 hides conflict — it is silent averaging, not agreement.',
+        theoryLead: 'Imagine a Delphi workshop: five experts score how “emerging” a trend is. You average to 0.6 and call it consensus. But if one expert said 0.9 and another 0.3, that 0.6 hides conflict, it is silent averaging, not agreement.',
         theoryNarrative: [
             'In 1965 Lotfi Zadeh argued the world is not only black and white. Membership in a set can be partial: tea can be “hot” without being like fire. Linguistic variables (“emerging”, “strong”) came next. Type-1 fuzzy logic assigns one number between 0 and 1 for each item.',
             'In foresight everyone may use the same word but mean different numbers. One expert sees 0.7 from a technology angle; another 0.4 from the market. Type-1 averages to 0.55. The manager reads consensus; the disagreement stays hidden.',
-            'Mendel and Karnik at USC proposed treating the grade itself as uncertain — a band, not a point. Expert A: 0.4–0.7; Expert B: 0.2–0.5. The region across all bands is the Footprint of Uncertainty (FOU). Its width shows how far you are from real agreement.',
+            'Mendel and Karnik at USC proposed treating the grade itself as uncertain, a band, not a point. Expert A: 0.4-0.7; Expert B: 0.2-0.5. The region across all bands is the Footprint of Uncertainty (FOU). Its width shows how far you are from real agreement.',
             'Interval Type-2 (IT2) is the workhorse: lower and upper curves with FOU between them. IT2 is an honesty tool in foresight: center near 0.6 but spread 0.48 means you still lack consensus. IT2 does not replace probability; it fits linguistic judgment when you want disagreement visible.'
         ],
         theoryExampleTitle: 'Short example',
@@ -30,19 +30,19 @@ registerLocale('en', {
         detailsStackTitle: 'Works alongside which methods?',
 
         foresightProse: [
-            'IT2 helps when data are thin and opinions scatter — weak signals, Delphi panels. Keep each expert’s FOU and the aggregate FOU instead of silent averaging. Non-overlapping bands mean more probing, not a final verdict.',
+            'IT2 helps when data are thin and opinions scatter, weak signals, Delphi panels. Keep each expert’s FOU and the aggregate FOU instead of silent averaging. Non-overlapping bands mean more probing, not a final verdict.',
             'In scenarios and the cone of plausibility, “plausible” can be a band, not fake precision. Wide spread in Rohrbeck FITness means you have not probed yet; IT2 links to testing, not to claiming consensus.'
         ],
-        workflowProse: 'In a workshop: name one specific weak signal. Define a linguistic label (e.g. signal strength). Each expert gives lower and upper bounds. Read aggregate FOU — wide means disagreement, narrow means consensus. Decide light scanning, Delphi, or probing; write a one-page memo with mean, spread, and a 90-day recommendation.',
+        workflowProse: 'In a workshop: name one specific weak signal. Define a linguistic label (e.g. signal strength). Each expert gives lower and upper bounds. Read aggregate FOU, wide means disagreement, narrow means consensus. Decide light scanning, Delphi, or probing; write a one-page memo with mean, spread, and a 90-day recommendation.',
         limitsProse: 'IT2 does not replace CLA, scenarios, or probability with a known distribution. Translate band width into decision language for non-technical managers. FOU is not a statistical confidence interval.',
 
         theoryP1: 'In 1965 Lotfi Zadeh introduced fuzzy sets: membership is not only 0 or 1. In 1975 came linguistic variables such as “hot”, “emerging”, “strong”. Type-1 fuzzy logic formalized membership μ(x) in [0,1].',
         theoryP2: 'In Type-1 each point x has one precise μ. That works when everyone shares roughly the same definition of “emerging”. In foresight the trouble usually starts here: experts still fight over the number itself.',
-        theoryP3: 'Jerry Mendel and Narendra Karnik at USC noticed real-world disagreement over μ itself. Expert A says 0.7, B says 0.4 — both can be right with different mental models. Type-2 treats membership as a band: the Footprint of Uncertainty (FOU).',
-        theoryP4: 'Interval Type-2 (IT2) is the workhorse: lower and upper membership functions. The region between them is the FOU. Karnik–Mendel type-reduction collapses the FOU to Type-1, but first you must see how wide disagreement is.',
-        theoryP5: 'In foresight IT2 is an honesty tool. Type-1 averaging 0.6 hides conflict. IT2 can yield a similar center but report spread = 0.48 — meaning you do not yet have real consensus.',
+        theoryP3: 'Jerry Mendel and Narendra Karnik at USC noticed real-world disagreement over μ itself. Expert A says 0.7, B says 0.4, both can be right with different mental models. Type-2 treats membership as a band: the Footprint of Uncertainty (FOU).',
+        theoryP4: 'Interval Type-2 (IT2) is the workhorse: lower and upper membership functions. The region between them is the FOU. Karnik-Mendel type-reduction collapses the FOU to Type-1, but first you must see how wide disagreement is.',
+        theoryP5: 'In foresight IT2 is an honesty tool. Type-1 averaging 0.6 hides conflict. IT2 can yield a similar center but report spread = 0.48, meaning you do not yet have real consensus.',
         theoryP6: 'Robert John at De Montfort and Nottingham advanced General Type-2 (GT2) and decision support. GT2 when the FOU itself is fuzzy. For most foresight classes and workshops, IT2 is enough.',
-        theoryP7: 'A full fuzzy system (Mamdani or Takagi–Sugeno) has four stages: fuzzification, rule evaluation, aggregation, defuzzification. IT2 requires type-reduction before defuzzification. This module focuses on linguistic judgment and FOU, not industrial control.',
+        theoryP7: 'A full fuzzy system (Mamdani or Takagi-Sugeno) has four stages: fuzzification, rule evaluation, aggregation, defuzzification. IT2 requires type-reduction before defuzzification. This module focuses on linguistic judgment and FOU, not industrial control.',
         theoryP8: 'Key distinction: probability when you have (or assume) a distribution; IT2 when you have linguistic judgment and want disagreement explicit. IT2 does not replace probability; it complements it under deep uncertainty.',
 
         ladderTitle: 'Four simple levels',
@@ -82,7 +82,7 @@ registerLocale('en', {
             { year: '1973', event: 'Mamdani · first practical fuzzy controller' },
             { year: '1975', event: 'Zadeh · linguistic variables · “hot”, “emerging”' },
             { year: '1998', event: 'Mendel · intro to IT2 fuzzy logic systems' },
-            { year: '1999–2001', event: 'Karnik & Mendel · type-reduction and IT2 centroid' },
+            { year: '1999-2001', event: 'Karnik & Mendel · type-reduction and IT2 centroid' },
             { year: '2006', event: 'Mendel, John, Liu · IT2 simplified · IEEE Trans. Fuzzy Systems' },
             { year: '2012+', event: 'Castillo & Melin · surveys · control, decision support, hybrids' }
         ],
@@ -151,7 +151,7 @@ registerLocale('en', {
                 duration: '90 min',
                 topics: ['Fuzzy set and μ(x)', 'Triangle and trapezoid MFs', 'Linguistic variables', '“Emerging trend” example', 'Limits of averaging'],
                 activity: 'Each student defines a linguistic label for a weak signal.',
-                reading: 'Zadeh 1965, 1975 · Bashirzadeh ch. 1–3'
+                reading: 'Zadeh 1965, 1975 · Bashirzadeh ch. 1-3'
             },
             {
                 num: '2',
@@ -159,13 +159,13 @@ registerLocale('en', {
                 duration: '90 min',
                 topics: ['FOU formal', 'Primary membership J(x,u)', 'Interval footprint', 'Three-expert example', 'Spread as disagreement'],
                 activity: 'Hand-draw FOU for 3 stakeholders on one signal.',
-                reading: 'Mendel 2001 ch. 2–3 · Karnik & Mendel 2001'
+                reading: 'Mendel 2001 ch. 2-3 · Karnik & Mendel 2001'
             },
             {
                 num: '3',
                 title: 'Type-reduction, defuzzification, fuzzy systems',
                 duration: '90 min',
-                topics: ['Centroid type-reduction (conceptual)', 'Mamdani vs Takagi–Sugeno', 'Rule base', 'Why simple rules suffice in foresight'],
+                topics: ['Centroid type-reduction (conceptual)', 'Mamdani vs Takagi-Sugeno', 'Rule base', 'Why simple rules suffice in foresight'],
                 activity: 'Write 3 IF-THEN rules for weak signal + consensus.',
                 reading: 'Mendel, John, Liu 2006 · Castillo & Melin 2012'
             },
@@ -186,7 +186,7 @@ registerLocale('en', {
             { step: '1', title: 'Fuzzification', desc: 'Crisp input (expert score) or linguistic label (“strong”) becomes a fuzzy set.' },
             { step: '2', title: 'Rule evaluation', desc: 'IF signal strong AND consensus high THEN act fast. In IT2 antecedents and consequents are IT2.' },
             { step: '3', title: 'Aggregation', desc: 'Rule outputs combine. In IT2 the result is a type-2 set.' },
-            { step: '4', title: 'Type-reduction', desc: 'IT2 → Type-1. Karnik–Mendel centroid is the common method.' },
+            { step: '4', title: 'Type-reduction', desc: 'IT2 → Type-1. Karnik-Mendel centroid is the common method.' },
             { step: '5', title: 'Defuzzification', desc: 'Type-1 → crisp number y*. In foresight spread often matters more than y*.' }
         ],
 
@@ -204,13 +204,13 @@ registerLocale('en', {
                 note: 'Exam tip: answer “what is FOU?” with a three-expert drawing.'
             },
             {
-                title: 'Type-reduction (Karnik–Mendel)',
+                title: 'Type-reduction (Karnik-Mendel)',
                 text: 'Goal: collapse IT2 set to Type-1. Centroid integrates y·μ(y); in IT2 μ is an interval; KM iteratively finds y* and band [yL, yR].',
                 note: 'In foresight: width of [yL,yR] ≈ disagreement spread.'
             },
             {
-                title: 'Mamdani vs Takagi–Sugeno',
-                text: 'Mamdani: fuzzy consequent. Takagi–Sugeno: crisp linear/constant consequent. TS dominates control; Mamdani is closer to human linguistic rules.',
+                title: 'Mamdani vs Takagi-Sugeno',
+                text: 'Mamdani: fuzzy consequent. Takagi-Sugeno: crisp linear/constant consequent. TS dominates control; Mamdani is closer to human linguistic rules.',
                 note: 'For weak-signal judgment, Mamdani-style rules are enough.'
             },
             {
@@ -275,7 +275,7 @@ registerLocale('en', {
         homeworkItems: [
             { title: 'HW1 · Hand FOU', task: 'Pick a weak signal. 4 stakeholders with [lower, upper] bands. Draw aggregate FOU. Compute mean and spread.', deliverable: '1-page drawing + 2 paragraphs interpretation', weight: '15%' },
             { title: 'HW2 · Rule base', task: 'Write 3 Mamdani-style IF-THEN rules for “acting on a weak signal”. Antecedent: signal strength + consensus.', deliverable: 'Rule table + one numeric example', weight: '15%' },
-            { title: 'Midterm project', task: 'Policy or tech foresight topic (e.g. AI regulation, water crisis). Mini-Delphi (3–5 people) + IT2 aggregation.', deliverable: '5-page report + FOU diagram', weight: '30%' },
+            { title: 'Midterm project', task: 'Policy or tech foresight topic (e.g. AI regulation, water crisis). Mini-Delphi (3-5 people) + IT2 aggregation.', deliverable: '5-page report + FOU diagram', weight: '30%' },
             { title: 'Final project', task: 'Full management memo: signal, FOU, verdict, 90-day probing, IT2 limits, link to CLA or scenario.', deliverable: 'Memo + 10-min presentation', weight: '40%' }
         ],
 
@@ -293,7 +293,7 @@ registerLocale('en', {
         instructorTag: 'Instructor guide',
         instructorTitle: 'Teaching notes',
         instructorItems: [
-            'Open session 1 with live polling: score one signal 0–100. Compare average vs min–max band.',
+            'Open session 1 with live polling: score one signal 0-100. Compare average vs min-max band.',
             'Avoid heavy formulas; prioritize FOU drawing and spread. Explain KM verbally.',
             'Live-demo EU AI regulation in the page workshop.',
             'Ask technical students for rule bases; humanities students focus on memo and probing.',
@@ -355,11 +355,11 @@ registerLocale('en', {
 
         industryAgendaTitle: 'One-day agenda on site',
         industryAgenda: [
-            { block: 'Morning · 9–10:30', title: 'Why Delphi averaging is not enough', desc: 'Live polling on one signal · mean vs spread · EU AI or client signal.' },
-            { block: 'Morning · 10:45–12:30', title: 'FOU workshop with internal stakeholders', desc: '3–5 roles (tech, legal, market, ops) · page workshop · aggregate FOU.' },
-            { block: 'Lunch · 12:30–13:30', title: 'Lunch + networking', desc: 'Sponsor chat on real quarter signal.' },
-            { block: 'Afternoon · 13:30–15:00', title: 'Verdict and probing', desc: 'Spread → Delphi / pilot / stop · Rohrbeck FITness · cone of plausibility.' },
-            { block: 'Afternoon · 15:15–16:30', title: 'Board memo + commit', desc: 'Each group 1 slide: signal, mean, spread, 90-day action · named owner.' }
+            { block: 'Morning · 9-10:30', title: 'Why Delphi averaging is not enough', desc: 'Live polling on one signal · mean vs spread · EU AI or client signal.' },
+            { block: 'Morning · 10:45-12:30', title: 'FOU workshop with internal stakeholders', desc: '3-5 roles (tech, legal, market, ops) · page workshop · aggregate FOU.' },
+            { block: 'Lunch · 12:30-13:30', title: 'Lunch + networking', desc: 'Sponsor chat on real quarter signal.' },
+            { block: 'Afternoon · 13:30-15:00', title: 'Verdict and probing', desc: 'Spread → Delphi / pilot / stop · Rohrbeck FITness · cone of plausibility.' },
+            { block: 'Afternoon · 15:15-16:30', title: 'Board memo + commit', desc: 'Each group 1 slide: signal, mean, spread, 90-day action · named owner.' }
         ],
 
         industryStakeholdersTitle: 'Roles in the org workshop',
@@ -374,7 +374,7 @@ registerLocale('en', {
         industryDeliverablesTitle: 'Deliverables for the client',
         industryDeliverables: [
             'One-page executive summary (no formulas)',
-            'FOU chart with 3–5 stakeholders and numeric spread',
+            'FOU chart with 3-5 stakeholders and numeric spread',
             'Verdict table: weak / moderate / strong consensus',
             '90-day probing plan with owner, KPI, budget range',
             'Optional technical appendix for data/strategy team'
@@ -382,7 +382,7 @@ registerLocale('en', {
 
         industryWorkflowTitle: 'Six-step org engagement',
         industryWorkflowSteps: [
-            { title: '1. Discovery (1–2 weeks before)', desc: 'Sponsor interview · pick 1–2 signals · stakeholder map.' },
+            { title: '1. Discovery (1-2 weeks before)', desc: 'Sponsor interview · pick 1-2 signals · stakeholder map.' },
             { title: '2. Pre-read', desc: 'One-page memo for participants · define “signal strength” label.' },
             { title: '3. Workshop day', desc: 'Live FOU · page workshop · cross-functional groups.' },
             { title: '4. Debrief within 48h', desc: 'Final slide · risk if spread wide · align to decision calendar.' },
@@ -427,7 +427,7 @@ registerLocale('en', {
         industryChecklistItems: [
             'Sponsor and decision date confirmed?',
             'At least one weak signal agreed upfront?',
-            '3–5 cross-functional participants confirmed?',
+            '3-5 cross-functional participants confirmed?',
             'Page workshop tested · projector / WiFi?',
             'Client slide template (logo, font) ready?',
             'Sample memo (EU AI) for demo?',

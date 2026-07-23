@@ -101,7 +101,7 @@ registerLocale('fa', {
             sub: 'یک مسئله را انتخاب کنید یا مسئله خود را بنویسید تا آن را به چهار لایه هرم عنایت‌الله بشکنید.',
             panelTitle: 'پنل کارگاه',
             templateLabel: 'انتخاب قالب مسئله پیش‌فرض:',
-            templateCustom: '-- تحلیل شخصی و دلخواه --',
+            templateCustom: '(تحلیل شخصی و دلخواه)',
             templateBrainDrain: 'فرار مغزها و نخبگان (Brain Drain)',
             templateInflation: 'تورم و بحران معیشتی',
             templateGenerationGap: 'بحران تفاوت و شکاف نسل‌ها',

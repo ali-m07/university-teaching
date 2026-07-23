@@ -1,5 +1,5 @@
 /**
- * EN · Futures Wheel university lecture decks (M1–M3)
+ * EN · Futures Wheel university lecture decks (M1-M3)
  */
 registerLocale('en', {
     wheelPage: {
@@ -134,7 +134,7 @@ registerLocale('en', {
                                 'Policy nodes'
                             ],
                             paragraphs: [
-                                'Score key branches 1–5 for likelihood and severity. Statistical precision is not the goal; group agreement and prioritization are.',
+                                'Score key branches 1-5 for likelihood and severity. Statistical precision is not the goal; group agreement and prioritization are.',
                                 'High-severity, medium-likelihood paths often matter more than certain but low-impact ones.',
                                 'Attach policy nodes to negative consequences: reactive or preventive action on that branch.'
                             ]

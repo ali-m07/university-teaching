@@ -1,4 +1,4 @@
-/** EN — articles & notes */
+/** EN, articles & notes */
 registerLocale('en', {
     articlesPage: {
         tag: 'Articles',

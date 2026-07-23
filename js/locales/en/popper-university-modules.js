@@ -1,5 +1,5 @@
 /**
- * EN · Popper Foresight Diamond university lecture decks (M1–M2)
+ * EN · Popper Foresight Diamond university lecture decks (M1-M2)
  */
 registerLocale('en', {
     advancedPage: {

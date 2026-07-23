@@ -1,5 +1,5 @@
 /**
- * EN · CLA university lecture decks (M1–M3)
+ * EN · CLA university lecture decks (M1-M3)
  */
 registerLocale('en', {
     claPage: {
@@ -75,7 +75,7 @@ registerLocale('en', {
                             title: '3. Genealogy and discursive power',
                             slideTitles: [
                                 'Foucault inspiration',
-                                'Power in layers 3–4',
+                                'Power in layers 3-4',
                                 'Classroom practice'
                             ],
                             paragraphs: [
@@ -98,7 +98,7 @@ registerLocale('en', {
                             'Do not write an alternative metaphor yet; deconstruct only.'
                         ],
                         format: '1 page · FA or EN',
-                        criteria: ['Depth in layers 3–4', 'Avoid repeating litany in deeper layers']
+                        criteria: ['Depth in layers 3-4', 'Avoid repeating litany in deeper layers']
                     }
                 },
                 {
@@ -163,7 +163,7 @@ registerLocale('en', {
                             'Full four layers plus one paragraph of policy or strategy implications.',
                             'Cite at least one academic source.'
                         ],
-                        format: '1500–2000 words',
+                        format: '1500-2000 words',
                         criteria: ['Layer coherence', 'Link to a real decision']
                     }
                 },

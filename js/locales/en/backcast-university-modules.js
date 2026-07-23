@@ -1,5 +1,5 @@
 /**
- * EN · Backcasting university lecture decks (M1–M3)
+ * EN · Backcasting university lecture decks (M1-M3)
  */
 registerLocale('en', {
     backcastPage: {
@@ -134,7 +134,7 @@ registerLocale('en', {
                             paragraphs: [
                                 'Each milestone must be observable: a law, infrastructure, or measurable behavior.',
                                 'Reverse dependency: if the far milestone is true, nearer milestones must already have happened.',
-                                'Opponent role: who blocks the vision? Connect to CLA layers 3–4 for discursive barriers.'
+                                'Opponent role: who blocks the vision? Connect to CLA layers 3-4 for discursive barriers.'
                             ]
                         },
                         {
@@ -200,7 +200,7 @@ registerLocale('en', {
                             paragraphs: [
                                 'Backcasting is not neutral: powerful actors write the vision unless the process is participatory.',
                                 'Institutional barriers (annual budgets, procurement rules, stop-the-pilot culture) break the path.',
-                                'CLA layers 3–4 show which myth blocks progress; without that you only have a milestone table.'
+                                'CLA layers 3-4 show which myth blocks progress; without that you only have a milestone table.'
                             ]
                         },
                         {
@@ -223,12 +223,12 @@ registerLocale('en', {
                     ],
                     assignment: {
                         title: 'Final backcasting pack',
-                        description: 'Merge M1–M3 into one decision memo.',
+                        description: 'Merge M1-M3 into one decision memo.',
                         body: [
                             'Vision + reverse path + three immediate policies + one CLA barrier.',
                             'One paragraph linking to your term scenario or Wheel.'
                         ],
-                        format: '2500–3000 words',
+                        format: '2500-3000 words',
                         criteria: ['Path coherence', '90-day executability']
                     }
                 }

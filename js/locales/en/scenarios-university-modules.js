@@ -1,5 +1,5 @@
 /**
- * EN · Scenario Planning university lecture decks (M1–M3)
+ * EN · Scenario Planning university lecture decks (M1-M3)
  */
 registerLocale('en', {
     advancedPage: {
@@ -207,7 +207,7 @@ registerLocale('en', {
                             }
                         ],
                         readings: [
-                            { type: 'Page', text: 'FITness M4–M5 · prospecting and probing on this portal.' }
+                            { type: 'Page', text: 'FITness M4-M5 · prospecting and probing on this portal.' }
                         ],
                         assignment: {
                             title: 'Decision scenario pack',

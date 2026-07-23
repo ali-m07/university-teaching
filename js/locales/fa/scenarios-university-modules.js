@@ -1,5 +1,5 @@
 /**
- * FA · Scenario Planning university lecture decks (M1–M3)
+ * FA · Scenario Planning university lecture decks (M1-M3)
  */
 registerLocale('fa', {
     advancedPage: {
@@ -21,7 +21,7 @@ registerLocale('fa', {
             universitySectionTitle: 'مسیر دانشگاه · طرح درس و تدریس',
             industrySectionTitle: 'مسیر صنعت · استقرار در سازمان',
                         university: {
-                title: 'Scenario Planning · سه ارائه درسی',
+                title: 'Scenario برنامه‌ریزی · سه ارائه درسی',
                 intro: 'بر پایه Pierre Wack (Shell)، Peter Schwartz و van der Heijden. سناریو به‌عنوان ابزار تصمیم زیر عدم‌قطعیت، نه پیش‌بینی تک‌خطی.',
                 modules: [
                     {
@@ -69,7 +69,7 @@ registerLocale('fa', {
                                     'تمرین کلاسی'
                                 ],
                                 paragraphs: [
-                                    'Schwartz: اگر تصمیم محوری مشخص نباشد، سناریو entertainment است.',
+                                    'Schwartz: اگر تصمیم محوری مشخص نباشد، سناریو سرگرمی است.',
                                     'مثال: «آیا سازمان تا ۱۴۰۸ مدل زبانی اختصاصی بسازد یا روی API خارجی بماند؟»',
                                     'هر گروه یک تصمیم محوری برای پروژه ترم می‌نویسد و در کلاس نقد می‌کند.'
                                 ]
@@ -161,7 +161,7 @@ registerLocale('fa', {
                         readingsShort: 'Shell · پیوند به FITness',
                         visual: 'assets/methods/covers/scenarios-m3-indicators.svg',
                         visualCaption: 'از روایت به رصد و بودجه',
-                        lectureIntro: 'جلسه سوم: early indicators، implications، و اتصال سناریو به بودجه و probing سازمانی (زبان FITness).',
+                        lectureIntro: 'جلسه سوم: early indicators، implications، و اتصال سناریو به بودجه و آزمون سازمانی (زبان FITness).',
                         lectureSections: [
                             {
                                 id: 'indicators',
@@ -196,18 +196,18 @@ registerLocale('fa', {
                                 title: '۳. اتصال به سازمان',
                                 slideTitles: [
                                     'بودجه و دروازه',
-                                    'پل به FITness probing',
+                                    'پل به FITness آزمون',
                                     'تکلیف پایانی'
                                 ],
                                 paragraphs: [
-                                    'سناریو بدون اتصال به budgeting و risk قفسه می‌خورد. حداقل یک دروازه تصمیم فصلی تعریف کنید.',
-                                    'در زبان روهربک: سناریو ورودی کاوش است؛ probing ۹۰ روزه فرضیه سناریو را در میدان می‌آزماید.',
+                                    'سناریو بدون اتصال به بودجه‌ریزی و ریسک قفسه می‌خورد. حداقل یک دروازه تصمیم فصلی تعریف کنید.',
+                                    'در زبان روهربک: سناریو ورودی کاوش است؛ آزمون ۹۰ روزه فرضیه سناریو را در میدان می‌آزماید.',
                                     'تکلیف: ۴ سناریو + indicator هر کدام + یک no-regret + یک پیشنهاد پیلوت.'
                                 ]
                             }
                         ],
                         readings: [
-                            { type: 'صفحه', text: 'FITness M4–M5 · کاوش و آزمایش در همین پورتال.' }
+                            { type: 'صفحه', text: 'FITness M4-M5 · کاوش و آزمایش در همین پورتال.' }
                         ],
                         assignment: {
                             title: 'بسته سناریوی تصمیم',

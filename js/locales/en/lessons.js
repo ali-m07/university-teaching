@@ -1,5 +1,5 @@
 /**
- * EN — Full lesson plan per method (classroom module)
+ * EN, Full lesson plan per method (classroom module)
  */
 registerLocale('en', {
     lessonLabels: {
@@ -22,12 +22,12 @@ registerLocale('en', {
                 diagram: 'assets/fitness/modules/m1-foundations.svg',
                 diagramAlt: 'Readiness vs Future FITness · F-I-T cycle'
             },
-            prerequisites: 'Intro foresight & scenarios · CLA or Wheel co-term · Rohrbeck ch.1–2 before M1.',
-            assessment: 'Midterm 25% · probing 20% · project 35% · seminar 15% · #assessment bonus 5% — see university tab.',
+            prerequisites: 'Intro foresight & scenarios · CLA or Wheel co-term · Rohrbeck ch.1-2 before M1.',
+            assessment: 'Midterm 25% · probing 20% · project 35% · seminar 15% · #assessment bonus 5%, see university tab.',
             founders: [{
                 id: 'rohrbeck',
                 name: 'René Rohrbeck',
-                nameFa: 'رنه روهربک',
+                nameFa: 'René Rohrbeck',
                 role: 'Founder of FITness · Professor at EDHEC · formerly Aarhus University',
                 bio: '15+ years fieldwork at Siemens, DT, Bosch. Springer book (~300 pp.), Aarhus thesis, TFSC/EJFR corpus.'
             }],
@@ -42,11 +42,11 @@ registerLocale('en', {
             outline: [
                 { step: 'M1-1', time: '45 min', title: 'Why org foresight fails', desc: 'Report vs capability · 33%/200% benchmark' },
                 { step: 'M1-2', time: '45 min', title: 'Readiness vs FITness', desc: 'foresight_concept.png · Zoom/Netflix/Nokia' },
-                { step: 'M1-3', time: '45 min', title: '14-week syllabus intro', desc: 'Chapter map M1–M7 · midterm & project' },
+                { step: 'M1-3', time: '45 min', title: '14-week syllabus intro', desc: 'Chapter map M1-M7 · midterm & project' },
                 { step: 'M1-4', time: '45 min', title: '#assessment workshop', desc: 'Five dimensions · pick project org' }
             ],
             readings: [
-                { type: 'Book', text: 'Rohrbeck (2010). <em>Corporate Foresight</em>. Springer ch.1–2 (~50 pp.)' },
+                { type: 'Book', text: 'Rohrbeck (2010). <em>Corporate Foresight</em>. Springer ch.1-2 (~50 pp.)' },
                 { type: 'Thesis', text: 'Rohrbeck (2008). PhD thesis, Aarhus.' },
                 { type: 'Paper', text: 'Rohrbeck, Arnold & Heuer (2007) TFSC.' },
                 { type: 'Paper', text: 'Rohrbeck & Schwarz (2013) TFSC.' },
@@ -54,7 +54,7 @@ registerLocale('en', {
                 { type: 'Paper', text: 'Rohrbeck & Gemünden (2010) IJIM.' },
                 { type: 'Case', text: 'Deutsche Telekom Radar · Siemens foresight.' }
             ],
-            assignment: 'M7 project: real org · five dimensions · archetype · weak signal · 90-day probing · IT2 if FOU needed · 4000–5000 words. M4 midterm: 2000 words maturity+archetype.'
+            assignment: 'M7 project: real org · five dimensions · archetype · weak signal · 90-day probing · IT2 if FOU needed · 4000-5000 words. M4 midterm: 2000 words maturity+archetype.'
         },
         cla: {
             meta: {
@@ -86,7 +86,7 @@ registerLocale('en', {
             readings: [
                 { type: 'Book', text: 'Inayatullah, S. (2004). <em>The CLA Reader</em>.' },
                 { type: 'Book', text: 'Inayatullah (2015) <em>CLAs 2.0</em>; (2022) <em>CLAs 3.0</em>.' },
-                { type: 'Paper', text: 'Inayatullah (1998). Causal layered analysis — <em>Futures</em>.' }
+                { type: 'Paper', text: 'Inayatullah (1998). Causal layered analysis, <em>Futures</em>.' }
             ],
             assignment: 'Pick this week\'s news. Fill a 4-layer CLA table + one new layer-4 metaphor proposing different policy.'
         },
@@ -102,7 +102,7 @@ registerLocale('en', {
                 id: 'glenn',
                 name: 'Jerome C. Glenn',
                 role: 'Founder, Futures Wheel · Millennium Project',
-                bio: 'American futurist; created the Wheel (1972) for consequence chains. MP director and FRM 3.0 editor — this lesson focuses on <strong>workshop Wheel practice</strong>, not the 39-method catalog.'
+                bio: 'American futurist; created the Wheel (1972) for consequence chains. MP director and FRM 3.0 editor, this lesson focuses on <strong>workshop Wheel practice</strong>, not the 39-method catalog.'
             }],
             objectives: [
                 'Map 1st, 2nd, 3rd order consequences from a driver.',
@@ -118,8 +118,8 @@ registerLocale('en', {
                 { step: '5', time: '5 min', title: 'Wrap', desc: 'Link to Futurpreneurship opportunities.' }
             ],
             readings: [
-                { type: 'Book', text: 'Glenn & Gordon (2009). FRM 3.0 — Futures Wheel chapter.' },
-                { type: 'Report', text: 'Millennium Project — State of the Future examples.' }
+                { type: 'Book', text: 'Glenn & Gordon (2009). FRM 3.0, Futures Wheel chapter.' },
+                { type: 'Report', text: 'Millennium Project, State of the Future examples.' }
             ],
             assignment: 'Driver: "40% EV adoption in Tehran by 2051". List 3 third-order branches + one Futurpreneurship opportunity.'
         },
@@ -135,7 +135,7 @@ registerLocale('en', {
                 id: 'robinson',
                 name: 'John B. Robinson',
                 role: 'Backcasting pioneer · UBC',
-                bio: 'Sustainability planning scholar; backcasting from desired futures to today — not prediction.'
+                bio: 'Sustainability planning scholar; backcasting from desired futures to today, not prediction.'
             }],
             objectives: [
                 'Explain forecast vs backcast with comparison table.',
@@ -147,13 +147,13 @@ registerLocale('en', {
                 { step: '1', time: '20 min', title: 'Forecast vs backcast', desc: 'Robinson & Dreborg comparison table.' },
                 { step: '2', time: '25 min', title: 'Vision & criteria', desc: 'Desired future + sustainability criteria.' },
                 { step: '3', time: '30 min', title: 'Simulator workshop', desc: 'Tehran ecological path tool.' },
-                { step: '4', time: '10 min', title: 'Barriers', desc: 'CLA layers 3–4 on blockers.' },
+                { step: '4', time: '10 min', title: 'Barriers', desc: 'CLA layers 3-4 on blockers.' },
                 { step: '5', time: '5 min', title: 'Assignment brief', desc: '3 immediate policies for first milestone.' }
             ],
             readings: [
-                { type: 'Paper', text: 'Robinson (1990). Futures under glass — <em>Futures</em>.' },
-                { type: 'Paper', text: 'Dreborg (1996). Essence of backcasting — <em>Futures</em>.' },
-                { type: 'Book', text: 'Natural Step / Holmberg & Robèrt — Sweden backcasting.' }
+                { type: 'Paper', text: 'Robinson (1990). Futures under glass, <em>Futures</em>.' },
+                { type: 'Paper', text: 'Dreborg (1996). Essence of backcasting, <em>Futures</em>.' },
+                { type: 'Book', text: 'Natural Step / Holmberg & Robèrt, Sweden backcasting.' }
             ],
             assignment: 'Write a 10-year vision (2 paragraphs). Five backcast steps + one CLA worldview barrier.'
         },
@@ -163,7 +163,7 @@ registerLocale('en', {
                 id: 'popper',
                 name: 'Rafael Popper',
                 role: 'Foresight Diamond · UNU-MERIT / JRC',
-                bio: 'EU foresight researcher; FORLEARN Diamond scores Creativity, Innovation, Expertise, Interaction — a meta-tool over all methods.'
+                bio: 'EU foresight researcher; FORLEARN Diamond scores Creativity, Innovation, Expertise, Interaction, a meta-tool over all methods.'
             }],
             objectives: [
                 'Define four Diamond vertices with workshop examples.',
@@ -174,12 +174,12 @@ registerLocale('en', {
             outline: [
                 { step: '1', time: '15 min', title: 'Quality gap in FRM', desc: 'Why 39 methods are not enough.' },
                 { step: '2', time: '20 min', title: 'Four vertices', desc: 'Definitions + weak/strong examples.' },
-                { step: '3', time: '25 min', title: 'Group audit', desc: 'Score a past org workshop 1–5.' },
+                { step: '3', time: '25 min', title: 'Group audit', desc: 'Score a past org workshop 1-5.' },
                 { step: '4', time: '10 min', title: 'Redesign', desc: 'Boost Creativity & Interaction.' },
                 { step: '5', time: '5 min', title: 'Wrap', desc: 'Diamond before board presentation.' }
             ],
             readings: [
-                { type: 'Report', text: 'Popper (2008). Foresight Diamond — EU FORLEARN.' },
+                { type: 'Report', text: 'Popper (2008). Foresight Diamond, EU FORLEARN.' },
                 { type: 'Paper', text: 'Popper (2008). How are foresight methods selected?' }
             ],
             assignment: 'Evaluate a foresight workshop on 4×5 criteria. One-page memo to management.'
@@ -205,7 +205,7 @@ registerLocale('en', {
             ],
             readings: [
                 { type: 'Book', text: 'Hines & Bishop (2006). <em>Thinking About the Future</em>.' },
-                { type: 'Paper', text: 'Hines (2010). Primary futurist skill — APF.' }
+                { type: 'Paper', text: 'Hines (2010). Primary futurist skill, APF.' }
             ],
             assignment: 'Frame your org foresight question (1 page). Weakest pillar + next deliverable.'
         },
@@ -230,7 +230,7 @@ registerLocale('en', {
             ],
             readings: [
                 { type: 'Book', text: 'Schwartz (1996). <em>The Art of the Long View</em>.' },
-                { type: 'Paper', text: 'Wack (1985). Scenarios — <em>Harvard Business Review</em>.' },
+                { type: 'Paper', text: 'Wack (1985). Scenarios, <em>Harvard Business Review</em>.' },
                 { type: 'Book', text: 'van der Heijden (2005). <em>Scenarios: Strategic Conversation</em>.' }
             ],
             assignment: 'Two uncertainty axes for your thesis/work. Four scenario names + one indicator each + no-regret action.'
@@ -245,7 +245,7 @@ registerLocale('en', {
             },
             founders: [
                 { id: 'slaughter', name: 'Richard Slaughter', role: 'Futures literacy', bio: 'Australian futurist; embedding foresight in society.' },
-                { id: 'candy', name: 'Stuart Candy', role: 'Experiential futures · OCAD', bio: 'Immersive scenarios — foresight to public action.' },
+                { id: 'candy', name: 'Stuart Candy', role: 'Experiential futures · OCAD', bio: 'Immersive scenarios, foresight to public action.' },
                 { id: 'mansouri', name: 'Ali Mansouri', role: 'Curator · Futurpreneurship Stack', bio: 'PhD foresight, University of Tehran; this portal is a <strong>Futurpreneurship</strong> prototype.' }
             ],
             objectives: [
@@ -262,8 +262,8 @@ registerLocale('en', {
                 { step: '5', time: '15 min', title: 'Diamond critique', desc: 'Innovation & Creativity scores.' }
             ],
             readings: [
-                { type: 'Paper', text: 'Slaughter — Futures literacy.' },
-                { type: 'Web', text: 'Candy — Experiential futures.' },
+                { type: 'Paper', text: 'Slaughter, Futures literacy.' },
+                { type: 'Web', text: 'Candy, Experiential futures.' },
                 { type: 'Portal', text: 'Ali Mansouri Strategic Foresight Hub (this site).' }
             ],
             assignment: 'This week\'s weak signal + one-page scenario + business hypothesis + 3 MVP actions for 90 days.'
@@ -289,7 +289,7 @@ registerLocale('en', {
                     id: 'jerry-mendel',
                     name: 'Jerry M. Mendel',
                     role: 'IT2 pioneer · USC Viterbi',
-                    bio: 'USC emeritus professor. Formalized Interval Type-2 fuzzy logic, Karnik–Mendel type-reduction, and reference IT2 texts.'
+                    bio: 'USC emeritus professor. Formalized Interval Type-2 fuzzy logic, Karnik-Mendel type-reduction, and reference IT2 texts.'
                 },
                 {
                     id: 'robert-john',
@@ -321,7 +321,7 @@ registerLocale('en', {
             readings: [
                 { type: 'EN · Classic', text: 'Zadeh, L.A. (1965). Fuzzy sets. <em>Information and Control</em>.' },
                 { type: 'EN · Classic', text: 'Zadeh, L.A. (1975). The concept of a linguistic variable. <em>Information Sciences</em>.' },
-                { type: 'EN · IT2', text: 'Mendel, J.M. (2001). <em>Uncertain Rule-Based Fuzzy Logic Systems</em>. Prentice Hall. · ch. 2–5' },
+                { type: 'EN · IT2', text: 'Mendel, J.M. (2001). <em>Uncertain Rule-Based Fuzzy Logic Systems</em>. Prentice Hall. · ch. 2-5' },
                 { type: 'EN · Type-reduction', text: 'Karnik, N.N. & Mendel, J.M. (2001). Centroid of a type-2 fuzzy set. <em>Information Sciences</em>.' },
                 { type: 'EN · IT2 simplified', text: 'Mendel, J.M., John, R.I. & Liu, F. (2006). Interval type-2 fuzzy logic systems made simple. <em>IEEE Trans. Fuzzy Systems</em>.' },
                 { type: 'EN · Survey', text: 'Castillo, O. & Melin, P. (2012). Recent advances in interval type-2 fuzzy systems. <em>Information Sciences</em>.' },
@@ -330,7 +330,7 @@ registerLocale('en', {
                 { type: 'EN · Foresight', text: 'Rohrbeck, R. · FITness / organizational probing.' },
                 { type: 'FA · Book', text: 'Bashirzadeh, M. (2019). <em>Fundamentals of Fuzzy Logic and Applications</em> (Persian). University of Tehran Press.' },
                 { type: 'FA · Book', text: 'Mirzaei, S.M. (2014). <em>Fuzzy Logic</em> (Persian). Imam Hossein University Press.' },
-                { type: 'FA · Theses', text: 'IRANDOC: search “منطق فازی نوع ۲” in EE and technology management.' }
+                { type: 'FA · Theses', text: 'IRANDOC: search Type-2 fuzzy logic theses in electrical engineering and technology management.' }
             ],
             assignment: 'Final project: real weak signal (thesis topic preferred) · page FOU workshop · one-page memo · 3-rule base · 10-min presentation. Full HW details and rubric in syllabus section above workshop.'
         },

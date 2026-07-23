@@ -1,5 +1,5 @@
 /**
- * FA · Futures Wheel university lecture decks (M1–M3)
+ * FA · Futures Wheel university lecture decks (M1-M3)
  */
 registerLocale('fa', {
     wheelPage: {
@@ -186,8 +186,8 @@ registerLocale('fa', {
                             ],
                             paragraphs: [
                                 'شاخه‌های با عدم‌قطعیت بالا می‌توانند محور ماتریس سناریو شوند.',
-                                'از یک شاخه مثبت یا دوگانه یک فرصت venture استخراج کنید (فرضیه قابل آزمایش).',
-                                'شاخه‌های منفی شدید ورودی vision و مانع در backcasting هستند.'
+                                'از یک شاخه مثبت یا دوگانه یک فرصت سرمایه‌گذاری نوپا استخراج کنید (فرضیه قابل آزمایش).',
+                                'شاخه‌های منفی شدید ورودی چشم‌انداز و مانع در backcasting هستند.'
                             ]
                         },
                         {
@@ -216,7 +216,7 @@ registerLocale('fa', {
                             'یک فرصت Futurpreneurship و یک پیشنهاد محور سناریو.'
                         ],
                         format: 'بوم + ۱ صفحه توضیح',
-                        criteria: ['عمق مرتبه ۳', 'اتصال به تصمیم یا venture']
+                        criteria: ['عمق مرتبه ۳', 'اتصال به تصمیم یا سرمایه‌گذاری نوپا']
                     }
                 }
             ]
@@ -300,7 +300,7 @@ registerLocale('fa', {
                 },
                 {
                     title: 'اقدام',
-                    desc: 'فرصت venture و تهدید کنترلی.'
+                    desc: 'فرصت سرمایه‌گذاری نوپا و تهدید کنترلی.'
                 }
             ],
             checklist: [

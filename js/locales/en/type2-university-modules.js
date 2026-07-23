@@ -1,5 +1,5 @@
 /**
- * EN · Type-2 Fuzzy university lecture decks (M1–M4)
+ * EN · Type-2 Fuzzy university lecture decks (M1-M4)
  */
 registerLocale('en', {
     type2Page: {
@@ -74,7 +74,7 @@ registerLocale('en', {
                             ],
                             paragraphs: [
                                 'Each student defines one linguistic label for a concrete weak signal (for example “signal strength”).',
-                                'The class anonymously scores 0–1 on the same signal. Write mean and dispersion on the board.',
+                                'The class anonymously scores 0-1 on the same signal. Write mean and dispersion on the board.',
                                 'Closing question: is the mean enough for the board, or must you also report spread?'
                             ]
                         }
@@ -148,7 +148,7 @@ registerLocale('en', {
                         }
                     ],
                     readings: [
-                        { type: 'Book', text: 'Mendel, J.M. (2001). <em>Uncertain Rule-Based Fuzzy Logic Systems</em> · ch. 2–3.' },
+                        { type: 'Book', text: 'Mendel, J.M. (2001). <em>Uncertain Rule-Based Fuzzy Logic Systems</em> · ch. 2-3.' },
                         { type: 'Article', text: 'Karnik, N.N. & Mendel, J.M. (2001). Centroid of a type-2 fuzzy set.' }
                     ],
                     assignment: {

@@ -5,7 +5,7 @@
 registerLocale('fa', {
     hub: {
         fitnessTitle: 'آمادگی و تناسب با آینده (FITness)',
-        fitnessDesc: 'بررسی مدل بلوغ رنه روهربک، شبیه‌سازی Perceiving / Prospecting / Probing، تست خودارزیابی ۵ بعدی و رادار فناوری.',
+        fitnessDesc: 'بررسی مدل بلوغ رنه روهربک، شبیه‌سازی درک / کاوش / آزمون، تست خودارزیابی ۵ بعدی و رادار فناوری.',
         fitnessLink: 'ورود به بخش تناسب آینده',
         claTitle: 'تحلیل لایه‌ای علت‌ها (CLA)',
         claDesc: 'مدل سهیل عنایت‌الله برای نفوذ به لایه‌های چهارگانه مسائل، هرم تعاملی، آرشیو سناریوها و کارگاه استعاره.',
@@ -41,15 +41,15 @@ registerLocale('fa', {
     },
     fitnessDepth: {
         tag: 'عمق نظریه روهربک',
-        title: 'Perceiving → Prospecting → Probing → Transformation',
+        title: 'درک → کاوش → آزمون → تحول',
         prose: [
-            'روهربک foresight سازمانی را قابلیت maturity می‌داند، نه سند. چرخه سه P مسیر صنعتی است برای تبدیل weak signal به حرکت portfolio · Perceiving به Prospecting، Prospecting به Probing، و Probing موفق به Transformation.',
-            'در کار میدانی زیمنس و دویچه تلکام، gap معمولاً «نبود سناریو» نبود · probing ضعیف و نبود Opponent role برای kill کردن sacred cow. FITness این gap را می‌بندد؛ IT2 وقتی خود Perceiving uncertain است کمک می‌کند.'
+            'روهربک آینده‌نگاری سازمانی را قابلیت بلوغ می‌داند، نه سند. چرخه سه P مسیر صنعتی است برای تبدیل نشانه ضعیف به حرکت سبد · درک به کاوش، کاوش به آزمون، و آزمون موفق به تحول.',
+            'در کار میدانی زیمنس و دویچه تلکام، شکاف معمولاً «نبود سناریو» نبود · آزمون ضعیف و نبود نقش مخالف برای متوقف کردن تابوی سازمانی. FITness این شکاف را می‌بندد؛ IT2 وقتی خودِ درک نامطمئن است کمک می‌کند.'
         ],
-        s1: 'درک (Perceiving): رصد weak signal، تحلیل روند، آگاهی محیطی.',
-        s2: 'کاوش (Prospecting): سناریو، technology roadmap، آینده‌های محتمل.',
-        s3: 'آزمایش (Probing): نمونه سریع، pilot، اعتبارسنجی فرضیه.',
-        s4: 'تحول (Transformation): تغییر ساختاری، فرهنگی و DNA از بینش‌ها.'
+        s1: 'درک: رصد نشانه ضعیف، تحلیل روند، آگاهی محیطی.',
+        s2: 'کاوش: سناریو، نقشه راه فناوری، آینده‌های محتمل.',
+        s3: 'آزمایش (آزمون): نمونه سریع، پیلوت، اعتبارسنجی فرضیه.',
+        s4: 'تحول: تغییر ساختاری، فرهنگی و DNA از بینش‌ها.'
     },
     claDepth: {
         tag: 'عمق متدولوژی CLA',
@@ -76,7 +76,7 @@ registerLocale('fa', {
         s4: 'نقشه راه انطباقی: اقدامات کوتاه‌مدت، میان‌مدت و بلندمدت.'
     },
     citations: {
-        portalBody: 'هشت ماژول آموزشی این پورتال:<br>۱. <strong>FITness</strong> · رنه روهربک (<a href="https://rene-rohrbeck.com/about-foresight/" target="_blank" rel="noopener noreferrer">Corporate Foresight</a>, 2010)<br>۲. <strong>CLA</strong> · سهیل عنایت‌الله (<a href="https://metafuture.org" target="_blank" rel="noopener noreferrer">Metafuture</a>)<br>۳. <strong>Futures Wheel</strong> · جروم گلن (<a href="http://www.millennium-project.org" target="_blank" rel="noopener noreferrer">Millennium Project</a>)<br>۴. <strong>Backcasting</strong> · جان رابینسون (<a href="https://www.sciencedirect.com/journal/energy-policy" target="_blank" rel="noopener noreferrer">Energy Policy</a>)<br>۵. <strong>Popper Diamond</strong> · رافائل پوپر (EU FORLEARN)<br>۶. <strong>Six Pillars</strong> · Andy Hines & Peter Bishop<br>۷. <strong>Scenario Planning</strong> · Shell / Peter Schwartz<br>۸. <strong>Futurpreneurship</strong> · foresight × venture',
+        portalBody: 'هشت ماژول آموزشی این پورتال:<br>۱. <strong>FITness</strong> · رنه روهربک (<a href="https://rene-rohrbeck.com/about-foresight/" target="_blank" rel="noopener noreferrer">Corporate Foresight</a>, 2010)<br>۲. <strong>CLA</strong> · سهیل عنایت‌الله (<a href="https://metafuture.org" target="_blank" rel="noopener noreferrer">Metafuture</a>)<br>۳. <strong>Futures Wheel</strong> · جروم گلن (<a href="http://www.millennium-project.org" target="_blank" rel="noopener noreferrer">Millennium Project</a>)<br>۴. <strong>Backcasting</strong> · جان رابینسون (<a href="https://www.sciencedirect.com/journal/energy-policy" target="_blank" rel="noopener noreferrer">Energy Policy</a>)<br>۵. <strong>Popper Diamond</strong> · رافائل پوپر (EU FORLEARN)<br>۶. <strong>Six Pillars</strong> · Andy Hines & Peter Bishop<br>۷. <strong>Scenario Planning</strong> · Shell / Peter Schwartz<br>۸. <strong>Futurpreneurship</strong> · آینده‌نگاری × سرمایه‌گذاری نوپا',
         fitnessTitle: 'ارجاع علمی و منابع مطالعه بلوغ سازمانی:',
         fitnessBody: 'این بخش ارزیابی و مفاهیم بر اساس پژوهش‌های مستند پروفسور رنه روهربک در EDHEC Business School توسعه داده شده است. مطالعات بنچ‌مارک و یافته‌های آماری سودآوری ۳۳ درصدی سازمان‌های آینده‌نگر را می‌توانید در <a href="https://rene-rohrbeck.com/about-foresight/" target="_blank" rel="noopener noreferrer">rene-rohrbeck.com</a> و مقالات نمایه شده او در <a href="https://www.researchgate.net/profile/Rene-Rohrbeck" target="_blank" rel="noopener noreferrer">ResearchGate</a> دنبال کنید.',
         claTitle: 'منابع علمی تحلیل لایه‌ای علت‌ها:',

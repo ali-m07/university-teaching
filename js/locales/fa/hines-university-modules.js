@@ -55,7 +55,7 @@ registerLocale('fa', {
                                     'برنامه‌ریزی و اقدام'
                                 ],
                                 paragraphs: [
-                                    'قاب‌بندی مرز سیستم، ذی‌نفعان و دلیل نیاز به foresight را روشن می‌کند. رصد با scanning محیطی و weak signal، فضای STEEP یا PESTLE را نظام‌مند می‌سازد.',
+                                    'قاب‌بندی مرز سیستم، ذی‌نفعان و دلیل نیاز به آینده‌نگاری را روشن می‌کند. رصد با scanning محیطی و نشانه‌های ضعیف، فضای STEEP یا PESTLE را نظام‌مند می‌سازد.',
                                     'پیش‌بینی فضای آینده‌های ممکن را با تحلیل روند و cross-impact کشف می‌کند، نه یک عدد قطعی. تصویرسازی همین فضا را به تصاویر مطلوب و هنجاری تبدیل می‌کند و پل به سناریو و backcasting می‌سازد.',
                                     'برنامه‌ریزی بینش را به نقشه راه، شاخص و سیاست تبدیل می‌کند. اقدام یعنی پایلوت، تغییر ساختار و یادگیری از میدان. بدون اقدام، پنج ستون قبلی فقط گزارشی می‌سازند که روی قفسه می‌ماند.'
                                 ]
@@ -93,7 +93,7 @@ registerLocale('fa', {
                     {
                         num: 'M2', id: 'm2', pickerLabel: 'مخروط محتمل‌بودن',
                         title: 'مخروط محتمل‌بودن: از پیش‌بینی به تصویرسازی', hours: '۹۰ دقیقه',
-                        readingsShort: 'Cone of Plausibility',
+                        readingsShort: 'مخروط محتمل بودن',
                         visual: 'assets/methods/covers/hines-m2-cone.svg',
                         visualCaption: 'از خط پیش‌بینی به مخروط لایه‌بندی‌شده',
                         lectureIntro: 'جلسه دوم روی پل میان پیش‌بینی و تصویرسازی تمرکز دارد. مخروط محتمل‌بودن فضای آینده‌های محتمل (probable)، معقول (plausible) و ممکن (possible) را پیش از انتخاب آینده مطلوب ترسیم می‌کند.',
@@ -153,18 +153,18 @@ registerLocale('fa', {
                                 paragraphs: [
                                     'روش‌شناسی پژوهش آینده‌ها (FRM) ده‌ها روش پیش‌بینی و سناریو را فصل‌به‌فصل فهرست می‌کند. به‌خودی‌خود، تحلیل خط پایه هیوستون را که مسیر بدون غافلگیری را به مخروط لایه‌بندی‌شده تبدیل می‌کند آموزش نمی‌دهد. بنابراین مخروط رقیب ابزارهای FRM نیست؛ نقشه‌ای است که همان ابزارها را نسبت به هم جای می‌دهد.',
                                     'برون‌یابی روند، رصد محیطی و تحلیل اثر متقابل در FRM شواهد خط پایه و چالش فرضیات را تغذیه می‌کنند. روش‌های سناریو و تکنیک‌های wild card شاخه‌ها را پس از شکستن فرضیات می‌کاوند. دلفی و پنل خبرگان می‌توانند شواهد یک لایه را تقویت یا تضعیف کنند، اما جایگزین رسم مخروط نیستند.',
-                                    'در معماری شش ستون، مخروط داخل ستون پیش‌بینی (Forecasting) جای می‌گیرد، به‌عنوان تصویر فضای امکان. رصد (Scanning) آن را با سیگنال پر می‌کند؛ تصویرسازی (Visioning) منطقه مطلوب را برمی‌گزیند؛ برنامه‌ریزی و اقدام به‌سوی آن منطقه حرکت می‌کنند. همین توالی چیزی است که هاینز و بی‌شاپ روی جعبه ابزار خام FRM اضافه می‌کنند.'
+                                    'در معماری شش ستون، مخروط داخل ستون پیش‌بینی (پیش‌بینی) جای می‌گیرد، به‌عنوان تصویر فضای امکان. رصد (رصد) آن را با سیگنال پر می‌کند؛ تصویرسازی (تصویرسازی) منطقه مطلوب را برمی‌گزیند؛ برنامه‌ریزی و اقدام به‌سوی آن منطقه حرکت می‌کنند. همین توالی چیزی است که هاینز و بی‌شاپ روی جعبه ابزار خام FRM اضافه می‌کنند.'
                                 ]
                             }
                         ],
                         readings: [
-                            { type: 'کتاب', text: 'Hines, A. & Bishop, P. Thinking About the Future: Guidelines for Strategic Foresight. فصل‌های Forecasting و Visioning.' },
+                            { type: 'کتاب', text: 'Hines, A. & Bishop, P. Thinking About the Future: Guidelines for Strategic Foresight. فصل‌های پیش‌بینی و تصویرسازی.' },
                             { type: 'کتاب', text: 'Bishop, P. & Hines, A. (2012). Teaching About the Future. Palgrave Macmillan. روایت کلاسی خط پایه و آینده‌های جانشین.' },
-                            { type: 'مقاله علمی', text: 'Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49. روش baseline analysis و شکل ۵، مخروط محتمل‌بودن.' },
+                            { type: 'مقاله علمی', text: 'Hines, A. & Bishop, P. (2013). Framework آینده‌نگاری: Exploring futures the Houston way. <em>Futures</em>, 51, صفحات 31 تا 49. روش baseline analysis و شکل ۵، مخروط محتمل‌بودن.' },
                             { type: 'گزارش', text: 'Taylor, C. W. (1990). Creating Strategic Visions. Carlisle Barracks, PA: Strategic Studies Institute, U.S. Army War College. از نخستین انتشارهای مخروط محتمل‌بودن در برنامه‌ریزی بلندمدت.' },
                             { type: 'مقاله', text: 'Hancock, T. & Bezold, C. (1994). Possible futures, preferable futures. <em>Healthcare Forum Journal</em>, 37(2), صفحات 23 تا 29. لایه‌های محتمل، معقول، ممکن و مطلوب روی مخروط آینده‌ها.' },
-                            { type: 'مرجع تکمیلی', text: 'Voros, J. (2003، جستارهای به‌روزشده). The futures cone and the foresight process. بر پایه آرایه‌شناسی Henchey و سنت Hancock و Bezold؛ همراه مفید برای خوانش Framework Foresight هیوستون از مخروط.' },
-                            { type: 'یادداشت FRM', text: 'Glenn, J. C., & Gordon, T. J. (Eds.). Futures Research Methodology 3.0. فصل‌های مرتبط: ۲ Environmental Scanning، ۱۰ Wild Cards، ۱۹ تا ۲۱ Scenarios. FRM مخروط محتمل‌بودن را به‌نام فهرست نمی‌کند؛ هاینز و بی‌شاپ آن را در پل Forecasting به Visioning جای می‌دهند.' }
+                            { type: 'مرجع تکمیلی', text: 'Voros, J. (2003، جستارهای به‌روزشده). The futures مخروط and the آینده‌نگاری process. بر پایه آرایه‌شناسی Henchey و سنت Hancock و Bezold؛ همراه مفید برای خوانش Framework آینده‌نگاری هیوستون از مخروط.' },
+                            { type: 'یادداشت FRM', text: 'Glenn, J. C., & Gordon, T. J. (Eds.). Futures Research Methodology 3.0. فصل‌های مرتبط: ۲ Environmental Scanning، ۱۰ Wild Cards، ۱۹ تا ۲۱ Scenarios. FRM مخروط محتمل‌بودن را به‌نام فهرست نمی‌کند؛ هاینز و بی‌شاپ آن را در پل پیش‌بینی به تصویرسازی جای می‌دهند.' }
                         ],
                         assignment: {
                             title: 'رسم مخروط',

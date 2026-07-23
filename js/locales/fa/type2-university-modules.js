@@ -1,5 +1,5 @@
 /**
- * FA · Type-2 Fuzzy university lecture decks (M1–M4)
+ * FA · Type-2 Fuzzy university lecture decks (M1-M4)
  */
 registerLocale('fa', {
     type2Page: {
@@ -28,7 +28,7 @@ registerLocale('fa', {
                     lectureSections: [
                         {
                             id: 'why',
-                            title: '۱. مسئله میانگین در foresight',
+                            title: '۱. مسئله میانگین در آینده‌نگاری',
                             slideTitles: [
                                 'کارگاه دلفی و عدد ۰.۶',
                                 'توافق در برابر سکوت اختلاف',
@@ -53,7 +53,7 @@ registerLocale('fa', {
                                 'لطفی‌زاده ۱۹۶۵: عضویت لزوماً ۰ یا ۱ نیست. یک فنجان می‌تواند «تا حدی گرم» باشد.',
                                 'تابع عضویت μ(x)∈[۰٬۱] می‌گوید x چقدر عضو مجموعه است. شکل‌های رایج: مثلث و ذوزنقه.',
                                 'در ۱۹۷۵ متغیر زبانی آمد: به‌جای عدد خام، کلمه‌هایی مثل «نوظهور» یا «قوی» با مجموعه فازی.',
-                                'Type-1 وقتی همه تقریباً یک تعریف از برچسب دارند خوب است. در foresight معمولاً روی خودِ عدد هم دعوا دارید.'
+                                'Type-1 وقتی همه تقریباً یک تعریف از برچسب دارند خوب است. در آینده‌نگاری معمولاً روی خودِ عدد هم دعوا دارید.'
                             ],
                             table: {
                                 headers: ['<strong>سطح</strong>', '<strong>معنا</strong>', '<strong>مثال</strong>'],
@@ -73,20 +73,20 @@ registerLocale('fa', {
                                 'جمع‌بندی جلسه'
                             ],
                             paragraphs: [
-                                'هر دانشجو برای یک weak signal مشخص یک برچسب زبانی تعریف می‌کند (مثلاً «قدرت سیگنال»).',
+                                'هر دانشجو برای یک نشانه ضعیف مشخص یک برچسب زبانی تعریف می‌کند (مثلاً «قدرت سیگنال»).',
                                 'کلاس بدون نام روی همان سیگنال عدد ۰ تا ۱ می‌دهد. میانگین و پراکندگی را روی تخته بنویسید.',
-                                'سؤال پایانی: آیا میانگین برای هیئت‌مدیره کافی است، یا باید spread را هم بگوییم؟'
+                                'سؤال پایانی: آیا میانگین برای هیئت‌مدیره کافی است، یا باید گستره را هم بگوییم؟'
                             ]
                         }
                     ],
                     readings: [
                         { type: 'مقاله', text: 'Zadeh, L.A. (1965). Fuzzy sets. <em>Information and Control</em>.' },
                         { type: 'مقاله', text: 'Zadeh, L.A. (1975). The concept of a linguistic variable. <em>Information Sciences</em>.' },
-                        { type: 'کتاب FA', text: 'بشیرزاده · مبانی منطق فازی · فصل ۱–۳.' }
+                        { type: 'کتاب FA', text: 'بشیرزاده · مبانی منطق فازی · فصل ۱-۳.' }
                     ],
                     assignment: {
                         title: 'برچسب زبانی',
-                        description: 'یک weak signal واقعی انتخاب کنید.',
+                        description: 'یک نشانه ضعیف واقعی انتخاب کنید.',
                         body: [
                             'برچسب زبانی + تعریف شفاهی برای ذی‌نفع غیرفنی.',
                             'سه عدد فرضی خبره و میانگین Type-1 را محاسبه کنید.',
@@ -129,7 +129,7 @@ registerLocale('fa', {
                             paragraphs: [
                                 'هر خبره یک بازه پایین و بالا می‌دهد. میانگین Type-1 فقط مرکز را نگه می‌دارد و پهنا را دور می‌ریزد.',
                                 'FOU تجمعی از اجتماع یا پوشش بازه‌ها ساخته می‌شود. در کارگاه صفحه همین را می‌بینید.',
-                                'مثال: سه خبره درباره قوانین AI در اتحادیه اروپا؛ میانگین ≈ ۰.۵۳ ولی spread ≈ ۰.۳۶ یعنی هنوز توافق کامل نیست.'
+                                'مثال: سه خبره درباره قوانین AI در اتحادیه اروپا؛ میانگین ≈ ۰.۵۳ ولی گستره ≈ ۰.۳۶ یعنی هنوز توافق کامل نیست.'
                             ]
                         },
                         {
@@ -138,17 +138,17 @@ registerLocale('fa', {
                             slideTitles: [
                                 'ترسیم FOU روی کاغذ',
                                 'باز کردن کارگاه صفحه',
-                                'قواعد تفسیر spread'
+                                'قواعد تفسیر گستره'
                             ],
                             paragraphs: [
                                 'روی کاغذ برای سه stakeholder بازه بکشید و ناحیه مشترک را مشخص کنید.',
                                 'همان سیگنال را در کارگاه IT2 صفحه وارد کنید و FOU تجمعی را با رسم دستی مقایسه کنید.',
-                                'اگر spread زیاد است: دلفی بیشتر، probing، یا توقف گزارش قطعی. اگر باریک است: می‌توانید به اقدام نزدیک شوید.'
+                                'اگر گستره زیاد است: دلفی بیشتر، آزمون، یا توقف گزارش قطعی. اگر باریک است: می‌توانید به اقدام نزدیک شوید.'
                             ]
                         }
                     ],
                     readings: [
-                        { type: 'کتاب', text: 'Mendel, J.M. (2001). <em>Uncertain Rule-Based Fuzzy Logic Systems</em> · فصل ۲–۳.' },
+                        { type: 'کتاب', text: 'Mendel, J.M. (2001). <em>Uncertain Rule-Based Fuzzy Logic Systems</em> · فصل ۲-۳.' },
                         { type: 'مقاله', text: 'Karnik, N.N. & Mendel, J.M. (2001). Centroid of a type-2 fuzzy set.' }
                     ],
                     assignment: {
@@ -156,8 +156,8 @@ registerLocale('fa', {
                         description: 'یک سیگنال و سه stakeholder فرضی یا واقعی.',
                         body: [
                             'جدول بازه پایین و بالا برای هر خبره.',
-                            'رسم ساده FOU + محاسبه تقریبی spread.',
-                            'یک جمله توصیه foresight بر اساس پهنا.'
+                            'رسم ساده FOU + محاسبه تقریبی گستره.',
+                            'یک جمله توصیه آینده‌نگاری بر اساس پهنا.'
                         ],
                         format: '۱ صفحه + شکل',
                         criteria: ['درستی بازه‌ها', 'تفسیر تصمیم‌محور']
@@ -169,7 +169,7 @@ registerLocale('fa', {
                     readingsShort: 'Mendel, John, Liu 2006',
                     visual: 'assets/methods/covers/type2-m3-pipeline.svg',
                     visualCaption: 'از FOU تا عدد crisp و قاعده زبانی',
-                    lectureIntro: 'جلسه سوم: فشرده‌سازی مفهومی IT2 به Type-1، تفاوت Mamdani و Takagi-Sugeno، و نوشتن ruleهای ساده برای judgment foresight.',
+                    lectureIntro: 'جلسه سوم: فشرده‌سازی مفهومی IT2 به Type-1، تفاوت Mamdani و Takagi-Sugeno، و نوشتن ruleهای ساده برای judgment آینده‌نگاری.',
                     lectureSections: [
                         {
                             id: 'pipeline',
@@ -182,7 +182,7 @@ registerLocale('fa', {
                             paragraphs: [
                                 'Fuzzification: ورودی crisp یا زبانی به fuzzy set تبدیل می‌شود.',
                                 'Rule evaluation و aggregation خروجی را می‌سازند. در IT2 خروجی هنوز type-2 است.',
-                                'Type-reduction (مثلاً centroid Karnik-Mendel) IT2 را به Type-1 فشرده می‌کند؛ بعد defuzzification عدد crisp می‌دهد. در foresight گاهی خود spread مهم‌تر از عدد نهایی است.'
+                                'Type-reduction (مثلاً centroid Karnik-Mendel) IT2 را به Type-1 فشرده می‌کند؛ بعد defuzzification عدد crisp می‌دهد. در آینده‌نگاری گاهی خود گستره مهم‌تر از عدد نهایی است.'
                             ]
                         },
                         {
@@ -195,8 +195,8 @@ registerLocale('fa', {
                             ],
                             paragraphs: [
                                 'Mamdani consequent فازی دارد و به زبان انسان نزدیک‌تر است. Takagi-Sugeno در کنترل محبوب‌تر است.',
-                                'برای weak signal لازم نیست کنترلر صنعتی بسازید؛ سه قاعده IF-THEN شفاف برای مدیر کافی است.',
-                                'نمونه: IF سیگنال قوی AND توافق بالا THEN اقدام سریع. IF سیگنال قوی AND توافق پایین THEN probing ۹۰ روزه.'
+                                'برای نشانه‌های ضعیف لازم نیست کنترلر صنعتی بسازید؛ سه قاعده IF-THEN شفاف برای مدیر کافی است.',
+                                'نمونه: IF سیگنال قوی AND توافق بالا THEN اقدام سریع. IF سیگنال قوی AND توافق پایین THEN آزمون ۹۰ روزه.'
                             ]
                         },
                         {
@@ -210,7 +210,7 @@ registerLocale('fa', {
                             paragraphs: [
                                 'Aleatory: تغییر تصادفی با توزیع قابل مدل. Epistemic: ناآگاهی و اختلاف مدل ذهنی.',
                                 'اختلاف خبرگان epistemic است؛ IT2 برای همین طراحی شده و مکمل سناریو و دلفی است.',
-                                'spread را probability تفسیر نکنید. FOU confidence interval آماری نیست.'
+                                'گستره را probability تفسیر نکنید. FOU confidence interval آماری نیست.'
                             ]
                         }
                     ],
@@ -226,16 +226,16 @@ registerLocale('fa', {
                             'یک پاراگراف: اگر FOU پهن باشد کدام قاعده فعال می‌شود؟'
                         ],
                         format: 'نیم صفحه',
-                        criteria: ['شفافیت قواعد', 'پیوند به spread']
+                        criteria: ['شفافیت قواعد', 'پیوند به گستره']
                     }
                 },
                 {
-                    num: 'M4', id: 'm4', pickerLabel: 'کارگاه و memo',
-                    title: 'کارگاه foresight، memo و probing', hours: '۹۰ دقیقه',
-                    readingsShort: 'Rohrbeck FITness · Hines cone',
+                    num: 'M4', id: 'm4', pickerLabel: 'کارگاه و یادداشت',
+                    title: 'کارگاه آینده‌نگاری، یادداشت و آزمون', hours: '۹۰ دقیقه',
+                    readingsShort: 'Rohrbeck FITness · Hines مخروط',
                     visual: 'assets/methods/covers/type2-m4-workshop.svg',
-                    visualCaption: 'از FOU تا memo هیئت‌مدیره و پیلوت ۹۰ روزه',
-                    lectureIntro: 'جلسه چهارم: بستن حلقه. کارگاه صفحه، memo یک‌صفحه‌ای، اتصال به cone of plausibility و probing در FITness، و نقد کیفیت با Popper Diamond.',
+                    visualCaption: 'از FOU تا یادداشت هیئت‌مدیره و پیلوت ۹۰ روزه',
+                    lectureIntro: 'جلسه چهارم: بستن حلقه. کارگاه صفحه، یادداشت یک‌صفحه‌ای، اتصال به مخروط محتمل بودن و آزمون در FITness، و نقد کیفیت با Popper Diamond.',
                     lectureSections: [
                         {
                             id: 'workshop',
@@ -243,57 +243,57 @@ registerLocale('fa', {
                             slideTitles: [
                                 'انتخاب سیگنال',
                                 'امتیاز خبرگان',
-                                'خواندن verdict'
+                                'خواندن حکم'
                             ],
                             paragraphs: [
                                 'سیگنال ضعیف مشخص انتخاب کنید؛ موضوع کلی نگذارید.',
                                 'برای هر خبره بازه پایین و بالا بدهید و FOU تجمعی را ببینید.',
-                                'verdict صفحه را با زبان مدیر بازنویسی کنید: mean، spread، توصیه ۹۰ روزه.'
+                                'حکم صفحه را با زبان مدیر بازنویسی کنید: میانگین، گستره، توصیه ۹۰ روزه.'
                             ]
                         },
                         {
                             id: 'bridge',
-                            title: '۲. پل به foresight سازمانی',
+                            title: '۲. پل به آینده‌نگاری سازمانی',
                             slideTitles: [
-                                'Cone of Plausibility',
-                                'FITness probing',
+                                'مخروط محتمل بودن',
+                                'FITness آزمون',
                                 'Popper Diamond'
                             ],
                             paragraphs: [
-                                'محتمل بودن را می‌توان بازه‌ای گفت وقتی مدل ذهنی ضعیف است؛ cone فقط یک خط نیست.',
-                                'spread زیاد یعنی هنوز probing نکرده‌اید. در زبان روهربک: IT2 به آزمایش وصل می‌شود، نه به ادعای consensus.',
+                                'محتمل بودن را می‌توان بازه‌ای گفت وقتی مدل ذهنی ضعیف است؛ مخروط فقط یک خط نیست.',
+                                'گستره زیاد یعنی هنوز آزمون نکرده‌اید. در زبان روهربک: IT2 به آزمایش وصل می‌شود، نه به ادعای consensus.',
                                 'با Popper Diamond بپرسید: Creativity و Expertise کافی بود؟ Interaction خبرگان واقعی بود یا فقط میانگین؟'
                             ]
                         },
                         {
                             id: 'memo',
-                            title: '۳. memo و ارائه',
+                            title: '۳. یادداشت و ارائه',
                             slideTitles: [
-                                'ساختار memo یک‌صفحه‌ای',
+                                'ساختار یادداشت یک‌صفحه‌ای',
                                 'pitch پنج دقیقه‌ای',
                                 'محدودیت‌ها'
                             ],
                             paragraphs: [
-                                'ساختار: سیگنال، Type-1 mean، IT2 spread، verdict، اقدام ۹۰ روزه، مالک.',
+                                'ساختار: سیگنال، Type-1 میانگین، IT2 گستره، حکم، اقدام ۹۰ روزه، مالک.',
                                 'در کلاس ۵ دقیقه pitch: ۳۰ ثانیه سیگنال، ۹۰ ثانیه FOU، ۹۰ ثانیه توصیه، بقیه سؤال.',
                                 'IT2 جایگزین CLA، سناریو، یا probability با توزیع مشخص نیست. برای مدیر غیرفنی پهنا را به زبان تصمیم ترجمه کنید.'
                             ]
                         }
                     ],
                     readings: [
-                        { type: 'کتاب', text: 'Rohrbeck · Corporate Foresight / FITness · probing.' },
-                        { type: 'کتاب', text: 'Hines & Bishop · Cone of Plausibility.' }
+                        { type: 'کتاب', text: 'Rohrbeck · Corporate Foresight / FITness · آزمون.' },
+                        { type: 'کتاب', text: 'Hines & Bishop · مخروط محتمل بودن.' }
                     ],
                     assignment: {
                         title: 'پروژه پایانی IT2',
-                        description: 'weak signal واقعی (ترجیحاً حوزه thesis).',
+                        description: 'نشانه‌های ضعیف واقعی (ترجیحاً حوزه thesis).',
                         body: [
                             'کارگاه صفحه + تصویر FOU.',
-                            'memo یک‌صفحه‌ای + سه قاعده + پیشنهاد probing ۹۰ روزه.',
+                            'یادداشت یک‌صفحه‌ای + سه قاعده + پیشنهاد آزمون ۹۰ روزه.',
                             'ارائه ۱۰ دقیقه در کلاس.'
                         ],
-                        format: 'memo + ارائه',
-                        criteria: ['صداقت spread', 'پیوند به اقدام', 'زبان مدیر']
+                        format: 'یادداشت + ارائه',
+                        criteria: ['صداقت گستره', 'پیوند به اقدام', 'زبان مدیر']
                     }
                 }
             ]
