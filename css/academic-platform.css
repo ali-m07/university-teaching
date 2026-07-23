@@ -848,10 +848,10 @@ body .catalog-method-go {
     color: var(--sfh-accent);
 }
 
-/* —— Presentations hub —— */
+/* —— Presentations hub · card grid —— */
 body .pres-group {
     margin: 0 0 2.75rem;
-    max-width: 48rem;
+    max-width: none;
 }
 
 body .pres-group-title {
@@ -863,61 +863,81 @@ body .pres-group-title {
 }
 
 body .pres-group-sub {
-    margin: 0 0 0.85rem;
+    margin: 0 0 1rem;
     color: var(--sfh-text-muted);
     font-size: 0.92rem;
     line-height: 1.65;
+    max-width: 42rem;
 }
 
-body .pres-list {
+body .pres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+body .pres-card {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid var(--sfh-border);
-}
-
-body .pres-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1.1rem 0;
+    gap: 0.55rem;
+    padding: 1.25rem 1.2rem 1.15rem;
     text-decoration: none;
     color: inherit;
-    border-bottom: 1px solid var(--sfh-border);
-    transition: color var(--transition-fast);
+    background: var(--sfh-surface);
+    border: 1px solid var(--sfh-border);
+    border-radius: var(--sfh-radius-lg);
+    border-top: 3px solid var(--sfh-accent);
+    transition: border-color var(--transition-fast), background-color var(--transition-fast);
+    min-height: 9.5rem;
 }
 
-body .pres-row:hover .pres-row-copy strong {
-    color: #fff;
+body .pres-card:hover {
+    border-color: rgba(61, 139, 253, 0.45);
+    border-top-color: var(--sfh-accent);
+    background: var(--sfh-surface-raised);
+    box-shadow: none;
+    transform: none;
 }
 
-body .pres-row-num {
-    flex: 0 0 auto;
-    min-width: 2.4rem;
+body .pres-card-num {
     font-family: var(--font-en), var(--font-fa);
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.04em;
     color: var(--sfh-accent);
-    margin-top: 0.15rem;
 }
 
-body .pres-row-copy {
-    display: flex;
-    flex-direction: column;
-    gap: 0.28rem;
-    min-width: 0;
-}
-
-body .pres-row-copy strong {
-    font-size: 1rem;
+body .pres-card h3 {
+    margin: 0;
+    font-size: 1.02rem;
     font-weight: 600;
+    line-height: 1.4;
     color: var(--sfh-text);
 }
 
-body .pres-row-copy span {
-    font-size: 0.9rem;
-    line-height: 1.65;
+body .pres-card:hover h3 {
+    color: #fff;
+}
+
+body .pres-card p {
+    margin: 0;
+    font-size: 0.86rem;
+    line-height: 1.6;
     color: var(--sfh-text-muted);
+    flex: 1;
+}
+
+body .pres-card-go {
+    margin-top: 0.35rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--sfh-accent);
+}
+
+/* legacy list hooks kept harmless */
+body .pres-list,
+body .pres-row {
+    display: contents;
 }
 
 /* —— Articles list —— */
