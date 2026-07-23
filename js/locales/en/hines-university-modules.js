@@ -101,81 +101,122 @@ registerLocale('en', {
                         "readingsShort": "Framing",
                         "visual": "assets/methods/covers/hines-c1-mindsets.svg",
                         "visualCaption": "Column 1 · Framing · six parts",
-                        "lectureIntro": "Framing in Thinking About the Future: six parts, each one teaching slide with definition, book bullets, and a short gloss.",
+                        "lectureIntro": "Framing deck: short opening slides on what Framing is, then each of six parts as definition, Hines bullets, and why it matters.",
                         "lectureSections": [
-                                {
-                                    "id": "mindsets",
-                                    "title": "1. Reframing Mindsets",
-                                    "slideTitles": [
-                                        "Optimism, bias, and complexity"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c1-mindsets.svg",
-                                    "imageCaption": "Reset how the room thinks before tools start",
-                                    "paragraphs": [
-                                        "<p>Reframing mindsets is the opening move of Framing: change how people stand toward the future before any scan or forecast begins. Hines and Bishop treat attitude work as part of the method, not as soft warm-up.</p><ul class=\"fitness-pres-bullets\"><li>Optimism toward the future</li><li>Identifying biases</li><li>Detecting self-deceptions and external factors</li><li>Using the whole brain</li><li>Welcoming complexity</li><li>The influence of time and various factors on progress</li></ul><p>Gloss: a cynical or overconfident room will misread every later pillar. Optimism is disciplined openness, not cheerleading; bias and self-deception checks keep external drivers visible; whole-brain and complexity work stop premature simplification; time and multi-factor progress remind the team that change is rarely single-cause.</p>"
-                                    ]
-                                },
-                                {
-                                    "id": "stakeholders",
-                                    "title": "2. Stakeholders",
-                                    "slideTitles": [
-                                        "Know the organization, not a futurist clone"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c1-stakeholders.svg",
-                                    "imageCaption": "Managers, staff, and the organization as distinct concerns",
-                                    "paragraphs": [
-                                        "<p>Stakeholder work in Framing means knowing whose future is at stake and what each group fears or hopes, so the foresight question is owned by real people inside a real organization.</p><ul class=\"fitness-pres-bullets\"><li>Knowing the organization more deeply</li><li>Understanding the concerns of managers, employees, and the organization itself</li><li>Not trying to turn the client into a futurist</li></ul><p>Gloss: the client stays the decision maker; the foresight team supplies process and challenge. Deep org knowledge and separate concern maps for managers, staff, and the institution prevent a generic exercise that answers a question nobody asked.</p>"
-                                    ]
-                                },
-                                {
-                                    "id": "intent",
-                                    "title": "3. Intent & Purpose",
-                                    "slideTitles": [
-                                        "Explore, remodel, test the stated problem"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c1-intent.svg",
-                                    "imageCaption": "Exploration versus exploitation inside Framing",
-                                    "paragraphs": [
-                                        "<p>Intent and purpose fix why the project exists: to explore futures and improve mental models, not only to defend today's operating plan.</p><ul class=\"fitness-pres-bullets\"><li>Exploring the future</li><li>Improving mental models</li><li>Balancing exploration and exploitation</li><li>Evaluating the problem presented by the organization: is it the real problem or not</li></ul><p>Gloss: exploitation protects current performance; exploration opens alternatives. Framing must test whether the stated brief is the real problem. If the brief is wrong, Scanning and Forecasting only refine a false target.</p>"
-                                    ]
-                                },
-                                {
-                                    "id": "goals",
-                                    "title": "4. Goal Setting",
-                                    "slideTitles": [
-                                        "Outcomes, horizons, outward focus"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c1-goals.svg",
-                                    "imageCaption": "Measurable goals across multiple horizons",
-                                    "paragraphs": [
-                                        "<p>Goal setting turns Framing into a contract the team can check: what success looks like, on which horizon, and with what outward focus.</p><ul class=\"fitness-pres-bullets\"><li>Defining goals in measurable form</li><li>Focusing on outcomes rather than outputs</li><li>Working across different time horizons</li><li>Emphasizing the external environment and the future rather than the present and the inside</li></ul><p>Gloss: outputs are reports and workshops; outcomes are decisions, options, or capability shifts. Multiple horizons stop the team from treating a three-month KPI as a ten-year foresight goal. External and future focus keeps Framing from collapsing into internal status reporting.</p>"
-                                    ]
-                                },
-                                {
-                                    "id": "team",
-                                    "title": "5. Team Selection",
-                                    "slideTitles": [
-                                        "Foresight as a team sport"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c1-team.svg",
-                                    "imageCaption": "Diverse people in an interactive process",
-                                    "paragraphs": [
-                                        "<p>Team selection treats strategic foresight as collective work: who is in the room shapes which futures become thinkable.</p><ul class=\"fitness-pres-bullets\"><li>A team sport</li><li>Turning it into an interactive and comprehensive process</li><li>Involving diverse people</li></ul><p>Gloss: a solo analyst can write a memo; Framing needs interaction across functions and viewpoints so blind spots surface early. Diversity here means role, expertise, and stake, not a decorative guest list.</p>"
-                                    ]
-                                },
-                                {
-                                    "id": "environment",
-                                    "title": "6. Strategic Environment",
-                                    "slideTitles": [
-                                        "Open space for prototypes and tests"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c1-environment.svg",
-                                    "imageCaption": "A climate for unconstrained thinking and trials",
-                                    "paragraphs": [
-                                        "<p>Creating a strategic environment means designing the working climate so Framing can stay open: people can think without premature closure and can try small tests.</p><ul class=\"fitness-pres-bullets\"><li>An environment conducive to open, unconstrained thinking</li><li>Encouraging experiments and prototypes</li></ul><p>Gloss: if the room rewards only safe answers, later pillars inherit a closed frame. Space for prototypes links Framing to Acting early: ideas can be tested as rough probes, not only debated as slides.</p>"
-                                    ]
-                                }
-                        
+                            {
+                                "id": "opening",
+                                "title": "0. Opening Framing",
+                                "image": "assets/methods/covers/hines-m0-map.svg",
+                                "imageCaption": "Column 1 in the six-pillar path",
+                                "slideTitles": [
+                                    "What is column 1?",
+                                    "Where does it come from?",
+                                    "Why do we frame?",
+                                    "What Framing means"
+                                ],
+                                "paragraphs": [
+                                    "<p>Column 1 is Framing in Hines and Bishop's six-pillar model of strategic foresight. It is the first pillar: set the problem, the people, and the working conditions before any scan or forecast.</p>",
+                                    "<p>In Thinking About the Future, Framing is the opening operational stage of strategic foresight. It sits before Scanning and Forecasting so the team does not collect signals or build futures for a vague or false brief.</p>",
+                                    "<p>We frame to prepare boundaries, mindsets, stakeholders, purpose, goals, team, and climate before data and scenarios. Without Framing, later pillars misread the issue and produce tidy answers to the wrong question.</p>",
+                                    "<p>Framing means specifying the foresight issue, its boundaries, and the readiness of the system and team for foresight work. It is method, not a warm-up chat before the real tools start.</p>"
+                                ]
+                            },
+                            {
+                                "id": "mindsets",
+                                "title": "1. Reframing Mindsets",
+                                "image": "assets/methods/covers/hines-c1-mindsets.svg",
+                                "imageCaption": "Reset how the room stands toward the future",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Reframing mindsets changes how people stand toward the future before scan or forecast begins. Hines and Bishop treat attitude work as part of the method.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Optimism toward the future</li><li>Identifying biases</li><li>Detecting self-deceptions and external factors</li><li>Using the whole brain</li><li>Welcoming complexity</li><li>The influence of time and various factors on progress</li></ul>",
+                                    "<p>A cynical or overconfident room misreads every later pillar. Optimism here is disciplined openness. Bias and self-deception checks keep external drivers visible. Complexity and multi-factor time stop premature simplification.</p>"
+                                ]
+                            },
+                            {
+                                "id": "stakeholders",
+                                "title": "2. Stakeholders",
+                                "image": "assets/methods/covers/hines-c1-stakeholders.svg",
+                                "imageCaption": "Managers, staff, and the organization as distinct concerns",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Stakeholder work means knowing whose future is at stake and what each group fears or hopes, so the foresight question is owned inside a real organization.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Knowing the organization more deeply</li><li>Understanding the concerns of managers, employees, and the organization itself</li><li>Not trying to turn the client into a futurist</li></ul>",
+                                    "<p>The client stays the decision maker; the foresight team supplies process and challenge. Separate concern maps prevent a generic exercise that answers a question nobody asked.</p>"
+                                ]
+                            },
+                            {
+                                "id": "intent",
+                                "title": "3. Intent and Purpose",
+                                "image": "assets/methods/covers/hines-c1-intent.svg",
+                                "imageCaption": "Explore futures and test the stated problem",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Intent and purpose fix why the project exists: explore futures and improve mental models, not only defend today's operating plan.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Exploring the future</li><li>Improving mental models</li><li>Balancing exploration and exploitation</li><li>Evaluating the problem presented by the organization: is it the real problem or not</li></ul>",
+                                    "<p>Exploitation protects current performance; exploration opens alternatives. If the stated brief is wrong, Scanning and Forecasting only refine a false target.</p>"
+                                ]
+                            },
+                            {
+                                "id": "goals",
+                                "title": "4. Goal Setting",
+                                "image": "assets/methods/covers/hines-c1-goals.svg",
+                                "imageCaption": "Measurable outcomes across horizons",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Goal setting turns Framing into a checkable contract: what success looks like, on which horizon, with what outward focus.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Defining goals in measurable form</li><li>Focusing on outcomes rather than outputs</li><li>Working across different time horizons</li><li>Emphasizing the external environment and the future rather than the present and the inside</li></ul>",
+                                    "<p>Outputs are reports and workshops; outcomes are decisions or capability shifts. Multiple horizons stop a short KPI from posing as a foresight goal. External focus keeps Framing from becoming internal status reporting.</p>"
+                                ]
+                            },
+                            {
+                                "id": "team",
+                                "title": "5. Team Selection",
+                                "image": "assets/methods/covers/hines-c1-team.svg",
+                                "imageCaption": "Foresight as collective work",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Team selection treats strategic foresight as collective work: who is in the room shapes which futures become thinkable.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>A team sport</li><li>Turning it into an interactive and comprehensive process</li><li>Involving diverse people</li></ul>",
+                                    "<p>A solo analyst can write a memo; Framing needs interaction across functions so blind spots surface early. Diversity means role, expertise, and stake, not a decorative guest list.</p>"
+                                ]
+                            },
+                            {
+                                "id": "environment",
+                                "title": "6. Strategic Environment",
+                                "image": "assets/methods/covers/hines-c1-environment.svg",
+                                "imageCaption": "Open climate for thinking and trials",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Creating a strategic environment designs the working climate so Framing stays open: unconstrained thinking and room for small tests.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>An environment conducive to open, unconstrained thinking</li><li>Encouraging experiments and prototypes</li></ul>",
+                                    "<p>If the room rewards only safe answers, later pillars inherit a closed frame. Prototypes link Framing to Acting early: rough probes, not only slide debates.</p>"
+                                ]
+                            }
                         ],
                         "readings": [
                             {
@@ -206,57 +247,90 @@ registerLocale('en', {
                         "readingsShort": "Scanning",
                         "visual": "assets/methods/covers/hines-c2-mapping.svg",
                         "visualCaption": "Column 2 · Scanning · four parts",
-                        "lectureIntro": "Scanning in Thinking About the Future: four parts, each one teaching slide with definition, book bullets, and a short gloss.",
+                        "lectureIntro": "Scanning deck: short opening on what Scanning is, then each of four parts as definition, Hines bullets, and why it matters.",
                         "lectureSections": [
-                                {
-                                    "id": "mapping",
-                                    "title": "1. Mapping",
-                                    "slideTitles": [
-                                        "System boundary and integrative view"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c2-mapping.svg",
-                                    "imageCaption": "Map the system before you scan the feed",
-                                    "paragraphs": [
-                                        "<p>Mapping in Scanning draws the system under study so the team knows what is inside the frame, what sits outside, and how parts connect. Without a map, scanning becomes a pile of clippings.</p><ul class=\"fitness-pres-bullets\"><li>A global perspective</li><li>Mapping the system under study</li><li>An integrative view</li><li>Stakeholder analysis</li></ul><p>Gloss: global does not mean endless; it means refusing a narrow local blinker. Integrative view plus stakeholder analysis keep the map from becoming only a tech diagram or only an org chart.</p>"
-                                    ]
-                                },
-                                {
-                                    "id": "history",
-                                    "title": "2. History",
-                                    "slideTitles": [
-                                        "Past path, false comfort, no reinvention"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c2-history.svg",
-                                    "imageCaption": "Start Scanning by looking backward carefully",
-                                    "paragraphs": [
-                                        "<p>History work grounds Scanning in how the present period was made, so the team does not invent novelty where continuity already explains the pattern.</p><ul class=\"fitness-pres-bullets\"><li>Beginning by looking at the past</li><li>Not reinventing the wheel</li><li>Awareness of innovations that create false comfort</li></ul><p>Gloss: some past innovations feel like safety and hide new risk. History is not nostalgia; it is a check on what the baseline already assumes.</p>"
-                                    ]
-                                },
-                                {
-                                    "id": "env",
-                                    "title": "3. Environmental Scanning",
-                                    "slideTitles": [
-                                        "Explore, analyze, frame, apply"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c2-envscan.svg",
-                                    "imageCaption": "Internal and external contexts in one scan loop",
-                                    "paragraphs": [
-                                        "<p>Environmental scanning watches changing contexts so Framing stays honest: the outside world moves while the brief is being written.</p><ul class=\"fitness-pres-bullets\"><li>Scanning the environment for awareness of changing contexts, including: exploration, analysis, framing, application</li><li>Integrating internal and external environments</li><li>Examining unknown and unattractive domains</li><li>Not all information is in the research literature</li></ul><p>Gloss: the loop exploration, analysis, framing, application keeps scan work from stopping at collection. Unattractive domains and non-academic sources are where weak signals often hide.</p>"
-                                    ]
-                                },
-                                {
-                                    "id": "engaging",
-                                    "title": "4. Engaging Everyone",
-                                    "slideTitles": [
-                                        "Inside, outside, and the outcasts"
-                                    ],
-                                    "image": "assets/methods/covers/hines-c2-engaging.svg",
-                                    "imageCaption": "Prominent voices and marginalized voices together",
-                                    "paragraphs": [
-                                        "<p>Engaging everyone widens who can see and name change: Scanning is social, not only documentary.</p><ul class=\"fitness-pres-bullets\"><li>Engaging everyone outside and inside</li><li>Consulting prominent people</li><li>Consulting the marginalized / outcasts</li><li>Designing workshops that turn learning into collective activity</li></ul><p>Gloss: prominent voices give access and legitimacy; outcast voices often see what the center cannot. Workshops should make learning collective, not a stage for one expert monologue.</p>"
-                                    ]
-                                }
-                        
+                            {
+                                "id": "opening",
+                                "title": "0. Opening Scanning",
+                                "image": "assets/methods/covers/hines-c2-mapping.svg",
+                                "imageCaption": "Column 2 after Framing",
+                                "slideTitles": [
+                                    "What is column 2?",
+                                    "Where does it sit?",
+                                    "Why do we scan?",
+                                    "What Scanning means"
+                                ],
+                                "paragraphs": [
+                                    "<p>Column 2 is Scanning in the six-pillar model. It gathers and organizes what is changing inside and outside the framed system.</p>",
+                                    "<p>Scanning follows Framing and feeds Forecasting. A clear frame tells the scan what to watch; scan findings keep the frame honest as the world moves.</p>",
+                                    "<p>We scan so foresight is not invented from opinion alone. Mapping, history, environmental watch, and wide engagement surface change before scenarios harden.</p>",
+                                    "<p>Scanning means drawing the system, learning from the past path, watching changing contexts, and bringing many voices into what counts as evidence of change.</p>"
+                                ]
+                            },
+                            {
+                                "id": "mapping",
+                                "title": "1. Mapping",
+                                "image": "assets/methods/covers/hines-c2-mapping.svg",
+                                "imageCaption": "System boundary before the feed",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Mapping draws the system under study so the team knows what is inside the frame, what sits outside, and how parts connect.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>A global perspective</li><li>Mapping the system under study</li><li>An integrative view</li><li>Stakeholder analysis</li></ul>",
+                                    "<p>Without a map, scanning becomes a pile of clippings. Global means refusing a narrow local blinker. Integrative view plus stakeholders keep the map from being only a tech diagram or only an org chart.</p>"
+                                ]
+                            },
+                            {
+                                "id": "history",
+                                "title": "2. History",
+                                "image": "assets/methods/covers/hines-c2-history.svg",
+                                "imageCaption": "Look backward carefully before novelty claims",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>History work grounds Scanning in how the present period was made, so the team does not invent novelty where continuity already explains the pattern.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Beginning by looking at the past</li><li>Not reinventing the wheel</li><li>Awareness of innovations that create false comfort</li></ul>",
+                                    "<p>Some past innovations feel like safety and hide new risk. History is not nostalgia; it is a check on what the baseline already assumes.</p>"
+                                ]
+                            },
+                            {
+                                "id": "env",
+                                "title": "3. Environmental Scanning",
+                                "image": "assets/methods/covers/hines-c2-envscan.svg",
+                                "imageCaption": "Explore, analyze, frame, apply",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Environmental scanning watches changing contexts so Framing stays honest: the outside world moves while the brief is being written.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Scanning the environment for awareness of changing contexts, including: exploration, analysis, framing, application</li><li>Integrating internal and external environments</li><li>Examining unknown and unattractive domains</li><li>Not all information is in the research literature</li></ul>",
+                                    "<p>The loop exploration, analysis, framing, application stops scan work at collection. Unattractive domains and non-academic sources are where weak signals often hide.</p>"
+                                ]
+                            },
+                            {
+                                "id": "engaging",
+                                "title": "4. Engaging Everyone",
+                                "image": "assets/methods/covers/hines-c2-engaging.svg",
+                                "imageCaption": "Prominent and marginalized voices together",
+                                "slideTitles": [
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
+                                ],
+                                "paragraphs": [
+                                    "<p>Engaging everyone widens who can see and name change. Scanning is social, not only documentary.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Engaging everyone outside and inside</li><li>Consulting prominent people</li><li>Consulting the marginalized / outcasts</li><li>Designing workshops that turn learning into collective activity</li></ul>",
+                                    "<p>Prominent voices give access and legitimacy; outcast voices often see what the center cannot. Workshops should make learning collective, not one expert monologue.</p>"
+                                ]
+                            }
                         ],
                         "readings": [
                             {
@@ -287,56 +361,104 @@ registerLocale('en', {
                         "readingsShort": "Forecasting",
                         "visual": "assets/methods/covers/hines-c3-drivers.svg",
                         "visualCaption": "Column 3 · Forecasting · five parts",
-                        "lectureIntro": "Forecasting maps the spectrum of futures. One presentation covers drivers, tools, divergence, convergence, and alternative futures.",
+                        "lectureIntro": "Forecasting deck: short opening on what Forecasting is, then each of five parts as definition, Hines bullets, and why it matters.",
                         "lectureSections": [
+                            {
+                                "id": "opening",
+                                "title": "0. Opening Forecasting",
+                                "image": "assets/methods/covers/hines-c3-drivers.svg",
+                                "imageCaption": "Column 3 after Scanning",
+                                "slideTitles": [
+                                    "What is column 3?",
+                                    "Where does it sit?",
+                                    "Why do we forecast?",
+                                    "What Forecasting means"
+                                ],
+                                "paragraphs": [
+                                    "<p>Column 3 is Forecasting in the six-pillar model. It maps a spectrum of futures from drivers and tools through divergence, convergence, and alternative worlds.</p>",
+                                    "<p>Forecasting follows Scanning and precedes Visioning. Scan evidence feeds drivers and uncertainties; alternative futures become the field Visioning will interpret and prefer.</p>",
+                                    "<p>We forecast to escape a single baseline story. Without structured alternatives, planning locks onto today's extrapolation and calls it the future.</p>",
+                                    "<p>Forecasting means naming drivers and uncertainties, choosing fit methods, opening then focusing ideas, and building consistent future worlds, not trend lists alone.</p>"
+                                ]
+                            },
                             {
                                 "id": "drivers",
                                 "title": "1. Drivers and Uncertainties",
+                                "image": "assets/methods/covers/hines-c3-drivers.svg",
+                                "imageCaption": "STEEP, CLA depth, intersections, era turns",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Identifying main drivers (obvious and less visible; STEEP strategic context; challenging present assumptions)</li><li>Using a layered approach (CLA) for depth of change: litany, social/systemic, discourse/worldview, metaphor/myth</li><li>Assessing fundamental changes that reshape the usual space</li><li>Seeking intersections of change (Kauffman principle; trends are not isolated)</li><li>Seeking turning points (Era)</li><li>Improving decisions by reducing uncertainty (predetermined anchors versus key uncertainties)</li></ul>"
+                                    "<p>Drivers and uncertainties open Forecasting by naming what moves the system and what remains undecided.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Identifying main drivers (obvious and less visible; STEEP strategic context; challenging present assumptions)</li><li>Using a layered approach (CLA) for depth of change: litany, social/systemic, discourse/worldview, metaphor/myth</li><li>Assessing fundamental changes that reshape the usual space</li><li>Seeking intersections of change (Kauffman principle; trends are not isolated)</li><li>Seeking turning points (Era)</li><li>Improving decisions by reducing uncertainty (predetermined anchors versus key uncertainties)</li></ul>",
+                                    "<p>STEEP widens the driver set; CLA stops litany headlines from posing as causes. Intersections and era turns break one-by-one trend reading. Anchors versus key uncertainties focus effort where choice still matters.</p>"
                                 ]
                             },
                             {
                                 "id": "methods",
                                 "title": "2. Choosing Forecasting Tools",
+                                "image": "assets/methods/covers/hines-c3-tools.svg",
+                                "imageCaption": "Courtney fit, formal method, combine",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Correct approaches and tools (Courtney framework; fit tools to the level of ambiguity)</li><li>Using at least one formal method</li><li>Matching methods to the situation</li><li>Combining techniques for a wider picture of possible futures</li></ul>"
+                                    "<p>Choosing tools matches method to the ambiguity of the situation. Tool choice is a design decision inside Forecasting, not a technique collection.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Correct approaches and tools (Courtney framework; fit tools to the level of ambiguity)</li><li>Using at least one formal method</li><li>Matching methods to the situation</li><li>Combining techniques for a wider picture of possible futures</li></ul>",
+                                    "<p>Courtney levels stop a single-number forecast when residual uncertainty is high. One formal method aids transparency; combining techniques widens the futures set.</p>"
                                 ]
                             },
                             {
                                 "id": "diverge",
                                 "title": "3. Divergence: Generating Ideas",
+                                "image": "assets/methods/covers/hines-c3-diverge.svg",
+                                "imageCaption": "Open the field before you rank",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Stimulating new thoughts with creative tools and approaches (strategic relatives, value analysis, and similar)</li><li>Going beyond mere brainstorming</li><li>Inverting problems (assume what seems certain is wrong)</li><li>Seeking disruptive ideas and anti-groupthink prompts</li><li>Combining rigor and creativity</li><li>Using both analytic and affective components</li><li>Experiencing the future first-hand (sensory or simulation)</li><li>Avoiding premature convergence of ideas</li></ul>"
+                                    "<p>Divergence generates the idea field Forecasting will later compress. Creative stretch comes before prioritization.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Stimulating new thoughts with creative tools and approaches (strategic relatives, value analysis, and similar)</li><li>Going beyond mere brainstorming</li><li>Inverting problems (assume what seems certain is wrong)</li><li>Seeking disruptive ideas and anti-groupthink prompts</li><li>Combining rigor and creativity</li><li>Using both analytic and affective components</li><li>Experiencing the future first-hand (sensory or simulation)</li><li>Avoiding premature convergence of ideas</li></ul>",
+                                    "<p>Brainstorming alone is too thin. Invert and disturb to break groupthink. First-hand future experience makes alternatives stick. Early convergence is the main failure mode here.</p>"
                                 ]
                             },
                             {
                                 "id": "converge",
                                 "title": "4. Convergence: Prioritizing Ideas",
+                                "image": "assets/methods/covers/hines-c3-converge.svg",
+                                "imageCaption": "Shared ground without killing dissent",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Identifying and prioritizing shared grounds</li><li>Balancing realism with a critical stance</li><li>Treating trends with skepticism</li></ul>"
+                                    "<p>Convergence prioritizes after divergence has opened the field. Forecasting needs shared grounds without treating every trend as destiny.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Identifying and prioritizing shared grounds</li><li>Balancing realism with a critical stance</li><li>Treating trends with skepticism</li></ul>",
+                                    "<p>Common ground is a working agreement for the next design step, not consensus theater. Realism without critique becomes status quo; critique without realism becomes fantasy.</p>"
                                 ]
                             },
                             {
                                 "id": "alternatives",
                                 "title": "5. Alternative Futures",
+                                "image": "assets/methods/covers/hines-c3-alternatives.svg",
+                                "imageCaption": "Future worlds, not trend lists",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Assuming the baseline is wrong</li><li>Exploring and building alternative futures</li><li>Possible, plausible, probable, preferable</li><li>Emphasizing plausible surprises (Wild Cards)</li><li>Describing how the future differs from the present (a future world, not only a trend list)</li><li>Working backward / backcasting from a target scenario</li><li>Quality control and internal consistency</li><li>Supporting alternatives with empirical evidence</li></ul>"
+                                    "<p>Alternative futures are the core product of Forecasting: several coherent future worlds, including the chance that today's baseline is wrong.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Assuming the baseline is wrong</li><li>Exploring and building alternative futures</li><li>Possible, plausible, probable, preferable</li><li>Emphasizing plausible surprises (Wild Cards)</li><li>Describing how the future differs from the present (a future world, not only a trend list)</li><li>Working backward / backcasting from a target scenario</li><li>Quality control and internal consistency</li><li>Supporting alternatives with empirical evidence</li></ul>",
+                                    "<p>Layers organize judgment; wild cards keep surprise in the set. Describe a world, not a bullet list of trends. Backcasting, QA, and evidence make alternatives usable for Visioning.</p>"
                                 ]
                             }
                         ],
@@ -373,46 +495,72 @@ registerLocale('en', {
                         "readingsShort": "Visioning",
                         "visual": "assets/methods/covers/hines-c4-implications.svg",
                         "visualCaption": "Column 4 · Visioning · three clusters",
-                        "lectureIntro": "Forecasting maps the spectrum of futures; Visioning asks so what? Given those possibles, what will the organization do? Without that question, foresight stays an intellectual exercise; the path to mission, goals, effectiveness, performance, and the bottom line must be mapped.",
+                        "lectureIntro": "Visioning deck: short opening on what Visioning is, then each cluster as definition, Hines bullets, and why it matters.",
                         "lectureSections": [
                             {
-                                "id": "intro",
-                                "title": "0. From forecasting to visioning",
+                                "id": "opening",
+                                "title": "0. Opening Visioning",
+                                "image": "assets/methods/covers/hines-c4-bridge.svg",
+                                "imageCaption": "Column 4 after Forecasting",
                                 "slideTitles": [
-                                    "So what?"
+                                    "What is column 4?",
+                                    "Where does it sit?",
+                                    "Why do we vision?",
+                                    "What Visioning means"
                                 ],
                                 "paragraphs": [
-                                    "Forecasting shows what may happen. Visioning chooses and shapes a preferred direction so foresight reaches mission, goals, effectiveness, performance, and the bottom line."
+                                    "<p>Column 4 is Visioning in the six-pillar model. After Forecasting maps possibles, Visioning asks so what and shapes a preferred direction.</p>",
+                                    "<p>Visioning follows Forecasting and precedes Planning. Alternatives become questions and implications; a shared preferred future then guides strategic options.</p>",
+                                    "<p>Without Visioning, foresight stays an intellectual map. Mission, goals, effectiveness, performance, and the bottom line need a preferred path, not only a spectrum.</p>",
+                                    "<p>Visioning means reading implications of alternatives, challenging hidden assumptions, and building shared stretch vision on a real time continuum.</p>"
                                 ]
                             },
                             {
                                 "id": "implications",
                                 "title": "1. Identifying Implications",
+                                "image": "assets/methods/covers/hines-c4-implications.svg",
+                                "imageCaption": "Futures wheel: orders and unintended effects",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Using alternatives to frame important questions, not as final answers</li><li>Considering second and third order consequences (futures wheel)</li><li>Attending to long term and unintended consequences</li></ul>"
+                                    "<p>Identifying implications turns alternative futures into questions the organization must answer, not into final answers.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Using alternatives to frame important questions, not as final answers</li><li>Considering second and third order consequences (futures wheel)</li><li>Attending to long term and unintended consequences</li></ul>",
+                                    "<p>First-order hits are easy to list. Second and third order reveal chains that change strategy. Long-term and unintended effects keep a preferred path honest about side effects.</p>"
                                 ]
                             },
                             {
                                 "id": "assumptions",
                                 "title": "2. Challenging Assumptions",
+                                "image": "assets/methods/covers/hines-c4-assumptions.svg",
+                                "imageCaption": "Make explicit, then stress-test",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Stating assumptions explicitly</li><li>Challenging conventional wisdom</li><li>Assume nothing; question everything</li><li>Identifying governing taboos and breaking them</li><li>Cross checking assumptions and validating with experts</li></ul>"
+                                    "<p>Challenging assumptions makes the hidden rules of the preferred future visible so today's conventional wisdom is not smuggled into tomorrow's goal.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Stating assumptions explicitly</li><li>Challenging conventional wisdom</li><li>Assume nothing; question everything</li><li>Identifying governing taboos and breaking them</li><li>Cross checking assumptions and validating with experts</li></ul>",
+                                    "<p>Unspoken assumptions run strategy by default. Taboos are often the real constraints. Expert cross-check validates; questioning everything is disciplined doubt, not cynicism.</p>"
                                 ]
                             },
                             {
                                 "id": "visionary",
                                 "title": "3. Visionary Thinking",
+                                "image": "assets/methods/covers/hines-c4-visionary.svg",
+                                "imageCaption": "Shared vision, stretch, what-if, presence",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Creating a shared strategic vision</li><li>Placing the vision on a time continuum</li><li>Strategic goal setting as stretch goals (BHAG / stretch)</li><li>Positive leverage and Appreciative Inquiry (what you focus on, you get)</li><li>Dator's law: every useful statement about the future first looks ridiculous</li><li>Asking what if questions</li><li>Sensing and activating the emerging future (presencing)</li></ul>"
+                                    "<p>Visionary thinking builds a shared preferred future that stretches the organization while staying on a real time continuum.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Creating a shared strategic vision</li><li>Placing the vision on a time continuum</li><li>Strategic goal setting as stretch goals (BHAG / stretch)</li><li>Positive leverage and Appreciative Inquiry (what you focus on, you get)</li><li>Dator's law: every useful statement about the future first looks ridiculous</li><li>Asking what if questions</li><li>Sensing and activating the emerging future (presencing)</li></ul>",
+                                    "<p>Shared vision is collective ownership, not a wall slogan. Stretch pulls beyond incremental plans. Dator's law protects useful-but-odd statements; what-if and presencing keep Visioning alive to emergence.</p>"
                                 ]
                             }
                         ],
@@ -445,26 +593,56 @@ registerLocale('en', {
                         "readingsShort": "Planning",
                         "visual": "assets/methods/covers/hines-c5-strategic.svg",
                         "visualCaption": "Column 5 · Planning · two clusters",
-                        "lectureIntro": "Planning bridges vision to strategy and tactics that lead to action. It maps from where we are to where we want to be.",
+                        "lectureIntro": "Planning deck: short opening on what Planning is, then each cluster as definition, Hines bullets, and why it matters.",
                         "lectureSections": [
+                            {
+                                "id": "opening",
+                                "title": "0. Opening Planning",
+                                "image": "assets/methods/covers/hines-c5-strategic.svg",
+                                "imageCaption": "Column 5 after Visioning",
+                                "slideTitles": [
+                                    "What is column 5?",
+                                    "Where does it sit?",
+                                    "Why do we plan?",
+                                    "What Planning means"
+                                ],
+                                "paragraphs": [
+                                    "<p>Column 5 is Planning in the six-pillar model. It bridges preferred vision to strategy and tactics that can lead to action.</p>",
+                                    "<p>Planning follows Visioning and precedes Acting. Shared preferred direction becomes strategic conversation, change-or-keep choices, and a spectrum of options.</p>",
+                                    "<p>Vision without Planning stays inspirational. Planning maps from where we are to where we want to be with options the organization can actually choose.</p>",
+                                    "<p>Planning means thinking strategically in cultural and social context, then developing distinctive options with contingencies, not one locked best plan.</p>"
+                                ]
+                            },
                             {
                                 "id": "strategic",
                                 "title": "1. Thinking Strategically",
+                                "image": "assets/methods/covers/hines-c5-strategic.svg",
+                                "imageCaption": "Emergence, dialogue, branch points",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Strengthening emergence at the organizational level</li><li>Treating cultural and social environment as the primary component</li><li>Creating strategy depends on stimulating strategic conversations across the organization</li><li>Identifying what must change and what must not change</li><li>Discovering main strategic choice areas through critical branching points</li></ul>"
+                                    "<p>Thinking strategically bridges preferred vision to choices the organization can make. Strategy emerges through dialogue in a cultural and social field.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Strengthening emergence at the organizational level</li><li>Treating cultural and social environment as the primary component</li><li>Creating strategy depends on stimulating strategic conversations across the organization</li><li>Identifying what must change and what must not change</li><li>Discovering main strategic choice areas through critical branching points</li></ul>",
+                                    "<p>Emergence means strategy is co-produced in talk and practice. Change versus preserve stops total redesign fantasy. Critical branch points mark where the path actually forks.</p>"
                                 ]
                             },
                             {
                                 "id": "options",
                                 "title": "2. Developing Strategic Options",
+                                "image": "assets/methods/covers/hines-c5-options.svg",
+                                "imageCaption": "Do nothing, plausible, preferred, contingencies",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Building fundamental strategic recommendations on the organization's distinctive advantages</li><li>Multidimensional evaluation of the proposed strategy</li><li>Considering do nothing, plausible, and preferred options when presenting choices</li><li>Having contingency plans for the unexpected (a spectrum of options, not lock on one best)</li></ul>"
+                                    "<p>Developing strategic options turns Visioning into a menu of moves built on distinctive advantage and evaluated on many dimensions.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Building fundamental strategic recommendations on the organization's distinctive advantages</li><li>Multidimensional evaluation of the proposed strategy</li><li>Considering do nothing, plausible, and preferred options when presenting choices</li><li>Having contingency plans for the unexpected (a spectrum of options, not lock on one best)</li></ul>",
+                                    "<p>Distinctiveness keeps options from becoming generic best practice. Do nothing is a real option. Contingencies protect Acting when the preferred path meets surprise.</p>"
                                 ]
                             }
                         ],
@@ -497,46 +675,88 @@ registerLocale('en', {
                         "readingsShort": "Acting",
                         "visual": "assets/methods/covers/hines-c6-communicate.svg",
                         "visualCaption": "Column 6 · Acting · four parts",
-                        "lectureIntro": "Forewarned is forearmed. Acting is the final stage: communicate (abstract to concrete), translate plan to action, and institutionalize so foresight is not a one off.",
+                        "lectureIntro": "Acting deck: short opening on what Acting is, then each of four parts as definition, Hines bullets, and why it matters.",
                         "lectureSections": [
+                            {
+                                "id": "opening",
+                                "title": "0. Opening Acting",
+                                "image": "assets/methods/covers/hines-c6-communicate.svg",
+                                "imageCaption": "Column 6 after Planning",
+                                "slideTitles": [
+                                    "What is column 6?",
+                                    "Where does it sit?",
+                                    "Why do we act?",
+                                    "What Acting means"
+                                ],
+                                "paragraphs": [
+                                    "<p>Column 6 is Acting in the six-pillar model. Forewarned is forearmed: communicate results, set an action agenda, run a strategic information system, and institutionalize foresight.</p>",
+                                    "<p>Acting is the final pillar after Planning. Options become transferable messages, near-term moves, early-warning indicators, and recurring organizational capability.</p>",
+                                    "<p>Without Acting, foresight is a one-off report. Transfer, urgency, sensing, and institutional rhythm keep strategic foresight alive after the workshop.</p>",
+                                    "<p>Acting means designing results for transfer, deciding with imperfect data, watching weak signals, and making foresight a repeated learning practice, not a single event.</p>"
+                                ]
+                            },
                             {
                                 "id": "communicate",
                                 "title": "1. Communicating / Transferring Results",
+                                "image": "assets/methods/covers/hines-c6-communicate.svg",
+                                "imageCaption": "Audience style, immersion, modular outputs",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Designing results for transferability</li><li>Arranging the message in the audience's thinking style</li><li>Immersing stakeholders and decision makers in alternatives for acceptance and alignment</li><li>Being provocative (with care; fit organizational culture)</li><li>Modularizing outputs: keep the good, address the bad</li><li>Awareness of change through experience, insight, and reframing</li></ul>"
+                                    "<p>Communicating results designs foresight for transfer: move abstract futures into forms decision makers can use in their thinking style.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Designing results for transferability</li><li>Arranging the message in the audience's thinking style</li><li>Immersing stakeholders and decision makers in alternatives for acceptance and alignment</li><li>Being provocative (with care; fit organizational culture)</li><li>Modularizing outputs: keep the good, address the bad</li><li>Awareness of change through experience, insight, and reframing</li></ul>",
+                                    "<p>Transferability beats archive beauty. Immersion raises uptake; provocation is calibrated to culture. Modular outputs and lived reframe are how change awareness sticks.</p>"
                                 ]
                             },
                             {
                                 "id": "agenda",
                                 "title": "2. Action Agenda",
+                                "image": "assets/methods/covers/hines-c6-agenda.svg",
+                                "imageCaption": "Urgency, milestones, one improbable bet",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Creating a sense of urgency</li><li>Strengthening what the organization already does well and building from there</li><li>Purpose of activity: help better decisions</li><li>Decide without all desired data (avoid analysis paralysis)</li><li>Milestones toward the preferred future and celebrating small wins</li><li>Recommend investing at least in one improbable idea</li></ul>"
+                                    "<p>An action agenda turns Planning into near-term moves: urgency, better decisions, milestones, and at least one improbable idea.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Creating a sense of urgency</li><li>Strengthening what the organization already does well and building from there</li><li>Purpose of activity: help better decisions</li><li>Decide without all desired data (avoid analysis paralysis)</li><li>Milestones toward the preferred future and celebrating small wins</li><li>Recommend investing at least in one improbable idea</li></ul>",
+                                    "<p>Urgency without capability collapses; build on strengths. The point is better decisions, not perfect foresight. One improbable investment keeps the portfolio from only safe incrementalism.</p>"
                                 ]
                             },
                             {
                                 "id": "sis",
                                 "title": "3. Strategic Information System",
+                                "image": "assets/methods/covers/hines-c6-sis.svg",
+                                "imageCaption": "Early warning linked to planning",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>An information system aligned with foresight and linked to planning</li><li>An early warning system for weak signals</li><li>Searching for sources of turbulence in the system</li><li>Indicators that signal a potential crisis</li><li>Indicators that are easy to understand and collect</li></ul>"
+                                    "<p>A strategic information system keeps Acting alive after the workshop: foresight-aligned indicators linked to planning, with early warning for weak signals.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>An information system aligned with foresight and linked to planning</li><li>An early warning system for weak signals</li><li>Searching for sources of turbulence in the system</li><li>Indicators that signal a potential crisis</li><li>Indicators that are easy to understand and collect</li></ul>",
+                                    "<p>SIS must feed planning gates, not fill a data lake. Weak signals and turbulence extend Scanning into operations. Crisis indicators must be few and easy or nobody watches them.</p>"
                                 ]
                             },
                             {
                                 "id": "institutionalize",
                                 "title": "4. Institutionalizing Strategic Thinking",
+                                "image": "assets/methods/covers/hines-c6-institutionalize.svg",
+                                "imageCaption": "Framework, rhythm, learning organization",
                                 "slideTitles": [
-                                    "Key book points"
+                                    "Definition",
+                                    "Hines guidelines",
+                                    "Why it matters"
                                 ],
                                 "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Selecting, designing, and making the conceptual framework explicit</li><li>Developing a futures rhythm (regular cadence of study and attention)</li><li>Regular repetition of strategic foresight activities</li><li>Training programs for institutionalization</li><li>In a complex environment, learning is the best approach (learning organization)</li><li>Shifting attitudes toward accepting change</li></ul>"
+                                    "<p>Institutionalizing strategic thinking makes foresight a recurring capability: clear frame, futures rhythm, training, and a learning organization that can accept change.</p>",
+                                    "<ul class=\"fitness-pres-bullets\"><li>Selecting, designing, and making the conceptual framework explicit</li><li>Developing a futures rhythm (regular cadence of study and attention)</li><li>Regular repetition of strategic foresight activities</li><li>Training programs for institutionalization</li><li>In a complex environment, learning is the best approach (learning organization)</li><li>Shifting attitudes toward accepting change</li></ul>",
+                                    "<p>An explicit frame stops every project reinventing method language. Rhythm and repetition beat one-off reports. Training and change acceptance keep Acting from freezing after first success.</p>"
                                 ]
                             }
                         ],
