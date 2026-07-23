@@ -136,15 +136,7 @@ function upgradeLegacyHeader() {
         actions.className = 'header-actions';
         header.appendChild(actions);
     }
-    actions.querySelectorAll('a:not(.header-mail-cta), .btn-primary-sm:not(.header-mail-cta), .btn-ghost-sm, .lang-toggle-wrap').forEach(el => el.remove());
-
-    if (document.body.classList.contains('home-page') && !actions.querySelector('.header-mail-cta')) {
-        const mail = document.createElement('a');
-        mail.href = 'mailto:ali.mansouri1998@gmail.com';
-        mail.className = 'btn-primary-sm header-mail-cta';
-        mail.innerHTML = '<i data-lucide="mail"></i><span data-i18n="index.mailCta"></span>';
-        actions.appendChild(mail);
-    }
+    actions.querySelectorAll('a, .btn-primary-sm, .btn-ghost-sm, .lang-toggle-wrap').forEach(el => el.remove());
 
     const footer = document.querySelector('.main-footer');
     if (footer) {

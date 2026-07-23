@@ -121,38 +121,6 @@ function renderOverviewFeatures() {
     if (window.lucide) window.lucide.createIcons();
 }
 
-function renderHomeWhyGrid() {
-    const grid = document.getElementById('home-why-grid');
-    const cards = typeof pg === 'function' ? pg('brand.whyCards') : null;
-    if (!grid || !cards) return;
-    grid.innerHTML = cards.map((c) => `
-        <article class="home-why-card">
-            <i data-lucide="${esc(c.icon)}" class="home-why-card-icon home-why-card-icon--${esc(c.tone || 'blue')}"></i>
-            <h3>${esc(c.title)}</h3>
-            <p>${esc(c.desc)}</p>
-        </article>`).join('');
-    if (window.lucide) window.lucide.createIcons();
-}
-
-function renderHomeTimeline() {
-    const mount = document.getElementById('home-timeline');
-    const steps = typeof pg === 'function' ? pg('brand.timelineSteps') : null;
-    if (!mount || !steps) return;
-    mount.innerHTML = steps.map((s, i) => {
-        const num = typeof getLang === 'function' && getLang() === 'fa'
-            ? ['۱', '۲', '۳', '۴', '۵'][i] || String(i + 1)
-            : String(i + 1);
-        return `
-        <div class="home-timeline-step">
-            <span class="home-timeline-num home-timeline-num--${i + 1}">${num}</span>
-            <div class="home-timeline-body">
-                <h4>${esc(s.title)}</h4>
-                <p>${esc(s.desc)}</p>
-            </div>
-        </div>`;
-    }).join('');
-}
-
 function renderBrandFindGrid() {
     const grid = document.getElementById('brand-find-grid');
     const items = typeof pg === 'function' ? pg('brand.findItems') : null;
@@ -247,8 +215,6 @@ function renderArticlesList() {
 
 function renderAllPageSections() {
     try {
-        renderHomeWhyGrid();
-        renderHomeTimeline();
         renderBrandFindGrid();
         renderBrandFocusGrid();
         renderAboutFocusLists();

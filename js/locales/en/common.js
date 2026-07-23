@@ -26,16 +26,17 @@ registerLocale('en', {
             copyright: '© Ali Mansouri · FORESIGHT HUB'
         },
         index: {
-            badge: 'System architecture + strategic foresight',
-            heroTitleHtml: 'Hi, I am <span class="home-hero-name">Ali Mansouri</span>.',
-            heroBridge: 'I connect future scenarios to infrastructure that must come out of the hardest real-world pressure still alive and well.',
-            credentialPhd: 'PhD candidate, Futures Studies · University of Tehran',
-            credentialSnapp: 'Solutions Architect, cloud systems · Snapp',
-            ctaCollab: 'Invite for teaching / advisory',
-            ctaMethods: 'Foresight Methods',
-            mailCta: 'Direct contact',
-            contactEmailCta: 'Send email to coordinate a conversation'
+            badge: 'FORESIGHT HUB',
+            heroName: 'Hi, I am Ali Mansouri.',
+            heroTitle: 'I connect future scenarios to infrastructure that must come out of the hardest pressure still alive and well.',
+            heroSub: 'PhD researcher in Futures Studies at the University of Tehran, and Solutions Architect at Snapp for cloud, Kubernetes, and enterprise AI systems.',
+            credentialPhd: 'PhD, Futures Studies · University of Tehran',
+            credentialFocus: 'Strategic foresight · emerging technology',
+            heroIntroP1: '',
+            heroIntroP2: '',
+            ctaMethods: 'Foresight Methods'
         },
+
         common: {
             close: 'Close',
             readMore: 'Learn more',
