@@ -112,13 +112,15 @@ registerLocale('en', {
                                 title: '2. Building the cone in a workshop',
                                 slideTitles: [
                                     'Starting point: the baseline',
+                                    'Baseline analysis: challenging assumptions',
                                     'Dominant trends and weak signals',
                                     'Wild cards at the edge of the cone'
                                 ],
                                 paragraphs: [
-                                    'Building the cone starts with a baseline from the current situation, the path that continues if nothing changes.',
-                                    'Dominant trends shape the probable layer. Weak signals from scanning place possible but less likely futures in the middle layers of the cone.',
-                                    'Wild cards sit at the edge of the cone: low probability, high impact events that must be monitored, not dismissed.'
+                                    'Building the cone starts with a baseline from the current situation, the surprise-free path that continues if trends, plans, and projections simply carry on. Hines and Bishop place the baseline at the center of the cone, not because it is guaranteed, but because it is the most defensible default against which alternative futures are then developed.',
+                                    'The bridge from the baseline to the branching alternative futures is what Hines and Bishop call baseline analysis. First, state the evidence for the baseline: the trends, constants, cycles, plans, and projections that support it. Second, identify the assumption hidden behind each piece of evidence and challenge it by stating its plausible opposite. Every assumption that can plausibly be broken produces one more branch of the cone. A baseline resting on the assumption that oil stays cheap, for example, branches into an alternative future the moment that assumption is challenged with evidence for a plausible price shock.',
+                                    'Dominant trends keep reinforcing the baseline at the probable layer. Weak signals from scanning, together with emerging issues and new events, feed the assumption challenges that place less certain but still plausible and possible futures in the surrounding layers of the cone.',
+                                    'Wild cards sit at the edge of the cone: low probability, high impact events that must be monitored, not dismissed. Unlike an ordinary broken assumption, a wild card can jump the organization almost directly from the baseline into a distant layer of the cone.'
                                 ]
                             },
                             {

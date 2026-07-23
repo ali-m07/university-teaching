@@ -7,7 +7,7 @@
 
     async function load() {
         const langs = ['fa', 'en'];
-        const localeVersion = window.SFH_LOCALE_VERSION || '53';
+        const localeVersion = window.SFH_LOCALE_VERSION || '54';
         try {
             await Promise.all(
                 langs.map(async (lang) => {

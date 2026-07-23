@@ -68,7 +68,7 @@ function shell({ file, method, i18n, accent, icon }) {
             </div>
         </div>
         <p style="text-align:center;margin-top:32px;">
-            <a href="./" class="btn-ghost-sm"><i data-lucide="arrow-right"></i> <span data-i18n="hubAdvanced.catalogLink">کاتالوگ</span></a>
+            <a href="./" class="btn-ghost-sm"><span data-i18n="hubAdvanced.catalogLink">کاتالوگ</span></a>
         </p>
     </section>
 

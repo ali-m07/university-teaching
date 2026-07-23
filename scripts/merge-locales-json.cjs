@@ -152,7 +152,7 @@ function buildCatalog(lang) {
                     { id: 'scenario-2x2', slug: 'scenarios.html', icon: 'layout-grid', status: 'lesson', color: 'var(--color-cla)' },
                     { id: 'visioning', slug: null, icon: 'eye', status: 'catalog', color: '#ffaa00' },
                     { id: 'wind-tunneling', slug: null, icon: 'wind', status: 'catalog', color: '#7c4dff' },
-                    { id: 'cone-plausibility', slug: null, icon: 'triangle', status: 'catalog', color: 'var(--color-f)' },
+                    { id: 'cone-plausibility', slug: 'strategic-foresight.html#m2', icon: 'triangle', status: 'lesson', color: 'var(--color-f)' },
                     { id: 'backcasting-ref', slug: 'backcasting.html', icon: 'history', status: 'interactive', color: 'var(--color-i)' }
                 ]
             },
@@ -207,7 +207,7 @@ function buildCatalog(lang) {
             'scenario-2x2': { title: 'Scenario 2×2 Matrix', founder: 'Schwartz / van der Heijden', desc: '→ ماژول سناریوسازی' },
             visioning: { title: 'Visioning', founder: 'FRM Ch. 20', desc: 'ساخت تصاویر آینده مطلوب برای mobilization و alignment.' },
             'wind-tunneling': { title: 'Wind Tunneling', founder: 'Schwartz / Ogilvy', desc: 'آزمون استراتژی فعلی در برابر سناریوهای مختلف.' },
-            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'محدود کردن فضای آینده به loوlikely، plausible و possible.' },
+            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'گشودن فضای آینده به لایه‌های محتمل (probable)، معقول (plausible) و ممکن (possible)، پیش از انتخاب آینده مطلوب · ماژول M2 شش ستون' },
             'backcasting-ref': { title: 'Backcasting (مرجع)', founder: 'Robinson', desc: '→ شبیه‌ساز پس‌نگری' },
             roadmapping: { title: 'Roadmapping', founder: 'Phaal / Battelle', desc: 'نقشه راه بصری از قابلیت‌ها، فناوری و محصول در زمان.' },
             'technology-roadmap': { title: 'Technology Roadmapping', founder: 'Phaal et al.', desc: 'TRM · هم‌راستایی فناوری با استراتژی و بازار.' },
@@ -247,7 +247,7 @@ function buildCatalog(lang) {
             'scenario-2x2': { title: 'Scenario 2×2 Matrix', founder: 'Schwartz / van der Heijden', desc: '→ Scenario planning module' },
             visioning: { title: 'Visioning', founder: 'FRM Ch. 20', desc: 'Build preferred future images for mobilization and alignment.' },
             'wind-tunneling': { title: 'Wind Tunneling', founder: 'Schwartz / Ogilvy', desc: 'Test current strategy against multiple scenarios.' },
-            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'Bound future space into likely, plausible, and possible.' },
+            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'Open the future space into probable, plausible, and possible layers before choosing a preferred future. See Six Pillars module M2.' },
             'backcasting-ref': { title: 'Backcasting (reference)', founder: 'Robinson', desc: '→ Backcasting simulator' },
             roadmapping: { title: 'Roadmapping', founder: 'Phaal / Battelle', desc: 'Visual roadmap of capabilities, technology, and product over time.' },
             'technology-roadmap': { title: 'Technology Roadmapping', founder: 'Phaal et al.', desc: 'TRM · align technology with strategy and market.' },

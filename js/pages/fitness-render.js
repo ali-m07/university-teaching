@@ -1140,7 +1140,7 @@
                 ${examplesHtml}
                 ${buildDeep(tF('fuzzyDetailsTitle'), fb.detailProse ? buildProse([fb.detailProse], { allowHtml: true }) : '')}
                 <p class="fitness-fuzzy-link-wrap">
-                    <a href="type-2-fuzzy.html#industry" class="btn-primary-sm">${esc(fb.linkLabel)} <i data-lucide="arrow-left"></i></a>
+                    <a href="type-2-fuzzy.html#industry" class="btn-primary-sm">${esc(fb.linkLabel)}</a>
                 </p>
             </article>`;
     };

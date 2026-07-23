@@ -217,6 +217,7 @@ function renderAllPageSections() {
         renderArticlesList();
         if (typeof renderManifestoSection === 'function') renderManifestoSection();
         if (typeof renderMethodsCatalog === 'function') renderMethodsCatalog();
+        if (typeof renderFullCatalog === 'function') renderFullCatalog();
         if (typeof renderAdvancedMethodPage === 'function') renderAdvancedMethodPage();
         if (typeof window.renderHistoryBox === 'function') {
             window.renderHistoryBox('fitness-history', pg('fitnessPage.history'), 'fitness');
