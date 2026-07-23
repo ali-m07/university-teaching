@@ -187,7 +187,7 @@ registerLocale('fa', {
             ],
             readings: [
                 { type: 'گزارش', text: 'Popper, R. (2008). <em>Foresight Diamond</em> · EU FORLEARN / JRC.' },
-                { type: 'کتاب', text: 'Popper, R. (2008). How are آینده‌نگاری methods selected? · <em>آینده‌نگاری</em> journal.' }
+                { type: 'کتاب', text: 'Popper, R. (2008). How are foresight methods selected? · <em>Foresight</em> journal.' }
             ],
             assignment: 'آخرین کارگاه آینده‌نگاری که دیدید (یا فرضی) را در جدول ۴×۵ (۴ رأس × معیار کیفی) ارزیابی کنید. ۱ صفحه یادداشت برای مدیر بنویسید.'
         },
