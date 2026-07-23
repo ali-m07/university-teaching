@@ -73,9 +73,9 @@ registerLocale('en', {
                 { title: '6. Acting', desc: 'One deck: communicating results, action agenda, strategic information system, institutionalizing strategic thinking.', color: 'var(--color-wheel-red)' }
             ],
             gapTitle: 'Difference from FRM',
-            gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines and Bishop say: choose tools by pillar, not the reverse. Book doctrine is in the column decks; Framework Foresight maps pillars to project steps 7.1 to 7.6. University or industry examples belong only on labeled application slides. The Godet module connects French prospective and MICMAC/MACTOR to this architecture.',
+            gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines and Bishop say: choose tools by pillar, not the reverse. Book doctrine is in the column decks; Framework Foresight maps pillars to project steps 7.1 to 7.6. University or industry examples belong only on labeled application slides. Cone-of-plausibility thinking belongs inside Forecasting and Visioning, not as a separate university card.',
             caseTitle: 'Companion: cone of plausibility',
-            case: 'After scanning and inside Forecasting, the team draws a plausibility cone: center = baseline, edges = wild cards. Visioning focuses on plausible layers. Workshop depth is in the cone module on this page.'
+            case: 'After scanning and inside Forecasting, the team draws a plausibility cone: center = baseline, edges = wild cards. Visioning focuses on plausible layers. Depth lives inside the Forecasting and Visioning column decks, not as a separate card.'
         },
         scenarios: {
             slug: 'scenarios',

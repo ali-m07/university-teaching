@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="48" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">C2 · History</text>
+  
+  <path d="M120 300 H840" stroke="#8b9bb0" stroke-width="3"/>
+  
+  <circle cx="220" cy="300" r="14" fill="#00e5ff"/>
+  <text x="220" y="260" text-anchor="middle" fill="#f3f4f6" font-size="14" font-weight="700">Past crises</text>
+  <circle cx="480" cy="300" r="14" fill="#ffaa00"/>
+  <text x="480" y="260" text-anchor="middle" fill="#f3f4f6" font-size="14" font-weight="700">Prior models</text>
+  <circle cx="740" cy="300" r="14" fill="#ff5a7a"/>
+  <text x="740" y="260" text-anchor="middle" fill="#f3f4f6" font-size="14" font-weight="700">Comfort traps</text>
+  <text x="480" y="400" text-anchor="middle" fill="#8b9bb0" font-size="14">Do not reinvent the wheel; notice false comfort</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="13">Scanning part 2</text>
+</svg>

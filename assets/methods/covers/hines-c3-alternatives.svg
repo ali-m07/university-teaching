@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="48" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">C3 · Alternative Futures</text>
+  
+  <ellipse cx="480" cy="280" rx="280" ry="140" fill="none" stroke="#00e5ff" stroke-width="2"/>
+  <ellipse cx="480" cy="280" rx="200" ry="100" fill="none" stroke="#ffaa00" stroke-width="2"/>
+  <ellipse cx="480" cy="280" rx="120" ry="60" fill="none" stroke="#4caf50" stroke-width="2"/>
+  <text x="480" y="200" text-anchor="middle" fill="#00e5ff" font-size="13">Possible</text>
+  <text x="480" y="255" text-anchor="middle" fill="#ffaa00" font-size="13">Plausible</text>
+  <text x="480" y="295" text-anchor="middle" fill="#4caf50" font-size="13">Probable</text>
+  <text x="700" y="180" fill="#7c4dff" font-size="13">Preferable →</text>
+  <text x="480" y="450" text-anchor="middle" fill="#8b9bb0" font-size="13">Baseline may be wrong · wild cards · backcast · consistency</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="13">Forecasting part 5</text>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="48" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">C1 · Strategic Environment</text>
+  
+  <rect x="180" y="140" width="600" height="280" rx="18" fill="#102030" stroke="#4caf50" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="480" y="200" text-anchor="middle" fill="#4caf50" font-size="18" font-weight="700">Open thinking space</text>
+  <text x="480" y="240" text-anchor="middle" fill="#8b9bb0" font-size="14">unconstrained inquiry</text>
+  <rect x="280" y="280" width="180" height="70" rx="10" fill="#152035" stroke="#ffaa00" stroke-width="2"/>
+  <text x="370" y="320" text-anchor="middle" fill="#ffaa00" font-size="14">Experiments</text>
+  <rect x="500" y="280" width="180" height="70" rx="10" fill="#152035" stroke="#00e5ff" stroke-width="2"/>
+  <text x="590" y="320" text-anchor="middle" fill="#00e5ff" font-size="14">Prototypes</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="13">Framing part 6</text>
+</svg>

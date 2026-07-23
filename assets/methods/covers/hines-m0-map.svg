@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="48" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Six Pillars · Manager Path</text>
+  
+  
+  <circle cx="120" cy="200" r="46" fill="#102030" stroke="#00e5ff" stroke-width="2"/>
+  <text x="120" y="204" text-anchor="middle" fill="#00e5ff" font-size="11" font-weight="700">1 Framing</text>
+  <path d="M168 200 H232" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="280" cy="200" r="46" fill="#102030" stroke="#4caf50" stroke-width="2"/>
+  <text x="280" y="204" text-anchor="middle" fill="#4caf50" font-size="11" font-weight="700">2 Scanning</text>
+  <path d="M328 200 H392" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="440" cy="200" r="46" fill="#102030" stroke="#ffaa00" stroke-width="2"/>
+  <text x="440" y="204" text-anchor="middle" fill="#ffaa00" font-size="11" font-weight="700">3 Forecasting</text>
+  <path d="M488 200 H552" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="600" cy="200" r="46" fill="#102030" stroke="#7c4dff" stroke-width="2"/>
+  <text x="600" y="204" text-anchor="middle" fill="#7c4dff" font-size="11" font-weight="700">4 Visioning</text>
+  <path d="M648 200 H712" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="760" cy="200" r="46" fill="#102030" stroke="#ff5a7a" stroke-width="2"/>
+  <text x="760" y="204" text-anchor="middle" fill="#ff5a7a" font-size="11" font-weight="700">5 Planning</text>
+  <path d="M808 200 H792" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="840" cy="360" r="46" fill="#102030" stroke="#00e5ff" stroke-width="2"/>
+  <text x="840" y="364" text-anchor="middle" fill="#00e5ff" font-size="11" font-weight="700">6 Acting</text>
+  
+  <path d="M760 248 V314" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="480" y="430" text-anchor="middle" fill="#8b9bb0" font-size="14">Weak link in one pillar breaks the chain</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="13">Hines &amp; Bishop · Thinking About the Future</text>
+</svg>

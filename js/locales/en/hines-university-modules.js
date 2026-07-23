@@ -14,7 +14,7 @@ registerLocale('en', {
             "moduleAssignmentTitle": "Assignment",
             "labelFormat": "Format",
             "labelCriteria": "Grading criteria",
-            "modulePickerHint": "Each card is one independent column deck. Press F for fullscreen. Flip slides inside a deck for that column's parts. Framework Foresight is column 7.",
+            "modulePickerHint": "Each card is one independent column deck. Press F for fullscreen. Flip slides inside a deck for that column's parts. Optional M0 maps the six pillars; Framework Foresight stays inside M0 as the Houston Way overview.",
             "tracksLabel": "Delivery track",
             "trackUniversity": "University",
             "trackIndustry": "Industry & organization",
@@ -22,7 +22,7 @@ registerLocale('en', {
             "industrySectionTitle": "Industry track · organizational workshop",
             "university": {
                 "title": "Six Pillars (Hines & Bishop) · one deck per column",
-                "intro": "Based on Thinking About the Future by Andy Hines and Peter Bishop. Each column is one independent presentation with slides for its parts. Framework Foresight (2013) is the Houston Way project flow. Book doctrine stays separate from university or industry application examples.",
+                "intro": "Based on Thinking About the Future by Andy Hines and Peter Bishop. Optional M0 opens the map; C1 to C6 are the six pillar decks. Framework Foresight (2013) appears inside M0 as the Houston Way overview. Book doctrine stays separate from university or industry application examples.",
                 "modules": [
                     {
                         "num": "M0",
@@ -31,12 +31,14 @@ registerLocale('en', {
                         "title": "Six pillars: an architecture for strategic foresight",
                         "hours": "45 min",
                         "readingsShort": "Hines & Bishop 2006",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+                        "visual": "assets/methods/covers/hines-m0-map.svg",
                         "visualCaption": "From framing to acting, one chain",
                         "lectureIntro": "Map of the six pillars plus Framework Foresight. Each column below is one deck; flip slides inside the deck for its parts.",
                         "lectureSections": [
                             {
                                 "id": "why",
+                                "image": "assets/methods/covers/hines-m0-map.svg",
+                                "imageCaption": "Six pillars as a manager path",
                                 "title": "1. From method list to path",
                                 "slideTitles": [
                                     "A path for managers",
@@ -49,6 +51,8 @@ registerLocale('en', {
                             },
                             {
                                 "id": "depth",
+                                "image": "assets/methods/covers/hines-m0-ff-appendix.svg",
+                                "imageCaption": "Framework Foresight map 7.1 to 7.6",
                                 "title": "2. Depth of all six columns",
                                 "slideTitles": [
                                     "Columns 1 to 3",
@@ -95,70 +99,83 @@ registerLocale('en', {
                         "title": "Column 1 · Framing",
                         "hours": "90 min",
                         "readingsShort": "Framing",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "Column 1 · one deck, six parts",
-                        "lectureIntro": "Framing in Thinking About the Future: one presentation covering all six parts as successive slides.",
+                        "visual": "assets/methods/covers/hines-c1-mindsets.svg",
+                        "visualCaption": "Column 1 · Framing · six parts",
+                        "lectureIntro": "Framing in Thinking About the Future: six parts, each one teaching slide with definition, book bullets, and a short gloss.",
                         "lectureSections": [
-                            {
-                                "id": "mindsets",
-                                "title": "1. Reframing Mindsets",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Optimism toward the future</li><li>Identifying biases</li><li>Detecting self-deceptions and external factors</li><li>Using the whole brain</li><li>Welcoming complexity</li><li>The influence of time and various factors on progress</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "stakeholders",
-                                "title": "2. Stakeholders",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Knowing the organization more deeply</li><li>Understanding the concerns of managers, employees, and the organization itself</li><li>Not trying to turn the client into a futurist</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "intent",
-                                "title": "3. Intent & Purpose",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Exploring the future</li><li>Improving mental models</li><li>Balancing exploration and exploitation</li><li>Evaluating the problem presented by the organization: is it the real problem or not</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "goals",
-                                "title": "4. Goal Setting",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Defining goals in measurable form</li><li>Focusing on outcomes rather than outputs</li><li>Working across different time horizons</li><li>Emphasizing the external environment and the future rather than the present and the inside</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "team",
-                                "title": "5. Team Selection",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>A team sport</li><li>Turning it into an interactive and comprehensive process</li><li>Involving diverse people</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "environment",
-                                "title": "6. Strategic Environment",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>An environment conducive to open, unconstrained thinking</li><li>Encouraging experiments and prototypes</li></ul>"
-                                ]
-                            }
+                                {
+                                    "id": "mindsets",
+                                    "title": "1. Reframing Mindsets",
+                                    "slideTitles": [
+                                        "Optimism, bias, and complexity"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c1-mindsets.svg",
+                                    "imageCaption": "Reset how the room thinks before tools start",
+                                    "paragraphs": [
+                                        "<p>Reframing mindsets is the opening move of Framing: change how people stand toward the future before any scan or forecast begins. Hines and Bishop treat attitude work as part of the method, not as soft warm-up.</p><ul class=\"fitness-pres-bullets\"><li>Optimism toward the future</li><li>Identifying biases</li><li>Detecting self-deceptions and external factors</li><li>Using the whole brain</li><li>Welcoming complexity</li><li>The influence of time and various factors on progress</li></ul><p>Gloss: a cynical or overconfident room will misread every later pillar. Optimism is disciplined openness, not cheerleading; bias and self-deception checks keep external drivers visible; whole-brain and complexity work stop premature simplification; time and multi-factor progress remind the team that change is rarely single-cause.</p>"
+                                    ]
+                                },
+                                {
+                                    "id": "stakeholders",
+                                    "title": "2. Stakeholders",
+                                    "slideTitles": [
+                                        "Know the organization, not a futurist clone"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c1-stakeholders.svg",
+                                    "imageCaption": "Managers, staff, and the organization as distinct concerns",
+                                    "paragraphs": [
+                                        "<p>Stakeholder work in Framing means knowing whose future is at stake and what each group fears or hopes, so the foresight question is owned by real people inside a real organization.</p><ul class=\"fitness-pres-bullets\"><li>Knowing the organization more deeply</li><li>Understanding the concerns of managers, employees, and the organization itself</li><li>Not trying to turn the client into a futurist</li></ul><p>Gloss: the client stays the decision maker; the foresight team supplies process and challenge. Deep org knowledge and separate concern maps for managers, staff, and the institution prevent a generic exercise that answers a question nobody asked.</p>"
+                                    ]
+                                },
+                                {
+                                    "id": "intent",
+                                    "title": "3. Intent & Purpose",
+                                    "slideTitles": [
+                                        "Explore, remodel, test the stated problem"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c1-intent.svg",
+                                    "imageCaption": "Exploration versus exploitation inside Framing",
+                                    "paragraphs": [
+                                        "<p>Intent and purpose fix why the project exists: to explore futures and improve mental models, not only to defend today's operating plan.</p><ul class=\"fitness-pres-bullets\"><li>Exploring the future</li><li>Improving mental models</li><li>Balancing exploration and exploitation</li><li>Evaluating the problem presented by the organization: is it the real problem or not</li></ul><p>Gloss: exploitation protects current performance; exploration opens alternatives. Framing must test whether the stated brief is the real problem. If the brief is wrong, Scanning and Forecasting only refine a false target.</p>"
+                                    ]
+                                },
+                                {
+                                    "id": "goals",
+                                    "title": "4. Goal Setting",
+                                    "slideTitles": [
+                                        "Outcomes, horizons, outward focus"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c1-goals.svg",
+                                    "imageCaption": "Measurable goals across multiple horizons",
+                                    "paragraphs": [
+                                        "<p>Goal setting turns Framing into a contract the team can check: what success looks like, on which horizon, and with what outward focus.</p><ul class=\"fitness-pres-bullets\"><li>Defining goals in measurable form</li><li>Focusing on outcomes rather than outputs</li><li>Working across different time horizons</li><li>Emphasizing the external environment and the future rather than the present and the inside</li></ul><p>Gloss: outputs are reports and workshops; outcomes are decisions, options, or capability shifts. Multiple horizons stop the team from treating a three-month KPI as a ten-year foresight goal. External and future focus keeps Framing from collapsing into internal status reporting.</p>"
+                                    ]
+                                },
+                                {
+                                    "id": "team",
+                                    "title": "5. Team Selection",
+                                    "slideTitles": [
+                                        "Foresight as a team sport"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c1-team.svg",
+                                    "imageCaption": "Diverse people in an interactive process",
+                                    "paragraphs": [
+                                        "<p>Team selection treats strategic foresight as collective work: who is in the room shapes which futures become thinkable.</p><ul class=\"fitness-pres-bullets\"><li>A team sport</li><li>Turning it into an interactive and comprehensive process</li><li>Involving diverse people</li></ul><p>Gloss: a solo analyst can write a memo; Framing needs interaction across functions and viewpoints so blind spots surface early. Diversity here means role, expertise, and stake, not a decorative guest list.</p>"
+                                    ]
+                                },
+                                {
+                                    "id": "environment",
+                                    "title": "6. Strategic Environment",
+                                    "slideTitles": [
+                                        "Open space for prototypes and tests"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c1-environment.svg",
+                                    "imageCaption": "A climate for unconstrained thinking and trials",
+                                    "paragraphs": [
+                                        "<p>Creating a strategic environment means designing the working climate so Framing can stay open: people can think without premature closure and can try small tests.</p><ul class=\"fitness-pres-bullets\"><li>An environment conducive to open, unconstrained thinking</li><li>Encouraging experiments and prototypes</li></ul><p>Gloss: if the room rewards only safe answers, later pillars inherit a closed frame. Space for prototypes links Framing to Acting early: ideas can be tested as rough probes, not only debated as slides.</p>"
+                                    ]
+                                }
+                        
                         ],
                         "readings": [
                             {
@@ -187,50 +204,59 @@ registerLocale('en', {
                         "title": "Column 2 · Scanning",
                         "hours": "75 min",
                         "readingsShort": "Scanning",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "Column 2 · one deck, four parts",
-                        "lectureIntro": "Scanning in Thinking About the Future: one presentation covering mapping, history, environmental scanning, and engaging everyone.",
+                        "visual": "assets/methods/covers/hines-c2-mapping.svg",
+                        "visualCaption": "Column 2 · Scanning · four parts",
+                        "lectureIntro": "Scanning in Thinking About the Future: four parts, each one teaching slide with definition, book bullets, and a short gloss.",
                         "lectureSections": [
-                            {
-                                "id": "mapping",
-                                "title": "1. Mapping",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>A global perspective</li><li>Mapping the system under study</li><li>An integrative view</li><li>Stakeholder analysis</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "history",
-                                "title": "2. History",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Beginning by looking at the past</li><li>Not reinventing the wheel</li><li>Awareness of innovations that create false comfort</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "env",
-                                "title": "3. Environmental Scanning",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Scanning the environment for awareness of changing contexts, including: exploration, analysis, framing, application</li><li>Integrating internal and external environments</li><li>Examining unknown and unattractive domains</li><li>Not all information is in the research literature</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "engaging",
-                                "title": "4. Engaging Everyone",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Engaging everyone outside and inside</li><li>Consulting prominent people</li><li>Consulting the marginalized / outcasts</li><li>Designing workshops that turn learning into collective activity</li></ul>"
-                                ]
-                            }
+                                {
+                                    "id": "mapping",
+                                    "title": "1. Mapping",
+                                    "slideTitles": [
+                                        "System boundary and integrative view"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c2-mapping.svg",
+                                    "imageCaption": "Map the system before you scan the feed",
+                                    "paragraphs": [
+                                        "<p>Mapping in Scanning draws the system under study so the team knows what is inside the frame, what sits outside, and how parts connect. Without a map, scanning becomes a pile of clippings.</p><ul class=\"fitness-pres-bullets\"><li>A global perspective</li><li>Mapping the system under study</li><li>An integrative view</li><li>Stakeholder analysis</li></ul><p>Gloss: global does not mean endless; it means refusing a narrow local blinker. Integrative view plus stakeholder analysis keep the map from becoming only a tech diagram or only an org chart.</p>"
+                                    ]
+                                },
+                                {
+                                    "id": "history",
+                                    "title": "2. History",
+                                    "slideTitles": [
+                                        "Past path, false comfort, no reinvention"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c2-history.svg",
+                                    "imageCaption": "Start Scanning by looking backward carefully",
+                                    "paragraphs": [
+                                        "<p>History work grounds Scanning in how the present period was made, so the team does not invent novelty where continuity already explains the pattern.</p><ul class=\"fitness-pres-bullets\"><li>Beginning by looking at the past</li><li>Not reinventing the wheel</li><li>Awareness of innovations that create false comfort</li></ul><p>Gloss: some past innovations feel like safety and hide new risk. History is not nostalgia; it is a check on what the baseline already assumes.</p>"
+                                    ]
+                                },
+                                {
+                                    "id": "env",
+                                    "title": "3. Environmental Scanning",
+                                    "slideTitles": [
+                                        "Explore, analyze, frame, apply"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c2-envscan.svg",
+                                    "imageCaption": "Internal and external contexts in one scan loop",
+                                    "paragraphs": [
+                                        "<p>Environmental scanning watches changing contexts so Framing stays honest: the outside world moves while the brief is being written.</p><ul class=\"fitness-pres-bullets\"><li>Scanning the environment for awareness of changing contexts, including: exploration, analysis, framing, application</li><li>Integrating internal and external environments</li><li>Examining unknown and unattractive domains</li><li>Not all information is in the research literature</li></ul><p>Gloss: the loop exploration, analysis, framing, application keeps scan work from stopping at collection. Unattractive domains and non-academic sources are where weak signals often hide.</p>"
+                                    ]
+                                },
+                                {
+                                    "id": "engaging",
+                                    "title": "4. Engaging Everyone",
+                                    "slideTitles": [
+                                        "Inside, outside, and the outcasts"
+                                    ],
+                                    "image": "assets/methods/covers/hines-c2-engaging.svg",
+                                    "imageCaption": "Prominent voices and marginalized voices together",
+                                    "paragraphs": [
+                                        "<p>Engaging everyone widens who can see and name change: Scanning is social, not only documentary.</p><ul class=\"fitness-pres-bullets\"><li>Engaging everyone outside and inside</li><li>Consulting prominent people</li><li>Consulting the marginalized / outcasts</li><li>Designing workshops that turn learning into collective activity</li></ul><p>Gloss: prominent voices give access and legitimacy; outcast voices often see what the center cannot. Workshops should make learning collective, not a stage for one expert monologue.</p>"
+                                    ]
+                                }
+                        
                         ],
                         "readings": [
                             {
@@ -259,8 +285,8 @@ registerLocale('en', {
                         "title": "Column 3 · Forecasting",
                         "hours": "90 min",
                         "readingsShort": "Forecasting",
-                        "visual": "assets/methods/covers/hines-m2-cone.svg",
-                        "visualCaption": "Column 3 · one deck, five parts",
+                        "visual": "assets/methods/covers/hines-c3-drivers.svg",
+                        "visualCaption": "Column 3 · Forecasting · five parts",
                         "lectureIntro": "Forecasting maps the spectrum of futures. One presentation covers drivers, tools, divergence, convergence, and alternative futures.",
                         "lectureSections": [
                             {
@@ -345,8 +371,8 @@ registerLocale('en', {
                         "title": "Column 4 · Visioning",
                         "hours": "75 min",
                         "readingsShort": "Visioning",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "Column 4 · one deck, three clusters",
+                        "visual": "assets/methods/covers/hines-c4-implications.svg",
+                        "visualCaption": "Column 4 · Visioning · three clusters",
                         "lectureIntro": "Forecasting maps the spectrum of futures; Visioning asks so what? Given those possibles, what will the organization do? Without that question, foresight stays an intellectual exercise; the path to mission, goals, effectiveness, performance, and the bottom line must be mapped.",
                         "lectureSections": [
                             {
@@ -417,8 +443,8 @@ registerLocale('en', {
                         "title": "Column 5 · Planning",
                         "hours": "60 min",
                         "readingsShort": "Planning",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "Column 5 · one deck, two clusters",
+                        "visual": "assets/methods/covers/hines-c5-strategic.svg",
+                        "visualCaption": "Column 5 · Planning · two clusters",
                         "lectureIntro": "Planning bridges vision to strategy and tactics that lead to action. It maps from where we are to where we want to be.",
                         "lectureSections": [
                             {
@@ -469,8 +495,8 @@ registerLocale('en', {
                         "title": "Column 6 · Acting",
                         "hours": "90 min",
                         "readingsShort": "Acting",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "Column 6 · one deck, four parts",
+                        "visual": "assets/methods/covers/hines-c6-communicate.svg",
+                        "visualCaption": "Column 6 · Acting · four parts",
                         "lectureIntro": "Forewarned is forearmed. Acting is the final stage: communicate (abstract to concrete), translate plan to action, and institutionalize so foresight is not a one off.",
                         "lectureSections": [
                             {
@@ -531,232 +557,6 @@ registerLocale('en', {
                             "criteria": [
                                 "Urgency and milestones",
                                 "Institutional hook"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "C7",
-                        "id": "col7-framework-foresight",
-                        "pickerLabel": "Framework Foresight (column 7)",
-                        "title": "Column 7 · Framework Foresight (Houston Way)",
-                        "hours": "90 min",
-                        "readingsShort": "Framework Foresight 2013",
-                        "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
-                        "visualCaption": "Meta method · project flow 7.1 to 7.6",
-                        "lectureIntro": "Book guides for activities 1 to 6 are practitioner tips, not one single method. Framework Foresight is the Houston Way meta method for applying the six activities as a project flow. Two meanings of framework: frame the project without a rigid blueprint; and use the six activities as a standard project frame. It is modular: not the only right way; baseline plus alternatives are key outputs; you can stop early or start mid flow. Be selective: quality over quantity (about 5 to 10 items per category); flow past → present → future → back to present.",
-                        "lectureSections": [
-                            {
-                                "id": "role",
-                                "title": "0. Role of Framework Foresight",
-                                "slideTitles": [
-                                    "Meta method",
-                                    "Mapping to six pillars"
-                                ],
-                                "paragraphs": [
-                                    "Framework Foresight turns the six pillars into a selectable project sequence. Quality over quantity; keep about 5 to 10 items per category.",
-                                    "<ul class=\"fitness-pres-bullets\"><li>Framing → 7.1 Domain description</li><li>Scanning → 7.2 Current assessment and scanning</li><li>Forecasting → 7.3a Baseline future, 7.3b Alternative futures</li><li>Visioning → 7.4a Preferred future, 7.4b Implications analysis</li><li>Planning → 7.5 Options: issue or proposal</li><li>Acting → 7.6 Leading indicators</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "domain",
-                                "title": "1. Domain description (7.1)",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Domain definition</li><li>Geographic scope</li><li>Time horizon</li><li>Domain map</li><li>Key issue or question (optional)</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "current",
-                                "title": "2. Current assessment and scanning (7.2)",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Current conditions</li><li>Stakeholders</li><li>History (recent past that defines the present period)</li><li>Scanning findings: FIND → COLLECT → ANALYZE</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "baseline",
-                                "title": "3. Baseline and alternative futures (7.3)",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Baseline future: trends, cycles, plans, others' forecasts</li><li>Alternative futures: events (including wildcards), issues, ideas, prioritizing key uncertainties; balance with the baseline</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "preferred",
-                                "title": "4. Preferred future and implications (7.4)",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Preferred future: vision and mission</li><li>Implications analysis: choose a future, categories, brainstorming, implications wheel, most important and provocative, redefine as issue or opportunity</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "options",
-                                "title": "5. Options: issue or proposal (7.5)",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Prioritize issues / opportunities</li><li>Select (usually 3 to 6)</li><li>One minute message (why / what / how and owner)</li></ul>"
-                                ]
-                            },
-                            {
-                                "id": "indicators",
-                                "title": "6. Leading indicators (7.6)",
-                                "slideTitles": [
-                                    "Key book points"
-                                ],
-                                "paragraphs": [
-                                    "<ul class=\"fitness-pres-bullets\"><li>Indicators for each alternative (for example 3)</li><li>Monitor how uncertainties resolve; signal toward one alternative</li></ul>"
-                                ]
-                            }
-                        ],
-                        "readings": [
-                            {
-                                "type": "Journal article",
-                                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49. Figures: andyhinesight.com/tatf/figures (Elsevier permission noted in the book)."
-                            },
-                            {
-                                "type": "Book",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "Mini Framework Foresight",
-                            "description": "Run a compressed FF on your issue.",
-                            "body": [
-                                "Fill 7.1 domain fields.",
-                                "Write one baseline sentence, one alternative, one preferred implication, and one leading indicator."
-                            ],
-                            "format": "Two pages",
-                            "criteria": [
-                                "Domain clear",
-                                "Baseline plus alternative",
-                                "At least one leading indicator"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "M2",
-                        "id": "m2-cone",
-                        "pickerLabel": "Cone of plausibility",
-                        "title": "Cone of plausibility: from forecasting to visioning",
-                        "hours": "60 min",
-                        "readingsShort": "Cone of Plausibility",
-                        "visual": "assets/methods/covers/hines-m2-cone.svg",
-                        "visualCaption": "From baseline to layered cone",
-                        "lectureIntro": "Companion to alternative futures: the cone of plausibility maps probable, plausible, and possible futures before a preferred future is chosen.",
-                        "lectureSections": [
-                            {
-                                "id": "layers",
-                                "title": "1. Cone layers",
-                                "slideTitles": [
-                                    "Baseline",
-                                    "Layers",
-                                    "Preferred futures"
-                                ],
-                                "paragraphs": [
-                                    "Building the cone starts with a baseline from today, the surprise-free path if trends continue. The baseline is a starting point, not a firm bet for the organization.",
-                                    "<ul class=\"fitness-pres-bullets\"><li>Probable</li><li>Plausible</li><li>Possible</li><li>Preposterous</li></ul>",
-                                    "Preferable futures are not another probability band; they are a normative choice rooted in values that Visioning selects inside the cone."
-                                ]
-                            },
-                            {
-                                "id": "baseline",
-                                "title": "2. Breaking baseline assumptions",
-                                "slideTitles": [
-                                    "Baseline analysis",
-                                    "Alternative branch"
-                                ],
-                                "paragraphs": [
-                                    "State baseline evidence, find the hidden assumption, and break it with a plausible opposite. Each broken assumption adds a branch to the cone.",
-                                    "Wild cards sit at the edge: low probability, high impact; monitor them, do not dismiss them."
-                                ]
-                            }
-                        ],
-                        "readings": [
-                            {
-                                "type": "Book",
-                                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future: Guidelines for Strategic Foresight</em>. Later editions 2013 to 2020."
-                            },
-                            {
-                                "type": "Journal article",
-                                "text": "Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49. Figures: andyhinesight.com/tatf/figures (Elsevier permission noted in the book)."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "Draw a cone",
-                            "description": "Draw a cone for a real issue.",
-                            "body": [
-                                "Mark the baseline and two layers.",
-                                "Break one assumption and write one wild card."
-                            ],
-                            "format": "One figure with explanation",
-                            "criteria": [
-                                "Clear layers",
-                                "A real assumption broken"
-                            ]
-                        }
-                    },
-                    {
-                        "num": "M3",
-                        "id": "m3-godet",
-                        "pickerLabel": "Godet & French school",
-                        "title": "Two schools of foresight: Godet and the Anglo-American architecture",
-                        "hours": "60 min",
-                        "readingsShort": "Godet · MICMAC · MACTOR",
-                        "visual": "assets/methods/covers/hines-m3-schools.svg",
-                        "visualCaption": "French prospective versus the Anglo-American tradition",
-                        "lectureIntro": "A bridge to Michel Godet's French prospective school alongside the Hines and Bishop six pillars.",
-                        "lectureSections": [
-                            {
-                                "id": "roots",
-                                "title": "1. Two roots",
-                                "slideTitles": [
-                                    "Prospective",
-                                    "Six pillars"
-                                ],
-                                "paragraphs": [
-                                    "Gaston Berger coined prospective for an active stance toward the future. Michel Godet extended it with structural tools such as MICMAC and MACTOR.",
-                                    "The Hines and Bishop six pillars continue the Anglo-American tradition. Knowing both schools completes a foresight manager's toolkit."
-                                ]
-                            },
-                            {
-                                "id": "bridge",
-                                "title": "2. Bridge to the pillars",
-                                "slideTitles": [
-                                    "MICMAC",
-                                    "MACTOR"
-                                ],
-                                "paragraphs": [
-                                    "MICMAC fits the Forecasting pillar for identifying driving variables.",
-                                    "MACTOR fits the Planning pillar for mapping actor power and interests."
-                                ]
-                            }
-                        ],
-                        "readings": [
-                            {
-                                "type": "Book",
-                                "text": "Godet, M. (2000). The art of scenarios and strategic planning. <em>Technological Forecasting and Social Change</em>."
-                            }
-                        ],
-                        "assignment": {
-                            "title": "Simple MICMAC",
-                            "description": "Choose six key variables and estimate net influence.",
-                            "body": [
-                                "Identify the main driving variable."
-                            ],
-                            "format": "Six-by-six table",
-                            "criteria": [
-                                "Clear variables",
-                                "Sound driver reasoning"
                             ]
                         }
                     }
