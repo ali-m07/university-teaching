@@ -15,7 +15,12 @@ registerLocale('en', {
             labelFormat: 'Format',
             labelCriteria: 'Grading criteria',
             modulePickerHint: 'Each card is a standalone deck. Press F for fullscreen.',
-            university: {
+            tracksLabel: 'Delivery track',
+            trackUniversity: 'University',
+            trackIndustry: 'Industry & organization',
+            universitySectionTitle: 'University track · syllabus and teaching',
+            industrySectionTitle: 'Industry track · organizational delivery',
+                        university: {
                 title: 'Scenario Planning · three lecture decks',
                 intro: 'Based on Pierre Wack (Shell), Peter Schwartz, and van der Heijden. Scenarios as a decision tool under uncertainty, not single-line prediction.',
                 modules: [
@@ -284,6 +289,109 @@ registerLocale('en', {
                             criteria: ['Fit between typology and project question', 'Clear reasoning rather than a default choice']
                         }
                     }
+                ]
+            },
+        industry: {
+                tag: 'Scenario workshop',
+                title: 'Decision-led scenarios for quarterly strategy',
+                intro: 'Workshop for a strategy committee: critical uncertainties, 2×2 matrix, early indicators, and no-regret options.',
+                meta: [
+                    {
+                        label: 'Duration',
+                        value: 'One day or two half-days'
+                    },
+                    {
+                        label: 'Output',
+                        value: 'Four scenarios + indicators'
+                    },
+                    {
+                        label: 'Audience',
+                        value: 'Light board, strategy, finance, product'
+                    }
+                ],
+                agenda: [
+                    {
+                        block: '60 min',
+                        title: 'Decision question',
+                        desc: 'What decision must be taken under uncertainty?'
+                    },
+                    {
+                        block: '90 min',
+                        title: 'Critical uncertainty',
+                        desc: 'Two axes and four logics.'
+                    },
+                    {
+                        block: '90 min',
+                        title: 'Narratives',
+                        desc: 'Name and story for each quadrant.'
+                    },
+                    {
+                        block: '60 min',
+                        title: 'Indicators and action',
+                        desc: 'Signals and no-regret moves.'
+                    }
+                ],
+                stakeholders: [
+                    {
+                        role: 'CEO/sponsor',
+                        job: 'Decision question'
+                    },
+                    {
+                        role: 'Strategy',
+                        job: 'Axes and narrative'
+                    },
+                    {
+                        role: 'Finance',
+                        job: 'Investment implications'
+                    },
+                    {
+                        role: 'Product',
+                        job: 'Market indicators'
+                    }
+                ],
+                deliverables: [
+                    'Written decision question',
+                    '2×2 matrix',
+                    'Four short narratives',
+                    'Indicator board and no-regret actions'
+                ],
+                workflow: [
+                    {
+                        title: 'Decision',
+                        desc: 'Lock the question.'
+                    },
+                    {
+                        title: 'Axes',
+                        desc: 'Two critical uncertainties.'
+                    },
+                    {
+                        title: 'Narrative',
+                        desc: 'Logic of each scenario.'
+                    },
+                    {
+                        title: 'Monitor',
+                        desc: 'Indicators and robust options.'
+                    }
+                ],
+                checklist: [
+                    'Scenario is not a forecast',
+                    'Axes are true uncertainties',
+                    'Narratives touch the decision',
+                    'Indicators are observable',
+                    'No-regret action is defined'
+                ],
+                boardMemo: [
+                    'Decision question',
+                    'Two axes',
+                    'Pressure scenario',
+                    'Robust action',
+                    'Monitoring request'
+                ],
+                facilitator: [
+                    'Do not use trends as uncertainties',
+                    'Take narrative naming seriously',
+                    'Do not leave indicators vague',
+                    'Tie output to quarterly budget'
                 ]
             }
         }

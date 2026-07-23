@@ -15,6 +15,11 @@ registerLocale('en', {
             labelFormat: 'Format',
             labelCriteria: 'Grading criteria',
             modulePickerHint: 'Each card is a standalone deck. Press F for fullscreen.',
+            tracksLabel: 'Delivery track',
+            trackUniversity: "University",
+            trackIndustry: "Industry & organization",
+            universitySectionTitle: "University track · lecture decks",
+            industrySectionTitle: "Industry track · organizational workshop",
             university: {
                 title: 'Six Pillars (Hines & Bishop) · three lecture decks',
                 intro: 'Based on <em>Thinking About the Future</em> by Andy Hines and Peter Bishop, with a bridge to Michel Godet\'s French prospective school. The operational path from framing to acting, built for managers, not only researchers.',
@@ -240,6 +245,110 @@ registerLocale('en', {
                             criteria: ['Clarity of variable definitions', 'Sound reasoning for the main driving variable']
                         }
                     }
+                ]
+            },
+            industry: {
+                tag: "Industry & organization",
+                title: "Six Pillars design workshop · building a foresight unit",
+                intro: "A practical workshop for organizations that want an operating foresight capability, not a one-off report. Uses the Hines and Bishop six pillars as an architecture from framing to acting, with clear handoffs across strategy, innovation, and scanning roles.",
+                meta: [
+                    {
+                        label: "Format",
+                        value: "One day design session + 30-day operating plan"
+                    },
+                    {
+                        label: "Audience",
+                        value: "Foresight, strategy, innovation, PMO"
+                    },
+                    {
+                        label: "Focus cases",
+                        value: "New foresight cell, redesign of annual planning cycle"
+                    }
+                ],
+                agenda: [
+                    {
+                        block: "Block 1",
+                        title: "Framing and scanning design",
+                        desc: "Define the unit mandate and the scanning cadence that feeds it."
+                    },
+                    {
+                        block: "Block 2",
+                        title: "Forecasting and visioning fit",
+                        desc: "Decide which products the unit owns versus borrows from strategy or R&D."
+                    },
+                    {
+                        block: "Block 3",
+                        title: "Planning and acting handoffs",
+                        desc: "Map gates where foresight must change budgets, pilots, or policy."
+                    },
+                    {
+                        block: "Block 4",
+                        title: "90-day operating skeleton",
+                        desc: "Roles, rituals, and first deliverables for the unit."
+                    }
+                ],
+                stakeholders: [
+                    {
+                        role: "Sponsor (CHRO / CSO / innovation lead)",
+                        job: "Authorize mandate and staffing envelope"
+                    },
+                    {
+                        role: "Foresight lead (incoming or designated)",
+                        job: "Own pillar-to-ritual design"
+                    },
+                    {
+                        role: "Strategy / planning",
+                        job: "Define where foresight enters the annual cycle"
+                    },
+                    {
+                        role: "Innovation / venturing",
+                        job: "Connect probing and acting to real pilots"
+                    }
+                ],
+                deliverables: [
+                    "Foresight unit mandate one-pager",
+                    "Pillar-by-pillar responsibility map",
+                    "Annual ritual calendar (scan, workshop, gate brief)",
+                    "90-day staffing and deliverable plan",
+                    "Interface agreements with strategy and innovation"
+                ],
+                workflow: [
+                    {
+                        title: "1. Diagnose",
+                        desc: "Assess current foresight products against the six pillars."
+                    },
+                    {
+                        title: "2. Design",
+                        desc: "Assign ownership and rituals per pillar."
+                    },
+                    {
+                        title: "3. Interface",
+                        desc: "Negotiate handoffs into planning and probing gates."
+                    },
+                    {
+                        title: "4. Launch",
+                        desc: "Run the first 90-day cycle with named owners."
+                    }
+                ],
+                checklist: [
+                    "Is the unit mandate written as decisions to serve, not reports to produce?",
+                    "Does every pillar have an owner or an explicit borrow agreement?",
+                    "Is there a calendar ritual, not only a project charter?",
+                    "Are acting and probing linked to budget owners?",
+                    "Will the sponsor review the unit after 90 days with success criteria?"
+                ],
+                boardMemo: [
+                    "Why a method list is insufficient for this organization",
+                    "Proposed foresight mandate and scope",
+                    "Six-pillar operating map and owners",
+                    "90-day launch plan and resource ask",
+                    "Success criteria for the first quarterly review"
+                ],
+                facilitator: [
+                    "Keep managers on the path question of each pillar, not tool nostalgia.",
+                    "Refuse orphan pillars with no owner.",
+                    "Force a calendar before approving any new method purchase.",
+                    "End with a 90-day launch, not a multi-year capability fantasy."
                 ]
             }
         }

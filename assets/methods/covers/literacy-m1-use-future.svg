@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00e5ff"/><stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="52" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700">Futures Literacy · Use-the-Future</text>
+  
+  <rect x="100" y="160" width="240" height="220" rx="14" fill="#152035" stroke="#ff5a7a" stroke-width="2"/>
+  <text x="220" y="240" text-anchor="middle" fill="#ff5a7a" font-size="16" font-weight="700">Forecast habit</text>
+  <text x="220" y="275" text-anchor="middle" fill="#8b9bb0" font-size="12">one probable path</text>
+  <path d="M360 270 H420" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="430" y="160" width="400" height="220" rx="14" fill="#102030" stroke="#00e5ff" stroke-width="2"/>
+  <text x="630" y="230" text-anchor="middle" fill="#00e5ff" font-size="18" font-weight="700">Futures literacy</text>
+  <text x="630" y="265" text-anchor="middle" fill="#8b9bb0" font-size="13">reveal anticipatory assumptions</text>
+  <text x="630" y="295" text-anchor="middle" fill="#8b9bb0" font-size="13">invent · target · use the future</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Miller · UNESCO · Module M1</text>
+</svg>

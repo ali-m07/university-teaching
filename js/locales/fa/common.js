@@ -43,7 +43,25 @@ registerLocale('fa', {
             order2: 'مرتبه ۲',
             order3: 'مرتبه ۳',
             clickExplore: 'برای کاوش کلیک کنید',
-            scrollHint: 'برای مشاهده کامل، اسکرول کنید'
+            scrollHint: 'برای مشاهده کامل، اسکرول کنید',
+            tracks: {
+                label: 'مسیر اجرا',
+                university: 'دانشگاه',
+                industry: 'صنعت و سازمان',
+                workshop: 'کارگاه تعاملی',
+                universitySection: 'مسیر دانشگاه · طرح درس و تدریس',
+                industrySection: 'مسیر صنعت · استقرار در سازمان',
+                workshopSection: 'کارگاه تعاملی',
+                labelRole: 'نقش',
+                labelJob: 'وظیفه',
+                agendaTitle: 'دستور کار کارگاه',
+                stakeholdersTitle: 'ذی‌نفعان',
+                deliverablesTitle: 'خروجی‌ها',
+                workflowTitle: 'جریان کار',
+                checklistTitle: 'چک‌لیست',
+                boardMemoTitle: 'یادداشت هیئت‌مدیره',
+                facilitatorTitle: 'نکات تسهیل‌گر'
+            }
         },
         wheel: {
             hubLabel: 'تغییر اقلیم در ایران',

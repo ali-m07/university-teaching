@@ -440,6 +440,128 @@ files['scenarios-m4-typologies.svg'] = frame('Scenario Typologies · Two Axes, F
   <text x="575" y="360" text-anchor="middle" fill="${GRAY}" font-size="11">probabilistic</text>
 `, 'Godet · Bezold · Wendell Bell · Module M4');
 
+/* ---------------------- Environmental Scanning · 2 modules ---------------------- */
+
+files['scanning-m1-modes.svg'] = frame('Aguilar · Four Scanning Modes', `
+  ${[
+    [240, 180, 'Undirected', 'passive, no question', GREEN],
+    [720, 180, 'Conditioned', 'passive, sensitized', CYAN],
+    [240, 340, 'Informal search', 'active, light structure', AMBER],
+    [720, 340, 'Formal search', 'active, procedural', PURPLE]
+  ].map(([cx, cy, label, sub, c]) => `
+  <rect x="${cx - 150}" y="${cy - 55}" width="300" height="110" rx="14" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${cx}" y="${cy - 8}" text-anchor="middle" fill="${c}" font-size="18" font-weight="700">${label}</text>
+  <text x="${cx}" y="${cy + 18}" text-anchor="middle" fill="${GRAY}" font-size="13">${sub}</text>`).join('')}
+  <text x="480" y="100" text-anchor="middle" fill="${GRAY}" font-size="14">casual exposure → structured search</text>
+`, 'Aguilar (1967) · Module M1');
+
+files['scanning-m2-routine.svg'] = frame('From Modes to a Weekly Routine', `
+  <rect x="80" y="140" width="240" height="260" rx="14" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="200" y="190" text-anchor="middle" fill="${CYAN}" font-size="16" font-weight="700">Diagnose</text>
+  <text x="200" y="220" text-anchor="middle" fill="${GRAY}" font-size="12">four Aguilar modes</text>
+  <text x="200" y="245" text-anchor="middle" fill="${GRAY}" font-size="12">Daft &amp; Weick axes</text>
+  <path d="M330 270 H390" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="400" y="140" width="240" height="260" rx="14" fill="#152035" stroke="${AMBER}" stroke-width="2"/>
+  <text x="520" y="190" text-anchor="middle" fill="${AMBER}" font-size="16" font-weight="700">STEEP list</text>
+  <text x="520" y="220" text-anchor="middle" fill="${GRAY}" font-size="12">named sources</text>
+  <text x="520" y="245" text-anchor="middle" fill="${GRAY}" font-size="12">owners + frequency</text>
+  <path d="M650 270 H710" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="720" y="140" width="180" height="260" rx="14" fill="#102030" stroke="${GREEN}" stroke-width="2"/>
+  <text x="810" y="200" text-anchor="middle" fill="${GREEN}" font-size="16" font-weight="700">Routine</text>
+  <text x="810" y="230" text-anchor="middle" fill="${GRAY}" font-size="12">conditioned</text>
+  <text x="810" y="250" text-anchor="middle" fill="${GRAY}" font-size="12">+ informal</text>
+  <text x="810" y="280" text-anchor="middle" fill="${GRAY}" font-size="12">→ Perceiving</text>
+`, 'Choo · STEEP · FITness Perceiving · Module M2');
+
+/* --------------------------- Weak Signals · 2 modules --------------------------- */
+
+files['weak-m1-filters.svg'] = frame('Ansoff · Three Organizational Filters', `
+  ${[
+    [200, 270, 'Surveillance', 'can scanning see it?', CYAN],
+    [480, 270, 'Mentality', 'is it plausible?', AMBER],
+    [760, 270, 'Power', 'will someone act?', ROSE]
+  ].map(([cx, cy, label, sub, c]) => `
+  <rect x="${cx - 110}" y="${cy - 70}" width="220" height="140" rx="14" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${cx}" y="${cy - 15}" text-anchor="middle" fill="${c}" font-size="17" font-weight="700">${label}</text>
+  <text x="${cx}" y="${cy + 15}" text-anchor="middle" fill="${GRAY}" font-size="12">${sub}</text>`).join('')}
+  <path d="M320 270 H360" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M600 270 H640" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="480" y="130" text-anchor="middle" fill="${WHITE}" font-size="15">Most weak signals die at one gate</text>
+`, 'Ansoff (1975, 1984) · Module M1');
+
+files['weak-m2-futuresign.svg'] = frame('Hiltunen · Future Sign Triad', `
+  <circle cx="200" cy="270" r="90" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="200" y="260" text-anchor="middle" fill="${CYAN}" font-size="16" font-weight="700">Signal</text>
+  <text x="200" y="285" text-anchor="middle" fill="${GRAY}" font-size="12">visible clue</text>
+  <circle cx="480" cy="270" r="90" fill="#152035" stroke="${AMBER}" stroke-width="2"/>
+  <text x="480" y="260" text-anchor="middle" fill="${AMBER}" font-size="16" font-weight="700">Issue</text>
+  <text x="480" y="285" text-anchor="middle" fill="${GRAY}" font-size="12">underlying</text>
+  <circle cx="760" cy="270" r="90" fill="#102030" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="760" y="255" text-anchor="middle" fill="${PURPLE}" font-size="15" font-weight="700">Interpretation</text>
+  <text x="760" y="280" text-anchor="middle" fill="${GRAY}" font-size="12">future meaning</text>
+  <path d="M295 270 H385" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M575 270 H665" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="480" y="130" text-anchor="middle" fill="${GRAY}" font-size="14">Wild card boundary: precursor ≠ the shock itself</text>
+`, 'Hiltunen (2006, 2008) · Module M2');
+
+/* ------------------------- Futures Literacy · 2 modules ------------------------- */
+
+files['literacy-m1-use-future.svg'] = frame('Futures Literacy · Use the Future', `
+  <rect x="120" y="150" width="320" height="250" rx="16" fill="#102030" stroke="${ROSE}" stroke-width="2"/>
+  <text x="280" y="210" text-anchor="middle" fill="${ROSE}" font-size="18" font-weight="700">Forecast product</text>
+  <text x="280" y="245" text-anchor="middle" fill="${GRAY}" font-size="13">one likely future</text>
+  <text x="280" y="270" text-anchor="middle" fill="${GRAY}" font-size="13">prettier scenarios</text>
+  <text x="280" y="310" text-anchor="middle" fill="${GRAY}" font-size="13">assumptions stay hidden</text>
+  <rect x="520" y="150" width="320" height="250" rx="16" fill="#152035" stroke="${GREEN}" stroke-width="2"/>
+  <text x="680" y="210" text-anchor="middle" fill="${GREEN}" font-size="18" font-weight="700">Capability</text>
+  <text x="680" y="245" text-anchor="middle" fill="${GRAY}" font-size="13">use-the-future</text>
+  <text x="680" y="270" text-anchor="middle" fill="${GRAY}" font-size="13">anticipatory assumptions</text>
+  <text x="680" y="310" text-anchor="middle" fill="${GRAY}" font-size="13">before method choice</text>
+`, 'Miller (2007) · UNESCO · Module M1');
+
+files['literacy-m2-lab.svg'] = frame('Futures Literacy Laboratory · Three Moves', `
+  ${[
+    [200, 270, 'Reveal', 'probable + preferable', CYAN],
+    [480, 270, 'Reframe', 'illegitimate futures', AMBER],
+    [760, 270, 'Rethink', 'return to present', GREEN]
+  ].map(([cx, cy, label, sub, c]) => `
+  <rect x="${cx - 110}" y="${cy - 70}" width="220" height="140" rx="14" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${cx}" y="${cy - 12}" text-anchor="middle" fill="${c}" font-size="18" font-weight="700">${label}</text>
+  <text x="${cx}" y="${cy + 18}" text-anchor="middle" fill="${GRAY}" font-size="12">${sub}</text>`).join('')}
+  <path d="M320 270 H360" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M600 270 H640" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+`, 'Miller ed. (2018) Transforming the Future · Module M2');
+
+/* ------------------------- Futurpreneurship · 2 modules ------------------------- */
+
+files['futurpreneur-m1-bridge.svg'] = frame('Foresight × Venture Bridge', `
+  <rect x="90" y="160" width="280" height="220" rx="14" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="230" y="230" text-anchor="middle" fill="${CYAN}" font-size="18" font-weight="700">Foresight</text>
+  <text x="230" y="265" text-anchor="middle" fill="${GRAY}" font-size="13">signals · scenarios</text>
+  <text x="230" y="290" text-anchor="middle" fill="${GRAY}" font-size="13">insight without build</text>
+  <path d="M385 270 H455" stroke="${AMBER}" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="420" y="250" text-anchor="middle" fill="${AMBER}" font-size="12">bridge</text>
+  <rect x="470" y="160" width="280" height="220" rx="14" fill="#152035" stroke="${GREEN}" stroke-width="2"/>
+  <text x="610" y="230" text-anchor="middle" fill="${GREEN}" font-size="18" font-weight="700">Venture</text>
+  <text x="610" y="265" text-anchor="middle" fill="${GRAY}" font-size="13">hypothesis · MVP</text>
+  <text x="610" y="290" text-anchor="middle" fill="${GRAY}" font-size="13">risk + build</text>
+  <text x="820" y="270" fill="${PURPLE}" font-size="14">Futurpreneur</text>
+`, 'Slaughter · Candy · Mansouri stack · Module M1');
+
+files['futurpreneur-m2-probe.svg'] = frame('Weak Signal → Venture Probe', `
+  ${[
+    [160, 270, 'Sense', CYAN],
+    [320, 270, 'Imagine', PURPLE],
+    [480, 270, 'Hypothesize', AMBER],
+    [640, 270, 'Build', GREEN],
+    [800, 270, 'Scale/Kill', ROSE]
+  ].map(([cx, cy, label, c], i, arr) => `
+  <circle cx="${cx}" cy="${cy}" r="48" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${cx}" y="${cy + 5}" text-anchor="middle" fill="${c}" font-size="12" font-weight="700">${label}</text>
+  ${i < arr.length - 1 ? `<path d="M${cx + 52} ${cy} H${arr[i + 1][0] - 52}" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>` : ''}`).join('')}
+  <text x="480" y="140" text-anchor="middle" fill="${GRAY}" font-size="14">90-day probe with falsification criteria</text>
+`, 'Signal to MVP probe · Module M2');
+
 fs.mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(files)) {
   fs.writeFileSync(path.join(OUT, name), svg, 'utf8');

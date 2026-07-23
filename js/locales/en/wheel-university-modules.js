@@ -14,7 +14,12 @@ registerLocale('en', {
         labelFormat: 'Format',
         labelCriteria: 'Grading criteria',
         modulePickerHint: 'Each card is a standalone deck. Press F for fullscreen.',
-        university: {
+            tracksLabel: 'Delivery track',
+            trackUniversity: 'University',
+            trackIndustry: 'Industry & organization',
+            universitySectionTitle: 'University track · syllabus and teaching',
+            industrySectionTitle: 'Industry track · organizational delivery',
+                    university: {
             title: 'Futures Wheel · three lecture decks',
             intro: 'Based on Jerome C. Glenn (1972) and FRM 3.0. Focus on workshop use of consequence chains, not the full FRM method list.',
             modules: [
@@ -214,6 +219,109 @@ registerLocale('en', {
                         criteria: ['3rd-order depth', 'Link to decision or venture']
                     }
                 }
+            ]
+        },
+    industry: {
+            tag: 'Futures Wheel workshop',
+            title: 'Cascading consequences for product and risk decisions',
+            intro: 'Organizational workshop to draw first to third-order consequences of a tech or regulatory change before a large investment.',
+            meta: [
+                {
+                    label: 'Duration',
+                    value: '3 to 4 hours'
+                },
+                {
+                    label: 'Output',
+                    value: 'Consequence wheel + opportunity/threat'
+                },
+                {
+                    label: 'Audience',
+                    value: 'Product, risk, strategy, operations'
+                }
+            ],
+            agenda: [
+                {
+                    block: '30 min',
+                    title: 'Select driver',
+                    desc: 'One clear central change.'
+                },
+                {
+                    block: '60 min',
+                    title: 'Orders 1 and 2',
+                    desc: 'Direct and secondary consequences with STEEP.'
+                },
+                {
+                    block: '45 min',
+                    title: 'Order 3 and loops',
+                    desc: 'Distant effects and feedback.'
+                },
+                {
+                    block: '45 min',
+                    title: 'Action priority',
+                    desc: 'Three opportunities and three threats for 90 days.'
+                }
+            ],
+            stakeholders: [
+                {
+                    role: 'Product',
+                    job: 'Define driver and growth assumption'
+                },
+                {
+                    role: 'Risk',
+                    job: 'Second and third-order threats'
+                },
+                {
+                    role: 'Operations',
+                    job: 'Feasibility of consequences'
+                },
+                {
+                    role: 'Strategy',
+                    job: 'Investment priority'
+                }
+            ],
+            deliverables: [
+                'Full order 1 to 3 wheel',
+                'STEEP labels',
+                'Opportunity/threat list',
+                'Three 90-day actions'
+            ],
+            workflow: [
+                {
+                    title: 'Center',
+                    desc: 'Lock the driver.'
+                },
+                {
+                    title: 'Cascade',
+                    desc: 'Draw orders without a loose mind map.'
+                },
+                {
+                    title: 'Label',
+                    desc: 'STEEP and light probability/severity.'
+                },
+                {
+                    title: 'Act',
+                    desc: 'Venture opportunity and control threat.'
+                }
+            ],
+            checklist: [
+                'Driver is one sentence',
+                'Orders are separated',
+                'At least one feedback loop is visible',
+                'Actions have owners',
+                'Connectable to scenarios'
+            ],
+            boardMemo: [
+                'Driver',
+                'Three critical consequences',
+                'Overlooked threat',
+                'Investment opportunity',
+                'Decision request'
+            ],
+            facilitator: [
+                'Stop endless branching',
+                'Color-code orders',
+                'Separate mind map from Wheel',
+                'Tie output to a quarterly decision'
             ]
         }
     }

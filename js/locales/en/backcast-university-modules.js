@@ -14,7 +14,12 @@ registerLocale('en', {
         labelFormat: 'Format',
         labelCriteria: 'Grading criteria',
         modulePickerHint: 'Each card is a standalone deck. Press F for fullscreen.',
-        university: {
+            tracksLabel: 'Delivery track',
+            trackUniversity: 'University',
+            trackIndustry: 'Industry & organization',
+            universitySectionTitle: 'University track · syllabus and teaching',
+            industrySectionTitle: 'Industry track · organizational delivery',
+                    university: {
             title: 'Backcasting · three lecture decks',
             intro: 'Based on Robinson (1982, 1990) and Dreborg (1996). Work from a desired future back to today for sustainability, energy, and tech-governance change.',
             modules: [
@@ -227,6 +232,109 @@ registerLocale('en', {
                         criteria: ['Path coherence', '90-day executability']
                     }
                 }
+            ]
+        },
+    industry: {
+            tag: 'Backcasting workshop',
+            title: 'From preferred future to a 90-day roadmap',
+            intro: 'Workshop for sustainability, AI governance, or digital transformation teams: normative vision, power barriers, and immediate moves.',
+            meta: [
+                {
+                    label: 'Duration',
+                    value: '4 hours'
+                },
+                {
+                    label: 'Output',
+                    value: 'Vision + milestones + three actions'
+                },
+                {
+                    label: 'Audience',
+                    value: 'Strategy, sustainability, technology, HR'
+                }
+            ],
+            agenda: [
+                {
+                    block: '45 min',
+                    title: 'Normative vision',
+                    desc: 'A imaginable and measurable preferred future.'
+                },
+                {
+                    block: '45 min',
+                    title: 'Reverse steps',
+                    desc: 'Intermediate milestones.'
+                },
+                {
+                    block: '45 min',
+                    title: 'Power barriers',
+                    desc: 'Who benefits from the status quo?'
+                },
+                {
+                    block: '45 min',
+                    title: '90-day action',
+                    desc: 'Three immediate moves with owners.'
+                }
+            ],
+            stakeholders: [
+                {
+                    role: 'Executive sponsor',
+                    job: 'Confirm the vision'
+                },
+                {
+                    role: 'Program owner',
+                    job: 'Milestones'
+                },
+                {
+                    role: 'Operations',
+                    job: 'Path feasibility'
+                },
+                {
+                    role: 'Risk',
+                    job: 'Barriers and dependencies'
+                }
+            ],
+            deliverables: [
+                'One-page vision text',
+                'Milestone chain',
+                'Barrier map',
+                'Three 90-day actions'
+            ],
+            workflow: [
+                {
+                    title: 'Future',
+                    desc: 'Lock the vision.'
+                },
+                {
+                    title: 'Reverse',
+                    desc: 'Walk from the future to today.'
+                },
+                {
+                    title: 'Power',
+                    desc: 'Name the barriers.'
+                },
+                {
+                    title: 'Immediate',
+                    desc: 'Small moves that shape the path.'
+                }
+            ],
+            checklist: [
+                'Vision is normative, not a forecast',
+                'Milestones have dates',
+                'Power barrier is written',
+                'Actions link to the vision',
+                'Not confused with forecasting'
+            ],
+            boardMemo: [
+                'Vision',
+                'Today gap',
+                'Main barrier',
+                'Three actions',
+                'Resource request'
+            ],
+            facilitator: [
+                'Keep forecast separate from backcast',
+                'Block vague visions',
+                'Make power explicit',
+                'Keep actions small and real'
             ]
         }
     }

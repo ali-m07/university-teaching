@@ -17,9 +17,9 @@
     "menu": "Menu"
   },
   "footer": {
-    "desc": "Ali Mansouri’s personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
-    "descBackcast": "Ali Mansouri’s personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
-    "descWheel": "Ali Mansouri’s personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
+    "desc": "Ali Mansouri's personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
+    "descBackcast": "Ali Mansouri's personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
+    "descWheel": "Ali Mansouri's personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
     "role": "PhD candidate, Futures Studies · University of Tehran",
     "resume": "CV",
     "copyright": "© Ali Mansouri · FORESIGHT HUB"
@@ -392,6 +392,11 @@
       "labelFormat": "Format",
       "labelCriteria": "Grading criteria",
       "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+      "tracksLabel": "Delivery track",
+      "trackUniversity": "University",
+      "trackIndustry": "Industry & organization",
+      "universitySectionTitle": "University track · lecture decks",
+      "industrySectionTitle": "Industry track · organizational workshop",
       "university": {
         "title": "Popper Foresight Diamond · two lecture decks",
         "intro": "Based on Rafael Popper's Foresight Diamond from the EU FORLEARN projects, with a bridge to Michel Godet's five scenario quality criteria. The Diamond is not a prediction tool, it is a lens for judging the quality of a foresight exercise.",
@@ -558,6 +563,110 @@
             }
           }
         ]
+      },
+      "industry": {
+        "tag": "Industry & organization",
+        "title": "Popper Diamond quality audit · foresight exercise review",
+        "intro": "A short organizational audit workshop that judges whether a foresight exercise was good, not merely completed. Uses Popper's four corners (creativity, innovation, expertise, interaction) and, where useful, Godet-style quality criteria to produce a board-ready verdict and remediation plan.",
+        "meta": [
+          {
+            "label": "Format",
+            "value": "Half-day audit (4h) on one live report or workshop"
+          },
+          {
+            "label": "Audience",
+            "value": "Foresight buyers, strategy QA, PMO, external reviewers"
+          },
+          {
+            "label": "Focus cases",
+            "value": "Vendor foresight pack, internal scenario project, Delphi cycle"
+          }
+        ],
+        "agenda": [
+          {
+            "block": "Hour 1",
+            "title": "Exercise scope and claims",
+            "desc": "Clarify what the foresight product promised versus what it delivered."
+          },
+          {
+            "block": "Hour 2",
+            "title": "Four-corner scoring",
+            "desc": "Score creativity, innovation, expertise, and interaction with concrete evidence notes."
+          },
+          {
+            "block": "Hour 3",
+            "title": "Failure modes",
+            "desc": "Identify which corner weakness most damages decision quality."
+          },
+          {
+            "block": "Hour 4",
+            "title": "Remediation and memo",
+            "desc": "Agree fixes, owners, and whether to accept, revise, or reject the exercise."
+          }
+        ],
+        "stakeholders": [
+          {
+            "role": "Buyer / sponsor of the foresight work",
+            "job": "State the decision the exercise was meant to serve"
+          },
+          {
+            "role": "Exercise lead (internal or vendor)",
+            "job": "Provide process evidence without defensive editing"
+          },
+          {
+            "role": "Independent reviewer",
+            "job": "Score corners and challenge silent averaging of quality"
+          },
+          {
+            "role": "Decision owner",
+            "job": "Decide accept / revise / reject based on the audit"
+          }
+        ],
+        "deliverables": [
+          "Four-corner scorecard with evidence citations",
+          "Primary quality failure mode statement",
+          "Remediation plan with owners and dates",
+          "Accept / revise / reject recommendation",
+          "One-page quality audit memo for the board or steering group"
+        ],
+        "workflow": [
+          {
+            "title": "1. Intake",
+            "desc": "Collect the report, participant list, and decision context."
+          },
+          {
+            "title": "2. Score",
+            "desc": "Rate four corners independently before group synthesis."
+          },
+          {
+            "title": "3. Diagnose",
+            "desc": "Name the corner that most undermines trust."
+          },
+          {
+            "title": "4. Decide",
+            "desc": "Issue accept / revise / reject with remediation."
+          }
+        ],
+        "checklist": [
+          "Do we have the actual process evidence, not only the final PDF?",
+          "Were creativity and interaction scored with examples, not vibes?",
+          "Is expertise real domain expertise, not title inflation?",
+          "Is the decision owner present for the final verdict?",
+          "Are remediation owners distinct from the original exercise lead when needed?"
+        ],
+        "boardMemo": [
+          "Exercise under audit and intended decision",
+          "Four-corner scores and one-line evidence each",
+          "Primary quality failure mode",
+          "Recommendation: accept, revise, or reject",
+          "Remediation ask and next review date"
+        ],
+        "facilitator": [
+          "Separate completion from quality at the opening minute.",
+          "Require evidence notes for every corner score.",
+          "Do not let vendor or internal politics erase a low interaction or expertise score.",
+          "End with a verdict, not a softer second report promise alone."
+        ]
       }
     },
     "hines": {
@@ -628,6 +737,11 @@
       "labelFormat": "Format",
       "labelCriteria": "Grading criteria",
       "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+      "tracksLabel": "Delivery track",
+      "trackUniversity": "University",
+      "trackIndustry": "Industry & organization",
+      "universitySectionTitle": "University track · lecture decks",
+      "industrySectionTitle": "Industry track · organizational workshop",
       "university": {
         "title": "Six Pillars (Hines & Bishop) · three lecture decks",
         "intro": "Based on <em>Thinking About the Future</em> by Andy Hines and Peter Bishop, with a bridge to Michel Godet's French prospective school. The operational path from framing to acting, built for managers, not only researchers.",
@@ -909,6 +1023,110 @@
             }
           }
         ]
+      },
+      "industry": {
+        "tag": "Industry & organization",
+        "title": "Six Pillars design workshop · building a foresight unit",
+        "intro": "A practical workshop for organizations that want an operating foresight capability, not a one-off report. Uses the Hines and Bishop six pillars as an architecture from framing to acting, with clear handoffs across strategy, innovation, and scanning roles.",
+        "meta": [
+          {
+            "label": "Format",
+            "value": "One day design session + 30-day operating plan"
+          },
+          {
+            "label": "Audience",
+            "value": "Foresight, strategy, innovation, PMO"
+          },
+          {
+            "label": "Focus cases",
+            "value": "New foresight cell, redesign of annual planning cycle"
+          }
+        ],
+        "agenda": [
+          {
+            "block": "Block 1",
+            "title": "Framing and scanning design",
+            "desc": "Define the unit mandate and the scanning cadence that feeds it."
+          },
+          {
+            "block": "Block 2",
+            "title": "Forecasting and visioning fit",
+            "desc": "Decide which products the unit owns versus borrows from strategy or R&D."
+          },
+          {
+            "block": "Block 3",
+            "title": "Planning and acting handoffs",
+            "desc": "Map gates where foresight must change budgets, pilots, or policy."
+          },
+          {
+            "block": "Block 4",
+            "title": "90-day operating skeleton",
+            "desc": "Roles, rituals, and first deliverables for the unit."
+          }
+        ],
+        "stakeholders": [
+          {
+            "role": "Sponsor (CHRO / CSO / innovation lead)",
+            "job": "Authorize mandate and staffing envelope"
+          },
+          {
+            "role": "Foresight lead (incoming or designated)",
+            "job": "Own pillar-to-ritual design"
+          },
+          {
+            "role": "Strategy / planning",
+            "job": "Define where foresight enters the annual cycle"
+          },
+          {
+            "role": "Innovation / venturing",
+            "job": "Connect probing and acting to real pilots"
+          }
+        ],
+        "deliverables": [
+          "Foresight unit mandate one-pager",
+          "Pillar-by-pillar responsibility map",
+          "Annual ritual calendar (scan, workshop, gate brief)",
+          "90-day staffing and deliverable plan",
+          "Interface agreements with strategy and innovation"
+        ],
+        "workflow": [
+          {
+            "title": "1. Diagnose",
+            "desc": "Assess current foresight products against the six pillars."
+          },
+          {
+            "title": "2. Design",
+            "desc": "Assign ownership and rituals per pillar."
+          },
+          {
+            "title": "3. Interface",
+            "desc": "Negotiate handoffs into planning and probing gates."
+          },
+          {
+            "title": "4. Launch",
+            "desc": "Run the first 90-day cycle with named owners."
+          }
+        ],
+        "checklist": [
+          "Is the unit mandate written as decisions to serve, not reports to produce?",
+          "Does every pillar have an owner or an explicit borrow agreement?",
+          "Is there a calendar ritual, not only a project charter?",
+          "Are acting and probing linked to budget owners?",
+          "Will the sponsor review the unit after 90 days with success criteria?"
+        ],
+        "boardMemo": [
+          "Why a method list is insufficient for this organization",
+          "Proposed foresight mandate and scope",
+          "Six-pillar operating map and owners",
+          "90-day launch plan and resource ask",
+          "Success criteria for the first quarterly review"
+        ],
+        "facilitator": [
+          "Keep managers on the path question of each pillar, not tool nostalgia.",
+          "Refuse orphan pillars with no owner.",
+          "Force a calendar before approving any new method purchase.",
+          "End with a 90-day launch, not a multi-year capability fantasy."
+        ]
       }
     },
     "scenarios": {
@@ -984,6 +1202,11 @@
       "labelFormat": "Format",
       "labelCriteria": "Grading criteria",
       "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+      "tracksLabel": "Delivery track",
+      "trackUniversity": "University",
+      "trackIndustry": "Industry & organization",
+      "universitySectionTitle": "University track · syllabus and teaching",
+      "industrySectionTitle": "Industry track · organizational delivery",
       "university": {
         "title": "Scenario Planning · three lecture decks",
         "intro": "Based on Pierre Wack (Shell), Peter Schwartz, and van der Heijden. Scenarios as a decision tool under uncertainty, not single-line prediction.",
@@ -1302,6 +1525,109 @@
             }
           }
         ]
+      },
+      "industry": {
+        "tag": "Scenario workshop",
+        "title": "Decision-led scenarios for quarterly strategy",
+        "intro": "Workshop for a strategy committee: critical uncertainties, 2×2 matrix, early indicators, and no-regret options.",
+        "meta": [
+          {
+            "label": "Duration",
+            "value": "One day or two half-days"
+          },
+          {
+            "label": "Output",
+            "value": "Four scenarios + indicators"
+          },
+          {
+            "label": "Audience",
+            "value": "Light board, strategy, finance, product"
+          }
+        ],
+        "agenda": [
+          {
+            "block": "60 min",
+            "title": "Decision question",
+            "desc": "What decision must be taken under uncertainty?"
+          },
+          {
+            "block": "90 min",
+            "title": "Critical uncertainty",
+            "desc": "Two axes and four logics."
+          },
+          {
+            "block": "90 min",
+            "title": "Narratives",
+            "desc": "Name and story for each quadrant."
+          },
+          {
+            "block": "60 min",
+            "title": "Indicators and action",
+            "desc": "Signals and no-regret moves."
+          }
+        ],
+        "stakeholders": [
+          {
+            "role": "CEO/sponsor",
+            "job": "Decision question"
+          },
+          {
+            "role": "Strategy",
+            "job": "Axes and narrative"
+          },
+          {
+            "role": "Finance",
+            "job": "Investment implications"
+          },
+          {
+            "role": "Product",
+            "job": "Market indicators"
+          }
+        ],
+        "deliverables": [
+          "Written decision question",
+          "2×2 matrix",
+          "Four short narratives",
+          "Indicator board and no-regret actions"
+        ],
+        "workflow": [
+          {
+            "title": "Decision",
+            "desc": "Lock the question."
+          },
+          {
+            "title": "Axes",
+            "desc": "Two critical uncertainties."
+          },
+          {
+            "title": "Narrative",
+            "desc": "Logic of each scenario."
+          },
+          {
+            "title": "Monitor",
+            "desc": "Indicators and robust options."
+          }
+        ],
+        "checklist": [
+          "Scenario is not a forecast",
+          "Axes are true uncertainties",
+          "Narratives touch the decision",
+          "Indicators are observable",
+          "No-regret action is defined"
+        ],
+        "boardMemo": [
+          "Decision question",
+          "Two axes",
+          "Pressure scenario",
+          "Robust action",
+          "Monitoring request"
+        ],
+        "facilitator": [
+          "Do not use trends as uncertainties",
+          "Take narrative naming seriously",
+          "Do not leave indicators vague",
+          "Tie output to quarterly budget"
+        ]
       }
     },
     "futurpreneurship": {
@@ -1355,7 +1681,326 @@
       "gapTitle": "Why FRM lacks this",
       "gap": "FRM was written for policy and research labs; <strong>venture creation</strong> is out of scope. Futurpreneurship is what Silicon Valley does informally — with foresight rigor.",
       "caseTitle": "Example: weak signal → venture",
-      "case": "Signal: aging + AI tutor demand. Scenario: \"Physical school boundary\" fades. Venture: AI tutor platform with curriculum foresight — MVP in 90 days, not 5 years of research."
+      "case": "Signal: aging + AI tutor demand. Scenario: \"Physical school boundary\" fades. Venture: AI tutor platform with curriculum foresight — MVP in 90 days, not 5 years of research.",
+      "moduleContentTag": "Lecture notes & slides",
+      "moduleDeckNavLabel": "Slide navigation",
+      "moduleDeckPrev": "Prev",
+      "moduleDeckNext": "Next",
+      "moduleDeckSlide": "Slide",
+      "moduleDeckFullscreen": "Fullscreen · F",
+      "moduleReadingsTitle": "Further reading",
+      "moduleAssignmentTitle": "Assignment",
+      "labelFormat": "Format",
+      "labelCriteria": "Grading criteria",
+      "modulePickerHint": "Each card is a standalone lecture. Press F for fullscreen.",
+      "tracksLabel": "Delivery track",
+      "trackUniversity": "University",
+      "trackIndustry": "Industry & organization",
+      "universitySectionTitle": "University track · two Futurpreneurship lectures",
+      "industrySectionTitle": "Industry track · startup and incubator workshop",
+      "university": {
+        "title": "Futurpreneurship · two lecture decks",
+        "intro": "The foresight-to-venture bridge: from Slaughter and Candy to the Mansouri synthesis. The gap between FRM Personal Futures and building a startup with a falsifiable hypothesis.",
+        "modules": [
+          {
+            "num": "M1",
+            "id": "m1",
+            "pickerLabel": "Foresight × venture bridge",
+            "title": "The foresight × entrepreneurship bridge",
+            "hours": "90 min",
+            "readingsShort": "Slaughter · Candy · stack",
+            "visual": "assets/methods/covers/futurpreneur-m1-bridge.svg",
+            "visualCaption": "From futures insight to business hypothesis",
+            "lectureIntro": "Session 1 defines Futurpreneurship: someone who both sees the future and accepts risk to build. The gap between foresight reports and venture building in FRM becomes clear.",
+            "lectureSections": [
+              {
+                "id": "why-bridge",
+                "title": "1. Why foresight without venture is incomplete",
+                "slideTitles": [
+                  "Startups without foresight",
+                  "Futurists without building",
+                  "What Silicon Valley does informally"
+                ],
+                "paragraphs": [
+                  "Startups without foresight are often blind: they bet on a single-line market assumption and notice surprise too late.",
+                  "Futurists without venture often only report; insight never becomes a falsifiable hypothesis and a field experiment.",
+                  "Futurpreneurship is what the startup ecosystem does informally, but with foresight rigor: scanning, scenarios, and Popper Diamond quality."
+                ]
+              },
+              {
+                "id": "frm-gap",
+                "title": "2. The FRM gap and conceptual roots",
+                "slideTitles": [
+                  "Personal Futures and Genius Forecasting",
+                  "Slaughter and foresight culture",
+                  "Candy and experiential futures"
+                ],
+                "paragraphs": [
+                  "FRM 3.0 includes Personal Futures and Genius Forecasting chapters, but a systematic bridge to startup and venture building is outside its scope.",
+                  "Richard Slaughter stressed literacy and embedding foresight in society; a foresight culture is a precondition for futures-oriented entrepreneurship.",
+                  "Stuart Candy's experiential futures and immersive scenarios show the bridge from foresight to action and public engagement; inspiration for tangible experiments."
+                ]
+              },
+              {
+                "id": "cycle-overview",
+                "title": "3. The five-stage cycle",
+                "slideTitles": [
+                  "Sense and Imagine",
+                  "Hypothesize",
+                  "Build, then Scale or Kill"
+                ],
+                "paragraphs": [
+                  "Sense begins with weak signals and the upper CLA layers. Imagine builds a short-horizon scenario or vision: which future is worth a venture?",
+                  "Hypothesize writes a falsifiable business hypothesis: if X occurs by a stated horizon, then Y customers or needs exist.",
+                  "Build is the MVP and minimum-resource pilot (probing in Rohrbeck's language). Then Scale or Kill fast; foresight prevents long wrong bets."
+                ],
+                "table": {
+                  "headers": [
+                    "<strong>Stage</strong>",
+                    "<strong>Output</strong>",
+                    "<strong>Quality check</strong>"
+                  ],
+                  "rows": [
+                    [
+                      "Sense",
+                      "Clue and problem",
+                      "Separated from noise"
+                    ],
+                    [
+                      "Imagine",
+                      "Short futures narrative",
+                      "Tied to a venture decision"
+                    ],
+                    [
+                      "Hypothesize",
+                      "Falsifiable hypothesis",
+                      "Explicit kill condition"
+                    ],
+                    [
+                      "Build",
+                      "MVP / pilot",
+                      "Learning within 90 days"
+                    ],
+                    [
+                      "Scale/Kill",
+                      "Decision",
+                      "Field evidence, not slides"
+                    ]
+                  ]
+                }
+              }
+            ],
+            "readings": [
+              {
+                "type": "Article",
+                "text": "Slaughter, R. · Futures literacy and social foresight."
+              },
+              {
+                "type": "Web",
+                "text": "Candy, S. · The Futures of Everyday Life / experiential futures."
+              },
+              {
+                "type": "Portal",
+                "text": "Ali Mansouri Strategic Foresight Hub · integrated stack (this site)."
+              }
+            ],
+            "assignment": {
+              "title": "Name the foresight to venture gap",
+              "description": "Choose a foresight report or startup idea you know.",
+              "body": [
+                "State which side of the bridge is weak: futures insight or the build path.",
+                "Propose one falsifiable hypothesis sentence that would complete the bridge."
+              ],
+              "format": "Half page",
+              "criteria": [
+                "Real gap diagnosis",
+                "Falsifiable hypothesis"
+              ]
+            }
+          },
+          {
+            "num": "M2",
+            "id": "m2",
+            "pickerLabel": "From signal to probe",
+            "title": "From weak signal to venture experiment",
+            "hours": "90 min",
+            "readingsShort": "Signal → MVP",
+            "visual": "assets/methods/covers/futurpreneur-m2-probe.svg",
+            "visualCaption": "Hypothesis, MVP, 90-day gate",
+            "lectureIntro": "Session 2 takes one weak signal to a venture experiment: a one-page scenario, a business hypothesis, and a ninety-day probe with Scale or Kill criteria.",
+            "lectureSections": [
+              {
+                "id": "signal-to-story",
+                "title": "1. From signal to short narrative",
+                "slideTitles": [
+                  "Choosing this week's signal",
+                  "One-page scenario",
+                  "Boundary with trend reports"
+                ],
+                "paragraphs": [
+                  "Separate the signal from trend and noise. Classroom example: AI tutor demand alongside aging populations and teacher shortages.",
+                  "A one-page scenario states which world-logic turns the signal into a venture opportunity; it is not a definitive market forecast.",
+                  "If you only repeat growth of a known market, you are still in trend analysis, not Futurpreneurship."
+                ]
+              },
+              {
+                "id": "hypothesis-mvp",
+                "title": "2. Hypothesis and MVP",
+                "slideTitles": [
+                  "Falsifiable hypothesis template",
+                  "Ninety-day MVP scope",
+                  "Link to FITness probing"
+                ],
+                "paragraphs": [
+                  "Template: if [futures change] by [horizon], then [customer segment] will show payment or adoption for [value proposition]; falsified if [criterion].",
+                  "An MVP must be buildable and testable in ninety days: landing page, limited pilot, or pre-sale; not a five-year research program.",
+                  "In Rohrbeck's language this is probing: organized experiment with stop criteria before a large portfolio commitment."
+                ]
+              },
+              {
+                "id": "pitch-critique",
+                "title": "3. Pitch and Popper Diamond critique",
+                "slideTitles": [
+                  "Three-minute pitch",
+                  "Creativity and Innovation scores",
+                  "Scale, Pivot, or Kill"
+                ],
+                "paragraphs": [
+                  "Each group presents hypothesis, MVP scope, and falsification criteria in three minutes.",
+                  "Critique with the Popper Diamond: is creativity and innovation real, or a repeat of a common market idea? How much expertise and interaction with the target user occurred?",
+                  "Class close: specify Scale, Pivot, or Kill paths with the evidence expected after ninety days."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Page",
+                "text": "FITness · probing and 90-day experiments on this portal."
+              },
+              {
+                "type": "Page",
+                "text": "Popper Diamond · Creativity and Innovation corners for pitch critique."
+              }
+            ],
+            "assignment": {
+              "title": "Signal-to-MVP package",
+              "description": "Turn this week's weak signal into a venture experiment.",
+              "body": [
+                "Signal + one-page scenario.",
+                "Falsifiable business hypothesis.",
+                "Three MVP actions for the next 90 days."
+              ],
+              "format": "One to two pages",
+              "criteria": [
+                "Falsifiability of the hypothesis",
+                "Realistic ninety-day scope"
+              ]
+            }
+          }
+        ]
+      },
+      "industry": {
+        "tag": "Industry & organization",
+        "title": "Futurpreneurship workshop for startups and incubators",
+        "intro": "A one-day path for founders, mentors, and corporate venture units. Goal: turn a weak signal and scenario into a hypothesis and probe, not a market-prediction deck.",
+        "meta": [
+          {
+            "label": "Duration",
+            "value": "1 workshop day + 90-day probe follow-up"
+          },
+          {
+            "label": "Audience",
+            "value": "Founder · Mentor · CVC · Corporate innovation"
+          },
+          {
+            "label": "Output",
+            "value": "Falsifiable hypothesis + MVP scope + Scale/Kill gate"
+          }
+        ],
+        "agenda": [
+          {
+            "block": "09:00",
+            "title": "Sense: signal intake",
+            "desc": "Each team brings one weak signal from scanning or the customer field; screen trends and noise."
+          },
+          {
+            "block": "11:00",
+            "title": "Imagine: short narrative",
+            "desc": "One-page venture-value scenario; critique the link to a build decision."
+          },
+          {
+            "block": "13:30",
+            "title": "Hypothesize and Build",
+            "desc": "Write a falsifiable hypothesis; define a ninety-day MVP and stop criteria."
+          },
+          {
+            "block": "15:30",
+            "title": "Pitch and gate",
+            "desc": "Three-minute pitch; Creativity/Innovation feedback; commit to a Scale/Kill review date."
+          }
+        ],
+        "stakeholders": [
+          {
+            "role": "Founder / core team",
+            "job": "Owns the hypothesis and MVP execution"
+          },
+          {
+            "role": "Foresight mentor",
+            "job": "Signal and scenario quality; prevent trend-washing"
+          },
+          {
+            "role": "Product mentor",
+            "job": "MVP scope and user learning"
+          },
+          {
+            "role": "Investor / CVC",
+            "job": "Probe budget gate and Scale/Kill criteria"
+          }
+        ],
+        "deliverables": [
+          "Screened signal card",
+          "One-page venture scenario",
+          "Business hypothesis with falsification condition",
+          "Ninety-day MVP plan",
+          "Scale / Pivot / Kill gate commitment"
+        ],
+        "workflow": [
+          {
+            "title": "1. Sense",
+            "desc": "Signal from scanning or the frontline; separate from trend"
+          },
+          {
+            "title": "2. Imagine",
+            "desc": "Short futures narrative tied to a build decision"
+          },
+          {
+            "title": "3. Hypothesize and Build",
+            "desc": "Falsifiable hypothesis + minimum probing"
+          },
+          {
+            "title": "4. Scale or Kill",
+            "desc": "Evidence review on day 90; an explicit decision"
+          }
+        ],
+        "checklist": [
+          "Is the signal separated from known market growth?",
+          "Does the hypothesis have a falsification condition?",
+          "Is the MVP truly executable in ninety days?",
+          "Are Scale/Kill date and criteria written down?"
+        ],
+        "boardMemo": [
+          "Signal and one-sentence issue",
+          "Hypothesis and falsification criterion",
+          "Budget and ninety-day probe scope",
+          "Decision request: approve probe / reject / return to Sense"
+        ],
+        "facilitator": [
+          "Do not let \"multi-billion market\" pitches pass without a weak signal.",
+          "Write the falsification condition on the board; without it the hypothesis is a slogan.",
+          "Shrink MVP scope so learning in ninety days is possible.",
+          "At the end, lock the Scale/Kill review date on the sponsor calendar."
+        ]
+      }
     },
     "envScanning": {
       "slug": "environmental-scanning",
@@ -1406,7 +2051,323 @@
       "gapTitle": "From Aguilar to Choo, and the fit with FRM Chapter 2",
       "gap": "In Futures Research Methodology 3.0, Theodore J. Gordon and Jerome C. Glenn dedicate Chapter 2 to Environmental Scanning: a systematic process for gathering external information and spotting early indicators of change. That chapter, together with Hines and Bishop's Scanning pillar, describes <em>what</em> to scan (STEEP or PESTLE sectors, weak signals, horizon scanning). Aguilar and Choo describe <em>how</em> scanning happens as an information behavior. Daft and Weick (1984) reinterpreted Aguilar's typology along two dimensions, the organization's belief that its environment can be analyzed, and how actively it intrudes into that environment to test it, producing four modes: undirected viewing, conditioned viewing, enacting, and discovering. Choo, in his ASIS&T monograph <em>Information Management for the Intelligent Organization</em> (1995, 2nd ed. 1998) and in a widely cited 2001 article, adopted this four-mode model, relabeling discovering as searching, and traced, for each mode, the information needs, information-seeking behavior, and information use that follow. In Rohrbeck's FITness framework, this whole territory sits inside the Perceiving dimension: an organization that scans only in undirected mode has weak Perceiving, however sophisticated its scenario or roadmap work later on.",
       "caseTitle": "Classroom example",
-      "case": "A telecom operator's regulatory team only skims two trade newsletters, undirected viewing, and once a year commissions a formal spectrum-policy study, formal search, with almost nothing in between. Using Choo's model, students identify the missing conditioned-viewing and informal-search behavior, for example assigning staff to watch a named list of regulators and industry bodies, and design a lightweight weekly scanning routine that closes the gap before the next license renewal."
+      "case": "A telecom operator's regulatory team only skims two trade newsletters, undirected viewing, and once a year commissions a formal spectrum-policy study, formal search, with almost nothing in between. Using Choo's model, students identify the missing conditioned-viewing and informal-search behavior, for example assigning staff to watch a named list of regulators and industry bodies, and design a lightweight weekly scanning routine that closes the gap before the next license renewal.",
+      "moduleContentTag": "Lecture notes & slides",
+      "moduleDeckNavLabel": "Slide navigation",
+      "moduleDeckPrev": "Prev",
+      "moduleDeckNext": "Next",
+      "moduleDeckSlide": "Slide",
+      "moduleDeckFullscreen": "Fullscreen · F",
+      "moduleReadingsTitle": "Further reading",
+      "moduleAssignmentTitle": "Assignment",
+      "labelFormat": "Format",
+      "labelCriteria": "Grading criteria",
+      "modulePickerHint": "Each card is a standalone lecture. Press F for fullscreen.",
+      "tracksLabel": "Delivery track",
+      "trackUniversity": "University",
+      "trackIndustry": "Industry & organization",
+      "universitySectionTitle": "University track · syllabus and teaching",
+      "industrySectionTitle": "Industry track · organizational delivery",
+      "university": {
+        "title": "Environmental Scanning · two lectures",
+        "intro": "Based on Aguilar (1967), Daft and Weick (1984), and Choo (1998 to 2001). Goal: separate scanning from forecasting and design an executable organizational routine.",
+        "modules": [
+          {
+            "num": "M1",
+            "id": "m1",
+            "pickerLabel": "Aguilar four modes",
+            "title": "Scanning basics · four modes, not one habit",
+            "hours": "90 min",
+            "readingsShort": "Aguilar 1967",
+            "visual": "assets/methods/covers/scanning-m1-modes.svg",
+            "visualCaption": "Four scanning modes on aggression and analyzability",
+            "lectureIntro": "Session one separates environmental scanning from forecasting and clarifies Aguilar’s four modes with organizational examples.",
+            "lectureSections": [
+              {
+                "id": "why",
+                "title": "1. Scanning is not one uniform activity",
+                "slideTitles": [
+                  "Scanning versus forecasting",
+                  "External information for decisions",
+                  "Failure of random habit"
+                ],
+                "paragraphs": [
+                  "Forecasting asks what will happen. Scanning asks what is happening outside the organization that must be seen before a decision is forced.",
+                  "Aguilar showed managers gather external information with different intensity and formality; that difference changes opportunity and threat quality.",
+                  "If scanning is only “reading interesting news,” the organization stays in undirected viewing until a crisis arrives."
+                ]
+              },
+              {
+                "id": "modes",
+                "title": "2. Aguilar’s four modes",
+                "slideTitles": [
+                  "Undirected and conditioned viewing",
+                  "Informal search",
+                  "Formal search"
+                ],
+                "paragraphs": [
+                  "Undirected viewing: scattered encounters without a clear question. Conditioned viewing: guided attention with preset filters such as rivals or regulation.",
+                  "Informal search: active but informal inquiry, expert calls, field observation, short customer talks.",
+                  "Formal search: a named project or unit with written output, time horizon, and an owner."
+                ],
+                "table": {
+                  "headers": [
+                    "Mode",
+                    "Trigger",
+                    "Typical output"
+                  ],
+                  "rows": [
+                    [
+                      "Undirected",
+                      "Chance and curiosity",
+                      "Scattered note"
+                    ],
+                    [
+                      "Conditioned",
+                      "Fixed filter",
+                      "Bounded alert"
+                    ],
+                    [
+                      "Informal search",
+                      "Urgent question",
+                      "Field clue"
+                    ],
+                    [
+                      "Formal search",
+                      "Formal plan",
+                      "Report and routine"
+                    ]
+                  ]
+                }
+              },
+              {
+                "id": "org",
+                "title": "3. Diagnosing the dominant mode",
+                "slideTitles": [
+                  "Map real behavior",
+                  "Missing-mode gap",
+                  "Tech platform example"
+                ],
+                "paragraphs": [
+                  "Teams place a real unit’s scanning behavior on the four modes: who reads what, where it is logged, who decides.",
+                  "Often formal search exists while conditioned viewing on weak signals is missing, or the reverse.",
+                  "In cloud and AI platforms, conditioned viewing on data regulation and informal search on edge-user behavior are critical."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "Aguilar, F. J. (1967). <em>Scanning the Business Environment</em>. Macmillan."
+              },
+              {
+                "type": "FRM",
+                "text": "Gordon & Glenn. Environmental Scanning. In <em>Futures Research Methodology</em> 3.0, chapter 2."
+              }
+            ],
+            "assignment": {
+              "title": "Four-mode map",
+              "description": "Choose a real organization.",
+              "body": [
+                "Name the dominant mode.",
+                "Name one missing mode.",
+                "Give one behavioral evidence for each claim."
+              ],
+              "format": "Half to one page",
+              "criteria": [
+                "Mapping accuracy",
+                "Specific behavioral evidence"
+              ]
+            }
+          },
+          {
+            "num": "M2",
+            "id": "m2",
+            "pickerLabel": "Choo, STEEP, routine",
+            "title": "From information behavior to a scanning routine",
+            "hours": "90 min",
+            "readingsShort": "Choo · Daft & Weick",
+            "visual": "assets/methods/covers/scanning-m2-routine.svg",
+            "visualCaption": "From information need to use in decisions",
+            "lectureIntro": "Session two turns Daft and Weick’s axes, Choo’s information-seeking model, and the bridge to STEEP and FITness Perceiving into an executable routine.",
+            "lectureSections": [
+              {
+                "id": "axes",
+                "title": "1. Two axes of organizational interpretation",
+                "slideTitles": [
+                  "Environment analyzability",
+                  "Organizational aggression",
+                  "Four interpretation cells"
+                ],
+                "paragraphs": [
+                  "Daft and Weick grade environments by analyzability: from ambiguous to clear.",
+                  "The second axis is how aggressively the organization seeks information: passive versus active.",
+                  "Combining the axes creates cells that align with Aguilar’s modes and guide routine design."
+                ]
+              },
+              {
+                "id": "choo",
+                "title": "2. Choo: need, seeking, use",
+                "slideTitles": [
+                  "Information need",
+                  "Seeking and filters",
+                  "Use in decisions"
+                ],
+                "paragraphs": [
+                  "Choo treats scanning as information behavior: without a defined need, seeking becomes news hoarding.",
+                  "Seeking needs sources, cadence, and accept/reject criteria; otherwise conditioned viewing turns into noise.",
+                  "Use means moving a signal into a decision, budget, or probe; a report without a decision owner is dead scanning."
+                ]
+              },
+              {
+                "id": "bridge",
+                "title": "3. STEEP, weak signals, and FITness",
+                "slideTitles": [
+                  "STEEP/PESTLE segments",
+                  "Bridge to weak signals",
+                  "Perceiving in FITness"
+                ],
+                "paragraphs": [
+                  "STEEP or PESTLE is not only a topic label; it is a conditioned-viewing template so domains are not skipped.",
+                  "Scanning without a weak-signal filter sees only strong trends and discovers strategic surprise late.",
+                  "In Rohrbeck’s model, healthy scanning is part of Perceiving: rhythm, owner, and a link to the technology radar."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Article",
+                "text": "Daft, R. L., & Weick, K. E. (1984). Toward a model of organizations as interpretation systems. <em>Academy of Management Review</em>, 9(2)."
+              },
+              {
+                "type": "Monograph",
+                "text": "Choo, C. W. (1998). <em>Information Management for the Intelligent Organization</em> (2nd ed.)."
+              },
+              {
+                "type": "Article",
+                "text": "Choo, C. W. (2001). Environmental scanning as information seeking and organizational learning. <em>Information Research</em>, 7(1)."
+              }
+            ],
+            "assignment": {
+              "title": "Design a scanning routine",
+              "description": "Write a one-page routine for the organization from session one.",
+              "body": [
+                "Define the information need.",
+                "Propose one conditioned-viewing and one informal-search routine.",
+                "Name the owner and weekly/monthly cadence."
+              ],
+              "format": "One page",
+              "criteria": [
+                "Link to a decision",
+                "Realistic resources"
+              ]
+            }
+          }
+        ]
+      },
+      "industry": {
+        "tag": "Organizational scanning workshop",
+        "title": "Stand up a scanning routine in a tech organization",
+        "intro": "A half-day workshop for strategy, product, and risk teams: from diagnosing the current mode to a conditioned-viewing routine tied to quarterly decisions.",
+        "meta": [
+          {
+            "label": "Duration",
+            "value": "Half day · 4 hours"
+          },
+          {
+            "label": "Output",
+            "value": "One-page scanning routine + owner"
+          },
+          {
+            "label": "Audience",
+            "value": "Strategy, product, risk/compliance, data"
+          }
+        ],
+        "agenda": [
+          {
+            "block": "45 min",
+            "title": "Map the current mode",
+            "desc": "Aguilar’s four modes on real unit behavior."
+          },
+          {
+            "block": "45 min",
+            "title": "Define information need",
+            "desc": "Three decision questions for the next quarter."
+          },
+          {
+            "block": "60 min",
+            "title": "Design the routine",
+            "desc": "STEEP sources, cadence, handoff to radar."
+          },
+          {
+            "block": "30 min",
+            "title": "Ownership and pilot",
+            "desc": "Owner, 90-day success metric, review date."
+          }
+        ],
+        "stakeholders": [
+          {
+            "role": "Strategy lead",
+            "job": "Frame decision questions and accept outputs"
+          },
+          {
+            "role": "Product owner",
+            "job": "Market and user-behavior signals"
+          },
+          {
+            "role": "Risk/compliance",
+            "job": "Regulation and threat filters"
+          },
+          {
+            "role": "Foresight facilitator",
+            "job": "Keep rhythm and source quality"
+          }
+        ],
+        "deliverables": [
+          "Map of current four modes",
+          "Quarterly information-need list",
+          "Weekly conditioned-viewing routine",
+          "Handoff channel to Technology Radar or strategy committee"
+        ],
+        "workflow": [
+          {
+            "title": "Diagnose",
+            "desc": "Record dominant mode and gap with evidence."
+          },
+          {
+            "title": "Design",
+            "desc": "Lock need, source, cadence, and owner."
+          },
+          {
+            "title": "90-day pilot",
+            "desc": "Run one STEEP domain with the new routine."
+          },
+          {
+            "title": "Review",
+            "desc": "Which signals reached a decision? Which noise to cut?"
+          }
+        ],
+        "checklist": [
+          "Named owner exists for the routine",
+          "At least one output ties to a decision meeting",
+          "Weak signals are labeled apart from strong trends",
+          "Duplicate sources and rumor are filtered",
+          "90-day review is on the calendar"
+        ],
+        "boardMemo": [
+          "Current scanning mode and surprise risk",
+          "Missing-mode gap",
+          "Proposed routine and time cost",
+          "90-day success metric",
+          "Decision request: confirm owner and light budget"
+        ],
+        "facilitator": [
+          "Return long theory talks to behavioral evidence",
+          "Pick one STEEP domain for the pilot, not all domains",
+          "Assign the output to a named owner in-session",
+          "Keep scanning versus trend-report distinction on the board"
+        ]
+      }
     },
     "weakSignals": {
       "slug": "weak-signals",
@@ -1462,7 +2423,316 @@
       "gapTitle": "Where weak signals sit in FRM and the wider toolkit",
       "gap": "FRM 3.0 (Glenn and Gordon) does not give Weak Signals a standalone chapter title. Early indicators of change appear inside Chapter 2 Environmental Scanning, and low-probability high-impact events are treated in Chapter 10 Wild Cards. Ansoff's graduated-response logic and Hiltunen's future sign therefore deepen what FRM already catalogs rather than replace it. Environmental Scanning (Aguilar, Choo) supplies the continuous information flow inside which weak signals hide; Horizon Scanning formalizes the same search over a five to twenty year policy horizon; STEEP/PESTLE gives the categories used to sort what has been scanned. Inside Rohrbeck's FITness model, weak signal work is squarely a <strong>Perceiving</strong> capability, and it only pays off once an organization also has enough Prospecting capacity to turn a candidate signal into a scenario or a roadmap item. In Inayatullah's CLA, a weak signal typically surfaces first at the <strong>Litany</strong> layer (an odd headline, an outlier statistic, a strange product launch) and stays a curiosity until it is traced down to its <strong>Systemic</strong> layer causes; scanning without that second step produces a list of trivia, not foresight.",
       "caseTitle": "Practical example",
-      "case": "In 1975, Kodak engineer Steven Sasson built the company's first working digital camera prototype, a clear early signal of the coming shift from chemical film to digital imaging. Applying Ansoff's three filters explains what happened next: the surveillance filter registered the prototype, but a mentality filter built around decades of film chemistry, and a power filter held by executives whose careers and incentives ran through film sales, kept the company's response token for years while the underlying technology matured elsewhere."
+      "case": "In 1975, Kodak engineer Steven Sasson built the company's first working digital camera prototype, a clear early signal of the coming shift from chemical film to digital imaging. Applying Ansoff's three filters explains what happened next: the surveillance filter registered the prototype, but a mentality filter built around decades of film chemistry, and a power filter held by executives whose careers and incentives ran through film sales, kept the company's response token for years while the underlying technology matured elsewhere.",
+      "moduleContentTag": "Lecture notes & slides",
+      "moduleDeckNavLabel": "Slide navigation",
+      "moduleDeckPrev": "Prev",
+      "moduleDeckNext": "Next",
+      "moduleDeckSlide": "Slide",
+      "moduleDeckFullscreen": "Fullscreen · F",
+      "moduleReadingsTitle": "Further reading",
+      "moduleAssignmentTitle": "Assignment",
+      "labelFormat": "Format",
+      "labelCriteria": "Grading criteria",
+      "modulePickerHint": "Each card is a standalone lecture. Press F for fullscreen.",
+      "tracksLabel": "Delivery track",
+      "trackUniversity": "University",
+      "trackIndustry": "Industry & organization",
+      "universitySectionTitle": "University track · two weak-signal lectures",
+      "industrySectionTitle": "Industry track · organizational weak-signal response",
+      "university": {
+        "title": "Weak Signals · two lecture decks",
+        "intro": "Based on Ansoff (1975, 1984) and Hiltunen (2006 to 2008). A graduated response to vague clues, not waiting for strong, unambiguous information.",
+        "modules": [
+          {
+            "num": "M1",
+            "id": "m1",
+            "pickerLabel": "Ansoff and three filters",
+            "title": "Strategic surprise and Ansoff's three filters",
+            "hours": "90 min",
+            "readingsShort": "Ansoff 1975",
+            "visual": "assets/methods/covers/weak-m1-filters.svg",
+            "visualCaption": "Surveillance, mentality, power",
+            "lectureIntro": "Session 1 opens Ansoff's 1975 claim about strategic surprise, separates weak signals from strong signals and trends, and applies the three organizational filters that explain why most weak signals die.",
+            "lectureSections": [
+              {
+                "id": "ansoff-1975",
+                "title": "1. The 1975 claim and strategic surprise",
+                "slideTitles": [
+                  "The oil crisis and managers' desks",
+                  "What strategic surprise is",
+                  "Graduated response, not better forecasting"
+                ],
+                "paragraphs": [
+                  "In \"Managing Strategic Surprise by Response to Weak Signals\" (California Management Review, 1975), Ansoff opens with the 1973 oil crisis: warnings of Arab action were, in his words, already on the desks of some of the surprised managers.",
+                  "Strategic surprise is a sudden, urgent, unfamiliar change that threatens a major profit reversal or the loss of a major opportunity. Ansoff's remedy was not a more precise forecast.",
+                  "He proposed a graduated response: as knowledge about the signal strengthens, the intensity of action grows, rather than waiting until everything is unambiguous."
+                ]
+              },
+              {
+                "id": "weak-vs-strong",
+                "title": "2. Weak signal, strong signal, and trend",
+                "slideTitles": [
+                  "Defining strong and weak signals",
+                  "Five levels of knowledge",
+                  "A trend is not a weak signal"
+                ],
+                "paragraphs": [
+                  "A strong signal is information sufficiently visible and concrete to compute impact and devise specific response plans. A weak signal is imprecise early indication: threats or opportunities will arise, but shape and source are not yet known (Ansoff, Implanting Strategic Management, 1984).",
+                  "Between those poles Ansoff placed five levels of knowledge, from merely sensing change to having enough information to calculate outcomes; ordinary strategic planning becomes possible only at the last level.",
+                  "A trend is a measurable pattern in a time series. A weak signal is a single observation or small cluster that has not yet aggregated into a pattern, and most weak signals never do."
+                ]
+              },
+              {
+                "id": "three-filters",
+                "title": "3. Ansoff's three filters",
+                "slideTitles": [
+                  "Surveillance filter",
+                  "Mentality filter",
+                  "Power filter"
+                ],
+                "paragraphs": [
+                  "The surveillance filter asks whether the scanning method can even see the signal. If channels are only annual formal reports, many clues are never registered.",
+                  "The mentality filter asks whether a manager's mental model allows the signal to be treated as plausible. Classic case: Kodak's 1975 digital camera prototype was registered, but a film-chemistry mentality discounted it.",
+                  "The power filter asks whether someone with authority will act. Even with seeing and believing, if careers and incentives run through the old business, the response stays token."
+                ],
+                "table": {
+                  "headers": [
+                    "<strong>Filter</strong>",
+                    "<strong>Question</strong>",
+                    "<strong>Common failure</strong>"
+                  ],
+                  "rows": [
+                    [
+                      "Surveillance",
+                      "Is it seen?",
+                      "Only formal, annual scanning"
+                    ],
+                    [
+                      "Mentality",
+                      "Is it treated as plausible?",
+                      "Mental model of the old business"
+                    ],
+                    [
+                      "Power",
+                      "Will someone act?",
+                      "Authority and incentives elsewhere"
+                    ]
+                  ]
+                }
+              }
+            ],
+            "readings": [
+              {
+                "type": "Article",
+                "text": "Ansoff, H. I. (1975). Managing strategic surprise by response to weak signals. <em>California Management Review</em>, 18(2), pp. 21 to 33."
+              },
+              {
+                "type": "Book",
+                "text": "Ansoff, H. I. (1984). <em>Implanting Strategic Management</em>. Prentice Hall. Weak vs strong signals; three filters."
+              }
+            ],
+            "assignment": {
+              "title": "Three filters on a failure to act",
+              "description": "Name an organization and pick one contemporary clue.",
+              "body": [
+                "Classify the clue as weak signal, trend, or other candidate.",
+                "Write one evidence sentence per Ansoff filter for that organization."
+              ],
+              "format": "Half to one page",
+              "criteria": [
+                "Distinguish weak signal from trend",
+                "Apply all three filters without slogans"
+              ]
+            }
+          },
+          {
+            "num": "M2",
+            "id": "m2",
+            "pickerLabel": "Future sign and wild card",
+            "title": "Hiltunen's future sign and the wild-card boundary",
+            "hours": "90 min",
+            "readingsShort": "Hiltunen 2006/2008",
+            "visual": "assets/methods/covers/weak-m2-futuresign.svg",
+            "visualCaption": "signal · issue · interpretation",
+            "lectureIntro": "Session 2 sharpens the inconsistent term weak signal with Hiltunen's future sign, clarifies the boundary with wild cards, and places the work inside FRM and Rohrbeck Perceiving.",
+            "lectureSections": [
+              {
+                "id": "future-sign",
+                "title": "1. The future-sign triad",
+                "slideTitles": [
+                  "Why \"weak signal\" is slippery",
+                  "signal, issue, interpretation",
+                  "Media noise dressed as a strong signal"
+                ],
+                "paragraphs": [
+                  "In her doctoral research, Hiltunen showed that \"weak signal\" was used so inconsistently that it needed a sharper definition, and proposed the future sign.",
+                  "Using Peirce's triadic model of the sign, a future sign splits into signal (the concrete, visible clue), issue (the underlying phenomenon), and interpretation (what it might mean for the future).",
+                  "Heavy media coverage of a tiny issue can look like a strong signal but is often a weak future sign in disguise."
+                ]
+              },
+              {
+                "id": "wild-card",
+                "title": "2. The wild-card boundary",
+                "slideTitles": [
+                  "Weak signals exist now",
+                  "Gradual change versus a sudden event",
+                  "When scanning no longer helps"
+                ],
+                "paragraphs": [
+                  "In Hiltunen's 2006 terms, weak signals exist now, quietly, and may precede either a gradual change or a sudden wild card.",
+                  "A wild card, in Petersen's phrase, is the low-probability, high-impact event itself. A weak signal may be a precursor; the wild card is the shock.",
+                  "Once a wild card begins, scanning cannot prevent surprise. The value of today's work is graduated response before the shock starts."
+                ]
+              },
+              {
+                "id": "frm-fitness",
+                "title": "3. Place in FRM and FITness",
+                "slideTitles": [
+                  "Chapter 2 scanning and Chapter 10 wild cards",
+                  "From Perceiving to Prospecting",
+                  "A graduated next step"
+                ],
+                "paragraphs": [
+                  "FRM 3.0 has no standalone Weak Signals chapter. Early indicators appear in Chapter 2 Environmental Scanning; low-probability high-impact events appear in Chapter 10 Wild Cards.",
+                  "In Rohrbeck's FITness, weak-signal work is a Perceiving capability, and it only pays off when Prospecting capacity can turn a candidate into a scenario or roadmap item.",
+                  "Closing exercise: write Hiltunen's triad for one clue and propose one graduated next step if the signal strengthens."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Article",
+                "text": "Hiltunen, E. (2008). The future sign and its three dimensions. <em>Futures</em>, 40(3), pp. 247 to 259."
+              },
+              {
+                "type": "Article",
+                "text": "Hiltunen, E. (2006). Was it a wild card or just our blindness to gradual change? <em>Journal of Futures Studies</em>, 11(2), pp. 79 to 90."
+              },
+              {
+                "type": "FRM",
+                "text": "Glenn, J. C., & Gordon, T. J. (Eds.). <em>Futures Research Methodology</em> 3.0. Chapters 2 and 10."
+              }
+            ],
+            "assignment": {
+              "title": "Future-sign memo",
+              "description": "Fully analyze one contemporary clue.",
+              "body": [
+                "Classify: weak signal, trend, or wild-card candidate.",
+                "Write Hiltunen's triad (signal / issue / interpretation).",
+                "Propose one graduated next step if the signal strengthens."
+              ],
+              "format": "One page",
+              "criteria": [
+                "Separate media noise from future significance",
+                "A concrete graduated response, not a general recommendation"
+              ]
+            }
+          }
+        ]
+      },
+      "industry": {
+        "tag": "Industry & organization",
+        "title": "Organizational weak-signal response process",
+        "intro": "A workshop for scanning, corporate innovation, and risk units in technology or platform organizations. Goal: move a signal through Ansoff's three filters and design a graduated response, not a long list of \"hot trends.\"",
+        "meta": [
+          {
+            "label": "Duration",
+            "value": "Half-day diagnosis + 6-week graduated response"
+          },
+          {
+            "label": "Audience",
+            "value": "Scanning · Innovation · Risk · Business unit"
+          },
+          {
+            "label": "Output",
+            "value": "Future-sign card + filters + stepped response plan"
+          }
+        ],
+        "agenda": [
+          {
+            "block": "09:00",
+            "title": "Intake of clues",
+            "desc": "5 to 8 clues from product frontline, regulation, and the startup ecosystem; drop pure trend items."
+          },
+          {
+            "block": "10:30",
+            "title": "Three filters on your organization",
+            "desc": "For each priority clue: surveillance, mentality, power; name which gate usually kills signals."
+          },
+          {
+            "block": "13:00",
+            "title": "Future-sign cards",
+            "desc": "Fill signal / issue / interpretation; separate media noise from the underlying phenomenon."
+          },
+          {
+            "block": "15:00",
+            "title": "90-day graduated response",
+            "desc": "Action level matched to knowledge level; promotion criteria to probing or scenarios; owner and stop gate."
+          }
+        ],
+        "stakeholders": [
+          {
+            "role": "Scanning / foresight unit",
+            "job": "Log clues, future-sign cards, process discipline"
+          },
+          {
+            "role": "Innovation / CVC",
+            "job": "Design probing when a signal strengthens"
+          },
+          {
+            "role": "Risk and compliance",
+            "job": "Power filter and reporting path to the risk committee"
+          },
+          {
+            "role": "Business owner",
+            "job": "Field data and execution of graduated steps in line"
+          }
+        ],
+        "deliverables": [
+          "Screened clue list (weak versus trend)",
+          "Three-filter table for 3 priority signals",
+          "Completed future-sign cards",
+          "Graduated response plan with promotion criteria",
+          "Gate slide for strategy or risk committee"
+        ],
+        "workflow": [
+          {
+            "title": "1. Collect",
+            "desc": "Clues from environmental scanning and the frontline; initial weak / trend / noise tags"
+          },
+          {
+            "title": "2. Filter",
+            "desc": "Run Ansoff's three filters; record why a signal dies or passes"
+          },
+          {
+            "title": "3. Interpret",
+            "desc": "Hiltunen triad; avoid early scoring on an ordinary risk matrix"
+          },
+          {
+            "title": "4. Respond",
+            "desc": "Stepped action, then Prospecting or probing if the signal strengthens"
+          }
+        ],
+        "checklist": [
+          "Is the clue separated from a measurable trend?",
+          "Are all three filters written for a named organization, not generic slogans?",
+          "Is interpretation explicit and not collapsed into the raw signal?",
+          "Are promotion criteria to heavier action predefined?"
+        ],
+        "boardMemo": [
+          "3 priority signals with one-sentence issue each",
+          "Which filter is today's organizational bottleneck",
+          "90-day graduated action and light budget",
+          "Risk of waiting for a strong signal: Kodak-style delay"
+        ],
+        "facilitator": [
+          "Avoid popularity votes based on media noise; do not equate future sign with news coverage.",
+          "When the team says \"this is a trend,\" demand a time series or measurement criterion.",
+          "Open the power filter carefully but honestly: where do real incentives and authority sit?",
+          "Lock the graduated response to one owner and a next review date."
+        ]
+      }
     },
     "futuresLiteracy": {
       "slug": "futures-literacy",
@@ -1518,7 +2788,288 @@
       "gapTitle": "Difference from FRM 3.0",
       "gap": "FRM 3.0 (Glenn and Gordon) is a peer-reviewed toolbox of forecasting and foresight methods, chapter by chapter. Futures Literacy is not another chapter in that toolbox. It is a <strong>capability agenda</strong>: training people to identify, design, and deploy anticipatory assumptions. Classical FRM methods (scenarios, Delphi, scanning, visioning) remain valuable once participants can see which assumptions those methods are serving. Miller's approach therefore complements Six Pillars and Popper's quality diamond rather than competing with them: pillars and diamonds judge process architecture and quality; Futures Literacy judges whether the imagination feeding those processes is still trapped in yesterday's frames.",
       "caseTitle": "Classroom example",
-      "case": "A city education team runs a short FLL on \"the future of school.\" Phase one surfaces probable futures (more platforms, more testing) and preferable futures (personalized learning, equity). Phase two reframes with a deliberately odd prompt: learning without classrooms or grades. Participants then return to the present and notice policies they had treated as inevitable. The deliverable is not a master plan; it is a clearer menu of assumptions and a short list of experiments the city can run next month."
+      "case": "A city education team runs a short FLL on \"the future of school.\" Phase one surfaces probable futures (more platforms, more testing) and preferable futures (personalized learning, equity). Phase two reframes with a deliberately odd prompt: learning without classrooms or grades. Participants then return to the present and notice policies they had treated as inevitable. The deliverable is not a master plan; it is a clearer menu of assumptions and a short list of experiments the city can run next month.",
+      "moduleContentTag": "Lecture notes & slides",
+      "moduleDeckNavLabel": "Slide navigation",
+      "moduleDeckPrev": "Prev",
+      "moduleDeckNext": "Next",
+      "moduleDeckSlide": "Slide",
+      "moduleDeckFullscreen": "Fullscreen · F",
+      "moduleReadingsTitle": "Further reading",
+      "moduleAssignmentTitle": "Assignment",
+      "labelFormat": "Format",
+      "labelCriteria": "Grading criteria",
+      "modulePickerHint": "Each card is a standalone lecture. Press F for fullscreen.",
+      "tracksLabel": "Delivery track",
+      "trackUniversity": "University",
+      "trackIndustry": "Industry & organization",
+      "universitySectionTitle": "University track · two Futures Literacy lectures",
+      "industrySectionTitle": "Industry track · organizational capability workshop",
+      "university": {
+        "title": "Futures Literacy · two lecture decks",
+        "intro": "Based on Miller (2007) and the UNESCO Futures Literacy agenda through Transforming the Future (2018). A capability to use-the-future, not production of a single-line forecast.",
+        "modules": [
+          {
+            "num": "M1",
+            "id": "m1",
+            "pickerLabel": "Capability versus prediction",
+            "title": "Futures Literacy versus forecasting",
+            "hours": "90 min",
+            "readingsShort": "Miller 2007 · UNESCO",
+            "visual": "assets/methods/covers/literacy-m1-use-future.svg",
+            "visualCaption": "Using the future consciously in the present",
+            "lectureIntro": "Session 1 introduces Futures Literacy as a human capability and separates it from producing better forecasts or prettier scenarios, so Miller's prior question is clear: how are we already using the future?",
+            "lectureSections": [
+              {
+                "id": "capability",
+                "title": "1. Capability, not a forecast product",
+                "slideTitles": [
+                  "UNESCO and Miller definitions",
+                  "The future does not exist; it is imagined",
+                  "Why \"three better scenarios\" is not enough"
+                ],
+                "paragraphs": [
+                  "Riel Miller formulated futures literacy in Futures (2007) and later, as Head of Foresight at UNESCO, advanced it as a capability on a par with reading and writing: the skill of using the future consciously.",
+                  "Because the future does not yet exist, it can only be imagined. Humans continuously build images of later-than-now in order to act now; Futures Literacy makes that use deliberate.",
+                  "Organizations often treat foresight as better prediction or prettier scenarios. Futures Literacy asks which anticipatory assumptions already shape what we can imagine (and therefore decide)."
+                ]
+              },
+              {
+                "id": "vs-forecast",
+                "title": "2. Distinction from the FRM toolbox",
+                "slideTitles": [
+                  "FRM is a method list",
+                  "FL is a capability layer",
+                  "Complement to scanning and scenarios, not a substitute"
+                ],
+                "paragraphs": [
+                  "FRM 3.0 is a chapter-by-chapter toolbox of foresight and forecasting methods. Futures Literacy is not another chapter in that list.",
+                  "FL is a capability agenda for identifying, designing, and deploying anticipatory assumptions. Six Pillars give process architecture; FL sits one layer deeper.",
+                  "A class can run scanning or a cone of plausibility and still leave preferable-future bias untouched. FL makes that bias discussable before tool choice."
+                ]
+              },
+              {
+                "id": "use-the-future",
+                "title": "3. use-the-future in class practice",
+                "slideTitles": [
+                  "Preparation, planning, novelty exploration",
+                  "The risk of staying in one default mode",
+                  "A short reveal exercise"
+                ],
+                "paragraphs": [
+                  "Imagination is already a decision tool. Futures Literacy helps shift among preparation, planning, and novelty exploration, rather than remaining stuck in one default mode.",
+                  "A city team that only sees \"growth plus density\" as the future will reproduce that assumption even with a beautiful 2×2 matrix.",
+                  "Fifteen-minute exercise: each student writes, in three sentences, the future they already expect for the class topic; do not choose a method yet."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Article",
+                "text": "Miller, R. (2007). Futures literacy: A hybrid strategic scenario method. <em>Futures</em>, 39(4), pp. 341 to 362."
+              },
+              {
+                "type": "Web",
+                "text": "UNESCO. Futures Literacy & Foresight. https://www.unesco.org/en/futures-literacy"
+              }
+            ],
+            "assignment": {
+              "title": "Capability versus prediction",
+              "description": "Critique a real or hypothetical organizational request (\"three scenarios for 2040\").",
+              "body": [
+                "Explain why the request may stay at shallow foresight.",
+                "Propose one prior FL-style question that should be asked before method choice."
+              ],
+              "format": "Half page",
+              "criteria": [
+                "Clear FL versus forecasting distinction",
+                "A workable prior question"
+              ]
+            }
+          },
+          {
+            "num": "M2",
+            "id": "m2",
+            "pickerLabel": "Assumptions and the laboratory",
+            "title": "Anticipatory assumptions and the Futures Literacy Lab",
+            "hours": "90 min",
+            "readingsShort": "Miller ed. 2018",
+            "visual": "assets/methods/covers/literacy-m2-lab.svg",
+            "visualCaption": "Reveal · Reframe · Rethink",
+            "lectureIntro": "Session 2 makes anticipatory assumptions (AA) explicit and walks the probable, preferable, and reframed moves of a Futures Literacy Laboratory in a classroom mini-lab format.",
+            "lectureSections": [
+              {
+                "id": "aa",
+                "title": "1. Anticipatory assumptions (AA)",
+                "slideTitles": [
+                  "AA are usually invisible",
+                  "What kind of future is being imagined",
+                  "Identify, invent, target, and deploy"
+                ],
+                "paragraphs": [
+                  "Anticipatory assumptions are usually invisible choices about what kind of future is imagined (optimization, contingency, novelty) and how knowledge of that future is produced.",
+                  "Without surfacing AA, a foresight workshop repeats the same closed images with new tools.",
+                  "Futures literacy means the ability to identify, invent, target, and deploy AA, rather than leaving them implicit."
+                ]
+              },
+              {
+                "id": "fll-moves",
+                "title": "2. Laboratory moves",
+                "slideTitles": [
+                  "Probable and preferable futures",
+                  "Reframed futures",
+                  "Return to the present"
+                ],
+                "paragraphs": [
+                  "In Reveal, participants surface expected (probable) and hoped-for (preferable) futures. Both leak assumptions.",
+                  "In Reframe, a future is invented that looks illegitimate or strange under current planning rules, so the lock of probable and preferable stories breaks.",
+                  "In Rethink, the group returns to the present: what became newly visible about today's policies or plans? The aim is not a final scenario pack."
+                ]
+              },
+              {
+                "id": "mini-lab",
+                "title": "3. Designing a mini-FLL",
+                "slideTitles": [
+                  "Topic, group, 60 to 90 minutes",
+                  "Reveal / Reframe / Rethink prompts",
+                  "Bridge to the next catalog method"
+                ],
+                "paragraphs": [
+                  "A mini-FLL for class or organization needs a specific topic, a participant group, and a realistic time box.",
+                  "Two facilitator prompts per phase are enough; more turns the workshop into endless open discussion.",
+                  "Closing line: one sentence on how the lab would change which method comes next (scanning, cone, or scenarios) and which AA must be challenged."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "Miller, R. (Ed.). (2018). <em>Transforming the Future: Anticipation in the 21st Century</em>. Routledge / UNESCO. Open access."
+              },
+              {
+                "type": "FRM note",
+                "text": "Glenn, J. C., & Gordon, T. J. (Eds.). <em>Futures Research Methodology</em> 3.0 catalogs methods; Futures Literacy is a complementary capability layer."
+              }
+            ],
+            "assignment": {
+              "title": "One-page mini-FLL design",
+              "description": "Choose a real community or organizational topic.",
+              "body": [
+                "Specify topic, participant group, and time.",
+                "Write Reveal / Reframe / Rethink prompts.",
+                "One sentence: which foresight method the lab would change next."
+              ],
+              "format": "One page",
+              "criteria": [
+                "Reframe actually breaks an assumption",
+                "Output is capability, not prediction"
+              ]
+            }
+          }
+        ]
+      },
+      "industry": {
+        "tag": "Industry & organization",
+        "title": "Organizational Futures Literacy capability workshop",
+        "intro": "A half-day to one-day path for strategy, L&D, and internal innovators. The goal is surfacing anticipatory assumptions, not delivering a market forecast or decorative three-scenario pack.",
+        "meta": [
+          {
+            "label": "Duration",
+            "value": "Half-day FLL + two-week follow-up"
+          },
+          {
+            "label": "Audience",
+            "value": "Strategy · L&D · Innovation · Internal policy"
+          },
+          {
+            "label": "Output",
+            "value": "AA map + reframed options + next-method decision"
+          }
+        ],
+        "agenda": [
+          {
+            "block": "09:00",
+            "title": "Reveal: probable and preferable",
+            "desc": "Each participant writes expected and hoped-for organizational futures; cluster shared assumptions."
+          },
+          {
+            "block": "10:45",
+            "title": "Reframe: illegitimate futures",
+            "desc": "Build futures that look invalid under current planning rules; break linear-growth or tech-default locks."
+          },
+          {
+            "block": "13:30",
+            "title": "Rethink: return to the present",
+            "desc": "Which policy, KPI, or roadmap became newly challengeable? Short list of learning experiments."
+          },
+          {
+            "block": "15:00",
+            "title": "Choose the next method",
+            "desc": "Deliberate choice: scanning, cone, scenarios, or probing, knowing which AA must stay open."
+          }
+        ],
+        "stakeholders": [
+          {
+            "role": "Organizational strategy",
+            "job": "Owns the strategic question and link to the planning cycle"
+          },
+          {
+            "role": "Learning and development",
+            "job": "Designs a safe space for surfacing assumptions"
+          },
+          {
+            "role": "Internal innovation",
+            "job": "Turns reframes into short learning experiments"
+          },
+          {
+            "role": "Business unit",
+            "job": "Brings real field tension, not vision slogans"
+          }
+        ],
+        "deliverables": [
+          "Map of dominant team anticipatory assumptions",
+          "2 to 3 documented reframed futures",
+          "List of new questions about the present",
+          "Next foresight method decision with rationale",
+          "One-page note for the executive sponsor"
+        ],
+        "workflow": [
+          {
+            "title": "1. Frame the topic",
+            "desc": "One specific organizational question; avoid a generic \"future of the industry\""
+          },
+          {
+            "title": "2. Reveal",
+            "desc": "Probable and preferable; record AA without early judgment"
+          },
+          {
+            "title": "3. Reframe",
+            "desc": "Strange futures with new rules; pressure closed imagination"
+          },
+          {
+            "title": "4. Rethink and bridge",
+            "desc": "Return to the present; choose the next catalog tool"
+          }
+        ],
+        "checklist": [
+          "Does the sponsor know the output is not a forecast?",
+          "Does Reframe actually tolerate illegitimate ideas?",
+          "Are AA written down, not only beautiful stories?",
+          "Is the next method tied to the challenged assumptions?"
+        ],
+        "boardMemo": [
+          "Dominant anticipatory assumptions the workshop surfaced",
+          "One reframe that questioned current planning",
+          "Proposed learning experiment (not a large investment)",
+          "Request: permission for the next method with AA kept open, not decorative scenarios"
+        ],
+        "facilitator": [
+          "State at the start that this workshop will not deliver a prediction.",
+          "In Reveal, do not judge; make assumptions visible on the wall.",
+          "In Reframe, stop the room from saying \"be realistic\"; realism belongs later.",
+          "Lock the closing to one method decision and one follow-up owner."
+        ]
+      }
     },
     "type2Fuzzy": {
       "slug": "type-2-fuzzy",
@@ -5848,6 +7399,11 @@
     "labelFormat": "Format",
     "labelCriteria": "Grading criteria",
     "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+    "tracksLabel": "Delivery track",
+    "trackUniversity": "University",
+    "trackIndustry": "Industry & organization",
+    "universitySectionTitle": "University track · syllabus and teaching",
+    "industrySectionTitle": "Industry track · organizational delivery",
     "university": {
       "title": "CLA · three lecture decks",
       "intro": "Based on Inayatullah (1998, 2004, CLA 2.0/3.0). Each module is the in-class lecture; advance slide by slide.",
@@ -6118,6 +7674,109 @@
           }
         }
       ]
+    },
+    "industry": {
+      "tag": "Organizational CLA workshop",
+      "title": "CLA for policy and technology narrative in organizations",
+      "intro": "Half-day for strategy and communications: from issue headlines to an alternative metaphor and policy implications.",
+      "meta": [
+        {
+          "label": "Duration",
+          "value": "4 hours"
+        },
+        {
+          "label": "Output",
+          "value": "Four-layer pyramid + alternative metaphor"
+        },
+        {
+          "label": "Audience",
+          "value": "Strategy, policy, product, communications"
+        }
+      ],
+      "agenda": [
+        {
+          "block": "40 min",
+          "title": "Shared litany",
+          "desc": "Three dominant headlines on the tech or policy issue."
+        },
+        {
+          "block": "50 min",
+          "title": "Systemic and worldview",
+          "desc": "Structures and legitimating discourses."
+        },
+        {
+          "block": "50 min",
+          "title": "Myth and alternative metaphor",
+          "desc": "Current metaphor and one operable alternative."
+        },
+        {
+          "block": "40 min",
+          "title": "Bridge to action",
+          "desc": "Implications of the alternative metaphor for product or policy."
+        }
+      ],
+      "stakeholders": [
+        {
+          "role": "Strategy lead",
+          "job": "Accept the alternative narrative"
+        },
+        {
+          "role": "Product owner",
+          "job": "Market litany evidence"
+        },
+        {
+          "role": "Communications",
+          "job": "Public language and metaphor"
+        },
+        {
+          "role": "Facilitator",
+          "job": "Layer depth without slogans"
+        }
+      ],
+      "deliverables": [
+        "Four-layer issue pyramid",
+        "Discourse table",
+        "One alternative metaphor",
+        "Three action implications"
+      ],
+      "workflow": [
+        {
+          "title": "Deconstruct",
+          "desc": "From litany to myth without skipping."
+        },
+        {
+          "title": "Alternative",
+          "desc": "Replacement metaphor with clear implication."
+        },
+        {
+          "title": "Language test",
+          "desc": "Can the team speak with the new metaphor?"
+        },
+        {
+          "title": "Memo",
+          "desc": "One page for the decision maker."
+        }
+      ],
+      "checklist": [
+        "All four layers have evidence",
+        "Alternative metaphor is not only a slogan",
+        "Action implication is written",
+        "Conflicting stakeholders are visible",
+        "Output can connect to scenarios or Wheel"
+      ],
+      "boardMemo": [
+        "Issue in litany language",
+        "Dominant worldview",
+        "Alternative metaphor",
+        "Risk of staying in the old metaphor",
+        "Decision request"
+      ],
+      "facilitator": [
+        "Do not allow stopping at litany",
+        "Attach metaphor to an operable example",
+        "Return ideology fights to evidence",
+        "Name an owner for the output"
+      ]
     }
   },
   "claCategories": {
@@ -6354,6 +8013,11 @@
     "labelFormat": "Format",
     "labelCriteria": "Grading criteria",
     "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+    "tracksLabel": "Delivery track",
+    "trackUniversity": "University",
+    "trackIndustry": "Industry & organization",
+    "universitySectionTitle": "University track · syllabus and teaching",
+    "industrySectionTitle": "Industry track · organizational delivery",
     "university": {
       "title": "Futures Wheel · three lecture decks",
       "intro": "Based on Jerome C. Glenn (1972) and FRM 3.0. Focus on workshop use of consequence chains, not the full FRM method list.",
@@ -6585,6 +8249,109 @@
           }
         }
       ]
+    },
+    "industry": {
+      "tag": "Futures Wheel workshop",
+      "title": "Cascading consequences for product and risk decisions",
+      "intro": "Organizational workshop to draw first to third-order consequences of a tech or regulatory change before a large investment.",
+      "meta": [
+        {
+          "label": "Duration",
+          "value": "3 to 4 hours"
+        },
+        {
+          "label": "Output",
+          "value": "Consequence wheel + opportunity/threat"
+        },
+        {
+          "label": "Audience",
+          "value": "Product, risk, strategy, operations"
+        }
+      ],
+      "agenda": [
+        {
+          "block": "30 min",
+          "title": "Select driver",
+          "desc": "One clear central change."
+        },
+        {
+          "block": "60 min",
+          "title": "Orders 1 and 2",
+          "desc": "Direct and secondary consequences with STEEP."
+        },
+        {
+          "block": "45 min",
+          "title": "Order 3 and loops",
+          "desc": "Distant effects and feedback."
+        },
+        {
+          "block": "45 min",
+          "title": "Action priority",
+          "desc": "Three opportunities and three threats for 90 days."
+        }
+      ],
+      "stakeholders": [
+        {
+          "role": "Product",
+          "job": "Define driver and growth assumption"
+        },
+        {
+          "role": "Risk",
+          "job": "Second and third-order threats"
+        },
+        {
+          "role": "Operations",
+          "job": "Feasibility of consequences"
+        },
+        {
+          "role": "Strategy",
+          "job": "Investment priority"
+        }
+      ],
+      "deliverables": [
+        "Full order 1 to 3 wheel",
+        "STEEP labels",
+        "Opportunity/threat list",
+        "Three 90-day actions"
+      ],
+      "workflow": [
+        {
+          "title": "Center",
+          "desc": "Lock the driver."
+        },
+        {
+          "title": "Cascade",
+          "desc": "Draw orders without a loose mind map."
+        },
+        {
+          "title": "Label",
+          "desc": "STEEP and light probability/severity."
+        },
+        {
+          "title": "Act",
+          "desc": "Venture opportunity and control threat."
+        }
+      ],
+      "checklist": [
+        "Driver is one sentence",
+        "Orders are separated",
+        "At least one feedback loop is visible",
+        "Actions have owners",
+        "Connectable to scenarios"
+      ],
+      "boardMemo": [
+        "Driver",
+        "Three critical consequences",
+        "Overlooked threat",
+        "Investment opportunity",
+        "Decision request"
+      ],
+      "facilitator": [
+        "Stop endless branching",
+        "Color-code orders",
+        "Separate mind map from Wheel",
+        "Tie output to a quarterly decision"
+      ]
     }
   },
   "wheelModels": {
@@ -6783,6 +8550,11 @@
     "labelFormat": "Format",
     "labelCriteria": "Grading criteria",
     "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+    "tracksLabel": "Delivery track",
+    "trackUniversity": "University",
+    "trackIndustry": "Industry & organization",
+    "universitySectionTitle": "University track · syllabus and teaching",
+    "industrySectionTitle": "Industry track · organizational delivery",
     "university": {
       "title": "Backcasting · three lecture decks",
       "intro": "Based on Robinson (1982, 1990) and Dreborg (1996). Work from a desired future back to today for sustainability, energy, and tech-governance change.",
@@ -7049,6 +8821,109 @@
             ]
           }
         }
+      ]
+    },
+    "industry": {
+      "tag": "Backcasting workshop",
+      "title": "From preferred future to a 90-day roadmap",
+      "intro": "Workshop for sustainability, AI governance, or digital transformation teams: normative vision, power barriers, and immediate moves.",
+      "meta": [
+        {
+          "label": "Duration",
+          "value": "4 hours"
+        },
+        {
+          "label": "Output",
+          "value": "Vision + milestones + three actions"
+        },
+        {
+          "label": "Audience",
+          "value": "Strategy, sustainability, technology, HR"
+        }
+      ],
+      "agenda": [
+        {
+          "block": "45 min",
+          "title": "Normative vision",
+          "desc": "A imaginable and measurable preferred future."
+        },
+        {
+          "block": "45 min",
+          "title": "Reverse steps",
+          "desc": "Intermediate milestones."
+        },
+        {
+          "block": "45 min",
+          "title": "Power barriers",
+          "desc": "Who benefits from the status quo?"
+        },
+        {
+          "block": "45 min",
+          "title": "90-day action",
+          "desc": "Three immediate moves with owners."
+        }
+      ],
+      "stakeholders": [
+        {
+          "role": "Executive sponsor",
+          "job": "Confirm the vision"
+        },
+        {
+          "role": "Program owner",
+          "job": "Milestones"
+        },
+        {
+          "role": "Operations",
+          "job": "Path feasibility"
+        },
+        {
+          "role": "Risk",
+          "job": "Barriers and dependencies"
+        }
+      ],
+      "deliverables": [
+        "One-page vision text",
+        "Milestone chain",
+        "Barrier map",
+        "Three 90-day actions"
+      ],
+      "workflow": [
+        {
+          "title": "Future",
+          "desc": "Lock the vision."
+        },
+        {
+          "title": "Reverse",
+          "desc": "Walk from the future to today."
+        },
+        {
+          "title": "Power",
+          "desc": "Name the barriers."
+        },
+        {
+          "title": "Immediate",
+          "desc": "Small moves that shape the path."
+        }
+      ],
+      "checklist": [
+        "Vision is normative, not a forecast",
+        "Milestones have dates",
+        "Power barrier is written",
+        "Actions link to the vision",
+        "Not confused with forecasting"
+      ],
+      "boardMemo": [
+        "Vision",
+        "Today gap",
+        "Main barrier",
+        "Three actions",
+        "Resource request"
+      ],
+      "facilitator": [
+        "Keep forecast separate from backcast",
+        "Block vague visions",
+        "Make power explicit",
+        "Keep actions small and real"
       ]
     }
   },

@@ -15,6 +15,11 @@ registerLocale('en', {
             labelFormat: 'Format',
             labelCriteria: 'Grading criteria',
             modulePickerHint: 'Each card is a standalone deck. Press F for fullscreen.',
+            tracksLabel: 'Delivery track',
+            trackUniversity: "University",
+            trackIndustry: "Industry & organization",
+            universitySectionTitle: "University track · lecture decks",
+            industrySectionTitle: "Industry track · organizational workshop",
             university: {
                 title: 'Popper Foresight Diamond · two lecture decks',
                 intro: 'Based on Rafael Popper\'s Foresight Diamond from the EU FORLEARN projects, with a bridge to Michel Godet\'s five scenario quality criteria. The Diamond is not a prediction tool, it is a lens for judging the quality of a foresight exercise.',
@@ -153,6 +158,110 @@ registerLocale('en', {
                             criteria: ['Both frameworks used together without redundancy', 'Clarity of the final recommendation']
                         }
                     }
+                ]
+            },
+            industry: {
+                tag: "Industry & organization",
+                title: "Popper Diamond quality audit · foresight exercise review",
+                intro: "A short organizational audit workshop that judges whether a foresight exercise was good, not merely completed. Uses Popper's four corners (creativity, innovation, expertise, interaction) and, where useful, Godet-style quality criteria to produce a board-ready verdict and remediation plan.",
+                meta: [
+                    {
+                        label: "Format",
+                        value: "Half-day audit (4h) on one live report or workshop"
+                    },
+                    {
+                        label: "Audience",
+                        value: "Foresight buyers, strategy QA, PMO, external reviewers"
+                    },
+                    {
+                        label: "Focus cases",
+                        value: "Vendor foresight pack, internal scenario project, Delphi cycle"
+                    }
+                ],
+                agenda: [
+                    {
+                        block: "Hour 1",
+                        title: "Exercise scope and claims",
+                        desc: "Clarify what the foresight product promised versus what it delivered."
+                    },
+                    {
+                        block: "Hour 2",
+                        title: "Four-corner scoring",
+                        desc: "Score creativity, innovation, expertise, and interaction with concrete evidence notes."
+                    },
+                    {
+                        block: "Hour 3",
+                        title: "Failure modes",
+                        desc: "Identify which corner weakness most damages decision quality."
+                    },
+                    {
+                        block: "Hour 4",
+                        title: "Remediation and memo",
+                        desc: "Agree fixes, owners, and whether to accept, revise, or reject the exercise."
+                    }
+                ],
+                stakeholders: [
+                    {
+                        role: "Buyer / sponsor of the foresight work",
+                        job: "State the decision the exercise was meant to serve"
+                    },
+                    {
+                        role: "Exercise lead (internal or vendor)",
+                        job: "Provide process evidence without defensive editing"
+                    },
+                    {
+                        role: "Independent reviewer",
+                        job: "Score corners and challenge silent averaging of quality"
+                    },
+                    {
+                        role: "Decision owner",
+                        job: "Decide accept / revise / reject based on the audit"
+                    }
+                ],
+                deliverables: [
+                    "Four-corner scorecard with evidence citations",
+                    "Primary quality failure mode statement",
+                    "Remediation plan with owners and dates",
+                    "Accept / revise / reject recommendation",
+                    "One-page quality audit memo for the board or steering group"
+                ],
+                workflow: [
+                    {
+                        title: "1. Intake",
+                        desc: "Collect the report, participant list, and decision context."
+                    },
+                    {
+                        title: "2. Score",
+                        desc: "Rate four corners independently before group synthesis."
+                    },
+                    {
+                        title: "3. Diagnose",
+                        desc: "Name the corner that most undermines trust."
+                    },
+                    {
+                        title: "4. Decide",
+                        desc: "Issue accept / revise / reject with remediation."
+                    }
+                ],
+                checklist: [
+                    "Do we have the actual process evidence, not only the final PDF?",
+                    "Were creativity and interaction scored with examples, not vibes?",
+                    "Is expertise real domain expertise, not title inflation?",
+                    "Is the decision owner present for the final verdict?",
+                    "Are remediation owners distinct from the original exercise lead when needed?"
+                ],
+                boardMemo: [
+                    "Exercise under audit and intended decision",
+                    "Four-corner scores and one-line evidence each",
+                    "Primary quality failure mode",
+                    "Recommendation: accept, revise, or reject",
+                    "Remediation ask and next review date"
+                ],
+                facilitator: [
+                    "Separate completion from quality at the opening minute.",
+                    "Require evidence notes for every corner score.",
+                    "Do not let vendor or internal politics erase a low interaction or expertise score.",
+                    "End with a verdict, not a softer second report promise alone."
                 ]
             }
         }

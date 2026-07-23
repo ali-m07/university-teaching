@@ -69,6 +69,7 @@
     };
 
     function boot() {
+        if (document.getElementById('method-tracks') || document.querySelector('[data-method-tracks]')) return;
         window.renderMethodDecks(document, { scrollToHash: true });
     }
 

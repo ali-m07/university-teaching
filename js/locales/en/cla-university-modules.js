@@ -14,7 +14,12 @@ registerLocale('en', {
         labelFormat: 'Format',
         labelCriteria: 'Grading criteria',
         modulePickerHint: 'Each card is a standalone deck. Press F for fullscreen.',
-        university: {
+            tracksLabel: 'Delivery track',
+            trackUniversity: 'University',
+            trackIndustry: 'Industry & organization',
+            universitySectionTitle: 'University track · syllabus and teaching',
+            industrySectionTitle: 'Industry track · organizational delivery',
+                    university: {
             title: 'CLA · three lecture decks',
             intro: 'Based on Inayatullah (1998, 2004, CLA 2.0/3.0). Each module is the in-class lecture; advance slide by slide.',
             modules: [
@@ -227,6 +232,109 @@ registerLocale('en', {
                         criteria: ['Metaphor quality', 'Policy linkage']
                     }
                 }
+            ]
+        },
+    industry: {
+            tag: 'Organizational CLA workshop',
+            title: 'CLA for policy and technology narrative in organizations',
+            intro: 'Half-day for strategy and communications: from issue headlines to an alternative metaphor and policy implications.',
+            meta: [
+                {
+                    label: 'Duration',
+                    value: '4 hours'
+                },
+                {
+                    label: 'Output',
+                    value: 'Four-layer pyramid + alternative metaphor'
+                },
+                {
+                    label: 'Audience',
+                    value: 'Strategy, policy, product, communications'
+                }
+            ],
+            agenda: [
+                {
+                    block: '40 min',
+                    title: 'Shared litany',
+                    desc: 'Three dominant headlines on the tech or policy issue.'
+                },
+                {
+                    block: '50 min',
+                    title: 'Systemic and worldview',
+                    desc: 'Structures and legitimating discourses.'
+                },
+                {
+                    block: '50 min',
+                    title: 'Myth and alternative metaphor',
+                    desc: 'Current metaphor and one operable alternative.'
+                },
+                {
+                    block: '40 min',
+                    title: 'Bridge to action',
+                    desc: 'Implications of the alternative metaphor for product or policy.'
+                }
+            ],
+            stakeholders: [
+                {
+                    role: 'Strategy lead',
+                    job: 'Accept the alternative narrative'
+                },
+                {
+                    role: 'Product owner',
+                    job: 'Market litany evidence'
+                },
+                {
+                    role: 'Communications',
+                    job: 'Public language and metaphor'
+                },
+                {
+                    role: 'Facilitator',
+                    job: 'Layer depth without slogans'
+                }
+            ],
+            deliverables: [
+                'Four-layer issue pyramid',
+                'Discourse table',
+                'One alternative metaphor',
+                'Three action implications'
+            ],
+            workflow: [
+                {
+                    title: 'Deconstruct',
+                    desc: 'From litany to myth without skipping.'
+                },
+                {
+                    title: 'Alternative',
+                    desc: 'Replacement metaphor with clear implication.'
+                },
+                {
+                    title: 'Language test',
+                    desc: 'Can the team speak with the new metaphor?'
+                },
+                {
+                    title: 'Memo',
+                    desc: 'One page for the decision maker.'
+                }
+            ],
+            checklist: [
+                'All four layers have evidence',
+                'Alternative metaphor is not only a slogan',
+                'Action implication is written',
+                'Conflicting stakeholders are visible',
+                'Output can connect to scenarios or Wheel'
+            ],
+            boardMemo: [
+                'Issue in litany language',
+                'Dominant worldview',
+                'Alternative metaphor',
+                'Risk of staying in the old metaphor',
+                'Decision request'
+            ],
+            facilitator: [
+                'Do not allow stopping at litany',
+                'Attach metaphor to an operable example',
+                'Return ideology fights to evidence',
+                'Name an owner for the output'
             ]
         }
     }

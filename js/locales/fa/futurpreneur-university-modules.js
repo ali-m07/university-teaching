@@ -1,0 +1,228 @@
+/**
+ * FA · Futurpreneurship university lecture decks (M1 to M2) + industry track
+ */
+registerLocale('fa', {
+    advancedPage: {
+        futurpreneurship: {
+            moduleContentTag: 'جزوه و ارائه جلسه',
+            moduleDeckNavLabel: 'ناوبری اسلاید',
+            moduleDeckPrev: 'قبلی',
+            moduleDeckNext: 'بعدی',
+            moduleDeckSlide: 'اسلاید',
+            moduleDeckFullscreen: 'تمام‌صفحه · F',
+            moduleReadingsTitle: 'مطالعه تکمیلی',
+            moduleAssignmentTitle: 'تکلیف',
+            labelFormat: 'فرمت تحویل',
+            labelCriteria: 'معیار نمره‌دهی',
+            modulePickerHint: 'هر کارت یک ارائه مستقل است. کلید F تمام‌صفحه.',
+            tracksLabel: 'مسیر اجرا',
+            trackUniversity: 'دانشگاه',
+            trackIndustry: 'صنعت و سازمان',
+            universitySectionTitle: 'مسیر دانشگاه · دو ارائه درسی Futurpreneurship',
+            industrySectionTitle: 'مسیر صنعت · کارگاه استارتاپ و شتاب‌دهنده',
+            university: {
+                title: 'Futurpreneurship · دو ارائه درسی',
+                intro: 'پل foresight به venture: از Slaughter و Candy تا سنتز Mansouri. شکاف FRM Personal Futures با ساخت استارتاپ و فرضیه قابل ابطال.',
+                modules: [
+                    {
+                        num: 'M1', id: 'm1', pickerLabel: 'پل foresight و venture',
+                        title: 'پل foresight × کارآفرینی', hours: '۹۰ دقیقه',
+                        readingsShort: 'Slaughter · Candy · stack',
+                        visual: 'assets/methods/covers/futurpreneur-m1-bridge.svg',
+                        visualCaption: 'از بینش آینده تا فرضیه کسب‌وکار',
+                        lectureIntro: 'جلسه اول Futurpreneurship را تعریف می‌کند: کسی که هم آینده را می‌بیند هم ریسک را می‌پذیرد و می‌سازد. شکاف میان گزارش foresight و venture building در FRM روشن می‌شود.',
+                        lectureSections: [
+                            {
+                                id: 'why-bridge',
+                                title: '۱. چرا foresight بدون venture ناقص است',
+                                slideTitles: [
+                                    'استارتاپ بدون foresight',
+                                    'آینده‌پژوه بدون ساخت',
+                                    'آنچه Silicon Valley غیررسمی انجام می‌دهد'
+                                ],
+                                paragraphs: [
+                                    'استارتاپ‌ها بدون foresight اغلب کور هستند: روی یک فرض تک‌خطی از بازار شرط می‌بندند و غافلگیری را دیر می‌بینند.',
+                                    'آینده‌پژوهان بدون venture اغلب فقط گزارش می‌دهند؛ بینش به فرضیه قابل ابطال و آزمایش میدانی نمی‌رسد.',
+                                    'Futurpreneurship همان کاری است که اکوسیستم استارتاپ غیررسمی می‌کند، اما با rigor روش‌های foresight: scanning، سناریو، و کیفیت الماس پوپر.'
+                                ]
+                            },
+                            {
+                                id: 'frm-gap',
+                                title: '۲. شکاف FRM و ریشه‌های مفهومی',
+                                slideTitles: [
+                                    'Personal Futures و Genius Forecasting',
+                                    'Slaughter و فرهنگ foresight',
+                                    'Candy و futures تجربی'
+                                ],
+                                paragraphs: [
+                                    'در FRM 3.0 فصل Personal Futures و Genius Forecasting هست، اما پل سیستماتیک به startup و venture building در scope آن نیست.',
+                                    'ریچارد اسلاتر بر literacy و embed کردن foresight در جامعه تأکید کرد؛ فرهنگ آینده‌نگری پیش‌نیاز کارآفرینی آینده‌محور است.',
+                                    'استوارت کندی با experiential futures و immersive scenario پل foresight به action و مشارکت عمومی را نشان داد؛ الهام طراحی آزمایش ملموس.'
+                                ]
+                            },
+                            {
+                                id: 'cycle-overview',
+                                title: '۳. چرخه پنج‌مرحله‌ای',
+                                slideTitles: [
+                                    'Sense و Imagine',
+                                    'Hypothesize',
+                                    'Build سپس Scale یا Kill'
+                                ],
+                                paragraphs: [
+                                    'Sense با weak signals و لایه‌های سطحی CLA شروع می‌شود. Imagine سناریو یا vision کوتاه‌مدت می‌سازد: کدام آینده برای venture ارزش دارد؟',
+                                    'Hypothesize فرضیه کسب‌وکار قابل falsify می‌نویسد: اگر X تا افق مشخص رخ دهد، Y مشتری یا نیاز وجود دارد.',
+                                    'Build همان MVP و pilot با حداقل منابع است (probing در زبان روهربک). سپس Scale یا Kill سریع؛ foresight از شرط‌بندی بلندمدت اشتباه جلوگیری می‌کند.'
+                                ],
+                                table: {
+                                    headers: ['<strong>مرحله</strong>', '<strong>خروجی</strong>', '<strong>معیار کیفیت</strong>'],
+                                    rows: [
+                                        ['Sense', 'سرنخ و مسئله', 'تمایز از نویز'],
+                                        ['Imagine', 'روایت کوتاه آینده', 'ارتباط به تصمیم venture'],
+                                        ['Hypothesize', 'فرضیه قابل ابطال', 'شرط ابطال صریح'],
+                                        ['Build', 'MVP / pilot', 'یادگیری در ۹۰ روز'],
+                                        ['Scale/Kill', 'تصمیم', 'شواهد میدان، نه اسلاید']
+                                    ]
+                                }
+                            }
+                        ],
+                        readings: [
+                            { type: 'مقاله', text: 'Slaughter, R. · Futures literacy and social foresight.' },
+                            { type: 'وب', text: 'Candy, S. · The Futures of Everyday Life / experiential futures.' },
+                            { type: 'پورتال', text: 'Ali Mansouri Strategic Foresight Hub · integrated stack (این سایت).' }
+                        ],
+                        assignment: {
+                            title: 'تعریف شکاف foresight و venture',
+                            description: 'یک گزارش foresight یا ایده استارتاپ آشنا را انتخاب کنید.',
+                            body: [
+                                'بنویسید کدام سمت پل ضعیف است: بینش آینده یا مسیر ساخت.',
+                                'یک جمله فرضیه قابل ابطال پیشنهاد دهید که پل را کامل کند.'
+                            ],
+                            format: 'نیم صفحه',
+                            criteria: ['تشخیص شکاف واقعی', 'فرضیه قابل falsify']
+                        }
+                    },
+                    {
+                        num: 'M2', id: 'm2', pickerLabel: 'از سیگنال تا probe',
+                        title: 'از weak signal تا آزمایش venture', hours: '۹۰ دقیقه',
+                        readingsShort: 'Signal → MVP',
+                        visual: 'assets/methods/covers/futurpreneur-m2-probe.svg',
+                        visualCaption: 'فرضیه، MVP، دروازه ۹۰ روزه',
+                        lectureIntro: 'جلسه دوم یک weak signal را تا venture experiment می‌برد: سناریوی یک‌صفحه‌ای، فرضیه کسب‌وکار، و probing نود روزه با معیار Scale یا Kill.',
+                        lectureSections: [
+                            {
+                                id: 'signal-to-story',
+                                title: '۱. از سیگنال به روایت کوتاه',
+                                slideTitles: [
+                                    'انتخاب سیگنال هفته',
+                                    'سناریوی یک‌صفحه‌ای',
+                                    'مرز با گزارش روند'
+                                ],
+                                paragraphs: [
+                                    'سیگنال را از روند و نویز جدا کنید. مثال کلاسی: تقاضای tutor مبتنی بر AI در کنار پیری جمعیت و کمبود معلم.',
+                                    'سناریوی یک‌صفحه‌ای می‌گوید کدام منطق جهان این سیگنال را به فرصت venture تبدیل می‌کند؛ نه پیش‌بینی قطعی بازار.',
+                                    'اگر فقط رشد یک بازار شناخته‌شده را تکرار می‌کنید، هنوز در تحلیل روند هستید، نه Futurpreneurship.'
+                                ]
+                            },
+                            {
+                                id: 'hypothesis-mvp',
+                                title: '۲. فرضیه و MVP',
+                                slideTitles: [
+                                    'قالب فرضیه قابل ابطال',
+                                    'دامنه MVP نود روزه',
+                                    'پیوند به FITness probing'
+                                ],
+                                paragraphs: [
+                                    'قالب: اگر [تغییر آینده] تا [افق] رخ دهد، آنگاه [بخش مشتری] برای [ارزش پیشنهادی] پرداخت یا پذیرش نشان می‌دهد؛ ابطال اگر [معیار].',
+                                    'MVP باید در نود روز قابل ساخت و آزمودن باشد: landing، pilot محدود، یا پیش‌فروش؛ نه تحقیق پنج‌ساله.',
+                                    'در زبان روهربک این همان probing است: آزمایش سازمان‌یافته با معیار توقف، پیش از تعهد سبد بزرگ.'
+                                ]
+                            },
+                            {
+                                id: 'pitch-critique',
+                                title: '۳. Pitch و نقد الماس پوپر',
+                                slideTitles: [
+                                    'Pitch سه دقیقه‌ای',
+                                    'امتیاز Creativity و Innovation',
+                                    'Scale، Pivot یا Kill'
+                                ],
+                                paragraphs: [
+                                    'هر گروه hypothesis، دامنه MVP، و معیار ابطال را در سه دقیقه ارائه می‌دهد.',
+                                    'نقد با الماس پوپر: آیا خلاقیت و نوآوری واقعی است یا تکرار ایده رایج بازار؟ تخصص و تعامل با کاربر هدف چقدر بوده؟',
+                                    'جمع‌بندی کلاس: مسیر Scale، Pivot، یا Kill را با شواهد مورد انتظار نود روز بعد مشخص کنید.'
+                                ]
+                            }
+                        ],
+                        readings: [
+                            { type: 'صفحه', text: 'FITness · probing و آزمایش ۹۰ روزه در همین پورتال.' },
+                            { type: 'صفحه', text: 'Popper Diamond · رأس‌های Creativity و Innovation برای نقد pitch.' }
+                        ],
+                        assignment: {
+                            title: 'بسته signal تا MVP',
+                            description: 'weak signal هفته را به آزمایش venture تبدیل کنید.',
+                            body: [
+                                'سیگنال + سناریوی یک‌صفحه‌ای.',
+                                'business hypothesis قابل falsify.',
+                                'سه اقدام MVP برای ۹۰ روز آینده.'
+                            ],
+                            format: 'یک تا دو صفحه',
+                            criteria: ['قابلیت ابطال فرضیه', 'واقع‌بینی دامنه نود روزه']
+                        }
+                    }
+                ]
+            },
+            industry: {
+                tag: 'صنعت و سازمان',
+                title: 'کارگاه Futurpreneurship در شتاب‌دهنده و استارتاپ',
+                intro: 'مسیر یک‌روزه برای بنیان‌گذاران، منتورها، و واحد corporate venture. هدف تبدیل weak signal و سناریو به فرضیه و probe است، نه deck پیش‌بینی بازار.',
+                meta: [
+                    { label: 'مدت', value: '۱ روز کارگاه + ۹۰ روز پیگیری probe' },
+                    { label: 'مخاطب', value: 'بنیان‌گذار · منتور · CVC · نوآوری شرکتی' },
+                    { label: 'خروجی', value: 'فرضیه قابل ابطال + دامنه MVP + دروازه Scale/Kill' }
+                ],
+                agenda: [
+                    { block: '۰۹:۰۰', title: 'Sense: ورود سیگنال', desc: 'هر تیم یک weak signal از رصد یا میدان مشتری می‌آورد؛ غربال روند و نویز.' },
+                    { block: '۱۱:۰۰', title: 'Imagine: روایت کوتاه', desc: 'سناریوی یک‌صفحه‌ای ارزش venture؛ نقد ارتباط به تصمیم ساخت.' },
+                    { block: '۱۳:۳۰', title: 'Hypothesize و Build', desc: 'نوشتن فرضیه قابل ابطال؛ تعریف MVP نود روزه و معیار توقف.' },
+                    { block: '۱۵:۳۰', title: 'Pitch و دروازه', desc: 'ارائه سه دقیقه‌ای؛ بازخورد Creativity/Innovation؛ تعهد به تاریخ مرور Scale/Kill.' }
+                ],
+                stakeholders: [
+                    { role: 'بنیان‌گذار / تیم هسته', job: 'مالک فرضیه و اجرای MVP' },
+                    { role: 'منتور foresight', job: 'کیفیت سیگنال و سناریو؛ جلوگیری از روندپوشی' },
+                    { role: 'منتور محصول', job: 'دامنه MVP و یادگیری کاربر' },
+                    { role: 'سرمایه‌گذار / CVC', job: 'دروازه بودجه probe و معیار Scale/Kill' }
+                ],
+                deliverables: [
+                    'کارت سیگنال غربال‌شده',
+                    'سناریوی یک‌صفحه‌ای venture',
+                    'فرضیه کسب‌وکار با شرط ابطال',
+                    'برنامه MVP نود روزه',
+                    'تعهد دروازه Scale / Pivot / Kill'
+                ],
+                workflow: [
+                    { title: '۱. Sense', desc: 'سیگنال از scanning یا خط مقدم؛ تمایز از trend' },
+                    { title: '۲. Imagine', desc: 'روایت کوتاه آینده مرتبط با تصمیم ساخت' },
+                    { title: '۳. Hypothesize و Build', desc: 'فرضیه قابل ابطال + probing حداقلی' },
+                    { title: '۴. Scale یا Kill', desc: 'مرور شواهد در روز ۹۰؛ تصمیم صریح' }
+                ],
+                checklist: [
+                    'آیا سیگنال از رشد بازار شناخته‌شده جدا شده است؟',
+                    'آیا فرضیه شرط ابطال دارد؟',
+                    'آیا MVP در نود روز واقعا قابل اجراست؟',
+                    'آیا تاریخ و معیار دروازه Scale/Kill نوشته شده؟'
+                ],
+                boardMemo: [
+                    'سیگنال و یک جمله issue',
+                    'فرضیه و معیار ابطال',
+                    'بودجه و دامنه probe نود روزه',
+                    'درخواست تصمیم: تأیید probe / رد / بازگشت به Sense'
+                ],
+                facilitator: [
+                    'از pitchهای «بازار چند میلیاردی» بدون سیگنال ضعیف عبور نکنید.',
+                    'شرط ابطال را روی تخته بنویسید؛ بدون آن فرضیه شعار است.',
+                    'دامنه MVP را کوچک کنید تا یادگیری در نود روز ممکن شود.',
+                    'در پایان تاریخ مرور Scale/Kill را در تقویم اسپانسر قفل کنید.'
+                ]
+            }
+        }
+    }
+});
