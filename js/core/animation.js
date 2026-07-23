@@ -10,26 +10,29 @@ if (window.gsap && window.ScrollTrigger) {
             if (!reduce) {
                 const homeTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
                 homeTl
-                    .from('.home-hero-eyebrow', { y: 16, opacity: 0, duration: 0.55 }, 0.05)
-                    .from('.home-hero-headline', { y: 28, opacity: 0, duration: 0.8 }, 0.15)
-                    .from('.home-hero-support', { y: 16, opacity: 0, duration: 0.55 }, 0.32)
-                    .from('.home-hero-links', { y: 14, opacity: 0, duration: 0.5 }, 0.42)
-                    .from('.home-sticky', {
-                        y: 18,
-                        opacity: 0,
-                        scale: 0.92,
-                        duration: 0.65,
-                        stagger: 0.07,
-                        ease: 'back.out(1.4)'
-                    }, 0.2);
+                    .from('.home-hero-img', { scale: 1.08, opacity: 0.55, duration: 1.35 }, 0)
+                    .from('.home-hero-brand', { y: 28, opacity: 0, duration: 0.75 }, 0.2)
+                    .from('.home-hero-headline', { y: 36, opacity: 0, duration: 0.9 }, 0.35)
+                    .from('.home-hero-support', { y: 22, opacity: 0, duration: 0.7 }, 0.5)
+                    .from('.home-hero-actions', { y: 18, opacity: 0, duration: 0.65 }, 0.62);
 
+                if (document.querySelector('.home-hub-inner')) {
+                    gsap.from('.home-hub-inner > *', {
+                        scrollTrigger: { trigger: '.home-hub', start: 'top 82%' },
+                        y: 28,
+                        opacity: 0,
+                        duration: 0.75,
+                        stagger: 0.12,
+                        ease: 'power2.out'
+                    });
+                }
                 if (document.querySelector('.home-find-list')) {
                     gsap.from('.home-find-row', {
                         scrollTrigger: { trigger: '.home-find', start: 'top 85%' },
-                        y: 18,
+                        y: 24,
                         opacity: 0,
-                        duration: 0.5,
-                        stagger: 0.08,
+                        duration: 0.55,
+                        stagger: 0.1,
                         ease: 'power2.out'
                     });
                 }
