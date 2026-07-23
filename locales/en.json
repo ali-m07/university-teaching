@@ -17,22 +17,23 @@
     "menu": "Menu"
   },
   "footer": {
-    "desc": "Foresight teaching platform · syllabus, methods, workshops · Ali Mansouri · PhD, University of Tehran",
-    "descBackcast": "Foresight teaching platform · syllabus, methods, workshops · Ali Mansouri · PhD, University of Tehran",
-    "descWheel": "Foresight teaching platform · syllabus, methods, workshops · Ali Mansouri · PhD, University of Tehran",
+    "desc": "Ali Mansouri’s personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
+    "descBackcast": "Ali Mansouri’s personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
+    "descWheel": "Ali Mansouri’s personal space for strategic foresight · methods, workshops, and notes · University of Tehran",
     "role": "PhD candidate, Futures Studies · University of Tehran",
     "resume": "CV",
-    "copyright": "© Ali Mansouri · Foresight Teaching Platform"
+    "copyright": "© Ali Mansouri · FORESIGHT HUB"
   },
   "index": {
-    "badge": "Strategic foresight",
+    "badge": "FORESIGHT HUB",
+    "heroName": "Ali Mansouri",
+    "heroTitle": "I bridge future scenarios and the infrastructure that must survive them",
+    "heroSub": "PhD candidate in Futures Studies at the University of Tehran, and Solutions Architect at Snapp building cloud-native, Kubernetes, and enterprise LLM systems.",
     "credentialPhd": "PhD, Futures Studies · University of Tehran",
     "credentialFocus": "Strategic foresight · emerging technology",
-    "heroTitle": "Foresight<br>Teaching Platform",
-    "heroSub": "Syllabus, methods, workshops, and self-assessment · for university teaching and industry deployment",
-    "heroIntroP1": "This infrastructure supports foresight courses, university workshops, and organizational engagement. Each method includes university and industry tracks, scholarly references, and interactive tools.",
-    "heroIntroP2": "Research focus: weak signals, scenarios, foresight maturity (Rohrbeck), CLA, and Type-2 fuzzy logic for decisions under deep uncertainty.",
-    "ctaMethods": "Browse methods"
+    "heroIntroP1": "",
+    "heroIntroP2": "",
+    "ctaMethods": "Foresight Methods"
   },
   "common": {
     "close": "Close",
@@ -156,37 +157,37 @@
     "articlesLink": "Articles",
     "methodsLink": "Foresight Methods",
     "bioTitle": "",
-    "spaceTag": "About this platform",
-    "spaceTitle": "Teaching & research infrastructure",
-    "spaceP1": "This is an academic teaching platform for foresight courses — not a promotional demo. Each method includes theory, university syllabus, industry track, and workshop tools.",
-    "spaceP2": "Content is grounded in doctoral research and peer-reviewed sources (Rohrbeck, Inayatullah, Glenn, and others), with a focus on Type-2 fuzzy logic for judgment under uncertainty.",
-    "spaceP3": "Goal: a unified reference for instructors, students, and organizational foresight teams — usable in class, seminars, and field projects.",
-    "findTitle": "What you'll find here",
+    "spaceTag": "Why this space",
+    "spaceTitle": "A personal foresight lab",
+    "spaceP1": "I am Ali Mansouri. My doctoral research at the University of Tehran is in strategic foresight, and every day at Snapp I build systems that have to survive real production pressure.",
+    "spaceP2": "My brand is that bridge: take scenarios seriously, then ship a core that works in the field. FORESIGHT HUB is my teaching and research workshop, from CLA and FITness to scenarios and Type-2 fuzzy logic.",
+    "spaceP3": "If you are a student, instructor, or organizational foresight team, open the methods. If you want the professional path, read the resume. My background also includes an MBA in HR and a BSc in electrical engineering; the details live on the resume.",
+    "findTitle": "Start here",
     "findItems": [
-      {
-        "icon": "pen-line",
-        "title": "Articles",
-        "desc": "Notes on emerging technologies, systems thinking, and foresight",
-        "href": "articles/"
-      },
       {
         "icon": "library",
         "title": "Foresight Methods",
-        "desc": "Tools like CLA, scenario planning, FITness, and backcasting",
+        "desc": "Workshops and syllabi such as CLA, FITness, Futures Wheel, and backcasting",
         "href": "methods/"
+      },
+      {
+        "icon": "pen-line",
+        "title": "Articles",
+        "desc": "Notes on emerging technology, systems thinking, and foresight",
+        "href": "articles/"
       },
       {
         "icon": "file-text",
         "title": "CV",
-        "desc": "Professional work in cloud, DevOps, and infrastructure",
+        "desc": "Professional path in cloud, Kubernetes, RAG, and enterprise automation",
         "href": "https://ali-m07.github.io/resume/",
         "external": true
       }
     ],
-    "philosophyTag": "Philosophy",
-    "philP1": "Foresight should be teachable, measurable, and deployable in organizations — not just a report.",
+    "philosophyTag": "Approach",
+    "philP1": "Foresight should be teachable, measurable, and deployable in organizations, not just a report.",
     "philP2": "Each method has two tracks: university (syllabus, exam, rubric) and industry (workshop, deliverable, gate).",
-    "philP3": "UI design is intentionally academic and minimal — readability and hierarchy over visual effects.",
+    "philP3": "Design is intentionally readable and minimal; hierarchy matters more than visual effects.",
     "focusTitle": "Focus",
     "focuses": [],
     "ctaResume": "CV",
@@ -195,30 +196,30 @@
   "aboutPage": {
     "tag": "About",
     "title": "About me",
-    "sub": "Futures researcher · cloud & infrastructure practitioner",
+    "sub": "Futures researcher · Solutions Architect at Snapp",
     "missionTitle": "Background",
-    "mission": "I hold a PhD in Futures Studies from the University of Tehran, with a focus on strategic foresight, emerging technologies, and uncertainty-driven decision systems.<br><br>My work is centered on understanding technological change before it becomes obvious — through weak signals, scenario planning, and system-level thinking. My deeper specialty is Type-2 fuzzy logic: modeling cases where uncertainty about uncertainty matters.<br><br>Professionally, I also work in cloud and infrastructure engineering. I build and operate systems using tools like Docker, Kubernetes, and modern DevOps practices.<br><br>I do not see these as separate domains. Foresight and infrastructure are both about systems — just at different time scales.",
+    "mission": "I am a PhD candidate in Futures Studies at the University of Tehran, focused on strategic foresight, emerging technologies, and uncertainty-driven decision systems.<br><br>My work is centered on understanding technological change before it becomes obvious, through weak signals, scenario planning, and system-level thinking. My deeper specialty is Type-2 fuzzy logic: modeling cases where uncertainty about uncertainty matters.<br><br>Professionally, as a Solutions Architect at Snapp I build cloud-native, Kubernetes, RAG, and enterprise automation systems.<br><br>I do not see these as separate domains. Foresight and infrastructure are both about systems, just at different time scales.",
     "researchFocusTitle": "Research focus",
     "researchFocus": [
-      "Strategic foresight & futures studies",
-      "Emerging technologies & innovation systems",
-      "Type-2 fuzzy logic & deep uncertainty",
-      "Weak signals & trend detection",
-      "Scenario planning & backcasting",
+      "Strategic foresight and futures studies",
+      "Emerging technologies and innovation systems",
+      "Type-2 fuzzy logic and deep uncertainty",
+      "Weak signals and trend detection",
+      "Scenario planning and backcasting",
       "Socio-technical systems"
     ],
     "technicalFocusTitle": "Technical focus",
     "technicalFocus": [
-      "Cloud infrastructure",
-      "Docker & Kubernetes",
-      "DevOps & automation",
+      "Cloud infrastructure and enterprise architecture",
+      "Kubernetes and cloud-native systems",
+      "LLM, RAG, and enterprise automation",
       "Scalable system design"
     ],
     "closingNote": "I am not trying to predict the future. I am trying to understand how it becomes inevitable.",
     "eduTitle": "Education",
-    "edu": "PhD in Futures Studies (in progress), University of Tehran<br>MBA, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology",
+    "edu": "PhD in Futures Studies (in progress), University of Tehran<br>MBA in Human Resources, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology",
     "contactTitle": "Contact",
-    "contact": "ali.mansouri1998@gmail.com — open to research, speaking, and collaboration"
+    "contact": "ali.mansouri1998@gmail.com · open to research, speaking, and collaboration"
   },
   "articlesPage": {
     "tag": "Articles",

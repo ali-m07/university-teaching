@@ -198,7 +198,185 @@ body .method-prose-lead {
     color: var(--sfh-text);
 }
 
-/* —— Homepage hero: academic, not startup —— */
+/* —— Personal homepage: one composition —— */
+body.home-page #particles-canvas {
+    opacity: 0.08;
+}
+
+body .home-hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+body .home-hero-media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+body .home-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+    transform-origin: center center;
+}
+
+body .home-hero-scrim {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(12, 16, 24, 0.35) 0%, rgba(12, 16, 24, 0.55) 42%, rgba(12, 16, 24, 0.92) 100%),
+        linear-gradient(90deg, rgba(12, 16, 24, 0.78) 0%, rgba(12, 16, 24, 0.35) 55%, rgba(12, 16, 24, 0.2) 100%);
+    pointer-events: none;
+}
+
+html[dir="ltr"] body .home-hero-scrim {
+    background:
+        linear-gradient(180deg, rgba(12, 16, 24, 0.35) 0%, rgba(12, 16, 24, 0.55) 42%, rgba(12, 16, 24, 0.92) 100%),
+        linear-gradient(270deg, rgba(12, 16, 24, 0.78) 0%, rgba(12, 16, 24, 0.35) 55%, rgba(12, 16, 24, 0.2) 100%);
+}
+
+body .home-hero-content {
+    position: relative;
+    z-index: 1;
+    width: min(40rem, 100%);
+    padding: calc(var(--sfh-header-offset, 88px) + 3.5rem) 1.75rem 3.25rem;
+    max-width: 40rem;
+}
+
+body .home-hero-brand {
+    margin: 0 0 0.85rem;
+    font-family: var(--font-en), var(--font-fa);
+    font-size: clamp(2.35rem, 6.5vw, 3.75rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    color: #fff;
+}
+
+html[dir="rtl"] body .home-hero-brand {
+    font-family: var(--font-fa);
+    letter-spacing: -0.02em;
+}
+
+body .home-hero-headline {
+    margin: 0 0 1rem;
+    font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+    font-weight: 600;
+    line-height: 1.55;
+    letter-spacing: -0.015em;
+    color: var(--sfh-text);
+    background: none;
+    -webkit-text-fill-color: var(--sfh-text);
+}
+
+body .home-hero-support {
+    margin: 0;
+    max-width: 36rem;
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: var(--sfh-text-muted);
+}
+
+body .home-hero-actions {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+body .home-why {
+    padding-top: 3.25rem;
+    padding-bottom: 1.5rem;
+}
+
+body .home-why-inner {
+    max-width: 42rem;
+}
+
+body .home-find {
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+}
+
+body .home-find-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+    margin: 0 0 1.25rem;
+}
+
+body .home-find-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 42rem;
+    border-top: 1px solid var(--sfh-border);
+}
+
+body .home-find-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.15rem 0;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid var(--sfh-border);
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+body .home-find-row:hover {
+    background: transparent;
+}
+
+body .home-find-row:hover strong {
+    color: #fff;
+}
+
+body .home-find-icon {
+    flex: 0 0 auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.15rem;
+    color: var(--sfh-accent);
+}
+
+body .home-find-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+body .home-find-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 0;
+}
+
+body .home-find-copy strong {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+}
+
+body .home-find-copy span {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--sfh-text-muted);
+}
+
+/* Legacy hero (method pages may still use these hooks) */
 body .hero-section {
     min-height: auto;
     padding: calc(var(--sfh-header-offset, 88px) + 2.5rem) 1.5rem 3rem;
@@ -473,5 +651,28 @@ body .fitness-page .fitness-section .section-header {
 
     body .hero-section {
         padding-top: calc(var(--sfh-header-offset, 88px) + 1.25rem);
+    }
+
+    body .home-hero-content {
+        padding: calc(var(--sfh-header-offset, 88px) + 2rem) 1.15rem 2.35rem;
+    }
+
+    body .home-hero-brand {
+        font-size: clamp(2rem, 10vw, 2.6rem);
+    }
+
+    body .home-hero-headline {
+        font-size: 1.12rem;
+    }
+
+    body .home-hero-actions {
+        width: 100%;
+    }
+
+    body .home-hero-actions .btn-primary-sm,
+    body .home-hero-actions .btn-ghost-sm {
+        flex: 1 1 auto;
+        justify-content: center;
+        text-align: center;
     }
 }

@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <title>پلتفرم آموزشی آینده‌پژوهی | علی منصوری</title>
+    <title>علی منصوری | FORESIGHT HUB</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=20250723a">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=20260723h">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>window.SFH_LOCALE_VERSION = '58';</script>
 </head>
-<body class="sfh-platform">
+<body class="sfh-platform home-page">
     <canvas id="particles-canvas"></canvas>
 
     <header class="main-header">
@@ -25,48 +26,40 @@
         <div class="header-actions"></div>
     </header>
 
-    <section id="main-content" class="hero-section">
-        <div class="hero-content">
-            <ul class="hero-credential">
-                <li data-i18n="index.credentialPhd">دکتری آینده‌پژوهی · دانشگاه تهران</li>
-                <li data-i18n="index.credentialFocus">آینده‌پژوهی راهبردی · فناوری نوظهور</li>
-            </ul>
-            <h1 class="hero-title" data-i18n="index.heroTitle" data-i18n-html>پلتفرم آموزشی آینده‌پژوهی</h1>
-            <p class="hero-subtitle" data-i18n="index.heroSub"></p>
-            <p class="hero-intro" data-i18n="index.heroIntroP1"></p>
-            <p class="hero-intro" data-i18n="index.heroIntroP2"></p>
-            <div class="hero-actions">
-                <a href="methods/" class="btn-primary-sm"><i data-lucide="library"></i> <span data-i18n="nav.methods">روش‌های آینده‌پژوهی</span></a>
-                <a href="articles/" class="btn-ghost-sm"><i data-lucide="pen-line"></i> <span data-i18n="nav.articles">مقالات</span></a>
-                <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="btn-ghost-sm"><i data-lucide="file-text"></i> <span data-i18n="nav.cv">رزومه</span></a>
+    <section id="main-content" class="home-hero">
+        <div class="home-hero-media" aria-hidden="true">
+            <img class="home-hero-img" src="assets/home-hero-atmosphere.jpg" alt="" width="1536" height="1024" decoding="async" fetchpriority="high">
+            <div class="home-hero-scrim"></div>
+        </div>
+        <div class="home-hero-content">
+            <p class="home-hero-brand" data-i18n="index.heroName">علی منصوری</p>
+            <h1 class="home-hero-headline" data-i18n="index.heroTitle">سناریوهای آینده را به زیرساختی وصل می‌کنم که باید از آن‌ها جان سالم به در ببرد</h1>
+            <p class="home-hero-support" data-i18n="index.heroSub">دانشجوی دکتری آینده‌پژوهی در دانشگاه تهران؛ معمار راه‌حل در اسنپ برای سامانه‌های ابری، کوبرنتیز و هوش مصنوعی سازمانی.</p>
+            <div class="home-hero-actions">
+                <a href="methods/" class="btn-primary-sm"><span data-i18n="nav.methods">روش‌های آینده‌پژوهی</span></a>
+                <a href="articles/" class="btn-ghost-sm"><span data-i18n="nav.articles">مقالات</span></a>
+                <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="btn-ghost-sm"><span data-i18n="nav.cv">رزومه</span></a>
             </div>
         </div>
     </section>
 
-    <section class="container brand-section compact">
-        <div class="glass-card brand-card brand-card--accent">
+    <section class="container home-why compact">
+        <div class="home-why-inner">
             <div class="section-header section-header--left">
-                <span class="section-tag" data-i18n="brand.spaceTag">این فضا</span>
-                <h2 data-i18n="brand.spaceTitle">زیرساخت تدریس و پژوهش</h2>
+                <span class="section-tag" data-i18n="brand.spaceTag">چرا این فضا</span>
+                <h2 data-i18n="brand.spaceTitle">آزمایشگاه شخصی آینده‌پژوهی</h2>
             </div>
             <div class="prose-block">
                 <p data-i18n="brand.spaceP1"></p>
                 <p data-i18n="brand.spaceP2"></p>
                 <p data-i18n="brand.spaceP3"></p>
             </div>
-
-            <h3 class="brand-subhead" data-i18n="brand.findTitle">بخش‌ها</h3>
-            <div id="brand-find-grid" class="hub-cards-grid"></div>
-
-            <div class="section-header section-header--left">
-                <span class="section-tag" data-i18n="brand.philosophyTag">رویکرد پژوهشی</span>
-            </div>
-            <div class="prose-block">
-                <p data-i18n="brand.philP1"></p>
-                <p data-i18n="brand.philP2"></p>
-                <p data-i18n="brand.philP3"></p>
-            </div>
         </div>
+    </section>
+
+    <section class="container home-find compact">
+        <h2 class="home-find-title" data-i18n="brand.findTitle">از اینجا شروع کنید</h2>
+        <div id="brand-find-grid" class="home-find-list"></div>
     </section>
 
     <footer class="main-footer">
@@ -84,12 +77,12 @@
         </div>
     </footer>
 
-    <script src="js/core/paths.js?v=14"></script>
-    <script src="js/core/i18n.js?v=14"></script>
-    <script src="js/core/load-locales.js?v=14"></script>
-    <script src="js/core/i18n-render.js?v=14"></script>
-    <script src="js/core/shared.js?v=14"></script>
-    <script src="js/core/animation.js?v=14"></script>
-    <script src="js/core/main.js?v=14"></script>
+    <script src="js/core/paths.js?v=15"></script>
+    <script src="js/core/i18n.js?v=15"></script>
+    <script src="js/core/load-locales.js?v=15"></script>
+    <script src="js/core/i18n-render.js?v=15"></script>
+    <script src="js/core/shared.js?v=15"></script>
+    <script src="js/core/animation.js?v=15"></script>
+    <script src="js/core/main.js?v=15"></script>
 </body>
 </html>

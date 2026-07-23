@@ -125,9 +125,19 @@ function renderBrandFindGrid() {
     const grid = document.getElementById('brand-find-grid');
     const items = typeof pg === 'function' ? pg('brand.findItems') : null;
     if (!grid || !items) return;
+    const light = grid.classList.contains('home-find-list');
     grid.innerHTML = items.map((f) => {
         const href = f.external ? f.href : (typeof sfhUrl === 'function' ? sfhUrl(f.href) : f.href);
         const ext = f.external ? ' target="_blank" rel="noopener noreferrer"' : '';
+        if (light) {
+            return `<a href="${href}"${ext} class="home-find-row">
+                <span class="home-find-icon" aria-hidden="true"><i data-lucide="${f.icon}"></i></span>
+                <span class="home-find-copy">
+                    <strong>${esc(f.title)}</strong>
+                    <span>${esc(f.desc)}</span>
+                </span>
+            </a>`;
+        }
         return `<a href="${href}"${ext} class="step-card glass-card" style="padding:20px;border-top:3px solid var(--color-f);text-decoration:none;display:block;">
             <div style="color:var(--color-f);margin-bottom:10px;"><i data-lucide="${f.icon}"></i></div>
             <h4 style="color:#fff;font-size:1rem;margin-bottom:8px;">${esc(f.title)}</h4>
