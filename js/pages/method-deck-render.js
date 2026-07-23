@@ -18,10 +18,11 @@
         return null;
     }
 
-    function mountDeckRoot(root) {
+    function mountDeckRoot(root, opts) {
         if (!root || !window.SFHModuleDeck) return;
         const ns = root.getAttribute('data-deck-ns');
         if (!ns) return;
+        const options = opts || {};
 
         const page = getByPath(i18nRoot(), ns) || {};
         const uni = page.university || {};
@@ -32,6 +33,9 @@
             return;
         }
         root.hidden = false;
+
+        const activeBtn = root.querySelector('[data-method-module].is-active');
+        const preserveId = activeBtn?.getAttribute('data-method-module') || parseHashModule();
 
         root.innerHTML = window.SFHModuleDeck.buildShellHtml({
             modules,
@@ -44,32 +48,34 @@
 
         const shell = root.querySelector('.fitness-module-shell');
         const activate = window.SFHModuleDeck.initModuleNav(shell);
-        const want = parseHashModule();
+        const want = preserveId;
         if (want && activate) {
             const exists = modules.some(m => window.SFHModuleDeck.moduleId(m) === want);
             if (exists) {
                 activate(want, false);
-                requestAnimationFrame(() => {
-                    root.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                });
+                if (options.scrollToHash && parseHashModule() === want) {
+                    requestAnimationFrame(() => {
+                        root.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    });
+                }
             }
         }
     }
 
-    window.renderMethodDecks = function renderMethodDecks(scope) {
+    window.renderMethodDecks = function renderMethodDecks(scope, opts) {
         const roots = (scope || document).querySelectorAll('#method-deck-root, [data-method-deck-root]');
-        roots.forEach(mountDeckRoot);
+        roots.forEach(root => mountDeckRoot(root, opts));
         if (window.lucide) window.lucide.createIcons();
     };
 
     function boot() {
-        window.renderMethodDecks();
+        window.renderMethodDecks(document, { scrollToHash: true });
     }
 
     if (window.__SFH_LOCALES_READY) boot();
     else window.addEventListener('localesready', boot, { once: true });
 
     window.addEventListener('langchange', () => {
-        window.renderMethodDecks();
+        window.renderMethodDecks(document, { scrollToHash: false });
     });
 })();

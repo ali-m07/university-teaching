@@ -22,7 +22,7 @@ registerLocale('fa', {
                     num: 'M1', id: 'm1', pickerLabel: 'Type-1 و زبانی',
                     title: 'Type-1، متغیر زبانی، و چرا Type-2؟', hours: '۹۰ دقیقه',
                     readingsShort: 'Zadeh 1965 · 1975',
-                    visual: 'assets/foresight_concept.png',
+                    visual: 'assets/methods/covers/type2-m1-membership.svg',
                     visualCaption: 'از عضویت دودویی تا درجه و بازه',
                     lectureIntro: 'جلسه اول <strong>منطق فازی نوع ۲</strong>: از مجموعه فازی و متغیر زبانی شروع می‌کنیم تا بفهمیم میانگین ۰.۶ در دلفی چرا اغلب «توافق جعلی» است.',
                     lectureSections: [
@@ -100,7 +100,7 @@ registerLocale('fa', {
                     num: 'M2', id: 'm2', pickerLabel: 'IT2 و FOU',
                     title: 'IT2، FOU و اختلاف خبرگان', hours: '۹۰ دقیقه',
                     readingsShort: 'Mendel 2001 · Karnik & Mendel',
-                    visual: 'assets/foresight_concept.png',
+                    visual: 'assets/methods/covers/type2-m2-fou.svg',
                     visualCaption: 'ردپای عدم‌قطعیت بین upper و lower MF',
                     lectureIntro: 'جلسه دوم: Interval Type-2. درجه عضویت خودش بازه است. FOU پهنای اختلاف را نگه می‌دارد تا قبل از هر عدد نهایی برای مدیر دیده شود.',
                     lectureSections: [
@@ -167,7 +167,7 @@ registerLocale('fa', {
                     num: 'M3', id: 'm3', pickerLabel: 'Type-reduction',
                     title: 'Type-reduction، سیستم fuzzy و rule base', hours: '۹۰ دقیقه',
                     readingsShort: 'Mendel, John, Liu 2006',
-                    visual: 'assets/foresight_concept.png',
+                    visual: 'assets/methods/covers/type2-m3-pipeline.svg',
                     visualCaption: 'از FOU تا عدد crisp و قاعده زبانی',
                     lectureIntro: 'جلسه سوم: فشرده‌سازی مفهومی IT2 به Type-1، تفاوت Mamdani و Takagi-Sugeno، و نوشتن ruleهای ساده برای judgment foresight.',
                     lectureSections: [
@@ -233,7 +233,7 @@ registerLocale('fa', {
                     num: 'M4', id: 'm4', pickerLabel: 'کارگاه و memo',
                     title: 'کارگاه foresight، memo و probing', hours: '۹۰ دقیقه',
                     readingsShort: 'Rohrbeck FITness · Hines cone',
-                    visual: 'assets/foresight_concept.png',
+                    visual: 'assets/methods/covers/type2-m4-workshop.svg',
                     visualCaption: 'از FOU تا memo هیئت‌مدیره و پیلوت ۹۰ روزه',
                     lectureIntro: 'جلسه چهارم: بستن حلقه. کارگاه صفحه، memo یک‌صفحه‌ای، اتصال به cone of plausibility و probing در FITness، و نقد کیفیت با Popper Diamond.',
                     lectureSections: [

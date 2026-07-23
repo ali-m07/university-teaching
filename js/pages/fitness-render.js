@@ -408,24 +408,29 @@
             .trim();
         if (!text) return raw;
 
-        let chunks = text
+        const chunks = text
             .split(/(?<=[.؟۔؛])\s+/)
             .map(s => s.trim())
             .filter(Boolean);
 
-        // Long unpunctuated prose: soft-split on commas for scanability
-        if (chunks.length <= 1 && text.length > 220) {
-            const soft = text.split(/،\s+/).map(s => s.trim()).filter(Boolean);
-            if (soft.length >= 3) {
-                chunks = soft.slice(0, 5).map((s, i, arr) => (i < arr.length - 1 && !/[.؟۔؛]$/.test(s) ? `${s}.` : s));
-            }
+        // Prefer a short, flowing explanatory paragraph over sentence-fragment
+        // bullets: most lecture paragraphs (2-3 sentences) read far better as
+        // prose than as a chopped-up list.
+        if (chunks.length <= 3 || text.length <= 320) {
+            return `<p class="fitness-pres-lead">${raw}</p>`;
         }
 
-        if (chunks.length <= 1) {
-            return `<p class="fitness-pres-lead">${raw.includes('<strong>') || raw.includes('<em>') ? raw : text}</p>`;
+        // Only genuinely long, list-like paragraphs get a lead sentence plus a
+        // handful of richer (multi-sentence) bullets, not one bullet per clause.
+        const lead = chunks[0];
+        const rest = chunks.slice(1);
+        const groupSize = Math.max(1, Math.ceil(rest.length / 3));
+        const bullets = [];
+        for (let i = 0; i < rest.length; i += groupSize) {
+            bullets.push(rest.slice(i, i + groupSize).join(' '));
         }
 
-        return `<ul class="fitness-pres-bullets">${chunks.slice(0, 5).map(item => `<li>${item}</li>`).join('')}</ul>`;
+        return `<p class="fitness-pres-lead">${lead}</p><ul class="fitness-pres-bullets">${bullets.slice(0, 3).map(item => `<li>${item}</li>`).join('')}</ul>`;
     }
 
     function buildSectionSlideBody(sec, paragraphIndex, stripLabel) {
@@ -483,14 +488,15 @@
             const { heading } = parseSectionTitle(sec.title);
             const title = slideTitle || heading || sec.title || '';
             const stripLabel = slideTitle || slideHeadingFromParagraph(paras[firstIndex]);
-            const showImage = gi === 0;
 
+            // Keep the section's figure visible across all of its slides
+            // (not only the first paragraph) so later slides aren't left bare.
             return {
                 kind: 'content',
                 eyebrow,
                 title,
-                image: showImage ? image : '',
-                imageCaption: showImage ? (sec.imageCaption || caption) : '',
+                image,
+                imageCaption: sec.imageCaption || caption,
                 body: buildSectionSlideBody(sec, group, stripLabel)
             };
         });

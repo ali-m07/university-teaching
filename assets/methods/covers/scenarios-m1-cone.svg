@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00e5ff"/><stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="52" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700">Scenario as Strategic Survival</text>
+  
+  <circle cx="180" cy="270" r="16" fill="#f3f4f6"/>
+  <text x="180" y="245" text-anchor="middle" fill="#8b9bb0" font-size="13">Shell, 1972</text>
+  <path d="M196 262 C420 190 640 150 860 130" stroke="#00e5ff" stroke-width="2" fill="none"/>
+  <path d="M196 270 C420 270 640 270 860 270" stroke="#8b9bb0" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+  <path d="M196 278 C420 350 640 390 860 410" stroke="#7c4dff" stroke-width="2" fill="none"/>
+  <text x="880" y="126" fill="#00e5ff" font-size="13">Oil shock scenario</text>
+  <text x="880" y="274" fill="#8b9bb0" font-size="13">Single "most likely" forecast</text>
+  <text x="880" y="414" fill="#7c4dff" font-size="13">Alternative scenario</text>
+  <rect x="640" y="90" width="24" height="24" fill="#ffaa00"/>
+  <text x="700" y="108" fill="#ffaa00" font-size="13">1973 shock: inside the cone, not the single line</text>
+  <text x="480" y="470" text-anchor="middle" fill="#8b9bb0" font-size="14">Wack's lesson: rehearse several futures so no single shock is a surprise.</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Wack (1985, HBR) · Module M1</text>
+</svg>

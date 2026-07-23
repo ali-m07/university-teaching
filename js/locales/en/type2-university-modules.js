@@ -22,7 +22,7 @@ registerLocale('en', {
                     num: 'M1', id: 'm1', pickerLabel: 'Type-1 & linguistic',
                     title: 'Type-1, linguistic variables, and why Type-2?', hours: '90 min',
                     readingsShort: 'Zadeh 1965 · 1975',
-                    visual: 'assets/foresight_concept.png',
+                    visual: 'assets/methods/covers/type2-m1-membership.svg',
                     visualCaption: 'From binary membership to degree and interval',
                     lectureIntro: 'Session 1 of <strong>Type-2 Fuzzy Logic</strong>: start from fuzzy sets and linguistic variables to see why a Delphi mean of 0.6 is often false consensus.',
                     lectureSections: [
@@ -100,7 +100,7 @@ registerLocale('en', {
                     num: 'M2', id: 'm2', pickerLabel: 'IT2 & FOU',
                     title: 'IT2, FOU, and expert disagreement', hours: '90 min',
                     readingsShort: 'Mendel 2001 · Karnik & Mendel',
-                    visual: 'assets/foresight_concept.png',
+                    visual: 'assets/methods/covers/type2-m2-fou.svg',
                     visualCaption: 'Footprint of Uncertainty between upper and lower MF',
                     lectureIntro: 'Session 2: Interval Type-2. The membership degree itself is an interval. FOU keeps disagreement visible before any final number for the manager.',
                     lectureSections: [
@@ -167,7 +167,7 @@ registerLocale('en', {
                     num: 'M3', id: 'm3', pickerLabel: 'Type-reduction',
                     title: 'Type-reduction, fuzzy systems, and rule bases', hours: '90 min',
                     readingsShort: 'Mendel, John, Liu 2006',
-                    visual: 'assets/foresight_concept.png',
+                    visual: 'assets/methods/covers/type2-m3-pipeline.svg',
                     visualCaption: 'From FOU to a crisp number and linguistic rules',
                     lectureIntro: 'Session 3: conceptual compression of IT2 to Type-1, Mamdani versus Takagi-Sugeno, and simple rules for foresight judgment.',
                     lectureSections: [
@@ -233,7 +233,7 @@ registerLocale('en', {
                     num: 'M4', id: 'm4', pickerLabel: 'Workshop & memo',
                     title: 'Foresight workshop, memo, and probing', hours: '90 min',
                     readingsShort: 'Rohrbeck FITness · Hines cone',
-                    visual: 'assets/foresight_concept.png',
+                    visual: 'assets/methods/covers/type2-m4-workshop.svg',
                     visualCaption: 'From FOU to board memo and 90-day pilot',
                     lectureIntro: 'Session 4: close the loop. Page workshop, one-page memo, link to cone of plausibility and FITness probing, and quality critique with the Popper Diamond.',
                     lectureSections: [

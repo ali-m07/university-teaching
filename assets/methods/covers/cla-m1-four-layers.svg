@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00e5ff"/><stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="52" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700">CLA · Four Layers of Causal Analysis</text>
+  
+  
+  <rect x="375" y="100" width="210" height="60" rx="12" fill="#152035" stroke="#00e5ff" stroke-width="2"/>
+  <text x="480" y="126" text-anchor="middle" fill="#00e5ff" font-size="17" font-weight="700">Litany</text>
+  <text x="480" y="146" text-anchor="middle" fill="#8b9bb0" font-size="11">headlines, statistics</text>
+  <rect x="350" y="180" width="260" height="60" rx="12" fill="#152035" stroke="#7c4dff" stroke-width="2"/>
+  <text x="480" y="206" text-anchor="middle" fill="#7c4dff" font-size="17" font-weight="700">Systemic</text>
+  <text x="480" y="226" text-anchor="middle" fill="#8b9bb0" font-size="11">policy, markets, infrastructure</text>
+  <rect x="325" y="260" width="310" height="60" rx="12" fill="#152035" stroke="#ffaa00" stroke-width="2"/>
+  <text x="480" y="286" text-anchor="middle" fill="#ffaa00" font-size="17" font-weight="700">Worldview</text>
+  <text x="480" y="306" text-anchor="middle" fill="#8b9bb0" font-size="11">discourse, legitimacy</text>
+  <rect x="300" y="340" width="360" height="60" rx="12" fill="#152035" stroke="#ff5a7a" stroke-width="2"/>
+  <text x="480" y="366" text-anchor="middle" fill="#ff5a7a" font-size="17" font-weight="700">Myth / Metaphor</text>
+  <text x="480" y="386" text-anchor="middle" fill="#8b9bb0" font-size="11">collective story</text>
+  <path d="M480 160 V180" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M480 240 V260" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M480 320 V340" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="150" y="180" fill="#8b9bb0" font-size="13">Stop here =</text>
+  <text x="150" y="200" fill="#8b9bb0" font-size="13">description only</text>
+  <text x="720" y="360" fill="#00e5ff" font-size="13">Go deeper =</text>
+  <text x="720" y="380" fill="#00e5ff" font-size="13">alternative futures</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Inayatullah (1998, 2004) · Module M1</text>
+</svg>

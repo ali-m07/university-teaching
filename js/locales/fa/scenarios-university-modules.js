@@ -23,7 +23,7 @@ registerLocale('fa', {
                         num: 'M1', id: 'm1', pickerLabel: 'Shell و آمادگی ذهنی',
                         title: 'سناریو به‌عنوان بقای استراتژیک', hours: '۷۵ دقیقه',
                         readingsShort: 'Wack 1985 HBR',
-                        visual: 'assets/foresight_concept.png',
+                        visual: 'assets/methods/covers/scenarios-m1-cone.svg',
                         visualCaption: 'از داستان به سیستم تصمیم',
                         lectureIntro: 'جلسه اول <strong>سناریوسازی استراتژیک</strong>: درس شِل و Wack. سناریو برای آمادگی ذهنی است، نه برای «پیش‌بینی درست».',
                         lectureSections: [
@@ -89,7 +89,7 @@ registerLocale('fa', {
                         num: 'M2', id: 'm2', pickerLabel: 'ماتریس ۲×۲',
                         title: 'عدم‌قطعیت حیاتی و چهار منطق', hours: '۹۰ دقیقه',
                         readingsShort: 'Schwartz 7-step',
-                        visual: 'assets/foresight_concept.png',
+                        visual: 'assets/methods/covers/scenarios-m2-matrix.svg',
                         visualCaption: 'چهار quadrant · چهار روایت',
                         lectureIntro: 'جلسه دوم: انتخاب دو critical uncertainty، ساخت ماتریس ۲×۲، و نام‌گذاری narrative برای هر quadrant.',
                         lectureSections: [
@@ -154,7 +154,7 @@ registerLocale('fa', {
                         num: 'M3', id: 'm3', pickerLabel: 'Indicators و استراتژی',
                         title: 'نشانه‌های زودهنگام و گزینه‌های no-regret', hours: '۹۰ دقیقه',
                         readingsShort: 'Shell · پیوند به FITness',
-                        visual: 'assets/foresight_concept.png',
+                        visual: 'assets/methods/covers/scenarios-m3-indicators.svg',
                         visualCaption: 'از روایت به رصد و بودجه',
                         lectureIntro: 'جلسه سوم: early indicators، implications، و اتصال سناریو به بودجه و probing سازمانی (زبان FITness).',
                         lectureSections: [

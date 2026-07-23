@@ -22,7 +22,7 @@ registerLocale('en', {
                     num: 'M1', id: 'm1', pickerLabel: 'Foundations',
                     title: 'CLA foundations · from news to myth', hours: '90 min',
                     readingsShort: 'Inayatullah (1998) Futures',
-                    visual: 'assets/cla_concept.png',
+                    visual: 'assets/methods/covers/cla-m1-four-layers.svg',
                     visualCaption: 'Four-layer pyramid · Litany to Myth/Metaphor',
                     lectureIntro: 'Session 1 of <strong>Causal Layered Analysis</strong>. Goal: move past headlines into discourse and metaphor, with technology examples (GenAI, platforms, data).',
                     lectureSections: [
@@ -100,7 +100,7 @@ registerLocale('en', {
                     num: 'M2', id: 'm2', pickerLabel: 'Tech cases',
                     title: 'CLA on technology · GenAI and platforms', hours: '90 min',
                     readingsShort: 'Page case archive',
-                    visual: 'assets/cla_concept.png',
+                    visual: 'assets/methods/covers/cla-m2-tech-case.svg',
                     visualCaption: 'From GenAI headlines to data-power metaphors',
                     lectureIntro: 'Session 2 applies CLA to technology issues: generative AI, platform power, and data surveillance. Goal: a full four-layer pass on one shared class case.',
                     lectureSections: [
@@ -166,7 +166,7 @@ registerLocale('en', {
                     num: 'M3', id: 'm3', pickerLabel: 'Metaphor lab',
                     title: 'Alternative metaphor and scenario bridge', hours: '75 min',
                     readingsShort: 'CLA Reader · page workshop',
-                    visual: 'assets/cla_concept.png',
+                    visual: 'assets/methods/covers/cla-m3-alt-metaphor.svg',
                     visualCaption: 'From deconstruction to metaphor redesign',
                     lectureIntro: 'Session 3: craft a new layer-4 metaphor and connect CLA output to scenarios and policy. Without an alternative metaphor, CLA stays critique only.',
                     lectureSections: [

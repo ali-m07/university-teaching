@@ -22,7 +22,7 @@ registerLocale('fa', {
                     num: 'M1', id: 'm1', pickerLabel: 'Forecast در برابر Backcast',
                     title: 'پس‌نگری در برابر پیش‌بینی', hours: '۷۵ دقیقه',
                     readingsShort: 'Robinson 1982 · Dreborg 1996',
-                    visual: 'assets/backcasting_concept.png',
+                    visual: 'assets/methods/covers/backcast-m1-forecast-vs-backcast.svg',
                     visualCaption: 'از آینده مطلوب به گام‌های امروز',
                     lectureIntro: 'جلسه اول <strong>پس‌نگری (Backcasting)</strong>: چرا ادامه روند برای مسائل ساختاری کافی نیست و چگونه هدف هنجاری مسیر را عوض می‌کند.',
                     lectureSections: [
@@ -98,7 +98,7 @@ registerLocale('fa', {
                     num: 'M2', id: 'm2', pickerLabel: 'Vision و مسیر معکوس',
                     title: 'ساخت vision و milestoneهای معکوس', hours: '۹۰ دقیقه',
                     readingsShort: 'Natural Step · شبیه‌ساز صفحه',
-                    visual: 'assets/backcasting_concept.png',
+                    visual: 'assets/methods/covers/backcast-m2-milestones.svg',
                     visualCaption: 'Vision → شکاف → سیاست → نقشه راه',
                     lectureIntro: 'جلسه دوم: چهار حرکت عملی پس‌نگری و تمرین در شبیه‌ساز صفحه.',
                     lectureSections: [
@@ -166,7 +166,7 @@ registerLocale('fa', {
                     num: 'M3', id: 'm3', pickerLabel: 'کیس و سیاست',
                     title: 'کیس سوئد و سیاست فوری', hours: '۷۵ دقیقه',
                     readingsShort: 'سوئد ۲۰۴۵ · تکلیف ترم',
-                    visual: 'assets/backcasting_concept.png',
+                    visual: 'assets/methods/covers/backcast-m3-sweden.svg',
                     visualCaption: 'از هدف کربن‌صفر تا اقدام امروز',
                     lectureIntro: 'جلسه سوم: خوانش کیس گذار سوئد، نقد محدودیت قدرت، و استخراج سه سیاست فوری برای اولین milestone.',
                     lectureSections: [

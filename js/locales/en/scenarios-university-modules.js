@@ -23,7 +23,7 @@ registerLocale('en', {
                         num: 'M1', id: 'm1', pickerLabel: 'Shell & mental prep',
                         title: 'Scenarios as strategic survival', hours: '75 min',
                         readingsShort: 'Wack 1985 HBR',
-                        visual: 'assets/foresight_concept.png',
+                        visual: 'assets/methods/covers/scenarios-m1-cone.svg',
                         visualCaption: 'From story to decision system',
                         lectureIntro: 'Session 1 of <strong>strategic scenario planning</strong>: Shell and Wack. Scenarios are for mental preparedness, not for “correct prediction.”',
                         lectureSections: [
@@ -89,7 +89,7 @@ registerLocale('en', {
                         num: 'M2', id: 'm2', pickerLabel: '2×2 matrix',
                         title: 'Critical uncertainties and four logics', hours: '90 min',
                         readingsShort: 'Schwartz 7-step',
-                        visual: 'assets/foresight_concept.png',
+                        visual: 'assets/methods/covers/scenarios-m2-matrix.svg',
                         visualCaption: 'Four quadrants · four narratives',
                         lectureIntro: 'Session 2: pick two critical uncertainties, build a 2×2 matrix, and name a narrative for each quadrant.',
                         lectureSections: [
@@ -154,7 +154,7 @@ registerLocale('en', {
                         num: 'M3', id: 'm3', pickerLabel: 'Indicators & strategy',
                         title: 'Early indicators and no-regret options', hours: '90 min',
                         readingsShort: 'Shell · link to FITness',
-                        visual: 'assets/foresight_concept.png',
+                        visual: 'assets/methods/covers/scenarios-m3-indicators.svg',
                         visualCaption: 'From narrative to monitoring and budget',
                         lectureIntro: 'Session 3: early indicators, implications, and linking scenarios to budgeting and organizational probing (FITness language).',
                         lectureSections: [

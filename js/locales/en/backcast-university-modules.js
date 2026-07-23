@@ -22,7 +22,7 @@ registerLocale('en', {
                     num: 'M1', id: 'm1', pickerLabel: 'Forecast vs Backcast',
                     title: 'Backcasting versus forecasting', hours: '75 min',
                     readingsShort: 'Robinson 1982 · Dreborg 1996',
-                    visual: 'assets/backcasting_concept.png',
+                    visual: 'assets/methods/covers/backcast-m1-forecast-vs-backcast.svg',
                     visualCaption: 'From desired future to today’s steps',
                     lectureIntro: 'Session 1 of <strong>Backcasting</strong>: why trend continuation fails for structural problems and how a normative goal changes the path.',
                     lectureSections: [
@@ -98,7 +98,7 @@ registerLocale('en', {
                     num: 'M2', id: 'm2', pickerLabel: 'Vision & reverse path',
                     title: 'Building vision and reverse milestones', hours: '90 min',
                     readingsShort: 'Natural Step · page simulator',
-                    visual: 'assets/backcasting_concept.png',
+                    visual: 'assets/methods/covers/backcast-m2-milestones.svg',
                     visualCaption: 'Vision → gap → policy → roadmap',
                     lectureIntro: 'Session 2: four practical backcasting moves and practice in the page simulator.',
                     lectureSections: [
@@ -166,7 +166,7 @@ registerLocale('en', {
                     num: 'M3', id: 'm3', pickerLabel: 'Case & policy',
                     title: 'Sweden case and immediate policy', hours: '75 min',
                     readingsShort: 'Sweden 2045 · term assignment',
-                    visual: 'assets/backcasting_concept.png',
+                    visual: 'assets/methods/covers/backcast-m3-sweden.svg',
                     visualCaption: 'From net-zero goal to today’s action',
                     lectureIntro: 'Session 3: read the Swedish transition case, critique power limits, and extract three immediate policies for the first milestone.',
                     lectureSections: [

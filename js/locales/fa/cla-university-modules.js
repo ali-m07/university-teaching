@@ -22,7 +22,7 @@ registerLocale('fa', {
                     num: 'M1', id: 'm1', pickerLabel: 'مبانی و چهار لایه',
                     title: 'مبانی CLA · از خبر تا اسطوره', hours: '۹۰ دقیقه',
                     readingsShort: 'Inayatullah (1998) Futures',
-                    visual: 'assets/cla_concept.png',
+                    visual: 'assets/methods/covers/cla-m1-four-layers.svg',
                     visualCaption: 'هرم چهار لایه · Litany تا Myth/Metaphor',
                     lectureIntro: 'این جلسه اول <strong>تحلیل لایه‌ای علت‌ها (CLA)</strong> است. هدف: توقف نکردن در تیتر خبر و رسیدن به گفتمان و استعاره، با نمونه‌های فناوری (هوش مصنوعی مولد، پلتفرم، داده).',
                     lectureSections: [
@@ -100,7 +100,7 @@ registerLocale('fa', {
                     num: 'M2', id: 'm2', pickerLabel: 'کیس فناوری',
                     title: 'CLA روی فناوری · GenAI و پلتفرم', hours: '۹۰ دقیقه',
                     readingsShort: 'آرشیو کیس‌های صفحه',
-                    visual: 'assets/cla_concept.png',
+                    visual: 'assets/methods/covers/cla-m2-tech-case.svg',
                     visualCaption: 'از تیتر GenAI تا استعاره قدرت داده',
                     lectureIntro: 'جلسه دوم CLA را روی مسائل فناوری اجرا می‌کنیم: هوش مصنوعی مولد، قدرت پلتفرم، و نظارت داده‌محور. هدف: تمرین کامل چهار لایه روی یک کیس مشترک کلاس.',
                     lectureSections: [
@@ -166,7 +166,7 @@ registerLocale('fa', {
                     num: 'M3', id: 'm3', pickerLabel: 'کارگاه استعاره',
                     title: 'استعاره بدیل و اتصال به سناریو', hours: '۷۵ دقیقه',
                     readingsShort: 'CLA Reader · کارگاه صفحه',
-                    visual: 'assets/cla_concept.png',
+                    visual: 'assets/methods/covers/cla-m3-alt-metaphor.svg',
                     visualCaption: 'از واسازی به بازآفرینی استعاره',
                     lectureIntro: 'جلسه سوم: ساخت استعاره جدید (لایه ۴) و اتصال خروجی CLA به سناریو و سیاست. بدون استعاره بدیل، CLA فقط نقد می‌ماند.',
                     lectureSections: [

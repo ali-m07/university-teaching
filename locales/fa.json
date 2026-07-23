@@ -523,7 +523,7 @@
             "title": "سناریو به‌عنوان بقای استراتژیک",
             "hours": "۷۵ دقیقه",
             "readingsShort": "Wack 1985 HBR",
-            "visual": "assets/foresight_concept.png",
+            "visual": "assets/methods/covers/scenarios-m1-cone.svg",
             "visualCaption": "از داستان به سیستم تصمیم",
             "lectureIntro": "جلسه اول <strong>سناریوسازی استراتژیک</strong>: درس شِل و Wack. سناریو برای آمادگی ذهنی است، نه برای «پیش‌بینی درست».",
             "lectureSections": [
@@ -601,7 +601,7 @@
             "title": "عدم‌قطعیت حیاتی و چهار منطق",
             "hours": "۹۰ دقیقه",
             "readingsShort": "Schwartz 7-step",
-            "visual": "assets/foresight_concept.png",
+            "visual": "assets/methods/covers/scenarios-m2-matrix.svg",
             "visualCaption": "چهار quadrant · چهار روایت",
             "lectureIntro": "جلسه دوم: انتخاب دو critical uncertainty، ساخت ماتریس ۲×۲، و نام‌گذاری narrative برای هر quadrant.",
             "lectureSections": [
@@ -675,7 +675,7 @@
             "title": "نشانه‌های زودهنگام و گزینه‌های no-regret",
             "hours": "۹۰ دقیقه",
             "readingsShort": "Shell · پیوند به FITness",
-            "visual": "assets/foresight_concept.png",
+            "visual": "assets/methods/covers/scenarios-m3-indicators.svg",
             "visualCaption": "از روایت به رصد و بودجه",
             "lectureIntro": "جلسه سوم: early indicators، implications، و اتصال سناریو به بودجه و probing سازمانی (زبان FITness).",
             "lectureSections": [
@@ -2445,7 +2445,7 @@
           "title": "Type-1، متغیر زبانی، و چرا Type-2؟",
           "hours": "۹۰ دقیقه",
           "readingsShort": "Zadeh 1965 · 1975",
-          "visual": "assets/foresight_concept.png",
+          "visual": "assets/methods/covers/type2-m1-membership.svg",
           "visualCaption": "از عضویت دودویی تا درجه و بازه",
           "lectureIntro": "جلسه اول <strong>منطق فازی نوع ۲</strong>: از مجموعه فازی و متغیر زبانی شروع می‌کنیم تا بفهمیم میانگین ۰.۶ در دلفی چرا اغلب «توافق جعلی» است.",
           "lectureSections": [
@@ -2554,7 +2554,7 @@
           "title": "IT2، FOU و اختلاف خبرگان",
           "hours": "۹۰ دقیقه",
           "readingsShort": "Mendel 2001 · Karnik & Mendel",
-          "visual": "assets/foresight_concept.png",
+          "visual": "assets/methods/covers/type2-m2-fou.svg",
           "visualCaption": "ردپای عدم‌قطعیت بین upper و lower MF",
           "lectureIntro": "جلسه دوم: Interval Type-2. درجه عضویت خودش بازه است. FOU پهنای اختلاف را نگه می‌دارد تا قبل از هر عدد نهایی برای مدیر دیده شود.",
           "lectureSections": [
@@ -2633,7 +2633,7 @@
           "title": "Type-reduction، سیستم fuzzy و rule base",
           "hours": "۹۰ دقیقه",
           "readingsShort": "Mendel, John, Liu 2006",
-          "visual": "assets/foresight_concept.png",
+          "visual": "assets/methods/covers/type2-m3-pipeline.svg",
           "visualCaption": "از FOU تا عدد crisp و قاعده زبانی",
           "lectureIntro": "جلسه سوم: فشرده‌سازی مفهومی IT2 به Type-1، تفاوت Mamdani و Takagi-Sugeno، و نوشتن ruleهای ساده برای judgment foresight.",
           "lectureSections": [
@@ -2711,7 +2711,7 @@
           "title": "کارگاه foresight، memo و probing",
           "hours": "۹۰ دقیقه",
           "readingsShort": "Rohrbeck FITness · Hines cone",
-          "visual": "assets/foresight_concept.png",
+          "visual": "assets/methods/covers/type2-m4-workshop.svg",
           "visualCaption": "از FOU تا memo هیئت‌مدیره و پیلوت ۹۰ روزه",
           "lectureIntro": "جلسه چهارم: بستن حلقه. کارگاه صفحه، memo یک‌صفحه‌ای، اتصال به cone of plausibility و probing در FITness، و نقد کیفیت با Popper Diamond.",
           "lectureSections": [
@@ -4895,7 +4895,7 @@
           "title": "مبانی CLA · از خبر تا اسطوره",
           "hours": "۹۰ دقیقه",
           "readingsShort": "Inayatullah (1998) Futures",
-          "visual": "assets/cla_concept.png",
+          "visual": "assets/methods/covers/cla-m1-four-layers.svg",
           "visualCaption": "هرم چهار لایه · Litany تا Myth/Metaphor",
           "lectureIntro": "این جلسه اول <strong>تحلیل لایه‌ای علت‌ها (CLA)</strong> است. هدف: توقف نکردن در تیتر خبر و رسیدن به گفتمان و استعاره، با نمونه‌های فناوری (هوش مصنوعی مولد، پلتفرم، داده).",
           "lectureSections": [
@@ -5008,7 +5008,7 @@
           "title": "CLA روی فناوری · GenAI و پلتفرم",
           "hours": "۹۰ دقیقه",
           "readingsShort": "آرشیو کیس‌های صفحه",
-          "visual": "assets/cla_concept.png",
+          "visual": "assets/methods/covers/cla-m2-tech-case.svg",
           "visualCaption": "از تیتر GenAI تا استعاره قدرت داده",
           "lectureIntro": "جلسه دوم CLA را روی مسائل فناوری اجرا می‌کنیم: هوش مصنوعی مولد، قدرت پلتفرم، و نظارت داده‌محور. هدف: تمرین کامل چهار لایه روی یک کیس مشترک کلاس.",
           "lectureSections": [
@@ -5086,7 +5086,7 @@
           "title": "استعاره بدیل و اتصال به سناریو",
           "hours": "۷۵ دقیقه",
           "readingsShort": "CLA Reader · کارگاه صفحه",
-          "visual": "assets/cla_concept.png",
+          "visual": "assets/methods/covers/cla-m3-alt-metaphor.svg",
           "visualCaption": "از واسازی به بازآفرینی استعاره",
           "lectureIntro": "جلسه سوم: ساخت استعاره جدید (لایه ۴) و اتصال خروجی CLA به سناریو و سیاست. بدون استعاره بدیل، CLA فقط نقد می‌ماند.",
           "lectureSections": [
@@ -5415,7 +5415,7 @@
           "title": "چرخ آینده · منطق پیامدهای زنجیره‌ای",
           "hours": "۷۵ دقیقه",
           "readingsShort": "Glenn · FRM 3.0 Wheel",
-          "visual": "assets/methods/futures-wheel.svg",
+          "visual": "assets/methods/covers/wheel-m1-cascade.svg",
           "visualCaption": "رویداد محوری در مرکز · پیامدهای مرتبه ۱ تا ۳",
           "lectureIntro": "جلسه اول <strong>چرخ آینده</strong>: چرا تحلیل خطی کافی نیست و چگونه پیامدهای مرتبه دوم و سوم تصمیم را جابه‌جا می‌کنند. نمونه‌ها از فناوری و اقلیم.",
           "lectureSections": [
@@ -5493,7 +5493,7 @@
           "title": "۱۱ گام و مدل STEEP",
           "hours": "۹۰ دقیقه",
           "readingsShort": "فرآیند صفحه · مدل‌های Wheel",
-          "visual": "assets/methods/futures-wheel.svg",
+          "visual": "assets/methods/covers/wheel-m2-steep.svg",
           "visualCaption": "از طوفان فکری تا کمی‌سازی و سیاست",
           "lectureIntro": "جلسه دوم: فرآیند عملیاتی ترسیم چرخ و تفاوت مدل کلاسیک، STEEP، کمی و عمل‌گرا.",
           "lectureSections": [
@@ -5567,7 +5567,7 @@
           "title": "کارگاه ابزار تعاملی و اتصال به سناریو",
           "hours": "۹۰ دقیقه",
           "readingsShort": "ابزار صفحه · Futurpreneurship",
-          "visual": "assets/methods/futures-wheel.svg",
+          "visual": "assets/methods/covers/wheel-m3-workshop.svg",
           "visualCaption": "از شاخه پیامد تا فرصت و سناریو",
           "lectureIntro": "جلسه سوم: تکمیل مرتبه ۳ در شبیه‌ساز صفحه، استخراج فرصت کسب‌وکار، و پل به سناریو و backcasting.",
           "lectureSections": [
@@ -5844,7 +5844,7 @@
           "title": "پس‌نگری در برابر پیش‌بینی",
           "hours": "۷۵ دقیقه",
           "readingsShort": "Robinson 1982 · Dreborg 1996",
-          "visual": "assets/backcasting_concept.png",
+          "visual": "assets/methods/covers/backcast-m1-forecast-vs-backcast.svg",
           "visualCaption": "از آینده مطلوب به گام‌های امروز",
           "lectureIntro": "جلسه اول <strong>پس‌نگری (Backcasting)</strong>: چرا ادامه روند برای مسائل ساختاری کافی نیست و چگونه هدف هنجاری مسیر را عوض می‌کند.",
           "lectureSections": [
@@ -5955,7 +5955,7 @@
           "title": "ساخت vision و milestoneهای معکوس",
           "hours": "۹۰ دقیقه",
           "readingsShort": "Natural Step · شبیه‌ساز صفحه",
-          "visual": "assets/backcasting_concept.png",
+          "visual": "assets/methods/covers/backcast-m2-milestones.svg",
           "visualCaption": "Vision → شکاف → سیاست → نقشه راه",
           "lectureIntro": "جلسه دوم: چهار حرکت عملی پس‌نگری و تمرین در شبیه‌ساز صفحه.",
           "lectureSections": [
@@ -6032,7 +6032,7 @@
           "title": "کیس سوئد و سیاست فوری",
           "hours": "۷۵ دقیقه",
           "readingsShort": "سوئد ۲۰۴۵ · تکلیف ترم",
-          "visual": "assets/backcasting_concept.png",
+          "visual": "assets/methods/covers/backcast-m3-sweden.svg",
           "visualCaption": "از هدف کربن‌صفر تا اقدام امروز",
           "lectureIntro": "جلسه سوم: خوانش کیس گذار سوئد، نقد محدودیت قدرت، و استخراج سه سیاست فوری برای اولین milestone.",
           "lectureSections": [

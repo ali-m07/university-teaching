@@ -1,0 +1,335 @@
+#!/usr/bin/env node
+/**
+ * Distinct per-module diagram SVGs for CLA, Futures Wheel, Backcasting,
+ * Scenario Planning, and Type-2 Fuzzy lecture decks.
+ *
+ * Each method previously reused a single generic concept image across all of
+ * its modules (and Scenarios/Type-2 even shared the exact same image with
+ * each other). This gives every module its own diagram so slide decks are
+ * not visually monotonous, matching the FITness module-cover style.
+ *
+ * English labels only (avoids RTL/encoding corruption inside SVG <text>).
+ * Output: assets/methods/covers/*.svg
+ */
+const fs = require('fs');
+const path = require('path');
+const OUT = path.join(__dirname, '..', 'assets', 'methods', 'covers');
+
+const BG = '#070a13';
+const BG2 = '#0f1729';
+const CYAN = '#00e5ff';
+const PURPLE = '#7c4dff';
+const ROSE = '#ff5a7a';
+const GREEN = '#4caf50';
+const AMBER = '#ffaa00';
+const GRAY = '#8b9bb0';
+const WHITE = '#f3f4f6';
+
+function frame(title, body, foot) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="${BG}"/><stop offset="1" stop-color="${BG2}"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="${CYAN}"/><stop offset="1" stop-color="${PURPLE}"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="${GRAY}"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="52" text-anchor="middle" fill="${WHITE}" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700">${title}</text>
+  ${body}
+  <text x="480" y="516" text-anchor="middle" fill="${GRAY}" font-family="Segoe UI,Arial,sans-serif" font-size="14">${foot}</text>
+</svg>`;
+}
+
+const files = {};
+
+/* ---------------------------- CLA · 3 modules ---------------------------- */
+
+files['cla-m1-four-layers.svg'] = frame('CLA · Four Layers of Causal Analysis', `
+  ${[
+    [480, 130, 210, 60, 'Litany', CYAN, 'headlines, statistics'],
+    [480, 210, 260, 60, 'Systemic', PURPLE, 'policy, markets, infrastructure'],
+    [480, 290, 310, 60, 'Worldview', AMBER, 'discourse, legitimacy'],
+    [480, 370, 360, 60, 'Myth / Metaphor', ROSE, 'collective story']
+  ].map(([cx, cy, w, h, label, c, sub]) => `
+  <rect x="${cx - w / 2}" y="${cy - h / 2}" width="${w}" height="${h}" rx="12" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${cx}" y="${cy - 4}" text-anchor="middle" fill="${c}" font-size="17" font-weight="700">${label}</text>
+  <text x="${cx}" y="${cy + 16}" text-anchor="middle" fill="${GRAY}" font-size="11">${sub}</text>`).join('')}
+  <path d="M480 160 V180" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M480 240 V260" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M480 320 V340" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="150" y="180" fill="${GRAY}" font-size="13">Stop here =</text>
+  <text x="150" y="200" fill="${GRAY}" font-size="13">description only</text>
+  <text x="720" y="360" fill="${CYAN}" font-size="13">Go deeper =</text>
+  <text x="720" y="380" fill="${CYAN}" font-size="13">alternative futures</text>
+`, 'Inayatullah (1998, 2004) · Module M1');
+
+files['cla-m2-tech-case.svg'] = frame('CLA on a Tech Case · GenAI &amp; Platforms', `
+  <rect x="90" y="110" width="360" height="330" rx="16" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="270" y="150" text-anchor="middle" fill="${CYAN}" font-size="18" font-weight="700">Litany → Systemic</text>
+  <text x="270" y="185" text-anchor="middle" fill="${WHITE}" font-size="13">"AI replaces jobs"</text>
+  <text x="270" y="215" text-anchor="middle" fill="${GRAY}" font-size="13">compute, cloud rents,</text>
+  <text x="270" y="235" text-anchor="middle" fill="${GRAY}" font-size="13">model ownership, data law</text>
+  <line x1="120" y1="270" x2="420" y2="270" stroke="${GRAY}" stroke-opacity="0.4"/>
+  <text x="270" y="300" text-anchor="middle" fill="${WHITE}" font-size="13">Platform power</text>
+  <text x="270" y="325" text-anchor="middle" fill="${GRAY}" font-size="13">who sets the rules of</text>
+  <text x="270" y="345" text-anchor="middle" fill="${GRAY}" font-size="13">the marketplace?</text>
+  <rect x="510" y="110" width="360" height="330" rx="16" fill="#152035" stroke="${ROSE}" stroke-width="2"/>
+  <text x="690" y="150" text-anchor="middle" fill="${ROSE}" font-size="18" font-weight="700">Worldview → Myth</text>
+  <text x="690" y="190" text-anchor="middle" fill="${WHITE}" font-size="13">"Neutral technology"</text>
+  <text x="690" y="215" text-anchor="middle" fill="${GRAY}" font-size="13">vs. "national AI race"</text>
+  <line x1="540" y1="270" x2="840" y2="270" stroke="${GRAY}" stroke-opacity="0.4"/>
+  <text x="690" y="305" text-anchor="middle" fill="${AMBER}" font-size="14" font-weight="700">All-knowing machine</text>
+  <text x="690" y="330" text-anchor="middle" fill="${GRAY}" font-size="13">vs. co-worker tool</text>
+  <path d="M450 275 H510" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+`, 'Case: generative AI &amp; platforms · Module M2');
+
+files['cla-m3-alt-metaphor.svg'] = frame('From Alternative Metaphor to Scenario', `
+  <circle cx="200" cy="270" r="90" fill="#152035" stroke="${ROSE}" stroke-width="2"/>
+  <text x="200" y="260" text-anchor="middle" fill="${ROSE}" font-size="16" font-weight="700">Old myth</text>
+  <text x="200" y="285" text-anchor="middle" fill="${GRAY}" font-size="12">"machine knows best"</text>
+  <path d="M300 270 H400" stroke="url(#accent)" stroke-width="3" marker-end="url(#arrow)"/>
+  <circle cx="500" cy="270" r="90" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="500" y="260" text-anchor="middle" fill="${CYAN}" font-size="16" font-weight="700">New metaphor</text>
+  <text x="500" y="285" text-anchor="middle" fill="${GRAY}" font-size="12">"co-worker in the loop"</text>
+  <path d="M600 270 H700" stroke="url(#accent)" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="710" y="200" width="180" height="140" rx="14" fill="#152035" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="800" y="255" text-anchor="middle" fill="${PURPLE}" font-size="16" font-weight="700">Scenario</text>
+  <text x="800" y="280" text-anchor="middle" fill="${GRAY}" font-size="12">and Futures Wheel</text>
+  <text x="480" y="410" text-anchor="middle" fill="${GRAY}" font-size="14">A good metaphor changes what looks possible, not just what is said.</text>
+`, 'Bridge to Wheel &amp; scenarios · Module M3');
+
+/* --------------------------- Wheel · 3 modules --------------------------- */
+
+files['wheel-m1-cascade.svg'] = frame('Futures Wheel · Chain-Reaction Logic', `
+  <circle cx="480" cy="270" r="62" fill="#102030" stroke="${CYAN}" stroke-width="3"/>
+  <text x="480" y="266" text-anchor="middle" fill="${CYAN}" font-size="15" font-weight="700">Core</text>
+  <text x="480" y="286" text-anchor="middle" fill="${WHITE}" font-size="12">event / trend</text>
+  ${[
+    [480, 130, 'First-order', PURPLE],
+    [700, 200, 'First-order', PURPLE],
+    [700, 340, 'First-order', PURPLE],
+    [260, 340, 'First-order', PURPLE],
+    [260, 200, 'First-order', PURPLE]
+  ].map(([x, y, label, c], i) => `
+  <line x1="480" y1="270" x2="${x}" y2="${y}" stroke="${c}" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="${x}" cy="${y}" r="34" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${x}" y="${y + 4}" text-anchor="middle" fill="${WHITE}" font-size="10" font-weight="600">${label}</text>`).join('')}
+  <line x1="700" y1="200" x2="850" y2="150" stroke="${AMBER}" stroke-opacity="0.6" stroke-width="1.5"/>
+  <circle cx="870" cy="140" r="24" fill="#152035" stroke="${AMBER}" stroke-width="1.5"/>
+  <text x="870" y="144" text-anchor="middle" fill="${AMBER}" font-size="9">2nd</text>
+  <line x1="260" y1="340" x2="110" y2="400" stroke="${AMBER}" stroke-opacity="0.6" stroke-width="1.5"/>
+  <circle cx="90" cy="410" r="24" fill="#152035" stroke="${AMBER}" stroke-width="1.5"/>
+  <text x="90" y="414" text-anchor="middle" fill="${AMBER}" font-size="9">2nd</text>
+  <text x="480" y="470" text-anchor="middle" fill="${GRAY}" font-size="14">Ask "then what?" twice: first-order impacts spawn second-order ones.</text>
+`, 'Glenn (1972, 2009) · Module M1');
+
+files['wheel-m2-steep.svg'] = frame('11-Step Process &amp; the STEEP Lens', `
+  <circle cx="480" cy="270" r="66" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="480" y="266" text-anchor="middle" fill="${CYAN}" font-size="15" font-weight="700">Core</text>
+  <text x="480" y="286" text-anchor="middle" fill="${WHITE}" font-size="11">event</text>
+  ${[
+    [480, 120, 'Social', CYAN],
+    [680, 190, 'Technological', PURPLE],
+    [640, 380, 'Economic', GREEN],
+    [320, 380, 'Environmental', AMBER],
+    [280, 190, 'Political', ROSE]
+  ].map(([x, y, label, c]) => `
+  <line x1="480" y1="270" x2="${x}" y2="${y}" stroke="${c}" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="${x}" cy="${y}" r="42" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${x}" y="${y + 5}" text-anchor="middle" fill="${WHITE}" font-size="12" font-weight="600">${label}</text>`).join('')}
+  <text x="480" y="480" text-anchor="middle" fill="${GRAY}" font-size="14">Each STEEP branch is scored lightly for plausibility and impact.</text>
+`, 'Structured branching · Module M2');
+
+files['wheel-m3-workshop.svg'] = frame('Cascade Builder → Scenario Bridge', `
+  <rect x="70" y="150" width="260" height="240" rx="14" fill="#152035" stroke="${CYAN}" stroke-width="2"/>
+  <text x="200" y="200" text-anchor="middle" fill="${CYAN}" font-size="17" font-weight="700">Cascade builder</text>
+  <text x="200" y="235" text-anchor="middle" fill="${GRAY}" font-size="12">tool: drag branches,</text>
+  <text x="200" y="255" text-anchor="middle" fill="${GRAY}" font-size="12">tag STEEP, score impact</text>
+  <path d="M340 270 H400" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="410" y="150" width="200" height="240" rx="14" fill="#102030" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="510" y="210" text-anchor="middle" fill="${PURPLE}" font-size="16" font-weight="700">Cluster</text>
+  <text x="510" y="235" text-anchor="middle" fill="${GRAY}" font-size="12">group branches into</text>
+  <text x="510" y="255" text-anchor="middle" fill="${GRAY}" font-size="12">2-3 driving forces</text>
+  <path d="M620 270 H680" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="690" y="150" width="200" height="240" rx="14" fill="#152035" stroke="${ROSE}" stroke-width="2"/>
+  <text x="790" y="210" text-anchor="middle" fill="${ROSE}" font-size="16" font-weight="700">Scenario</text>
+  <text x="790" y="235" text-anchor="middle" fill="${GRAY}" font-size="12">feed forces into a</text>
+  <text x="790" y="255" text-anchor="middle" fill="${GRAY}" font-size="12">2x2 matrix</text>
+`, 'Term-long workshop link · Module M3');
+
+/* ------------------------- Backcasting · 3 modules ------------------------ */
+
+files['backcast-m1-forecast-vs-backcast.svg'] = frame('Forecasting vs. Backcasting', `
+  <circle cx="220" cy="270" r="18" fill="${GRAY}"/>
+  <text x="220" y="248" text-anchor="middle" fill="${GRAY}" font-size="13">Today</text>
+  <path d="M240 270 H700" stroke="${GRAY}" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="470" y="255" text-anchor="middle" fill="${GRAY}" font-size="14">Forecast: extend the present forward</text>
+  <circle cx="720" cy="270" r="18" fill="${GRAY}" fill-opacity="0.6"/>
+  <text x="720" y="300" text-anchor="middle" fill="${GRAY}" font-size="12">probable future</text>
+  <circle cx="720" cy="400" r="22" fill="#102030" stroke="${CYAN}" stroke-width="3"/>
+  <text x="720" y="440" text-anchor="middle" fill="${CYAN}" font-size="14" font-weight="700">Desired future</text>
+  <path d="M700 400 H240" stroke="url(#accent)" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="470" y="425" text-anchor="middle" fill="${CYAN}" font-size="14">Backcast: work backward from the vision</text>
+  <circle cx="220" cy="400" r="18" fill="${CYAN}" fill-opacity="0.5"/>
+  <text x="220" y="430" text-anchor="middle" fill="${CYAN}" font-size="12">today's first move</text>
+`, 'Two planning paradigms · Module M1');
+
+files['backcast-m2-milestones.svg'] = frame('Vision First, Then Reverse Milestones', `
+  <circle cx="840" cy="150" r="46" fill="#102030" stroke="${CYAN}" stroke-width="3"/>
+  <text x="840" y="146" text-anchor="middle" fill="${CYAN}" font-size="14" font-weight="700">Vision</text>
+  <text x="840" y="166" text-anchor="middle" fill="${GRAY}" font-size="11">target year</text>
+  ${[
+    [680, 220, 'M3'],
+    [520, 290, 'M2'],
+    [360, 360, 'M1']
+  ].map(([x, y, label]) => `
+  <circle cx="${x}" cy="${y}" r="34" fill="#152035" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="${x}" y="${y + 4}" text-anchor="middle" fill="${WHITE}" font-size="13" font-weight="700">${label}</text>`).join('')}
+  <path d="M806 176 L706 202" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M654 240 L546 272" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M494 312 L386 344" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="200" cy="420" r="26" fill="#152035" stroke="${GREEN}" stroke-width="2"/>
+  <text x="200" y="424" text-anchor="middle" fill="${GREEN}" font-size="11" font-weight="700">Today</text>
+  <path d="M334 372 L228 404" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="480" y="490" text-anchor="middle" fill="${GRAY}" font-size="14">Each milestone is a testable, dated step, not an aspiration.</text>
+`, 'Reverse-engineered path · Module M2');
+
+files['backcast-m3-sweden.svg'] = frame('Sweden 2045 · From Target to Policy Now', `
+  <rect x="700" y="120" width="180" height="120" rx="14" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="790" y="170" text-anchor="middle" fill="${CYAN}" font-size="18" font-weight="700">2045</text>
+  <text x="790" y="198" text-anchor="middle" fill="${GRAY}" font-size="12">net-zero target</text>
+  <path d="M690 200 H610" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="90" y="290" width="200" height="90" rx="12" fill="#152035" stroke="${AMBER}" stroke-width="2"/>
+  <text x="190" y="330" text-anchor="middle" fill="${AMBER}" font-size="14" font-weight="700">Policy 1</text>
+  <text x="190" y="352" text-anchor="middle" fill="${GRAY}" font-size="11">immediate, no-regret</text>
+  <rect x="310" y="290" width="200" height="90" rx="12" fill="#152035" stroke="${AMBER}" stroke-width="2"/>
+  <text x="410" y="330" text-anchor="middle" fill="${AMBER}" font-size="14" font-weight="700">Policy 2</text>
+  <text x="410" y="352" text-anchor="middle" fill="${GRAY}" font-size="11">immediate, no-regret</text>
+  <rect x="530" y="290" width="200" height="90" rx="12" fill="#152035" stroke="${AMBER}" stroke-width="2"/>
+  <text x="630" y="330" text-anchor="middle" fill="${AMBER}" font-size="14" font-weight="700">Policy 3</text>
+  <text x="630" y="352" text-anchor="middle" fill="${GRAY}" font-size="11">immediate, no-regret</text>
+  <path d="M610 260 C480 260 320 260 190 285" stroke="${GRAY}" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+  <path d="M610 260 C560 260 460 275 410 285" stroke="${GRAY}" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+  <path d="M610 260 C620 265 630 275 630 285" stroke="${GRAY}" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+  <text x="400" y="440" text-anchor="middle" fill="${GRAY}" font-size="14">The distant target constrains which policies count as urgent today.</text>
+`, 'Power limits &amp; urgent policy · Module M3');
+
+/* ------------------------- Scenarios · 3 modules -------------------------- */
+
+files['scenarios-m1-cone.svg'] = frame('Scenario as Strategic Survival', `
+  <circle cx="180" cy="270" r="16" fill="${WHITE}"/>
+  <text x="180" y="245" text-anchor="middle" fill="${GRAY}" font-size="13">Shell, 1972</text>
+  <path d="M196 262 C420 190 640 150 860 130" stroke="${CYAN}" stroke-width="2" fill="none"/>
+  <path d="M196 270 C420 270 640 270 860 270" stroke="${GRAY}" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+  <path d="M196 278 C420 350 640 390 860 410" stroke="${PURPLE}" stroke-width="2" fill="none"/>
+  <text x="880" y="126" fill="${CYAN}" font-size="13">Oil shock scenario</text>
+  <text x="880" y="274" fill="${GRAY}" font-size="13">Single "most likely" forecast</text>
+  <text x="880" y="414" fill="${PURPLE}" font-size="13">Alternative scenario</text>
+  <rect x="640" y="90" width="24" height="24" fill="${AMBER}"/>
+  <text x="700" y="108" fill="${AMBER}" font-size="13">1973 shock: inside the cone, not the single line</text>
+  <text x="480" y="470" text-anchor="middle" fill="${GRAY}" font-size="14">Wack's lesson: rehearse several futures so no single shock is a surprise.</text>
+`, 'Wack (1985, HBR) · Module M1');
+
+files['scenarios-m2-matrix.svg'] = frame('Critical Uncertainty · 2×2 Matrix', `
+  <line x1="480" y1="110" x2="480" y2="440" stroke="${GRAY}" stroke-width="2"/>
+  <line x1="180" y1="270" x2="780" y2="270" stroke="${GRAY}" stroke-width="2"/>
+  <text x="480" y="95" text-anchor="middle" fill="${GRAY}" font-size="13">Uncertainty axis A ↑</text>
+  <text x="785" y="275" fill="${GRAY}" font-size="13">Uncertainty axis B →</text>
+  <rect x="300" y="130" width="170" height="130" rx="12" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="385" y="200" text-anchor="middle" fill="${CYAN}" font-size="15" font-weight="700">Scenario A</text>
+  <rect x="490" y="130" width="170" height="130" rx="12" fill="#152035" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="575" y="200" text-anchor="middle" fill="${PURPLE}" font-size="15" font-weight="700">Scenario B</text>
+  <rect x="300" y="280" width="170" height="130" rx="12" fill="#152035" stroke="${AMBER}" stroke-width="2"/>
+  <text x="385" y="350" text-anchor="middle" fill="${AMBER}" font-size="15" font-weight="700">Scenario C</text>
+  <rect x="490" y="280" width="170" height="130" rx="12" fill="#152035" stroke="${ROSE}" stroke-width="2"/>
+  <text x="575" y="350" text-anchor="middle" fill="${ROSE}" font-size="15" font-weight="700">Scenario D</text>
+`, 'Two axes, four logics · Module M2');
+
+files['scenarios-m3-indicators.svg'] = frame('Early Indicators &amp; No-Regret Moves', `
+  <circle cx="480" cy="270" r="60" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="480" y="266" text-anchor="middle" fill="${CYAN}" font-size="14" font-weight="700">2×2 matrix</text>
+  <text x="480" y="286" text-anchor="middle" fill="${GRAY}" font-size="11">from M2</text>
+  ${[
+    [230, 150, 'Indicator', AMBER],
+    [730, 150, 'Indicator', AMBER],
+    [230, 390, 'No-regret', GREEN],
+    [730, 390, 'No-regret', GREEN]
+  ].map(([x, y, label, c]) => `
+  <line x1="480" y1="270" x2="${x}" y2="${y}" stroke="${c}" stroke-opacity="0.45" stroke-width="2"/>
+  <rect x="${x - 70}" y="${y - 34}" width="140" height="68" rx="12" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${x}" y="${y + 4}" text-anchor="middle" fill="${c}" font-size="13" font-weight="700">${label}</text>`).join('')}
+  <text x="480" y="480" text-anchor="middle" fill="${GRAY}" font-size="14">Watch signals that reveal which quadrant is unfolding; act on moves that pay off in all of them.</text>
+`, 'Monitoring &amp; strategy · Module M3');
+
+/* -------------------------- Type-2 Fuzzy · 4 modules ----------------------- */
+
+files['type2-m1-membership.svg'] = frame('Type-1 Fuzzy Sets &amp; Linguistic Variables', `
+  <line x1="120" y1="400" x2="860" y2="400" stroke="${GRAY}" stroke-width="2"/>
+  <line x1="120" y1="400" x2="120" y2="120" stroke="${GRAY}" stroke-width="2"/>
+  <text x="490" y="430" text-anchor="middle" fill="${GRAY}" font-size="13">signal strength →</text>
+  <text x="100" y="110" text-anchor="middle" fill="${GRAY}" font-size="13">μ(x)</text>
+  <path d="M160 400 L280 180 L400 400" stroke="${CYAN}" stroke-width="3" fill="none"/>
+  <text x="280" y="160" text-anchor="middle" fill="${CYAN}" font-size="13" font-weight="700">Weak</text>
+  <path d="M340 400 L480 180 L620 400" stroke="${PURPLE}" stroke-width="3" fill="none"/>
+  <text x="480" y="160" text-anchor="middle" fill="${PURPLE}" font-size="13" font-weight="700">Moderate</text>
+  <path d="M560 400 L700 180 L840 400" stroke="${ROSE}" stroke-width="3" fill="none"/>
+  <text x="700" y="160" text-anchor="middle" fill="${ROSE}" font-size="13" font-weight="700">Strong</text>
+  <text x="480" y="480" text-anchor="middle" fill="${GRAY}" font-size="14">One crisp curve per label, but where experts disagree, a single line hides that disagreement.</text>
+`, 'Why crisp membership is not enough · Module M1');
+
+files['type2-m2-fou.svg'] = frame('Interval Type-2 · Footprint of Uncertainty', `
+  <line x1="120" y1="400" x2="860" y2="400" stroke="${GRAY}" stroke-width="2"/>
+  <line x1="120" y1="400" x2="120" y2="120" stroke="${GRAY}" stroke-width="2"/>
+  <path d="M220 400 L480 150 L740 400 L480 260 Z" fill="${PURPLE}" fill-opacity="0.25" stroke="${PURPLE}" stroke-width="2"/>
+  <path d="M280 400 L480 220 L680 400 L480 300 Z" fill="${CYAN}" fill-opacity="0.35" stroke="${CYAN}" stroke-width="2"/>
+  <text x="480" y="140" text-anchor="middle" fill="${PURPLE}" font-size="13" font-weight="700">Upper membership function</text>
+  <text x="480" y="322" text-anchor="middle" fill="${CYAN}" font-size="13" font-weight="700">Lower membership function</text>
+  <text x="850" y="270" text-anchor="end" fill="${WHITE}" font-size="12">FOU = band between the two</text>
+  <circle cx="220" cy="150" r="6" fill="${AMBER}"/><text x="240" y="155" fill="${AMBER}" font-size="12">Expert A</text>
+  <circle cx="220" cy="175" r="6" fill="${ROSE}"/><text x="240" y="180" fill="${ROSE}" font-size="12">Expert B</text>
+  <circle cx="220" cy="200" r="6" fill="${GREEN}"/><text x="240" y="205" fill="${GREEN}" font-size="12">Expert C</text>
+`, 'Three experts, one band · Module M2');
+
+files['type2-m3-pipeline.svg'] = frame('Fuzzy System · Rule Base &amp; Type-Reduction', `
+  ${[
+    [140, 'Fuzzify', CYAN, 'crisp → fuzzy'],
+    [340, 'Rule base', PURPLE, 'Mamdani IF-THEN'],
+    [540, 'Type-reduce', AMBER, 'IT2 → Type-1'],
+    [740, 'Defuzzify', GREEN, 'fuzzy → crisp']
+  ].map(([x, label, c, sub], i) => `
+  <rect x="${x - 80}" y="200" width="160" height="140" rx="14" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${x}" y="260" text-anchor="middle" fill="${c}" font-size="16" font-weight="700">${label}</text>
+  <text x="${x}" y="285" text-anchor="middle" fill="${GRAY}" font-size="11">${sub}</text>
+  ${i < 3 ? `<path d="M${x + 80} 270 H${x + 140}" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>` : ''}`).join('')}
+  <text x="480" y="410" text-anchor="middle" fill="${GRAY}" font-size="14">Type-reduction is the extra step IT2 adds before ordinary defuzzification.</text>
+`, 'Data path through the system · Module M3');
+
+files['type2-m4-workshop.svg'] = frame('IT2 Workshop → Foresight Memo', `
+  <rect x="90" y="150" width="230" height="230" rx="16" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="205" y="210" text-anchor="middle" fill="${CYAN}" font-size="17" font-weight="700">IT2 signal</text>
+  <text x="205" y="240" text-anchor="middle" fill="${GRAY}" font-size="12">weak-signal rating</text>
+  <text x="205" y="262" text-anchor="middle" fill="${GRAY}" font-size="12">with expert disagreement</text>
+  <path d="M330 265 H390" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="400" y="150" width="230" height="230" rx="16" fill="#152035" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="515" y="210" text-anchor="middle" fill="${PURPLE}" font-size="17" font-weight="700">Foresight bridge</text>
+  <text x="515" y="240" text-anchor="middle" fill="${GRAY}" font-size="12">probing &amp; scenario</text>
+  <text x="515" y="262" text-anchor="middle" fill="${GRAY}" font-size="12">framing of the signal</text>
+  <path d="M640 265 H700" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="710" y="150" width="160" height="230" rx="16" fill="#152035" stroke="${GREEN}" stroke-width="2"/>
+  <text x="790" y="220" text-anchor="middle" fill="${GREEN}" font-size="16" font-weight="700">Memo</text>
+  <text x="790" y="250" text-anchor="middle" fill="${GRAY}" font-size="12">decision-ready</text>
+  <text x="790" y="270" text-anchor="middle" fill="${GRAY}" font-size="12">recommendation</text>
+`, 'Final project pipeline · Module M4');
+
+fs.mkdirSync(OUT, { recursive: true });
+for (const [name, svg] of Object.entries(files)) {
+  fs.writeFileSync(path.join(OUT, name), svg, 'utf8');
+  console.log('wrote', name);
+}
+console.log('done', Object.keys(files).length);

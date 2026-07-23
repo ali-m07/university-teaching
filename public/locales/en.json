@@ -523,7 +523,7 @@
             "title": "Scenarios as strategic survival",
             "hours": "75 min",
             "readingsShort": "Wack 1985 HBR",
-            "visual": "assets/foresight_concept.png",
+            "visual": "assets/methods/covers/scenarios-m1-cone.svg",
             "visualCaption": "From story to decision system",
             "lectureIntro": "Session 1 of <strong>strategic scenario planning</strong>: Shell and Wack. Scenarios are for mental preparedness, not for “correct prediction.”",
             "lectureSections": [
@@ -601,7 +601,7 @@
             "title": "Critical uncertainties and four logics",
             "hours": "90 min",
             "readingsShort": "Schwartz 7-step",
-            "visual": "assets/foresight_concept.png",
+            "visual": "assets/methods/covers/scenarios-m2-matrix.svg",
             "visualCaption": "Four quadrants · four narratives",
             "lectureIntro": "Session 2: pick two critical uncertainties, build a 2×2 matrix, and name a narrative for each quadrant.",
             "lectureSections": [
@@ -675,7 +675,7 @@
             "title": "Early indicators and no-regret options",
             "hours": "90 min",
             "readingsShort": "Shell · link to FITness",
-            "visual": "assets/foresight_concept.png",
+            "visual": "assets/methods/covers/scenarios-m3-indicators.svg",
             "visualCaption": "From narrative to monitoring and budget",
             "lectureIntro": "Session 3: early indicators, implications, and linking scenarios to budgeting and organizational probing (FITness language).",
             "lectureSections": [
@@ -2433,7 +2433,7 @@
           "title": "Type-1, linguistic variables, and why Type-2?",
           "hours": "90 min",
           "readingsShort": "Zadeh 1965 · 1975",
-          "visual": "assets/foresight_concept.png",
+          "visual": "assets/methods/covers/type2-m1-membership.svg",
           "visualCaption": "From binary membership to degree and interval",
           "lectureIntro": "Session 1 of <strong>Type-2 Fuzzy Logic</strong>: start from fuzzy sets and linguistic variables to see why a Delphi mean of 0.6 is often false consensus.",
           "lectureSections": [
@@ -2542,7 +2542,7 @@
           "title": "IT2, FOU, and expert disagreement",
           "hours": "90 min",
           "readingsShort": "Mendel 2001 · Karnik & Mendel",
-          "visual": "assets/foresight_concept.png",
+          "visual": "assets/methods/covers/type2-m2-fou.svg",
           "visualCaption": "Footprint of Uncertainty between upper and lower MF",
           "lectureIntro": "Session 2: Interval Type-2. The membership degree itself is an interval. FOU keeps disagreement visible before any final number for the manager.",
           "lectureSections": [
@@ -2621,7 +2621,7 @@
           "title": "Type-reduction, fuzzy systems, and rule bases",
           "hours": "90 min",
           "readingsShort": "Mendel, John, Liu 2006",
-          "visual": "assets/foresight_concept.png",
+          "visual": "assets/methods/covers/type2-m3-pipeline.svg",
           "visualCaption": "From FOU to a crisp number and linguistic rules",
           "lectureIntro": "Session 3: conceptual compression of IT2 to Type-1, Mamdani versus Takagi-Sugeno, and simple rules for foresight judgment.",
           "lectureSections": [
@@ -2699,7 +2699,7 @@
           "title": "Foresight workshop, memo, and probing",
           "hours": "90 min",
           "readingsShort": "Rohrbeck FITness · Hines cone",
-          "visual": "assets/foresight_concept.png",
+          "visual": "assets/methods/covers/type2-m4-workshop.svg",
           "visualCaption": "From FOU to board memo and 90-day pilot",
           "lectureIntro": "Session 4: close the loop. Page workshop, one-page memo, link to cone of plausibility and FITness probing, and quality critique with the Popper Diamond.",
           "lectureSections": [
@@ -4883,7 +4883,7 @@
           "title": "CLA foundations · from news to myth",
           "hours": "90 min",
           "readingsShort": "Inayatullah (1998) Futures",
-          "visual": "assets/cla_concept.png",
+          "visual": "assets/methods/covers/cla-m1-four-layers.svg",
           "visualCaption": "Four-layer pyramid · Litany to Myth/Metaphor",
           "lectureIntro": "Session 1 of <strong>Causal Layered Analysis</strong>. Goal: move past headlines into discourse and metaphor, with technology examples (GenAI, platforms, data).",
           "lectureSections": [
@@ -4996,7 +4996,7 @@
           "title": "CLA on technology · GenAI and platforms",
           "hours": "90 min",
           "readingsShort": "Page case archive",
-          "visual": "assets/cla_concept.png",
+          "visual": "assets/methods/covers/cla-m2-tech-case.svg",
           "visualCaption": "From GenAI headlines to data-power metaphors",
           "lectureIntro": "Session 2 applies CLA to technology issues: generative AI, platform power, and data surveillance. Goal: a full four-layer pass on one shared class case.",
           "lectureSections": [
@@ -5074,7 +5074,7 @@
           "title": "Alternative metaphor and scenario bridge",
           "hours": "75 min",
           "readingsShort": "CLA Reader · page workshop",
-          "visual": "assets/cla_concept.png",
+          "visual": "assets/methods/covers/cla-m3-alt-metaphor.svg",
           "visualCaption": "From deconstruction to metaphor redesign",
           "lectureIntro": "Session 3: craft a new layer-4 metaphor and connect CLA output to scenarios and policy. Without an alternative metaphor, CLA stays critique only.",
           "lectureSections": [
@@ -5389,7 +5389,7 @@
           "title": "Futures Wheel · chain-of-consequence logic",
           "hours": "75 min",
           "readingsShort": "Glenn · FRM 3.0 Wheel",
-          "visual": "assets/methods/futures-wheel.svg",
+          "visual": "assets/methods/covers/wheel-m1-cascade.svg",
           "visualCaption": "Focal event at center · 1st to 3rd order effects",
           "lectureIntro": "Session 1 of <strong>Futures Wheel</strong>: why linear analysis is not enough and how 2nd and 3rd order effects move decisions. Technology and climate examples.",
           "lectureSections": [
@@ -5467,7 +5467,7 @@
           "title": "11 steps and STEEP structuring",
           "hours": "90 min",
           "readingsShort": "Page process · Wheel models",
-          "visual": "assets/methods/futures-wheel.svg",
+          "visual": "assets/methods/covers/wheel-m2-steep.svg",
           "visualCaption": "From brainstorming to quantification and policy",
           "lectureIntro": "Session 2: operational wheel process and differences among classic, STEEP, quantitative, and action-oriented models.",
           "lectureSections": [
@@ -5541,7 +5541,7 @@
           "title": "Interactive workshop and scenario bridge",
           "hours": "90 min",
           "readingsShort": "Page tool · Futurpreneurship",
-          "visual": "assets/methods/futures-wheel.svg",
+          "visual": "assets/methods/covers/wheel-m3-workshop.svg",
           "visualCaption": "From consequence branch to opportunity and scenario",
           "lectureIntro": "Session 3: complete 3rd order in the page simulator, extract a venture opportunity, and bridge to scenarios and backcasting.",
           "lectureSections": [
@@ -5818,7 +5818,7 @@
           "title": "Backcasting versus forecasting",
           "hours": "75 min",
           "readingsShort": "Robinson 1982 · Dreborg 1996",
-          "visual": "assets/backcasting_concept.png",
+          "visual": "assets/methods/covers/backcast-m1-forecast-vs-backcast.svg",
           "visualCaption": "From desired future to today’s steps",
           "lectureIntro": "Session 1 of <strong>Backcasting</strong>: why trend continuation fails for structural problems and how a normative goal changes the path.",
           "lectureSections": [
@@ -5929,7 +5929,7 @@
           "title": "Building vision and reverse milestones",
           "hours": "90 min",
           "readingsShort": "Natural Step · page simulator",
-          "visual": "assets/backcasting_concept.png",
+          "visual": "assets/methods/covers/backcast-m2-milestones.svg",
           "visualCaption": "Vision → gap → policy → roadmap",
           "lectureIntro": "Session 2: four practical backcasting moves and practice in the page simulator.",
           "lectureSections": [
@@ -6006,7 +6006,7 @@
           "title": "Sweden case and immediate policy",
           "hours": "75 min",
           "readingsShort": "Sweden 2045 · term assignment",
-          "visual": "assets/backcasting_concept.png",
+          "visual": "assets/methods/covers/backcast-m3-sweden.svg",
           "visualCaption": "From net-zero goal to today’s action",
           "lectureIntro": "Session 3: read the Swedish transition case, critique power limits, and extract three immediate policies for the first milestone.",
           "lectureSections": [

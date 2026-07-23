@@ -22,7 +22,7 @@ registerLocale('fa', {
                     num: 'M1', id: 'm1', pickerLabel: 'منطق و تاریخچه',
                     title: 'چرخ آینده · منطق پیامدهای زنجیره‌ای', hours: '۷۵ دقیقه',
                     readingsShort: 'Glenn · FRM 3.0 Wheel',
-                    visual: 'assets/methods/futures-wheel.svg',
+                    visual: 'assets/methods/covers/wheel-m1-cascade.svg',
                     visualCaption: 'رویداد محوری در مرکز · پیامدهای مرتبه ۱ تا ۳',
                     lectureIntro: 'جلسه اول <strong>چرخ آینده</strong>: چرا تحلیل خطی کافی نیست و چگونه پیامدهای مرتبه دوم و سوم تصمیم را جابه‌جا می‌کنند. نمونه‌ها از فناوری و اقلیم.',
                     lectureSections: [
@@ -88,7 +88,7 @@ registerLocale('fa', {
                     num: 'M2', id: 'm2', pickerLabel: 'فرآیند و STEEP',
                     title: '۱۱ گام و مدل STEEP', hours: '۹۰ دقیقه',
                     readingsShort: 'فرآیند صفحه · مدل‌های Wheel',
-                    visual: 'assets/methods/futures-wheel.svg',
+                    visual: 'assets/methods/covers/wheel-m2-steep.svg',
                     visualCaption: 'از طوفان فکری تا کمی‌سازی و سیاست',
                     lectureIntro: 'جلسه دوم: فرآیند عملیاتی ترسیم چرخ و تفاوت مدل کلاسیک، STEEP، کمی و عمل‌گرا.',
                     lectureSections: [
@@ -153,7 +153,7 @@ registerLocale('fa', {
                     num: 'M3', id: 'm3', pickerLabel: 'کارگاه cascade',
                     title: 'کارگاه ابزار تعاملی و اتصال به سناریو', hours: '۹۰ دقیقه',
                     readingsShort: 'ابزار صفحه · Futurpreneurship',
-                    visual: 'assets/methods/futures-wheel.svg',
+                    visual: 'assets/methods/covers/wheel-m3-workshop.svg',
                     visualCaption: 'از شاخه پیامد تا فرصت و سناریو',
                     lectureIntro: 'جلسه سوم: تکمیل مرتبه ۳ در شبیه‌ساز صفحه، استخراج فرصت کسب‌وکار، و پل به سناریو و backcasting.',
                     lectureSections: [

@@ -22,7 +22,7 @@ registerLocale('en', {
                     num: 'M1', id: 'm1', pickerLabel: 'Logic & history',
                     title: 'Futures Wheel · chain-of-consequence logic', hours: '75 min',
                     readingsShort: 'Glenn · FRM 3.0 Wheel',
-                    visual: 'assets/methods/futures-wheel.svg',
+                    visual: 'assets/methods/covers/wheel-m1-cascade.svg',
                     visualCaption: 'Focal event at center · 1st to 3rd order effects',
                     lectureIntro: 'Session 1 of <strong>Futures Wheel</strong>: why linear analysis is not enough and how 2nd and 3rd order effects move decisions. Technology and climate examples.',
                     lectureSections: [
@@ -88,7 +88,7 @@ registerLocale('en', {
                     num: 'M2', id: 'm2', pickerLabel: 'Process & STEEP',
                     title: '11 steps and STEEP structuring', hours: '90 min',
                     readingsShort: 'Page process · Wheel models',
-                    visual: 'assets/methods/futures-wheel.svg',
+                    visual: 'assets/methods/covers/wheel-m2-steep.svg',
                     visualCaption: 'From brainstorming to quantification and policy',
                     lectureIntro: 'Session 2: operational wheel process and differences among classic, STEEP, quantitative, and action-oriented models.',
                     lectureSections: [
@@ -153,7 +153,7 @@ registerLocale('en', {
                     num: 'M3', id: 'm3', pickerLabel: 'Cascade lab',
                     title: 'Interactive workshop and scenario bridge', hours: '90 min',
                     readingsShort: 'Page tool · Futurpreneurship',
-                    visual: 'assets/methods/futures-wheel.svg',
+                    visual: 'assets/methods/covers/wheel-m3-workshop.svg',
                     visualCaption: 'From consequence branch to opportunity and scenario',
                     lectureIntro: 'Session 3: complete 3rd order in the page simulator, extract a venture opportunity, and bridge to scenarios and backcasting.',
                     lectureSections: [
