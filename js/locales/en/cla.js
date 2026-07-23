@@ -20,7 +20,7 @@ registerLocale('en', {
         },
         heroTag: 'Sohail Inayatullah',
         heroTitle: 'Causal Layered Analysis (CLA)',
-        heroSub: 'A deep foresight method for breaking surface problems apart, exploring discursive and civilizational roots, and creating alternative metaphors for transformative scenarios.',
+        heroSub: 'A deep method for breaking surface problems apart and reaching their discursive and mythic roots. For researchers and policymakers: before drafting any clause, see which worldview actually shapes the decision, and how to change it.',
         theoryTitle: 'CLA foundations and Foucault\'s genealogy',
         theoryLead: 'CLA starts where surface news stops: when you ask “why is this an issue at all?” and the answer is more than headlines and stats.',
         theoryNarrative: [

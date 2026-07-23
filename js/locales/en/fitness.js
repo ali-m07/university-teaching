@@ -21,7 +21,7 @@ registerLocale('en', {
         hero: {
             tag: 'Dynamic Capabilities Theory · René Rohrbeck',
             title: 'Organizational Foresight Maturity Model & Future FITness',
-            subtitle: 'How organizations move from static Future Readiness to dynamic Future FITness to shape tomorrow\'s markets · grounded in Siemens, Deutsche Telekom field studies, and turbulent-industry benchmarks.'
+            subtitle: 'How organizations move from static Future Readiness to dynamic Future FITness to shape tomorrow\u2019s markets. For the board: can the organization see, explore, and probe the future, or merely report on it? \u00b7 grounded in Siemens, Deutsche Telekom field studies, and turbulent-industry benchmarks.'
         },
         theoryTag: 'Rohrbeck framework',
         theoryTitle: 'From foresight reports to dynamic organizational capability',

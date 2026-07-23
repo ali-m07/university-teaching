@@ -7,6 +7,7 @@
     "home": "Home",
     "about": "About",
     "articles": "Articles",
+    "presentations": "Decks",
     "methods": "Foresight Methods",
     "cv": "CV",
     "fitness": "Future FITness",
@@ -27,10 +28,10 @@
   "index": {
     "badge": "FORESIGHT HUB",
     "logoName": "Ali Mansouri",
-    "heroEyebrow": "Strategic foresight researcher · Tehran / Snapp",
+    "heroEyebrow": "PhD researcher in strategic foresight · Solutions Architect at Snapp",
     "heroName": "Ali Mansouri",
-    "heroTitle": "I connect future scenarios to infrastructure that must come out of the hardest pressure still alive and well.",
-    "heroSub": "PhD researcher at the University of Tehran and Solutions Architect at Snapp for cloud and enterprise AI. My focus is strategic foresight: bridging scenarios with living infrastructure.",
+    "heroTitle": "I connect future scenarios and trends to executable infrastructure, from the classroom and the boardroom to cloud and AI systems.",
+    "heroSub": "PhD researcher in Futures Studies at the University of Tehran and Solutions Architect for cloud and enterprise AI at Snapp. Here I teach and deploy foresight methods (CLA, Futures Wheel, scenarios, backcasting, FITness) as operational practice, not just description.",
     "linkEmail": "Email",
     "credentialPhd": "PhD · University of Tehran",
     "credentialFocus": "Strategic foresight · emerging technology",
@@ -179,9 +180,9 @@
     "methodsLink": "Foresight Methods",
     "bioTitle": "",
     "spaceTag": "Approach",
-    "spaceTitle": "A scenario matters when it reaches the tomorrow of systems",
-    "spaceP1": "For me, strategic foresight is not daydreaming on paper. A scenario earns its keep when it can be implemented for the tomorrow of real systems, not only for the next meeting slide.",
-    "spaceP2": "FORESIGHT HUB is where FITness, Futures Wheel, CLA, and backcasting meet lived experience building intelligent systems and scalable infrastructure.",
+    "spaceTitle": "Strategic foresight, made operational",
+    "spaceP1": "I treat foresight as more than a report: scenarios and scanning should end in a decision, a syllabus, or a technical implementation. That is why I research, teach, and build systems in parallel.",
+    "spaceP2": "FORESIGHT HUB is where I put foresight methods (FITness, Futures Wheel, CLA, backcasting) next to real experience building cloud and AI systems.",
     "pathTag": "Path",
     "pathTitle": "How my path took shape",
     "pathP1": "I started in electrical engineering, widened that lens through an MBA in human resources toward organizations, and now in a PhD I am joining those loops through strategic foresight.",
@@ -208,6 +209,68 @@
         "href": "articles/"
       }
     ],
+    "methodDigestTitle": "Methods at a glance",
+    "methodDigestSub": "The five core foresight tools, in the language of decisions, not jargon.",
+    "methodDigest": [
+      {
+        "icon": "layers",
+        "name": "CLA · Causal Layered Analysis",
+        "line": "Moves past headlines and metrics to expose the deeper discourse and myth driving an issue.",
+        "href": "methods/cla.html"
+      },
+      {
+        "icon": "git-fork",
+        "name": "Futures Wheel",
+        "line": "Traces the cascading consequences of a change to the third order, so hidden surprises become visible.",
+        "href": "methods/futures-wheel.html"
+      },
+      {
+        "icon": "compass",
+        "name": "Scenario Planning",
+        "line": "Builds two to four plausible futures so today’s decision holds across more than one path.",
+        "href": "methods/scenarios.html"
+      },
+      {
+        "icon": "rewind",
+        "name": "Backcasting",
+        "line": "Starts from a desired future and works backward, mapping the roadmap and the barriers in reverse.",
+        "href": "methods/backcasting.html"
+      },
+      {
+        "icon": "activity",
+        "name": "Future FITness",
+        "line": "Audits organizational foresight maturity across five dimensions, so it never becomes shelf-ware.",
+        "href": "methods/fitness.html"
+      }
+    ],
+    "audienceTitle": "Who is this hub for?",
+    "audienceSub": "Three ways in, depending on the uncertainty you face.",
+    "audiences": [
+      {
+        "icon": "briefcase",
+        "tag": "CEOs & Boards",
+        "title": "Decisions under uncertainty",
+        "body": "Scenario planning and FITness tell you whether your organization can actually see, explore, and probe the future, or merely reports on it.",
+        "cta": "Strategic advisory",
+        "href": "mailto:ali.mansouri1998@gmail.com"
+      },
+      {
+        "icon": "rocket",
+        "tag": "Entrepreneurs & Founders",
+        "title": "From weak signal to venture",
+        "body": "From early scanning to a 90-day probe: the path that turns an emerging signal into a calculated risk and an investment.",
+        "cta": "Futurpreneurship workshop",
+        "href": "methods/futurpreneurship.html"
+      },
+      {
+        "icon": "graduation-cap",
+        "tag": "PhD students & researchers",
+        "title": "Foresight that is teachable and measurable",
+        "body": "Full syllabi, slide decks, and exam rubrics for CLA, Futures Wheel, Backcasting, and Type-2 fuzzy logic, grounded in the methods literature.",
+        "cta": "Syllabi & slide decks",
+        "href": "presentations/"
+      }
+    ],
     "philosophyTag": "Approach",
     "philP1": "Foresight should be teachable, measurable, and deployable in organizations, not just a report.",
     "philP2": "Each method has two tracks: university (syllabus, exam, rubric) and industry (workshop, deliverable, gate).",
@@ -220,9 +283,9 @@
   "aboutPage": {
     "tag": "About",
     "title": "About me",
-    "sub": "Hi, I am Ali Mansouri · futures researcher and Solutions Architect at Snapp",
-    "missionTitle": "A short story",
-    "mission": "I am a PhD researcher in Futures Studies at the University of Tehran, and at the same time a Solutions Architect at Snapp for cloud and enterprise AI systems.<br><br>My core work sounds simple and is not easy: connecting future scenarios to infrastructure that must come out of the hardest pressure still alive and well.<br><br>For me foresight is not daydreaming on paper. A scenario matters when it can be implemented for the tomorrow of systems. My lens joins systems thinking, Type-2 fuzzy logic, and CLA with hard technology realities.<br><br>FORESIGHT HUB is my personal lab and thinking workshop, where FITness, Futures Wheel, and backcasting meet experience building intelligent systems, RAG, and scalable automation.<br><br>More on the professional path in the <a href=\"https://ali-m07.github.io/resume/\" target=\"_blank\" rel=\"noopener noreferrer\">CV</a>.",
+    "sub": "The bridge between foresight theory and living infrastructure · PhD at the University of Tehran, Solutions Architect at Snapp",
+    "missionTitle": "Why this work",
+    "mission": "I hold two roles that sit next to each other on purpose: PhD researcher in Futures Studies at the University of Tehran, and Solutions Architect for cloud and enterprise AI systems at Snapp.<br><br>Strategic foresight is valuable to me when it reaches an output: a decision, a syllabus, or a technical implementation. I use these methods for action, not for reports.<br><br>My core tools are systems thinking, Type-2 fuzzy logic, CLA, scenarios, and backcasting. I keep all of them teachable, measurable, and deployable inside organizations.<br><br>FORESIGHT HUB is where I publish this work: methods, slides, workshops, and notes, alongside experience building RAG and scalable automation.<br><br>More on the professional path in the <a href=\"https://ali-m07.github.io/resume/\" target=\"_blank\" rel=\"noopener noreferrer\">CV</a>.",
     "researchFocusTitle": "Research focus",
     "researchFocus": [
       "Strategic foresight and futures studies",
@@ -239,16 +302,43 @@
       "LLM, RAG, and enterprise automation",
       "Scalable system design"
     ],
-    "closingNote": "Organizations should not wait for the future to ambush them; they should be designed for real flexibility under uncertainty.",
+    "closingNote": "The goal is for organizations to see change coming and prepare for it in advance, rather than wait and react afterwards.",
     "eduTitle": "Education",
     "edu": "PhD in Futures Studies (in progress), University of Tehran<br>MBA in Human Resources, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology",
     "contactTitle": "Contact",
-    "contact": "ali.mansouri1998@gmail.com · open to teaching, workshops, joint projects, and advisory work"
+    "contact": "ali.mansouri1998@gmail.com · open to teaching, workshops, joint projects, and advisory work",
+    "workTitle": "Work with me",
+    "workSub": "Three ways to collaborate, depending on where you stand.",
+    "workOffers": [
+      {
+        "icon": "presentation",
+        "tag": "University",
+        "title": "Teaching & syllabi",
+        "body": "Strategic foresight courses with full syllabi, slides, and exam rubrics; from CLA and the Futures Wheel to Type-2 fuzzy logic."
+      },
+      {
+        "icon": "briefcase",
+        "tag": "Organization",
+        "title": "Advisory & strategy workshop",
+        "body": "Embedding foresight in the organization: environmental scanning, scenarios, and FITness, with board-defensible deliverables."
+      },
+      {
+        "icon": "flask-conical",
+        "tag": "Research",
+        "title": "Joint project & publication",
+        "body": "Research collaboration in strategic foresight, emerging technology, and uncertainty, bridging to infrastructure and intelligent systems."
+      }
+    ]
+  },
+  "presentationsPage": {
+    "tag": "Notes & decks",
+    "title": "Lecture decks",
+    "sub": "Each session is a standalone deck. Click a card to open that module; full-screen with the F key. A complete slide library for teaching, workshops, and self-study."
   },
   "articlesPage": {
     "tag": "Articles",
     "title": "Articles",
-    "sub": "Notes on emerging technologies, systems thinking, and foresight.",
+    "sub": "Short, practical notes on foresight, emerging technology, and deciding under uncertainty, written for executives, founders, and researchers.",
     "emptyTitle": "Coming soon",
     "emptyDesc": "More pieces are on the way.",
     "articles": [
@@ -258,7 +348,7 @@
         "tag": "Corporate",
         "href": "articles/why-rohrbeck-still-matters.html",
         "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
-        "summary": "When foresight becomes shelf-ware, FITness asks whether the organization can actually see, explore, and probe the future.",
+        "summary": "The difference between an organization that sees and probes the future and one that only reports on it shows up in FITness.",
         "author": "Ali Mansouri"
       },
       {
@@ -267,7 +357,7 @@
         "tag": "CLA",
         "href": "articles/what-cla-sees-before-policy.html",
         "image": "https://jfsdigital.org/wp-content/uploads/2022/07/smart-isfahan-1-scaled-e1656742344477.jpg",
-        "summary": "Policy sits on headlines and metrics; CLA opens layers that exist before any clause is drafted.",
+        "summary": "Policy sits on headlines and metrics; before any clause is drafted, CLA opens the discourse and myth layers that actually shape the decision.",
         "author": "Ali Mansouri"
       },
       {
@@ -276,7 +366,7 @@
         "tag": "Uncertainty",
         "href": "articles/navigating-uncertainty.html",
         "image": "https://images.unsplash.com/photo-1501386761578-4fd643a2879e?auto=format&fit=crop&w=1200&q=80",
-        "summary": "When even “how uncertain are we?” is disputed, Type-2 fuzzy logic earns its place.",
+        "summary": "When even “how uncertain are we?” is disputed among stakeholders, Type-2 fuzzy logic stops a single false number from standing in for real consensus.",
         "author": "Ali Mansouri"
       },
       {
@@ -285,7 +375,7 @@
         "tag": "AI · Time",
         "href": "articles/beyond-biological-clock.html",
         "image": "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=1200&q=80",
-        "summary": "Human rhythm, org tempo, and machine latency are not the same clock.",
+        "summary": "Human rhythm, org tempo, and machine latency are not the same clock; AI decisions land only when all three are read separately.",
         "author": "Ali Mansouri"
       },
       {
@@ -294,7 +384,7 @@
         "tag": "Process",
         "href": "articles/from-toolbox-to-process.html",
         "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
-        "summary": "FRM lists methods; Hines and Bishop give managers a path.",
+        "summary": "FRM’s list of 39 methods is only a library; the Hines and Bishop Six Pillars tell you which stage you are in and where to start.",
         "author": "Ali Mansouri"
       }
     ]
@@ -352,7 +442,7 @@
   "methodsIndex": {
     "heroTag": "Syllabus & methods",
     "heroTitle": "Foresight Methods Catalog",
-    "heroSub": "Each method includes theory, university syllabus, industry track, and workshop tools, for teaching, seminars, and organizational projects.",
+    "heroSub": "Each method includes theory, a university syllabus, an industry track, and workshop tools. For teaching, organizational workshops, and self-study; from question to action.",
     "coreTitle": "Layer 1, Interactive workshops",
     "advancedTitle": "Layer 2, Extended methods",
     "note": "Each module includes <strong>founder intro</strong>, <strong>scholarly references</strong>, and an <strong>interactive workshop</strong> where available. This catalog is teaching infrastructure, not a promotional list."
@@ -362,7 +452,7 @@
       "slug": "popper-diamond",
       "heroTag": "Rafael Popper · EU Foresight",
       "heroTitle": "Popper Foresight Diamond",
-      "heroSub": "A framework to assess foresight <em>quality</em>, not prediction, but whether your exercise was truly creative, innovative, expert-driven, and interactive.",
+      "heroSub": "A framework to assess foresight <em>quality</em>. For boards and researchers: not prediction, but an answer to whether your exercise was truly creative, expert-driven, and interactive, or merely theater.",
       "history": {
         "accent": "#e040fb",
         "founderLabel": "Developer",
@@ -697,7 +787,7 @@
       "slug": "strategic-foresight",
       "heroTag": "Andy Hines & Peter Bishop",
       "heroTitle": "Strategic foresight · Six Pillars",
-      "heroSub": "Operational framework from <em>Thinking About the Future</em>: the full path from Framing to Acting, for managers, not only researchers.",
+      "heroSub": "Operational framework from <em>Thinking About the Future</em>. For managers and researchers: the full path from Framing to Acting; once you ask “which pillar are we stuck in,” you know which FRM tool to start with.",
       "history": {
         "accent": "var(--color-f)",
         "founderLabel": "Authors",
@@ -1667,7 +1757,7 @@
       "slug": "scenarios",
       "heroTag": "Shell · Schwartz · van der Heijden",
       "heroTitle": "Strategic Scenario Planning",
-      "heroSub": "Beyond FRM Chapter 19: building 2-4 plausible futures for decisions under uncertainty, not single-line forecast.",
+      "heroSub": "Build two to four plausible futures for decisions under uncertainty. For executives: today’s decision becomes robust because it is tested against more than one path, not a single-line forecast.",
       "history": {
         "accent": "var(--color-cla)",
         "founderLabel": "Pioneers",
@@ -2168,7 +2258,7 @@
       "slug": "futurpreneurship",
       "heroTag": "Foresight × Entrepreneurship",
       "heroTitle": "Futurpreneurship, Future-Driven Entrepreneurship",
-      "heroSub": "From weak signal and scenario to venture: someone who sees the future, accepts risk, and builds.",
+      "heroSub": "From weak signal and scenario to a venture. For founders: someone who sees the future, accepts the risk, and builds; with a 90-day probe instead of one large bet.",
       "history": {
         "accent": "var(--color-i)",
         "founderLabel": "Conceptual roots",
@@ -2540,7 +2630,7 @@
       "slug": "environmental-scanning",
       "heroTag": "Francis Aguilar · Chun Wei Choo",
       "heroTitle": "Environmental Scanning",
-      "heroSub": "The systematic acquisition and use of information about events, trends, and relationships outside the organization, so that opportunities and threats are noticed before they force a decision.",
+      "heroSub": "The systematic acquisition and use of information about events and trends outside the organization. For executives: opportunities and threats are seen before they force a decision, not after it is too late.",
       "history": {
         "accent": "#4caf50",
         "founderLabel": "Founders",
@@ -2907,7 +2997,7 @@
       "slug": "weak-signals",
       "heroTag": "H. Igor Ansoff · Elina Hiltunen",
       "heroTitle": "Weak Signals: Reading Change Before the Headlines Do",
-      "heroSub": "Ansoff's answer to strategic surprise: stop waiting for clear, strong information and build a <em>graduated response</em> to today's vague, scattered clues about tomorrow's discontinuities.",
+      "heroSub": "Ansoff’s answer to strategic surprise. For executives and founders: stop waiting for clear, strong information and build a <em>graduated response</em> to today’s vague, scattered clues about tomorrow’s discontinuities.",
       "history": {
         "accent": "#ffaa00",
         "founderLabel": "Originator · Key extender",
@@ -3272,7 +3362,7 @@
       "slug": "futures-literacy",
       "heroTag": "Riel Miller · UNESCO",
       "heroTitle": "Futures Literacy",
-      "heroSub": "A capability, not a forecast method: the skill of noticing <em>why</em> and <em>how</em> we use the future in present thinking, so imagination, preparation, and invention become deliberate rather than habitual.",
+      "heroSub": "A capability, not a forecast method. For researchers and executives: the skill of noticing <em>why</em> and <em>how</em> we use the future in present thinking, so imagination and preparation become deliberate rather than habitual.",
       "history": {
         "accent": "#4caf50",
         "founderLabel": "Originator",
@@ -3609,7 +3699,7 @@
       "slug": "type-2-fuzzy",
       "heroTag": "Zadeh · Mendel · John · IT2",
       "heroTitle": "Type-2 Fuzzy Logic",
-      "heroSub": "When even “how uncertain are we?” is disputed, a single 0.6 is not enough. IT2 spread tells you if consensus is real or just silent averaging.",
+      "heroSub": "When even “how uncertain are we?” is disputed among stakeholders, a single 0.6 is not enough. For executives and researchers: IT2 spread tells you whether consensus is real or just silent averaging.",
       "history": {
         "accent": "#00e5ff",
         "founderLabel": "Pioneers",
@@ -5854,7 +5944,7 @@
     "hero": {
       "tag": "Dynamic Capabilities Theory · René Rohrbeck",
       "title": "Organizational Foresight Maturity Model & Future FITness",
-      "subtitle": "How organizations move from static Future Readiness to dynamic Future FITness to shape tomorrow's markets · grounded in Siemens, Deutsche Telekom field studies, and turbulent-industry benchmarks."
+      "subtitle": "How organizations move from static Future Readiness to dynamic Future FITness to shape tomorrow’s markets. For the board: can the organization see, explore, and probe the future, or merely report on it? · grounded in Siemens, Deutsche Telekom field studies, and turbulent-industry benchmarks."
     },
     "theoryTag": "Rohrbeck framework",
     "theoryTitle": "From foresight reports to dynamic organizational capability",
@@ -7812,7 +7902,7 @@
     },
     "heroTag": "Sohail Inayatullah",
     "heroTitle": "Causal Layered Analysis (CLA)",
-    "heroSub": "A deep foresight method for breaking surface problems apart, exploring discursive and civilizational roots, and creating alternative metaphors for transformative scenarios.",
+    "heroSub": "A deep method for breaking surface problems apart and reaching their discursive and mythic roots. For researchers and policymakers: before drafting any clause, see which worldview actually shapes the decision, and how to change it.",
     "theoryTitle": "CLA foundations and Foucault's genealogy",
     "theoryLead": "CLA starts where surface news stops: when you ask “why is this an issue at all?” and the answer is more than headlines and stats.",
     "theoryNarrative": [
@@ -8446,7 +8536,7 @@
     },
     "heroTag": "Jerome Glenn",
     "heroTitle": "Interactive Futures Wheel Simulator",
-    "heroSub": "Sequential causal consequence mapping, tracing 1st, 2nd, and 3rd order effects of Iran's climate crisis.",
+    "heroSub": "Trace the cascading consequences of a change to the third order. For managers and founders: surface hidden surprises before it is too late, with a live case of Iran’s climate crisis.",
     "boeing": {
       "title": "Case Study: Boeing's Pilotless Passenger Aircraft Assessment",
       "intro": "Boeing used a Structured Futures Wheel to assess fully autonomous commercial aircraft through 2045:",
@@ -8962,7 +9052,7 @@
     },
     "heroTag": "John B. Robinson",
     "heroTitle": "Strategic Backcasting",
-    "heroSub": "Start from a normative future and work backward, mapping policies, barriers, and practical steps needed from today.",
+    "heroSub": "Start from a desired future and lay the roadmap in reverse. For policymakers and founders: when the normative destination is clear, the barriers of power and the first 90-day move come into focus.",
     "methodologyTag": "Transition Framework",
     "methodologyTitle": "How Backcasting Works",
     "methodologyLead": "Backcasting runs opposite to forecasting: first you name the desired future, then you walk backward and ask what path must have been taken.",

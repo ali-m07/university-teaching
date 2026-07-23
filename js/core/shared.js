@@ -66,6 +66,7 @@ function getNavItems() {
     return [
         ['home', 'nav.home'],
         ['articles/', 'nav.articles'],
+        ['presentations/', 'nav.presentations'],
         ['methods/', 'nav.methods'],
         ['about/', 'nav.about'],
         ['https://ali-m07.github.io/resume/', 'nav.cv', true]

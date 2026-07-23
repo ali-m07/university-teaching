@@ -9,9 +9,9 @@ registerLocale('en', {
         methodsLink: 'Foresight Methods',
         bioTitle: '',
         spaceTag: 'Approach',
-        spaceTitle: 'A scenario matters when it reaches the tomorrow of systems',
-        spaceP1: 'For me, strategic foresight is not daydreaming on paper. A scenario earns its keep when it can be implemented for the tomorrow of real systems, not only for the next meeting slide.',
-        spaceP2: 'FORESIGHT HUB is where FITness, Futures Wheel, CLA, and backcasting meet lived experience building intelligent systems and scalable infrastructure.',
+        spaceTitle: 'Strategic foresight, made operational',
+        spaceP1: 'I treat foresight as more than a report: scenarios and scanning should end in a decision, a syllabus, or a technical implementation. That is why I research, teach, and build systems in parallel.',
+        spaceP2: 'FORESIGHT HUB is where I put foresight methods (FITness, Futures Wheel, CLA, backcasting) next to real experience building cloud and AI systems.',
         pathTag: 'Path',
         pathTitle: 'How my path took shape',
         pathP1: 'I started in electrical engineering, widened that lens through an MBA in human resources toward organizations, and now in a PhD I am joining those loops through strategic foresight.',
@@ -28,6 +28,43 @@ registerLocale('en', {
             { icon: 'library', title: 'Foresight methods', desc: 'Syllabi and operational methods', href: 'methods/' },
             { icon: 'pen-line', title: 'Articles and notes', desc: 'Emerging technology, systems thinking, and uncertainty', href: 'articles/' }
         ],
+        methodDigestTitle: 'Methods at a glance',
+        methodDigestSub: 'The five core foresight tools, in the language of decisions, not jargon.',
+        methodDigest: [
+            { icon: 'layers', name: 'CLA · Causal Layered Analysis', line: 'Moves past headlines and metrics to expose the deeper discourse and myth driving an issue.', href: 'methods/cla.html' },
+            { icon: 'git-fork', name: 'Futures Wheel', line: 'Traces the cascading consequences of a change to the third order, so hidden surprises become visible.', href: 'methods/futures-wheel.html' },
+            { icon: 'compass', name: 'Scenario Planning', line: 'Builds two to four plausible futures so today\u2019s decision holds across more than one path.', href: 'methods/scenarios.html' },
+            { icon: 'rewind', name: 'Backcasting', line: 'Starts from a desired future and works backward, mapping the roadmap and the barriers in reverse.', href: 'methods/backcasting.html' },
+            { icon: 'activity', name: 'Future FITness', line: 'Audits organizational foresight maturity across five dimensions, so it never becomes shelf-ware.', href: 'methods/fitness.html' }
+        ],
+        audienceTitle: 'Who is this hub for?',
+        audienceSub: 'Three ways in, depending on the uncertainty you face.',
+        audiences: [
+            {
+                icon: 'briefcase',
+                tag: 'CEOs & Boards',
+                title: 'Decisions under uncertainty',
+                body: 'Scenario planning and FITness tell you whether your organization can actually see, explore, and probe the future, or merely reports on it.',
+                cta: 'Strategic advisory',
+                href: 'mailto:ali.mansouri1998@gmail.com'
+            },
+            {
+                icon: 'rocket',
+                tag: 'Entrepreneurs & Founders',
+                title: 'From weak signal to venture',
+                body: 'From early scanning to a 90-day probe: the path that turns an emerging signal into a calculated risk and an investment.',
+                cta: 'Futurpreneurship workshop',
+                href: 'methods/futurpreneurship.html'
+            },
+            {
+                icon: 'graduation-cap',
+                tag: 'PhD students & researchers',
+                title: 'Foresight that is teachable and measurable',
+                body: 'Full syllabi, slide decks, and exam rubrics for CLA, Futures Wheel, Backcasting, and Type-2 fuzzy logic, grounded in the methods literature.',
+                cta: 'Syllabi & slide decks',
+                href: 'presentations/'
+            }
+        ],
         philosophyTag: 'Approach',
         philP1: 'Foresight should be teachable, measurable, and deployable in organizations, not just a report.',
         philP2: 'Each method has two tracks: university (syllabus, exam, rubric) and industry (workshop, deliverable, gate).',
@@ -40,9 +77,9 @@ registerLocale('en', {
     aboutPage: {
         tag: 'About',
         title: 'About me',
-        sub: 'Hi, I am Ali Mansouri · futures researcher and Solutions Architect at Snapp',
-        missionTitle: 'A short story',
-        mission: 'I am a PhD researcher in Futures Studies at the University of Tehran, and at the same time a Solutions Architect at Snapp for cloud and enterprise AI systems.<br><br>My core work sounds simple and is not easy: connecting future scenarios to infrastructure that must come out of the hardest pressure still alive and well.<br><br>For me foresight is not daydreaming on paper. A scenario matters when it can be implemented for the tomorrow of systems. My lens joins systems thinking, Type-2 fuzzy logic, and CLA with hard technology realities.<br><br>FORESIGHT HUB is my personal lab and thinking workshop, where FITness, Futures Wheel, and backcasting meet experience building intelligent systems, RAG, and scalable automation.<br><br>More on the professional path in the <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer">CV</a>.',
+        sub: 'The bridge between foresight theory and living infrastructure · PhD at the University of Tehran, Solutions Architect at Snapp',
+        missionTitle: 'Why this work',
+        mission: 'I hold two roles that sit next to each other on purpose: PhD researcher in Futures Studies at the University of Tehran, and Solutions Architect for cloud and enterprise AI systems at Snapp.<br><br>Strategic foresight is valuable to me when it reaches an output: a decision, a syllabus, or a technical implementation. I use these methods for action, not for reports.<br><br>My core tools are systems thinking, Type-2 fuzzy logic, CLA, scenarios, and backcasting. I keep all of them teachable, measurable, and deployable inside organizations.<br><br>FORESIGHT HUB is where I publish this work: methods, slides, workshops, and notes, alongside experience building RAG and scalable automation.<br><br>More on the professional path in the <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer">CV</a>.',
         researchFocusTitle: 'Research focus',
         researchFocus: [
             'Strategic foresight and futures studies',
@@ -59,10 +96,17 @@ registerLocale('en', {
             'LLM, RAG, and enterprise automation',
             'Scalable system design'
         ],
-        closingNote: 'Organizations should not wait for the future to ambush them; they should be designed for real flexibility under uncertainty.',
+        closingNote: 'The goal is for organizations to see change coming and prepare for it in advance, rather than wait and react afterwards.',
         eduTitle: 'Education',
         edu: 'PhD in Futures Studies (in progress), University of Tehran<br>MBA in Human Resources, Kharazmi University<br>BSc in Electrical Engineering, Qom University of Technology',
         contactTitle: 'Contact',
-        contact: 'ali.mansouri1998@gmail.com · open to teaching, workshops, joint projects, and advisory work'
+        contact: 'ali.mansouri1998@gmail.com · open to teaching, workshops, joint projects, and advisory work',
+        workTitle: 'Work with me',
+        workSub: 'Three ways to collaborate, depending on where you stand.',
+        workOffers: [
+            { icon: 'presentation', tag: 'University', title: 'Teaching & syllabi', body: 'Strategic foresight courses with full syllabi, slides, and exam rubrics; from CLA and the Futures Wheel to Type-2 fuzzy logic.' },
+            { icon: 'briefcase', tag: 'Organization', title: 'Advisory & strategy workshop', body: 'Embedding foresight in the organization: environmental scanning, scenarios, and FITness, with board-defensible deliverables.' },
+            { icon: 'flask-conical', tag: 'Research', title: 'Joint project & publication', body: 'Research collaboration in strategic foresight, emerging technology, and uncertainty, bridging to infrastructure and intelligent systems.' }
+        ]
     }
 });

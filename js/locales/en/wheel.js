@@ -20,7 +20,7 @@ registerLocale('en', Object.assign({
         },
         heroTag: 'Jerome Glenn',
         heroTitle: 'Interactive Futures Wheel Simulator',
-        heroSub: 'Sequential causal consequence mapping, tracing 1st, 2nd, and 3rd order effects of Iran\'s climate crisis.',
+        heroSub: 'Trace the cascading consequences of a change to the third order. For managers and founders: surface hidden surprises before it is too late, with a live case of Iran\u2019s climate crisis.',
         boeing: {
             title: 'Case Study: Boeing\'s Pilotless Passenger Aircraft Assessment',
             intro: 'Boeing used a Structured Futures Wheel to assess fully autonomous commercial aircraft through 2045:',

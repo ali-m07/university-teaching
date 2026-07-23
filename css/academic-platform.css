@@ -344,7 +344,7 @@ body .home-hub {
 }
 
 body .home-hub-inner {
-    max-width: 38rem;
+    max-width: 60rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -468,6 +468,290 @@ body .home-find-copy span {
     font-size: 0.92rem;
     line-height: 1.65;
     color: var(--sfh-text-muted);
+}
+
+/* —— Methods at a glance digest —— */
+body .home-digest .section-header--left {
+    margin-bottom: 1.5rem;
+}
+
+body .home-digest .section-header--left h2 {
+    font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+    max-width: 36rem;
+    color: var(--sfh-text);
+    font-weight: 600;
+}
+
+body .home-digest-grid {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--sfh-border);
+}
+
+body .home-digest-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.15rem 0;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid var(--sfh-border);
+    transition: color var(--transition-fast);
+}
+
+body .home-digest-card:hover strong {
+    color: #fff;
+}
+
+body .home-digest-card:hover .home-digest-icon {
+    color: #fff;
+    background: var(--sfh-accent-muted);
+}
+
+body .home-digest-icon {
+    flex: 0 0 auto;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: var(--sfh-accent);
+    background: rgba(61, 139, 253, 0.08);
+    transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+body .home-digest-icon svg {
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+body .home-digest-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+}
+
+body .home-digest-copy strong {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+    letter-spacing: -0.01em;
+}
+
+body .home-digest-copy span {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--sfh-text-muted);
+}
+
+/* —— Who is this hub for? audience cards —— */
+body .home-audiences {
+    margin-top: 0.5rem;
+}
+
+body .home-audiences .section-header--left {
+    margin-bottom: 1.5rem;
+}
+
+body .home-audiences .section-header--left h2 {
+    font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+    max-width: 36rem;
+    color: var(--sfh-text);
+    font-weight: 600;
+}
+
+body .home-audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+body .home-audience-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.5rem 1.35rem;
+    border: 1px solid var(--sfh-border);
+    border-radius: var(--sfh-radius-lg);
+    background: linear-gradient(180deg, rgba(23, 30, 44, 0.55), rgba(18, 24, 36, 0.35));
+    text-decoration: none;
+    color: inherit;
+    transition: border-color var(--transition-fast), transform var(--transition-fast), background var(--transition-fast);
+}
+
+body .home-audience-card:hover {
+    border-color: var(--sfh-border-strong);
+    transform: translateY(-2px);
+    background: linear-gradient(180deg, rgba(28, 36, 52, 0.7), rgba(20, 27, 40, 0.5));
+}
+
+body .home-audience-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    color: var(--sfh-accent);
+    background: var(--sfh-accent-muted);
+    margin-bottom: 0.35rem;
+}
+
+body .home-audience-icon svg {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+body .home-audience-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sfh-accent);
+}
+
+html[dir="rtl"] body .home-audience-tag {
+    letter-spacing: 0.02em;
+    text-transform: none;
+}
+
+body .home-audience-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+}
+
+body .home-audience-body {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--sfh-text-muted);
+    flex: 1;
+}
+
+body .home-audience-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+}
+
+body .home-audience-cta svg {
+    width: 0.95rem;
+    height: 0.95rem;
+}
+
+body .home-audience-card:hover .home-audience-cta {
+    color: #fff;
+}
+
+html[dir="rtl"] body .home-audience-cta svg {
+    transform: scaleX(-1);
+}
+
+@media (max-width: 760px) {
+    body .home-audience-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* —— About page · work with me —— */
+body .about-work {
+    margin-bottom: 32px;
+}
+
+body .about-work-head {
+    margin-bottom: 18px;
+}
+
+body .about-work-head h2 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+}
+
+body .about-work-head p {
+    line-height: 1.7;
+    color: var(--sfh-text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+body .about-work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+body .about-work-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.35rem 1.15rem;
+    border: 1px solid var(--sfh-border);
+    border-radius: var(--sfh-radius);
+    background: rgba(23, 30, 44, 0.4);
+}
+
+body .about-work-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: var(--sfh-accent);
+    background: var(--sfh-accent-muted);
+    margin-bottom: 0.3rem;
+}
+
+body .about-work-icon svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+body .about-work-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sfh-accent);
+}
+
+html[dir="rtl"] body .about-work-tag {
+    letter-spacing: 0.02em;
+    text-transform: none;
+}
+
+body .about-work-title {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--sfh-text);
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+}
+
+body .about-work-body {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--sfh-text-muted);
+}
+
+@media (max-width: 760px) {
+    body .about-work-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Legacy hero (method pages may still use these hooks) */

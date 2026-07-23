@@ -5,7 +5,7 @@ registerLocale('en', {
     methodsIndex: {
         heroTag: 'Syllabus & methods',
         heroTitle: 'Foresight Methods Catalog',
-        heroSub: 'Each method includes theory, university syllabus, industry track, and workshop tools, for teaching, seminars, and organizational projects.',
+        heroSub: 'Each method includes theory, a university syllabus, an industry track, and workshop tools. For teaching, organizational workshops, and self-study; from question to action.',
         coreTitle: 'Layer 1, Interactive workshops',
         advancedTitle: 'Layer 2, Extended methods',
         note: 'Each module includes <strong>founder intro</strong>, <strong>scholarly references</strong>, and an <strong>interactive workshop</strong> where available. This catalog is teaching infrastructure, not a promotional list.'
@@ -15,7 +15,7 @@ registerLocale('en', {
             slug: 'popper-diamond',
             heroTag: 'Rafael Popper · EU Foresight',
             heroTitle: 'Popper Foresight Diamond',
-            heroSub: 'A framework to assess foresight <em>quality</em>, not prediction, but whether your exercise was truly creative, innovative, expert-driven, and interactive.',
+            heroSub: 'A framework to assess foresight <em>quality</em>. For boards and researchers: not prediction, but an answer to whether your exercise was truly creative, expert-driven, and interactive, or merely theater.',
             history: {
                 accent: '#e040fb',
                 founderLabel: 'Developer',
@@ -47,7 +47,7 @@ registerLocale('en', {
             slug: 'strategic-foresight',
             heroTag: 'Andy Hines & Peter Bishop',
             heroTitle: 'Strategic foresight · Six Pillars',
-            heroSub: 'Operational framework from <em>Thinking About the Future</em>: the full path from Framing to Acting, for managers, not only researchers.',
+            heroSub: 'Operational framework from <em>Thinking About the Future</em>. For managers and researchers: the full path from Framing to Acting; once you ask \u201cwhich pillar are we stuck in,\u201d you know which FRM tool to start with.',
             history: {
                 accent: 'var(--color-f)',
                 founderLabel: 'Authors',
@@ -81,7 +81,7 @@ registerLocale('en', {
             slug: 'scenarios',
             heroTag: 'Shell · Schwartz · van der Heijden',
             heroTitle: 'Strategic Scenario Planning',
-            heroSub: 'Beyond FRM Chapter 19: building 2-4 plausible futures for decisions under uncertainty, not single-line forecast.',
+            heroSub: 'Build two to four plausible futures for decisions under uncertainty. For executives: today\u2019s decision becomes robust because it is tested against more than one path, not a single-line forecast.',
             history: {
                 accent: 'var(--color-cla)',
                 founderLabel: 'Pioneers',
@@ -116,7 +116,7 @@ registerLocale('en', {
             slug: 'futurpreneurship',
             heroTag: 'Foresight × Entrepreneurship',
             heroTitle: 'Futurpreneurship, Future-Driven Entrepreneurship',
-            heroSub: 'From weak signal and scenario to venture: someone who sees the future, accepts risk, and builds.',
+            heroSub: 'From weak signal and scenario to a venture. For founders: someone who sees the future, accepts the risk, and builds; with a 90-day probe instead of one large bet.',
             history: {
                 accent: 'var(--color-i)',
                 founderLabel: 'Conceptual roots',
@@ -149,7 +149,7 @@ registerLocale('en', {
             slug: 'environmental-scanning',
             heroTag: 'Francis Aguilar · Chun Wei Choo',
             heroTitle: 'Environmental Scanning',
-            heroSub: 'The systematic acquisition and use of information about events, trends, and relationships outside the organization, so that opportunities and threats are noticed before they force a decision.',
+            heroSub: 'The systematic acquisition and use of information about events and trends outside the organization. For executives: opportunities and threats are seen before they force a decision, not after it is too late.',
             history: {
                 accent: '#4caf50',
                 founderLabel: 'Founders',
@@ -184,7 +184,7 @@ registerLocale('en', {
             slug: 'weak-signals',
             heroTag: 'H. Igor Ansoff · Elina Hiltunen',
             heroTitle: 'Weak Signals: Reading Change Before the Headlines Do',
-            heroSub: 'Ansoff\'s answer to strategic surprise: stop waiting for clear, strong information and build a <em>graduated response</em> to today\'s vague, scattered clues about tomorrow\'s discontinuities.',
+            heroSub: 'Ansoff\u2019s answer to strategic surprise. For executives and founders: stop waiting for clear, strong information and build a <em>graduated response</em> to today\u2019s vague, scattered clues about tomorrow\u2019s discontinuities.',
             history: {
                 accent: '#ffaa00',
                 founderLabel: 'Originator · Key extender',
@@ -220,7 +220,7 @@ registerLocale('en', {
             slug: 'futures-literacy',
             heroTag: 'Riel Miller · UNESCO',
             heroTitle: 'Futures Literacy',
-            heroSub: 'A capability, not a forecast method: the skill of noticing <em>why</em> and <em>how</em> we use the future in present thinking, so imagination, preparation, and invention become deliberate rather than habitual.',
+            heroSub: 'A capability, not a forecast method. For researchers and executives: the skill of noticing <em>why</em> and <em>how</em> we use the future in present thinking, so imagination and preparation become deliberate rather than habitual.',
             history: {
                 accent: '#4caf50',
                 founderLabel: 'Originator',
@@ -256,7 +256,7 @@ registerLocale('en', {
             slug: 'type-2-fuzzy',
             heroTag: 'Zadeh · Mendel · John · IT2',
             heroTitle: 'Type-2 Fuzzy Logic',
-            heroSub: 'When even “how uncertain are we?” is disputed, a single 0.6 is not enough. IT2 spread tells you if consensus is real or just silent averaging.',
+            heroSub: 'When even \u201chow uncertain are we?\u201d is disputed among stakeholders, a single 0.6 is not enough. For executives and researchers: IT2 spread tells you whether consensus is real or just silent averaging.',
             history: {
                 accent: '#00e5ff',
                 founderLabel: 'Pioneers',

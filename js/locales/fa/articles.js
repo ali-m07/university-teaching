@@ -1,9 +1,14 @@
 /** FA · مقالات و یادداشت‌ها */
 registerLocale('fa', {
+    presentationsPage: {
+        tag: 'جزوه و ارائه',
+        title: 'ارائه‌های درسی',
+        sub: 'هر جلسه یک ارائه مستقل است. روی کارت کلیک کنید تا همان ماژول باز شود؛ تمام‌صفحه با کلید F. مجموعه‌ای کامل از اسلایدها برای تدریس، کارگاه و خودآموز.'
+    },
     articlesPage: {
         tag: 'مقالات',
         title: 'مقالات',
-        sub: 'یادداشت‌هایی درباره فناوری نوظهور، تفکر سیستمی و آینده‌پژوهی.',
+        sub: 'یادداشت‌های کوتاه و کاربردی درباره آینده‌نگاری، فناوری نوظهور و تصمیم در شرایط عدم‌قطعیت؛ نوشته‌شده برای مدیران، کارآفرینان و پژوهشگران.',
         emptyTitle: 'به‌زودی',
         emptyDesc: 'مقاله جدید در راه است.',
         articles: [
@@ -13,7 +18,7 @@ registerLocale('fa', {
                 tag: 'سازمانی',
                 href: 'articles/why-rohrbeck-still-matters.html',
                 image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
-                summary: 'وقتی آینده‌پژوهی فقط گزارش می‌شود، تناسب آینده می‌پرسد سازمان واقعاً می‌تواند آینده را ببیند و آزمایش کند یا فقط مستندسازی کرده.',
+                summary: 'فرق سازمانی که آینده را می‌بیند و آزمایش می‌کند با سازمانی که فقط گزارش می‌سازد، در تناسب آینده (FITness) دیده می‌شود.',
                 author: 'علی منصوری'
             },
             {
@@ -22,7 +27,7 @@ registerLocale('fa', {
                 tag: 'CLA',
                 href: 'articles/what-cla-sees-before-policy.html',
                 image: 'https://jfsdigital.org/wp-content/uploads/2022/07/smart-isfahan-1-scaled-e1656742344477.jpg',
-                summary: 'سیاست روی خبر و آمار بنا می‌شود؛ CLA لایه‌های گفتمان و اسطوره را قبل از هر بند قانون باز می‌کند.',
+                summary: 'سیاست روی خبر و آمار بنا می‌شود؛ CLA پیش از هر بند قانون، لایه‌های گفتمان و اسطوره‌ای را باز می‌کند که واقعاً تصمیم را شکل می‌دهند.',
                 author: 'علی منصوری'
             },
             {
@@ -31,7 +36,7 @@ registerLocale('fa', {
                 tag: 'عدم قطعیت',
                 href: 'articles/navigating-uncertainty.html',
                 image: 'https://images.unsplash.com/photo-1501386761578-4fd643a2879e?auto=format&fit=crop&w=1200&q=80',
-                summary: 'وقتی حتی «چقدر مطمئنیم؟» هم مورد بحث است، منطق فازی نوع ۲ از عدد جعلی جلوگیری می‌کند.',
+                summary: 'وقتی حتی «چقدر مطمئنیم؟» میان ذی‌نفعان مورد بحث است، منطق فازی نوع ۲ اجازه نمی‌دهد یک عدد جعلی جایگاه اجماع را بگیرد.',
                 author: 'علی منصوری'
             },
             {
@@ -40,7 +45,7 @@ registerLocale('fa', {
                 tag: 'هوش مصنوعی · زمان',
                 href: 'articles/beyond-biological-clock.html',
                 image: 'https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=1200&q=80',
-                summary: 'زمان فنی، سازمانی و اجتماعی یک تقویم نیستند؛ آینده‌پژوهی فناوری باید هر سه را جدا ببیند.',
+                summary: 'زمان فنی، سازمانی و اجتماعی یک تقویم نیستند؛ تصمیم هوش مصنوعی وقتی می‌رسد که هر سه ساعت جدا دیده شوند.',
                 author: 'علی منصوری'
             },
             {
@@ -49,7 +54,7 @@ registerLocale('fa', {
                 tag: 'فرایند',
                 href: 'articles/from-toolbox-to-process.html',
                 image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80',
-                summary: '۳۹ روش FRM کتابخانه است؛ شش ستون هاینز و بی‌شاپ میگه از کدام ستون شروع کنی.',
+                summary: 'فهرست ۳۹ روش FRM فقط کتابخانه است؛ شش ستون هاینز و بی‌شاپ به شما می‌گوید الان در کدام مرحله‌اید و از کجا شروع کنید.',
                 author: 'علی منصوری'
             }
         ]

@@ -21,7 +21,7 @@ registerLocale('en', {
 
         heroTag: 'John B. Robinson',
         heroTitle: 'Strategic Backcasting',
-        heroSub: 'Start from a normative future and work backward, mapping policies, barriers, and practical steps needed from today.',
+        heroSub: 'Start from a desired future and lay the roadmap in reverse. For policymakers and founders: when the normative destination is clear, the barriers of power and the first 90-day move come into focus.',
 
         methodologyTag: 'Transition Framework',
         methodologyTitle: 'How Backcasting Works',

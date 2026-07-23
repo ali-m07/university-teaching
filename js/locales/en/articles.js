@@ -1,9 +1,14 @@
 /** EN, articles & notes */
 registerLocale('en', {
+    presentationsPage: {
+        tag: 'Notes & decks',
+        title: 'Lecture decks',
+        sub: 'Each session is a standalone deck. Click a card to open that module; full-screen with the F key. A complete slide library for teaching, workshops, and self-study.'
+    },
     articlesPage: {
         tag: 'Articles',
         title: 'Articles',
-        sub: 'Notes on emerging technologies, systems thinking, and foresight.',
+        sub: 'Short, practical notes on foresight, emerging technology, and deciding under uncertainty, written for executives, founders, and researchers.',
         emptyTitle: 'Coming soon',
         emptyDesc: 'More pieces are on the way.',
         articles: [
@@ -13,7 +18,7 @@ registerLocale('en', {
                 tag: 'Corporate',
                 href: 'articles/why-rohrbeck-still-matters.html',
                 image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
-                summary: 'When foresight becomes shelf-ware, FITness asks whether the organization can actually see, explore, and probe the future.',
+                summary: 'The difference between an organization that sees and probes the future and one that only reports on it shows up in FITness.',
                 author: 'Ali Mansouri'
             },
             {
@@ -22,7 +27,7 @@ registerLocale('en', {
                 tag: 'CLA',
                 href: 'articles/what-cla-sees-before-policy.html',
                 image: 'https://jfsdigital.org/wp-content/uploads/2022/07/smart-isfahan-1-scaled-e1656742344477.jpg',
-                summary: 'Policy sits on headlines and metrics; CLA opens layers that exist before any clause is drafted.',
+                summary: 'Policy sits on headlines and metrics; before any clause is drafted, CLA opens the discourse and myth layers that actually shape the decision.',
                 author: 'Ali Mansouri'
             },
             {
@@ -31,7 +36,7 @@ registerLocale('en', {
                 tag: 'Uncertainty',
                 href: 'articles/navigating-uncertainty.html',
                 image: 'https://images.unsplash.com/photo-1501386761578-4fd643a2879e?auto=format&fit=crop&w=1200&q=80',
-                summary: 'When even “how uncertain are we?” is disputed, Type-2 fuzzy logic earns its place.',
+                summary: 'When even “how uncertain are we?” is disputed among stakeholders, Type-2 fuzzy logic stops a single false number from standing in for real consensus.',
                 author: 'Ali Mansouri'
             },
             {
@@ -40,7 +45,7 @@ registerLocale('en', {
                 tag: 'AI · Time',
                 href: 'articles/beyond-biological-clock.html',
                 image: 'https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=1200&q=80',
-                summary: 'Human rhythm, org tempo, and machine latency are not the same clock.',
+                summary: 'Human rhythm, org tempo, and machine latency are not the same clock; AI decisions land only when all three are read separately.',
                 author: 'Ali Mansouri'
             },
             {
@@ -49,7 +54,7 @@ registerLocale('en', {
                 tag: 'Process',
                 href: 'articles/from-toolbox-to-process.html',
                 image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80',
-                summary: 'FRM lists methods; Hines and Bishop give managers a path.',
+                summary: 'FRM\u2019s list of 39 methods is only a library; the Hines and Bishop Six Pillars tell you which stage you are in and where to start.',
                 author: 'Ali Mansouri'
             }
         ]

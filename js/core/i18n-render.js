@@ -154,6 +154,29 @@ function renderAboutFocusLists() {
     const tItems = typeof pg === 'function' ? pg('aboutPage.technicalFocus') : null;
     if (research && rItems) research.innerHTML = rItems.map(i => `<li>${esc(i)}</li>`).join('');
     if (technical && tItems) technical.innerHTML = tItems.map(i => `<li>${esc(i)}</li>`).join('');
+    renderAboutWorkOffers();
+}
+
+function renderAboutWorkOffers() {
+    const box = document.getElementById('about-work');
+    if (!box) return;
+    const title = typeof pg === 'function' ? pg('aboutPage.workTitle') : null;
+    const sub = typeof pg === 'function' ? pg('aboutPage.workSub') : null;
+    const items = typeof pg === 'function' ? pg('aboutPage.workOffers') : null;
+    if (!items) return;
+    const head = (title || sub) ? `<div class="about-work-head">
+        ${title ? `<h2>${esc(title)}</h2>` : ''}
+        ${sub ? `<p>${esc(sub)}</p>` : ''}
+    </div>` : '';
+    box.innerHTML = head + '<div class="about-work-grid">' + items.map((o) =>
+        `<div class="about-work-card">
+            <span class="about-work-icon" aria-hidden="true"><i data-lucide="${o.icon}"></i></span>
+            <span class="about-work-tag">${esc(o.tag)}</span>
+            <strong class="about-work-title">${esc(o.title)}</strong>
+            <span class="about-work-body">${esc(o.body)}</span>
+        </div>`
+    ).join('') + '</div>';
+    if (window.lucide) window.lucide.createIcons();
 }
 
 function renderBrandFocusGrid() {
@@ -213,9 +236,58 @@ function renderArticlesList() {
     if (window.lucide) window.lucide.createIcons();
 }
 
+function renderHomeMethodDigest() {
+    const box = document.getElementById('brand-method-digest');
+    const title = typeof pg === 'function' ? pg('brand.methodDigestTitle') : null;
+    const sub = typeof pg === 'function' ? pg('brand.methodDigestSub') : null;
+    const items = typeof pg === 'function' ? pg('brand.methodDigest') : null;
+    if (!box || !items) return;
+    const head = (title || sub) ? `<div class="section-header section-header--left">
+        ${title ? `<span class="section-tag">${esc(title)}</span>` : ''}
+        ${sub ? `<h2>${esc(sub)}</h2>` : ''}
+    </div>` : '';
+    box.innerHTML = head + '<div class="home-digest-grid">' + items.map((f) => {
+        const href = f.external ? f.href : (typeof sfhUrl === 'function' ? sfhUrl(f.href) : f.href);
+        return `<a class="home-digest-card" href="${href}">
+            <span class="home-digest-icon" aria-hidden="true"><i data-lucide="${f.icon}"></i></span>
+            <span class="home-digest-copy">
+                <strong>${esc(f.name)}</strong>
+                <span>${esc(f.line)}</span>
+            </span>
+        </a>`;
+    }).join('') + '</div>';
+    if (window.lucide) window.lucide.createIcons();
+}
+
+function renderHomeAudiences() {
+    const box = document.getElementById('brand-audiences');
+    const title = typeof pg === 'function' ? pg('brand.audienceTitle') : null;
+    const sub = typeof pg === 'function' ? pg('brand.audienceSub') : null;
+    const items = typeof pg === 'function' ? pg('brand.audiences') : null;
+    if (!box || !items) return;
+    const head = (title || sub) ? `<div class="section-header section-header--left">
+        ${title ? `<span class="section-tag">${esc(title)}</span>` : ''}
+        ${sub ? `<h2>${esc(sub)}</h2>` : ''}
+    </div>` : '';
+    box.innerHTML = head + '<div class="home-audience-grid">' + items.map((a) => {
+        const isMail = a.href && a.href.indexOf('mailto:') === 0;
+        const href = (!isMail && typeof sfhUrl === 'function') ? sfhUrl(a.href) : a.href;
+        return `<a class="home-audience-card" href="${href}">
+            <span class="home-audience-icon" aria-hidden="true"><i data-lucide="${a.icon}"></i></span>
+            <span class="home-audience-tag">${esc(a.tag)}</span>
+            <strong class="home-audience-title">${esc(a.title)}</strong>
+            <span class="home-audience-body">${esc(a.body)}</span>
+            <span class="home-audience-cta">${esc(a.cta)} <i data-lucide="arrow-up-right"></i></span>
+        </a>`;
+    }).join('') + '</div>';
+    if (window.lucide) window.lucide.createIcons();
+}
+
 function renderAllPageSections() {
     try {
         renderBrandFindGrid();
+        renderHomeMethodDigest();
+        renderHomeAudiences();
         renderBrandFocusGrid();
         renderAboutFocusLists();
         renderOverviewFeatures();
