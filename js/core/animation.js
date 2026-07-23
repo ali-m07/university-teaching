@@ -11,7 +11,7 @@ if (window.gsap && window.ScrollTrigger) {
                 const homeTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
                 homeTl
                     .from('.home-hero-img', { scale: 1.08, opacity: 0.55, duration: 1.35 }, 0)
-                    .from('.home-hero-card', { y: 28, opacity: 0, duration: 0.8 }, 0.18)
+                    .from('.home-hero-content', { y: 22, opacity: 0, duration: 0.75 }, 0.18)
                     .from('.home-hero-eyebrow', { y: 14, opacity: 0, duration: 0.5 }, 0.28)
                     .from('.home-hero-brand', { y: 20, opacity: 0, duration: 0.65 }, 0.34)
                     .from('.home-hero-headline', { y: 22, opacity: 0, duration: 0.7 }, 0.42)
@@ -24,7 +24,7 @@ if (window.gsap && window.ScrollTrigger) {
                         duration: 0.55,
                         stagger: 0.06,
                         ease: 'back.out(1.4)'
-                    }, 0.28);
+                    }, 0.22);
 
                 if (document.querySelector('.home-hub-inner')) {
                     gsap.from('.home-hub-inner > *', {

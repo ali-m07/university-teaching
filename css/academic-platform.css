@@ -198,17 +198,16 @@ body .method-prose-lead {
     color: var(--sfh-text);
 }
 
-/* —— Personal homepage: dark atmosphere + white sticky card —— */
+/* —— Personal homepage: dark atmosphere + sticky-note composition —— */
 body.home-page {
-    --home-card-bg: #f3f3f3;
-    --home-ink: #171717;
-    --home-muted: #6b6b6b;
-    --home-line: rgba(23, 23, 23, 0.1);
+    --home-ink: #f2f4f8;
+    --home-muted: rgba(226, 232, 240, 0.72);
+    --home-line: rgba(226, 232, 240, 0.14);
     --font-hand: 'Caveat', 'Vazirmatn', cursive;
 }
 
 body.home-page #particles-canvas {
-    opacity: 0.08;
+    opacity: 0.12;
 }
 
 body .home-hero {
@@ -218,7 +217,7 @@ body .home-hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: calc(var(--sfh-header-offset, 88px) + 1.5rem) 1.25rem 3rem;
+    padding: calc(var(--sfh-header-offset, 88px) + 1.5rem) 1.5rem 3.5rem;
     margin: 0;
     max-width: none;
     overflow: hidden;
@@ -244,33 +243,22 @@ body .home-hero-scrim {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(180deg, rgba(12, 16, 24, 0.45) 0%, rgba(12, 16, 24, 0.62) 42%, rgba(12, 16, 24, 0.9) 100%),
-        linear-gradient(90deg, rgba(12, 16, 24, 0.55) 0%, rgba(12, 16, 24, 0.35) 55%, rgba(12, 16, 24, 0.45) 100%);
+        linear-gradient(180deg, rgba(7, 10, 19, 0.55) 0%, rgba(7, 10, 19, 0.72) 42%, rgba(7, 10, 19, 0.92) 100%),
+        linear-gradient(90deg, rgba(7, 10, 19, 0.62) 0%, rgba(7, 10, 19, 0.4) 55%, rgba(7, 10, 19, 0.55) 100%);
     pointer-events: none;
 }
 
 html[dir="ltr"] body .home-hero-scrim {
     background:
-        linear-gradient(180deg, rgba(12, 16, 24, 0.45) 0%, rgba(12, 16, 24, 0.62) 42%, rgba(12, 16, 24, 0.9) 100%),
-        linear-gradient(270deg, rgba(12, 16, 24, 0.55) 0%, rgba(12, 16, 24, 0.35) 55%, rgba(12, 16, 24, 0.45) 100%);
-}
-
-body .home-hero-stage {
-    position: relative;
-    z-index: 1;
-    width: min(52rem, 100%);
-}
-
-body .home-hero-board {
-    position: relative;
-    padding: 2.75rem 2.5rem;
+        linear-gradient(180deg, rgba(7, 10, 19, 0.55) 0%, rgba(7, 10, 19, 0.72) 42%, rgba(7, 10, 19, 0.92) 100%),
+        linear-gradient(270deg, rgba(7, 10, 19, 0.62) 0%, rgba(7, 10, 19, 0.4) 55%, rgba(7, 10, 19, 0.55) 100%);
 }
 
 body .home-sticky-field {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    z-index: 2;
+    z-index: 1;
 }
 
 body .home-sticky {
@@ -278,101 +266,95 @@ body .home-sticky {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: clamp(6.75rem, 11vw, 8.75rem);
-    height: clamp(6.75rem, 11vw, 8.75rem);
-    padding: 0.75rem;
+    width: clamp(7.5rem, 12vw, 9.5rem);
+    height: clamp(7.5rem, 12vw, 9.5rem);
+    padding: 0.85rem;
     text-align: center;
     font-family: var(--font-hand);
-    font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
     font-weight: 600;
     line-height: 1.25;
     color: #2a2a2a;
     border-radius: 2px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22), 0 2px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35), 0 3px 10px rgba(0, 0, 0, 0.18);
     transform-origin: center center;
 }
 
 html[dir="rtl"] body .home-sticky {
     font-family: var(--font-fa), var(--font-hand);
-    font-size: clamp(0.88rem, 1.5vw, 1.05rem);
+    font-size: clamp(0.95rem, 1.7vw, 1.15rem);
     font-weight: 500;
 }
 
 body .home-sticky--1 {
-    top: 0.35rem;
-    inset-inline-start: -0.35rem;
+    top: 18%;
+    inset-inline-start: 8%;
     background: #ffd8a8;
     transform: rotate(-8deg);
 }
 
 body .home-sticky--2 {
-    bottom: 0.8rem;
-    inset-inline-start: 0.15rem;
+    bottom: 22%;
+    inset-inline-start: 11%;
     background: #ffc9c9;
     transform: rotate(-5deg);
 }
 
 body .home-sticky--3 {
-    bottom: 0.35rem;
-    inset-inline-end: 0.85rem;
+    bottom: 18%;
+    inset-inline-end: 14%;
     background: #fff3bf;
     transform: rotate(7deg);
 }
 
 body .home-sticky--4 {
-    top: 0.15rem;
-    inset-inline-end: -0.15rem;
+    top: 16%;
+    inset-inline-end: 9%;
     background: #d3f9d8;
     transform: rotate(6deg);
 }
 
 body .home-sticky--5 {
-    top: 42%;
-    inset-inline-start: -1.35rem;
+    top: 46%;
+    inset-inline-start: 3%;
     background: #e7d5ff;
     transform: rotate(-12deg);
-    width: clamp(5.75rem, 9vw, 7.25rem);
-    height: clamp(5.75rem, 9vw, 7.25rem);
+    width: clamp(6.5rem, 10vw, 8rem);
+    height: clamp(6.5rem, 10vw, 8rem);
 }
 
 body .home-sticky--6 {
-    top: 40%;
-    inset-inline-end: -1.15rem;
+    top: 42%;
+    inset-inline-end: 4%;
     background: #c5f6fa;
     transform: rotate(10deg);
-    width: clamp(5.75rem, 9vw, 7.25rem);
-    height: clamp(5.75rem, 9vw, 7.25rem);
+    width: clamp(6.5rem, 10vw, 8rem);
+    height: clamp(6.5rem, 10vw, 8rem);
 }
 
-body .home-hero-card {
+body .home-hero-content {
     position: relative;
-    z-index: 1;
-    width: 100%;
-    max-width: 40rem;
+    z-index: 2;
+    width: min(42rem, 100%);
+    max-width: 42rem;
     margin: 0 auto;
-    padding: clamp(1.75rem, 4vw, 2.65rem) clamp(1.35rem, 3.5vw, 2.35rem);
-    background: var(--home-card-bg);
-    color: var(--home-ink);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow:
-        0 28px 64px rgba(0, 0, 0, 0.38),
-        0 8px 20px rgba(0, 0, 0, 0.22);
+    padding: 0;
     text-align: center;
 }
 
 body .home-hero-eyebrow {
-    margin: 0 0 0.65rem;
-    font-size: 0.9rem;
+    margin: 0 0 0.85rem;
+    font-size: 0.92rem;
     font-weight: 500;
     letter-spacing: -0.01em;
-    color: #4a4a4a;
+    color: var(--home-muted);
     line-height: 1.5;
 }
 
 body .home-hero-brand {
-    margin: 0 0 0.85rem;
+    margin: 0 0 0.9rem;
     font-family: var(--font-en), var(--font-fa);
-    font-size: clamp(1.85rem, 5vw, 2.85rem);
+    font-size: clamp(2rem, 5.4vw, 3.1rem);
     font-weight: 800;
     letter-spacing: -0.04em;
     line-height: 1.15;
@@ -384,15 +366,15 @@ body .home-hero-brand {
 html[dir="rtl"] body .home-hero-brand {
     font-family: var(--font-fa);
     letter-spacing: -0.02em;
-    font-size: clamp(1.7rem, 4.8vw, 2.55rem);
+    font-size: clamp(1.8rem, 5vw, 2.75rem);
 }
 
 body .home-hero-headline {
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.1rem;
     max-width: 34rem;
-    font-size: clamp(1.05rem, 2.3vw, 1.28rem);
+    font-size: clamp(1.1rem, 2.4vw, 1.35rem);
     font-weight: 600;
-    line-height: 1.65;
+    line-height: 1.7;
     letter-spacing: -0.015em;
     color: var(--home-ink);
     background: none;
@@ -409,9 +391,9 @@ html[dir="ltr"] body .home-hero-headline {
 }
 
 body .home-hero-support {
-    margin: 0 auto 1.45rem;
+    margin: 0 auto 1.65rem;
     max-width: 34rem;
-    font-size: 0.98rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: var(--home-muted);
 }
@@ -435,11 +417,11 @@ body .home-hero-links a {
 }
 
 body .home-hero-links a:hover {
-    color: #555;
+    color: #c8d2e0;
 }
 
 body .home-link-sep {
-    color: #b0b0b0;
+    color: rgba(226, 232, 240, 0.4);
     font-size: 0.75rem;
     user-select: none;
     padding: 0 0.2rem;
@@ -1222,15 +1204,12 @@ body .fitness-page .fitness-section .section-header {
     body .home-hero {
         align-items: flex-start;
         min-height: auto;
-        padding: calc(var(--sfh-header-offset, 88px) + 1rem) 0.85rem 2.75rem;
+        padding: calc(var(--sfh-header-offset, 88px) + 1.25rem) 1.1rem 2.75rem;
     }
 
-    body .home-hero-board {
-        padding: 2rem 0.85rem;
-    }
-
-    body .home-hero-card {
-        padding: 1.45rem 1.15rem 1.65rem;
+    body .home-hero-content {
+        width: 100%;
+        padding-top: 0.5rem;
     }
 
     body .home-hero-brand {
@@ -1247,34 +1226,34 @@ body .fitness-page .fitness-section .section-header {
     }
 
     body .home-sticky {
-        width: 5.35rem;
-        height: 5.35rem;
-        font-size: 0.9rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        font-size: 0.92rem;
         padding: 0.5rem;
     }
 
     html[dir="rtl"] body .home-sticky {
-        font-size: 0.74rem;
+        font-size: 0.76rem;
     }
 
     body .home-sticky--1 {
-        top: -0.15rem;
-        inset-inline-start: 0.15rem;
+        top: 12%;
+        inset-inline-start: 2%;
     }
 
     body .home-sticky--2 {
-        bottom: -0.15rem;
-        inset-inline-start: 0.35rem;
+        bottom: 14%;
+        inset-inline-start: 4%;
     }
 
     body .home-sticky--3 {
-        bottom: -0.25rem;
-        inset-inline-end: 0.45rem;
+        bottom: 12%;
+        inset-inline-end: 5%;
     }
 
     body .home-sticky--4 {
-        top: -0.25rem;
-        inset-inline-end: 0.2rem;
+        top: 10%;
+        inset-inline-end: 3%;
     }
 
     body .home-sticky--5,
