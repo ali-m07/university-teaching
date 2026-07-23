@@ -46,8 +46,8 @@ registerLocale('en', {
         hines: {
             slug: 'strategic-foresight',
             heroTag: 'Andy Hines & Peter Bishop',
-            heroTitle: 'Strategic Foresight, Six Pillars',
-            heroSub: 'Operational framework from <em>Thinking About the Future</em>: the full path from framing the question to action, for managers, not only researchers.',
+            heroTitle: 'Strategic foresight · Six Pillars',
+            heroSub: 'Operational framework from <em>Thinking About the Future</em>: the full path from Framing to Acting, for managers, not only researchers.',
             history: {
                 accent: 'var(--color-f)',
                 founderLabel: 'Authors',
@@ -56,26 +56,26 @@ registerLocale('en', {
                 year: '2006 (updates 2013-2020)',
                 institution: 'University of Houston · Foresight Program',
                 title: 'Six Pillars of Strategic Foresight',
-                origin: 'At Houston\'s foresight program, Hines & Bishop treated FRM as a toolbox but managers needed a <strong>path</strong>. The Six Pillars answer "what do I do now?"',
+                origin: 'At Houston\'s foresight program, Hines and Bishop treated FRM as a toolbox but managers needed a <strong>path</strong>. The Six Pillars answer "what do I do now?"',
                 problemLabel: 'Problem',
-                problem: 'FRM gives methods chapter by chapter; organizations don\'t know when to start scanning and when to finish planning.',
+                problem: 'FRM gives methods chapter by chapter; organizations do not know when to start scanning and when to finish planning.',
                 useLabel: 'Applications',
                 applications: 'MBA foresight programs, organizational consulting, APF training, and executive courses in energy and health.'
             },
-            introTitle: 'Six pillars, frame to act',
-            intro: 'Each pillar is a measurable phase. Weakness in one breaks the chain, e.g. excellent forecasting without visioning yields shelf reports.',
+            introTitle: 'Six pillars · from Framing to Acting',
+            intro: 'Each pillar is a measurable phase with separate parts. Weakness in one breaks the chain; for example, excellent forecasting without visioning yields shelf reports. Columns 1 to 3 are taught part by part in the decks below.',
             pillars: [
-                { title: '1. Framing', desc: 'Define the question, system boundary, stakeholders, and "why foresight?". Without framing, everything is analyzed and nothing decided.', color: 'var(--color-f)' },
-                { title: '2. Scanning', desc: 'Environmental scanning, weak signals, STEEP/PESTLE. FRM Ch.2 exists; Hines places it in a pillar sequence.', color: '#4caf50' },
-                { title: '3. Forecasting', desc: 'Trends, cross-impact, cone of plausibility. Exploring possibility space, not single-line prediction.', color: '#ffaa00' },
+                { title: '1. Framing', desc: 'Six separate parts: reframing mindsets, stakeholders, intent and purpose, goal setting, team selection, strategic environment.', color: 'var(--color-f)' },
+                { title: '2. Scanning', desc: 'Four separate parts: mapping, history, environmental scanning, engaging everyone.', color: '#4caf50' },
+                { title: '3. Forecasting', desc: 'Five separate parts: drivers and uncertainties, method choice, divergence, convergence, alternative futures.', color: '#ffaa00' },
                 { title: '4. Visioning', desc: 'Building preferred and normative futures. Bridge to backcasting and scenarios.', color: 'var(--color-cla)' },
-                { title: '5. Planning', desc: 'Turn insight into roadmaps, OKRs, policy. Where foresight dies or creates value.', color: 'var(--color-i)' },
+                { title: '5. Planning', desc: 'Turn insight into roadmaps, indicators, and policy. Where foresight dies or creates value.', color: 'var(--color-i)' },
                 { title: '6. Acting', desc: 'Pilots, structural change, learning. Without acting, foresight is management decoration.', color: 'var(--color-wheel-red)' }
             ],
             gapTitle: 'Difference from FRM',
-            gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar, not the reverse. Module three below on this page connects Michel Godet\'s French prospective school and its MICMAC/MACTOR tools to this same architecture.',
-            caseTitle: 'Example: Cone of Plausibility',
-            case: 'After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers, not every imaginable fantasy. Full workshop depth is in Six Pillars module M2 on this page.'
+            gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines and Bishop say: choose tools by pillar, not the reverse. Book doctrine is in the part-by-part decks; university or industry examples belong only on labeled application slides. The Godet module below connects French prospective and MICMAC/MACTOR to this architecture.',
+            caseTitle: 'Companion: cone of plausibility',
+            case: 'After scanning and inside Forecasting, the team draws a plausibility cone: center = baseline, edges = wild cards. Visioning focuses on plausible layers. Workshop depth is in the cone module on this page.'
         },
         scenarios: {
             slug: 'scenarios',

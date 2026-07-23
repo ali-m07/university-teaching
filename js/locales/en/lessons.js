@@ -191,23 +191,23 @@ registerLocale('en', {
                 { id: 'bishop', name: 'Peter Bishop', role: 'Co-author Six Pillars', bio: 'Former Houston Foresight chair; Cone of Plausibility & executive training.' }
             ],
             objectives: [
-                'Explain Framing → Acting in order.',
-                'Diagnose which pillar your org is stuck on.',
-                'Draw Cone of Plausibility linked to Visioning.',
-                'Contrast Hines-Bishop architecture with FRM list.'
+                'Explain Framing through Acting in order.',
+                'Name the six Framing parts, four Scanning parts, and five Forecasting parts separately.',
+                'Diagnose which pillar and which part your organization is stuck on.',
+                'Draw a cone of plausibility linked to Visioning.'
             ],
             outline: [
-                { step: '1', time: '20 min', title: 'From toolbox to path', desc: 'Why managers find FRM overwhelming.' },
-                { step: '2', time: '30 min', title: 'Six pillars deep dive', desc: 'Each pillar + failure mode.' },
-                { step: '3', time: '30 min', title: 'Cone of Plausibility case', desc: 'Energy or health group work.' },
-                { step: '4', time: '25 min', title: 'Planning → Acting', desc: 'OKRs and pilots.' },
-                { step: '5', time: '15 min', title: 'Reflect', desc: 'Map your org pillars.' }
+                { step: '1', time: '15 min', title: 'From toolbox to path', desc: 'Why managers find FRM overwhelming.' },
+                { step: '2', time: '35 min', title: 'Framing and Scanning', desc: 'Column 1 and 2 parts, one by one.' },
+                { step: '3', time: '35 min', title: 'Forecasting and alternatives', desc: 'Drivers, divergence, convergence, alternatives, cone.' },
+                { step: '4', time: '20 min', title: 'Planning to Acting', desc: 'Roadmap and pilots; where foresight dies.' },
+                { step: '5', time: '15 min', title: 'Reflect', desc: 'Map your organization\'s pillars and parts.' }
             ],
             readings: [
                 { type: 'Book', text: 'Hines & Bishop (2006). <em>Thinking About the Future</em>.' },
                 { type: 'Paper', text: 'Hines (2010). Primary futurist skill, APF.' }
             ],
-            assignment: 'Frame your org foresight question (1 page). Weakest pillar + next deliverable.'
+            assignment: 'Write your organization\'s foresight issue across Framing parts (1 page). Name the weakest part and one deliverable for Scanning or Forecasting.'
         },
         scenarios: {
             meta: { module: '7', duration: '150 min (2 sessions)', level: 'Strategy / policy' },
