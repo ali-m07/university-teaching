@@ -934,12 +934,6 @@ body .pres-card-go {
     color: var(--sfh-accent);
 }
 
-/* legacy list hooks kept harmless */
-body .pres-list,
-body .pres-row {
-    display: contents;
-}
-
 /* —— Articles list —— */
 body #articles-list {
     display: flex;
