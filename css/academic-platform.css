@@ -740,14 +740,14 @@ body .page-content {
     padding-bottom: 3.5rem;
 }
 
-/* —— Catalog: home-find rhythm —— */
+/* —— Catalog: card grid —— */
 body .catalog-category {
     margin-bottom: 3rem;
 }
 
 body .catalog-category-header {
     text-align: start;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 body .catalog-category-header h2 {
@@ -765,84 +765,62 @@ body .catalog-category-header p {
     max-width: 42rem;
 }
 
-body .catalog-list {
-    display: flex;
-    flex-direction: column;
-    max-width: 48rem;
-    border-top: 1px solid var(--sfh-border);
-}
-
-body .catalog-method-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.1rem;
-    padding: 1.15rem 0;
+body .catalog-method-card {
+    padding: 0;
     text-decoration: none;
     color: inherit;
-    border-bottom: 1px solid var(--sfh-border);
-    background: transparent;
-    border-top: none !important;
-    border-radius: 0;
-    box-shadow: none;
-    transition: background-color var(--transition-fast);
+    overflow: hidden;
 }
 
-body a.catalog-method-row:hover {
-    background: transparent;
-    border-color: var(--sfh-border);
-    box-shadow: none;
-    transform: none;
+body .catalog-method-card--static {
+    cursor: default;
+    opacity: 0.9;
 }
 
-body a.catalog-method-row:hover .catalog-method-copy strong,
-body a.catalog-method-row:hover h3 {
+body a.catalog-method-card:hover {
+    border-color: rgba(61, 139, 253, 0.35);
+}
+
+body a.catalog-method-card:hover h3 {
     color: #fff;
 }
 
-body .catalog-method-row--static {
-    cursor: default;
-    opacity: 0.88;
-}
-
-body .catalog-method-thumb {
-    flex: 0 0 auto;
-    width: 4.25rem;
-    height: 4.25rem;
-    border-radius: 10px;
+body .catalog-method-media {
+    width: 100%;
+    height: 7.5rem;
     overflow: hidden;
     background: var(--sfh-surface-raised);
-    border: 1px solid var(--sfh-border);
+    border-bottom: 1px solid var(--sfh-border);
 }
 
-body .catalog-method-thumb img {
+body .catalog-method-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-body .catalog-method-thumb--icon {
+body .catalog-method-media--icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--sfh-accent);
+    color: var(--method-color, var(--sfh-accent));
 }
 
-body .catalog-method-thumb--icon i,
-body .catalog-method-thumb--icon svg {
-    width: 1.35rem;
-    height: 1.35rem;
+body .catalog-method-media--icon i,
+body .catalog-method-media--icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
-body .catalog-method-copy {
+body .catalog-method-body {
+    padding: 1.1rem 1.15rem 1.2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.28rem;
-    min-width: 0;
-    flex: 1;
+    gap: 0.35rem;
 }
 
-body .catalog-method-copy h3 {
+body .catalog-method-body h3 {
     margin: 0;
     font-size: 1.02rem;
     font-weight: 600;
@@ -850,15 +828,15 @@ body .catalog-method-copy h3 {
     line-height: 1.35;
 }
 
-body .catalog-method-copy .catalog-method-founder {
+body .catalog-method-body .catalog-method-founder {
     margin: 0;
     font-size: 0.8rem;
     color: var(--sfh-accent);
 }
 
-body .catalog-method-copy > p {
+body .catalog-method-body > p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.65;
     color: var(--sfh-text-muted);
 }
@@ -886,7 +864,7 @@ body .catalog-status-badge--catalog {
 }
 
 body .catalog-method-go {
-    margin-top: 0.35rem;
+    margin-top: 0.45rem;
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--sfh-accent);
@@ -1057,9 +1035,8 @@ body .fitness-page .fitness-section .section-header {
         font-size: clamp(1.55rem, 7vw, 2rem);
     }
 
-    body .catalog-method-thumb {
-        width: 3.5rem;
-        height: 3.5rem;
+    body .catalog-method-media {
+        height: 6.5rem;
     }
 
     body .home-hero-content {

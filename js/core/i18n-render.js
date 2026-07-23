@@ -193,23 +193,19 @@ function renderArticlesList() {
 
     list.innerHTML = articles.map(a => {
         const href = a.href ? (typeof sfhUrl === 'function' ? sfhUrl(a.href) : a.href) : '';
-        const image = a.image ? (typeof sfhUrl === 'function' ? sfhUrl(a.image) : a.image) : '';
         const summary = a.summary ? `<span>${esc(a.summary)}</span>` : '';
         const meta = [a.date, a.tag, a.author].filter(Boolean).map(esc).join(' · ');
-        const status = a.status === 'draft' ? (getLang() === 'fa' ? 'پیش نویس' : 'Draft') : '';
-        const thumb = image
-            ? `<div class="catalog-method-thumb"><img src="${image}" alt="" loading="lazy" referrerpolicy="no-referrer" decoding="async"></div>`
-            : `<div class="catalog-method-thumb catalog-method-thumb--icon"><i data-lucide="file-text"></i></div>`;
+        const icon = `<span class="home-find-icon" aria-hidden="true"><i data-lucide="file-text"></i></span>`;
         const inner = `
-            ${thumb}
-            <div class="catalog-method-copy">
-                ${meta ? `<p class="catalog-method-founder">${meta}${status ? ' · ' + status : ''}</p>` : ''}
-                <h3>${esc(a.title)}</h3>
+            ${icon}
+            <span class="home-find-copy">
+                <strong>${esc(a.title)}</strong>
+                ${meta ? `<span>${meta}</span>` : ''}
                 ${summary}
-            </div>`;
+            </span>`;
         return href
-            ? `<a href="${href}" class="catalog-method-row article-list-row">${inner}</a>`
-            : `<article class="catalog-method-row article-list-row catalog-method-row--static">${inner}</article>`;
+            ? `<a href="${href}" class="home-find-row article-list-row">${inner}</a>`
+            : `<article class="home-find-row article-list-row">${inner}</article>`;
     }).join('');
 
     const empty = document.getElementById('articles-empty');

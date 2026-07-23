@@ -335,7 +335,7 @@
                     </button>
                 </div>
                 <div class="fitness-pres-stage">${slideMarkup}</div>
-                <nav class="fitness-pres-nav" aria-label="${esc(L.nav)}" dir="${dir()}">${navInner}</nav>
+                <nav class="fitness-pres-nav" aria-label="${esc(L.nav)}" dir="ltr">${navInner}</nav>
             </div>`;
     }
 

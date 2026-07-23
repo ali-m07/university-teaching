@@ -53,13 +53,10 @@
         });
 
         pres.addEventListener('keydown', (e) => {
-            const rtl = pres.getAttribute('dir') === 'rtl';
-            const nextKeys = rtl
-                ? ['ArrowLeft', 'ArrowDown', 'PageDown']
-                : ['ArrowRight', 'ArrowDown', 'PageDown'];
-            const prevKeys = rtl
-                ? ['ArrowRight', 'ArrowUp', 'PageUp']
-                : ['ArrowLeft', 'ArrowUp', 'PageUp'];
+            // Physical keys stay stable in FA/EN: Right/Down = next, Left/Up = prev.
+            // (RTL content should not invert chrome controls.)
+            const nextKeys = ['ArrowRight', 'ArrowDown', 'PageDown'];
+            const prevKeys = ['ArrowLeft', 'ArrowUp', 'PageUp'];
 
             if (nextKeys.includes(e.key)) {
                 e.preventDefault();
