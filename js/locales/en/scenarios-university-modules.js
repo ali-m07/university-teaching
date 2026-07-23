@@ -215,6 +215,74 @@ registerLocale('en', {
                             format: '3000 words or 12 slides',
                             criteria: ['Decision linkage', 'Monitorable indicators']
                         }
+                    },
+                    {
+                        num: 'M4', id: 'm4', pickerLabel: 'Scenario typologies',
+                        title: 'Scenario typologies: Godet, Bezold, and Bell', hours: '90 min',
+                        readingsShort: 'Godet · Bell · Bezold',
+                        visual: 'assets/methods/covers/scenarios-m4-typologies.svg',
+                        visualCaption: 'Exploratory/normative × qualitative/quantitative/participatory',
+                        lectureIntro: 'Session 4 shows that scenario is not one method, it is a family of methods. Godet\'s typology, Bezold\'s participatory approach, and Wendell Bell\'s classification help you choose the right method for each question.',
+                        lectureSections: [
+                            {
+                                id: 'need-typology',
+                                title: '1. Why a typology is needed',
+                                slideTitles: [
+                                    'A Shell scenario is not a policy scenario',
+                                    'Two core axes of the typology',
+                                    'The cost of choosing the wrong method'
+                                ],
+                                paragraphs: [
+                                    'Shell\'s scenarios were built for managers\' mental preparedness; a municipality\'s participatory scenarios are designed to build agreement among citizens. Both carry the name scenario, yet their construction logic differs.',
+                                    'Two common axes classify scenarios: exploratory versus normative, and qualitative versus quantitative. These two axes alone produce four main scenario families.',
+                                    'Choosing the wrong type carries a real cost: running a heavy quantitative process for a question that only needed a participatory conversation wastes an organization\'s time and credibility.'
+                                ]
+                            },
+                            {
+                                id: 'godet-types',
+                                title: '2. Exploratory and normative in Godet',
+                                slideTitles: [
+                                    'Exploratory scenarios: moving forward from today',
+                                    'Normative scenarios: working backward from a preferred future',
+                                    'The quantitative SMIC and cross-impact method'
+                                ],
+                                paragraphs: [
+                                    'Michel Godet defines exploratory scenarios as a move from today\'s trends and uncertainties toward several possible futures, a logic close to Shell and Schwartz scenarios.',
+                                    'Normative scenarios move the other way: the starting point is a preferred future, and the question is which paths lead to it, the same logic you have seen in backcasting.',
+                                    'Godet and Duperrin proposed the SMIC method in 1975 for probabilistically grouping scenarios based on cross-impact among assumptions, a more quantitative cousin of the qualitative 2×2 matrix common in management classrooms.'
+                                ]
+                            },
+                            {
+                                id: 'bezold-bell',
+                                title: '3. Bezold\'s participation and Bell\'s classification',
+                                slideTitles: [
+                                    'Clement Bezold and participatory scenario building',
+                                    'Possible, probable, and preferable in Wendell Bell',
+                                    'Choosing a typology for your project'
+                                ],
+                                paragraphs: [
+                                    'Clement Bezold developed participatory scenario building for policy and public health processes, where building agreement among stakeholders matters more than analytical precision alone.',
+                                    'Wendell Bell, in Foundations of Futures Studies, separates possible, probable, and preferable futures. This triad sharpens the question: is this scenario possible, is it probable, or is it one we consider preferable?',
+                                    'To choose a typology, first revisit M1\'s focal decision and the project\'s audience: a high-level strategic decision usually calls for exploratory and qualitative work, public policy for participatory work, and financial risk modeling usually for quantitative work.'
+                                ]
+                            }
+                        ],
+                        readings: [
+                            { type: 'Book', text: 'Godet, M. (2000). The art of scenarios and strategic planning. <em>Technological Forecasting and Social Change</em>.' },
+                            { type: 'Classic paper', text: 'Duperrin, J.C. & Godet, M. (1975). SMIC 74: a method for constructing and ranking scenarios.' },
+                            { type: 'Book', text: 'Bell, W. (1997). <em>Foundations of Futures Studies</em>, Vol. 1 and 2.' },
+                            { type: 'Teaching note', text: 'A Farsi summary of Wendell Bell\'s second volume and of Eyvazi\'s strategic foresight summary, used as a course note for this session.' }
+                        ],
+                        assignment: {
+                            title: 'Choosing a scenario typology',
+                            description: 'Choose and justify a scenario typology for your term project.',
+                            body: [
+                                'State whether your project is exploratory or normative and why.',
+                                'State whether you need a qualitative, quantitative, or participatory method and give one practical reason.'
+                            ],
+                            format: 'Half a page',
+                            criteria: ['Fit between typology and project question', 'Clear reasoning rather than a default choice']
+                        }
                     }
                 ]
             }

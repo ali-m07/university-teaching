@@ -39,7 +39,7 @@ registerLocale('fa', {
                 { title: 'Interaction · تعامل', desc: 'آیا ذی‌نفعان واقعاً درگیر شدند؟ تعامل صوری (جلسه ثبت‌نام) با تعامل واقعی فرق دارد.', color: '#ffaa00' }
             ],
             gapTitle: 'چرا در FRM 3.0 نیست؟',
-            gap: 'فصل ۳۹ FRM فقط «Integration» دارد؛ الماس پوپر <strong>meta-tool</strong> است · روی همه ۳۸ روش دیگر اعمال می‌شود. گلن و گوردون ابزار لیست کردند؛ پوپر <strong>کیفیت‌سنج</strong> داد.',
+            gap: 'فصل ۳۹ FRM فقط «Integration» دارد؛ الماس پوپر <strong>meta-tool</strong> است · روی همه ۳۸ روش دیگر اعمال می‌شود. گلن و گوردون ابزار لیست کردند؛ پوپر <strong>کیفیت‌سنج</strong> داد. ماژول دوم پایین همین صفحه، معیار پنج‌گانه کیفیت سناریوی میشل گوده را به همین چهار رأس وصل می‌کند.',
             caseTitle: 'مثال عملی',
             case: 'یک وزارتخانه کارگاه دلفی برگزار کرد · ۲۰۰ صفحه گزارش. audit با الماس پوپر: Expertise بالا، Interaction متوسط، Creativity و Innovation پایین. نتیجه: بازطراحی کارگاه با CLA و سناریو · نه دلفی دوم.'
         },
@@ -73,7 +73,7 @@ registerLocale('fa', {
                 { title: '۶. Acting · اقدام', desc: 'پایلوت، تغییر ساختار، یادگیری. بدون Acting، foresight تزئین مدیریتی است.', color: 'var(--color-wheel-red)' }
             ],
             gapTitle: 'تفاوت با FRM',
-            gap: 'FRM ۳۹ روش جدا دارد؛ شش ستون <strong>architecture</strong> است. هاینز و بی‌شاپ می‌گویند: ابزار را بر اساس ستون انتخاب کن · نه برعکس.',
+            gap: 'FRM ۳۹ روش جدا دارد؛ شش ستون <strong>architecture</strong> است. هاینز و بی‌شاپ می‌گویند: ابزار را بر اساس ستون انتخاب کن · نه برعکس. ماژول سوم پایین همین صفحه، مکتب فرانسوی prospective میشل گوده و ابزار MICMAC/MACTOR را به همین معماری وصل می‌کند.',
             caseTitle: 'مثال: Cone of Plausibility',
             case: 'پس از Scanning، تیم یک «مخروط plausibility» می‌کشد: مرکز = روند غالب، لبه = wild cards. Visioning فقط روی لایه‌های plausibility متمرکز می‌شود · نه هر توهم ممکن.'
         },
@@ -108,7 +108,7 @@ registerLocale('fa', {
                 { title: '۷. ارتباط با سازمان', desc: 'سناریو باید به budgeting و risk متصل شود · وگرنه قفسه می‌خورد.', color: 'var(--color-wheel-red)' }
             ],
             gapTitle: 'FRM vs سناریوی واقعی',
-            gap: 'فصل ۱۹–۲۱ FRM: Scenario، Toolbox، Interactive. Shell/Schwartz: <strong>یک سیستم تصمیم</strong> با ۲×۲ و indicators. FRM interactive scenarios را ذکر می‌کند؛ بقای استراتژیک Shell را نه.',
+            gap: 'فصل ۱۹–۲۱ FRM: Scenario، Toolbox، Interactive. Shell/Schwartz: <strong>یک سیستم تصمیم</strong> با ۲×۲ و indicators. FRM interactive scenarios را ذکر می‌کند؛ بقای استراتژیک Shell را نه. ماژول چهارم پایین همین صفحه، گونه‌شناسی گوده، بزولد و وندل بل را به این مسیر اضافه می‌کند.',
             caseTitle: 'مثال: دو محور انرژی ایران',
             case: 'محور ۱: سرعت گذر انرژی (کند/سریع). محور ۲: geopolitics (باز/بسته). چهار سناریو: «اقتصاد سبز منطقه‌ای»، «جزیره فسیلی»، «جهش فناورانه»، «بحران مزمن». هر کدام سیاست متفاوت برای سرمایه‌گذاری برق.'
         },

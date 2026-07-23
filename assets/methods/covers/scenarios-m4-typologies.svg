@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00e5ff"/><stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="52" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700">Scenario Typologies · Two Axes, Four Families</text>
+  
+  <line x1="480" y1="110" x2="480" y2="440" stroke="#8b9bb0" stroke-width="2"/>
+  <line x1="180" y1="270" x2="780" y2="270" stroke="#8b9bb0" stroke-width="2"/>
+  <text x="480" y="95" text-anchor="middle" fill="#8b9bb0" font-size="13">Normative ↑</text>
+  <text x="480" y="460" text-anchor="middle" fill="#8b9bb0" font-size="13">Exploratory ↓</text>
+  <text x="175" y="270" text-anchor="end" fill="#8b9bb0" font-size="13">Qualitative</text>
+  <text x="785" y="270" fill="#8b9bb0" font-size="13">Quantitative</text>
+  <rect x="300" y="130" width="170" height="130" rx="12" fill="#102030" stroke="#00e5ff" stroke-width="2"/>
+  <text x="385" y="190" text-anchor="middle" fill="#00e5ff" font-size="13" font-weight="700">Bezold</text>
+  <text x="385" y="210" text-anchor="middle" fill="#8b9bb0" font-size="11">participatory</text>
+  <rect x="490" y="130" width="170" height="130" rx="12" fill="#152035" stroke="#7c4dff" stroke-width="2"/>
+  <text x="575" y="190" text-anchor="middle" fill="#7c4dff" font-size="13" font-weight="700">Godet SMIC</text>
+  <text x="575" y="210" text-anchor="middle" fill="#8b9bb0" font-size="11">cross-impact</text>
+  <rect x="300" y="280" width="170" height="130" rx="12" fill="#152035" stroke="#ffaa00" stroke-width="2"/>
+  <text x="385" y="340" text-anchor="middle" fill="#ffaa00" font-size="13" font-weight="700">Shell · Schwartz</text>
+  <text x="385" y="360" text-anchor="middle" fill="#8b9bb0" font-size="11">2×2 narrative</text>
+  <rect x="490" y="280" width="170" height="130" rx="12" fill="#152035" stroke="#ff5a7a" stroke-width="2"/>
+  <text x="575" y="340" text-anchor="middle" fill="#ff5a7a" font-size="13" font-weight="700">Cross-impact</text>
+  <text x="575" y="360" text-anchor="middle" fill="#8b9bb0" font-size="11">probabilistic</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Godet · Bezold · Wendell Bell · Module M4</text>
+</svg>

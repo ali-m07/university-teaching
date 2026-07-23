@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00e5ff"/><stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="52" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700">Cone of Plausibility</text>
+  
+  <circle cx="180" cy="270" r="14" fill="#f3f4f6"/>
+  <text x="180" y="245" text-anchor="middle" fill="#8b9bb0" font-size="13">Today</text>
+  <path d="M194 262 C420 210 640 170 880 130" stroke="#8b9bb0" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+  <path d="M194 267 C420 245 640 230 880 210" stroke="#00e5ff" stroke-width="2" fill="none"/>
+  <path d="M194 273 C420 295 640 310 880 330" stroke="#7c4dff" stroke-width="2" fill="none"/>
+  <path d="M194 278 C420 330 640 370 880 410" stroke="#8b9bb0" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+  <text x="895" y="126" fill="#8b9bb0" font-size="12">preposterous</text>
+  <text x="895" y="206" fill="#00e5ff" font-size="12">plausible</text>
+  <text x="895" y="326" fill="#7c4dff" font-size="12">possible</text>
+  <text x="895" y="406" fill="#8b9bb0" font-size="12">preposterous</text>
+  <rect x="640" y="150" width="20" height="20" fill="#ffaa00"/>
+  <text x="700" y="166" fill="#ffaa00" font-size="12">wild card at the edge</text>
+  <text x="480" y="470" text-anchor="middle" fill="#8b9bb0" font-size="14">Visioning selects preferred images from inside the plausible and possible layers.</text>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Hines &amp; Bishop · Forecasting to Visioning · Module M2</text>
+</svg>

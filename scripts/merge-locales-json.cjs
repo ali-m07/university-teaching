@@ -10,7 +10,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.join(__dirname, '..');
-const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'type2-university-modules', 'fitness', 'fitness-university-modules', 'cla', 'cla-university-modules', 'wheel', 'wheel-university-modules', 'backcast', 'backcast-university-modules', 'scenarios-university-modules'];
+const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'type2-university-modules', 'fitness', 'fitness-university-modules', 'cla', 'cla-university-modules', 'wheel', 'wheel-university-modules', 'backcast', 'backcast-university-modules', 'scenarios-university-modules', 'hines-university-modules', 'popper-university-modules'];
 const LANGS = ['fa', 'en'];
 const OUTPUT_DIRS = [
     path.join(ROOT, 'public', 'locales'),
@@ -177,7 +177,7 @@ function buildCatalog(lang) {
         entries: isFa ? {
             fitness: { title: 'Future FITness', founder: 'René Rohrbeck', desc: 'مدل بلوغ foresight سازمانی · Perceiving، Prospecting، Probing و خودارزیابی ۵ بعدی.' },
             cla: { title: 'تحلیل لایه‌ای علت‌ها (CLA)', founder: 'Sohail Inayatullah', desc: 'واسازی Litany، Systemic، Worldview و Myth · هرم تعاملی و کارگاه استعاره.' },
-            'futures-wheel': { title: 'چرخ آینده', founder: 'Jerome C. Glenn', desc: 'نگاشت پیامدهای مرتبه ۱–۳، مدل STEEP و درخت شعاعی تغییر اقلیم.' },
+            'futures-wheel': { title: 'چرخ آینده', founder: 'Jerome C. Glenn', desc: 'نگاشت پیامدهای مرتبه ۱ تا ۳، مدل STEEP و درخت شعاعی تغییر اقلیم.' },
             backcasting: { title: 'پس‌نگری (Backcasting)', founder: 'John B. Robinson', desc: 'طراحی آینده هنجاری و مسیر معکوس از آرمان‌شهر به امروز.' },
             'popper-diamond': { title: 'الماس پوپر', founder: 'Rafael Popper', desc: 'ارزیابی کیفیت foresight: Creativity، Innovation، Expertise، Interaction.' },
             'six-pillars': { title: 'شش ستون هاینز و بی‌شاپ', founder: 'Andy Hines & Peter Bishop', desc: 'Framing → Scanning → Forecasting → Visioning → Planning → Acting.' },
@@ -187,7 +187,7 @@ function buildCatalog(lang) {
             'three-horizons': { title: 'Three Horizons', founder: 'Curry & Hodgson', desc: 'H1/H2/H3 · مدیریت گذار از کسب‌وکار فعلی به آینده‌های نوظهور.' },
             'futures-literacy': { title: 'Futures Literacy', founder: 'Riel Miller (UNESCO)', desc: 'توانایی تصور و استفاده از آینده‌ها در تصمیم‌گیری روزمره.' },
             'environmental-scanning': { title: 'Environmental Scanning', founder: 'Aguilar / Choo', desc: 'رصد سیستماتیک محیط برای شناسایی فرصت‌ها و تهدیدها.' },
-            'horizon-scanning': { title: 'Horizon Scanning', founder: 'UK Government Office for Science', desc: 'شناسایی مسائل و فناوری‌های نوظهور در افق ۵–۲۰ ساله.' },
+            'horizon-scanning': { title: 'Horizon Scanning', founder: 'UK Government Office for Science', desc: 'شناسایی مسائل و فناوری‌های نوظهور در افق ۵ تا ۲۰ ساله.' },
             'weak-signals': { title: 'Weak Signals', founder: 'Ansoff / Hiltunen', desc: 'سیگنال‌های ضعیف و wild cards · پیش‌درآمد تغییرات بزرگ.' },
             'steep-pestle': { title: 'STEEP / PESTLE', founder: 'Millennium Project', desc: 'تحلیل محیطی در ابعاد اجتماعی، فناوری، اقتصادی، زیست‌محیطی، سیاسی.' },
             'trend-analysis': { title: 'Trend Analysis', founder: 'FRM / APF', desc: 'شناسایی، extrapolation و cone of plausibility برای روندها.' },
@@ -217,7 +217,7 @@ function buildCatalog(lang) {
         } : {
             fitness: { title: 'Future FITness', founder: 'René Rohrbeck', desc: 'Organizational foresight maturity · Perceiving, Prospecting, Probing, 5-dimension self-assessment.' },
             cla: { title: 'Causal Layered Analysis (CLA)', founder: 'Sohail Inayatullah', desc: 'Litany, Systemic, Worldview, Myth · interactive pyramid and metaphor workshop.' },
-            'futures-wheel': { title: 'Futures Wheel', founder: 'Jerome C. Glenn', desc: '1st–3rd order consequences, STEEP models, radial impact tree.' },
+            'futures-wheel': { title: 'Futures Wheel', founder: 'Jerome C. Glenn', desc: '1st to 3rd order consequences, STEEP models, radial impact tree.' },
             backcasting: { title: 'Backcasting', founder: 'John B. Robinson', desc: 'Normative future design and reverse path from vision to today.' },
             'popper-diamond': { title: 'Popper Foresight Diamond', founder: 'Rafael Popper', desc: 'Foresight quality: Creativity, Innovation, Expertise, Interaction.' },
             'six-pillars': { title: 'Hines & Bishop Six Pillars', founder: 'Andy Hines & Peter Bishop', desc: 'Framing → Scanning → Forecasting → Visioning → Planning → Acting.' },
@@ -227,7 +227,7 @@ function buildCatalog(lang) {
             'three-horizons': { title: 'Three Horizons', founder: 'Curry & Hodgson', desc: 'H1/H2/H3 · managing transition from present business to emerging futures.' },
             'futures-literacy': { title: 'Futures Literacy', founder: 'Riel Miller (UNESCO)', desc: 'Capacity to imagine and use futures in everyday decisions.' },
             'environmental-scanning': { title: 'Environmental Scanning', founder: 'Aguilar / Choo', desc: 'Systematic monitoring of the environment for opportunities and threats.' },
-            'horizon-scanning': { title: 'Horizon Scanning', founder: 'UK Government Office for Science', desc: 'Detecting emerging issues and technologies on a 5–20 year horizon.' },
+            'horizon-scanning': { title: 'Horizon Scanning', founder: 'UK Government Office for Science', desc: 'Detecting emerging issues and technologies on a 5 to 20 year horizon.' },
             'weak-signals': { title: 'Weak Signals', founder: 'Ansoff / Hiltunen', desc: 'Early hints of major change · wild cards and emerging disruptions.' },
             'steep-pestle': { title: 'STEEP / PESTLE', founder: 'Millennium Project', desc: 'Social, Technological, Economic, Environmental, Political analysis.' },
             'trend-analysis': { title: 'Trend Analysis', founder: 'FRM / APF', desc: 'Identify, extrapolate, and map trends with plausibility cones.' },

@@ -377,9 +377,187 @@
         }
       ],
       "gapTitle": "Why not in FRM 3.0?",
-      "gap": "Chapter 39 covers integration only; Popper's Diamond is a <strong>meta-tool</strong> applied across all other methods. Glenn & Gordon listed tools; Popper added a <strong>quality lens</strong>.",
+      "gap": "Chapter 39 covers integration only; Popper's Diamond is a <strong>meta-tool</strong> applied across all other methods. Glenn & Gordon listed tools; Popper added a <strong>quality lens</strong>. Module two below on this page connects Michel Godet's five scenario quality criteria to these same four corners.",
       "caseTitle": "Practical example",
-      "case": "A ministry ran Delphi — 200-page report. Popper audit: high Expertise, medium Interaction, low Creativity and Innovation. Result: redesign with CLA and scenarios — not a second Delphi."
+      "case": "A ministry ran Delphi — 200-page report. Popper audit: high Expertise, medium Interaction, low Creativity and Innovation. Result: redesign with CLA and scenarios — not a second Delphi.",
+      "moduleContentTag": "Lecture & slides",
+      "moduleDeckNavLabel": "Slide navigation",
+      "moduleDeckPrev": "Previous",
+      "moduleDeckNext": "Next",
+      "moduleDeckSlide": "Slide",
+      "moduleDeckFullscreen": "Fullscreen · F",
+      "moduleReadingsTitle": "Further reading",
+      "moduleAssignmentTitle": "Assignment",
+      "labelFormat": "Format",
+      "labelCriteria": "Grading criteria",
+      "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+      "university": {
+        "title": "Popper Foresight Diamond · two lecture decks",
+        "intro": "Based on Rafael Popper's Foresight Diamond from the EU FORLEARN projects, with a bridge to Michel Godet's five scenario quality criteria. The Diamond is not a prediction tool, it is a lens for judging the quality of a foresight exercise.",
+        "modules": [
+          {
+            "num": "M1",
+            "id": "m1",
+            "pickerLabel": "Four corners in practice",
+            "title": "Four corners of the diamond in practice",
+            "hours": "75 min",
+            "readingsShort": "Popper 2008",
+            "visual": "assets/methods/covers/popper-m1-diamond.svg",
+            "visualCaption": "Creativity, innovation, expertise, interaction",
+            "lectureIntro": "Session 1 of this module clarifies the four corners of the Popper Diamond, creativity, innovation, expertise, and interaction, using workshop examples so their exact meaning is clear before any audit.",
+            "lectureSections": [
+              {
+                "id": "why-quality",
+                "title": "1. Why quality matters more than completion",
+                "slideTitles": [
+                  "A two hundred page report, still weak",
+                  "Popper's question",
+                  "The diamond versus a method list"
+                ],
+                "paragraphs": [
+                  "Many foresight projects end with a long report without any clarity on whether that report was actually good, or merely completed.",
+                  "Rafael Popper formalized this question in the EU FORLEARN projects: how do we know a foresight exercise was good, not just finished?",
+                  "The FRM lists thirty nine methods but offers no tool for comparing their quality. The Popper Diamond is a meta-tool that applies across any method, from Delphi to scenarios."
+                ]
+              },
+              {
+                "id": "creativity-innovation",
+                "title": "2. Creativity and innovation",
+                "slideTitles": [
+                  "Creativity: breaking assumptions",
+                  "Innovation: a new path or mere repetition",
+                  "A weak example and a strong example"
+                ],
+                "paragraphs": [
+                  "The creativity corner asks whether unexpected ideas, fresh metaphors, or an angle that did not exist before the workshop actually appeared.",
+                  "The innovation corner goes one step further: did the workshop's output surface a new policy option, a new business model, or a new operational path?",
+                  "A weak example is a workshop that simply relists already known trends. A strong example is a workshop that challenges one of the organization's core assumptions with a new metaphor."
+                ]
+              },
+              {
+                "id": "expertise-interaction",
+                "title": "3. Expertise and interaction",
+                "slideTitles": [
+                  "Expertise: evidence versus guesswork",
+                  "Real interaction versus token attendance",
+                  "A hollow corner as a quality warning"
+                ],
+                "paragraphs": [
+                  "The expertise corner asks whether deep domain knowledge, citable evidence, and analytical competence sat behind the result, or only general guesswork.",
+                  "The interaction corner shows the difference between a stakeholder who genuinely helped shape the result and one who merely signed the attendance sheet.",
+                  "Popper stresses that weak foresight is usually completely hollow in one or two corners, for example high expertise with no real stakeholder interaction at all."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Report",
+                "text": "Popper, R. (2008). <em>Foresight Diamond</em>. EU FORLEARN / European Commission JRC."
+              },
+              {
+                "type": "Article",
+                "text": "Popper, R. (2008). How are foresight methods selected? <em>Foresight</em> journal."
+              }
+            ],
+            "assignment": {
+              "title": "Scoring the four corners of a real workshop",
+              "description": "Choose a foresight workshop you have witnessed or know well.",
+              "body": [
+                "Score each corner from one to five and write one justifying sentence per score.",
+                "Identify the weakest corner and propose one corrective action."
+              ],
+              "format": "Half to one page",
+              "criteria": [
+                "Precision of the score reasoning",
+                "Realism of the corrective action"
+              ]
+            }
+          },
+          {
+            "num": "M2",
+            "id": "m2",
+            "pickerLabel": "Audit & Godet's criteria",
+            "title": "Auditing foresight quality: from the diamond to Godet's criteria",
+            "hours": "90 min",
+            "readingsShort": "Popper × Godet",
+            "visual": "assets/methods/covers/popper-m2-audit.svg",
+            "visualCaption": "From workshop evidence to a management memo",
+            "lectureIntro": "Session 2 walks through the audit process step by step and places Godet's five scenario quality criteria alongside the Popper Diamond, forming a shared language for judging foresight quality.",
+            "lectureSections": [
+              {
+                "id": "process",
+                "title": "1. The audit process, step by step",
+                "slideTitles": [
+                  "Gathering workshop evidence",
+                  "Scoring the four corners",
+                  "Interpreting the score pattern"
+                ],
+                "paragraphs": [
+                  "The audit starts by gathering real workshop evidence: minutes, the final report, the participant list, and any other written output.",
+                  "Each corner is scored against evidence, not a general impression. Interaction, for example, is measured by the number and diversity of stakeholders who genuinely contributed opinions, not by the headcount in the room.",
+                  "The pattern of scores matters more than their average. A diamond with high expertise and every other corner low sends a different warning than a diamond with a medium score across all corners."
+                ]
+              },
+              {
+                "id": "godet-criteria",
+                "title": "2. Godet's five criteria as a complement",
+                "slideTitles": [
+                  "Relevance, coherence, plausibility",
+                  "Strategic importance and transparency of method",
+                  "Two frameworks, one language"
+                ],
+                "paragraphs": [
+                  "Michel Godet proposes three criteria for judging scenario quality: direct relevance to the strategic question, internal narrative coherence, and plausibility within existing knowledge.",
+                  "Godet's other two criteria are the strategic importance of the result for the decision maker and transparency of the method used, a criterion that connects directly to the expertise corner of the Popper Diamond.",
+                  "Godet's criteria are sharper for scenario content, and the Popper Diamond is broader for workshop process. Using both together makes an audit sensitive to product and to process at once."
+                ]
+              },
+              {
+                "id": "case-memo",
+                "title": "3. A redesign case and a management memo",
+                "slideTitles": [
+                  "Case: a ministry and a two round Delphi",
+                  "From audit to a redesign proposal",
+                  "A one page memo for the board"
+                ],
+                "paragraphs": [
+                  "In a real Delphi workshop, expertise scored high while creativity and innovation scored low. The audit showed the problem was not the method itself, but the absence of room for unexpected ideas.",
+                  "The redesign proposal added one CLA or scenario session before the second Delphi round, rather than repeating the same method and hoping for a better result.",
+                  "The final audit output is a one page memo: the four corner scores, the related Godet criterion, and one clear recommendation, ready before a board presentation."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Report",
+                "text": "Popper, R. (2008). <em>Foresight Diamond</em>. EU FORLEARN / JRC."
+              },
+              {
+                "type": "Book",
+                "text": "Godet, M. (2000). The art of scenarios and strategic planning. <em>Technological Forecasting and Social Change</em>."
+              },
+              {
+                "type": "Teaching note",
+                "text": "A Farsi summary of strategic foresight by Eyvazi, the section on scenario quality criteria."
+              }
+            ],
+            "assignment": {
+              "title": "A two framework audit",
+              "description": "Evaluate a real or hypothetical foresight report with both frameworks.",
+              "body": [
+                "A table of the four Popper corners with scores and evidence.",
+                "A table of the five Godet criteria with scores and evidence.",
+                "A half page memo with a final recommendation."
+              ],
+              "format": "One to two pages",
+              "criteria": [
+                "Both frameworks used together without redundancy",
+                "Clarity of the final recommendation"
+              ]
+            }
+          }
+        ]
+      }
     },
     "hines": {
       "slug": "strategic-foresight",
@@ -435,9 +613,264 @@
         }
       ],
       "gapTitle": "Difference from FRM",
-      "gap": "FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar — not the reverse.",
+      "gap": "FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar, not the reverse. Module three below on this page connects Michel Godet's French prospective school and its MICMAC/MACTOR tools to this same architecture.",
       "caseTitle": "Example: Cone of Plausibility",
-      "case": "After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers — not every imaginable fantasy."
+      "case": "After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers — not every imaginable fantasy.",
+      "moduleContentTag": "Lecture & slides",
+      "moduleDeckNavLabel": "Slide navigation",
+      "moduleDeckPrev": "Previous",
+      "moduleDeckNext": "Next",
+      "moduleDeckSlide": "Slide",
+      "moduleDeckFullscreen": "Fullscreen · F",
+      "moduleReadingsTitle": "Further reading",
+      "moduleAssignmentTitle": "Assignment",
+      "labelFormat": "Format",
+      "labelCriteria": "Grading criteria",
+      "modulePickerHint": "Each card is a standalone deck. Press F for fullscreen.",
+      "university": {
+        "title": "Six Pillars (Hines & Bishop) · three lecture decks",
+        "intro": "Based on <em>Thinking About the Future</em> by Andy Hines and Peter Bishop, with a bridge to Michel Godet's French prospective school. The operational path from framing to acting, built for managers, not only researchers.",
+        "modules": [
+          {
+            "num": "M1",
+            "id": "m1",
+            "pickerLabel": "Six pillars as architecture",
+            "title": "Six pillars: an architecture for strategic foresight",
+            "hours": "75 min",
+            "readingsShort": "Hines & Bishop 2006",
+            "visual": "assets/methods/covers/hines-m1-six-pillars.svg",
+            "visualCaption": "From framing to acting, one chain",
+            "lectureIntro": "Session 1 of this module introduces the Hines and Bishop six pillar architecture from <em>Thinking About the Future</em>. The goal is to replace a method list with an operational path for managers.",
+            "lectureSections": [
+              {
+                "id": "why",
+                "title": "1. Why a method list is not enough",
+                "slideTitles": [
+                  "A manager facing a long method list",
+                  "From toolbox to path",
+                  "The core question of each pillar"
+                ],
+                "paragraphs": [
+                  "Houston's foresight program treated method reference books as a good resource, yet managers got lost in a long list of methods. Their question was simple: where do I start now?",
+                  "Hines and Bishop answered in <em>Thinking About the Future</em>: the six pillars are a sequential path, not a basket of separate tools. Each pillar answers one clear management question.",
+                  "Framing asks what problem and for whom. Scanning asks what is changing. Forecasting asks what futures are possible. Visioning asks which future is preferred. Planning asks what should be done. Acting asks who starts today."
+                ]
+              },
+              {
+                "id": "sequence",
+                "title": "2. The six pillars in order",
+                "slideTitles": [
+                  "Framing and scanning",
+                  "Forecasting and visioning",
+                  "Planning and acting"
+                ],
+                "paragraphs": [
+                  "Framing clarifies the system boundary, stakeholders, and the reason foresight is needed. Scanning uses environmental scanning and weak signals to organize the STEEP or PESTLE space.",
+                  "Forecasting explores the space of possible futures through trend analysis and cross-impact, not a single certain number. Visioning turns that space into preferred and normative images, building a bridge to scenarios and backcasting.",
+                  "Planning turns insight into roadmaps, indicators, and policy. Acting means piloting, structural change, and learning from the field. Without acting, the first five pillars only produce a report that sits on a shelf."
+                ]
+              },
+              {
+                "id": "chain",
+                "title": "3. A fragile chain",
+                "slideTitles": [
+                  "When one pillar stays weak",
+                  "A common failure pattern",
+                  "Organizational mapping exercise"
+                ],
+                "paragraphs": [
+                  "Hines and Bishop stress that the six pillars form a chain. Excellent forecasting without visioning ends in a report that no one connects to a decision.",
+                  "A common failure pattern: an organization takes scanning and forecasting seriously but hands off planning and acting, hoping the strategy team will figure it out. The usual result is management indifference.",
+                  "Exercise: map a real problem from your own organization across the six pillars and identify which pillar is today's weakest link."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "Hines, A. & Bishop, P. (2006). <em>Thinking About the Future</em>. Later editions 2013 to 2020."
+              },
+              {
+                "type": "Teaching note",
+                "text": "A Farsi summary of teaching about the future, based on Bishop and Hines, used as a course note. The primary source remains <em>Thinking About the Future</em>."
+              }
+            ],
+            "assignment": {
+              "title": "Mapping the six pillars",
+              "description": "Map a real or hypothetical organizational problem across the six pillars.",
+              "body": [
+                "Write one or two sentences per pillar for this problem.",
+                "Identify the weakest link in the chain and explain why."
+              ],
+              "format": "One page",
+              "criteria": [
+                "All six pillars covered",
+                "Accurate identification of the weak link"
+              ]
+            }
+          },
+          {
+            "num": "M2",
+            "id": "m2",
+            "pickerLabel": "Cone of plausibility",
+            "title": "Cone of plausibility: from forecasting to visioning",
+            "hours": "90 min",
+            "readingsShort": "Cone of Plausibility",
+            "visual": "assets/methods/covers/hines-m2-cone.svg",
+            "visualCaption": "From a single line to a layered cone",
+            "lectureIntro": "Session 2 focuses on the bridge between forecasting and visioning. The cone of plausibility maps the space of possible futures before a preferred future is chosen.",
+            "lectureSections": [
+              {
+                "id": "line",
+                "title": "1. Why one forecast line is not enough",
+                "slideTitles": [
+                  "The risk of a single forecast line",
+                  "From a line to a cone",
+                  "Layers of the cone"
+                ],
+                "paragraphs": [
+                  "A forecast that shows only the single most likely future does not prepare a manager for surprise. The first shock outside that line invalidates the whole plan.",
+                  "Instead of a line, Hines and Bishop draw a cone that opens from today. The further into the future we go, the wider the range of possible futures becomes.",
+                  "From the center outward, the layers of the cone are probable, plausible, possible, and finally preposterous futures. Each layer carries a different level of evidence and certainty."
+                ]
+              },
+              {
+                "id": "build",
+                "title": "2. Building the cone in a workshop",
+                "slideTitles": [
+                  "Starting point: the baseline",
+                  "Dominant trends and weak signals",
+                  "Wild cards at the edge of the cone"
+                ],
+                "paragraphs": [
+                  "Building the cone starts with a baseline from the current situation, the path that continues if nothing changes.",
+                  "Dominant trends shape the probable layer. Weak signals from scanning place possible but less likely futures in the middle layers of the cone.",
+                  "Wild cards sit at the edge of the cone: low probability, high impact events that must be monitored, not dismissed."
+                ]
+              },
+              {
+                "id": "vision",
+                "title": "3. From the cone to visioning",
+                "slideTitles": [
+                  "Choosing the preferred layers",
+                  "Normative image versus forecast",
+                  "Bridge to scenarios and backcasting"
+                ],
+                "paragraphs": [
+                  "Visioning focuses on the plausible and possible layers of the cone, not on every imaginable fantasy. This difference separates professional visioning from a mere wish.",
+                  "A normative image answers a direct question: among the possible futures inside the cone, which one is preferred by the organization? This question connects forecasting to a decision.",
+                  "The cone of plausibility is a natural bridge to scenario planning, where several layers become several scenarios, and to backcasting, where the normative image is turned into today's first step."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "Hines, A. & Bishop, P., the Forecasting and Visioning chapters of Thinking About the Future."
+              },
+              {
+                "type": "Related reference",
+                "text": "The cone of plausibility builds on the Hancock and Bezold and the Voros tradition. This session reads it inside the six pillar architecture."
+              }
+            ],
+            "assignment": {
+              "title": "Drawing a cone",
+              "description": "Draw a cone of plausibility for a real issue.",
+              "body": [
+                "Mark the baseline and at least two layers, probable and plausible.",
+                "Write one wild card at the edge of the cone and explain its impact in one sentence."
+              ],
+              "format": "One page or one figure with a short explanation",
+              "criteria": [
+                "Clarity of the layers",
+                "Logical link between the wild card and the topic"
+              ]
+            }
+          },
+          {
+            "num": "M3",
+            "id": "m3",
+            "pickerLabel": "Godet & the French school",
+            "title": "Two schools of foresight: Godet and the Anglo-American architecture",
+            "hours": "90 min",
+            "readingsShort": "Godet · MICMAC · MACTOR",
+            "visual": "assets/methods/covers/hines-m3-schools.svg",
+            "visualCaption": "French prospective versus Anglo-American forecasting",
+            "lectureIntro": "Session 3 places two major traditions of strategic foresight side by side: the French prospective school led by Michel Godet, and the Anglo-American tradition of RAND and Herman Kahn that underlies the Hines and Bishop six pillars.",
+            "lectureSections": [
+              {
+                "id": "roots",
+                "title": "1. Two historical roots",
+                "slideTitles": [
+                  "Gaston Berger and the birth of prospective",
+                  "RAND, Kahn, and the American forecasting tradition",
+                  "Why this difference matters"
+                ],
+                "paragraphs": [
+                  "In 1950s France, Gaston Berger coined the term prospective for an active, constructive stance toward the future. Unlike passive prediction, prospective treats the future as something to be built, not merely forecast.",
+                  "In the same period, RAND Corporation and Herman Kahn in the United States developed the military and strategic forecasting tradition using tools such as Delphi and war gaming. The Hines and Bishop six pillars continue this Anglo-American tradition.",
+                  "Michel Godet, an heir of Berger, extended prospective with quantitative and structural tools such as MICMAC and MACTOR. Knowing both traditions completes the toolkit of a foresight-minded manager."
+                ]
+              },
+              {
+                "id": "tools",
+                "title": "2. Godet's structural toolkit",
+                "slideTitles": [
+                  "MICMAC: cross-impact analysis of variables",
+                  "MACTOR: analysis of actor strategies",
+                  "Morphological analysis for building scenarios"
+                ],
+                "paragraphs": [
+                  "MICMAC places the key variables of a system in a matrix of mutual influence and dependence, so the true driving variables can be separated from merely dependent ones.",
+                  "MACTOR maps the actors of a system, their goals, and their relative power, complementing trend analysis with an analysis of power and interests.",
+                  "Morphological analysis places the key dimensions of a problem in a combinatorial space and selects internally consistent scenarios from among the possible combinations, a more systematic route than narrative guesswork alone."
+                ]
+              },
+              {
+                "id": "bridge",
+                "title": "3. Godet's quality criteria and the bridge to the six pillars",
+                "slideTitles": [
+                  "Five quality criteria for a scenario",
+                  "MICMAC inside the forecasting pillar",
+                  "MACTOR inside the planning pillar"
+                ],
+                "paragraphs": [
+                  "Godet proposes five criteria for a good scenario: relevance to the question, internal coherence, plausibility, strategic importance, and transparency of method. These criteria share a common language with the Popper Diamond.",
+                  "Inside the six pillar architecture, MICMAC fits naturally into the forecasting pillar: before drawing the cone of plausibility, it identifies the true driving variables with more precision.",
+                  "MACTOR fits into the planning pillar: a roadmap that ignores actor power and interests rarely survives implementation. Combining Hines and Bishop with Godet completes managerial architecture with structural tooling."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Teaching note",
+                "text": "A Farsi summary of strategic foresight by Eyvazi, focused on the French prospective school and Godet's tools."
+              },
+              {
+                "type": "Book",
+                "text": "Godet, M. (2000). The art of scenarios and strategic planning. <em>Technological Forecasting and Social Change</em>."
+              },
+              {
+                "type": "Classic paper",
+                "text": "Duperrin, J.C. & Godet, M. (1975). SMIC: a cross-impact method for grouping scenarios."
+              }
+            ],
+            "assignment": {
+              "title": "A simple MICMAC",
+              "description": "Choose six key variables for an organizational or policy issue.",
+              "body": [
+                "Define each variable in one sentence.",
+                "Score the direct effect of each variable pair on a simple zero to three scale and identify the variable with the highest net effect."
+              ],
+              "format": "One page with a six by six table",
+              "criteria": [
+                "Clarity of variable definitions",
+                "Sound reasoning for the main driving variable"
+              ]
+            }
+          }
+        ]
+      }
     },
     "scenarios": {
       "slug": "scenarios",
@@ -498,7 +931,7 @@
         }
       ],
       "gapTitle": "FRM vs real scenario practice",
-      "gap": "FRM Ch.19–21: Scenario, Toolbox, Interactive. Shell/Schwartz: a <strong>decision system</strong> with 2×2 and indicators. FRM mentions interactive scenarios; not Shell-style strategic survival.",
+      "gap": "FRM Ch.19–21: Scenario, Toolbox, Interactive. Shell/Schwartz: a <strong>decision system</strong> with 2×2 and indicators. FRM mentions interactive scenarios; not Shell-style strategic survival. Module four below on this page adds the Godet, Bezold, and Wendell Bell typologies to this path.",
       "caseTitle": "Example: Iran energy axes",
       "case": "Axis 1: energy transition speed (slow/fast). Axis 2: geopolitics (open/closed). Four scenarios: \"Regional green economy\", \"Fossil island\", \"Tech leap\", \"Chronic crisis\". Each implies different power investment policy.",
       "moduleContentTag": "Lecture & slides",
@@ -740,6 +1173,92 @@
               "criteria": [
                 "Decision linkage",
                 "Monitorable indicators"
+              ]
+            }
+          },
+          {
+            "num": "M4",
+            "id": "m4",
+            "pickerLabel": "Scenario typologies",
+            "title": "Scenario typologies: Godet, Bezold, and Bell",
+            "hours": "90 min",
+            "readingsShort": "Godet · Bell · Bezold",
+            "visual": "assets/methods/covers/scenarios-m4-typologies.svg",
+            "visualCaption": "Exploratory/normative × qualitative/quantitative/participatory",
+            "lectureIntro": "Session 4 shows that scenario is not one method, it is a family of methods. Godet's typology, Bezold's participatory approach, and Wendell Bell's classification help you choose the right method for each question.",
+            "lectureSections": [
+              {
+                "id": "need-typology",
+                "title": "1. Why a typology is needed",
+                "slideTitles": [
+                  "A Shell scenario is not a policy scenario",
+                  "Two core axes of the typology",
+                  "The cost of choosing the wrong method"
+                ],
+                "paragraphs": [
+                  "Shell's scenarios were built for managers' mental preparedness; a municipality's participatory scenarios are designed to build agreement among citizens. Both carry the name scenario, yet their construction logic differs.",
+                  "Two common axes classify scenarios: exploratory versus normative, and qualitative versus quantitative. These two axes alone produce four main scenario families.",
+                  "Choosing the wrong type carries a real cost: running a heavy quantitative process for a question that only needed a participatory conversation wastes an organization's time and credibility."
+                ]
+              },
+              {
+                "id": "godet-types",
+                "title": "2. Exploratory and normative in Godet",
+                "slideTitles": [
+                  "Exploratory scenarios: moving forward from today",
+                  "Normative scenarios: working backward from a preferred future",
+                  "The quantitative SMIC and cross-impact method"
+                ],
+                "paragraphs": [
+                  "Michel Godet defines exploratory scenarios as a move from today's trends and uncertainties toward several possible futures, a logic close to Shell and Schwartz scenarios.",
+                  "Normative scenarios move the other way: the starting point is a preferred future, and the question is which paths lead to it, the same logic you have seen in backcasting.",
+                  "Godet and Duperrin proposed the SMIC method in 1975 for probabilistically grouping scenarios based on cross-impact among assumptions, a more quantitative cousin of the qualitative 2×2 matrix common in management classrooms."
+                ]
+              },
+              {
+                "id": "bezold-bell",
+                "title": "3. Bezold's participation and Bell's classification",
+                "slideTitles": [
+                  "Clement Bezold and participatory scenario building",
+                  "Possible, probable, and preferable in Wendell Bell",
+                  "Choosing a typology for your project"
+                ],
+                "paragraphs": [
+                  "Clement Bezold developed participatory scenario building for policy and public health processes, where building agreement among stakeholders matters more than analytical precision alone.",
+                  "Wendell Bell, in Foundations of Futures Studies, separates possible, probable, and preferable futures. This triad sharpens the question: is this scenario possible, is it probable, or is it one we consider preferable?",
+                  "To choose a typology, first revisit M1's focal decision and the project's audience: a high-level strategic decision usually calls for exploratory and qualitative work, public policy for participatory work, and financial risk modeling usually for quantitative work."
+                ]
+              }
+            ],
+            "readings": [
+              {
+                "type": "Book",
+                "text": "Godet, M. (2000). The art of scenarios and strategic planning. <em>Technological Forecasting and Social Change</em>."
+              },
+              {
+                "type": "Classic paper",
+                "text": "Duperrin, J.C. & Godet, M. (1975). SMIC 74: a method for constructing and ranking scenarios."
+              },
+              {
+                "type": "Book",
+                "text": "Bell, W. (1997). <em>Foundations of Futures Studies</em>, Vol. 1 and 2."
+              },
+              {
+                "type": "Teaching note",
+                "text": "A Farsi summary of Wendell Bell's second volume and of Eyvazi's strategic foresight summary, used as a course note for this session."
+              }
+            ],
+            "assignment": {
+              "title": "Choosing a scenario typology",
+              "description": "Choose and justify a scenario typology for your term project.",
+              "body": [
+                "State whether your project is exploratory or normative and why.",
+                "State whether you need a qualitative, quantitative, or participatory method and give one practical reason."
+              ],
+              "format": "Half a page",
+              "criteria": [
+                "Fit between typology and project question",
+                "Clear reasoning rather than a default choice"
               ]
             }
           }
@@ -6527,7 +7046,7 @@
       "futures-wheel": {
         "title": "Futures Wheel",
         "founder": "Jerome C. Glenn",
-        "desc": "1st–3rd order consequences, STEEP models, radial impact tree."
+        "desc": "1st to 3rd order consequences, STEEP models, radial impact tree."
       },
       "backcasting": {
         "title": "Backcasting",
@@ -6577,7 +7096,7 @@
       "horizon-scanning": {
         "title": "Horizon Scanning",
         "founder": "UK Government Office for Science",
-        "desc": "Detecting emerging issues and technologies on a 5–20 year horizon."
+        "desc": "Detecting emerging issues and technologies on a 5 to 20 year horizon."
       },
       "weak-signals": {
         "title": "Weak Signals",

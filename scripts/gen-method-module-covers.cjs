@@ -327,6 +327,119 @@ files['type2-m4-workshop.svg'] = frame('IT2 Workshop → Foresight Memo', `
   <text x="790" y="270" text-anchor="middle" fill="${GRAY}" font-size="12">recommendation</text>
 `, 'Final project pipeline · Module M4');
 
+/* ---------------------- Hines & Bishop · 3 modules ------------------------ */
+
+files['hines-m1-six-pillars.svg'] = frame('Six Pillars · Frame to Act', `
+  ${[
+    [150, 'Framing', CYAN],
+    [300, 'Scanning', GREEN],
+    [450, 'Forecasting', AMBER],
+    [600, 'Visioning', PURPLE],
+    [750, 'Planning', ROSE],
+    [900, 'Acting', WHITE]
+  ].map(([x, label, c], i) => `
+  <rect x="${x - 68}" y="220" width="136" height="100" rx="12" fill="#152035" stroke="${c}" stroke-width="2"/>
+  <text x="${x}" y="260" text-anchor="middle" fill="${c}" font-size="14" font-weight="700">${i + 1}. ${label}</text>
+  <text x="${x}" y="282" text-anchor="middle" fill="${GRAY}" font-size="10">pillar ${i + 1}</text>
+  ${i < 5 ? `<path d="M${x + 68} 270 H${x + 82}" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>` : ''}`).join('')}
+  <text x="480" y="400" text-anchor="middle" fill="${GRAY}" font-size="14">A path, not a toolbox: weakness in one pillar breaks the whole chain.</text>
+`, 'Hines &amp; Bishop (2006) · Module M1');
+
+files['hines-m2-cone.svg'] = frame('Cone of Plausibility', `
+  <circle cx="180" cy="270" r="14" fill="${WHITE}"/>
+  <text x="180" y="245" text-anchor="middle" fill="${GRAY}" font-size="13">Today</text>
+  <path d="M194 262 C420 210 640 170 880 130" stroke="${GRAY}" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+  <path d="M194 267 C420 245 640 230 880 210" stroke="${CYAN}" stroke-width="2" fill="none"/>
+  <path d="M194 273 C420 295 640 310 880 330" stroke="${PURPLE}" stroke-width="2" fill="none"/>
+  <path d="M194 278 C420 330 640 370 880 410" stroke="${GRAY}" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+  <text x="895" y="126" fill="${GRAY}" font-size="12">preposterous</text>
+  <text x="895" y="206" fill="${CYAN}" font-size="12">plausible</text>
+  <text x="895" y="326" fill="${PURPLE}" font-size="12">possible</text>
+  <text x="895" y="406" fill="${GRAY}" font-size="12">preposterous</text>
+  <rect x="640" y="150" width="20" height="20" fill="${AMBER}"/>
+  <text x="700" y="166" fill="${AMBER}" font-size="12">wild card at the edge</text>
+  <text x="480" y="470" text-anchor="middle" fill="${GRAY}" font-size="14">Visioning selects preferred images from inside the plausible and possible layers.</text>
+`, 'Hines &amp; Bishop · Forecasting to Visioning · Module M2');
+
+files['hines-m3-schools.svg'] = frame('French Prospective vs. Anglo-American Foresight', `
+  <rect x="90" y="120" width="360" height="300" rx="16" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="270" y="160" text-anchor="middle" fill="${CYAN}" font-size="18" font-weight="700">La Prospective</text>
+  <text x="270" y="188" text-anchor="middle" fill="${GRAY}" font-size="13">Gaston Berger · Michel Godet</text>
+  <line x1="120" y1="210" x2="420" y2="210" stroke="${GRAY}" stroke-opacity="0.4"/>
+  <text x="270" y="245" text-anchor="middle" fill="${WHITE}" font-size="13">MICMAC · cross-impact</text>
+  <text x="270" y="270" text-anchor="middle" fill="${WHITE}" font-size="13">MACTOR · actor strategy</text>
+  <text x="270" y="295" text-anchor="middle" fill="${WHITE}" font-size="13">Morphological analysis</text>
+  <text x="270" y="330" text-anchor="middle" fill="${GRAY}" font-size="12">the future is built, not predicted</text>
+  <rect x="510" y="120" width="360" height="300" rx="16" fill="#152035" stroke="${ROSE}" stroke-width="2"/>
+  <text x="690" y="160" text-anchor="middle" fill="${ROSE}" font-size="18" font-weight="700">Anglo-American Forecasting</text>
+  <text x="690" y="188" text-anchor="middle" fill="${GRAY}" font-size="13">RAND · Herman Kahn</text>
+  <line x1="540" y1="210" x2="840" y2="210" stroke="${GRAY}" stroke-opacity="0.4"/>
+  <text x="690" y="245" text-anchor="middle" fill="${WHITE}" font-size="13">Delphi · war gaming</text>
+  <text x="690" y="270" text-anchor="middle" fill="${WHITE}" font-size="13">Six Pillars (Hines &amp; Bishop)</text>
+  <text x="690" y="295" text-anchor="middle" fill="${WHITE}" font-size="13">Cone of plausibility</text>
+  <text x="690" y="330" text-anchor="middle" fill="${GRAY}" font-size="12">a managerial path, pillar by pillar</text>
+  <path d="M450 270 H510" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M510 300 H450" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+`, 'Two roots, one toolkit · Module M3');
+
+/* -------------------------- Popper Diamond · 2 modules --------------------- */
+
+files['popper-m1-diamond.svg'] = frame('Four Corners of the Foresight Diamond', `
+  <path d="M480 110 L680 270 L480 430 L280 270 Z" fill="#152035" stroke="url(#accent)" stroke-width="2"/>
+  <circle cx="480" cy="110" r="46" fill="#152035" stroke="${ROSE}" stroke-width="2"/>
+  <text x="480" y="106" text-anchor="middle" fill="${ROSE}" font-size="13" font-weight="700">Creativity</text>
+  <text x="480" y="124" text-anchor="middle" fill="${GRAY}" font-size="10">new ideas</text>
+  <circle cx="680" cy="270" r="46" fill="#152035" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="680" y="266" text-anchor="middle" fill="${PURPLE}" font-size="13" font-weight="700">Innovation</text>
+  <text x="680" y="284" text-anchor="middle" fill="${GRAY}" font-size="10">new paths</text>
+  <circle cx="480" cy="430" r="46" fill="#152035" stroke="${CYAN}" stroke-width="2"/>
+  <text x="480" y="426" text-anchor="middle" fill="${CYAN}" font-size="13" font-weight="700">Expertise</text>
+  <text x="480" y="444" text-anchor="middle" fill="${GRAY}" font-size="10">deep evidence</text>
+  <circle cx="280" cy="270" r="46" fill="#152035" stroke="${AMBER}" stroke-width="2"/>
+  <text x="280" y="266" text-anchor="middle" fill="${AMBER}" font-size="13" font-weight="700">Interaction</text>
+  <text x="280" y="284" text-anchor="middle" fill="${GRAY}" font-size="10">real engagement</text>
+`, 'Popper (2008) EU FORLEARN · Module M1');
+
+files['popper-m2-audit.svg'] = frame('From Workshop Evidence to Board Memo', `
+  <rect x="80" y="160" width="220" height="220" rx="14" fill="#152035" stroke="${CYAN}" stroke-width="2"/>
+  <text x="190" y="215" text-anchor="middle" fill="${CYAN}" font-size="16" font-weight="700">Evidence</text>
+  <text x="190" y="245" text-anchor="middle" fill="${GRAY}" font-size="12">minutes, report,</text>
+  <text x="190" y="265" text-anchor="middle" fill="${GRAY}" font-size="12">participant list</text>
+  <path d="M310 270 H370" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="380" y="160" width="220" height="220" rx="14" fill="#102030" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="490" y="215" text-anchor="middle" fill="${PURPLE}" font-size="16" font-weight="700">Two lenses</text>
+  <text x="490" y="245" text-anchor="middle" fill="${GRAY}" font-size="12">4 Popper corners</text>
+  <text x="490" y="265" text-anchor="middle" fill="${GRAY}" font-size="12">5 Godet criteria</text>
+  <path d="M610 270 H670" stroke="${GRAY}" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="680" y="160" width="200" height="220" rx="14" fill="#152035" stroke="${GREEN}" stroke-width="2"/>
+  <text x="780" y="220" text-anchor="middle" fill="${GREEN}" font-size="16" font-weight="700">Memo</text>
+  <text x="780" y="250" text-anchor="middle" fill="${GRAY}" font-size="12">scores + one</text>
+  <text x="780" y="270" text-anchor="middle" fill="${GRAY}" font-size="12">recommendation</text>
+`, 'Popper x Godet audit · Module M2');
+
+/* -------------------------- Scenarios · module M4 -------------------------- */
+
+files['scenarios-m4-typologies.svg'] = frame('Scenario Typologies · Two Axes, Four Families', `
+  <line x1="480" y1="110" x2="480" y2="440" stroke="${GRAY}" stroke-width="2"/>
+  <line x1="180" y1="270" x2="780" y2="270" stroke="${GRAY}" stroke-width="2"/>
+  <text x="480" y="95" text-anchor="middle" fill="${GRAY}" font-size="13">Normative ↑</text>
+  <text x="480" y="460" text-anchor="middle" fill="${GRAY}" font-size="13">Exploratory ↓</text>
+  <text x="175" y="270" text-anchor="end" fill="${GRAY}" font-size="13">Qualitative</text>
+  <text x="785" y="270" fill="${GRAY}" font-size="13">Quantitative</text>
+  <rect x="300" y="130" width="170" height="130" rx="12" fill="#102030" stroke="${CYAN}" stroke-width="2"/>
+  <text x="385" y="190" text-anchor="middle" fill="${CYAN}" font-size="13" font-weight="700">Bezold</text>
+  <text x="385" y="210" text-anchor="middle" fill="${GRAY}" font-size="11">participatory</text>
+  <rect x="490" y="130" width="170" height="130" rx="12" fill="#152035" stroke="${PURPLE}" stroke-width="2"/>
+  <text x="575" y="190" text-anchor="middle" fill="${PURPLE}" font-size="13" font-weight="700">Godet SMIC</text>
+  <text x="575" y="210" text-anchor="middle" fill="${GRAY}" font-size="11">cross-impact</text>
+  <rect x="300" y="280" width="170" height="130" rx="12" fill="#152035" stroke="${AMBER}" stroke-width="2"/>
+  <text x="385" y="340" text-anchor="middle" fill="${AMBER}" font-size="13" font-weight="700">Shell · Schwartz</text>
+  <text x="385" y="360" text-anchor="middle" fill="${GRAY}" font-size="11">2×2 narrative</text>
+  <rect x="490" y="280" width="170" height="130" rx="12" fill="#152035" stroke="${ROSE}" stroke-width="2"/>
+  <text x="575" y="340" text-anchor="middle" fill="${ROSE}" font-size="13" font-weight="700">Cross-impact</text>
+  <text x="575" y="360" text-anchor="middle" fill="${GRAY}" font-size="11">probabilistic</text>
+`, 'Godet · Bezold · Wendell Bell · Module M4');
+
 fs.mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(files)) {
   fs.writeFileSync(path.join(OUT, name), svg, 'utf8');

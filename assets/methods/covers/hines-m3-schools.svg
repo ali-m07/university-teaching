@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00e5ff"/><stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b9bb0"/>
+    </marker>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="52" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700">French Prospective vs. Anglo-American Foresight</text>
+  
+  <rect x="90" y="120" width="360" height="300" rx="16" fill="#102030" stroke="#00e5ff" stroke-width="2"/>
+  <text x="270" y="160" text-anchor="middle" fill="#00e5ff" font-size="18" font-weight="700">La Prospective</text>
+  <text x="270" y="188" text-anchor="middle" fill="#8b9bb0" font-size="13">Gaston Berger · Michel Godet</text>
+  <line x1="120" y1="210" x2="420" y2="210" stroke="#8b9bb0" stroke-opacity="0.4"/>
+  <text x="270" y="245" text-anchor="middle" fill="#f3f4f6" font-size="13">MICMAC · cross-impact</text>
+  <text x="270" y="270" text-anchor="middle" fill="#f3f4f6" font-size="13">MACTOR · actor strategy</text>
+  <text x="270" y="295" text-anchor="middle" fill="#f3f4f6" font-size="13">Morphological analysis</text>
+  <text x="270" y="330" text-anchor="middle" fill="#8b9bb0" font-size="12">the future is built, not predicted</text>
+  <rect x="510" y="120" width="360" height="300" rx="16" fill="#152035" stroke="#ff5a7a" stroke-width="2"/>
+  <text x="690" y="160" text-anchor="middle" fill="#ff5a7a" font-size="18" font-weight="700">Anglo-American Forecasting</text>
+  <text x="690" y="188" text-anchor="middle" fill="#8b9bb0" font-size="13">RAND · Herman Kahn</text>
+  <line x1="540" y1="210" x2="840" y2="210" stroke="#8b9bb0" stroke-opacity="0.4"/>
+  <text x="690" y="245" text-anchor="middle" fill="#f3f4f6" font-size="13">Delphi · war gaming</text>
+  <text x="690" y="270" text-anchor="middle" fill="#f3f4f6" font-size="13">Six Pillars (Hines &amp; Bishop)</text>
+  <text x="690" y="295" text-anchor="middle" fill="#f3f4f6" font-size="13">Cone of plausibility</text>
+  <text x="690" y="330" text-anchor="middle" fill="#8b9bb0" font-size="12">a managerial path, pillar by pillar</text>
+  <path d="M450 270 H510" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M510 300 H450" stroke="#8b9bb0" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="480" y="516" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="14">Two roots, one toolkit · Module M3</text>
+</svg>

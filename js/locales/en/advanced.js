@@ -39,7 +39,7 @@ registerLocale('en', {
                 { title: 'Interaction', desc: 'Were stakeholders genuinely engaged? Token attendance is not interaction.', color: '#ffaa00' }
             ],
             gapTitle: 'Why not in FRM 3.0?',
-            gap: 'Chapter 39 covers integration only; Popper\'s Diamond is a <strong>meta-tool</strong> applied across all other methods. Glenn & Gordon listed tools; Popper added a <strong>quality lens</strong>.',
+            gap: 'Chapter 39 covers integration only; Popper\'s Diamond is a <strong>meta-tool</strong> applied across all other methods. Glenn & Gordon listed tools; Popper added a <strong>quality lens</strong>. Module two below on this page connects Michel Godet\'s five scenario quality criteria to these same four corners.',
             caseTitle: 'Practical example',
             case: 'A ministry ran Delphi — 200-page report. Popper audit: high Expertise, medium Interaction, low Creativity and Innovation. Result: redesign with CLA and scenarios — not a second Delphi.'
         },
@@ -73,7 +73,7 @@ registerLocale('en', {
                 { title: '6. Acting', desc: 'Pilots, structural change, learning. Without acting, foresight is management decoration.', color: 'var(--color-wheel-red)' }
             ],
             gapTitle: 'Difference from FRM',
-            gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar — not the reverse.',
+            gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar, not the reverse. Module three below on this page connects Michel Godet\'s French prospective school and its MICMAC/MACTOR tools to this same architecture.',
             caseTitle: 'Example: Cone of Plausibility',
             case: 'After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers — not every imaginable fantasy.'
         },
@@ -108,7 +108,7 @@ registerLocale('en', {
                 { title: '7. Organizational link', desc: 'Scenarios must connect to budgeting and risk — or they sit on shelves.', color: 'var(--color-wheel-red)' }
             ],
             gapTitle: 'FRM vs real scenario practice',
-            gap: 'FRM Ch.19–21: Scenario, Toolbox, Interactive. Shell/Schwartz: a <strong>decision system</strong> with 2×2 and indicators. FRM mentions interactive scenarios; not Shell-style strategic survival.',
+            gap: 'FRM Ch.19–21: Scenario, Toolbox, Interactive. Shell/Schwartz: a <strong>decision system</strong> with 2×2 and indicators. FRM mentions interactive scenarios; not Shell-style strategic survival. Module four below on this page adds the Godet, Bezold, and Wendell Bell typologies to this path.',
             caseTitle: 'Example: Iran energy axes',
             case: 'Axis 1: energy transition speed (slow/fast). Axis 2: geopolitics (open/closed). Four scenarios: "Regional green economy", "Fossil island", "Tech leap", "Chronic crisis". Each implies different power investment policy.'
         },
