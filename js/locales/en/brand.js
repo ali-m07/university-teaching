@@ -27,7 +27,7 @@ registerLocale('en', {
         findItems: [
             { icon: 'library', title: 'Foresight methods', desc: 'Syllabi and operational methods', href: 'methods/' },
             { icon: 'pen-line', title: 'Articles and notes', desc: 'Emerging technology, systems thinking, and uncertainty', href: 'articles/' },
-            { icon: 'file-text', title: 'CV', desc: 'Professional path in cloud, Kubernetes, and intelligent systems', href: 'https://ali-m07.github.io/resume/', external: true }
+            { icon: 'file-text', title: 'CV', desc: 'Professional path in cloud and intelligent systems', href: 'https://ali-m07.github.io/resume/', external: true }
         ],
         philosophyTag: 'Approach',
         philP1: 'Foresight should be teachable, measurable, and deployable in organizations, not just a report.',
@@ -43,7 +43,7 @@ registerLocale('en', {
         title: 'About me',
         sub: 'Hi, I am Ali Mansouri · futures researcher and Solutions Architect at Snapp',
         missionTitle: 'A short story',
-        mission: 'I am a PhD researcher in Futures Studies at the University of Tehran, and at the same time a Solutions Architect at Snapp for cloud, Kubernetes, and enterprise AI systems.<br><br>My core work sounds simple and is not easy: connecting future scenarios to infrastructure that must come out of the hardest pressure still alive and well.<br><br>For me foresight is not daydreaming on paper. A scenario matters when it can be implemented for the tomorrow of systems. My lens joins systems thinking, Type-2 fuzzy logic, and CLA with hard technology realities.<br><br>FORESIGHT HUB is my personal lab and thinking workshop, where FITness, Futures Wheel, and backcasting meet experience building intelligent systems, RAG, and scalable automation.<br><br>More on the professional path in the <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer">CV</a>.',
+        mission: 'I am a PhD researcher in Futures Studies at the University of Tehran, and at the same time a Solutions Architect at Snapp for cloud and enterprise AI systems.<br><br>My core work sounds simple and is not easy: connecting future scenarios to infrastructure that must come out of the hardest pressure still alive and well.<br><br>For me foresight is not daydreaming on paper. A scenario matters when it can be implemented for the tomorrow of systems. My lens joins systems thinking, Type-2 fuzzy logic, and CLA with hard technology realities.<br><br>FORESIGHT HUB is my personal lab and thinking workshop, where FITness, Futures Wheel, and backcasting meet experience building intelligent systems, RAG, and scalable automation.<br><br>More on the professional path in the <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer">CV</a>.',
         researchFocusTitle: 'Research focus',
         researchFocus: [
             'Strategic foresight and futures studies',
@@ -56,7 +56,7 @@ registerLocale('en', {
         technicalFocusTitle: 'Technical focus',
         technicalFocus: [
             'Cloud infrastructure and enterprise architecture',
-            'Kubernetes and cloud-native systems',
+            'Cloud-native systems',
             'LLM, RAG, and enterprise automation',
             'Scalable system design'
         ],

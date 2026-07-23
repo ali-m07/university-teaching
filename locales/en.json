@@ -30,14 +30,14 @@
     "heroEyebrow": "Strategic foresight researcher · Tehran / Snapp",
     "heroName": "Ali Mansouri",
     "heroTitle": "I connect future scenarios to infrastructure that must come out of the hardest pressure still alive and well.",
-    "heroSub": "PhD researcher at the University of Tehran and Solutions Architect at Snapp for cloud, Kubernetes, and enterprise AI. My focus is strategic foresight: bridging scenarios with living infrastructure.",
+    "heroSub": "PhD researcher at the University of Tehran and Solutions Architect at Snapp for cloud and enterprise AI. My focus is strategic foresight: bridging scenarios with living infrastructure.",
     "linkEmail": "Email",
     "note1": "Strategic foresight",
     "note2": "CLA",
     "note3": "FITness",
     "note4": "Scenario to infra",
     "note5": "Type-2 Fuzzy",
-    "note6": "Kubernetes",
+    "note6": "Cloud",
     "credentialPhd": "PhD · University of Tehran",
     "credentialFocus": "Strategic foresight · emerging technology",
     "heroIntroP1": "",
@@ -216,7 +216,7 @@
       {
         "icon": "file-text",
         "title": "CV",
-        "desc": "Professional path in cloud, Kubernetes, and intelligent systems",
+        "desc": "Professional path in cloud and intelligent systems",
         "href": "https://ali-m07.github.io/resume/",
         "external": true
       }
@@ -235,7 +235,7 @@
     "title": "About me",
     "sub": "Hi, I am Ali Mansouri · futures researcher and Solutions Architect at Snapp",
     "missionTitle": "A short story",
-    "mission": "I am a PhD researcher in Futures Studies at the University of Tehran, and at the same time a Solutions Architect at Snapp for cloud, Kubernetes, and enterprise AI systems.<br><br>My core work sounds simple and is not easy: connecting future scenarios to infrastructure that must come out of the hardest pressure still alive and well.<br><br>For me foresight is not daydreaming on paper. A scenario matters when it can be implemented for the tomorrow of systems. My lens joins systems thinking, Type-2 fuzzy logic, and CLA with hard technology realities.<br><br>FORESIGHT HUB is my personal lab and thinking workshop, where FITness, Futures Wheel, and backcasting meet experience building intelligent systems, RAG, and scalable automation.<br><br>More on the professional path in the <a href=\"https://ali-m07.github.io/resume/\" target=\"_blank\" rel=\"noopener noreferrer\">CV</a>.",
+    "mission": "I am a PhD researcher in Futures Studies at the University of Tehran, and at the same time a Solutions Architect at Snapp for cloud and enterprise AI systems.<br><br>My core work sounds simple and is not easy: connecting future scenarios to infrastructure that must come out of the hardest pressure still alive and well.<br><br>For me foresight is not daydreaming on paper. A scenario matters when it can be implemented for the tomorrow of systems. My lens joins systems thinking, Type-2 fuzzy logic, and CLA with hard technology realities.<br><br>FORESIGHT HUB is my personal lab and thinking workshop, where FITness, Futures Wheel, and backcasting meet experience building intelligent systems, RAG, and scalable automation.<br><br>More on the professional path in the <a href=\"https://ali-m07.github.io/resume/\" target=\"_blank\" rel=\"noopener noreferrer\">CV</a>.",
     "researchFocusTitle": "Research focus",
     "researchFocus": [
       "Strategic foresight and futures studies",
@@ -248,7 +248,7 @@
     "technicalFocusTitle": "Technical focus",
     "technicalFocus": [
       "Cloud infrastructure and enterprise architecture",
-      "Kubernetes and cloud-native systems",
+      "Cloud-native systems",
       "LLM, RAG, and enterprise automation",
       "Scalable system design"
     ],
