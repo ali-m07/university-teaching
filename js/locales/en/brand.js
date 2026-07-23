@@ -9,15 +9,51 @@ registerLocale('en', {
         methodsLink: 'Foresight Methods',
         bioTitle: '',
         spaceTag: 'Why this space?',
+        whyTitle: 'Why FORESIGHT HUB?',
+        whyCards: [
+            {
+                icon: 'cpu',
+                tone: 'blue',
+                title: 'Operational scenarios',
+                desc: 'A scenario earns its keep when it can be implemented for the “tomorrow morning” of real systems. Moving from paper daydreams toward operational resilience.'
+            },
+            {
+                icon: 'network',
+                tone: 'indigo',
+                title: 'Systems thinking plus fuzzy logic',
+                desc: 'Joining Causal Layered Analysis (CLA) and Type-2 fuzzy logic with the challenges of scalable, complex infrastructure.'
+            },
+            {
+                icon: 'book-open',
+                tone: 'teal',
+                title: 'Personal lab',
+                desc: 'A workshop for exploring FITness, Futures Wheel, RAG, and organizational automation built on emerging technologies.'
+            }
+        ],
         spaceTitle: 'A scenario that never reaches the tomorrow of systems is not enough for me',
         spaceP1: 'For me, foresight is not daydreaming on paper or a few polished charts. A scenario earns its keep when it can be implemented for the “tomorrow morning” of real systems, not only for the next meeting slide.',
         spaceP2: 'My lens joins systems thinking, Type-2 fuzzy logic, and Causal Layered Analysis (CLA) with the hard realities of technology. Organizations and platforms should not wait for the future to ambush them; they should be designed for real flexibility under uncertainty.',
         spaceP3: 'FORESIGHT HUB is my personal lab and thinking workshop. It is where complex foresight theories such as FITness, Futures Wheel, and backcasting meet lived experience building intelligent systems, RAG, and scalable automation.',
         pathTag: 'Path',
-        pathTitle: 'How my path took shape',
+        pathTitle: 'Intellectual evolution',
+        timelineSteps: [
+            {
+                title: 'Electrical engineering',
+                desc: 'Foundation in engineering thinking, systems analysis, and hardware/math logic.'
+            },
+            {
+                title: 'MBA in human resources',
+                desc: 'Extending an engineering lens toward organizations, human dynamics, and organizational behavior.'
+            },
+            {
+                title: 'PhD in Futures Studies (University of Tehran)',
+                desc: 'Connecting the loops: analyzing macro uncertainty and building infrastructure resilient to the future.'
+            }
+        ],
         pathP1: 'I started in electrical engineering, widened that engineering eye through an MBA in human resources toward people and organizations, and now in a Futures Studies PhD I am joining those loops. That interdisciplinary background taught me to see one problem at once as an infrastructure engineer, an organizational analyst, and a futurist.',
         collabTag: 'Collaborate',
-        collabTitle: 'How we can work together',
+        collabTitle: 'Teaching and collaboration',
+        collabDesc: 'Available for specialized organizational workshops, university teaching, and advisory work in strategic foresight, Kubernetes, and enterprise AI.',
         collabP1: 'If you are a student, an instructor, or an organizational team that wants stronger infrastructure and strategic thinking for the future, I would be glad to talk.',
         collabP2: 'I am available for university teaching, specialized organizational workshops, joint projects, and advisory work in strategic foresight and emerging infrastructure.',
         contactTag: 'Contact',

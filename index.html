@@ -8,103 +8,96 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=20260723n">
+    <link rel="stylesheet" href="css/style.css?v=20260723o">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script>window.SFH_LOCALE_VERSION = '61';</script>
+    <script>window.SFH_LOCALE_VERSION = '62';</script>
 </head>
 <body class="sfh-platform home-page">
     <canvas id="particles-canvas"></canvas>
 
     <header class="main-header">
         <div class="logo">
-            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-icon"><i data-lucide="terminal"></i></span>
             <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
         </div>
         <nav class="nav-links"></nav>
-        <div class="header-actions"></div>
+        <div class="header-actions">
+            <a href="mailto:ali.mansouri1998@gmail.com" class="btn-primary-sm header-mail-cta">
+                <i data-lucide="mail"></i>
+                <span data-i18n="index.mailCta">ارتباط مستقیم</span>
+            </a>
+        </div>
     </header>
 
-    <section id="main-content" class="home-hero">
-        <div class="home-hero-media" aria-hidden="true">
-            <img class="home-hero-img" src="assets/home-hero-atmosphere.jpg" alt="" width="1536" height="1024" decoding="async" fetchpriority="high">
-            <div class="home-hero-scrim"></div>
-        </div>
-        <div class="home-hero-content">
-            <p class="home-hero-brand" data-i18n="index.heroName">سلام، من علی منصوری‌ام.</p>
-            <h1 class="home-hero-headline" data-i18n="index.heroTitle">کار اصلی من ساده‌ست، اما آسان نیست: وصل کردن سناریوهای آینده به زیرساختی که باید از دل سخت‌ترین فشارها، زنده و سالم بیرون بیاید.</h1>
-            <p class="home-hero-support" data-i18n="index.heroSub">پژوهشگر دکتری آینده‌پژوهی در دانشگاه تهرانم و هم‌زمان در اسنپ، معمار راه‌حل سامانه‌های ابری، کوبرنتیز و هوش مصنوعی سازمانی.</p>
-            <div class="home-hero-actions">
-                <a href="methods/" class="btn-primary-sm"><span data-i18n="nav.methods">روش‌های آینده‌پژوهی</span></a>
-                <a href="articles/" class="btn-ghost-sm"><span data-i18n="nav.articles">مقالات</span></a>
-                <a href="https://ali-m07.github.io/resume/" target="_blank" rel="noopener noreferrer" class="btn-ghost-sm"><span data-i18n="nav.cv">رزومه</span></a>
-            </div>
-        </div>
-    </section>
+    <main id="main-content" class="home-landing">
+        <section class="home-hero home-hero--landing">
+            <div class="home-hero-glow" aria-hidden="true"></div>
+            <div class="home-hero-inner container">
+                <div class="home-hero-content home-hero-content--landing">
+                    <div class="home-hero-badge">
+                        <span class="home-hero-badge-dot" aria-hidden="true"></span>
+                        <span data-i18n="index.badge">معماری سیستم + آینده‌پژوهی راهبردی</span>
+                    </div>
 
-    <section class="container home-story compact">
-        <div class="home-story-inner">
-            <div class="section-header section-header--left">
-                <span class="section-tag" data-i18n="brand.spaceTag">چرا این فضا؟</span>
-                <h2 data-i18n="brand.spaceTitle">سناریویی که به فردای سیستم وصل نشود، برای من کافی نیست</h2>
-            </div>
-            <div class="prose-block">
-                <p data-i18n="brand.spaceP1"></p>
-                <p data-i18n="brand.spaceP2"></p>
-                <p data-i18n="brand.spaceP3"></p>
-            </div>
-        </div>
-    </section>
+                    <h1 class="home-hero-title">
+                        <span data-i18n="index.heroTitleHtml" data-i18n-html></span>
+                    </h1>
 
-    <section class="container home-story compact">
-        <div class="home-story-inner">
-            <div class="section-header section-header--left">
-                <span class="section-tag" data-i18n="brand.pathTag">مسیر</span>
-                <h2 data-i18n="brand.pathTitle">مسیر من چطور شکل گرفت؟</h2>
-            </div>
-            <div class="prose-block">
-                <p data-i18n="brand.pathP1"></p>
-            </div>
-        </div>
-    </section>
+                    <p class="home-hero-bridge" data-i18n="index.heroBridge"></p>
 
-    <section class="container home-story compact">
-        <div class="home-story-inner">
-            <div class="section-header section-header--left">
-                <span class="section-tag" data-i18n="brand.collabTag">همکاری</span>
-                <h2 data-i18n="brand.collabTitle">چطور می‌توانیم همکاری کنیم؟</h2>
-            </div>
-            <div class="prose-block">
-                <p data-i18n="brand.collabP1"></p>
-                <p data-i18n="brand.collabP2"></p>
-            </div>
-        </div>
-    </section>
+                    <div class="home-hero-credentials">
+                        <div class="home-credential-pill">
+                            <i data-lucide="graduation-cap"></i>
+                            <span data-i18n="index.credentialPhd"></span>
+                        </div>
+                        <div class="home-credential-pill">
+                            <i data-lucide="building-2"></i>
+                            <span data-i18n="index.credentialSnapp"></span>
+                        </div>
+                    </div>
 
-    <section class="container home-contact compact">
-        <div class="home-story-inner">
-            <div class="section-header section-header--left">
-                <span class="section-tag" data-i18n="brand.contactTag">ارتباط</span>
-                <h2 data-i18n="brand.contactTitle">ارتباط با من</h2>
+                    <div class="home-hero-actions">
+                        <a href="#contact" class="btn-primary-sm home-cta-primary">
+                            <span data-i18n="index.ctaCollab">دعوت برای تدریس / مشاوره</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="methods/" class="btn-ghost-sm">
+                            <span data-i18n="index.ctaMethods">روش‌های آینده‌پژوهی</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="prose-block">
-                <p data-i18n="brand.contactP1"></p>
-            </div>
-            <a class="home-contact-email" href="mailto:ali.mansouri1998@gmail.com" data-i18n="brand.contactEmail">ali.mansouri1998@gmail.com</a>
-        </div>
-    </section>
+        </section>
 
-    <section class="container home-find compact">
-        <h2 class="home-find-title" data-i18n="brand.findTitle">از کجا شروع کنید؟</h2>
-        <div id="brand-find-grid" class="home-find-list"></div>
-    </section>
+        <section class="container home-why-section">
+            <h2 class="home-section-title" data-i18n="brand.whyTitle">چرا FORESIGHT HUB؟</h2>
+            <div id="home-why-grid" class="home-why-grid"></div>
+        </section>
+
+        <section class="container home-timeline-section">
+            <h2 class="home-section-title" data-i18n="brand.pathTitle">مسیر تکامل فکری</h2>
+            <div id="home-timeline" class="home-timeline"></div>
+        </section>
+
+        <section id="contact" class="container home-collab-section">
+            <div class="home-collab-card">
+                <h2 class="home-collab-title" data-i18n="brand.collabTitle">فرصت‌های همکاری و تدریس</h2>
+                <p class="home-collab-desc" data-i18n="brand.collabDesc"></p>
+                <a class="home-collab-email btn-primary-sm" href="mailto:ali.mansouri1998@gmail.com">
+                    <i data-lucide="mail"></i>
+                    <span data-i18n="index.contactEmailCta">ارسال ایمیل برای هماهنگی و گفت‌وگو</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer class="main-footer">
         <div class="footer-container container compact">
             <div class="footer-info">
                 <div class="footer-logo">
-                    <span class="logo-icon"><i data-lucide="compass"></i></span>
+                    <span class="logo-icon"><i data-lucide="terminal"></i></span>
                     <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
                 </div>
                 <p data-i18n="footer.desc"></p>
