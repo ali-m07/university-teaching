@@ -32,12 +32,6 @@
     "heroTitle": "I connect future scenarios to infrastructure that must come out of the hardest pressure still alive and well.",
     "heroSub": "PhD researcher at the University of Tehran and Solutions Architect at Snapp for cloud and enterprise AI. My focus is strategic foresight: bridging scenarios with living infrastructure.",
     "linkEmail": "Email",
-    "note1": "Strategic foresight",
-    "note2": "CLA",
-    "note3": "FITness",
-    "note4": "Scenario to infra",
-    "note5": "Type-2 Fuzzy",
-    "note6": "Cloud",
     "credentialPhd": "PhD · University of Tehran",
     "credentialFocus": "Strategic foresight · emerging technology",
     "heroIntroP1": "",
@@ -212,13 +206,6 @@
         "title": "Articles and notes",
         "desc": "Emerging technology, systems thinking, and uncertainty",
         "href": "articles/"
-      },
-      {
-        "icon": "file-text",
-        "title": "CV",
-        "desc": "Professional path in cloud and intelligent systems",
-        "href": "https://ali-m07.github.io/resume/",
-        "external": true
       }
     ],
     "philosophyTag": "Approach",

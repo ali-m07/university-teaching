@@ -26,8 +26,7 @@ registerLocale('en', {
         findTitle: 'Where to start',
         findItems: [
             { icon: 'library', title: 'Foresight methods', desc: 'Syllabi and operational methods', href: 'methods/' },
-            { icon: 'pen-line', title: 'Articles and notes', desc: 'Emerging technology, systems thinking, and uncertainty', href: 'articles/' },
-            { icon: 'file-text', title: 'CV', desc: 'Professional path in cloud and intelligent systems', href: 'https://ali-m07.github.io/resume/', external: true }
+            { icon: 'pen-line', title: 'Articles and notes', desc: 'Emerging technology, systems thinking, and uncertainty', href: 'articles/' }
         ],
         philosophyTag: 'Approach',
         philP1: 'Foresight should be teachable, measurable, and deployable in organizations, not just a report.',

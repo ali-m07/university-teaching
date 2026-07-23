@@ -26,8 +26,7 @@ registerLocale('fa', {
         findTitle: 'از کجا شروع کنید؟',
         findItems: [
             { icon: 'library', title: 'روش‌های آینده‌نگاری', desc: 'طرح‌درس‌ها و متدهای عملیاتی', href: 'methods/' },
-            { icon: 'pen-line', title: 'مقالات و یادداشت‌ها', desc: 'فناوری نوظهور، تفکر سیستمی و عدم‌قطعیت', href: 'articles/' },
-            { icon: 'file-text', title: 'رزومه', desc: 'مسیر حرفه‌ای در کلاد و سیستم‌های هوشمند', href: 'https://ali-m07.github.io/resume/', external: true }
+            { icon: 'pen-line', title: 'مقالات و یادداشت‌ها', desc: 'فناوری نوظهور، تفکر سیستمی و عدم‌قطعیت', href: 'articles/' }
         ],
         philosophyTag: 'رویکرد',
         philP1: 'آینده‌نگاری راهبردی باید قابل تدریس، قابل سنجش و قابل استقرار در سازمان باشد؛ نه فقط گزارش.',
