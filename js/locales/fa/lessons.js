@@ -388,6 +388,53 @@ registerLocale('fa', {
                 { type: 'FA · پایان‌نامه', text: 'IRANDOC: جستجوی «منطق فازی نوع ۲» در مهندسی برق و مدیریت فناوری (تهران، شریف، علم و صنعت).' }
             ],
             assignment: 'پروژه پایانی: weak signal واقعی (ترجیحاً حوزه thesis) · کارگاه صفحه FOU · memo یک‌صفحه‌ای · rule base ۳ قانونی · ارائه ۱۰ دقیقه. جزئیات تکالیف و ریبریک در بخش «طرح درس» بالای کارگاه.'
+        },
+        envScanning: {
+            meta: {
+                module: '۱۰',
+                duration: '۹۰ دقیقه',
+                level: 'کارشناسی / کارشناسی ارشد آینده‌پژوهی',
+                diagram: 'assets/methods/environmental-scanning.svg',
+                diagramAlt: 'چهار الگوی رصد محیطی روی دو محور قابل‌تحلیل‌بودن و تهاجمی‌بودن'
+            },
+            prerequisites: 'دورهٔ مقدماتی آینده‌پژوهی یا استراتژی. آشنایی با شش ستون (ستون Scanning) یا STEEP/PESTLE مفید است، اما لازم نیست.',
+            assessment: 'تمرین کلاسی تشخیص الگو ۴۰٪ · memo طراحی روتین رصد ۶۰٪. جزئیات memo در بخش تکلیف زیر.',
+            founders: [
+                {
+                    id: 'aguilar',
+                    name: 'Francis J. Aguilar',
+                    role: 'نویسندهٔ Scanning the Business Environment · Harvard Business School',
+                    bio: 'استاد Harvard Business School که پایان‌نامهٔ دکتری ۱۹۶۷ او برای اولین بار نحوهٔ جمع‌آوری اطلاعات بیرونی توسط مدیران را طبقه‌بندی کرد؛ بعدها چارچوب PEST را نیز توسعه داد.'
+                },
+                {
+                    id: 'choo',
+                    name: 'Chun Wei Choo',
+                    role: 'رصد محیطی به‌عنوان رفتار اطلاعاتی · University of Toronto',
+                    bio: 'استاد بازنشسته دانشکدهٔ اطلاعات دانشگاه تورنتو. در کتاب <em>Information Management for the Intelligent Organization</em> رصد را از منظر نیاز اطلاعاتی، جست‌وجوی اطلاعات و کاربرد اطلاعات بازتعریف کرد.'
+                }
+            ],
+            objectives: [
+                'رصد محیطی را تعریف کنی و از forecasting و trend analysis متمایزش کنی.',
+                'چهار الگوی رصد آگویلار را با مثال سازمانی توضیح بدهی.',
+                'گونه‌شناسی آگویلار را به دو بعد Daft و Weick و مدل اطلاع‌جویی چو وصل کنی.',
+                'رصد را به بخش‌های STEEP یا PESTLE، weak signals، horizon scanning و بعد Perceiving در FITness ربط بدهی.',
+                'الگوی غالب رصد یک سازمان واقعی را تشخیص بدهی و یک روتین سبک برای پرکردن شکاف طراحی کنی.'
+            ],
+            outline: [
+                { step: '۱', time: '۱۵ دقیقه', title: 'چرا رصد یک فعالیت یکنواخت نیست', desc: 'چهار الگوی آگویلار، از رویارویی تصادفی تا جست‌وجوی رسمی.' },
+                { step: '۲', time: '۲۰ دقیقه', title: 'Daft، Weick و چو', desc: 'دو محور: قابل‌تحلیل‌بودن محیط و میزان تهاجم · undirected viewing، conditioned viewing، enacting، searching.' },
+                { step: '۳', time: '۳۰ دقیقه', title: 'تشخیص یک سازمان', desc: 'گروه‌ها رفتار رصد یک واحد واقعی را روی شبکهٔ چهارالگویی نگاشت می‌کنند.' },
+                { step: '۴', time: '۱۵ دقیقه', title: 'پرکردن شکاف', desc: 'طراحی یک روتین conditioned viewing و یک روتین informal search، متصل به بخش‌های STEEP و weak signals.' },
+                { step: '۵', time: '۱۰ دقیقه', title: 'جمع‌بندی و اتصال', desc: 'جای رصد درون بعد Perceiving در FITness و ستون Scanning هاینز و بی‌شاپ.' }
+            ],
+            readings: [
+                { type: 'کتاب', text: 'Aguilar, F. J. (1967). <em>Scanning the Business Environment</em>. New York: Macmillan.' },
+                { type: 'مقاله', text: 'Daft, R. L., & Weick, K. E. (1984). Toward a model of organizations as interpretation systems. <em>Academy of Management Review</em>, 9(2), pp. 284 to 295.' },
+                { type: 'مونوگراف', text: 'Choo, C. W. (1998). <em>Information Management for the Intelligent Organization: The Art of Scanning the Environment</em> (2nd ed.). Medford, NJ: Information Today, for ASIS&T.' },
+                { type: 'مقاله', text: 'Choo, C. W. (2001). Environmental scanning as information seeking and organizational learning. <em>Information Research</em>, 7(1), paper 112.' },
+                { type: 'مقاله', text: 'Choo, C. W., & Auster, E. (1993). Environmental scanning: Acquisition and use of information by managers. <em>Annual Review of Information Science and Technology</em>, 28, pp. 279 to 314.' }
+            ],
+            assignment: 'یک سازمان واقعی انتخاب کن (محل کار، مورد thesis یا یک نهاد عمومی). در یک صفحه: رفتار رصد فعلی آن را روی چهار الگوی آگویلار نگاشت کن، ضعیف‌ترین یا گمشده‌ترین الگو را با چارچوب چو نام‌گذاری کن، و یک روتین مشخص conditioned viewing یا informal search پیشنهاد بده که پیش از چرخهٔ برنامه‌ریزی بعدی این شکاف را پر کند.'
         }
     }
 });

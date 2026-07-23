@@ -11,7 +11,10 @@ const pages = [
     { file: 'popper-diamond.html', method: 'popper-diamond', i18n: 'popper', accent: '#e040fb', icon: 'gem' },
     { file: 'strategic-foresight.html', method: 'strategic-foresight', i18n: 'hines', accent: 'var(--color-f)', icon: 'columns-3' },
     { file: 'scenarios.html', method: 'scenarios', i18n: 'scenarios', accent: 'var(--color-cla)', icon: 'git-branch' },
-    { file: 'futurpreneurship.html', method: 'futurpreneurship', i18n: 'futurpreneurship', accent: 'var(--color-i)', icon: 'rocket' }
+    { file: 'futurpreneurship.html', method: 'futurpreneurship', i18n: 'futurpreneurship', accent: 'var(--color-i)', icon: 'rocket' },
+    { file: 'environmental-scanning.html', method: 'environmental-scanning', i18n: 'envScanning', accent: '#4caf50', icon: 'scan-search' },
+    { file: 'weak-signals.html', method: 'weak-signals', i18n: 'weakSignals', accent: '#ffaa00', icon: 'radio' },
+    { file: 'futures-literacy.html', method: 'futures-literacy', i18n: 'futuresLiteracy', accent: '#4caf50', icon: 'book-open' }
 ];
 
 function shell({ file, method, i18n, accent, icon }) {

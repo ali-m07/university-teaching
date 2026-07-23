@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none" role="img" aria-label="Four modes of environmental scanning">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540">
+      <stop stop-color="#070a13"/><stop offset="1" stop-color="#0f1729"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" rx="18"/>
+  <text x="480" y="46" text-anchor="middle" fill="#f3f4f6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Four Modes of Environmental Scanning</text>
+  <text x="480" y="70" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="13">Aguilar (1967) · reinterpreted by Daft &amp; Weick (1984) · adopted by Choo (1998, 2001)</text>
+
+  <!-- axes -->
+  <line x1="140" y1="100" x2="140" y2="470" stroke="#37415a" stroke-width="2"/>
+  <line x1="140" y1="470" x2="880" y2="470" stroke="#37415a" stroke-width="2"/>
+
+  <!-- axis labels -->
+  <text x="510" y="500" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600">Organizational intrusiveness into the environment</text>
+  <text x="230" y="497" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="12">Passive</text>
+  <text x="790" y="497" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="12">Active</text>
+
+  <text x="70" y="285" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" transform="rotate(-90 70 285)">Belief that the environment can be analyzed</text>
+  <text x="112" y="140" text-anchor="end" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="12">Analyzable</text>
+  <text x="112" y="450" text-anchor="end" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="12">Unanalyzable</text>
+
+  <!-- quadrant divider -->
+  <line x1="510" y1="100" x2="510" y2="470" stroke="#242c40" stroke-width="1" stroke-dasharray="4 6"/>
+  <line x1="140" y1="285" x2="880" y2="285" stroke="#242c40" stroke-width="1" stroke-dasharray="4 6"/>
+
+  <!-- quadrant: top-left = Unanalyzable + Passive = Undirected viewing -->
+  <rect x="150" y="110" width="350" height="165" rx="14" fill="rgba(76,175,80,0.08)" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="325" y="175" text-anchor="middle" fill="#4caf50" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Undirected viewing</text>
+  <text x="325" y="200" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="12">General, unfocused exposure</text>
+  <text x="325" y="220" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="12">to information (Aguilar)</text>
+
+  <!-- quadrant: top-right = Unanalyzable + Active = Enacting -->
+  <rect x="520" y="110" width="350" height="165" rx="14" fill="rgba(0,229,255,0.08)" stroke="#00e5ff" stroke-width="1.5"/>
+  <text x="695" y="175" text-anchor="middle" fill="#00e5ff" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Enacting</text>
+  <text x="695" y="200" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="12">Actively probing or testing the</text>
+  <text x="695" y="220" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="12">environment (Daft &amp; Weick)</text>
+
+  <!-- quadrant: bottom-left = Analyzable + Passive = Conditioned viewing -->
+  <rect x="150" y="290" width="350" height="165" rx="14" fill="rgba(255,170,0,0.08)" stroke="#ffaa00" stroke-width="1.5"/>
+  <text x="325" y="355" text-anchor="middle" fill="#ffaa00" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Conditioned viewing</text>
+  <text x="325" y="380" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="12">Passive but sensitized to</text>
+  <text x="325" y="400" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="12">specific, routine topics</text>
+
+  <!-- quadrant: bottom-right = Analyzable + Active = Searching / Formal search -->
+  <rect x="520" y="290" width="350" height="165" rx="14" fill="rgba(124,77,255,0.08)" stroke="#7c4dff" stroke-width="1.5"/>
+  <text x="695" y="350" text-anchor="middle" fill="#7c4dff" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Searching</text>
+  <text x="695" y="375" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="12">Formal, systematic collection of</text>
+  <text x="695" y="395" text-anchor="middle" fill="#c7cede" font-family="Segoe UI,Arial,sans-serif" font-size="12">specific data (Aguilar's formal search)</text>
+
+  <text x="480" y="524" text-anchor="middle" fill="#8b9bb0" font-family="Segoe UI,Arial,sans-serif" font-size="13">Choo (1998, 2001) traces information needs, seeking, and use for each mode</text>
+</svg>

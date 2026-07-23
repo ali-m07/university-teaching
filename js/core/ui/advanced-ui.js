@@ -6,7 +6,10 @@ const ADVANCED_METHOD_KEYS = {
     'strategic-foresight': 'hines',
     'scenarios': 'scenarios',
     'futurpreneurship': 'futurpreneurship',
-    'type-2-fuzzy': 'type2Fuzzy'
+    'type-2-fuzzy': 'type2Fuzzy',
+    'environmental-scanning': 'envScanning',
+    'weak-signals': 'weakSignals',
+    'futures-literacy': 'futuresLiteracy'
 };
 
 const ADVANCED_LESSON_KEYS = {
@@ -14,7 +17,10 @@ const ADVANCED_LESSON_KEYS = {
     hines: 'hines',
     scenarios: 'scenarios',
     futurpreneurship: 'futurpreneurship',
-    type2Fuzzy: 'type2fuzzy'
+    type2Fuzzy: 'type2fuzzy',
+    envScanning: 'envScanning',
+    weakSignals: 'weakSignals',
+    futuresLiteracy: 'futuresLiteracy'
 };
 
 function renderAdvancedMethodPage() {

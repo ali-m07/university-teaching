@@ -61,6 +61,9 @@ function buildCatalog(lang) {
         'scenario-planning': 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
         futurpreneurship: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
         'type-2-fuzzy': 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80',
+        'environmental-scanning': 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
+        'weak-signals': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
+        'futures-literacy': 'https://images.unsplash.com/photo-1456513080800-7d93dbe9f4eb?auto=format&fit=crop&w=800&q=80',
         'causal-layered': 'https://jfsdigital.org/wp-content/uploads/2022/07/word-image-15283-2.jpeg',
         'futures-wheel-ref': 'https://images.unsplash.com/photo-1611273426858-4502c1296d58?auto=format&fit=crop&w=800&q=80',
         'backcasting-ref': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
@@ -102,22 +105,22 @@ function buildCatalog(lang) {
                     { id: 'futurpreneurship', slug: 'futurpreneurship.html', icon: 'rocket', status: 'lesson', color: 'var(--color-i)' },
                     { id: 'type-2-fuzzy', slug: 'type-2-fuzzy.html', icon: 'blend', status: 'interactive', color: '#00e5ff' },
                     { id: 'three-horizons', slug: null, icon: 'layers-3', status: 'catalog', color: '#7c4dff' },
-                    { id: 'futures-literacy', slug: null, icon: 'book-open', status: 'catalog', color: '#4caf50' }
+                    { id: 'futures-literacy', slug: 'futures-literacy.html', icon: 'book-open', status: 'lesson', color: '#4caf50' }
                 ])
             },
             {
                 id: 'scanning',
                 title: isFa ? 'رصد و حس‌گری محیطی' : 'Environmental Scanning & Sensing',
                 desc: isFa ? 'شناسایی سیگنال، روند و مسائل نوظهور' : 'Detecting signals, trends, and emerging issues',
-                methods: [
-                    { id: 'environmental-scanning', slug: null, icon: 'scan-search', status: 'catalog', color: '#4caf50' },
+                methods: withImages([
+                    { id: 'environmental-scanning', slug: 'environmental-scanning.html', icon: 'scan-search', status: 'lesson', color: '#4caf50' },
                     { id: 'horizon-scanning', slug: null, icon: 'telescope', status: 'catalog', color: '#00e5ff' },
-                    { id: 'weak-signals', slug: null, icon: 'radio', status: 'catalog', color: '#ffaa00' },
+                    { id: 'weak-signals', slug: 'weak-signals.html', icon: 'radio', status: 'lesson', color: '#ffaa00' },
                     { id: 'steep-pestle', slug: null, icon: 'grid-3x3', status: 'catalog', color: 'var(--color-cla)' },
                     { id: 'trend-analysis', slug: null, icon: 'trending-up', status: 'catalog', color: 'var(--color-f)' },
                     { id: 'megatrends', slug: null, icon: 'globe-2', status: 'catalog', color: '#7c4dff' },
                     { id: 'emerging-issues', slug: null, icon: 'sparkles', status: 'catalog', color: '#e040fb' }
-                ]
+                ])
             },
             {
                 id: 'expert',
@@ -185,10 +188,10 @@ function buildCatalog(lang) {
             futurpreneurship: { title: 'Futurpreneurship', founder: 'Foresight × Venture', desc: 'از weak signal به MVP · کارآفرینی آینده‌محور.' },
             'type-2-fuzzy': { title: 'منطق فازی نوع ۲', founder: 'Zadeh · Mendel · John', desc: 'کارگاه IT2: FOU، weak signal، اختلاف خبرگان و probing به‌جای میانگین ساکت.' },
             'three-horizons': { title: 'Three Horizons', founder: 'Curry & Hodgson', desc: 'H1/H2/H3 · مدیریت گذار از کسب‌وکار فعلی به آینده‌های نوظهور.' },
-            'futures-literacy': { title: 'Futures Literacy', founder: 'Riel Miller (UNESCO)', desc: 'توانایی تصور و استفاده از آینده‌ها در تصمیم‌گیری روزمره.' },
-            'environmental-scanning': { title: 'Environmental Scanning', founder: 'Aguilar / Choo', desc: 'رصد سیستماتیک محیط برای شناسایی فرصت‌ها و تهدیدها.' },
+            'futures-literacy': { title: 'Futures Literacy', founder: 'Riel Miller (UNESCO)', desc: 'قابلیت استفاده از آینده: آزمایشگاه‌های سواد آینده یونسکو و آشکارسازی مفروضات پیش‌نگرانه.' },
+            'environmental-scanning': { title: 'Environmental Scanning', founder: 'Aguilar / Choo', desc: 'چهار الگوی رصد آگویلار و مدل اطلاع‌جویی چو برای شناسایی زودهنگام فرصت‌ها و تهدیدها.' },
             'horizon-scanning': { title: 'Horizon Scanning', founder: 'UK Government Office for Science', desc: 'شناسایی مسائل و فناوری‌های نوظهور در افق ۵ تا ۲۰ ساله.' },
-            'weak-signals': { title: 'Weak Signals', founder: 'Ansoff / Hiltunen', desc: 'سیگنال‌های ضعیف و wild cards · پیش‌درآمد تغییرات بزرگ.' },
+            'weak-signals': { title: 'Weak Signals', founder: 'Ansoff / Hiltunen', desc: 'پاسخ تدریجی به علامت‌های مبهم؛ فیلترهای سه‌گانه آنسوف و future sign هیلتونن.' },
             'steep-pestle': { title: 'STEEP / PESTLE', founder: 'Millennium Project', desc: 'تحلیل محیطی در ابعاد اجتماعی، فناوری، اقتصادی، زیست‌محیطی، سیاسی.' },
             'trend-analysis': { title: 'Trend Analysis', founder: 'FRM / APF', desc: 'شناسایی، extrapolation و cone of plausibility برای روندها.' },
             megatrends: { title: 'Megatrends Analysis', founder: 'Naisbitt / Z_punkt', desc: 'روندهای بزرگ ساختاری که جهان را در مقیاس دهه‌ای شکل می‌دهند.' },
@@ -207,7 +210,7 @@ function buildCatalog(lang) {
             'scenario-2x2': { title: 'Scenario 2×2 Matrix', founder: 'Schwartz / van der Heijden', desc: '→ ماژول سناریوسازی' },
             visioning: { title: 'Visioning', founder: 'FRM Ch. 20', desc: 'ساخت تصاویر آینده مطلوب برای mobilization و alignment.' },
             'wind-tunneling': { title: 'Wind Tunneling', founder: 'Schwartz / Ogilvy', desc: 'آزمون استراتژی فعلی در برابر سناریوهای مختلف.' },
-            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'گشودن فضای آینده به لایه‌های محتمل (probable)، معقول (plausible) و ممکن (possible)، پیش از انتخاب آینده مطلوب · ماژول M2 شش ستون' },
+            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'ترسیم آینده‌های محتمل (probable)، معقول (plausible) و ممکن (possible) با تحلیل خط پایه و چالش فرضیات، پیش از انتخاب آینده مطلوب در Visioning · ماژول M2 شش ستون' },
             'backcasting-ref': { title: 'Backcasting (مرجع)', founder: 'Robinson', desc: '→ شبیه‌ساز پس‌نگری' },
             roadmapping: { title: 'Roadmapping', founder: 'Phaal / Battelle', desc: 'نقشه راه بصری از قابلیت‌ها، فناوری و محصول در زمان.' },
             'technology-roadmap': { title: 'Technology Roadmapping', founder: 'Phaal et al.', desc: 'TRM · هم‌راستایی فناوری با استراتژی و بازار.' },
@@ -225,10 +228,10 @@ function buildCatalog(lang) {
             futurpreneurship: { title: 'Futurpreneurship', founder: 'Foresight × Venture', desc: 'From weak signal to MVP · future-oriented entrepreneurship.' },
             'type-2-fuzzy': { title: 'Type-2 Fuzzy Logic', founder: 'Zadeh · Mendel · John', desc: 'IT2 workshop: FOU, weak signals, expert spread · probing instead of silent averaging.' },
             'three-horizons': { title: 'Three Horizons', founder: 'Curry & Hodgson', desc: 'H1/H2/H3 · managing transition from present business to emerging futures.' },
-            'futures-literacy': { title: 'Futures Literacy', founder: 'Riel Miller (UNESCO)', desc: 'Capacity to imagine and use futures in everyday decisions.' },
-            'environmental-scanning': { title: 'Environmental Scanning', founder: 'Aguilar / Choo', desc: 'Systematic monitoring of the environment for opportunities and threats.' },
+            'futures-literacy': { title: 'Futures Literacy', founder: 'Riel Miller (UNESCO)', desc: 'Capability to use-the-future: UNESCO Futures Literacy Laboratories and revealing anticipatory assumptions.' },
+            'environmental-scanning': { title: 'Environmental Scanning', founder: 'Aguilar / Choo', desc: 'Aguilar\'s four scanning modes and Choo\'s information-seeking model for spotting opportunities and threats early.' },
             'horizon-scanning': { title: 'Horizon Scanning', founder: 'UK Government Office for Science', desc: 'Detecting emerging issues and technologies on a 5 to 20 year horizon.' },
-            'weak-signals': { title: 'Weak Signals', founder: 'Ansoff / Hiltunen', desc: 'Early hints of major change · wild cards and emerging disruptions.' },
+            'weak-signals': { title: 'Weak Signals', founder: 'Ansoff / Hiltunen', desc: 'Graduated response to vague clues; Ansoff\'s three filters and Hiltunen\'s future sign.' },
             'steep-pestle': { title: 'STEEP / PESTLE', founder: 'Millennium Project', desc: 'Social, Technological, Economic, Environmental, Political analysis.' },
             'trend-analysis': { title: 'Trend Analysis', founder: 'FRM / APF', desc: 'Identify, extrapolate, and map trends with plausibility cones.' },
             megatrends: { title: 'Megatrends Analysis', founder: 'Naisbitt / Z_punkt', desc: 'Large structural forces shaping the world over decades.' },
@@ -247,7 +250,7 @@ function buildCatalog(lang) {
             'scenario-2x2': { title: 'Scenario 2×2 Matrix', founder: 'Schwartz / van der Heijden', desc: '→ Scenario planning module' },
             visioning: { title: 'Visioning', founder: 'FRM Ch. 20', desc: 'Build preferred future images for mobilization and alignment.' },
             'wind-tunneling': { title: 'Wind Tunneling', founder: 'Schwartz / Ogilvy', desc: 'Test current strategy against multiple scenarios.' },
-            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'Open the future space into probable, plausible, and possible layers before choosing a preferred future. See Six Pillars module M2.' },
+            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'Map probable, plausible, and possible futures through baseline analysis and assumption challenges before Visioning chooses a preferred future. Six Pillars module M2.' },
             'backcasting-ref': { title: 'Backcasting (reference)', founder: 'Robinson', desc: '→ Backcasting simulator' },
             roadmapping: { title: 'Roadmapping', founder: 'Phaal / Battelle', desc: 'Visual roadmap of capabilities, technology, and product over time.' },
             'technology-roadmap': { title: 'Technology Roadmapping', founder: 'Phaal et al.', desc: 'TRM · align technology with strategy and market.' },

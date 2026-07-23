@@ -67,7 +67,7 @@ registerLocale('en', {
             pillars: [
                 { title: '1. Framing', desc: 'Define the question, system boundary, stakeholders, and "why foresight?". Without framing, everything is analyzed and nothing decided.', color: 'var(--color-f)' },
                 { title: '2. Scanning', desc: 'Environmental scanning, weak signals, STEEP/PESTLE. FRM Ch.2 exists; Hines places it in a pillar sequence.', color: '#4caf50' },
-                { title: '3. Forecasting', desc: 'Trends, cross-impact, cone of plausibility. Exploring possibility space — not single-line prediction.', color: '#ffaa00' },
+                { title: '3. Forecasting', desc: 'Trends, cross-impact, cone of plausibility. Exploring possibility space, not single-line prediction.', color: '#ffaa00' },
                 { title: '4. Visioning', desc: 'Building preferred and normative futures. Bridge to backcasting and scenarios.', color: 'var(--color-cla)' },
                 { title: '5. Planning', desc: 'Turn insight into roadmaps, OKRs, policy. Where foresight dies or creates value.', color: 'var(--color-i)' },
                 { title: '6. Acting', desc: 'Pilots, structural change, learning. Without acting, foresight is management decoration.', color: 'var(--color-wheel-red)' }
@@ -75,7 +75,7 @@ registerLocale('en', {
             gapTitle: 'Difference from FRM',
             gap: 'FRM has 39 separate methods; Six Pillars is an <strong>architecture</strong>. Hines & Bishop say: choose tools by pillar, not the reverse. Module three below on this page connects Michel Godet\'s French prospective school and its MICMAC/MACTOR tools to this same architecture.',
             caseTitle: 'Example: Cone of Plausibility',
-            case: 'After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers — not every imaginable fantasy.'
+            case: 'After scanning, the team draws a plausibility cone: center = dominant trend, edges = wild cards. Visioning focuses on plausible layers, not every imaginable fantasy. Full workshop depth is in Six Pillars module M2 on this page.'
         },
         scenarios: {
             slug: 'scenarios',
@@ -144,6 +144,113 @@ registerLocale('en', {
             gap: 'FRM was written for policy and research labs; <strong>venture creation</strong> is out of scope. Futurpreneurship is what Silicon Valley does informally — with foresight rigor.',
             caseTitle: 'Example: weak signal → venture',
             case: 'Signal: aging + AI tutor demand. Scenario: "Physical school boundary" fades. Venture: AI tutor platform with curriculum foresight — MVP in 90 days, not 5 years of research.'
+        },
+        envScanning: {
+            slug: 'environmental-scanning',
+            heroTag: 'Francis Aguilar · Chun Wei Choo',
+            heroTitle: 'Environmental Scanning',
+            heroSub: 'The systematic acquisition and use of information about events, trends, and relationships outside the organization, so that opportunities and threats are noticed before they force a decision.',
+            history: {
+                accent: '#4caf50',
+                founderLabel: 'Founders',
+                founder: 'Francis J. Aguilar · Chun Wei Choo',
+                yearLabel: 'Period',
+                year: '1967 (Aguilar) · 1995 to 2002 (Choo)',
+                institution: 'Harvard Business School · University of Toronto, Faculty of Information',
+                title: 'From scanning modes to organizational information behavior',
+                origin: 'Francis Aguilar introduced environmental scanning in his 1967 Harvard study <em>Scanning the Business Environment</em>, based on interviews with managers about how they actually gathered outside information. Chun Wei Choo, at the University of Toronto Faculty of Information, later reframed scanning as an <strong>information behavior</strong> problem: what an organization needs to know, how it seeks that information, and how it uses it once acquired.',
+                problemLabel: 'Problem',
+                problem: 'Foresight courses often treat scanning as one uniform activity. Aguilar and Choo show that organizations scan in distinct, identifiable modes, and that most consequential strategic information still reaches managers through informal, personal channels rather than formal research units.',
+                useLabel: 'Applications',
+                applications: 'Corporate competitive-intelligence units, government horizon-scanning offices, environmental scans in public-health and health-services planning, and the Perceiving dimension of Rohrbeck corporate-foresight practice on this site.'
+            },
+            introTitle: 'Aguilar\'s four scanning modes',
+            introParagraphs: [
+                'In Scanning the Business Environment (1967), Aguilar analyzed, through interviews, how managers at large firms actually gathered information about markets, technology, and regulation. He found that this behavior fell into four recognizable modes, ranging from casual, unplanned exposure to deliberate, structured search.',
+                'Aguilar also found that most of the information that mattered reached executives through informal personal contacts rather than formal research departments, a finding later scanning research has repeatedly confirmed.'
+            ],
+            pillars: [
+                { title: 'Undirected viewing', desc: 'General exposure to information with no specific question in mind: broad reading, conversation, and media, mainly to stay informed.', color: '#4caf50' },
+                { title: 'Conditioned viewing', desc: 'Directed but still passive exposure: the observer is sensitized to particular topics and notices relevant information without actively searching for it.', color: '#00e5ff' },
+                { title: 'Informal search', desc: 'A relatively unstructured but active and purposeful effort to obtain specific information, for example asking a known contact or checking a familiar source.', color: '#ffaa00' },
+                { title: 'Formal search', desc: 'A deliberate, planned effort that follows an established procedure or methodology, such as commissioned market research, to secure particular information.', color: '#7c4dff' }
+            ],
+            gapTitle: 'From Aguilar to Choo, and the fit with FRM Chapter 2',
+            gap: 'In Futures Research Methodology 3.0, Theodore J. Gordon and Jerome C. Glenn dedicate Chapter 2 to Environmental Scanning: a systematic process for gathering external information and spotting early indicators of change. That chapter, together with Hines and Bishop\'s Scanning pillar, describes <em>what</em> to scan (STEEP or PESTLE sectors, weak signals, horizon scanning). Aguilar and Choo describe <em>how</em> scanning happens as an information behavior. Daft and Weick (1984) reinterpreted Aguilar\'s typology along two dimensions, the organization\'s belief that its environment can be analyzed, and how actively it intrudes into that environment to test it, producing four modes: undirected viewing, conditioned viewing, enacting, and discovering. Choo, in his ASIS&T monograph <em>Information Management for the Intelligent Organization</em> (1995, 2nd ed. 1998) and in a widely cited 2001 article, adopted this four-mode model, relabeling discovering as searching, and traced, for each mode, the information needs, information-seeking behavior, and information use that follow. In Rohrbeck\'s FITness framework, this whole territory sits inside the Perceiving dimension: an organization that scans only in undirected mode has weak Perceiving, however sophisticated its scenario or roadmap work later on.',
+            caseTitle: 'Classroom example',
+            case: 'A telecom operator\'s regulatory team only skims two trade newsletters, undirected viewing, and once a year commissions a formal spectrum-policy study, formal search, with almost nothing in between. Using Choo\'s model, students identify the missing conditioned-viewing and informal-search behavior, for example assigning staff to watch a named list of regulators and industry bodies, and design a lightweight weekly scanning routine that closes the gap before the next license renewal.'
+        },
+        weakSignals: {
+            slug: 'weak-signals',
+            heroTag: 'H. Igor Ansoff · Elina Hiltunen',
+            heroTitle: 'Weak Signals: Reading Change Before the Headlines Do',
+            heroSub: 'Ansoff\'s answer to strategic surprise: stop waiting for clear, strong information and build a <em>graduated response</em> to today\'s vague, scattered clues about tomorrow\'s discontinuities.',
+            history: {
+                accent: '#ffaa00',
+                founderLabel: 'Originator · Key extender',
+                founder: 'H. Igor Ansoff · Elina Hiltunen',
+                yearLabel: 'Period',
+                year: '1975 (Ansoff, California Management Review) · 2006 to 2013 (Hiltunen)',
+                institution: 'European Institute for Advanced Studies in Management · Aalto University School of Economics, Finland Futures Research Centre',
+                title: 'From strategic surprise to the future sign',
+                origin: 'Igor Ansoff coined the concept in "Managing Strategic Surprise by Response to Weak Signals" (1975), opening with the 1973 oil crisis: warnings of Arab action were, in his words, already on the desks of some of the surprised managers. His claim was that firms wait for strong, unambiguous signals before acting, and by then it is too late. Three decades later, Finnish futurist Elina Hiltunen, in her Aalto University doctoral research, showed that the term "weak signal" was used so inconsistently across the field that it needed a sharper definition, and proposed the <strong>future sign</strong> as a fix.',
+                problemLabel: 'Problem',
+                problem: 'Classical strategic planning and trend extrapolation both assume the information needed for a decision is already available and precise. Weak signals exist exactly when it is not, when a discontinuity is still too vague to be scored on an ordinary risk matrix.',
+                useLabel: 'Applications',
+                applications: 'Corporate scanning units, national horizon scanning offices, technology watch teams in R&D, and the Perceiving stage of Rohrbeck\'s FITness model used elsewhere on this site.'
+            },
+            introTitle: 'Weak signal, strong signal, trend: three different things',
+            introParagraphs: [
+                'Ansoff defined the two ends of the spectrum precisely. A strong signal is information "sufficiently visible and concrete to permit the firm to compute their impact and devise specific plans for response." A weak signal is the opposite pole: "imprecise early indications about impending impactful events... all that is known is that some threats and opportunities will undoubtedly arise, but their shape, nature and source are not yet known" (Ansoff, <em>Implanting Strategic Management</em>, 1984). Between the two poles he placed five levels of knowledge, running from merely sensing that something is changing to having enough information to calculate outcomes, the level at which ordinary strategic planning finally becomes possible.',
+                'A trend is not a weak signal. A trend is already a measurable, extrapolable pattern in a time series, aging populations or rising cloud computing spend, for example. A weak signal is a single observation or a small cluster of them that has not yet aggregated into any measurable pattern, and most weak signals never do. The value of scanning is judged by the discipline of the search process, not by how often a given signal turns out to matter.'
+            ],
+            pillars: [
+                { title: 'Strategic surprise (Ansoff, 1975)', desc: 'A sudden, urgent, unfamiliar change that threatens a major profit reversal or the loss of a major opportunity. Ansoff\'s remedy was not better forecasting but a graduated response that grows as the signal strengthens.', color: '#ffaa00' },
+                { title: 'Strategic issue management (Ansoff, 1980)', desc: 'A real time system that runs alongside the annual planning cycle, so an organization is not stuck waiting for the next budget round to notice a fast moving issue.', color: '#7c4dff' },
+                { title: 'Three filters (Ansoff, 1984)', desc: 'A weak signal has to survive a surveillance filter (can the scanning method even see it), a mentality filter (does a manager\'s mental model allow it to be plausible), and a power filter (will someone with authority act on it). Most weak signals die at one of these three gates.', color: '#00e5ff' },
+                { title: 'The future sign (Hiltunen, 2008)', desc: 'Using Peirce\'s triadic model of the sign, Hiltunen split a weak signal into signal (the concrete, visible clue), issue (the underlying phenomenon), and interpretation (what it might mean for the future). Heavy media coverage of a tiny issue can look like a strong signal but is often a weak future sign in disguise.', color: '#4caf50' },
+                { title: 'Wild card vs weak signal (Hiltunen, 2006)', desc: 'Weak signals exist now, quietly, and may precede either a gradual change or a sudden wild card. A wild card, in Petersen\'s phrase, is the low probability, high impact event itself, arriving too fast for scanning to help once it starts.', color: '#e040fb' }
+            ],
+            gapTitle: 'Where weak signals sit in FRM and the wider toolkit',
+            gap: 'FRM 3.0 (Glenn and Gordon) does not give Weak Signals a standalone chapter title. Early indicators of change appear inside Chapter 2 Environmental Scanning, and low-probability high-impact events are treated in Chapter 10 Wild Cards. Ansoff\'s graduated-response logic and Hiltunen\'s future sign therefore deepen what FRM already catalogs rather than replace it. Environmental Scanning (Aguilar, Choo) supplies the continuous information flow inside which weak signals hide; Horizon Scanning formalizes the same search over a five to twenty year policy horizon; STEEP/PESTLE gives the categories used to sort what has been scanned. Inside Rohrbeck\'s FITness model, weak signal work is squarely a <strong>Perceiving</strong> capability, and it only pays off once an organization also has enough Prospecting capacity to turn a candidate signal into a scenario or a roadmap item. In Inayatullah\'s CLA, a weak signal typically surfaces first at the <strong>Litany</strong> layer (an odd headline, an outlier statistic, a strange product launch) and stays a curiosity until it is traced down to its <strong>Systemic</strong> layer causes; scanning without that second step produces a list of trivia, not foresight.',
+            caseTitle: 'Practical example',
+            case: 'In 1975, Kodak engineer Steven Sasson built the company\'s first working digital camera prototype, a clear early signal of the coming shift from chemical film to digital imaging. Applying Ansoff\'s three filters explains what happened next: the surveillance filter registered the prototype, but a mentality filter built around decades of film chemistry, and a power filter held by executives whose careers and incentives ran through film sales, kept the company\'s response token for years while the underlying technology matured elsewhere.'
+        },
+        futuresLiteracy: {
+            slug: 'futures-literacy',
+            heroTag: 'Riel Miller · UNESCO',
+            heroTitle: 'Futures Literacy',
+            heroSub: 'A capability, not a forecast method: the skill of noticing <em>why</em> and <em>how</em> we use the future in present thinking, so imagination, preparation, and invention become deliberate rather than habitual.',
+            history: {
+                accent: '#4caf50',
+                founderLabel: 'Originator',
+                founder: 'Riel Miller',
+                yearLabel: 'Period',
+                year: '2007 (Futures article) · 2012 onward (UNESCO) · 2018 (Transforming the Future)',
+                institution: 'UNESCO Foresight and Futures Literacy · anticipation research community',
+                title: 'From hybrid scenarios to a global capability agenda',
+                origin: 'Riel Miller\'s 2007 <em>Futures</em> article "Futures literacy: A hybrid strategic scenario method" defined futures literacy as a cumulative capacity for exploring how the present can give rise to the future. From 2012, UNESCO treated Futures Literacy as a twenty-first century competency and ran participatory Futures Literacy Laboratories (FLLs) worldwide. The 2018 open-access volume <em>Transforming the Future: Anticipation in the 21st Century</em> (Miller, ed.) gathers the Futures Literacy Framework (FLF), anticipatory assumptions, and laboratory designs.',
+                problemLabel: 'Problem',
+                problem: 'Most foresight tools help experts produce scenarios or plans. They rarely train ordinary participants to see the anticipatory assumptions that already shape what they notice, fear, and prefer. Without that skill, workshops recycle the same closed images of the future.',
+                useLabel: 'Applications',
+                applications: 'UNESCO Futures Literacy Laboratories, local champion networks, public policy reframing, education and leadership programs, and capability building before or alongside classical foresight methods.'
+            },
+            introTitle: 'Using the future on purpose',
+            introParagraphs: [
+                'UNESCO defines Futures Literacy as the skill that lets people better understand the role of the future in what they see and do. Because the future does not yet exist, it can only be imagined; because humans can imagine, they can learn to imagine for different reasons and in different ways.',
+                'A Futures Literacy Laboratory is an action-learning process. Participants surface the anticipatory assumptions behind their probable and preferable futures, then reframe those assumptions by exploring futures that are neither the expected path nor the wished-for destination. The aim is not a better single forecast. The aim is a richer capacity to detect novelty, invent options, and live with uncertainty without clinging to false certainty.'
+            ],
+            pillars: [
+                { title: 'Anticipatory assumptions (AA)', desc: 'The usually tacit frames and models that make imaginary futures thinkable. Futures literacy begins when those assumptions become visible and discussable.', color: '#4caf50' },
+                { title: 'Probable futures', desc: 'What participants expect will happen if current trends and plans continue. Useful for preparation, dangerous when treated as destiny.', color: '#00e5ff' },
+                { title: 'Preferable futures', desc: 'What participants hope for or aspire to. Reveals values and stakes, but can hide the limits of today\'s imagination.', color: '#ffaa00' },
+                { title: 'Reframed futures', desc: 'Deliberately strange or novel futures used to break the grip of probable and preferable stories, so new questions about the present appear.', color: '#7c4dff' },
+                { title: 'Futures Literacy Laboratory (FLL)', desc: 'A structured participatory process (Reveal, Reframe, Rethink) that uses collective intelligence to make anticipatory systems explicit and usable.', color: '#e040fb' }
+            ],
+            gapTitle: 'Difference from FRM 3.0',
+            gap: 'FRM 3.0 (Glenn and Gordon) is a peer-reviewed toolbox of forecasting and foresight methods, chapter by chapter. Futures Literacy is not another chapter in that toolbox. It is a <strong>capability agenda</strong>: training people to identify, design, and deploy anticipatory assumptions. Classical FRM methods (scenarios, Delphi, scanning, visioning) remain valuable once participants can see which assumptions those methods are serving. Miller\'s approach therefore complements Six Pillars and Popper\'s quality diamond rather than competing with them: pillars and diamonds judge process architecture and quality; Futures Literacy judges whether the imagination feeding those processes is still trapped in yesterday\'s frames.',
+            caseTitle: 'Classroom example',
+            case: 'A city education team runs a short FLL on "the future of school." Phase one surfaces probable futures (more platforms, more testing) and preferable futures (personalized learning, equity). Phase two reframes with a deliberately odd prompt: learning without classrooms or grades. Participants then return to the present and notice policies they had treated as inevitable. The deliverable is not a master plan; it is a clearer menu of assumptions and a short list of experiments the city can run next month.'
         },
         type2Fuzzy: {
             slug: 'type-2-fuzzy',

@@ -16,7 +16,12 @@ window.SFH_PHOTOS = {
     mansouri: 'assets/founders/mansouri.svg',
     'lotfi-zadeh': 'assets/founders/lotfi-zadeh.jpg',
     'jerry-mendel': 'assets/founders/mendel.svg',
-    'robert-john': 'assets/founders/john.svg'
+    'robert-john': 'assets/founders/john.svg',
+    aguilar: 'assets/founders/aguilar.svg',
+    choo: 'assets/founders/choo.svg',
+    miller: 'assets/founders/miller.svg',
+    ansoff: 'assets/founders/ansoff.svg',
+    hiltunen: 'assets/founders/hiltunen.svg'
 };
 
 window.SFH_PHOTOS_REMOTE = {

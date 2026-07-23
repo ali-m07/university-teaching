@@ -333,6 +333,53 @@ registerLocale('en', {
                 { type: 'FA · Theses', text: 'IRANDOC: search “منطق فازی نوع ۲” in EE and technology management.' }
             ],
             assignment: 'Final project: real weak signal (thesis topic preferred) · page FOU workshop · one-page memo · 3-rule base · 10-min presentation. Full HW details and rubric in syllabus section above workshop.'
+        },
+        envScanning: {
+            meta: {
+                module: '10',
+                duration: '90 min',
+                level: 'Undergraduate / MA foresight',
+                diagram: 'assets/methods/environmental-scanning.svg',
+                diagramAlt: 'Four environmental scanning modes on analyzability and intrusion axes'
+            },
+            prerequisites: 'Intro foresight or strategy. Familiarity with the Six Pillars Scanning pillar or STEEP/PESTLE helps, but is not required.',
+            assessment: 'In-class mode diagnosis exercise 40% · scanning-routine design memo 60%. Memo details in the assignment below.',
+            founders: [
+                {
+                    id: 'aguilar',
+                    name: 'Francis J. Aguilar',
+                    role: 'Author of Scanning the Business Environment · Harvard Business School',
+                    bio: 'Harvard Business School professor whose 1967 doctoral study first classified how managers actually gather outside information; he later also developed the PEST framework.'
+                },
+                {
+                    id: 'choo',
+                    name: 'Chun Wei Choo',
+                    role: 'Environmental scanning as information behavior · University of Toronto',
+                    bio: 'Professor emeritus, University of Toronto Faculty of Information. In <em>Information Management for the Intelligent Organization</em> he reframed scanning through information need, information seeking, and information use.'
+                }
+            ],
+            objectives: [
+                'Define environmental scanning and distinguish it from forecasting and trend analysis.',
+                'Explain Aguilar\'s four scanning modes with an organizational example.',
+                'Connect Aguilar\'s typology to Daft and Weick\'s two dimensions and to Choo\'s information-seeking model.',
+                'Link scanning to STEEP or PESTLE sectors, weak signals, horizon scanning, and the Perceiving dimension of FITness.',
+                'Diagnose an organization\'s dominant scanning mode and design a lightweight routine that closes the gap.'
+            ],
+            outline: [
+                { step: '1', time: '15 min', title: 'Why scanning is not one uniform activity', desc: 'Aguilar\'s four modes, from casual exposure to formal search.' },
+                { step: '2', time: '20 min', title: 'Daft, Weick, and Choo', desc: 'Two axes: environmental analyzability and intrusion · undirected viewing, conditioned viewing, enacting, searching.' },
+                { step: '3', time: '30 min', title: 'Diagnose an organization', desc: 'Groups map a real unit\'s scanning behavior onto the four-mode grid.' },
+                { step: '4', time: '15 min', title: 'Close the gap', desc: 'Design one conditioned-viewing routine and one informal-search routine, tied to STEEP sectors and weak signals.' },
+                { step: '5', time: '10 min', title: 'Synthesis and links', desc: 'Where scanning sits inside Rohrbeck Perceiving and the Hines and Bishop Scanning pillar.' }
+            ],
+            readings: [
+                { type: 'Book', text: 'Aguilar, F. J. (1967). <em>Scanning the Business Environment</em>. New York: Macmillan.' },
+                { type: 'Article', text: 'Daft, R. L., & Weick, K. E. (1984). Toward a model of organizations as interpretation systems. <em>Academy of Management Review</em>, 9(2), pp. 284 to 295.' },
+                { type: 'Monograph', text: 'Choo, C. W. (1998). <em>Information Management for the Intelligent Organization: The Art of Scanning the Environment</em> (2nd ed.). Medford, NJ: Information Today, for ASIS&T.' },
+                { type: 'Article', text: 'Choo, C. W. (2001). Environmental scanning as information seeking and organizational learning. <em>Information Research</em>, 7(1), paper 112.' },
+                { type: 'Article', text: 'Choo, C. W., & Auster, E. (1993). Environmental scanning: Acquisition and use of information by managers. <em>Annual Review of Information Science and Technology</em>, 28, pp. 279 to 314.' }
+            ],
+            assignment: 'Choose a real organization (workplace, thesis case, or public body). In one page: map its current scanning behavior onto Aguilar\'s four modes, name the weakest or missing mode in Choo\'s terms, and propose one concrete conditioned-viewing or informal-search routine that closes the gap before the next planning cycle.'
         }
     }
 });

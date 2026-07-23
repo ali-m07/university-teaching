@@ -1,5 +1,5 @@
 /**
- * EN · Six Pillars (Hines & Bishop) university lecture decks (M1–M3)
+ * EN · Six Pillars (Hines & Bishop) university lecture decks (M1 to M3)
  */
 registerLocale('en', {
     advancedPage: {
@@ -91,7 +91,7 @@ registerLocale('en', {
                         readingsShort: 'Cone of Plausibility',
                         visual: 'assets/methods/covers/hines-m2-cone.svg',
                         visualCaption: 'From a single line to a layered cone',
-                        lectureIntro: 'Session 2 focuses on the bridge between forecasting and visioning. The cone of plausibility maps the space of possible futures before a preferred future is chosen.',
+                        lectureIntro: 'Session 2 focuses on the bridge between forecasting and visioning. The cone of plausibility maps the space of probable, plausible, and possible futures before a preferred future is chosen.',
                         lectureSections: [
                             {
                                 id: 'line',
@@ -103,8 +103,8 @@ registerLocale('en', {
                                 ],
                                 paragraphs: [
                                     'A forecast that shows only the single most likely future does not prepare a manager for surprise. The first shock outside that line invalidates the whole plan.',
-                                    'Instead of a line, Hines and Bishop draw a cone that opens from today. The further into the future we go, the wider the range of possible futures becomes.',
-                                    'From the center outward, the layers of the cone are probable, plausible, possible, and finally preposterous futures. Each layer carries a different level of evidence and certainty.'
+                                    'Instead of a line, Hines and Bishop draw a cone that opens from today. The further into the future we go, the wider the range of futures becomes. Charles Taylor\'s military planning work (1990) popularized the cone of plausibility image; Hancock and Bezold, and later Joseph Voros, layered probable, plausible, possible, and preferable futures onto that shape.',
+                                    'From the center outward, the teaching layers used here are probable, plausible, possible, and finally preposterous futures. Each layer carries a different level of evidence and certainty. Preferable futures are not another probability band: they are the normative choice, rooted in values, that Visioning later selects inside the cone.'
                                 ]
                             },
                             {
@@ -117,7 +117,7 @@ registerLocale('en', {
                                     'Wild cards at the edge of the cone'
                                 ],
                                 paragraphs: [
-                                    'Building the cone starts with a baseline from the current situation, the surprise-free path that continues if trends, plans, and projections simply carry on. Hines and Bishop place the baseline at the center of the cone, not because it is guaranteed, but because it is the most defensible default against which alternative futures are then developed.',
+                                    'Building the cone starts with a baseline from the current situation, the surprise-free path that continues if trends, plans, and projections simply carry on. Hines and Bishop place the baseline at the center of the cone, not because it is guaranteed, but because it is the most defensible default against which alternative futures are then developed. As Herman Kahn put it, the most likely future is not most likely: the baseline is a starting point, not a forecast to bet the firm on.',
                                     'The bridge from the baseline to the branching alternative futures is what Hines and Bishop call baseline analysis. First, state the evidence for the baseline: the trends, constants, cycles, plans, and projections that support it. Second, identify the assumption hidden behind each piece of evidence and challenge it by stating its plausible opposite. Every assumption that can plausibly be broken produces one more branch of the cone. A baseline resting on the assumption that oil stays cheap, for example, branches into an alternative future the moment that assumption is challenged with evidence for a plausible price shock.',
                                     'Dominant trends keep reinforcing the baseline at the probable layer. Weak signals from scanning, together with emerging issues and new events, feed the assumption challenges that place less certain but still plausible and possible futures in the surrounding layers of the cone.',
                                     'Wild cards sit at the edge of the cone: low probability, high impact events that must be monitored, not dismissed. Unlike an ordinary broken assumption, a wild card can jump the organization almost directly from the baseline into a distant layer of the cone.'
@@ -136,21 +136,40 @@ registerLocale('en', {
                                     'A normative image answers a direct question: among the possible futures inside the cone, which one is preferred by the organization? This question connects forecasting to a decision.',
                                     'The cone of plausibility is a natural bridge to scenario planning, where several layers become several scenarios, and to backcasting, where the normative image is turned into today\'s first step.'
                                 ]
+                            },
+                            {
+                                id: 'frm',
+                                title: '4. How the cone relates to FRM',
+                                slideTitles: [
+                                    'FRM as toolbox, cone as map',
+                                    'Where FRM methods feed the cone',
+                                    'Six Pillars placement'
+                                ],
+                                paragraphs: [
+                                    'Futures Research Methodology (FRM) catalogs dozens of forecasting and scenario methods chapter by chapter. It does not, by itself, teach the Houston baseline analysis that turns a surprise-free path into a layered cone. The cone is therefore not a rival to FRM tools; it is the map that places those tools in relation to one another.',
+                                    'Trend extrapolation, environmental scanning, and cross-impact analysis from FRM feed evidence for the baseline and for assumption challenges. Scenario methods and wild-card techniques explore the branches once assumptions break. Delphi and expert panels can strengthen or weaken the evidence behind a layer, but they do not replace the act of drawing the cone.',
+                                    'Inside the Six Pillars architecture, the cone sits in Forecasting as the picture of possibility space. Scanning fills it with signals; Visioning chooses a preferred region; Planning and Acting move toward that region. That sequence is what Hines and Bishop add on top of a raw FRM toolbox.'
+                                ]
                             }
                         ],
                         readings: [
-                            { type: 'Book', text: 'Hines, A. & Bishop, P., the Forecasting and Visioning chapters of Thinking About the Future.' },
-                            { type: 'Related reference', text: 'The cone of plausibility builds on the Hancock and Bezold and the Voros tradition. This session reads it inside the six pillar architecture.' }
+                            { type: 'Book', text: 'Hines, A. & Bishop, P. Thinking About the Future: Guidelines for Strategic Foresight. Forecasting and Visioning chapters.' },
+                            { type: 'Book', text: 'Bishop, P. & Hines, A. (2012). Teaching About the Future. Palgrave Macmillan. Classroom treatment of baseline and alternative futures.' },
+                            { type: 'Journal article', text: 'Hines, A. & Bishop, P. (2013). Framework foresight: Exploring futures the Houston way. <em>Futures</em>, 51, pp. 31 to 49. Baseline analysis method and Fig. 5, the cone of plausibility.' },
+                            { type: 'Report', text: 'Taylor, C. W. (1990). Creating Strategic Visions. Carlisle Barracks, PA: Strategic Studies Institute, U.S. Army War College. Early published cone of plausibility for long-range planning.' },
+                            { type: 'Article', text: 'Hancock, T. & Bezold, C. (1994). Possible futures, preferable futures. <em>Healthcare Forum Journal</em>, 37(2), pp. 23 to 29. Probable, plausible, possible, and preferable layers on the futures cone.' },
+                            { type: 'Related reference', text: 'Voros, J. (2003, updated essays). The futures cone and the foresight process. Builds on Henchey\'s taxonomy and on Hancock and Bezold; useful companion to the Houston Framework Foresight reading of the cone.' }
                         ],
                         assignment: {
                             title: 'Drawing a cone',
                             description: 'Draw a cone of plausibility for a real issue.',
                             body: [
                                 'Mark the baseline and at least two layers, probable and plausible.',
+                                'State one assumption behind the baseline, then break it with its plausible opposite and place the resulting alternative future in the correct layer.',
                                 'Write one wild card at the edge of the cone and explain its impact in one sentence.'
                             ],
                             format: 'One page or one figure with a short explanation',
-                            criteria: ['Clarity of the layers', 'Logical link between the wild card and the topic']
+                            criteria: ['Clarity of the layers', 'A genuine assumption broken with a plausible, evidence-based opposite', 'Logical link between the wild card and the topic']
                         }
                     },
                     {
