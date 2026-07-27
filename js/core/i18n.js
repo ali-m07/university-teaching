@@ -21,11 +21,27 @@ window.registerLocale = function registerLocale(lang, data) {
     deepMerge(I18N[lang], data);
 };
 
-let currentLang = localStorage.getItem('sfh-lang') || 'fa';
+let currentLang = readStoredLang();
+
+function detectBrowserLang() {
+    try {
+        const candidates = [navigator.language].concat(navigator.languages || []);
+        for (const tag of candidates) {
+            if (!tag) continue;
+            const code = tag.toLowerCase().split('-')[0];
+            if (code === 'fa') return 'fa';
+            if (code === 'en') return 'en';
+        }
+    } catch (e) {
+        // ignore — fall back to fa
+    }
+    return 'fa';
+}
 
 function readStoredLang() {
     const stored = localStorage.getItem('sfh-lang');
-    return stored === 'en' || stored === 'fa' ? stored : 'fa';
+    if (stored === 'en' || stored === 'fa') return stored;
+    return detectBrowserLang();
 }
 
 function bootstrapI18n() {

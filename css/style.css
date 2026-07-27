@@ -3804,6 +3804,17 @@ body.lang-en {
     font-family: var(--font-en);
 }
 
+html[lang="en"] body {
+    font-family: var(--font-en);
+}
+
+html[lang="en"] .hero-subtitle,
+html[lang="en"] .section-header p,
+html[lang="en"] .hub-card p,
+html[lang="en"] .nav-links a {
+    font-family: var(--font-en);
+}
+
 body.lang-en .hero-subtitle,
 body.lang-en .section-header p,
 body.lang-en .hub-card p,

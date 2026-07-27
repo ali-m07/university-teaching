@@ -18,12 +18,28 @@ declare global {
 
 window.I18N = { fa: {}, en: {} };
 
-let currentLang: Lang = (localStorage.getItem('sfh-lang') as Lang) || 'fa';
+function detectBrowserLang(): Lang {
+  try {
+    const candidates = [navigator.language, ...(navigator.languages ?? [])];
+    for (const tag of candidates) {
+      if (!tag) continue;
+      const code = tag.toLowerCase().split('-')[0];
+      if (code === 'fa') return 'fa';
+      if (code === 'en') return 'en';
+    }
+  } catch {
+    // ignore — fall back to fa
+  }
+  return 'fa';
+}
+
+let currentLang: Lang = readStoredLang();
 let localesLoaded = false;
 
 function readStoredLang(): Lang {
   const stored = localStorage.getItem('sfh-lang');
-  return stored === 'en' || stored === 'fa' ? stored : 'fa';
+  if (stored === 'en' || stored === 'fa') return stored;
+  return detectBrowserLang();
 }
 
 function localeUrl(lang: Lang): string {
