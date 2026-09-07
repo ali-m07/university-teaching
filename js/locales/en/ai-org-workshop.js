@@ -89,8 +89,8 @@ registerLocale('en', {
         sessions: [
             {
                 id: 'm1',
-                coverImage: "assets/workshop/images/session-1-human-ai-collaboration.png",
-                coverAlt: "A professional collaborating with AI to organize documents and everyday work",
+                coverImage: 'assets/workshop/images/session-1-human-ai-collaboration.png',
+                coverAlt: 'A professional collaborating with AI to organize documents and everyday work',
                 num: '1',
                 deckLabel: 'Session 1',
                 title: 'AI in the Language of Everyday Work',
@@ -288,8 +288,8 @@ registerLocale('en', {
             },
             {
                 id: 'm2',
-                coverImage: "assets/workshop/images/session-2-organizational-use-cases.png",
-                coverAlt: "AI applications across different functions in an organization",
+                coverImage: 'assets/workshop/images/session-2-organizational-use-cases.png',
+                coverAlt: 'AI applications across different functions in an organization',
                 num: '2',
                 deckLabel: 'Session 2',
                 title: 'Mapping Applications and Enterprise Tools',
@@ -512,8 +512,8 @@ registerLocale('en', {
             },
             {
                 id: 'm3',
-                coverImage: "assets/workshop/images/session-3-knowledge-workflow.png",
-                coverAlt: "Documents, organizational chat and ticketing connected through a human-supervised assistant",
+                coverImage: 'assets/workshop/images/session-3-knowledge-workflow.png',
+                coverAlt: 'Documents, organizational chat and ticketing connected through a human-supervised assistant',
                 num: '3',
                 deckLabel: 'Session 3',
                 title: 'Enterprise Assistants and Smart Workflows',
@@ -733,8 +733,8 @@ registerLocale('en', {
             },
             {
                 id: 'm4',
-                coverImage: "assets/workshop/images/session-4-process-redesign.png",
-                coverAlt: "Recruiting, onboarding and pilot evaluation supported by AI",
+                coverImage: 'assets/workshop/images/session-4-process-redesign.png',
+                coverAlt: 'Recruiting, onboarding and pilot evaluation supported by AI',
                 num: '4',
                 deckLabel: 'Session 4',
                 title: 'Process Redesign and Running a Pilot',

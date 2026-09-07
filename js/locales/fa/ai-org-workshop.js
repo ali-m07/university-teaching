@@ -89,8 +89,8 @@ registerLocale('fa', {
         sessions: [
             {
                 id: 'm1',
-                coverImage: "assets/workshop/images/session-1-human-ai-collaboration.png",
-                coverAlt: "همکاری یک متخصص با هوش مصنوعی برای سازمان‌دهی اسناد و وظایف روزمره",
+                coverImage: 'assets/workshop/images/session-1-human-ai-collaboration.png',
+                coverAlt: 'همکاری یک متخصص با هوش مصنوعی برای سازمان‌دهی اسناد و وظایف روزمره',
                 num: '۱',
                 deckLabel: 'جلسهٔ اول',
                 title: 'هوش مصنوعی به زبان کار روزمره',
@@ -288,8 +288,8 @@ registerLocale('fa', {
             },
             {
                 id: 'm2',
-                coverImage: "assets/workshop/images/session-2-organizational-use-cases.png",
-                coverAlt: "کاربردهای هوش مصنوعی در واحدهای مختلف یک سازمان",
+                coverImage: 'assets/workshop/images/session-2-organizational-use-cases.png',
+                coverAlt: 'کاربردهای هوش مصنوعی در واحدهای مختلف یک سازمان',
                 num: '۲',
                 deckLabel: 'جلسهٔ دوم',
                 title: 'نقشهٔ کاربردها و ابزارهای سازمانی',
@@ -512,8 +512,8 @@ registerLocale('fa', {
             },
             {
                 id: 'm3',
-                coverImage: "assets/workshop/images/session-3-knowledge-workflow.png",
-                coverAlt: "اتصال اسناد، گفتگوی سازمانی و تیکتینگ در یک دستیار تحت نظارت انسان",
+                coverImage: 'assets/workshop/images/session-3-knowledge-workflow.png',
+                coverAlt: 'اتصال اسناد، گفتگوی سازمانی و تیکتینگ در یک دستیار تحت نظارت انسان',
                 num: '۳',
                 deckLabel: 'جلسهٔ سوم',
                 title: 'دستیار سازمانی و گردش‌کار هوشمند',
@@ -733,8 +733,8 @@ registerLocale('fa', {
             },
             {
                 id: 'm4',
-                coverImage: "assets/workshop/images/session-4-process-redesign.png",
-                coverAlt: "مسیر جذب، ورود نیروی جدید و ارزیابی پایلوت با کمک هوش مصنوعی",
+                coverImage: 'assets/workshop/images/session-4-process-redesign.png',
+                coverAlt: 'مسیر جذب، ورود نیروی جدید و ارزیابی پایلوت با کمک هوش مصنوعی',
                 num: '۴',
                 deckLabel: 'جلسهٔ چهارم',
                 title: 'بازطراحی فرایند و اجرای پایلوت',
