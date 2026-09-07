@@ -800,3 +800,28 @@ html[data-theme="light"] .fitness-pres-nav-btn:disabled {
     background: rgba(15, 23, 42, 0.08);
     color: rgba(15, 23, 42, 0.45);
 }
+
+html[data-theme="light"] .fitness-pres-stage {
+    background: #f8fafc;
+}
+
+html[data-theme="light"] .fitness-pres-bg--mesh {
+    background:
+        radial-gradient(ellipse 80% 60% at 20% 30%, rgba(61, 139, 253, 0.10) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 50% at 80% 70%, rgba(124, 77, 255, 0.08) 0%, transparent 50%),
+        #f1f5f9;
+}
+
+html[data-theme="light"] .fitness-pres-bullets li {
+    color: rgba(15, 23, 42, 0.88);
+}
+
+html[data-theme="light"] .fitness-pres-slide:not(.fitness-pres-slide--cover) .fitness-pres-eyebrow {
+    color: #0e7490;
+}
+
+/* Cover slides sit on a dimmed image / dark shade: keep the title white in light mode. */
+html[data-theme="light"] .fitness-pres-slide--cover:has(.fitness-pres-bg[style]) .fitness-pres-title,
+html[data-theme="light"] .fitness-pres-slide--cover:has(.aiw-cover-image) .fitness-pres-title {
+    color: #fff;
+}

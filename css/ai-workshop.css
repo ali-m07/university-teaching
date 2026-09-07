@@ -2544,6 +2544,10 @@ html[data-theme="light"] .aiw-card-chip {
     background: rgba(15, 23, 42, 0.04);
 }
 
+html[data-theme="light"] .aiw-card-cta {
+    background: linear-gradient(120deg, #6d28d9, #0e7490);
+}
+
 html[data-theme="light"] .aiw-file-btn {
     color: #0e7490;
     background: rgba(14, 116, 144, 0.08);
