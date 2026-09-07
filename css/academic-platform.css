@@ -1436,3 +1436,17 @@ html[data-theme="light"] body .type2-page .type2-hero h1 {
 html[data-theme="light"] body .about-work-head h2 {
     color: #0f172a;
 }
+
+html[data-theme="light"] body .home-contact-email:hover {
+    color: #1d4ed8;
+    border-bottom-color: rgba(29, 78, 216, 0.45);
+}
+
+html[data-theme="light"] body .home-find-row:hover strong,
+html[data-theme="light"] body .home-digest-card:hover strong,
+html[data-theme="light"] body .home-digest-card:hover .home-digest-icon,
+html[data-theme="light"] body .home-audience-card:hover .home-audience-cta,
+html[data-theme="light"] body a.catalog-method-card:hover h3,
+html[data-theme="light"] body .pres-card:hover h3 {
+    color: #1d4ed8;
+}

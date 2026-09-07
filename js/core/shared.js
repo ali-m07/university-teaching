@@ -8,10 +8,23 @@ function getTheme() {
     return document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
 }
 
+function syncThemeControls() {
+    const theme = getTheme();
+    const isDark = theme === 'dark';
+    document.querySelectorAll('.nav-theme-toggle').forEach((button) => {
+        const label = isDark ? 'Switch to light theme' : 'Switch to dark theme';
+        button.setAttribute('aria-label', label);
+        button.setAttribute('title', label);
+        button.setAttribute('aria-pressed', String(isDark));
+        button.dataset.theme = theme;
+    });
+}
+
 function setTheme(theme) {
     const next = theme === 'light' ? 'light' : 'dark';
     document.documentElement.dataset.theme = next;
     try { localStorage.setItem('sfh-theme', next); } catch (e) { /* non-fatal */ }
+    syncThemeControls();
     document.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));
 }
 
@@ -22,6 +35,14 @@ function toggleTheme() {
 window.getTheme = getTheme;
 window.setTheme = setTheme;
 window.toggleTheme = toggleTheme;
+
+window.addEventListener('storage', (event) => {
+    if (event.key === 'sfh-theme' && (event.newValue === 'light' || event.newValue === 'dark')) {
+        document.documentElement.dataset.theme = event.newValue;
+        syncThemeControls();
+        document.dispatchEvent(new CustomEvent('themechange', { detail: { theme: event.newValue } }));
+    }
+});
 
 function initMobileNav() {
     const header = document.querySelector('.main-header');
@@ -121,6 +142,7 @@ function buildStandardNav() {
     const themeLabel = typeof t === 'function' ? t('nav.themeToggle') : 'Toggle light/dark theme';
     links.push(`<button type="button" class="nav-lang-toggle nav-theme-toggle" onclick="toggleTheme()" aria-label="${themeLabel}" title="${themeLabel}"><i data-lucide="sun" class="theme-ico theme-ico--sun"></i><i data-lucide="moon" class="theme-ico theme-ico--moon"></i></button>`);
     nav.innerHTML = links.join('');
+    syncThemeControls();
     if (typeof window.syncHeaderOffset === 'function') window.syncHeaderOffset();
 }
 
