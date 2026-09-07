@@ -122,12 +122,13 @@ registerLocale('en', {
                 slides: [
                     {
                         id: 's01', kind: 'cover',
+                        note: 'Start the session without opening any tool. Ask participants which text- or information-heavy task took most of their time last week and keep two or three answers on the board; the closing exercise returns to this list. For context, say the question today is no longer whether to use AI; Stanford’s AI Index 2025 shows organizational adoption on a rising trend, so the real question is how to use it well and responsibly. Read the course contract aloud once: individual task, team use case, organizational system, measurable process. The shared story of Sepehr — 800 employees, organizational chat, ticketing, a document space and HR software — runs through all four sessions, and every example is built on it.',
                         title: 'AI in Organizations',
                         lead: 'From a blank page to a collaborator for drafting, analysis, and access to information',
-                        note: 'Do not start the session with tools. Ask participants: “Which text or information task took most of your time last week?” Keep the answers for the end-of-session exercise.'
                     },
                     {
                         id: 's02', kind: 'content',
+                        note: 'Tie this slide back to the list from the start of the session: which of these pains appeared in the participants’ answers? Context data: the ILO report, based on an analysis of nearly 30,000 tasks, shows exposure to AI is greatest in administrative, repetitive, text-based work; Sepehr’s first opportunities therefore live in these tasks too, not in one-off work. Define the selection criteria right here: a pain must be frequent, time-consuming, and have textual or informational input to be worth improving. Ask each participant to hold one repetitive task of their own in mind; in session two that task becomes the basis of the opportunity map.',
                         title: 'The real problem of a workday',
                         bullets: [
                             'Long emails and messages',
@@ -136,23 +137,23 @@ registerLocale('en', {
                             'Requests that lack enough information',
                             'Decisions that get lost between conversations'
                         ],
-                        note: 'The goal of this slide is to define the pain. AI helps when it is attached to a specific friction. “Using AI” is not a business problem on its own.'
                     },
                     {
                         id: 's03', kind: 'content',
+                        note: 'Read the map from whole to part: recognition, prediction, recommendation and generation are the four main branches, and generative models are just one branch. Take non-generative examples seriously; spam filters in email and inventory or demand forecasting have worked inside organizations for years, and seeing them prevents AI from collapsing into “chatbot”. This distinction matters in session three when choosing between rules, models and agents, and returns in session four in the roles AI plays in the hiring process. Ask participants which branch they see most in their own work and collect local examples, but keep the discussion short.',
                         title: 'What is artificial intelligence?',
                         lead: 'Artificial intelligence is the name of a family of methods that enable a machine to recognize patterns in data, make predictions, generate content, or suggest an action.',
                         chips: ['Detect', 'Predict', 'Recommend', 'Generate'],
-                        note: 'Give the simple distinction: a fraud-detection model may output a score; a generative model creates new text or images. Not every AI is a chatbot.'
                     },
                     {
                         id: 's04', kind: 'content',
+                        note: 'Core message: fluent language is not evidence of correct content. A language model builds the most probable continuation of the text, and that same mechanism can produce fabricated information; the NIST AI 600-1 profile lists model confabulation among its twelve categories of generative-AI risk. Give a concrete example: a book title, statistic or source that does not exist yet is stated in a confident tone; share one real example from your own experience so the room stays honest. This risk is the foundation of the verification discussion later in this session and of the evaluation samples in session three. The sentence worth writing down: polish is not proof.',
                         title: 'How does a language model build an answer?',
                         lead: 'A language model predicts a plausible continuation of text based on learned patterns. The answer can be fluent and convincing — but fluency is not the same as correctness.',
-                        note: 'Use the “name of an imaginary regulation” example to show the model may produce a seemingly valid answer. Skip the math and the neural-network architecture.'
                     },
                     {
                         id: 's05', kind: 'content',
+                        note: 'Run the five capabilities on a single story; for example one long meeting minutes document: summarize the text, extract commitments and deadlines, rewrite the harsh section, translate for an external partner, draft the follow-up message. Stress that these capabilities work better on structured text and that a clear input produces a better output; bridge here to the request framework on the next slide. An honest caveat: models are weaker at arithmetic and multi-step reasoning than at text work; verify important numbers with the right tool. Ask participants to give their own example for one of the five capabilities and note the best ones.',
                         title: 'Five useful capabilities in office work',
                         ordered: true,
                         bullets: [
@@ -162,19 +163,19 @@ registerLocale('en', {
                             'Classifying requests and documents',
                             'Drafting and suggesting options'
                         ],
-                        note: 'Give a one-line example for each capability. “From these minutes, extract only the decision, owner, and deadline” is a good example of extraction versus summarization.'
                     },
                     {
                         id: 's06', kind: 'content',
+                        note: 'Build the visual step by step: first the job, then its tasks, then the high-frequency tasks. State the data precisely: the ILO report, which analyzed nearly 30,000 tasks, concludes that in most occupations task transformation is more likely than wholesale job elimination; say exactly that, without absolute generalization, and avoid the phrase “AI will not take anyone’s job”. Take the responsibility boundary seriously; signatures, decisions and accountability stay with humans, and a model bears no legal responsibility. This slide is the foundation of the division-of-labor table two slides ahead and of the AI-roles discussion in session four.',
                         title: 'Task, job, and responsibility',
                         lead: 'A job is made of several tasks. Some tasks get faster, some change, and some still require judgment, relationships, accountability, or a human presence.',
                         visual: 'job-tasks',
                         research: 'In 2025, the ILO reported that most jobs exposed to generative AI are more likely to be transformed than fully automated away.',
                         sources: ['ilo'],
-                        note: 'Avoid the absolute promise that “AI will replace no one”. Say the goal of this workshop is designing responsible collaboration, while the real effect depends on the job, management decisions, and how deployment is run.'
                     },
                     {
                         id: 's07', kind: 'content',
+                        note: 'This slide is the credibility backbone of the course; state the numbers with their study scope. The NBER field study of 5,179 support agents reported a 14% average increase in issues resolved per hour, with the largest gains among novices at roughly 34%; for experienced agents the effect was small. The experiment published in Science, with 453 professionals on limited writing tasks, showed about 40% time reduction and 18% quality improvement, and narrowed the gap between weak and strong performers. Read the third bullet with emphasis: these numbers are not a general promise; context, task type and measurement instrument decide. If asked what this means for us, say the plausible hypothesis is that similar work has a higher chance of benefit, and the way to prove it is measuring a baseline in the session-four pilot.',
                         title: 'Productivity evidence and the limits of generalization',
                         bullets: [
                             'In a field study of 5,179 support agents, a generative assistant increased issues resolved per hour by 14% on average.',
@@ -182,10 +183,10 @@ registerLocale('en', {
                             'These numbers are the result of those tasks and those conditions; they are not a promise for every organization.'
                         ],
                         sources: ['nber', 'science'],
-                        note: 'Pause on the third line. The point of the data is to show the effect is possible, not to sell a fixed number.'
                     },
                     {
                         id: 's08', kind: 'content',
+                        note: 'Read the table row by row with a Sepehr example; for instance ticket summarization for AI and prioritizing it for the human. Introduce the fast-learner intern analogy: like any trainee, its output must be reviewed and high-stakes work is not delegated to it; the analogy is incomplete but it shapes the right user behavior. Unpack the supporting NBER finding: the biggest gains among novices means AI can make some of the tacit knowledge of experienced staff available to everyone; this hidden value does not show up in the session-two opportunity map unless it is written into the criteria. Takeaway: division of labor is designed, it does not happen by itself.',
                         title: 'Dividing work between human and AI',
                         visual: 'human-ai-lanes',
                         table: {
@@ -197,10 +198,10 @@ registerLocale('en', {
                                 ['Action', 'Preparing or executing within limits', 'Approving and accepting responsibility']
                             ]
                         },
-                        note: 'Describe AI as a fast trainee with a wide memory and a real chance of error. The analogy is imperfect, but it sets up the right user behavior.'
                     },
                     {
                         id: 's09', kind: 'content',
+                        note: 'Build the six elements live: start from the prompt “summarize this” and add one element at a time so the improvement is visible; this is the fastest trust-builder in the workshop. Say that the richest element is usually context and audience; without knowing the audience, the model produces generic text. Take constraints seriously: length, tone, language, and what must not appear. Remind them this exact framework is used in the meeting-minutes exercise later in this session, and in session three it becomes the system’s “rules”. If you have a live tool, run the first short demo here and keep a recorded or screenshot fallback ready.',
                         title: 'What is a good prompt made of?',
                         bullets: [
                             'Task: what exact output do we want?',
@@ -210,10 +211,10 @@ registerLocale('en', {
                             'Format: how should the answer be delivered?',
                             'Criteria: what makes a good output?'
                         ],
-                        note: 'Do not sell this structure as a magic formula. Prompt writing is an iterative conversation, and sometimes an example output beats a long explanation.'
                     },
                     {
                         id: 's10', kind: 'content',
+                        note: 'Read the two requests back to back and ask participants to predict each output. Explain that a vague request gives the model room to guess, and the model’s guess is exactly where fabricated information is born; a large share of apparent model errors root in vague input, not in the model itself. State the workshop rule out loud: before blaming the tool, rewrite the request. This slide bridges directly to the common-errors slide, and in session two the “ease of use” criterion connects back to this quality of interaction.',
                         title: 'Vague prompt vs. actionable prompt',
                         visual: 'prompt-compare',
                         visualData: {
@@ -222,10 +223,10 @@ registerLocale('en', {
                             actionableLabel: 'Actionable',
                             actionable: 'From the text below, extract the final decisions into a “decision, owner, deadline” table. List proposals separately. If an owner or a deadline is missing, write “unspecified” — do not invent one.'
                         },
-                        note: 'Run both prompts on the same text and compare the outputs side by side.'
                     },
                     {
                         id: 's11', kind: 'content',
+                        note: 'Run the five-stage conversation on a real example so participants see that a good output usually comes from two or three exchanges, not a single request. Stress that specific feedback beats starting over; say what to keep and what to change. Be honest about the limitation: in long conversations the model may soften earlier constraints; repeat the important constraints. This skill is used in this session’s demo and connects to the rules and standing instructions of the organizational assistant in session three.',
                         title: 'Iterative dialogue',
                         visual: 'steps',
                         ordered: true,
@@ -236,10 +237,10 @@ registerLocale('en', {
                             'Critique against the criteria',
                             'A usable version'
                         ],
-                        note: 'Explain that the first answer is usually not the end. Ask the model to “ask three clarifying questions before answering” or “critique the output against these criteria”.'
                     },
                     {
                         id: 's12', kind: 'content',
+                        note: 'Separate the three errors with examples: fabricated information, meaning a source or statistic that does not exist; harmful omission, meaning a commitment that fell out of the summary; and data leakage, meaning confidential text pasted into a public tool. Say that omission is usually overlooked although it is the most dangerous in office work, because the output looks fluent and correct. Announce Sepehr’s simple rule for leakage: confidential data only goes into organization-approved tools; details of policies and business data tiers come in session two. This slide sets up the five review questions.',
                         title: 'Common failure modes',
                         bullets: [
                             'Inventing a fact, a source, or a number',
@@ -248,10 +249,10 @@ registerLocale('en', {
                             'Over-trusting fluent text',
                             'Entering sensitive information into an unsuitable tool'
                         ],
-                        note: 'Introduce the term “hallucination” once, then switch to “fabricated information”. Errors are not limited to fake facts; dropping an important condition can be just as damaging.'
                     },
                     {
                         id: 's13', kind: 'content',
+                        note: 'Practice the five questions on a deliberately flawed output; ideally prepare a sample summary in advance with one wrong number and one dropped commitment. Key point of the discussion: review depth matches the harm of an error; an informal internal reply is fine with a quick skim, but contract-citable material is checked line by line. Separate source verification from judgment review: first ask whether it is really in the document, then ask whether it is actually right. This principle returns as evaluation samples in session three and as pilot success criteria in session four.',
                         title: 'How to review an output',
                         lead: 'Five questions before you use it:',
                         ordered: true,
@@ -262,10 +263,10 @@ registerLocale('en', {
                             'Are the tone and format right for the audience?',
                             'If the answer is wrong, what is the consequence?'
                         ],
-                        note: 'The higher the cost of an error, the stricter the review. A low-impact internal answer and a hiring, payment, or access decision do not need the same level of control.'
                     },
                     {
                         id: 's14', kind: 'exercise',
+                        note: 'Hand out the raw Sepehr minutes and point out the ambiguities are deliberate: two firm decisions, one decision without an owner, one unapproved proposal, two conflicting deadlines and one sensitive topic. Repeat the exact mission: write a request that separates decisions from proposals and does not push the model to invent owners or deadlines; by default the model wants to look complete, and that is exactly where fabrication starts. Remind them the sensitive topic must not appear in the public summary; deciding what counts as sensitive is a human decision that feeds the data rules of session two. Allow 15 minutes; compare two samples and return to the review-method slide.',
                         title: 'Exercise: Sepehr meeting minutes',
                         lead: 'In pairs, turn the raw meeting minutes into a table of decisions and actions.',
                         time: '25 min',
@@ -276,10 +277,10 @@ registerLocale('en', {
                             'One error in the first draft and how you fixed it'
                         ],
                         exerciseFile: 'assets/workshop/ai-workshop-session-1-meeting-exercise-en.html',
-                        note: 'The exercise file should deliberately contain one ambiguous decision, one non-final proposal, and two conflicting deadlines.'
                     },
                     {
                         id: 's15', kind: 'closing',
+                        note: 'Close by returning to the list from the start of the session: which pain became solvable today with the six-element framework? Review the three outputs: the good-request framework, the five review questions, and the division of labor between human and AI. Make the next assignment explicit: each participant picks one repetitive task of their own for the opportunity map. If “will my job change” comes up, go back to the precise ILO sentence: in most occupations task transformation is more likely than full elimination, and accountability stays with humans.',
                         title: 'Wrap-up and the bridge to Session 2',
                         lead: 'AI performs better on a well-defined task. The input, the constraints, and the quality criteria are set by humans. In the next session we look at what applications each unit of an organization has and which tool fits which problem.',
                         callout: { title: 'Session output', body: 'A reusable prompt and a review checklist' }
@@ -320,12 +321,13 @@ registerLocale('en', {
                 slides: [
                     {
                         id: 's01', kind: 'cover',
+                        note: 'This session moves from individual skill to problem selection. Say the hardest organizational question is usually not how to use AI but where; most failed projects started from the wrong problem, not a bad tool. Make the session map clear: three scales of use, use cases by unit, tool families, tool selection and data rules. Ask participants to keep the repetitive task they chose in session one in front of them; the closing exercise scores that task.',
                         title: 'From a good prompt to a good application',
                         lead: 'The previous session was about the quality of interaction with the tool. This one is about choosing the right problem.',
-                        note: 'Quickly review the outputs participants produced, and show that even an excellent prompt cannot save the wrong problem or poor data.'
                     },
                     {
                         id: 's02', kind: 'content',
+                        note: 'Show the three scales with one example; summarization: individual in a personal chat, team on shared documents, organizational in an assistant connected to systems. The key point of the table: from the first row to the third, both potential value and risk grow; data, permissions, maintenance and accountability get heavier, and ownership shifts from the user to business and IT. Give context: Stanford’s AI Index 2025 shows organizational adoption rising, but this course does not recommend starting at the organizational tier; start with a frequent, low-risk task and climb gradually. This ladder connects to the four maturity levels in session three.',
                         title: 'Three scales of use in an organization',
                         visual: 'scales',
                         table: {
@@ -336,10 +338,10 @@ registerLocale('en', {
                                 ['Organization-wide', 'System integration and executing actions', 'The business, IT, and organizational controls']
                             ]
                         },
-                        note: 'Risk and design effort increase from the first row to the third.'
                     },
                     {
                         id: 's03', kind: 'content',
+                        note: 'Core message: define use cases by type of work, not by product name; products change every few months but the type of work is durable. Read the five work types against Sepehr examples and ask participants which type is most frequent in their unit; that answer feeds directly into the opportunity map. Honest reminder: this course’s tool list carries a September 2026 review date, and product features and prices change fast; check them before every delivery. This slide is the gateway to the unit slides; pass over it quickly and save time for the units.',
                         title: 'Application map by type of work',
                         bullets: [
                             'Text work: summarizing, extracting, translating, and drafting',
@@ -348,10 +350,10 @@ registerLocale('en', {
                             'Communication work: suggested replies and meeting preparation',
                             'Process work: intake, routing, and controlled action'
                         ],
-                        note: 'This taxonomy is more durable than a list of product names.'
                     },
                     {
                         id: 's04', kind: 'content',
+                        note: 'Always pair HR use cases with human boundaries. Documented context: the UK ICO, in its November 2024 audit report on AI tools in recruitment, emphasized fairness, data minimization, transparency for candidates and monitoring for bias; those same four criteria return in the recruitment case study of session four. Sepehr’s practical rule: never put real employee data into public tools, and propose that every organization write down a list of prohibited data. State the warning plainly: in this unit the value of AI is preparation and suggestion, not decisions about people.',
                         title: 'Human resources',
                         bullets: [
                             'Drafting job descriptions from a unit’s real need',
@@ -364,6 +366,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's05', kind: 'content',
+                        note: 'The richest research evidence lives here; the NBER study from session one was run on exactly these support agents, and its 14% improvement and the larger gains among novices belong to this domain. As a market-capability example, per Atlassian documentation Jira Service Management offers an AI-powered virtual agent, triage, summarization, knowledge search and incident management; naming it is a market example, not a purchase recommendation. For Sepehr, the VPN scenario of session three is built on this domain, and in the opportunity-map exercise ticketing tasks usually score highest on frequency. Reminder: re-check features against official documentation in the week of delivery.',
                         title: 'Support, services, and operations',
                         bullets: [
                             'Completing missing request information',
@@ -373,10 +376,10 @@ registerLocale('en', {
                             'Grouping similar incidents and drafting post-incident reports'
                         ],
                         sources: ['atlassian'],
-                        note: 'Atlassian today ships Jira Service Management features such as a virtual agent, summarization, request-type suggestions, triage, related-resource search, and incident reporting. Present it as an example of what exists, not as a purchase recommendation.'
                     },
                     {
                         id: 's06', kind: 'content',
+                        note: 'Present sales use cases realistically: drafting emails, call summaries, preparing inquiry responses, analyzing customer conversations. The data rule from the previous slide applies here as well; customer data is treated as confidential and does not go into public tools; the right path is an approved organizational tool or removing the data from the input. Avoid the “full personalization” claim and say the real value is usually removing repetitive preparation work — just as the NBER study found the effect in repetitive support work, not in a sales miracle. If a sales specialist is in the room, ask them to name their most frequent task and assess its data risk.',
                         title: 'Sales and customer relations',
                         bullets: [
                             'Account-history summary before a meeting',
@@ -389,6 +392,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's07', kind: 'content',
+                        note: 'For managers the main use is summarization and drafting: summaries of incoming reports, draft meeting minutes, preparing session questions, consolidating team opinions. State the warning clearly: AI output is not a substitute for dialogue in managerial decisions; a selective summary can bend the trajectory of a decision, the same harmful omission seen in session one. Advise managers to spot-check every output against the source document, and in sensitive meetings to treat the summary only as the opening point of discussion. This point returns as risk-proportional governance in session four.',
                         title: 'Management, projects, and meetings',
                         bullets: [
                             'Turning conversations into decisions and actions',
@@ -397,10 +401,10 @@ registerLocale('en', {
                             'Building decision options together with their assumptions',
                             'Preparing reports for different audiences'
                         ],
-                        note: 'AI can prepare the options; the owner of the decision must weigh the assumptions and the evidence.'
                     },
                     {
                         id: 's08', kind: 'content',
+                        note: 'This unit has the most restrictions, and saying so honestly is what builds trust for the whole course. Low-risk allowed work: drafting generic text, summarizing long documents, building checklists, translation; with the explicit condition that no number or citable clause goes out without human review. Financial and legal documents require an approved organizational tool with event logging; logging is covered fully in session three. The simple rule worth noting: the heavier the consequences of error, the more mandatory the human review; this is the same spectrum walked in the authority-level discussion of session three.',
                         title: 'Finance, legal, and procurement',
                         bullets: [
                             'Extracting clauses, amounts, dates, and contract parties',
@@ -413,6 +417,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's09', kind: 'content',
+                        note: 'Introduce the six families by their role in the solution, not as a wall of logos: general assistant, organizational work suite, source-grounded assistant, content creation, automation and workflow, and on-prem model execution. One example per family is enough; resist the temptation to show dozens of tools, because the audience must learn the logic of choice, not memorize a catalog. Explicit reminder: this list carries a September 2026 review date and product features change fast. Proper selection happens in session three against the criteria of problem, Persian language, data policy, existing systems and maintenance capacity.',
                         title: 'Tool families',
                         visual: 'tool-families',
                         table: {
@@ -426,10 +431,10 @@ registerLocale('en', {
                                 ['Local model serving', 'More control over deployment', 'Ollama and API-compatible services']
                             ]
                         },
-                        note: 'Product features and prices change quickly. On the main slide, teach the role of each family and re-check the names close to the delivery date.'
                     },
                     {
                         id: 's10', kind: 'content',
+                        note: 'Run the demo on the same document pack across three tools and score the result with the criteria on the slide, not with brand preference. On NotebookLM, per Google’s official guide: answers are built on the uploaded sources with inline citations; that makes verification easier, but it is not an absolute guarantee of correctness and quality depends on the quality of the sources themselves. Avoid a taste contest between brands; the goal is that participants learn evaluation criteria. If a live demo is risky, play a recorded version or backup screenshots, and flag the data-handling posture of each tool.',
                         title: 'Three tools on one problem',
                         lead: 'Shared problem: “From these five internal documents, prepare a citable answer about the remote-work policy.”',
                         visual: 'tool-compare',
@@ -441,10 +446,10 @@ registerLocale('en', {
                             'Cost and support needs'
                         ],
                         sources: ['notebooklm'],
-                        note: 'Compare a general assistant, a source-grounded tool, and an enterprise solution. Per its official guide, NotebookLM grounds answers in uploaded sources with inline citations. Do not equate that with a guarantee of correctness.'
                     },
                     {
                         id: 's11', kind: 'content',
+                        note: 'Read the situation-to-choice table column by column with a Sepehr example; for instance a question about an internal policy needs a source-grounded tool, not a general assistant, and a high-consequence decision needs an organizational tool with human review. This table is a conversation tool; ask participants to locate their own situation in one of the rows. Stress that the rows run from low risk to high risk and align with the three-scale ladder of the second slide. The expected outcome: each person leaves with a type of tool fit for their problem, not with a brand.',
                         title: 'Method matters more than tool names',
                         table: {
                             head: ['Work situation', 'First pick'],
@@ -459,6 +464,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's12', kind: 'content',
+                        note: 'Quote the two policy sources precisely and do not over-generalize. Per OpenAI documentation, data in the Business and Enterprise plans and the API is not used for model training by default; that rule does not extend to free personal accounts. Per Microsoft documentation, Copilot within Microsoft 365 respects the user’s existing permissions and policies and preserves the same access boundaries. Practical recommendation for Sepehr: write down the list of approved tools and prohibited data types and teach it during onboarding; this list connects to the access discussion in the architecture canvas of session three.',
                         title: 'Where does organizational information go?',
                         lead: 'Before entering data, check:',
                         bullets: [
@@ -469,10 +475,10 @@ registerLocale('en', {
                             'What permissions does a connected tool request?'
                         ],
                         sources: ['openai', 'microsoft'],
-                        note: 'Official examples: OpenAI states that data from its Business and Enterprise products and its API is not used for model training by default. Microsoft describes contractual protection and compliance with Microsoft 365 permissions for enterprise Copilot. Do not extend these terms to personal accounts or every side capability.'
                     },
                     {
                         id: 's13', kind: 'content',
+                        note: 'Fill the matrix with the participants’ own repetitive tasks; this group exercise is the first draft of the opportunity map. Stress that a numeric score is not a decision tool, it is a conversation tool; the goal is to surface disagreements before any purchase. For each criterion ask the specialist unit how much weight it carries; data security for HR is not the same as for support, and that weighting debate is the real value of the slide. If the discussion runs long, pick the two main criteria and hand the rest to the exercise; the worksheet carries the full scored sample.',
                         title: 'Opportunity selection matrix',
                         lead: 'Score each idea from 1 to 5:',
                         bullets: [
@@ -484,10 +490,10 @@ registerLocale('en', {
                             'Difficulty of connecting to systems'
                         ],
                         callout: { kind: 'formula', title: 'A simple formula', body: 'Initial appeal = expected value + feasibility − risk' },
-                        note: 'The formula is not a scientific calculation; it is a conversation and prioritization tool. Keep the criteria separate so a total score does not hide the reason for a choice.'
                     },
                     {
                         id: 's14', kind: 'exercise',
+                        note: 'Hand out the opportunity-map sheet and explain the columns one by one; the reviewer and error-consequence columns are the ones from session one’s five review questions, and the data-access column links back to the previous slide. Ask each participant for two candidate tasks and have them pick one with the priority score; that candidate becomes the solution map in session three and the pilot canvas in session four. Reminder: very low-frequency or very high-risk tasks are not good first pilots. Allow 20 minutes; discuss two or three samples at the end and invite dissenting voices from different units.',
                         title: 'Exercise: Your unit’s opportunity map',
                         lead: 'Score your unit’s ideas on the matrix and select one idea for Session 3.',
                         time: '25 min',
@@ -504,6 +510,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's15', kind: 'closing',
+                        note: 'Close around one question: for your problem, which tool family and which level of use fit? Review the three outputs: the personal opportunity map, the tool-selection criteria, and the organizational data rules. Bridge to session three: so far we have looked at tools in isolation; next time we lay them into a single system with knowledge, rules, permissions and event logging. If pricing comes up, say the real cost is not just the subscription; setup, maintenance, training and evaluation count too, and we return to that in the session-four pilot canvas.',
                         title: 'Wrap-up and the bridge to Session 3',
                         lead: 'We choose the problem and the criteria first, then the tool. In the next session we turn the selected idea from a manual interaction into a knowledge-connected assistant and an organizational workflow.',
                         callout: { title: 'Session output', body: 'An opportunity card and a first tool comparison' }
@@ -543,6 +550,7 @@ registerLocale('en', {
                 slides: [
                     {
                         id: 's01', kind: 'cover',
+                        note: 'This session is the turning point of the course: from ready-made tools to system design. Core message: the model is only one piece; organizational knowledge, rules, permissions, event logging and an error path together build a dependable answer. Open the Sepehr example: the correct answer about VPN setup is not findable in a public chat, because it lives in the organization’s internal documents. Keep the claim moderate; public chat is fine for many everyday tasks, but not for organizational work connected to data and systems. State the session contract: the candidate chosen in session two becomes a solution map by the end of this session.',
                         title: 'Why isn’t a general chat enough?',
                         lead: 'A general-purpose chat tool knows nothing about your organization’s context.',
                         bullets: [
@@ -551,10 +559,10 @@ registerLocale('en', {
                             'It isn’t connected to ticketing, HR, or CRM.',
                             'It has no defined path for failures, logging, and escalation.'
                         ],
-                        note: 'Separate the capability of the model from the capability of the whole system. An enterprise solution is built from a model, data, integrations, rules, and controls.'
                     },
                     {
                         id: 's02', kind: 'content',
+                        note: 'Read the maturity ladder with emphasis on the line at the bottom of the slide: level four is not always better. Level four means more of the work is delegated to the system itself, and that means more risk, more maintenance cost and more evaluation; for many tasks level two or three is the wiser and cheaper choice. Ask participants which level their opportunity-map candidate actually requires and keep the discussion short. Reminder: jumping from level zero to four is the most common reason AI projects fail; in session four this ladder connects to risk-proportional governance.',
                         title: 'Four levels of usage maturity',
                         visual: 'maturity',
                         ordered: true,
@@ -568,13 +576,14 @@ registerLocale('en', {
                     },
                     {
                         id: 's03', kind: 'content',
+                        note: 'Introduce the nine components in story order: the user asks, arrives through a channel, the model builds an answer with knowledge and rules, calls tools, access is controlled, events are logged, a human approves the sensitive points, and errors have a defined path. Say that this session’s exercise fills exactly this canvas for their own candidate. Do not go deep into technical detail; Kubernetes, vector databases and API specifics live in the technical appendix and are not class material. After this slide the audience should be able to ask of every component: who owns it, and what happens when it breaks.',
                         title: 'Components of an enterprise solution',
                         visual: 'architecture',
                         lead: 'User, interaction channel, model, permitted knowledge, connected tools, business rules, access control, event logging, and escalation to a human',
-                        note: 'Show this slide as a simple architecture diagram. Keep data arrows and action arrows visually distinct.'
                     },
                     {
                         id: 's04', kind: 'content',
+                        note: 'Walk the RAG flow step by step across the diagram: the question, retrieval of relevant document chunks, the answer built from those chunks, and the displayed source. Take the two constraints seriously. First: RAG is not magic memory; answer quality depends on document quality, structure and freshness, and a missing document produces a missing answer. Second: RAG does not replace document governance or access control; if permissions are not wired correctly, an answer can carry restricted content to an unrelated user. The VPN scenario later in this session is built on exactly this flow.',
                         title: 'RAG in plain language',
                         visual: 'rag',
                         ordered: true,
@@ -588,6 +597,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's05', kind: 'content',
+                        note: 'Show the knowledge lifecycle with a live example: the old and new versions of the leave policy sit side by side in the document space; the model sees both and produces a contradictory answer. The model does not resolve that contradiction; document governance must settle which version is authoritative and who owns each source. For Sepehr, recommend that before any knowledge assistant goes live, the list of official sources and the owner of each source are defined. This discussion sets up the data-and-owner section of the session-four pilot canvas and also feeds the failure-mode slide in this session.',
                         title: 'The knowledge lifecycle',
                         bullets: [
                             'Every document has an owner and a validity date.',
@@ -596,10 +606,10 @@ registerLocale('en', {
                             'Answers cite the exact source passage.',
                             'Unanswered questions are reported to the knowledge owner.'
                         ],
-                        note: 'If two policies contradict each other, the model does not fix knowledge governance; it just reproduces the contradiction.'
                     },
                     {
                         id: 's06', kind: 'content',
+                        note: 'State the difference precisely and do not confuse it with deployment: small versus large models is about model size and capability, cloud versus on-prem is about where the model runs; every combination of the two exists. The boundary moves fast; this year’s small model can beat last year’s large one, so do not anchor on marketing tables. Practical advice: make the selection by testing on twenty to fifty real samples of your own work; the logic of that test arrives in the evaluation slide this session and repeats in the success criteria of session four.',
                         title: 'Large models and small models',
                         table: {
                             head: ['Criterion', 'Larger model', 'Smaller model'],
@@ -610,10 +620,10 @@ registerLocale('en', {
                                 ['Control for a narrow task', 'Usable', 'Sometimes the economical choice']
                             ]
                         },
-                        note: 'SLM and LLM have no fixed, global numeric boundary. Choose by testing on the real task.'
                     },
                     {
                         id: 's07', kind: 'content',
+                        note: 'Present the three deployment options together with a picture of cost and maintenance. Give three warnings. First: on-prem does not mean secure; an internal server still needs patching, access management and event logging. Second: cloud does not mean insecure; for many organizations a cloud option with a clear contract is safer than an unmaintained internal stack. Third: hybrid is the most common real choice; sensitive data stays inside and generic work goes to the cloud. Ollama and vLLM appear in the tool list as on-prem examples and come up again in the Mattermost architecture; naming them is a market example, not a recommendation.',
                         title: 'Cloud, on-premises, and hybrid',
                         table: {
                             head: ['Option', 'Likely benefit', 'Cost and responsibility'],
@@ -623,10 +633,10 @@ registerLocale('en', {
                                 ['Hybrid', 'Choosing the route per use case', 'More complex architecture and governance']
                             ]
                         },
-                        note: '“On-premises” is not a synonym for “secure”. Configuration, access control, patching, logging, and the operations team are what create security.'
                     },
                     {
                         id: 's08', kind: 'content',
+                        note: 'Give the rule of thumb with an example: deterministic, exception-free behavior, like each role’s access level, belongs in rules, not a model; a model is better at judgment over text and at varied cases, and an agent is for when several tools must be called in sequence with decisions in between. Stress that an Agent is not necessary for every process and that each extra layer adds complexity and risk; many good solutions are just a model plus knowledge. This distinction is used in the architecture canvas exercise this session and in the hiring-process architecture of session four.',
                         title: 'Rules, model, and agent',
                         bullets: [
                             'Rules: the condition and the outcome are explicit.',
@@ -637,6 +647,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's09', kind: 'content',
+                        note: 'Walk the authority spectrum left to right with a single example so the difference between levels is felt: it suggests, it drafts, it takes a bounded action, it takes a broad action, and finally it decides on its own. Class exercise: for the four tasks “send a reply to the user, create a ticket, change access, make a payment”, ask participants for the permitted level; differing answers are normal because it depends on the organization’s risk and oversight. Sum up the general rule: choose authority to match the harm of the error and the presence of a reviewer. In session four this spectrum connects to risk-proportional governance and the human-approval layer.',
                         title: 'Level of autonomy',
                         visual: 'authority',
                         ordered: true,
@@ -647,10 +658,10 @@ registerLocale('en', {
                             'Execute automatically within a low-risk scope',
                             'Escalate on ambiguity or error'
                         ],
-                        note: 'Ask participants to set a separate autonomy level for “send a reply”, “create a ticket”, “change access”, and “make a payment”.'
                     },
                     {
                         id: 's10', kind: 'content',
+                        note: 'Follow the scenario step by step: the user asks in chat, the assistant detects the topic, asks for the missing details, builds a documented answer with its source, the problem is not solved, and a ticket is created with a conversation summary and routed to the right team. Mark the two human decision points: the user’s confirmation before the ticket is created, and the human prioritization of the ticket. Point out that automatic ticket creation is only possible when the assistant is connected to the ticketing system; connecting systems is the topic of the next slides and of the automation tools from session two. This scenario is the basis of the next slide’s demo.',
                         title: 'Smart ticketing scenario',
                         visual: 'ticket-flow',
                         lead: 'An employee’s message arrives in chat. The assistant detects the topic, asks for the missing details, offers a documented answer, and — if that doesn’t resolve it — drafts a ticket for confirmation.',
@@ -661,6 +672,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's11', kind: 'content',
+                        note: 'Run the demo in two acts: first the happy path from the chat question to the documented answer with citation and finally the created ticket; second the failure path, where either the right guide is missing from the knowledge base or the ticketing system is down. On the failure path show that the assistant must honestly say it does not know, refuse to fabricate, and offer the human fallback route; user trust is built exactly here. Test the demo in advance and keep a recorded version or screenshots as backup. At the end, ask which architecture component was at work in each step; that game turns the nine components from memorization into understanding.',
                         title: 'End-to-end demo',
                         lead: 'Scenario: “My VPN won’t connect this morning and I have a customer meeting.”',
                         visual: 'demo-steps',
@@ -678,17 +690,17 @@ registerLocale('en', {
                             'Drafting the ticket',
                             'User confirms and receives a tracking number'
                         ],
-                        note: 'Prepare and rehearse the demo in advance. Have one success path and one escalation path ready.'
                     },
                     {
                         id: 's12', kind: 'content',
+                        note: 'Open Mattermost as an architecture example, not a product recommendation. Per its official documentation, the Agents component can connect to various cloud providers and API-compatible services such as Ollama and vLLM, supports semantic search over internal knowledge, and supports MCP. Highlight the design point: decoupling the chat interface from the model provider means the organization can swap the model without rebuilding the user experience or the rest of the architecture. Technical reminder: semantic search and local models need infrastructure and maintenance; carry that cost into the maturity-level decision. Re-check features against official documentation before delivery.',
                         title: 'A Mattermost architecture example',
                         lead: 'Mattermost can serve as the chat interface. Agents connects to cloud providers or API-compatible services such as Ollama and vLLM. RAG covers internal knowledge, and MCP or other connectors cover the tools.',
                         sources: ['mattermost'],
-                        note: 'This is one reference architecture. Per the official Mattermost documentation, Agents supports multiple providers and compatible local models, and it needs related infrastructure for semantic search. Keep the installation details in an appendix for this audience.'
                     },
                     {
                         id: 's13', kind: 'content',
+                        note: 'Read the failure table row by row with one closing sentence: trust is built from correct behavior during failure, not from success-path behavior. For each failure ask “what should the system do and what should the user see”; the correct answer includes admitting inability, a human fallback route, and an event log entry for follow-up. Link back to NBER: even with a useful tool, the experienced agents saw little benefit, because judging where not to trust the tool is itself a skill. This table feeds directly into the evaluation samples and the error path of the architecture-canvas exercise.',
                         title: 'Failure modes and expected behavior',
                         table: {
                             head: ['Situation', 'Correct behavior'],
@@ -703,6 +715,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's14', kind: 'content',
+                        note: 'State the evaluation logic with the same four-stroke cycle: define samples, define criteria, measure, improve; that is the cycle described in the Evals guidance for businesses, and it is also what the session-four pilot needs. Practical advice: before launch, prepare twenty to fifty real samples of your own work, write the expected good answer for each one in advance, and agree the acceptable pass rate with the stakeholder. Stress that a vendor’s evaluation does not replace your own samples, and that quality is judged on your organization’s real work. This slide is the last piece needed for the solution-map exercise.',
                         title: 'Evaluate before release',
                         bullets: [
                             '20–50 real, anonymized sample questions',
@@ -712,19 +725,19 @@ registerLocale('en', {
                             'Logging errors and re-testing after fixes'
                         ],
                         sources: ['openai'],
-                        note: 'Keep the evaluation principle simple: define quality, test under real conditions, and improve from errors. A vendor’s evaluation does not replace samples from your own organization.'
                     },
                     {
                         id: 's15', kind: 'exercise',
+                        note: 'Run the exercise on the candidate selected in session two and hand out the solution-canvas sheet; every component from today must be filled in, and the error path must contain at least one concrete example. Allow 25 minutes; circle the room and pull groups that have chosen a model or tool larger than needed back down a maturity level. Remind them that the data owner must be a named role in the organization, not a vague unit. Today’s output flows directly into the session-four pilot canvas; the quality of today’s canvas decides the quality of tomorrow’s pilot.',
                         title: 'Exercise: Solution map',
                         lead: 'Design the idea selected in Session 2 on a single page.',
                         time: '25 min',
                         chips: ['User', 'Input', 'Knowledge', 'Model', 'Rules', 'Connected systems', 'Output', 'Autonomy level', 'Human approval', 'Event logging', 'Failure path'],
                         exerciseFile: 'assets/workshop/ai-workshop-session-3-solution-canvas-en.html',
-                        note: 'The output of this exercise is the input to the final workshop in Session 4.'
                     },
                     {
                         id: 's16', kind: 'closing',
+                        note: 'Close around the slide’s main sentence: an organizational solution is not just a model; quality and safety come from the design of data, permissions, process, evaluation and ownership. Review today’s four outputs: the maturity ladder, the RAG flow with its two constraints, the authority spectrum, and the evaluation cycle. Bridge to session four: so far we designed one solution; next time we place that solution inside a full real process, measure its value against a baseline, and write the execution plan. If asked where to start, say level one or two, with the candidate chosen today.',
                         title: 'Wrap-up and the bridge to Session 4',
                         lead: 'An enterprise solution is not just a model. Quality and safety come from the design of data, permissions, process, evaluation, and ownership. In the next session we put these components together for one complete process and one real pilot.',
                         callout: { title: 'Session output', body: 'A solution map and an autonomy-level table' }
@@ -765,13 +778,14 @@ registerLocale('en', {
                 slides: [
                     {
                         id: 's01', kind: 'cover',
+                        note: 'This session pulls the whole course together and moves from tools and systems to process and decision. Unpack the slide example: an organization may generate job descriptions in one team and summarize résumés in another, yet the waiting time and the handoffs between units stay untouched; value comes from the whole flow, not from isolated steps. Say that today, with the recruit-to-onboarding case, we redesign one complete process and then apply the same method to each group’s own candidate. Remind them the course deliverables are three documents: the opportunity card, the solution map and the pilot canvas.',
                         title: 'The problem of scattered projects',
                         lead: 'One part of the organization may generate a job description while another summarizes résumés — yet the waiting time, information handoffs, and rework across the whole process remain.',
                         callout: { title: 'Key message', body: 'Durable value comes from designing the complete flow of work.' },
-                        note: 'Announce from the start that each group will present its pilot canvas at the end of the session; ask participants to collect the canvas parts during the case study.'
                     },
                     {
                         id: 's02', kind: 'content',
+                        note: 'State the session’s main rule out loud: the unit of analysis is the task, not the whole process and not the tool. Ask the slide’s four questions for every task with an example; the same task-versus-job split the ILO applied across nearly 30,000 tasks becomes a hands-on design tool here. Stress that the process on paper and the real process differ; bottlenecks must be asked about from the front line, not read from the document. These four questions return in today’s pilot-canvas exercise. If a group’s process is long, ask them to name only its five most frequent tasks so they do not drown in detail.',
                         title: 'The unit of analysis is the task',
                         lead: 'Break the process into small tasks and, for each task, ask:',
                         bullets: [
@@ -784,6 +798,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's03', kind: 'content',
+                        note: 'Follow the five roles with a single example: drafter, collector, analyst, guide and bounded executor; each process stage usually has one primary role, and sewing all the roles onto a single step raises both risk and complexity. Remind them that the authority spectrum from session three returns in the bounded-executor role; before delegating execution, the reviewer and the error path must be defined. Ask the groups which roles their candidate actually needs and which are extra; deleting an unused role is also design. This split is the basis of the AI-roles table in the pilot canvas.',
                         title: 'Five roles for AI in a process',
                         ordered: true,
                         bullets: [
@@ -793,10 +808,10 @@ registerLocale('en', {
                             'Suggesting routing and priority',
                             'Executing a bounded action with approval or control'
                         ],
-                        note: 'Pick only one primary role for each step. It makes evaluation much easier.'
                     },
                     {
                         id: 's04', kind: 'case',
+                        note: 'Walk the recruit-to-onboarding path once end to end across the diagram and mark the bottlenecks; as the slide says, the bottleneck usually sits in the handoffs between units, not in a single step. Documented context: the UK ICO, in its November 2024 audit of AI tools in recruitment, emphasized fairness, data minimization, transparency for candidates and monitoring for bias; we tie those four criteria to every following step. Discipline reminder: no real résumés or personal data are used in the demos; all data is synthetic. From this slide to the end of the session, the examples stay on this path.',
                         title: 'Case study: from hiring to onboarding',
                         lead: 'Look at the full path; the bottleneck usually sits in the handoffs between units, not in any single step.',
                         visual: 'hire-flow',
@@ -805,10 +820,10 @@ registerLocale('en', {
                             delayLabel: 'Typical delays',
                             delay: 'Handoffs between the requesting unit, HR, the hiring manager, and the candidate'
                         },
-                        note: 'Show the process as a horizontal path and mark the delays on the handoffs between the requesting unit, HR, the manager, and the candidate.'
                     },
                     {
                         id: 's05', kind: 'content',
+                        note: 'In needs assessment the AI drafts, but four human decisions remain: whether the role is needed, budget, job level and the success criteria. State this split explicitly, because the most common organizational mistake is confusing a good draft with a good decision; an AI draft, even when correct, does not answer “should we hire at all”. Ask the groups which of the four decisions is least clear in their own organizations. This slide is a miniature of the whole session’s pattern: AI in the role of extraction, preparation and suggestion, and the human in the role of decision.',
                         title: 'Needs analysis and role definition',
                         lead: 'In the first step of the process, AI can:',
                         bullets: [
@@ -821,21 +836,23 @@ registerLocale('en', {
                     },
                     {
                         id: 's06', kind: 'content',
+                        note: 'In the job posting, the AI produces channel-specific versions, flags complex or biased wording, and answers common questions; but the decision about what is announced and to whom stays human. Connect to the ICO finding: data minimization means requesting only the information needed for the decision, and retaining more than needed is itself a risk. Quick drill if time allows: show a sample posting and ask participants to spot one biased phrase or one piece of unnecessary data. This discussion comes together in the governance-and-risk slide at the end of the session.',
                         title: 'Posting and candidate communication',
                         lead: 'AI can produce channel-specific versions, flag complex or biased wording for review, answer frequently asked questions, and keep candidates informed about process status.',
                         callout: { kind: 'control', title: 'Control', body: 'Approved text, privacy, accessibility for people with disabilities, and a path to reach a human.' }
                     },
                     {
                         id: 's07', kind: 'content',
+                        note: 'In résumé structuring, the AI extracts the relevant information from varied formats and marks missing data; but state the boundary plainly: inferring protected characteristics from names, photos or other signals is prohibited. The ICO’s 2024 audit found some tools doing exactly that, and it is one of the points where discrimination enters; for Sepehr this behavior must be banned in the system’s rules. Remind them this is exactly why the demos use synthetic data; the model is tested on synthetic résumés, never on real candidates. This slide feeds straight into the risk-and-control table of the pilot canvas.',
                         title: 'Receiving and structuring résumés',
                         lead: 'AI can extract the relevant information from varied formats and flag missing data.',
                         callout: { kind: 'warn', title: 'It must not do this covertly', body: 'Guessing gender, ethnicity, health status, or any protected attribute from names, photos, or unrelated signals.' },
                         research: 'The ICO’s 2024 audit report recorded examples of gender and ethnicity inferred from names, and of excessive data retention.',
                         sources: ['ico'],
-                        note: 'Present this as a design warning, not a side note. Data minimization and avoiding inference of protected attributes must be in the specification from the very beginning.'
                     },
                     {
                         id: 's08', kind: 'content',
+                        note: 'In screening, the criteria must be approved before any candidate is seen, and the AI applies only the approved criteria; say this sentence twice, because it is the most common failure of hiring processes. Tie the slide’s three rules to the ICO findings: absence of evidence in a résumé is not absence of ability, the rejection pattern must be monitored, and the AI is not an independent decision-maker. Remind them that local laws on AI-assisted screening differ by country and must be checked before implementation. In the demo, show that the model’s output is a shortlist of suggestions and the reason for each suggestion is logged.',
                         title: 'Screening and the shortlist',
                         bullets: [
                             'Criteria are defined before any candidate is viewed.',
@@ -845,16 +862,17 @@ registerLocale('en', {
                             'Results are monitored for unbalanced rejection patterns.'
                         ],
                         sources: ['ico'],
-                        note: 'In this course, do not present AI as the independent decision maker in hiring. Local laws differ, and hiring decisions are sensitive and high-stakes.'
                     },
                     {
                         id: 's09', kind: 'content',
+                        note: 'In interviews, the AI prepares the competency-based question pack, a uniform note-taking form, an evidence summary and a list of ambiguities; but the decision, and its stated reason, belong to the interviewer. Connect this split to the division-of-labor table from session one: the AI surfaces early inconsistencies, and the human does verification and judgment. Practical advice: a uniform note-taking form is what makes fair comparison between candidates possible, and that standardization is one of the proven values of structured processes. If time is short, pass over this slide quickly and save the minutes for the pilot canvas.',
                         title: 'Interview and decision',
                         lead: 'AI can prepare a competency-based question pack, a uniform note-taking form, an evidence summary, and a list of ambiguities.',
                         callout: { kind: 'human', title: 'Human role', body: 'People run the interview, understand the context, weigh conflicting evidence, and record the decision with its reasons.' }
                     },
                     {
                         id: 's10', kind: 'content',
+                        note: 'In offer and onboarding, the AI can draft the letter, assemble the onboarding information pack and the day-one checklist; but contract, salary level and system access require approval from an authorized human. Return here to the authority spectrum of session three: contract and salary are high-consequence actions and do not fit even the bounded-executor level; even the draft must be reviewed. Ask the groups who in their organization holds this approval authority; if it is unclear, that itself is a real finding of the workshop. End of the path: the hire joins, and after a few cycles the process baseline and success criteria should be measured again.',
                         title: 'Offer and onboarding',
                         bullets: [
                             'Drafting from approved templates',
@@ -867,6 +885,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's11', kind: 'content',
+                        note: 'Read the architecture with the components of session three and highlight the permissions point: read permission differs from write permission, and the workflow must run under the user’s identity and role. Quickly connect the slide’s pieces: request form, recruiting system, approved documents, model, workflow engine, calendar, email or chat, identity system, all with event logging. For each connector ask who owns it and what the process does when it is down; that same question was drilled in the session-three architecture canvas. Reminder: workflow engines have ready-made options and not everything must be built from scratch.',
                         title: 'Hiring process architecture',
                         lead: 'The request form, the recruiting system, approved documents, the model, the workflow engine, the calendar, email or chat, and the identity system connect with event logging and access control.',
                         visual: 'hire-arch',
@@ -879,10 +898,10 @@ registerLocale('en', {
                             write: ['Email or chat', 'Identity system'],
                             logLabel: 'Event logging and access control across every connection'
                         },
-                        note: 'Make a visual distinction between “reading data” and “writing or acting”. Permission to read résumés must not silently become permission to send offers or create accounts.'
                     },
                     {
                         id: 's12', kind: 'content',
+                        note: 'Explain governance with the NIST frame: AI risk management moves through four functions — govern, map context and risk, measure, and manage — and the NIST AI 600-1 profile adds the risks specific to generative models. Sum up the slide’s practical rule: the intensity of review and logging must match the harm of the error; it is the same single line as the authority spectrum in session three and the five review questions in session one. Propose a governance level for each hiring-process step and have the groups do the same for their own candidate. This slide is the direct setup for the risk-and-control column of the pilot canvas.',
                         title: 'Risk-proportionate governance',
                         table: {
                             head: ['Risk level', 'Example', 'Baseline controls'],
@@ -893,10 +912,10 @@ registerLocale('en', {
                             ]
                         },
                         sources: ['nist'],
-                        note: 'The NIST framework proposes four continuous activities: govern, map context and risk, measure, and manage. This table is an educational translation of that logic for the workshop.'
                     },
                     {
                         id: 's13', kind: 'content',
+                        note: 'State the four traits of a good pilot with negative examples: it is not high-risk, it is reversible, its data and owner are clear, and its result feeds a decision. Ask the groups which trait their candidate lacks; if it is high-risk, shrink the scope, and if it feeds no decision, rewrite the success criterion. Remind them a pilot outcome has at most three shapes: continue, adjust or stop; all three are successful pilot outcomes because they clarify the decision. Session one showed the value of AI appearing in frequent work; that same frequency criterion returns here.',
                         title: 'Choosing the pilot',
                         lead: 'What does a good pilot look like?',
                         bullets: [
@@ -910,6 +929,7 @@ registerLocale('en', {
                     },
                     {
                         id: 's14', kind: 'content',
+                        note: 'Present the five metric families with their research links: speed and volume tie to the NBER study and the Science experiment, which found effects on time and quality within limited tasks. Say the slide’s warning out loud: message count to the AI is not a value metric; metrics must be measured in the real process for the real user. Fixed definition: the baseline measurement method and the post-deployment period must be identical, or the comparison is meaningless. Remind them that every number in this course is valid only within its study scope, and the pilot’s purpose is to produce the real number for your own organization.',
                         title: 'Success criteria',
                         bullets: [
                             'Quality: correctness, completeness, grounding, and correction rate',
@@ -918,10 +938,10 @@ registerLocale('en', {
                             'Risk: data exposure, high-cost errors, and misrouting',
                             'Economics: cost per case and provable time saved'
                         ],
-                        note: '“Number of messages sent to AI” is not a measure of business value. Compare before and after the pilot with one fixed definition.'
                     },
                     {
                         id: 's15', kind: 'content',
+                        note: 'Introduce the 30-60-90 plan as a general template and stress it is not a magic formula; pilots with legal- or security-sensitive timing take longer. Day 90 is the decision point: continue, adjust or stop; and the decision owner must be named from day one. Ask for one concrete deliverable per phase and have the groups name the owner of each deliverable in their organization. This plan sits in the last column of the pilot canvas and must therefore be written together with the pilot owner and the day-90 decision, not separately from them.',
                         title: 'The 30-, 60-, and 90-day plan',
                         visual: 'roadmap',
                         visualData: {
@@ -931,10 +951,10 @@ registerLocale('en', {
                                 { tag: 'Days 61–90', title: 'Run and decide', items: 'Controlled rollout, usage measurement, and the decision to scale, fix, or stop' }
                             ]
                         },
-                        note: 'This plan is a general version. A sensitive pilot may need more time for legal, security, or discrimination review.'
                     },
                     {
                         id: 's16', kind: 'exercise',
+                        note: 'Run the final workshop with the pilot-canvas sheet; the ten components on the slide are exactly the sheet’s columns, and the baseline/target table and the ten test cases must be filled from the candidate’s real samples. Make groups of three, allow 30 minutes, and in the last five minutes ask each group to write the day-90 decision and the pilot owner with a real name; those two columns are where the drafts usually stay thin. Each group presents for at most two minutes with feedback of one strength and one risk. Have the printed template ready in advance and point to the sample file.',
                         title: 'Final workshop: the pilot canvas',
                         lead: 'Each group delivers one page:',
                         ordered: true,
@@ -952,10 +972,10 @@ registerLocale('en', {
                             'Pilot owner and the day-90 decision'
                         ],
                         exerciseFile: 'assets/workshop/ai-workshop-session-4-pilot-canvas-en.html',
-                        note: 'Form groups of three and have the canvas template printed before the session. Cap each group presentation at two minutes.'
                     },
                     {
                         id: 's17', kind: 'closing',
+                        note: 'End the course with the slide’s sentence and read the three final deliverables aloud once more: the opportunity card from session two, the solution map from session three and today’s pilot canvas. Review the full arc: individual task, team use case, organizational system, measurable process; and remind them that every research number in this course was valid only within its own study scope — it is now the organization’s turn to produce its real number. Ask participants to write one personal 90-day commitment: what task, with whom, measured how. If questions remain unanswered, point to the slides’ sources and announce the follow-up channel.',
                         title: 'End of the workshop',
                         lead: 'Pick one real problem. Clarify the tasks and the responsibilities. Define quality before execution. Increase the AI’s autonomy in proportion to the risk. Use the pilot’s results for the next decision.',
                         callout: { title: 'Final deliverables of the workshop', body: 'Opportunity card, solution map, and pilot canvas' }
@@ -979,7 +999,6 @@ registerLocale('en', {
                 ai: 'AI assistant',
                 system: 'Tool',
                 error: 'Error',
-                note: 'Teaching note',
                 human: 'Human'
             },
             sessions: {
