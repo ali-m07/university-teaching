@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تمرین جلسه چهارم - بوم پایلوت | کارگاه هوش مصنوعی در سازمان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16202a;--mut:#5b6b78;--line:#c9d4dc;--ai:#6d4bd8;--human:#b98a1f;--data:#0f7c8a;--risk:#b3373f;--bg:#f6f8fa}
+*{box-sizing:border-box}
+body{font-family:'Vazirmatn',Tahoma,sans-serif;color:var(--ink);background:var(--bg);margin:0;padding:24px;line-height:1.8;font-size:13px}
+.sheet{max-width:1020px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px 32px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:14px}
+.brand{font-size:.72rem;color:var(--mut)}
+h1{font-size:1.3rem;margin:4px 0 2px}
+.sub{font-size:.84rem;color:var(--mut)}
+h2.sec{font-size:1rem;margin:20px 0 8px;padding-inline-start:10px;border-inline-start:3px solid var(--ai)}
+.canvas{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:12px 0}
+.cell{border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:104px;display:flex;flex-direction:column}
+.cell h3{margin:0 0 3px;font-size:.8rem;display:flex;align-items:center;gap:5px}
+.cell .dot{width:8px;height:8px;border-radius:50%;flex:none}
+.cell .q{font-size:.66rem;color:var(--mut);margin:0 0 6px}
+.cell .w{flex:1;border:0;background:repeating-linear-gradient(to bottom,transparent 0 26px,#edf1f4 26px 27px);border-radius:4px;min-height:26px}
+.c-ai h3{color:var(--ai)} .c-ai .dot{background:var(--ai)} .c-ai{border-color:#d8ccf6}
+.c-human h3{color:var(--human)} .c-human .dot{background:var(--human)} .c-human{border-color:#ecd9a8}
+.c-data h3{color:var(--data)} .c-data .dot{background:var(--data)} .c-data{border-color:#bfe0e4}
+.c-risk h3{color:var(--risk)} .c-risk .dot{background:var(--risk)} .c-risk{border-color:#eec6c9}
+table{width:100%;border-collapse:collapse;font-size:.76rem;margin:8px 0}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:right;vertical-align:top}
+th{background:#eef2f6;font-weight:700;font-size:.74rem}
+td b{color:var(--mut);font-weight:500}
+ol.min{padding-inline-start:22px;font-size:.8rem;margin:6px 0}
+ol.min li{margin-bottom:3px}
+.foot{margin-top:18px;padding-top:10px;border-top:1px dashed var(--line);font-size:.7rem;color:var(--mut);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+button.print{font-family:inherit;font-size:.8rem;background:var(--ink);color:#fff;border:0;border-radius:6px;padding:8px 18px;cursor:pointer}
+@page{size:A4 landscape;margin:10mm}
+@media print{body{background:#fff;padding:0}button.print{display:none}.sheet{border:0;max-width:none;padding:6px}}
+@media (max-width:860px){.canvas{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div>
+      <div class="brand">کارگاه "هوش مصنوعی در سازمان" - جلسهٔ چهارم - کارگاه نهایی - شرکت سپهر (سازمان فرضی)</div>
+      <h1>بوم پایلوت</h1>
+      <div class="sub">هر گروه این یک صفحه را در ۳۰ دقیقه پر می‌کند: مسئله، خط مبنا، دامنه، نقش‌ها، معیار موفقیت، ریسک و تصمیم روز ۹۰.</div>
+    </div>
+    <button class="print" type="button" onclick="window.print()">چاپ / ذخیرهٔ PDF</button>
+  </div>
+
+  <h2 class="sec">ده خانهٔ بوم</h2>
+  <div class="canvas">
+    <div class="cell c-data"><h3><span class="dot"></span>۱. مسئله و کاربر</h3><p class="q">چه دردی برای چه کسی؟ کاربر کجای فرایند ایستاده است؟</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-data"><h3><span class="dot"></span>۲. وضعیت فعلی و خط مبنا</h3><p class="q">الان چطور انجام می‌شود؟ عدد امروز چیست؟</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-ai"><h3><span class="dot"></span>۳. دامنه و خارج از دامنه</h3><p class="q">پایلوت دقیقاً کجای فرایند است؟ چه چیزهایی صریحاً بیرون می‌ماند؟</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-data"><h3><span class="dot"></span>۴. داده و مالک آن</h3><p class="q">چه داده‌ای لازم است؟ چه کسی مالک و مجوزدهندهٔ آن است؟</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-ai"><h3><span class="dot"></span>۵. نقش AI، قواعد و انسان</h3><p class="q">AI چه می‌کند و چه نمی‌کند؟ تصمیم نهایی با کیست؟</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-data"><h3><span class="dot"></span>۶. ابزارها و اتصال‌ها</h3><p class="q">چه ابزاری، به چه سامانه‌هایی، فقط خواندن یا نوشتن؟</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-data"><h3><span class="dot"></span>۷. نمونه‌های ارزیابی</h3><p class="q">با چه موارد واقعی (بی‌نام‌شده) کیفیت را می‌سنجیم؟</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-human"><h3><span class="dot"></span>۸. معیار موفقیت</h3><p class="q">چه عددی، با چه تعریفی، تا چه تاریخی؟ (کیفیت/زمان/پذیرش/ریسک/اقتصاد)</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-risk"><h3><span class="dot"></span>۹. ریسک و کنترل</h3><p class="q">اگر خراب شود چه می‌شود؟ کنترل و مسیر بازگشت چیست؟</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-human"><h3><span class="dot"></span>۱۰. مالک پایلوت و تصمیم روز ۹۰</h3><p class="q">چه کسی پاسخگوست؟ روز ۹۰ با چه شواهدی تصمیم می‌گیریم: توسعه، اصلاح یا توقف؟</p><div class="w" contenteditable="true"></div></div>
+  </div>
+
+  <h2 class="sec">جدول خط مبنا و هدف</h2>
+  <table>
+    <thead>
+      <tr><th style="width:16%">معیار</th><th style="width:20%">تعریف عملیاتی</th><th style="width:16%">خط مبنا (امروز)</th><th style="width:16%">هدف روز ۹۰</th><th style="width:16%">روش سنجش</th><th style="width:16%">منبع داده</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>کیفیت:</b> نرخ اصلاح</td><td>درصد خروجی‌هایی که بازبین تغییرشان می‌دهد</td><td>مثال: نامعلوم -- این هفته اندازه بگیر</td><td>مثال: کمتر از ۲۵٪</td><td>بازبینی هفتگی نمونهٔ خروجی‌ها</td><td>گزارش ابزار گردش‌کار</td>
+      </tr>
+      <tr><td><b>زمان:</b> زمان چرخه</td><td>از شروع کار تا تحویل خروجی</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><b>پذیرش:</b> استفادهٔ واقعی</td><td>درصد کاربران هدف که هفته‌ای دست‌کم یک بار استفاده می‌کنند</td><td>۰ (ابزاری نیست)</td><td></td><td></td><td></td></tr>
+      <tr><td><b>ریسک:</b> افشای داده</td><td>تعداد رخداد نشت یا خروج داده از دامنهٔ مجاز</td><td>۰</td><td>۰ (بدون استثنا)</td><td></td><td></td></tr>
+      <tr><td><b>اقتصاد:</b> هزینهٔ هر مورد</td><td>هزینهٔ ابزار و زمان انسانی تقسیم بر تعداد مورد</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td colspan="6" style="height:40px;background:#fafcfd"></td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">ده نمونهٔ آزمون</h2>
+  <p style="font-size:.78rem;color:var(--mut);margin:0 0 6px">پنج نمونهٔ "باید خوب جواب بدهد" (موارد معمول و پرتکرار) و پنج نمونهٔ "باید درست رد یا ارجاع بدهد" (خارج از دامنه، مبهم، دادهٔ ناقص یا حساس). از دادهٔ واقعی افراد استفاده نکنید؛ نمونه‌ها را بی‌نام کنید.</p>
+  <table>
+    <thead>
+      <tr><th style="width:6%">#</th><th style="width:32%">ورودی آزمون</th><th style="width:22%">رفتار درست مورد انتظار</th><th style="width:14%">نوع (مثبت/منفی)</th><th style="width:14%">نتیجهٔ واقعی</th><th style="width:12%">قضاوت</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>۱</td><td>مثال: تیکت پشتیبانی واقعی و بی‌نام دربارهٔ قطع VPN</td><td>خلاصهٔ سه‌خطی + برچسب شبکه</td><td>مثبت</td><td></td><td></td></tr>
+      <tr><td>۲</td><td></td><td></td><td>مثبت</td><td></td><td></td></tr>
+      <tr><td>۳</td><td></td><td></td><td>مثبت</td><td></td><td></td></tr>
+      <tr><td>۴</td><td></td><td></td><td>مثبت</td><td></td><td></td></tr>
+      <tr><td>۵</td><td></td><td></td><td>مثبت</td><td></td><td></td></tr>
+      <tr><td>۶</td><td>مثال: پرسش دربارهٔ حقوق شخصی یک همکار</td><td>رد محترمانه + ارجاع به مسیر انسانی</td><td>منفی</td><td></td><td></td></tr>
+      <tr><td>۷</td><td></td><td></td><td>منفی</td><td></td><td></td></tr>
+      <tr><td>۸</td><td></td><td></td><td>منفی</td><td></td><td></td></tr>
+      <tr><td>۹</td><td></td><td></td><td>منفی</td><td></td><td></td></tr>
+      <tr><td>۱۰</td><td></td><td></td><td>منفی</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">چک‌لیست برنامهٔ ۳۰ / ۶۰ / ۹۰ روزه</h2>
+  <ol class="min">
+    <li><b>روز ۱ تا ۳۰:</b> انتخاب دامنه، اندازه‌گیری خط مبنا، دسترسی داده و مالک آن، ساخت نمونه‌های آزمون، تعریف کنترل‌ها.</li>
+    <li><b>روز ۳۱ تا ۶۰:</b> ساخت نمونهٔ محدود، ارزیابی با کارشناسان روی نمونه‌های آزمون، اصلاح خطاها و قواعد.</li>
+    <li><b>روز ۶۱ تا ۹۰:</b> اجرای کنترل‌شده با کاربران واقعی، سنجش استفاده و معیارها، تصمیم روز ۹۰: توسعه، اصلاح یا توقف.</li>
+  </ol>
+
+  <div class="foot">
+    <span>کارگاه "هوش مصنوعی در سازمان" - تمرین جلسهٔ چهارم - مدرس: علی منصوری</span>
+    <span>"تعداد پیام به AI" معیار ارزش کسب‌وکار نیست - بازبینی محتوا: شهریور ۱۴۰۵ / سپتامبر ۲۰۲۶</span>
+  </div>
+</div>
+</body>
+</html>

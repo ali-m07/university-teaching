@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تمرین جلسه اول · صورت‌جلسهٔ خام | کارگاه هوش مصنوعی در سازمان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16202a;--mut:#5b6b78;--line:#c9d4dc;--ai:#6d4bd8;--human:#b98a1f;--risk:#b3373f;--bg:#f6f8fa}
+*{box-sizing:border-box}
+body{font-family:'Vazirmatn',Tahoma,sans-serif;color:var(--ink);background:var(--bg);margin:0;padding:24px;line-height:1.9;font-size:14px}
+.sheet{max-width:820px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:32px 36px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:18px}
+.brand{font-size:.72rem;color:var(--mut);letter-spacing:.5px}
+h1{font-size:1.35rem;margin:4px 0 2px}
+.sub{font-size:.85rem;color:var(--mut)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px 20px;font-size:.82rem;background:#f2f5f8;border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin-bottom:20px}
+.meta b{color:var(--mut);font-weight:500}
+.note{font-size:.8rem;background:#fff8e8;border:1px solid #e8d9a8;border-radius:8px;padding:10px 14px;margin-bottom:22px}
+.note b{color:#8a6d1a}
+h2{font-size:1rem;margin:22px 0 8px;padding-inline-start:10px;border-inline-start:3px solid var(--ai)}
+p{margin:6px 0;text-align:justify}
+ul.att{margin:6px 0;padding:0;list-style:none;font-size:.85rem}
+ul.att li{display:inline-block;margin-inline-end:14px;background:#f2f5f8;border:1px solid var(--line);border-radius:20px;padding:2px 12px}
+ol.min{padding-inline-start:22px;font-size:.88rem}
+ol.min li{margin-bottom:12px}
+ol.min h3{font-size:.9rem;margin:0 0 4px;display:inline}
+.tag{display:inline-block;font-size:.68rem;border-radius:4px;padding:1px 8px;margin-inline-start:8px;vertical-align:middle;font-weight:500}
+.tag-ai{background:#efe9fd;color:var(--ai)}
+.foot{margin-top:26px;padding-top:12px;border-top:1px dashed var(--line);font-size:.72rem;color:var(--mut);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+button.print{font-family:inherit;font-size:.8rem;background:var(--ink);color:#fff;border:0;border-radius:6px;padding:8px 18px;cursor:pointer}
+@media print{body{background:#fff;padding:0}button.print{display:none}.sheet{border:0;max-width:none;padding:10px}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div>
+      <div class="brand">شرکت سپهر · واحدهای اطلاعات و فناوری · سند داخلی تمرینی</div>
+      <h1>صورت‌جلسهٔ خام جلسهٔ هم‌راستایی خدمات فناوری اطلاعات</h1>
+      <div class="sub">متن پیاده‌شده از ضبط جلسه — بدون ویرایش و بدون ساختار</div>
+    </div>
+    <button class="print" type="button" onclick="window.print()">چاپ / ذخیرهٔ PDF</button>
+  </div>
+
+  <div class="meta">
+    <div><b>شمارهٔ سند:</b> SPH-IT-MOM-1405-34</div>
+    <div><b>تاریخ جلسه:</b> سه‌شنبه ۱۵ شهریور ۱۴۰۵</div>
+    <div><b>زمان:</b> ۱۰:۰۰ تا ۱۱:۲۰</div>
+    <div><b>محل:</b> اتاق جلسات طبقهٔ چهارم + جلسهٔ برخط</div>
+    <div><b>دبیر جلسه:</b> (ثبت نشده)</div>
+    <div><b>حضور:</b> ۵ نفر</div>
+  </div>
+
+  <ul class="att">
+    <li>مریم رستگار — مدیر خدمات فناوری اطلاعات</li>
+    <li>شقایق فراهانی — مالک محصول سامانهٔ تیکتینگ</li>
+    <li>امیر کاویانی — کارشناس زیرساخت و شبکه</li>
+    <li>بهنام هوشیار — کارشناس امنیت اطلاعات</li>
+    <li>ترانهٔ صادقی — کارشناس منابع انسانی (نیمهٔ دوم جلسه)</li>
+  </ul>
+
+  <h2>متن پیاده‌شده و مصوبات</h2>
+  <ol class="min">
+    <li>
+      <h3>به‌روزرسانی مقالات راهنمای خدمات IT</h3>
+      <span class="tag tag-ai">نقطهٔ تمرین</span>
+      مریم رستگار گفت حدود چهل مقالهٔ راهنما در فضای اسناد هنوز روی قالب و نسخه‌های قدیمی‌اند و کارشناسان پشتیبانی مرتب به مقاله‌های منقضی ارجاع می‌دهند. بعد از صحبت، جمع‌بندی شد که شقایق فراهانی مسئول می‌شود همهٔ چهل مقاله تا شنبه ۲۸ شهریور به قالب جدید منتقل و نسخه‌های قدیمی را بایگانی کند. این مورد مصوب است.
+    </li>
+    <li>
+      <h3>گزارش دسترسی‌های قدیمی VPN</h3>
+      بهنام هوشیار اعلام کرد فهرست حساب‌هایی که بیش از یک سال به VPN دسترسی داشته‌اند و دیگر در سپهر کار نمی‌کنند آماده نیست. مریم تأکید کرد این گزارش قبل از تغییر تنظیمات باید روی میز باشد. تصمیم قطعی: بهنام هوشیار گزارش دسترسی‌های قدیمی VPN را تا پنجشنبه ۱۸ شهریور تحویل دهد. مصوب است.
+    </li>
+    <li>
+      <h3>ارتقای سامانهٔ تیکتینگ</h3>
+      شقایق فراهانی گفت طبق توافق جلسهٔ قبل، ارتقای سامانهٔ تیکتینگ به نسخهٔ ۵ باید تا ۱۵ شهریور انجام شود و پشتیبانی فروشنده هم همان بازه را رزرو کرده است. در ادامهٔ جلسه امیر کاویانی توضیح داد که مهاجرت سرورها به جای جدید تا پایان شهریور طول می‌کشد و پیشنهاد داد ارتقا را بعد از مهاجرت انجام دهیم. مریم گفت هر دو را می‌خواهد: «ارتقا تا ۱۵ شهریور طبق برنامهٔ قبل، ولی اگر سرورها آماده نبود، ۳۰ شهریور.» چیزی نهایی نشد ولی در متن جلسه هر دو تاریخ باقی مانده است.
+    </li>
+    <li>
+      <h3>آیین‌نامهٔ استفاده از ابزارهای هوش مصنوعی</h3>
+      ترانهٔ صادقی گفت درخواست دارد پیش‌نویس آیین‌نامهٔ استفاده از ابزارهای هوش مصنوعی برای کارکنان تا ۲۰ شهریور آماده و برای ابلاغ ارسال شود. همه موافق بودند که این پیش‌نویس لازم است، اما در متن جلسه مشخص نیست این کار را چه کسی انجام می‌دهد.
+    </li>
+    <li>
+      <h3>پیشنهاد آزمایش مدل زبانی محلی (هنوز مصوب نشده)</h3>
+      امیر کاویانی پیشنهاد کرد روی یکی از سرورهای تست، یک مدل زبانی سبک نصب کنند تا کارشناسان پشتیبانی بتوانند خلاصه‌سازی تیکت‌ها را روی دادهٔ ساختگی بیازمایند. مریم رستگار گفت فعلاً بودجه و مجوز لازم دارد و این پیشنهاد در جلسهٔ بعد با حضور معاونت فناوری بررسی می‌شود. این مورد تصویب نشده است.
+    </li>
+    <li>
+      <h3>بررسی موضوع محرمانهٔ منابع انسانی</h3>
+      <span class="tag tag-ai">محرمانه — فقط سند داخلی HR</span>
+      در بخش پایانی، ترانهٔ صادقی دربارهٔ پروندهٔ بررسی تخلف احتمالی یک کارمند در استفاده از حساب سازمانی و وضعیت تعلیق موقت او صحبت کرد. جزئیات نام و واحد این فرد فقط در پروندهٔ محرمانهٔ منابع انسانی ثبت می‌شود و نباید در خلاصهٔ عمومی جلسه یا هیچ سند دیگری بیاید. جلسه با همین موضوع بسته شد.
+    </li>
+  </ol>
+
+  <div class="note">
+    <b>راهنمای تمرین (برای مدرس):</b>
+    این صورت‌جلسه عمداً «خام» است: دو تصمیم قطعی با مسئول و موعد دارد (بندهای ۱ و ۲)، یک تصمیم بدون مسئول (بند ۴)، یک پیشنهاد تصویب‌نشده (بند ۵)، دو موعد متناقض برای یک کار (بند ۳) و یک موضوع حساس که نباید در خلاصهٔ عمومی بیاید (بند ۶). از شرکت‌کننده‌ها بخواهید ابتدا با یک درخواست مباهام و سپس با درخواست ساختاریافته، خلاصه‌ای بسازند که تصمیم را از پیشنهاد جدا کند، مسئول و موعد را فقط از متن استخراج کند (نه از حدس)، تناقض موعدها را علامت بزند و موضوع محرمانه را از خروجی عمومی حذف کند.
+  </div>
+
+  <div class="foot">
+    <span>کارگاه «هوش مصنوعی در سازمان» · تمرین جلسهٔ اول · مدرس: علی منصوری</span>
+    <span>دادهٔ کاملاً ساختگی برای تمرین · بازبینی محتوا: شهریور ۱۴۰۵ / سپتامبر ۲۰۲۶</span>
+  </div>
+</div>
+</body>
+</html>

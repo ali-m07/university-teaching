@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 4 Exercise · Pilot Canvas | AI in Organizations Workshop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16202a;--mut:#5b6b78;--line:#c9d4dc;--ai:#6d4bd8;--human:#b98a1f;--data:#0f7c8a;--risk:#b3373f;--bg:#f6f8fa}
+*{box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);margin:0;padding:24px;line-height:1.65;font-size:13px}
+.sheet{max-width:1020px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px 32px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:14px}
+.brand{font-size:.72rem;color:var(--mut)}
+h1{font-size:1.3rem;margin:4px 0 2px}
+.sub{font-size:.84rem;color:var(--mut)}
+h2.sec{font-size:1rem;margin:20px 0 8px;padding-left:10px;border-left:3px solid var(--ai)}
+.canvas{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:12px 0}
+.cell{border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:104px;display:flex;flex-direction:column}
+.cell h3{margin:0 0 3px;font-size:.8rem;display:flex;align-items:center;gap:5px}
+.cell .dot{width:8px;height:8px;border-radius:50%;flex:none}
+.cell .q{font-size:.66rem;color:var(--mut);margin:0 0 6px}
+.cell .w{flex:1;border:0;background:repeating-linear-gradient(to bottom,transparent 0 26px,#edf1f4 26px 27px);border-radius:4px;min-height:26px}
+.c-ai h3{color:var(--ai)} .c-ai .dot{background:var(--ai)} .c-ai{border-color:#d8ccf6}
+.c-human h3{color:var(--human)} .c-human .dot{background:var(--human)} .c-human{border-color:#ecd9a8}
+.c-data h3{color:var(--data)} .c-data .dot{background:var(--data)} .c-data{border-color:#bfe0e4}
+.c-risk h3{color:var(--risk)} .c-risk .dot{background:var(--risk)} .c-risk{border-color:#eec6c9}
+table{width:100%;border-collapse:collapse;font-size:.76rem;margin:8px 0}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:#eef2f6;font-weight:700;font-size:.74rem}
+td b{color:var(--mut);font-weight:500}
+ol.min{padding-left:22px;font-size:.8rem;margin:6px 0}
+ol.min li{margin-bottom:3px}
+.foot{margin-top:18px;padding-top:10px;border-top:1px dashed var(--line);font-size:.7rem;color:var(--mut);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+button.print{font-family:inherit;font-size:.8rem;background:var(--ink);color:#fff;border:0;border-radius:6px;padding:8px 18px;cursor:pointer}
+@page{size:A4 landscape;margin:10mm}
+@media print{body{background:#fff;padding:0}button.print{display:none}.sheet{border:0;max-width:none;padding:6px}}
+@media (max-width:860px){.canvas{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div>
+      <div class="brand">“AI in Organizations” workshop · Session 4 · Final workshop · Sepehr Co. (fictional company)</div>
+      <h1>Pilot Canvas</h1>
+      <div class="sub">Each group fills this single page in 30 minutes: problem, baseline, scope, roles, success criteria, risks, and the day-90 decision.</div>
+    </div>
+    <button class="print" type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <h2 class="sec">The ten canvas cells</h2>
+  <div class="canvas">
+    <div class="cell c-data"><h3><span class="dot"></span>1. Problem &amp; user</h3><p class="q">Whose pain, for whom? Where does the user stand in the process?</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-data"><h3><span class="dot"></span>2. Current state &amp; baseline</h3><p class="q">How is it done today? What is today's number?</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-ai"><h3><span class="dot"></span>3. Scope &amp; exclusions</h3><p class="q">Where exactly does the pilot sit? What is explicitly out?</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-data"><h3><span class="dot"></span>4. Data &amp; owner</h3><p class="q">What data is needed? Who owns and authorizes it?</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-ai"><h3><span class="dot"></span>5. AI role, rules &amp; humans</h3><p class="q">What does the AI do and not do? Who holds the final decision?</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-data"><h3><span class="dot"></span>6. Tools &amp; connections</h3><p class="q">Which tools, connected to which systems, read-only or write?</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-data"><h3><span class="dot"></span>7. Evaluation samples</h3><p class="q">With which real (de-identified) cases do we measure quality?</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-human"><h3><span class="dot"></span>8. Success criteria</h3><p class="q">Which number, defined how, by when? (quality/time/adoption/risk/economics)</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-risk"><h3><span class="dot"></span>9. Risks &amp; controls</h3><p class="q">If it breaks, what happens? What is the control and the rollback path?</p><div class="w" contenteditable="true"></div></div>
+    <div class="cell c-human"><h3><span class="dot"></span>10. Pilot owner &amp; day-90 decision</h3><p class="q">Who is accountable? With what evidence do we decide on day 90: scale, fix, or stop?</p><div class="w" contenteditable="true"></div></div>
+  </div>
+
+  <h2 class="sec">Baseline and target table</h2>
+  <table>
+    <thead>
+      <tr><th style="width:16%">Metric</th><th style="width:20%">Operational definition</th><th style="width:16%">Baseline (today)</th><th style="width:16%">Day-90 target</th><th style="width:16%">Measurement method</th><th style="width:16%">Data source</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Quality:</b> correction rate</td><td>Share of outputs the reviewer changes</td><td>e.g., unknown — measure this week</td><td>e.g., below 25%</td><td>Weekly review of sampled outputs</td><td>Workflow tool report</td>
+      </tr>
+      <tr><td><b>Time:</b> cycle time</td><td>From task start to delivered output</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td><b>Adoption:</b> real usage</td><td>Share of target users active at least once a week</td><td>0 (no tool yet)</td><td></td><td></td><td></td></tr>
+      <tr><td><b>Risk:</b> data exposure</td><td>Number of incidents leaking data outside the allowed scope</td><td>0</td><td>0 (no exceptions)</td><td></td><td></td></tr>
+      <tr><td><b>Economics:</b> cost per case</td><td>Tool plus human time divided by case count</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td colspan="6" style="height:40px;background:#fafcfd"></td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">Ten test samples</h2>
+  <p style="font-size:.78rem;color:var(--mut);margin:0 0 6px">Five “should answer well” samples (common, high-frequency cases) and five “should correctly decline or refer” samples (out of scope, ambiguous, incomplete, or sensitive). Do not use real personal data; de-identify every sample.</p>
+  <table>
+    <thead>
+      <tr><th style="width:6%">#</th><th style="width:32%">Test input</th><th style="width:22%">Expected correct behavior</th><th style="width:14%">Type (positive/negative)</th><th style="width:14%">Actual result</th><th style="width:12%">Verdict</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>e.g., a real de-identified support ticket about a VPN outage</td><td>Three-line summary + network label</td><td>positive</td><td></td><td></td></tr>
+      <tr><td>2</td><td></td><td></td><td>positive</td><td></td><td></td></tr>
+      <tr><td>3</td><td></td><td></td><td>positive</td><td></td><td></td></tr>
+      <tr><td>4</td><td></td><td></td><td>positive</td><td></td><td></td></tr>
+      <tr><td>5</td><td></td><td></td><td>positive</td><td></td><td></td></tr>
+      <tr><td>6</td><td>e.g., a question about a colleague's salary</td><td>Polite refusal + referral to the human path</td><td>negative</td><td></td><td></td></tr>
+      <tr><td>7</td><td></td><td></td><td>negative</td><td></td><td></td></tr>
+      <tr><td>8</td><td></td><td></td><td>negative</td><td></td><td></td></tr>
+      <tr><td>9</td><td></td><td></td><td>negative</td><td></td><td></td></tr>
+      <tr><td>10</td><td></td><td></td><td>negative</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">30 / 60 / 90-day checklist</h2>
+  <ol class="min">
+    <li><b>Days 1–30:</b> pick the scope, measure the baseline, secure data access and its owner, build test samples, define controls.</li>
+    <li><b>Days 31–60:</b> build the limited prototype, evaluate with experts against the test samples, fix errors and rules.</li>
+    <li><b>Days 61–90:</b> controlled rollout with real users, measure usage and criteria, make the day-90 decision: scale, fix, or stop.</li>
+  </ol>
+
+  <div class="foot">
+    <span>“AI in Organizations” workshop · Session 4 exercise · Instructor: Ali Mansouri</span>
+    <span>“Number of AI messages” is not a business-value metric · Content reviewed: September 2026</span>
+  </div>
+</div>
+</body>
+</html>

@@ -26,7 +26,8 @@ registerLocale('en', {
         findTitle: 'Where to start',
         findItems: [
             { icon: 'library', title: 'Foresight methods', desc: 'Syllabi and operational methods', href: 'methods/' },
-            { icon: 'pen-line', title: 'Articles and notes', desc: 'Emerging technology, systems thinking, and uncertainty', href: 'articles/' }
+            { icon: 'pen-line', title: 'Articles and notes', desc: 'Emerging technology, systems thinking, and uncertainty', href: 'articles/' },
+            { icon: 'cpu', title: 'AI in Organizations workshop', desc: 'Four practical sessions for managers and process owners', href: 'workshops/ai-in-organizations.html' }
         ],
         methodDigestTitle: 'Methods at a glance',
         methodDigestSub: 'The five core foresight tools, in the language of decisions, not jargon.',

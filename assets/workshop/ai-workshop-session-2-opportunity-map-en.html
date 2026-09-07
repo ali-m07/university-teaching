@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 2 Exercise · Opportunity Map | AI in Organizations Workshop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16202a;--mut:#5b6b78;--line:#c9d4dc;--ai:#6d4bd8;--bg:#f6f8fa}
+*{box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);margin:0;padding:24px;line-height:1.65;font-size:13px}
+.sheet{max-width:1120px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px 32px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:14px}
+.brand{font-size:.72rem;color:var(--mut)}
+h1{font-size:1.3rem;margin:4px 0 2px}
+.sub{font-size:.84rem;color:var(--mut)}
+.guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-bottom:16px}
+.guide .box{background:#f2f5f8;border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:.78rem}
+.guide b{display:block;margin-bottom:4px;color:var(--ai)}
+table{width:100%;border-collapse:collapse;font-size:.74rem}
+th,td{border:1px solid var(--line);padding:6px 7px;text-align:left;vertical-align:top}
+th{background:#eef2f6;font-weight:700;font-size:.73rem}
+tbody tr:nth-child(even){background:#fafcfd}
+td.fill{background:#f4f1fd}
+td.fill .ex{display:block;font-size:.64rem;color:var(--ai);margin-top:4px}
+.blank{height:44px}
+.score{background:#eef7f0;font-weight:700;text-align:center}
+.foot{margin-top:18px;padding-top:10px;border-top:1px dashed var(--line);font-size:.7rem;color:var(--mut);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+button.print{font-family:inherit;font-size:.8rem;background:var(--ink);color:#fff;border:0;border-radius:6px;padding:8px 18px;cursor:pointer}
+@page{size:A4 landscape;margin:12mm}
+@media print{body{background:#fff;padding:0}button.print{display:none}.sheet{border:0;max-width:none;padding:6px}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div>
+      <div class="brand">“AI in Organizations” workshop · Session 2 · Sepehr Co. (fictional company)</div>
+      <h1>Opportunity Map Worksheet</h1>
+      <div class="sub">List the recurring tasks in your unit, define the AI role and the human reviewer, then prioritize.</div>
+    </div>
+    <button class="print" type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <div class="guide">
+    <div class="box"><b>How to fill it in</b>Each row is a “task,” not a job. Write tasks that recur monthly and have a clear input and output. The highlighted row is your worked example.</div>
+    <div class="box"><b>Keep the AI role narrow</b>For each task pick one primary role: structuring input, knowledge search, drafting, routing suggestions, or limited action with human confirmation.</div>
+    <div class="box"><b>Priority score (4–20)</b>Sum four 1–5 criteria: monthly frequency + time per instance + fit of the AI role + data access readiness. A score of 16+ makes a good pilot candidate; a low score means “not yet.”</div>
+    <div class="box"><b>Impact of error</b>If the AI gets this task wrong, what happens? “Low” (internal text), “medium” (customer-facing reply), “high” (hiring, legal, or data-access decisions). High impact always requires a human reviewer.</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:11%">Task name</th>
+        <th style="width:9%">User</th>
+        <th style="width:7%">Monthly volume</th>
+        <th style="width:8%">Current time each</th>
+        <th style="width:11%">Input</th>
+        <th style="width:11%">Output</th>
+        <th style="width:13%">AI role</th>
+        <th style="width:9%">Reviewer</th>
+        <th style="width:8%">Impact of error</th>
+        <th style="width:9%">Data access</th>
+        <th style="width:6%">Priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="fill">Summarizing IT support tickets<span class="ex">worked example — your template</span></td>
+        <td class="fill">Support specialist</td>
+        <td class="fill">~600</td>
+        <td class="fill">6 min</td>
+        <td class="fill">Ticket text and message history</td>
+        <td class="fill">Three-line summary + topic label</td>
+        <td class="fill">Structuring input (this role only)</td>
+        <td class="fill">Support specialist</td>
+        <td class="fill">Low — internal text</td>
+        <td class="fill">Available; read access to ticketing under the user's own permission</td>
+        <td class="fill score">18</td>
+      </tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot">
+    <span>“AI in Organizations” workshop · Session 2 exercise · Instructor: Ali Mansouri</span>
+    <span>Sepehr Co. and all data are fictional · Content reviewed: September 2026</span>
+  </div>
+</div>
+</body>
+</html>

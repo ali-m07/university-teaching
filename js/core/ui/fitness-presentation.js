@@ -20,6 +20,7 @@
             if (nextBtn) nextBtn.disabled = idx >= slides.length - 1;
             dots.forEach((d, j) => d.classList.toggle('is-active', j === idx));
             if (progress) progress.textContent = `${idx + 1} / ${slides.length}`;
+            pres.dispatchEvent(new CustomEvent('pres:slide', { detail: { index: idx, total: slides.length } }));
         }
 
         function goTo(nextIdx) {
@@ -89,6 +90,21 @@
             }
         });
 
+        // Escape exits the non-native (fallback) fullscreen state; native
+        // fullscreen is exited by the browser itself.
+        document.addEventListener('keydown', (e) => {
+            if (e.key !== 'Escape') return;
+            if (document.fullscreenElement) return;
+            if (!pres.classList.contains('is-fs-active')) return;
+            pres.classList.remove('is-fs-active');
+            document.body.classList.remove('fitness-pres-fs-open');
+            document.body.style.overflow = '';
+            if (fsBtn && window.lucide) {
+                fsBtn.innerHTML = '<i data-lucide="maximize"></i>';
+                window.lucide.createIcons();
+            }
+        });
+
         pres.resetPresentation = () => {
             slides.forEach((s, j) => {
                 s.classList.toggle('is-active', j === 0);
@@ -100,6 +116,7 @@
         };
 
         pres.resetPresentation();
+        pres.goToSlide = goTo;
     }
 
     function toggleFullscreen(pres, fsBtn) {

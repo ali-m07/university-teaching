@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تمرین جلسه دوم · نقشهٔ فرصت | کارگاه هوش مصنوعی در سازمان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16202a;--mut:#5b6b78;--line:#c9d4dc;--ai:#6d4bd8;--bg:#f6f8fa}
+*{box-sizing:border-box}
+body{font-family:'Vazirmatn',Tahoma,sans-serif;color:var(--ink);background:var(--bg);margin:0;padding:24px;line-height:1.8;font-size:13px}
+.sheet{max-width:1120px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px 32px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:14px}
+.brand{font-size:.72rem;color:var(--mut)}
+h1{font-size:1.3rem;margin:4px 0 2px}
+.sub{font-size:.84rem;color:var(--mut)}
+.guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-bottom:16px}
+.guide .box{background:#f2f5f8;border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:.78rem}
+.guide b{display:block;margin-bottom:4px;color:var(--ai)}
+table{width:100%;border-collapse:collapse;font-size:.74rem}
+th,td{border:1px solid var(--line);padding:6px 7px;text-align:right;vertical-align:top}
+th{background:#eef2f6;font-weight:700;font-size:.73rem}
+tbody tr:nth-child(even){background:#fafcfd}
+td.fill{background:#f4f1fd}
+td.fill .ex{display:block;font-size:.64rem;color:var(--ai);margin-top:4px}
+.blank{height:44px}
+.score{background:#eef7f0;font-weight:700;text-align:center}
+.foot{margin-top:18px;padding-top:10px;border-top:1px dashed var(--line);font-size:.7rem;color:var(--mut);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+button.print{font-family:inherit;font-size:.8rem;background:var(--ink);color:#fff;border:0;border-radius:6px;padding:8px 18px;cursor:pointer}
+@page{size:A4 landscape;margin:12mm}
+@media print{body{background:#fff;padding:0}button.print{display:none}.sheet{border:0;max-width:none;padding:6px}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div>
+      <div class="brand">کارگاه «هوش مصنوعی در سازمان» · جلسهٔ دوم · شرکت سپهر (سازمان فرضی)</div>
+      <h1>برگهٔ نقشهٔ فرصت</h1>
+      <div class="sub">فهرست کارهای تکراری واحد خود را ثبت کنید، نقش AI و بازبین انسانی را مشخص کنید و اولویت بدهید.</div>
+    </div>
+    <button class="print" type="button" onclick="window.print()">چاپ / ذخیرهٔ PDF</button>
+  </div>
+
+  <div class="guide">
+    <div class="box"><b>چطور پر کنیم؟</b>هر ردیف یک «کار» است، نه یک شغل. کارهایی را بنویسید که ماهانه تکرار می‌شوند و ورودی و خروجی مشخص دارند. ردیف نمونهٔ پررنگ راهنمای شماست.</div>
+    <div class="box"><b>نقش AI را محدود کنید</b>برای هر کار فقط یک نقش اصلی انتخاب کنید: ساختاردهی ورودی، جست‌وجوی دانش، تولید پیش‌نویس، پیشنهاد مسیریابی، یا اقدام محدود با تأیید انسان.</div>
+    <div class="box"><b>امتیاز اولویت (۴ تا ۲۰)</b>جمع چهار معیار ۱ تا ۵: تکرار ماهانه + زمان هر مورد + تناسب نقش AI + آمادگی دسترسی داده. امتیاز ۱۶ و بالاتر یعنی نامزد خوب برای پایلوت؛ امتیاز کم یعنی فعلاً دست نگه دارید.</div>
+    <div class="box"><b>پیامد خطا</b>اگر AI در این کار اشتباه کند چه می‌شود؟ «کم» (متن داخلی)، «متوسط» (پاسخ به مشتری)، «بالا» (تصمیم استخدامی، حقوقی یا دسترسی به داده). پیامد بالا همیشه بازبین انسانی می‌خواهد.</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:11%">نام کار</th>
+        <th style="width:9%">کاربر</th>
+        <th style="width:7%">تکرار ماهانه</th>
+        <th style="width:8%">زمان فعلی هر مورد</th>
+        <th style="width:11%">ورودی</th>
+        <th style="width:11%">خروجی</th>
+        <th style="width:13%">نقش AI</th>
+        <th style="width:9%">بازبین</th>
+        <th style="width:8%">پیامد خطا</th>
+        <th style="width:9%">دسترسی داده</th>
+        <th style="width:6%">امتیاز اولویت</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="fill">خلاصه‌سازی تیکت‌های پشتیبانی IT<span class="ex">نمونهٔ پرشده — الگوی شما</span></td>
+        <td class="fill">کارشناس پشتیبانی</td>
+        <td class="fill">حدود ۶۰۰</td>
+        <td class="fill">۶ دقیقه</td>
+        <td class="fill">متن تیکت و تاریخچهٔ پیام</td>
+        <td class="fill">خلاصهٔ سه‌خطی + برچسب موضوع</td>
+        <td class="fill">ساختاردهی ورودی (فقط همین نقش)</td>
+        <td class="fill">کارشناس پشتیبانی</td>
+        <td class="fill">کم — متن داخلی</td>
+        <td class="fill">موجود؛ خواندن از سامانهٔ تیکتینگ با مجوز کاربر</td>
+        <td class="fill score">۱۸</td>
+      </tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <div class="foot">
+    <span>کارگاه «هوش مصنوعی در سازمان» · تمرین جلسهٔ دوم · مدرس: علی منصوری</span>
+    <span>شرکت سپهر و همهٔ داده‌ها ساختگی‌اند · بازبینی محتوا: شهریور ۱۴۰۵ / سپتامبر ۲۰۲۶</span>
+  </div>
+</div>
+</body>
+</html>

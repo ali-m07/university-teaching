@@ -1,0 +1,2108 @@
+/**
+ * AI in Organizations workshop — landing, session chrome, bespoke slide visuals.
+ * Scope: #aiw-root (page shell) + .aiw-* inside .fitness-pres-body (decks).
+ * Identity: FORESIGHT HUB dark theme; AI=purple, human=gold, data=teal, risk=rose.
+ */
+
+#aiw-root {
+    --aiw-ai: var(--color-t, #7c4dff);
+    --aiw-ai-soft: rgba(124, 77, 255, 0.14);
+    --aiw-human: var(--color-cla, #ffaa00);
+    --aiw-human-soft: rgba(255, 170, 0, 0.12);
+    --aiw-data: var(--color-f, #00e5ff);
+    --aiw-data-soft: rgba(0, 229, 255, 0.1);
+    --aiw-risk: var(--color-i, #ff007f);
+    --aiw-risk-soft: rgba(255, 0, 127, 0.12);
+    --aiw-ok: var(--color-backcast, #00ff88);
+    --aiw-ok-soft: rgba(0, 255, 136, 0.1);
+    --aiw-panel: rgba(255, 255, 255, 0.03);
+    --aiw-border: rgba(255, 255, 255, 0.09);
+    --aiw-radius: 14px;
+}
+
+/* ───────────────────────── landing ───────────────────────── */
+
+.aiw-hero {
+    padding: clamp(2rem, 5vw, 4rem) 0 1.75rem;
+    max-width: 900px;
+}
+
+.aiw-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--aiw-data);
+    background: var(--aiw-data-soft);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    border-radius: 999px;
+    padding: 5px 14px;
+    margin-bottom: 18px;
+}
+
+.aiw-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    background: linear-gradient(120deg, #fff 30%, var(--aiw-ai));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aiw-hero-sub {
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    color: var(--text-secondary, #9ca3af);
+    line-height: 1.8;
+    margin: 0 0 26px;
+    max-width: 46rem;
+}
+
+.aiw-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    font-size: 0.9rem;
+    color: var(--text-secondary, #9ca3af);
+}
+
+.aiw-hero-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.aiw-hero-meta svg {
+    width: 16px;
+    height: 16px;
+    color: var(--aiw-data);
+}
+
+.aiw-hero-meta strong {
+    color: var(--text-primary, #f3f4f6);
+    font-weight: 700;
+}
+
+.aiw-intro,
+.aiw-story {
+    max-width: 860px;
+    padding: 1.5rem 0;
+}
+
+.aiw-intro h2,
+.aiw-path h2,
+.aiw-story h2,
+.aiw-sessions h2,
+.aiw-exercises h2,
+.aiw-landing-sources h2 {
+    font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+    font-weight: 800;
+    margin: 0 0 14px;
+}
+
+.aiw-intro p,
+.aiw-story p {
+    color: var(--text-secondary, #9ca3af);
+    line-height: 2;
+    margin: 0;
+}
+
+.aiw-outcome,
+.aiw-central {
+    margin-top: 18px;
+    padding: 16px 18px;
+    border-radius: var(--aiw-radius);
+    background: var(--aiw-panel);
+    border: 1px solid var(--aiw-border);
+}
+
+.aiw-outcome {
+    border-inline-start: 3px solid var(--aiw-ai);
+}
+
+.aiw-central {
+    border-inline-start: 3px solid var(--aiw-human);
+}
+
+.aiw-outcome h3,
+.aiw-central h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 0 8px;
+}
+
+.aiw-outcome svg {
+    color: var(--aiw-ai);
+    width: 18px;
+    height: 18px;
+}
+
+.aiw-central svg {
+    color: var(--aiw-human);
+    width: 18px;
+    height: 18px;
+}
+
+.aiw-outcome p,
+.aiw-central p {
+    font-size: 0.95rem;
+}
+
+/* learning path */
+.aiw-path {
+    padding: 1.5rem 0;
+}
+
+.aiw-path-sub {
+    color: var(--text-secondary, #9ca3af);
+    margin: -6px 0 18px;
+    line-height: 1.9;
+}
+
+.aiw-path-track {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    counter-reset: aiwpath;
+}
+
+.aiw-path-track li {
+    position: relative;
+    padding: 16px 14px;
+    border-radius: var(--aiw-radius);
+    background: var(--aiw-panel);
+    border: 1px solid var(--aiw-border);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aiw-path-track li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    inset-inline-start: 100%;
+    width: 12px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--aiw-ai), transparent);
+}
+
+.aiw-path-track li:last-child::after {
+    display: none;
+}
+
+.aiw-path-step {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--aiw-ai), var(--aiw-data));
+}
+
+.aiw-path-track strong {
+    font-size: 0.95rem;
+    color: var(--text-primary, #f3f4f6);
+}
+
+.aiw-path-track p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-muted, #6b7280);
+    line-height: 1.7;
+}
+
+/* session cards */
+.aiw-sessions {
+    padding: 2rem 0 1rem;
+    scroll-margin-top: 90px;
+}
+
+.aiw-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.aiw-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 18px;
+    background: var(--aiw-panel);
+    border: 1px solid var(--aiw-border);
+    transition: border-color var(--transition-fast, 0.2s ease), transform var(--transition-fast, 0.2s ease);
+}
+
+.aiw-card:hover {
+    border-color: var(--card-hover-border, rgba(255, 255, 255, 0.15));
+    transform: translateY(-3px);
+}
+
+.aiw-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.aiw-card-num {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: var(--aiw-data);
+    background: var(--aiw-data-soft);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    border-radius: 999px;
+    padding: 4px 12px;
+}
+
+.aiw-card-chips {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.aiw-card-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.72rem;
+    color: var(--text-secondary, #9ca3af);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--aiw-border);
+    border-radius: 999px;
+    padding: 3px 10px;
+}
+
+.aiw-card-chip svg {
+    width: 12px;
+    height: 12px;
+}
+
+.aiw-chip--advanced {
+    color: var(--aiw-human);
+    border-color: rgba(255, 170, 0, 0.3);
+    background: var(--aiw-human-soft);
+}
+
+.aiw-chip--beginner {
+    color: var(--aiw-ok);
+    border-color: rgba(0, 255, 136, 0.3);
+    background: var(--aiw-ok-soft);
+}
+
+.aiw-card h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.aiw-card-tag {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--text-secondary, #9ca3af);
+    line-height: 1.8;
+}
+
+.aiw-card-goal {
+    margin: 0;
+    font-size: 0.84rem;
+    color: var(--text-muted, #6b7280);
+    line-height: 1.75;
+}
+
+.aiw-card-plan {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-secondary, #9ca3af);
+    line-height: 1.7;
+}
+
+.aiw-card-plan svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 4px;
+    color: var(--aiw-ai);
+}
+
+.aiw-card-cta {
+    margin-top: auto;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(120deg, var(--aiw-ai), var(--aiw-data));
+    border-radius: 10px;
+    padding: 9px 18px;
+    text-decoration: none;
+    transition: filter var(--transition-fast, 0.2s ease);
+}
+
+.aiw-card-cta:hover {
+    filter: brightness(1.15);
+}
+
+.aiw-card-cta svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* exercises list */
+.aiw-exercises {
+    padding: 2rem 0;
+}
+
+.aiw-section-sub {
+    color: var(--text-secondary, #9ca3af);
+    margin: -8px 0 18px;
+    line-height: 1.9;
+}
+
+.aiw-ex-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aiw-ex-list > li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 14px;
+    align-items: center;
+    padding: 16px 18px;
+    border-radius: var(--aiw-radius);
+    background: var(--aiw-panel);
+    border: 1px solid var(--aiw-border);
+}
+
+.aiw-ex-row {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.aiw-ex-num {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--aiw-data);
+    background: var(--aiw-data-soft);
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 2px;
+}
+
+.aiw-ex-info strong {
+    display: block;
+    font-size: 0.98rem;
+    margin-bottom: 4px;
+}
+
+.aiw-ex-info p {
+    margin: 0 0 6px;
+    font-size: 0.85rem;
+    color: var(--text-secondary, #9ca3af);
+    line-height: 1.75;
+}
+
+.aiw-ex-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 16px;
+    font-size: 0.76rem;
+    color: var(--text-muted, #6b7280);
+}
+
+.aiw-ex-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.aiw-ex-meta svg {
+    width: 12px;
+    height: 12px;
+    color: var(--aiw-human);
+}
+
+.aiw-ex-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+}
+
+.aiw-tools-note {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    max-width: 860px;
+    margin: 0 0 2rem;
+    padding: 14px 16px;
+    border-radius: var(--aiw-radius);
+    font-size: 0.85rem;
+    color: var(--text-secondary, #9ca3af);
+    line-height: 1.85;
+    background: var(--aiw-human-soft);
+    border: 1px solid rgba(255, 170, 0, 0.25);
+}
+
+.aiw-tools-note svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 5px;
+    color: var(--aiw-human);
+}
+
+/* sources */
+.aiw-landing-sources {
+    padding: 1.5rem 0 3rem;
+    max-width: 900px;
+}
+
+.aiw-landing-sources ul,
+.aiw-session-sources ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.aiw-landing-sources li,
+.aiw-session-sources li {
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: var(--aiw-panel);
+    border: 1px solid var(--aiw-border);
+}
+
+.aiw-src-head a {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--aiw-data);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.aiw-src-head a:hover {
+    text-decoration: underline;
+}
+
+.aiw-landing-sources li p,
+.aiw-session-sources li p {
+    margin: 6px 0 0;
+    font-size: 0.78rem;
+    color: var(--text-muted, #6b7280);
+    line-height: 1.7;
+}
+
+/* ───────────────────── session chrome ───────────────────── */
+
+.aiw-session {
+    padding-top: 1.5rem;
+}
+
+.aiw-session-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.aiw-session-header-main {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.aiw-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-secondary, #9ca3af);
+    text-decoration: none;
+    border: 1px solid var(--aiw-border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    transition: color var(--transition-fast, 0.2s ease), border-color var(--transition-fast, 0.2s ease);
+}
+
+.aiw-back:hover {
+    color: var(--aiw-data);
+    border-color: rgba(0, 229, 255, 0.35);
+}
+
+.aiw-back svg {
+    width: 14px;
+    height: 14px;
+}
+
+.aiw-session-id {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.aiw-session-badge {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 0 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(135deg, var(--aiw-ai), var(--aiw-data));
+}
+
+.aiw-session-id h2 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.aiw-session-id p {
+    margin: 2px 0 0;
+    font-size: 0.8rem;
+    color: var(--text-muted, #6b7280);
+    line-height: 1.6;
+}
+
+.aiw-session-tools {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aiw-counter {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-secondary, #9ca3af);
+    background: var(--aiw-panel);
+    border: 1px solid var(--aiw-border);
+    border-radius: 999px;
+    padding: 6px 14px;
+}
+
+.aiw-presenter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-secondary, #9ca3af);
+    background: var(--aiw-panel);
+    border: 1px solid var(--aiw-border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: all var(--transition-fast, 0.2s ease);
+}
+
+.aiw-presenter-btn:hover {
+    color: var(--aiw-human);
+    border-color: rgba(255, 170, 0, 0.35);
+}
+
+.aiw-presenter-btn[aria-pressed="true"] {
+    color: var(--aiw-human);
+    border-color: rgba(255, 170, 0, 0.45);
+    background: var(--aiw-human-soft);
+}
+
+.aiw-presenter-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+.aiw-session-sources {
+    margin: 18px 0 0;
+    max-width: 100%;
+}
+
+.aiw-session-sources h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+
+.aiw-session-sources svg {
+    width: 16px;
+    height: 16px;
+    color: var(--aiw-data);
+}
+
+.aiw-session-sources ul {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* presenter notes */
+.aiw-notes {
+    display: none;
+    margin-top: 16px;
+    border-radius: var(--aiw-radius);
+    background: var(--aiw-human-soft);
+    border: 1px solid rgba(255, 170, 0, 0.3);
+    padding: 16px 18px;
+}
+
+#aiw-root.aiw-presenter .aiw-notes {
+    display: block;
+}
+
+.aiw-notes-head h3 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+    color: var(--aiw-human);
+}
+
+.aiw-notes-head p {
+    margin: 0 0 10px;
+    font-size: 0.75rem;
+    color: var(--text-muted, #6b7280);
+}
+
+.aiw-notes-body p {
+    font-size: 0.92rem;
+    line-height: 2;
+    color: var(--text-primary, #f3f4f6);
+    margin: 0 0 8px;
+}
+
+.aiw-note-ex {
+    padding-top: 8px;
+    border-top: 1px dashed rgba(255, 170, 0, 0.3);
+}
+
+.aiw-note-empty {
+    color: var(--text-muted, #6b7280);
+}
+
+/* prev/next session nav */
+.aiw-session-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.aiw-session-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-secondary, #9ca3af);
+    text-decoration: none;
+    border: 1px solid var(--aiw-border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: var(--aiw-panel);
+    transition: color var(--transition-fast, 0.2s ease), border-color var(--transition-fast, 0.2s ease);
+    line-height: 1.6;
+}
+
+.aiw-session-link:hover {
+    color: var(--aiw-data);
+    border-color: rgba(0, 229, 255, 0.35);
+}
+
+.aiw-session-link svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.aiw-session-link--next {
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.aiw-session-link.is-dummy {
+    visibility: hidden;
+}
+
+.aiw-file-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(0, 229, 255, 0.14);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 999px;
+    padding: 6px 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: filter var(--transition-fast, 0.2s ease);
+}
+
+.aiw-file-btn:hover {
+    filter: brightness(1.2);
+}
+
+.aiw-file-btn svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* static no-JS fallback hero */
+#aiw-noscript-hero {
+    padding: 2.5rem 0;
+}
+
+#aiw-noscript-hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 0 0 10px;
+}
+
+#aiw-noscript-hero p {
+    color: var(--text-secondary, #9ca3af);
+    line-height: 2;
+    max-width: 44rem;
+    margin: 0 0 16px;
+}
+
+#aiw-noscript-hero ul {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+}
+
+#aiw-noscript-hero a {
+    color: var(--aiw-data);
+    font-weight: 700;
+}
+
+/* ─────────────────── deck slide content (dark stage) ─────────────────── */
+
+.fitness-pres .aiw-visual {
+    margin-top: 12px;
+    font-size: 0.86em;
+}
+
+.fitness-pres .aiw-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 10px 0 2px;
+}
+
+.fitness-pres .aiw-chip {
+    font-size: 0.78em;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    background: var(--aiw-ai-soft);
+    border: 1px solid rgba(124, 77, 255, 0.35);
+    border-radius: 999px;
+    padding: 3px 12px;
+}
+
+.fitness-pres .aiw-list--ordered {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    counter-reset: aiwlist;
+    list-style: none;
+    padding: 0;
+}
+
+.fitness-pres .aiw-list--ordered > li {
+    counter-increment: aiwlist;
+    position: relative;
+    padding-inline-start: 2rem;
+    line-height: 1.65;
+}
+
+.fitness-pres .aiw-list--ordered > li::before {
+    content: counter(aiwlist);
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0.1em;
+    width: 1.35rem;
+    height: 1.35rem;
+    display: grid;
+    place-items: center;
+    font-size: 0.72em;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 7px;
+    background: linear-gradient(135deg, var(--aiw-ai), var(--aiw-data));
+}
+
+.fitness-pres .aiw-ex-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 10px;
+    margin: 0 0 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: var(--aiw-human-soft);
+    border: 1px solid rgba(255, 170, 0, 0.3);
+}
+
+.fitness-pres .aiw-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78em;
+    font-weight: 800;
+    color: var(--aiw-human);
+}
+
+.fitness-pres .aiw-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.fitness-pres .aiw-ex-meta svg,
+.fitness-pres .aiw-tag svg,
+.fitness-pres .aiw-time svg {
+    width: 14px;
+    height: 14px;
+}
+
+.fitness-pres .aiw-file-btn {
+    font-size: 0.74em;
+    padding: 5px 12px;
+}
+
+.fitness-pres .aiw-research {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: var(--aiw-data-soft);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+}
+
+.fitness-pres .aiw-research > svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--aiw-data);
+}
+
+.fitness-pres .aiw-research p {
+    margin: 0;
+    font-size: 0.88em;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.fitness-pres .aiw-sources-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin: 10px 0 0;
+    font-size: 0.74em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.fitness-pres .aiw-sources-line svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+}
+
+.fitness-pres .aiw-sources-line a {
+    color: var(--aiw-data);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.fitness-pres .aiw-sources-line a:hover {
+    text-decoration: underline;
+}
+
+/* callout variants: AI / human / control / warn */
+.fitness-pres .aiw-callout h4 {
+    margin: 0 0 4px;
+    font-size: 0.95em;
+}
+
+.fitness-pres .aiw-callout p {
+    margin: 0;
+}
+
+.fitness-pres .aiw-callout--human {
+    border-right-color: var(--aiw-human);
+    background: var(--aiw-human-soft);
+}
+
+.fitness-pres[dir="ltr"] .aiw-callout--human {
+    border-right-color: var(--color-f, #00e5ff);
+    border-left-color: var(--aiw-human);
+}
+
+.fitness-pres .aiw-callout--control,
+.fitness-pres .aiw-callout--rule {
+    border-right-color: var(--aiw-ok);
+    background: var(--aiw-ok-soft);
+}
+
+.fitness-pres[dir="ltr"] .aiw-callout--control,
+.fitness-pres[dir="ltr"] .aiw-callout--rule {
+    border-right-color: var(--color-f, #00e5ff);
+    border-left-color: var(--aiw-ok);
+}
+
+.fitness-pres .aiw-callout--warn,
+.fitness-pres .aiw-callout--boundary {
+    border-right-color: var(--aiw-risk);
+    background: var(--aiw-risk-soft);
+}
+
+.fitness-pres[dir="ltr"] .aiw-callout--warn,
+.fitness-pres[dir="ltr"] .aiw-callout--boundary {
+    border-right-color: var(--color-f, #00e5ff);
+    border-left-color: var(--aiw-risk);
+}
+
+.fitness-pres .aiw-callout--note,
+.fitness-pres .aiw-callout--formula {
+    border-right-color: var(--aiw-ai);
+    background: var(--aiw-ai-soft);
+}
+
+.fitness-pres[dir="ltr"] .aiw-callout--note,
+.fitness-pres[dir="ltr"] .aiw-callout--formula {
+    border-right-color: var(--color-f, #00e5ff);
+    border-left-color: var(--aiw-ai);
+}
+
+.fitness-pres .aiw-cover-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    font-size: 0.88em;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.fitness-pres .aiw-cover-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.fitness-pres .aiw-cover-meta svg {
+    width: 15px;
+    height: 15px;
+    color: var(--aiw-data);
+}
+
+/* closing slide: lift the output callout */
+.fitness-pres .aiw-slide--closing .aiw-callout {
+    border-right-color: var(--aiw-ok);
+    background: var(--aiw-ok-soft);
+}
+
+.fitness-pres[dir="ltr"] .aiw-slide--closing .aiw-callout {
+    border-right-color: var(--color-f, #00e5ff);
+    border-left-color: var(--aiw-ok);
+}
+
+/* ─────────────────── bespoke slide visuals ─────────────────── */
+
+/* job = bundle of tasks */
+.fitness-pres .aiw-job-core {
+    display: block;
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.fitness-pres .aiw-job-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.fitness-pres .aiw-job-col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-job-col svg {
+    width: 18px;
+    height: 18px;
+}
+
+.fitness-pres .aiw-job-col strong {
+    font-size: 0.9em;
+}
+
+.fitness-pres .aiw-job-col span {
+    font-size: 0.76em;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+}
+
+.fitness-pres .aiw-job-col--fast svg { color: var(--aiw-ok); }
+.fitness-pres .aiw-job-col--change svg { color: var(--aiw-ai); }
+.fitness-pres .aiw-job-col--human svg { color: var(--aiw-human); }
+
+/* human vs AI lanes */
+.fitness-pres .aiw-lane-head-row,
+.fitness-pres .aiw-lane-row {
+    display: grid;
+    grid-template-columns: minmax(72px, 0.7fr) 1.3fr 1.3fr;
+    gap: 8px;
+    align-items: stretch;
+}
+
+.fitness-pres .aiw-lane-head-row {
+    margin-bottom: 6px;
+}
+
+.fitness-pres .aiw-lane-head {
+    text-align: center;
+    font-size: 0.78em;
+    font-weight: 800;
+    padding: 3px 6px;
+    border-radius: 7px;
+}
+
+.fitness-pres .aiw-lane-head--ai {
+    color: var(--aiw-ai);
+    background: var(--aiw-ai-soft);
+}
+
+.fitness-pres .aiw-lane-head--human {
+    color: var(--aiw-human);
+    background: var(--aiw-human-soft);
+}
+
+.fitness-pres .aiw-lane-row {
+    margin-bottom: 6px;
+}
+
+.fitness-pres .aiw-lane-stage {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.fitness-pres .aiw-lane-chip {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 0.82em;
+    line-height: 1.55;
+}
+
+.fitness-pres .aiw-lane-chip b {
+    font-size: 0.72em;
+    opacity: 0.75;
+}
+
+.fitness-pres .aiw-lane-chip--ai {
+    background: var(--aiw-ai-soft);
+    border: 1px solid rgba(124, 77, 255, 0.3);
+}
+
+.fitness-pres .aiw-lane-chip--human {
+    background: var(--aiw-human-soft);
+    border: 1px solid rgba(255, 170, 0, 0.3);
+}
+
+/* vague vs actionable prompt */
+.fitness-pres .aiw-prompt-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.fitness-pres .aiw-prompt-box {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-prompt-box p {
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.7;
+}
+
+.fitness-pres .aiw-prompt-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75em;
+    font-weight: 800;
+}
+
+.fitness-pres .aiw-prompt-tag svg {
+    width: 14px;
+    height: 14px;
+}
+
+.fitness-pres .aiw-prompt-box--vague {
+    border-color: rgba(255, 0, 127, 0.35);
+    background: var(--aiw-risk-soft);
+}
+
+.fitness-pres .aiw-prompt-box--vague .aiw-prompt-tag {
+    color: var(--aiw-risk);
+}
+
+.fitness-pres .aiw-prompt-box--good {
+    border-color: rgba(0, 255, 136, 0.35);
+    background: var(--aiw-ok-soft);
+}
+
+.fitness-pres .aiw-prompt-box--good .aiw-prompt-tag {
+    color: var(--aiw-ok);
+}
+
+/* numbered steps flow */
+.fitness-pres .aiw-steps-flow ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+    counter-reset: aiwstep;
+}
+
+.fitness-pres .aiw-steps-flow li {
+    counter-increment: aiwstep;
+    position: relative;
+    padding: 22px 12px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.82em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.fitness-pres .aiw-steps-flow li::before {
+    content: counter(aiwstep);
+    position: absolute;
+    top: 6px;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 0.72em;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--aiw-ai), var(--aiw-data));
+}
+
+.fitness-pres[dir="rtl"] .aiw-steps-flow li::before {
+    transform: translateX(50%);
+}
+
+/* three scales */
+.fitness-pres .aiw-scales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.fitness-pres .aiw-scale {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-scale-head {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.88em;
+}
+
+.fitness-pres .aiw-scale-head svg {
+    width: 16px;
+    height: 16px;
+    color: var(--aiw-data);
+}
+
+.fitness-pres .aiw-scale[data-lvl="2"] .aiw-scale-head svg { color: var(--aiw-ai); }
+.fitness-pres .aiw-scale[data-lvl="3"] .aiw-scale-head svg { color: var(--aiw-human); }
+
+.fitness-pres .aiw-scale-ex {
+    font-size: 0.76em;
+    color: rgba(255, 255, 255, 0.68);
+    line-height: 1.6;
+}
+
+.fitness-pres .aiw-scale-owner {
+    margin-top: auto;
+    font-size: 0.74em;
+    color: rgba(255, 255, 255, 0.85);
+    border-top: 1px dashed rgba(255, 255, 255, 0.15);
+    padding-top: 6px;
+}
+
+.fitness-pres .aiw-scale-owner b {
+    color: var(--aiw-human);
+}
+
+/* tool families */
+.fitness-pres .aiw-families {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 8px;
+}
+
+.fitness-pres .aiw-family {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 11px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-family strong {
+    font-size: 0.85em;
+    color: var(--aiw-data);
+}
+
+.fitness-pres .aiw-family span {
+    font-size: 0.76em;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+}
+
+.fitness-pres .aiw-family em {
+    font-style: normal;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.55;
+}
+
+/* demo criteria chips */
+.fitness-pres .aiw-criteria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.fitness-pres .aiw-criterion {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.8em;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--aiw-data-soft);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+}
+
+.fitness-pres .aiw-criterion svg {
+    width: 14px;
+    height: 14px;
+    color: var(--aiw-data);
+}
+
+/* maturity ladder (no "higher is always better") */
+.fitness-pres .aiw-maturity {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    align-items: stretch;
+}
+
+.fitness-pres .aiw-mat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.92;
+}
+
+.fitness-pres .aiw-mat[data-lvl="4"] {
+    border-color: rgba(255, 170, 0, 0.35);
+    background: var(--aiw-human-soft);
+}
+
+.fitness-pres .aiw-mat-num {
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    font-size: 0.78em;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--aiw-ai), var(--aiw-data));
+}
+
+.fitness-pres .aiw-mat[data-lvl="4"] .aiw-mat-num {
+    background: linear-gradient(135deg, var(--aiw-human), var(--aiw-risk));
+}
+
+.fitness-pres .aiw-mat-label {
+    font-size: 0.76em;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* solution architecture tiers */
+.fitness-pres .aiw-arch {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+.fitness-pres .aiw-arch-tier {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-arch-tier--core {
+    border-color: rgba(124, 77, 255, 0.4);
+    background: var(--aiw-ai-soft);
+}
+
+.fitness-pres .aiw-arch-tag {
+    flex-shrink: 0;
+    font-size: 0.76em;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.85);
+    width: 8.5em;
+    line-height: 1.5;
+}
+
+.fitness-pres .aiw-arch-items {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.fitness-pres .aiw-arch-item {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.fitness-pres .aiw-arch-item svg {
+    width: 17px;
+    height: 17px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fitness-pres .aiw-arch-item--ai svg { color: var(--aiw-ai); }
+.fitness-pres .aiw-arch-item--data svg { color: var(--aiw-data); }
+.fitness-pres .aiw-arch-item--rule svg { color: var(--aiw-human); }
+
+.fitness-pres .aiw-arch-arrow {
+    width: 2px;
+    height: 12px;
+    background: linear-gradient(180deg, var(--aiw-ai), var(--aiw-data));
+    opacity: 0.7;
+}
+
+.fitness-pres .aiw-arch-log {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72em;
+    color: rgba(255, 255, 255, 0.65);
+    border-top: 1px dashed rgba(255, 255, 255, 0.18);
+    width: 100%;
+    padding-top: 8px;
+}
+
+.fitness-pres .aiw-arch-log svg {
+    width: 14px;
+    height: 14px;
+    color: var(--aiw-ok);
+    flex-shrink: 0;
+}
+
+/* RAG flow */
+.fitness-pres .aiw-rag {
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.fitness-pres .aiw-rag-node {
+    flex: 1 1 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.78em;
+    line-height: 1.55;
+}
+
+.fitness-pres .aiw-rag-node svg {
+    width: 18px;
+    height: 18px;
+    color: var(--aiw-data);
+}
+
+.fitness-pres .aiw-rag-node[data-i="1"] svg { color: var(--aiw-ai); }
+.fitness-pres .aiw-rag-node[data-i="2"] svg { color: var(--aiw-ok); }
+
+.fitness-pres .aiw-flow-arrow {
+    align-self: center;
+    width: 18px;
+    height: 2px;
+    flex: 0 0 18px;
+    background: linear-gradient(90deg, var(--aiw-data), var(--aiw-ai));
+    position: relative;
+}
+
+.fitness-pres[dir="rtl"] .aiw-flow-arrow {
+    background: linear-gradient(270deg, var(--aiw-data), var(--aiw-ai));
+}
+
+.fitness-pres .aiw-flow-arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    inset-inline-end: -1px;
+    transform: translateY(-50%);
+    border: 4px solid transparent;
+    border-inline-start-color: var(--aiw-ai);
+}
+
+/* autonomy spectrum */
+.fitness-pres .aiw-auth-track {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.fitness-pres .aiw-auth-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    padding: 12px 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-auth-dot {
+    width: 26px;
+    height: 26px;
+    display: grid;
+    place-items: center;
+    font-size: 0.78em;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 50%;
+    background: var(--aiw-data);
+}
+
+.fitness-pres .aiw-auth-step[data-lvl="2"] .aiw-auth-dot { background: var(--aiw-ai); }
+.fitness-pres .aiw-auth-step[data-lvl="3"] .aiw-auth-dot { background: #b28dff; }
+.fitness-pres .aiw-auth-step[data-lvl="4"] .aiw-auth-dot { background: var(--aiw-human); }
+
+.fitness-pres .aiw-auth-label {
+    font-size: 0.74em;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.fitness-pres .aiw-auth-ends {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 6px;
+    padding: 0 4px;
+}
+
+/* ticketing scenario */
+.fitness-pres .aiw-ticket {
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.fitness-pres .aiw-tk-node {
+    flex: 1 1 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.78em;
+    line-height: 1.55;
+}
+
+.fitness-pres .aiw-tk-node svg {
+    width: 18px;
+    height: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fitness-pres .aiw-tk--ai {
+    border-color: rgba(124, 77, 255, 0.4);
+    background: var(--aiw-ai-soft);
+}
+
+.fitness-pres .aiw-tk--ai svg { color: var(--aiw-ai); }
+
+.fitness-pres .aiw-tk--act {
+    border-color: rgba(255, 170, 0, 0.4);
+    background: var(--aiw-human-soft);
+}
+
+.fitness-pres .aiw-tk--act svg { color: var(--aiw-human); }
+
+.fitness-pres .aiw-tk-outputs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 0.74em;
+}
+
+.fitness-pres .aiw-tk-out-label {
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fitness-pres .aiw-tk-out {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--aiw-data-soft);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+}
+
+/* demo steps + controlled failure */
+.fitness-pres .aiw-demo-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    counter-reset: aiwdemo;
+}
+
+.fitness-pres .aiw-demo-steps li {
+    counter-increment: aiwdemo;
+    position: relative;
+    padding: 8px 12px 8px 12px;
+    padding-inline-start: 2.2rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.82em;
+    line-height: 1.6;
+}
+
+.fitness-pres .aiw-demo-steps li::before {
+    content: counter(aiwdemo);
+    position: absolute;
+    inset-inline-start: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 0.72em;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--aiw-ai), var(--aiw-data));
+}
+
+.fitness-pres .aiw-demo-error {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: var(--aiw-risk-soft);
+    border: 1px solid rgba(255, 0, 127, 0.35);
+}
+
+.fitness-pres .aiw-demo-error-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.76em;
+    font-weight: 800;
+    color: var(--aiw-risk);
+}
+
+.fitness-pres .aiw-demo-error-tag svg {
+    width: 14px;
+    height: 14px;
+}
+
+.fitness-pres .aiw-demo-error p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* hire end-to-end flow */
+.fitness-pres .aiw-hire-track {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+}
+
+.fitness-pres .aiw-hire-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    padding: 10px 6px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-hire-num {
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+    font-size: 0.72em;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--aiw-ai), var(--aiw-data));
+}
+
+.fitness-pres .aiw-hire-label {
+    font-size: 0.7em;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.fitness-pres .aiw-hire-delay {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: var(--aiw-human-soft);
+    border: 1px dashed rgba(255, 170, 0, 0.4);
+    font-size: 0.75em;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.fitness-pres .aiw-hire-delay svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--aiw-human);
+}
+
+.fitness-pres .aiw-hire-delay b {
+    color: var(--aiw-human);
+}
+
+/* hire architecture: read / core / write */
+.fitness-pres .aiw-hirearch {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.fitness-pres .aiw-ha-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-ha-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78em;
+    font-weight: 800;
+}
+
+.fitness-pres .aiw-ha-tag svg {
+    width: 14px;
+    height: 14px;
+}
+
+.fitness-pres .aiw-ha-col--read .aiw-ha-tag svg { color: var(--aiw-data); }
+.fitness-pres .aiw-ha-col--core .aiw-ha-tag svg { color: var(--aiw-ai); }
+.fitness-pres .aiw-ha-col--write .aiw-ha-tag svg { color: var(--aiw-human); }
+
+.fitness-pres .aiw-ha-col--write {
+    border-color: rgba(255, 170, 0, 0.35);
+}
+
+.fitness-pres .aiw-ha-item {
+    font-size: 0.74em;
+    line-height: 1.55;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.fitness-pres .aiw-ha-log {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72em;
+    color: rgba(255, 255, 255, 0.65);
+    border-top: 1px dashed rgba(255, 255, 255, 0.18);
+    padding-top: 8px;
+}
+
+.fitness-pres .aiw-ha-log svg {
+    width: 14px;
+    height: 14px;
+    color: var(--aiw-ok);
+    flex-shrink: 0;
+}
+
+/* 30/60/90 roadmap */
+.fitness-pres .aiw-roadmap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.fitness-pres .aiw-phase {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fitness-pres .aiw-phase-tag {
+    align-self: flex-start;
+    font-size: 0.7em;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 999px;
+    padding: 3px 10px;
+    background: linear-gradient(135deg, var(--aiw-ai), var(--aiw-data));
+}
+
+.fitness-pres .aiw-phase[data-i="1"] .aiw-phase-tag {
+    background: var(--aiw-data);
+}
+
+.fitness-pres .aiw-phase[data-i="2"] .aiw-phase-tag {
+    background: var(--aiw-ai);
+}
+
+.fitness-pres .aiw-phase[data-i="0"] .aiw-phase-tag {
+    background: #2b7a78;
+}
+
+.fitness-pres .aiw-phase strong {
+    font-size: 0.85em;
+}
+
+.fitness-pres .aiw-phase p {
+    margin: 0;
+    font-size: 0.74em;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.65;
+}
+
+/* ─────────────────── tables inside slides ─────────────────── */
+
+.fitness-pres .aiw-table-wrap {
+    margin-top: 10px;
+}
+
+.fitness-pres .fitness-pres-table {
+    width: 100%;
+    font-size: 0.8em;
+    line-height: 1.55;
+}
+
+.fitness-pres .fitness-pres-table th {
+    font-size: 0.92em;
+}
+
+/* ─────────────────── responsive ─────────────────── */
+
+@media (max-width: 1024px) {
+    .aiw-path-track {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aiw-path-track li:nth-child(2)::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .aiw-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .aiw-landing-sources ul,
+    .aiw-session-sources ul {
+        grid-template-columns: 1fr;
+    }
+
+    .aiw-ex-list > li {
+        grid-template-columns: 1fr;
+    }
+
+    .aiw-ex-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .aiw-path-track {
+        grid-template-columns: 1fr;
+    }
+
+    .aiw-path-track li::after {
+        display: none;
+    }
+
+    .aiw-session-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .aiw-session-link.is-dummy {
+        display: none;
+    }
+
+    .aiw-session-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* deck visuals collapse to stacked columns */
+    .fitness-pres .aiw-job-cols,
+    .fitness-pres .aiw-scales,
+    .fitness-pres .aiw-maturity,
+    .fitness-pres .aiw-hirearch,
+    .fitness-pres .aiw-roadmap,
+    .fitness-pres .aiw-auth-track,
+    .fitness-pres .aiw-prompt-compare {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fitness-pres .aiw-hire-track {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .fitness-pres .aiw-lane-head-row,
+    .fitness-pres .aiw-lane-row {
+        grid-template-columns: minmax(64px, 0.6fr) 1fr 1fr;
+        gap: 5px;
+    }
+
+    .fitness-pres .aiw-lane-chip {
+        padding: 6px 8px;
+        font-size: 0.72em;
+    }
+
+    .fitness-pres .aiw-arch-tag {
+        width: auto;
+    }
+
+    .fitness-pres .aiw-flow-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .fitness-pres .aiw-job-cols,
+    .fitness-pres .aiw-scales,
+    .fitness-pres .aiw-maturity,
+    .fitness-pres .aiw-hirearch,
+    .fitness-pres .aiw-roadmap,
+    .fitness-pres .aiw-auth-track,
+    .fitness-pres .aiw-prompt-compare {
+        grid-template-columns: 1fr;
+    }
+
+    .fitness-pres .aiw-hire-track {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fitness-pres .aiw-lane-head-row {
+        display: none;
+    }
+
+    .fitness-pres .aiw-lane-row {
+        grid-template-columns: 1fr;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+        padding-bottom: 8px;
+    }
+}
+
+/* deck-internal breakpoints (container-aware) */
+@container fitness-pres (max-width: 560px) {
+    .fitness-pres-body {
+        font-size: 0.88rem;
+    }
+
+    .fitness-pres .aiw-lane-head-row {
+        display: none;
+    }
+
+    .fitness-pres .aiw-lane-row {
+        grid-template-columns: 1fr;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+        padding-bottom: 8px;
+    }
+}
+
+/* ─────────────────── motion & focus ─────────────────── */
+
+#aiw-root *,
+#aiw-root *::before,
+#aiw-root *::after {
+    transition-duration: 0.2s;
+}
+
+#aiw-root a:focus-visible,
+#aiw-root button:focus-visible,
+.fitness-pres a:focus-visible,
+.fitness-pres button:focus-visible {
+    outline: 2px solid var(--aiw-data);
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #aiw-root *,
+    #aiw-root *::before,
+    #aiw-root *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    .aiw-card:hover {
+        transform: none;
+    }
+}

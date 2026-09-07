@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 1 Exercise · Raw Meeting Minutes | AI in Organizations Workshop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16202a;--mut:#5b6b78;--line:#c9d4dc;--ai:#6d4bd8;--human:#b98a1f;--risk:#b3373f;--bg:#f6f8fa}
+*{box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);margin:0;padding:24px;line-height:1.7;font-size:14px}
+.sheet{max-width:820px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:32px 36px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:18px}
+.brand{font-size:.72rem;color:var(--mut);letter-spacing:.5px}
+h1{font-size:1.35rem;margin:4px 0 2px}
+.sub{font-size:.85rem;color:var(--mut)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px 20px;font-size:.82rem;background:#f2f5f8;border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin-bottom:20px}
+.meta b{color:var(--mut);font-weight:500}
+.note{font-size:.8rem;background:#fff8e8;border:1px solid #e8d9a8;border-radius:8px;padding:10px 14px;margin-bottom:22px}
+.note b{color:#8a6d1a}
+h2{font-size:1rem;margin:22px 0 8px;padding-left:10px;border-left:3px solid var(--ai)}
+p{margin:6px 0;text-align:justify}
+ul.att{margin:6px 0;padding:0;list-style:none;font-size:.85rem}
+ul.att li{display:inline-block;margin-right:14px;background:#f2f5f8;border:1px solid var(--line);border-radius:20px;padding:2px 12px}
+ol.min{padding-left:22px;font-size:.88rem}
+ol.min li{margin-bottom:12px}
+ol.min h3{font-size:.9rem;margin:0 0 4px;display:inline}
+.tag{display:inline-block;font-size:.68rem;border-radius:4px;padding:1px 8px;margin-left:8px;vertical-align:middle;font-weight:500}
+.tag-ai{background:#efe9fd;color:var(--ai)}
+.foot{margin-top:26px;padding-top:12px;border-top:1px dashed var(--line);font-size:.72rem;color:var(--mut);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+button.print{font-family:inherit;font-size:.8rem;background:var(--ink);color:#fff;border:0;border-radius:6px;padding:8px 18px;cursor:pointer}
+@media print{body{background:#fff;padding:0}button.print{display:none}.sheet{border:0;max-width:none;padding:10px}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div>
+      <div class="brand">Sepehr Co. · Information Technology Units · Internal training document</div>
+      <h1>Raw Meeting Minutes — IT Service Alignment Session</h1>
+      <div class="sub">Transcribed from the session recording — unedited and unstructured</div>
+    </div>
+    <button class="print" type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <div class="meta">
+    <div><b>Document no.:</b> SPH-IT-MOM-1405-34</div>
+    <div><b>Session date:</b> Tuesday, Shahrivar 15, 1405 (Sep 6, 2026)</div>
+    <div><b>Time:</b> 10:00 – 11:20</div>
+    <div><b>Location:</b> 4th-floor meeting room + online</div>
+    <div><b>Minutes taker:</b> (not recorded)</div>
+    <div><b>Attendance:</b> 5</div>
+  </div>
+
+  <ul class="att">
+    <li>Maryam Rastegar — IT Services Manager</li>
+    <li>Shaghayegh Farahani — Ticketing System Product Owner</li>
+    <li>Amir Kaviani — Infrastructure &amp; Network Specialist</li>
+    <li>Behnam Hooshyar — Information Security Specialist</li>
+    <li>Taraneh Sadeghi — HR Specialist (second half of the session)</li>
+  </ul>
+
+  <h2>Transcribed text and agreements</h2>
+  <ol class="min">
+    <li>
+      <h3>Updating the IT service knowledge-base articles</h3>
+      <span class="tag tag-ai">exercise focus</span>
+      Maryam Rastegar noted that around forty knowledge-base articles in the document space still sit on old templates and outdated versions, and support staff keep citing expired articles. After discussion, the group concluded that Shaghayegh Farahani will own moving all forty articles to the new template by Saturday, Shahrivar 28, and archiving the old versions. This item is approved.
+    </li>
+    <li>
+      <h3>Report on stale VPN access accounts</h3>
+      Behnam Hooshyar reported that the list of accounts that have held VPN access for over a year and no longer work at Sepehr is not ready. Maryam stressed that this report must be on the table before any configuration change. Firm decision: Behnam Hooshyar delivers the stale VPN access report by Thursday, Shahrivar 18. Approved.
+    </li>
+    <li>
+      <h3>Ticketing system upgrade</h3>
+      Shaghayegh Farahani said that, per the previous session's agreement, the ticketing system upgrade to version 5 must happen by Shahrivar 15, and the vendor's support team has reserved exactly that window. Later in the session, Amir Kaviani explained that migrating the servers to the new site will take until the end of Shahrivar, and suggested running the upgrade after the migration. Maryam said she wants both: “the upgrade on Shahrivar 15 per the earlier plan, but if the servers are not ready, then Shahrivar 30.” Nothing was finalized, yet both dates remain in the minutes.
+    </li>
+    <li>
+      <h3>Policy for using AI tools</h3>
+      Taraneh Sadeghi asked that the draft policy on employee use of AI tools be prepared and issued by Shahrivar 20. Everyone agreed the draft is needed, but the minutes do not say who will do the work.
+    </li>
+    <li>
+      <h3>Proposal to pilot a local language model (not yet approved)</h3>
+      Amir Kaviani proposed installing a small language model on one of the test servers so that support specialists could try ticket summarization on synthetic data. Maryam Rastegar said it currently needs budget and authorization, and the proposal will be reviewed next session with the technology deputy present. This item has not been approved.
+    </li>
+    <li>
+      <h3>Confidential HR matter</h3>
+      <span class="tag tag-ai">Confidential — internal HR document only</span>
+      In the closing part, Taraneh Sadeghi discussed the open case of a suspected policy violation by one employee using an organizational account, including the employee's temporary suspension status. The individual's name and unit are recorded only in the confidential HR case file and must not appear in the public session summary or any other document. The session closed on this topic.
+    </li>
+  </ol>
+
+  <div class="note">
+    <b>Facilitator guide:</b>
+    These minutes are deliberately “raw”: they contain two firm decisions with an owner and a deadline (items 1–2), one decision without an owner (item 4), one unapproved proposal (item 5), two conflicting deadlines for the same task (item 3), and one sensitive topic that must stay out of the public summary (item 6). Ask participants to produce a summary first with a vague prompt, then with a structured prompt — separating decisions from proposals, extracting owners and deadlines only from the text (never guessing them), flagging the deadline conflict, and omitting the confidential item from the public output.
+  </div>
+
+  <div class="foot">
+    <span>“AI in Organizations” workshop · Session 1 exercise · Instructor: Ali Mansouri</span>
+    <span>Fully fictional training data · Content reviewed: September 2026</span>
+  </div>
+</div>
+</body>
+</html>

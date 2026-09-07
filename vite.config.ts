@@ -26,6 +26,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         ...htmlEntries(resolve(__dirname, 'methods'), 'methods-'),
+        ...htmlEntries(resolve(__dirname, 'workshops'), 'workshops-'),
         ...htmlEntries(resolve(__dirname, 'about')),
         ...htmlEntries(resolve(__dirname, 'articles'))
       }

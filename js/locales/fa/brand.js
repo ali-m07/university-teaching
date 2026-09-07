@@ -26,7 +26,8 @@ registerLocale('fa', {
         findTitle: 'از کجا شروع کنید؟',
         findItems: [
             { icon: 'library', title: 'روش‌های آینده‌نگاری', desc: 'طرح‌درس‌ها و متدهای عملیاتی', href: 'methods/' },
-            { icon: 'pen-line', title: 'مقالات و یادداشت‌ها', desc: 'فناوری نوظهور، تفکر سیستمی و عدم‌قطعیت', href: 'articles/' }
+            { icon: 'pen-line', title: 'مقالات و یادداشت‌ها', desc: 'فناوری نوظهور، تفکر سیستمی و عدم‌قطعیت', href: 'articles/' },
+            { icon: 'cpu', title: 'کارگاه هوش مصنوعی در سازمان', desc: 'چهار جلسهٔ کاربردی برای مدیران و صاحبان فرایند', href: 'workshops/ai-in-organizations.html' }
         ],
         methodDigestTitle: 'متدها در یک نگاه',
         methodDigestSub: 'پنج ابزار اصلی آینده‌نگاری، به زبان تصمیم نه اصطلاح‌شناسی.',
