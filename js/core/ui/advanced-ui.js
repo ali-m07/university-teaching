@@ -91,7 +91,7 @@ function renderManifestoSection() {
     if (grid && m.frmGaps) {
         grid.innerHTML = m.frmGaps.map(g => `
             <div class="depth-card glass-card" style="padding:18px;">
-                <h4 style="color:#fff;font-size:0.95rem;margin-bottom:8px;">${g.title}</h4>
+                <h4 style="color:var(--text-primary);font-size:0.95rem;margin-bottom:8px;">${g.title}</h4>
                 <p style="font-size:0.82rem;color:var(--text-secondary);line-height:1.55;">${g.desc}</p>
             </div>`).join('');
     }

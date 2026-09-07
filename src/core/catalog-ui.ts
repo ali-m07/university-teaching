@@ -42,7 +42,7 @@ export function renderFullCatalog(containerId = 'catalog-root'): void {
       (cat) => `
     <section class="catalog-category" style="margin-bottom:56px;">
       <div class="section-header" style="margin-bottom:24px;">
-        <h2 style="color:#fff;font-size:1.25rem;">${esc(cat.title)}</h2>
+        <h2 style="color:var(--text-primary);font-size:1.25rem;">${esc(cat.title)}</h2>
         <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:6px;">${esc(cat.desc)}</p>
       </div>
       <div class="hub-cards-grid">

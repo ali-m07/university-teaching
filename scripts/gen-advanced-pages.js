@@ -45,7 +45,7 @@ function shell({ file, method, i18n, accent, icon }) {
 
     <section class="container page-hero">
         <span class="section-tag" style="background:rgba(255,255,255,0.05);color:${accent};" data-i18n="advancedPage.${i18n}.heroTag"></span>
-        <h1 style="font-size:2.3rem;color:#fff;margin:12px 0;" data-i18n="advancedPage.${i18n}.heroTitle"></h1>
+        <h1 style="font-size:2.3rem;color:var(--text-primary);margin:12px 0;" data-i18n="advancedPage.${i18n}.heroTitle"></h1>
         <p style="max-width:760px;margin:0 auto;color:var(--text-secondary);line-height:1.7;" data-i18n="advancedPage.${i18n}.heroSub" data-i18n-html></p>
     </section>
 
@@ -56,17 +56,17 @@ function shell({ file, method, i18n, accent, icon }) {
 
     <section class="container" style="padding-bottom:50px;">
         <div class="glass-card" style="padding:32px;margin-bottom:32px;">
-            <h2 id="adv-intro-title" style="color:#fff;font-size:1.3rem;margin-bottom:12px;"></h2>
+            <h2 id="adv-intro-title" style="color:var(--text-primary);font-size:1.3rem;margin-bottom:12px;"></h2>
             <p id="adv-intro" style="color:var(--text-secondary);line-height:1.75;"></p>
         </div>
         <div id="method-pillars-grid" class="hub-cards-grid" style="margin-bottom:32px;"></div>
         <div class="workspace-grid">
             <div class="glass-card" style="padding:24px;border-inline-start:3px solid ${accent};">
-                <h3 id="adv-gap-title" style="color:#fff;font-size:1.1rem;margin-bottom:10px;"></h3>
+                <h3 id="adv-gap-title" style="color:var(--text-primary);font-size:1.1rem;margin-bottom:10px;"></h3>
                 <p id="adv-gap" style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;"></p>
             </div>
             <div class="glass-card" style="padding:24px;">
-                <h3 id="adv-case-title" style="color:#fff;font-size:1.1rem;margin-bottom:10px;"><i data-lucide="${icon}" style="vertical-align:middle;margin-inline-end:6px;color:${accent};"></i> Case</h3>
+                <h3 id="adv-case-title" style="color:var(--text-primary);font-size:1.1rem;margin-bottom:10px;"><i data-lucide="${icon}" style="vertical-align:middle;margin-inline-end:6px;color:${accent};"></i> Case</h3>
                 <p id="adv-case" style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;"></p>
             </div>
         </div>

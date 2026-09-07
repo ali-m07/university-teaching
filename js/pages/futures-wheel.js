@@ -503,7 +503,7 @@ function renderWheelSteps() {
     grid.innerHTML = steps.map((s, i) => `
         <div class="step-card glass-card" style="padding:24px;border:1px solid var(--card-border);border-radius:12px;position:relative;padding-inline-start:60px;background:rgba(255,255,255,0.01);">
             <span class="step-num" style="position:absolute;inset-inline-start:20px;top:20px;font-size:1.8rem;font-weight:900;color:var(--color-f);opacity:0.5;">${i + 1}</span>
-            <h4 style="font-size:1rem;margin-bottom:8px;color:#fff;">${s.title}</h4>
+            <h4 style="font-size:1rem;margin-bottom:8px;color:var(--text-primary);">${s.title}</h4>
             <p style="font-size:0.825rem;color:var(--text-secondary);line-height:1.5;">${s.desc}</p>
         </div>`).join('');
 }

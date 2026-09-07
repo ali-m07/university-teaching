@@ -21,7 +21,7 @@ function renderCards(gridId, cards, borderKey) {
     grid.innerHTML = cards.map((c, i) => `
         <div class="step-card glass-card" style="padding:20px;border-top:3px solid ${c.color || 'var(--color-f)'};">
             <div style="font-size:1.5rem;color:${c.color || 'var(--color-f)'};margin-bottom:10px;"><i data-lucide="${c.icon || 'circle'}"></i></div>
-            <h4 style="font-size:1rem;color:#fff;margin-bottom:8px;">${esc(c.title)}</h4>
+            <h4 style="font-size:1rem;color:var(--text-primary);margin-bottom:8px;">${esc(c.title)}</h4>
             <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.5;">${esc(c.desc)}</p>
         </div>`).join('');
     if (window.lucide) window.lucide.createIcons();
@@ -33,7 +33,7 @@ function renderStepsGrid(gridId, steps) {
     grid.innerHTML = steps.map((s, i) => `
         <div class="step-card glass-card" style="padding:18px;text-align:center;border:1px solid var(--card-border);border-radius:12px;">
             <span style="font-size:1.5rem;font-weight:900;color:var(--color-f);opacity:0.7;">${i + 1}</span>
-            <h4 style="font-size:0.95rem;color:#fff;margin:8px 0;">${esc(s.title)}</h4>
+            <h4 style="font-size:0.95rem;color:var(--text-primary);margin:8px 0;">${esc(s.title)}</h4>
             <p style="font-size:0.75rem;color:var(--text-secondary);line-height:1.5;">${esc(s.desc)}</p>
         </div>`).join('');
 }
@@ -46,7 +46,7 @@ window.renderRohrbeckDims = function renderRohrbeckDims(gridId, dims) {
     grid.innerHTML = dims.map((d, i) => `
         <div class="case-level-card ${classes[i]}" style="padding-top:40px;height:100%;${i > 0 ? `border-color:${borderColors[i]};` : ''}">
             <span class="case-level-num" style="background:rgba(0,229,255,0.1);color:${borderColors[i]};">${esc(d.level)}</span>
-            <h4 style="font-size:1.1rem;margin-bottom:12px;color:#fff;">${esc(d.title)}</h4>
+            <h4 style="font-size:1.1rem;margin-bottom:12px;color:var(--text-primary);">${esc(d.title)}</h4>
             <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">${esc(d.desc)}</p>
         </div>`).join('');
 }
@@ -91,7 +91,7 @@ function renderWheelStaticSections() {
     const mount = document.getElementById('wheel-boeing-mount');
     if (mount && boeing) {
         mount.innerHTML = `
-            <h3 style="font-size:1.4rem;color:#fff;margin-bottom:15px;"><i data-lucide="award" style="vertical-align:middle;margin-inline-end:8px;color:var(--color-f);"></i>${esc(boeing.title)}</h3>
+            <h3 style="font-size:1.4rem;color:var(--text-primary);margin-bottom:15px;"><i data-lucide="award" style="vertical-align:middle;margin-inline-end:8px;color:var(--color-f);"></i>${esc(boeing.title)}</h3>
             <p style="font-size:0.95rem;line-height:1.8;color:var(--text-secondary);text-align:justify;margin-bottom:15px;">${boeing.intro}</p>
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px;">
                 ${boeing.cards.map(c => `<div style="background:rgba(255,255,255,0.02);padding:18px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);"><strong style="color:var(--color-f);display:block;margin-bottom:8px;">${c.title}</strong><p style="font-size:0.85rem;line-height:1.6;color:var(--text-secondary);">${c.body}</p></div>`).join('')}
@@ -114,7 +114,7 @@ function renderOverviewFeatures() {
     grid.innerHTML = features.map(f =>
         `<div class="step-card glass-card" style="padding:20px;border-top:3px solid var(--color-f);">
             <div style="color:var(--color-f);margin-bottom:10px;"><i data-lucide="${f.icon}"></i></div>
-            <h4 style="color:#fff;font-size:1rem;margin-bottom:8px;">${esc(f.title)}</h4>
+            <h4 style="color:var(--text-primary);font-size:1rem;margin-bottom:8px;">${esc(f.title)}</h4>
             <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">${esc(f.desc)}</p>
         </div>`
     ).join('');
@@ -140,7 +140,7 @@ function renderBrandFindGrid() {
         }
         return `<a href="${href}"${ext} class="step-card glass-card" style="padding:20px;border-top:3px solid var(--color-f);text-decoration:none;display:block;">
             <div style="color:var(--color-f);margin-bottom:10px;"><i data-lucide="${f.icon}"></i></div>
-            <h4 style="color:#fff;font-size:1rem;margin-bottom:8px;">${esc(f.title)}</h4>
+            <h4 style="color:var(--text-primary);font-size:1rem;margin-bottom:8px;">${esc(f.title)}</h4>
             <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">${esc(f.desc)}</p>
         </a>`;
     }).join('');
@@ -186,7 +186,7 @@ function renderBrandFocusGrid() {
     grid.innerHTML = focuses.map(f =>
         `<div class="step-card glass-card" style="padding:16px;border-inline-start:3px solid var(--color-f);">
             <div style="color:var(--color-f);margin-bottom:8px;"><i data-lucide="${f.icon}"></i></div>
-            <h4 style="color:#fff;font-size:0.95rem;margin-bottom:6px;">${f.title}</h4>
+            <h4 style="color:var(--text-primary);font-size:0.95rem;margin-bottom:6px;">${f.title}</h4>
             <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.5;">${f.desc}</p>
         </div>`
     ).join('');
@@ -202,7 +202,7 @@ function renderArticlesListLegacy() {
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:0.75rem;color:var(--text-secondary);">
                 <span>${a.date}</span><span class="section-tag" style="padding:2px 8px;font-size:0.7rem;">${a.tag}</span>
             </div>
-            <h3 style="color:#fff;font-size:1.05rem;">${a.title}</h3>
+            <h3 style="color:var(--text-primary);font-size:1.05rem;">${a.title}</h3>
             <span style="font-size:0.75rem;color:var(--color-f);">${a.status === 'draft' ? (getLang() === 'fa' ? 'پیش‌نویس' : 'Draft') : ''}</span>
         </article>`
     ).join('');
