@@ -1412,3 +1412,27 @@ body .fitness-page .fitness-section .section-header {
         line-height: 1.9;
     }
 }
+
+/* ── light theme (html[data-theme="light"]) ── */
+
+html[data-theme="light"] {
+    --sfh-bg: #f6f8fb;
+    --sfh-surface: #ffffff;
+    --sfh-surface-raised: #ffffff;
+    --sfh-border: rgba(15, 23, 42, 0.1);
+    --sfh-border-strong: rgba(15, 23, 42, 0.22);
+    --sfh-accent-muted: rgba(61, 139, 253, 0.1);
+    --sfh-text: #1e293b;
+    --sfh-text-muted: #475569;
+}
+
+html[data-theme="light"] body .page-hero h1,
+html[data-theme="light"] body .fitness-page .fitness-hero h1,
+html[data-theme="light"] body .type2-page .type2-hero h1 {
+    color: #0f172a;
+    -webkit-text-fill-color: #0f172a;
+}
+
+html[data-theme="light"] body .about-work-head h2 {
+    color: #0f172a;
+}

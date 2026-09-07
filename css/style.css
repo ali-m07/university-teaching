@@ -1,5 +1,5 @@
 /* Global Styles & Reset */
-@import url('academic-platform.css?v=20260723v2');
+@import url('academic-platform.css?v=20260907');
 
 :root {
     --bg-dark: #070a13;
@@ -581,6 +581,18 @@ html[dir="ltr"] .article-content {
     border: none;
     border-top: 1px solid var(--card-border);
     margin: 40px 0;
+}
+
+.article-content ol,
+.article-content ul {
+    color: var(--text-secondary);
+    line-height: 2;
+    margin: 0 1.25rem 22px;
+    padding-inline-start: 1.25rem;
+}
+
+.article-content li {
+    margin-bottom: 10px;
 }
 
 /* Typography EN Override */
@@ -6968,4 +6980,93 @@ iframe {
     .lesson-meta-chip {
         justify-content: center;
     }
+}
+
+/* ─────────────────── light theme ─────────────────── */
+/* Applied via <html data-theme="light"> (js/core/shared.js + head bootstrap).
+   Base palette flips; accents get darker variants to stay readable on light. */
+
+html[data-theme="light"] {
+    --bg-dark: #eef1f7;
+    --bg-dark-accent: #ffffff;
+    --card-bg: rgba(15, 23, 42, 0.03);
+    --card-border: rgba(15, 23, 42, 0.12);
+    --card-hover-border: rgba(15, 23, 42, 0.28);
+
+    --color-f: #0e7490;
+    --color-i: #be0a5c;
+    --color-t: #6d28d9;
+    --color-cla: #a16207;
+    --color-wheel-red: #c2410c;
+    --color-backcast: #047857;
+
+    --text-primary: #0f172a;
+    --text-secondary: #374151;
+    --text-muted: #6b7280;
+
+    --glow-f: 0 0 18px rgba(14, 116, 144, 0.16);
+    --glow-i: 0 0 18px rgba(190, 10, 92, 0.16);
+    --glow-t: 0 0 18px rgba(109, 40, 217, 0.16);
+    --glow-cla: 0 0 18px rgba(161, 98, 7, 0.16);
+    --glow-wheel-red: 0 0 18px rgba(194, 65, 12, 0.16);
+    --glow-backcast: 0 0 18px rgba(4, 120, 87, 0.16);
+}
+
+html[data-theme="light"] body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+html[data-theme="light"] .main-header {
+    background: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme="light"] .main-header.scrolled {
+    background: rgba(255, 255, 255, 0.92);
+}
+
+html[data-theme="light"] .main-footer {
+    background: #ffffff;
+}
+
+html[data-theme="light"] #particles-canvas {
+    opacity: 0.1;
+}
+
+/* inputs that hardcode dark wells */
+html[data-theme="light"] .ws-field input,
+html[data-theme="light"] .ws-branch-card input,
+html[data-theme="light"] .ws-o3-title {
+    background: rgba(15, 23, 42, 0.05);
+}
+
+html[data-theme="light"] .type2-select,
+html[data-theme="light"] .type2-input {
+    background: rgba(15, 23, 42, 0.05);
+    color: var(--text-primary);
+}
+
+html[data-theme="light"] .type2-select option {
+    background: #ffffff;
+    color: #0f172a;
+}
+
+/* theme toggle button icons: sun in dark (goes light), moon in light */
+.nav-theme-toggle .theme-ico--moon {
+    display: none;
+}
+
+html[data-theme="light"] .nav-theme-toggle .theme-ico--moon {
+    display: inline-flex;
+}
+
+html[data-theme="light"] .nav-theme-toggle .theme-ico--sun {
+    display: none;
+}
+
+.nav-theme-toggle svg {
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    vertical-align: middle;
 }

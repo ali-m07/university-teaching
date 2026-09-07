@@ -7,7 +7,9 @@
     'use strict';
 
     var SESSION_IDS = ['m1', 'm2', 'm3', 'm4'];
-    var state = { presenter: false, booted: false };
+    // Keep the explanation panel open by default. It sits outside fullscreen,
+    // so learners can study the deck while presentation mode stays clean.
+    var state = { presenter: true, booted: false };
 
     function W() {
         var l = window.getLang();
@@ -371,7 +373,9 @@
                 '<span><i data-lucide="gauge" aria-hidden="true"></i>' + esc(session.level) + '</span>',
                 '<span><i data-lucide="layers" aria-hidden="true"></i>' + num(total) + ' ' + esc(vl.slides) + '</span>'
             ].join('');
-            inner = '<div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--cover fitness-pres-content-wrapper--cover-clean">'
+            inner = (session.coverImage ? '<img class="aiw-cover-image" src="' + attr(fileUrl(session.coverImage)) + '" alt="' + attr(session.coverAlt || '') + '">' : '')
+                + '<div class="aiw-cover-shade" aria-hidden="true"></div>'
+                + '<div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--cover fitness-pres-content-wrapper--cover-clean">'
                 + '<p class="fitness-pres-eyebrow">' + esc(w.landing.tag) + ' · ' + esc(session.deckLabel) + '</p>'
                 + '<h1 class="fitness-pres-title">' + esc(slide.title) + '</h1>'
                 + (slide.lead ? '<p class="fitness-pres-subtitle">' + esc(slide.lead) + '</p>' : '')
@@ -447,6 +451,9 @@
             + '<div class="aiw-session-tools">'
             + '<span class="aiw-counter" aria-live="polite">' + num(1) + ' / ' + num(session.slides.length) + '</span>'
             + '<button type="button" class="aiw-presenter-btn" data-aiw-presenter><i data-lucide="presentation" aria-hidden="true"></i><span>' + esc(ui.presenterOn) + '</span></button>'
+            + (w.demos && w.demos.sessions && w.demos.sessions[session.id]
+                ? '<button type="button" class="aiw-presenter-btn" data-aiw-demo-open="' + esc(session.id) + '"><i data-lucide="flask-conical" aria-hidden="true"></i><span>' + esc(w.demos.openBtn) + '</span></button>'
+                : '')
             + '</div>'
             + '</header>'
             + '<div class="aiw-deck-slot" data-aiw-deck="' + session.id + '"></div>'
@@ -473,18 +480,22 @@
             }).join('') + '</ol></section>';
     }
 
-    function sessionCardHtml(session, L, ui, vl) {
+    function sessionCardHtml(session, L, ui, vl, w) {
         var chips = ''
             + '<span class="aiw-card-chip"><i data-lucide="clock-3" aria-hidden="true"></i>' + esc(session.duration) + '</span>'
             + '<span class="aiw-card-chip aiw-chip--' + esc(session.levelKind) + '"><i data-lucide="gauge" aria-hidden="true"></i>' + esc(session.level) + '</span>'
             + '<span class="aiw-card-chip"><i data-lucide="layers" aria-hidden="true"></i>' + num(session.slides.length) + ' ' + esc(vl.slides) + '</span>';
         return '<article class="aiw-card" data-aiw-level="' + esc(session.levelKind) + '">'
+            + (session.coverImage ? '<div class="aiw-card-image"><img src="' + attr(fileUrl(session.coverImage)) + '" alt="' + attr(session.coverAlt || '') + '" loading="lazy"></div>' : '')
             + '<div class="aiw-card-head"><span class="aiw-card-num">' + esc(session.num) + '</span><span class="aiw-card-chips">' + chips + '</span></div>'
             + '<h3>' + esc(session.title) + '</h3>'
             + '<p class="aiw-card-tag">' + esc(session.tagline) + '</p>'
             + (session.objective ? '<p class="aiw-card-goal">' + esc(session.objective) + '</p>' : '')
             + (session.plan ? '<p class="aiw-card-plan"><i data-lucide="list-checks" aria-hidden="true"></i>' + esc(session.plan) + '</p>' : '')
             + '<a class="aiw-card-cta" href="#' + session.id + '" data-aiw-go="' + session.id + '"><i data-lucide="play" aria-hidden="true"></i>' + esc(L.ctaWatch) + '</a>'
+            + (w.demos && w.demos.sessions && w.demos.sessions[session.id]
+                ? '<a class="aiw-card-demo" href="#' + session.id + '" data-aiw-go="' + session.id + '" data-aiw-demo-auto="' + session.id + '"><i data-lucide="flask-conical" aria-hidden="true"></i>' + esc(w.demos.openBtn) + '</a>'
+                : '')
             + '</article>';
     }
 
@@ -532,7 +543,7 @@
             + '<div class="aiw-central"><h3><i data-lucide="lightbulb" aria-hidden="true"></i>' + esc(L.centralTitle) + '</h3><p>' + esc(L.central) + '</p></div>'
             + '</section>'
             + '<section class="aiw-sessions" id="aiw-sessions"><h2>' + esc(L.sessionsTitle) + '</h2>'
-            + '<div class="aiw-cards">' + w.sessions.map(function (s) { return sessionCardHtml(s, L, ui, vl); }).join('') + '</div>'
+            + '<div class="aiw-cards">' + w.sessions.map(function (s) { return sessionCardHtml(s, L, ui, vl, w); }).join('') + '</div>'
             + '</section>'
             + exercisesHtml(w, L, ui)
             + (L.toolsNote ? '<p class="aiw-tools-note"><i data-lucide="info" aria-hidden="true"></i>' + esc(L.toolsNote) + '</p>' : '')
@@ -604,6 +615,10 @@
                 if (deck && idx === 0) deck.focus({ preventScroll: true });
             }
         });
+        if (state.demoAuto && route !== 'top' && state.demoAuto === route) {
+            state.demoAuto = null;
+            openDemo(route);
+        }
         var landing = document.getElementById('aiw-landing');
         if (landing) landing.hidden = route !== 'top';
         if (route !== 'top') {
@@ -640,6 +655,141 @@
         return { id: route, index: active ? Number(active.getAttribute('data-pres-index')) || 0 : 0 };
     }
 
+    /* ── interactive demo mode (educational simulation, no real services) ── */
+
+    var demo = { sid: null, step: 0, lastFocus: null };
+
+    function demoData(sid) {
+        var w = W();
+        return w && w.demos && w.demos.sessions ? w.demos.sessions[sid] || null : null;
+    }
+
+    function demoStepHtml(step, roles) {
+        var kind = step.kind || 'note';
+        var icons = { user: 'user-round', ai: 'bot', system: 'monitor-smartphone', error: 'triangle-alert', note: 'lightbulb', human: 'user-check' };
+        var html = '<div class="aiw-dstep aiw-dstep--' + esc(kind) + '">'
+            + '<span class="aiw-dstep-badge"><i data-lucide="' + (icons[kind] || 'circle') + '" aria-hidden="true"></i>' + esc(roles[kind] || kind) + '</span>'
+            + '<div class="aiw-dstep-text"><p>' + esc(step.text || '') + '</p>';
+        if (step.table && step.table.head) {
+            var th = step.table.head.map(function (h) { return '<th scope="col">' + esc(h) + '</th>'; }).join('');
+            var tr = (step.table.rows || []).map(function (r) {
+                return '<tr>' + (r || []).map(function (c) { return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>';
+            }).join('');
+            html += '<div class="aiw-dstep-table"><table><thead><tr>' + th + '</tr></thead><tbody>' + tr + '</tbody></table></div>';
+        }
+        return html + '</div></div>';
+    }
+
+    function demoPanelEnsure() {
+        var panel = document.querySelector('[data-aiw-demo-panel]');
+        if (panel) return panel;
+        panel = document.createElement('div');
+        panel.className = 'aiw-demo-overlay';
+        panel.setAttribute('data-aiw-demo-panel', '');
+        panel.setAttribute('role', 'dialog');
+        panel.setAttribute('aria-modal', 'true');
+        panel.hidden = true;
+        document.body.appendChild(panel);
+        // Physical arrow keys keep the deck's convention: Right/Down = next.
+        // stopPropagation keeps the underlying deck and its Escape handler quiet.
+        panel.addEventListener('keydown', function (ev) {
+            if (demo.sid == null) return;
+            if (['ArrowRight', 'ArrowDown', 'PageDown'].indexOf(ev.key) >= 0) { ev.preventDefault(); ev.stopPropagation(); demoGo(demo.step + 1); }
+            else if (['ArrowLeft', 'ArrowUp', 'PageUp'].indexOf(ev.key) >= 0) { ev.preventDefault(); ev.stopPropagation(); demoGo(demo.step - 1); }
+            else if (ev.key === 'Escape') { ev.stopPropagation(); closeDemo(); }
+            else if (ev.key === 'Home') { ev.preventDefault(); ev.stopPropagation(); demoGo(0); }
+            else if (ev.key === 'End') { ev.preventDefault(); ev.stopPropagation(); var d = demoData(demo.sid); if (d) demoGo(d.steps.length - 1); }
+        });
+        panel.addEventListener('click', function (ev) {
+            if (ev.target === panel) closeDemo();
+        });
+        return panel;
+    }
+
+    function demoRender() {
+        var panel = demoPanelEnsure();
+        if (demo.sid == null) { panel.hidden = true; return; }
+        var w = W();
+        var D = w.demos;
+        var data = demoData(demo.sid);
+        if (!D || !data) { panel.hidden = true; return; }
+        var roles = D.roles || {};
+        var steps = data.steps || [];
+        var shown = Math.max(0, Math.min(demo.step, steps.length - 1));
+        demo.step = shown;
+        var html = '';
+        for (var i = 0; i <= shown; i++) html += demoStepHtml(steps[i], roles);
+        var done = shown >= steps.length - 1;
+        var backIcon = isFa() ? 'arrow-right' : 'arrow-left';
+        var fwdIcon = isFa() ? 'arrow-left' : 'arrow-right';
+        panel.innerHTML = ''
+            + '<div class="aiw-demo-box" dir="' + dirAttr() + '">'
+            + '<div class="aiw-demo-head">'
+            + '<div class="aiw-demo-head-txt"><span class="aiw-demo-badge"><i data-lucide="flask-conical" aria-hidden="true"></i>' + esc(D.badge) + '</span><h3>' + esc(data.title) + '</h3></div>'
+            + '<button type="button" class="aiw-demo-close" data-aiw-demo-close aria-label="' + attr(D.closeLabel) + '" title="' + attr(D.closeLabel) + '"><i data-lucide="x" aria-hidden="true"></i></button>'
+            + '</div>'
+            + '<p class="aiw-demo-scenario"><strong>' + esc(D.scenarioLabel) + ':</strong> ' + esc(data.scenario) + '</p>'
+            + '<p class="aiw-demo-disclaimer"><i data-lucide="shield-alert" aria-hidden="true"></i><span>' + esc(D.disclaimer) + '</span></p>'
+            + '<div class="aiw-demo-steps" data-aiw-demo-steps tabindex="0">' + html + '</div>'
+            + '<div class="aiw-demo-foot">'
+            + '<button type="button" class="aiw-demo-btn" data-aiw-demo-prev' + (shown <= 0 ? ' disabled' : '') + '><i data-lucide="' + backIcon + '" aria-hidden="true"></i><span>' + esc(D.prev) + '</span></button>'
+            + '<span class="aiw-demo-count" aria-live="polite">' + esc(D.stepLabel + ' ' + num(shown + 1) + ' ' + D.ofLabel + ' ' + num(steps.length)) + '</span>'
+            + '<button type="button" class="aiw-demo-btn aiw-demo-btn--primary" data-aiw-demo-next' + (done ? ' disabled' : '') + '><span>' + esc(D.next) + '</span><i data-lucide="' + fwdIcon + '" aria-hidden="true"></i></button>'
+            + '<button type="button" class="aiw-demo-btn" data-aiw-demo-restart><i data-lucide="rotate-ccw" aria-hidden="true"></i><span>' + esc(D.restart) + '</span></button>'
+            + '</div>'
+            + '</div>';
+        panel.hidden = false;
+        var stepsEl = panel.querySelector('[data-aiw-demo-steps]');
+        if (stepsEl) stepsEl.scrollTop = stepsEl.scrollHeight;
+        if (window.lucide) window.lucide.createIcons();
+    }
+
+    function openDemo(sid) {
+        if (!demoData(sid)) return;
+        demo.sid = sid;
+        demo.step = 0;
+        if (document.fullscreenElement && document.exitFullscreen) {
+            try { document.exitFullscreen().catch(function () { }); } catch (e) { /* non-fatal */ }
+        }
+        demoRender();
+        document.body.classList.add('aiw-demo-open');
+        var panel = document.querySelector('[data-aiw-demo-panel]');
+        var closeBtn = panel ? panel.querySelector('[data-aiw-demo-close]') : null;
+        if (closeBtn) closeBtn.focus();
+        try {
+            var u = new URL(location.href);
+            u.searchParams.set('demo', sid);
+            history.replaceState(null, '', u);
+        } catch (e) { /* non-fatal */ }
+    }
+
+    function closeDemo() {
+        if (demo.sid == null) return;
+        demo.sid = null;
+        demo.step = 0;
+        var panel = document.querySelector('[data-aiw-demo-panel]');
+        if (panel) panel.hidden = true;
+        document.body.classList.remove('aiw-demo-open');
+        try {
+            var u = new URL(location.href);
+            u.searchParams.delete('demo');
+            history.replaceState(null, '', u);
+        } catch (e) { /* non-fatal */ }
+        if (demo.lastFocus && document.contains(demo.lastFocus)) {
+            try { demo.lastFocus.focus({ preventScroll: true }); } catch (e) { /* non-fatal */ }
+        }
+    }
+
+    function demoGo(step) {
+        if (demo.sid == null) return;
+        var d = demoData(demo.sid);
+        if (!d) return;
+        var s = Math.max(0, Math.min(step, d.steps.length - 1));
+        if (s === demo.step) return;
+        demo.step = s;
+        demoRender();
+    }
+
     /* ── full render (first boot + langchange) ── */
 
     function renderAll() {
@@ -665,6 +815,7 @@
         applyRoute(remembered);
         setPresenter(state.presenter);
         if (window.lucide) window.lucide.createIcons();
+        if (demo.sid != null) demoRender();
         var fallback = document.getElementById('aiw-noscript-hero');
         if (fallback) fallback.hidden = true;
     }
@@ -674,13 +825,38 @@
         if (!root) return;
         if (/presenter=1/.test(location.search)) state.presenter = true;
 
-        window.addEventListener('hashchange', function () { applyRoute(null); });
+        // ?demo=m1..m4 opens a session's demo on arrival; ?demo=1 = current session.
+        var demoParam = (location.search.match(/[?&]demo=(m[1-4]|1)\b/) || [])[1];
+        if (demoParam) state.demoAuto = demoParam === '1' ? (parseRoute() !== 'top' ? parseRoute() : 'm1') : demoParam;
+
+        window.addEventListener('hashchange', function () {
+            if (demo.sid != null && parseRoute() !== demo.sid) closeDemo();
+            applyRoute(null);
+        });
+
+        document.addEventListener('click', function (ev) {
+            var opener = ev.target.closest && ev.target.closest('[data-aiw-demo-open]');
+            if (opener) {
+                demo.lastFocus = opener;
+                openDemo(opener.getAttribute('data-aiw-demo-open'));
+                return;
+            }
+            if (demo.sid == null) return;
+            var panel = document.querySelector('[data-aiw-demo-panel]');
+            if (!panel || !panel.contains(ev.target)) return;
+            if (ev.target.closest('[data-aiw-demo-close]')) closeDemo();
+            else if (ev.target.closest('[data-aiw-demo-next]')) demoGo(demo.step + 1);
+            else if (ev.target.closest('[data-aiw-demo-prev]')) demoGo(demo.step - 1);
+            else if (ev.target.closest('[data-aiw-demo-restart]')) demoGo(0);
+        });
 
         document.addEventListener('click', function (ev) {
             var go = ev.target.closest && ev.target.closest('[data-aiw-go]');
             if (!go) return;
             ev.preventDefault();
             var target = go.getAttribute('data-aiw-go');
+            var auto = go.getAttribute('data-aiw-demo-auto');
+            state.demoAuto = auto || null;
             var hash = target === 'top' ? '#top' : '#' + target;
             if (location.hash === hash) applyRoute(null);
             else location.hash = hash;

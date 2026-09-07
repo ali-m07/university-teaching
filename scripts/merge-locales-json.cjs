@@ -10,7 +10,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.join(__dirname, '..');
-const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'type2-university-modules', 'fitness', 'fitness-university-modules', 'cla', 'cla-university-modules', 'wheel', 'wheel-university-modules', 'backcast', 'backcast-university-modules', 'scenarios-university-modules', 'hines-university-modules', 'popper-university-modules', 'scanning-university-modules', 'weak-signals-university-modules', 'literacy-university-modules', 'futurpreneur-university-modules', 'ai-org-workshop'];
+const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'type2-university-modules', 'fitness', 'fitness-university-modules', 'cla', 'cla-university-modules', 'wheel', 'wheel-university-modules', 'backcast', 'backcast-university-modules', 'scenarios-university-modules', 'hines-university-modules', 'popper-university-modules', 'scanning-university-modules', 'weak-signals-university-modules', 'literacy-university-modules', 'futurpreneur-university-modules', 'ai-org-workshop', 'pres-catalog'];
 const LANGS = ['fa', 'en'];
 const OUTPUT_DIRS = [
     path.join(ROOT, 'public', 'locales'),

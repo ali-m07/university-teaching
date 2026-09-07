@@ -16,7 +16,8 @@ registerLocale('en', {
             wheel: 'Futures Wheel',
             backcast: 'Backcasting',
             assess: 'Maturity Assessment',
-            menu: 'Menu'
+            menu: 'Menu',
+            themeToggle: 'Toggle light/dark mode'
         },
         footer: {
             desc: 'Ali Mansouri\'s strategic foresight hub · methods, workshops, and notes · University of Tehran',

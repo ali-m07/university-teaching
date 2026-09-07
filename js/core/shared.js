@@ -1,6 +1,27 @@
 /**
- * Shared UI: navigation, language toggle, header scroll
+ * Shared UI: navigation, language toggle, header scroll, site theme
  */
+
+/* Site theme (light/dark). An inline bootstrap in <head> sets <html data-theme>
+   before first paint; these functions only handle switching at runtime. */
+function getTheme() {
+    return document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+}
+
+function setTheme(theme) {
+    const next = theme === 'light' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem('sfh-theme', next); } catch (e) { /* non-fatal */ }
+    document.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));
+}
+
+function toggleTheme() {
+    setTheme(getTheme() === 'light' ? 'dark' : 'light');
+}
+
+window.getTheme = getTheme;
+window.setTheme = setTheme;
+window.toggleTheme = toggleTheme;
 
 function initMobileNav() {
     const header = document.querySelector('.main-header');
@@ -97,6 +118,8 @@ function buildStandardNav() {
     });
     const nextLang = typeof getLang === 'function' && getLang() === 'en' ? 'FA' : 'EN';
     links.push(`<button type="button" class="nav-lang-toggle" onclick="toggleLang()" aria-label="Switch language">${nextLang}</button>`);
+    const themeLabel = typeof t === 'function' ? t('nav.themeToggle') : 'Toggle light/dark theme';
+    links.push(`<button type="button" class="nav-lang-toggle nav-theme-toggle" onclick="toggleTheme()" aria-label="${themeLabel}" title="${themeLabel}"><i data-lucide="sun" class="theme-ico theme-ico--sun"></i><i data-lucide="moon" class="theme-ico theme-ico--moon"></i></button>`);
     nav.innerHTML = links.join('');
     if (typeof window.syncHeaderOffset === 'function') window.syncHeaderOffset();
 }

@@ -694,6 +694,58 @@
     display: block;
 }
 
+/* Session artwork: one narrative image per deck, reused as its landing preview. */
+.aiw-cover-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.aiw-cover-shade {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(3, 12, 24, 0.98) 0%, rgba(3, 12, 24, 0.86) 42%, rgba(3, 12, 24, 0.2) 78%, rgba(3, 12, 24, 0.06) 100%);
+}
+
+.fitness-pres[dir="rtl"] .aiw-cover-shade {
+    background: linear-gradient(270deg, rgba(3, 12, 24, 0.98) 0%, rgba(3, 12, 24, 0.86) 42%, rgba(3, 12, 24, 0.2) 78%, rgba(3, 12, 24, 0.06) 100%);
+}
+
+.fitness-pres-slide--cover .fitness-pres-slide-container {
+    position: relative;
+    z-index: 2;
+}
+
+.aiw-card-image {
+    height: 180px;
+    margin: -1px -1px 18px;
+    overflow: hidden;
+    border-radius: inherit;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background: #071626;
+}
+
+.aiw-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 420ms ease;
+}
+
+.aiw-card:hover .aiw-card-image img {
+    transform: scale(1.025);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aiw-card-image img { transition: none; }
+    .aiw-card:hover .aiw-card-image img { transform: none; }
+}
+
 .aiw-notes-head h3 {
     font-size: 0.9rem;
     font-weight: 800;
@@ -2105,4 +2157,524 @@
     .aiw-card:hover {
         transform: none;
     }
+}
+
+/* ─────────────────── interactive demo overlay ─────────────────── */
+/* Panel lives on <body>, outside #aiw-root, so it re-declares its palette.
+   Colors follow the page identity: AI=purple, human=gold, data=teal, risk=rose. */
+
+.aiw-demo-overlay {
+    --aiw-ai: var(--color-t, #7c4dff);
+    --aiw-human: var(--color-cla, #ffaa00);
+    --aiw-data: var(--color-f, #00e5ff);
+    --aiw-risk: var(--color-i, #ff007f);
+    --aiw-ok: var(--color-backcast, #00ff88);
+    --dmo-user: #4d9fff;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background: rgba(2, 4, 10, 0.72);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.aiw-demo-overlay[hidden] {
+    display: none;
+}
+
+body.aiw-demo-open {
+    overflow: hidden;
+}
+
+.aiw-demo-box {
+    width: min(780px, 100%);
+    max-height: 86vh;
+    display: flex;
+    flex-direction: column;
+    background: #0b0f1c;
+    border: 1px solid var(--aiw-border, rgba(255, 255, 255, 0.09));
+    border-radius: var(--aiw-radius, 14px);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+    animation: aiw-demo-in 0.18s ease-out;
+}
+
+@keyframes aiw-demo-in {
+    from { opacity: 0; transform: translateY(10px) scale(0.99); }
+    to { opacity: 1; transform: none; }
+}
+
+.aiw-demo-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 18px 12px;
+    border-bottom: 1px solid var(--aiw-border, rgba(255, 255, 255, 0.09));
+}
+
+.aiw-demo-head-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.aiw-demo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    align-self: flex-start;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: var(--aiw-ai);
+    background: rgba(124, 77, 255, 0.14);
+    border: 1px solid rgba(124, 77, 255, 0.35);
+    border-radius: 999px;
+    padding: 3px 11px;
+}
+
+.aiw-demo-badge svg {
+    width: 13px;
+    height: 13px;
+}
+
+.aiw-demo-head h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.aiw-demo-close {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    border: 1px solid var(--aiw-border, rgba(255, 255, 255, 0.09));
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-secondary, #9ca3af);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.aiw-demo-close:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.aiw-demo-close svg {
+    width: 16px;
+    height: 16px;
+}
+
+.aiw-demo-scenario {
+    margin: 0;
+    padding: 10px 18px 0;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--text-primary, #f3f4f6);
+}
+
+.aiw-demo-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    margin: 8px 18px 0;
+    padding: 8px 12px;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: var(--aiw-human);
+    background: rgba(255, 170, 0, 0.1);
+    border: 1px solid rgba(255, 170, 0, 0.28);
+    border-radius: 9px;
+}
+
+.aiw-demo-disclaimer svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.aiw-demo-steps {
+    flex: 1;
+    min-height: 120px;
+    overflow-y: auto;
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aiw-dstep {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 11px;
+    border: 1px solid var(--aiw-border, rgba(255, 255, 255, 0.09));
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.aiw-dstep-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    border-radius: 999px;
+    padding: 3px 9px;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+.aiw-dstep-badge svg {
+    width: 12px;
+    height: 12px;
+}
+
+.aiw-dstep-text {
+    min-width: 0;
+}
+
+.aiw-dstep-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: var(--text-primary, #f3f4f6);
+}
+
+/* role colors — user=blue, ai=purple, system=teal, error=rose, note=amber, human=green */
+.aiw-dstep--user { border-inline-start: 3px solid var(--dmo-user); }
+.aiw-dstep--user .aiw-dstep-badge { color: var(--dmo-user); background: rgba(77, 159, 255, 0.13); }
+
+.aiw-dstep--ai { border-inline-start: 3px solid var(--aiw-ai); }
+.aiw-dstep--ai .aiw-dstep-badge { color: var(--aiw-ai); background: rgba(124, 77, 255, 0.14); }
+
+.aiw-dstep--system { border-inline-start: 3px solid var(--aiw-data); }
+.aiw-dstep--system .aiw-dstep-badge { color: var(--aiw-data); background: rgba(0, 229, 255, 0.1); }
+
+.aiw-dstep--error { border-inline-start: 3px solid var(--aiw-risk); background: rgba(255, 0, 127, 0.05); }
+.aiw-dstep--error .aiw-dstep-badge { color: var(--aiw-risk); background: rgba(255, 0, 127, 0.13); }
+
+.aiw-dstep--note { border-inline-start: 3px solid var(--aiw-human); background: rgba(255, 170, 0, 0.05); }
+.aiw-dstep--note .aiw-dstep-badge { color: var(--aiw-human); background: rgba(255, 170, 0, 0.12); }
+
+.aiw-dstep--human { border-inline-start: 3px solid var(--aiw-ok); background: rgba(0, 255, 136, 0.05); }
+.aiw-dstep--human .aiw-dstep-badge { color: var(--aiw-ok); background: rgba(0, 255, 136, 0.11); }
+
+.aiw-dstep-table {
+    margin-top: 10px;
+    overflow-x: auto;
+    border: 1px solid var(--aiw-border, rgba(255, 255, 255, 0.09));
+    border-radius: 9px;
+}
+
+.aiw-dstep-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+.aiw-dstep-table th,
+.aiw-dstep-table td {
+    padding: 6px 10px;
+    text-align: start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    white-space: nowrap;
+}
+
+.aiw-dstep-table th {
+    color: var(--aiw-data);
+    font-weight: 700;
+    background: rgba(0, 229, 255, 0.05);
+}
+
+.aiw-dstep-table tr:last-child td {
+    border-bottom: none;
+}
+
+.aiw-demo-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 12px 18px 16px;
+    border-top: 1px solid var(--aiw-border, rgba(255, 255, 255, 0.09));
+}
+
+.aiw-demo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-primary, #f3f4f6);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--aiw-border, rgba(255, 255, 255, 0.12));
+    border-radius: 9px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: filter 0.15s ease, border-color 0.15s ease;
+}
+
+.aiw-demo-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+.aiw-demo-btn:hover:not(:disabled) {
+    border-color: rgba(255, 255, 255, 0.3);
+    filter: brightness(1.2);
+}
+
+.aiw-demo-btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.aiw-demo-btn--primary {
+    color: #fff;
+    background: linear-gradient(120deg, var(--aiw-ai), var(--aiw-data));
+    border-color: transparent;
+}
+
+.aiw-demo-count {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary, #9ca3af);
+    min-width: 90px;
+    text-align: center;
+}
+
+/* focus visibility inside the overlay (outside #aiw-root scope) */
+.aiw-demo-overlay button:focus-visible,
+.aiw-demo-overlay [tabindex]:focus-visible {
+    outline: 2px solid var(--aiw-data);
+    outline-offset: 2px;
+    border-radius: 8px;
+}
+
+/* landing: secondary demo link under each card CTA */
+.aiw-card-demo {
+    margin-top: 10px;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--aiw-data);
+    text-decoration: none;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.aiw-card-demo:hover {
+    background: var(--aiw-data-soft);
+    border-color: rgba(0, 229, 255, 0.55);
+}
+
+.aiw-card-demo svg {
+    width: 14px;
+    height: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aiw-demo-box {
+        animation: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .aiw-demo-overlay {
+        padding: 10px;
+        align-items: stretch;
+    }
+
+    .aiw-demo-box {
+        max-height: 94vh;
+    }
+
+    .aiw-demo-steps {
+        padding: 10px 12px;
+    }
+
+    .aiw-dstep {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+/* ─────────────────── light theme (html[data-theme="light"]) ─────────────────── */
+
+#aiw-root {
+    /* base definitions live above; nothing needed here — kept for clarity */
+}
+
+html[data-theme="light"] #aiw-root {
+    --aiw-panel: rgba(15, 23, 42, 0.03);
+    --aiw-border: rgba(15, 23, 42, 0.12);
+}
+
+/* landing */
+html[data-theme="light"] .aiw-hero h1 {
+    background: linear-gradient(120deg, #0f172a 30%, #6d28d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+html[data-theme="light"] .aiw-card-chip {
+    background: rgba(15, 23, 42, 0.04);
+}
+
+html[data-theme="light"] .aiw-file-btn {
+    color: #0e7490;
+    background: rgba(14, 116, 144, 0.08);
+    border-color: rgba(14, 116, 144, 0.3);
+}
+
+/* demo overlay */
+html[data-theme="light"] .aiw-demo-overlay {
+    background: rgba(15, 23, 42, 0.35);
+}
+
+html[data-theme="light"] .aiw-demo-box {
+    background: #ffffff;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, 0.2);
+}
+
+html[data-theme="light"] .aiw-demo-head,
+html[data-theme="light"] .aiw-demo-foot,
+html[data-theme="light"] .aiw-dstep,
+html[data-theme="light"] .aiw-dstep-table {
+    border-color: rgba(15, 23, 42, 0.12);
+}
+
+html[data-theme="light"] .aiw-demo-head h3 {
+    color: #0f172a;
+}
+
+html[data-theme="light"] .aiw-demo-close {
+    background: rgba(15, 23, 42, 0.04);
+    color: #374151;
+}
+
+html[data-theme="light"] .aiw-demo-close:hover {
+    color: #0f172a;
+    border-color: rgba(15, 23, 42, 0.3);
+}
+
+html[data-theme="light"] .aiw-demo-btn {
+    color: #0f172a;
+    background: rgba(15, 23, 42, 0.04);
+}
+
+html[data-theme="light"] .aiw-demo-btn:hover:not(:disabled) {
+    border-color: rgba(15, 23, 42, 0.3);
+}
+
+html[data-theme="light"] .aiw-dstep {
+    background: rgba(15, 23, 42, 0.025);
+}
+
+html[data-theme="light"] .aiw-dstep-table th,
+html[data-theme="light"] .aiw-dstep-table td {
+    border-bottom-color: rgba(15, 23, 42, 0.1);
+}
+
+html[data-theme="light"] .aiw-dstep-table th {
+    background: rgba(14, 116, 144, 0.06);
+}
+
+/* in-deck panels (shared pattern: white-translucent bg + white-translucent border) */
+html[data-theme="light"] .fitness-pres .aiw-tk-node,
+html[data-theme="light"] .fitness-pres .aiw-steps-flow li,
+html[data-theme="light"] .fitness-pres .aiw-scale-owner,
+html[data-theme="light"] .fitness-pres .aiw-scale,
+html[data-theme="light"] .fitness-pres .aiw-rag-node,
+html[data-theme="light"] .fitness-pres .aiw-prompt-box,
+html[data-theme="light"] .fitness-pres .aiw-phase,
+html[data-theme="light"] .fitness-pres .aiw-mat,
+html[data-theme="light"] .fitness-pres .aiw-job-col,
+html[data-theme="light"] .fitness-pres .aiw-hire-step,
+html[data-theme="light"] .fitness-pres .aiw-ha-log,
+html[data-theme="light"] .fitness-pres .aiw-ha-col,
+html[data-theme="light"] .fitness-pres .aiw-family,
+html[data-theme="light"] .fitness-pres .aiw-demo-steps li,
+html[data-theme="light"] .fitness-pres .aiw-auth-step,
+html[data-theme="light"] .fitness-pres .aiw-arch-tier,
+html[data-theme="light"] .fitness-pres .aiw-arch-log {
+    background: rgba(15, 23, 42, 0.035);
+    border-color: rgba(15, 23, 42, 0.12);
+}
+
+/* in-deck white text → dark slate */
+html[data-theme="light"] .fitness-pres .aiw-tk-out-label,
+html[data-theme="light"] .fitness-pres .aiw-tk-node svg,
+html[data-theme="light"] .fitness-pres .aiw-time,
+html[data-theme="light"] .fitness-pres .aiw-sources-line,
+html[data-theme="light"] .fitness-pres .aiw-scale-owner,
+html[data-theme="light"] .fitness-pres .aiw-scale-ex,
+html[data-theme="light"] .fitness-pres .aiw-research p,
+html[data-theme="light"] .fitness-pres .aiw-phase p,
+html[data-theme="light"] .fitness-pres .aiw-mat-label,
+html[data-theme="light"] .fitness-pres .aiw-lane-stage,
+html[data-theme="light"] .fitness-pres .aiw-job-col span,
+html[data-theme="light"] .fitness-pres .aiw-hire-label,
+html[data-theme="light"] .fitness-pres .aiw-hire-delay,
+html[data-theme="light"] .fitness-pres .aiw-ha-log,
+html[data-theme="light"] .fitness-pres .aiw-ha-item,
+html[data-theme="light"] .fitness-pres .aiw-family span,
+html[data-theme="light"] .fitness-pres .aiw-family em,
+html[data-theme="light"] .fitness-pres .aiw-demo-error p,
+html[data-theme="light"] .fitness-pres .aiw-cover-meta,
+html[data-theme="light"] .fitness-pres .aiw-chip,
+html[data-theme="light"] .fitness-pres .aiw-auth-label,
+html[data-theme="light"] .fitness-pres .aiw-auth-ends,
+html[data-theme="light"] .fitness-pres .aiw-arch-tag,
+html[data-theme="light"] .fitness-pres .aiw-arch-log,
+html[data-theme="light"] .fitness-pres .aiw-arch-item svg {
+    color: rgba(15, 23, 42, 0.72);
+}
+
+/* in-deck misc whites: numerals, dots, chips */
+html[data-theme="light"] .fitness-pres .aiw-steps-flow li::before,
+html[data-theme="light"] .fitness-pres .aiw-list--ordered > li::before,
+html[data-theme="light"] .fitness-pres .aiw-demo-steps li::before,
+html[data-theme="light"] .fitness-pres .aiw-mat-num,
+html[data-theme="light"] .fitness-pres .aiw-hire-num {
+    color: #0f172a;
+}
+
+html[data-theme="light"] .fitness-pres .aiw-auth-dot {
+    border-color: rgba(15, 23, 42, 0.25);
+}
+
+html[data-theme="light"] .fitness-pres .fitness-pres-table th {
+    color: #0e7490;
+}
+
+html[data-theme="light"] .fitness-pres .aiw-phase-tag {
+    color: #0f172a;
+}
+
+html[data-theme="light"] .fitness-pres .aiw-job-core {
+    color: #0f172a;
 }

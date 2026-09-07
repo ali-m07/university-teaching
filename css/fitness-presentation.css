@@ -732,3 +732,71 @@
         grid-column: 1 / -1;
     }
 }
+
+/* ── light theme (html[data-theme="light"]) ── */
+
+html[data-theme="light"] .fitness-pres {
+    background: #ffffff;
+    color: #0f172a;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+html[data-theme="light"] .fitness-pres:fullscreen,
+html[data-theme="light"] .fitness-pres.is-fs-active {
+    background: #f8fafc;
+}
+
+html[data-theme="light"] .fitness-pres-toolbar > * {
+    border: 1px solid rgba(15, 23, 42, 0.18);
+    color: #0f172a;
+}
+
+html[data-theme="light"] .fitness-pres-module-badge,
+html[data-theme="light"] .fitness-pres-fs-btn {
+    background: rgba(15, 23, 42, 0.06);
+    color: #0f172a;
+}
+
+html[data-theme="light"] .fitness-pres-title {
+    color: #0f172a;
+}
+
+html[data-theme="light"] .fitness-pres-cover-box {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+html[data-theme="light"] .fitness-pres-glass {
+    background: rgba(15, 23, 42, 0.04);
+    border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+html[data-theme="light"] .fitness-pres-lead {
+    color: rgba(15, 23, 42, 0.9);
+}
+
+html[data-theme="light"] .fitness-pres-figure {
+    background: rgba(15, 23, 42, 0.04);
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+html[data-theme="light"] .fitness-pres-img {
+    background: rgba(15, 23, 42, 0.03);
+}
+
+html[data-theme="light"] .fitness-pres-caption {
+    color: rgba(15, 23, 42, 0.7);
+    background: rgba(255, 255, 255, 0.85);
+}
+
+html[data-theme="light"] .fitness-pres-nav {
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+html[data-theme="light"] .fitness-pres-nav-btn:disabled {
+    background: rgba(15, 23, 42, 0.08);
+    color: rgba(15, 23, 42, 0.45);
+}

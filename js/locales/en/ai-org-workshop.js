@@ -89,6 +89,8 @@ registerLocale('en', {
         sessions: [
             {
                 id: 'm1',
+                coverImage: "assets/workshop/images/session-1-human-ai-collaboration.png",
+                coverAlt: "A professional collaborating with AI to organize documents and everyday work",
                 num: '1',
                 deckLabel: 'Session 1',
                 title: 'AI in the Language of Everyday Work',
@@ -286,6 +288,8 @@ registerLocale('en', {
             },
             {
                 id: 'm2',
+                coverImage: "assets/workshop/images/session-2-organizational-use-cases.png",
+                coverAlt: "AI applications across different functions in an organization",
                 num: '2',
                 deckLabel: 'Session 2',
                 title: 'Mapping Applications and Enterprise Tools',
@@ -508,6 +512,8 @@ registerLocale('en', {
             },
             {
                 id: 'm3',
+                coverImage: "assets/workshop/images/session-3-knowledge-workflow.png",
+                coverAlt: "Documents, organizational chat and ticketing connected through a human-supervised assistant",
                 num: '3',
                 deckLabel: 'Session 3',
                 title: 'Enterprise Assistants and Smart Workflows',
@@ -727,6 +733,8 @@ registerLocale('en', {
             },
             {
                 id: 'm4',
+                coverImage: "assets/workshop/images/session-4-process-redesign.png",
+                coverAlt: "Recruiting, onboarding and pilot evaluation supported by AI",
                 num: '4',
                 deckLabel: 'Session 4',
                 title: 'Process Redesign and Running a Pilot',
@@ -954,6 +962,123 @@ registerLocale('en', {
                     }
                 ]
             }
-        ]
+        ],
+        demos: {
+            badge: 'Educational simulation',
+            disclaimer: 'This demo is a browser-side educational simulation and is not connected to any real service (model, Jira, Mattermost, or HR system). All names and data are fictional.',
+            openBtn: 'Run the demo',
+            closeLabel: 'Close demo',
+            restart: 'Restart',
+            next: 'Next step',
+            prev: 'Previous step',
+            stepLabel: 'Step',
+            ofLabel: 'of',
+            scenarioLabel: 'Scenario',
+            roles: {
+                user: 'User',
+                ai: 'AI assistant',
+                system: 'Tool',
+                error: 'Error',
+                note: 'Teaching note',
+                human: 'Human'
+            },
+            sessions: {
+                m1: {
+                    title: 'Demo: meeting minutes, from vague to structured',
+                    scenario: 'The weekly sync of Sepehr’s support team. The raw minutes contain two firm decisions, one decision with no owner, one unapproved proposal, two conflicting deadlines, and one sensitive item. The full text is in the Session 1 exercise file; all data is fictional.',
+                    steps: [
+                        { kind: 'user', text: 'Vague prompt: “Summarize these meeting minutes.”' },
+                        { kind: 'ai', text: 'Output 1 — “In this meeting it was decided that the backup server will be migrated, the current SMS campaign will stop, a night shift will be added to support, and the ticketing tool will switch to Jira; deadlines are end of week and August 15.”' },
+                        { kind: 'note', text: 'Three errors in output 1: the ticketing switch is still a proposal but is written as decided; the night shift has no owner in the text yet the output lists it as firm; two incompatible deadlines sit side by side with no warning.' },
+                        { kind: 'user', text: 'Structured prompt: “List only the items explicitly announced as firm decisions, in a table with columns item, owner, and deadline. Mark a decision with no owner as needs an owner. List unapproved proposals in a separate section. Flag conflicting deadlines as conflict. Do not invent any owner, deadline, or number that is not in the text. Drop items labeled confidential from the public summary and only note that they were removed.”' },
+                        {
+                            kind: 'ai',
+                            text: 'Output 2 —',
+                            table: {
+                                head: ['Item', 'Type', 'Owner', 'Deadline'],
+                                rows: [
+                                    ['Migrate backup server to Friday night', 'Firm decision', 'Reza Kaviani (IT)', 'Saturday, August 5'],
+                                    ['Stop the current SMS campaign', 'Firm decision', 'Mina Rostami (Marketing)', 'Immediately'],
+                                    ['Add a support night shift', 'Decision — no owner', 'Needs an owner', '—'],
+                                    ['Switch ticketing tool', 'Proposal — unapproved', '—', '—'],
+                                    ['Monthly report', 'Deadline conflict: “end of week” and “August 15”', 'Needs a manager’s decision', '—']
+                                ]
+                            }
+                        },
+                        { kind: 'ai', text: 'Output note: one item labeled confidential was dropped from the public summary and referred only to the meeting’s recipient list.' },
+                        { kind: 'human', text: 'Human review: the meeting owner follows up on two items — assigning an owner for the night shift and resolving the report deadline conflict. Nothing is executed until both are settled.' },
+                        { kind: 'note', text: 'The key difference: separating decisions from proposals, not inventing owners or deadlines, and protecting sensitive items. These come from a well-written prompt, not from the tool.' }
+                    ]
+                },
+                m2: {
+                    title: 'Demo: comparing three tools on one document pack',
+                    scenario: 'A fictional HR document pack for Sepehr: “Remote Work Policy”, “VPN Guide”, and “Leave Request Form”. One identical question goes to three tools, and the results are scored against pre-agreed criteria.',
+                    steps: [
+                        { kind: 'note', text: 'For a fair comparison, the question and the documents are identical for all three tools. The goal is not a taste contest; it is understanding how the tools’ roles differ.' },
+                        { kind: 'user', text: 'The question: “An employee works remotely three days a week. What is the process for taking a few hours of leave?”' },
+                        { kind: 'system', text: 'Tool A — general-purpose assistant with no connection to organizational sources: it answers fluently and generically, cites no Sepehr documents, and adds “supervisor approval” on its own without any source.' },
+                        { kind: 'system', text: 'Tool B — workplace-suite assistant: it references the “Leave Request Form” but the answer is incomplete: the hourly-leave cap and the approver live in the “Remote Work Policy”, not in the form.' },
+                        { kind: 'system', text: 'Tool C — source-grounded tool with inline citations: a complete answer citing “Remote Work Policy, section 4” and “Leave Request Form, part 2”: file the form, direct supervisor approves, monthly hourly cap applies.' },
+                        {
+                            kind: 'ai',
+                            text: 'Scoring against pre-agreed criteria —',
+                            table: {
+                                head: ['Criterion', 'Tool A', 'Tool B', 'Tool C'],
+                                rows: [
+                                    ['Source and citation', 'None', 'Cites one document', 'Inline citations to two documents'],
+                                    ['Completeness', 'Incomplete with unsourced additions', 'Incomplete', 'Complete'],
+                                    ['Data control', 'Depends on the tool’s contract and settings', 'Inside the organizational workspace', 'Sources stay inside the organization’s system'],
+                                    ['Ease of use', 'Simple', 'Simple for everyday users', 'Requires preparing the sources']
+                                ]
+                            }
+                        },
+                        { kind: 'note', text: 'Tool choice follows the problem, Persian-language needs, data policy, existing systems, maintenance capacity, and real testing — not the brand.' }
+                    ]
+                },
+                m3: {
+                    title: 'Demo: VPN scenario from chat to ticket',
+                    scenario: 'A Sepehr employee raises a VPN connectivity problem in the organizational chat. The assistant proceeds to a documented answer and a ticket draft; the failure paths are shown too.',
+                    steps: [
+                        { kind: 'user', text: 'Message in the organizational chat: “My VPN has not connected since this morning and I have a customer meeting at 10.”' },
+                        { kind: 'ai', text: 'The assistant detects the topic and asks for the missing details: “Is it a company laptop or personal? What is the exact error message? What time is the meeting?”' },
+                        { kind: 'user', text: 'Company laptop; error 809; meeting at 10:00.' },
+                        { kind: 'ai', text: 'It retrieves the authoritative guide (“VPN Guide, connection section”) and proposes safe step-by-step actions — no password requests, no remote access, no automatic execution.' },
+                        { kind: 'user', text: 'I tried both steps; it still won’t connect.' },
+                        {
+                            kind: 'ai',
+                            text: 'A ticket draft is prepared for the user’s confirmation — the assistant does not file it on its own:',
+                            table: {
+                                head: ['Ticket field', 'Proposed value'],
+                                rows: [
+                                    ['Title', 'VPN connection failure — error 809'],
+                                    ['Description', 'Problem summary plus the steps already tried'],
+                                    ['Category', 'Network and remote access'],
+                                    ['Proposed urgency', 'High — customer meeting at 10:00'],
+                                    ['Steps documented', 'VPN Guide, connection section; two actions'],
+                                    ['Target team', 'Infrastructure team']
+                                ]
+                            }
+                        },
+                        { kind: 'human', text: 'The user confirms the draft; the ticket is filed and a tracking number is returned.' },
+                        { kind: 'error', text: 'Failure path 1 — no suitable guide exists: instead of a fabricated answer the assistant says “this is not covered in the current sources” and proposes escalation to a specialist. Failure path 2 — the ticketing system is down: the assistant gives the documented answer, defers the ticket, and states the limitation clearly.' },
+                        { kind: 'note', text: 'Trust is built by seeing correct behavior in failure; show both failure paths in the live demo.' }
+                    ]
+                },
+                m4: {
+                    title: 'Demo: from a raw hiring request to an onboarding plan',
+                    scenario: 'A raw hiring request for Sepehr’s tier-2 support team is handed to the assistant. No real résumé or personal data is processed in this demo.',
+                    steps: [
+                        { kind: 'user', text: 'The manager’s raw request (fictional): “We need someone for the tier-2 support team; the sooner they can start, the better.”' },
+                        { kind: 'note', text: 'Raw input: no job description, no approved criteria, no interview pack, no onboarding plan.' },
+                        { kind: 'ai', text: 'Job description draft: core responsibilities, essential requirements, and removal of unrelated requirements that needlessly narrow the candidate pool.' },
+                        { kind: 'ai', text: 'Suggested measurable evaluation criteria — for example “resolve a sample ticket scenario” and “average response time in the previous role”. No final weights are assigned; weighting is a human decision.' },
+                        { kind: 'human', text: 'The manager and HR review, revise, and approve the criteria; the approved version is recorded. This is the control boundary: the AI proposes, humans approve.' },
+                        { kind: 'ai', text: 'Interview pack: the same structured questions for every candidate, plus a scenario exercise using fictional ticket data — no real customer data.' },
+                        { kind: 'ai', text: 'A 30-day onboarding plan with weekly goals and a named reviewer for each week.' },
+                        { kind: 'note', text: 'No real résumé was processed in this demo. The AI acts as extraction, preparation, and suggestion; the high-stakes hiring decision stays with humans and approved controls.' }
+                    ]
+                }
+            }
+        }
     }
 });

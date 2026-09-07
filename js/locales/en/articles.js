@@ -3,6 +3,7 @@ registerLocale('en', {
     presentationsPage: {
         tag: 'Notes & decks',
         title: 'Lecture decks',
+        htmlTitle: 'Lecture decks | FORESIGHT HUB',
         sub: 'Each session is a standalone deck. Click a card to open that module; full-screen with the F key. A complete slide library for teaching, workshops, and self-study.'
     },
     articlesPage: {
