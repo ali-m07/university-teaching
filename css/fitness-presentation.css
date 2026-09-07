@@ -772,8 +772,9 @@ html[data-theme="light"] .fitness-pres-glass {
     border: 1px solid rgba(15, 23, 42, 0.12);
 }
 
+html[data-theme="light"] .fitness-pres-body,
 html[data-theme="light"] .fitness-pres-lead {
-    color: rgba(15, 23, 42, 0.9);
+    color: #0f172a;
 }
 
 html[data-theme="light"] .fitness-pres-figure {
