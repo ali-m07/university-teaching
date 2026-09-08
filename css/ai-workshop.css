@@ -47,10 +47,7 @@
     font-weight: 900;
     line-height: 1.2;
     margin: 0 0 12px;
-    background: linear-gradient(120deg, #fff 30%, var(--aiw-ai));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #f8fbff;
 }
 
 .aiw-hero-sub {
@@ -720,6 +717,12 @@
     z-index: 2;
 }
 
+/* The shade is a child of the slide container; explicitly lift cover copy above it. */
+.fitness-pres-slide--cover .fitness-pres-content-wrapper--cover {
+    position: relative;
+    z-index: 2;
+}
+
 .aiw-card-image {
     height: 180px;
     margin: -1px -1px 18px;
@@ -741,6 +744,125 @@
     transform: scale(1.025);
 }
 
+/* Cinematic editorial media for selected concept and process slides. */
+.aiw-media-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+    gap: clamp(18px, 2.5vw, 34px);
+    align-items: stretch;
+    min-height: 0;
+}
+
+.fitness-pres[dir="rtl"] .aiw-media-split {
+    grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+}
+
+.fitness-pres[dir="rtl"] .aiw-media-split .fitness-pres-glass { order: 2; }
+.fitness-pres[dir="rtl"] .aiw-media-split .aiw-slide-media { order: 1; }
+
+.aiw-slide-media {
+    position: relative;
+    min-width: 0;
+    min-height: 300px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #071423;
+    border: 1px solid rgba(124, 209, 255, 0.2);
+    box-shadow: 0 26px 70px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255,255,255,.08);
+    isolation: isolate;
+}
+
+.aiw-slide-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(180deg, transparent 58%, rgba(2, 9, 18, .4));
+    pointer-events: none;
+}
+
+.aiw-slide-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 43% center;
+    transform: scale(1.045);
+}
+
+.aiw-slide-media-glow {
+    position: absolute;
+    inset: auto 12% -18% 12%;
+    height: 32%;
+    z-index: 1;
+    background: rgba(50, 178, 255, .25);
+    filter: blur(46px);
+    pointer-events: none;
+}
+
+/* Keynote-style staged reveal: hierarchy first, detail second, image settles last. */
+.fitness-pres-slide .fitness-pres-eyebrow,
+.fitness-pres-slide .fitness-pres-title,
+.fitness-pres-slide .fitness-pres-glass,
+.fitness-pres-slide .aiw-slide-media {
+    opacity: 0;
+    transform: translateY(14px);
+}
+
+.fitness-pres-slide.is-active .fitness-pres-eyebrow,
+.fitness-pres-slide.is-active .fitness-pres-title,
+.fitness-pres-slide.is-active .fitness-pres-glass,
+.fitness-pres-slide.is-active .aiw-slide-media {
+    animation: aiw-stage-in 560ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.fitness-pres-slide.is-active .fitness-pres-title { animation-delay: 45ms; }
+.fitness-pres-slide.is-active .fitness-pres-glass { animation-delay: 95ms; }
+.fitness-pres-slide.is-active .aiw-slide-media { animation-delay: 145ms; }
+.fitness-pres-slide.is-active .aiw-slide-media img {
+    animation: aiw-image-settle 1050ms cubic-bezier(0.23, 1, 0.32, 1) 145ms both;
+}
+
+.fitness-pres-slide.is-active .aiw-concept-card,
+.fitness-pres-slide.is-active .fitness-pres-bullets > li,
+.fitness-pres-slide.is-active .aiw-list > li {
+    animation: aiw-item-in 460ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.fitness-pres-slide.is-active :is(.aiw-concept-card, .aiw-list > li):nth-child(1) { animation-delay: 170ms; }
+.fitness-pres-slide.is-active :is(.aiw-concept-card, .aiw-list > li):nth-child(2) { animation-delay: 220ms; }
+.fitness-pres-slide.is-active :is(.aiw-concept-card, .aiw-list > li):nth-child(3) { animation-delay: 270ms; }
+.fitness-pres-slide.is-active :is(.aiw-concept-card, .aiw-list > li):nth-child(4) { animation-delay: 320ms; }
+.fitness-pres-slide.is-active :is(.aiw-concept-card, .aiw-list > li):nth-child(n+5) { animation-delay: 370ms; }
+
+@keyframes aiw-stage-in { to { opacity: 1; transform: translateY(0); } }
+@keyframes aiw-item-in { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes aiw-image-settle { from { transform: scale(1.055); } to { transform: scale(1); } }
+
+@media (hover: hover) and (pointer: fine) {
+    .aiw-slide-media img { transition: transform 700ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .aiw-slide-media:hover img { transform: scale(1.018); }
+    .fitness-pres-nav-btn { transition: transform 140ms cubic-bezier(0.23, 1, 0.32, 1), background-color 220ms ease, box-shadow 220ms ease; }
+    .fitness-pres-nav-btn:active { transform: scale(.97); }
+}
+
+@media (max-width: 900px) {
+    .aiw-media-split,
+    .fitness-pres[dir="rtl"] .aiw-media-split { grid-template-columns: 1fr; }
+    .fitness-pres[dir="rtl"] .aiw-media-split .fitness-pres-glass,
+    .fitness-pres[dir="rtl"] .aiw-media-split .aiw-slide-media { order: initial; }
+    .aiw-slide-media { min-height: 190px; max-height: 250px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fitness-pres-slide,
+    .fitness-pres-slide * { animation-duration: 1ms !important; animation-delay: 0ms !important; scroll-behavior: auto !important; }
+    .fitness-pres-slide { transform: none !important; transition: opacity 160ms linear, visibility 160ms !important; }
+    .fitness-pres-slide .fitness-pres-eyebrow,
+    .fitness-pres-slide .fitness-pres-title,
+    .fitness-pres-slide .fitness-pres-glass,
+    .fitness-pres-slide .aiw-slide-media { transform: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .aiw-card-image img { transition: none; }
     .aiw-card:hover .aiw-card-image img { transform: none; }
@@ -751,6 +873,52 @@
     font-weight: 800;
     margin: 0 0 4px;
     color: var(--aiw-human);
+}
+
+.aiw-notes-body {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.aiw-note-section {
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: var(--aiw-panel);
+    border: 1px solid var(--aiw-border);
+}
+
+.aiw-note-section:first-child {
+    grid-column: 1 / -1;
+}
+
+.aiw-note-section h4 {
+    margin: 0 0 7px;
+    color: var(--text-primary);
+    font-size: 0.82rem;
+    font-weight: 800;
+}
+
+.aiw-note-section p,
+.aiw-note-section li {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.9;
+}
+
+.aiw-note-section ol {
+    margin: 0;
+    padding-inline-start: 1.25rem;
+}
+
+.aiw-note-key { border-inline-start: 3px solid var(--aiw-data); }
+.aiw-note-question { border-inline-start: 3px solid var(--aiw-human); }
+.aiw-note-transition { border-inline-start: 3px solid var(--aiw-ai); }
+
+@media (max-width: 760px) {
+    .aiw-notes-body { grid-template-columns: 1fr; }
+    .aiw-note-section:first-child { grid-column: auto; }
 }
 
 .aiw-notes-head p {
@@ -895,6 +1063,16 @@
     border-radius: 999px;
     padding: 3px 12px;
 }
+
+.fitness-pres .aiw-chips--detailed { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.fitness-pres .aiw-concept-card { display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 10px; align-items: start; padding: 12px; border-radius: 12px; background: rgba(255, 255, 255, 0.055); border: 1px solid var(--aiw-border); }
+.fitness-pres .aiw-concept-icon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 10px; color: var(--aiw-data); background: var(--aiw-data-soft); }
+.fitness-pres .aiw-concept-icon svg { width: 20px; height: 20px; }
+.fitness-pres .aiw-concept-card strong { display: block; color: var(--text-primary); font-size: 0.9em; }
+.fitness-pres .aiw-concept-card p { margin: 3px 0; color: var(--text-secondary); font-size: 0.76em; line-height: 1.65; }
+.fitness-pres .aiw-concept-card em { color: var(--aiw-human); font-size: 0.7em; font-style: normal; }
+
+@container fitness-pres (max-width: 620px) { .fitness-pres .aiw-chips--detailed { grid-template-columns: 1fr; } }
 
 .fitness-pres .aiw-list--ordered {
     margin: 8px 0;
@@ -2533,11 +2711,21 @@ html[data-theme="light"] #aiw-root {
     --aiw-border: rgba(15, 23, 42, 0.12);
 }
 
+html[data-theme="light"] .aiw-card,
+html[data-theme="light"] .aiw-path-track li,
+html[data-theme="light"] .aiw-outcome,
+html[data-theme="light"] .aiw-central,
+html[data-theme="light"] .aiw-ex-list > li,
+html[data-theme="light"] .aiw-note-section {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, 0.12);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.055);
+}
+
 /* landing */
 html[data-theme="light"] .aiw-hero h1 {
-    background: linear-gradient(120deg, #0f172a 30%, #6d28d9);
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: #172033;
+    -webkit-text-fill-color: #172033;
 }
 
 html[data-theme="light"] .aiw-card-chip {
@@ -2681,4 +2869,186 @@ html[data-theme="light"] .fitness-pres .aiw-phase-tag {
 
 html[data-theme="light"] .fitness-pres .aiw-job-core {
     color: #0f172a;
+}
+
+html[data-theme="light"] .fitness-pres .aiw-concept-card { background: #ffffff; border-color: rgba(15, 23, 42, 0.12); }
+
+/* Covers remain dark photographic surfaces in both themes. */
+html[data-theme="light"] .fitness-pres-slide--cover .aiw-cover-meta {
+    color: #ffffff;
+    background: rgba(3, 12, 24, 0.72);
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* Text that sits on pale surfaces must remain readable in the light theme. */
+html[data-theme="light"] .fitness-pres .aiw-job-core,
+html[data-theme="light"] .fitness-pres .aiw-demo-head h3 {
+    color: #0f172a;
+}
+
+/* 2026 visual pass: a graphic hero, distinct deck atmospheres, and full light-mode parity. */
+.aiw-hero {
+    position: relative;
+    min-height: min(620px, 72vh);
+    max-width: none;
+    margin: 18px 0 30px;
+    padding: clamp(3.5rem, 7vw, 6.5rem) clamp(1.5rem, 5vw, 5rem);
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: 32px;
+    border: 1px solid rgba(124, 209, 255, .14);
+    background: radial-gradient(circle at 18% 24%, rgba(0, 229, 255, .14), transparent 30%), radial-gradient(circle at 78% 72%, rgba(124, 77, 255, .2), transparent 34%), linear-gradient(145deg, #07111f, #101529 58%, #0b1020);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, .24);
+}
+.aiw-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .25;
+    background-image: radial-gradient(circle, rgba(255,255,255,.18) 1px, transparent 1.5px);
+    background-size: 28px 28px;
+    mask-image: linear-gradient(110deg, #000, transparent 72%);
+}
+.aiw-hero-copy { position: relative; z-index: 2; width: min(660px, 66%); }
+.aiw-hero h1 { font-size: clamp(2.6rem, 6.2vw, 5.3rem); color: #f8fbff; background: none; -webkit-text-fill-color: currentColor; letter-spacing: -.035em; text-wrap: balance; }
+.aiw-hero-sub { max-width: 38rem; }
+.aiw-hero-art { position: absolute; inset-inline-end: clamp(1.5rem, 7vw, 7rem); top: 50%; width: clamp(240px, 30vw, 430px); aspect-ratio: 1; transform: translateY(-50%); z-index: 1; }
+.aiw-orbit { position: absolute; inset: 8%; border: 1px solid rgba(114, 210, 255, .32); border-radius: 50%; }
+.aiw-orbit--one { transform: rotate(18deg) scaleY(.62); }
+.aiw-orbit--two { inset: 20%; transform: rotate(-34deg) scaleX(.72); border-color: rgba(155, 118, 255, .42); }
+.aiw-core-mark { position: absolute; inset: 36%; display: grid; place-items: center; border-radius: 34%; color: #fff; background: linear-gradient(145deg, #7857ff, #1fb6d5); box-shadow: 0 24px 70px rgba(62, 145, 255, .38); transform: rotate(8deg); }
+.aiw-core-mark svg { width: 38%; height: 38%; transform: rotate(-8deg); }
+.aiw-signal { position: absolute; width: 12px; height: 12px; border-radius: 50%; background: #7ee7ff; box-shadow: 0 0 0 7px rgba(126, 231, 255, .08), 0 0 28px rgba(126,231,255,.8); }
+.aiw-signal--one { top: 14%; left: 22%; }
+.aiw-signal--two { top: 66%; right: 7%; background: #a88bff; }
+.aiw-signal--three { bottom: 7%; left: 34%; width: 8px; height: 8px; }
+
+.aiw-reveal { opacity: 0; transform: translateY(28px); filter: blur(5px); transition: opacity 720ms cubic-bezier(.16,1,.3,1), transform 720ms cubic-bezier(.16,1,.3,1), filter 720ms cubic-bezier(.16,1,.3,1); }
+.aiw-reveal.is-visible { opacity: 1; transform: translateY(0); filter: blur(0); }
+
+.aiw-card:nth-child(1) { --aiw-card-accent: #28c7e8; }
+.aiw-card:nth-child(2) { --aiw-card-accent: #6f7cff; }
+.aiw-card:nth-child(3) { --aiw-card-accent: #9a68ff; }
+.aiw-card:nth-child(4) { --aiw-card-accent: #ef7ba5; }
+.aiw-card { position: relative; overflow: hidden; }
+.aiw-card::after { content: ''; position: absolute; inset-inline: 20px; bottom: 0; height: 2px; transform: scaleX(.18); transform-origin: center; opacity: .7; background: var(--aiw-card-accent); transition: transform 420ms cubic-bezier(.16,1,.3,1); }
+.aiw-card:hover::after { transform: scaleX(1); }
+.aiw-card-image { position: relative; }
+.aiw-card-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(5,12,24,.45)); pointer-events: none; }
+
+.aiw-deck--m1 { --aiw-deck-a: 0, 188, 212; --aiw-deck-b: 59, 130, 246; }
+.aiw-deck--m2 { --aiw-deck-a: 37, 99, 235; --aiw-deck-b: 124, 77, 255; }
+.aiw-deck--m3 { --aiw-deck-a: 124, 77, 255; --aiw-deck-b: 13, 148, 136; }
+.aiw-deck--m4 { --aiw-deck-a: 219, 39, 119; --aiw-deck-b: 124, 77, 255; }
+.fitness-pres[class*="aiw-deck--"] .fitness-pres-bg--mesh { background: radial-gradient(circle at 12% 16%, rgba(var(--aiw-deck-a), .24), transparent 34%), radial-gradient(circle at 88% 80%, rgba(var(--aiw-deck-b), .18), transparent 38%), #090e18; }
+
+html[data-theme="light"] .aiw-hero { border-color: rgba(37, 99, 235, .12); background: radial-gradient(circle at 18% 24%, rgba(6, 182, 212, .14), transparent 31%), radial-gradient(circle at 80% 74%, rgba(124, 77, 255, .16), transparent 36%), linear-gradient(145deg, #fbfdff, #eef4ff 58%, #f7f4ff); box-shadow: 0 30px 80px rgba(31, 45, 76, .1); }
+html[data-theme="light"] .aiw-hero::before { background-image: radial-gradient(circle, rgba(15,23,42,.16) 1px, transparent 1.5px); }
+html[data-theme="light"] .aiw-hero h1 { color: #172033; background: none; -webkit-text-fill-color: #172033; }
+html[data-theme="light"] .aiw-hero-sub,
+html[data-theme="light"] .aiw-hero-meta { color: #475569; }
+html[data-theme="light"] .aiw-hero-meta strong { color: #172033; }
+
+html[data-theme="light"] .fitness-pres-slide--cover .aiw-cover-image { filter: saturate(.72) brightness(1.13); opacity: .3; }
+html[data-theme="light"] .fitness-pres-slide--cover .aiw-cover-shade,
+html[data-theme="light"] .fitness-pres[dir="rtl"] .aiw-cover-shade { background: linear-gradient(110deg, rgba(248,250,252,.98), rgba(248,250,252,.9) 48%, rgba(248,250,252,.46)); }
+html[data-theme="light"] .fitness-pres-slide--cover .fitness-pres-title { color: #172033 !important; -webkit-text-fill-color: #172033 !important; }
+html[data-theme="light"] .fitness-pres-slide--cover .fitness-pres-subtitle { color: #334155 !important; }
+html[data-theme="light"] .fitness-pres-slide--cover .fitness-pres-eyebrow { color: #0e7490; }
+html[data-theme="light"] .fitness-pres-slide--cover .aiw-cover-meta,
+html[data-theme="light"] .fitness-pres-slide--cover .fitness-pres-cover-box { color: #172033; background: rgba(255, 255, 255, .72); border-color: rgba(15, 23, 42, .13); box-shadow: 0 16px 40px rgba(15,23,42,.08); }
+html[data-theme="light"] .fitness-pres[class*="aiw-deck--"] .fitness-pres-bg--mesh { background: radial-gradient(circle at 12% 16%, rgba(var(--aiw-deck-a), .13), transparent 35%), radial-gradient(circle at 88% 80%, rgba(var(--aiw-deck-b), .1), transparent 40%), #f5f8fc; }
+
+@media (max-width: 760px) {
+    .aiw-hero { min-height: 580px; padding: 3rem 1.25rem 11rem; align-items: start; border-radius: 24px; }
+    .aiw-hero-copy { width: 100%; }
+    .aiw-hero-art { width: 210px; top: auto; bottom: -22px; inset-inline-end: 50%; transform: translateX(50%); }
+    .aiw-hero h1 { font-size: clamp(2.25rem, 12vw, 3.6rem); }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .aiw-orbit--one { animation: aiw-orbit-drift 14s ease-in-out infinite alternate; }
+    .aiw-orbit--two { animation: aiw-orbit-drift-two 18s ease-in-out infinite alternate; }
+    .aiw-core-mark { animation: aiw-core-breathe 7s ease-in-out infinite; }
+}
+@keyframes aiw-orbit-drift { to { transform: rotate(30deg) scaleY(.68); } }
+@keyframes aiw-orbit-drift-two { to { transform: rotate(-19deg) scaleX(.78); } }
+@keyframes aiw-core-breathe { 50% { transform: rotate(8deg) scale(1.035); box-shadow: 0 30px 88px rgba(62,145,255,.48); } }
+
+/* Presentation fit pass: every slide is a fixed canvas, never an inner document. */
+.fitness-pres .fitness-pres-glass,
+.fitness-pres .fitness-pres-body,
+.fitness-pres .fitness-pres-table-wrap { overflow: hidden; scrollbar-width: none; }
+.fitness-pres .fitness-pres-glass::-webkit-scrollbar,
+.fitness-pres .fitness-pres-body::-webkit-scrollbar,
+.fitness-pres .fitness-pres-table-wrap::-webkit-scrollbar { display: none; }
+
+.fitness-pres-content-wrapper--text-only .fitness-pres-split { align-items: center; }
+.fitness-pres-content-wrapper--text-only .fitness-pres-glass {
+    justify-content: center;
+    padding: clamp(18px, 2.5vw, 34px) clamp(22px, 4vw, 58px);
+    background: rgba(255,255,255,.035);
+    border: 0;
+    border-radius: 24px;
+    box-shadow: none;
+}
+.fitness-pres-content-wrapper--text-only .fitness-pres-body { width: min(1120px, 100%); margin: auto; }
+.fitness-pres-content-wrapper--text-only .fitness-pres-lead {
+    max-width: 46ch;
+    margin: 0 0 clamp(18px, 3vh, 30px);
+    padding: 0;
+    font-size: clamp(1.08rem, 1.9cqi, 1.48rem);
+    line-height: 1.75;
+    font-weight: 650;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+.fitness-pres-content-wrapper--text-only .fitness-pres-bullets {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 clamp(22px, 4vw, 54px);
+    padding: 0;
+    list-style: none;
+}
+.fitness-pres-content-wrapper--text-only .fitness-pres-bullets > li {
+    position: relative;
+    padding: 14px 24px 14px 0;
+    border-top: 1px solid rgba(var(--aiw-deck-a, 100,150,255), .28);
+    font-size: clamp(.9rem, 1.35cqi, 1.08rem);
+    line-height: 1.65;
+}
+.fitness-pres[dir="ltr"] .fitness-pres-content-wrapper--text-only .fitness-pres-bullets > li { padding: 14px 0 14px 24px; }
+.fitness-pres-content-wrapper--text-only .fitness-pres-bullets > li::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    top: 1.4em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(var(--aiw-deck-a, 59,130,246));
+    box-shadow: 0 0 0 5px rgba(var(--aiw-deck-a, 59,130,246), .1);
+}
+.fitness-pres-content-wrapper--text-only .fitness-pres-bullets > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+.fitness-pres .aiw-density--dense .fitness-pres-glass { padding-block: 14px; }
+.fitness-pres .aiw-density--dense .fitness-pres-body { font-size: clamp(.76rem, 1.15cqi, .96rem); line-height: 1.52; }
+.fitness-pres .aiw-density--dense .fitness-pres-lead { margin-bottom: 12px; font-size: clamp(.92rem, 1.45cqi, 1.16rem); line-height: 1.55; }
+.fitness-pres .aiw-density--dense .fitness-pres-bullets { gap: 0 28px; }
+.fitness-pres .aiw-density--dense .fitness-pres-bullets > li { padding-block: 9px; font-size: clamp(.78rem, 1.12cqi, .94rem); line-height: 1.48; }
+.fitness-pres .aiw-density--dense .aiw-callout,
+.fitness-pres .aiw-density--dense .aiw-research { margin-top: 9px; padding-block: 9px; }
+
+html[data-theme="light"] .fitness-pres-content-wrapper--text-only .fitness-pres-glass { background: rgba(255,255,255,.42); }
+html[data-theme="light"] .fitness-pres-content-wrapper--text-only .fitness-pres-lead { color: #172033; background: transparent; border: 0; }
+
+@media (max-width: 760px) {
+    .fitness-pres-content-wrapper--text-only .fitness-pres-bullets { grid-template-columns: 1fr; }
+    .fitness-pres-content-wrapper--text-only .fitness-pres-bullets > li:last-child:nth-child(odd) { grid-column: auto; }
+    .fitness-pres-content-wrapper--text-only .fitness-pres-glass { padding: 14px 16px; }
+    .fitness-pres-content-wrapper--text-only .fitness-pres-lead { font-size: .96rem; margin-bottom: 10px; }
+    .fitness-pres-content-wrapper--text-only .fitness-pres-bullets > li { padding-block: 8px; font-size: .82rem; }
 }

@@ -318,9 +318,15 @@
         return '<' + tag + ' class="' + cls + '">' + items.map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') + '</' + tag + '>';
     }
     function renderChips(slide) {
-        var chips = slide.chips || [];
+        var chips = slide.chipDetails || slide.chips || [];
         if (!chips.length) return '';
-        return '<div class="aiw-chips">' + chips.map(function (c) { return '<span class="aiw-chip">' + esc(c) + '</span>'; }).join('') + '</div>';
+        var detailed = !!slide.chipDetails;
+        return '<div class="aiw-chips' + (detailed ? ' aiw-chips--detailed' : '') + '">' + chips.map(function (c, i) {
+            if (!detailed) return '<span class="aiw-chip">' + esc(c) + '</span>';
+            var icons = ['scan-search', 'chart-no-axes-combined', 'list-checks', 'sparkles'];
+            return '<article class="aiw-concept-card"><span class="aiw-concept-icon"><i data-lucide="' + icons[i % icons.length] + '"></i></span>'
+                + '<div><strong>' + esc(c.label || '') + '</strong><p>' + esc(c.desc || '') + '</p><em>' + esc(c.example || '') + '</em></div></article>';
+        }).join('') + '</div>';
     }
     function renderTable(slide) {
         var t = slide.table;
@@ -362,10 +368,20 @@
 
     function dirAttr() { return isFa() ? 'rtl' : 'ltr'; }
 
+    function renderSlideImage(slide) {
+        if (!slide.image) return '';
+        return '<figure class="aiw-slide-media" aria-label="' + attr(slide.imageAlt || slide.title || '') + '">'
+            + '<img src="' + attr(fileUrl(slide.image)) + '" alt="' + attr(slide.imageAlt || '') + '" loading="lazy" decoding="async">'
+            + '<span class="aiw-slide-media-glow" aria-hidden="true"></span>'
+            + '</figure>';
+    }
+
     function slideMarkup(session, slide, i, total, w, ui, vl) {
         var isCover = slide.kind === 'cover';
         var isActive = i === 0;
         var kindCls = isCover ? ' fitness-pres-slide--cover' : ' aiw-slide--' + esc(slide.kind || 'content');
+        var contentWeight = (slide.bullets || []).length + ((slide.table && slide.table.rows) || []).length + ((slide.chipDetails || []).length * 2);
+        var densityCls = !isCover && (contentWeight > 5 || (slide.lead || '').length > 210) ? ' aiw-density--dense' : '';
         var inner = '';
         if (isCover) {
             var meta = [
@@ -382,14 +398,16 @@
                 + '<div class="fitness-pres-cover-box aiw-cover-meta">' + meta + '</div>'
                 + '</div>';
         } else {
-            inner = '<div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--split fitness-pres-content-wrapper--text-only">'
+            var hasMedia = !!slide.image;
+            inner = '<div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--split' + (hasMedia ? ' aiw-content-with-media' : ' fitness-pres-content-wrapper--text-only') + '">'
                 + '<p class="fitness-pres-eyebrow">' + esc(session.deckLabel) + ' · ' + esc(ui.slide) + ' ' + num(i + 1) + '</p>'
                 + '<h2 class="fitness-pres-title">' + esc(slide.title || '') + '</h2>'
-                + '<div class="fitness-pres-split fitness-pres-split--text-only">'
+                + '<div class="fitness-pres-split' + (hasMedia ? ' aiw-media-split' : ' fitness-pres-split--text-only') + '">'
                 + '<div class="fitness-pres-glass"><div class="fitness-pres-body">' + slideBodyHtml(slide, w, ui, vl) + '</div></div>'
+                + renderSlideImage(slide)
                 + '</div></div>';
         }
-        return '<article class="fitness-pres-slide' + (isActive ? ' is-active' : '') + kindCls + '" data-pres-index="' + i + '" data-aiw-slide="' + esc(slide.id) + '" aria-hidden="' + (isActive ? 'false' : 'true') + '">'
+        return '<article class="fitness-pres-slide' + (isActive ? ' is-active' : '') + kindCls + densityCls + '" data-pres-index="' + i + '" data-aiw-slide="' + esc(slide.id) + '" aria-hidden="' + (isActive ? 'false' : 'true') + '">'
             + '<div class="fitness-pres-bg fitness-pres-bg--mesh" aria-hidden="true"></div>'
             + '<div class="fitness-pres-slide-container' + (isCover ? ' cover' : ' has-split') + '">' + inner + '</div>'
             + '</article>';
@@ -408,7 +426,7 @@
             + '<span class="fitness-pres-progress">1 / ' + num(total) + '</span>'
             + '</div>'
             + '<button type="button" class="fitness-pres-nav-btn fitness-pres-next"' + (total <= 1 ? ' disabled' : '') + '>' + esc(ui.next) + '</button>';
-        return '<div class="fitness-pres fitness-pres--many-slides" data-fitness-pres tabindex="0" aria-roledescription="presentation" dir="' + dirAttr() + '">'
+        return '<div class="fitness-pres fitness-pres--many-slides aiw-deck--' + esc(session.id) + '" data-fitness-pres tabindex="0" aria-roledescription="presentation" dir="' + dirAttr() + '">'
             + '<div class="fitness-pres-toolbar">'
             + '<button type="button" class="fitness-pres-fs-btn" aria-label="' + attr(ui.fullscreen) + '" title="' + attr(ui.fullscreen) + '"><i data-lucide="maximize"></i></button>'
             + '</div>'
@@ -525,6 +543,8 @@
         var ui = w.ui;
         return ''
             + '<section class="aiw-hero">'
+            + '<div class="aiw-hero-art" aria-hidden="true"><span class="aiw-orbit aiw-orbit--one"></span><span class="aiw-orbit aiw-orbit--two"></span><span class="aiw-core-mark"><i data-lucide="sparkles"></i></span><span class="aiw-signal aiw-signal--one"></span><span class="aiw-signal aiw-signal--two"></span><span class="aiw-signal aiw-signal--three"></span></div>'
+            + '<div class="aiw-hero-copy">'
             + '<p class="aiw-hero-tag">' + esc(L.tag) + '</p>'
             + '<h1>' + esc(L.title) + '</h1>'
             + '<p class="aiw-hero-sub">' + esc(L.subtitle) + '</p>'
@@ -533,6 +553,7 @@
             + '<span><i data-lucide="user-round" aria-hidden="true"></i>' + esc(L.instructorLabel) + ': <strong>' + esc(L.instructor) + '</strong></span>'
             + '<span><i data-lucide="users-round" aria-hidden="true"></i>' + esc(L.audienceLabel) + ': <strong>' + esc(L.audience) + '</strong></span>'
             + '<span><i data-lucide="calendar-check" aria-hidden="true"></i>' + esc(L.reviewLabel) + ': <strong>' + esc(L.review) + '</strong></span>'
+            + '</div>'
             + '</div>'
             + '</section>'
             + '<section class="aiw-intro"><h2>' + esc(L.introTitle) + '</h2><p>' + esc(L.intro) + '</p>'
@@ -560,8 +581,31 @@
     function noteForSlide(session, index) {
         var slide = session.slides[index];
         if (!slide) return '';
+        var ui = UI();
         var out = '';
-        if (slide.note) out += '<p>' + esc(slide.note) + '</p>';
+        if (slide.note) {
+            out += '<section class="aiw-note-section"><h4>' + esc(ui.notesDelivery) + '</h4><p>' + esc(slide.note) + '</p></section>';
+        }
+        if (slide.lead) {
+            out += '<section class="aiw-note-section aiw-note-key"><h4>' + esc(ui.notesKeyMessage) + '</h4><p>' + esc(slide.lead) + '</p></section>';
+        }
+        if (slide.bullets && slide.bullets.length) {
+            out += '<section class="aiw-note-section"><h4>' + esc(ui.notesWalkthrough) + '</h4><ol>'
+                + slide.bullets.map(function (item) { return '<li>' + esc(item) + '</li>'; }).join('')
+                + '</ol></section>';
+        }
+        if (slide.research) {
+            out += '<section class="aiw-note-section"><h4>' + esc(ui.notesEvidence) + '</h4><p>' + esc(slide.research) + '</p></section>';
+        }
+        out += '<section class="aiw-note-section aiw-note-question"><h4>' + esc(ui.notesQuestion) + '</h4><p>'
+            + esc((ui.notesQuestionPrefix || '') + (slide.title || session.title) + (ui.notesQuestionSuffix || ''))
+            + '</p></section>';
+        var next = session.slides[index + 1];
+        if (next && next.title) {
+            out += '<section class="aiw-note-section aiw-note-transition"><h4>' + esc(ui.notesTransition) + '</h4><p>'
+                + esc((ui.notesTransitionPrefix || '') + next.title + (ui.notesTransitionSuffix || ''))
+                + '</p></section>';
+        }
         if (slide.kind === 'exercise' && session.exercise && session.exercise.brief) {
             out += '<p class="aiw-note-ex"><strong>' + esc(session.exercise.title) + ':</strong> ' + esc(session.exercise.brief) + '</p>';
         }
@@ -818,6 +862,25 @@
         if (demo.sid != null) demoRender();
         var fallback = document.getElementById('aiw-noscript-hero');
         if (fallback) fallback.hidden = true;
+        bindLandingMotion(landing);
+    }
+
+    function bindLandingMotion(landing) {
+        if (!landing || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var items = landing.querySelectorAll('.aiw-intro, .aiw-path, .aiw-story, .aiw-sessions, .aiw-exercises, .aiw-tools-note, .aiw-landing-sources');
+        items.forEach(function (el) { el.classList.add('aiw-reveal'); });
+        if (!('IntersectionObserver' in window)) {
+            items.forEach(function (el) { el.classList.add('is-visible'); });
+            return;
+        }
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -7% 0px' });
+        items.forEach(function (el) { observer.observe(el); });
     }
 
     function boot() {
