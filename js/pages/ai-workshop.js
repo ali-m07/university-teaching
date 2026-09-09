@@ -28,7 +28,44 @@
     function num(n) { return window.getLang() === 'fa' ? faDigits(n) : String(n); }
     function isFa() { return window.getLang() === 'fa'; }
     function base() { return window.SFH_BASE || './'; }
-    function fileUrl(rel) { return base() + String(rel).replace(/^\.?\//, ''); }
+    function fileUrl(rel) {
+        var value = String(rel || '');
+        return /^https?:\/\//i.test(value) ? value : base() + value.replace(/^\.?\//, '');
+    }
+
+    /* Editorial photography: remote, licensed source pages remain attached to every image. */
+    var EDITORIAL_PHOTOS = [
+        { src: 'assets/workshop/photos/team-meeting-cc-by.jpg', href: 'https://commons.wikimedia.org/wiki/File:Team_Meeting.jpg', by: 'woodleywonderworks · CC BY 2.0' },
+        { src: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=84', href: 'https://unsplash.com/photos/QckxruozjRg', by: 'Annie Spratt' },
+        { src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1800&q=84', href: 'https://unsplash.com/photos/5fNmWej4tAA', by: 'You X Ventures' },
+        { src: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=84', href: 'https://unsplash.com/photos/hh3ViD0r0Rc', by: 'Austin Distel' },
+        { src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1800&q=84', href: 'https://unsplash.com/photos/SYTO3xs06fU', by: 'Brooke Cagle' },
+        { src: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=84', href: 'https://unsplash.com/photos/376KN_ISplE', by: 'Kaleidico' },
+        { src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=84', href: 'https://unsplash.com/photos/Im7lZjxeLhg', by: 'John Schnobrich' },
+        { src: 'https://images.unsplash.com/photo-1737703638422-2cfa152cdcb7?auto=format&fit=crop&w=1800&q=84', href: 'https://unsplash.com/photos/-nJ9k6iU6_g', by: 'Jakub Zerdzicki' },
+        { src: 'assets/workshop/photos/hybrid-team-meeting-cc0.jpg', href: 'https://commons.wikimedia.org/wiki/File:Meeting_avec_l%27%C3%A9quipe_en_pr%C3%A9sentiel_et_online_1.jpg', by: 'Yasminkaa · CC0' }
+    ];
+
+    function editorialPhoto(session, slide, i) {
+        var sessionIndex = Math.max(0, SESSION_IDS.indexOf(session.id));
+        /* Photography is reserved for covers. Concept slides use purpose-built
+           diagrams and typography so an unrelated stock image never becomes
+           the largest idea on the slide. */
+        if (['cover', 'exercise', 'closing'].indexOf(slide.kind) === -1) return null;
+        return EDITORIAL_PHOTOS[(sessionIndex * 2 + i) % EDITORIAL_PHOTOS.length];
+    }
+
+    function automaticVisual(slide) {
+        if (slide.image || slide.visual || slide.table || (slide.chips && slide.chips.length)) return '';
+        var items = slide.bullets || [];
+        if (!items.length) return '';
+        var icons = ['file-text', 'search', 'clipboard-check', 'users', 'shield-check', 'target'];
+        return '<div class="aiw-auto-visual" role="list">' + items.map(function (text, i) {
+            return '<div class="aiw-auto-node" role="listitem"><span aria-hidden="true">'
+                + (slide.ordered ? num(i + 1) : '<i data-lucide="' + icons[i % icons.length] + '"></i>')
+                + '</span><strong>' + esc(text) + '</strong></div>';
+        }).join('') + '</div>';
+    }
 
     /* ── fixed visual labels (bespoke to this page, per language) ── */
     function vlabels() {
@@ -355,9 +392,11 @@
         var html = renderExerciseMeta(slide, ui);
         if (slide.lead) html += '<p class="fitness-pres-lead">' + esc(slide.lead) + '</p>';
         html += renderChips(slide);
+        var summaryVisual = automaticVisual(slide);
+        html += summaryVisual;
         var visual = buildVisual(slide, vl);
         // Slides whose visual is built from bullets/table must not print both forms.
-        if (!VISUAL_FROM_BULLETS[slide.visual]) html += renderBullets(slide);
+        if (!summaryVisual && !VISUAL_FROM_BULLETS[slide.visual]) html += renderBullets(slide);
         html += visual;
         if (!VISUAL_FROM_TABLE[slide.visual]) html += renderTable(slide);
         html += renderCallout(slide);
@@ -368,20 +407,52 @@
 
     function dirAttr() { return isFa() ? 'rtl' : 'ltr'; }
 
-    function renderSlideImage(slide) {
-        if (!slide.image) return '';
+    function renderSlideImage(session, slide, i) {
+        var photo = editorialPhoto(session, slide, i);
+        if (!photo && !slide.image) return '';
+        var src = photo ? fileUrl(photo.src) : fileUrl(slide.image);
         return '<figure class="aiw-slide-media" aria-label="' + attr(slide.imageAlt || slide.title || '') + '">'
-            + '<img src="' + attr(fileUrl(slide.image)) + '" alt="' + attr(slide.imageAlt || '') + '" loading="lazy" decoding="async">'
+            + '<img src="' + attr(src) + '" alt="' + attr(slide.imageAlt || slide.title || '') + '" loading="lazy" decoding="async" onerror="this.closest(\'figure\').classList.add(\'is-unavailable\')">'
             + '<span class="aiw-slide-media-glow" aria-hidden="true"></span>'
+            + (photo ? '<a class="aiw-photo-credit" href="' + attr(photo.href) + '" target="_blank" rel="noopener noreferrer">Unsplash · ' + esc(photo.by) + '</a>' : '')
             + '</figure>';
     }
 
+    function stageMarkup(session, slide, i, ui, w) {
+        var data = window.AIW_STAGE && window.AIW_STAGE[session.id];
+        if (!isFa() || !data || !data[i]) return null;
+        var row = data[i], type = row[0], items = type === 'metrics' ? row.slice(3) : row[3].split('|');
+        var photo = null;
+        var teamSlides = {m1: [0, 7, 13], m2: [0, 6, 13], m3: [0, 14], m4: [0, 15, 16]};
+        if ((teamSlides[session.id] || []).indexOf(i) !== -1) photo = EDITORIAL_PHOTOS[slide.kind === 'exercise' || session.id === 'm4' ? 8 : 0];
+        var media = slide.image ? { src: fileUrl(slide.image), alt: slide.imageAlt || slide.title, local: true } : photo;
+        var photoHtml = media ? '<figure class="stage-photo' + (media.local ? ' stage-diagram' : '') + '"><img src="' + attr(fileUrl(media.src)) + '" alt="' + attr(media.alt || (media === EDITORIAL_PHOTOS[8] ? 'همکاری اعضای تیم در جلسهٔ ترکیبی' : 'جلسه و همکاری اعضای یک تیم')) + '" decoding="async" onerror="this.hidden=true;this.parentElement.classList.add(\'photo-unavailable\')"><span class="photo-offline">تصویر در دسترس نیست<br>' + (media.href ? 'مشاهده در منبع اصلی' : 'نمودار را در یادداشت مدرس توضیح دهید') + '</span>' + (media.href ? '<figcaption><a href="' + attr(media.href) + '" target="_blank" rel="noopener noreferrer">' + esc(media.by) + '</a></figcaption>' : '') + '</figure>' : '';
+        var nodes = items.map(function (label, n) {
+            var bits = label.split('|');
+            return '<div class="stage-node"><span class="stage-number">' + (type === 'metrics' ? esc(bits[0]) : num(n + 1)) + '</span><p>' + esc(type === 'metrics' ? bits[1] : label) + '</p></div>';
+        }).join('');
+        return '<article class="fitness-pres-slide stage-slide stage--' + type + (media ? ' stage-has-photo' : '') + (i === 0 ? ' is-active' : '') + '" data-pres-index="' + i + '" data-aiw-slide="' + esc(slide.id) + '" aria-hidden="' + (i === 0 ? 'false' : 'true') + '">'
+            + photoHtml + '<div class="stage-canvas"><p class="stage-kicker">' + esc(session.deckLabel) + ' / ' + num(i + 1) + '</p>'
+            + '<h2>' + esc(row[1]) + '</h2><p class="stage-deck">' + esc(slide.kind === 'cover' ? row[2] : (slide.lead || row[2])) + '</p>'
+            + '<div class="stage-visual">' + nodes + '</div>'
+            + (slide.sources ? '<div class="stage-citation">' + sourcesLine(slide, w, ui) + '</div>' : '')
+            + '</div></article>';
+    }
+
     function slideMarkup(session, slide, i, total, w, ui, vl) {
+        var stage = stageMarkup(session, slide, i, ui, w);
+        if (stage) return stage;
         var isCover = slide.kind === 'cover';
         var isActive = i === 0;
         var kindCls = isCover ? ' fitness-pres-slide--cover' : ' aiw-slide--' + esc(slide.kind || 'content');
-        var contentWeight = (slide.bullets || []).length + ((slide.table && slide.table.rows) || []).length + ((slide.chipDetails || []).length * 2);
-        var densityCls = !isCover && (contentWeight > 5 || (slide.lead || '').length > 210) ? ' aiw-density--dense' : '';
+        var contentWeight = (slide.bullets || []).length
+            + ((slide.table && slide.table.rows) || []).length
+            + ((slide.chipDetails || []).length * 2)
+            + (slide.callout ? 2 : 0)
+            + (slide.research ? 2 : 0);
+        var densityCls = !isCover && (contentWeight > 5 || (slide.lead || '').length > 190) ? ' aiw-density--dense' : '';
+        var backgroundPhoto = !isCover ? editorialPhoto(session, slide, i) : null;
+        var photoBgCls = backgroundPhoto ? ' aiw-slide--photo-bg' : '';
         var inner = '';
         if (isCover) {
             var meta = [
@@ -389,7 +460,9 @@
                 '<span><i data-lucide="gauge" aria-hidden="true"></i>' + esc(session.level) + '</span>',
                 '<span><i data-lucide="layers" aria-hidden="true"></i>' + num(total) + ' ' + esc(vl.slides) + '</span>'
             ].join('');
-            inner = (session.coverImage ? '<img class="aiw-cover-image" src="' + attr(fileUrl(session.coverImage)) + '" alt="' + attr(session.coverAlt || '') + '">' : '')
+            var coverPhoto = editorialPhoto(session, slide, i);
+            inner = (coverPhoto ? '<img class="aiw-cover-image" src="' + attr(coverPhoto.src) + '" alt="' + attr(session.coverAlt || slide.title || '') + '" onerror="this.classList.add(\'is-unavailable\')">' : '')
+                + (coverPhoto ? '<a class="aiw-cover-credit" href="' + attr(coverPhoto.href) + '" target="_blank" rel="noopener noreferrer">Unsplash · ' + esc(coverPhoto.by) + '</a>' : '')
                 + '<div class="aiw-cover-shade" aria-hidden="true"></div>'
                 + '<div class="fitness-pres-content-wrapper fitness-pres-content-wrapper--cover fitness-pres-content-wrapper--cover-clean">'
                 + '<p class="fitness-pres-eyebrow">' + esc(w.landing.tag) + ' · ' + esc(session.deckLabel) + '</p>'
@@ -404,10 +477,12 @@
                 + '<h2 class="fitness-pres-title">' + esc(slide.title || '') + '</h2>'
                 + '<div class="fitness-pres-split' + (hasMedia ? ' aiw-media-split' : ' fitness-pres-split--text-only') + '">'
                 + '<div class="fitness-pres-glass"><div class="fitness-pres-body">' + slideBodyHtml(slide, w, ui, vl) + '</div></div>'
-                + renderSlideImage(slide)
+                + renderSlideImage(session, slide, i)
                 + '</div></div>';
         }
-        return '<article class="fitness-pres-slide' + (isActive ? ' is-active' : '') + kindCls + densityCls + '" data-pres-index="' + i + '" data-aiw-slide="' + esc(slide.id) + '" aria-hidden="' + (isActive ? 'false' : 'true') + '">'
+        return '<article class="fitness-pres-slide' + (isActive ? ' is-active' : '') + kindCls + densityCls + photoBgCls + '" data-pres-index="' + i + '" data-aiw-slide="' + esc(slide.id) + '" aria-hidden="' + (isActive ? 'false' : 'true') + '">'
+            + (backgroundPhoto ? '<img class="aiw-editorial-bg" src="' + attr(backgroundPhoto.src) + '" alt="" aria-hidden="true" loading="lazy" decoding="async">' : '')
+            + (backgroundPhoto ? '<a class="aiw-bg-credit" href="' + attr(backgroundPhoto.href) + '" target="_blank" rel="noopener noreferrer">Unsplash · ' + esc(backgroundPhoto.by) + '</a>' : '')
             + '<div class="fitness-pres-bg fitness-pres-bg--mesh" aria-hidden="true"></div>'
             + '<div class="fitness-pres-slide-container' + (isCover ? ' cover' : ' has-split') + '">' + inner + '</div>'
             + '</article>';
@@ -499,12 +574,13 @@
     }
 
     function sessionCardHtml(session, L, ui, vl, w) {
+        var cardPhoto = editorialPhoto(session, { kind: 'cover' }, 0);
         var chips = ''
             + '<span class="aiw-card-chip"><i data-lucide="clock-3" aria-hidden="true"></i>' + esc(session.duration) + '</span>'
             + '<span class="aiw-card-chip aiw-chip--' + esc(session.levelKind) + '"><i data-lucide="gauge" aria-hidden="true"></i>' + esc(session.level) + '</span>'
             + '<span class="aiw-card-chip"><i data-lucide="layers" aria-hidden="true"></i>' + num(session.slides.length) + ' ' + esc(vl.slides) + '</span>';
         return '<article class="aiw-card" data-aiw-level="' + esc(session.levelKind) + '">'
-            + (session.coverImage ? '<div class="aiw-card-image"><img src="' + attr(fileUrl(session.coverImage)) + '" alt="' + attr(session.coverAlt || '') + '" loading="lazy"></div>' : '')
+            + (cardPhoto ? '<div class="aiw-card-image"><img src="' + attr(cardPhoto.src) + '" alt="' + attr(session.coverAlt || session.title || '') + '" loading="lazy" decoding="async" onerror="this.closest(\'.aiw-card-image\').classList.add(\'is-unavailable\')"><a class="aiw-photo-credit" href="' + attr(cardPhoto.href) + '" target="_blank" rel="noopener noreferrer">Unsplash · ' + esc(cardPhoto.by) + '</a></div>' : '')
             + '<div class="aiw-card-head"><span class="aiw-card-num">' + esc(session.num) + '</span><span class="aiw-card-chips">' + chips + '</span></div>'
             + '<h3>' + esc(session.title) + '</h3>'
             + '<p class="aiw-card-tag">' + esc(session.tagline) + '</p>'
@@ -583,6 +659,8 @@
         if (!slide) return '';
         var ui = UI();
         var out = '';
+        var narrative = isFa() && window.AIW_STAGE && window.AIW_STAGE[session.id] && window.AIW_STAGE[session.id][index];
+        if (narrative) out += '<section class="aiw-note-section"><h4>پیام و مسیر بیان</h4><p>' + esc(narrative[1] + ' — ' + narrative[2]) + '</p></section>';
         if (slide.note) {
             out += '<section class="aiw-note-section"><h4>' + esc(ui.notesDelivery) + '</h4><p>' + esc(slide.note) + '</p></section>';
         }
