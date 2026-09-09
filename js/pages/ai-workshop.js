@@ -52,6 +52,7 @@
         m3: { src: 'assets/workshop/photos/keynote-chip.jpg', href: 'https://commons.wikimedia.org/wiki/File:Artificial_Neural_Network_with_Chip.jpg', by: 'mikemacmarketing · CC BY 2.0', alt: 'تراشه و شبکهٔ عصبی در پس‌زمینهٔ تیره' },
         m4: { src: 'assets/workshop/photos/keynote-neural-net.webp', href: 'https://commons.wikimedia.org/wiki/File:Neural_network_-_Midjourney_and_Grok.png', by: 'Wikimedia Commons · Public domain', alt: 'شبکه‌ای انتزاعی از گره‌های نورانی و ارتباط‌های داده' }
     };
+    var KEYNOTE_POOL = [KEYNOTE_VISUALS.m1, KEYNOTE_VISUALS.m2, KEYNOTE_VISUALS.m3];
 
     function editorialPhoto(session, slide, i) {
         var sessionIndex = Math.max(0, SESSION_IDS.indexOf(session.id));
@@ -430,7 +431,10 @@
         if (!isFa() || !data || !data[i]) return null;
         var row = data[i], type = row[0], items = type === 'metrics' ? row.slice(3) : row[3].split('|');
         var isKeynoteMoment = i === 0 || slide.kind === 'closing';
-        var photo = isKeynoteMoment ? KEYNOTE_VISUALS[session.id] : (slide.kind === 'exercise' ? EDITORIAL_PHOTOS[8] : null);
+        var sessionIndex = Math.max(0, SESSION_IDS.indexOf(session.id));
+        var photo = isKeynoteMoment
+            ? KEYNOTE_VISUALS[session.id]
+            : (slide.kind === 'exercise' ? EDITORIAL_PHOTOS[8] : KEYNOTE_POOL[(sessionIndex + i) % KEYNOTE_POOL.length]);
         var media = slide.image ? { src: fileUrl(slide.image), alt: slide.imageAlt || slide.title, local: true } : photo;
         var fullBleed = !!(media && !media.local && isKeynoteMoment);
         var photoHtml = media ? '<figure class="stage-photo' + (media.local ? ' stage-diagram' : '') + '"><img src="' + attr(fileUrl(media.src)) + '" alt="' + attr(media.alt || (media === EDITORIAL_PHOTOS[8] ? 'همکاری اعضای تیم در جلسهٔ ترکیبی' : 'جلسه و همکاری اعضای یک تیم')) + '" decoding="async" onerror="this.hidden=true;this.parentElement.classList.add(\'photo-unavailable\')"><span class="photo-offline">تصویر در دسترس نیست<br>' + (media.href ? 'مشاهده در منبع اصلی' : 'نمودار را در یادداشت مدرس توضیح دهید') + '</span>' + (media.href ? '<figcaption><a href="' + attr(media.href) + '" target="_blank" rel="noopener noreferrer">' + esc(media.by) + '</a></figcaption>' : '') + '</figure>' : '';

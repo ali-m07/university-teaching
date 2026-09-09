@@ -3351,7 +3351,7 @@ html[data-theme="light"] .fitness-pres[class*="aiw-deck--"] .aiw-slide--photo-bg
 /* Authored Persian keynote stage. Isolated from legacy content-card rules. */
 #aiw-root .stage-slide { background: #101216; color: #f5f6f8; }
 html[data-theme="light"] #aiw-root .stage-slide { background: #fafafa; color: #17191d; }
-#aiw-root .stage-canvas { box-sizing: border-box; height: 100%; min-height: 0; overflow: hidden; padding: clamp(54px,7vh,84px) 7% clamp(92px,11vh,124px); display: flex; flex-direction: column; justify-content: center; gap: clamp(12px,2vh,20px); }
+#aiw-root .stage-canvas { position:relative; z-index:2; box-sizing: border-box; height: 100%; min-height: 0; overflow: hidden; padding: clamp(54px,7vh,84px) 7% clamp(92px,11vh,124px); display: flex; flex-direction: column; justify-content: center; gap: clamp(12px,2vh,20px); }
 #aiw-root .stage-kicker { font-size: 13px; letter-spacing: .08em; color: #82909f; margin: 0; }
 #aiw-root .stage-canvas h2 { font-family: Vazirmatn,sans-serif; font-size: clamp(28px,4cqi,64px); line-height: 1.4; font-weight: 750; letter-spacing: -.035em; margin: 0; max-width: 24ch; color: inherit; }
 #aiw-root .stage-deck { margin: 0; font-size: clamp(15px,1.7cqi,25px); line-height: 1.8; color: inherit; opacity: .68; max-width: 65ch; }
@@ -3379,7 +3379,7 @@ html[data-theme="light"] #aiw-root .stage-slide { background: #fafafa; color: #1
 @keyframes stage-node-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 @media(max-width:760px) { #aiw-root .stage-canvas { padding: 55px 24px 90px; gap: 12px; } #aiw-root .stage-visual { gap: 12px; flex-wrap: wrap; margin-top: 8px; } #aiw-root .stage-node { flex-basis: 40%; } #aiw-root .stage-node p { font-size: 14px; } }
 @media(prefers-reduced-motion:reduce) { #aiw-root .stage-slide.is-active .stage-canvas { animation: none; } }
-#aiw-root .stage-photo { position:absolute; left:4.5%; top:9%; bottom:18%; width:29%; margin:0; border-radius:24px; overflow:hidden; background:#243347; box-shadow:0 28px 70px rgba(0,0,0,.24); }
+#aiw-root .stage-photo { position:absolute; z-index:1; left:4.5%; top:9%; bottom:18%; width:29%; margin:0; border-radius:24px; overflow:hidden; background:#243347; box-shadow:0 28px 70px rgba(0,0,0,.24); }
 #aiw-root .stage-photo img { width:100%; height:100%; object-fit:cover; }
 #aiw-root .stage-diagram { background:#0b1323; }
 #aiw-root .stage-diagram img { object-fit:contain; padding:7%; box-sizing:border-box; }
@@ -3405,7 +3405,7 @@ html[data-theme="light"] #aiw-root .stage-full-bleed .stage-canvas h2 { color:#f
 #aiw-root .stage-full-bleed .stage-number { color:#72e7f0; }
 #aiw-root .stage-full-bleed .stage-citation { color:rgba(255,255,255,.72); }
 #aiw-root .stage-full-bleed .stage-citation a { color:#8deff5; }
-@media(max-width:760px) { #aiw-root .stage-photo { top:18px; left:24px; width:100px; height:90px; bottom:auto; } #aiw-root .stage-has-photo .stage-canvas { padding:120px 24px 85px; } }
+@media(max-width:760px) { #aiw-root .stage-photo { top:18px; left:24px; width:112px; height:96px; bottom:auto; border-radius:14px; } #aiw-root .stage-has-photo .stage-canvas { padding:128px 24px 85px; } }
 @media(max-width:760px) { #aiw-root .stage-full-bleed .stage-photo { inset:0; width:100%; height:100%; } #aiw-root .stage-full-bleed .stage-canvas { width:100%; padding:18% 24px 100px; } #aiw-root .stage-full-bleed .stage-photo::after { background:linear-gradient(180deg,rgba(4,7,13,.55),rgba(4,7,13,.94) 72%); } }
 #aiw-root .photo-offline { display:none; }
 #aiw-root .photo-unavailable .photo-offline { display:block; position:absolute; top:40%; inset-inline:20px; text-align:center; color:#fff; font-size:16px; line-height:2; }
