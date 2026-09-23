@@ -21,10 +21,15 @@ const joinFa = (items) => items.length < 2 ? (items[0] || '') : `${items.slice(0
 const clean = (value) => String(value || '').replace(/\s+/g, ' ').trim();
 const pluralizeObjective = (value) => clean(value)
   .replace(/^شرکت‌کننده بتواند\s*/, '')
+  .replace(/^شرکت‌کننده\s*/, '')
   .replace(/تشخیص دهد/g, 'تشخیص دهیم')
+  .replace(/بفهمد/g, 'بفهمیم')
   .replace(/مشخص کند/g, 'مشخص کنیم')
   .replace(/ارزیابی کند/g, 'ارزیابی کنیم')
   .replace(/انتخاب کند/g, 'انتخاب کنیم')
+  .replace(/جدا کند/g, 'جدا کنیم')
+  .replace(/تدوین کند/g, 'تدوین کنیم')
+  .replace(/پیدا کند/g, 'پیدا کنیم')
   .replace(/بنویسد/g, 'بنویسیم')
   .replace(/بررسی کند/g, 'بررسی کنیم')
   .replace(/طراحی کند/g, 'طراحی کنیم')
@@ -89,6 +94,30 @@ const workshopOpening = `## پیش از نمایش اسلاید اول
 
 `;
 
+const sessionOpenings = {
+  m2: `خوش آمدید. در جلسهٔ قبل یاد گرفتیم یک کار مناسب را از میان کارهای روزمره پیدا کنیم، درخواست روشنی بنویسیم و خروجی را پیش از استفاده بررسی کنیم. امروز یک قدم جلوتر می‌رویم: از مهارت فردی به انتخاب یک کاربرد سازمانی.
+
+پرسش امروز این نیست که «کدام ابزار معروف‌تر است؟» پرسش این است که «کدام مسئله ارزش حل‌کردن دارد و برای حل آن به چه نوع ابزاری نیاز داریم؟» ممکن است یک دستیار عمومی برای پیش‌نویس متن کافی باشد، اما پاسخ‌گویی بر اساس آیین‌نامه داخلی یا اجرای یک گردش‌کار، طراحی متفاوتی می‌خواهد.
+
+در پایان این جلسه باید بتوانیم فرصت‌های واحد خود را پیدا کنیم، میان چند خانوادهٔ ابزار تفاوت بگذاریم و پیش از ورود داده، دربارهٔ امنیت و دسترسی تصمیم بگیریم. شروع کنیم با فاصلهٔ میان یک درخواست خوب و یک کاربرد خوب.
+
+`,
+  m3: `خوش آمدید. تا اینجا هم کار مناسب را تشخیص داده‌ایم و هم ابزار را بر اساس مسئله انتخاب کرده‌ایم. حالا به جایی می‌رسیم که بیشتر پروژه‌های سازمانی از آن‌جا جدی می‌شوند: چگونه یک ابزار عمومی را به یک دستیار قابل اتکا برای سازمان تبدیل کنیم؟
+
+فرض کنید کارمند سپهر در چت سازمانی می‌پرسد «برای مرخصی ساعتی چه مراحلی لازم است؟» یک پاسخ روان کافی نیست. پاسخ باید از نسخهٔ معتبر آیین‌نامه بیاید، سطح دسترسی را رعایت کند، منبع را نشان دهد و اگر اطلاعات کافی نبود، به‌جای حدس‌زدن کار را به انسان ارجاع دهد.
+
+در این جلسه مدل، دانش سازمانی، قواعد، دسترسی، ثبت رویداد و اتصال به سامانه‌ها را کنار هم می‌گذاریم. هدف ما ساختن یک نقشهٔ روشن از راهکار است، نه ورود زودهنگام به جزئیات فنی. از این سؤال شروع کنیم که چرا یک چت عمومی به‌تنهایی کافی نیست.
+
+`,
+  m4: `خوش آمدید. در سه جلسهٔ قبل از یک وظیفهٔ روزمره به کاربرد سازمانی و سپس به طراحی دستیار رسیدیم. امروز باید همهٔ این اجزا را به یک نتیجهٔ اجرایی وصل کنیم: بازطراحی یک فرایند و تعریف پایلوتی که بتوان دربارهٔ ادامه یا توقف آن تصمیم گرفت.
+
+برای مطالعهٔ موردی، مسیر جذب تا ورود نیروی جدید در سپهر را دنبال می‌کنیم. این مسیر فقط غربال رزومه نیست؛ از روشن‌کردن نیاز و انتشار فراخوان آغاز می‌شود، به بررسی شواهد و مصاحبه می‌رسد و با دسترسی‌ها، برنامهٔ یادگیری و پیگیری ورود ادامه پیدا می‌کند.
+
+قرار نیست همهٔ این مسیر را خودکار کنیم. برای هر مرحله مشخص می‌کنیم هوش مصنوعی چه چیزی را آماده می‌کند، انسان کجا تصمیم می‌گیرد، چه خطایی قابل قبول نیست و موفقیت را با چه معیاری می‌سنجیم. ابتدا ببینیم چرا چند پروژهٔ پراکنده الزاماً یک فرایند بهتر نمی‌سازند.
+
+`
+};
+
 function factualContext(slide) {
   const note = clean(slide.note);
   if (!note) return '';
@@ -125,7 +154,7 @@ function practicalExample(slide, session) {
   return sessionExamples[session.id];
 }
 
-function spokenBody(slide, session) {
+function spokenBody(slide, session, index) {
   const paragraphs = [];
   if (slide.lead) paragraphs.push(toWeVoice(slide.lead));
   const points = slide.bullets || slide.items || [];
@@ -134,7 +163,13 @@ function spokenBody(slide, session) {
       const text = typeof point === 'string' ? point : (point.title ? `${point.title}: ${point.body || point.desc || ''}` : JSON.stringify(point));
       return `${faNums[index] || `نکتهٔ ${index + 1}`}، ${toWeVoice(text).replace(/[.؛]+$/, '')}`;
     });
-    paragraphs.push(`برای روشن‌شدن موضوع، چند نکته را باید کنار هم ببینیم. ${spoken.join('؛ ')}.`);
+    const pointLeads = [
+      'چند جزء این تصویر را کنار هم بگذاریم.',
+      'این موضوع را می‌توان در چند نکته دید.',
+      'برای تصمیم‌گیری، این موارد اهمیت دارند.',
+      'حالا اجزای اصلی را مرور کنیم.'
+    ];
+    paragraphs.push(`${pointLeads[index % pointLeads.length]} ${spoken.join('؛ ')}.`);
   }
   if (slide.callout) paragraphs.push(`${clean(slide.callout.title)} یعنی ${toWeVoice(slide.callout.body).replace(/[.؛]+$/, '')}.`);
   if (slide.visualData?.phases) {
@@ -150,13 +185,19 @@ function spokenBody(slide, session) {
 function slideSection(slide, index, slides, session) {
   const next = slides[index + 1];
   const nextTitle = next ? clean(next.title).replace(/[.!؟؛:]+$/, '') : '';
+  const transitionLines = [
+    `این تصویر، زمینهٔ بحث بعدی ماست: ${nextTitle}.`,
+    `با این نکته به پرسش بعدی می‌رسیم: ${nextTitle}.`,
+    `حالا می‌توانیم سراغ بخش بعد برویم: ${nextTitle}.`,
+    `این بحث ما را به موضوع بعدی وصل می‌کند: ${nextTitle}.`
+  ];
   const transition = next
-    ? `این تصویر، زمینهٔ بحث بعدی ماست: ${nextTitle}.`
+    ? transitionLines[index % transitionLines.length]
     : 'در پایان، از خودمان می‌پرسیم فردا کدام کار را می‌توانیم با روشی دقیق‌تر، امن‌تر و قابل سنجش انجام دهیم.';
 
   return `## اسلاید ${faDigits(index + 1)}: ${clean(slide.title)}
 
-${spokenBody(slide, session)}
+${spokenBody(slide, session, index)}
 
 ${transition}
 `;
@@ -175,7 +216,7 @@ for (const session of locale.aiWorkshop.sessions) {
   const title = `# متن اجرای جلسهٔ ${session.deckLabel.replace('جلسهٔ ', '')}: ${clean(session.title)}`;
   const front = session.id === 'm1'
     ? `${title}\n\n${workshopOpening}`
-    : `${title}\n\nسلام. موضوع این جلسه ${clean(session.tagline)} است. هدف ما فقط شناخت ابزارها نیست. می‌خواهیم در پایان بتوانیم ${pluralizeObjective(session.objective)}\n\n`;
+    : `${title}\n\n${sessionOpenings[session.id]}`;
   const body = session.slides.map((slide, i) => slideSection(slide, i, session.slides, session)).join('\n---\n\n');
   const close = `\n## جمع‌بندی جلسه\n\nاگر بخواهیم این جلسه را در یک جمله جمع‌بندی کنیم، باید بتوانیم ${joinFa((session.outcomes || []).map(toWeVoice))}. مهم‌ترین کار بعد از این جلسه، انتخاب یک مسئلهٔ واقعی و کوچک در محیط کار و آزمودن آن با معیار روشن است.\n`;
   const content = `${front}${body}${close}`;
