@@ -1,5 +1,5 @@
 /* Global Styles & Reset */
-@import url('academic-platform.css?v=20260908ee');
+@import url('academic-platform.css?v=20260923a');
 
 :root {
     --bg-dark: #070a13;
@@ -4124,6 +4124,9 @@ html[dir="ltr"] .bc-table {
         top: 100%;
         left: 0;
         right: 0;
+        width: 100%;
+        max-width: none;
+        justify-self: stretch;
         flex-direction: column;
         background: rgba(7, 10, 19, 0.97);
         backdrop-filter: blur(20px);
@@ -4153,7 +4156,7 @@ html[dir="ltr"] .bc-table {
 
     .main-header .header-actions,
     html[dir="rtl"] .main-header .header-actions {
-        grid-column: 3;
+        grid-column: 2;
         justify-self: end;
     }
 
@@ -7023,6 +7026,18 @@ html[data-theme="light"] .main-header {
 
 html[data-theme="light"] .main-header.scrolled {
     background: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 992px) {
+    html[data-theme="light"] .nav-links {
+        background: rgba(248, 250, 252, 0.98);
+        border-bottom-color: rgba(15, 23, 42, 0.1);
+        box-shadow: 0 18px 36px rgba(15, 23, 42, 0.1);
+    }
+
+    html[data-theme="light"] .nav-links a {
+        border-bottom-color: rgba(15, 23, 42, 0.08);
+    }
 }
 
 html[data-theme="light"] .main-footer {

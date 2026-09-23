@@ -1433,6 +1433,60 @@ html[data-theme="light"] body .type2-page .type2-hero h1 {
     -webkit-text-fill-color: #0f172a;
 }
 
+/* Inner heroes are a true daylight composition in the light theme. */
+html[data-theme="light"] body .page-hero,
+html[data-theme="light"] body .container.page-hero,
+html[data-theme="light"] body .fitness-page .fitness-hero,
+html[data-theme="light"] body .type2-page .type2-hero {
+    background: #eef3f8;
+}
+
+html[data-theme="light"] body .page-hero::before,
+html[data-theme="light"] body .fitness-page .fitness-hero::before,
+html[data-theme="light"] body .type2-page .type2-hero::before {
+    opacity: 0.42;
+    filter: saturate(0.55) contrast(0.78) brightness(1.42);
+}
+
+html[data-theme="light"] body .page-hero::after,
+html[data-theme="light"] body .fitness-page .fitness-hero::after,
+html[data-theme="light"] body .type2-page .type2-hero::after {
+    background:
+        linear-gradient(180deg, rgba(248, 250, 252, 0.3) 0%, rgba(246, 248, 251, 0.62) 52%, #f6f8fb 100%),
+        linear-gradient(270deg, rgba(248, 250, 252, 0.98) 0%, rgba(248, 250, 252, 0.9) 36%, rgba(248, 250, 252, 0.46) 68%, rgba(248, 250, 252, 0.14) 100%);
+}
+
+html[dir="ltr"][data-theme="light"] body .page-hero::after,
+html[dir="ltr"][data-theme="light"] body .fitness-page .fitness-hero::after,
+html[dir="ltr"][data-theme="light"] body .type2-page .type2-hero::after {
+    background:
+        linear-gradient(180deg, rgba(248, 250, 252, 0.3) 0%, rgba(246, 248, 251, 0.62) 52%, #f6f8fb 100%),
+        linear-gradient(90deg, rgba(248, 250, 252, 0.98) 0%, rgba(248, 250, 252, 0.9) 36%, rgba(248, 250, 252, 0.46) 68%, rgba(248, 250, 252, 0.14) 100%);
+}
+
+html[data-theme="light"] body .page-hero-sub,
+html[data-theme="light"] body .page-hero > p,
+html[data-theme="light"] body .fitness-hero-sub,
+html[data-theme="light"] body .type2-hero-sub {
+    color: #475569;
+}
+
+html[data-theme="light"] body .page-hero .section-tag,
+html[data-theme="light"] body .fitness-page .fitness-hero .section-tag,
+html[data-theme="light"] body .type2-page .type2-hero .section-tag {
+    color: #1d4ed8;
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(37, 99, 235, 0.2);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+}
+
+html[data-theme="light"] body .main-header,
+html[data-theme="light"] body .main-header.scrolled {
+    background: rgba(248, 250, 252, 0.9);
+    border-bottom-color: rgba(15, 23, 42, 0.1);
+    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+}
+
 html[data-theme="light"] body .about-work-head h2 {
     color: #0f172a;
 }
