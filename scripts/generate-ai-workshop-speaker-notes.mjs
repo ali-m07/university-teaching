@@ -1,0 +1,153 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+
+const root = process.cwd();
+const localePath = path.join(root, 'js', 'locales', 'fa', 'ai-org-workshop.js');
+const outputDir = path.join(root, 'docs', 'ai-workshop-speaker-notes');
+const source = fs.readFileSync(localePath, 'utf8');
+let locale;
+
+vm.runInNewContext(source, {
+  registerLocale(_lang, data) { locale = data; }
+});
+
+if (!locale?.aiWorkshop?.sessions) throw new Error('Workshop sessions were not found.');
+fs.mkdirSync(outputDir, { recursive: true });
+
+const faNums = ['اول', 'دوم', 'سوم', 'چهارم', 'پنجم', 'ششم', 'هفتم', 'هشتم', 'نهم', 'دهم'];
+const faDigits = (value) => String(value).replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]);
+const joinFa = (items) => items.length < 2 ? (items[0] || '') : `${items.slice(0, -1).join('، ')} و ${items.at(-1)}`;
+const clean = (value) => String(value || '').replace(/\s+/g, ' ').trim();
+const pluralizeObjective = (value) => clean(value)
+  .replace(/^شرکت‌کننده بتواند\s*/, '')
+  .replace(/تشخیص دهد/g, 'تشخیص دهیم')
+  .replace(/مشخص کند/g, 'مشخص کنیم')
+  .replace(/ارزیابی کند/g, 'ارزیابی کنیم')
+  .replace(/انتخاب کند/g, 'انتخاب کنیم')
+  .replace(/بنویسد/g, 'بنویسیم')
+  .replace(/بررسی کند/g, 'بررسی کنیم')
+  .replace(/طراحی کند/g, 'طراحی کنیم')
+  .replace(/بدهد/g, 'بدهیم');
+const toWeVoice = (value) => clean(value)
+  .replace(/انتخاب کنید/g, 'انتخاب کنیم')
+  .replace(/تقسیم کنید/g, 'تقسیم کنیم')
+  .replace(/مشخص کنید/g, 'مشخص کنیم')
+  .replace(/تعریف کنید/g, 'تعریف کنیم')
+  .replace(/ارزیابی کنید/g, 'ارزیابی کنیم')
+  .replace(/طراحی کنید/g, 'طراحی کنیم')
+  .replace(/تفکیک کنید/g, 'تفکیک کنیم')
+  .replace(/اضافه کنید/g, 'اضافه کنیم')
+  .replace(/دریافت کنید/g, 'دریافت کنیم')
+  .replace(/پیدا کنید/g, 'پیدا کنیم')
+  .replace(/بکشید/g, 'بکشیم')
+  .replace(/بنویسید/g, 'بنویسیم')
+  .replace(/بپرسید/g, 'بپرسیم')
+  .replace(/بگیرید/g, 'بگیریم')
+  .replace(/بگیر/g, 'بگیریم')
+  .replace(/راستی‌آزمایی کنید/g, 'راستی‌آزمایی کنیم')
+  .replace(/انجام دهید/g, 'انجام دهیم')
+  .replace(/روشن کنید/g, 'روشن کنیم')
+  .replace(/افزایش دهید/g, 'افزایش دهیم')
+  .replace(/استفاده کنید/g, 'استفاده کنیم')
+  .replace(/اضافه کن/g, 'اضافه کنیم')
+  .replace(/نقد کن/g, 'نقد کنیم')
+  .replace(/دریافت کن/g, 'دریافت کنیم');
+
+function factualContext(slide) {
+  const note = clean(slide.note);
+  if (!note) return '';
+  const imperativeTokens = [' کن', ' نکن', 'بگو', 'بپرس', 'بخواه', 'بخوان', 'بگیر', 'بگذار', 'بساز', 'ببین', 'بده', 'نده', 'ببر', 'بیاور', 'بزن', 'کنید', 'دهید', 'بخواهید', 'نشان بده', 'نگه دار', 'پرهیز کن', 'یادآوری کن', 'دعوت کن', 'اشاره کن'];
+  return note
+    .split(/(?<=[.!؟؛])\s+/)
+    .filter(sentence => sentence.length > 45 && !imperativeTokens.some(token => sentence.includes(token)))
+    .slice(0, 3)
+    .join(' ');
+}
+
+function practicalExample(slide, session) {
+  const key = clean(slide.title);
+  if (/یک روز کاری پیش از ورود/.test(key)) return 'سارا صبحش را با ۴۷ پیام شروع کرده است، رضا تیکتی با جملهٔ «VPN خراب است» دارد و مریم هنوز نمی‌داند تصمیم دیروز چه کسی را مسئول کرده است. هیچ‌کدام به یک ربات نمایشی نیاز ندارند؛ هرکدام یک اصطکاک کوچک و تکرارشونده دارند که می‌توان آن را دقیق‌تر طراحی کرد.';
+  if (/با سازمان سپهر/.test(key)) return 'مثلاً پاسخ یک درخواست مرخصی ممکن است در سامانهٔ منابع انسانی ثبت شود، توضیح آن در چت باشد و نسخهٔ معتبر آیین‌نامه در فضای اسناد بماند. کارمند برای یک پاسخ ساده باید هر سه محیط را جست‌وجو کند.';
+  if (/اصطکاک کار/.test(key)) return 'اگر سارا هر روز فقط چهل دقیقه صرف مرتب‌کردن درخواست‌ها کند، این زمان در یک ماه به بیش از سیزده ساعت می‌رسد. نقطهٔ شروع خوب همین‌جاست: کاری پرتکرار، قابل مشاهده و دارای خروجی قابل بررسی.';
+  if (/مدل زبانی|پاسخ می‌سازد/.test(key)) return 'مثلاً وقتی در تلفن همراه چند کلمه تایپ می‌کنیم و صفحه‌کلید ادامهٔ جمله را پیشنهاد می‌دهد، نسخه‌ای بسیار ساده از پیش‌بینی واژهٔ بعدی را می‌بینیم. مدل زبانی بزرگ همین منطق را در مقیاسی بسیار بزرگ‌تر اجرا می‌کند؛ بنابراین ممکن است جمله‌ای روان بسازد که از نظر واقعیت اشتباه باشد.';
+  if (/هوش مصنوعی چیست|تشخیص|پیش‌بینی|پیشنهاد|تولید/.test(key)) return 'مثلاً فیلتر هرزنامه یک پیام را تشخیص می‌دهد، سامانهٔ فروش تقاضای ماه آینده را پیش‌بینی می‌کند، فروشگاه محصول مناسب را پیشنهاد می‌دهد و یک دستیار مولد پیش‌نویس ایمیل را تولید می‌کند. هر چهار مورد هوش مصنوعی‌اند، اما مسئله و روش آن‌ها یکی نیست.';
+  if (/شغل|وظیفه|آدم|انسان/.test(key)) return 'مثلاً کارشناس منابع انسانی فقط «رزومه‌خوان» نیست. او نیاز مدیر را روشن می‌کند، با نامزد گفتگو می‌کند، دربارهٔ تناسب فرهنگی قضاوت می‌کند و مسئولیت تصمیم را می‌پذیرد. هوش مصنوعی می‌تواند استخراج اطلاعات یا آماده‌سازی سؤال را سریع‌تر کند، اما کل این شغل را یک‌جا انجام نمی‌دهد.';
+  if (/درخواست|پرامپت|صورت‌جلسه|راستی‌آزمایی/.test(key)) return 'مثلاً به‌جای نوشتن «این جلسه را خلاصه کن»، می‌گوییم: تصمیم‌های قطعی را در جدولی با ستون مسئول و موعد بنویس، پیشنهادهای تصویب‌نشده را جدا کن، اگر مسئول یا موعد در متن نیست چیزی نساز و موارد مبهم را علامت بزن. همین تغییر ساده، خروجی را از یک متن زیبا به یک ابزار کاری تبدیل می‌کند.';
+  if (/خانوادهٔ ابزار|انتخاب ابزار|مقایسهٔ ابزار|خرید/.test(key)) return 'مثلاً برای نوشتن یک متن عمومی شاید یک دستیار عمومی کافی باشد؛ برای پاسخ‌دادن بر اساس آیین‌نامه‌های داخلی، ابزاری مانند NotebookLM یا یک دستیار سازمانی منبع‌محور مناسب‌تر است؛ و برای اجرای فرایند، باید آن را به سامانه‌هایی مانند Mattermost، Jira یا n8n متصل کرد.';
+  if (/دانش|RAG|منبع|سند|جست‌وجو/.test(key)) return 'مثلاً کارمند می‌پرسد «برای مرخصی ساعتی چه مراحلی لازم است؟» دستیار نباید از حافظهٔ عمومی پاسخ بدهد. باید بند مرتبط را از آیین‌نامهٔ منابع انسانی بازیابی کند، پاسخ را همراه با نام سند و شمارهٔ بند ارائه دهد و اگر منبع کافی نیست صریحاً اعلام کند.';
+  if (/تیکت|VPN|پشتیبانی|چت/.test(key)) return 'مثلاً کارمند در چت سازمانی می‌نویسد «VPN من وصل نمی‌شود و ساعت ده جلسهٔ مشتری دارم». دستیار ابتدا نوع دستگاه و کد خطا را می‌پرسد، راهنمای معتبر را پیدا می‌کند و اگر مشکل حل نشد، پیش‌نویس تیکت را برای تأیید کاربر آماده می‌کند؛ ثبت نهایی بدون تأیید انجام نمی‌شود.';
+  if (/استخدام|جذب|منابع انسانی/.test(key)) return 'مثلاً درخواست خام مدیر این است: «برای تیم پشتیبانی یک نفر می‌خواهم، هرچه زودتر». هوش مصنوعی می‌تواند شرح شغل اولیه، معیارهای قابل سنجش، سؤال‌های مصاحبه و برنامهٔ ورود سی‌روزه را آماده کند؛ اما معیارها و تصمیم نهایی استخدام باید توسط مدیر و منابع انسانی تصویب شود.';
+  if (/ریسک|حریم|داده|محرمان|کنترل/.test(key)) return 'مثلاً اگر کارمند قرارداد محرمانهٔ مشتری را در یک ابزار عمومی بارگذاری کند، حتی بهترین پاسخ هم ارزش این ریسک را ندارد. راه درست این است که طبقه‌بندی داده، ابزار مجاز، سطح دسترسی و مسئول بازبینی پیش از استفاده مشخص باشد.';
+  if (/فرایند|بازطراحی|پایلوت|نود|۹۰|معیار|سنجش/.test(key)) return 'مثلاً در پایلوت تیکتینگ، فقط «رضایت از هوش مصنوعی» را نمی‌سنجیم. زمان متوسط پاسخ، نرخ ارجاع درست، درصد پاسخ‌های دارای منبع، تعداد خطاهای پرریسک و میزان استفادهٔ واقعی کارشناسان را پیش و پس از پایلوت مقایسه می‌کنیم.';
+  if (slide.kind === 'exercise') return `مثلاً یک گروه می‌تواند مسئلهٔ «${clean(slide.title)}» را روی یک فرایند واقعی مانند پاسخ‌گویی به درخواست مرخصی، پشتیبانی VPN یا آماده‌سازی گزارش هفتگی اجرا کند و دقیقاً مشخص کند ورودی، خروجی، مسئول انسانی و معیار موفقیت چیست.`;
+  const sessionExamples = {
+    m1: 'مثلاً کارشناس فروش هر دوشنبه چند صفحه یادداشت جلسه را به گزارش پیگیری تبدیل می‌کند. هوش مصنوعی پیش‌نویس را می‌سازد، اما کارشناس نام مشتری، مبلغ، موعد و تصمیم قطعی را با متن اصلی تطبیق می‌دهد.',
+    m2: 'مثلاً واحد مالی، منابع انسانی و پشتیبانی هر سه از هوش مصنوعی استفاده می‌کنند، اما نیازشان متفاوت است: مالی به کنترل عدد و محرمانگی، منابع انسانی به انصاف و پشتیبانی به سرعت و پاسخ مستند نیاز دارد.',
+    m3: 'مثلاً دستیار داخل Mattermost می‌تواند سؤال کاربر را بفهمد، سند معتبر را پیدا کند و پیش‌نویس تیکت Jira را بسازد؛ ولی برای اقدام پرریسک یا نبود منبع باید کار را به انسان ارجاع دهد.',
+    m4: 'مثلاً به‌جای خودکارکردن یک فرم منفرد، کل مسیر از درخواست نیرو تا ورود کارمند جدید را می‌بینیم و در هر مرحله تعیین می‌کنیم هوش مصنوعی چه چیزی را آماده کند و انسان چه چیزی را تصویب کند.'
+  };
+  return sessionExamples[session.id];
+}
+
+function spokenBody(slide, session) {
+  const paragraphs = [];
+  if (slide.lead) paragraphs.push(toWeVoice(slide.lead));
+  const points = slide.bullets || slide.items || [];
+  if (points.length) {
+    const spoken = points.map((point, index) => {
+      const text = typeof point === 'string' ? point : (point.title ? `${point.title}: ${point.body || point.desc || ''}` : JSON.stringify(point));
+      return `${faNums[index] || `نکتهٔ ${index + 1}`}، ${toWeVoice(text).replace(/[.؛]+$/, '')}`;
+    });
+    paragraphs.push(`برای روشن‌شدن موضوع، چند نکته را باید کنار هم ببینیم. ${spoken.join('؛ ')}.`);
+  }
+  if (slide.callout) paragraphs.push(`${clean(slide.callout.title)} یعنی ${toWeVoice(slide.callout.body).replace(/[.؛]+$/, '')}.`);
+  if (slide.visualData?.phases) {
+    paragraphs.push(`این مسیر سه مرحله دارد: ${joinFa(slide.visualData.phases.map(p => `${clean(p.title)}؛ ${clean(p.items)}`))}.`);
+  }
+  const context = factualContext(slide);
+  if (context) paragraphs.push(context);
+  paragraphs.push(practicalExample(slide, session));
+  if (!paragraphs.length) paragraphs.push(`در این اسلاید دربارهٔ ${clean(slide.title)} صحبت می‌کنیم و با یک نمونهٔ واقعی، مرز نقش انسان و هوش مصنوعی را روشن می‌کنیم.`);
+  return paragraphs.join('\n\n');
+}
+
+function slideSection(slide, index, slides, session) {
+  const next = slides[index + 1];
+  const transition = next
+    ? `این تصویر، زمینهٔ بحث بعدی ماست: ${clean(next.title)}.`
+    : 'در پایان، از خودمان می‌پرسیم فردا کدام کار را می‌توانیم با روشی دقیق‌تر، امن‌تر و قابل سنجش انجام دهیم.';
+
+  return `## اسلاید ${faDigits(index + 1)}: ${clean(slide.title)}
+
+${spokenBody(slide, session)}
+
+${transition}
+`;
+}
+
+const indexLines = [
+  '# متن کامل اجرای کارگاه هوش مصنوعی در سازمان',
+  '',
+  'چهار فایل زیر متن روخوانی اسلایدبه‌اسلاید هستند. زیر عنوان هر اسلاید، توضیح پیوسته و مثال کاربردی آمده است.',
+  ''
+];
+
+for (const session of locale.aiWorkshop.sessions) {
+  const number = Number(String(session.id).replace(/\D/g, ''));
+  const filename = `session-${number}-speaker-script-fa.md`;
+  const title = `# متن اجرای جلسهٔ ${session.deckLabel.replace('جلسهٔ ', '')}: ${clean(session.title)}`;
+  const front = `${title}
+
+سلام. موضوع این جلسه ${clean(session.tagline)} است. هدف ما فقط شناخت ابزارها نیست. می‌خواهیم در پایان بتوانیم ${pluralizeObjective(session.objective)}
+
+`;
+  const body = session.slides.map((slide, i) => slideSection(slide, i, session.slides, session)).join('\n---\n\n');
+  const close = `\n## جمع‌بندی جلسه\n\nاگر بخواهیم این جلسه را در یک جمله جمع‌بندی کنیم، باید بتوانیم ${joinFa((session.outcomes || []).map(toWeVoice))}. مهم‌ترین کار بعد از این جلسه، انتخاب یک مسئلهٔ واقعی و کوچک در محیط کار و آزمودن آن با معیار روشن است.\n`;
+  const content = `${front}${body}${close}`;
+  fs.writeFileSync(path.join(outputDir, filename), content, 'utf8');
+  indexLines.push(`- [${session.deckLabel}: ${clean(session.title)}](./${filename}) — ${session.slides.length} اسلاید`);
+}
+
+fs.writeFileSync(path.join(outputDir, 'README.md'), `${indexLines.join('\n')}\n`, 'utf8');
+console.log(`Generated ${locale.aiWorkshop.sessions.length} speaker scripts in ${outputDir}`);
