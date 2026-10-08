@@ -226,5 +226,5 @@
 - به امید دیدار مجدد
 - علی منصوری
 - دانشجوی دکترای آینده پژوهی دانشگاه تهران
-- https://ali-m07.github.io/resume/
+- https://dralima.ir/resume/
 

@@ -111,7 +111,7 @@ function getNavItems() {
         ['presentations/', 'nav.presentations'],
         ['methods/', 'nav.methods'],
         ['about/', 'nav.about'],
-        ['https://ali-m07.github.io/resume/', 'nav.cv', true]
+        ['https://dralima.ir/resume/', 'nav.cv', true]
     ];
 }
 

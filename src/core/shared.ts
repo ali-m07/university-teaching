@@ -77,7 +77,7 @@ export function getNavItems(): [string, string][] {
     ['articles/', 'nav.articles'],
     ['methods/', 'nav.methods'],
     ['about/', 'nav.about'],
-    ['https://ali-m07.github.io/resume/', 'nav.cv']
+    ['https://dralima.ir/resume/', 'nav.cv']
   ];
 }
 

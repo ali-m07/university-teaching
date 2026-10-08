@@ -4,7 +4,7 @@
 
 Interactive strategic foresight portal by **Ali Mansouri** (PhD Candidate, University of Tehran): teaching tools, personal brand, and research articles — fully bilingual **FA / EN**.
 
-🔗 Live: [GitHub Pages](https://ali-m07.github.io/university-teaching/) · 📄 Resume: [ali-m07.github.io/resume](https://ali-m07.github.io/resume/)
+🔗 Live: [GitHub Pages](https://ali-m07.github.io/university-teaching/) · 📄 Resume: [dralima.ir/resume](https://dralima.ir/resume/)
 
 ---
 
@@ -133,7 +133,7 @@ Delphi, morphological analysis, and 30+ other FRM chapters are **intentionally o
 
 **Ali Mansouri** — علی منصوری  
 PhD Candidate in Foresight, University of Tehran  
-[Resume](https://ali-m07.github.io/resume/) · [GitHub](https://github.com/ali-m07)
+[Resume](https://dralima.ir/resume/) · [GitHub](https://github.com/ali-m07)
 
 ---
 
