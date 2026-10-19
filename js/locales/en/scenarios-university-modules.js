@@ -21,8 +21,8 @@ registerLocale('en', {
             universitySectionTitle: 'University track · syllabus and teaching',
             industrySectionTitle: 'Industry track · organizational delivery',
                         university: {
-                title: 'Scenario Planning · three lecture decks',
-                intro: 'Based on Pierre Wack (Shell), Peter Schwartz, and van der Heijden. Scenarios as a decision tool under uncertainty, not single-line prediction.',
+                title: 'Scenario planning · four lecture decks',
+                intro: 'Based on Pierre Wack (Shell), Peter Schwartz, van der Heijden, Michel Godet, Clement Bezold, and Wendell Bell. Each deck includes a worked example that turns scenarios from “future stories” into decisions under uncertainty.',
                 modules: [
                     {
                         num: 'M1', id: 'm1', pickerLabel: 'Shell & mental prep',
@@ -72,6 +72,16 @@ registerLocale('en', {
                                     'Schwartz: without a clear focal decision, scenarios are entertainment.',
                                     'Example: “Should the organization build a proprietary LLM by 2029 or stay on external APIs?”',
                                     'Each group writes one focal decision for the term project and critiques it in class.'
+                                ]
+                            },
+                            {
+                                id: 'worked-example',
+                                title: '4. Worked example: enterprise AI assistant',
+                                slideTitles: ['A real decision', 'Fragile assumptions', 'Preparedness, not prediction'],
+                                paragraphs: [
+                                    'An insurer must decide today whether to develop an AI assistant for first-pass claims handling over the next eighteen months. The decision specifies budget, product ownership, data access, and the boundary of human accountability, making the scenario question concrete and actionable.',
+                                    'Two hidden assumptions are that regulation will permit processing customer documents and that model quality for the local language will remain reliable. The team assigns an observable warning to each: draft data-protection rules and the model error rate on anonymized real cases.',
+                                    'The aim is not to predict one future. If regulation tightens, the firm tests an on-premise architecture; if quality falls, AI is limited to extraction; if both conditions remain favorable, a bounded pilot begins with mandatory human approval.'
                                 ]
                             }
                         ],
@@ -139,6 +149,16 @@ registerLocale('en', {
                                     'Each group narrates one quadrant in three minutes.',
                                     'Critique: are axes truly independent? Do names carry logic or only color?'
                                 ]
+                            },
+                            {
+                                id: 'worked-example',
+                                title: '4. Worked example: supply-chain futures',
+                                slideTitles: ['Choose two axes', 'Four distinct worlds', 'Test narrative coherence'],
+                                paragraphs: [
+                                    'A manufacturer faces a focal decision: “By 2029, should we expand domestic inventory capacity or build a regional supplier network?” After ranking drivers, two independent uncertainties remain: the severity of cross-border trade restrictions and the maturity of domestic suppliers.',
+                                    'The matrix produces four logics: “Domestic Fortress” (closed borders/mature local supply), “Chronic Shortage” (closed/weak), “Fluid Market” (open/mature), and “Fragile Dependence” (open/weak). Each name makes a different operating logic memorable.',
+                                    'For “Chronic Shortage,” the causal path is explicit: import restrictions, component scarcity, longer lead times, larger safety stocks, and cash pressure. If any consequence contradicts the world logic, the narrative is rewritten; a vivid name never substitutes for coherence.'
+                                ]
                             }
                         ],
                         readings: [
@@ -203,6 +223,16 @@ registerLocale('en', {
                                     'Scenarios without a budgeting and risk link sit on a shelf. Define at least one quarterly decision gate.',
                                     'In Rohrbeck language: scenarios feed prospecting; 90-day probing tests scenario hypotheses in the field.',
                                     'Assignment: four scenarios + one indicator each + one no-regret action + one pilot proposal.'
+                                ]
+                            },
+                            {
+                                id: 'worked-example',
+                                title: '4. Worked example: energy and budgeting',
+                                slideTitles: ['Indicator dashboard', 'Portfolio of actions', 'Quarterly decision gate'],
+                                paragraphs: [
+                                    'For energy scenarios, the team tracks three quarterly indicators: storage cost per kilowatt-hour, the share of renewable power-purchase agreements, and power-plant permitting time. Every indicator has a threshold, data source, and owner; “watch technology” is not an indicator.',
+                                    'A no-regret move is improving building energy efficiency because it pays across all four scenarios. A contingent option is reserving land for solar generation; it is exercised only after storage cost falls below the agreed threshold.',
+                                    'The investment committee reviews the indicators each quarter. Two threshold crossings release funding for a 90-day pilot; no crossing pauses spending and continues monitoring. This gate links the scenario directly to capital allocation.'
                                 ]
                             }
                         ],
@@ -269,6 +299,16 @@ registerLocale('en', {
                                     'Clement Bezold developed participatory scenario building for policy and public health processes, where building agreement among stakeholders matters more than analytical precision alone.',
                                     'Wendell Bell, in Foundations of Futures Studies, separates possible, probable, and preferable futures. This triad sharpens the question: is this scenario possible, is it probable, or is it one we consider preferable?',
                                     'To choose a typology, first revisit M1\'s focal decision and the project\'s audience: a high-level strategic decision usually calls for exploratory and qualitative work, public policy for participatory work, and financial risk modeling usually for quantitative work.'
+                                ]
+                            },
+                            {
+                                id: 'worked-example',
+                                title: '4. Worked example: choosing the right family',
+                                slideTitles: ['Participatory urban question', 'Quantitative investment question', 'Method-selection rule'],
+                                paragraphs: [
+                                    'Designing a city mobility future is not only a data problem: residents, drivers, government, and local businesses must deliberate about a preferred future. Bezold-style participatory scenarios fit because legitimacy and shared learning are part of the deliverable.',
+                                    'Evaluating investment across several energy technologies requires comparison of conditional probabilities and interactions among assumptions. SMIC or cross-impact analysis can complement qualitative narratives here; numbers expose inconsistent combinations rather than replace the story.',
+                                    'Use a simple rule: if the question is “what might happen?”, build exploratory scenarios; if it is “which future do we want?”, use normative scenarios and backcasting; if stakeholder conflict dominates, use a participatory process; if assumption interdependence matters, add a quantitative method.'
                                 ]
                             }
                         ],
