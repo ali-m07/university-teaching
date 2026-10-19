@@ -122,6 +122,14 @@ registerLocale('en', {
                     { title: 'Organizational assistant and smart workflow', sub: 'Organizational knowledge, RAG, small and large models, chat integration, ticketing and systems' },
                     { title: 'Process redesign and running the pilot', sub: 'End-to-end process design, the recruiting case, measuring value, risk control, the rollout map' }
                 ]
+            },
+            {
+                title: 'Futures Basics · two decks',
+                sub: 'Amara · Voros · Knight · Courtney · a standalone section, prerequisite for every method',
+                cards: [
+                    { title: 'Types of Futures and the Futures Cone', sub: 'Possible, plausible, probable, preferable, wild cards; from classification to the action portfolio' },
+                    { title: 'Uncertainties', sub: 'Knight’s line, the known/unknown matrix, McKinsey’s four levels, robust decisions' }
+                ]
             }
         ]
     }

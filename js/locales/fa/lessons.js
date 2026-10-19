@@ -272,6 +272,48 @@ registerLocale('fa', {
             ],
             assignment: '۲ محور uncertainty برای حوزه thesis/کار خود بنویسید. ۴ نام scenario + ۱ indicator هر کدام + یک no-regret action.'
         },
+        futuresBasics: {
+            meta: {
+                module: '۱۳',
+                duration: '۱۸۰ دقیقه (۲ جلسه)',
+                level: 'مبانی / همه رشته‌ها',
+                diagram: null
+            },
+            founders: [
+                {
+                    id: 'amara',
+                    name: 'Roy Amara',
+                    role: 'رئیس سابق Institute for the Future',
+                    bio: 'سه‌گانه ممکن/محتمل/مطلوب را در آینده‌پژوهی رایج کرد (۱۹۸۱)؛ قانون مشهورش می‌گوید اثر فناوری را در کوتاه‌مدت بیش‌برآورد و در بلندمدت کم‌برآورد می‌کنیم.'
+                },
+                {
+                    id: 'knight',
+                    name: 'Frank Knight',
+                    role: 'اقتصاددان دانشگاه شیکاگو',
+                    bio: 'در Risk, Uncertainty and Profit (۱۹۲۱) خط میان ریسک قابل اندازه‌گیری و عدم‌قطعیت را کشید.'
+                }
+            ],
+            objectives: [
+                'چهار نوع آینده را از هم تفکیک و روی ادعاها اعمال کنید.',
+                'مخروط آینده و حرکت مرزها را توضیح دهید.',
+                'ریسک را از عدم‌قطعیت و سطوح چهارگانه تشخیص دهید.',
+                'برای هر سطح، ابزار متناسب انتخاب کنید.'
+            ],
+            outline: [
+                { step: '۱', time: '۳۰ دقیقه', title: 'چهار نوع آینده', desc: 'برچسب‌گذاری ادعاهای واقعی کلاس.' },
+                { step: '۲', time: '۲۵ دقیقه', title: 'مخروط و Wild Card', desc: 'افق‌های زمانی و گسست.' },
+                { step: '۳', time: '۳۰ دقیقه', title: 'ریسک در برابر عدم‌قطعیت', desc: 'نایت و ماتریس دانسته/نادانسته.' },
+                { step: '۴', time: '۴۵ دقیقه', title: 'سطوح و ابزارها', desc: 'مک‌کینزی، عدم‌قطعیت حیاتی، تصمیم مقاوم.' },
+                { step: '۵', time: '۲۰ دقیقه', title: 'نقشه عدم‌قطعیت', desc: 'هر گروه نقشه تصمیم پروژه خود.' },
+                { step: '۶', time: '۳۰ دقیقه', title: 'Presentation', desc: 'سبد اقدام هر گروه ۳ دقیقه.' }
+            ],
+            readings: [
+                { type: 'مقاله', text: 'Voros, J. (2003). A generic foresight process framework. <em>Foresight</em>.' },
+                { type: 'کتاب کلاسیک', text: 'Knight, F. H. (1921). <em>Risk, Uncertainty and Profit</em>.' },
+                { type: 'مقاله', text: 'Courtney, H., Kirkland, J., & Viguerie, P. (1997). Strategy under uncertainty. <em>Harvard Business Review</em>.' }
+            ],
+            assignment: 'چهار ادعای آینده پروژه را برچسب بگذارید (ممکن/باورپذیر/محتمل/مطلوب) و نقشه عدم‌قطعیت تصمیم را با سطح و ابزار بنویسید.'
+        },
         futurpreneurship: {
             meta: {
                 module: '۸',

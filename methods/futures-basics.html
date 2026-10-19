@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Method</title>
+    <script>(function(){try{var s=localStorage.getItem('sfh-lang');var l=(s==='en'||s==='fa')?s:(function(){var c=[navigator.language].concat(navigator.languages||[]);for(var i=0;i<c.length;i++){if(!c[i])continue;var k=c[i].toLowerCase().split('-')[0];if(k==='fa')return 'fa';if(k==='en')return 'en';}return 'fa';})();document.documentElement.lang=l;document.documentElement.dir=(l==='fa'?'rtl':'ltr');}catch(e){}})();</script>
+    <script>(function(){try{var m=location.search.match(/[?&]theme=(light|dark)/);var t=m?m[1]:localStorage.getItem('sfh-theme');if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme='light';}})();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=20260923a">
+    <link rel="stylesheet" href="../css/fitness-presentation.css?v=16">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-advanced-method="futures-basics">
+    <canvas id="particles-canvas"></canvas>
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon"><i data-lucide="compass"></i></span>
+            <span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span>
+        </div>
+        <nav class="nav-links"></nav>
+        <div class="header-actions">
+            <a href="fitness.html#assessment" class="btn-primary-sm" data-i18n="nav.assess">ارزیابی</a>
+        </div>
+    </header>
+
+    <section class="container page-hero">
+        <span class="section-tag" style="background:rgba(255,255,255,0.05);color:#00e5ff;" data-i18n="advancedPage.futuresBasics.heroTag"></span>
+        <h1 style="font-size:2.3rem;color:var(--text-primary);margin:12px 0;" data-i18n="advancedPage.futuresBasics.heroTitle"></h1>
+        <p style="max-width:760px;margin:0 auto;color:var(--text-secondary);line-height:1.7;" data-i18n="advancedPage.futuresBasics.heroSub" data-i18n-html></p>
+    </section>
+
+    <div class="container">
+        <div id="method-history"></div>
+        <div id="lesson-section" data-lesson-key="futuresBasics"></div>
+        <div id="method-tracks" data-deck-ns="advancedPage.futuresBasics" style="padding: 8px 0 32px;"></div>
+    </div>
+
+    <section class="container" style="padding-bottom:50px;">
+        <div class="glass-card" style="padding:32px;margin-bottom:32px;">
+            <h2 id="adv-intro-title" style="color:var(--text-primary);font-size:1.3rem;margin-bottom:12px;"></h2>
+            <p id="adv-intro" style="color:var(--text-secondary);line-height:1.75;"></p>
+        </div>
+        <div id="method-pillars-grid" class="hub-cards-grid" style="margin-bottom:32px;"></div>
+        <div class="workspace-grid">
+            <div class="glass-card" style="padding:24px;border-inline-start:3px solid var(--color-cla);">
+                <h3 id="adv-gap-title" style="color:var(--text-primary);font-size:1.1rem;margin-bottom:10px;"></h3>
+                <p id="adv-gap" style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;"></p>
+            </div>
+            <div class="glass-card" style="padding:24px;">
+                <h3 id="adv-case-title" style="color:var(--text-primary);font-size:1.1rem;margin-bottom:10px;"><i data-lucide="git-branch" style="vertical-align:middle;margin-inline-end:6px;color:#00e5ff;"></i> Case</h3>
+                <p id="adv-case" style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;"></p>
+            </div>
+        </div>
+        <p style="text-align:center;margin-top:32px;">
+            <a href="./" class="btn-ghost-sm"><span data-i18n="hubAdvanced.catalogLink">کاتالوگ</span></a>
+        </p>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container container" style="padding-bottom:20px;">
+            <div class="footer-info">
+                <div class="footer-logo"><span class="logo-icon"><i data-lucide="compass"></i></span><span class="logo-text">FORESIGHT <span class="highlight">HUB</span></span></div>
+                <p data-i18n="footer.desc"></p>
+            </div>
+        </div>
+        <div class="footer-bottom"><p data-i18n="footer.copyright"></p></div>
+    </footer>
+
+    <script>window.SFH_LOCALE_VERSION = '86';</script>
+    <script src="../js/core/paths.js"></script>    <script src="../js/core/i18n.js"></script>
+    <script src="../js/core/load-locales.js?v=2"></script>
+    <script src="../js/core/i18n-render.js"></script>
+    <script src="../js/core/founders.js"></script>
+    <script src="../js/core/ui/lesson-ui.js"></script>
+    <script src="../js/core/ui/method-prose.js"></script>
+    <script src="../js/core/ui/advanced-ui.js"></script>
+    <script src="../js/core/ui/fitness-presentation.js?v=5"></script>
+    <script src="../js/core/ui/module-deck.js?v=3"></script>
+    <script src="../js/pages/method-deck-render.js?v=3"></script>
+    <script src="../js/core/ui/method-tracks.js?v=2"></script>
+    <script src="../js/core/shared.js"></script>
+    <script src="../js/core/main.js"></script>
+    <script src="../js/core/animation.js"></script>
+</body>
+</html>

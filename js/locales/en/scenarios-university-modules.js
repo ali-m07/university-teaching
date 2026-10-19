@@ -36,12 +36,12 @@ registerLocale('en', {
                                 id: 'intro',
                                 title: '1. Introduction: what a scenario is and why',
                                 slideTitles: [
-                                    'What is a scenario?',
+                                    'Definition of a scenario',
                                     'Why forecasting is not enough',
                                     'Roadmap for this session'
                                 ],
                                 paragraphs: [
-                                    'A scenario is a coherent, internally consistent narrative of a possible future, built to illuminate a specific decision; it is not a forecast to be graded later as right or wrong. A good scenario has three components: recognizable actors and driving forces, a defensible causal chain from today to that future, and consequences that connect directly to the team’s focal decision. Without those three, the output is merely a story about the future.',
+                                    '<p>A scenario is a coherent, internally consistent narrative of <strong>one of the possible futures</strong>, built to illuminate a specific decision; it is not a forecast to be graded later as right or wrong.</p><ul class="fitness-pres-bullets"><li><strong>Actors and driving forces</strong> that are known</li><li><strong>A defensible causal chain</strong> from today to that future</li><li><strong>A consequence directly linked</strong> to the team’s focal decision</li></ul><p>Without these three components, the output is merely a story about the future, not a decision-oriented scenario.</p>',
                                     'Why not simply forecast? Under deep uncertainty, single-line forecasts behave like trend reports: they fail, and they notice the failure later than competitors do. Instead of competing with forecasting, scenarios change the game: build several different yet plausible worlds and shift the question from “what will happen?” to “if this world takes shape, what happens to our decision?” That is why, half a century on, organizations like Shell, the International Energy Agency, and the IPCC remain customers of this method.',
                                     'Roadmap: we first trace the origins of the method from Herman Kahn and the French school to Pierre Wack, then tell the Shell story with the real numbers of 1973 and draw the boundary between scenarios and trend reports. We then drill the focal-decision concept and close with a worked example that runs the full cycle on a real decision. Your output today is a rewritten focal question plus two fragile assumptions that seed the term project.'
                                 ]

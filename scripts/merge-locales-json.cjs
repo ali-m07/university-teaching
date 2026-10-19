@@ -10,7 +10,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.join(__dirname, '..');
-const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'type2-university-modules', 'fitness', 'fitness-university-modules', 'cla', 'cla-university-modules', 'wheel', 'wheel-university-modules', 'backcast', 'backcast-university-modules', 'scenarios-university-modules', 'hines-university-modules', 'popper-university-modules', 'scanning-university-modules', 'weak-signals-university-modules', 'literacy-university-modules', 'futurpreneur-university-modules', 'ai-org-workshop', 'pres-catalog'];
+const MODULES = ['common', 'pages', 'brand', 'articles', 'advanced', 'lessons', 'type2fuzzy', 'type2-university-modules', 'fitness', 'fitness-university-modules', 'cla', 'cla-university-modules', 'wheel', 'wheel-university-modules', 'backcast', 'backcast-university-modules', 'scenarios-university-modules', 'futures-basics-university-modules', 'hines-university-modules', 'popper-university-modules', 'scanning-university-modules', 'weak-signals-university-modules', 'literacy-university-modules', 'futurpreneur-university-modules', 'ai-org-workshop', 'pres-catalog'];
 const LANGS = ['fa', 'en'];
 const OUTPUT_DIRS = [
     path.join(ROOT, 'public', 'locales'),
@@ -59,6 +59,7 @@ function buildCatalog(lang) {
         'popper-diamond': 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80',
         'six-pillars': 'https://images.unsplash.com/photo-1532619675605-1ede316c2aa8?auto=format&fit=crop&w=800&q=80',
         'scenario-planning': 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
+        'futures-basics': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Milky_way1.jpg/1280px-Milky_way1.jpg',
         futurpreneurship: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
         'type-2-fuzzy': 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80',
         'environmental-scanning': 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
@@ -101,6 +102,7 @@ function buildCatalog(lang) {
                 methods: withImages([
                     { id: 'popper-diamond', slug: 'popper-diamond.html', icon: 'gem', status: 'lesson', color: '#e040fb' },
                     { id: 'six-pillars', slug: 'strategic-foresight.html', icon: 'columns-3', status: 'lesson', color: 'var(--color-f)' },
+                    { id: 'futures-basics', slug: 'futures-basics.html', icon: 'triangle', status: 'lesson', color: '#00e5ff' },
                     { id: 'scenario-planning', slug: 'scenarios.html', icon: 'git-branch', status: 'lesson', color: 'var(--color-cla)' },
                     { id: 'futurpreneurship', slug: 'futurpreneurship.html', icon: 'rocket', status: 'lesson', color: 'var(--color-i)' },
                     { id: 'type-2-fuzzy', slug: 'type-2-fuzzy.html', icon: 'blend', status: 'interactive', color: '#00e5ff' },
@@ -155,7 +157,7 @@ function buildCatalog(lang) {
                     { id: 'scenario-2x2', slug: 'scenarios.html', icon: 'layout-grid', status: 'lesson', color: 'var(--color-cla)' },
                     { id: 'visioning', slug: null, icon: 'eye', status: 'catalog', color: '#ffaa00' },
                     { id: 'wind-tunneling', slug: null, icon: 'wind', status: 'catalog', color: '#7c4dff' },
-                    { id: 'cone-plausibility', slug: 'strategic-foresight.html#m2', icon: 'triangle', status: 'lesson', color: 'var(--color-f)' },
+                    { id: 'cone-plausibility', slug: 'futures-basics.html#m1', icon: 'triangle', status: 'lesson', color: 'var(--color-f)' },
                     { id: 'backcasting-ref', slug: 'backcasting.html', icon: 'history', status: 'interactive', color: 'var(--color-i)' }
                 ]
             },
@@ -184,6 +186,7 @@ function buildCatalog(lang) {
             backcasting: { title: 'پس‌نگری (Backcasting)', founder: 'John B. Robinson', desc: 'طراحی آینده هنجاری و مسیر معکوس از آرمان‌شهر به امروز.' },
             'popper-diamond': { title: 'الماس پوپر', founder: 'Rafael Popper', desc: 'ارزیابی کیفیت آینده‌نگاری: خلاقیت، نوآوری، تخصص، تعامل.' },
             'six-pillars': { title: 'شش ستون هاینز و بی‌شاپ', founder: 'Andy Hines & Peter Bishop', desc: 'قاب‌بندی → رصد → پیش‌بینی → تصویرسازی → برنامه‌ریزی → اقدام.' },
+            'futures-basics': { title: 'مبانی آینده‌ها', founder: 'Amara · Voros · Knight', desc: 'انواع آینده‌ها (ممکن، باورپذیر، محتمل، مطلوب)، مخروط آینده، Wild Card و سطوح عدم‌قطعیت · دو ارائه با تصاویر آزاد.' },
             'scenario-planning': { title: 'سناریوسازی استراتژیک', founder: 'Shell / Peter Schwartz', desc: 'عدم‌قطعیت‌های حیاتی، ماتریس ۲×۲، شاخص‌های پیش‌هشدار و تصمیم‌سازی.' },
             futurpreneurship: { title: 'Futurpreneurship', founder: 'آینده‌نگاری × سرمایه‌گذاری نوپا', desc: 'از نشانه ضعیف به MVP · کارآفرینی آینده‌محور.' },
             'type-2-fuzzy': { title: 'منطق فازی نوع ۲', founder: 'Zadeh · Mendel · John', desc: 'کارگاه IT2: FOU، نشانه ضعیف، اختلاف خبرگان و آزمون به‌جای میانگین ساکت.' },
@@ -210,7 +213,7 @@ function buildCatalog(lang) {
             'scenario-2x2': { title: 'ماتریس سناریو ۲×۲', founder: 'Schwartz / van der Heijden', desc: '→ ماژول سناریوسازی' },
             visioning: { title: 'تصویرسازی', founder: 'FRM Ch. 20', desc: 'ساخت تصاویر آینده مطلوب برای بسیج و هم‌راستایی.' },
             'wind-tunneling': { title: 'تونل باد استراتژی', founder: 'Schwartz / Ogilvy', desc: 'آزمون استراتژی فعلی در برابر سناریوهای مختلف.' },
-            'cone-plausibility': { title: 'مخروط محتمل بودن', founder: 'Hines & Bishop', desc: 'ترسیم آینده‌های محتمل، معقول و ممکن با تحلیل خط پایه و چالش فرضیات، پیش از انتخاب آینده مطلوب در تصویرسازی · ماژول M2 شش ستون' },
+            'cone-plausibility': { title: 'مخروط محتمل بودن', founder: 'Hines & Bishop', desc: 'ترسیم آینده‌های محتمل، معقول و ممکن با تحلیل خط پایه و چالش فرضیات، پیش از انتخاب آینده مطلوب در تصویرسازی · مبانی آینده‌ها، ماژول M1' },
             'backcasting-ref': { title: 'پس‌نگری (مرجع)', founder: 'Robinson', desc: '→ شبیه‌ساز پس‌نگری' },
             roadmapping: { title: 'نقشه‌راه', founder: 'Phaal / Battelle', desc: 'نقشه راه بصری از قابلیت‌ها، فناوری و محصول در زمان.' },
             'technology-roadmap': { title: 'نقشه‌راه فناوری', founder: 'Phaal et al.', desc: 'TRM · هم‌راستایی فناوری با استراتژی و بازار.' },
@@ -224,6 +227,7 @@ function buildCatalog(lang) {
             backcasting: { title: 'Backcasting', founder: 'John B. Robinson', desc: 'Normative future design and reverse path from vision to today.' },
             'popper-diamond': { title: 'Popper Foresight Diamond', founder: 'Rafael Popper', desc: 'Foresight quality: Creativity, Innovation, Expertise, Interaction.' },
             'six-pillars': { title: 'Hines & Bishop Six Pillars', founder: 'Andy Hines & Peter Bishop', desc: 'Framing → Scanning → Forecasting → Visioning → Planning → Acting.' },
+            'futures-basics': { title: 'Futures Basics', founder: 'Amara · Voros · Knight', desc: 'Types of futures (possible, plausible, probable, preferable), the Futures Cone, wild cards, and levels of uncertainty · two decks with free-license images.' },
             'scenario-planning': { title: 'Strategic Scenario Planning', founder: 'Shell / Peter Schwartz', desc: 'Critical uncertainties, 2×2 matrix, early indicators, decision tool.' },
             futurpreneurship: { title: 'Futurpreneurship', founder: 'Foresight × Venture', desc: 'From weak signal to MVP · future-oriented entrepreneurship.' },
             'type-2-fuzzy': { title: 'Type-2 Fuzzy Logic', founder: 'Zadeh · Mendel · John', desc: 'IT2 workshop: FOU, weak signals, expert spread · probing instead of silent averaging.' },
@@ -250,7 +254,7 @@ function buildCatalog(lang) {
             'scenario-2x2': { title: 'Scenario 2×2 Matrix', founder: 'Schwartz / van der Heijden', desc: '→ Scenario planning module' },
             visioning: { title: 'Visioning', founder: 'FRM Ch. 20', desc: 'Build preferred future images for mobilization and alignment.' },
             'wind-tunneling': { title: 'Wind Tunneling', founder: 'Schwartz / Ogilvy', desc: 'Test current strategy against multiple scenarios.' },
-            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'Map probable, plausible, and possible futures through baseline analysis and assumption challenges before Visioning chooses a preferred future. Six Pillars module M2.' },
+            'cone-plausibility': { title: 'Cone of Plausibility', founder: 'Hines & Bishop', desc: 'Map probable, plausible, and possible futures through baseline analysis and assumption challenges before Visioning chooses a preferred future. Futures Basics module M1.' },
             'backcasting-ref': { title: 'Backcasting (reference)', founder: 'Robinson', desc: '→ Backcasting simulator' },
             roadmapping: { title: 'Roadmapping', founder: 'Phaal / Battelle', desc: 'Visual roadmap of capabilities, technology, and product over time.' },
             'technology-roadmap': { title: 'Technology Roadmapping', founder: 'Phaal et al.', desc: 'TRM · align technology with strategy and market.' },

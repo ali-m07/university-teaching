@@ -235,6 +235,48 @@ registerLocale('en', {
             ],
             assignment: 'Two uncertainty axes for your thesis/work. Four scenario names + one indicator each + no-regret action.'
         },
+        futuresBasics: {
+            meta: {
+                module: '13',
+                duration: '180 min (2 sessions)',
+                level: 'Foundations / all disciplines',
+                diagram: null
+            },
+            founders: [
+                {
+                    id: 'amara',
+                    name: 'Roy Amara',
+                    role: 'Former president, Institute for the Future',
+                    bio: 'Popularized the possible/probable/preferable triad in futures studies (1981); his law says we overestimate a technology’s short-run effect and underestimate its long-run effect.'
+                },
+                {
+                    id: 'knight',
+                    name: 'Frank Knight',
+                    role: 'Economist, University of Chicago',
+                    bio: 'Drew the line between measurable risk and unmeasurable uncertainty in Risk, Uncertainty and Profit (1921).'
+                }
+            ],
+            objectives: [
+                'Distinguish the four types of futures and apply them to claims.',
+                'Explain the Futures Cone and its moving boundaries.',
+                'Separate risk from uncertainty and identify the four levels.',
+                'Choose the matching tool for each level.'
+            ],
+            outline: [
+                { step: '1', time: '30 min', title: 'Four types of futures', desc: 'Labeling real classroom claims.' },
+                { step: '2', time: '25 min', title: 'Cone and wild cards', desc: 'Time horizons and discontinuity.' },
+                { step: '3', time: '30 min', title: 'Risk vs uncertainty', desc: 'Knight and the known/unknown matrix.' },
+                { step: '4', time: '45 min', title: 'Levels and tools', desc: 'McKinsey levels, critical uncertainty, robust decisions.' },
+                { step: '5', time: '20 min', title: 'Uncertainty map', desc: 'Each group maps its own project decision.' },
+                { step: '6', time: '30 min', title: 'Presentation', desc: 'Three-minute action portfolios.' }
+            ],
+            readings: [
+                { type: 'Paper', text: 'Voros, J. (2003). A generic foresight process framework. <em>Foresight</em>.' },
+                { type: 'Classic book', text: 'Knight, F. H. (1921). <em>Risk, Uncertainty and Profit</em>.' },
+                { type: 'Paper', text: 'Courtney, H., Kirkland, J., & Viguerie, P. (1997). Strategy under uncertainty. <em>Harvard Business Review</em>.' }
+            ],
+            assignment: 'Label four future claims of your project (possible/plausible/probable/preferable) and write the decision’s uncertainty map with levels and tools.'
+        },
         futurpreneurship: {
             meta: {
                 module: '8',

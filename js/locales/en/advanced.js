@@ -112,6 +112,40 @@ registerLocale('en', {
             caseTitle: 'Example: Iran energy axes',
             case: 'Axis 1: energy transition speed (slow/fast). Axis 2: geopolitics (open/closed). Four scenarios: "Regional green economy", "Fossil island", "Tech leap", "Chronic crisis". Each implies different power investment policy.'
         },
+        futuresBasics: {
+            slug: 'futures-basics',
+            heroTag: 'Amara · Voros · Knight · Courtney',
+            heroTitle: 'Futures Basics: Types of Futures and Uncertainty',
+            heroSub: 'The linguistic prerequisite for every foresight method. Four types of futures (possible, plausible, probable, preferable), the Futures Cone, and levels of uncertainty; two complete decks with free-license images from Wikimedia Commons.',
+            history: {
+                accent: '#00e5ff',
+                founderLabel: 'Pioneers',
+                founder: 'Roy Amara · Hancock & Bezold · Joseph Voros · Frank Knight',
+                yearLabel: 'Years',
+                year: '1921 (Knight) · 1981 (Amara) · 1994 (Hancock & Bezold) · 2003 (Voros)',
+                institution: 'SRI · UNESCO · RAND · McKinsey',
+                title: 'Futures Basics: the Grammar of Foresight',
+                origin: 'Amara separated three types of futures; Hancock and Bezold added “plausible”; Voros drew the cone. Knight drew the risk/uncertainty line, and McKinsey formalized the four levels of residual uncertainty.',
+                problemLabel: 'Problem',
+                problem: 'Without this language, scenarios, backcasting, and visioning get built on confident claims about “the future”; forecasting gets confused with fantasy.',
+                useLabel: 'Applications',
+                applications: 'Framing foresight workshops, futures literacy education, and the first step of strategy programs before scenario building.'
+            },
+            introTitle: 'Two decks · one shared language',
+            intro: 'Futures basics is the shared language of the whole course: <strong>four types of futures</strong>, the cone, and the <strong>kind of uncertainty</strong>.',
+            pillars: [
+                { title: '1. Possible', desc: 'What contradicts no logic? The edge of imagination, exposing assumptions.', color: '#7c4dff' },
+                { title: '2. Plausible', desc: 'What fits today’s knowledge? A defensible causal path.', color: '#00e5ff' },
+                { title: '3. Probable', desc: 'What has the stronger evidence? Baseline budget without locking resources.', color: 'var(--color-f)' },
+                { title: '4. Preferable', desc: 'What do we want? Value argument, not probability.', color: '#4caf50' },
+                { title: '5. Risk vs uncertainty', desc: 'Knight’s line: do we have a distribution or not?', color: '#ffaa00' },
+                { title: '6. Four levels and tools', desc: 'From NPV to robust decisions; tools must match levels.', color: 'var(--color-cla)' }
+            ],
+            gapTitle: 'Why this page is separate',
+            gap: 'Types of futures and uncertainties belong to no single method (scenarios, six pillars, backcasting); they underlie all of them. They live on their own page so every method’s flow can reference them.',
+            caseTitle: 'Example: labeling one decision',
+            case: '“Foreign competitor entry” is level 2, “digital-payment adoption rate” is level 3, “a sudden regulatory shock” is a wild card. Each label picks a tool: decision tree, scenario, resilience.'
+        },
         futurpreneurship: {
             slug: 'futurpreneurship',
             heroTag: 'Foresight × Entrepreneurship',

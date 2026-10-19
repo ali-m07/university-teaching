@@ -25,6 +25,12 @@
         return window.SFH_BASE || './';
     }
 
+    // Absolute (http/https) image URLs pass through untouched; local
+    // paths stay relative to the site root.
+    function assetUrl(u) {
+        return /^https?:\/\//i.test(String(u || '')) ? u : base() + u;
+    }
+
     function prepHtml(html) {
         if (!html) return '';
         let out = String(html);
@@ -138,9 +144,9 @@
 
     function slideImageUrl(m, secOrKey) {
         if (secOrKey && typeof secOrKey === 'object' && secOrKey.image) {
-            return base() + secOrKey.image;
+            return assetUrl(secOrKey.image);
         }
-        if (m.visual) return base() + m.visual;
+        if (m.visual) return assetUrl(m.visual);
         return '';
     }
 
@@ -245,7 +251,7 @@
     function buildDeckHtml(m, pageLabels) {
         const L = labelsFrom(pageLabels || {});
         const moduleTag = m.num || '';
-        const visualUrl = m.visual ? base() + m.visual : '';
+        const visualUrl = m.visual ? assetUrl(m.visual) : '';
         const slides = [];
 
         slides.push({
