@@ -1841,36 +1841,66 @@
       "industrySectionTitle": "Industry track · organizational delivery",
       "university": {
         "title": "Scenario planning · four lecture decks",
-        "intro": "Based on Pierre Wack (Shell), Peter Schwartz, van der Heijden, Michel Godet, Clement Bezold, and Wendell Bell. Each deck includes a worked example that turns scenarios from “future stories” into decisions under uncertainty.",
+        "intro": "Based on Pierre Wack (Shell), Peter Schwartz, van der Heijden, Michel Godet, Clement Bezold, and Wendell Bell. Each deck opens with a roadmap and historical context, includes real data, and ends with a worked example that turns scenarios from “future stories” into decisions under uncertainty.",
         "modules": [
           {
             "num": "M1",
             "id": "m1",
             "pickerLabel": "Shell & mental prep",
             "title": "Scenarios as strategic survival",
-            "hours": "75 min",
+            "hours": "90 min",
             "readingsShort": "Wack 1985 HBR",
             "visual": "assets/methods/covers/scenarios-m1-cone.svg",
             "visualCaption": "From story to decision system",
-            "lectureIntro": "Session 1 of <strong>strategic scenario planning</strong>: Shell and Wack. Scenarios are for mental preparedness, not for “correct prediction.”",
+            "lectureIntro": "Session 1 of <strong>strategic scenario planning</strong>: what a scenario is, where the method came from, and why Shell reacted faster than its rivals after the 1973 oil shock. Scenarios are for mental preparedness, not “correct prediction.” Output: a written focal decision for your term project.",
             "lectureSections": [
               {
+                "id": "intro",
+                "title": "1. Introduction: what a scenario is and why",
+                "slideTitles": [
+                  "What is a scenario?",
+                  "Why forecasting is not enough",
+                  "Roadmap for this session"
+                ],
+                "paragraphs": [
+                  "A scenario is a coherent, internally consistent narrative of a possible future, built to illuminate a specific decision; it is not a forecast to be graded later as right or wrong. A good scenario has three components: recognizable actors and driving forces, a defensible causal chain from today to that future, and consequences that connect directly to the team’s focal decision. Without those three, the output is merely a story about the future.",
+                  "Why not simply forecast? Under deep uncertainty, single-line forecasts behave like trend reports: they fail, and they notice the failure later than competitors do. Instead of competing with forecasting, scenarios change the game: build several different yet plausible worlds and shift the question from “what will happen?” to “if this world takes shape, what happens to our decision?” That is why, half a century on, organizations like Shell, the International Energy Agency, and the IPCC remain customers of this method.",
+                  "Roadmap: we first trace the origins of the method from Herman Kahn and the French school to Pierre Wack, then tell the Shell story with the real numbers of 1973 and draw the boundary between scenarios and trend reports. We then drill the focal-decision concept and close with a worked example that runs the full cycle on a real decision. Your output today is a rewritten focal question plus two fragile assumptions that seed the term project."
+                ]
+              },
+              {
+                "id": "origins",
+                "title": "2. Origins: from Kahn to Wack",
+                "slideTitles": [
+                  "Herman Kahn and RAND",
+                  "The French prospective school",
+                  "Wack and Shell: joining the two roots"
+                ],
+                "paragraphs": [
+                  "Herman Kahn, physicist and futurist, developed scenario thinking in the 1950s at the RAND Corporation and later at the Hudson Institute, which he founded in 1961. The Year 2000, written with Anthony Wiener in 1967, sketched several alternative future worlds with explicit premises instead of a single prediction, showing how to think about the future in a structured way without claiming to know it.",
+                  "In France, Gaston Berger founded la prospective in the 1950s, and Bertrand de Jouvenel carried it forward with L’Art de la Conjecture (1964) and the Futuribles institution. This school emphasizes actors, strategy, and human will, arguing that the future is not only forecast but also made. Michel Godet later formalized the same outlook with structural-analysis tools; we return to him in Session 4.",
+                  "Pierre Wack, a French economist and oil-market analyst, led the scenario unit in Shell’s Group Planning from 1971 with colleagues such as Ted Newland, joining Kahn’s alternative narratives to the French school’s actor analysis. In 1972 the “Year 2000” scenarios were presented to Shell’s senior management. Wack called the goal “reperception”: changing managers’ mental models before the environment changed. His two-part 1985 Harvard Business Review article remains the reference text for this story."
+                ]
+              },
+              {
                 "id": "shell",
-                "title": "1. Shell and 1973",
+                "title": "3. Shell and 1973",
                 "slideTitles": [
                   "Before the oil shock",
+                  "The 1973 shock in numbers",
                   "Managers’ mental readiness",
                   "Difference from trend reports"
                 ],
                 "paragraphs": [
                   "Before the 1973 oil crisis, Shell had explored alternative futures in which oil-producing countries gained bargaining power and prices rose sharply. The scenarios did not predict the exact date or magnitude of the shock; they exposed how investment choices depended on cheap, stable oil. When disruption arrived, managers had already rehearsed its logic and could respond faster than competitors relying on straight-line forecasts.",
-                  "Wack argued that scenarios create value only when they change a decision-maker’s mental model. Hidden assumptions—stable regulation, familiar customer behavior, uninterrupted supply—must become visible and contestable. After reading a scenario, a manager should be able to name which belief changed, which signal now deserves attention, and which decision would be revised if the environment moved.",
+                  "In October 1973 the Arab oil embargo began, and within months the price of oil rose from roughly $3 to roughly $12 per barrel, nearly quadrupling. Shell’s scenarios had not known the date, or even the exact magnitude, of the shock; but they had taken seriously a world in which producers gain bargaining power and cheap, stable oil does not continue. Shell’s response was therefore fast and coordinated. As Peter Schwartz recounts in The Art of the Long View, within a decade Shell climbed from the weakest of the “Seven Sisters” to one of the largest and most profitable oil companies in the world.",
+                  "Wack argued that scenarios create value only when they change a decision-maker’s mental model. Hidden assumptions, such as stable regulation, familiar customer behavior, or uninterrupted supply, must become visible and contestable. After reading a scenario, a manager should be able to name which belief changed, which signal now deserves attention, and which decision would be revised if the environment moved.",
                   "A trend report usually extends one central line and treats departures as forecast error. Scenario planning builds several coherent world logics, then tests how a decision performs in each one. The output is not the “correct future”; it is a decision whose failure points are understood, whose assumptions are monitored, and whose alternatives are prepared before surprise becomes crisis."
                 ]
               },
               {
                 "id": "not-forecast",
-                "title": "2. Scenario versus forecast",
+                "title": "4. Scenario versus forecast",
                 "slideTitles": [
                   "Operational definition",
                   "Role of uncertainty",
@@ -1884,7 +1914,7 @@
               },
               {
                 "id": "decision",
-                "title": "3. Focal decision first",
+                "title": "5. Focal decision first",
                 "slideTitles": [
                   "No decision, entertainment",
                   "Technology example",
@@ -1898,7 +1928,7 @@
               },
               {
                 "id": "worked-example",
-                "title": "4. Worked example: enterprise AI assistant",
+                "title": "6. Worked example: enterprise AI assistant",
                 "slideTitles": [
                   "A real decision",
                   "Fragile assumptions",
@@ -1918,7 +1948,11 @@
               },
               {
                 "type": "Book",
-                "text": "Schwartz, P. (1996). <em>The Art of the Long View</em>."
+                "text": "Kahn, H. & Wiener, A. J. (1967). <em>The Year 2000: A Framework for Speculation</em>."
+              },
+              {
+                "type": "Book",
+                "text": "Schwartz, P. (1991). <em>The Art of the Long View</em>."
               }
             ],
             "assignment": {
@@ -1944,11 +1978,25 @@
             "readingsShort": "Schwartz 7-step",
             "visual": "assets/methods/covers/scenarios-m2-matrix.svg",
             "visualCaption": "Four quadrants · four narratives",
-            "lectureIntro": "Session 2: pick two critical uncertainties, build a 2×2 matrix, and name a narrative for each quadrant.",
+            "lectureIntro": "Session 2: from the focal decision to four worlds. Schwartz’s seven steps, selecting two critical uncertainties, building the 2×2 matrix, and naming each quadrant’s narrative. Output: four distinct worlds for your project decision.",
             "lectureSections": [
               {
+                "id": "intro",
+                "title": "1. Introduction: from decision to matrix",
+                "slideTitles": [
+                  "Recap of Session 1",
+                  "Schwartz’s seven steps",
+                  "Roadmap for this session"
+                ],
+                "paragraphs": [
+                  "Session 1 ended with a focal question and two fragile assumptions; this session connects that question to four distinct worlds. One reminder: without a clear focal decision, the 2×2 becomes a decorative exercise that produces four elegant labels while testing no real choice.",
+                  "Peter Schwartz, an alumnus of Shell’s scenario team, framed the process as seven steps in The Art of the Long View (1991): define the decision question, identify key forces, list macro driving forces, rank them by impact versus uncertainty, set the scenario logics, write the narratives, and extract implications and signposts. In 1987 he co-founded the Global Business Network to carry the method from oil to other industries.",
+                  "This structure now lives well beyond consulting: the World Economic Forum’s Global Risks Report ranks risks each year on a likelihood-versus-impact grid, and energy companies such as Shell and BP publish and update alternative worlds annually. Roadmap: choosing axes, building and naming the matrix, the class workshop, and a supply-chain worked example."
+                ]
+              },
+              {
                 "id": "axes",
-                "title": "1. Choosing axes",
+                "title": "2. Choosing axes",
                 "slideTitles": [
                   "Impact versus certainty",
                   "Trend-axis mistake",
@@ -1962,7 +2010,7 @@
               },
               {
                 "id": "matrix",
-                "title": "2. Building the 2×2",
+                "title": "3. Building the 2×2",
                 "slideTitles": [
                   "Four world logics",
                   "Narrative naming",
@@ -1970,13 +2018,13 @@
                 ],
                 "paragraphs": [
                   "Each quadrant must become a distinct world logic, not a mechanical pairing of two labels. Identify who gains power, how resources move, how customers behave, and which organizational capabilities become valuable in that world. This first description ensures the four futures are strategically different rather than cosmetically renamed.",
-                  "A good name is brief, vivid, and carries the central logic—“Fossil Island” or “Technology Leap,” rather than “Scenario 1.” It should not impose an early moral judgment or reveal the team’s preferred answer. Write the causal logic first and name it afterward, so an attractive title does not pull the evidence toward a preselected story.",
+                  "A good name is brief, vivid, and carries the central logic, like “Fossil Island” or “Technology Leap,” rather than “Scenario 1.” It should not impose an early moral judgment or reveal the team’s preferred answer. Write the causal logic first and name it afterward, so an attractive title does not pull the evidence toward a preselected story. Shell’s scenarios have a long lineage of vivid names: Mountains and Oceans in 2013, Sky in 2018, Waves and Islands in 2021, and Archipelagos in 2023, each summarizing a different energy-transition logic.",
                   "To test coherence, create a timeline from the present to the scenario horizon and specify three to five intermediate events. Each event needs a defensible cause and consequence. If a world defined by severe trade restrictions suddenly gains cheap, unexplained access to foreign technology, the narrative contradicts itself and its assumptions, pathway, or outcomes must be revised."
                 ]
               },
               {
                 "id": "workshop",
-                "title": "3. Class workshop",
+                "title": "4. Class workshop",
                 "slideTitles": [
                   "Group axes",
                   "Four names",
@@ -1990,7 +2038,7 @@
               },
               {
                 "id": "worked-example",
-                "title": "4. Worked example: supply-chain futures",
+                "title": "5. Worked example: supply-chain futures",
                 "slideTitles": [
                   "Choose two axes",
                   "Four distinct worlds",
@@ -2004,6 +2052,10 @@
               }
             ],
             "readings": [
+              {
+                "type": "Book",
+                "text": "Schwartz, P. (1991). <em>The Art of the Long View</em>."
+              },
               {
                 "type": "Book",
                 "text": "van der Heijden, K. (2005). <em>Scenarios: The Art of Strategic Conversation</em>."
@@ -2032,11 +2084,25 @@
             "readingsShort": "Shell · link to FITness",
             "visual": "assets/methods/covers/scenarios-m3-indicators.svg",
             "visualCaption": "From narrative to monitoring and budget",
-            "lectureIntro": "Session 3: early indicators, implications, and linking scenarios to budgeting and organizational probing (FITness language).",
+            "lectureIntro": "Session 3: keeping scenarios alive. Early indicators, implications and no-regret options, and linking scenarios to budgeting and organizational probing in FITness language. Output: a board-ready decision scenario pack.",
             "lectureSections": [
               {
+                "id": "intro",
+                "title": "1. Introduction: from narrative to monitoring",
+                "slideTitles": [
+                  "Recap: four worlds",
+                  "Living scenarios in the real world",
+                  "Roadmap for this session"
+                ],
+                "paragraphs": [
+                  "Session 2 ended with four distinct worlds. The common failure after a workshop is that narratives get framed, become stale within two months, and nobody can tell which world is actually emerging. This session builds the monitoring machinery: indicators, thresholds, and decision gates that turn scenarios from an archived document into a living system.",
+                  "Major institutions run exactly this logic: the International Energy Agency tracks three pathways (STEPS, APS, and NZE) each year in its World Energy Outlook with updated data; the IPCC refreshes the SSP pathways in its assessment reports; and Shell republishes its energy scenarios every few years with new data. In every case the formula is the same: narrative, plus an indicator dashboard, plus a decision threshold.",
+                  "Roadmap: first the rules of a good early indicator, then implications and no-regret options, then connecting scenarios to the budget and the organization’s quarterly gate, and finally the energy worked example. Your output per scenario: one indicator with an owner and threshold, plus a written activation trigger."
+                ]
+              },
+              {
                 "id": "indicators",
-                "title": "1. Early indicators",
+                "title": "2. Early indicators",
                 "slideTitles": [
                   "Why signals?",
                   "Rules for good indicators",
@@ -2050,7 +2116,7 @@
               },
               {
                 "id": "options",
-                "title": "2. Implications and no-regret",
+                "title": "3. Implications and no-regret options",
                 "slideTitles": [
                   "Options under each scenario",
                   "Shared no-regret",
@@ -2059,12 +2125,12 @@
                 "paragraphs": [
                   "For every quadrant ask: if this world is taking shape, which opportunity opens, which risk becomes more serious, and which current capability is no longer sufficient? Convert the answers into actions with an owner and time horizon. Phrases such as “become more agile” are not strategies; an action must specify what changes, who changes it, and what resources are committed.",
                   "A no-regret action creates value across most scenarios and remains defensible even if the future does not unfold as expected. Examples include improving board data literacy, cleaning critical datasets, or modestly diversifying suppliers. No-regret does not mean free or riskless: the team should still examine opportunity cost, minimum return, and whether the action creates useful flexibility.",
-                  "What-if options are designed for specific, often extreme worlds. They are not fully executed today, but the organization preserves the ability to activate them—for example, pre-negotiating an alternative supplier contract or testing a small technology prototype. Every option needs a trigger: if two indicators cross their thresholds, who decides within how many days to activate it?"
+                  "What-if options are designed for specific, often extreme worlds. They are not fully executed today, but the organization preserves the ability to activate them, for example by pre-negotiating an alternative supplier contract or testing a small technology prototype. Every option needs a trigger: if two indicators cross their thresholds, who decides within how many days to activate it?"
                 ]
               },
               {
                 "id": "org",
-                "title": "3. Link to the organization",
+                "title": "4. Link to the organization",
                 "slideTitles": [
                   "Budget and gates",
                   "Bridge to FITness probing",
@@ -2078,7 +2144,7 @@
               },
               {
                 "id": "worked-example",
-                "title": "4. Worked example: energy and budgeting",
+                "title": "5. Worked example: energy and budgeting",
                 "slideTitles": [
                   "Indicator dashboard",
                   "Portfolio of actions",
@@ -2092,6 +2158,10 @@
               }
             ],
             "readings": [
+              {
+                "type": "Article",
+                "text": "Schwartz, P. & Randall, S. (2001). Ahead of the Curve: Preparing for the Emerging Age of Discontinuity. <em>California Management Review</em>."
+              },
               {
                 "type": "Page",
                 "text": "FITness M4-M5 · prospecting and probing on this portal."
@@ -2121,11 +2191,25 @@
             "readingsShort": "Godet · Bell · Bezold",
             "visual": "assets/methods/covers/scenarios-m4-typologies.svg",
             "visualCaption": "Exploratory/normative × qualitative/quantitative/participatory",
-            "lectureIntro": "Session 4 shows that scenario is not one method, it is a family of methods. Godet's typology, Bezold's participatory approach, and Wendell Bell's classification help you choose the right method for each question.",
+            "lectureIntro": "Session 4: scenario is not one method, it is a family of methods. The three major traditions, Godet’s typology, Bezold’s participatory approach, and Wendell Bell’s classification, ending with a simple rule for choosing the right method for each question.",
             "lectureSections": [
               {
+                "id": "intro",
+                "title": "1. Introduction: several scenarios, one name?",
+                "slideTitles": [
+                  "Recap of three sessions",
+                  "Three major traditions",
+                  "Roadmap for this session"
+                ],
+                "paragraphs": [
+                  "The first three sessions taught one specific path: focal decision, 2×2 matrix, and indicator monitoring; that is the “intuitive logics” tradition of Shell and GBN. Yet when you hear “scenario,” the speaker may mean a stakeholder workshop at a city hall or a bank’s probabilistic risk model. All three are called scenarios, but they belong to different traditions.",
+                  "Bradfield and colleagues, in their 2005 historical review, separate three traditions: intuitive logics (Shell and GBN), which builds qualitative narratives for decisions; the French prospective school (Godet), which centers on structural analysis of actors; and probabilistic modified trends, which work with models and probabilities. The traditions differ in assumptions, tools, and quality criteria; combining them is possible, but blind substitution usually fails.",
+                  "Roadmap: first why a typology is needed, then Godet’s exploratory/normative split and the quantitative SMIC method, then Bezold’s participation and Bell’s possible/probable/preferable triad, and finally a worked example of choosing the right family for two real problems. Output: a chosen and justified scenario typology for your term project."
+                ]
+              },
+              {
                 "id": "need-typology",
-                "title": "1. Why a typology is needed",
+                "title": "2. Why a typology is needed",
                 "slideTitles": [
                   "A Shell scenario is not a policy scenario",
                   "Two core axes of the typology",
@@ -2134,12 +2218,12 @@
                 "paragraphs": [
                   "Shell scenarios were designed to challenge managerial mental models and prepare decisions for environmental change; a municipality’s participatory scenarios may instead build shared language and legitimacy among citizens. Both are called scenarios, but their audiences, evidence, facilitation, and success criteria differ. Before choosing a method, clarify whether the deliverable is better strategy, social agreement, or a quantified risk estimate.",
                   "One major distinction is exploratory versus normative: the former moves from today toward several possible futures, while the latter works backward from a preferred future to pathways. Another is qualitative versus quantitative, separating narrative and expert judgment from models, probabilities, and cross-impact analysis. Participatory approaches additionally describe how deeply stakeholders help produce the scenarios rather than merely receive the results.",
-                  "Choosing the wrong family has practical costs. A heavy quantitative model applied to a conflict of values may create false precision without acceptance; a participatory conversation without analysis may be inadequate for financial risk pricing. Method choice should begin with the question, audience, available time, evidence quality, and kind of decision—not with the tool the team happens to prefer."
+                  "Choosing the wrong family has practical costs. A heavy quantitative model applied to a conflict of values may create false precision without acceptance; a participatory conversation without analysis may be inadequate for financial risk pricing. Method choice should begin with the question, audience, available time, evidence quality, and kind of decision, not with the tool the team happens to prefer."
                 ]
               },
               {
                 "id": "godet-types",
-                "title": "2. Exploratory and normative in Godet",
+                "title": "3. Exploratory and normative in Godet",
                 "slideTitles": [
                   "Exploratory scenarios: moving forward from today",
                   "Normative scenarios: working backward from a preferred future",
@@ -2147,13 +2231,13 @@
                 ],
                 "paragraphs": [
                   "In Godet’s exploratory approach, analysis starts with today’s trends, actors, and uncertainties and traces several paths toward the future horizon. It fits questions where an organization needs to understand how its environment might change and how a current decision performs under those changes. The logic resembles Shell and Schwartz, though Godet’s structural-analysis tools are more formalized.",
-                  "Normative scenarios reverse the direction: they begin with a desirable or undesirable future and work backward to identify milestones, policies, and preconditions. This is the logic of backcasting—measuring the gap between the present and the target, then sequencing action. It is especially useful for climate transition, urban policy, or organizational vision where the destination reflects values and choice, not probability alone.",
+                  "Normative scenarios reverse the direction: they begin with a desirable or undesirable future and work backward to identify milestones, policies, and preconditions. This is the logic of backtracking from targets, measuring the gap between the present and the target, then sequencing action. It is especially useful for climate transition, urban policy, or organizational vision where the destination reflects values and choice, not probability alone.",
                   "Godet and Duperrin’s SMIC method elicits the probabilities of several hypotheses and their cross-impacts, then ranks more coherent combinations. Its benefit is exposing dependencies that separate event estimates overlook. Numbers do not replace judgment or narrative, however; output quality still depends on well-defined hypotheses, a diverse expert panel, and cautious interpretation of the results."
                 ]
               },
               {
                 "id": "bezold-bell",
-                "title": "3. Bezold's participation and Bell's classification",
+                "title": "4. Bezold’s participation and Bell’s classification",
                 "slideTitles": [
                   "Clement Bezold and participatory scenario building",
                   "Possible, probable, and preferable in Wendell Bell",
@@ -2167,7 +2251,7 @@
               },
               {
                 "id": "worked-example",
-                "title": "4. Worked example: choosing the right family",
+                "title": "5. Worked example: choosing the right family",
                 "slideTitles": [
                   "Participatory urban question",
                   "Quantitative investment question",
@@ -2194,8 +2278,16 @@
                 "text": "Bell, W. (1997). <em>Foundations of Futures Studies</em>, Vol. 1 and 2."
               },
               {
+                "type": "Article",
+                "text": "Bradfield, R., Wright, G., Burt, G., Cairns, G., & van der Heijden, K. (2005). The origins and evolution of scenario techniques in long range business planning. <em>Futures</em>."
+              },
+              {
+                "type": "Article",
+                "text": "van Notten, P., Rotmans, J., van Asselt, M., & Rothman, D. (2003). An updated scenario typology. <em>Futures</em>."
+              },
+              {
                 "type": "Teaching note",
-                "text": "A Farsi summary of Wendell Bell's second volume and of Eyvazi's strategic foresight summary, used as a course note for this session."
+                "text": "A Farsi summary of Wendell Bell’s second volume and of Eyvazi’s strategic foresight summary, used as a course note for this session."
               }
             ],
             "assignment": {
