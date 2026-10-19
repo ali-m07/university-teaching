@@ -41,9 +41,9 @@ registerLocale('en', {
                                     'Difference from trend reports'
                                 ],
                                 paragraphs: [
-                                    'Shell had built scenarios before the 1973 oil shock that treated a price shock as plausible. Value was not numeric accuracy; it was decision readiness.',
-                                    'Wack insisted scenarios must change managers’ mental models. If assumptions stay fixed, scenarios sit on a shelf.',
-                                    'A trend report locks one future; a good scenario set builds several world logics and hardens decisions against surprise.'
+                                    'Before the 1973 oil crisis, Shell had explored alternative futures in which oil-producing countries gained bargaining power and prices rose sharply. The scenarios did not predict the exact date or magnitude of the shock; they exposed how investment choices depended on cheap, stable oil. When disruption arrived, managers had already rehearsed its logic and could respond faster than competitors relying on straight-line forecasts.',
+                                    'Wack argued that scenarios create value only when they change a decision-maker’s mental model. Hidden assumptions—stable regulation, familiar customer behavior, uninterrupted supply—must become visible and contestable. After reading a scenario, a manager should be able to name which belief changed, which signal now deserves attention, and which decision would be revised if the environment moved.',
+                                    'A trend report usually extends one central line and treats departures as forecast error. Scenario planning builds several coherent world logics, then tests how a decision performs in each one. The output is not the “correct future”; it is a decision whose failure points are understood, whose assumptions are monitored, and whose alternatives are prepared before surprise becomes crisis.'
                                 ]
                             },
                             {
@@ -55,9 +55,9 @@ registerLocale('en', {
                                     'Quality criteria'
                                 ],
                                 paragraphs: [
-                                    'A scenario is a coherent narrative of a possible future written for a specific decision.',
-                                    'Without critical uncertainty, scenarios collapse into forecasts. Find two axes with highest impact and lowest certainty.',
-                                    'Quality criteria: internal coherence, link to a decision, and monitorable early indicators.'
+                                    'A scenario is a coherent narrative of a possible future built to illuminate a specific decision. It needs recognizable actors, driving forces, turning points, and consequences, plus a plausible path from the present to the future state. If a compelling story cannot change any choice today, it is not yet functioning as a scenario tool.',
+                                    'A critical uncertainty combines high impact on the focal decision with genuine uncertainty about direction or intensity. Teams first scan political, economic, social, technological, and environmental drivers, then rank them by impact and uncertainty. The two chosen axes must also be sufficiently independent; otherwise the four quadrants merely repeat the same future under different labels.',
+                                    'Three basic tests determine quality: the causal story must be internally coherent, the content must connect directly to the focal decision, and early indicators must be observable. Scenarios should also be strategically distinct enough to produce different implications. If every world leads to the same broad recommendation, the uncertainty space has probably not been explored deeply enough.'
                                 ]
                             },
                             {
@@ -69,9 +69,9 @@ registerLocale('en', {
                                     'Class drill'
                                 ],
                                 paragraphs: [
-                                    'Schwartz: without a clear focal decision, scenarios are entertainment.',
-                                    'Example: “Should the organization build a proprietary LLM by 2029 or stay on external APIs?”',
-                                    'Each group writes one focal decision for the term project and critiques it in class.'
+                                    'Schwartz’s practical warning is that without a focal decision, scenarios become intellectual entertainment. A useful focal decision is real, owned by someone, bounded by a time horizon, and tied to a resource commitment. “What is the future of AI?” is too broad; “Should we fund a pilot this year?” creates a choice whose implications can be tested across worlds.',
+                                    'A sharper example is: “Should the organization build a proprietary LLM by 2029 or keep core services on external APIs?” The question brings infrastructure cost, data confidentiality, local-language quality, access continuity, and speed to market into the same decision. Each scenario can then show which option performs better, under what conditions, and which signal should trigger reconsideration.',
+                                    'Each group writes its project decision in one sentence, then identifies the decision owner, affected stakeholders, time horizon, and genuine alternatives. Another group challenges it: is it still vague, has the decision already been made, and would the answer differ across plausible worlds? The result is a revised focal question plus two fragile assumptions that feed the next stages.'
                                 ]
                             },
                             {
@@ -117,9 +117,9 @@ registerLocale('en', {
                                     'Energy and AI examples'
                                 ],
                                 paragraphs: [
-                                    'Axes need high impact and low certainty. A certain trend is a weak axis.',
-                                    'Common mistake: “low/high economic growth” with no link to the decision. An axis must change world logic.',
-                                    'Energy example: energy transition speed × open/closed geopolitics. AI example: regulation speed × model-market concentration.'
+                                    'A scenario axis needs both high impact on the focal decision and low certainty about its outcome. A near-certain trend, such as growing data volumes, belongs in every scenario rather than consuming an axis. Plot drivers on an impact-versus-uncertainty matrix and reserve the axes for forces in the high-impact, high-uncertainty corner.',
+                                    '“Low versus high economic growth” is weak when the team cannot explain exactly how it changes the decision. A strong axis alters actor behavior, resource flows, or competitive rules. Instead of generic growth, “access to long-term business capital” may be more useful because its two poles clearly affect investment capacity, pricing, and risk tolerance.',
+                                    'In energy, transition speed combined with open or closed geopolitics produces worlds with different technologies, supply chains, and prices. In AI, regulation speed combined with concentrated or distributed model markets changes access, liability, and bargaining power. Imagine all four combinations before finalizing the axes; if one quadrant makes no sense, the axes may not be independent.'
                                 ]
                             },
                             {
@@ -131,9 +131,9 @@ registerLocale('en', {
                                     'Internal coherence'
                                 ],
                                 paragraphs: [
-                                    'Each quadrant is a world logic, not label A/B/C/D.',
-                                    'Names should be memorable: “fossil island,” “tech leap,” not “scenario 1.”',
-                                    'Coherence: there must be a path from today to that future. Internal contradiction = weak scenario.'
+                                    'Each quadrant must become a distinct world logic, not a mechanical pairing of two labels. Identify who gains power, how resources move, how customers behave, and which organizational capabilities become valuable in that world. This first description ensures the four futures are strategically different rather than cosmetically renamed.',
+                                    'A good name is brief, vivid, and carries the central logic—“Fossil Island” or “Technology Leap,” rather than “Scenario 1.” It should not impose an early moral judgment or reveal the team’s preferred answer. Write the causal logic first and name it afterward, so an attractive title does not pull the evidence toward a preselected story.',
+                                    'To test coherence, create a timeline from the present to the scenario horizon and specify three to five intermediate events. Each event needs a defensible cause and consequence. If a world defined by severe trade restrictions suddenly gains cheap, unexplained access to foreign technology, the narrative contradicts itself and its assumptions, pathway, or outcomes must be revised.'
                                 ]
                             },
                             {
@@ -145,9 +145,9 @@ registerLocale('en', {
                                     'Peer critique'
                                 ],
                                 paragraphs: [
-                                    'Groups build two axes for the M1 decision and write four names.',
-                                    'Each group narrates one quadrant in three minutes.',
-                                    'Critique: are axes truly independent? Do names carry logic or only color?'
+                                    'Groups begin with the M1 decision, list the driving forces, and use impact–uncertainty voting to select two final axes. For each quadrant they write a one-sentence logic, the dominant actor, and the main implication for the decision. Naming comes last, ensuring the titles summarize analysis rather than replace it.',
+                                    'Each group narrates one world in three minutes using a future news headline, a turning-point event, and an ordinary day for a customer or the organization. The time limit forces the central logic to become clear. Listeners should be able to infer the quadrant from the story without seeing the matrix.',
+                                    'The peer group uses a checklist: are the axes independent, are all four combinations plausible, and do the names reveal strategic differences? It then injects one disruptive event to stress-test the world. Presenters must explain whether that event strengthens, weakens, or fundamentally changes the scenario logic.'
                                 ]
                             },
                             {
@@ -192,9 +192,9 @@ registerLocale('en', {
                                     'Technology example'
                                 ],
                                 paragraphs: [
-                                    'Without indicators, scenarios stay stories. Indicators show which world logic is activating.',
-                                    'A good indicator is seasonally monitorable, linked to an axis, and hard to game in the short term.',
-                                    'Example: share of domestic GPUs in government procurement, or GenAI copyright cases in key courts.'
+                                    'Without indicators, scenarios become static stories after the workshop and the organization cannot tell which world is emerging. An early indicator is an observable variable that shifts before the full consequences become obvious. Assign a small set of meaningful indicators to each scenario and state what a rise, fall, or threshold crossing would mean for the focal decision.',
+                                    'A good indicator has a clear relationship to a critical uncertainty, can be measured on a defined schedule, and comes from a credible source. It should also resist short-term political manipulation and random noise. Record its baseline, warning threshold, review frequency, and owner so that environmental monitoring does not become an undefined collective responsibility.',
+                                    'In an AI scenario, the share of domestic GPUs in public procurement may signal technological-sovereignty policy, while the number of GenAI copyright cases may reveal legal tightening. One data point is insufficient: combine multi-quarter movement, regulatory language, and the behavior of major actors. Convergence across several indicators provides stronger evidence that a scenario logic is activating.'
                                 ]
                             },
                             {
@@ -206,9 +206,9 @@ registerLocale('en', {
                                     'What-if'
                                 ],
                                 paragraphs: [
-                                    'Under each quadrant ask: if this world is true, what strategy is required?',
-                                    'No-regret: actions valuable across most scenarios (for example board data literacy).',
-                                    'What-if: options that only make sense in one extreme scenario and should be prepared, not necessarily executed.'
+                                    'For every quadrant ask: if this world is taking shape, which opportunity opens, which risk becomes more serious, and which current capability is no longer sufficient? Convert the answers into actions with an owner and time horizon. Phrases such as “become more agile” are not strategies; an action must specify what changes, who changes it, and what resources are committed.',
+                                    'A no-regret action creates value across most scenarios and remains defensible even if the future does not unfold as expected. Examples include improving board data literacy, cleaning critical datasets, or modestly diversifying suppliers. No-regret does not mean free or riskless: the team should still examine opportunity cost, minimum return, and whether the action creates useful flexibility.',
+                                    'What-if options are designed for specific, often extreme worlds. They are not fully executed today, but the organization preserves the ability to activate them—for example, pre-negotiating an alternative supplier contract or testing a small technology prototype. Every option needs a trigger: if two indicators cross their thresholds, who decides within how many days to activate it?'
                                 ]
                             },
                             {
@@ -220,9 +220,9 @@ registerLocale('en', {
                                     'Final assignment'
                                 ],
                                 paragraphs: [
-                                    'Scenarios without a budgeting and risk link sit on a shelf. Define at least one quarterly decision gate.',
-                                    'In Rohrbeck language: scenarios feed prospecting; 90-day probing tests scenario hypotheses in the field.',
-                                    'Assignment: four scenarios + one indicator each + one no-regret action + one pilot proposal.'
+                                    'Scenarios usually sit on a shelf when they never enter budgeting, risk management, or the decision calendar. Define at least one quarterly gate where indicators are reviewed, assumptions are challenged, and option funding is released, paused, or stopped. Meeting records should show which signal changed which investment priority.',
+                                    'In Rohrbeck’s language, scenarios contribute to prospecting and interpretation, but organizational learning is completed through probing. A 90-day pilot needs a clear hypothesis, target group, success metric, and spending ceiling. Its purpose is not to prove one future; it is to reduce a material uncertainty before a larger and less reversible commitment.',
+                                    'The final package combines a 2×2 matrix, a short narrative for every world, one dedicated indicator per scenario, one no-regret action, and one pilot proposal. Students must also expose the links: which assumption each indicator tests and which action its result activates. Quality is judged by whether the package could support an actual executive decision meeting.'
                                 ]
                             },
                             {
@@ -268,9 +268,9 @@ registerLocale('en', {
                                     'The cost of choosing the wrong method'
                                 ],
                                 paragraphs: [
-                                    'Shell\'s scenarios were built for managers\' mental preparedness; a municipality\'s participatory scenarios are designed to build agreement among citizens. Both carry the name scenario, yet their construction logic differs.',
-                                    'Two common axes classify scenarios: exploratory versus normative, and qualitative versus quantitative. These two axes alone produce four main scenario families.',
-                                    'Choosing the wrong type carries a real cost: running a heavy quantitative process for a question that only needed a participatory conversation wastes an organization\'s time and credibility.'
+                                    'Shell scenarios were designed to challenge managerial mental models and prepare decisions for environmental change; a municipality’s participatory scenarios may instead build shared language and legitimacy among citizens. Both are called scenarios, but their audiences, evidence, facilitation, and success criteria differ. Before choosing a method, clarify whether the deliverable is better strategy, social agreement, or a quantified risk estimate.',
+                                    'One major distinction is exploratory versus normative: the former moves from today toward several possible futures, while the latter works backward from a preferred future to pathways. Another is qualitative versus quantitative, separating narrative and expert judgment from models, probabilities, and cross-impact analysis. Participatory approaches additionally describe how deeply stakeholders help produce the scenarios rather than merely receive the results.',
+                                    'Choosing the wrong family has practical costs. A heavy quantitative model applied to a conflict of values may create false precision without acceptance; a participatory conversation without analysis may be inadequate for financial risk pricing. Method choice should begin with the question, audience, available time, evidence quality, and kind of decision—not with the tool the team happens to prefer.'
                                 ]
                             },
                             {
@@ -282,9 +282,9 @@ registerLocale('en', {
                                     'The quantitative SMIC and cross-impact method'
                                 ],
                                 paragraphs: [
-                                    'Michel Godet defines exploratory scenarios as a move from today\'s trends and uncertainties toward several possible futures, a logic close to Shell and Schwartz scenarios.',
-                                    'Normative scenarios move the other way: the starting point is a preferred future, and the question is which paths lead to it, the same logic you have seen in backcasting.',
-                                    'Godet and Duperrin proposed the SMIC method in 1975 for probabilistically grouping scenarios based on cross-impact among assumptions, a more quantitative cousin of the qualitative 2×2 matrix common in management classrooms.'
+                                    'In Godet’s exploratory approach, analysis starts with today’s trends, actors, and uncertainties and traces several paths toward the future horizon. It fits questions where an organization needs to understand how its environment might change and how a current decision performs under those changes. The logic resembles Shell and Schwartz, though Godet’s structural-analysis tools are more formalized.',
+                                    'Normative scenarios reverse the direction: they begin with a desirable or undesirable future and work backward to identify milestones, policies, and preconditions. This is the logic of backcasting—measuring the gap between the present and the target, then sequencing action. It is especially useful for climate transition, urban policy, or organizational vision where the destination reflects values and choice, not probability alone.',
+                                    'Godet and Duperrin’s SMIC method elicits the probabilities of several hypotheses and their cross-impacts, then ranks more coherent combinations. Its benefit is exposing dependencies that separate event estimates overlook. Numbers do not replace judgment or narrative, however; output quality still depends on well-defined hypotheses, a diverse expert panel, and cautious interpretation of the results.'
                                 ]
                             },
                             {
@@ -296,9 +296,9 @@ registerLocale('en', {
                                     'Choosing a typology for your project'
                                 ],
                                 paragraphs: [
-                                    'Clement Bezold developed participatory scenario building for policy and public health processes, where building agreement among stakeholders matters more than analytical precision alone.',
-                                    'Wendell Bell, in Foundations of Futures Studies, separates possible, probable, and preferable futures. This triad sharpens the question: is this scenario possible, is it probable, or is it one we consider preferable?',
-                                    'To choose a typology, first revisit M1\'s focal decision and the project\'s audience: a high-level strategic decision usually calls for exploratory and qualitative work, public policy for participatory work, and financial risk modeling usually for quantitative work.'
+                                    'Clement Bezold advanced participatory scenario building in public policy and health, where stakeholders hold both different knowledge and different values. Participation means more than inviting people to the final presentation: they help frame the question, construct future images, and examine consequences. The output includes not only scenarios but trust, shared language, and greater capacity for collective action.',
+                                    'Wendell Bell distinguishes possible, probable, and preferable futures. A future may violate no known constraint yet remain unlikely; a probable future draws on evidence and trends; a preferable future expresses values and choice. Mixing the three leads teams to label what they desire as “likely,” or to assume that a high-probability outcome must also be desirable.',
+                                    'Method selection begins by revisiting the focal decision, audience, evidence type, and intervention goal. Senior strategic choices often benefit from exploratory qualitative scenarios; complex public policy requires participation; financial risk may need quantitative tools. Strong projects are often hybrid: narrative for meaning, participation for legitimacy, and quantitative analysis for consistency checks.'
                                 ]
                             },
                             {
