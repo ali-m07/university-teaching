@@ -917,7 +917,7 @@
         return '#university';
     }
 
-    function activateFitnessTab(root, tabId) {
+    function activateFitnessTab(root, tabId, updateHash = true) {
         if (!root) return;
         root.querySelectorAll('[data-fitness-tab]').forEach(b => {
             const on = b.getAttribute('data-fitness-tab') === tabId;
@@ -927,7 +927,7 @@
         root.querySelectorAll('[data-fitness-panel]').forEach(p => {
             p.classList.toggle('is-hidden', p.getAttribute('data-fitness-panel') !== tabId);
         });
-        if (history.replaceState) {
+        if (updateHash && history.replaceState) {
             history.replaceState(null, '', `${location.pathname}${location.search}${fitnessTabHash(tabId)}`);
         }
     }
@@ -1088,14 +1088,14 @@
         const parsed = window.parseFitnessHash();
 
         if (parsed.track === 'workshop') {
-            activateFitnessTab(root, 'workshop');
+            activateFitnessTab(root, 'workshop', false);
             if (parsed.anchor) requestAnimationFrame(() => scrollToFitnessAnchor(parsed.anchor));
         } else if (parsed.track === 'industry') {
-            activateFitnessTab(root, 'industry');
+            activateFitnessTab(root, 'industry', false);
         } else if (parsed.track === 'university') {
-            activateFitnessTab(root, 'university');
+            activateFitnessTab(root, 'university', false);
             if (activateModule && parsed.module) {
-                requestAnimationFrame(() => activateModule(parsed.module, false));
+                activateModule(parsed.module, false);
             }
         }
         } catch (err) {
@@ -1189,12 +1189,12 @@
             const tracksRoot = document.getElementById('fitness-tracks');
             if (!tracksRoot) return;
             if (p.track === 'workshop') {
-                activateFitnessTab(tracksRoot, 'workshop');
+                activateFitnessTab(tracksRoot, 'workshop', false);
                 if (p.anchor) requestAnimationFrame(() => scrollToFitnessAnchor(p.anchor));
             } else if (p.track === 'industry') {
-                activateFitnessTab(tracksRoot, 'industry');
+                activateFitnessTab(tracksRoot, 'industry', false);
             } else if (p.module) {
-                activateFitnessTab(tracksRoot, 'university');
+                activateFitnessTab(tracksRoot, 'university', false);
                 const activate = window.initFitnessModuleNav(tracksRoot);
                 if (activate) activate(p.module, true);
             }

@@ -20,33 +20,32 @@ registerLocale('fa', {
                 duration: '۱۴ هفته · ۴۲ ساعت (۲۱ حضوری)',
                 level: 'کارشناسی ارشد / MBA / دکتری آینده‌پژوهی',
                 diagram: 'assets/fitness/modules/m1-foundations.svg',
-                diagramAlt: 'آمادگی در برابر Future FITness · چرخه F-I-T'
+                diagramAlt: 'مدل آینده‌نگاری سازمانی روهربک و کاربرد آن'
             },
-            prerequisites: 'آشنایی با آینده‌نگاری و scenario · ترجیحاً CLA یا Wheel هم‌ترم · Rohrbeck (2010) ch.1-2 قبل از M1.',
+            prerequisites: 'آشنایی مقدماتی با آینده‌نگاری. برای جلسهٔ نخست، فصل‌های ۱ و ۲ کتاب روهربک (۲۰۱۱) را بخوانید.',
             assessment: 'میان‌ترم ۲۵٪ · آزمون ۲۰٪ · پروژه ۳۵٪ · سمینار ۱۵٪ · امتیاز اضافی #assessment ۵٪؛ جزئیات تب دانشگاه.',
             founders: [{
                 id: 'rohrbeck',
                 name: 'René Rohrbeck',
                 nameFa: 'رنه روهربک',
-                role: 'بنیان‌گذار FITness · پروفسور EDHEC · formerly Aarhus',
-                bio: '۱۵+ سال مطالعه میدانی در Siemens، Deutsche Telekom، Bosch. کتاب Springer (~۳۰۰ ص.)، thesis Aarhus، corpus TFSC/EJFR.'
+                role: 'پژوهشگر آینده‌نگاری سازمانی و Future FITness',
+                bio: 'روهربک مدل بلوغ آینده‌نگاری سازمانی را در کتاب ۲۰۱۱ شرح داد و در پژوهش‌های بعدی چارچوب Future FITness را توسعه داد.'
             }],
             objectives: [
-                'تمایز آمادگی از FITness را با Netflix/Nokia/Zoom توضیح دهید.',
-                'map فصل‌های Rohrbeck (2010) به ۷ ماژول را بشناسید.',
-                'پنج بعد بلوغ و چهار کهن‌الگو را روی نقشه موردی کنید.',
-                'درک→آزمون→تحول را با نشانه‌های ضعیف مثال بزنید.',
-                '#assessment را انجام دهید و بعد ضعیف برای پروژه انتخاب کنید.',
-                'کتاب + ۶ مقاله کلیدی را برای میان‌ترم cite کنید.'
+                'توضیح دهید چرا آینده‌نگاری باید به تصمیم سازمان برسد.',
+                'شش عامل زمینه‌ای و ۲۱ معیار قابلیت را با مثال بشناسید.',
+                'چهار سطح کتاب ۲۰۱۱ را با شاهد به کار ببرید.',
+                'چهار مسیر اثر آینده‌نگاری را از هم جدا کنید.',
+                'سه قابلیت Future FITness را توضیح دهید و نیاز سازمان را با توان آن مقایسه کنید.'
             ],
             outline: [
-                { step: 'M1-1', time: '۴۵ دقیقه', title: 'چرا آینده‌نگاری سازمانی شکست می‌خورد؟', desc: 'گزارش vs قابلیت · benchmark ۳۳٪/۲۰۰٪' },
-                { step: 'M1-2', time: '۴۵ دقیقه', title: 'آمادگی در برابر FITness', desc: 'نمودار مفهومی آینده‌نگاری · Zoom/Netflix/Nokia' },
-                { step: 'M1-3', time: '۴۵ دقیقه', title: 'معرفی طرح درس ۱۴ هفته', desc: 'map فصل‌ها M1-M7 · میان‌ترم و پروژه' },
-                { step: 'M1-4', time: '۴۵ دقیقه', title: 'کارگاه #assessment', desc: 'امتیاز ۵ بعد · انتخاب سازمان پروژه' }
+                { step: 'M1-1', time: '۴۵ دقیقه', title: 'تغییر گسسته چیست؟', desc: 'یک مثال روشن از تغییری که قواعد بازار را عوض می‌کند.' },
+                { step: 'M1-2', time: '۴۵ دقیقه', title: 'تعریف آینده‌نگاری سازمانی', desc: 'از دیدن نشانه تا فهم پیامد و آغاز تصمیم.' },
+                { step: 'M1-3', time: '۴۵ دقیقه', title: 'نقشهٔ مدل روهربک', desc: 'زمینه، قابلیت و اثر؛ معرفی هفت ماژول.' },
+                { step: 'M1-4', time: '۴۵ دقیقه', title: 'تمرین شرکت انرژی', desc: 'انتخاب یک تغییر مهم و توضیح تصمیم مربوط به آن.' }
             ],
             readings: [
-                { type: 'کتاب', text: 'Rohrbeck (2010). <em>Corporate Foresight</em>. Springer ch.1-2 (~۵۰ ص.)' },
+                { type: 'کتاب', text: 'Rohrbeck (2011). <em>Corporate Foresight: Towards a Maturity Model for the Future Orientation of a Firm</em>. Springer.' },
                 { type: 'رساله', text: 'Rohrbeck (2008). PhD thesis, Aarhus.' },
                 { type: 'مقاله', text: 'Rohrbeck, Arnold & Heuer (2007) TFSC.' },
                 { type: 'مقاله', text: 'Rohrbeck & Schwarz (2013) TFSC.' },
@@ -54,7 +53,7 @@ registerLocale('fa', {
                 { type: 'مقاله', text: 'Rohrbeck & Gemünden (2010) IJIM.' },
                 { type: 'مورد', text: 'Deutsche Telekom Radar · Siemens آینده‌نگاری.' }
             ],
-            assignment: 'پروژه M7: سازمان واقعی · ۵ بعد · کهن‌الگو · نشانه‌های ضعیف · آزمون ۹۰ روز · IT2 اگر FOU لازم · ۴۰۰۰-۵۰۰۰ کلمه. میان‌ترم M4: ۲۰۰۰ کلمه بلوغ+کهن‌الگو.'
+            assignment: 'برای یک سازمان واقعی، شرایط محیطی، توان آینده‌نگاری و یک نتیجهٔ قابل مشاهده را بررسی کنید. در ماژول هفتم، توضیح دهید توان سازمان با نیاز آن هماهنگ است یا نه.'
         },
         cla: {
             meta: {

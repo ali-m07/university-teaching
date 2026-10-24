@@ -12162,7 +12162,7 @@
         ]
       },
       {
-        "title": "Scenario Planning · four decks",
+        "title": "Scenario Planning · five decks",
         "sub": "Shell / Schwartz / van der Heijden · the Godet and Bell typologies",
         "cards": [
           {
@@ -12180,6 +12180,10 @@
           {
             "title": "Scenario typologies",
             "sub": "Godet exploratory/normative, Bezold participation, Wendell Bell’s triad"
+          },
+          {
+            "title": "Uncertainty and energy",
+            "sub": "Risk, ambiguity, ignorance; Shell, Schwartz and IEA"
           }
         ]
       },
