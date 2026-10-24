@@ -36,13 +36,14 @@ registerLocale('fa', {
                 ]
             },
             {
-                title: 'Scenario Planning · چهار ارائه',
+                title: 'Scenario Planning · پنج ارائه',
                 sub: 'Shell / Schwartz / van der Heijden · گونه‌شناسی گوده و بل',
                 cards: [
                     { title: 'Shell و آمادگی ذهنی', sub: 'Wack، سناریو در برابر پیش‌بینی، تصمیم محوری' },
                     { title: 'ماتریس ۲×۲', sub: 'عدم‌قطعیت حیاتی، چهار منطق، نام‌گذاری narrative' },
                     { title: 'Indicators و استراتژی', sub: 'نشانه‌های زودهنگام، no-regret، پیوند به probing' },
-                    { title: 'گونه‌شناسی سناریو', sub: 'گوده اکتشافی/هنجاری، مشارکت بزولد، سه‌گانه وندل بل' }
+                    { title: 'گونه‌شناسی سناریو', sub: 'گوده اکتشافی/هنجاری، مشارکت بزولد، سه‌گانه وندل بل' },
+                    { title: 'عدم‌قطعیت و انرژی', sub: 'ریسک، ابهام، نادانستگی؛ Shell، Schwartz و IEA' }
                 ]
             },
             {

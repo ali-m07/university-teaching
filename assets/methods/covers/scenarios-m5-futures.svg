@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Futures cone and four types of futures</title>
+  <desc id="desc">A layered futures cone expands from the present toward possible, plausible, probable, and preferable futures.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity=".72"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="48" fill="url(#bg)"/>
+  <g transform="translate(100 90)">
+    <path d="M110 270 L980 40 L980 500 Z" fill="url(#cone)" stroke="#93c5fd" stroke-width="3"/>
+    <path d="M110 270 L980 120 L980 420 Z" fill="#38bdf8" fill-opacity=".17" stroke="#67e8f9" stroke-width="2"/>
+    <path d="M110 270 L980 200 L980 340 Z" fill="#34d399" fill-opacity=".22" stroke="#6ee7b7" stroke-width="2"/>
+    <path d="M110 270 C420 230 680 210 980 180 L980 250 C680 258 420 266 110 270 Z" fill="#fbbf24" fill-opacity=".55"/>
+    <circle cx="110" cy="270" r="18" fill="#fff"/>
+    <text x="65" y="320" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="26">NOW</text>
+    <g fill="#f8fafc" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="end">
+      <text x="950" y="82">POSSIBLE</text>
+      <text x="950" y="158">PLAUSIBLE</text>
+      <text x="950" y="232">PROBABLE</text>
+      <text x="950" y="310" fill="#fde68a">PREFERABLE</text>
+    </g>
+    <g stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 10" opacity=".7">
+      <line x1="330" y1="80" x2="330" y2="470"/>
+      <line x1="590" y1="80" x2="590" y2="470"/>
+      <line x1="850" y1="80" x2="850" y2="470"/>
+    </g>
+    <g fill="#cbd5e1" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">
+      <text x="330" y="540">NEAR</text>
+      <text x="590" y="540">MID</text>
+      <text x="850" y="540">FAR</text>
+    </g>
+  </g>
+</svg>
+

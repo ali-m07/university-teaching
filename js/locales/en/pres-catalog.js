@@ -36,13 +36,14 @@ registerLocale('en', {
                 ]
             },
             {
-                title: 'Scenario Planning · four decks',
+                title: 'Scenario Planning · five decks',
                 sub: 'Shell / Schwartz / van der Heijden · the Godet and Bell typologies',
                 cards: [
                     { title: 'Shell and mental preparedness', sub: 'Wack, scenario vs forecast, the focal decision' },
                     { title: 'The 2×2 matrix', sub: 'Critical uncertainties, four logics, narrative naming' },
                     { title: 'Indicators and strategy', sub: 'Early signs, no-regret moves, the link to probing' },
-                    { title: 'Scenario typologies', sub: 'Godet exploratory/normative, Bezold participation, Wendell Bell\u2019s triad' }
+                    { title: 'Scenario typologies', sub: 'Godet exploratory/normative, Bezold participation, Wendell Bell\u2019s triad' },
+                    { title: 'Uncertainty and energy', sub: 'Risk, ambiguity, ignorance; Shell, Schwartz and IEA' }
                 ]
             },
             {
