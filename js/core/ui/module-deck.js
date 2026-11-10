@@ -214,7 +214,7 @@
                 kind: 'content',
                 eyebrow,
                 title,
-                image,
+                image: sec.slideImages?.[gi] ? assetUrl(sec.slideImages[gi]) : image,
                 imageCaption: sec.imageCaption || caption,
                 body: buildSectionSlideBody(sec, [gi], stripLabel)
             };
@@ -334,7 +334,7 @@
                     <button type="button" class="fitness-pres-nav-btn fitness-pres-next"${total <= 1 ? ' disabled' : ''}>${esc(L.next)}</button>`;
 
         return `
-            <div class="fitness-pres${manySlides ? ' fitness-pres--many-slides' : ''}" data-fitness-pres tabindex="0" aria-roledescription="presentation" dir="${dir()}">
+            <div class="fitness-pres${manySlides ? ' fitness-pres--many-slides' : ''}${m.deckTheme === 'backcast-light' ? ' backcast-pres-light' : ''}" data-fitness-pres tabindex="0" aria-roledescription="presentation" dir="${dir()}">
                 <div class="fitness-pres-toolbar">
                     <button type="button" class="fitness-pres-fs-btn" aria-label="${esc(L.fullscreen)}">
                         <i data-lucide="maximize"></i>
