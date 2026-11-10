@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">نقشهٔ راه معکوس از هدف به اقدام امروز</title>
+  <desc id="desc">چهار گام معکوس: هدف ۱۴۱۰، ظرفیت آماده در ۱۴۰۸، مجوز و سرمایه در ۱۴۰۶ و آغاز اندازه‌گیری در امروز.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#09151c"/><stop offset="1" stop-color="#102a2c"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L9 5L0 10Z" fill="#5be6ad"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#000" flood-opacity=".25"/></filter>
+  </defs>
+  <rect width="960" height="540" rx="24" fill="url(#bg)"/>
+  <text x="480" y="54" text-anchor="middle" direction="rtl" font-family="Vazirmatn,Tahoma,sans-serif" font-size="27" font-weight="700" fill="#f2faf7">از مقصد به پیش‌شرط‌ها برگردید</text>
+  <text x="480" y="84" text-anchor="middle" direction="rtl" font-family="Vazirmatn,Tahoma,sans-serif" font-size="15" fill="#b2c9c7">هر گام باید تاریخ، مسئول و شاخص پیشرفت داشته باشد.</text>
+  <path d="M768 264H194" stroke="#5be6ad" stroke-width="5" marker-end="url(#arrow)"/>
+  <g font-family="Vazirmatn,Tahoma,sans-serif" direction="rtl" text-anchor="middle">
+    <rect x="704" y="143" width="190" height="218" rx="18" fill="#1b503d" stroke="#72edb5" filter="url(#shadow)"/>
+    <text x="799" y="180" font-size="23" font-weight="700" fill="#a2f4c8">۱۴۱۰</text>
+    <text x="799" y="222" font-size="17" font-weight="700" fill="#f3faf5">هدف</text>
+    <text x="799" y="254" font-size="14" fill="#d2f2df">کاهش انتشار</text>
+    <text x="799" y="282" font-size="14" fill="#d2f2df">با برق پایدار</text>
+    <rect x="490" y="143" width="190" height="218" rx="18" fill="#183f38" stroke="#61cba1" filter="url(#shadow)"/>
+    <text x="585" y="180" font-size="23" font-weight="700" fill="#a2f4c8">۱۴۰۸</text>
+    <text x="585" y="222" font-size="17" font-weight="700" fill="#f3faf5">ظرفیت آماده</text>
+    <text x="585" y="254" font-size="14" fill="#d2f2df">تولید پاک</text>
+    <text x="585" y="282" font-size="14" fill="#d2f2df">و اتصال شبکه</text>
+    <rect x="276" y="143" width="190" height="218" rx="18" fill="#17352f" stroke="#50b88f" filter="url(#shadow)"/>
+    <text x="371" y="180" font-size="23" font-weight="700" fill="#a2f4c8">۱۴۰۶</text>
+    <text x="371" y="222" font-size="17" font-weight="700" fill="#f3faf5">پیش‌شرط</text>
+    <text x="371" y="254" font-size="14" fill="#d2f2df">مجوز، قرارداد</text>
+    <text x="371" y="282" font-size="14" fill="#d2f2df">و سرمایه</text>
+    <rect x="62" y="143" width="190" height="218" rx="18" fill="#183035" stroke="#4a9d91" filter="url(#shadow)"/>
+    <text x="157" y="180" font-size="23" font-weight="700" fill="#a2f4c8">امروز</text>
+    <text x="157" y="222" font-size="17" font-weight="700" fill="#f3faf5">نخستین تصمیم</text>
+    <text x="157" y="254" font-size="14" fill="#d2f2df">اندازه‌گیری مصرف</text>
+    <text x="157" y="282" font-size="14" fill="#d2f2df">و تعیین مسئول</text>
+  </g>
+  <text x="480" y="421" text-anchor="middle" direction="rtl" font-family="Vazirmatn,Tahoma,sans-serif" font-size="17" font-weight="700" fill="#e4f8ed">پرسش معکوس: برای انجام هر گام، چه چیزی باید پیش‌تر آماده شده باشد؟</text>
+  <text x="480" y="469" text-anchor="middle" direction="rtl" font-family="Vazirmatn,Tahoma,sans-serif" font-size="14" fill="#a9c7c2">سپس مسیر را از امروز به جلو بخوانید تا زمان‌بندی و مانع‌ها را بسنجید.</text>
+</svg>

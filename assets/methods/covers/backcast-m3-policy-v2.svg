@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">از هدف رسمی اقلیمی تا تصمیم سیاستی امروز</title>
+  <desc id="desc">هدف رسمی سوئد برای خالص صفر ۲۰۴۵ در بالا، و سه پرسش تمرینی درباره پیش‌شرط، مانع و اقدام فوری در پایین.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#09151c"/><stop offset="1" stop-color="#102a2c"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".25"/></filter>
+  </defs>
+  <rect width="960" height="540" rx="24" fill="url(#bg)"/>
+  <text x="480" y="53" text-anchor="middle" direction="rtl" font-family="Vazirmatn,Tahoma,sans-serif" font-size="27" font-weight="700" fill="#f2faf7">از هدف اقلیمی تا اقدام امروز</text>
+  <rect x="190" y="92" width="580" height="95" rx="18" fill="#194837" stroke="#70e7ac" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="130" text-anchor="middle" direction="rtl" font-family="Vazirmatn,Tahoma,sans-serif" font-size="21" font-weight="700" fill="#b2f9d1">هدف رسمی سوئد: انتشار خالص صفر تا ۲۰۴۵</text>
+  <text x="480" y="160" text-anchor="middle" direction="rtl" font-family="Vazirmatn,Tahoma,sans-serif" font-size="14" fill="#d6f4e2">مصوب در چارچوب سیاست اقلیمی ۲۰۱۷</text>
+  <path d="M480 187V228" stroke="#66dcaa" stroke-width="3"/>
+  <circle cx="480" cy="231" r="6" fill="#66dcaa"/>
+  <g font-family="Vazirmatn,Tahoma,sans-serif" direction="rtl" text-anchor="middle">
+    <rect x="660" y="259" width="250" height="155" rx="17" fill="#18372f" stroke="#54ba8d" filter="url(#shadow)"/>
+    <text x="785" y="300" font-size="19" font-weight="700" fill="#a2f4c8">پیش‌شرط</text>
+    <text x="785" y="337" font-size="14" fill="#e3f1e9">چه زیرساخت و قانونی</text>
+    <text x="785" y="365" font-size="14" fill="#e3f1e9">باید زودتر آماده شود؟</text>
+    <rect x="355" y="259" width="250" height="155" rx="17" fill="#233a34" stroke="#d9b773" filter="url(#shadow)"/>
+    <text x="480" y="300" font-size="19" font-weight="700" fill="#f5dca8">مانع</text>
+    <text x="480" y="337" font-size="14" fill="#e3f1e9">چه کسی هزینه می‌دهد؟</text>
+    <text x="480" y="365" font-size="14" fill="#e3f1e9">اختیار تصمیم با کیست؟</text>
+    <rect x="50" y="259" width="250" height="155" rx="17" fill="#183731" stroke="#54ba8d" filter="url(#shadow)"/>
+    <text x="175" y="300" font-size="19" font-weight="700" fill="#a2f4c8">اقدام امروز</text>
+    <text x="175" y="337" font-size="14" fill="#e3f1e9">کدام داده یا تصمیم</text>
+    <text x="175" y="365" font-size="14" fill="#e3f1e9">باید اکنون آغاز شود؟</text>
+  </g>
+  <path d="M657 338H613M352 338H308" stroke="#6fdcab" stroke-width="3" stroke-dasharray="7 6"/>
+  <text x="480" y="469" text-anchor="middle" direction="rtl" font-family="Vazirmatn,Tahoma,sans-serif" font-size="15" fill="#a9c7c2">این مسیر، تمرین آموزشی است؛ گام‌ها سیاست رسمی سوئد معرفی نمی‌شوند.</text>
+</svg>
